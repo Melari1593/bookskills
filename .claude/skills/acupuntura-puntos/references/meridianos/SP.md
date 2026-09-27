@@ -1,7 +1,7 @@
 # SP — Meridiano de Bazo (Zú Tàiyīn Pí Jīng 足太阴脾经)
 
 **Trayecto:** Se inicia en el ángulo ungueal medial del dedo gordo (SP1), recorre el borde medial del pie en el límite piel roja/blanca, pasa por delante del maléolo medial y asciende por detrás del borde medial de la tibia; 8 cun sobre el maléolo cruza por delante del meridiano de Hígado y sube por la cara medial de rodilla y muslo hasta el abdomen (4 cun de la línea media) y el tórax (6 cun de la línea media), terminando en SP21 en la línea axilar media.
-**Interno:** entra en el abdomen (cruza REN3, REN4, REN10), pertenece al Bazo y conecta con el Estómago; atraviesa el diafragma, bordea el esófago y llega a la raíz de la lengua, dispersándose bajo ella. Una rama del Estómago cruza el diafragma y fluye al Corazón (enlace con HT).
+**Interno:** entra en el abdomen (cruza CV3, CV4, CV10), pertenece al Bazo y conecta con el Estómago; atraviesa el diafragma, bordea el esófago y llega a la raíz de la lengua, dispersándose bajo ella. Una rama del Estómago cruza el diafragma y fluye al Corazón (enlace con HT).
 **Horario (reloj circadiano):** 9–11 h. **Elemento:** Tierra. **Acoplado:** ST.
 
 ---
@@ -95,7 +95,7 @@
 - **Precauciones:** arteria y vena femorales: palpar el pulso y evitarlas; no punción profunda.
 
 ### SP12 · Chōngmén 冲门 · "Puerta de la Irrupción"
-- **Ubicación:** en la ingle, en el pliegue inguinal, lateral a la pulsación de la arteria femoral (≈3,5 cun lateral a REN2).
+- **Ubicación:** en la ingle, en el pliegue inguinal, lateral a la pulsación de la arteria femoral (≈3,5 cun lateral a CV2).
 - **Categorías:** cruce de SP y LR (algunas fuentes añaden Yin Wei Mai).
 - **Acciones:** regula el Qi, drena la humedad-calor, mueve la Sangre del Jiao Inferior.
 - **Indicaciones:** dolor abdominal, masas abdominales, hernia (shan), retención urinaria, hemorroides, leucorrea, dolor inguinal.

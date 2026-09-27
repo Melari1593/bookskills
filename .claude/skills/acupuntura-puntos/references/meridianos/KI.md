@@ -1,7 +1,7 @@
 # KI — Meridiano de Riñón (Zú Shàoyīn Shèn Jīng 足少阴肾经)
 
 **Trayecto:** Se inicia bajo el 5.º dedo del pie, cruza oblicuamente la planta hasta KI1, emerge bajo la tuberosidad del navicular (KI2), rodea por detrás el maléolo medial entrando en el talón, y asciende por la cara medial de la pierna y la cara posteromedial de rodilla y muslo. En superficie recorre el abdomen a 0,5 cun de la línea media (KI11–KI21) y el tórax a 2 cun de la línea media (KI22–KI27), terminando bajo la clavícula.
-**Interno:** desde el muslo va a la punta del cóccix (DU1), asciende por la columna, pertenece al Riñón y conecta con la Vejiga (vía REN3, REN4). Una rama recta sube del Riñón a Hígado y diafragma, entra en el Pulmón, sigue por la garganta y termina en la raíz de la lengua; otra rama sale del Pulmón, conecta con el Corazón y se dispersa en el tórax (enlace con PC).
+**Interno:** desde el muslo va a la punta del cóccix (GV1), asciende por la columna, pertenece al Riñón y conecta con la Vejiga (vía CV3, CV4). Una rama recta sube del Riñón a Hígado y diafragma, entra en el Pulmón, sigue por la garganta y termina en la raíz de la lengua; otra rama sale del Pulmón, conecta con el Corazón y se dispersa en el tórax (enlace con PC).
 **Horario (reloj circadiano):** 17–19 h. **Elemento:** Agua. **Acoplado:** BL.
 
 ---

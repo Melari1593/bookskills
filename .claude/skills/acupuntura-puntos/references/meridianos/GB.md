@@ -102,7 +102,7 @@
 - **Precauciones:** —
 
 ### GB13 · Běnshén 本神 · "Raíz del Espíritu"
-- **Ubicación:** 0,5 cun por dentro de la línea anterior del cabello, 3 cun lateral a la línea media (unión de 2/3 mediales y 1/3 lateral de la línea entre DU24 y ST8).
+- **Ubicación:** 0,5 cun por dentro de la línea anterior del cabello, 3 cun lateral a la línea media (unión de 2/3 mediales y 1/3 lateral de la línea entre GV24 y ST8).
 - **Categorías:** Punto de cruce con el Yang Wei Mai.
 - **Acciones:** Calma el espíritu, elimina Viento, drena la mente.
 - **Indicaciones:** Epilepsia, convulsiones infantiles, ansiedad, trastornos mentales, cefalea, vértigo, secuelas de ictus.
@@ -118,7 +118,7 @@
 - **Precauciones:** —
 
 ### GB15 · Tóulínqì 头临泣 · "Lágrimas Descendentes de la Cabeza"
-- **Ubicación:** 0,5 cun por dentro de la línea anterior del cabello, directamente sobre el centro de la pupila (punto medio entre DU24 y ST8).
+- **Ubicación:** 0,5 cun por dentro de la línea anterior del cabello, directamente sobre el centro de la pupila (punto medio entre GV24 y ST8).
 - **Categorías:** Punto de cruce con BL y el Yang Wei Mai.
 - **Acciones:** Beneficia los ojos, elimina Viento, abre la nariz, calma la mente.
 - **Indicaciones:** Cefalea, dolor ocular, lagrimeo, visión borrosa, obstrucción nasal, epilepsia, convulsiones infantiles.
@@ -150,7 +150,7 @@
 - **Precauciones:** —
 
 ### GB19 · Nǎokōng 脑空 · "Cerebro Hueco"
-- **Ubicación:** A la altura del borde superior de la protuberancia occipital externa (nivel de DU17), directamente por encima de GB20.
+- **Ubicación:** A la altura del borde superior de la protuberancia occipital externa (nivel de GV17), directamente por encima de GB20.
 - **Categorías:** Punto de cruce con el Yang Wei Mai.
 - **Acciones:** Elimina Viento, beneficia la cabeza y los órganos de los sentidos, calma la mente.
 - **Indicaciones:** Cefalea occipital, rigidez de nuca, vértigo, acúfenos, epilepsia, palpitaciones, trastornos mentales.

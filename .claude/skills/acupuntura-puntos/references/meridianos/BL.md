@@ -1,6 +1,6 @@
 # BL — Meridiano de Vejiga (Zú Tàiyáng Pángguāng Jīng 足太阳膀胱经)
 
-**Trayecto:** Se inicia en el canto interno (BL1), asciende por la frente hasta el vértex (cruce en DU20), con una rama hacia la región temporal por encima de la oreja; desde el vértex penetra en el cerebro y emerge en la nuca, donde se divide en dos ramas descendentes paralelas a la columna.
+**Trayecto:** Se inicia en el canto interno (BL1), asciende por la frente hasta el vértex (cruce en GV20), con una rama hacia la región temporal por encima de la oreja; desde el vértex penetra en el cerebro y emerge en la nuca, donde se divide en dos ramas descendentes paralelas a la columna.
 La rama interna (1,5 cun de la línea media dorsal) desciende hasta la región lumbar, penetra en la musculatura paravertebral, conecta con el Riñón y pertenece a la Vejiga; continúa por el sacro y el glúteo hasta la fosa poplítea.
 La rama externa (3 cun de la línea media dorsal) desciende desde la nuca por el borde medial de la escápula, cruza el glúteo y la cara posterolateral del muslo, y se une a la interna en BL40; baja por la pantorrilla, pasa detrás del maléolo externo y recorre el borde lateral del pie hasta el ángulo ungueal lateral del 5º dedo (BL67), donde enlaza con KI1.
 **Horario (reloj circadiano):** 15–17 h. **Elemento:** Agua. **Acoplado:** KI.

@@ -6,7 +6,7 @@
 ---
 
 ### HT1 · Jíquán 极泉 · "Fuente Suprema"
-- **Ubicación:** en el centro de la fosa axilar, sobre la arteria axilar (palpar el pulso y punzar medial a ella).
+- **Ubicación:** en el centro de la fosa axilar, sobre la arteria axilar (palpar el pulso y evitarla al insertar).
 - **Categorías:** Punto de entrada.
 - **Acciones:** abre el tórax, desbloquea el meridiano, beneficia el brazo, calma el Shen.
 - **Indicaciones:** dolor cardiaco, opresión torácica, palpitaciones, dolor en el costado, sed, sequedad de garganta, tristeza, escrófula axilar, dolor e imposibilidad de levantar el brazo, entumecimiento del brazo, olor axilar.
