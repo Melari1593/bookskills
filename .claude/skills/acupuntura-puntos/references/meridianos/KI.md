@@ -51,7 +51,7 @@
 - **Categorías:** punto de confluencia del Yin Qiao Mai (par con LU7 del Ren Mai); punto de inicio del Yin Qiao Mai.
 - **Acciones:** nutre el Riñón y el Yin, beneficia la garganta y los ojos, calma el Shen, regula el Yin Qiao Mai, regula el Jiao Inferior.
 - **Indicaciones:** garganta seca y dolorosa, insomnio, somnolencia, epilepsia nocturna, ansiedad, menstruación irregular, dismenorrea, leucorrea, prolapso uterino, prurito genital, polaquiuria, retención urinaria, estreñimiento, ojos rojos y dolorosos.
-- **Inserción:** perpendicular 0,5–1 cun. **Moxa:** sí.
+- **Inserción:** perpendicular 0,3–0,5 cun (Deadman); 0,5–0,8 cun en textos chinos. **Moxa:** sí.
 - **Precauciones:** —
 
 ### KI7 · Fùliū 复溜 · "Flujo que Retorna"
