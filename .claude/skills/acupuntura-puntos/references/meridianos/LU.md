@@ -43,7 +43,7 @@
 - **Acciones:** elimina calor del Pulmón y desciende el Qi rebelde de Pulmón, transforma flema-calor, regula las vías del agua, relaja los tendones y alivia el dolor.
 - **Indicaciones:** tos con flema amarilla, asma, hemoptisis, dolor de garganta, fiebre vespertina, plenitud torácica, dolor e hinchazón del codo, contractura del brazo, vómito y diarrea agudos (sangría), convulsiones infantiles, enuresis, edema.
 - **Inserción:** perpendicular 0,5–1 cun, o sangría de las vénulas. **Moxa:** sí.
-- **Precauciones:** evitar la arteria braquial y la vena cefálica.
+- **Precauciones:** vena cefálica superficial; la arteria braquial queda medial al tendón del bíceps (zona de PC3), no bajo este punto.
 
 ### LU6 · Kǒngzuì 孔最 · "Apertura Máxima"
 - **Ubicación:** cara anterolateral del antebrazo, en la línea LU5–LU9, 7 cun proximal al pliegue palmar de la muñeca.

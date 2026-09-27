@@ -18,7 +18,7 @@ La rama externa (3 cun de la línea media dorsal) desciende desde la nuca por el
 - **Precauciones:** riesgo de hematoma periorbitario y lesión del globo ocular; no manipular; presionar 1–2 min al retirar. Reservar la inserción profunda (>0,5 cun) a practicantes expertos.
 
 ### BL2 · Cuánzhú 攒竹 · "Bambú Reunido"
-- **Ubicación:** en la cabeza, en la depresión del extremo medial de la ceja (escotadura/agujero supraorbitario palpable).
+- **Ubicación:** en la cabeza, en la depresión del extremo medial de la ceja (escotadura frontal o supratroclear palpable).
 - **Categorías:** —
 - **Acciones:** expulsa el viento, aclara el calor, ilumina los ojos, alivia el dolor.
 - **Indicaciones:** cefalea frontal, dolor supraorbitario, visión borrosa, lagrimeo, enrojecimiento ocular, tic palpebral, ptosis, parálisis facial, rinitis, hipo.
