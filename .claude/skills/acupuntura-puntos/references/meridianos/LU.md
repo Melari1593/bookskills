@@ -58,7 +58,7 @@
 - **Categorías:** Punto Luo de Pulmón; punto de apertura (confluencia) del Ren Mai (acoplado con KI6); punto de mando de cabeza y nuca (Cuatro/Seis puntos de mando); Estrella celestial de Ma Danyang; punto de salida (rama a LI1).
 - **Acciones:** dispersa y desciende el Qi de Pulmón, expulsa viento, abre la nariz, beneficia cabeza y nuca, abre y regula el Ren Mai, abre las vías del agua, beneficia la vejiga.
 - **Indicaciones:** invasión de viento-frío/calor (escalofríos, fiebre, tos), cefalea, rigidez de nuca, dolor de garganta, congestión nasal, hemiplejía, desviación facial, trismo, odontalgia, retención urinaria, hematuria, dolor de pene, retención de loquios, dolor de muñeca.
-- **Inserción:** oblicua o transversal 0,5–1 cun en dirección proximal (o distal hacia el codo/mano según objetivo). **Moxa:** sí.
+- **Inserción:** oblicua o transversal 0,5–1 cun en dirección proximal, hacia el codo (o distal, hacia la mano, según el objetivo). **Moxa:** sí.
 - **Precauciones:** evitar la vena cefálica y la rama superficial del nervio radial.
 
 ### LU8 · Jīngqú 经渠 · "Canal del Meridiano"
