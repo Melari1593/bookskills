@@ -26,7 +26,7 @@
 - **Categorías:** Punto Shu-Arroyo (Tierra); punto Yuan-Fuente. Una de las Doce Estrellas Celestiales de Ma Danyang. Con LI4 forma las "Cuatro Puertas" (Sì Guān).
 - **Acciones:** Dispersa el Qi de Hígado, somete el Yang de Hígado y extingue el viento, nutre la sangre y el Yin de Hígado, regula la menstruación, despeja cabeza y ojos, calma el espasmo.
 - **Indicaciones:** Cefalea del vértex, mareo, hipertensión, ojos rojos, visión borrosa, irritabilidad, insomnio, depresión, dolor de hipocondrio, dismenorrea, amenorrea, SPM, epilepsia, convulsiones infantiles, hernia, retención de orina, dolor de pie.
-- **Inserción:** Perpendicular u oblicua proximal (hacia KI1) 0,5–1,5 cun. **Moxa:** sí.
+- **Inserción:** Perpendicular 0,5–1,5 cun, u oblicua en dirección proximal, o dirigida hacia KI1 (Yongquan, en la planta). **Moxa:** sí.
 - **Precauciones:** Evitar la arteria dorsal del pie.
 
 ### LR4 · Zhōngfēng 中封 · "Sello Central"
