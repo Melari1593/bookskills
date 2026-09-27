@@ -26,7 +26,7 @@
 - **Categorías:** Punto Shu-Arroyo (Madera); punto de tonificación. Punto de confluencia del Du Mai (acoplado con BL62/Yang Qiao Mai).
 - **Acciones:** Beneficia occipucio, cuello y espalda; abre el Du Mai; expulsa viento y despeja calor; trata la malaria; calma el Shen; beneficia oídos y ojos.
 - **Indicaciones:** Rigidez/tortícolis, cefalea occipital, lumbalgia aguda, epilepsia, manía, malaria, sudores nocturnos, fiebre, sordera, acúfenos, ojos rojos, contractura de dedos y codo.
-- **Inserción:** Perpendicular 0,5–1 cun dirigida hacia la palma (hacia LI3/Hegu), con el puño semicerrado. **Moxa:** sí.
+- **Inserción:** Perpendicular 0,5–1 cun dirigida hacia la palma, en dirección a LI4 (Hegu), con el puño semicerrado. **Moxa:** sí.
 - **Precauciones:** —
 
 ### SI4 · Wàngǔ 腕骨 · "Hueso de la Muñeca"
