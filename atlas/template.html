@@ -1,0 +1,535 @@
+<title>Atlas de Meridianos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;600&family=Noto+Serif+SC:wght@500&family=Spectral:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#F2F4F1; --surface:#FFFFFF; --ink:#1B211E; --muted:#5B655F; --line:#D6DCD7;
+  --body:#E1E7E2; --body-line:#C3CCC5; --seal:#B3261E; --seal-soft:#F6E3E0; --warn-bg:#FBF1E4; --warn-ink:#7A4A0B;
+  --madera:#2E8754; --fuego:#C63E2D; --tierra:#B7831A; --metal:#737C88; --agua:#2A5AA6; --vaso:#7648A6; --extra:#3A433E;
+  --shadow:0 1px 2px rgba(27,33,30,.06),0 6px 24px rgba(27,33,30,.06);
+  --f-display:"Spectral",Georgia,"Times New Roman",serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --f-cjk:"Noto Serif SC","Songti SC","SimSun",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#111513; --surface:#191E1B; --ink:#E3E8E4; --muted:#95A098; --line:#2B332E;
+    --body:#222925; --body-line:#36403A; --seal:#E25A4E; --seal-soft:#3A1F1C; --warn-bg:#2E2414; --warn-ink:#E9C27F;
+    --madera:#4DB57A; --fuego:#EE6A57; --tierra:#DDAA44; --metal:#A6AEB8; --agua:#6C9BE6; --vaso:#A886D6; --extra:#C7CFCA;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 24px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111513; --surface:#191E1B; --ink:#E3E8E4; --muted:#95A098; --line:#2B332E;
+  --body:#222925; --body-line:#36403A; --seal:#E25A4E; --seal-soft:#3A1F1C; --warn-bg:#2E2414; --warn-ink:#E9C27F;
+  --madera:#4DB57A; --fuego:#EE6A57; --tierra:#DDAA44; --metal:#A6AEB8; --agua:#6C9BE6; --vaso:#A886D6; --extra:#C7CFCA;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 24px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:20px 40px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(26px,3.4vw,36px);letter-spacing:-.01em;margin:0;line-height:1.1;text-wrap:balance}
+h1 .cjk{font-family:var(--f-cjk);font-weight:500;color:var(--seal);font-size:.72em;margin-left:.35em;letter-spacing:.08em}
+.sub{color:var(--muted);margin:0;max-width:62ch;font-size:14px}
+.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+@media (min-width:901px){.stage{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}}
+.tabs{display:flex;gap:4px;padding:10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tab{font:inherit;font-size:14px;border:1px solid transparent;background:none;color:var(--muted);padding:6px 12px;border-radius:999px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--surface)}
+.tab:hover:not([aria-selected="true"]){border-color:var(--line);color:var(--ink)}
+.tab .n{font-family:var(--f-mono);font-size:11px;background:var(--seal);color:#fff;border-radius:999px;padding:0 6px;line-height:17px}
+.tab .n:empty{display:none}
+.svgbox{position:relative;height:min(76vh,760px);min-height:420px;touch-action:none;cursor:grab}
+.svgbox.dragging{cursor:grabbing}
+svg#map{width:100%;height:100%;display:block;user-select:none}
+.zoom{position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;gap:6px}
+.zoom button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 18px/1 var(--f-mono);cursor:pointer;box-shadow:var(--shadow)}
+.zoom button:hover{border-color:var(--muted)}
+.legend{position:absolute;left:10px;bottom:10px;display:flex;flex-direction:column;gap:3px;font-size:11.5px;color:var(--muted);background:color-mix(in srgb,var(--surface) 88%,transparent);padding:8px 10px;border-radius:10px;border:1px solid var(--line);pointer-events:none}
+.legend .row{display:flex;gap:6px;align-items:center}
+.legend svg{flex:none}
+.note{font-size:12px;color:var(--muted);padding:8px 12px 10px;border-top:1px solid var(--line);margin:0}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12.5px;padding:4px 8px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-130%);z-index:3}
+.tip b{font-family:var(--f-mono);font-weight:600}
+.panel{display:flex;flex-direction:column;gap:14px;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);min-width:0}
+.lbl{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:0 0 8px;display:block}
+.search{position:relative}
+.search input,.search select{width:100%;font:inherit;font-size:15px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.search input:focus,.search select:focus,button:focus-visible,.chip:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+.results{list-style:none;margin:6px 0 0;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;max-height:320px;overflow-y:auto}
+.results li button{all:unset;box-sizing:border-box;display:flex;gap:10px;align-items:baseline;width:100%;padding:8px 12px;cursor:pointer;border-bottom:1px solid var(--line)}
+.results li:last-child button{border-bottom:0}
+.results li button:hover,.results li button:focus-visible{background:var(--bg)}
+.results .k{font-family:var(--f-mono);font-weight:600;min-width:4.6em}
+.results .d{color:var(--muted);font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:600 12.5px var(--f-mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 8px;border-radius:999px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip.pt{padding:2px 7px;font-size:12px}
+.chip.pt.main{border-color:var(--seal);color:var(--seal)}
+.sym h3{font-family:var(--f-display);font-weight:600;font-size:20px;margin:0 0 2px}
+.sym .syn{color:var(--muted);font-size:13px;margin:0 0 10px}
+.sym ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.sym ul ul{margin-top:6px}
+.sym li{line-height:1.55}
+.sym .x{float:right;font:inherit;font-size:13px;border:1px solid var(--line);background:none;color:var(--muted);border-radius:8px;padding:3px 9px;cursor:pointer}
+.pt-head{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.pt-code{font:600 34px/1 var(--f-mono);letter-spacing:-.02em}
+.pt-names{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pt-pin{font-family:var(--f-display);font-size:22px;font-weight:600;line-height:1.15}
+.pt-pin .cjk{font-family:var(--f-cjk);font-weight:500;margin-left:.4em;font-size:.95em}
+.pt-trad{color:var(--muted);font-style:italic}
+.merline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 4px;font-size:13.5px;color:var(--muted)}
+.badge{font:600 11px var(--f-body);text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.preg{color:var(--seal);background:var(--seal-soft);border-color:transparent}
+dl.f{margin:12px 0 0;display:grid;grid-template-columns:1fr;gap:12px}
+dl.f dt{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:2px}
+dl.f dd{margin:0;max-width:68ch}
+dl.f .warn{background:var(--warn-bg);color:var(--warn-ink);padding:10px 12px;border-radius:10px}
+dl.f .warn dt{color:inherit}
+.nav{display:flex;justify-content:space-between;gap:8px;margin-top:14px}
+.nav button{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 12px;border-radius:9px;cursor:pointer}
+.nav button:disabled{opacity:.35;cursor:default}
+.empty{color:var(--muted);margin:0}
+.cjk{font-family:var(--f-cjk)}
+@media (prefers-reduced-motion: no-preference){ .pt-halo{animation:pulse 1.8s ease-out infinite} }
+@keyframes pulse{0%{opacity:.9}100%{opacity:0}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Atlas de Meridianos<span class="cjk">经穴图</span></h1>
+    <p class="sub">Los 361 puntos clásicos más Yintang y 32 puntos extra. Toca un punto para ver su ficha, busca por código o pinyin, o elige un síntoma para ver su receta sobre el cuerpo.</p>
+  </header>
+
+  <div class="grid">
+    <section class="stage" aria-label="Mapa corporal">
+      <div class="tabs" role="tablist" aria-label="Vista">
+        <button class="tab" role="tab" data-view="ant" aria-selected="true">Anterior <span class="n"></span></button>
+        <button class="tab" role="tab" data-view="post" aria-selected="false">Posterior <span class="n"></span></button>
+        <button class="tab" role="tab" data-view="lat" aria-selected="false">Cabeza lateral <span class="n"></span></button>
+      </div>
+      <div class="svgbox" id="box">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figura con puntos de acupuntura"></svg>
+        <div class="tip" id="tip" hidden></div>
+        <div class="legend" aria-hidden="true">
+          <div class="row"><svg width="12" height="12"><circle cx="6" cy="6" r="4.2" fill="var(--muted)"/></svg>Yin</div>
+          <div class="row"><svg width="12" height="12"><circle cx="6" cy="6" r="3.6" fill="var(--surface)" stroke="var(--muted)" stroke-width="1.8"/></svg>Yang</div>
+          <div class="row"><svg width="12" height="12"><rect x="2.6" y="2.6" width="6.8" height="6.8" transform="rotate(45 6 6)" fill="var(--extra)"/></svg>Extra</div>
+        </div>
+        <div class="zoom">
+          <button type="button" id="zin" aria-label="Acercar">+</button>
+          <button type="button" id="zout" aria-label="Alejar">−</button>
+          <button type="button" id="zreset" aria-label="Vista completa">⟲</button>
+        </div>
+      </div>
+      <p class="note">Posiciones esquemáticas para orientarse: la referencia es la ubicación descrita en cada ficha (estándar OMS 2008). Los puntos bilaterales se muestran en ambos lados.</p>
+    </section>
+
+    <div class="panel">
+      <div class="card">
+        <div class="row2">
+          <div class="search">
+            <label class="lbl" for="q">Buscar punto o síntoma</label>
+            <input id="q" type="search" autocomplete="off" placeholder="E36, Hegu, lumbalgia…">
+            <ul class="results" id="res" hidden></ul>
+          </div>
+          <div class="search">
+            <label class="lbl" for="sym">Síntoma</label>
+            <select id="sym"></select>
+          </div>
+        </div>
+        <span class="lbl" style="margin-top:14px">Meridianos</span>
+        <div class="chips" id="mers"></div>
+      </div>
+
+      <div class="card sym" id="symcard" hidden></div>
+      <article class="card" id="detail" aria-live="polite"></article>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = __DATA__;
+const NS = 'http://www.w3.org/2000/svg';
+const $ = s => document.querySelector(s);
+const PTS = DATA.points, BY = Object.fromEntries(PTS.map(p => [p.code, p]));
+const MERS = Object.fromEntries(DATA.meridians.map(m => [m.code, m]));
+MERS.EX = {code:'EX', name:'Puntos extra', trayecto:''};
+const ORDER = [...DATA.meridians.map(m => m.code), 'EX'];
+const YIN = new Set(DATA.yin);
+const ELEM = {...DATA.elem, EX:'extra'};
+const ELNAME = {madera:'Madera', fuego:'Fuego', tierra:'Tierra', metal:'Metal', agua:'Agua', vaso:'Vaso extraordinario', extra:'Extra'};
+const SHORT = {LU:'Pulmón',LI:'Intestino Grueso',ST:'Estómago',SP:'Bazo',HT:'Corazón',SI:'Intestino Delgado',BL:'Vejiga',KI:'Riñón',PC:'Pericardio',TE:'San Jiao',GB:'Vesícula Biliar',LR:'Hígado',CV:'Ren Mai',GV:'Du Mai',EX:'Extra'};
+const col = c => `var(--${ELEM[c]})`;
+const label = p => p.mer === 'EX' ? p.code.slice(3) : p.code;
+
+const VIEWS = {ant:{vb:[0,8,300,640]}, post:{vb:[0,8,300,640]}, lat:{vb:[40,20,230,270]}};
+const st = {view:'ant', vb:null, sel:null, sym:null, mers:new Set(ORDER)};
+
+/* ---------- figura ---------- */
+function armPt(y, s){ let x, hw; if (y <= 250){ x = 77 + (y-165)/85*9; hw = 11; } else { x = 86 + (y-250)/90*12; hw = 12 - (y-250)/90*3.5; } return [x + s*hw, y]; }
+function half(pts){ return pts.map(([x,y]) => [150+x, y]); }
+function mirror(pts){ return pts.map(([x,y]) => [300-x, y]); }
+function poly(pts, cls){ const e = document.createElementNS(NS,'polygon'); e.setAttribute('points', pts.map(p => p.join(',')).join(' ')); e.setAttribute('class', cls); return e; }
+function el(tag, attrs, parent){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; }
+
+function drawBody(g, back){
+  const trunk = [[0,118],[12,118],[22,124],[48,129],[64,135],[68,150],[64,168],[60,205],[54,255],[51,285],[55,315],[57,338],[55,360],[53,390],[49,425],[44,458],[42,480],[43,505],[41,545],[38,580],[38,598],[41,612],[43,630],[40,639],[29,641],[18,639],[13,631],[12,612],[14,598],[16,560],[17,520],[15,492],[14,470],[11,440],[7,400],[3,372],[0,366]];
+  const arm = []; for (let y=150; y<=340; y+=10) arm.push(armPt(y, 1)); const armIn = []; for (let y=340; y>=165; y-=10) armIn.push(armPt(y, -1));
+  const hand = [[89.5,340],[86,354],[86,368],[108.5,368],[109,354],[106.5,340]];
+  for (const side of [0,1]){
+    const f = side ? mirror : (x=>x);
+    g.appendChild(poly(f(half(trunk)), 'b'));
+    g.appendChild(poly(f(half([...arm, ...armIn])), 'b'));
+    g.appendChild(poly(f(half(hand)), 'b'));
+    const sx = side ? -1 : 1;
+    el('circle', {cx:150+sx*69, cy:147, r:12, class:'b'}, g);
+    const fingers = [[[104,366],[104.5,398]],[[99,366],[99,402]],[[94,366],[93.5,399]],[[89,364],[88,391]]];
+    for (const [a,b] of fingers) el('line', {x1:150+sx*a[0], y1:a[1], x2:150+sx*b[0], y2:b[1], class:'bf'}, g);
+    el('line', {x1:150+sx*106, y1:346, x2:150+sx*117, y2:374, class:'bf', 'stroke-width':4.8}, g);
+    if (!back){
+      el('ellipse', {cx:150+sx*26.5, cy:64, rx:4, ry:8, class:'b'}, g);
+      el('ellipse', {cx:150+sx*28, cy:462, rx:7, ry:9, class:'bl'}, g);
+      el('path', {d:`M${150+sx*4},130 Q${150+sx*30},127 ${150+sx*60},136`, class:'bl'}, g);
+      el('circle', {cx:150+sx*36, cy:184, r:1.3, class:'blf'}, g);
+      el('ellipse', {cx:150+sx*11, cy:64, rx:4.2, ry:1.7, class:'bl'}, g);
+    } else {
+      el('ellipse', {cx:150+sx*26.5, cy:64, rx:4, ry:8, class:'b'}, g);
+      el('path', {d:`M${150+sx*27},150 L${150+sx*28},203 L${150+sx*52},196 L${150+sx*64},146 Z`, class:'bl'}, g);
+      el('path', {d:`M${150+sx*30},160 L${150+sx*68},142`, class:'bl'}, g);
+      el('path', {d:`M${150+sx*4},370 Q${150+sx*28},378 ${150+sx*50},366`, class:'bl'}, g);
+      el('path', {d:`M${150+sx*20},478 L${150+sx*36},478`, class:'bl'}, g);
+    }
+  }
+  el('rect', {x:138, y:92, width:24, height:36, class:'b'}, g);
+  el('ellipse', {cx:150, cy:60, rx:26, ry:40, class:'b'}, g);
+  if (!back){
+    el('circle', {cx:150, cy:300, r:1.6, class:'blf'}, g);
+    el('path', {d:'M150,70 L147,78 L152,79', class:'bl'}, g);
+    el('path', {d:'M144,88 Q150,91 156,88', class:'bl'}, g);
+  } else {
+    el('path', {d:'M150,128 L150,315', class:'bl', 'stroke-dasharray':'1.5 3'}, g);
+    el('path', {d:'M137,97 Q150,101 163,97', class:'bl'}, g);
+  }
+}
+function drawHead(g){
+  el('path', {d:'M150,30 C198,28 240,68 238,120 C236,160 222,186 211,200 L208,300 L118,300 L114,228 C106,224 96,222 91,213 C88,206 86,200 85,194 C83,188 80,184 80,178 L78,168 C75,164 78,159 80,156 L78,153 C70,151 62,147 63,141 C64,134 74,124 79,113 L82,101 C80,86 84,69 96,52 C110,36 128,30 150,30 Z', class:'b'}, g);
+  el('path', {d:'M160,112 C172,112 173,128 171,142 C170,156 167,169 160,169 C153,169 150,160 151,150 C152,140 148,132 149,124 C150,116 154,112 160,112 Z', class:'b2'}, g);
+  el('path', {d:'M156,122 C163,121 165,132 164,142 C163,151 160,157 156,157', class:'bl'}, g);
+  el('path', {d:'M90,118 Q98,114 106,118 Q98,121 90,118 Z', class:'bl'}, g);
+  el('path', {d:'M86,104 Q98,99 112,102', class:'bl'}, g);
+  el('path', {d:'M96,217 Q126,214 152,209 L144,166', class:'bl'}, g);
+  el('path', {d:'M110,139 Q128,136 147,137', class:'bl', 'stroke-dasharray':'2 2.5'}, g);
+}
+
+/* ---------- puntos ---------- */
+const svg = $('#map');
+let layer = {};
+function build(){
+  svg.innerHTML = '';
+  const defs = el('defs', {}, svg);
+  const style = el('style', {}, defs);
+  style.textContent = `.b{fill:var(--body)} .b2{fill:var(--body);stroke:var(--body-line);stroke-width:.8} .bf{stroke:var(--body);stroke-width:4.2;stroke-linecap:round} .bl{fill:none;stroke:var(--body-line);stroke-width:.8;stroke-linecap:round} .blf{fill:var(--body-line)}
+  .trace{fill:none;stroke-width:.7;opacity:.4;stroke-linejoin:round} .p{cursor:pointer} .p text{font-family:var(--f-mono);font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-linejoin:round}
+  .p.dim{opacity:.16} .p.dim text{display:none} .p .hl{fill:none;stroke:var(--seal)} .sel .hl{stroke-width:1.2}`;
+  const v = st.view;
+  const g = el('g', {}, svg);
+  if (v === 'lat') drawHead(g); else drawBody(g, v === 'post');
+  const traces = el('g', {}, svg), pts = el('g', {}, svg);
+  layer = {traces, pts, nodes:[]};
+  // trazos de meridiano: puntos consecutivos de la misma vista
+  for (const m of DATA.meridians){
+    const list = PTS.filter(p => p.mer === m.code);
+    let run = [];
+    const flush = () => { if (run.length > 1) for (const side of (v === 'lat' || run.every(p=>p.x===0) ? [1] : [1,-1])){
+        el('polyline', {points: run.map(p => xy(p, side).join(',')).join(' '), class:'trace', stroke:col(m.code), 'data-m':m.code}, traces); }
+      run = []; };
+    for (let i=0; i<list.length; i++){
+      const p = list[i], prev = run[run.length-1];
+      if (p.view !== v){ flush(); continue; }
+      if (prev && Math.hypot(p.x-prev.x, p.y-prev.y) > 70){ flush(); }
+      run.push(p);
+    }
+    flush();
+  }
+  for (const p of PTS){
+    if (p.view !== v) continue;
+    const sides = (v === 'lat' || p.x === 0) ? [1] : [1,-1];
+    for (const side of sides){
+      const [x,y] = xy(p, side);
+      const gp = el('g', {class:'p', 'data-c':p.code, transform:`translate(${x},${y})`, tabindex: side===1 ? 0 : -1, role:'button', 'aria-label': `${label(p)} ${p.pinyin}`}, pts);
+      el('circle', {class:'hit', r:5, fill:'transparent'}, gp);
+      const halo = el('circle', {class:'hl', r:0, 'stroke-width':1}, gp);
+      let mark;
+      if (p.mer === 'EX') mark = el('rect', {fill:col('EX')}, gp);
+      else if (YIN.has(p.mer)) mark = el('circle', {fill:col(p.mer)}, gp);
+      else mark = el('circle', {fill:'var(--surface)', stroke:col(p.mer)}, gp);
+      const t = el('text', {'text-anchor': side===1 ? 'start' : 'end'}, gp); t.textContent = label(p);
+      layer.nodes.push({p, gp, mark, halo, t, side});
+    }
+  }
+  bindPoints();
+  applyVB();
+  refresh();
+}
+function xy(p, side){ return st.view === 'lat' ? [p.x, p.y] : [150 + side*p.x, p.y]; }
+
+/* ---------- zoom y arrastre ---------- */
+function applyVB(){
+  if (!st.vb) st.vb = VIEWS[st.view].vb.slice();
+  svg.setAttribute('viewBox', st.vb.join(' '));
+  const base = VIEWS[st.view].vb[2], z = base / st.vb[2];
+  const k = (st.view === 'lat' ? 1.45 : 1) / Math.pow(z, .72);
+  for (const n of layer.nodes){
+    const r = 2.05 * k, extra = n.p.mer === 'EX';
+    if (extra){ const s = r*1.5; n.mark.setAttribute('x', -s/2); n.mark.setAttribute('y', -s/2); n.mark.setAttribute('width', s); n.mark.setAttribute('height', s); n.mark.setAttribute('transform','rotate(45)'); }
+    else { n.mark.setAttribute('r', YIN.has(n.p.mer) ? r : r*.85); n.mark.setAttribute('stroke-width', r*.55); }
+    n.gp.querySelector('.hit').setAttribute('r', Math.max(r*2.4, 4.5*k));
+    n.t.setAttribute('font-size', 6.2*k); n.t.setAttribute('stroke-width', 2.2*k);
+    n.t.setAttribute('x', (n.side===1 ? 1 : -1) * r*1.7); n.t.setAttribute('y', 2.1*k);
+    n.halo.dataset.r = r;
+  }
+  svg.querySelectorAll('.trace').forEach(t => t.setAttribute('stroke-width', .8*k));
+  st.k = k; st.z = z; refresh();
+}
+function zoomAt(f, cx, cy){
+  const [x,y,w,h] = st.vb, base = VIEWS[st.view].vb;
+  const nw = Math.min(base[2], Math.max(base[2]/14, w/f)), nh = nw * h / w;
+  if (cx == null){ cx = x + w/2; cy = y + h/2; }
+  st.vb = [cx - (cx - x) * nw / w, cy - (cy - y) * nh / h, nw, nh];
+  applyVB();
+}
+function toSvg(e){ const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; return pt.matrixTransform(svg.getScreenCTM().inverse()); }
+const box = $('#box'); const ptrs = new Map(); let drag = null, moved = false;
+box.addEventListener('wheel', e => { e.preventDefault(); const p = toSvg(e); zoomAt(e.deltaY < 0 ? 1.18 : 1/1.18, p.x, p.y); }, {passive:false});
+box.addEventListener('pointerdown', e => {
+  if (e.target.closest('.zoom')) return;
+  ptrs.set(e.pointerId, e); moved = false;
+  if (ptrs.size === 1){ drag = {x:e.clientX, y:e.clientY, vb:st.vb.slice()}; }
+  if (ptrs.size === 2){ const [a,b] = [...ptrs.values()]; drag = {pinch: Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY), vb:st.vb.slice()}; }
+});
+box.addEventListener('pointermove', e => {
+  if (!ptrs.has(e.pointerId)) return;
+  ptrs.set(e.pointerId, e);
+  const rect = svg.getBoundingClientRect(), scale = Math.max(st.vb[2]/rect.width, st.vb[3]/rect.height);
+  if (ptrs.size === 1 && drag && !drag.pinch){
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4){ moved = true; box.classList.add('dragging'); if (!box.hasPointerCapture(e.pointerId)) box.setPointerCapture(e.pointerId); }
+    if (moved){ st.vb = [drag.vb[0] - dx*scale, drag.vb[1] - dy*scale, drag.vb[2], drag.vb[3]]; svg.setAttribute('viewBox', st.vb.join(' ')); }
+  } else if (ptrs.size === 2 && drag && drag.pinch){
+    const [a,b] = [...ptrs.values()]; const d = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+    moved = true; const f = d / drag.pinch; st.vb = drag.vb.slice(); const mid = toSvg({clientX:(a.clientX+b.clientX)/2, clientY:(a.clientY+b.clientY)/2});
+    zoomAt(f, mid.x, mid.y);
+  }
+});
+const endPtr = e => { ptrs.delete(e.pointerId); if (!ptrs.size){ drag = null; box.classList.remove('dragging'); } };
+box.addEventListener('pointerup', endPtr); box.addEventListener('pointercancel', endPtr);
+$('#zin').onclick = () => zoomAt(1.5); $('#zout').onclick = () => zoomAt(1/1.5);
+$('#zreset').onclick = () => { st.vb = null; applyVB(); };
+
+/* ---------- interacción con puntos ---------- */
+const tip = $('#tip');
+function bindPoints(){
+  for (const n of layer.nodes){
+    n.gp.addEventListener('click', () => { if (!moved) select(n.p.code, false, true); });
+    n.gp.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); select(n.p.code, false, true); } });
+    n.gp.addEventListener('pointerenter', e => {
+      if (e.pointerType === 'touch') return;
+      const r = box.getBoundingClientRect(), c = n.gp.getBoundingClientRect();
+      tip.innerHTML = `<b>${label(n.p)}</b> ${n.p.pinyin}`; tip.hidden = false;
+      tip.style.left = (c.left + c.width/2 - r.left) + 'px'; tip.style.top = (c.top - r.top) + 'px';
+    });
+    n.gp.addEventListener('pointerleave', () => tip.hidden = true);
+  }
+}
+function setView(v, keepVB){
+  if (v !== st.view){ st.view = v; if (!keepVB) st.vb = null; }
+  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.view === v));
+  build();
+}
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => setView(t.dataset.view));
+
+function focusPoint(p){
+  if (p.view !== st.view){ st.view = p.view; st.vb = null; setView(p.view); }
+  const base = VIEWS[st.view].vb, w = base[2] / 3.2, h = w * base[3] / base[2];
+  const [x,y] = xy(p, 1);
+  st.vb = [x - w/2, y - h/2, w, h]; applyVB();
+}
+function select(code, center, fromMap){
+  const p = BY[code]; if (!p) return;
+  st.sel = code;
+  if (center || p.view !== st.view) focusPoint(p); else refresh();
+  renderDetail();
+  if (fromMap && window.innerWidth <= 900) $('#detail').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth', block:'start'});
+}
+
+function refresh(){
+  const sym = st.sym ? DATA.symptoms[st.sym] : null;
+  const main = new Set(sym ? sym.principal : []), all = new Set(sym ? sym.all : []);
+  for (const n of layer.nodes){
+    const p = n.p, inMer = st.mers.has(p.mer);
+    const inSym = !sym || all.has(p.code);
+    const isSel = st.sel === p.code;
+    const dim = !isSel && (!inMer || !inSym);
+    n.gp.classList.toggle('dim', dim);
+    n.gp.classList.toggle('sel', isSel);
+    const r = +n.halo.dataset.r || 2;
+    n.halo.setAttribute('r', isSel ? r*2.6 : (sym && main.has(p.code) ? r*2 : 0));
+    n.halo.setAttribute('stroke-width', (isSel ? .9 : .6) * (st.k||1));
+    const showLabel = isSel || (sym && all.has(p.code) && inMer) || (st.z >= 2.6 && !dim);
+    n.t.style.display = showLabel ? '' : 'none';
+  }
+  if (layer.nodes.length){
+    const sel = layer.nodes.filter(n => n.p.code === st.sel);
+    sel.forEach(n => n.gp.parentNode.appendChild(n.gp));
+  }
+  svg.querySelectorAll('.trace').forEach(t => t.style.display = st.mers.has(t.dataset.m) && !sym ? '' : 'none');
+  document.querySelectorAll('.tab').forEach(t => {
+    const n = sym ? PTS.filter(p => p.view === t.dataset.view && all.has(p.code)).length : 0;
+    t.querySelector('.n').textContent = n ? n : '';
+  });
+}
+
+/* ---------- ficha ---------- */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const md = s => esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>');
+function renderDetail(){
+  const d = $('#detail'), p = BY[st.sel];
+  if (!p){ d.innerHTML = '<p class="empty">Elige un punto en el mapa o búscalo por su código.</p>'; return; }
+  const list = PTS.filter(x => x.mer === p.mer), i = list.indexOf(p);
+  const preg = /embarazo/i.test(p.prec + ' ' + p.ins);
+  const fields = [['Ubicación', p.ubic], ['Categorías', p.cat], ['Acciones', p.acc], ['Indicaciones', p.ind], ['Inserción', p.ins]];
+  d.innerHTML = `
+    <div class="pt-head">
+      <div class="pt-code" style="color:${col(p.mer)}">${esc(label(p))}</div>
+      <div class="pt-names">
+        <div class="pt-pin">${esc(p.pinyin)}${p.hanzi ? `<span class="cjk">${esc(p.hanzi)}</span>` : ''}</div>
+        ${p.trad ? `<div class="pt-trad">“${esc(p.trad)}”</div>` : ''}
+      </div>
+    </div>
+    <div class="merline"><span class="badge" style="color:${col(p.mer)}">${ELNAME[ELEM[p.mer]]}</span>
+      <span>${esc(p.mer === 'EX' ? 'Punto extra' + (p.excode ? ' · ' + p.excode : '') : MERS[p.mer].name)}</span>
+      ${preg ? '<span class="badge preg">Precaución en embarazo</span>' : ''}</div>
+    <dl class="f">
+      ${fields.filter(f => f[1] && f[1] !== '—').map(f => `<div><dt>${f[0]}</dt><dd>${md(f[1])}</dd></div>`).join('')}
+      ${p.prec && p.prec !== '—' ? `<div class="warn"><dt>Precauciones</dt><dd>${md(p.prec)}</dd></div>` : ''}
+    </dl>
+    <div class="nav">
+      <button type="button" id="prev" ${i<=0?'disabled':''}>← ${i>0?esc(label(list[i-1])):''}</button>
+      <button type="button" id="next" ${i>=list.length-1?'disabled':''}>${i<list.length-1?esc(label(list[i+1])):''} →</button>
+    </div>`;
+  if (i>0) $('#prev').onclick = () => select(list[i-1].code, true);
+  if (i<list.length-1) $('#next').onclick = () => select(list[i+1].code, true);
+}
+
+/* ---------- síntomas ---------- */
+const symSel = $('#sym');
+symSel.innerHTML = '<option value="">— Ninguno —</option>' + DATA.systems.map(sys =>
+  `<optgroup label="${esc(sys)}">` + DATA.symptoms.map((s,i) => s.system === sys ? `<option value="${i}">${esc(s.name)}</option>` : '').join('') + '</optgroup>').join('');
+symSel.onchange = () => setSym(symSel.value === '' ? null : +symSel.value);
+const CODE_RE = /\b(?:LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|CV|GV)\d{1,2}\b/g;
+const EXN = Object.fromEntries(PTS.filter(p => p.mer === 'EX').map(p => [p.code.slice(3), p.code]));
+Object.assign(EXN, {Yintang:'GV29', Bitong:'EX:Shangyingxiang', Luozhen:'EX:Wailaogong', Xiyan:'EX:Neixiyan', Jianneiling:'EX:Jianqian'});
+const EXN_RE = new RegExp('\\b(' + Object.keys(EXN).sort((a,b)=>b.length-a.length).join('|') + ')\\b', 'g');
+function chipify(html, main){
+  html = html.replace(CODE_RE, c => BY[c] ? `<button type="button" class="chip pt${main.has(c)?' main':''}" data-go="${c}" style="--c:${col(BY[c].mer)}"><span class="dot" style="background:${col(BY[c].mer)}"></span>${c}</button>` : c);
+  html = html.replace(EXN_RE, n => { const c = EXN[n]; return BY[c] ? `<button type="button" class="chip pt${main.has(c)?' main':''}" data-go="${c}"><span class="dot" style="background:${col(BY[c].mer)}"></span>${n}</button>` : n; });
+  return html;
+}
+function setSym(i){
+  st.sym = i; symSel.value = i == null ? '' : String(i);
+  const c = $('#symcard');
+  if (i == null){ c.hidden = true; refresh(); return; }
+  const s = DATA.symptoms[i], main = new Set(s.principal);
+  let html = '', open = false;
+  for (const line of s.body){
+    const m = line.match(/^(\s*)- (.*)$/);
+    if (!m) continue;
+    const content = chipify(md(m[2]), main);
+    if (m[1].length < 2){
+      if (open){ html += '</ul>'; open = false; }
+      if (html) html += '</li>';
+      html += '<li>' + content;
+    } else {
+      if (!open){ html += '<ul>'; open = true; }
+      html += '<li>' + content + '</li>';
+    }
+  }
+  if (open) html += '</ul>';
+  if (html) html += '</li>';
+  c.innerHTML = `<button type="button" class="x" id="symx">Quitar</button><span class="lbl">${esc(s.system)}</span><h3>${esc(s.name)}</h3>${s.syn ? `<p class="syn">${esc(s.syn)}</p>` : ''}<ul>${html}</ul>`;
+  c.hidden = false;
+  $('#symx').onclick = () => setSym(null);
+  c.querySelectorAll('[data-go]').forEach(b => b.onclick = () => select(b.dataset.go, true));
+  // abrir en la vista con más puntos principales
+  const cnt = {}; for (const code of s.principal) cnt[BY[code].view] = (cnt[BY[code].view]||0) + 1;
+  const best = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0];
+  if (best && best[0] !== st.view){ st.view = best[0]; st.vb = null; setView(best[0]); } else { st.vb = null; applyVB(); }
+  refresh();
+}
+
+/* ---------- filtros de meridiano ---------- */
+const mersEl = $('#mers');
+mersEl.innerHTML = `<button type="button" class="chip" id="mall" aria-pressed="true">Todos</button>` + ORDER.map(m =>
+  `<button type="button" class="chip" data-m="${m}" aria-pressed="true" title="${esc(MERS[m].name)}"><span class="dot" style="${YIN.has(m)||m==='EX' ? `background:${col(m)}` : `border:2px solid ${col(m)};background:transparent`}"></span>${m}</button>`).join('');
+mersEl.querySelectorAll('[data-m]').forEach(b => b.onclick = () => {
+  const m = b.dataset.m;
+  if (st.mers.size === ORDER.length){ st.mers = new Set([m]); }
+  else if (st.mers.has(m)){ st.mers.delete(m); if (!st.mers.size) st.mers = new Set(ORDER); }
+  else st.mers.add(m);
+  syncMers(); refresh();
+});
+$('#mall').onclick = () => { st.mers = new Set(ORDER); syncMers(); refresh(); };
+function syncMers(){ mersEl.querySelectorAll('[data-m]').forEach(b => b.setAttribute('aria-pressed', st.mers.has(b.dataset.m))); $('#mall').setAttribute('aria-pressed', st.mers.size === ORDER.length); }
+
+/* ---------- búsqueda ---------- */
+const ALIAS = {P:'LU',IG:'LI',E:'ST',B:'SP',BP:'SP',C:'HT',ID:'SI',V:'BL',R:'KI',MC:'PC',SJ:'TE',TR:'TE',TC:'TE',VB:'GB',H:'LR',HG:'LR',F:'LR',RM:'CV',VC:'CV',REN:'CV',DM:'GV',VG:'GV',DU:'GV'};
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[\s\-·']/g,'');
+PTS.forEach(p => p._n = norm(p.pinyin + ' ' + p.trad));
+DATA.symptoms.forEach(s => s._n = norm(s.name + ' ' + s.syn));
+const q = $('#q'), res = $('#res');
+function search(text){
+  const t = text.trim(); if (!t) return [];
+  const out = [];
+  const m = t.toUpperCase().replace(/\s+/g,'').match(/^([A-Z]{1,3})-?(\d{1,2})$/);
+  if (m){ const mer = ALIAS[m[1]] || m[1], c = mer + (+m[2]); if (BY[c]) out.push({t:'p', c}); }
+  const n = norm(t);
+  if (n.length >= 2){
+    for (const s of DATA.symptoms) if (s._n.includes(n)) out.push({t:'s', i:DATA.symptoms.indexOf(s)});
+    for (const p of PTS) if (p._n.includes(n) && !out.some(o => o.c === p.code)) out.push({t:'p', c:p.code});
+  }
+  return out.slice(0, 10);
+}
+function showRes(){
+  const r = search(q.value);
+  if (!r.length){ res.hidden = true; return; }
+  res.innerHTML = r.map((o,k) => o.t === 'p'
+    ? `<li><button type="button" data-k="${k}"><span class="k" style="color:${col(BY[o.c].mer)}">${esc(label(BY[o.c]))}</span><span class="d">${esc(BY[o.c].pinyin)} · ${esc(SHORT[BY[o.c].mer])}</span></button></li>`
+    : `<li><button type="button" data-k="${k}"><span class="k">Síntoma</span><span class="d">${esc(DATA.symptoms[o.i].name)}</span></button></li>`).join('');
+  res.hidden = false;
+  res.querySelectorAll('button').forEach(b => b.onclick = () => pick(r[+b.dataset.k]));
+}
+function pick(o){ res.hidden = true; q.value = ''; if (o.t === 'p') select(o.c, true); else setSym(o.i); }
+q.addEventListener('input', showRes);
+q.addEventListener('keydown', e => { if (e.key === 'Enter'){ const r = search(q.value); if (r.length) pick(r[0]); } if (e.key === 'Escape'){ res.hidden = true; } });
+document.addEventListener('click', e => { if (!e.target.closest('.search')) res.hidden = true; });
+
+/* ---------- inicio ---------- */
+build();
+const hash = decodeURIComponent(location.hash.slice(1)).toUpperCase();
+const startSym = DATA.symptoms.findIndex(s => s.name === 'Insomnio');
+if (BY[hash]) { select(hash, true); }
+else { setSym(startSym >= 0 ? startSym : null); select('HT7', false); }
+</script>
