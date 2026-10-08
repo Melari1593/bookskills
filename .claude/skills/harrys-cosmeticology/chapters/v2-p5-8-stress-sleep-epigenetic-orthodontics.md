@@ -6,9 +6,11 @@ Inner physiologic, metabolic, neurologic and psychological well-being shows on t
 
 ## Frameworks Introduced
 - **Sleep architecture (8-hour night)**: 4–5 cycles of ~90 min–2 h
-  - N1 ~5% (light, alpha waves 8–13 Hz awake → slowing), N2 ~50% (N1+N2 "light sleep" ~55%, first light cycle 35–60 min), N3 deep sleep ~20% (mostly in first 3–4 h
-  - Main growth hormone pulse in first N3 period), REM ~20–25% (dreaming, memory consolidation in hippocampus, executive function
-  - Mostly early-morning hours). Quality sleep = enough deep + REM.
+  - N1 ~5%: transition; awake alpha waves 8–13 Hz slow down
+  - N2 ~50%: N1+N2 = "light sleep" ~55%; first light cycle 35–60 min
+  - N3 deep sleep ~20%: mostly in first 3–4 h; main growth hormone pulse in first N3 period
+  - REM ~20–25%: dreaming, memory consolidation in hippocampus, executive function; mostly early-morning hours
+  - Quality sleep = enough deep + REM.
   - When to use: explaining "beauty sleep" claims and night-repair positioning.
 - **HPA stress axis**: threat → hypothalamus releases CRF + vasopressin → pituitary ACTH → adrenals release cortisol, epinephrine, norepinephrine
   - Cortisol normally shuts the axis off via negative feedback. Chronic stress = prolonged overactivation, not intensity.

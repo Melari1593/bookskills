@@ -7,22 +7,21 @@ Of the currently held aging mechanisms (ROS, mitochondrial dysfunction, telomere
 ## Frameworks Introduced
 - **AGE formation pathway**: reducing sugar aldehyde + protein amine → Schiff base → Amadori compound (both reversible) → near-irreversible AGEs. Amadori stage releases reactive glycotoxins: glyoxal (GO), methylglyoxal (MGO), 3-deoxyglucosone (3-DG), fructosamines → AGEs such as CML, CMA, CMC, CEL, pentosidine, pyrraline.
   - When to use: deciding where an anti-glycation active acts (prevention vs. reversal).
-- **Anti-glycation strategy types**: (1) antioxidants (most proposals)
-  - (2) "sacrifice" molecules competing for sugars (aspirin acetylates lysine
-  - Lys/Arg oligopeptides)
-  - (3) carbonyl scavengers/transglycation (decarboxy carnosine)
-  - (4) stimulate endogenous deglycation/detox (glyoxalase-1/-2 via GSH
-  - Fructosamine-3-kinase FN3K
-  - Amadoriases)
+- **Anti-glycation strategy types**:
+  - (1) Antioxidants (most proposals)
+  - (2) "Sacrifice" molecules competing for sugars (aspirin acetylates lysine; Lys/Arg oligopeptides)
+  - (3) Carbonyl scavengers / transglycation (decarboxy carnosine)
+  - (4) Stimulating endogenous deglycation/detox (glyoxalase-1/-2 via GSH; fructosamine-3-kinase FN3K; Amadoriases)
   - (5) AGE cross-link breakers (Alagebrium, YAC extract, flavanones cleaving α-diketones)
-  - (6) acidic pH.
+  - (6) Acidic pH
 - **Prevention vs. cure test protocol**: pre-incubate cells/skin with MGO before applying the active (glycation already underway) — more challenging and realistic than co-incubating aggressor and protector.
-- **Two cellular clearance systems**: ubiquitin–proteasome (short-lived soluble proteins) and autophagy (long-lived proteins, damaged organelles such as mitochondria
-  - Takes over when proteasome is overwhelmed, oxidized or glycated). Autophagy marker: LC3-II.
+- **Two cellular clearance systems**:
+  - Ubiquitin–proteasome: short-lived soluble proteins
+  - Autophagy: long-lived proteins and damaged organelles such as mitochondria; takes over when the proteasome is overwhelmed, oxidized or glycated. Marker: LC3-II.
 - **Two paths to preserve telomeres**: classical antioxidant protection of DNA/enzymes (incl. telomerase) vs. increasing telomerase expression/activity without inducing malignancy; plus protecting the shelterin (telosome) complex.
-- **Senescence models**: replicative senescence (months of passaging
-  - Cells enlarge, doubling slows
-  - SA-β-gal rises, telomeres shorten) vs. Stress-Induced Premature Senescence (SIPS, repeated low-dose oxidative stress e.g. H2O2) — similar morphology, far faster for testing.
+- **Senescence models**:
+  - Replicative senescence: months of passaging; cells enlarge, doubling slows; SA-β-gal rises, telomeres shorten
+  - Stress-Induced Premature Senescence (SIPS): repeated low-dose oxidative stress (e.g., H2O2) — similar morphology, far faster for testing.
 
 ## Key Concepts
 - **Glycation**: non-enzymatic sugar–protein reaction (Maillard, 1912)

@@ -33,9 +33,9 @@ Aging is a progressive loss of structural integrity and physiological function d
   - Embryonic fibroblasts divide 50×, adult fibroblasts only ~20×
   - Speculated pituitary "DOCH" (decreasing oxygen consumption hormone) blocks thyroxin use.
 - **Caloric restriction theory**: extends life span in yeast, flies, worms, mice, primates (>2,000 studies)
-  - Mediated by sirtuins (SIR2 in yeast
-  - SIRT1 in humans) via gene silencing and DNA repair, not antioxidant pathways. Humans have ~24,000–25,000 genes. People practicing CR do not look young — skin sallow, wrinkled
-  - They look older than stated age on facial evaluation.
+  - Mediated by sirtuins (SIR2 in yeast; SIRT1 in humans) via gene silencing and DNA repair, not antioxidant pathways
+  - Humans have ~24,000–25,000 genes
+  - People practicing CR do not look young — skin sallow, wrinkled; they look older than stated age on facial evaluation.
 - **Cross-linking (glycosylation) theory**: glucose binding to proteins (in presence of oxygen) and cross-links between peptide strands irreversibly alter enzymes and collagen
   - Elastic fibers replaced by less flexible collagen
   - Collagen cross-linking responsible for wrinkling

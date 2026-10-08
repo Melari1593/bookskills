@@ -5,9 +5,8 @@
 Cellular aging is characterized by oxidative stress, inflammation and cell senescence; senescence itself initiates oxidative stress and inflammation, so managing it is essential to any "single-bullet" anti-aging regimen (one bundle of multifunctional ingredients instead of layering many products, which overloads skin and reduces perceived efficacy). Senescence is driven by dysfunction of key enzymes (antioxidant enzymes, peroxisomes, proteasome, mitochondria) and by osmotic (hyperosmolar) stress that triggers inflammation. The authors propose osmoprotective "anti-senescence" agents — notably patented glutaminylglutamine amide (dipeptide) derivatives inspired by bacterial osmolytes — as a new class of skin anti-aging actives.
 
 ## Frameworks Introduced
-- **Single-bullet treatment**: one bundle of ingredients performing multiple functions (anti-wrinkle, brightening, anti-inflammatory, antioxidant) based on anti-senescence (Gupta & Walker patents, US 8,212,076
-  - 8,258,343
-  - 8,293,943).
+- **Single-bullet treatment**: one bundle of ingredients performing multiple functions (anti-wrinkle, brightening, anti-inflammatory, antioxidant) based on anti-senescence
+  - Basis: Gupta & Walker patents US 8,212,076, 8,258,343 and 8,293,943.
   - When to use: consumers stacking many anti-aging products.
   - How: combine anti-senescence osmoprotectant + antioxidants + anti-inflammatories + brighteners in one leave-on base.
 - **Enzyme-dysfunction model of senescence**: (a) oxidative stress/free radicals, (b) peroxisomes, (c) immunosenescence, (d) AGEs, (e) proteasome decline, (f) mitochondrial free radical theory (MFRTA).

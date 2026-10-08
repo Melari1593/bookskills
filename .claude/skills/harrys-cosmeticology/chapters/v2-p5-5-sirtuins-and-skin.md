@@ -41,6 +41,10 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases �
 | Nicotinamide (niacinamide) | Sirtuin feedback inhibitor (binds catalytic pocket) | Not given | Proposed for hyperproliferative conditions (psoriasis); low MW, non-cytotoxic |
 
 ## Formulation & Practical Guidance
+- Assay choice: confirm activator claims with methods independent of fluorescent-labeled substrates (resveratrol artifact); add functional endpoints (gene silencing, ATP, SOD2 activity, lifespan/viability).
+- Metabolic angle: because sirtuins need NAD+, energy status and the NAD+/nicotinamide balance (Nampt, Nmnat salvage) set activity — a rationale for "caloric-restriction mimetic" positioning.
+- Circadian link: SIRT1 deacetylates BMAL-1 and sirtuins oscillate diurnally — sirtuin actives can be positioned within chronobiology (night) regimens.
+- Anti-pollution link: ozone lowers SIRT3 → less SOD2 activation → more superoxide; antioxidants plus sirtuin support address both.
 - Selection criteria for a cosmetic sirtuin modulator: biological activity, safety, small enough to penetrate the stratum corneum, stable and active in the finished formula.
 - Do not combine high nicotinamide levels with a sirtuin-activation claim without considering feedback inhibition (nicotinamide inhibits sirtuins).
 - In vitro test models used: normal human epidermal keratinocytes (NHEK) after overnight starvation and synchronization, then repletion; RT-PCR for SIRT3/SIRT4 mRNA (normally inversely proportional: SIRT3 up, SIRT4 down on repletion).
@@ -55,6 +59,7 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases �
 - Environmental stress is a sirtuin stressor alongside caloric status.
 
 ## Anti-patterns
+- **Using a sirtuin inhibitor in an anti-aging claim context**: inhibition (nicotinamide) fits hyperproliferative conditions, activation fits anti-aging.
 - **Trusting fluorescent-substrate sirtuin assays uncritically**: resveratrol's reported activation may be an assay artifact.
 - **Assuming lifespan data transfer cleanly**: Sir2 overexpression lifespan results in C. elegans were controversial and smaller than first reported.
 - **Ignoring UV/ozone exposure in sirtuin product design**: both suppress keratinocyte sirtuin expression.

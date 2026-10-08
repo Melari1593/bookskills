@@ -36,6 +36,9 @@ Nearly every skin cell carries clock genes synchronized by the master clock in t
   - Restoring rhythm increases long-term regenerative capacity (Janich/Benitah 2011).
 
 ## Formulation & Practical Guidance
+- Evening/night: support DNA repair (AGT peaks at midnight, XPA at night) and proliferation-driven renewal; stem-cell division peaks at night.
+- Itch-prone and dermatitis-prone consumers: night is the vulnerable window (higher itch, low barrier recovery); clock-deficient models show more severe dermatitis.
+- Energy/ATP claims: ATP production is rhythmic; UVB flattens the rhythm — pair UV protection with energy-supporting actives.
 - Night products: target repair/regeneration and leverage higher barrier permeability (penetration higher evening/night) — but also higher night TEWL and lowest barrier recovery 8–11 p.m., so support barrier in evening routines.
 - Day products: emphasize protection (UV, antioxidant, environmental), since cells minimize proliferation and maximize defense by day.
 - Protect clock synchrony: UVB even at low, non-cytotoxic doses (10 mJ/cm²) desynchronizes keratinocyte clock genes and energy rhythms — UV protection doubles as clock protection.
@@ -49,11 +52,22 @@ Nearly every skin cell carries clock genes synchronized by the master clock in t
 - Lifestyle desynchronizers (night work, travel, stress) are aging accelerators.
 
 ## Anti-patterns
+- **Assuming the human clock is exactly 24 h**: free-running rhythm is slightly longer and needs daily light resetting; travelers need a few days to resynchronize.
+- **Testing rhythmic endpoints in unsynchronized cultures**: oscillations are averaged out; synchronize first.
 - **Ignoring time of day in product design and testing**: misses optimal efficacy windows.
 - **Treating low-dose UVB as harmless**: 10 mJ/cm² suppresses clock genes ~20 h and ATP rhythm >10 h.
 - **Chronic circadian disruption (shift work, long-haul flying)**: linked to metabolic disease, cancers and accelerated aging.
 
 ## Reference Tables
+| Clock component | Role |
+|---|---|
+| SCN (hypothalamus) | Master clock; ~20,000 neurons; light via retina |
+| CLOCK / BMAL1 | Activator heterodimer; binds E-boxes |
+| PER1–3 / CRY1–2 | Repressors; PER/CRY complex inhibits CLOCK/BMAL1 |
+| REV-ERBα / RORα | Repress / activate BMAL1 via RRE |
+| DBP | Clock-controlled gene |
+| Casein kinase | Phosphorylates PERs (import, degradation) |
+
 | Skin parameter | Day | Night |
 |---|---|---|
 | Thickness | Highest | Lower |
