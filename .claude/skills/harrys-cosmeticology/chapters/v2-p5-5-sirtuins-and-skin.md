@@ -33,6 +33,11 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases �
   - SIRT3 deacetylation of SOD2 is required for its activation and superoxide scavenging. SIRT4 (up-regulated by caloric restriction) ADP-ribosylates and inhibits glutamate (glutamine) dehydrogenase → less α-ketoglutarate, less ATP — SIRT3 and SIRT4 balance each other. SIRT5 deacetylates carbamoyl phosphate synthetase (urea cycle).
 - **NAD+ coupling**: NAD+ is the main electron acceptor in ATP synthesis, so sirtuins track metabolic state — the mechanism for lifespan extension by caloric restriction.
 
+- **Sirtuin deficiency phenotype**: animals deficient in sirtuins show a clearly accelerated aging phenotype.
+- **Keratinocyte differentiation**: SIRT1 promotes differentiation of normal human keratinocytes (may extend to full-thickness skin).
+- **UVB effect on keratinocyte energy**: 10 mJ/cm² UVB abrogated SIRT3/SIRT4 inverse expression, decreased ATP, increased H2O2.
+- **Ozone effect**: ~0.4 ppm for 30 min decreased SIRT3 protein in NHEK.
+
 ## Ingredients & Actives
 | Ingredient (INCI/common) | Function / mechanism | Use level / data given in the text | Notes |
 |---|---|---|---|
@@ -57,6 +62,7 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases �
 - Organelle-specific levers: nuclear sirtuins regulate genes; mitochondrial sirtuins regulate enzymes directly (control beyond the genome).
 - Activate for aging, inhibit for hyperproliferation — the same pathway serves opposite product goals.
 - Environmental stress is a sirtuin stressor alongside caloric status.
+- Sirtuins explain caloric restriction: gene silencing + reduced energy metabolism under low NAD+ is the mechanistic bridge from diet to longevity.
 
 ## Anti-patterns
 - **Using a sirtuin inhibitor in an anti-aging claim context**: inhibition (nicotinamide) fits hyperproliferative conditions, activation fits anti-aging.

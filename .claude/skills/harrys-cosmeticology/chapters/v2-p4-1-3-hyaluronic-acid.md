@@ -55,6 +55,9 @@ Hyaluronan (HA) is a linear polyanionic polysaccharide whose fixed carboxyl char
 - In ESI-MS, tune cone voltage: too high creates charged-species artifacts; too low gives too few ions and odd-numbered artifacts.
 - Unmodified HA enhanced skin partitioning of diclofenac and ibuprofen vs water, pectin and CMC; HA micelles/liposomes can >2× epidermal delivery of small hydrophobic drugs.
 - Recommend "refilling" skin with topical HA from adolescence.
+- Filtration through 0.22 µm nylon is acceptable for HA solutions when properly diluted (no MW/viscosity change); biological impact not yet established.
+- For hydrogels, verify swelling ratio, compression (smoothness), rheology and shear modulus after cross-linking; expect higher substitution → stiffer, less swelling gel.
+- Hydrophobized HA (amphiphilic) can self-assemble into micro/nano vehicles (liposome-, microemulsion-, micelle-like) to stabilize poorly soluble lipophilic actives and nutrients.
 
 ## Mental Models
 - Size decides mode: big HA = physical humectant film; small HA = biological signal.

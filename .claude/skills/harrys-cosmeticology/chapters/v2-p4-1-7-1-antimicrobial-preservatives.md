@@ -52,6 +52,11 @@ Most cosmetic products and ingredients degrade—microbially (bacteria, fungi) a
 - Design for abusive storage temperatures (cars, purses, hot climates).
 - Verify preservative legality and maximum levels in every target market (FDA, FTC, EPA; Canada Hot List) before launch.
 - Never rely on an antibacterial active (gram-positive skin flora) to preserve the product.
+- Remember aw also governs enzyme and vitamin activity in the finished product, affecting color and aroma, not only microbial growth.
+- Expect both aerobic and anaerobic spoilers: product oxygen tension normally supports growth.
+- Preservatives also guard against chemical drift: without them, "unbalanced" functional chemistry decays to stable, less active forms (color/odor change, weaker cleaning).
+- Toxicology of preservatives is essential but outside this chapter's focus—verify separately.
+- Reference sources for frequency/regulatory data: Steinberg, Preservatives for Cosmetics (3rd ed., 2012).
 
 ## Mental Models
 - Hurdle thinking: growth needs water, nutrients, pH, osmotic and temperature conditions—remove enough of them.

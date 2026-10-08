@@ -42,6 +42,12 @@ Live organisms are not required for probiotic benefit: specific cell-wall biomol
 - Probiotic ingredients can be natural and often certifiable organic—position as safe, green, effective.
 - Exclude or caution certain consumers: defensins are overproduced in conditions such as psoriasis, so immune-stimulating probiotics are not suitable for everyone.
 
+- Formulators find it hard to choose probiotic ingredients because effects of killed/fractionated materials historically could not be judged without human or animal testing—use the defensin assay to close this gap.
+- Fractionation (mechanical, chemical, enzymatic) is used to raise bioavailability of the key cell-wall molecules; specify which fraction and which organism.
+- Same molecule = same effect: a beta-1,3-D-glucan gives the same stimulation regardless of source, so specify the molecule rather than the source.
+- Claims territory: immune stimulation, anti-inflammatory, proliferative/repair, antimicrobial defense of skin, mouth, nose, vagina.
+- Application surfaces for PDB products: topical, oral, vaginal, nasal—all epithelia carry TLRs.
+
 ## Mental Models
 - Probiotics "look like bad guys but are not": they present foreign molecular patterns that trigger defenses without pathology.
 - Function lives in the outer coat: the inner parts of the organism are unnecessary for the effect.
@@ -55,6 +61,19 @@ Live organisms are not required for probiotic benefit: specific cell-wall biomol
 - **One-size-fits-all immune stimulation**: problematic in psoriasis-like conditions.
 
 ## Reference Tables
+| Probiotic genus / species | Status in text |
+|---|---|
+| Lactobacillus acidophilus, casei, lactis, plantarum, reuteri, rhamnosus, helveticus | Selected strains probiotic |
+| Bifidobacterium | Selected strains (new genus for L. bifidus) |
+| Saccharomyces boulardii | Selected strains |
+| Streptococcus thermophilus | Selected strains |
+| Saccharomyces cerevisiae (brewers' yeast) | Arguably probiotic |
+
+| Receptor | Ligand | Output |
+|---|---|---|
+| Toll-like receptors (~11) | Microbial molecules (lipoteichoic acid, peptidoglycan, etc.) | Defensins |
+| Dectin-1 | Fungal beta-glucans | TNF + defensins |
+
 | Era | Discovery |
 |---|---|
 | 1940s | Zymosan isolated from yeast walls (Pillemer) |

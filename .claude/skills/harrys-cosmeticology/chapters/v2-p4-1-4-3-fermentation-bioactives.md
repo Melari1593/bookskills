@@ -52,6 +52,11 @@ Fermentation and cell culture (bacteria, yeasts, fungi, algae, plant cells, extr
 - Choose biotech programs judiciously by market need and technical capability.
 - Support claims with in vitro models (fibroblasts, skin equivalents) for MMP, tyrosinase, collagen, defensin endpoints.
 
+- Fermentation-product range includes secondary metabolites, vitamins, enzymes, antibiotics, peptides and growth factors—match the organism to the target class.
+- Bridge nutrition and personal care: small-molecule fermented polyphenols (e.g., resveratrol) serve both markets.
+- Multi-organism and plant-biomass inputs are common; document all organisms used for safety review.
+- Bioprocess variables to manipulate: nutrients, stress (heat, peroxide, UV), light (algae), aeration and mixing (plant cells), co-culture.
+
 ## Mental Models
 - Microorganisms as "biological factories": the reactor replaces the field.
 - Stress makes actives: organisms produce protective metabolites when challenged.
