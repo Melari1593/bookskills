@@ -81,6 +81,8 @@ aside h3 { font: 600 12px var(--body); text-transform: uppercase; letter-spacing
   aside { border-left: 0; border-top: 1px solid var(--line); overflow: visible; }
   .app { height: auto; }
   .search { max-width: none; margin-left: 0; }
+  .legend { flex-wrap: nowrap; overflow-x: auto; left: 0; right: 0; bottom: 8px; max-width: none; padding: 0 12px; }
+  .chip { flex: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
@@ -192,10 +194,11 @@ function draw() {
   for (const n of nodes) {
     if (!visible(n)) continue;
     const dim = sel && n !== sel && !neighborSet.has(n.id);
-    ctx.globalAlpha = dim ? .22 : 1;
+    ctx.globalAlpha = dim ? .28 : 1;
     ctx.fillStyle = colors[n.kind] || colors.muted;
     ctx.beginPath();
-    if (n.kind === "chapter") ctx.rect(n.x - n.r, n.y - n.r, n.r * 2, n.r * 2); else ctx.arc(n.x, n.y, n.r, 0, 6.2832);
+    const r = Math.max(n.r, 2.6 / view.k);
+    if (n.kind === "chapter") ctx.rect(n.x - r, n.y - r, r * 2, r * 2); else ctx.arc(n.x, n.y, r, 0, 6.2832);
     ctx.fill();
     if (n === sel || n === hover) { ctx.lineWidth = 2.5 / view.k; ctx.strokeStyle = colors.hi; ctx.stroke(); }
   }
@@ -285,7 +288,15 @@ function select(n, center) {
 }
 function renderPanel() {
   const n = selected;
-  if (!n) { panel.innerHTML = `<p class="eyebrow">Sin selección</p><h2>Elige un concepto</h2><p class="empty">Toca un nodo del grafo o búscalo arriba. Los cuadrados son capítulos; los círculos, conceptos coloreados por tipo.</p>`; return; }
+  if (!n) {
+    const top = nodes.filter(m => m.kind !== "chapter").slice(0, 16);
+    const chs = nodes.filter(m => m.kind === "chapter").sort((a, b) => a.sources[0].localeCompare(b.sources[0], undefined, { numeric: true }));
+    const btn = m => `<button type="button" data-id="${esc(m.id)}"><span class="dot" style="background:var(--k-${m.kind});${m.kind === "chapter" ? "border-radius:2px" : ""}"></span>${esc(m.label)}</button>`;
+    panel.innerHTML = `<p class="eyebrow">Vista general</p><h2>Tres libros, un mapa</h2><p class="empty">Toca un nodo o búscalo arriba para leer qué dice el libro y con qué se relaciona. Los cuadrados son capítulos; los círculos, conceptos coloreados por tipo.</p>`
+      + `<h3>Conceptos más conectados</h3><div class="links">${top.map(btn).join("")}</div>`
+      + `<h3>Capítulos</h3><div class="links">${chs.map(btn).join("")}</div>`;
+    return;
+  }
   const groups = new Map();
   for (const e of adj.get(n.id)) {
     const out = e.source === n.id, other = out ? e.t : e.s;
@@ -313,5 +324,6 @@ function renderPanel() {
   panel.scrollTop = 0;
 }
 panel.addEventListener("click", ev => { const b = ev.target.closest("button[data-id]"); if (b) select(byId.get(b.dataset.id), true); });
-select(nodes.find(n => n.kind !== "chapter"));
+select(null);
+addEventListener("keydown", ev => { if (ev.key === "Escape" && document.activeElement !== q) select(null); });
 </script>

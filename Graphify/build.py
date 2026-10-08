@@ -146,6 +146,18 @@ def merge(nodes, edges, hyper):
             if e.get("evidence") and len(cur["evidence"]) < 3:
                 cur["evidence"].append(e["evidence"])
 
+    # un concepto aparece en todo capítulo cuyas aristas lo mencionan
+    for e in out.values():
+        for end in (e["source"], e["target"]):
+            m = merged[end]
+            if m["kind"] == "chapter":
+                continue
+            for src in e["sources"]:
+                if src and src not in m["sources"]:
+                    m["sources"].append(src)
+    for m in merged.values():
+        m["sources"].sort()
+
     hyperedges = []
     for h in hyper:
         members = sorted({resolve(x) for x in h.get("nodes", [])} & merged.keys())
@@ -204,6 +216,7 @@ def louvain(node_ids, edges, seed=7, resolution=1.0):
             break
         new_graph = defaultdict(lambda: defaultdict(float))
         for n, nb in graph.items():
+            new_graph[comm[n]]
             for m, w in nb.items():
                 new_graph[comm[n]][comm[m]] += w
         new_members = defaultdict(list)
