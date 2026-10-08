@@ -62,7 +62,7 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases â€
 - Organelle-specific levers: nuclear sirtuins regulate genes; mitochondrial sirtuins regulate enzymes directly (control beyond the genome).
 - Activate for aging, inhibit for hyperproliferation â€” the same pathway serves opposite product goals.
 - Environmental stress is a sirtuin stressor alongside caloric status.
-- Sirtuins explain caloric restriction: gene silencing + reduced energy metabolism under low NAD+ is the mechanistic bridge from diet to longevity.
+- Sirtuins explain caloric restriction: NAD+ dependence plus gene silencing and reduced energy metabolism is the mechanistic bridge from diet to longevity.
 
 ## Anti-patterns
 - **Using a sirtuin inhibitor in an anti-aging claim context**: inhibition (nicotinamide) fits hyperproliferative conditions, activation fits anti-aging.
