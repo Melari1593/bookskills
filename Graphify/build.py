@@ -28,6 +28,57 @@ KINDS = ["chapter", "ingredient", "ingredient_class", "anatomy", "mechanism",
          "condition", "product", "technique", "regulation", "concept",
          "organization", "region"]
 SCORE = {"EXTRACTED": 1.0, "INFERRED": 0.75, "AMBIGUOUS": 0.2}
+# Sinónimos que los extractores crearon como nodos separados (id -> id canónico)
+SYNONYMS = {
+    "skin_barrier_function": "skin_barrier",
+    "skin_lipid_barrier": "skin_barrier",
+    "skin_circadian_rhythm": "circadian_rhythm",
+    "circadian_clock": "circadian_rhythm",
+    "nf_kappa_b": "nf_kb",
+    "mitochondrion": "mitochondria",
+    "camp": "cyclic_amp",
+    "glycerol": "glycerin",
+    "freeze_drying": "lyophilization",
+    "cutibacterium_acne": "propionibacterium_acne",
+    "cox_2": "cyclooxygenase_2",
+    "egcg": "epigallocatechin_gallate",
+    "retinoic_acid": "tretinoin",
+    "qpcr": "quantitative_pcr",
+    "t_lymphocyte": "t_cell",
+    "ctfa": "personal_care_products_council",
+    "pcpc": "personal_care_products_council",
+    "nrf2_pathway": "nrf2",
+    "hair_color": "hair_dye",
+    "hair_colorant": "hair_dye",
+    "malignant_melanoma": "melanoma",
+    "photodamage": "photoaging",
+    "skin_lightening": "skin_whitening",
+    "skin_lightening_product": "skin_whitening_product",
+    "contact_allergy": "allergic_contact_dermatitis",
+    "inci": "inci_name",
+    "fema_gra": "gras",
+    "emulsion_stability": "emulsion_stabilization",
+    "gene_silencing": "rna_interference",
+    "rheology_measurement": "rheometry",
+    "oral_care_product": "oral_care",
+    "nutraceutical": "nutricosmetic",
+    "cyclobutane_pyrimidine_dimer": "pyrimidine_dimer",
+    "timp": "tissue_inhibitor_of_metalloproteinase",
+    "tnf_alpha": "tumor_necrosis_factor_alpha",
+    "tgf_beta": "transforming_growth_factor_beta",
+    "bse": "bovine_spongiform_encephalopathy",
+}
+# Siglas que también son palabras con otro significado en el grafo ("lip" = labio)
+NOT_ABBREV = {"lip", "nail", "hair", "skin", "age"}
+
+
+def is_abbrev(short, long):
+    """True si `short` son las iniciales de `long` (vegf ~ vascular_endothelial_growth_factor)."""
+    words = [w for w in long.split("_") if w and w not in ("of", "and", "the")]
+    if short in NOT_ABBREV or "_" in short.strip("_0123456789") or len(words) < 2:
+        return False
+    initials = "".join(w[0] if not w.isdigit() else w for w in words)
+    return short.replace("_", "") in (initials, initials.rstrip("s"))
 
 
 def norm_id(text):
@@ -69,9 +120,23 @@ def merge(nodes, edges, hyper):
         cid = raw if n.get("kind") == "chapter" else singular(norm_id(raw))
         canon[raw] = cid
 
-    # 2) alias -> id canónico, solo si el alias no es ya un nodo propio
+    # 2) alias -> id canónico. Si el alias ya es otro nodo, sólo se fusionan
+    #    sigla y nombre completo (p. ej. "VEGF"); los alias de los extractores
+    #    a veces son términos más amplios (dimethicone ~ "silicone").
     ids = set(canon.values())
-    alias_map = {}
+    alias_map = dict(SYNONYMS)
+    for n in nodes:
+        if n.get("kind") == "chapter":
+            continue
+        cid = canon[n["id"]]
+        for a in n.get("aliases") or []:
+            aid = singular(norm_id(a))
+            if aid == cid or aid not in ids or aid in alias_map or cid in alias_map:
+                continue
+            if is_abbrev(aid, cid):
+                alias_map[aid] = cid
+            elif is_abbrev(cid, aid):
+                alias_map[cid] = aid
     for n in nodes:
         if n.get("kind") == "chapter":
             continue
@@ -80,7 +145,7 @@ def merge(nodes, edges, hyper):
             aid = singular(norm_id(a))
             if len(aid) < 3 or aid == cid:
                 continue
-            if aid in ids:
+            if aid in ids or aid in alias_map:
                 continue
             alias_map.setdefault(aid, cid)
     # un label que normaliza a un alias conocido apunta al canónico
@@ -253,21 +318,21 @@ def analyze(merged, edges, comm):
             inside[cs] += 2
     cohesion = {c: round(inside[c] / total[c], 2) if total[c] else 0 for c in set(comm.values())}
 
-    # sorprendentes: aristas entre libros distintos o entre comunidades lejanas,
-    # con extremos que sólo aparecen en capítulos distintos
+    # sorprendentes: aristas que unen comunidades distintas cuyos extremos,
+    # fuera de esa arista, viven en capítulos (y libros) diferentes
     surprises = []
     for e in edges:
         if e["relation"] in ("covers", "is_a", "part_of"):
             continue
         a, b = merged[e["source"]], merged[e["target"]]
-        if a["kind"] == "chapter" or b["kind"] == "chapter":
+        if a["kind"] == "chapter" or b["kind"] == "chapter" or comm[a["id"]] == comm[b["id"]]:
             continue
-        if set(a["sources"]) & set(b["sources"]):
+        if degree[a["id"]] < 4 or degree[b["id"]] < 4:
             continue
-        books_a = {book_of(s) for s in a["sources"]}
-        books_b = {book_of(s) for s in b["sources"]}
-        score = (2 if not books_a & books_b else 0) + (1 if comm[a["id"]] != comm[b["id"]] else 0)
-        score += e["confidence_score"]
+        sa, sb = set(a["sources"]), set(b["sources"])
+        jaccard = len(sa & sb) / len(sa | sb)
+        books_a, books_b = {book_of(x) for x in sa}, {book_of(x) for x in sb}
+        score = 2 * (1 - jaccard) + (1 if books_a != books_b else 0) + e["confidence_score"]
         surprises.append((score, e))
     surprises.sort(key=lambda x: -x[0])
     # puentes: conceptos citados en más capítulos
@@ -401,7 +466,7 @@ def report(graph, merged, gods, surprises, bridges, labels, comm):
     if small:
         w(f"_Además, {small} comunidades de menos de 3 conceptos (nodos aislados o pares)._\n")
     w("## Conexiones sorprendentes\n")
-    w("Relaciones entre conceptos que nunca aparecen en el mismo capítulo — a menudo entre libros distintos.\n")
+    w("Aristas que cruzan comunidades entre conceptos que, por lo demás, aparecen en capítulos distintos.\n")
     for e in surprises:
         a, b = merged[e["source"]], merged[e["target"]]
         ev = f" — _{e['evidence'][0]}_" if e["evidence"] else ""
