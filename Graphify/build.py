@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 EXTRACTION = ROOT / "extraction"
 LABELS = ROOT / "labels.json"
+SKILL = ROOT.parent / ".claude" / "skills" / "harrys-cosmeticology"
 
 BOOKS = {
     "v1": "Vol. 1 — Marketing, regulación y sustratos",
@@ -403,6 +404,8 @@ def main():
         "nodes": out_nodes, "edges": edges, "hyperedges": hyper,
     }
     (ROOT / "graph.json").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
+    if SKILL.exists():
+        export_skill_graph(graph)
     (ROOT / "GRAPH_REPORT.md").write_text(report(graph, merged, gods, surprises, bridges, labels, comm),
                                           encoding="utf-8")
     template = (ROOT / "template.html").read_text(encoding="utf-8")
@@ -414,6 +417,46 @@ def main():
         "</head>\n<body>\n" + page + "\n</body>\n</html>\n", encoding="utf-8")
     print(f"{len(out_nodes)} nodos, {len(edges)} aristas, {len(sizes)} comunidades, "
           f"{len(hyper)} hiperaristas")
+
+
+def skill_chapter_map():
+    """Archivo del corpus (v2-06-Part_4.1.3.md) -> ficha de la skill (v2-p4-1-3-...)."""
+    chapters = {p.stem: p.stem for p in (SKILL / "chapters").glob("*.md")}
+    def lookup(source):
+        book = book_of(source)
+        m = re.search(r"Part[_-]*([0-9.]+?)\.?md$", source.replace(" ", ""))
+        if not m:
+            return None
+        part = m.group(1).rstrip(".").replace(".", "-")
+        for stem in chapters:
+            if stem.startswith(f"{book}-p{part}-"):
+                return stem
+        # intros de sección ("4.1.0", "3.3.0") no tienen ficha propia
+        return None
+    return lookup
+
+
+def export_skill_graph(graph):
+    """Copia compacta del grafo para la skill (la consulta scripts/graph_query.py)."""
+    lookup = skill_chapter_map()
+    def chap(src):
+        return lookup(src) or src.removesuffix(".md")
+    nodes = []
+    for n in graph["nodes"]:
+        nodes.append({
+            "id": n["id"], "label": n["label"], "kind": n["kind"], "community": n["community"],
+            "aliases": n["aliases"], "chapters": sorted({chap(s) for s in n["sources"]}),
+            "summaries": [[chap(x["source"]), x["text"]] for x in n["summaries"]],
+        })
+    edges = [[e["source"], e["relation"], e["target"], e["confidence"],
+              sorted({chap(s) for s in e["sources"] if s}), (e["evidence"] or [""])[0]]
+             for e in graph["edges"]]
+    data = {"communities": {c["id"]: c["label"] for c in graph["communities"]},
+            "nodes": nodes, "edges": edges,
+            "hyperedges": [[h["label"], h["nodes"]] for h in graph["hyperedges"]]}
+    (SKILL / "references").mkdir(exist_ok=True)
+    (SKILL / "references" / "graph.json").write_text(
+        json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 def report(graph, merged, gods, surprises, bridges, labels, comm):
