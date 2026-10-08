@@ -10,18 +10,30 @@ Whatever the cause of aging or disease, the final common pathway is water loss �
   - How: supply cell- and connective-tissue-building nutrients so membranes retain water; measure ICW and phase angle; combine topical skin care, internal nutrition/exercise/lifestyle, and emotional care ("Inclusive Health").
 - **Water compartment model**: TBW = ICW + ECW. ECW = interstitial (bathes cells), plasma, transcellular (cerebrospinal, intraocular, pleural, peritoneal, synovial fluids, digestive secretions).
   - Alternative tissue view of extracellular stores: (i) interstitial spaces of densely packed tissues (epidermis, heart, liver); (ii) extracellular matrix of loosely packed tissues (dermis, eyes, brain, kidneys); (iii) edematous water in inflamed/injured tissue.
-- **Esposito's 1983 classification of aging theories**: causal (stochastic physicochemical changes accumulate — somatic/genetic mutation, wear and tear, cross-linking/glycation, accumulation), systemic (interactions between organ systems — program theory, expired programs, autoimmunization, organic explanations), evolutionary (aging as adaptive; pleiotropic genes set species rate; highly speculative).
+- **Esposito's 1983 classification of aging theories**: causal (stochastic physicochemical changes accumulate — somatic/genetic mutation, wear and tear, cross-linking/glycation, accumulation), systemic (interactions between organ systems — program theory, expired programs, autoimmunization, organic explanations), evolutionary (aging as adaptive
+  - Pleiotropic genes set species rate
+  - Highly speculative).
 - **Strehler's four characteristics of aging**: destructive (function declines), progressive (irreversible), intrinsically determined (not purely external), universal (all species).
-- **Membrane Hypothesis of Aging (Nagy)**: lifelong plasma-membrane damage from free-radical cross-linking of proteins/lipids, molecular damage and residual heat from each resting-potential discharge; repair is continuous but residual damage accumulates.
+- **Membrane Hypothesis of Aging (Nagy)**: lifelong plasma-membrane damage from free-radical cross-linking of proteins/lipids, molecular damage and residual heat from each resting-potential discharge
+  - Repair is continuous but residual damage accumulates.
   - Consequences: decreased K⁺ permeability → raised intracellular K⁺ → colloid condensation; loss of intracellular water and rise in intracellular dry mass → inhibited enzymes, slower RNA/protein/gene synthesis; lipofuscin accumulation.
 
 ## Key Concepts
 - **Intracellular water / cell water volume**: water in the cytosol; must be held at steady state for metabolic function and youthful appearance. Elderly (especially diseased) persons show reduced ICW.
 - **Extracellular water as reservoir**: maintains ICW during hypohydration.
 - **Edematous ("wasted") water**: bloating, puffiness, swelling in inflamed/injured tissue; unavailable to maintain cell water volume.
-- **Life as progressive dehydration**: highly hydrated oocyte/embryo/newborn → progressively dehydrated organism; rising intracellular dry mass increases colloid density, which raises free-radical damage efficiency and alters in situ enzyme rate constants.
-- **Phase angle (PA)**: arctangent of reactance/resistance from bioelectrical impedance analysis (BIA); indicator of cell vitality and membrane integrity. Low PA = cell death or membrane breakdown; high PA = many intact membranes; PA decreases with age and predicts disease course.
-- **Aging definitions cited**: Aristotle (humid/warm in youth, dry/cold in age); Hayflick (increase in molecular disorder/entropy, stochastic, not gene driven, after reproductive maturity); Milne (stochastic, cumulative, from in utero); Miller (healthy adults → frail with diminished reserves and exponentially increased disease vulnerability); King (genetic physiological process with progressive imbalance of hormonal, autocrine, neuro-endocrine and immune homeostasis); Grimley (senescent changes = de novo alterations outside developmental program).
+- **Life as progressive dehydration**: highly hydrated oocyte/embryo/newborn → progressively dehydrated organism
+  - Rising intracellular dry mass increases colloid density, which raises free-radical damage efficiency and alters in situ enzyme rate constants.
+- **Phase angle (PA)**: arctangent of reactance/resistance from bioelectrical impedance analysis (BIA)
+  - Indicator of cell vitality and membrane integrity. Low PA = cell death or membrane breakdown
+  - High PA = many intact membranes
+  - PA decreases with age and predicts disease course.
+- **Aging definitions cited**: Aristotle (humid/warm in youth, dry/cold in age)
+  - Hayflick (increase in molecular disorder/entropy, stochastic, not gene driven, after reproductive maturity)
+  - Milne (stochastic, cumulative, from in utero)
+  - Miller (healthy adults → frail with diminished reserves and exponentially increased disease vulnerability)
+  - King (genetic physiological process with progressive imbalance of hormonal, autocrine, neuro-endocrine and immune homeostasis)
+  - Grimley (senescent changes = de novo alterations outside developmental program).
 - **Adaptive vs. nonadaptive aging**: aging as beneficial trait vs. detrimental/neutral.
 - **Successful aging**: Rowe and Kahn — low disease/disability risk, high mental and physical function, active engagement; Glass — the "good life" beyond health and longevity; author's "Inclusive Health" goes further.
 

@@ -5,7 +5,8 @@
 Aging is a progressive loss of structural integrity and physiological function driven jointly by intrinsic (genetic) and extrinsic (UV, environment, lifestyle) determinants; more than 300 molecular mechanisms have been proposed and none is universally accepted. Theories fall into two camps — accumulated DNA/molecular damage vs. built-in genetic programming ("molecular clock") — and the chapter surveys 15 mainstream theories. The best-established are free radicals (ROS), mitochondrial dysfunction, altered hormone levels and telomere shortening; glycation (AGEs) dominates the medical literature because of diabetes. Aging is best explained by integrating several interlinked theories.
 
 ## Frameworks Introduced
-- **Two-group classification of aging theories**: (1) DNA damage theories — accumulated damage inhibits gene expression and cell function → cell death; (2) built-in breakdown (programmed) theories — aging is encoded in genome/cell structure as a molecular clock.
+- **Two-group classification of aging theories**: (1) DNA damage theories — accumulated damage inhibits gene expression and cell function → cell death
+  - (2) built-in breakdown (programmed) theories — aging is encoded in genome/cell structure as a molecular clock.
   - When to use: framing which mechanism an anti-aging claim or active targets.
   - How: map each active to a theory (antioxidant → free radical; anti-glycation → cross-linking/AGE; sirtuin activator → caloric restriction; telomere care → telomerase theory; anti-inflammatory → inflammation theory).
 - **Catalog of 15 theories** (a–o): wear and tear (immunological), neuro-endocrine, genetic control, free radical, mitochondrial, waste accumulation, Hayflick limit, death hormone, caloric restriction, cross-linking, telomerase, glycation, mutation accumulation/DNA-RNA damage, deficient immune/autoimmune, inflammation.
@@ -15,18 +16,36 @@ Aging is a progressive loss of structural integrity and physiological function d
 
 ## Key Concepts
 - **Definition of aging (biologists)**: genetic process with morphological/physiological changes in cellular and extracellular components, aggravated by lifelong injury, producing progressive imbalance of hormonal, autocrine, neuro-endocrine and immune homeostasis.
-- **Wear and tear theory**: cumulative unrepaired damage from use, toxins (fat, sugar, caffeine, alcohol, nicotine, UV, stress); includes depletion of finite metabolic energy, harmful metabolic by-products and faulty enzymes. Called one of the oldest and most outdated theories.
+- **Wear and tear theory**: cumulative unrepaired damage from use, toxins (fat, sugar, caffeine, alcohol, nicotine, UV, stress)
+  - Includes depletion of finite metabolic energy, harmful metabolic by-products and faulty enzymes. Called one of the oldest and most outdated theories.
 - **Neuro-endocrine theory**: hypothalamus governs hormone release; aging glands secrete less hormone, circadian hormone rhythms grow irregular, and receptors down-regulate.
-- **Genetic control theory**: inherited "longevity assurance genes" and a biological clock; tissues hold generations of dormant "renewal cells" (reserve embryonic cells) — aging shows when these are used up; loss of capacity to divide matters more than reaching the finite division limit.
-- **Free radical theory**: proposed 1954 by Denham Harman; most commonly held theory. Radicals (unpaired electron) attack membranes, generating lipofuscins that disturb DNA/RNA/protein synthesis; excess lipofuscin appears as "aging spots". Irreversible outcomes: DNA damage, protein cross-linking, age pigments.
+- **Genetic control theory**: inherited "longevity assurance genes" and a biological clock
+  - Tissues hold generations of dormant "renewal cells" (reserve embryonic cells) — aging shows when these are used up
+  - Loss of capacity to divide matters more than reaching the finite division limit.
+- **Free radical theory**: proposed 1954 by Denham Harman
+  - Most commonly held theory. Radicals (unpaired electron) attack membranes, generating lipofuscins that disturb DNA/RNA/protein synthesis
+  - Excess lipofuscin appears as "aging spots". Irreversible outcomes: DNA damage, protein cross-linking, age pigments.
 - **Mitochondrial theory**: mitochondria are the "weakest link"; ROS from their own metabolism damage mtDNA, they lack most cellular defenses, energy output falls; link to whole-organism aging remains unclear.
 - **Waste accumulation**: free radicals, aldehydes, histones, lipofuscins (yellow-brown pigment, notably in nerve and heart muscle cells) accumulate and impair cells.
 - **Hayflick limit**: human fibroblasts divide ~50 times then stop; each division yields poorer-quality copies. A cell needs nourishment, proliferation, function, protection; overfed cells divide faster than underfed ones.
-- **Death hormone theory**: hypothalamus as aging chronometer; thymus atrophies at adolescence; embryonic fibroblasts divide 50×, adult fibroblasts only ~20×; speculated pituitary "DOCH" (decreasing oxygen consumption hormone) blocks thyroxin use.
-- **Caloric restriction theory**: extends life span in yeast, flies, worms, mice, primates (>2,000 studies); mediated by sirtuins (SIR2 in yeast; SIRT1 in humans) via gene silencing and DNA repair, not antioxidant pathways. Humans have ~24,000–25,000 genes. People practicing CR do not look young — skin sallow, wrinkled; they look older than stated age on facial evaluation.
-- **Cross-linking (glycosylation) theory**: glucose binding to proteins (in presence of oxygen) and cross-links between peptide strands irreversibly alter enzymes and collagen; elastic fibers replaced by less flexible collagen; collagen cross-linking responsible for wrinkling; increased collagen deposition → fibrosis.
-- **Telomerase theory**: telomeres (non-coding chromosome-end DNA) shorten with each division → instability, senescence; telomerase (found only in germ and cancer cells per the chapter) rebuilds them; telomerase inhibitors are a cancer strategy.
-- **Glycation theory**: glucose + protein → AGEs (advanced glycosylation end products) → abnormal cross-links; in skin causes accelerated aging, yellowing, stiffness, decreased circulation; AGEs stimulate NF-kB and inflammatory cytokines.
+- **Death hormone theory**: hypothalamus as aging chronometer
+  - Thymus atrophies at adolescence
+  - Embryonic fibroblasts divide 50×, adult fibroblasts only ~20×
+  - Speculated pituitary "DOCH" (decreasing oxygen consumption hormone) blocks thyroxin use.
+- **Caloric restriction theory**: extends life span in yeast, flies, worms, mice, primates (>2,000 studies)
+  - Mediated by sirtuins (SIR2 in yeast
+  - SIRT1 in humans) via gene silencing and DNA repair, not antioxidant pathways. Humans have ~24,000–25,000 genes. People practicing CR do not look young — skin sallow, wrinkled
+  - They look older than stated age on facial evaluation.
+- **Cross-linking (glycosylation) theory**: glucose binding to proteins (in presence of oxygen) and cross-links between peptide strands irreversibly alter enzymes and collagen
+  - Elastic fibers replaced by less flexible collagen
+  - Collagen cross-linking responsible for wrinkling
+  - Increased collagen deposition → fibrosis.
+- **Telomerase theory**: telomeres (non-coding chromosome-end DNA) shorten with each division → instability, senescence
+  - Telomerase (found only in germ and cancer cells per the chapter) rebuilds them
+  - Telomerase inhibitors are a cancer strategy.
+- **Glycation theory**: glucose + protein → AGEs (advanced glycosylation end products) → abnormal cross-links
+  - In skin causes accelerated aging, yellowing, stiffness, decreased circulation
+  - AGEs stimulate NF-kB and inflammatory cytokines.
 - **Mutation accumulation / DNA-RNA damage**: chemical structural DNA damage plus sequence mutations interfere with gene expression.
 - **Autoimmune theory**: immune system loses self/non-self discrimination; antibody production declines; senescent cells stop mitosis.
 - **Inflammation theory**: free radicals attack plasma membrane → phospholipase A2 releases arachidonic acid → oxidized to inflammatory mediators → more free radicals (self-perpetuating cycle). Triggers: cigarette smoke, UV, air pollution, pro-inflammatory diet, weak immunity, stress, lack of sleep. Markers: TNF-α, IL-6, NF-κB, elevated C-reactive protein.

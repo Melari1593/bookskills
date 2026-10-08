@@ -7,19 +7,30 @@ Sirtuins are evolutionarily conserved NAD+-dependent (Class III) deacetylases �
 ## Frameworks Introduced
 - **Sirtuin map by compartment**: nucleus SIRT1, SIRT6; mitochondria SIRT3, SIRT4, SIRT5; cytoplasm SIRT2; nucleolus SIRT7.
   - When to use: choosing which sirtuin a claim/assay should target (e.g., energy → SIRT3; DNA repair/telomeres → SIRT6; gene silencing/clock → SIRT1).
-- **Two reaction modes**: (1) deacetylation — acetyl from substrate lysine transferred to NAD+ → 2'-O-acetyl-ADP ribose (unique sirtuin product) + nicotinamide; (2) ADP-ribosylation — ADP-ribose of NAD+ added to lysine, nicotinamide released. Nicotinamide is recycled to NAD+ by Nampt and Nmnat; rising nicotinamide feedback-inhibits by binding a pocket in the catalytic site.
+- **Two reaction modes**: (1) deacetylation — acetyl from substrate lysine transferred to NAD+ → 2'-O-acetyl-ADP ribose (unique sirtuin product) + nicotinamide
+  - (2) ADP-ribosylation — ADP-ribose of NAD+ added to lysine, nicotinamide released. Nicotinamide is recycled to NAD+ by Nampt and Nmnat
+  - Rising nicotinamide feedback-inhibits by binding a pocket in the catalytic site.
 - **Activator vs. inhibitor product strategy**:
   - Activators (anti-aging): must be biologically active, safe, small enough to enter the stratum corneum, and stable/active in formula — resveratrol fits most criteria.
   - Inhibitors (hyperproliferative conditions such as psoriasis): since SIRT1 promotes keratinocyte differentiation, inhibitors might help; nicotinamide (low MW, non-cytotoxic) is the candidate.
 - **Environmental-stress lens**: evaluate sirtuins not only under caloric restriction but under UV and pollution challenges when formulating.
 
 ## Key Concepts
-- **Discovery**: yeast Silent Information Regulator 2 (Sir2) keeps mating-type (HM loci) genes silent; mutation → errant mating; Sir2 overexpression increased lifespan. A C. elegans study found no lifespan gain (genetic background); with corrected controls, Viswanathan and Guarente still found an increase, smaller than first reported.
-- **Gene silencing (SIRT1)**: acetylated histones are polar and repel → open chromatin, gene expression; deacetylation reduces polarity → chromatin condenses ("beads on a string" nucleosome) → silencing, conserving energy under nutrient limitation.
-- **SIRT1 and circadian clock**: CLOCK (an acetyltransferase) acetylates nucleosomes and BMAL-1 in the CLOCK/BMAL-1 heterodimer; SIRT1 deacetylates BMAL-1, limiting the complex's activity. Sirtuins themselves follow a diurnal pattern.
+- **Discovery**: yeast Silent Information Regulator 2 (Sir2) keeps mating-type (HM loci) genes silent
+  - Mutation → errant mating
+  - Sir2 overexpression increased lifespan. A C. elegans study found no lifespan gain (genetic background)
+  - With corrected controls, Viswanathan and Guarente still found an increase, smaller than first reported.
+- **Gene silencing (SIRT1)**: acetylated histones are polar and repel → open chromatin, gene expression
+  - Deacetylation reduces polarity → chromatin condenses ("beads on a string" nucleosome) → silencing, conserving energy under nutrient limitation.
+- **SIRT1 and circadian clock**: CLOCK (an acetyltransferase) acetylates nucleosomes and BMAL-1 in the CLOCK/BMAL-1 heterodimer
+  - SIRT1 deacetylates BMAL-1, limiting the complex's activity. Sirtuins themselves follow a diurnal pattern.
 - **SIRT1 and p53/FOXO**: activates p53 to pause the cell cycle for DNA repair or trigger apoptosis if damage is extensive; attenuates oxidative-stress FOXO signals, aiding cell survival.
-- **SIRT6**: chromatin-bound; aids base excision repair and double-strand-break re-annealing; under nutritional stress deacetylates histones at glycolytic gene promoters; associated with telomeres. SIRT6-knockout animals show aging phenotype: graying and loss of subcutaneous fat.
-- **Mitochondrial sirtuins**: ~20% of mitochondrial proteins contain acetyllysine. SIRT3 deacetylates/activates acetyl-CoA synthetase (AceCS2) → more oxidative phosphorylation/ATP; SIRT3 deacetylation of SOD2 is required for its activation and superoxide scavenging. SIRT4 (up-regulated by caloric restriction) ADP-ribosylates and inhibits glutamate (glutamine) dehydrogenase → less α-ketoglutarate, less ATP — SIRT3 and SIRT4 balance each other. SIRT5 deacetylates carbamoyl phosphate synthetase (urea cycle).
+- **SIRT6**: chromatin-bound
+  - Aids base excision repair and double-strand-break re-annealing
+  - Under nutritional stress deacetylates histones at glycolytic gene promoters
+  - Associated with telomeres. SIRT6-knockout animals show aging phenotype: graying and loss of subcutaneous fat.
+- **Mitochondrial sirtuins**: ~20% of mitochondrial proteins contain acetyllysine. SIRT3 deacetylates/activates acetyl-CoA synthetase (AceCS2) → more oxidative phosphorylation/ATP
+  - SIRT3 deacetylation of SOD2 is required for its activation and superoxide scavenging. SIRT4 (up-regulated by caloric restriction) ADP-ribosylates and inhibits glutamate (glutamine) dehydrogenase → less α-ketoglutarate, less ATP — SIRT3 and SIRT4 balance each other. SIRT5 deacetylates carbamoyl phosphate synthetase (urea cycle).
 - **NAD+ coupling**: NAD+ is the main electron acceptor in ATP synthesis, so sirtuins track metabolic state — the mechanism for lifespan extension by caloric restriction.
 
 ## Ingredients & Actives

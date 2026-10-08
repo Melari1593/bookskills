@@ -7,23 +7,43 @@ Of the currently held aging mechanisms (ROS, mitochondrial dysfunction, telomere
 ## Frameworks Introduced
 - **AGE formation pathway**: reducing sugar aldehyde + protein amine → Schiff base → Amadori compound (both reversible) → near-irreversible AGEs. Amadori stage releases reactive glycotoxins: glyoxal (GO), methylglyoxal (MGO), 3-deoxyglucosone (3-DG), fructosamines → AGEs such as CML, CMA, CMC, CEL, pentosidine, pyrraline.
   - When to use: deciding where an anti-glycation active acts (prevention vs. reversal).
-- **Anti-glycation strategy types**: (1) antioxidants (most proposals); (2) "sacrifice" molecules competing for sugars (aspirin acetylates lysine; Lys/Arg oligopeptides); (3) carbonyl scavengers/transglycation (decarboxy carnosine); (4) stimulate endogenous deglycation/detox (glyoxalase-1/-2 via GSH; fructosamine-3-kinase FN3K; Amadoriases); (5) AGE cross-link breakers (Alagebrium, YAC extract, flavanones cleaving α-diketones); (6) acidic pH.
+- **Anti-glycation strategy types**: (1) antioxidants (most proposals)
+  - (2) "sacrifice" molecules competing for sugars (aspirin acetylates lysine
+  - Lys/Arg oligopeptides)
+  - (3) carbonyl scavengers/transglycation (decarboxy carnosine)
+  - (4) stimulate endogenous deglycation/detox (glyoxalase-1/-2 via GSH
+  - Fructosamine-3-kinase FN3K
+  - Amadoriases)
+  - (5) AGE cross-link breakers (Alagebrium, YAC extract, flavanones cleaving α-diketones)
+  - (6) acidic pH.
 - **Prevention vs. cure test protocol**: pre-incubate cells/skin with MGO before applying the active (glycation already underway) — more challenging and realistic than co-incubating aggressor and protector.
-- **Two cellular clearance systems**: ubiquitin–proteasome (short-lived soluble proteins) and autophagy (long-lived proteins, damaged organelles such as mitochondria; takes over when proteasome is overwhelmed, oxidized or glycated). Autophagy marker: LC3-II.
+- **Two cellular clearance systems**: ubiquitin–proteasome (short-lived soluble proteins) and autophagy (long-lived proteins, damaged organelles such as mitochondria
+  - Takes over when proteasome is overwhelmed, oxidized or glycated). Autophagy marker: LC3-II.
 - **Two paths to preserve telomeres**: classical antioxidant protection of DNA/enzymes (incl. telomerase) vs. increasing telomerase expression/activity without inducing malignancy; plus protecting the shelterin (telosome) complex.
-- **Senescence models**: replicative senescence (months of passaging; cells enlarge, doubling slows; SA-β-gal rises, telomeres shorten) vs. Stress-Induced Premature Senescence (SIPS, repeated low-dose oxidative stress e.g. H2O2) — similar morphology, far faster for testing.
+- **Senescence models**: replicative senescence (months of passaging
+  - Cells enlarge, doubling slows
+  - SA-β-gal rises, telomeres shorten) vs. Stress-Induced Premature Senescence (SIPS, repeated low-dose oxidative stress e.g. H2O2) — similar morphology, far faster for testing.
 
 ## Key Concepts
-- **Glycation**: non-enzymatic sugar–protein reaction (Maillard, 1912); increases with age and diabetes; makes collagen/elastin brittle → wrinkles, lost elasticity. Glycotoxins also come from diet and cigarette smoke — at least as important as sunlight for skin aging. Ribose and xylose far more reactive than glucose/fructose.
+- **Glycation**: non-enzymatic sugar–protein reaction (Maillard, 1912)
+  - Increases with age and diabetes
+  - Makes collagen/elastin brittle → wrinkles, lost elasticity. Glycotoxins also come from diet and cigarette smoke — at least as important as sunlight for skin aging. Ribose and xylose far more reactive than glucose/fructose.
 - **Collagen half-life 15 years**: contains 3× more CML, CEL and pentosidine at age 80 than at 20.
 - **UV + glycation synergy**: UV-induced oxidation accelerates CML formation in actinic elastosis.
 - **Glycated collagen**: promotes fibroblast apoptosis (H2O2 overproduction by MGO/glyoxal), accelerates senescent phenotype, activates pro-oxidant inflammation.
 - **Vimentin**: cytoskeletal protein that is a specific primary glycation target in skin → reduced fibroblast contractility.
 - **Defense enzymes are victims too**: SOD, catalase, GPx and glyoxalases are inactivated by oxidation and glycation. Glyoxalase-1 overexpression extends lifespan in diabetic animals.
 - **Proteasome**: cylinder of 4 stacked rings, ≥3 proteolytic active centers; part of UPS; ubiquitin = 76-aa protein. Activity declines with age; glycated BSA-AGE lowers fibroblast proteasome activity 16%.
-- **Proteasome caveat**: proteasome inhibition is an anti-inflammatory and anti-cancer strategy elsewhere; increased activity can degrade p53 rapidly. But mitochondrial and proteasome activities are co-regulated in skin fibroblasts, and higher proteasome activity can accelerate tyrosinase degradation (pigmentation benefit).
-- **Telomeres**: ~15,000 bases of repetitive DNA capping chromosomes; DNA polymerase cannot copy to the end. Obesity, disease, smoking, oxidative stress raise annual G-tail loss up to fivefold; normal loss ~50 bases/year (theoretical max lifespan 300 years). 2009 Nobel Prize: Blackburn, Szostak, Greider.
-- **Telomerase**: ribonucleoprotein adding hexanucleotide repeats; repressed in cultured fibroblasts and after a few keratinocyte passages; forced expression extends cell lifespan. Present in melanoma, BCC, sun-damaged and psoriatic skin, neonatal foreskin keratinocytes, transit-amplifying cells; downregulated by the epidermal calcium gradient. In anagen hair follicles high in the bulb, low in bulge; low in catagen.
+- **Proteasome caveat**: proteasome inhibition is an anti-inflammatory and anti-cancer strategy elsewhere
+  - Increased activity can degrade p53 rapidly. But mitochondrial and proteasome activities are co-regulated in skin fibroblasts, and higher proteasome activity can accelerate tyrosinase degradation (pigmentation benefit).
+- **Telomeres**: ~15,000 bases of repetitive DNA capping chromosomes
+  - DNA polymerase cannot copy to the end. Obesity, disease, smoking, oxidative stress raise annual G-tail loss up to fivefold
+  - Normal loss ~50 bases/year (theoretical max lifespan 300 years). 2009 Nobel Prize: Blackburn, Szostak, Greider.
+- **Telomerase**: ribonucleoprotein adding hexanucleotide repeats
+  - Repressed in cultured fibroblasts and after a few keratinocyte passages
+  - Forced expression extends cell lifespan. Present in melanoma, BCC, sun-damaged and psoriatic skin, neonatal foreskin keratinocytes, transit-amplifying cells
+  - Downregulated by the epidermal calcium gradient. In anagen hair follicles high in the bulb, low in bulge
+  - Low in catagen.
 - **Telomere doubts (Boukamp)**: dermal fibroblasts rarely proliferate, so critical shortening is unlikely; keratinocytes may differ.
 - **Stress and telomeres**: mothers of sick children — disease duration correlates with urinary oxidized molecules and shorter telomeres; longer telomeres = more stem-cell-like behavior.
 - **UV and telomeres**: UVB creates pyrimidine dimers in telomeric regions; UVA oxidative stress shortens telomeres — both potentially carcinogenic.
