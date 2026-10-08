@@ -90,6 +90,26 @@ Reusable formulation, testing, regulatory and product-development techniques, gr
 ### Non-irritating barrier support for fragile substrates (lips, vulva)
 **When to use**: lip care and intimate care where the barrier is weak or atrophic. **How**: lips: occlusive and barrier-lipid systems based on native ceramide/cholesterol/fatty acid and sebum-like lipids; target the lower lip and inner vermilion. Vulva: avoid propylene glycol, parabens, fragrance, dyes, warming agents and benzocaine; avoid formulas that dry into residues; avoid petrolatum where condoms are used; aim at hydration, elasticity, tone and sensation. **Trade-offs**: little efficacy data exists for either category; growth-factor evidence for vulvar use is subjective so far. (source: v1-p3-7-lip-skin, v1-p3-8-feminine-rejuvenation)
 
+## Ingredients I
+
+### Required-HLB Emulsion Design
+**When to use**: building a nonionic (steric) O/W emulsion for a new oil phase. **How**: jar-test the oil with sorbitan oleate (4.3)/polysorbate 80 (14.9) blends at HLB 6–14 (2 g blend + 20 g oil, fill with water, shake 20×); weight-average oils for blends; pair low- and high-HLB emulsifiers a few units either side of the target; add polymer/LC stabilization for heat stability. **Trade-offs**: most formulation work of all stabilization methods, but best tolerance of pH, electrolyte and oil polarity; HLB meaningless for ionics. (source: v2-p4-1-1-surfactants)
+
+### Liquid Crystal Emulsion Process
+**When to use**: barrier-friendly creams with good moisturization and wash-off resistance. **How**: disperse solid LC emulsifier (e.g., sorbitan stearate + sorbityl laurate) and waxes in water at 80°C until uniform white, cool with stirring, add room-temperature oil any time during cooling, add a little hydrocolloid. **Trade-offs**: HLB-independent, but no extra surfactants allowed. (source: v2-p4-1-1-surfactants)
+
+### Multi-MW Hyaluronic Acid Blend
+**When to use**: hydration/anti-aging serums and creams needing fast and lasting effects. **How**: combine high MW (~1 MDa, film/TEWL), ~250 kDa (epidermal hydration), ≤50 kDa (signaling) at total 0.01–0.2% in the water phase; avoid cationics. **Trade-offs**: small fragments win early (1 month), high MW wins long-term (3 months); fragments need by-product-free purification. (source: v2-p4-1-3-hyaluronic-acid)
+
+### Natural Skin-Lightening Screening Cascade
+**When to use**: qualifying a botanical brightening active. **How**: mushroom tyrosinase IC50 (475 nm) → B16F1 melanogenesis (α-MSH/cAMP induced, melanin in 1N NaOH at 405 nm) with cytotoxicity check → benchmark vs kojic acid, arbutin, vitamin C, hydroquinone → patch test → randomized clinical. **Trade-offs**: in vitro potency may hide cytotoxicity (hydroquinone); enzyme assays don't capture signaling pathways. (source: v2-p4-1-5-multifunctional-botanicals)
+
+### Hurdle-Based Preservation Assessment
+**When to use**: designing a preservative system or self-preserving formula. **How**: measure aw (<0.70 to avoid chemical preservatives), audit nutrients (gums, proteins, anionics), pH (avoid 5–8 where possible), polyol level (40–50% glycerin/sorbitol), surfactant type (gram-negative risk), storage temperature; then choose preservatives meeting the seven selection criteria and target-market regulations. **Trade-offs**: dilution or abuse can defeat hurdles; Pseudomonas tolerates pH 3–11. (source: v2-p4-1-7-1-antimicrobial-preservatives)
+
+### Antioxidant System Build and Validation
+**When to use**: protecting oil-containing products from rancidity. **How**: pick a primary antioxidant (rosemary carnosic acid, mixed tocopherols at low α level, BHT) + chelator (EDTA, phytate) for aqueous systems; apply polar paradox for placement; run OSI on oils (PF>1) and frequent early PV on the finished product, plus carbonyl assays. **Trade-offs**: natural extracts bring odor/color; α-tocopherol pro-oxidant at high dose; DPPH/ORAC don't predict performance. (source: v2-p4-1-7-2-antioxidants-shelf-life)
+
 ## Ingredients II (Rheology, Silicones, Whiteners, Marine, Cellulite)
 
 ### Salt-curve thickening of surfactant systems

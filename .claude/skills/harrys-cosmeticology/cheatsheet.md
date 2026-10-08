@@ -97,6 +97,29 @@ Decision rules and key numbers, grouped by book section. Numbers are as stated i
 - ≤12% water — dried plant stability limit; 75°C drying stops myrosinase in erysimum (sus-p12-1-sustainability)
 - ≤40°C, 4 Å zeolites — zeodration drying conditions (sus-p12-1-sustainability)
 
+## Ingredients I
+
+- If emulsion contains AHA/BHA → do not use soap-stabilized (pH > 7) systems; use phosphate esters or nonionics (v2-p4-1-1-surfactants)
+- If formulating amphoterics → move pH away from the zwitterionic point (v2-p4-1-1-surfactants)
+- If lipstick sweats at room temperature → suspect incompatibility, cut nonpolar oils, add bentonite/hectorite master gel (v2-p4-1-2-lipstick-ingredients)
+- If HA must reach dermis → use small fragments (≤50 kDa) or hydrophobized HA; >500 kDa stays on surface (v2-p4-1-3-hyaluronic-acid)
+- If product aw ≥ 0.70 → chemical preservative required (v2-p4-1-7-1-antimicrobial-preservatives)
+- If using vitamin E for skin benefit → keep α-tocopherol low and add co-antioxidants to avoid pro-oxidation (v2-p4-1-7-2-antioxidants-shelf-life)
+- If product is an O/W emulsion, soap or shampoo → add a chelator; test OSI on oils + PV on finished product (v2-p4-1-7-2-antioxidants-shelf-life)
+- If wanting turmeric benefits without staining → use tetrahydrocurcumin (v2-p4-1-5-multifunctional-botanicals)
+- If selecting probiotic ingredients → use non-live PDBs verified by defensin ELISA; caution for psoriasis-prone users (v2-p4-1-4-2-probiotics)
+- 1–5% — emulsifier level in creams/lotions (v2-p4-1-1-surfactants)
+- 6–12% anionic / ~5% amphoteric / ~2% amide — typical shampoo surfactant split (v2-p4-1-1-surfactants)
+- <10% (often ~5%) solids — hair conditioner (v2-p4-1-1-surfactants)
+- 65–75°C — lipstick melt-point window (v2-p4-1-2-lipstick-ingredients)
+- 0.01–0.2% — typical HA level in cosmetics (v2-p4-1-3-hyaluronic-acid)
+- 0.91 / 0.80 / 0.70 aw — lower growth limits for most bacteria / most molds / some organisms (v2-p4-1-7-1-antimicrobial-preservatives)
+- 40–50% glycerin or sorbitol — inhibits nearly all cosmetic-relevant microbes (v2-p4-1-7-1-antimicrobial-preservatives)
+- 30–40°C bacteria, 20–25°C fungi — optimal growth temperatures (v2-p4-1-7-1-antimicrobial-preservatives)
+- 0.25% THC vs 4% hydroquinone — THC more effective, no adverse reactions vs 50% (v2-p4-1-5-multifunctional-botanicals)
+- 31°C / 74 bar — CO2 critical point for supercritical extraction (v2-p4-1-5-multifunctional-botanicals)
+- PF > 1 — OSI protection factor indicating effective antioxidant (v2-p4-1-7-2-antioxidants-shelf-life)
+
 ## Ingredients II (Rheology, Silicones, Whiteners, Marine, Cellulite)
 
 - If you need a clear gel → carbomer/synthetic acrylic polymer (0.1–0.5%), polyethylene for anhydrous; if opaque → clays/organoclays (v2-p4-2-1-rheological-additives)

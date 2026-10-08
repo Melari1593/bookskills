@@ -1,0 +1,653 @@
+# Topic Index
+
+All indexed topics, alphabetical, with the chapter file(s) to read (in `chapters/`). For concepts not listed here, run `python3 scripts/graph_query.py search <term>`.
+
+- **"(nano)" ingredient labeling** → v1-p2-3-4-nanomaterials-regulation
+- **"Plant stem cell" labelling caveat** → v2-p4-3-6-growth-factors-stem-cells
+- **18-MEA F-layer lubricity** → v1-p3-3-1-hair-physical-chemical-properties
+- **3D reconstructed skin models for ingredient testing** → v2-p4-3-3-micrornas
+- **4-Hexylresorcinol skin lightening** → v2-p4-3-7-antioxidants
+- **4-n-butylresorcinol (Rucinol)** → v2-p4-2-4-skin-whiteners
+- **500 Da rule for passive penetration** → v1-p3-1-skin-structure
+- **ACE-inhibitor peptides (dipeptide-2)** → v2-p4-3-2-peptides
+- **Acetyl hexapeptide-3 / Argireline (Botox-like)** → v2-p4-3-2-peptides
+- **Acne (P. acnes) and dandruff (Malassezia furfur) botanicals** → v2-p4-1-4-1-ayurveda
+- **Adapalene, tazarotene** → v2-p4-3-1-topical-retinoids
+- **Adipogenesis miRs (PPARγ)** → v2-p4-3-3-micrornas
+- **Adipose-derived stem cell conditioned media** → v1-p3-8-feminine-rejuvenation
+- **Adipose-derived stem cell conditioned media (ASC-CM)** → v2-p4-3-6-growth-factors-stem-cells
+- **Adipose-derived stem cell peptides for hair** → v1-p3-3-5-eyelashes
+- **AGE formation chemistry (Schiff base, Amadori, MGO, CML, pentosidine)** → v2-p5-4-glycation-proteasome-telomeres
+- **AGE-Reader skin autofluorescence** → v2-p5-4-glycation-proteasome-telomeres
+- **AHA stinging (TRPV1/TRPV3)** → v2-p4-3-5-hydroxy-acids
+- **AHA, salicylic acid, urea, retinol limits (KSA)** → v1-p2-3-2-saudi-arabia
+- **Alcohol mouthwash ban** → v1-p2-3-2-saudi-arabia
+- **Algae classification (micro vs macro)** → v2-p4-2-5-marine-ingredients
+- **Alginate oligosaccharides / wound healing** → v2-p4-2-5-marine-ingredients
+- **Alkaline relaxers (lye, no-lye, guanidine)** → v1-p3-3-4-hair-shape-changes
+- **Alkyl dimethicone / cetyl dimethicone / behenyl dimethicone** → v2-p4-2-3-1-silicones
+- **Alpha to beta keratin transition** → v1-p3-3-1-hair-physical-chemical-properties
+- **Alpha-2 adrenergic receptors in thigh fat** → v2-p4-2-6-cellulite
+- **Alpha/beta hydroxy acids (lactic, glycolic, salicylic)** → v1-p3-2-4-aging-elderly-skin
+- **Alternatives to animal testing policy** → v1-p2-1-global-regulatory-developments
+- **Aluminum magnesium hydroxide stearate oil gels** → v2-p4-2-1-rheological-additives
+- **Amino acid charge and histidine pKa 6.8** → v1-p1-4-molecular-biology-gene-expression
+- **Amino acid composition of hair (half-cystine 17.8%)** → v1-p3-3-1-hair-physical-chemical-properties
+- **Amino acid fermentation production** → v2-p4-3-4-amino-acids
+- **Amino acid surfactants (sodium lauroyl glutamate, cocoyl glycinate)** → v2-p4-3-4-amino-acids
+- **Amla (Phyllanthus emblica) antioxidant** → v2-p4-1-4-1-ayurveda
+- **Amla beta glucogallin (Saberry)** → v2-p4-1-5-multifunctional-botanicals
+- **Ammonia malodor masking limits** → v1-p1-2-fragrance-selection
+- **Amphoteric AHA/arginine complex** → v2-p4-3-5-hydroxy-acids
+- **Amphoteric surfactants and zwitterionic point** → v2-p4-1-1-surfactants
+- **AMPK pathway (resveratrol, EGCG, curcumin, berberine)** → v1-p1-4-molecular-biology-gene-expression
+- **AMPS polymers (Aristoflex AVC, HMB)** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Androgenetic alopecia mechanism (DHT, TGF-b1, DKK-1)** → v1-p3-3-2-hair-follicle-biology
+- **Anhydrobiosis / low- vs high-density water** → v2-p5-3-anti-senescence
+- **Anionic surfactants (sulfates, sulfonates, phosphate esters)** → v2-p4-1-1-surfactants
+- **Anti-aging cream and gel formulas with ethyl lactate** → v2-p5-3-anti-senescence
+- **Anti-glycation actives (Albizia, carnosine derivatives, peptides)** → v2-p5-4-glycation-proteasome-telomeres
+- **Anti-pigmentation regimen (exfoliate, brighten, SPF 30)** → v1-p3-2-3-asian-ethnic-skin
+- **Anti-pollution skin care (nicotine, sulfuric acid)** → v2-p4-1-6-skin-barrier-padina
+- **Antioxidant paradox** → v2-p4-3-2-peptides
+- **Antioxidants in sunscreens (SPF-30 + vitamin E + emblica)** → v2-p4-3-7-antioxidants
+- **Antiperspirant active release and PPG** → v2-p4-2-3-1-silicones
+- **Apparent vs real permanent hair shape** → v1-p3-3-4-hair-shape-changes
+- **Arbutin** → v2-p4-2-4-skin-whiteners
+- **Arginine to buffer AHAs / neutralize carbomer** → v2-p4-3-4-amino-acids
+- **Ascorbic acid browning (Maillard)** → v2-p4-1-7-2-antioxidants-shelf-life
+- **ASE vs HASE associative thickeners** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Asiatic acid / Centella collagen stimulation** → v2-p4-2-6-cellulite
+- **Autoimmune theory of aging** → v2-p5-1-theories-of-aging
+- **Autophagy and LC3-II detox** → v2-p5-4-glycation-proteasome-telomeres
+- **Avobenzone photostabilizers with antioxidant function** → v2-p4-3-7-antioxidants
+- **Ayurvedic herbs for hair fall and scalp health** → v2-p4-1-4-1-ayurveda
+- **Bad breath / volatile sulfur compounds** → v1-p3-6-1-mouth-oral-care
+- **Bakuchiol (retinol alternative, retinol stabilizer)** → v2-p4-3-7-antioxidants
+- **Barrier recovery after tape stripping/acetone** → v1-p3-2-4-aging-elderly-skin
+- **Barrier recovery timing (8–11 p.m.)** → v2-p5-7-skin-chronobiology
+- **Bead/particle suspension in shower gels and facial washes** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Beau's lines** → v1-p3-4-nails
+- **Beta-1,3-D-glucan and Dectin-1** → v2-p4-1-4-2-probiotics
+- **BHT/BHA/TBHQ synthetic antioxidants** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Bio-based polymers vs petrochemical** → v2-p4-1-4-3-fermentation-bioactives
+- **Bioelectrical impedance analysis (BIA) phase angle** → v2-p5-2-cellular-water-principle
+- **Boswellic acids dark circles** → v2-p4-1-5-multifunctional-botanicals
+- **Botanical extraction (solvent, freeze-drying, supercritical CO2)** → v2-p4-1-5-multifunctional-botanicals
+- **Bottle ergonomics and weight** → v1-p1-3-fragrance-packaging-design
+- **Bound vs free water in keratin** → v1-p3-3-1-hair-physical-chemical-properties
+- **Brittle nails** → v1-p3-4-nails
+- **Brookfield vs oscillatory rheometry** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Bulge stem cells** → v1-p3-3-2-hair-follicle-biology
+- **C-PAP and oral appliance therapy** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Caffeine/theophylline phosphodiesterase inhibition** → v2-p4-2-6-cellulite
+- **Calcium and epidermal differentiation** → v2-p4-1-6-skin-barrier-padina
+- **Caloric restriction and skin appearance** → v2-p5-1-theories-of-aging
+- **Canker sores and SLS** → v1-p3-6-1-mouth-oral-care
+- **Carbomer neutralization pH profile** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Carbopol grades cross-link ranking and sensory** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Carnitine fatty acid shuttle** → v2-p4-2-6-cellulite
+- **Carotenoid singlet oxygen quenching** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Catagen triggers (TGF-b1, IL-1a, TNF-a)** → v1-p3-3-2-hair-follicle-biology
+- **Cell membrane complex (beta/delta layers) weakest link** → v1-p3-3-1-hair-physical-chemical-properties
+- **Cell signaling stages** → v1-p1-4-molecular-biology-gene-expression
+- **Cell-surface receptor classes (GPCR, ion channel, tyrosine kinase)** → v1-p1-4-molecular-biology-gene-expression
+- **Cellular senescence vs apoptosis** → v2-p5-3-anti-senescence
+- **Cellulite clinical endpoints / 3-D ultrasound** → v2-p4-2-6-cellulite
+- **Cellulite etiology (estrogen/MMP)** → v2-p4-2-6-cellulite
+- **CEPA New Substances Notification (NSNR) / DSL** → v1-p2-3-4-nanomaterials-regulation
+- **Ceramide nomenclature (EOS, NP, AH…)** → v1-p3-7-lip-skin
+- **Ceramide/cholesterol/fatty acid barrier lipids** → v1-p3-1-skin-structure
+- **Certificate of Conformity per shipment (KSA)** → v1-p2-3-2-saudi-arabia
+- **CFDA registration documents** → v1-p2-3-3-china
+- **Chamomile selected variety carbon footprint** → sus-p12-1-sustainability
+- **Channel margins (distributor 10%, retailer 50%)** → v1-p1-1-marketing-concepts
+- **Chelators (EDTA, phytic acid, gluconates)** → v2-p4-1-7-2-antioxidants-shelf-life
+- **China infant and child cosmetics guide (2012)** → v1-p2-3-3-china
+- **China mandatory animal testing / GPMT / 3T3 NRU** → v1-p2-3-3-china
+- **China removal of animal tests for domestic non-special-use cosmetics (2014)** → v1-p2-1-global-regulatory-developments
+- **China special-use vs non-special-use cosmetics** → v1-p2-3-3-china
+- **Chinese label patch / GB 5296.3-2008** → v1-p2-3-3-china
+- **Chrysin and DIM** → v2-p4-2-6-cellulite
+- **CITES** → sus-p12-1-sustainability
+- **Clays: bentonite vs hectorite** → v2-p4-2-1-rheological-additives
+- **Clock genes CLOCK, BMAL1, PER, CRY** → v2-p5-7-skin-chronobiology
+- **CMR substances in cosmetics (Reg. 1272/2008)** → v1-p2-2-us-eu-regulation
+- **Coconut oil penetration** → v1-p3-3-3-hair-aging
+- **Coconut water solids / hair growth** → v2-p4-1-5-multifunctional-botanicals
+- **Coleus oil antimicrobial vs tea tree** → v2-p4-1-5-multifunctional-botanicals
+- **Collagen-boosting amino acid ratio (Gly:Pro:Ala)** → v2-p4-3-4-amino-acids
+- **Collagenase inhibitors (grapeseed, pine bark)** → v2-p4-2-6-cellulite
+- **Color-scent associations** → v1-p1-3-fragrance-packaging-design
+- **Compression hosiery for cellulite** → v2-p4-2-6-cellulite
+- **Consumer testing methods (qualitative/quantitative)** → v1-p1-3-fragrance-packaging-design
+- **Continuous vs dynamically continuous vs discontinuous innovation** → v1-p1-1-marketing-concepts
+- **Controlled release from elastomer pores** → v2-p4-2-3-2-silicone-elastomers
+- **Convention on Biological Diversity / benefit sharing** → sus-p12-1-sustainability
+- **Copper peptide GHK-Cu** → v2-p4-3-2-peptides
+- **Corneodesmosome degradation / desquamation (KLK-7)** → v2-p4-3-5-hydroxy-acids
+- **Cornified envelope (involucrin, loricrin, transglutaminase)** → v1-p3-1-skin-structure
+- **Cosmeceutical definition (Kligman)** → v2-p4-3-2-peptides
+- **Cosmeceutical legal status (FD&C Act)** → v1-p3-2-4-aging-elderly-skin
+- **Cosmeceutical not recognized by FDA** → v1-p2-2-us-eu-regulation
+- **Cosmetic vs drug classification by intended use (US)** → v1-p2-2-us-eu-regulation
+- **Country-of-origin labeling KSA** → v1-p2-3-2-saudi-arabia
+- **COX-2 / prostaglandin J2 feedback loop** → v2-p5-3-anti-senescence
+- **CPNP notification content** → v1-p2-2-us-eu-regulation
+- **Critical overlap concentration c*** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Critical pH of enamel** → v1-p3-6-1-mouth-oral-care
+- **Cross-linked HA hydrogels and swelling** → v2-p4-1-3-hyaluronic-acid
+- **Cross-linking / glycosylation theory** → v2-p5-1-theories-of-aging
+- **Crème gels (emulsifier-free emulsions)** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **CU Declaration of Conformity** → v1-p2-3-1-russia-customs-union
+- **CU microbiological limits** → v1-p2-3-1-russia-customs-union
+- **CU pH limits for creams and mascara** → v1-p2-3-1-russia-customs-union
+- **CU State Registration high-risk categories** → v1-p2-3-1-russia-customs-union
+- **Curcuminoids anti-inflammatory (TNFα, NFκB, COX2)** → v2-p4-1-4-1-ayurveda
+- **Customs Union (Russia, Belarus, Kazakhstan)** → v1-p2-3-1-russia-customs-union
+- **Cuticle buckling and lifting from combing/blow-drying** → v1-p3-3-1-hair-physical-chemical-properties
+- **Cuticle layers: epicuticle, exocuticle, endocuticle** → v1-p3-3-1-hair-physical-chemical-properties
+- **Cuticle lipids 0.7-1.3% and lipid replenishment** → v1-p3-3-3-hair-aging
+- **Cutometer skin elasticity (Ur/Uf)** → v1-p3-2-4-aging-elderly-skin
+- **Cyclic RGD peptide (cyclotetrapeptide-24)** → v2-p4-3-2-peptides
+- **Cyclomethicone D4/D5 safety and replacement** → v2-p4-2-3-1-silicones
+- **Dansyl chloride cell-turnover assay** → v2-p4-3-5-hydroxy-acids
+- **Dark circles (peri-orbital hypermelanosis)** → v1-p3-2-3-asian-ethnic-skin
+- **Dark under-eye circles (growth factors)** → v2-p4-3-6-growth-factors-stem-cells
+- **Death hormone / neuro-endocrine theory** → v2-p5-1-theories-of-aging
+- **Dechloro ethylcloprostenolamide** → v1-p3-3-5-eyelashes
+- **Defensins (antimicrobial peptides)** → v2-p4-1-4-2-probiotics
+- **Demi-permanent vs permanent gray coverage** → v1-p3-3-3-hair-aging
+- **Dental erosion** → v1-p3-6-1-mouth-oral-care
+- **Dental plaque biofilm** → v1-p3-6-1-mouth-oral-care
+- **Dentin hypersensitivity (potassium nitrate, strontium, arginine)** → v1-p3-6-1-mouth-oral-care
+- **Dermal collagen types I/III ratio** → v2-p4-3-2-peptides
+- **Dermal collagen, elastin, GAGs** → v1-p3-1-skin-structure
+- **Dermal papilla growth factors (IGF-1, bFGF, VEGF, KGF)** → v1-p3-3-2-hair-follicle-biology
+- **Dermal-epidermal junction aging** → v2-p4-1-6-skin-barrier-padina
+- **Dermal-epidermal junction structure and aging** → v2-p4-3-7-antioxidants
+- **Design patents for packaging** → v1-p2-4-intellectual-property
+- **Desmosomes and cytokeratins** → v2-p4-1-6-skin-barrier-padina
+- **Desquamation (cholesterol sulfate, kallikreins, corneodesmosomes)** → v1-p3-1-skin-structure
+- **Dimethicone viscosity grades and ethanol solubility** → v2-p4-2-3-1-silicones
+- **Dimethicone/vinyl dimethicone crosspolymer** → v2-p4-2-3-2-silicone-elastomers
+- **Dispersant demand study for pigments** → v2-p4-1-1-surfactants
+- **DMFT/DMFS and ICDAS caries indices** → v1-p3-6-1-mouth-oral-care
+- **DNA methylation age clock** → v2-p5-6-epigenetics-of-skin-aging
+- **DNA methylation and CpG islands** → v2-p5-6-epigenetics-of-skin-aging
+- **DNA repair circadian peak (AGT, XPA)** → v2-p5-7-skin-chronobiology
+- **DNA repair pathways (MMR, BER, NER, CPD)** → v2-p5-6-epigenetics-of-skin-aging
+- **Doshas (Vata, Pitta, Kapha)** → v2-p4-1-4-1-ayurveda
+- **Dusting (sub-efficacious ingredient levels)** → v1-p1-1-marketing-concepts
+- **EAC conformity mark** → v1-p2-3-1-russia-customs-union
+- **Eccrine sweat composition** → v1-p3-1-skin-structure
+- **Eclipta alba hair growth** → v2-p4-1-5-multifunctional-botanicals
+- **Edema as wasted water / puffiness** → v2-p5-2-cellular-water-principle
+- **Elastomer cross-link density and pilling** → v2-p4-2-3-2-silicone-elastomers
+- **Elastomer solvents (D5, dimethicones, alkanes)** → v2-p4-2-3-2-silicone-elastomers
+- **Elderly dry skin and itch** → v1-p3-2-4-aging-elderly-skin
+- **Electrolyte sensitivity and rub-in breakdown** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Elicitors (methyl jasmonate, chitosan)** → sus-p12-1-sustainability
+- **Ellagic acid skin lightening / Japan quasi-drug** → v2-p4-1-5-multifunctional-botanicals
+- **Emblica (Phyllanthus emblica) antioxidant** → v2-p4-3-7-antioxidants
+- **Emulsion stabilization mechanisms (charge, steric, liquid crystal, polymeric)** → v2-p4-1-1-surfactants
+- **Endocrine disruptors, trace impurities, allergens as regulatory hot topics** → v1-p2-1-global-regulatory-developments
+- **EP Global Skin Classification Scale** → v1-p3-2-1-global-skin-classification
+- **Epidermal stem cell circadian behavior** → v2-p5-7-skin-chronobiology
+- **Epigenetic botanicals (EGCG, genistein, sulforaphane, curcumin)** → v2-p5-6-epigenetics-of-skin-aging
+- **Epigenetic drift in identical twins (smoking, sun)** → v2-p5-6-epigenetics-of-skin-aging
+- **Epigenetic orthodontics / facial bone remodeling** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Epigenetics / DNA methylation / histone acetylation** → v1-p1-4-molecular-biology-gene-expression
+- **Epinephrine and wound healing** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Esposito classification (causal/systemic/evolutionary)** → v2-p5-2-cellular-water-principle
+- **Essential oils, concretes, absolutes, isolates** → v1-p1-2-fragrance-selection
+- **Ester hydrolysis at low pH** → v2-p4-3-5-hydroxy-acids
+- **Estrogen and vulvar sensitivity** → v1-p3-8-feminine-rejuvenation
+- **Ethanol-based perfumery SASO 585/2000** → v1-p2-3-2-saudi-arabia
+- **Ethnic skin characteristics by ancestry** → v1-p3-2-1-global-skin-classification
+- **Ethyl methicone as D5 replacement** → v2-p4-2-3-1-silicones
+- **EU 26 fragrance allergens labeling** → v1-p1-2-fragrance-selection
+- **EU animal-tested product marketing ban 2013** → v1-p2-1-global-regulatory-developments
+- **EU Annex II–VI ingredient lists** → v1-p2-2-us-eu-regulation
+- **EU fragrance allergen labeling thresholds** → v1-p2-2-us-eu-regulation
+- **EU nanomaterial notification 6 months** → v1-p2-3-4-nanomaterials-regulation
+- **EU Responsible Person duties (Art. 4–5)** → v1-p2-2-us-eu-regulation
+- **Eumelanin vs pheomelanin** → v1-p3-3-1-hair-physical-chemical-properties
+- **Exogen and kenogen phases** → v1-p3-3-2-hair-follicle-biology
+- **Exosomes and intercellular miR transfer** → v2-p4-3-3-micrornas
+- **Extract standardization (AHPA) and marker compounds** → v2-p4-1-5-multifunctional-botanicals
+- **Eyelash anatomy and counts** → v1-p3-3-5-eyelashes
+- **Eyelash growth cycle** → v1-p3-3-5-eyelashes
+- **FD&C Act adulterated cosmetic (Sec. 601)** → v1-p2-2-us-eu-regulation
+- **FD&C Act misbranded cosmetic (Sec. 602)** → v1-p2-2-us-eu-regulation
+- **FDA 2012 nanomaterial draft guidance** → v1-p2-1-global-regulatory-developments
+- **FDA nanomaterial toxicity test battery** → v1-p2-3-4-nanomaterials-regulation
+- **FDA structure-function claims** → v1-p1-1-marketing-concepts
+- **Feel powders (boron nitride, PMMA, borosilicates)** → v2-p4-1-2-lipstick-ingredients
+- **Fenton reaction / free iron in sun-exposed skin** → v2-p4-3-7-antioxidants
+- **Ferment / lysate / extract INCI naming** → v2-p4-1-4-2-probiotics
+- **Feughelman two-phase model (microfibrils + matrix)** → v1-p3-3-1-hair-physical-chemical-properties
+- **Filaggrin and barrier** → v2-p4-1-6-skin-barrier-padina
+- **Filaggrin and natural moisturizing factor (NMF)** → v1-p3-1-skin-structure
+- **Fitzpatrick skin types** → v1-p3-2-1-global-skin-classification
+- **Flankers** → v1-p1-3-fragrance-packaging-design
+- **Flat iron temperature and heat transfer** → v1-p3-3-4-hair-shape-changes
+- **Flavonoids from plant cell culture** → v2-p4-1-4-3-fermentation-bioactives
+- **Fluoride and hydrogen peroxide oral-care thresholds (CU)** → v1-p2-3-1-russia-customs-union
+- **Fluoride toothpaste (NaF, SnF2, MFP)** → v1-p3-6-1-mouth-oral-care
+- **Formaldehyde nail hardener** → v1-p3-4-nails
+- **Formaldehyde/Brazilian and bisulfite/Japanese straightening** → v1-p3-3-4-hair-shape-changes
+- **Forskohlin anti-cellulite** → v2-p4-1-5-multifunctional-botanicals
+- **Four P's marketing mix** → v1-p1-1-marketing-concepts
+- **Four-quadrant consumer perception model** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Fragrance bloom in rinse-off products** → v1-p1-2-fragrance-selection
+- **Fragrance brief contents** → v1-p1-3-fragrance-packaging-design
+- **Fragrance carriers (DPG, IPM, benzyl benzoate, diethyl phthalate)** → v1-p1-2-fragrance-selection
+- **Fragrance enhancers (potentiators)** → v1-p3-5-nose-olfaction
+- **Fragrance house roles (Perfumer, Evaluator, Applications)** → v1-p1-2-fragrance-selection
+- **Fragrance-induced color change (vanilla yellowing, pinking)** → v1-p1-2-fragrance-selection
+- **Free acid vs pH/pKa calculation** → v2-p4-3-5-hydroxy-acids
+- **Free radical theory of aging (Harman 1954)** → v2-p5-1-theories-of-aging
+- **Free radical theory of aging (Harman 1956)** → v1-p1-4-molecular-biology-gene-expression
+- **Freedom to operate analysis** → v1-p2-4-intellectual-property
+- **Frizz causes** → v1-p3-3-4-hair-shape-changes
+- **Gap-junction cell communication (Lucifer Yellow)** → v2-p4-1-6-skin-barrier-padina
+- **Gene expression / genomics screening of cosmetic actives** → v1-p3-1-skin-structure
+- **Gene-expression biomarkers for claims** → v1-p1-4-molecular-biology-gene-expression
+- **Genistein topical anti-estrogen** → v2-p4-2-6-cellulite
+- **Gingivitis antimicrobials (chlorhexidine, essential oils, CPC, triclosan)** → v1-p3-6-1-mouth-oral-care
+- **Global and US population by race** → v1-p3-2-1-global-skin-classification
+- **Gluconolactone (PHA)** → v2-p4-3-5-hydroxy-acids
+- **Glutaminylglutamine amide anti-senescence peptides** → v2-p5-3-anti-senescence
+- **Glycation pH dependence** → v2-p5-4-glycation-proteasome-telomeres
+- **Glycerine vs glycol extract carriers** → sus-p12-1-sustainability
+- **Glycolic acid (pKa 3.8, 76 Da)** → v2-p4-3-5-hydroxy-acids
+- **Glycolic acid for hair** → v1-p3-3-3-hair-aging
+- **Glycolic acid peels for melasma** → v1-p3-2-3-asian-ethnic-skin
+- **Glyoxalase and FN3K deglycation** → v2-p5-4-glycation-proteasome-telomeres
+- **Good agricultural practices for botanicals** → sus-p12-1-sustainability
+- **Gram-negative contamination in shampoos (Pseudomonas)** → v2-p4-1-7-1-antimicrobial-preservatives
+- **GRAS fragrances for lip products** → v1-p1-2-fragrance-selection
+- **Green Star Rating** → v2-p4-2-3-1-silicones
+- **Green tea polyphenols (EGCG) photoprotection** → v2-p4-3-7-antioxidants
+- **Greenwashing** → sus-p12-1-sustainability
+- **Growth factor penetration routes** → v2-p4-3-6-growth-factors-stem-cells
+- **Growth factors (TGF-β1, PDGF, KGF, bFGF, VEGF)** → v1-p3-8-feminine-rejuvenation
+- **GSO 1943/2009 cosmetic safety standard** → v1-p2-3-2-saudi-arabia
+- **H2O2 accumulation and catalase loss in gray hair** → v1-p3-3-3-hair-aging
+- **HA degradation (hyaluronidase, acid/alkaline hydrolysis)** → v2-p4-1-3-hyaluronic-acid
+- **HA incompatibility with cationics** → v2-p4-1-3-hyaluronic-acid
+- **HA oligosaccharides and angiogenesis/wrinkles** → v2-p4-1-3-hyaluronic-acid
+- **HA skin penetration (>500 kDa vs fragments)** → v2-p4-1-3-hyaluronic-acid
+- **HA vs glycerin at low humidity** → v2-p4-1-3-hyaluronic-acid
+- **Hair body and flexural rigidity** → v1-p3-3-4-hair-shape-changes
+- **Hair conditioner composition (quats, fatty alcohols)** → v2-p4-1-1-surfactants
+- **Hair shine, refractive index 1.53, light interference patterns** → v1-p3-3-1-hair-physical-chemical-properties
+- **Hair stress-strain curve (Hookean, yield, post-yield)** → v1-p3-3-1-hair-physical-chemical-properties
+- **Hair tensile strength after bleach/perm** → v2-p4-3-4-amino-acids
+- **Hair Tm ~156 °C and Tg ~144 °C** → v1-p3-3-1-hair-physical-chemical-properties
+- **Hair UV filters (Parsol SLX, Crodasorb UV-HPP)** → v1-p3-3-3-hair-aging
+- **Hair volume, static fly-away, triboelectric series** → v1-p3-3-4-hair-shape-changes
+- **Hair-loss statistics men/women** → v1-p3-3-3-hair-aging
+- **Hand sanitizer gel neutralizers by alcohol %** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Hayflick limit (~50 fibroblast divisions)** → v2-p5-1-theories-of-aging
+- **Health Canada nanomaterial definition and Cosmetic Notification Form** → v1-p2-3-4-nanomaterials-regulation
+- **Heavy metal limits for natural raw materials (As, Hg, Pb)** → v1-p2-3-1-russia-customs-union
+- **Herboretum Network** → sus-p12-1-sustainability
+- **Hexachlorophene and mercury preservative limits** → v1-p2-2-us-eu-regulation
+- **High-throughput fragrance screening** → v1-p3-5-nose-olfaction
+- **Histone acetylation (HAT/HDAC)** → v2-p5-6-epigenetics-of-skin-aging
+- **HLB calculation and required HLB of oils** → v2-p4-1-1-surfactants
+- **Hot iron damage (pores, cuticle tear-off)** → v1-p3-3-4-hair-shape-changes
+- **HPA axis, cortisol and collagen loss** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Human Genome Project and junk DNA** → v2-p5-6-epigenetics-of-skin-aging
+- **Hyaluronic acid molecular weight selection** → v2-p4-1-3-hyaluronic-acid
+- **Hydrophobized HA delivery systems** → v2-p4-1-3-hyaluronic-acid
+- **Hydroquinone 4%** → v1-p3-2-2-skin-of-color-disorders
+- **Hydroquinone alternatives (kojic, arbutin, licorice, niacinamide, etc.)** → v1-p3-2-2-skin-of-color-disorders
+- **Hydroxypropyl guar** → v2-p4-2-1-rheological-additives
+- **Hyperosmolarity-induced inflammation (300 mOsm)** → v2-p5-3-anti-senescence
+- **Hypopigmentation from overbleaching** → v1-p3-2-3-asian-ethnic-skin
+- **ICCR (International Cooperation on Cosmetics Regulation)** → v1-p2-1-global-regulatory-developments
+- **Idiopathic guttate hypomelanosis** → v1-p3-2-2-skin-of-color-disorders
+- **IECIC existing cosmetic ingredient inventory** → v1-p2-3-3-china
+- **IFRA categories / QRA, RIFM** → v1-p1-2-fragrance-selection
+- **Immunosenescence and resveratrol** → v2-p5-3-anti-senescence
+- **Impurity testing: phenol, dioxane, methanol, acrylamide, NDELA** → v1-p2-3-3-china
+- **In vitro defensin ELISA vs animal testing** → v2-p4-1-4-2-probiotics
+- **INCI fragrance blends / unscented blends** → v1-p1-2-fragrance-selection
+- **INCI name application (PCPC wINCI) / EU Glossary and CosIng** → v1-p2-2-us-eu-regulation
+- **Inflammasomes and UV** → v1-p1-4-molecular-biology-gene-expression
+- **Inflammation theory (PLA2, arachidonic acid, TNF-α, IL-6, NF-κB, CRP)** → v2-p5-1-theories-of-aging
+- **Inner and outer root sheath** → v1-p3-3-2-hair-follicle-biology
+- **Insomnia types** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Intracellular vs extracellular water** → v2-p5-2-cellular-water-principle
+- **Intrinsic vs extrinsic (photo) aging** → v1-p3-2-4-aging-elderly-skin
+- **Intrinsic vs extrinsic aging** → v2-p4-3-6-growth-factors-stem-cells
+- **IP in joint development / contract manufacturing** → v1-p2-4-intellectual-property
+- **IPL / fractional laser for pigmentation** → v1-p3-2-3-asian-ethnic-skin
+- **Irritants in intimate lubricants (propylene glycol, parabens)** → v1-p3-8-feminine-rejuvenation
+- **ISO 22716 GMP vs FDA plant inspection checklist** → v1-p2-2-us-eu-regulation
+- **Japanese whitening quasi-drug (QD) regulation** → v2-p4-2-4-skin-whiteners
+- **Kallikrein (KLK5/KLK7) desquamation** → v2-p4-2-4-skin-whiteners
+- **Keloid and scleroderma miRNA signatures** → v2-p4-3-3-micrornas
+- **Keloid risk** → v1-p3-2-1-global-skin-classification
+- **Keratin 38 and lash curvature** → v1-p3-3-5-eyelashes
+- **Koilonychia** → v1-p3-4-nails
+- **Kojic acid** → v2-p4-2-4-skin-whiteners
+- **L-Proline moisture retention at low humidity** → v2-p4-3-4-amino-acids
+- **Lactobacillus ferment (defensins, bacteriocins, lactic acid)** → v2-p4-1-4-3-fermentation-bioactives
+- **Lactobionic and maltobionic acids (bionic acids)** → v2-p4-3-5-hydroxy-acids
+- **Lamellar bodies (Odland bodies)** → v1-p3-1-skin-structure
+- **Lamin B1 decline in senescence (miR-23a)** → v2-p4-3-3-micrornas
+- **Laminaria digitata (slimming, anti-aging)** → v2-p4-2-5-marine-ingredients
+- **Langerhans cells and skin immunity** → v1-p3-1-skin-structure
+- **Lanthionine formation** → v1-p3-3-4-hair-shape-changes
+- **Lanugo, vellus, terminal hair** → v1-p3-3-2-hair-follicle-biology
+- **Lauroyl lysine (UV pigment deposition)** → v2-p4-3-4-amino-acids
+- **Lichen sclerosus / kraurosis vulvae** → v1-p3-8-feminine-rejuvenation
+- **Lip aging** → v1-p3-7-lip-skin
+- **Lip hydration (upper vs lower)** → v1-p3-7-lip-skin
+- **Lip TEWL and barrier** → v1-p3-7-lip-skin
+- **Lipid autoxidation mechanism** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Lipofuscin / age spots** → v2-p5-1-theories-of-aging
+- **Liposomes and transfersomes (deformable vesicles)** → v1-p3-1-skin-structure
+- **Lipoteichoic acid and peptidoglycan** → v2-p4-1-4-2-probiotics
+- **Lipstick molding (book vs silicone molds)** → v2-p4-1-2-lipstick-ingredients
+- **Lipstick sweating and clay master gels** → v2-p4-1-2-lipstick-ingredients
+- **Lipstick waxes (candelilla, carnauba, beeswax)** → v2-p4-1-2-lipstick-ingredients
+- **Liquid crystal emulsifier processing at 80°C** → v2-p4-1-1-surfactants
+- **Live yeast cell derivative (LYCD)** → v2-p4-1-4-3-fermentation-bioactives
+- **Long-wear lipstick film formers (PVP/eicosene)** → v2-p4-1-2-lipstick-ingredients
+- **Low-pH thickeners (smectite clay, acid-swellable associative polymers)** → v2-p4-3-5-hydroxy-acids
+- **M, D, T, Q silicone nomenclature** → v2-p4-2-3-1-silicones
+- **MAC / MUCAP** → v1-p2-3-3-china
+- **Malodor blockers** → v1-p3-5-nose-olfaction
+- **Maltodextrin for play time** → v2-p4-2-1-rheological-additives
+- **Mandelic acid for oily/acne skin** → v2-p4-3-5-hydroxy-acids
+- **MAP kinase / AP-1 / MMP photo-aging pathway** → v1-p3-2-4-aging-elderly-skin
+- **Margin of Safety calculation (NOAEL/SED)** → v1-p2-2-us-eu-regulation
+- **Marine algae actives (fucoxanthin, Corallina, Chlorella)** → v2-p4-1-4-3-fermentation-bioactives
+- **Marine exopolysaccharides (EPS)** → v2-p4-2-5-marine-ingredients
+- **Market segmentation (demographics/psychographics/geographics)** → v1-p1-1-marketing-concepts
+- **Marketing Concept (need-driven development)** → v1-p1-1-marketing-concepts
+- **Matrikines** → v2-p4-3-2-peptides
+- **Matrix metalloproteinases and TIMPs** → v2-p4-2-6-cellulite
+- **Mattifying and oil control (T-zone)** → v2-p4-2-3-2-silicone-elastomers
+- **Medulla** → v1-p3-3-1-hair-physical-chemical-properties
+- **Melanogenesis (tyrosinase, eumelanin, pheomelanin)** → v1-p3-1-skin-structure
+- **Melasma** → v1-p3-2-2-skin-of-color-disorders
+- **Melasma triple combination (hydroquinone + tretinoin + steroid)** → v2-p4-3-1-topical-retinoids
+- **Membrane hypothesis of aging (Nagy)** → v2-p5-2-cellular-water-principle
+- **Microbial limits 1000/500 cfu/g** → v1-p2-2-us-eu-regulation
+- **Microdermabrasion** → v1-p3-2-3-asian-ethnic-skin
+- **MicroRNA biogenesis (Drosha, Dicer, RISC)** → v2-p4-3-3-micrornas
+- **MicroRNAs in pigmentation (miR-145, miR-125b, miR-675)** → v2-p4-3-3-micrornas
+- **Mild anionics (glutamates, isethionates, taurates, sarcosinates, lactylates)** → v2-p4-1-1-surfactants
+- **Minoxidil 2% vs 5%** → v1-p3-3-3-hair-aging
+- **miR-203 and keratinocyte differentiation** → v2-p4-3-3-micrornas
+- **miR-29b collagen I repression** → v2-p4-3-3-micrornas
+- **MITF down-regulation** → v2-p4-2-4-skin-whiteners
+- **Mitochondrial theory of aging** → v2-p5-1-theories-of-aging
+- **MMP-1 in photo-aging and TIMP-1 imbalance** → v2-p4-3-7-antioxidants
+- **MQ and MDQ resins** → v2-p4-2-3-1-silicones
+- **Multi-domain alkyl silicones and lipstick syneresis** → v2-p4-2-3-1-silicones
+- **N-acetylglucosamine (NAG)** → v2-p4-3-5-hydroxy-acids
+- **N-acetyltyrosinamide** → v2-p4-3-5-hydroxy-acids
+- **NAD+ and 2'-O-acetyl-ADP ribose** → v2-p5-5-sirtuins-and-skin
+- **NADPH oxidase (Nox1) and UVA ROS** → v2-p4-3-7-antioxidants
+- **Nagoya Protocol / biopiracy** → sus-p12-1-sustainability
+- **Nail discoloration from varnish tints** → v1-p3-4-nails
+- **Nail growth rate** → v1-p3-4-nails
+- **Nail matrix and lunula** → v1-p3-4-nails
+- **Nail plate composition (keratin, cystine, water)** → v1-p3-4-nails
+- **Nambour sunscreen trial** → v1-p3-2-4-aging-elderly-skin
+- **Nano TiO2 dose metric (surface area)** → v1-p2-3-4-nanomaterials-regulation
+- **Nanomaterial assay interference (MTT, LDH, ELISA)** → v1-p2-3-4-nanomaterials-regulation
+- **Nanomaterial definition EU 1–100 nm** → v1-p2-1-global-regulatory-developments
+- **Narrow-band UVB phototherapy** → v1-p3-2-2-skin-of-color-disorders
+- **Native full-length receptor expression** → v1-p3-5-nose-olfaction
+- **Natural fragrance substitutes** → v1-p3-5-nose-olfaction
+- **Natural gums (xanthan, guar, carrageenan) variability** → v2-p4-2-1-rheological-additives
+- **Natural moisturizing factor (NMF) composition** → v2-p4-3-4-amino-acids
+- **Natural preservatives (salicylic acid) and antioxidants (rosemary)** → sus-p12-1-sustainability
+- **Neem antimicrobial** → v2-p4-1-4-1-ayurveda
+- **Neonatal/fetal fibroblast conditioned media (PSP)** → v2-p4-3-6-growth-factors-stem-cells
+- **Neurowhitening / Substance P** → v2-p4-2-4-skin-whiteners
+- **New cosmetic ingredient approval in China** → v1-p2-3-3-china
+- **New product-development process (7 steps)** → v1-p1-1-marketing-concepts
+- **Niacinamide** → v1-p3-2-4-aging-elderly-skin
+- **Nicotinamide as sirtuin inhibitor** → v2-p5-5-sirtuins-and-skin
+- **Night skin penetration / chrono-delivery** → v2-p5-7-skin-chronobiology
+- **Night vs day skin physiology (TEWL, pH, sebum)** → v2-p5-7-skin-chronobiology
+- **Novelty, nonobviousness, industrial applicability** → v1-p2-4-intellectual-property
+- **Nrf2 pathway (sulforaphane, quercetin, resveratrol)** → v1-p1-4-molecular-biology-gene-expression
+- **Nrf2 up-regulation** → v2-p5-6-epigenetics-of-skin-aging
+- **Nutriepigenetics (folate, betaine, agouti mice, BPA)** → v2-p5-6-epigenetics-of-skin-aging
+- **Nutritional supplements for cell hydration (glucosamine, lecithin, EFA)** → v2-p5-2-cellular-water-principle
+- **Obstructive sleep apnea and AHI** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Octanol-water partition coefficient (log Kow)** → v1-p1-2-fragrance-selection
+- **Odor detection threshold, anosmia, adaptation** → v1-p1-2-fragrance-selection
+- **Odorant receptors (GPCR)** → v1-p3-5-nose-olfaction
+- **Oil Stability Index and protection factor** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Olfactive categories (citrus, floral, fougere, woody, chypre, oriental)** → v1-p1-3-fragrance-packaging-design
+- **Onycholysis from nail hardeners / acrylics / UV dryers** → v1-p3-4-nails
+- **Onychomycosis** → v1-p3-4-nails
+- **Onychoschizia (nail splitting)** → v1-p3-4-nails
+- **Open innovation for sustainability** → sus-p12-1-sustainability
+- **Organic certification of extracts** → sus-p12-1-sustainability
+- **Organic cosmetics not recognized in China (GB/T 19630)** → v1-p2-3-3-china
+- **Organoclays / quaternium-18 hectorite pre-dispersions** → v2-p4-2-1-rheological-additives
+- **Ortho- vs para-cortical cells and curliness** → v1-p3-3-1-hair-physical-chemical-properties
+- **Osmoprotectants (glycine betaine, trehalose, ectoine, carnitine)** → v2-p5-3-anti-senescence
+- **Ospemifene (SERM)** → v1-p3-8-feminine-rejuvenation
+- **Oxyresveratrol (Artocarpus lakoocha)** → v2-p4-1-5-multifunctional-botanicals
+- **Padina pavonica extract (HFP)** → v2-p4-1-6-skin-barrier-padina
+- **Palmitoyl pentapeptide-3 / Matrixyl (pal-KTTKS)** → v2-p4-3-2-peptides
+- **PAO vs date of minimum durability (30 months)** → v1-p2-2-us-eu-regulation
+- **PAR-2 melanin transfer inhibition** → v2-p4-2-4-skin-whiteners
+- **Parabens, phenoxyethanol, isothiazolinones frequency of use** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Paronychia and cuticle removal** → v1-p3-4-nails
+- **Patent classification A61K / A61Q / US 424** → v1-p2-4-intellectual-property
+- **Patent criteria (20-year exclusivity)** → v1-p1-1-marketing-concepts
+- **Patent infringement types (literal, equivalents, willful)** → v1-p2-4-intellectual-property
+- **PCA ethyl cocoyl arginate (CAE) hair conditioner** → v2-p4-3-4-amino-acids
+- **PCT and European Patent Convention** → v1-p2-4-intellectual-property
+- **Peel/laser precautions for darker skin** → v1-p3-2-1-global-skin-classification
+- **PEG molecular weight and stick melting point** → v2-p4-2-1-rheological-additives
+- **PEG/PPG dimethicone (dimethicone copolyol)** → v2-p4-2-3-1-silicones
+- **Peptide penetration (palmitoylation)** → v2-p4-3-2-peptides
+- **Perceived hair dryness = surface roughness** → v1-p3-3-1-hair-physical-chemical-properties
+- **Percentage self-assessment claims** → v2-p5-3-anti-senescence
+- **Periocular safety testing (RIPT, LLNA, Ames, ocular)** → v1-p3-3-5-eyelashes
+- **Peroxide value iodometry** → v2-p4-1-7-2-antioxidants-shelf-life
+- **pH and microbial growth** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Phenyl silicone shine (trimethylsiloxyphenyl dimethicone)** → v2-p4-1-2-lipstick-ingredients
+- **Pheomelanin and yellow undertones** → v1-p3-2-3-asian-ethnic-skin
+- **Photo-aging of hair (tryptophan, cysteic acid)** → v1-p3-3-3-hair-aging
+- **Photo-damaged forearm clinical model** → v2-p4-3-5-hydroxy-acids
+- **Photolyase liposomes for DNA repair** → v2-p4-2-5-marine-ingredients
+- **Phytosterol/octyldodecyl lauroyl glutamate (hair tensile repair)** → v2-p4-3-4-amino-acids
+- **Pigment oil absorbance and staining dyes (D&C Red 22, 28)** → v2-p4-1-2-lipstick-ingredients
+- **Pigment suspension in molten lipstick** → v2-p4-2-1-rheological-additives
+- **Plant cell cultures / echinacoside / verbascoside** → sus-p12-1-sustainability
+- **Plant drying ≤12% water / mycotoxins** → sus-p12-1-sustainability
+- **Plant identification (TLC/HPLC/DNA barcoding)** → sus-p12-1-sustainability
+- **Plant stem cell / meristem cultures (red rice, apple)** → v2-p4-1-4-3-fermentation-bioactives
+- **Plant stem cells (Uttwiler Spatlauber apple)** → v2-p4-3-6-growth-factors-stem-cells
+- **PLGA targeted carriers** → v1-p3-1-skin-structure
+- **Polar paradox** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Polyethylene gels in lipstick/mascara (≥80 °C)** → v2-p4-2-1-rheological-additives
+- **Polymethylsilsesquioxane powder** → v2-p4-2-3-2-silicone-elastomers
+- **Post-inflammatory hyperpigmentation (PIH)** → v1-p3-2-2-skin-of-color-disorders
+- **Premature graying age thresholds** → v1-p3-3-2-hair-follicle-biology
+- **Preservative selection criteria** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Pro-oxidant activity of vitamins C and E** → v2-p4-3-7-antioxidants
+- **Probiotic derived bioactives (PDB)** → v2-p4-1-4-2-probiotics
+- **Probiotics and psoriasis contraindication** → v2-p4-1-4-2-probiotics
+- **Product Information File and CPSR Annex I structure** → v1-p2-2-us-eu-regulation
+- **Progerin and telomere damage** → v2-p5-4-glycation-proteasome-telomeres
+- **Prohibited preservatives (hexachlorophene, mercury)** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Prostaglandin analogue lash growth (latanoprost, bimatoprost)** → v1-p3-3-5-eyelashes
+- **Proteasome activation actives and caveats** → v2-p5-4-glycation-proteasome-telomeres
+- **Pseudo-catalase repigmentation** → v1-p3-3-3-hair-aging
+- **Pseudofolliculitis barbae (razor bumps)** → v1-p3-2-2-skin-of-color-disorders
+- **QDA sensory panel for emulsions** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **RAPEX and cosmetovigilance (Art. 22–23)** → v1-p2-2-us-eu-regulation
+- **RAR-gamma retinoid receptor** → v2-p4-3-1-topical-retinoids
+- **REACH obligations for cosmetic ingredients** → v1-p2-2-us-eu-regulation
+- **Read-across limitations for nanomaterials** → v1-p2-3-4-nanomaterials-regulation
+- **Recombinant peptides and hyaluronic acid** → v2-p4-1-4-3-fermentation-bioactives
+- **Resveratrol SIRT1 activation and assay artifact** → v2-p5-5-sirtuins-and-skin
+- **Retinoid and hydroquinone sensitivity in Asian skin** → v1-p3-2-1-global-skin-classification
+- **Retinoid irritation (retinoid dermatitis)** → v2-p4-3-1-topical-retinoids
+- **Retinoid photosensitivity and sunscreen** → v2-p4-3-1-topical-retinoids
+- **Retinoids for acne (microcomedo, TLR2)** → v2-p4-3-1-topical-retinoids
+- **Retinol and retinyl propionate** → v1-p3-2-4-aging-elderly-skin
+- **Retinol use level (0.1–2%)** → v2-p4-3-1-topical-retinoids
+- **Retinol vs retinoic acid potency** → v2-p4-3-1-topical-retinoids
+- **RF50 surface-tension efficiency** → v2-p4-2-3-1-silicones
+- **Rice meristem cell extract (methylation reversal)** → v2-p5-6-epigenetics-of-skin-aging
+- **RNA interference (siRNA vs miRNA)** → v2-p4-3-3-micrornas
+- **Rock samphire retinol-like extract** → v2-p4-2-5-marine-ingredients
+- **Roll-on antiperspirant emulsions** → v2-p4-1-1-surfactants
+- **ROS-driven skin aging and inflammation** → v2-p4-1-4-1-ayurveda
+- **Rosemary extract (carnosic acid, carnosol)** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Russian/CU labeling requirements** → v1-p2-3-1-russia-customs-union
+- **Safety Assessor qualifications** → v1-p2-2-us-eu-regulation
+- **Safety questions for epigenetic cosmetic ingredients** → v2-p5-6-epigenetics-of-skin-aging
+- **Salicornia and aquaporin AQP8/AQP3** → v2-p4-2-5-marine-ingredients
+- **Salt curve (NaCl thickening of anionic surfactants)** → v2-p4-2-1-rheological-additives
+- **Sapienic acid / lauric acid antimicrobial lipids** → v1-p3-7-lip-skin
+- **SASO skin cream standard (fat ≥15%)** → v1-p2-3-2-saudi-arabia
+- **Saudi Food and Drug Authority (SFDA)** → v1-p2-3-2-saudi-arabia
+- **SC turnover (dansyl chloride)** → v1-p3-2-4-aging-elderly-skin
+- **Scalp care regimens by scalp type** → v1-p3-3-3-hair-aging
+- **SCCS nanomaterial characterization parameters** → v1-p2-3-4-nanomaterials-regulation
+- **Sea minerals and lithothamnium exfoliants** → v2-p4-2-5-marine-ingredients
+- **Sebum absorbers and soft-focus** → v2-p4-2-3-2-silicone-elastomers
+- **Sebum composition** → v1-p3-1-skin-structure, v1-p3-7-lip-skin
+- **Sebum decline with age** → v1-p3-3-3-hair-aging
+- **Self-preserving products (glycerin/sorbitol 40–50%)** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Senescence-associated miRs (SA-miRs, inflamma-miRs)** → v2-p4-3-3-micrornas
+- **Sensory dissonance** → v1-p1-3-fragrance-packaging-design
+- **Sensory panel confirmation of hits** → v1-p3-5-nose-olfaction
+- **SFDA Guidance for Products Classification (2012)** → v1-p2-3-2-saudi-arabia
+- **Shampoo surfactant system and salt thickening** → v2-p4-1-1-surfactants
+- **Shape memory polymer concepts for hair** → v1-p3-3-4-hair-shape-changes
+- **Shelterin complex (TRF1, TRF2, POT1, RAP1, TIN2, TPP1)** → v2-p5-4-glycation-proteasome-telomeres
+- **Shift work and cancer risk** → v2-p5-7-skin-chronobiology
+- **Silica thickening and shear sensitivity** → v2-p4-2-1-rheological-additives
+- **Silicone copolyol W/Si emulsifiers** → v2-p4-1-1-surfactants
+- **Silicone elastomers / Polysilicone-11** → v2-p4-2-3-2-silicone-elastomers
+- **Silicone emulsifier kit rapid screening** → v2-p4-2-3-1-silicones
+- **Silicone gum blends** → v2-p4-2-3-1-silicones
+- **Silicone substitute vegetable esters** → sus-p12-1-sustainability
+- **Silicone surface tension** → v2-p4-2-3-1-silicones
+- **Silicone waxes and alkyl dimethicones** → v2-p4-1-2-lipstick-ingredients
+- **SIRT1 and BMAL-1 circadian control** → v2-p5-5-sirtuins-and-skin
+- **SIRT3 and SOD2 activation** → v2-p5-5-sirtuins-and-skin
+- **SIRT6 DNA repair and telomeres** → v2-p5-5-sirtuins-and-skin
+- **Sirtuin inhibitors for psoriasis** → v2-p5-5-sirtuins-and-skin
+- **Sirtuin localization SIRT1-7** → v2-p5-5-sirtuins-and-skin
+- **Skin antioxidant levels (vitamin C dominant)** → v2-p4-3-7-antioxidants
+- **Skin cancer types (BCC, SCC, melanoma)** → v1-p3-1-skin-structure
+- **Skin consultation questionnaire** → v1-p3-2-1-global-skin-classification
+- **Skin penetration pathways (intercellular, transcellular, follicular, polar)** → v1-p3-1-skin-structure
+- **Skin-lightening market in Asia** → v1-p3-2-3-asian-ethnic-skin
+- **Sleep deprivation facial signs** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Sleep hygiene (caffeine half-life, alcohol)** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Sleep stages and growth hormone** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **Soap definition 21 CFR 701.20 / CPSC** → v1-p2-2-us-eu-regulation
+- **Social media as regulatory driver** → v1-p2-1-global-regulatory-developments
+- **Sodium PCA humectant** → v2-p4-3-4-amino-acids
+- **Sodium polyaspartate (skin elasticity, hair)** → v2-p4-3-4-amino-acids
+- **Solar elastosis** → v1-p3-2-4-aging-elderly-skin
+- **Spreading coefficient of emollients** → v2-p4-1-2-lipstick-ingredients
+- **Starch derivatives and syneresis** → v2-p4-2-1-rheological-additives
+- **Stephan curve** → v1-p3-6-1-mouth-oral-care
+- **Stratum corneum brick-and-mortar model** → v1-p3-1-skin-structure
+- **Strehler's characteristics of aging** → v2-p5-2-cellular-water-principle
+- **Stressed lysates (heat shock, UV, peroxide)** → v2-p4-1-4-3-fermentation-bioactives
+- **Styling polymer Tg, spot welding, gels vs aerosols** → v1-p3-3-4-hair-shape-changes
+- **Submerged vs solid-state fermentation** → v2-p4-1-4-3-fermentation-bioactives
+- **Successful aging / Inclusive Health** → v2-p5-2-cellular-water-principle
+- **Sucrose fatty acid esters** → v2-p4-1-2-lipstick-ingredients
+- **Suprachiasmatic nucleus master clock** → v2-p5-7-skin-chronobiology
+- **Sustainable wild harvest (NTFPs, Brazil nut)** → sus-p12-1-sustainability
+- **SWOT / situation analysis** → v1-p1-1-marketing-concepts
+- **Syn-ake (Waglerin-1 mimic)** → v2-p4-3-2-peptides
+- **tan δ, G′, G″ and cushion/pick-up** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Tartar control (pyrophosphate, zinc citrate)** → v1-p3-6-1-mouth-oral-care
+- **Telangiectasia (VEGF, TSP-1)** → v1-p3-2-4-aging-elderly-skin
+- **Telomerase theory** → v2-p5-1-theories-of-aging
+- **Telomere protection actives (GGA/GGP, Scutellaria, galactans, TRF-2)** → v2-p5-4-glycation-proteasome-telomeres
+- **Tetrahydrocurcumin vs hydroquinone** → v2-p4-1-5-multifunctional-botanicals
+- **Tetrahydropiperine penetration enhancer** → v2-p4-1-5-multifunctional-botanicals
+- **TEWL in elderly skin** → v1-p3-2-4-aging-elderly-skin
+- **Thioglycolate permanent waving and reversion** → v1-p3-3-4-hair-shape-changes
+- **Thioredoxin / Phormidium extract** → v2-p4-2-5-marine-ingredients
+- **Thixotropic vs pseudoplastic rheology** → v2-p4-2-1-rheological-additives
+- **Tight junctions (claudin-1, claudin-4)** → v2-p4-1-6-skin-barrier-padina
+- **Tocopherol pro-oxidant effect** → v2-p4-1-7-2-antioxidants-shelf-life
+- **Toll-like receptors on keratinocytes** → v2-p4-1-4-2-probiotics
+- **Tooth whitening peroxides** → v1-p3-6-1-mouth-oral-care
+- **Top, middle, base notes** → v1-p1-2-fragrance-selection
+- **Topical growth factors (TGF-β1)** → v2-p4-3-6-growth-factors-stem-cells
+- **Topical stress-skin therapies (timolol, mifepristone)** → v2-p5-8-stress-sleep-epigenetic-orthodontics
+- **TR TC 009/2011 safety of perfumery and cosmetic products** → v1-p2-3-1-russia-customs-union
+- **Trade dress and copyright for packaging/labels** → v1-p2-4-intellectual-property
+- **Trade secrets for formulas** → v1-p2-4-intellectual-property
+- **Trademark classes for cosmetics (Class 3)** → v1-p2-4-intellectual-property
+- **Traditional Knowledge Digital Library (herbal ingredients)** → v1-p2-4-intellectual-property
+- **Tranexamic acid and melasma** → v2-p4-2-4-skin-whiteners
+- **Transcription factors** → v1-p1-4-molecular-biology-gene-expression
+- **Tretinoin / retinoic acid** → v2-p4-3-1-topical-retinoids
+- **Tretinoin for wrinkles** → v1-p3-2-4-aging-elderly-skin
+- **Tretinoin, hydroquinone, triclosan bans (KSA)** → v1-p2-3-2-saudi-arabia
+- **Triangle test (fragrance QC)** → v1-p1-2-fragrance-selection
+- **Trihydroxystearin (castor derivative)** → v2-p4-2-1-rheological-additives
+- **Triphala blend** → v2-p4-1-4-1-ayurveda
+- **Triple bottom line** → sus-p12-1-sustainability
+- **Tyrosinase and B16 melanogenesis assays** → v2-p4-1-5-multifunctional-botanicals
+- **Tyrosinase inhibition** → v2-p4-2-4-skin-whiteners
+- **Ubiquitin–proteasome pathway (E1/E2/E3, 26S)** → v2-p5-3-anti-senescence
+- **Ursolic acid ceramides and collagen** → v2-p4-1-5-multifunctional-botanicals
+- **US anticaries OTC monograph (21 CFR 355)** → v1-p3-6-1-mouth-oral-care
+- **US color additives certified vs exempt (21 CFR 73/74)** → v1-p2-2-us-eu-regulation
+- **US ingredient labeling order 21 CFR 701.3** → v1-p2-2-us-eu-regulation
+- **US label PDP and information panel requirements** → v1-p2-2-us-eu-regulation
+- **US mandatory warnings (aerosols, feminine deodorant sprays, bubble bath)** → v1-p2-2-us-eu-regulation
+- **US prohibited ingredients (bithionol, chloroform, methylene chloride, vinyl chloride, zirconium aerosols)** → v1-p2-2-us-eu-regulation
+- **US provisional patent application** → v1-p2-4-intellectual-property
+- **Utility models (China, Japan, Korea)** → v1-p2-4-intellectual-property
+- **Utility patents for cosmetic formulations** → v1-p2-4-intellectual-property
+- **UVA vs UVB DNA damage, pollution (PAH) synergy** → v1-p3-1-skin-structure
+- **UVB and oxidative stress on hair follicles** → v1-p3-3-2-hair-follicle-biology
+- **UVB and ozone effects on keratinocyte sirtuins** → v2-p5-5-sirtuins-and-skin
+- **UVB disruption of clock genes and ATP** → v2-p5-7-skin-chronobiology
+- **VEGF and melanoma safety concern** → v2-p4-3-6-growth-factors-stem-cells
+- **Vermilion zone** → v1-p3-7-lip-skin
+- **Victoria's Secret Bombshell case** → v1-p1-3-fragrance-packaging-design
+- **Vimentin glycation and fibroblast contraction** → v2-p5-4-glycation-proteasome-telomeres
+- **Vitamin C + E + ferulic acid** → v2-p4-3-7-antioxidants
+- **Vitamin C and antioxidants for photo-aging** → v1-p3-2-4-aging-elderly-skin
+- **Vitamin C derivatives (SAP, MAP, ascorbyl glucoside)** → v2-p4-3-7-antioxidants
+- **Vitamin C derivatives for whitening** → v2-p4-2-4-skin-whiteners
+- **Vitiligo** → v1-p3-2-2-skin-of-color-disorders
+- **Vulvar atrophy** → v1-p3-8-feminine-rejuvenation
+- **Vulvar innervation and mechanoreceptors** → v1-p3-8-feminine-rejuvenation
+- **Water activity and preservation** → v2-p4-1-7-1-antimicrobial-preservatives
+- **Water sorption isotherm and hysteresis (30% water at 100% RH)** → v1-p3-3-1-hair-physical-chemical-properties
+- **Water tolerance test** → v2-p4-2-3-1-silicones
+- **Water-setting mechanism** → v1-p3-3-4-hair-shape-changes
+- **Water-soluble (WS) / water-dispersible (WD) fragrances** → v1-p1-2-fragrance-selection
+- **Wood's lamp skin analysis** → v1-p3-2-1-global-skin-classification
+- **Xerostomia / artificial saliva** → v1-p3-6-1-mouth-oral-care
+- **Yield stress measurement and validation** → v2-p4-2-2-rheology-modifiers-consumer-perception
+- **Zeis, Moll and Meibomian glands** → v1-p3-3-5-eyelashes
+- **Zeodration drying** → sus-p12-1-sustainability
+- **Zinc PCA (AP-1/collagenase inhibition)** → v2-p4-3-4-amino-acids
+- **Z′ factor assay quality** → v1-p3-5-nose-olfaction
+- **α-MSH / endothelin antagonists** → v2-p4-2-4-skin-whiteners
+- **ΔNp63 stemness regulation** → v2-p4-3-3-micrornas

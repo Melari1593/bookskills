@@ -58,9 +58,15 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Autophagy** — lysosomal "self-eating" clearing long-lived proteins and organelles; backup for proteasome; marker LC3-II (v2-p5-4-glycation-proteasome-telomeres)
 
+**Bacteriocin** — short-chain antimicrobial peptide from Lactobacillus used against acne (v2-p4-1-4-3-fermentation-bioactives)
+
 **Bakuchiol** — photostable meroterpene phenol with retinol-like gene effects; stabilizes retinol (v2-p4-3-7-antioxidants)
 
 **Beau's lines** — transverse depressions recording a period of severe systemic illness (v1-p3-4-nails)
+
+**Beta-1,3-D-glucan** — yeast cell-wall polysaccharide immunostimulant (v2-p4-1-4-2-probiotics)
+
+**Beta glucogallin** — validated biomarker of amla extract (v2-p4-1-5-multifunctional-botanicals)
 
 **Bionic acid** — 3rd-generation PHA: monosaccharide + aldonic acid (lactobionic, maltobionic; ~358 Da) (v2-p4-3-5-hydroxy-acids)
 
@@ -70,11 +76,17 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Brookfield Yield Value (BYV)** — (η@0.5 rpm − η@1.0 rpm)/100 (v2-p4-2-2-rheology-modifiers-consumer-perception)
 
+**BTH** — bovine testicular hyaluronidase; yields saturated even-numbered HA oligos (v2-p4-1-3-hyaluronic-acid)
+
 **Bulge** — stem cell reservoir in the ORS at the arrector pili insertion, source of all follicle epithelium and reserve melanocytes (v1-p3-3-2-hair-follicle-biology)
 
 **Caloric restriction** — 40–60% calorie cut extends life span in yeast, worms, monkeys via sirtuins; not shown in humans; skin looks older (v2-p5-1-theories-of-aging)
 
+**Canada Hot List** — Canadian list of prohibited/restricted cosmetic ingredients (v2-p4-1-7-1-antimicrobial-preservatives)
+
 **Canities** — hair graying from loss of follicle melanin (v1-p3-3-2-hair-follicle-biology)
+
+**Carnosic acid** — rosemary phenolic diterpene that oxidizes to further active antioxidants (v2-p4-1-7-2-antioxidants-shelf-life)
 
 **Carrier peptide** — peptide that transports trace metals such as Cu²⁺ (e.g., GHK) (v2-p4-3-2-peptides)
 
@@ -96,9 +108,13 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Classification Letter** — official SFDA ruling on a borderline product's category (v1-p2-3-2-saudi-arabia)
 
+**Clay master gel** — bentonite/hectorite pre-dispersed in solvent to control rheology and stop sweating (v2-p4-1-2-lipstick-ingredients)
+
 **CLOCK/BMAL1** — activator heterodimer driving PER/CRY; core of the circadian feedback loop (v2-p5-7-skin-chronobiology)
 
 **Club hair** — fully keratinized dead hair formed during catagen (v1-p3-3-2-hair-follicle-biology)
+
+**CMC** — critical micelle concentration at which micelles start forming (v2-p4-1-1-surfactants)
 
 **CoC (KSA)** — per-shipment Certificate of Conformity from approved inspection body (v1-p2-3-2-saudi-arabia)
 
@@ -126,15 +142,27 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Crosspolymer** — copolymer linked with a cross-linking agent (v2-p4-2-1-rheological-additives)
 
+**Cup line** — weakest point of a lipstick bullet where over-soft sticks break (v2-p4-1-2-lipstick-ingredients)
+
+**Curcuminoids** — turmeric metabolites that modulate TNFα, NFκB, COX2, IL1 and protect ECM (v2-p4-1-4-1-ayurveda)
+
 **Customs Union (CU)** — Russia, Belarus, Kazakhstan unified customs/technical regulation zone (v1-p2-3-1-russia-customs-union)
 
 **Cuticle buckling** — lifting/deformation of cuticle cells with CMC breakage due to viscoelastic mismatch under tensile or thermal stress (v1-p3-3-1-hair-physical-chemical-properties)
 
 **Cyclomethicone** — cyclic dimethylsiloxanes D4, D5, D6; volatile, dry feel (v2-p4-2-3-1-silicones)
 
+**Cytokeratins** — intermediate filaments forming the keratinocyte cytoskeleton (v2-p4-1-6-skin-barrier-padina)
+
 **Day protect / night repair** — skin uses daytime energy for protection and nighttime for repair, proliferation and regeneration (v2-p5-7-skin-chronobiology)
 
 **Dechloro ethylcloprostenolamide** — synthetic topical prostaglandin analogue for lash enhancement developed in 2007 (v1-p3-3-5-eyelashes)
+
+**Dectin-1** — receptor required for full response to fungal beta-glucans (v2-p4-1-4-2-probiotics)
+
+**Defensins** — epithelial antimicrobial host-defense peptides, also proliferative and anti-inflammatory (v2-p4-1-4-2-probiotics)
+
+**DEJ** — dermal-epidermal junction basement membrane (lamina lucida + lamina densa) (v2-p4-1-6-skin-barrier-padina)
 
 **Demi-permanent color** — ammonia-free, lower-peroxide hair color that is gentler but may not cover >50% gray (v1-p3-3-3-hair-aging)
 
@@ -150,6 +178,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Design patent** — protects nonfunctional ornamental appearance, 14 years (US) (v1-p2-4-intellectual-property)
 
+**Desmosome** — calcium-dependent cell-cell adhesion junction ("press stud") (v2-p4-1-6-skin-barrier-padina)
+
 **Desynchronization** — clock genes out of phase with day–night cycle; linked to cancer, obesity, aging (v2-p5-7-skin-chronobiology)
 
 **DHT** — dihydrotestosterone, the androgen implicated in follicle shrinkage and hair loss (v1-p3-3-3-hair-aging)
@@ -163,6 +193,10 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Doctrine of equivalents** — infringement by substantially same function, way and result (v1-p2-4-intellectual-property)
 
 **Dose metric** — unit expressing dose; surface area or particle number may suit nanomaterials better than mass (v1-p2-3-4-nanomaterials-regulation)
+
+**Dosha** — Ayurvedic basic energy type: Vata, Pitta, Kapha (v2-p4-1-4-1-ayurveda)
+
+**Drop point** — relative measure of a stick's melt viscosity, distinct from melt point (v2-p4-1-2-lipstick-ingredients)
 
 **"Drug" (plant)** — dried plant part used for extraction (Dutch *droog*, "dried") (sus-p12-1-sustainability)
 
@@ -194,6 +228,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Epigenome** — chemical tags on DNA/histones directing which genes are expressed (v2-p5-6-epigenetics-of-skin-aging)
 
+**ERH** — equilibrium relative humidity = aw × 100 (v2-p4-1-7-1-antimicrobial-preservatives)
+
 **Evaluator** — fragrance-house role translating the brief into an olfactive structure and critiquing perfumer trials (v1-p1-2-fragrance-selection)
 
 **Exogen** — active, regulated shedding phase of the club fiber (v1-p3-3-2-hair-follicle-biology)
@@ -215,6 +251,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Flanker** — a variation of an existing fragrance, often distinguished by color (v1-p1-3-fragrance-packaging-design)
 
 **Four P's** — Product, Price, Place, Promotion; the marketing mix tailored to a segment (v1-p1-1-marketing-concepts)
+
+**Four-quadrant system** — subjective/objective × individual/collective model of product perception (v2-p4-1-7-1-antimicrobial-preservatives)
 
 **Fragrance blocker** — ingredient that mutes OR response to a malodor (v1-p3-5-nose-olfaction)
 
@@ -254,13 +292,19 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Halophyte** — salt-tolerant coastal plant (e.g., Salicornia) (v2-p4-2-5-marine-ingredients)
 
+**HA oligosaccharide** — short fragment (e.g., 6–20 saccharides, <5 kDa) with biological signaling activity (v2-p4-1-3-hyaluronic-acid)
+
 **HASE** — hydrophobically modified alkali-swellable emulsion polymer with 0–3 mol% associative groups (v2-p4-2-2-rheology-modifiers-consumer-perception)
 
 **HAT/HDAC** — enzymes adding/removing histone acetyl groups to open/close chromatin (v2-p5-6-epigenetics-of-skin-aging)
 
 **Hayflick limit** — human fibroblasts divide ~50 times then stop (v2-p5-1-theories-of-aging)
 
+**HFP** — hydrophilic fraction of Padina pavonica, calcium-mobilizing barrier active (v2-p4-1-6-skin-barrier-padina)
+
 **Histone acetylation** — removes histone positive charge, relaxing chromatin and raising transcription (v1-p1-4-molecular-biology-gene-expression)
+
+**HLB** — hydrophilic-lipophilic balance; weight % hydrophilic portion divided by 5 (v2-p4-1-1-surfactants)
 
 **Holocrine** — secretion by whole-cell disintegration, as in sebaceous glands (v1-p3-1-skin-structure)
 
@@ -269,6 +313,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **HPA axis** — hypothalamus–pituitary–adrenal stress cascade (CRF → ACTH → cortisol, epinephrine) (v2-p5-8-stress-sleep-epigenetic-orthodontics)
 
 **Human Adipocyte Conditioned Media Extract** — INCI for ADSC-derived growth-factor extract (CTFA, Sept 2006) (v1-p3-8-feminine-rejuvenation)
+
+**Hyaluronan (HA)** — linear polysaccharide of glucuronic acid and N-acetylglucosamine; holds up to 1000× its weight in water (v2-p4-1-3-hyaluronic-acid)
 
 **Hydrodynamic theory** — tubular fluid movement in exposed dentin stimulates pulpal nerves, causing sensitivity (v1-p3-6-1-mouth-oral-care)
 
@@ -281,6 +327,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **IECIC** — Inventory of Existing Cosmetic Ingredients in China (v1-p2-3-3-china)
 
 **INCI blend** — fragrance whose every component has an INCI name so the label lists them instead of "fragrance" (v1-p1-2-fragrance-selection)
+
+**Induction period (IP)** — OSI time to rapid oxidation (v2-p4-1-7-2-antioxidants-shelf-life)
 
 **Inflammasome** — multiprotein complex activated by UV in keratinocytes, driving inflammation (v1-p1-4-molecular-biology-gene-expression)
 
@@ -310,6 +358,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Koebnerization** — appearance of lesions at sites of trauma (v1-p3-2-2-skin-of-color-disorders)
 
+**Krafft temperature** — temperature above which lipophilic emulsifiers in water form lamellar liquid crystals (v2-p4-1-1-surfactants)
+
 **Kraurosis vulvae** — end-stage sclerosing atrophy with stenosis and effacement of labia minora/clitoris (v1-p3-8-feminine-rejuvenation)
 
 **Label patch** — Chinese-language sticker over original label, reviewed for claims (v1-p2-3-3-china)
@@ -330,9 +380,15 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Lunula** — visible half-moon of the matrix, probably showing incomplete keratinization (v1-p3-4-nails)
 
+**LYCD** — live yeast cell derivative from S. cerevisiae; tissue respiration and wound healing (v2-p4-1-4-3-fermentation-bioactives)
+
 **Lye / no-lye / base / no-base / mix relaxers** — NaOH vs other hydroxides; separate vs built-in petrolatum; two-part guanidine generation (v1-p3-3-4-hair-shape-changes)
 
+**Lysate / ferment** — INCI descriptors for probiotic-derived ingredients (v2-p4-1-4-2-probiotics)
+
 **MAC / MUCAP** — maximum approved concentration / maximum used concentration in approved products (v1-p2-3-3-china)
+
+**Marangoni effect** — foam collapse via film drainage below critical thickness (v2-p4-1-1-surfactants)
 
 **Margin of Safety (MoS)** — NOAEL / SED; must exceed 100 (v1-p2-2-us-eu-regulation)
 
@@ -350,9 +406,13 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Membrane hypothesis of aging** — cumulative plasma-membrane damage reduces K+ permeability, condenses colloids and dehydrates cells (v2-p5-2-cellular-water-principle)
 
+**Meristem culture** — plant stem-cell culture for sustainable actives (v2-p4-1-4-3-fermentation-bioactives)
+
 **Methylglyoxal (MGO)** — reactive glycotoxin used to pre-glycate cells/skin in curative test protocols (v2-p5-4-glycation-proteasome-telomeres)
 
 **MFRTA** — mitochondrial free radical theory of aging; evidence both supports and refutes it (v2-p5-3-anti-senescence)
+
+**Micellar solubilization** — incorporation of a solubilizate into or on micelles (IUPAC); not a solvent effect (v2-p4-1-1-surfactants)
 
 **Microcomedo** — initial acne lesion; prevented by retinoids reducing follicular debris retention (v2-p4-3-1-topical-retinoids)
 
@@ -386,6 +446,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Nanomaterial (EU)** — insoluble/biopersistent, intentionally manufactured material with external dimension or internal structure 1–100 nm (v1-p2-1-global-regulatory-developments)
 
+**Naturally derived active** — compound not found in nature but synthesized from natural sources (v2-p4-1-5-multifunctional-botanicals)
+
 **Necessity product** — multi-condition corrective product matching consumer streamlining (v1-p3-2-3-asian-ethnic-skin)
 
 **Neurowhitening** — reducing Substance P-driven melanocyte dendricity (v2-p4-2-4-skin-whiteners)
@@ -395,6 +457,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Nicotinamide feedback inhibition** — released nicotinamide binds sirtuin catalytic pocket, inhibiting activity (v2-p5-5-sirtuins-and-skin)
 
 **NMF** — natural moisturizing factor: 40% amino acids, 12% PCA, 12% lactates, 7% urea, ~28% other (v2-p4-3-4-amino-acids)
+
+**Non-freezable bound water** — water tightly H-bonded to HA; 7.6 molecules per disaccharide for 650 kDa HA (v2-p4-1-3-hyaluronic-acid)
 
 **Non-special-use cosmetic (China)** — e.g., shampoos, skin creams; exempted from mandatory animal tests for domestic manufacture from 2014 (v1-p2-1-global-regulatory-developments)
 
@@ -422,6 +486,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Open innovation for sustainability (OIS)** — open innovation that relies on transparency and collaboration, including competitors and NGOs, to meet sustainability goals (sus-p12-1-sustainability)
 
+**ORAC** — oxygen radical absorbance capacity assay family (HORAC, NORAC, SORAC, SOAC) (v2-p4-1-5-multifunctional-botanicals)
+
 **Organoclay** — hydrophilic clay reacted with long-chain quat (e.g., quaternium-18 hectorite) to thicken oils (v2-p4-2-1-rheological-additives)
 
 **Ortho-/para-cortical cells** — two cortical cell types; higher ortho content means curlier hair (v1-p3-3-1-hair-physical-chemical-properties)
@@ -433,6 +499,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Oxidative stress** — imbalance of oxidants over antioxidants that drives hair aging and graying (v1-p3-3-3-hair-aging)
 
 **Palmitoylation** — adding a palmitoyl fatty acid to a peptide to improve stratum corneum penetration (v2-p4-3-2-peptides)
+
+**Panchakarma** — Ayurvedic bio-purification using oil/water herbal extracts for skin (v2-p4-1-4-1-ayurveda)
 
 **PAO** — period after opening; replaces durability date when stability >30 months (v1-p2-2-us-eu-regulation)
 
@@ -454,6 +522,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Peri-orbital hypermelanosis** — dark under-eye pigmentation, very common in Indian skin (v1-p3-2-3-asian-ethnic-skin)
 
+**Peroxide value** — meq peroxide O2/kg by iodometric titration (v2-p4-1-7-2-antioxidants-shelf-life)
+
 **Phase angle** — arctan(reactance/resistance) from BIA; marker of intact cell membranes, decreases with age (v2-p5-2-cellular-water-principle)
 
 **Phenylpropanoids** — phenylalanine-derived polyphenols (verbascoside, echinacoside, chlorogenic acid) with antioxidant and anti-inflammatory activity (sus-p12-1-sustainability)
@@ -474,6 +544,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Pituitous** — stringy/slimy flow of some gums that causes pump pull-back (v2-p4-2-1-rheological-additives)
 
+**Polar paradox** — hydrophilic antioxidants work best in bulk oils, lipophilic in emulsions (v2-p4-1-7-2-antioxidants-shelf-life)
+
 **Polyhydroxy acid (PHA)** — 2nd-generation AHA with multiple OH groups (gluconolactone); mild, humectant, antioxidant (v2-p4-3-5-hydroxy-acids)
 
 **Polysilicone-11** — CTFA name of a refined silicone elastomer used for texture and mattifying (v2-p4-2-3-2-silicone-elastomers)
@@ -482,6 +554,12 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Post-inflammatory hyperpigmentation** — pigment increase after inflammation/injury (acne, eczema, procedures) (v1-p3-2-2-skin-of-color-disorders)
 
+**Preservative vs antimicrobial active** — product-protecting (molds, yeasts, gram-negatives) vs skin-flora-killing (gram-positives) (v2-p4-1-7-1-antimicrobial-preservatives)
+
+**Primary antioxidant** — phenolic H-donor quenching free radicals (v2-p4-1-7-2-antioxidants-shelf-life)
+
+**Probiotic Derived Bioactive (PDB)** — isolated bioactive component of a (live or dead) probiotic organism (v2-p4-1-4-2-probiotics)
+
 **Processed skin-cell proteins (PSP)** — >100 growth factors/cytokines from cultured fetal dermal fibroblasts (v2-p4-3-6-growth-factors-stem-cells)
 
 **Progerin** — mutant lamin A; produced when telomeres are damaged during senescence (v2-p5-4-glycation-proteasome-telomeres)
@@ -489,6 +567,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Pro-oxidant effect** — radical generation by antioxidants (C, E, GSH, carotenoids) with transition metals or UV (v2-p4-3-7-antioxidants)
 
 **Prostaglandin-induced hypertrichosis** — increased lash length, number, thickness seen with glaucoma prostaglandin drops (v1-p3-3-5-eyelashes)
+
+**Protection factor (PF)** — IP treated / IP control; >1 antioxidant, <1 pro-oxidant (v2-p4-1-7-2-antioxidants-shelf-life)
 
 **Provisional application** — US 12-month priority placeholder with no enforcement value (v1-p2-4-intellectual-property)
 
@@ -499,6 +579,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Pseudoplastic** — shear-thinning with immediate recovery when shear stops (v2-p4-2-1-rheological-additives)
 
 **Push/pull marketing** — push gets trade to stock; pull informs consumers of claims and availability (v1-p1-1-marketing-concepts)
+
+**Quasi-drug (Japan)** — functional cosmetic category needing MHLW premarket approval (v2-p4-1-5-multifunctional-botanicals)
 
 **Quasi-drug (QD)** — Japanese MHLW category allowing approved actives at set doses to claim whitening (v2-p4-2-4-skin-whiteners)
 
@@ -511,6 +593,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Regulatory harmonization** — aligned guidelines that cut duplication, development time and in vivo testing (v1-p2-1-global-regulatory-developments)
 
 **Replicative senescence** — in-vitro model of intrinsic aging by many subcultures (v2-p4-3-3-micrornas)
+
+**Required HLB** — HLB of emulsifier blend giving most stable emulsion of a given oil; weighted average for blends (v2-p4-1-1-surfactants)
 
 **Responsible Person (RP)** — EU-established person accepting in writing legal responsibility for a cosmetic's compliance (v1-p2-2-us-eu-regulation)
 
@@ -526,6 +610,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **RosPotrebnadzor** — Russian consumer-rights authority supervising TR application (v1-p2-3-1-russia-customs-union)
 
+**ROS** — reactive oxygen species damaging DNA, proteins, lipids; drivers of premature aging (v2-p4-1-4-1-ayurveda)
+
 **SA-miR** — senescence-associated microRNA acting on p53–p21/p16–pRB pathways (v2-p4-3-3-micrornas)
 
 **Sapienic acid** — C16:1Δ6 antimicrobial fatty acid released from sebum triglycerides (v1-p3-7-lip-skin)
@@ -533,6 +619,12 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **SASO** — Saudi Arabian Standards Organization; its product standards still used in local testing (v1-p2-3-2-saudi-arabia)
 
 **Sebaceous follicle** — sebaceous gland without terminal hair; surrounds every body orifice (v1-p3-7-lip-skin)
+
+**SEC-MALS** — size-exclusion chromatography with multi-angle light scattering for HA MW distribution (v2-p4-1-3-hyaluronic-acid)
+
+**Secondary antioxidant** — chelator, oxygen scavenger or singlet-oxygen quencher (v2-p4-1-7-2-antioxidants-shelf-life)
+
+**Self-preserving product** — formula whose physicochemistry (e.g., 40–50% polyols) prevents growth (v2-p4-1-7-1-antimicrobial-preservatives)
 
 **Sensory cues** — packaging elements that communicate olfactive character and emotional story (v1-p1-3-fragrance-packaging-design)
 
@@ -568,11 +660,19 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Solar elastosis** — accumulation of dystrophic, non-functional elastic fibers in photo-aged dermis (v1-p3-2-4-aging-elderly-skin)
 
+**Solid-state fermentation** — culture on solid carbon-rich substrates; slow, recyclable, sustainable (v2-p4-1-4-3-fermentation-bioactives)
+
 **Special-use cosmetic (China)** — hair growth/dye/perm/removal, breast shaping, slimming, deodorizing, spot removal, sunscreen (v1-p2-3-3-china)
 
 **Spot/seam welding** — polymer junctions between fibers that restrict inter-fiber motion and hold a style (v1-p3-3-4-hair-shape-changes)
 
+**Spreading coefficient** — measure of an emollient's spreadability; low = dry feel, silicones ≥35 (v2-p4-1-2-lipstick-ingredients)
+
 **Stable cell line** — clonal, genetically identical cells expressing the receptor, vs fresh transient transfection (v1-p3-5-nose-olfaction)
+
+**Staining pigment** — bromofluorescein lake (D&C Red 22, 28, Orange 5) that stains lips after wear (v2-p4-1-2-lipstick-ingredients)
+
+**Standardization (AHPA)** — information and controls producing consistent botanical materials (v2-p4-1-5-multifunctional-botanicals)
 
 **State Registration (CU)** — manufacturer-held, CU-wide, unlimited-validity certificate for 13 higher-risk categories (v1-p2-3-1-russia-customs-union)
 
@@ -582,15 +682,27 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Stephan curve** — plaque pH drop from ~6.8 to ~5 after sugar, recovering in 20–60 min (v1-p3-6-1-mouth-oral-care)
 
+**Steric stabilization** — droplet stabilization by a nonionic emulsifier film; most robust to pH/electrolyte (v2-p4-1-1-surfactants)
+
 **Stratum corneum** — outermost 10–15 layers of anucleate corneocytes in lipid lamellae; ~10% of skin, >80% of barrier (v1-p3-1-skin-structure)
 
 **Stratum disjunctum** — outermost desquamating SC layer where AHAs degrade corneosomes (v2-p4-3-5-hydroxy-acids)
 
 **Strehler's criteria** — aging is destructive, progressive, intrinsic, universal (v2-p5-2-cellular-water-principle)
 
+**Stressed lysate** — lysate from organisms grown under heat/UV/peroxide stress for enhanced actives (v2-p4-1-4-3-fermentation-bioactives)
+
+**Submerged fermentation** — liquid-media tank culture; fast, easy purification (v2-p4-1-4-3-fermentation-bioactives)
+
 **Superordinate goal** — shared survival goal (resource scarcity) that makes rivals collaborate (sus-p12-1-sustainability)
 
+**Superoxide dismutase** — key endogenous enzyme defense against reactive oxygen (v2-p4-1-4-1-ayurveda)
+
 **Suprachiasmatic nucleus (SCN)** — hypothalamic master clock synchronizing peripheral clocks via light cues (v2-p5-7-skin-chronobiology)
+
+**Sweating** — oil droplets exuding on a lipstick surface; at room temperature signals incompatibility (v2-p4-1-2-lipstick-ingredients)
+
+**Swelling ratio** — water uptake of a cross-linked HA hydrogel; falls as degree of substitution rises (v2-p4-1-3-hyaluronic-acid)
 
 **SWOT** — summary of internal strengths/weaknesses and external opportunities/threats from an objective situation analysis (v1-p1-1-marketing-concepts)
 
@@ -602,15 +714,23 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Telangiectasia** — visible superficial blood vessels from dermal thinning, sun or smoking (v1-p3-2-4-aging-elderly-skin)
 
+**Tetrahydrocurcumin** — colorless hydrogenated curcumin metabolite; lightening, antioxidant (v2-p4-1-5-multifunctional-botanicals)
+
+**Tetrahydropiperine** — hydrogenated piperine; topical bioavailability enhancer (v2-p4-1-5-multifunctional-botanicals)
+
 **TEWL** — passive water diffusion/evaporation through the epidermis; standard in vivo barrier measure (v1-p3-1-skin-structure)
 
 **Thixotropic** — shear-thinning with delayed (time-dependent) recovery after shear stops (v2-p4-2-1-rheological-additives)
 
 **Three-state characterization** — characterize nanomaterial raw, in formulation and in test medium (v1-p2-3-4-nanomaterials-regulation)
 
+**Tight junction** — second skin barrier in stratum granulosum (claudin-1, -4) (v2-p4-1-6-skin-barrier-padina)
+
 **TIMP-1** — tissue inhibitor of MMPs; barely rises after UV while MMP-1/-3 rise 4–5× (v2-p4-3-7-antioxidants)
 
 **TIMPs** — tissue inhibitors of metalloproteinases I–IV (v2-p4-2-6-cellulite)
+
+**Toll-like receptor (TLR)** — pattern-recognition receptor on epithelia/keratinocytes triggering defensin production (v2-p4-1-4-2-probiotics)
 
 **Trabeculae** — type I collagen bands compartmentalizing subcutaneous fat (v2-p4-2-6-cellulite)
 
@@ -627,6 +747,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Tretinoin** — all-trans retinoic acid; FDA-approved for acne and fine wrinkles, mottled pigmentation, roughness (v2-p4-3-1-topical-retinoids)
 
 **Triangle test** — QC odor test: find the odd sample of three; statistical comparison to standard (v1-p1-2-fragrance-selection)
+
+**Triphala** — Ayurvedic blend of Haritaki, Bibhitaka and Amalaki for microbial infection (v2-p4-1-4-1-ayurveda)
 
 **Triple bottom line** — people, planet, profit (Elkington 1998) (sus-p12-1-sustainability)
 
@@ -658,6 +780,8 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 
 **Vulvar atrophy** — hypoestrogenic thinning, dryness, loss of elasticity and sensation; up to 50% of postmenopausal women (v1-p3-8-feminine-rejuvenation)
 
+**Water activity (aw)** — product water vapor pressure / pure water vapor pressure (v2-p4-1-7-1-antimicrobial-preservatives)
+
 **Water tolerance** — grams water added to 2 g copolyol in 100 g IPA before haze (v2-p4-2-3-1-silicones)
 
 **White spot lesion** — early reversible caries with intact surface over demineralized subsurface (v1-p3-6-1-mouth-oral-care)
@@ -677,3 +801,5 @@ Key terms from the three books, alphabetical. The file name in parentheses is th
 **Zeodration** — vacuum drying in which water adsorbs on 4 Å zeolites whose exothermic heat dries the product at ≤40°C, with no carrier (sus-p12-1-sustainability)
 
 **Z′ factor** — 0–1 HTS assay quality metric combining signal-to-noise and consistency; ≥0.4 suitable (v1-p3-5-nose-olfaction)
+
+**Zwitterionic point** — narrow pH where an amphoteric surfactant behaves as nonionic; avoid formulating there (v2-p4-1-1-surfactants)
