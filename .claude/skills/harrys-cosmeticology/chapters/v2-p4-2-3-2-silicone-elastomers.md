@@ -57,3 +57,23 @@ Silicone elastomers are cross-linked dimethicone polymers forming 3-D networks w
 | Sebum absorption | No | Yes |
 | Appearance | Glossy | Matte, soft-focus |
 | Functions | Drag reduction, barrier film | Line filler, mattifier, sebum absorber, controlled release |
+| Occlusion | Breathable protective film | Breathable, nonocclusive |
+
+**Cross-link density effects**
+| Cross-linking | Swelling / oil uptake | Texture | Risk |
+|---|---|---|---|
+| High | Low (hard, little expansion) | Firm | Poor absorption |
+| Light | High | Less refined | Coarser feel |
+| Balanced (e.g., Polysilicone-11) | Ideal expansion | Smooth, silky | — |
+| Near-miss balance | Variable | Pilling, powdery dry-out | Visible residue |
+
+**Elastomer solvent options**
+| Solvent | Role |
+|---|---|
+| Cyclopentasiloxane (D5) | Most common; volatilizes, exchanges with sebum for extended matte |
+| Other cyclomethicones | Volatile carriers |
+| Volatile / semi-volatile dimethicones | Cyclomethicone alternatives in daily wear with actives, colorants, sunscreens |
+| Dodecane, coconut alkanes | Hydrocarbon carriers |
+| Compatible emollients | Non-volatile, richer feel |
+
+**Product applications named**: oil-control foundations (the original impact area), mattifying primers/serums, pigmented cosmetics, high-end creams and lotions, daily-wear sunscreen products, controlled-release delivery of soluble actives.

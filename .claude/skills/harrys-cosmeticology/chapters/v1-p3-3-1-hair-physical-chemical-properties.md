@@ -76,3 +76,20 @@ Hair is not "dead" material: it is an optimized assembly of proteins, lipids and
 | Anagen | ~4-6 years | Proliferation, differentiation, keratinization; properties set |
 | Catagen | 2-4 weeks | Reduced production, apoptosis |
 | Telogen | 2-3 months | Inactive parts pushed out; hair sheds |
+
+| Amino acid (unaltered hair, %) | Value |
+|---|---|
+| Half-cystine | 17.8 |
+| Serine | 11.7 |
+| Glutamic acid | 11.4 |
+| Proline | 8.4 |
+| Threonine | 6.8 |
+| Glycine | 6.4 |
+| Arginine / Leucine / Valine | 5.8 each |
+| Aspartic acid | 4.9 |
+| Alanine | 4.6 |
+| Isoleucine | 2.6 |
+| Tyrosine | 2.0 |
+| Phenylalanine | 1.6 |
+| Histidine | 0.9 |
+| Methionine | 0.6 |

@@ -72,3 +72,12 @@ The hair shaft is dead keratinocytes, but the follicle that makes it is a dynami
 | Dermal papilla | Inside bulb | Signaling center, growth factors |
 | IRS (cuticle, Huxley, Henle) | Around shaft | Anchors, molds, guides shaft |
 | ORS | Outermost, continuous with epidermis | Derived from bulge; VEGF source |
+
+| Signal | Source / target | Effect on cycle |
+|---|---|---|
+| IGF-1, bFGF | Dermal papilla -> matrix receptors | Maintain anagen; decline triggers catagen |
+| VEGF | ORS keratinocytes | Anagen angiogenesis; decline triggers catagen |
+| KGF, HGF, BMP, SCF | Dermal papilla | Hair growth and melanogenesis |
+| TGF-b1, IL-1a, TNF-a | — | Promote apoptosis / catagen |
+| Wnt, TGF-b | Dermal papilla -> bulge stem cells | End-of-telogen activation, new anagen |
+| DHT (via AR, 5-alpha reductase II) | Balding papilla | Induces TGF-b1, DKK-1; inhibits keratinocytes, miniaturization |
