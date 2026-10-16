@@ -1,0 +1,168 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: nodos_hemodinamia.csv>index,id,label,tipo,pagina_pdf,fuente
+0,libro,Manual de Hemodinámica y Aplicaciones Clínicas en Cardiología,libro,3,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+1,cap_1,Capítulo 1 — Cateterización Cardiaca,capitulo,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+2,sec_1_1,Generalidades,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+3,cap_2,Capítulo 2 — Aspectos Importantes De La Hemodinámica,capitulo,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+4,sec_2_1,Generalidades,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+5,sec_2_2,Factores de riesgo por complicaciones durante el procedimiento,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+6,sec_2_3,Previo al procedimiento de cateterismo,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+7,sec_2_4,Instrumentación para la realización de un cateterismo,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+8,sec_2_5,Durante el procedimiento de cateterismo,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+9,sec_2_6,Descripción del procedimiento de cateterismo,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+10,sec_2_7,Proyecciones angiográicas,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+11,sec_2_8,Ventrículograma,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+12,sec_2_9,Presiónes de cavidades izquierdas,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+13,sec_2_10,Aortograma,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+14,sec_2_11,Cateterismo de cavidades derechas,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+15,sec_2_12,Postquirúrgico del procedimiento de cateterismo,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+16,sec_2_13,Cuidados postoperatorios del paciente,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+17,sec_2_14,Resultados del cateterismo cardíaco,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+18,cap_3,Capítulo 3 — Angioplastia Coronaria,capitulo,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+19,sec_3_1,Resumen anatomía coronaria,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+20,sec_3_2,Clasiicación del lujo TIMI,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+21,sec_3_3,Clasiicación del grado de circulación colateral coronaria,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+22,sec_3_4,"Clasiicación AHA, ACC, de tipos lesiones o placas coronarias",seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+23,sec_3_5,Etapas en la formación y crecimiento de placas,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+24,sec_3_6,Clasiicación grados de trombos,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+25,sec_3_7,Clasiicación perforación coronaria,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+26,sec_3_8,Clasiicación disección coronaria,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+27,sec_3_9,Isquemia en graft aorto-coronaria,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+28,sec_3_10,Clasiicación de medidas para lesiones bifurcadas,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+29,cap_4,"Capítulo 4 — Arritmias, Marcapasos, Resincronización Y Ablacación Cardiaca",capitulo,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+30,sec_4_1,Generalidades,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+31,sec_4_2,Relación intervención coronaria percutánea (IPC) por años,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+32,sec_4_3,Intervención en infarto agudo al miocardio (IAM),seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+33,sec_4_4,Comparación de diferentes técnicas de angioplastía,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+34,sec_4_5,Lesión favorable,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+35,sec_4_6,Deinición éxito angioplastía,seccion,5,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+36,sec_4_7,Instrumentación para el procedimiento de angioplastía,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+37,sec_4_8,Descripción del procedimiento de angioplastía,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+38,sec_4_9,Postquirúrgico del procedimiento de angioplastía,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+39,sec_4_10,Implantación del stent,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+40,sec_4_11,Técnicas utilizadas en la colocación de stents en,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+41,sec_4_12,Fisiopatología del proceso de reestenosis intra-stent,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+42,sec_4_13,Clasiicación reestenosis intra-stent,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+43,sec_4_14,Indicación intervención percutánea coronaria 1993 (AHA/ACC),seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+44,sec_4_15,Indicación intervención percutánea coronaria en última guía.,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+45,sec_4_16,Recomendaciones intervención percutánea coronaria (IPC),seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+46,sec_4_17,Recomendación intervención percutánea en infarto agudo al miocardio,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+47,sec_4_18,Angioplastía primaria,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+48,sec_4_19,Recomendación para angioplastía primaria en IAM transmural,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+49,sec_4_20,Angioplastía de rescate (post trombolisis fallida).,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+50,sec_4_21,Angioplastía post trombolisis tardía (horas o días),seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+51,sec_4_22,Angioplastía en shock cardiogénico,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+52,sec_4_23,Angioplastía después de trombolisis en grupo seleccionado,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+53,sec_4_24,Intervención coronaria percutánea en pacientes,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+54,sec_4_25,Intervención percutánea coronaria en enfermedad de,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+55,sec_4_26,Indicación de inhibidores IIb/IIIa en APTC,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+56,sec_4_27,Recomendaciones del 2007 para la intervención coronaria,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+57,cap_5,Capítulo 5 — Procedimientos Periféricos Y Otras Intervenciones,capitulo,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+58,sec_5_1,Arritmias cardíacas,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+59,sec_5_2,Marcapasos,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+60,sec_5_3,Marcapasos tricamerales,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+61,sec_5_4,Resincronizacion cardíaca,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+62,sec_5_5,Ablación cardíaca,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+63,cap_6,Capítulo 6 — Intervenciones Pediátricas,capitulo,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+64,sec_6_1,Angiografía periférica,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+65,sec_6_2,Arteriografía carotídea,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+66,sec_6_3,Arteriografía renal,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+67,sec_6_4,Colocación de iltro vena cava inferior,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+68,sec_6_5,Técnica para biopsia endocárdica,seccion,6,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+69,cap_7,Capítulo 7 — Tips Importantes,capitulo,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+70,sec_7_1,Antecedentes,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+71,sec_7_2,Atrioseptostomía,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+72,sec_7_3,Valvuloplastía pulmonar y angioplastía de ramas pulmónares,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+73,sec_7_4,Valvuloplastía aórtica,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+74,sec_7_5,Valvuloplastía mitral y tricúspide,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+75,sec_7_6,Angioplastía en coartación de aorta,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+76,sec_7_7,Otras dilataciones vasculares,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+77,sec_7_8,Técnicas de cierre,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+78,sec_7_9,"Oclusión de fístulas, vasos anómalos y otros defectos congénitos o",seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+79,sec_7_10,Extracción de cuerpos extraños,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+80,sec_7_11,"Cuidados, seguimiento y controles de los niños sometidos a",seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+81,sec_7_12,Caso clínico de comunicación interauricular ( CIA),seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+82,cap_8,Capítulo 8 — Medios De Contraste,capitulo,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+83,sec_8_1,Retiro de vaina introductora cuando se ha usado heparina,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+84,sec_8_2,Precaución de la presión del sitio de punción en paciente que,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+85,sec_8_3,Cuidado en el traslado a piso.,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+86,sec_8_4,Tip para canular graft aorto-coronario,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+87,sec_8_5,Tip en angioplastía.,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+88,sec_8_6,Tiempo de ACT,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+89,sec_8_7,Solución en tamponade por perforación coronaria,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+90,sec_8_8,Coctel radíal (punción radíal),seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+91,cap_9,Capítulo 9 — Medicamentos En Hemodinámica,capitulo,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+92,sec_9_1,Generalidades,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+93,sec_9_2,Indicaciones para el uso de medio de contraste,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+94,sec_9_3,Clasiicación de las reacciones adversas del medio de contraste,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+95,sec_9_4,Efectos adversos por órgano o sistema especíico,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+96,sec_9_5,Regímenes para reducir la frecuencia y severidad de,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+97,sec_9_6,Preparación y tratamiento en pacientes con historial de alergia al contraste,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+98,sec_9_7,Manejo de las reacciones agudas en adultos,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+99,sec_9_8,Manejo de las reacciones agudas en niños,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+100,sec_9_9,Recomendaciones para el uso de agentes de contraste de,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+101,sec_9_10,Recomendaciones para el uso de agentes de contraste de,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+102,sec_9_11,Recomendaciones para la prevención de nefropatia inducida,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+103,sec_9_12,Recomendaciones para la detección precoz de la nefrotapatia,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+104,sec_9_13,Recomendaciones para pacientes diabéticos tratados,seccion,7,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+105,sec_9_14,Recomendaciones para la prevención de reacciones de,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+106,cap_10,Capítulo 10 — Formulas Hemodinámicas,capitulo,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+107,sec_10_1,Ansiolítico para el paciente en sala hemodinamia,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+108,sec_10_2,Medicamentos para revertir efecto de intoxicación por benzodíacepina,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+109,sec_10_3,Grupo alternativo en caso de alergia a la lidocaína,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+110,sec_10_4,Tratamiento de la reacción a protamina,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+111,sec_10_5,Drogas utilizadas en sala de cateterismo,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+112,cap_11,Capítulo 11 — Aspectos Clinicos De Cardiologia,capitulo,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+113,sec_11_1,Cálculo de parámetros hemodinamicos,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+114,sec_11_2,Cálculo de volumen ventricular,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+115,sec_11_3,Cálculo de fracción de expulsión,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+116,sec_11_4,Cálculo velocidad acortamiento circunferencial,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+117,sec_11_5,Cálculo masa ventricular,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+118,sec_11_6,Otras fórmulas utilizadas,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+119,sec_11_7,Gasometría,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+120,sec_11_8,Fórmulas de importancia clínica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+121,cap_12,Capítulo 12 — Evidencias Cardiologicas,capitulo,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+122,sec_12_1,Evaluación vascular preoperatoria,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+123,sec_12_2,Hipertension arterial sistémica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+124,sec_12_3,Cardiopatía isquémica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+125,sec_12_4,Infarto auricular,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+126,sec_12_5,Insuiciencia cardíaca,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+127,sec_12_6,"Enfermedades pericardicas, endocarditis infecciosa y derrame pleural",seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+128,sec_12_7,Valvulopatia aórtica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+129,sec_12_8,Valvulopatia mitral,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+130,sec_12_9,Enfermedad tromboembólica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+131,sec_12_10,Enfermedad vascular periférica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+132,sec_12_11,Diabetes: factor de riesgo cardiovascular,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+133,cap_13,Capítulo 13 — Tecnicas Invasivas Con Aplicación A La Hemodinamia,capitulo,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+134,sec_13_1,Mediciones del tratamiento,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+135,sec_13_2,Cardiotoxicidad por drogas oncológicas,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+136,sec_13_3,Tratamiento de la angina crónica estable,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+137,sec_13_4,Procedimientos de revascularización miocardica,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+138,sec_13_5,Tratamiento de la angina inestable y el infarto sin elevación del ST,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+139,sec_13_6,Tratamiento del infarto agudo de miocardio con elevación del segmento del ST 371,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+140,sec_13_7,Angioplastía transluminal coronaria,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+141,sec_13_8,Enfermedad de la arteria carótida interna,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+142,sec_13_9,Arteriopatia obstructiva de los miembros inferiores,seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+143,sec_13_10,Aneurisma de la aorta abdominal (AAA),seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+144,sec_13_11,Trombosis venosa profunda (TVP),seccion,8,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+145,cap_14,"Capítulo 14 — Soporte Vital Cardiopulmonar Avanzado En El Adulto: — “Algoritmos De Actuación” (Aha, Acls)",capitulo,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+146,sec_14_1,Sonografía intravascular (IVUS),seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+147,sec_14_2,Tomografía óptica (TCO),seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+148,sec_14_3,Termografía intracoronaria,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+149,sec_14_4,Palpografía (Elastograia) intravascular,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+150,sec_14_5,Angioscopía,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+151,sec_14_6,Espectroscopia de Raman,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+152,sec_14_7,Resonancia magnetica intravascular,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+153,cap_15,Capítulo 15 — Personal De Una Sala De Hemodinámica,capitulo,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+154,sec_15_1,Introducción,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+155,sec_15_2,Algoritmo simpliicado de SVB/BLS en adultos,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+156,sec_15_3,Soporte vital avanzado adultos (AHA): Ritmo no desibrilable (asistolia),seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+157,sec_15_4,Ritmo desibrilable: (ibrilación ventricular o taquicardia ventricular).,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+158,sec_15_5,Esquema soporte vital avanzado circular en esquema:,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+159,sec_15_6,Objetivos claves iniciales y posteriores de los cuidados post-parada cardíaca 480,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+160,sec_15_7,Principales cambios de las directrices de 2005 incluyen SVCA,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+161,cap_16,Capítulo 16 — Bibliografia,capitulo,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+162,sec_16_1,Deberes de enfermera,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+163,sec_16_2,Deberes del técnico de rayos x,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+164,sec_16_3,Deberes del asistente de limpieza y mantenimiento,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
+165,sec_16_4,Protocolos a seguir con un paciente de hemodinamia,seccion,9,Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf
