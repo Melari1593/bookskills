@@ -1,0 +1,1500 @@
+{
+  "metadata": {
+    "titulo": "Manual de Hemodinámica y Aplicaciones Clínicas en Cardiología",
+    "tipo": "grafo estructural",
+    "nota": "Nodos identificados por ID; etiquetas y páginas completas en archivos locales originales."
+  },
+  "nodes": [
+    {
+      "id": "libro",
+      "type": "libro"
+    },
+    {
+      "id": "cap_1",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_1_1",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_2",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_2_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_11",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_12",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_13",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_2_14",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_3",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_3_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_3_10",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_4",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_4_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_11",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_12",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_13",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_14",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_15",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_16",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_17",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_18",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_19",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_20",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_21",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_22",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_23",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_24",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_25",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_26",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_4_27",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_5",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_5_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_5_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_5_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_5_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_5_5",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_6",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_6_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_6_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_6_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_6_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_6_5",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_7",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_7_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_11",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_7_12",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_8",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_8_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_8_8",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_9",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_9_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_11",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_12",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_13",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_9_14",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_10",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_10_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_10_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_10_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_10_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_10_5",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_11",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_11_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_11_8",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_12",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_12_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_12_11",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_13",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_13_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_7",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_8",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_9",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_10",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_13_11",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_14",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_14_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_14_7",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_15",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_15_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_4",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_5",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_6",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_15_7",
+      "type": "seccion"
+    },
+    {
+      "id": "cap_16",
+      "type": "capitulo"
+    },
+    {
+      "id": "sec_16_1",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_16_2",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_16_3",
+      "type": "seccion"
+    },
+    {
+      "id": "sec_16_4",
+      "type": "seccion"
+    }
+  ],
+  "edges": [
+    {
+      "source": "libro",
+      "target": "cap_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_1",
+      "target": "sec_1_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_12",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_13",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_2",
+      "target": "sec_2_14",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_3",
+      "target": "sec_3_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_12",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_13",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_14",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_15",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_16",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_17",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_18",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_19",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_20",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_21",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_22",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_23",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_24",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_25",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_26",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_4",
+      "target": "sec_4_27",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_5",
+      "target": "sec_5_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_5",
+      "target": "sec_5_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_5",
+      "target": "sec_5_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_5",
+      "target": "sec_5_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_5",
+      "target": "sec_5_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_6",
+      "target": "sec_6_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_6",
+      "target": "sec_6_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_6",
+      "target": "sec_6_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_6",
+      "target": "sec_6_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_6",
+      "target": "sec_6_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_7",
+      "target": "sec_7_12",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_8",
+      "target": "sec_8_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_12",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_13",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_9",
+      "target": "sec_9_14",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_10",
+      "target": "sec_10_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_10",
+      "target": "sec_10_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_10",
+      "target": "sec_10_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_10",
+      "target": "sec_10_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_10",
+      "target": "sec_10_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_11",
+      "target": "sec_11_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_12",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_12",
+      "target": "sec_12_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_13",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_9",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_10",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_13",
+      "target": "sec_13_11",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_14",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_14",
+      "target": "sec_14_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_15",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_15",
+      "target": "sec_15_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "libro",
+      "target": "cap_16",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_16",
+      "target": "sec_16_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_16",
+      "target": "sec_16_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_16",
+      "target": "sec_16_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "cap_16",
+      "target": "sec_16_4",
+      "relation": "CONTIENE"
+    }
+  ]
+}
