@@ -1,0 +1,1497 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="edge" attr.name="relacion" attr.type="string"/>
+<key id="d3" for="node" attr.name="fuente" attr.type="string"/>
+<key id="d2" for="node" attr.name="pagina_pdf" attr.type="long"/>
+<key id="d1" for="node" attr.name="tipo" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="libro">
+  <data key="d0">Manual de Hemodinámica y Aplicaciones Clínicas en Cardiología</data>
+  <data key="d1">libro</data>
+  <data key="d2">3</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_1">
+  <data key="d0">Capítulo 1 — Cateterización Cardiaca</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_1_1">
+  <data key="d0">Generalidades</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_2">
+  <data key="d0">Capítulo 2 — Aspectos Importantes De La Hemodinámica</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_1">
+  <data key="d0">Generalidades</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_2">
+  <data key="d0">Factores de riesgo por complicaciones durante el procedimiento</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_3">
+  <data key="d0">Previo al procedimiento de cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_4">
+  <data key="d0">Instrumentación para la realización de un cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_5">
+  <data key="d0">Durante el procedimiento de cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_6">
+  <data key="d0">Descripción del procedimiento de cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_7">
+  <data key="d0">Proyecciones angiográicas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_8">
+  <data key="d0">Ventrículograma</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_9">
+  <data key="d0">Presiónes de cavidades izquierdas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_10">
+  <data key="d0">Aortograma</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_11">
+  <data key="d0">Cateterismo de cavidades derechas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_12">
+  <data key="d0">Postquirúrgico del procedimiento de cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_13">
+  <data key="d0">Cuidados postoperatorios del paciente</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_2_14">
+  <data key="d0">Resultados del cateterismo cardíaco</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_3">
+  <data key="d0">Capítulo 3 — Angioplastia Coronaria</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_1">
+  <data key="d0">Resumen anatomía coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_2">
+  <data key="d0">Clasiicación del lujo TIMI</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_3">
+  <data key="d0">Clasiicación del grado de circulación colateral coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_4">
+  <data key="d0">Clasiicación AHA, ACC, de tipos lesiones o placas coronarias</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_5">
+  <data key="d0">Etapas en la formación y crecimiento de placas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_6">
+  <data key="d0">Clasiicación grados de trombos</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_7">
+  <data key="d0">Clasiicación perforación coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_8">
+  <data key="d0">Clasiicación disección coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_9">
+  <data key="d0">Isquemia en graft aorto-coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_3_10">
+  <data key="d0">Clasiicación de medidas para lesiones bifurcadas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_4">
+  <data key="d0">Capítulo 4 — Arritmias, Marcapasos, Resincronización Y Ablacación Cardiaca</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_1">
+  <data key="d0">Generalidades</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_2">
+  <data key="d0">Relación intervención coronaria percutánea (IPC) por años</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_3">
+  <data key="d0">Intervención en infarto agudo al miocardio (IAM)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_4">
+  <data key="d0">Comparación de diferentes técnicas de angioplastía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_5">
+  <data key="d0">Lesión favorable</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_6">
+  <data key="d0">Deinición éxito angioplastía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">5</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_7">
+  <data key="d0">Instrumentación para el procedimiento de angioplastía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_8">
+  <data key="d0">Descripción del procedimiento de angioplastía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_9">
+  <data key="d0">Postquirúrgico del procedimiento de angioplastía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_10">
+  <data key="d0">Implantación del stent</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_11">
+  <data key="d0">Técnicas utilizadas en la colocación de stents en</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_12">
+  <data key="d0">Fisiopatología del proceso de reestenosis intra-stent</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_13">
+  <data key="d0">Clasiicación reestenosis intra-stent</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_14">
+  <data key="d0">Indicación intervención percutánea coronaria 1993 (AHA/ACC)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_15">
+  <data key="d0">Indicación intervención percutánea coronaria en última guía.</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_16">
+  <data key="d0">Recomendaciones intervención percutánea coronaria (IPC)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_17">
+  <data key="d0">Recomendación intervención percutánea en infarto agudo al miocardio</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_18">
+  <data key="d0">Angioplastía primaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_19">
+  <data key="d0">Recomendación para angioplastía primaria en IAM transmural</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_20">
+  <data key="d0">Angioplastía de rescate (post trombolisis fallida).</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_21">
+  <data key="d0">Angioplastía post trombolisis tardía (horas o días)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_22">
+  <data key="d0">Angioplastía en shock cardiogénico</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_23">
+  <data key="d0">Angioplastía después de trombolisis en grupo seleccionado</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_24">
+  <data key="d0">Intervención coronaria percutánea en pacientes</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_25">
+  <data key="d0">Intervención percutánea coronaria en enfermedad de</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_26">
+  <data key="d0">Indicación de inhibidores IIb/IIIa en APTC</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_4_27">
+  <data key="d0">Recomendaciones del 2007 para la intervención coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_5">
+  <data key="d0">Capítulo 5 — Procedimientos Periféricos Y Otras Intervenciones</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_5_1">
+  <data key="d0">Arritmias cardíacas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_5_2">
+  <data key="d0">Marcapasos</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_5_3">
+  <data key="d0">Marcapasos tricamerales</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_5_4">
+  <data key="d0">Resincronizacion cardíaca</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_5_5">
+  <data key="d0">Ablación cardíaca</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_6">
+  <data key="d0">Capítulo 6 — Intervenciones Pediátricas</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_6_1">
+  <data key="d0">Angiografía periférica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_6_2">
+  <data key="d0">Arteriografía carotídea</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_6_3">
+  <data key="d0">Arteriografía renal</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_6_4">
+  <data key="d0">Colocación de iltro vena cava inferior</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_6_5">
+  <data key="d0">Técnica para biopsia endocárdica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">6</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_7">
+  <data key="d0">Capítulo 7 — Tips Importantes</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_1">
+  <data key="d0">Antecedentes</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_2">
+  <data key="d0">Atrioseptostomía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_3">
+  <data key="d0">Valvuloplastía pulmonar y angioplastía de ramas pulmónares</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_4">
+  <data key="d0">Valvuloplastía aórtica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_5">
+  <data key="d0">Valvuloplastía mitral y tricúspide</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_6">
+  <data key="d0">Angioplastía en coartación de aorta</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_7">
+  <data key="d0">Otras dilataciones vasculares</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_8">
+  <data key="d0">Técnicas de cierre</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_9">
+  <data key="d0">Oclusión de fístulas, vasos anómalos y otros defectos congénitos o</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_10">
+  <data key="d0">Extracción de cuerpos extraños</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_11">
+  <data key="d0">Cuidados, seguimiento y controles de los niños sometidos a</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_7_12">
+  <data key="d0">Caso clínico de comunicación interauricular ( CIA)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_8">
+  <data key="d0">Capítulo 8 — Medios De Contraste</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_1">
+  <data key="d0">Retiro de vaina introductora cuando se ha usado heparina</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_2">
+  <data key="d0">Precaución de la presión del sitio de punción en paciente que</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_3">
+  <data key="d0">Cuidado en el traslado a piso.</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_4">
+  <data key="d0">Tip para canular graft aorto-coronario</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_5">
+  <data key="d0">Tip en angioplastía.</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_6">
+  <data key="d0">Tiempo de ACT</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_7">
+  <data key="d0">Solución en tamponade por perforación coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_8_8">
+  <data key="d0">Coctel radíal (punción radíal)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_9">
+  <data key="d0">Capítulo 9 — Medicamentos En Hemodinámica</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_1">
+  <data key="d0">Generalidades</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_2">
+  <data key="d0">Indicaciones para el uso de medio de contraste</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_3">
+  <data key="d0">Clasiicación de las reacciones adversas del medio de contraste</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_4">
+  <data key="d0">Efectos adversos por órgano o sistema especíico</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_5">
+  <data key="d0">Regímenes para reducir la frecuencia y severidad de</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_6">
+  <data key="d0">Preparación y tratamiento en pacientes con historial de alergia al contraste</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_7">
+  <data key="d0">Manejo de las reacciones agudas en adultos</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_8">
+  <data key="d0">Manejo de las reacciones agudas en niños</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_9">
+  <data key="d0">Recomendaciones para el uso de agentes de contraste de</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_10">
+  <data key="d0">Recomendaciones para el uso de agentes de contraste de</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_11">
+  <data key="d0">Recomendaciones para la prevención de nefropatia inducida</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_12">
+  <data key="d0">Recomendaciones para la detección precoz de la nefrotapatia</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_13">
+  <data key="d0">Recomendaciones para pacientes diabéticos tratados</data>
+  <data key="d1">seccion</data>
+  <data key="d2">7</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_9_14">
+  <data key="d0">Recomendaciones para la prevención de reacciones de</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_10">
+  <data key="d0">Capítulo 10 — Formulas Hemodinámicas</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_10_1">
+  <data key="d0">Ansiolítico para el paciente en sala hemodinamia</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_10_2">
+  <data key="d0">Medicamentos para revertir efecto de intoxicación por benzodíacepina</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_10_3">
+  <data key="d0">Grupo alternativo en caso de alergia a la lidocaína</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_10_4">
+  <data key="d0">Tratamiento de la reacción a protamina</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_10_5">
+  <data key="d0">Drogas utilizadas en sala de cateterismo</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_11">
+  <data key="d0">Capítulo 11 — Aspectos Clinicos De Cardiologia</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_1">
+  <data key="d0">Cálculo de parámetros hemodinamicos</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_2">
+  <data key="d0">Cálculo de volumen ventricular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_3">
+  <data key="d0">Cálculo de fracción de expulsión</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_4">
+  <data key="d0">Cálculo velocidad acortamiento circunferencial</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_5">
+  <data key="d0">Cálculo masa ventricular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_6">
+  <data key="d0">Otras fórmulas utilizadas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_7">
+  <data key="d0">Gasometría</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_11_8">
+  <data key="d0">Fórmulas de importancia clínica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_12">
+  <data key="d0">Capítulo 12 — Evidencias Cardiologicas</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_1">
+  <data key="d0">Evaluación vascular preoperatoria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_2">
+  <data key="d0">Hipertension arterial sistémica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_3">
+  <data key="d0">Cardiopatía isquémica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_4">
+  <data key="d0">Infarto auricular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_5">
+  <data key="d0">Insuiciencia cardíaca</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_6">
+  <data key="d0">Enfermedades pericardicas, endocarditis infecciosa y derrame pleural</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_7">
+  <data key="d0">Valvulopatia aórtica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_8">
+  <data key="d0">Valvulopatia mitral</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_9">
+  <data key="d0">Enfermedad tromboembólica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_10">
+  <data key="d0">Enfermedad vascular periférica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_12_11">
+  <data key="d0">Diabetes: factor de riesgo cardiovascular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_13">
+  <data key="d0">Capítulo 13 — Tecnicas Invasivas Con Aplicación A La Hemodinamia</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_1">
+  <data key="d0">Mediciones del tratamiento</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_2">
+  <data key="d0">Cardiotoxicidad por drogas oncológicas</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_3">
+  <data key="d0">Tratamiento de la angina crónica estable</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_4">
+  <data key="d0">Procedimientos de revascularización miocardica</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_5">
+  <data key="d0">Tratamiento de la angina inestable y el infarto sin elevación del ST</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_6">
+  <data key="d0">Tratamiento del infarto agudo de miocardio con elevación del segmento del ST 371</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_7">
+  <data key="d0">Angioplastía transluminal coronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_8">
+  <data key="d0">Enfermedad de la arteria carótida interna</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_9">
+  <data key="d0">Arteriopatia obstructiva de los miembros inferiores</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_10">
+  <data key="d0">Aneurisma de la aorta abdominal (AAA)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_13_11">
+  <data key="d0">Trombosis venosa profunda (TVP)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">8</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_14">
+  <data key="d0">Capítulo 14 — Soporte Vital Cardiopulmonar Avanzado En El Adulto: — “Algoritmos De Actuación” (Aha, Acls)</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_1">
+  <data key="d0">Sonografía intravascular (IVUS)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_2">
+  <data key="d0">Tomografía óptica (TCO)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_3">
+  <data key="d0">Termografía intracoronaria</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_4">
+  <data key="d0">Palpografía (Elastograia) intravascular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_5">
+  <data key="d0">Angioscopía</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_6">
+  <data key="d0">Espectroscopia de Raman</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_14_7">
+  <data key="d0">Resonancia magnetica intravascular</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_15">
+  <data key="d0">Capítulo 15 — Personal De Una Sala De Hemodinámica</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_1">
+  <data key="d0">Introducción</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_2">
+  <data key="d0">Algoritmo simpliicado de SVB/BLS en adultos</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_3">
+  <data key="d0">Soporte vital avanzado adultos (AHA): Ritmo no desibrilable (asistolia)</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_4">
+  <data key="d0">Ritmo desibrilable: (ibrilación ventricular o taquicardia ventricular).</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_5">
+  <data key="d0">Esquema soporte vital avanzado circular en esquema:</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_6">
+  <data key="d0">Objetivos claves iniciales y posteriores de los cuidados post-parada cardíaca 480</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_15_7">
+  <data key="d0">Principales cambios de las directrices de 2005 incluyen SVCA</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="cap_16">
+  <data key="d0">Capítulo 16 — Bibliografia</data>
+  <data key="d1">capitulo</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_16_1">
+  <data key="d0">Deberes de enfermera</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_16_2">
+  <data key="d0">Deberes del técnico de rayos x</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_16_3">
+  <data key="d0">Deberes del asistente de limpieza y mantenimiento</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>
+  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<node id="sec_16_4">
+  <data key="d0">Protocolos a seguir con un paciente de hemodinamia</data>
+  <data key="d1">seccion</data>
+  <data key="d2">9</data>  <data key="d3">Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf</data>
+</node>
+<edge source="libro" target="cap_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_12">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_13">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_14">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_15">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="libro" target="cap_16">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_1" target="sec_1_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_12">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_13">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_2" target="sec_2_14">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_3" target="sec_3_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_12">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_13">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_14">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_15">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_16">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_17">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_18">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_19">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_20">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_21">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_22">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_23">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_24">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_25">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_26">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_4" target="sec_4_27">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_5" target="sec_5_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_5" target="sec_5_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_5" target="sec_5_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_5" target="sec_5_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_5" target="sec_5_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_6" target="sec_6_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_6" target="sec_6_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_6" target="sec_6_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_6" target="sec_6_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_6" target="sec_6_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_7" target="sec_7_12">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_8" target="sec_8_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_12">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_13">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_9" target="sec_9_14">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_10" target="sec_10_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_10" target="sec_10_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_10" target="sec_10_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_10" target="sec_10_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_10" target="sec_10_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_11" target="sec_11_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_12" target="sec_12_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_8">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_9">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_10">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_13" target="sec_13_11">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_14" target="sec_14_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_5">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_6">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_15" target="sec_15_7">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_16" target="sec_16_1">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_16" target="sec_16_2">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_16" target="sec_16_3">
+  <data key="d4">CONTIENE</data>
+</edge>
+<edge source="cap_16" target="sec_16_4">
+  <data key="d4">CONTIENE</data>
+</edge>
+</graph></graphml>
