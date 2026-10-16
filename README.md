@@ -28,6 +28,10 @@ python3 atlas/build.py
 
 [`Graphify/hemodinamia-grafo.html`](Graphify/hemodinamia-grafo.html) es el mapa interactivo autocontenido del manual de José Rafael López Luciano. Incluye buscador, tres vistas y trazado de prerrequisitos. La skill [`hemodinamia-grafo`](.claude/skills/hemodinamia-grafo/SKILL.md) contiene el JSON de datos y `scripts/ruta.py` para consultar rutas desde la terminal. Las conexiones son una interpretación pedagógica; las recomendaciones clínicas históricas del manual deben contrastarse con fuentes vigentes.
 
+## Aplicación Python de Graphify
+
+[`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.
+
 ## Instalación
 
 Las skills viven en `.claude/skills/` y Claude Code las carga automáticamente al abrir este repo. Cada carpeta es una skill independiente (`SKILL.md` + `references/`). Para instalarla en claude.ai, comprime la carpeta como `.skill` (zip) y súbela en *Settings → Capabilities → Skills*, o cópiala a `~/.claude/skills/` para Claude Code.

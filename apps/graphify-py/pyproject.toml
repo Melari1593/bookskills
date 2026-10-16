@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bookskills-graphify-app"
+version = "0.1.0"
+description = "Lanzador Python reproducible de Graphify para bookskills"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["graphifyy[pdf,office]==0.9.91"]
+
+[project.scripts]
+bookskills-graphify = "bookskills_graphify.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
