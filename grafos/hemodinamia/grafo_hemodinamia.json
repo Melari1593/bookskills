@@ -1,0 +1,1995 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Manual de Hemodinámica y Aplicaciones Clínicas en Cardiología",
+      "tipo": "libro",
+      "pagina_pdf": 3,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "libro"
+    },
+    {
+      "label": "Capítulo 1 — Cateterización Cardiaca",
+      "tipo": "capitulo",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_1"
+    },
+    {
+      "label": "Generalidades",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_1_1"
+    },
+    {
+      "label": "Capítulo 2 — Aspectos Importantes De La Hemodinámica",
+      "tipo": "capitulo",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_2"
+    },
+    {
+      "label": "Generalidades",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_1"
+    },
+    {
+      "label": "Factores de riesgo por complicaciones durante el procedimiento",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_2"
+    },
+    {
+      "label": "Previo al procedimiento de cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_3"
+    },
+    {
+      "label": "Instrumentación para la realización de un cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_4"
+    },
+    {
+      "label": "Durante el procedimiento de cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_5"
+    },
+    {
+      "label": "Descripción del procedimiento de cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_6"
+    },
+    {
+      "label": "Proyecciones angiográicas",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_7"
+    },
+    {
+      "label": "Ventrículograma",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_8"
+    },
+    {
+      "label": "Presiónes de cavidades izquierdas",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_9"
+    },
+    {
+      "label": "Aortograma",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_10"
+    },
+    {
+      "label": "Cateterismo de cavidades derechas",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_11"
+    },
+    {
+      "label": "Postquirúrgico del procedimiento de cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_12"
+    },
+    {
+      "label": "Cuidados postoperatorios del paciente",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_13"
+    },
+    {
+      "label": "Resultados del cateterismo cardíaco",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_2_14"
+    },
+    {
+      "label": "Capítulo 3 — Angioplastia Coronaria",
+      "tipo": "capitulo",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_3"
+    },
+    {
+      "label": "Resumen anatomía coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_1"
+    },
+    {
+      "label": "Clasiicación del lujo TIMI",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_2"
+    },
+    {
+      "label": "Clasiicación del grado de circulación colateral coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_3"
+    },
+    {
+      "label": "Clasiicación AHA, ACC, de tipos lesiones o placas coronarias",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_4"
+    },
+    {
+      "label": "Etapas en la formación y crecimiento de placas",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_5"
+    },
+    {
+      "label": "Clasiicación grados de trombos",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_6"
+    },
+    {
+      "label": "Clasiicación perforación coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_7"
+    },
+    {
+      "label": "Clasiicación disección coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_8"
+    },
+    {
+      "label": "Isquemia en graft aorto-coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_9"
+    },
+    {
+      "label": "Clasiicación de medidas para lesiones bifurcadas",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_3_10"
+    },
+    {
+      "label": "Capítulo 4 — Arritmias, Marcapasos, Resincronización Y Ablacación Cardiaca",
+      "tipo": "capitulo",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_4"
+    },
+    {
+      "label": "Generalidades",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_1"
+    },
+    {
+      "label": "Relación intervención coronaria percutánea (IPC) por años",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_2"
+    },
+    {
+      "label": "Intervención en infarto agudo al miocardio (IAM)",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_3"
+    },
+    {
+      "label": "Comparación de diferentes técnicas de angioplastía",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_4"
+    },
+    {
+      "label": "Lesión favorable",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_5"
+    },
+    {
+      "label": "Deinición éxito angioplastía",
+      "tipo": "seccion",
+      "pagina_pdf": 5,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_6"
+    },
+    {
+      "label": "Instrumentación para el procedimiento de angioplastía",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_7"
+    },
+    {
+      "label": "Descripción del procedimiento de angioplastía",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_8"
+    },
+    {
+      "label": "Postquirúrgico del procedimiento de angioplastía",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_9"
+    },
+    {
+      "label": "Implantación del stent",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_10"
+    },
+    {
+      "label": "Técnicas utilizadas en la colocación de stents en",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_11"
+    },
+    {
+      "label": "Fisiopatología del proceso de reestenosis intra-stent",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_12"
+    },
+    {
+      "label": "Clasiicación reestenosis intra-stent",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_13"
+    },
+    {
+      "label": "Indicación intervención percutánea coronaria 1993 (AHA/ACC)",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_14"
+    },
+    {
+      "label": "Indicación intervención percutánea coronaria en última guía.",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_15"
+    },
+    {
+      "label": "Recomendaciones intervención percutánea coronaria (IPC)",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_16"
+    },
+    {
+      "label": "Recomendación intervención percutánea en infarto agudo al miocardio",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_17"
+    },
+    {
+      "label": "Angioplastía primaria",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_18"
+    },
+    {
+      "label": "Recomendación para angioplastía primaria en IAM transmural",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_19"
+    },
+    {
+      "label": "Angioplastía de rescate (post trombolisis fallida).",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_20"
+    },
+    {
+      "label": "Angioplastía post trombolisis tardía (horas o días)",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_21"
+    },
+    {
+      "label": "Angioplastía en shock cardiogénico",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_22"
+    },
+    {
+      "label": "Angioplastía después de trombolisis en grupo seleccionado",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_23"
+    },
+    {
+      "label": "Intervención coronaria percutánea en pacientes",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_24"
+    },
+    {
+      "label": "Intervención percutánea coronaria en enfermedad de",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_25"
+    },
+    {
+      "label": "Indicación de inhibidores IIb/IIIa en APTC",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_26"
+    },
+    {
+      "label": "Recomendaciones del 2007 para la intervención coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_4_27"
+    },
+    {
+      "label": "Capítulo 5 — Procedimientos Periféricos Y Otras Intervenciones",
+      "tipo": "capitulo",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_5"
+    },
+    {
+      "label": "Arritmias cardíacas",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_5_1"
+    },
+    {
+      "label": "Marcapasos",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_5_2"
+    },
+    {
+      "label": "Marcapasos tricamerales",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_5_3"
+    },
+    {
+      "label": "Resincronizacion cardíaca",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_5_4"
+    },
+    {
+      "label": "Ablación cardíaca",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_5_5"
+    },
+    {
+      "label": "Capítulo 6 — Intervenciones Pediátricas",
+      "tipo": "capitulo",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_6"
+    },
+    {
+      "label": "Angiografía periférica",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_6_1"
+    },
+    {
+      "label": "Arteriografía carotídea",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_6_2"
+    },
+    {
+      "label": "Arteriografía renal",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_6_3"
+    },
+    {
+      "label": "Colocación de iltro vena cava inferior",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_6_4"
+    },
+    {
+      "label": "Técnica para biopsia endocárdica",
+      "tipo": "seccion",
+      "pagina_pdf": 6,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_6_5"
+    },
+    {
+      "label": "Capítulo 7 — Tips Importantes",
+      "tipo": "capitulo",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_7"
+    },
+    {
+      "label": "Antecedentes",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_1"
+    },
+    {
+      "label": "Atrioseptostomía",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_2"
+    },
+    {
+      "label": "Valvuloplastía pulmonar y angioplastía de ramas pulmónares",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_3"
+    },
+    {
+      "label": "Valvuloplastía aórtica",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_4"
+    },
+    {
+      "label": "Valvuloplastía mitral y tricúspide",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_5"
+    },
+    {
+      "label": "Angioplastía en coartación de aorta",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_6"
+    },
+    {
+      "label": "Otras dilataciones vasculares",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_7"
+    },
+    {
+      "label": "Técnicas de cierre",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_8"
+    },
+    {
+      "label": "Oclusión de fístulas, vasos anómalos y otros defectos congénitos o",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_9"
+    },
+    {
+      "label": "Extracción de cuerpos extraños",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_10"
+    },
+    {
+      "label": "Cuidados, seguimiento y controles de los niños sometidos a",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_11"
+    },
+    {
+      "label": "Caso clínico de comunicación interauricular ( CIA)",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_7_12"
+    },
+    {
+      "label": "Capítulo 8 — Medios De Contraste",
+      "tipo": "capitulo",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_8"
+    },
+    {
+      "label": "Retiro de vaina introductora cuando se ha usado heparina",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_1"
+    },
+    {
+      "label": "Precaución de la presión del sitio de punción en paciente que",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_2"
+    },
+    {
+      "label": "Cuidado en el traslado a piso.",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_3"
+    },
+    {
+      "label": "Tip para canular graft aorto-coronario",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_4"
+    },
+    {
+      "label": "Tip en angioplastía.",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_5"
+    },
+    {
+      "label": "Tiempo de ACT",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_6"
+    },
+    {
+      "label": "Solución en tamponade por perforación coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_7"
+    },
+    {
+      "label": "Coctel radíal (punción radíal)",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_8_8"
+    },
+    {
+      "label": "Capítulo 9 — Medicamentos En Hemodinámica",
+      "tipo": "capitulo",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_9"
+    },
+    {
+      "label": "Generalidades",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_1"
+    },
+    {
+      "label": "Indicaciones para el uso de medio de contraste",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_2"
+    },
+    {
+      "label": "Clasiicación de las reacciones adversas del medio de contraste",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_3"
+    },
+    {
+      "label": "Efectos adversos por órgano o sistema especíico",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_4"
+    },
+    {
+      "label": "Regímenes para reducir la frecuencia y severidad de",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_5"
+    },
+    {
+      "label": "Preparación y tratamiento en pacientes con historial de alergia al contraste",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_6"
+    },
+    {
+      "label": "Manejo de las reacciones agudas en adultos",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_7"
+    },
+    {
+      "label": "Manejo de las reacciones agudas en niños",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_8"
+    },
+    {
+      "label": "Recomendaciones para el uso de agentes de contraste de",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_9"
+    },
+    {
+      "label": "Recomendaciones para el uso de agentes de contraste de",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_10"
+    },
+    {
+      "label": "Recomendaciones para la prevención de nefropatia inducida",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_11"
+    },
+    {
+      "label": "Recomendaciones para la detección precoz de la nefrotapatia",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_12"
+    },
+    {
+      "label": "Recomendaciones para pacientes diabéticos tratados",
+      "tipo": "seccion",
+      "pagina_pdf": 7,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_13"
+    },
+    {
+      "label": "Recomendaciones para la prevención de reacciones de",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_9_14"
+    },
+    {
+      "label": "Capítulo 10 — Formulas Hemodinámicas",
+      "tipo": "capitulo",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_10"
+    },
+    {
+      "label": "Ansiolítico para el paciente en sala hemodinamia",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_10_1"
+    },
+    {
+      "label": "Medicamentos para revertir efecto de intoxicación por benzodíacepina",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_10_2"
+    },
+    {
+      "label": "Grupo alternativo en caso de alergia a la lidocaína",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_10_3"
+    },
+    {
+      "label": "Tratamiento de la reacción a protamina",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_10_4"
+    },
+    {
+      "label": "Drogas utilizadas en sala de cateterismo",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_10_5"
+    },
+    {
+      "label": "Capítulo 11 — Aspectos Clinicos De Cardiologia",
+      "tipo": "capitulo",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_11"
+    },
+    {
+      "label": "Cálculo de parámetros hemodinamicos",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_1"
+    },
+    {
+      "label": "Cálculo de volumen ventricular",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_2"
+    },
+    {
+      "label": "Cálculo de fracción de expulsión",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_3"
+    },
+    {
+      "label": "Cálculo velocidad acortamiento circunferencial",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_4"
+    },
+    {
+      "label": "Cálculo masa ventricular",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_5"
+    },
+    {
+      "label": "Otras fórmulas utilizadas",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_6"
+    },
+    {
+      "label": "Gasometría",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_7"
+    },
+    {
+      "label": "Fórmulas de importancia clínica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_11_8"
+    },
+    {
+      "label": "Capítulo 12 — Evidencias Cardiologicas",
+      "tipo": "capitulo",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_12"
+    },
+    {
+      "label": "Evaluación vascular preoperatoria",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_1"
+    },
+    {
+      "label": "Hipertension arterial sistémica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_2"
+    },
+    {
+      "label": "Cardiopatía isquémica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_3"
+    },
+    {
+      "label": "Infarto auricular",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_4"
+    },
+    {
+      "label": "Insuiciencia cardíaca",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_5"
+    },
+    {
+      "label": "Enfermedades pericardicas, endocarditis infecciosa y derrame pleural",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_6"
+    },
+    {
+      "label": "Valvulopatia aórtica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_7"
+    },
+    {
+      "label": "Valvulopatia mitral",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_8"
+    },
+    {
+      "label": "Enfermedad tromboembólica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_9"
+    },
+    {
+      "label": "Enfermedad vascular periférica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_10"
+    },
+    {
+      "label": "Diabetes: factor de riesgo cardiovascular",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_12_11"
+    },
+    {
+      "label": "Capítulo 13 — Tecnicas Invasivas Con Aplicación A La Hemodinamia",
+      "tipo": "capitulo",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_13"
+    },
+    {
+      "label": "Mediciones del tratamiento",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_1"
+    },
+    {
+      "label": "Cardiotoxicidad por drogas oncológicas",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_2"
+    },
+    {
+      "label": "Tratamiento de la angina crónica estable",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_3"
+    },
+    {
+      "label": "Procedimientos de revascularización miocardica",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_4"
+    },
+    {
+      "label": "Tratamiento de la angina inestable y el infarto sin elevación del ST",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_5"
+    },
+    {
+      "label": "Tratamiento del infarto agudo de miocardio con elevación del segmento del ST 371",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_6"
+    },
+    {
+      "label": "Angioplastía transluminal coronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_7"
+    },
+    {
+      "label": "Enfermedad de la arteria carótida interna",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_8"
+    },
+    {      "label": "Arteriopatia obstructiva de los miembros inferiores",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_9"
+    },
+    {
+      "label": "Aneurisma de la aorta abdominal (AAA)",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_10"
+    },
+    {
+      "label": "Trombosis venosa profunda (TVP)",
+      "tipo": "seccion",
+      "pagina_pdf": 8,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_13_11"
+    },
+    {
+      "label": "Capítulo 14 — Soporte Vital Cardiopulmonar Avanzado En El Adulto: — “Algoritmos De Actuación” (Aha, Acls)",
+      "tipo": "capitulo",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_14"
+    },
+    {
+      "label": "Sonografía intravascular (IVUS)",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_1"
+    },
+    {
+      "label": "Tomografía óptica (TCO)",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_2"
+    },
+    {
+      "label": "Termografía intracoronaria",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_3"
+    },
+    {
+      "label": "Palpografía (Elastograia) intravascular",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_4"
+    },
+    {
+      "label": "Angioscopía",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_5"
+    },
+    {
+      "label": "Espectroscopia de Raman",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_6"
+    },
+    {
+      "label": "Resonancia magnetica intravascular",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_14_7"
+    },
+    {
+      "label": "Capítulo 15 — Personal De Una Sala De Hemodinámica",
+      "tipo": "capitulo",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_15"
+    },
+    {
+      "label": "Introducción",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_1"
+    },
+    {
+      "label": "Algoritmo simpliicado de SVB/BLS en adultos",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_2"
+    },
+    {
+      "label": "Soporte vital avanzado adultos (AHA): Ritmo no desibrilable (asistolia)",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_3"
+    },
+    {
+      "label": "Ritmo desibrilable: (ibrilación ventricular o taquicardia ventricular).",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_4"
+    },
+    {
+      "label": "Esquema soporte vital avanzado circular en esquema:",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_5"
+    },
+    {
+      "label": "Objetivos claves iniciales y posteriores de los cuidados post-parada cardíaca 480",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_6"
+    },
+    {
+      "label": "Principales cambios de las directrices de 2005 incluyen SVCA",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_15_7"
+    },
+    {
+      "label": "Capítulo 16 — Bibliografia",
+      "tipo": "capitulo",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "cap_16"
+    },
+    {
+      "label": "Deberes de enfermera",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_16_1"
+    },
+    {
+      "label": "Deberes del técnico de rayos x",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_16_2"
+    },
+    {
+      "label": "Deberes del asistente de limpieza y mantenimiento",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_16_3"
+    },
+    {
+      "label": "Protocolos a seguir con un paciente de hemodinamia",
+      "tipo": "seccion",
+      "pagina_pdf": 9,
+      "fuente": "Manual de Hemodinamia Y Aplicaciones Clinicas En Cardiologia.pdf",
+      "id": "sec_16_4"
+    }
+  ],
+  "edges": [
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_12"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_13"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_14"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_15"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "libro",
+      "target": "cap_16"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_1",
+      "target": "sec_1_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_12"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_13"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_2",
+      "target": "sec_2_14"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_3",
+      "target": "sec_3_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_12"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_13"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_14"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_15"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_16"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_17"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_18"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_19"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_20"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_21"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_22"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_23"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_24"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_25"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_26"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_4",
+      "target": "sec_4_27"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_5",
+      "target": "sec_5_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_5",
+      "target": "sec_5_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_5",
+      "target": "sec_5_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_5",
+      "target": "sec_5_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_5",
+      "target": "sec_5_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_6",
+      "target": "sec_6_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_6",
+      "target": "sec_6_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_6",
+      "target": "sec_6_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_6",
+      "target": "sec_6_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_6",
+      "target": "sec_6_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_7",
+      "target": "sec_7_12"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_8",
+      "target": "sec_8_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_12"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_13"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_9",
+      "target": "sec_9_14"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_10",
+      "target": "sec_10_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_10",
+      "target": "sec_10_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_10",
+      "target": "sec_10_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_10",
+      "target": "sec_10_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_10",
+      "target": "sec_10_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_11",
+      "target": "sec_11_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_12",
+      "target": "sec_12_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_8"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_9"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_10"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_13",
+      "target": "sec_13_11"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_14",
+      "target": "sec_14_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_4"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_5"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_6"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_15",
+      "target": "sec_15_7"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_16",
+      "target": "sec_16_1"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_16",
+      "target": "sec_16_2"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_16",
+      "target": "sec_16_3"
+    },
+    {
+      "relacion": "CONTIENE",
+      "source": "cap_16",
+      "target": "sec_16_4"
+    }
+  ]
+}
