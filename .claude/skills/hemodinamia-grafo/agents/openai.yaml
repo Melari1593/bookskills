@@ -1,0 +1,14 @@
+interface:
+  display_name: Grafo de hemodinamia
+  short_description: Explora conceptos y rutas del manual de hemodinamia
+  default_prompt: Usa $hemodinamia-grafo para trazar una ruta de lectura hacia angioplastia
+    coronaria.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

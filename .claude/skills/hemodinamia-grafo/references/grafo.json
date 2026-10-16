@@ -1,0 +1,1792 @@
+{
+  "meta": {
+    "title": "Manual de hemodinamia y aplicaciones clínicas en cardiología",
+    "subtitle": "José Rafael López Luciano · mapa de estudio del manual, no guía clínica vigente",
+    "itemLabel": "Concepto clave",
+    "itemLabelPlural": "Conceptos clave",
+    "searchHint": "Buscar: TIMI, reestenosis, IVUS…"
+  },
+  "blocks": {
+    "fund": {
+      "name": "Fundamentos y diagnóstico"
+    },
+    "inter": {
+      "name": "Intervenciones coronarias",
+      "color": "#A15C2C"
+    },
+    "ritmo": {
+      "name": "Electrofisiología",
+      "color": "#765BA8"
+    },
+    "vasc": {
+      "name": "Vascular y pediatría",
+      "color": "#26827C"
+    },
+    "sala": {
+      "name": "Seguridad y operación",
+      "color": "#B35863"
+    },
+    "calc": {
+      "name": "Cálculo y clínica",
+      "color": "#527CAB"
+    },
+    "evid": {
+      "name": "Evidencia e imagen",
+      "color": "#8A7B38"
+    }
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "title": "Introducción",
+      "page": 1,
+      "block": "fund",
+      "summary": "Presenta el alcance diagnóstico y terapéutico de la hemodinamia y las vías de acceso al corazón.",
+      "sections": [
+        {
+          "num": "1.1",
+          "title": "Generalidades",
+          "page": 1,
+          "items": [
+            "diagnostico",
+            "terapeutico"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Cateterización cardíaca",
+      "page": 3,
+      "block": "fund",
+      "summary": "Organiza la preparación, técnica, mediciones y cuidados del cateterismo de cavidades izquierdas y derechas.",
+      "sections": [
+        {
+          "num": "2.1",
+          "title": "Generalidades",
+          "page": 3,
+          "items": [
+            "coronario"
+          ]
+        },
+        {
+          "num": "2.2",
+          "title": "Factores de riesgo por complicaciones durante el procedimiento",
+          "page": 3
+        },
+        {
+          "num": "2.3",
+          "title": "Previo al procedimiento de cateterismo",
+          "page": 6
+        },
+        {
+          "num": "2.4",
+          "title": "Instrumentación para la realización de un cateterismo",
+          "page": 6
+        },
+        {
+          "num": "2.5",
+          "title": "Durante el procedimiento de cateterismo",
+          "page": 9
+        },
+        {
+          "num": "2.6",
+          "title": "Descripción del procedimiento de cateterismo",
+          "page": 9
+        },
+        {
+          "num": "2.7",
+          "title": "Proyecciones angiográficas",
+          "page": 11
+        },
+        {
+          "num": "2.8",
+          "title": "Ventrículograma",
+          "page": 16,
+          "items": [
+            "ventriculo"
+          ]
+        },
+        {
+          "num": "2.9",
+          "title": "Presiones de cavidades izquierdas",
+          "page": 22,
+          "items": [
+            "presiones"
+          ]
+        },
+        {
+          "num": "2.10",
+          "title": "Aortograma",
+          "page": 23
+        },
+        {
+          "num": "2.11",
+          "title": "Cateterismo de cavidades derechas",
+          "page": 25,
+          "items": [
+            "derecho"
+          ]
+        },
+        {
+          "num": "2.12",
+          "title": "Postquirúrgico del procedimiento de cateterismo",
+          "page": 26
+        },
+        {
+          "num": "2.13",
+          "title": "Cuidados postoperatorios del paciente",
+          "page": 26
+        },
+        {
+          "num": "2.14",
+          "title": "Resultados del cateterismo cardíaco",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Aspectos importantes de la hemodinamia",
+      "page": 29,
+      "block": "fund",
+      "summary": "Describe la anatomía coronaria y las escalas angiográficas para interpretar flujo, lesiones y complicaciones.",
+      "sections": [
+        {
+          "num": "3.1",
+          "title": "Resumen anatomía coronaria",
+          "page": 29,
+          "items": [
+            "anatomia"
+          ]
+        },
+        {
+          "num": "3.2",
+          "title": "Clasificación del flujo TIMI",
+          "page": 32,
+          "items": [
+            "timi"
+          ]
+        },
+        {
+          "num": "3.3",
+          "title": "Clasificación de circulación colateral coronaria",
+          "page": 32,
+          "items": [
+            "colateral"
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "Clasificación AHA/ACC de lesiones coronarias",
+          "page": 32
+        },
+        {
+          "num": "3.5",
+          "title": "Formación y crecimiento de placas de ateroma",
+          "page": 33,
+          "items": [
+            "placa"
+          ]
+        },
+        {
+          "num": "3.6",
+          "title": "Clasificación de trombos",
+          "page": 35
+        },
+        {
+          "num": "3.7",
+          "title": "Clasificación de perforación coronaria",
+          "page": 35
+        },
+        {
+          "num": "3.8",
+          "title": "Clasificación de disección coronaria",
+          "page": 35,
+          "items": [
+            "diseccion"
+          ]
+        },
+        {
+          "num": "3.9",
+          "title": "Isquemia en graft aorto-coronaria",
+          "page": 36
+        },
+        {
+          "num": "3.10",
+          "title": "Medición de lesiones bifurcadas",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Angioplastia coronaria",
+      "page": 37,
+      "block": "inter",
+      "summary": "Expone instrumentos y técnicas de intervención coronaria, implante de stents, reestenosis e indicaciones clínicas según las guías citadas en el manual.",
+      "sections": [
+        {
+          "num": "4.1",
+          "title": "Generalidades",
+          "page": 37,
+          "items": [
+            "balon"
+          ]
+        },
+        {
+          "num": "4.2",
+          "title": "Relación intervención coronaria percutánea (IPC) por años",
+          "page": 39
+        },
+        {
+          "num": "4.3",
+          "title": "Intervención en infarto agudo al miocardio (IAM)",
+          "page": 39
+        },
+        {
+          "num": "4.4",
+          "title": "Comparación de diferentes técnicas de angioplastía",
+          "page": 41
+        },
+        {
+          "num": "4.5",
+          "title": "Lesión favorable para angioplastia",
+          "page": 41
+        },
+        {
+          "num": "4.6",
+          "title": "Definición de éxito de angioplastia",
+          "page": 42
+        },
+        {
+          "num": "4.7",
+          "title": "Instrumentación para el procedimiento de angioplastía",
+          "page": 42
+        },
+        {
+          "num": "4.8",
+          "title": "Descripción del procedimiento de angioplastía",
+          "page": 53
+        },
+        {
+          "num": "4.9",
+          "title": "Postquirúrgico del procedimiento de angioplastía",
+          "page": 54
+        },
+        {
+          "num": "4.10",
+          "title": "Implantación del stent",
+          "page": 55,
+          "items": [
+            "stent"
+          ]
+        },
+        {
+          "num": "4.11",
+          "title": "Stents en lesiones ostiales y bifurcadas",
+          "page": 56,
+          "items": [
+            "bifurcacion"
+          ]
+        },
+        {
+          "num": "4.12",
+          "title": "Fisiopatología del proceso de reestenosis intra-stent",
+          "page": 60,
+          "items": [
+            "reestenosis"
+          ]
+        },
+        {
+          "num": "4.13",
+          "title": "Clasiicación reestenosis intra-stent",
+          "page": 60
+        },
+        {
+          "num": "4.14",
+          "title": "Indicación intervención percutánea coronaria 1993 (AHA/ACC)",
+          "page": 61
+        },
+        {
+          "num": "4.15",
+          "title": "Indicación intervención percutánea coronaria en última guía",
+          "page": 61
+        },
+        {
+          "num": "4.16",
+          "title": "Intervención en angina, SCA sin elevación ST y enfermedad multivaso",
+          "page": 62
+        },
+        {
+          "num": "4.17",
+          "title": "Intervención en infarto con elevación del ST",
+          "page": 62
+        },
+        {
+          "num": "4.18",
+          "title": "Angioplastía primaria",
+          "page": 63
+        },
+        {
+          "num": "4.19",
+          "title": "Angioplastia primaria en infarto transmural",
+          "page": 63
+        },
+        {
+          "num": "4.20",
+          "title": "Angioplastía de rescate (post trombolisis fallida)",
+          "page": 64,
+          "items": [
+            "rescate"
+          ]
+        },
+        {
+          "num": "4.21",
+          "title": "Angioplastia tardía después de trombólisis",
+          "page": 64
+        },
+        {
+          "num": "4.22",
+          "title": "Angioplastía en shock cardiogénico",
+          "page": 65
+        },
+        {
+          "num": "4.23",
+          "title": "Angioplastía después de trombolisis en grupo seleccionado",
+          "page": 65
+        },
+        {
+          "num": "4.24",
+          "title": "Intervención en puentes aortocoronarios",
+          "page": 66
+        },
+        {
+          "num": "4.25",
+          "title": "Intervención en tronco coronario izquierdo",
+          "page": 66
+        },
+        {
+          "num": "4.26",
+          "title": "Indicación de inhibidores IIb/IIIa en APTC",
+          "page": 66
+        },
+        {
+          "num": "4.27",
+          "title": "Recomendaciones ACC/AHA/SCAI de 2007",
+          "page": 66
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Arritmias, marcapasos, resincronización y ablación cardíaca",
+      "page": 69,
+      "block": "ritmo",
+      "summary": "Relaciona mecanismos de arritmia y lectura electrocardiográfica con marcapasos, resincronización y ablación.",
+      "sections": [
+        {
+          "num": "5.1",
+          "title": "Arritmias cardíacas",
+          "page": 69,
+          "items": [
+            "reentrada",
+            "ecg"
+          ]
+        },
+        {
+          "num": "5.2",
+          "title": "Marcapasos",
+          "page": 97,
+          "items": [
+            "marcapasos"
+          ]
+        },
+        {
+          "num": "5.3",
+          "title": "Marcapasos tricamerales",
+          "page": 127
+        },
+        {
+          "num": "5.4",
+          "title": "Resincronizacion cardíaca",
+          "page": 129,
+          "items": [
+            "resincronizacion"
+          ]
+        },
+        {
+          "num": "5.5",
+          "title": "Ablación cardíaca",
+          "page": 140,
+          "items": [
+            "ablacion"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Procedimientos periféricos y otras intervenciones",
+      "page": 157,
+      "block": "vasc",
+      "summary": "Extiende la angiografía a vasos periféricos, carótidas y riñón, y presenta otras intervenciones por catéter.",
+      "sections": [
+        {
+          "num": "6.1",
+          "title": "Angiografía periférica",
+          "page": 157,
+          "items": [
+            "angiografia_periferica"
+          ]
+        },
+        {
+          "num": "6.2",
+          "title": "Arteriografía carotídea",
+          "page": 162,
+          "items": [
+            "carotida"
+          ]
+        },
+        {
+          "num": "6.3",
+          "title": "Arteriografía renal",
+          "page": 164
+        },
+        {
+          "num": "6.4",
+          "title": "Filtro de vena cava inferior",
+          "page": 166,
+          "items": [
+            "filtro_cava"
+          ]
+        },
+        {
+          "num": "6.5",
+          "title": "Técnica para biopsia endocárdica",
+          "page": 167
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Intervenciones pediátricas",
+      "page": 169,
+      "block": "vasc",
+      "summary": "Revisa procedimientos con balón y dispositivos para cardiopatías congénitas, además del seguimiento pediátrico.",
+      "sections": [
+        {
+          "num": "7.1",
+          "title": "Antecedentes",
+          "page": 169
+        },
+        {
+          "num": "7.2",
+          "title": "Atrioseptostomía",
+          "page": 169,
+          "items": [
+            "atrioseptostomia"
+          ]
+        },
+        {
+          "num": "7.3",
+          "title": "Valvuloplastia pulmonar y ramas pulmonares",
+          "page": 172,
+          "items": [
+            "valvuloplastia"
+          ]
+        },
+        {
+          "num": "7.4",
+          "title": "Valvuloplastía aórtica",
+          "page": 175
+        },
+        {
+          "num": "7.5",
+          "title": "Valvuloplastía mitral y tricúspide",
+          "page": 175
+        },
+        {
+          "num": "7.6",
+          "title": "Angioplastía en coartación de aorta",
+          "page": 177,
+          "items": [
+            "coartacion"
+          ]
+        },
+        {
+          "num": "7.7",
+          "title": "Otras dilataciones vasculares",
+          "page": 178
+        },
+        {
+          "num": "7.8",
+          "title": "Técnicas de cierre",
+          "page": 179,
+          "items": [
+            "cierre"
+          ]
+        },
+        {
+          "num": "7.9",
+          "title": "Oclusión de fístulas y vasos anómalos",
+          "page": 185
+        },
+        {
+          "num": "7.10",
+          "title": "Extracción de cuerpos extraños",
+          "page": 185
+        },
+        {
+          "num": "7.11",
+          "title": "Seguimiento tras cateterismo intervencionista pediátrico",
+          "page": 186
+        },
+        {
+          "num": "7.12",
+          "title": "Caso clínico de comunicación interauricular ( CIA)",
+          "page": 189
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Consejos prácticos de sala",
+      "page": 191,
+      "block": "sala",
+      "summary": "Reúne precauciones prácticas sobre introductores, anticoagulación, accesos y complicaciones en la sala.",
+      "sections": [
+        {
+          "num": "8.1",
+          "title": "Retiro de vaina introductora cuando se ha usado heparina",
+          "page": 191,
+          "items": [
+            "vaina"
+          ]
+        },
+        {
+          "num": "8.2",
+          "title": "Precauciones al retirar la vaina en alto riesgo de sangrado",
+          "page": 191
+        },
+        {
+          "num": "8.3",
+          "title": "Cuidado en el traslado a piso",
+          "page": 191
+        },
+        {
+          "num": "8.4",
+          "title": "Tip para canular graft aorto-coronario",
+          "page": 192
+        },
+        {
+          "num": "8.5",
+          "title": "Tip en angioplastía",
+          "page": 192
+        },
+        {
+          "num": "8.6",
+          "title": "Tiempo de ACT",
+          "page": 192,
+          "items": [
+            "act"
+          ]
+        },
+        {
+          "num": "8.7",
+          "title": "Solución en tamponade por perforación coronaria",
+          "page": 192,
+          "items": [
+            "tamponade"
+          ]
+        },
+        {
+          "num": "8.8",
+          "title": "Coctel radíal (punción radíal)",
+          "page": 193
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Medios de contraste",
+      "page": 197,
+      "block": "sala",
+      "summary": "Clasifica contrastes y reacciones adversas; presenta prevención, detección y manejo de hipersensibilidad y lesión renal.",
+      "sections": [
+        {
+          "num": "9.1",
+          "title": "Generalidades",
+          "page": 197,
+          "items": [
+            "osmolaridad"
+          ]
+        },
+        {
+          "num": "9.2",
+          "title": "Indicaciones para el uso de medio de contraste",
+          "page": 199
+        },
+        {
+          "num": "9.3",
+          "title": "Clasificación de reacciones adversas al contraste",
+          "page": 200,
+          "items": [
+            "reaccion"
+          ]
+        },
+        {
+          "num": "9.4",
+          "title": "Efectos adversos por órgano y sistema",
+          "page": 203
+        },
+        {
+          "num": "9.5",
+          "title": "Regímenes de prevención de reacciones adversas (ACR 2008)",
+          "page": 205
+        },
+        {
+          "num": "9.6",
+          "title": "Preparación y tratamiento en pacientes con historial de alergia al contraste",
+          "page": 206
+        },
+        {
+          "num": "9.7",
+          "title": "Manejo de las reacciones agudas en adultos",
+          "page": 207
+        },
+        {
+          "num": "9.8",
+          "title": "Manejo de las reacciones agudas en niños",
+          "page": 209
+        },
+        {
+          "num": "9.9",
+          "title": "Contrastes de alta osmolaridad",
+          "page": 210
+        },
+        {
+          "num": "9.10",
+          "title": "Contrastes de baja e isoosmolaridad",
+          "page": 210
+        },
+        {
+          "num": "9.11",
+          "title": "Prevención de nefropatía por contraste",
+          "page": 211,
+          "items": [
+            "renal"
+          ]
+        },
+        {
+          "num": "9.12",
+          "title": "Detección temprana de nefropatía por contraste",
+          "page": 212
+        },
+        {
+          "num": "9.13",
+          "title": "Pacientes diabéticos tratados con biguanidas",
+          "page": 212
+        },
+        {
+          "num": "9.14",
+          "title": "Prevención de hipersensibilidad",
+          "page": 212,
+          "items": [
+            "hipersensibilidad"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Medicamentos en hemodinamia",
+      "page": 217,
+      "block": "sala",
+      "summary": "Enumera medicamentos usados en sala, sedación y reversión de efectos adversos; sus dosis históricas requieren comprobación actual.",
+      "sections": [
+        {
+          "num": "10.1",
+          "title": "Ansiolítico para el paciente en sala hemodinamia",
+          "page": 217,
+          "items": [
+            "sedacion"
+          ]
+        },
+        {
+          "num": "10.2",
+          "title": "Medicamentos para revertir efecto de intoxicación por benzodíacepina",
+          "page": 217,
+          "items": [
+            "flumazenil"
+          ]
+        },
+        {
+          "num": "10.3",
+          "title": "Grupo alternativo en caso de alergia a la lidocaína",
+          "page": 217
+        },
+        {
+          "num": "10.4",
+          "title": "Tratamiento de la reacción a protamina",
+          "page": 217,
+          "items": [
+            "protamina"
+          ]
+        },
+        {
+          "num": "10.5",
+          "title": "Drogas utilizadas en sala de cateterismo",
+          "page": 218,
+          "items": [
+            "farmacos"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Fórmulas hemodinámicas",
+      "page": 231,
+      "block": "calc",
+      "summary": "Reúne cálculos de gasto cardíaco, volúmenes y función ventricular, gasometría y otras magnitudes clínicas.",
+      "sections": [
+        {
+          "num": "11.1",
+          "title": "Cálculo de parámetros hemodinamicos",
+          "page": 231,
+          "items": [
+            "gasto"
+          ]
+        },
+        {
+          "num": "11.2",
+          "title": "Cálculo de volumen ventricular",
+          "page": 236,
+          "items": [
+            "volumen"
+          ]
+        },
+        {
+          "num": "11.3",
+          "title": "Cálculo de fracción de expulsión",
+          "page": 237,
+          "items": [
+            "fe"
+          ]
+        },
+        {
+          "num": "11.4",
+          "title": "Cálculo velocidad acortamiento circunferencial",
+          "page": 239
+        },
+        {
+          "num": "11.5",
+          "title": "Cálculo masa ventricular",
+          "page": 241
+        },
+        {
+          "num": "11.6",
+          "title": "Otras fórmulas utilizadas",
+          "page": 241
+        },
+        {
+          "num": "11.7",
+          "title": "Gasometría",
+          "page": 242,
+          "items": [
+            "gasometria"
+          ]
+        },
+        {
+          "num": "11.8",
+          "title": "Fórmulas de importancia clínica",
+          "page": 243
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Aspectos clínicos de cardiología",
+      "page": 247,
+      "block": "calc",
+      "summary": "Repasa evaluación preoperatoria y patologías cardíacas y vasculares que condicionan las decisiones invasivas.",
+      "sections": [
+        {
+          "num": "12.1",
+          "title": "Evaluación vascular preoperatoria",
+          "page": 247,
+          "items": [
+            "preoperatorio"
+          ]
+        },
+        {
+          "num": "12.2",
+          "title": "Hipertension arterial sistémica",
+          "page": 257
+        },
+        {
+          "num": "12.3",
+          "title": "Cardiopatía isquémica",
+          "page": 261,
+          "items": [
+            "isquemia"
+          ]
+        },
+        {
+          "num": "12.4",
+          "title": "Infarto auricular",
+          "page": 278
+        },
+        {
+          "num": "12.5",
+          "title": "Insuficiencia cardíaca",
+          "page": 280,
+          "items": [
+            "ic"
+          ]
+        },
+        {
+          "num": "12.6",
+          "title": "Enfermedades pericardicas, endocarditis infecciosa y derrame pleural",
+          "page": 285
+        },
+        {
+          "num": "12.7",
+          "title": "Valvulopatia aórtica",
+          "page": 287,
+          "items": [
+            "valvulas"
+          ]
+        },
+        {
+          "num": "12.8",
+          "title": "Valvulopatia mitral",
+          "page": 290
+        },
+        {
+          "num": "12.9",
+          "title": "Enfermedad tromboembólica",
+          "page": 293
+        },
+        {
+          "num": "12.10",
+          "title": "Enfermedad vascular periférica",
+          "page": 296
+        },
+        {
+          "num": "12.11",
+          "title": "Diabetes: factor de riesgo cardiovascular",
+          "page": 331,
+          "items": [
+            "diabetes"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Evidencias cardiológicas",
+      "page": 351,
+      "block": "evid",
+      "summary": "Introduce medidas de efecto y revisa la evidencia terapéutica de revascularización, síndrome coronario y enfermedad vascular.",
+      "sections": [
+        {
+          "num": "13.1",
+          "title": "Mediciones del tratamiento",
+          "page": 351,
+          "items": [
+            "rra",
+            "nnt"
+          ]
+        },
+        {
+          "num": "13.2",
+          "title": "Cardiotoxicidad por drogas oncológicas",
+          "page": 354
+        },
+        {
+          "num": "13.3",
+          "title": "Tratamiento de la angina crónica estable",
+          "page": 357
+        },
+        {
+          "num": "13.4",
+          "title": "Procedimientos de revascularización miocardica",
+          "page": 362,
+          "items": [
+            "revascularizacion"
+          ]
+        },
+        {
+          "num": "13.5",
+          "title": "Tratamiento de la angina inestable y el infarto sin elevación del ST",
+          "page": 368,
+          "items": [
+            "sina"
+          ]
+        },
+        {
+          "num": "13.6",
+          "title": "Tratamiento del infarto agudo de miocardio con elevación del segmento del ST",
+          "page": 371,
+          "items": [
+            "stemi"
+          ]
+        },
+        {
+          "num": "13.7",
+          "title": "Angioplastía transluminal coronaria",
+          "page": 410
+        },
+        {
+          "num": "13.8",
+          "title": "Enfermedad de la arteria carótida interna",
+          "page": 424
+        },
+        {
+          "num": "13.9",
+          "title": "Arteriopatia obstructiva de los miembros inferiores",
+          "page": 426
+        },
+        {
+          "num": "13.10",
+          "title": "Aneurisma de la aorta abdominal (AAA)",
+          "page": 431
+        },
+        {
+          "num": "13.11",
+          "title": "Trombosis venosa profunda (TVP)",
+          "page": 432
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Técnicas invasivas de imagen intravascular",
+      "page": 453,
+      "block": "evid",
+      "summary": "Compara técnicas intravasculares para caracterizar luz, pared y placa, con énfasis en ultrasonido intravascular.",
+      "sections": [
+        {
+          "num": "14.1",
+          "title": "Sonografía intravascular (IVUS)",
+          "page": 453,
+          "items": [
+            "ivus"
+          ]
+        },
+        {
+          "num": "14.2",
+          "title": "Tomografía de coherencia óptica",
+          "page": 467,
+          "items": [
+            "oct"
+          ]
+        },
+        {
+          "num": "14.3",
+          "title": "Termografía intracoronaria",
+          "page": 468
+        },
+        {
+          "num": "14.4",
+          "title": "Palpografía intravascular",
+          "page": 468
+        },
+        {
+          "num": "14.5",
+          "title": "Angioscopía",
+          "page": 469
+        },
+        {
+          "num": "14.6",
+          "title": "Espectroscopia de Raman",
+          "page": 470,
+          "items": [
+            "raman"
+          ]
+        },
+        {
+          "num": "14.7",
+          "title": "Resonancia magnetica intravascular",
+          "page": 471
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Soporte vital cardiopulmonar avanzado en adultos",
+      "page": 473,
+      "block": "sala",
+      "summary": "Resume los algoritmos de reanimación y atención posterior a la parada incluidos en las directrices AHA de 2010.",
+      "sections": [
+        {
+          "num": "15.1",
+          "title": "Introducción",
+          "page": 473
+        },
+        {
+          "num": "15.2",
+          "title": "Algoritmo de soporte vital básico en adultos",
+          "page": 475,
+          "items": [
+            "bls"
+          ]
+        },
+        {
+          "num": "15.3",
+          "title": "Ritmos no desfibrilables",
+          "page": 476,
+          "items": [
+            "no_desf"
+          ]
+        },
+        {
+          "num": "15.4",
+          "title": "Ritmos desfibrilables",
+          "page": 477,
+          "items": [
+            "desf"
+          ]
+        },
+        {
+          "num": "15.5",
+          "title": "Esquema de soporte vital avanzado",
+          "page": 479
+        },
+        {
+          "num": "15.6",
+          "title": "Cuidados tras parada cardíaca",
+          "page": 480,
+          "items": [
+            "postparo"
+          ]
+        },
+        {
+          "num": "15.7",
+          "title": "Cambios de directrices desde 2005",
+          "page": 480
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "Personal de una sala de hemodinamia",
+      "page": 483,
+      "block": "sala",
+      "summary": "Distribuye las funciones de enfermería, rayos X y apoyo, y los protocolos del paciente en hemodinamia.",
+      "sections": [
+        {
+          "num": "16.1",
+          "title": "Deberes de enfermera",
+          "page": 483,
+          "items": [
+            "enfermeria"
+          ]
+        },
+        {
+          "num": "16.2",
+          "title": "Deberes del técnico de rayos x",
+          "page": 488,
+          "items": [
+            "rayos"
+          ]
+        },
+        {
+          "num": "16.3",
+          "title": "Deberes del asistente de limpieza y mantenimiento",
+          "page": 489
+        },
+        {
+          "num": "16.4",
+          "title": "Protocolos a seguir con un paciente de hemodinamia",
+          "page": 491,
+          "items": [
+            "protocolo"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": {
+    "diagnostico": {
+      "title": "Cateterismo diagnóstico",
+      "summary": "Obtiene imágenes y mediciones invasivas de vasos y cavidades."
+    },
+    "terapeutico": {
+      "title": "Cateterismo terapéutico",
+      "summary": "Permite tratar lesiones valvulares, coronarias y congénitas por catéter."
+    },
+    "coronario": {
+      "title": "Coronariografía",
+      "summary": "Contraste y fluoroscopia delinean la luz coronaria y sus estenosis."
+    },
+    "presiones": {
+      "title": "Registro de presiones",
+      "summary": "Mide las presiones intracardíacas para interpretar función y gradientes."
+    },
+    "derecho": {
+      "title": "Cateterismo derecho",
+      "summary": "Explora cavidades derechas, presiones y circulación pulmonar."
+    },
+    "ventriculo": {
+      "title": "Ventriculografía",
+      "summary": "Visualiza geometría y contracción del ventrículo con contraste."
+    },
+    "anatomia": {
+      "title": "Anatomía coronaria",
+      "summary": "Identifica territorios y ramas principales para ubicar lesiones."
+    },
+    "timi": {
+      "title": "Flujo TIMI",
+      "summary": "Gradúa la perfusión coronaria observada angiográficamente."
+    },
+    "colateral": {
+      "title": "Circulación colateral",
+      "summary": "Describe el llenado por rutas coronarias alternativas."
+    },
+    "placa": {
+      "title": "Placa de ateroma",
+      "summary": "Relaciona formación de placa con estrechamiento de la arteria."
+    },
+    "diseccion": {
+      "title": "Disección coronaria",
+      "summary": "Reconoce separación de capas arteriales como complicación vascular."
+    },
+    "balon": {
+      "title": "Angioplastia con balón",
+      "summary": "Dilata una lesión coronaria por inflado intraluminal."
+    },
+    "stent": {
+      "title": "Stent coronario",
+      "summary": "Armazón expandible que mantiene abierta la luz tratada."
+    },
+    "bifurcacion": {
+      "title": "Intervención de bifurcación",
+      "summary": "Aborda lesiones que comprometen vaso principal y rama lateral."
+    },
+    "reestenosis": {
+      "title": "Reestenosis intrastent",
+      "summary": "Nueva reducción de la luz del segmento tratado."
+    },
+    "rescate": {
+      "title": "Angioplastia de rescate",
+      "summary": "Intervención tras trombólisis fallida en el contexto descrito."
+    },
+    "reentrada": {
+      "title": "Reentrada",
+      "summary": "Mecanismo de circuito eléctrico que causa muchas taquiarritmias."
+    },
+    "ecg": {
+      "title": "ECG de 12 derivaciones",
+      "summary": "Permite caracterizar regularidad, anchura del QRS y origen probable."
+    },
+    "marcapasos": {
+      "title": "Marcapasos",
+      "summary": "Dispositivo de estimulación para trastornos de conducción o ritmo."
+    },
+    "resincronizacion": {
+      "title": "Resincronización cardíaca",
+      "summary": "Coordina la activación ventricular en pacientes seleccionados."
+    },
+    "ablacion": {
+      "title": "Ablación cardíaca",
+      "summary": "Interrumpe tejido o vías responsables de algunas arritmias."
+    },
+    "angiografia_periferica": {
+      "title": "Angiografía periférica",
+      "summary": "Mapa con contraste para identificar obstrucciones vasculares."
+    },
+    "carotida": {
+      "title": "Arteriografía carotídea",
+      "summary": "Estudia la circulación carotídea mediante cateterización."
+    },
+    "filtro_cava": {
+      "title": "Filtro de vena cava inferior",
+      "summary": "Dispositivo colocado en vena cava según indicación clínica."
+    },
+    "atrioseptostomia": {
+      "title": "Atrioseptostomía con balón",
+      "summary": "Amplía la comunicación interauricular en cardiopatías seleccionadas."
+    },
+    "valvuloplastia": {
+      "title": "Valvuloplastia pediátrica",
+      "summary": "Dilata por catéter válvulas congénitamente estenóticas."
+    },
+    "coartacion": {
+      "title": "Angioplastia de coartación",
+      "summary": "Dilata un estrechamiento de la aorta."
+    },
+    "cierre": {
+      "title": "Cierre de defectos",
+      "summary": "Ocluye comunicaciones anormales con dispositivos por catéter."
+    },
+    "vaina": {
+      "title": "Retiro de introductor",
+      "summary": "Integra anticoagulación y hemostasia al finalizar el acceso."
+    },
+    "act": {
+      "title": "Tiempo de coagulación activado",
+      "summary": "Monitoriza el efecto anticoagulante durante ciertos procedimientos."
+    },
+    "tamponade": {
+      "title": "Taponamiento por perforación",
+      "summary": "Complicación que exige reconocer la perforación y actuar de inmediato."
+    },
+    "osmolaridad": {
+      "title": "Osmolaridad del contraste",
+      "summary": "Propiedad fisicoquímica asociada con la selección del agente."
+    },
+    "reaccion": {
+      "title": "Reacción adversa al contraste",
+      "summary": "Reconocimiento de manifestaciones y gravedad tras la administración."
+    },
+    "renal": {
+      "title": "Lesión renal asociada a contraste",
+      "summary": "Vigila factores de riesgo y función renal en exposición a contraste."
+    },
+    "hipersensibilidad": {
+      "title": "Hipersensibilidad al contraste",
+      "summary": "Identifica antecedentes y medidas preventivas del manual."
+    },
+    "sedacion": {
+      "title": "Sedación en sala",
+      "summary": "Medicamentos para el confort del paciente durante el procedimiento."
+    },
+    "flumazenil": {
+      "title": "Flumazenilo",
+      "summary": "Antagoniza efectos de benzodiazepinas en circunstancias indicadas."
+    },
+    "protamina": {
+      "title": "Reacción a protamina",
+      "summary": "Reconoce una reacción adversa al agente reversor de heparina."
+    },
+    "farmacos": {
+      "title": "Fármacos de cateterismo",
+      "summary": "Agrupa agentes de uso hemodinámico y sus contextos clínicos."
+    },
+    "gasto": {
+      "title": "Gasto cardíaco por Fick",
+      "summary": "Estima flujo cardíaco a partir de consumo y diferencia arteriovenosa de oxígeno."
+    },
+    "volumen": {
+      "title": "Volumen ventricular",
+      "summary": "Cuantifica el tamaño de la cavidad en momentos del ciclo."
+    },
+    "fe": {
+      "title": "Fracción de expulsión",
+      "summary": "Relaciona volumen expulsado con volumen telediastólico."
+    },
+    "gasometria": {
+      "title": "Gasometría",
+      "summary": "Mide gases y saturación para interpretación hemodinámica."
+    },
+    "preoperatorio": {
+      "title": "Evaluación vascular preoperatoria",
+      "summary": "Integra comorbilidades y riesgo antes de una intervención."
+    },
+    "isquemia": {
+      "title": "Cardiopatía isquémica",
+      "summary": "Relaciona síntomas y perfusión con enfermedad coronaria."
+    },
+    "ic": {
+      "title": "Insuficiencia cardíaca",
+      "summary": "Describe el síndrome de fallo de función cardíaca."
+    },
+    "valvulas": {
+      "title": "Valvulopatías aórtica y mitral",
+      "summary": "Evalúa alteraciones valvulares y sus repercusiones."
+    },
+    "diabetes": {
+      "title": "Diabetes y riesgo cardiovascular",
+      "summary": "Considera la diabetes como factor de enfermedad vascular."
+    },
+    "rra": {
+      "title": "Reducción absoluta del riesgo",
+      "summary": "Diferencia de incidencia de eventos entre grupos comparados."
+    },
+    "nnt": {
+      "title": "Número necesario a tratar",
+      "summary": "Expresa cuántos pacientes se tratan para evitar un evento según la reducción absoluta."
+    },
+    "revascularizacion": {
+      "title": "Revascularización miocárdica",
+      "summary": "Compara estrategias para restituir flujo al miocardio."
+    },
+    "sina": {
+      "title": "Síndrome coronario sin elevación ST",
+      "summary": "Resume decisiones de tratamiento del síndrome agudo sin elevación."
+    },
+    "stemi": {
+      "title": "Infarto con elevación ST",
+      "summary": "Reúne la evidencia histórica de reperfusión en este síndrome."
+    },
+    "ivus": {
+      "title": "Ultrasonido intravascular",
+      "summary": "Obtiene cortes de luz y pared arterial desde un catéter."
+    },
+    "oct": {
+      "title": "Tomografía de coherencia óptica",
+      "summary": "Imagen intracoronaria óptica de gran resolución."
+    },
+    "raman": {
+      "title": "Espectroscopia Raman",
+      "summary": "Explora composición de tejidos mediante respuesta espectral."
+    },
+    "bls": {
+      "title": "Soporte vital básico",
+      "summary": "Secuencia inicial de reconocimiento, compresiones y respuesta."
+    },
+    "no_desf": {
+      "title": "Ritmo no desfibrilable",
+      "summary": "Rama del algoritmo para asistolia y ritmos relacionados."
+    },
+    "desf": {
+      "title": "Ritmo desfibrilable",
+      "summary": "Rama para fibrilación ventricular y taquicardia ventricular sin pulso."
+    },
+    "postparo": {
+      "title": "Cuidados posparada",
+      "summary": "Objetivos tras recuperar la circulación espontánea."
+    },
+    "enfermeria": {
+      "title": "Preparación de enfermería",
+      "summary": "Verifica documentación, antecedentes, preparación y seguimiento."
+    },
+    "rayos": {
+      "title": "Técnico de rayos X",
+      "summary": "Prepara y opera apoyo radiológico en la sala."
+    },
+    "protocolo": {
+      "title": "Protocolo de paciente",
+      "summary": "Coordina las fases asistenciales antes, durante y después del estudio."
+    }
+  },
+  "requires": {
+    "chapters": {
+      "2": [
+        1
+      ],
+      "3": [
+        1
+      ],
+      "4": [
+        2,
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        2
+      ],
+      "8": [
+        2,
+        4
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        2
+      ],
+      "11": [
+        2
+      ],
+      "12": [
+        1
+      ],
+      "13": [
+        12,
+        4
+      ],
+      "14": [
+        3,
+        4
+      ],
+      "15": [
+        5
+      ],
+      "16": [
+        2,
+        8
+      ]
+    },
+    "sections": {
+      "2.7": [
+        "2.6"
+      ],
+      "2.8": [
+        "2.6"
+      ],
+      "2.9": [
+        "2.6"
+      ],
+      "2.11": [
+        "2.1"
+      ],
+      "3.2": [
+        "3.1"
+      ],
+      "3.3": [
+        "3.1"
+      ],
+      "3.4": [
+        "3.1"
+      ],
+      "3.6": [
+        "3.5"
+      ],
+      "3.7": [
+        "3.1"
+      ],
+      "3.8": [
+        "3.1"
+      ],
+      "3.10": [
+        "3.1"
+      ],
+      "4.3": [
+        "3.2",
+        "3.5"
+      ],
+      "4.5": [
+        "3.4"
+      ],
+      "4.8": [
+        "4.7",
+        "2.6"
+      ],
+      "4.10": [
+        "4.8"
+      ],
+      "4.11": [
+        "4.10",
+        "3.10"
+      ],
+      "4.12": [
+        "4.10"
+      ],
+      "4.13": [
+        "4.12"
+      ],
+      "4.18": [
+        "4.3"
+      ],
+      "4.20": [
+        "4.18"
+      ],
+      "4.22": [
+        "4.18"
+      ],
+      "4.24": [
+        "3.9",
+        "4.8"
+      ],
+      "4.25": [
+        "3.1",
+        "4.8"
+      ],
+      "5.2": [
+        "5.1"
+      ],
+      "5.3": [
+        "5.2"
+      ],
+      "5.4": [
+        "5.3"
+      ],
+      "5.5": [
+        "5.1"
+      ],
+      "6.2": [
+        "6.1"
+      ],
+      "6.3": [
+        "6.1"
+      ],
+      "7.2": [
+        "7.1",
+        "2.11"
+      ],
+      "7.3": [
+        "7.1",
+        "2.11"
+      ],
+      "7.4": [
+        "7.3"
+      ],
+      "7.5": [
+        "7.3"
+      ],
+      "7.6": [
+        "7.1",
+        "4.8"
+      ],
+      "7.8": [
+        "7.1",
+        "2.11"
+      ],
+      "7.11": [
+        "7.8"
+      ],
+      "8.1": [
+        "2.12"
+      ],
+      "8.2": [
+        "8.1"
+      ],
+      "8.6": [
+        "8.1"
+      ],
+      "8.7": [
+        "3.7"
+      ],
+      "9.3": [
+        "9.1"
+      ],
+      "9.5": [
+        "9.3"
+      ],
+      "9.6": [
+        "9.3"
+      ],
+      "9.7": [
+        "9.3"
+      ],
+      "9.8": [
+        "9.3"
+      ],
+      "9.9": [
+        "9.1"
+      ],
+      "9.10": [
+        "9.1"
+      ],
+      "9.11": [
+        "9.1",
+        "2.2"
+      ],
+      "9.12": [
+        "9.11"
+      ],
+      "9.13": [
+        "9.11"
+      ],
+      "9.14": [
+        "9.3"
+      ],
+      "10.2": [
+        "10.1"
+      ],
+      "10.4": [
+        "8.1"
+      ],
+      "11.2": [
+        "2.8"
+      ],
+      "11.3": [
+        "11.2"
+      ],
+      "11.4": [
+        "11.2"
+      ],
+      "11.5": [
+        "11.2"
+      ],
+      "11.7": [
+        "2.11"
+      ],
+      "12.3": [
+        "3.5"
+      ],
+      "12.5": [
+        "11.3"
+      ],
+      "13.3": [
+        "12.3",
+        "13.1"
+      ],
+      "13.4": [
+        "12.3",
+        "4.1"
+      ],
+      "13.5": [
+        "12.3",
+        "13.1"
+      ],
+      "13.6": [
+        "12.3",
+        "13.1"
+      ],
+      "13.7": [
+        "4.8"
+      ],
+      "13.8": [
+        "6.2"
+      ],
+      "13.9": [
+        "6.1"
+      ],
+      "14.1": [
+        "3.1",
+        "4.8"
+      ],
+      "14.2": [
+        "14.1"
+      ],
+      "15.3": [
+        "15.2"
+      ],
+      "15.4": [
+        "15.2"
+      ],
+      "15.6": [
+        "15.3",
+        "15.4"
+      ],
+      "16.4": [
+        "16.1",
+        "2.3"
+      ]
+    },
+    "items": {
+      "terapeutico": [
+        "diagnostico"
+      ],
+      "coronario": [
+        "diagnostico"
+      ],
+      "presiones": [
+        "diagnostico"
+      ],
+      "timi": [
+        "anatomia"
+      ],
+      "colateral": [
+        "anatomia"
+      ],
+      "placa": [
+        "anatomia"
+      ],
+      "diseccion": [
+        "anatomia"
+      ],
+      "balon": [
+        "coronario",
+        "placa"
+      ],
+      "stent": [
+        "balon"
+      ],
+      "bifurcacion": [
+        "stent",
+        "anatomia"
+      ],
+      "reestenosis": [
+        "stent"
+      ],
+      "rescate": [
+        "balon"
+      ],
+      "ecg": [
+        "reentrada"
+      ],
+      "marcapasos": [
+        "ecg"
+      ],
+      "resincronizacion": [
+        "marcapasos"
+      ],
+      "ablacion": [
+        "ecg"
+      ],
+      "carotida": [
+        "angiografia_periferica"
+      ],
+      "valvuloplastia": [
+        "atrioseptostomia"
+      ],
+      "coartacion": [
+        "valvuloplastia"
+      ],
+      "cierre": [
+        "atrioseptostomia"
+      ],
+      "act": [
+        "vaina"
+      ],
+      "tamponade": [
+        "diseccion"
+      ],
+      "reaccion": [
+        "osmolaridad"
+      ],
+      "renal": [
+        "osmolaridad"
+      ],
+      "hipersensibilidad": [
+        "reaccion"
+      ],
+      "flumazenil": [
+        "sedacion"
+      ],
+      "protamina": [
+        "vaina"
+      ],
+      "volumen": [
+        "ventriculo"
+      ],
+      "fe": [
+        "volumen"
+      ],
+      "gasto": [
+        "gasometria",
+        "derecho"
+      ],
+      "isquemia": [
+        "placa"
+      ],
+      "ic": [
+        "fe"
+      ],
+      "nnt": [
+        "rra"
+      ],
+      "revascularizacion": [
+        "isquemia",
+        "balon"
+      ],
+      "sina": [
+        "isquemia"
+      ],
+      "stemi": [
+        "isquemia"
+      ],
+      "ivus": [
+        "anatomia",
+        "coronario"
+      ],
+      "oct": [
+        "ivus"
+      ],
+      "no_desf": [
+        "bls"
+      ],
+      "desf": [
+        "bls"
+      ],
+      "postparo": [
+        "no_desf",
+        "desf"
+      ],
+      "protocolo": [
+        "enfermeria"
+      ]
+    }
+  }
+}
