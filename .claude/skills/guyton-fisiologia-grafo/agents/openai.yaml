@@ -1,0 +1,11 @@
+interface:
+  display_name: Grafo de fisiología de Guyton
+  short_description: Explora conceptos y rutas de estudio del Guyton y Hall
+  default_prompt: Usa $guyton-fisiologia-grafo para trazar una ruta de lectura hacia la regulación de la presión arterial.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
