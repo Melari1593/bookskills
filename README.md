@@ -7,7 +7,7 @@ Skills de Claude basadas en libros y obras de referencia.
 | [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md) | Los 361 puntos clásicos de acupuntura (MTC) por meridiano, con índice por síntoma y categorías (Shu, Yuan, Luo, Xi, Mu, Hui…). |
 | [`harrys-cosmeticology`](.claude/skills/harrys-cosmeticology/SKILL.md) | *Harry's Cosmeticology* 9.ª ed. (Vol. 1, Vol. 2 y Sostenibilidad): 59 fichas de capítulo sobre formulación, ingredientes, sustratos, regulación y antienvejecimiento, con glosario, patrones, cheatsheet y consulta del grafo de conocimiento. |
 | [`hemodinamia-grafo`](.claude/skills/hemodinamia-grafo/SKILL.md) | Mapa de estudio del *Manual de hemodinamia y aplicaciones clínicas en cardiología*: 16 capítulos, 149 secciones, 63 conceptos y rutas de prerrequisitos. |
-| [`guyton-fisiologia-grafo`](.claude/skills/guyton-fisiologia-grafo/SKILL.md) | Mapa de estudio del *Tratado de fisiología médica* de Guyton y Hall, 14.ª ed.: 85 capítulos, 714 secciones, 391 conceptos clave y rutas de prerrequisitos. |
+| [`guyton-fisiologia-grafo`](.claude/skills/guyton-fisiologia-grafo/SKILL.md) | Mapa de estudio del *Tratado de fisiología médica* de Guyton y Hall, 14.ª ed.: 85 capítulos, 714 secciones, 391 conceptos clave y rutas de prerrequisitos, correlacionado con los 44 capítulos de *Berne & Levy Physiology*, 8.ª ed. |
 
 ## Atlas de Meridianos
 
@@ -32,6 +32,8 @@ python3 atlas/build.py
 ## Grafo de fisiología de Guyton y Hall
 
 [`grafos/guyton-fisiologia/grafo_guyton.html`](grafos/guyton-fisiologia/grafo_guyton.html) es el mapa interactivo autocontenido del *Tratado de fisiología médica* de Guyton y Hall (14.ª ed., en español). Organiza los 85 capítulos en 8 bloques (célula y músculo; corazón y circulación; riñón; sangre e inmunidad; respiración; sistema nervioso; digestión, metabolismo y temperatura; endocrinología, reproducción y deporte) y tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_guyton.json`](grafos/guyton-fisiologia/grafo_guyton.json). La skill [`guyton-fisiologia-grafo`](.claude/skills/guyton-fisiologia-grafo/SKILL.md) incluye una copia y `scripts/ruta.py` para consultar rutas desde la terminal.
+
+El grafo incluye además la correlación con *Berne & Levy Physiology* (8.ª ed.). Cada uno de sus 44 capítulos es un nodo cuadrado, con su página, un resumen en español y subtemas, enlazado a las secciones de Guyton que trata (530 enlaces). El panel de cada sección muestra qué leer en Berne & Levy para complementarla, y `ruta.py` lo lista junto a la ruta.
 
 Al texto fuente le faltaban las páginas 794–846. Por eso los capítulos 64–67 y el principio del 68 se reconstruyeron con la estructura conocida de la edición, van sin páginas y están marcados como ausentes. Las páginas de las secciones son aproximadas (±1). Las conexiones son una interpretación pedagógica.
 

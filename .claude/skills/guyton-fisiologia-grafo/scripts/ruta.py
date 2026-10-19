@@ -60,6 +60,15 @@ def main(query):
     for number in ordered:
         chapter, section = secs[number]
         print(f"  {number} {section['title']} — p. {section.get('page') or '¿?'} ({chapter['title']})")
+    complement = {}
+    for res in data.get('resources', []):
+        hits = [n for n in targets if n in res.get('usedBy', [])]
+        if hits:
+            complement[res['id']] = (res, hits)
+    if complement:
+        print('Complemento en Berne & Levy Physiology, 8.ª ed.:')
+        for res, hits in complement.values():
+            print(f"  Cap. {res['id']} {res['title']} — desde p. {res['page']} (para {', '.join(hits)})")
     if len(matches) > 1:
         print('Otras coincidencias:', '; '.join(f'{k} {n} {t}' for k, n, t in matches[1:6]))
     return 0

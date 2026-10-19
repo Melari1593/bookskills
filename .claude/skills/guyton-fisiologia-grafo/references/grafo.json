@@ -1,11 +1,13 @@
 {
  "meta": {
   "title": "Fisiología médica de Guyton y Hall como grafo",
-  "subtitle": "Hall y Hall, 14.ª edición: 85 capítulos, secciones principales, conceptos clave y prerrequisitos",
+  "subtitle": "Hall y Hall, 14.ª ed.: 85 capítulos, secciones, conceptos clave y prerrequisitos, correlacionados con Berne & Levy Physiology, 8.ª ed.",
   "language": "es",
   "itemLabel": "Concepto clave",
   "itemLabelPlural": "Conceptos",
-  "searchHint": "Buscar: Starling, Nernst, renina, 27.3…"
+  "searchHint": "Buscar: Starling, Nernst, renina, Berne…",
+  "resourceLabel": "Berne & Levy",
+  "resourceLabelPlural": "Complemento en Berne & Levy"
  },
  "blocks": {
   "cel": {
@@ -10905,5 +10907,2005 @@
     "glucolisis_anaerobia_lactato"
    ]
   }
- }
+ },
+ "resources": [
+  {
+   "id": "1",
+   "title": "Principios de la función celular y de membrana",
+   "page": 2,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología celular · capítulo desde la p. 2. Repasa los organelos y la composición de la membrana plasmática, y clasifica las proteínas de transporte (canales, acuaporinas, transportadores dependientes de ATP y portadores de solutos) usando el gradiente electroquímico para distinguir transporte pasivo y activo; cierra con ósmosis, osmolalidad, tonicidad y presión oncótica. Más cuantitativo que Guyton al usar el gradiente electroquímico como criterio único. Subtemas: Lípidos y proteínas de membrana (p. 4); Proteínas de transporte de membrana (p. 6); Transporte vesicular (p. 8); Gradiente electroquímico (p. 11); Ósmosis, osmolalidad y tonicidad (p. 12); Presión oncótica (p. 15).",
+   "usedBy": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.5",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "5.1",
+    "16.5"
+   ],
+   "bl_section": "Fisiología celular",
+   "subtemas": [
+    {
+     "t": "Lípidos y proteínas de membrana",
+     "page": 4
+    },
+    {
+     "t": "Proteínas de transporte de membrana",
+     "page": 6
+    },
+    {
+     "t": "Transporte vesicular",
+     "page": 8
+    },
+    {
+     "t": "Gradiente electroquímico",
+     "page": 11
+    },
+    {
+     "t": "Ósmosis, osmolalidad y tonicidad",
+     "page": 12
+    },
+    {
+     "t": "Presión oncótica",
+     "page": 15
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "title": "Homeostasis: volumen y composición de los compartimentos líquidos corporales",
+   "page": 17,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología celular · capítulo desde la p. 17. Presenta la homeostasis como equilibrio en estado estacionario (punto de ajuste, sensores, efectores) y describe volumen y composición de los compartimentos líquidos, el potencial de membrana en reposo, la regulación del volumen celular y el transporte vectorial epitelial. A diferencia de Guyton, integra en un solo capítulo compartimentos, potencial de reposo y fisiología epitelial general. Subtemas: Concepto de equilibrio en estado estacionario (p. 17); Volúmenes y movimiento de agua entre compartimentos (p. 19); Composición iónica y homeostasis celular (p. 22); Potencial de membrana (p. 23); Regulación del volumen celular (p. 25); Transporte epitelial vectorial (p. 27).",
+   "usedBy": [
+    "1.2",
+    "1.3",
+    "1.8",
+    "1.9",
+    "4.7",
+    "4.9",
+    "5.2",
+    "16.5",
+    "16.6",
+    "25.1",
+    "25.2",
+    "25.3",
+    "25.5",
+    "25.6",
+    "28.2"
+   ],
+   "bl_section": "Fisiología celular",
+   "subtemas": [
+    {
+     "t": "Concepto de equilibrio en estado estacionario",
+     "page": 17
+    },
+    {
+     "t": "Volúmenes y movimiento de agua entre compartimentos",
+     "page": 19
+    },
+    {
+     "t": "Composición iónica y homeostasis celular",
+     "page": 22
+    },
+    {
+     "t": "Potencial de membrana",
+     "page": 23
+    },
+    {
+     "t": "Regulación del volumen celular",
+     "page": 25
+    },
+    {
+     "t": "Transporte epitelial vectorial",
+     "page": 27
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "title": "Transducción de señales, receptores de membrana, segundos mensajeros y regulación de la expresión génica",
+   "page": 34,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología celular · capítulo desde la p. 34. Explica la comunicación intercelular y las cuatro clases de receptores (canales activados por ligando, acoplados a proteínas G, ligados a enzimas y nucleares), con sus cascadas de segundos mensajeros y su efecto sobre la transcripción. Es más molecular y farmacológico que Guyton, que trata estos mecanismos dentro de la introducción a la endocrinología. Subtemas: Comunicación intercelular (p. 34); Clases de receptores de membrana (p. 38); Vías de receptores ligados a enzimas (p. 46); Regulación de la expresión génica por señalización (p. 47); Receptores nucleares (p. 48).",
+   "usedBy": [
+    "3.7",
+    "75.1",
+    "75.4",
+    "75.5",
+    "75.6",
+    "75.7"
+   ],
+   "bl_section": "Fisiología celular",
+   "subtemas": [
+    {
+     "t": "Comunicación intercelular",
+     "page": 34
+    },
+    {
+     "t": "Clases de receptores de membrana",
+     "page": 38
+    },
+    {
+     "t": "Vías de receptores ligados a enzimas",
+     "page": 46
+    },
+    {
+     "t": "Regulación de la expresión génica por señalización",
+     "page": 47
+    },
+    {
+     "t": "Receptores nucleares",
+     "page": 48
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "title": "El sistema nervioso: introducción a sus células y sistemas",
+   "page": 50,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 50. Introduce neuronas y glía, el transporte axónico, la organización del sistema nervioso periférico y central por regiones, el líquido cefalorraquídeo, la barrera hematoencefálica y las respuestas del tejido nervioso a la lesión. Aporta más neuroanatomía celular y regional que la visión general de Guyton. Subtemas: Transporte axónico (p. 53); Sistema nervioso periférico y central (p. 56); Anatomía regional del SNC (p. 58); Líquido cefalorraquídeo y barrera hematoencefálica (p. 60); Reacciones del tejido nervioso a la lesión (p. 60).",
+   "usedBy": [
+    "46.1",
+    "46.3",
+    "62.4",
+    "62.5",
+    "62.6",
+    "62.8"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Transporte axónico",
+     "page": 53
+    },
+    {
+     "t": "Sistema nervioso periférico y central",
+     "page": 56
+    },
+    {
+     "t": "Anatomía regional del SNC",
+     "page": 58
+    },
+    {
+     "t": "Líquido cefalorraquídeo y barrera hematoencefálica",
+     "page": 60
+    },
+    {
+     "t": "Reacciones del tejido nervioso a la lesión",
+     "page": 60
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "title": "Generación y conducción de potenciales de acción",
+   "page": 63,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 63. Desarrolla las propiedades pasivas de la membrana (constantes de tiempo y espacio), la base iónica del potencial de acción por canales de Na+ y K+, los períodos refractarios y la conducción, incluida la mielinización; termina con transducción sensorial, campos receptivos y codificación. Guyton reparte este contenido entre su capítulo de potenciales y el de receptores sensoriales. Subtemas: Respuesta pasiva de la membrana (p. 63); Base iónica del potencial de acción (p. 68); Períodos refractarios (p. 72); Conducción y mielinización (p. 73); Transducción sensorial y clasificación de fibras (p. 75); Campos receptivos y codificación sensorial (p. 78).",
+   "usedBy": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.9",
+    "5.10",
+    "5.11",
+    "47.1",
+    "47.2",
+    "47.3",
+    "47.4",
+    "47.5",
+    "47.6"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Respuesta pasiva de la membrana",
+     "page": 63
+    },
+    {
+     "t": "Base iónica del potencial de acción",
+     "page": 68
+    },
+    {
+     "t": "Períodos refractarios",
+     "page": 72
+    },
+    {
+     "t": "Conducción y mielinización",
+     "page": 73
+    },
+    {
+     "t": "Transducción sensorial y clasificación de fibras",
+     "page": 75
+    },
+    {
+     "t": "Campos receptivos y codificación sensorial",
+     "page": 78
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "title": "Transmisión sináptica",
+   "page": 81,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 81. Compara sinapsis eléctricas y químicas, detalla la liberación cuántica de transmisor dependiente de calcio y la maquinaria vesicular, los PEPS y PIPS, la integración y la plasticidad sináptica a corto y largo plazo, y las familias de neurotransmisores y receptores. Más mecanístico que Guyton en la exocitosis y en la plasticidad (facilitación, depresión, potenciación). Subtemas: Sinapsis eléctricas (p. 81); Naturaleza cuántica de la liberación (p. 86); Potenciales postsinápticos (p. 89); Modulación y plasticidad sináptica (p. 93); Neurotransmisores de molécula pequeña y péptidos (p. 96); Receptores de neurotransmisores (p. 101).",
+   "usedBy": [
+    "7.1",
+    "7.2",
+    "46.5",
+    "46.6",
+    "46.7",
+    "46.8",
+    "46.9",
+    "46.10",
+    "46.11",
+    "58.10"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Sinapsis eléctricas",
+     "page": 81
+    },
+    {
+     "t": "Naturaleza cuántica de la liberación",
+     "page": 86
+    },
+    {
+     "t": "Potenciales postsinápticos",
+     "page": 89
+    },
+    {
+     "t": "Modulación y plasticidad sináptica",
+     "page": 93
+    },
+    {
+     "t": "Neurotransmisores de molécula pequeña y péptidos",
+     "page": 96
+    },
+    {
+     "t": "Receptores de neurotransmisores",
+     "page": 101
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "title": "El sistema somatosensorial",
+   "page": 104,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 104. Recorre el tacto discriminativo y la propiocepción (mecanorreceptores, campos receptivos, vía columna dorsal-lemnisco medial, vía trigeminal, corteza somatosensorial) y luego el dolor y la temperatura (nociceptores, vías centrales, dolor referido y neuropático), con los canales de transducción y el control descendente. Añade más detalle molecular de la transducción (canales TRP) que Guyton. Subtemas: Mecanorreceptores de bajo umbral (p. 108); Vías somatosensoriales centrales (p. 112); Corteza somatosensorial (p. 114); Dolor y temperatura: nociceptores (p. 115); Dolor neuropático (p. 119); Control centrífugo de la somatosensibilidad (p. 121).",
+   "usedBy": [
+    "48.1",
+    "48.2",
+    "48.3",
+    "48.4",
+    "48.5",
+    "48.6",
+    "48.7",
+    "48.8",
+    "48.9",
+    "48.10",
+    "49.1",
+    "49.2",
+    "49.3",
+    "49.4",
+    "49.5",
+    "49.6",
+    "49.7",
+    "49.9"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Mecanorreceptores de bajo umbral",
+     "page": 108
+    },
+    {
+     "t": "Vías somatosensoriales centrales",
+     "page": 112
+    },
+    {
+     "t": "Corteza somatosensorial",
+     "page": 114
+    },
+    {
+     "t": "Dolor y temperatura: nociceptores",
+     "page": 115
+    },
+    {
+     "t": "Dolor neuropático",
+     "page": 119
+    },
+    {
+     "t": "Control centrífugo de la somatosensibilidad",
+     "page": 121
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "title": "Los sentidos especiales",
+   "page": 122,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 122. Trata en un solo capítulo la visión (retina, fototransducción, circuitos retinianos, vía visual y corteza), la audición, el sistema vestibular y los sentidos químicos. Frente a los capítulos separados de Guyton, insiste más en la transducción y en los campos receptivos que en la óptica. Subtemas: Transducción visual y adaptación (p. 128); Circuitos retinianos y campos receptivos (p. 131); Vía visual y corteza estriada (p. 135); Oído y transducción del sonido (p. 140); Sistema vestibular (p. 148); Sentidos químicos: gusto y olfato (p. 152).",
+   "usedBy": [
+    "50.2",
+    "50.3",
+    "50.5",
+    "51.1",
+    "51.2",
+    "51.3",
+    "51.4",
+    "51.5",
+    "51.6",
+    "51.7",
+    "52.1",
+    "52.2",
+    "52.3",
+    "52.5",
+    "53.1",
+    "53.2",
+    "53.3",
+    "53.4",
+    "53.5",
+    "53.7",
+    "53.9",
+    "54.1",
+    "54.3",
+    "54.4",
+    "54.6",
+    "54.7",
+    "54.8",
+    "56.8",
+    "56.9",
+    "56.10"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Transducción visual y adaptación",
+     "page": 128
+    },
+    {
+     "t": "Circuitos retinianos y campos receptivos",
+     "page": 131
+    },
+    {
+     "t": "Vía visual y corteza estriada",
+     "page": 135
+    },
+    {
+     "t": "Oído y transducción del sonido",
+     "page": 140
+    },
+    {
+     "t": "Sistema vestibular",
+     "page": 148
+    },
+    {
+     "t": "Sentidos químicos: gusto y olfato",
+     "page": 152
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "title": "Organización de la función motora",
+   "page": 158,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 158. Integra en un capítulo el control motor completo: motoneuronas y unidades motoras, huso muscular y reflejos medulares, vías descendentes laterales y mediales, control postural del tronco encefálico, áreas motoras corticales, cerebelo, ganglios basales y movimientos oculares. Es más extenso que Guyton en la actividad neuronal cortical y en los circuitos oculomotores. Subtemas: Reflejos medulares y huso muscular (p. 161); Vías motoras descendentes (p. 172); Control motor por la corteza cerebral (p. 176); Control motor por el cerebelo (p. 182); Ganglios basales (p. 191); Movimientos oculares (p. 195).",
+   "usedBy": [
+    "6.5",
+    "52.7",
+    "52.8",
+    "55.1",
+    "55.2",
+    "55.3",
+    "55.4",
+    "55.5",
+    "55.6",
+    "55.7",
+    "55.8",
+    "55.9",
+    "56.1",
+    "56.2",
+    "56.4",
+    "56.5",
+    "56.6",
+    "56.7",
+    "57.1",
+    "57.2",
+    "57.3",
+    "57.4",
+    "57.5",
+    "57.8"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Reflejos medulares y huso muscular",
+     "page": 161
+    },
+    {
+     "t": "Vías motoras descendentes",
+     "page": 172
+    },
+    {
+     "t": "Control motor por la corteza cerebral",
+     "page": 176
+    },
+    {
+     "t": "Control motor por el cerebelo",
+     "page": 182
+    },
+    {
+     "t": "Ganglios basales",
+     "page": 191
+    },
+    {
+     "t": "Movimientos oculares",
+     "page": 195
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "title": "Funciones superiores del sistema nervioso",
+   "page": 204,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 204. Describe la estructura laminar del neocórtex, las funciones de los lóbulos, el EEG y los potenciales evocados, el ciclo sueño-vigilia, la dominancia cerebral y el lenguaje, el cuerpo calloso, el aprendizaje y la memoria (potenciación a largo plazo) y la plasticidad neural. Da más peso que Guyton a la citoarquitectura cortical y a la plasticidad. Subtemas: Capas y citoarquitectura del neocórtex (p. 206); Funciones de los lóbulos cerebrales (p. 208); Actividad eléctrica cortical y potenciales evocados (p. 210); Dominancia cerebral y lenguaje (p. 212); Aprendizaje y memoria (p. 217); Plasticidad neural (p. 218).",
+   "usedBy": [
+    "58.1",
+    "58.2",
+    "58.3",
+    "58.4",
+    "58.6",
+    "58.7",
+    "58.8",
+    "58.10",
+    "58.11",
+    "58.12",
+    "59.6",
+    "60.1",
+    "60.4",
+    "60.5"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Capas y citoarquitectura del neocórtex",
+     "page": 206
+    },
+    {
+     "t": "Funciones de los lóbulos cerebrales",
+     "page": 208
+    },
+    {
+     "t": "Actividad eléctrica cortical y potenciales evocados",
+     "page": 210
+    },
+    {
+     "t": "Dominancia cerebral y lenguaje",
+     "page": 212
+    },
+    {
+     "t": "Aprendizaje y memoria",
+     "page": 217
+    },
+    {
+     "t": "Plasticidad neural",
+     "page": 218
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "title": "El sistema nervioso autónomo y su control central",
+   "page": 222,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Neurofisiología · capítulo desde la p. 222. Compara la organización simpática y parasimpática, los neurotransmisores y receptores en ganglios y efectores, y ejemplos de control autónomo (pupila, vejiga); después analiza el hipotálamo como servomecanismo en la regulación de la temperatura, la ingesta y el peso corporal y la ingesta de agua. Agrupa así temas que Guyton reparte entre sistema autónomo, hipotálamo, termorregulación y apetito. Subtemas: Sistemas simpático y parasimpático (p. 222); Respuestas de los efectores a los impulsos autónomos (p. 227); Ejemplos de control autónomo: vejiga urinaria (p. 230); Hipotálamo y regulación de la temperatura (p. 232); Regulación de la ingesta y el peso corporal (p. 233); Regulación de la ingesta de agua (p. 235).",
+   "usedBy": [
+    "26.7",
+    "29.9",
+    "52.10",
+    "59.4",
+    "61.1",
+    "61.2",
+    "61.3",
+    "61.4",
+    "61.9",
+    "63.2",
+    "72.3",
+    "72.4",
+    "74.5",
+    "74.6"
+   ],
+   "bl_section": "Neurofisiología",
+   "subtemas": [
+    {
+     "t": "Sistemas simpático y parasimpático",
+     "page": 222
+    },
+    {
+     "t": "Respuestas de los efectores a los impulsos autónomos",
+     "page": 227
+    },
+    {
+     "t": "Ejemplos de control autónomo: vejiga urinaria",
+     "page": 230
+    },
+    {
+     "t": "Hipotálamo y regulación de la temperatura",
+     "page": 232
+    },
+    {
+     "t": "Regulación de la ingesta y el peso corporal",
+     "page": 233
+    },
+    {
+     "t": "Regulación de la ingesta de agua",
+     "page": 235
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "title": "Fisiología del músculo esquelético",
+   "page": 238,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología muscular · capítulo desde la p. 238. Organización del músculo esquelético desde la transmisión longitudinal y lateral de la fuerza (distrofina, complejo distroglucano) hasta el acoplamiento excitación-contracción, el ciclo de puentes cruzados, los tipos de fibra y unidades motoras, la energética y la fatiga. Más molecular que Guyton: añade las vías de señalización de la plasticidad (calcineurina/NFAT, Akt-mTOR, PGC-1α), la atrofia y la regeneración por células satélite. Subtemas: Organización del músculo esquelético y transmisión de la fuerza (p. 238); Unidades motoras y acoplamiento excitación-contracción (p. 241); Interacción actina-miosina: ciclo de puentes cruzados (p. 247); Modulación de la fuerza: reclutamiento y tetania (p. 251); Fuentes de energía, deuda de oxígeno y fatiga (p. 253); Relaciones longitud-tensión y fuerza-velocidad (p. 259).",
+   "usedBy": [
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4",
+    "6.5",
+    "6.6",
+    "6.7",
+    "7.4",
+    "55.2",
+    "55.4",
+    "55.6",
+    "85.2",
+    "85.3",
+    "85.4",
+    "85.6"
+   ],
+   "bl_section": "Fisiología muscular",
+   "subtemas": [
+    {
+     "t": "Organización del músculo esquelético y transmisión de la fuerza",
+     "page": 238
+    },
+    {
+     "t": "Unidades motoras y acoplamiento excitación-contracción",
+     "page": 241
+    },
+    {
+     "t": "Interacción actina-miosina: ciclo de puentes cruzados",
+     "page": 247
+    },
+    {
+     "t": "Modulación de la fuerza: reclutamiento y tetania",
+     "page": 251
+    },
+    {
+     "t": "Fuentes de energía, deuda de oxígeno y fatiga",
+     "page": 253
+    },
+    {
+     "t": "Relaciones longitud-tensión y fuerza-velocidad",
+     "page": 259
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "title": "Músculo cardíaco",
+   "page": 265,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología muscular · capítulo desde la p. 265. El miocito cardíaco como músculo estriado involuntario: sincitio eléctrico, liberación de Ca++ inducida por Ca++, relajación por SERCA, intercambiador Na+/Ca++ y bomba de Ca++, y regulación de la fuerza por estiramiento y estimulación simpática. Se centra en la comparación con el músculo esquelético y dedica más espacio que Guyton a la hipertrofia fisiológica y patológica (miocardiopatía hipertrófica familiar, microARN). Subtemas: Organización básica de las células miocárdicas (p. 265); Control de la actividad del músculo cardíaco (p. 267); Mecanismo de contracción y relajación (p. 269); Regulación de la fuerza: calcio intracelular (p. 269); Hipertrofia del músculo cardíaco (p. 274).",
+   "usedBy": [
+    "9.1",
+    "9.3",
+    "9.7",
+    "9.8",
+    "9.9",
+    "23.8"
+   ],
+   "bl_section": "Fisiología muscular",
+   "subtemas": [
+    {
+     "t": "Organización básica de las células miocárdicas",
+     "page": 265
+    },
+    {
+     "t": "Control de la actividad del músculo cardíaco",
+     "page": 267
+    },
+    {
+     "t": "Mecanismo de contracción y relajación",
+     "page": 269
+    },
+    {
+     "t": "Regulación de la fuerza: calcio intracelular",
+     "page": 269
+    },
+    {
+     "t": "Hipertrofia del músculo cardíaco",
+     "page": 274
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "title": "Músculo liso",
+   "page": 277,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología muscular · capítulo desde la p. 277. Tipos de músculo liso (unitario y multiunitario, fásico y tónico), aparato contráctil, regulación por fosforilación de la cadena ligera de miosina y sensibilización al Ca++ (Rho-cinasa), estado de cerrojo, fuentes del Ca++ mioplásmico, respuesta miogénica y propiedades biofísicas. Profundiza más que Guyton en las vías de señalización y en la regulación del calcio por el retículo sarcoplásmico. Subtemas: Tipos de músculo liso y contacto intercelular (p. 277); Aparato contráctil (p. 279); Inervación y regulación de la contracción (p. 281); Contracción fásica frente a tónica (p. 285); Regulación del calcio mioplásmico (p. 287); Respuesta miogénica (p. 291).",
+   "usedBy": [
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5",
+    "8.6",
+    "8.7",
+    "17.3"
+   ],
+   "bl_section": "Fisiología muscular",
+   "subtemas": [
+    {
+     "t": "Tipos de músculo liso y contacto intercelular",
+     "page": 277
+    },
+    {
+     "t": "Aparato contráctil",
+     "page": 279
+    },
+    {
+     "t": "Inervación y regulación de la contracción",
+     "page": 281
+    },
+    {
+     "t": "Contracción fásica frente a tónica",
+     "page": 285
+    },
+    {
+     "t": "Regulación del calcio mioplásmico",
+     "page": 287
+    },
+    {
+     "t": "Respuesta miogénica",
+     "page": 291
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "title": "Visión general de la circulación",
+   "page": 299,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología cardiovascular · capítulo desde la p. 299. Capítulo introductorio breve que describe el circuito cardiovascular en serie y en paralelo, los tipos de vasos, el corazón como bomba doble y la distribución del volumen sanguíneo entre circulación sistémica y pulmonar. Equivale a la introducción física de Guyton, sin entrar todavía en la hemodinámica cuantitativa. Subtemas: El circuito cardiovascular: vasos y corazón (p. 299); Distribución del volumen sanguíneo: circulación sistémica y pulmonar (p. 301).",
+   "usedBy": [
+    "1.4",
+    "14.1",
+    "14.2",
+    "15.7"
+   ],
+   "bl_section": "Fisiología cardiovascular",
+   "subtemas": [
+    {
+     "t": "El circuito cardiovascular: vasos y corazón",
+     "page": 299
+    },
+    {
+     "t": "Distribución del volumen sanguíneo: circulación sistémica y pulmonar",
+     "page": 301
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "title": "Elementos de la función cardíaca",
+   "page": 302,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología cardiovascular · capítulo desde la p. 302. Capítulo extenso que reúne en un solo bloque la electrofisiología cardíaca (potenciales de respuesta rápida y lenta, excitabilidad, conducción, mecanismos arritmogénicos), el ECG, el acoplamiento excitación-contracción, el ciclo cardíaco con el asa presión-volumen y el consumo de oxígeno y metabolismo del miocardio. Frente a Guyton, integra mecánica y electricidad en un capítulo y es más mecanicista en arritmias (posdespolarizaciones, actividad desencadenada) y en el control local del Ca++. Subtemas: Potenciales de acción de respuesta rápida y lenta (p. 305); Propagación del impulso y conducción auriculoventricular (p. 311); Mecanismos arritmogénicos: posdespolarizaciones y actividad desencadenada (p. 317); Electrocardiografía escalar (p. 319); Acoplamiento excitación-contracción cardíaco (p. 325); Ciclo cardíaco y asa presión-volumen (p. 335).",
+   "usedBy": [
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7",
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.5",
+    "10.6",
+    "11.1",
+    "11.2",
+    "11.3",
+    "11.5",
+    "11.6",
+    "12.5",
+    "13.1",
+    "13.2",
+    "13.3",
+    "13.5",
+    "21.6",
+    "23.1"
+   ],
+   "bl_section": "Fisiología cardiovascular",
+   "subtemas": [
+    {
+     "t": "Potenciales de acción de respuesta rápida y lenta",
+     "page": 305
+    },
+    {
+     "t": "Propagación del impulso y conducción auriculoventricular",
+     "page": 311
+    },
+    {
+     "t": "Mecanismos arritmogénicos: posdespolarizaciones y actividad desencadenada",
+     "page": 317
+    },
+    {
+     "t": "Electrocardiografía escalar",
+     "page": 319
+    },
+    {
+     "t": "Acoplamiento excitación-contracción cardíaco",
+     "page": 325
+    },
+    {
+     "t": "Ciclo cardíaco y asa presión-volumen",
+     "page": 335
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "title": "Propiedades de la vasculatura",
+   "page": 342,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología cardiovascular · capítulo desde la p. 342. Hemodinámica (ley de Poiseuille, resistencias en serie y paralelo, flujo laminar y turbulento, reología), presión arterial y compliancia, sistema venoso, microcirculación con intercambio transcapilar de Starling y linfáticos, y las circulaciones especiales: coronaria, cutánea, muscular, cerebral, intestinal, hepática y fetal. Agrupa en un solo capítulo lo que Guyton reparte entre varios capítulos y sistemas. Subtemas: Ley de Poiseuille y resistencia al flujo (p. 343); Flujo laminar y turbulento; reología de la sangre (p. 345); Presión arterial media y su medición (p. 349); Microcirculación e intercambio transcapilar (p. 355); Circulación coronaria (p. 363); Circulaciones cutánea, muscular, cerebral, intestinal, hepática y fetal (p. 369).",
+   "usedBy": [
+    "14.3",
+    "14.4",
+    "14.5",
+    "14.6",
+    "15.1",
+    "15.3",
+    "15.4",
+    "15.5",
+    "15.6",
+    "15.7",
+    "16.1",
+    "16.2",
+    "16.3",
+    "16.5",
+    "16.6",
+    "16.7",
+    "21.1",
+    "21.4",
+    "21.5",
+    "62.1",
+    "62.2",
+    "62.8",
+    "63.6",
+    "71.2",
+    "84.5"
+   ],
+   "bl_section": "Fisiología cardiovascular",
+   "subtemas": [
+    {
+     "t": "Ley de Poiseuille y resistencia al flujo",
+     "page": 343
+    },
+    {
+     "t": "Flujo laminar y turbulento; reología de la sangre",
+     "page": 345
+    },
+    {
+     "t": "Presión arterial media y su medición",
+     "page": 349
+    },
+    {
+     "t": "Microcirculación e intercambio transcapilar",
+     "page": 355
+    },
+    {
+     "t": "Circulación coronaria",
+     "page": 363
+    },
+    {
+     "t": "Circulaciones cutánea, muscular, cerebral, intestinal, hepática y fetal",
+     "page": 369
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "title": "Regulación del corazón y de la vasculatura",
+   "page": 383,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología cardiovascular · capítulo desde la p. 383. Control nervioso de la frecuencia cardíaca (vías simpáticas y parasimpáticas, reflejo barorreceptor, reflejo de Bainbridge, arritmia sinusal respiratoria), regulación intrínseca del rendimiento miocárdico (Frank-Starling y frecuencia), efectos hormonales y de gases sanguíneos, y control local y nervioso de la circulación periférica. A diferencia de Guyton, trata juntas la regulación del corazón y la de los vasos. Subtemas: Control nervioso de la frecuencia cardíaca (p. 383); Reflejo barorreceptor y reflejo de Bainbridge (p. 385); Arritmia sinusal respiratoria (p. 387); Regulación intrínseca: Frank-Starling y frecuencia (p. 389); Control local: autorregulación, endotelio y metabolismo (p. 397); Reflejos vasculares (p. 401).",
+   "usedBy": [
+    "9.7",
+    "9.8",
+    "10.7",
+    "17.2",
+    "17.3",
+    "17.4",
+    "17.7",
+    "17.8",
+    "18.1",
+    "18.2",
+    "18.4",
+    "18.5",
+    "61.5"
+   ],
+   "bl_section": "Fisiología cardiovascular",
+   "subtemas": [
+    {
+     "t": "Control nervioso de la frecuencia cardíaca",
+     "page": 383
+    },
+    {
+     "t": "Reflejo barorreceptor y reflejo de Bainbridge",
+     "page": 385
+    },
+    {
+     "t": "Arritmia sinusal respiratoria",
+     "page": 387
+    },
+    {
+     "t": "Regulación intrínseca: Frank-Starling y frecuencia",
+     "page": 389
+    },
+    {
+     "t": "Control local: autorregulación, endotelio y metabolismo",
+     "page": 397
+    },
+    {
+     "t": "Reflejos vasculares",
+     "page": 401
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "title": "Control integrado del sistema cardiovascular",
+   "page": 407,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología cardiovascular · capítulo desde la p. 407. Análisis del gasto cardíaco mediante las curvas de función cardíaca y vascular y su punto de equilibrio, efectos de la volemia, el tono venoso, la resistencia periférica y la respiración, y aplicación a dos situaciones integradas: el ejercicio y la hemorragia. Equivale al enfoque de curvas de Guyton, pero lo aplica directamente al ejercicio y al choque hemorrágico en el mismo capítulo. Subtemas: Curvas de función vascular y cardíaca (p. 407); Acoplamiento entre corazón y vasculatura (p. 411); Sistema de dos bombas (p. 415); Efectos circulatorios de la actividad respiratoria (p. 417); Ejercicio y entrenamiento (p. 419); Hemorragia y mecanismos compensadores (p. 425).",
+   "usedBy": [
+    "15.7",
+    "20.1",
+    "20.2",
+    "20.3",
+    "20.4",
+    "20.5",
+    "20.6",
+    "21.3",
+    "22.1",
+    "22.2",
+    "22.3",
+    "24.1",
+    "24.2",
+    "24.3",
+    "24.4",
+    "24.5",
+    "85.8"
+   ],
+   "bl_section": "Fisiología cardiovascular",
+   "subtemas": [
+    {
+     "t": "Curvas de función vascular y cardíaca",
+     "page": 407
+    },
+    {
+     "t": "Acoplamiento entre corazón y vasculatura",
+     "page": 411
+    },
+    {
+     "t": "Sistema de dos bombas",
+     "page": 415
+    },
+    {
+     "t": "Efectos circulatorios de la actividad respiratoria",
+     "page": 417
+    },
+    {
+     "t": "Ejercicio y entrenamiento",
+     "page": 419
+    },
+    {
+     "t": "Hemorragia y mecanismos compensadores",
+     "page": 425
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "title": "Introducción al sistema respiratorio",
+   "page": 431,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 431. Anatomía funcional de las vías aéreas superiores e inferiores, de las unidades respiratorias, de las circulaciones pulmonar y bronquial y de la red alvéolo-capilar, más una presentación inicial del control central de la respiración y de los músculos respiratorios. Más anatómico e histológico que Guyton e incluye el control autonómico de las vías aéreas y el desarrollo pulmonar. Subtemas: Vías aéreas superiores: nariz, senos y faringe (p. 431); Estructura y función del pulmón (p. 431); Circulaciones pulmonar y bronquial (p. 435); Red alvéolo-capilar (p. 437); Control central de la respiración y músculos respiratorios (p. 439).",
+   "usedBy": [
+    "38.1",
+    "38.4",
+    "39.1",
+    "39.2",
+    "40.3",
+    "42.1"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Vías aéreas superiores: nariz, senos y faringe",
+     "page": 431
+    },
+    {
+     "t": "Estructura y función del pulmón",
+     "page": 431
+    },
+    {
+     "t": "Circulaciones pulmonar y bronquial",
+     "page": 435
+    },
+    {
+     "t": "Red alvéolo-capilar",
+     "page": 437
+    },
+    {
+     "t": "Control central de la respiración y músculos respiratorios",
+     "page": 439
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "title": "Mecánica estática del pulmón y de la pared torácica",
+   "page": 444,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 444. Generación del gradiente de presión para el flujo aéreo (presiones alveolar, pleural y transpulmonar), volúmenes y capacidades pulmonares y su medición, determinantes del volumen pulmonar, relaciones presión-volumen, distensibilidad, tensión superficial y surfactante. Más cuantitativo que Guyton en las curvas presión-volumen del pulmón y la pared torácica y su alteración en enfermedad obstructiva y restrictiva. Subtemas: Cómo se crea el gradiente de presión (p. 444); Volúmenes pulmonares y su medición (p. 445); Determinantes del volumen pulmonar (p. 447); Relaciones presión-volumen y distensibilidad (p. 447); Tensión superficial y surfactante (p. 449).",
+   "usedBy": [
+    "38.1",
+    "38.2",
+    "43.1",
+    "43.2"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Cómo se crea el gradiente de presión",
+     "page": 444
+    },
+    {
+     "t": "Volúmenes pulmonares y su medición",
+     "page": 445
+    },
+    {
+     "t": "Determinantes del volumen pulmonar",
+     "page": 447
+    },
+    {
+     "t": "Relaciones presión-volumen y distensibilidad",
+     "page": 447
+    },
+    {
+     "t": "Tensión superficial y surfactante",
+     "page": 449
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "title": "Mecánica dinámica del pulmón y de la pared torácica",
+   "page": 453,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 453. Flujo aéreo laminar y turbulento, resistencia de las vías aéreas y su regulación neurohumoral, curvas flujo-volumen y espirometría forzada (FEV1, FVC, flujo pico), punto de igual presión y limitación del flujo espiratorio, distensibilidad dinámica y trabajo respiratorio. Desarrolla con más detalle que Guyton la limitación del flujo y su aplicación a la enfermedad obstructiva. Subtemas: Patrones de flujo aéreo (p. 453); Factores que determinan la resistencia de las vías aéreas (p. 455); Regulación neurohumoral de la resistencia (p. 455); Determinantes del flujo máximo (p. 457); Distensibilidad dinámica y trabajo respiratorio (p. 459).",
+   "usedBy": [
+    "38.1",
+    "38.2",
+    "38.4",
+    "43.1",
+    "43.2",
+    "43.5"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Patrones de flujo aéreo",
+     "page": 453
+    },
+    {
+     "t": "Factores que determinan la resistencia de las vías aéreas",
+     "page": 455
+    },
+    {
+     "t": "Regulación neurohumoral de la resistencia",
+     "page": 455
+    },
+    {
+     "t": "Determinantes del flujo máximo",
+     "page": 457
+    },
+    {
+     "t": "Distensibilidad dinámica y trabajo respiratorio",
+     "page": 459
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "title": "Ventilación, perfusión y relaciones ventilación/perfusión",
+   "page": 463,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 463. Espacio muerto anatómico y fisiológico, composición del aire ambiental, traqueal, alveolar y arterial (ecuación del gas alveolar y del CO2 alveolar), distribución regional de la ventilación y del flujo pulmonar y su regulación activa, y uso del gradiente alveoloarterial de O2 para clasificar la hipoxemia y la hipercapnia. Frente a Guyton, que reparte estos temas entre ventilación, circulación pulmonar e intercambio gaseoso, B&L los integra en un enfoque clínico de diagnóstico diferencial de la hipoxia (respuesta al O2 al 100 %). Subtemas: Espacio muerto anatómico y fisiológico (p. 463); Composición del gas alveolar y arterial; ecuación del gas alveolar (p. 465); Distribución de la ventilación y del flujo sanguíneo pulmonar (zonas) (p. 467); Diferencia alveoloarterial de O2 y relaciones V/Q regionales (p. 470); Anomalías V/Q: cortocircuitos y causas de hipoxemia (p. 471); Mecanismos de hipercapnia (p. 473).",
+   "usedBy": [
+    "38.3",
+    "39.2",
+    "39.4",
+    "39.5",
+    "40.1",
+    "40.2",
+    "40.4",
+    "43.7",
+    "43.9",
+    "44.1"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Espacio muerto anatómico y fisiológico",
+     "page": 463
+    },
+    {
+     "t": "Composición del gas alveolar y arterial; ecuación del gas alveolar",
+     "page": 465
+    },
+    {
+     "t": "Distribución de la ventilación y del flujo sanguíneo pulmonar (zonas)",
+     "page": 467
+    },
+    {
+     "t": "Diferencia alveoloarterial de O2 y relaciones V/Q regionales",
+     "page": 470
+    },
+    {
+     "t": "Anomalías V/Q: cortocircuitos y causas de hipoxemia",
+     "page": 471
+    },
+    {
+     "t": "Mecanismos de hipercapnia",
+     "page": 473
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "title": "Transporte de oxígeno y dióxido de carbono",
+   "page": 477,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 477. Difusión de gases con limitación por perfusión o por difusión, curva de disociación de la oxihemoglobina y los factores que la desplazan (pH, CO2, temperatura, 2,3-DPG), monóxido de carbono, contenido y aporte de O2, y transporte de CO2 como bicarbonato y su papel en la regulación del H+. Es un capítulo compacto que condensa lo que Guyton desarrolla en sus capítulos 40 y 41, con más énfasis en el cálculo del contenido y del aporte de O2. Subtemas: Difusión de gases: limitación por perfusión y por difusión (p. 477); Curva de disociación de la oxihemoglobina (p. 479); Factores fisiológicos que desplazan la curva (p. 480); Monóxido de carbono; saturación, contenido y aporte de O2 (p. 481); Transporte de CO2 como bicarbonato (p. 482); Curva de disociación del CO2 (p. 483).",
+   "usedBy": [
+    "31.3",
+    "40.1",
+    "40.3",
+    "41.1",
+    "41.2",
+    "41.3",
+    "41.5",
+    "41.6",
+    "41.7"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Difusión de gases: limitación por perfusión y por difusión",
+     "page": 477
+    },
+    {
+     "t": "Curva de disociación de la oxihemoglobina",
+     "page": 479
+    },
+    {
+     "t": "Factores fisiológicos que desplazan la curva",
+     "page": 480
+    },
+    {
+     "t": "Monóxido de carbono; saturación, contenido y aporte de O2",
+     "page": 481
+    },
+    {
+     "t": "Transporte de CO2 como bicarbonato",
+     "page": 482
+    },
+    {
+     "t": "Curva de disociación del CO2",
+     "page": 483
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "title": "Control de la respiración",
+   "page": 486,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 486. Organización del control ventilatorio: centros respiratorios del bulbo y la protuberancia, quimiorreceptores centrales y periféricos, mecanorreceptores pulmonares y reflejos de la pared torácica y las vías respiratorias (Hering-Breuer, tos, estornudo), respuestas al ejercicio y a la altitud, y alteraciones del control como las apneas del sueño. Más esquemático y orientado a reflejos que Guyton, con una tabla de reflejos respiratorios y énfasis en la respuesta ventilatoria al CO2. Subtemas: Visión general del control ventilatorio y respuesta al CO2 (p. 486); Centros respiratorios del tronco encefálico (p. 488); Quimiorreceptores centrales y periféricos (p. 489); Mecanorreceptores pulmonares y reflejos respiratorios (p. 490); Respuesta ventilatoria al ejercicio y a la altitud (p. 492); Alteraciones del control: apnea obstructiva y central del sueño (p. 492).",
+   "usedBy": [
+    "38.4",
+    "42.1",
+    "42.2",
+    "42.3",
+    "42.4",
+    "42.5",
+    "42.6",
+    "42.7",
+    "42.8",
+    "44.4"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Visión general del control ventilatorio y respuesta al CO2",
+     "page": 486
+    },
+    {
+     "t": "Centros respiratorios del tronco encefálico",
+     "page": 488
+    },
+    {
+     "t": "Quimiorreceptores centrales y periféricos",
+     "page": 489
+    },
+    {
+     "t": "Mecanorreceptores pulmonares y reflejos respiratorios",
+     "page": 490
+    },
+    {
+     "t": "Respuesta ventilatoria al ejercicio y a la altitud",
+     "page": 492
+    },
+    {
+     "t": "Alteraciones del control: apnea obstructiva y central del sueño",
+     "page": 492
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "title": "Funciones no respiratorias del pulmón: defensa del huésped y metabolismo",
+   "page": 495,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología respiratoria · capítulo desde la p. 495. Sistema de aclaramiento mucociliar (capa periciliar y de moco, glándulas submucosas), depósito y eliminación de partículas, inmunidad innata y adaptativa de la mucosa respiratoria (BALT, IgA secretora, macrófagos alveolares, células dendríticas, linfocitos innatos), microbioma pulmonar y funciones metabólicas del endotelio pulmonar sobre aminas y péptidos vasoactivos. Guyton apenas toca estos temas de forma dispersa; B&L les dedica un capítulo con enfoque inmunológico y celular. Subtemas: Sistema de aclaramiento mucociliar (p. 495); Depósito y aclaramiento de partículas (p. 497); Sistema inmunitario mucoso e IgA secretora (p. 499); Células inmunitarias innatas y adaptativas del pulmón (p. 501); Epitelio y microbiota comensal pulmonar (p. 503); Funciones metabólicas del pulmón (p. 504).",
+   "usedBy": [
+    "19.4",
+    "34.2",
+    "34.3",
+    "35.1",
+    "35.3",
+    "38.4"
+   ],
+   "bl_section": "Fisiología respiratoria",
+   "subtemas": [
+    {
+     "t": "Sistema de aclaramiento mucociliar",
+     "page": 495
+    },
+    {
+     "t": "Depósito y aclaramiento de partículas",
+     "page": 497
+    },
+    {
+     "t": "Sistema inmunitario mucoso e IgA secretora",
+     "page": 499
+    },
+    {
+     "t": "Células inmunitarias innatas y adaptativas del pulmón",
+     "page": 501
+    },
+    {
+     "t": "Epitelio y microbiota comensal pulmonar",
+     "page": 503
+    },
+    {
+     "t": "Funciones metabólicas del pulmón",
+     "page": 504
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "title": "Anatomía funcional y principios generales de regulación en el tubo digestivo",
+   "page": 507,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 507. Estructura de la pared digestiva y especialización celular, capas musculares, y los tres modos de regulación: endocrina (gastrina, CCK, secretina, GIP, motilina), paracrina y neural (inervación extrínseca autónoma y sistema nervioso entérico), cerrando con la idea de la respuesta integrada a una comida. A diferencia de Guyton, que organiza la sección por funciones (motilidad, secreción, absorción), B&L estructura todo el bloque digestivo por fases de la comida y aquí sienta ese marco. Subtemas: Anatomía funcional y especialización celular (p. 507); Capas musculares del tubo digestivo (p. 509); Regulación endocrina y paracrina (p. 510); Inervación extrínseca (p. 512); Inervación intrínseca: sistema nervioso entérico (p. 513); Respuesta del tubo digestivo a una comida (p. 514).",
+   "usedBy": [
+    "63.1",
+    "63.2",
+    "63.3",
+    "63.4",
+    "65.1"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Anatomía funcional y especialización celular",
+     "page": 507
+    },
+    {
+     "t": "Capas musculares del tubo digestivo",
+     "page": 509
+    },
+    {
+     "t": "Regulación endocrina y paracrina",
+     "page": 510
+    },
+    {
+     "t": "Inervación extrínseca",
+     "page": 512
+    },
+    {
+     "t": "Inervación intrínseca: sistema nervioso entérico",
+     "page": 513
+    },
+    {
+     "t": "Respuesta del tubo digestivo a una comida",
+     "page": 514
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "title": "Fases cefálica, oral y esofágica de la respuesta integrada a una comida",
+   "page": 516,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 516. Activación anticipatoria del tubo digestivo en la fase cefálica, funciones de la boca, secreción salival (anatomía glandular, composición, mecanismos iónicos acinares y ductales, regulación), deglución y motilidad esofágica con sus esfínteres, incluido el reflujo gastroesofágico. Más molecular que Guyton en el transporte iónico de la saliva y organizado como primera etapa de la respuesta a la comida. Subtemas: Fases cefálica y oral (p. 516); Secreción salival: anatomía y composición (p. 517); Regulación y mecanismos iónicos de la secreción salival (p. 520); Deglución (p. 521); Fase esofágica: motilidad y esfínteres (p. 522).",
+   "usedBy": [
+    "64.1",
+    "65.2",
+    "65.3",
+    "67.1"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Fases cefálica y oral",
+     "page": 516
+    },
+    {
+     "t": "Secreción salival: anatomía y composición",
+     "page": 517
+    },
+    {
+     "t": "Regulación y mecanismos iónicos de la secreción salival",
+     "page": 520
+    },
+    {
+     "t": "Deglución",
+     "page": 521
+    },
+    {
+     "t": "Fase esofágica: motilidad y esfínteres",
+     "page": 522
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "title": "Fase gástrica de la respuesta integrada a una comida",
+   "page": 525,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 525. Composición de la secreción gástrica, mecanismo celular de la secreción de ácido por la célula parietal, moco, regulación neural, hormonal y paracrina (gastrina, histamina, somatostatina), digestión gástrica y protección de la mucosa, junto con la electrofisiología del músculo liso digestivo (ondas lentas) y la motilidad gástrica. Integra secreción y motilidad del estómago en un mismo capítulo, que Guyton separa en sus capítulos 63–65. Subtemas: Composición de la secreción gástrica (p. 526); Mecanismos celulares de la secreción de ácido (p. 527); Regulación de la secreción gástrica (p. 529); Protección y defensa de la mucosa gástrica (p. 531); Electrofisiología del músculo liso digestivo: ondas lentas (p. 533); Motilidad gástrica y su control (p. 534).",
+   "usedBy": [
+    "63.1",
+    "64.2",
+    "64.3",
+    "65.4",
+    "66.3",
+    "67.2"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Composición de la secreción gástrica",
+     "page": 526
+    },
+    {
+     "t": "Mecanismos celulares de la secreción de ácido",
+     "page": 527
+    },
+    {
+     "t": "Regulación de la secreción gástrica",
+     "page": 529
+    },
+    {
+     "t": "Protección y defensa de la mucosa gástrica",
+     "page": 531
+    },
+    {
+     "t": "Electrofisiología del músculo liso digestivo: ondas lentas",
+     "page": 533
+    },
+    {
+     "t": "Motilidad gástrica y su control",
+     "page": 534
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "title": "Fase del intestino delgado de la respuesta integrada a una comida",
+   "page": 537,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 537. Control del vaciamiento gástrico desde el duodeno, secreción pancreática ductular y acinar y su regulación, secreción biliar, digestión y absorción de carbohidratos, proteínas y lípidos, secreción y absorción de agua y electrólitos, vitaminas hidrosolubles y patrones motores del intestino delgado. Reúne en un solo capítulo, organizado por nutriente, lo que Guyton reparte entre secreción, digestión-absorción y motilidad, con más detalle sobre transportadores y CFTR. Subtemas: Secreción pancreática (p. 538); Asimilación de carbohidratos (p. 543); Asimilación de proteínas (p. 545); Asimilación de lípidos (p. 547); Secreción y absorción de agua y electrólitos (p. 549); Patrones motores del intestino delgado (p. 551).",
+   "usedBy": [
+    "64.3",
+    "64.4",
+    "65.5",
+    "65.6",
+    "65.7",
+    "66.1",
+    "66.2",
+    "66.3",
+    "66.4",
+    "66.5",
+    "66.6",
+    "67.3"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Secreción pancreática",
+     "page": 538
+    },
+    {
+     "t": "Asimilación de carbohidratos",
+     "page": 543
+    },
+    {
+     "t": "Asimilación de proteínas",
+     "page": 545
+    },
+    {
+     "t": "Asimilación de lípidos",
+     "page": 547
+    },
+    {
+     "t": "Secreción y absorción de agua y electrólitos",
+     "page": 549
+    },
+    {
+     "t": "Patrones motores del intestino delgado",
+     "page": 551
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "title": "Fase colónica de la respuesta integrada a una comida",
+   "page": 554,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 554. Señales que regulan la función del colon, anatomía funcional de su musculatura, patrones de motilidad colónica y defecación, mecanismos de transporte de Na+, Cl- y agua, y la microbiota colónica con sus efectos metabólicos (ácidos grasos de cadena corta, ácidos biliares secundarios, gases). Da mucho más peso que Guyton a la microbiota y al transporte epitelial colónico. Subtemas: Visión general del intestino grueso y su regulación (p. 554); Patrones de motilidad colónica (p. 555); Respuestas motoras del colon y defecación (p. 556); Mecanismos de transporte en el colon (p. 557); Microbiota colónica (p. 558); Efectos metabólicos de las bacterias entéricas (p. 559).",
+   "usedBy": [
+    "64.5",
+    "64.6",
+    "64.7",
+    "65.8",
+    "66.7",
+    "67.4",
+    "67.5"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Visión general del intestino grueso y su regulación",
+     "page": 554
+    },
+    {
+     "t": "Patrones de motilidad colónica",
+     "page": 555
+    },
+    {
+     "t": "Respuestas motoras del colon y defecación",
+     "page": 556
+    },
+    {
+     "t": "Mecanismos de transporte en el colon",
+     "page": 557
+    },
+    {
+     "t": "Microbiota colónica",
+     "page": 558
+    },
+    {
+     "t": "Efectos metabólicos de las bacterias entéricas",
+     "page": 559
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "title": "Funciones de transporte y metabólicas del hígado",
+   "page": 563,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología gastrointestinal · capítulo desde la p. 563. Organización funcional del hígado y del sistema biliar, transportadores del hepatocito, síntesis de ácidos biliares, formación y modificación de la bilis, circulación enterohepática, función de la vesícula biliar, formación y excreción de bilirrubina, manejo del amoníaco y pruebas clínicas de función hepática. Más centrado en el transporte hepatobiliar y la excreción que el capítulo hepático de Guyton, que es más metabólico. Subtemas: Visión general del hígado y sus funciones (p. 563); Sistema biliar y transportadores del hepatocito (p. 564); Síntesis de ácidos biliares y formación de la bilis (p. 567); Circulación enterohepática de los ácidos biliares (p. 568); Formación y excreción de bilirrubina (p. 571); Manejo del amoníaco y evaluación clínica de la función hepática (p. 572).",
+   "usedBy": [
+    "33.5",
+    "65.6",
+    "69.6",
+    "70.4",
+    "71.1",
+    "71.2",
+    "71.4",
+    "71.5",
+    "71.6",
+    "71.7"
+   ],
+   "bl_section": "Fisiología gastrointestinal",
+   "subtemas": [
+    {
+     "t": "Visión general del hígado y sus funciones",
+     "page": 563
+    },
+    {
+     "t": "Sistema biliar y transportadores del hepatocito",
+     "page": 564
+    },
+    {
+     "t": "Síntesis de ácidos biliares y formación de la bilis",
+     "page": 567
+    },
+    {
+     "t": "Circulación enterohepática de los ácidos biliares",
+     "page": 568
+    },
+    {
+     "t": "Formación y excreción de bilirrubina",
+     "page": 571
+    },
+    {
+     "t": "Manejo del amoníaco y evaluación clínica de la función hepática",
+     "page": 572
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "title": "Elementos de la función renal",
+   "page": 576,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología renal · capítulo desde la p. 576. Anatomía funcional del riñón, ultraestructura de la nefrona, del glomérulo y del aparato yuxtaglomerular, inervación renal, concepto de aclaramiento y medición de la TFG (inulina, creatinina), barrera de filtración y fuerzas de Starling glomerulares, y flujo sanguíneo renal con su autorregulación y control hormonal (angiotensina II, simpático, NO, péptidos natriuréticos). Equivale a los capítulos 26–27 de Guyton, introduciendo el aclaramiento ya desde el inicio. Subtemas: Anatomía funcional del riñón y ultraestructura de la nefrona (p. 577); Ultraestructura del glomérulo (p. 581); Aparato yuxtaglomerular e inervación renal (p. 584); Aclaramiento renal y tasa de filtración glomerular (p. 585); Determinantes del ultrafiltrado y dinámica de la ultrafiltración (p. 588); Flujo sanguíneo renal y su regulación (p. 590).",
+   "usedBy": [
+    "26.1",
+    "26.2",
+    "26.3",
+    "26.4",
+    "26.8",
+    "27.1",
+    "27.2",
+    "27.3",
+    "27.4",
+    "27.5",
+    "27.6",
+    "27.7",
+    "27.8",
+    "27.9",
+    "28.7"
+   ],
+   "bl_section": "Fisiología renal",
+   "subtemas": [
+    {
+     "t": "Anatomía funcional del riñón y ultraestructura de la nefrona",
+     "page": 577
+    },
+    {
+     "t": "Ultraestructura del glomérulo",
+     "page": 581
+    },
+    {
+     "t": "Aparato yuxtaglomerular e inervación renal",
+     "page": 584
+    },
+    {
+     "t": "Aclaramiento renal y tasa de filtración glomerular",
+     "page": 585
+    },
+    {
+     "t": "Determinantes del ultrafiltrado y dinámica de la ultrafiltración",
+     "page": 588
+    },
+    {
+     "t": "Flujo sanguíneo renal y su regulación",
+     "page": 590
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "title": "Transporte de solutos y agua a lo largo de la nefrona: función tubular",
+   "page": 597,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología renal · capítulo desde la p. 597. Recorre segmento por segmento los transportadores y canales que reabsorben NaCl y agua, la secreción de aniones y cationes orgánicos, el equilibrio glomerulotubular y las hormonas que ajustan la reabsorción. Es más molecular que Guyton: asocia cada transportador a su gen y a tubulopatías monogénicas (Bartter, Gitelman, Liddle) y discute la paradoja de la aldosterona. Subtemas: Reabsorción de NaCl y agua en el túbulo proximal (p. 597); Secreción de aniones y cationes orgánicos (p. 604); Asa de Henle, túbulo distal y conducto colector (p. 606); Hormonas que regulan la reabsorción de NaCl y agua (p. 611); Paradoja de la aldosterona (p. 611).",
+   "usedBy": [
+    "4.9",
+    "26.8",
+    "28.1",
+    "28.2",
+    "28.3",
+    "28.4",
+    "28.6",
+    "32.1",
+    "32.8"
+   ],
+   "bl_section": "Fisiología renal",
+   "subtemas": [
+    {
+     "t": "Reabsorción de NaCl y agua en el túbulo proximal",
+     "page": 597
+    },
+    {
+     "t": "Secreción de aniones y cationes orgánicos",
+     "page": 604
+    },
+    {
+     "t": "Asa de Henle, túbulo distal y conducto colector",
+     "page": 606
+    },
+    {
+     "t": "Hormonas que regulan la reabsorción de NaCl y agua",
+     "page": 611
+    },
+    {
+     "t": "Paradoja de la aldosterona",
+     "page": 611
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "title": "Control de la osmolalidad y del volumen de los líquidos corporales",
+   "page": 616,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología renal · capítulo desde la p. 616. Separa dos lazos de control: el balance de agua (AVP, sed, concentración y dilución urinaria por el asa de Henle, el intersticio medular y los vasos rectos) y el balance de Na+, organizado alrededor del volumen circulante efectivo, sus sensores y efectores (SRAA, nervios simpáticos renales, péptidos natriuréticos). A diferencia de Guyton, no se apoya en la natriuresis por presión, sino en la respuesta de cada segmento de la nefrona en euvolemia, expansión y contracción del volumen. Subtemas: Control osmótico y hemodinámico de la secreción de AVP (p. 619); Mecanismos renales de dilución y concentración de la orina (p. 623); Intersticio medular y función de los vasos rectos (p. 627); Volumen circulante efectivo y sensores de volumen (p. 629); Sistema renina-angiotensina-aldosterona y péptidos natriuréticos (p. 632); Excreción de NaCl en expansión y contracción del volumen (p. 635).",
+   "usedBy": [
+    "19.4",
+    "25.1",
+    "25.6",
+    "25.7",
+    "29.1",
+    "29.2",
+    "29.3",
+    "29.4",
+    "29.5",
+    "29.6",
+    "29.7",
+    "29.8",
+    "29.9",
+    "29.10",
+    "30.7",
+    "30.9",
+    "30.10",
+    "30.11",
+    "76.7"
+   ],
+   "bl_section": "Fisiología renal",
+   "subtemas": [
+    {
+     "t": "Control osmótico y hemodinámico de la secreción de AVP",
+     "page": 619
+    },
+    {
+     "t": "Mecanismos renales de dilución y concentración de la orina",
+     "page": 623
+    },
+    {
+     "t": "Intersticio medular y función de los vasos rectos",
+     "page": 627
+    },
+    {
+     "t": "Volumen circulante efectivo y sensores de volumen",
+     "page": 629
+    },
+    {
+     "t": "Sistema renina-angiotensina-aldosterona y péptidos natriuréticos",
+     "page": 632
+    },
+    {
+     "t": "Excreción de NaCl en expansión y contracción del volumen",
+     "page": 635
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "title": "Homeostasis del potasio, el calcio y el fosfato",
+   "page": 639,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología renal · capítulo desde la p. 639. Explica la distribución interna del K+ y su excreción renal por el túbulo distal y el colector cortical (efecto del flujo, la aldosterona y el pH), y después el balance de Ca++ y Pi entre intestino, hueso y riñón con sus mecanismos de transporte en la nefrona. Detalla más que Guyton las células principales e intercaladas, el receptor sensor de calcio y la FGF23. Subtemas: Distribución del K+ y regulación de su concentración plasmática (p. 639); Excreción renal de K+ en el túbulo distal y el colector cortical (p. 643); Visión general de la homeostasis de Ca++ y Pi (p. 650); Transporte de Ca++ a lo largo de la nefrona (p. 653); Transporte y regulación de la excreción de Pi (p. 656); Revisión integrada de PTH y calcitriol (p. 658).",
+   "usedBy": [
+    "30.1",
+    "30.2",
+    "30.3",
+    "30.4",
+    "30.5",
+    "80.1",
+    "80.2",
+    "80.3",
+    "80.6",
+    "80.9"
+   ],
+   "bl_section": "Fisiología renal",
+   "subtemas": [
+    {
+     "t": "Distribución del K+ y regulación de su concentración plasmática",
+     "page": 639
+    },
+    {
+     "t": "Excreción renal de K+ en el túbulo distal y el colector cortical",
+     "page": 643
+    },
+    {
+     "t": "Visión general de la homeostasis de Ca++ y Pi",
+     "page": 650
+    },
+    {
+     "t": "Transporte de Ca++ a lo largo de la nefrona",
+     "page": 653
+    },
+    {
+     "t": "Transporte y regulación de la excreción de Pi",
+     "page": 656
+    },
+    {
+     "t": "Revisión integrada de PTH y calcitriol",
+     "page": 658
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "title": "Papel de los riñones en la regulación del equilibrio ácido-base",
+   "page": 661,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología renal · capítulo desde la p. 661. Parte del tampón HCO3−/CO2 y de la producción endógena neta de ácido según la dieta, para explicar la excreción renal neta de ácido: reabsorción de HCO3− por segmentos, acidez titulable, amoniogénesis y formación de HCO3− nuevo; cierra con la compensación respiratoria y renal y el análisis de los trastornos simples. Cubre el mismo terreno que Guyton con más énfasis en la dieta, el hígado y los transportadores de cada segmento. Subtemas: El sistema amortiguador HCO3− (p. 661); Excreción neta de ácido por los riñones (p. 663); Reabsorción de HCO3− a lo largo de la nefrona (p. 664); Formación de HCO3− nuevo y excreción de amonio (p. 668); Respuesta a los trastornos ácido-base: amortiguadores y compensación (p. 670); Trastornos ácido-base simples y su análisis (p. 672).",
+   "usedBy": [
+    "31.1",
+    "31.2",
+    "31.3",
+    "31.4",
+    "31.5",
+    "31.6",
+    "31.7",
+    "31.8",
+    "31.9",
+    "31.10",
+    "31.11"
+   ],
+   "bl_section": "Fisiología renal",
+   "subtemas": [
+    {
+     "t": "El sistema amortiguador HCO3−",
+     "page": 661
+    },
+    {
+     "t": "Excreción neta de ácido por los riñones",
+     "page": 663
+    },
+    {
+     "t": "Reabsorción de HCO3− a lo largo de la nefrona",
+     "page": 664
+    },
+    {
+     "t": "Formación de HCO3− nuevo y excreción de amonio",
+     "page": 668
+    },
+    {
+     "t": "Respuesta a los trastornos ácido-base: amortiguadores y compensación",
+     "page": 670
+    },
+    {
+     "t": "Trastornos ácido-base simples y su análisis",
+     "page": 672
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "title": "Introducción al sistema endocrino",
+   "page": 677,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 677. Presenta las glándulas endocrinas, los lazos de retroalimentación simples y los de ejes hipotálamo-hipófisis-glándula periférica, y las clases químicas de hormonas (peptídicas, catecolaminas, esteroides, yodotironinas) con su síntesis, transporte, receptores y aclaramiento. Insiste más que Guyton en la conversión periférica de hormonas y en la lógica de la célula esteroidogénica. Subtemas: Configuración de los lazos de retroalimentación endocrinos (p. 677); Hormonas peptídicas y catecolaminas: síntesis y secreción (p. 679); Hormonas esteroideas y células esteroidogénicas (p. 683).",
+   "usedBy": [
+    "75.1",
+    "75.2",
+    "75.3",
+    "75.4",
+    "75.5",
+    "75.7",
+    "76.2"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Configuración de los lazos de retroalimentación endocrinos",
+     "page": 677
+    },
+    {
+     "t": "Hormonas peptídicas y catecolaminas: síntesis y secreción",
+     "page": 679
+    },
+    {
+     "t": "Hormonas esteroideas y células esteroidogénicas",
+     "page": 683
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "title": "Regulación hormonal del metabolismo energético",
+   "page": 689,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 689. Organiza el metabolismo por fases (digestiva frente a interdigestiva y de ayuno) y muestra cómo insulina, glucagón y catecolaminas reparten glucosa, ácidos grasos y aminoácidos entre hígado, músculo y tejido adiposo, incluida la cetogénesis, las lipoproteínas y el control hipotalámico del apetito. Integra en un capítulo lo que Guyton reparte entre metabolismo intermedio, insulina/diabetes y regulación de la ingesta. Subtemas: Fases digestiva, interdigestiva y de ayuno (p. 690); Hormonas pancreáticas en las distintas fases metabólicas (p. 695); Receptor de insulina y señalización (p. 697); Catecolaminas y regulación hormonal de vías metabólicas (p. 701); Quilomicrones y lipoproteínas en las fases digestiva y de ayuno (p. 706); Tejido adiposo, leptina y control central del balance energético (p. 710).",
+   "usedBy": [
+    "61.5",
+    "68.2",
+    "68.3",
+    "68.10",
+    "69.1",
+    "69.2",
+    "69.5",
+    "70.6",
+    "71.5",
+    "72.3",
+    "72.4",
+    "72.5",
+    "79.1",
+    "79.2",
+    "79.3",
+    "79.4",
+    "79.5",
+    "79.6",
+    "79.7",
+    "79.8",
+    "79.9"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Fases digestiva, interdigestiva y de ayuno",
+     "page": 690
+    },
+    {
+     "t": "Hormonas pancreáticas en las distintas fases metabólicas",
+     "page": 695
+    },
+    {
+     "t": "Receptor de insulina y señalización",
+     "page": 697
+    },
+    {
+     "t": "Catecolaminas y regulación hormonal de vías metabólicas",
+     "page": 701
+    },
+    {
+     "t": "Quilomicrones y lipoproteínas en las fases digestiva y de ayuno",
+     "page": 706
+    },
+    {
+     "t": "Tejido adiposo, leptina y control central del balance energético",
+     "page": 710
+    }
+   ]
+  },
+  {
+   "id": "40",
+   "title": "Regulación hormonal del metabolismo del calcio y el fosfato",
+   "page": 713,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 713. Estudia las formas de Ca y Pi en el plasma y su control por PTH (con el receptor sensor de calcio), 1,25-dihidroxivitamina D y FGF23, y sus acciones sobre hueso, riñón e intestino, incluidos el remodelado óseo y la influencia de los esteroides gonadales. Frente a Guyton, da protagonismo a la FGF23 y a los receptores, y menos a la calcitonina. Subtemas: Hormona paratiroidea: síntesis, secreción y receptor sensor de calcio (p. 714); Vitamina D: síntesis y activación (p. 716); Factor de crecimiento fibroblástico 23 (FGF23) (p. 717); Efectos hormonales sobre hueso, riñón e intestino (p. 717); Regulación del hueso por esteroides gonadales y suprarrenales (p. 721).",
+   "usedBy": [
+    "30.4",
+    "30.5",
+    "80.1",
+    "80.2",
+    "80.3",
+    "80.4",
+    "80.5",
+    "80.6",
+    "80.7",
+    "80.8",
+    "80.9",
+    "80.10"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Hormona paratiroidea: síntesis, secreción y receptor sensor de calcio",
+     "page": 714
+    },
+    {
+     "t": "Vitamina D: síntesis y activación",
+     "page": 716
+    },
+    {
+     "t": "Factor de crecimiento fibroblástico 23 (FGF23)",
+     "page": 717
+    },
+    {
+     "t": "Efectos hormonales sobre hueso, riñón e intestino",
+     "page": 717
+    },
+    {
+     "t": "Regulación del hueso por esteroides gonadales y suprarrenales",
+     "page": 721
+    }
+   ]
+  },
+  {
+   "id": "41",
+   "title": "El hipotálamo y la hipófisis",
+   "page": 723,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 723. Describe la neurohipófisis (ADH y oxitocina de neuronas magnocelulares) y la adenohipófisis organizada por tipos celulares (corticotropos, tirotropos, gonadotropos, somatotropos y lactotropos) con sus ejes y puntos de ajuste; desarrolla GH/IGF-I en el crecimiento y el ayuno y la prolactina en la lactancia. El enfoque por linaje celular y eje es más sistemático que en Guyton. Subtemas: Neurohipófisis: ADH y oxitocina (p. 723); Adenohipófisis y ejes endocrinos (p. 728); Corticotropos y POMC (p. 729); Tirotropos y gonadotropos (p. 733); Somatotropos: GH e IGF-I (p. 738).",
+   "usedBy": [
+    "59.4",
+    "76.1",
+    "76.2",
+    "76.3",
+    "76.4",
+    "76.5",
+    "76.6",
+    "76.7",
+    "76.8",
+    "83.9"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Neurohipófisis: ADH y oxitocina",
+     "page": 723
+    },
+    {
+     "t": "Adenohipófisis y ejes endocrinos",
+     "page": 728
+    },
+    {
+     "t": "Corticotropos y POMC",
+     "page": 729
+    },
+    {
+     "t": "Tirotropos y gonadotropos",
+     "page": 733
+    },
+    {
+     "t": "Somatotropos: GH e IGF-I",
+     "page": 738
+    }
+   ]
+  },
+  {
+   "id": "42",
+   "title": "La glándula tiroides",
+   "page": 743,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 743. Cubre anatomía del folículo, síntesis de T4 y T3 (captación de yodo, peroxidasa/oxidasa dual, tiroglobulina), el eje hipotálamo-hipófisis-tiroides, el transporte, la entrada celular y las desyodasas D1/D2, el mecanismo de acción por receptores nucleares y los efectos sistémicos y enfermedades. Más detallado que Guyton en transportadores y desyodasas periféricas. Subtemas: Síntesis de hormonas tiroideas (p. 745); Transporte, entrada celular y conversión periférica (desyodasas) (p. 748); Efectos cardiovasculares y metabólicos (p. 751); Efectos sobre sistema nervioso y músculo esquelético (p. 752); Mecanismo de acción y subtipos de receptor (p. 754).",
+   "usedBy": [
+    "77.1",
+    "77.2",
+    "77.3",
+    "77.4",
+    "77.5",
+    "77.6",
+    "77.7",
+    "77.8"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Síntesis de hormonas tiroideas",
+     "page": 745
+    },
+    {
+     "t": "Transporte, entrada celular y conversión periférica (desyodasas)",
+     "page": 748
+    },
+    {
+     "t": "Efectos cardiovasculares y metabólicos",
+     "page": 751
+    },
+    {
+     "t": "Efectos sobre sistema nervioso y músculo esquelético",
+     "page": 752
+    },
+    {
+     "t": "Mecanismo de acción y subtipos de receptor",
+     "page": 754
+    }
+   ]
+  },
+  {
+   "id": "43",
+   "title": "La glándula suprarrenal",
+   "page": 756,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 756. Une en un capítulo la médula suprarrenal (síntesis de catecolaminas, receptores adrenérgicos, respuesta al estrés) y la corteza (esteroidogénesis por zonas, acciones de cortisol, aldosterona y andrógenos suprarrenales, protección del receptor mineralocorticoide), con Addison, Cushing e hiperplasia suprarrenal congénita. Guyton trata la médula en el capítulo del sistema autónomo. Subtemas: Médula suprarrenal y síntesis de catecolaminas (p. 757); Receptores adrenérgicos y respuesta al estrés (p. 760); Esteroidogénesis en las zonas de la corteza (p. 763); Acciones del cortisol y regulación por ACTH (p. 766); Andrógenos suprarrenales (DHEA, DHEAS) (p. 770); Aldosterona: transporte, metabolismo y acción (p. 772).",
+   "usedBy": [
+    "61.3",
+    "61.5",
+    "61.8",
+    "78.1",
+    "78.2",
+    "78.3",
+    "78.4",
+    "78.5",
+    "78.6",
+    "78.7",
+    "78.8"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Médula suprarrenal y síntesis de catecolaminas",
+     "page": 757
+    },
+    {
+     "t": "Receptores adrenérgicos y respuesta al estrés",
+     "page": 760
+    },
+    {
+     "t": "Esteroidogénesis en las zonas de la corteza",
+     "page": 763
+    },
+    {
+     "t": "Acciones del cortisol y regulación por ACTH",
+     "page": 766
+    },
+    {
+     "t": "Andrógenos suprarrenales (DHEA, DHEAS)",
+     "page": 770
+    },
+    {
+     "t": "Aldosterona: transporte, metabolismo y acción",
+     "page": 772
+    }
+   ]
+  },
+  {
+   "id": "44",
+   "title": "Los sistemas reproductores masculino y femenino",
+   "page": 776,
+   "summary": "Berne & Levy Physiology, 8.ª ed. · Fisiología endocrina · capítulo desde la p. 776. Abarca el testículo (espermatogénesis, células de Sertoli y Leydig, conversión periférica de testosterona, eje hipotálamo-hipófisis-testículo, erección), el ovario y el ciclo menstrual (desarrollo folicular, cuerpo lúteo, endometrio, eje con kisspeptina) y la reproducción: fecundación, implantación, placenta, parto y lactancia. Reúne en un capítulo lo que Guyton divide en tres, con más detalle celular y de esteroidogénesis. Subtemas: Testículo y espermatogénesis (p. 777); Testosterona y conversión periférica a DHT y estradiol (p. 781); Eje hipotálamo-hipófisis-testículo (p. 784); Ovario: desarrollo folicular y folículo dominante (p. 786); Regulación hormonal del ciclo menstrual (p. 799); Fecundación, implantación, embarazo, parto y lactancia (p. 804).",
+   "usedBy": [
+    "81.1",
+    "81.2",
+    "81.3",
+    "81.4",
+    "81.5",
+    "81.6",
+    "81.7",
+    "82.1",
+    "82.2",
+    "82.3",
+    "82.4",
+    "82.5",
+    "82.6",
+    "82.7",
+    "82.8",
+    "82.9",
+    "82.10",
+    "82.11",
+    "83.1",
+    "83.2",
+    "83.4",
+    "83.5",
+    "83.8",
+    "83.9",
+    "83.10"
+   ],
+   "bl_section": "Fisiología endocrina",
+   "subtemas": [
+    {
+     "t": "Testículo y espermatogénesis",
+     "page": 777
+    },
+    {
+     "t": "Testosterona y conversión periférica a DHT y estradiol",
+     "page": 781
+    },
+    {
+     "t": "Eje hipotálamo-hipófisis-testículo",
+     "page": 784
+    },
+    {
+     "t": "Ovario: desarrollo folicular y folículo dominante",
+     "page": 786
+    },
+    {
+     "t": "Regulación hormonal del ciclo menstrual",
+     "page": 799
+    },
+    {
+     "t": "Fecundación, implantación, embarazo, parto y lactancia",
+     "page": 804
+    }
+   ]
+  }
+ ]
 }
