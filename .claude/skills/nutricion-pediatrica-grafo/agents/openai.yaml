@@ -1,0 +1,11 @@
+interface:
+  display_name: Grafo de nutrición pediátrica
+  short_description: Explora conceptos y rutas de estudio del Manual of Pediatric Nutrition
+  default_prompt: Usa $nutricion-pediatrica-grafo para trazar una ruta de lectura hacia el síndrome de intestino corto.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

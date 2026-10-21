@@ -8,6 +8,7 @@ Skills de Claude basadas en libros y obras de referencia.
 | [`harrys-cosmeticology`](.claude/skills/harrys-cosmeticology/SKILL.md) | *Harry's Cosmeticology* 9.ª ed. (Vol. 1, Vol. 2 y Sostenibilidad): 59 fichas de capítulo sobre formulación, ingredientes, sustratos, regulación y antienvejecimiento, con glosario, patrones, cheatsheet y consulta del grafo de conocimiento. |
 | [`hemodinamia-grafo`](.claude/skills/hemodinamia-grafo/SKILL.md) | Mapa de estudio del *Manual de hemodinamia y aplicaciones clínicas en cardiología*: 16 capítulos, 149 secciones, 63 conceptos y rutas de prerrequisitos. |
 | [`guyton-fisiologia-grafo`](.claude/skills/guyton-fisiologia-grafo/SKILL.md) | Mapa de estudio del *Tratado de fisiología médica* de Guyton y Hall, 14.ª ed.: 85 capítulos, 714 secciones, 391 conceptos clave y rutas de prerrequisitos, correlacionado con los 44 capítulos de *Berne & Levy Physiology*, 8.ª ed. |
+| [`nutricion-pediatrica-grafo`](.claude/skills/nutricion-pediatrica-grafo/SKILL.md) | Mapa de estudio del *Manual of Pediatric Nutrition*, 3.ª ed. (Hendricks, Duggan y Walker), en español: 36 capítulos, 254 secciones, 174 conceptos clave, 5 apéndices, rutas de prerrequisitos y alertas de guías vigentes (octubre de 2026). |
 
 ## Atlas de Meridianos
 
@@ -36,6 +37,14 @@ python3 atlas/build.py
 El grafo incluye además la correlación con *Berne & Levy Physiology* (8.ª ed.). Cada uno de sus 44 capítulos es un nodo cuadrado, con su página, un resumen en español y subtemas, enlazado a las secciones de Guyton que trata (530 enlaces). El panel de cada sección muestra qué leer en Berne & Levy para complementarla, y `ruta.py` lo lista junto a la ruta.
 
 Al texto fuente le faltaban las páginas 794–846. Por eso los capítulos 64–67 y el principio del 68 se reconstruyeron con la estructura conocida de la edición, van sin páginas y están marcados como ausentes. Las páginas de las secciones son aproximadas (±1). Las conexiones son una interpretación pedagógica.
+
+## Grafo de nutrición pediátrica
+
+[`grafos/nutricion-pediatrica/grafo_nutricion_pediatrica.html`](grafos/nutricion-pediatrica/grafo_nutricion_pediatrica.html) es el mapa interactivo autocontenido del *Manual of Pediatric Nutrition* (3.ª ed., Hendricks, Duggan y Walker), traducido al español. Organiza los 36 capítulos en 7 bloques (evaluación y requerimientos; niño sano; hospitalización y soporte; crítico, inmunocomprometido y prematuro; enfermedades de órganos y sistemas; endocrino-metabólicas; crecimiento, conducta y alergia) y tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_nutricion_pediatrica.json`](grafos/nutricion-pediatrica/grafo_nutricion_pediatrica.json). La skill [`nutricion-pediatrica-grafo`](.claude/skills/nutricion-pediatrica-grafo/SKILL.md) incluye una copia y `scripts/ruta.py`, que lista la ruta de lectura, los apéndices que se consultan y las alertas de los conceptos implicados.
+
+El libro es de alrededor del año 2000. 25 conceptos llevan un recuadro «Atención» con la guía que hoy reemplaza la recomendación del manual (Dietary Guidelines 2025–2030, AAP 2024 sobre VIH y lactancia, ESPGHAN/ESPEN 2018, ASPEN 2020, ISPAD 2024, Resolución 115 de 2026, entre otras). El grafo describe el libro; la actualización va solo en esas alertas.
+
+El PDF fuente es un OCR de mala calidad: las cifras clínicas ilegibles se omitieron en lugar de reconstruirse. El libro no numera sus secciones, así que la numeración es propia del grafo. Las conexiones son una interpretación pedagógica.
 
 ## Aplicación Python de Graphify
 
