@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "source": "Mohan, Abdollahi & Pathak (eds.), CRC Press 2023",
+    "scope": "15 chapters, table-of-contents-level graph",
+    "warning": "Topic associations are organizational, not clinical efficacy claims",
+    "pdf_pages": 437
+  },
+  "nodes": [
+    {
+      "id": "book",
+      "type": "book",
+      "label": "Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Volume I",
+      "year": 2023
+    },
+    {
+      "id": "chapter_1",
+      "type": "chapter",
+      "label": "Global Trends in Growth of Chronic Diseases",
+      "chapter": 1
+    },
+    {
+      "id": "chapter_2",
+      "type": "chapter",
+      "label": "Importance of Integrative Health Sciences in the Therapy of Chronic Diseases",
+      "chapter": 2
+    },
+    {
+      "id": "chapter_3",
+      "type": "chapter",
+      "label": "Safety and Efficacy Determination in Functional Foods and Nutraceuticals",
+      "chapter": 3
+    },
+    {
+      "id": "chapter_4",
+      "type": "chapter",
+      "label": "Global Burden of Disease, the Heavy Cost of Sun Deprivation: Implications for Mass Food Fortification with Vitamin D",
+      "chapter": 4
+    },
+    {
+      "id": "chapter_5",
+      "type": "chapter",
+      "label": "Functional Vegetables and Medicinal Uses: Cure and Curse",
+      "chapter": 5
+    },
+    {
+      "id": "chapter_6",
+      "type": "chapter",
+      "label": "Dietary Supplements and Functional Foods in the Management of Endocrine Disorders",
+      "chapter": 6
+    },
+    {
+      "id": "chapter_7",
+      "type": "chapter",
+      "label": "Changes in the Regulation of Energy Metabolism in Chronic Diseases Using Functional Foods and Nutraceuticals",
+      "chapter": 7
+    },
+    {
+      "id": "chapter_8",
+      "type": "chapter",
+      "label": "Functional Foods for the Prevention and Treatment of Cardiovascular Diseases Including Hypertension",
+      "chapter": 8
+    },
+    {
+      "id": "chapter_9",
+      "type": "chapter",
+      "label": "Functional Foods and Natural Products for Obesity Management",
+      "chapter": 9
+    },
+    {
+      "id": "chapter_10",
+      "type": "chapter",
+      "label": "Noncommercial Plant-Based Edible Oil for Prevention and Treatment of Chronic Diseases",
+      "chapter": 10
+    },
+    {
+      "id": "chapter_11",
+      "type": "chapter",
+      "label": "Oral Health Challenges during Chronic Diseases: Prevention and Treatment Using Functional Foods and Nutraceuticals",
+      "chapter": 11
+    },
+    {
+      "id": "chapter_12",
+      "type": "chapter",
+      "label": "Urogenital System Disorders and Functional Foods and Nutraceuticals",
+      "chapter": 12
+    },
+    {
+      "id": "chapter_13",
+      "type": "chapter",
+      "label": "Functional Foods and Nutraceuticals and Respiratory Diseases",
+      "chapter": 13
+    },
+    {
+      "id": "chapter_14",
+      "type": "chapter",
+      "label": "Strategies Using Functional Food and Nutraceuticals to Prevent and Treat Arthritis",
+      "chapter": 14
+    },
+    {
+      "id": "chapter_15",
+      "type": "chapter",
+      "label": "Functional Foods of Polyphenolics for Alzheimer’s Disease",
+      "chapter": 15
+    },
+    {
+      "id": "topic_1",
+      "type": "topic",
+      "label": "burden"
+    },
+    {
+      "id": "topic_2",
+      "type": "topic",
+      "label": "integrative medicine"
+    },
+    {
+      "id": "topic_3",
+      "type": "topic",
+      "label": "safety and efficacy"
+    },
+    {
+      "id": "topic_4",
+      "type": "topic",
+      "label": "vitamin D"
+    },
+    {
+      "id": "topic_5",
+      "type": "topic",
+      "label": "functional vegetables"
+    },
+    {
+      "id": "topic_6",
+      "type": "topic",
+      "label": "endocrine disorders"
+    },
+    {
+      "id": "topic_7",
+      "type": "topic",
+      "label": "energy metabolism"
+    },
+    {
+      "id": "topic_8",
+      "type": "topic",
+      "label": "cardiovascular diseases"
+    },
+    {
+      "id": "topic_9",
+      "type": "topic",
+      "label": "obesity"
+    },
+    {
+      "id": "topic_10",
+      "type": "topic",
+      "label": "plant oils"
+    },
+    {
+      "id": "topic_11",
+      "type": "topic",
+      "label": "oral health"
+    },
+    {
+      "id": "topic_12",
+      "type": "topic",
+      "label": "urogenital disorders"
+    },
+    {
+      "id": "topic_13",
+      "type": "topic",
+      "label": "respiratory diseases"
+    },
+    {
+      "id": "topic_14",
+      "type": "topic",
+      "label": "arthritis"
+    },
+    {
+      "id": "topic_15",
+      "type": "topic",
+      "label": "Alzheimer's disease"
+    }
+  ],
+  "edges": [
+    {
+      "source": "book",
+      "target": "chapter_1",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_1",
+      "target": "topic_1",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_2",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_2",
+      "target": "topic_2",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_3",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_3",
+      "target": "topic_3",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_4",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_4",
+      "target": "topic_4",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_5",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_5",
+      "target": "topic_5",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_6",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_6",
+      "target": "topic_6",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_7",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_7",
+      "target": "topic_7",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_8",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_8",
+      "target": "topic_8",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_9",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_9",
+      "target": "topic_9",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_10",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_10",
+      "target": "topic_10",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_11",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_11",
+      "target": "topic_11",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_12",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_12",
+      "target": "topic_12",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_13",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_13",
+      "target": "topic_13",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_14",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_14",
+      "target": "topic_14",
+      "relation": "DISCUSSES"
+    },
+    {
+      "source": "book",
+      "target": "chapter_15",
+      "relation": "HAS_CHAPTER"
+    },
+    {
+      "source": "chapter_15",
+      "target": "topic_15",
+      "relation": "DISCUSSES"
+    }
+  ]
+}
