@@ -1,0 +1,3703 @@
+{
+  "metadata": {
+    "title": "The Tao Te Ching: A New Translation with Commentary",
+    "commentator": "Ellen M. Chen",
+    "year": 1989,
+    "source_pages": 288,
+    "method": "Concept keyword co-occurrence by PDF page; explicit relationships from preface/introduction. Co-occurrence is not semantic entailment.",
+    "limitations": "Not an exhaustive chapter-by-chapter extraction; lexical matching may include commentary and translation."
+  },
+  "nodes": [
+    {
+      "id": "concept:Tao",
+      "label": "Tao",
+      "type": "concept",
+      "aliases": [
+        "Tao",
+        "Way"
+      ]
+    },
+    {
+      "id": "concept:Te",
+      "label": "Te",
+      "type": "concept",
+      "aliases": [
+        "Te",
+        "virtue"
+      ]
+    },
+    {
+      "id": "concept:wu-wei",
+      "label": "wu-wei",
+      "type": "concept",
+      "aliases": [
+        "wu-wei",
+        "non-action",
+        "nonaction"
+      ]
+    },
+    {
+      "id": "concept:wu",
+      "label": "wu",
+      "type": "concept",
+      "aliases": [
+        "non-being",
+        "nonbeing",
+        "non-being"
+      ]
+    },
+    {
+      "id": "concept:yu",
+      "label": "yu",
+      "type": "concept",
+      "aliases": [
+        "being"
+      ]
+    },
+    {
+      "id": "concept:ziran",
+      "label": "ziran",
+      "type": "concept",
+      "aliases": [
+        "tzu-jan",
+        "self-so",
+        "spontaneity"
+      ]
+    },
+    {
+      "id": "concept:peace",
+      "label": "peace",
+      "type": "concept",
+      "aliases": [
+        "peace"
+      ]
+    },
+    {
+      "id": "concept:non-contention",
+      "label": "non-contention",
+      "type": "concept",
+      "aliases": [
+        "non-contention",
+        "noncontention"
+      ]
+    },
+    {
+      "id": "concept:weakness",
+      "label": "weakness",
+      "type": "concept",
+      "aliases": [
+        "weakness",
+        "softness",
+        "yielding"
+      ]
+    },
+    {
+      "id": "concept:water",
+      "label": "water",
+      "type": "concept",
+      "aliases": [
+        "water"
+      ]
+    },
+    {
+      "id": "concept:valley",
+      "label": "valley",
+      "type": "concept",
+      "aliases": [
+        "valley"
+      ]
+    },
+    {
+      "id": "concept:earth",
+      "label": "earth",
+      "type": "concept",
+      "aliases": [
+        "earth"
+      ]
+    },
+    {
+      "id": "concept:heaven",
+      "label": "heaven",
+      "type": "concept",
+      "aliases": [
+        "heaven"
+      ]
+    },
+    {
+      "id": "concept:return",
+      "label": "return",
+      "type": "concept",
+      "aliases": [
+        "return",
+        "returning"
+      ]
+    },
+    {
+      "id": "concept:simplicity",
+      "label": "simplicity",
+      "type": "concept",
+      "aliases": [
+        "simplicity",
+        "uncarved"
+      ]
+    },
+    {
+      "id": "concept:desire",
+      "label": "desire",
+      "type": "concept",
+      "aliases": [
+        "desire"
+      ]
+    },
+    {
+      "id": "concept:sage",
+      "label": "sage",
+      "type": "concept",
+      "aliases": [
+        "sage"
+      ]
+    },
+    {
+      "id": "concept:government",
+      "label": "government",
+      "type": "concept",
+      "aliases": [
+        "government",
+        "ruler"
+      ]
+    },
+    {
+      "id": "concept:war",
+      "label": "war",
+      "type": "concept",
+      "aliases": [
+        "war",
+        "weapons"
+      ]
+    },
+    {
+      "id": "concept:life",
+      "label": "life",
+      "type": "concept",
+      "aliases": [
+        "life",
+        "living"
+      ]
+    },
+    {
+      "id": "concept:death",
+      "label": "death",
+      "type": "concept",
+      "aliases": [
+        "death"
+      ]
+    },
+    {
+      "id": "concept:emptiness",
+      "label": "emptiness",
+      "type": "concept",
+      "aliases": [
+        "emptiness",
+        "void"
+      ]
+    },
+    {
+      "id": "concept:unity",
+      "label": "unity",
+      "type": "concept",
+      "aliases": [
+        "unity",
+        "one"
+      ]
+    },
+    {
+      "id": "concept:humility",
+      "label": "humility",
+      "type": "concept",
+      "aliases": [
+        "humility",
+        "humble"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "concept:Tao",
+      "target": "concept:Te",
+      "type": "cooccurs_in_commentary",
+      "weight": 208,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:yu",
+      "type": "cooccurs_in_commentary",
+      "weight": 110,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        57,
+        58,
+        60,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:peace",
+      "type": "cooccurs_in_commentary",
+      "weight": 48,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        59,
+        70,
+        73,
+        74,
+        81,
+        87
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 64,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        57,
+        59,
+        65,
+        66,
+        68,
+        76
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 29,
+      "pdf_pages_sample": [
+        50,
+        52,
+        70,
+        137,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        150,
+        155
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 118,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        66,
+        72,
+        73,
+        75,
+        77
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 49,
+      "pdf_pages_sample": [
+        50,
+        53,
+        81,
+        87,
+        93,
+        98,
+        105,
+        106,
+        107,
+        122,
+        131,
+        135
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 150,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        59,
+        60,
+        61,
+        66,
+        67
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:yu",
+      "type": "cooccurs_in_commentary",
+      "weight": 108,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        57,
+        58,
+        60,
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:peace",
+      "type": "cooccurs_in_commentary",
+      "weight": 47,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        59,
+        70,
+        73,
+        74,
+        81,
+        87
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 63,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        57,
+        59,
+        66,
+        68,
+        76,
+        77
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 29,
+      "pdf_pages_sample": [
+        50,
+        52,
+        70,
+        137,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        150,
+        155
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 117,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        66,
+        72,
+        73,
+        75,
+        77
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 48,
+      "pdf_pages_sample": [
+        50,
+        53,
+        81,
+        87,
+        93,
+        98,
+        105,
+        106,
+        107,
+        122,
+        131,
+        135
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 150,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        59,
+        60,
+        61,
+        66,
+        67
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:peace",
+      "type": "cooccurs_in_commentary",
+      "weight": 25,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        70,
+        87,
+        94,
+        101,
+        114,
+        126,
+        141
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 40,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        57,
+        65,
+        66,
+        68,
+        77,
+        78,
+        84
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        50,
+        52,
+        70,
+        143,
+        144,
+        145,
+        147,
+        150,
+        156,
+        162,
+        175,
+        187
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 65,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        66,
+        75,
+        77,
+        78,
+        84,
+        86,
+        87
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 26,
+      "pdf_pages_sample": [
+        50,
+        87,
+        93,
+        105,
+        106,
+        107,
+        131,
+        139,
+        143,
+        145,
+        150,
+        151
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 83,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        60,
+        66,
+        67,
+        68,
+        69,
+        70,
+        75
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 15,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        55,
+        56,
+        59,
+        81,
+        87,
+        95,
+        141,
+        159,
+        170
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        50,
+        52,
+        70,
+        150,
+        169,
+        179,
+        203,
+        204,
+        225
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 29,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        73,
+        81,
+        87,
+        94,
+        95,
+        126
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        50,
+        81,
+        87,
+        142,
+        150,
+        174,
+        179,
+        219,
+        224,
+        225,
+        234
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 33,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        59,
+        70,
+        73,
+        87,
+        94,
+        95
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        50,
+        52,
+        145,
+        146,
+        147,
+        148
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 41,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        66,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        50,
+        53,
+        81,
+        87,
+        107,
+        131,
+        135,
+        145,
+        146,
+        148,
+        166,
+        173
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 47,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        55,
+        56,
+        59,
+        66,
+        68,
+        76,
+        78,
+        79
+      ]
+    },
+    {
+      "source": "concept:war",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 20,
+      "pdf_pages_sample": [
+        50,
+        52,
+        137,
+        143,
+        145,
+        146,
+        147,
+        148,
+        150,
+        156,
+        157,
+        179
+      ]
+    },
+    {
+      "source": "concept:war",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 17,
+      "pdf_pages_sample": [
+        50,
+        143,
+        145,
+        146,
+        148,
+        150,
+        156,
+        179,
+        187,
+        188,
+        225,
+        226
+      ]
+    },
+    {
+      "source": "concept:war",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 23,
+      "pdf_pages_sample": [
+        50,
+        52,
+        70,
+        137,
+        143,
+        144,
+        146,
+        147,
+        148,
+        150,
+        155,
+        156
+      ]
+    },
+    {
+      "source": "concept:life",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 46,
+      "pdf_pages_sample": [
+        50,
+        53,
+        81,
+        87,
+        93,
+        98,
+        105,
+        106,
+        107,
+        122,
+        131,
+        135
+      ]
+    },
+    {
+      "source": "concept:life",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 93,
+      "pdf_pages_sample": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        66,
+        72,
+        73,
+        75,
+        78
+      ]
+    },
+    {
+      "source": "concept:death",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 41,
+      "pdf_pages_sample": [
+        50,
+        53,
+        87,
+        93,
+        98,
+        105,
+        106,
+        107,
+        122,
+        131,
+        139,
+        142
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 86,
+      "pdf_pages_sample": [
+        51,
+        53,
+        55,
+        56,
+        59,
+        65,
+        66,
+        68,
+        69,
+        71,
+        76,
+        77
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 85,
+      "pdf_pages_sample": [
+        51,
+        53,
+        55,
+        56,
+        59,
+        66,
+        68,
+        69,
+        71,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 51,
+      "pdf_pages_sample": [
+        51,
+        55,
+        56,
+        65,
+        66,
+        68,
+        69,
+        77,
+        78,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 22,
+      "pdf_pages_sample": [
+        51,
+        55,
+        56,
+        59,
+        81,
+        87,
+        94,
+        95,
+        126,
+        141,
+        159,
+        170
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 53,
+      "pdf_pages_sample": [
+        51,
+        53,
+        55,
+        56,
+        59,
+        65,
+        66,
+        68,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 54,
+      "pdf_pages_sample": [
+        51,
+        53,
+        55,
+        56,
+        66,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        86
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 69,
+      "pdf_pages_sample": [
+        51,
+        53,
+        55,
+        56,
+        59,
+        66,
+        68,
+        69,
+        76,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 21,
+      "pdf_pages_sample": [
+        53,
+        81,
+        87,
+        107,
+        122,
+        131,
+        135,
+        145,
+        146,
+        148,
+        166,
+        173
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 63,
+      "pdf_pages_sample": [
+        54,
+        66,
+        69,
+        70,
+        71,
+        72,
+        73,
+        78,
+        79,
+        80,
+        82,
+        86
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 63,
+      "pdf_pages_sample": [
+        54,
+        66,
+        69,
+        70,
+        71,
+        72,
+        73,
+        78,
+        79,
+        80,
+        82,
+        86
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        54,
+        70,
+        73,
+        87,
+        94,
+        126,
+        141,
+        154,
+        169,
+        180,
+        204,
+        205
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 34,
+      "pdf_pages_sample": [
+        54,
+        66,
+        72,
+        73,
+        78,
+        79,
+        80,
+        82,
+        86,
+        87,
+        94,
+        98
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 50,
+      "pdf_pages_sample": [
+        54,
+        66,
+        69,
+        70,
+        72,
+        73,
+        78,
+        79,
+        80,
+        82,
+        87,
+        89
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:wu-wei",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        55,
+        72,
+        74,
+        92,
+        95,
+        142,
+        156,
+        160,
+        161,
+        174,
+        182,
+        183
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:wu",
+      "type": "cooccurs_in_commentary",
+      "weight": 39,
+      "pdf_pages_sample": [
+        55,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        75,
+        77,
+        85,
+        87,
+        89
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:weakness",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        92,
+        106,
+        125,
+        132,
+        143,
+        150,
+        170,
+        175
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 50,
+      "pdf_pages_sample": [
+        55,
+        65,
+        68,
+        75,
+        76,
+        77,
+        79,
+        81,
+        85,
+        87,
+        95,
+        97
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:wu-wei",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        55,
+        72,
+        74,
+        92,
+        95,
+        142,
+        156,
+        160,
+        161,
+        174,
+        182,
+        183
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:wu",
+      "type": "cooccurs_in_commentary",
+      "weight": 38,
+      "pdf_pages_sample": [
+        55,
+        66,
+        67,
+        68,
+        69,
+        70,
+        75,
+        77,
+        85,
+        87,
+        89,
+        93
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:weakness",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        92,
+        106,
+        125,
+        132,
+        143,
+        150,
+        170,
+        175
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 49,
+      "pdf_pages_sample": [
+        55,
+        68,
+        75,
+        76,
+        77,
+        79,
+        81,
+        85,
+        87,
+        95,
+        97,
+        107
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:yu",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        55,
+        92,
+        156,
+        160,
+        161,
+        174,
+        225
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:peace",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        55,
+        74,
+        95,
+        142,
+        174,
+        205,
+        225
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        55,
+        95,
+        201,
+        216,
+        217
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        55,
+        95,
+        142,
+        182,
+        184,
+        216
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        55,
+        72,
+        92,
+        95,
+        156,
+        174,
+        201,
+        205
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 16,
+      "pdf_pages_sample": [
+        55,
+        72,
+        92,
+        95,
+        142,
+        156,
+        160,
+        161,
+        174,
+        182,
+        183,
+        184
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:yu",
+      "type": "cooccurs_in_commentary",
+      "weight": 39,
+      "pdf_pages_sample": [
+        55,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        75,
+        77,
+        85,
+        87,
+        89
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:peace",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        55,
+        70,
+        87,
+        141,
+        174
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:weakness",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        55,
+        66,
+        85,
+        106,
+        132,
+        175
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        55,
+        65,
+        66,
+        68,
+        77,
+        85,
+        87,
+        89,
+        110,
+        131,
+        133,
+        141
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 21,
+      "pdf_pages_sample": [
+        55,
+        65,
+        66,
+        68,
+        69,
+        77,
+        85,
+        87,
+        89,
+        110,
+        124,
+        131
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        55,
+        65,
+        68,
+        75,
+        77,
+        85,
+        87,
+        97,
+        109,
+        110,
+        117,
+        124
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 20,
+      "pdf_pages_sample": [
+        55,
+        66,
+        75,
+        77,
+        87,
+        93,
+        106,
+        109,
+        110,
+        117,
+        131,
+        133
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 29,
+      "pdf_pages_sample": [
+        55,
+        66,
+        67,
+        68,
+        69,
+        70,
+        75,
+        85,
+        87,
+        89,
+        93,
+        96
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:weakness",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        92,
+        106,
+        132,
+        143,
+        150,
+        170,
+        175,
+        187
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 26,
+      "pdf_pages_sample": [
+        55,
+        65,
+        68,
+        75,
+        77,
+        85,
+        87,
+        97,
+        107,
+        109,
+        110,
+        112
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:weakness",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        55,
+        56,
+        150,
+        170,
+        239
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        55,
+        81,
+        87,
+        95,
+        142,
+        169,
+        219,
+        244
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        125,
+        170,
+        213
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        92,
+        125,
+        170,
+        175,
+        236,
+        237,
+        239
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        55,
+        85,
+        132,
+        143,
+        181
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        92,
+        106,
+        125,
+        143,
+        150,
+        187,
+        236,
+        237,
+        239
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        55,
+        56,
+        66,
+        85,
+        92,
+        106,
+        125,
+        132,
+        143,
+        150,
+        181,
+        187
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 24,
+      "pdf_pages_sample": [
+        55,
+        65,
+        68,
+        76,
+        77,
+        79,
+        81,
+        85,
+        87,
+        95,
+        107,
+        110
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 28,
+      "pdf_pages_sample": [
+        55,
+        65,
+        68,
+        76,
+        77,
+        79,
+        81,
+        85,
+        87,
+        95,
+        107,
+        108
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 29,
+      "pdf_pages_sample": [
+        55,
+        75,
+        77,
+        79,
+        81,
+        87,
+        95,
+        107,
+        108,
+        109,
+        110,
+        112
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 41,
+      "pdf_pages_sample": [
+        55,
+        68,
+        75,
+        76,
+        79,
+        85,
+        87,
+        95,
+        97,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        56,
+        68,
+        76,
+        77,
+        84,
+        85,
+        88,
+        89,
+        94,
+        105,
+        106,
+        156
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        56,
+        68,
+        76,
+        77,
+        84,
+        85,
+        88,
+        89,
+        94,
+        105,
+        106,
+        156
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 13,
+      "pdf_pages_sample": [
+        56,
+        68,
+        77,
+        84,
+        85,
+        88,
+        89,
+        94,
+        105,
+        106,
+        156,
+        175
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        56,
+        94,
+        210,
+        221,
+        239
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        56,
+        85,
+        106,
+        175,
+        181,
+        239
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        56,
+        68,
+        76,
+        77,
+        84,
+        85,
+        88,
+        89
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        56,
+        68,
+        76,
+        77,
+        85,
+        89,
+        94,
+        175,
+        210,
+        221,
+        239
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        56,
+        77,
+        84,
+        94,
+        105,
+        106,
+        156,
+        157,
+        178,
+        221,
+        239
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 16,
+      "pdf_pages_sample": [
+        56,
+        68,
+        76,
+        84,
+        85,
+        89,
+        94,
+        105,
+        106,
+        156,
+        157,
+        178
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 28,
+      "pdf_pages_sample": [
+        65,
+        67,
+        68,
+        72,
+        73,
+        74,
+        98,
+        116,
+        152,
+        156,
+        157,
+        158
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        65,
+        67,
+        68,
+        152,
+        156,
+        180,
+        219,
+        223
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        65,
+        68,
+        159,
+        217,
+        218,
+        220
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        65,
+        68,
+        159,
+        180,
+        218,
+        219,
+        220,
+        221
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        65,
+        68,
+        116,
+        152,
+        219,
+        220,
+        243
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        66,
+        69,
+        70,
+        87,
+        89,
+        124,
+        141,
+        164,
+        165,
+        175
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 33,
+      "pdf_pages_sample": [
+        66,
+        69,
+        70,
+        78,
+        86,
+        87,
+        88,
+        89,
+        94,
+        99,
+        112,
+        118
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        66,
+        78,
+        79,
+        80,
+        82,
+        86,
+        87,
+        88,
+        89,
+        134,
+        141,
+        164
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 33,
+      "pdf_pages_sample": [
+        66,
+        69,
+        71,
+        78,
+        79,
+        80,
+        82,
+        86,
+        87,
+        89,
+        94,
+        99
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 27,
+      "pdf_pages_sample": [
+        67,
+        68,
+        72,
+        73,
+        74,
+        98,
+        116,
+        152,
+        156,
+        157,
+        158,
+        159
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        67,
+        68,
+        72,
+        73,
+        98,
+        116,
+        156,
+        157,
+        180,
+        194,
+        196,
+        199
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 63,
+      "pdf_pages_sample": [
+        68,
+        72,
+        73,
+        74,
+        87,
+        93,
+        95,
+        111,
+        112,
+        113,
+        115,
+        116
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 63,
+      "pdf_pages_sample": [
+        68,
+        72,
+        73,
+        74,
+        87,
+        93,
+        95,
+        111,
+        112,
+        113,
+        115,
+        116
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:water",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        68,
+        77,
+        85,
+        89,
+        106,
+        175
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        68,
+        87,
+        93,
+        133,
+        141,
+        165,
+        174
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 25,
+      "pdf_pages_sample": [
+        68,
+        87,
+        93,
+        111,
+        112,
+        113,
+        126,
+        128,
+        133,
+        134,
+        141,
+        143
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:return",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        68,
+        76,
+        77,
+        85,
+        181
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        68,
+        87,
+        95,
+        128,
+        133,
+        134,
+        135,
+        141,
+        148,
+        165,
+        201,
+        206
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 24,
+      "pdf_pages_sample": [
+        68,
+        87,
+        95,
+        111,
+        126,
+        128,
+        133,
+        134,
+        135,
+        141,
+        148,
+        165
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        68,
+        87,
+        95,
+        112,
+        116,
+        128,
+        133,
+        142,
+        143,
+        212,
+        216,
+        219
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 20,
+      "pdf_pages_sample": [
+        68,
+        72,
+        73,
+        74,
+        116,
+        156,
+        157,
+        158,
+        179,
+        194,
+        196,
+        204
+      ]
+    },
+    {
+      "source": "concept:government",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 48,
+      "pdf_pages_sample": [
+        68,
+        72,
+        73,
+        87,
+        93,
+        95,
+        111,
+        113,
+        115,
+        116,
+        126,
+        128
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        70,
+        137,
+        162,
+        169,
+        175,
+        188,
+        204,
+        227
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        72,
+        182,
+        183,
+        184,
+        205,
+        214,
+        217
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 13,
+      "pdf_pages_sample": [
+        72,
+        74,
+        95,
+        142,
+        156,
+        161,
+        174,
+        183,
+        201,
+        205,
+        214,
+        216
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        72,
+        73,
+        98,
+        180,
+        204,
+        217,
+        219,
+        220,
+        221,
+        230
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 16,
+      "pdf_pages_sample": [
+        72,
+        73,
+        98,
+        116,
+        156,
+        157,
+        179,
+        194,
+        199,
+        219,
+        220,
+        221
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 27,
+      "pdf_pages_sample": [
+        72,
+        73,
+        87,
+        112,
+        115,
+        126,
+        134,
+        136,
+        141,
+        154,
+        165,
+        183
+      ]
+    },
+    {
+      "source": "concept:government",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 38,
+      "pdf_pages_sample": [
+        72,
+        73,
+        87,
+        93,
+        95,
+        112,
+        116,
+        126,
+        128,
+        133,
+        135,
+        141
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        73,
+        74,
+        158,
+        159,
+        179,
+        180,
+        204,
+        219,
+        221
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 20,
+      "pdf_pages_sample": [
+        73,
+        74,
+        87,
+        95,
+        126,
+        141,
+        142,
+        153,
+        154,
+        158,
+        174,
+        179
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:simplicity",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        74,
+        104,
+        106,
+        115,
+        116,
+        138,
+        139,
+        140,
+        147,
+        148,
+        150,
+        157
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        74,
+        76,
+        77,
+        82,
+        83,
+        96,
+        97,
+        108,
+        109,
+        119,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:simplicity",
+      "type": "cooccurs_in_commentary",
+      "weight": 19,
+      "pdf_pages_sample": [
+        74,
+        104,
+        106,
+        115,
+        116,
+        138,
+        139,
+        140,
+        147,
+        148,
+        150,
+        157
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        74,
+        76,
+        77,
+        82,
+        83,
+        96,
+        97,
+        108,
+        109,
+        119,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:simplicity",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        74,
+        150,
+        158,
+        159,
+        204,
+        234,
+        245
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:desire",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        74,
+        116,
+        157,
+        158,
+        159,
+        204,
+        223
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        74,
+        115,
+        116,
+        148,
+        157,
+        158,
+        195,
+        204,
+        223,
+        234
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        76,
+        77,
+        82,
+        83,
+        119
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        76,
+        77,
+        82,
+        83,
+        108,
+        119
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        76,
+        77,
+        97,
+        108,
+        109,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:emptiness",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        76,
+        82,
+        83,
+        96,
+        97,
+        108,
+        109,
+        119,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        77,
+        96,
+        97,
+        109,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        77,
+        96,
+        97,
+        109,
+        119,
+        132,
+        139
+      ]
+    },
+    {
+      "source": "concept:life",
+      "target": "concept:emptiness",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        77,
+        82,
+        108,
+        109,
+        139
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        79,
+        87,
+        112,
+        124,
+        140,
+        164,
+        169,
+        182,
+        184,
+        219,
+        220
+      ]
+    },
+    {
+      "source": "concept:return",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        81,
+        87,
+        107,
+        139,
+        142,
+        143,
+        146,
+        166,
+        219,
+        233,
+        243
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:ziran",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        82,
+        101,
+        111,
+        112,
+        131,
+        133,
+        134,
+        148,
+        150,
+        189,
+        203,
+        217
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:ziran",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        82,
+        101,
+        111,
+        112,
+        131,
+        133,
+        134,
+        148,
+        150,
+        189,
+        203,
+        217
+      ]
+    },
+    {
+      "source": "concept:ziran",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        82,
+        131,
+        133,
+        134,
+        148,
+        217
+      ]
+    },
+    {
+      "source": "concept:ziran",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        82,
+        111,
+        131,
+        133,
+        134,
+        148
+      ]
+    },
+    {
+      "source": "concept:ziran",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        82,
+        112,
+        131,
+        133,
+        148,
+        150,
+        189
+      ]
+    },
+    {
+      "source": "concept:ziran",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        82,
+        101,
+        111,
+        131,
+        133,
+        134,
+        148,
+        150,
+        203,
+        217
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:valley",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        83,
+        84,
+        85,
+        99,
+        105,
+        106,
+        125,
+        138,
+        139,
+        147,
+        149,
+        168
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:valley",
+      "type": "cooccurs_in_commentary",
+      "weight": 14,
+      "pdf_pages_sample": [
+        83,
+        84,
+        85,
+        99,
+        105,
+        106,
+        125,
+        138,
+        139,
+        147,
+        149,
+        168
+      ]
+    },
+    {
+      "source": "concept:valley",
+      "target": "concept:earth",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        83,
+        84,
+        85,
+        125,
+        147
+      ]
+    },
+    {
+      "source": "concept:valley",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        83,
+        85,
+        99,
+        125,
+        147,
+        221
+      ]
+    },
+    {
+      "source": "concept:valley",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 13,
+      "pdf_pages_sample": [
+        83,
+        84,
+        85,
+        99,
+        105,
+        106,
+        125,
+        138,
+        139,
+        147,
+        149,
+        169
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:valley",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        84,
+        85,
+        99,
+        105,
+        106,
+        138,
+        139,
+        147,
+        168
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:valley",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        84,
+        85,
+        105,
+        106,
+        221
+      ]
+    },
+    {
+      "source": "concept:valley",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        84,
+        99,
+        105,
+        106,
+        125,
+        139,
+        147,
+        149,
+        221
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        87,
+        90,
+        109,
+        125,
+        164,
+        165,
+        170,
+        172,
+        173,
+        174,
+        217,
+        223
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 18,
+      "pdf_pages_sample": [
+        87,
+        90,
+        109,
+        125,
+        164,
+        165,
+        170,
+        172,
+        173,
+        174,
+        217,
+        223
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        87,
+        93,
+        106,
+        131,
+        139,
+        166,
+        173,
+        174
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        87,
+        109,
+        164,
+        165,
+        172,
+        173,
+        174
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        87,
+        109,
+        164,
+        165,
+        170,
+        172,
+        173,
+        174,
+        223,
+        225,
+        229,
+        241
+      ]
+    },
+    {
+      "source": "concept:peace",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        87,
+        170,
+        174,
+        225,
+        239,
+        241
+      ]
+    },
+    {
+      "source": "concept:earth",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        87,
+        125,
+        164,
+        165,
+        170,
+        172,
+        173,
+        217,
+        241
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 12,
+      "pdf_pages_sample": [
+        87,
+        125,
+        164,
+        165,
+        170,
+        172,
+        173,
+        225,
+        232,
+        239,
+        240,
+        241
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        87,
+        98,
+        186,
+        188,
+        197,
+        219,
+        227
+      ]
+    },
+    {
+      "source": "concept:sage",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        87,
+        164,
+        165,
+        217,
+        229,
+        239,
+        240,
+        241
+      ]
+    },
+    {
+      "source": "concept:government",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 20,
+      "pdf_pages_sample": [
+        87,
+        93,
+        135,
+        142,
+        143,
+        148,
+        156,
+        174,
+        179,
+        194,
+        197,
+        201
+      ]
+    },
+    {
+      "source": "concept:government",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        87,
+        165,
+        174,
+        217,
+        223,
+        240
+      ]
+    },
+    {
+      "source": "concept:life",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 10,
+      "pdf_pages_sample": [
+        87,
+        109,
+        125,
+        165,
+        173,
+        174,
+        223,
+        229,
+        232,
+        239
+      ]
+    },
+    {
+      "source": "concept:death",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        87,
+        173,
+        174,
+        223,
+        225,
+        232
+      ]
+    },
+    {
+      "source": "concept:unity",
+      "target": "concept:humility",
+      "type": "cooccurs_in_commentary",
+      "weight": 16,
+      "pdf_pages_sample": [
+        87,
+        109,
+        125,
+        164,
+        165,
+        172,
+        173,
+        174,
+        217,
+        223,
+        225,
+        229
+      ]
+    },
+    {
+      "source": "concept:water",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        88,
+        89,
+        94,
+        175,
+        221,
+        239
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:non-contention",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        89,
+        91,
+        126,
+        127,
+        128,
+        225
+      ]
+    },
+    {
+      "source": "concept:Te",
+      "target": "concept:non-contention",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        89,
+        91,
+        126,
+        127,
+        128,
+        225
+      ]
+    },
+    {
+      "source": "concept:non-contention",
+      "target": "concept:heaven",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        89,
+        91,
+        126,
+        127,
+        128,
+        225
+      ]
+    },
+    {
+      "source": "concept:non-contention",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        89,
+        91,
+        126,
+        127,
+        128,
+        225
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        98,
+        156,
+        179,
+        194,
+        219,
+        223,
+        235,
+        243
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:ziran",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        101,
+        111,
+        112,
+        131,
+        133,
+        134,
+        150,
+        189
+      ]
+    },
+    {
+      "source": "concept:yu",
+      "target": "concept:simplicity",
+      "type": "cooccurs_in_commentary",
+      "weight": 8,
+      "pdf_pages_sample": [
+        104,
+        106,
+        138,
+        139,
+        147,
+        150,
+        195,
+        223
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        106,
+        143,
+        150,
+        187,
+        236,
+        237
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:life",
+      "type": "cooccurs_in_commentary",
+      "weight": 11,
+      "pdf_pages_sample": [
+        106,
+        116,
+        139,
+        147,
+        148,
+        150,
+        157,
+        195,
+        223,
+        234,
+        245
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 6,
+      "pdf_pages_sample": [
+        106,
+        139,
+        148,
+        150,
+        223,
+        234
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:unity",
+      "type": "cooccurs_in_commentary",
+      "weight": 13,
+      "pdf_pages_sample": [
+        106,
+        115,
+        116,
+        138,
+        139,
+        140,
+        147,
+        148,
+        150,
+        157,
+        223,
+        234
+      ]
+    },
+    {
+      "source": "concept:ziran",
+      "target": "concept:government",
+      "type": "cooccurs_in_commentary",
+      "weight": 7,
+      "pdf_pages_sample": [
+        111,
+        112,
+        133,
+        134,
+        148,
+        203,
+        217
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:sage",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        115,
+        138,
+        140,
+        204,
+        245
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:death",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        142,
+        156,
+        174,
+        201,
+        225
+      ]
+    },
+    {
+      "source": "concept:weakness",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        143,
+        150,
+        175,
+        187,
+        237
+      ]
+    },
+    {
+      "source": "concept:government",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        143,
+        148,
+        156,
+        157,
+        179,
+        203,
+        204,
+        226,
+        227
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 9,
+      "pdf_pages_sample": [
+        145,
+        146,
+        147,
+        148,
+        175,
+        225,
+        227,
+        232,
+        237
+      ]
+    },
+    {
+      "source": "concept:heaven",
+      "target": "concept:simplicity",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        147,
+        148,
+        159,
+        234,
+        245
+      ]
+    },
+    {
+      "source": "concept:simplicity",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        147,
+        148,
+        150,
+        157,
+        204
+      ]
+    },
+    {
+      "source": "concept:desire",
+      "target": "concept:war",
+      "type": "cooccurs_in_commentary",
+      "weight": 5,
+      "pdf_pages_sample": [
+        156,
+        157,
+        179,
+        204,
+        243
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:peace",
+      "type": "foundation_of",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:weakness",
+      "type": "operates_through",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:non-contention",
+      "type": "operates_through",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:Tao",
+      "target": "concept:earth",
+      "type": "dwells_in",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:wu",
+      "target": "concept:Tao",
+      "type": "characterizes",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:wu-wei",
+      "target": "concept:government",
+      "type": "political_principle",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    },
+    {
+      "source": "concept:humility",
+      "target": "concept:weakness",
+      "type": "related_practice",
+      "weight": null,
+      "source_pdf_pages": [
+        12,
+        29
+      ]
+    }
+  ]
+}
