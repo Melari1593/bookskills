@@ -46,6 +46,12 @@ El libro es de alrededor del año 2000. 25 conceptos llevan un recuadro «Atenci
 
 El PDF fuente es un OCR de mala calidad: las cifras clínicas ilegibles se omitieron en lugar de reconstruirse. El libro no numera sus secciones, así que la numeración es propia del grafo. Las conexiones son una interpretación pedagógica.
 
+## Grafo de HBR's 10 Must Reads for Business Students
+
+[`grafos/hbr-10-must-reads/grafo_hbr_10_must_reads.html`](grafos/hbr-10-must-reads/grafo_hbr_10_must_reads.html) es el mapa interactivo de *HBR's 10 Must Reads for Business Students* (Harvard Business Review Press, 2023): 12 artículos (10 más 2 bonus), 55 secciones, 45 ideas clave y 44 prerrequisitos, en 4 bloques (gestionarte a ti mismo; comunicación e influencia; fortalezas, feedback e identidad; liderazgo, ética y propósito). Tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_hbr_10_must_reads.json`](grafos/hbr-10-must-reads/grafo_hbr_10_must_reads.json).
+
+Los títulos de artículos y secciones van en inglés, como en el libro; los resúmenes están en español y redactados con palabras propias. El libro no numera las secciones, así que la numeración es propia del grafo; las páginas son las de inicio de cada artículo según el índice analítico. Los artículos son independientes entre sí: las conexiones son una interpretación pedagógica de cómo se complementan los temas.
+
 ## Aplicación Python de Graphify
 
 [`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.

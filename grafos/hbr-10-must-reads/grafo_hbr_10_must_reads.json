@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "HBR's 10 Must Reads for Business Students — grafo",
+    "subtitle": "Harvard Business Review Press, 2023: 12 artículos (10 + bonus), sus secciones, ideas clave y cómo se conectan",
+    "chapterLabel": "Artículo",
+    "sectionLabel": "Sección",
+    "pageLabel": "pág.",
+    "itemLabel": "Idea clave",
+    "itemLabelPlural": "Ideas clave",
+    "searchHint": "Buscar: persuasión, feedback, propósito…"
+  },
+  "blocks": {
+    "vida": { "name": "Gestionarte a ti mismo" },
+    "comu": { "name": "Comunicación e influencia" },
+    "desa": { "name": "Fortalezas, feedback e identidad" },
+    "lide": { "name": "Liderazgo, ética y propósito" }
+  },
+  "chapters": [
+    {
+      "num": 1, "title": "Manage Your Work, Manage Your Life", "page": 1, "block": "vida",
+      "summary": "Groysberg y Abrahams (2014): con entrevistas a casi 4.000 ejecutivos muestran que el equilibrio trabajo-vida no se logra haciendo malabares, sino eligiendo deliberadamente qué oportunidades tomar en cada ámbito a lo largo de los años.",
+      "sections": [
+        { "num": "1.1", "title": "Defining Success for Yourself", "items": ["exito_propio"] },
+        { "num": "1.2", "title": "Managing Technology", "items": ["limites_tecnologia"] },
+        { "num": "1.3", "title": "Building Support Networks", "items": ["red_apoyo"] },
+        { "num": "1.4", "title": "Traveling or Relocating Selectively" },
+        { "num": "1.5", "title": "Collaborating with Your Partner", "items": ["pareja_aliada"] },
+        { "num": "1.6", "title": "What Tomorrow's Leaders Think" }
+      ]
+    },
+    {
+      "num": 2, "title": "Harnessing the Science of Persuasion", "page": 17, "block": "comu",
+      "summary": "Cialdini (2001): la persuasión no es un don de los carismáticos; sigue seis principios comprobados experimentalmente que cualquier líder puede aprender y aplicar con ética.",
+      "sections": [
+        { "num": "2.1", "title": "The Principle of Liking", "items": ["simpatia"] },
+        { "num": "2.2", "title": "The Principle of Reciprocity", "items": ["reciprocidad"] },
+        { "num": "2.3", "title": "The Principle of Social Proof", "items": ["prueba_social"] },
+        { "num": "2.4", "title": "The Principle of Consistency", "items": ["consistencia"] },
+        { "num": "2.5", "title": "The Principle of Authority", "items": ["autoridad"] },
+        { "num": "2.6", "title": "The Principle of Scarcity", "items": ["escasez"] },
+        { "num": "2.7", "title": "Putting It All Together", "summary": "Los principios se combinan y refuerzan; usarlos para engañar destruye la confianza." }
+      ]
+    },
+    {
+      "num": 3, "title": "How to Give a Killer Presentation", "page": 35, "block": "comu",
+      "summary": "Anderson, curador de TED (2013): una charla vive o muere por la idea y la narrativa, no por el estilo; cinco claves, con recuadros de Nancy Duarte (datos y relato) y Noah Zandan (muletillas).",
+      "sections": [
+        { "num": "3.1", "title": "Frame Your Story", "items": ["enmarcar_historia"] },
+        { "num": "3.2", "title": "Find the Perfect Mix of Data and Narrative (Duarte)", "items": ["datos_relato"] },
+        { "num": "3.3", "title": "Plan Your Delivery", "items": ["preparar_entrega"] },
+        { "num": "3.4", "title": "Develop Stage Presence", "items": ["presencia"] },
+        { "num": "3.5", "title": "How to Stop Saying \"Um,\" \"Ah,\" and \"You Know\" (Zandan)", "items": ["muletillas"] },
+        { "num": "3.6", "title": "Plan the Multimedia" },
+        { "num": "3.7", "title": "Putting It Together", "summary": "Juega a tus fortalezas y sé auténtico." }
+      ]
+    },
+    {
+      "num": 4, "title": "The Science of Strong Business Writing", "page": 49, "block": "comu",
+      "summary": "Birchard (2021): la neurociencia muestra que ciertos rasgos del texto activan el circuito de recompensa del lector; ocho \"S\" para escribir correos e informes que se leen y se recuerdan.",
+      "sections": [
+        { "num": "4.1", "title": "Simplicity", "items": ["circuito_recompensa", "ocho_s"] },
+        { "num": "4.2", "title": "Specificity" },
+        { "num": "4.3", "title": "Surprise" },
+        { "num": "4.4", "title": "Stirring Language" },
+        { "num": "4.5", "title": "Seductiveness" },
+        { "num": "4.6", "title": "Smart Thinking" },
+        { "num": "4.7", "title": "Social Content" },
+        { "num": "4.8", "title": "Storytelling", "items": ["relato_escrito"] }
+      ]
+    },
+    {
+      "num": 5, "title": "How High Achievers Overcome Their Anxiety", "page": 59, "block": "vida",
+      "summary": "Aarons-Mele (2023): muchas personas muy exitosas viven con ansiedad; reconocer las trampas de pensamiento y usar estrategias concretas para salir de ellas permite rendir sin desgastarse.",
+      "sections": [
+        { "num": "5.1", "title": "Thought Traps and Escape Hatches", "items": ["trampas_pensamiento"] },
+        { "num": "5.2", "title": "Dodging the Traps", "items": ["salidas_trampas"] },
+        { "num": "5.3", "title": "Your Potential, Realized" }
+      ]
+    },
+    {
+      "num": 6, "title": "How to Play to Your Strengths", "page": 71, "block": "desa",
+      "summary": "Roberts, Spreitzer, Dutton, Quinn, Heaphy y Caza (2005): el ejercicio Reflected Best Self pide a otros ejemplos de cuando estuviste en tu mejor versión para descubrir tus fortalezas y rediseñar tu trabajo en torno a ellas.",
+      "sections": [
+        { "num": "6.1", "title": "Step 1: Identify Respondents and Ask for Feedback", "items": ["rbs"] },
+        { "num": "6.2", "title": "Step 2: Recognize Patterns", "items": ["patrones_fortaleza"] },
+        { "num": "6.3", "title": "Step 3: Compose Your Self-Portrait", "items": ["autorretrato"] },
+        { "num": "6.4", "title": "Step 4: Redesign Your Job", "items": ["redisenar_trabajo"] },
+        { "num": "6.5", "title": "Beyond Good Enough" }
+      ]
+    },
+    {
+      "num": 7, "title": "You're Not Powerless in the Face of Imposter Syndrome", "page": 83, "block": "desa",
+      "summary": "Dorsey (2023): para profesionales de grupos subrepresentados, entender el síndrome del impostor no basta; el \"moxie\" (voluntad, autodisciplina y persistencia) se puede cultivar con cuatro tácticas.",
+      "sections": [
+        { "num": "7.1", "title": "Moxie: A Working Definition", "items": ["moxie"] },
+        { "num": "7.2", "title": "Making Moxie Your Superpower", "items": ["tacticas_moxie"] }
+      ]
+    },
+    {
+      "num": 8, "title": "The Feedback Fallacy", "page": 91, "block": "desa",
+      "summary": "Buckingham y Goodall (2019): decirle a la gente cómo mejorar casi nunca la lleva a la excelencia; somos malos evaluadores, la crítica bloquea el aprendizaje y la excelencia es individual. Mejor señalar lo que sí funciona.",
+      "sections": [
+        { "num": "8.1", "title": "The Source of Truth", "items": ["evaluador_idiosincratico"] },
+        { "num": "8.2", "title": "How We Learn", "items": ["critica_aprendizaje"] },
+        { "num": "8.3", "title": "Excellence", "items": ["excelencia_idiosincratica"] },
+        { "num": "8.4", "title": "How to Help People Excel", "items": ["si_eso"] }
+      ]
+    },
+    {
+      "num": 9, "title": "The Authenticity Paradox", "page": 107, "block": "desa",
+      "summary": "Ibarra (2015): entender la autenticidad como fidelidad a un yo fijo frena a quien asume roles nuevos; los líderes crecen experimentando con estilos ajenos y aprendiendo desde fuera (outsight).",
+      "sections": [
+        { "num": "9.1", "title": "Why Leaders Struggle with Authenticity", "items": ["paradoja_autenticidad"] },
+        { "num": "9.2", "title": "A Playful Frame of Mind", "items": ["outsight", "yo_provisional"] },
+        { "num": "9.3", "title": "The Cultural Factor" }
+      ]
+    },
+    {
+      "num": 10, "title": "The C-Suite Skills That Matter Most", "page": 121, "block": "lide",
+      "summary": "Sadun, Fuller, Hansen y Neal (2022): el análisis de búsquedas de ejecutivos muestra que las empresas priorizan hoy las habilidades sociales sobre las técnicas y financieras, por la complejidad, la tecnología y la diversidad.",
+      "sections": [
+        { "num": "10.1", "title": "The Chief Reasons for Change", "items": ["habilidades_sociales", "motores_cambio"] },
+        { "num": "10.2", "title": "Other Factors" },
+        { "num": "10.3", "title": "New Areas for Focus", "items": ["evaluar_sociales"] },
+        { "num": "10.4", "title": "The Way Forward" }
+      ]
+    },
+    {
+      "num": 11, "title": "Building an Ethical Career", "page": 135, "block": "lide",
+      "summary": "Kouchaki y Smith (2020): las buenas intenciones no bastan; con humildad moral, una carrera ética se construye preparándose antes, decidiendo bien en el momento y reflexionando después.",
+      "sections": [
+        { "num": "11.1", "title": "Planning to Be Good", "items": ["humildad_moral", "espejismo_etico", "virtudes_elogio"] },
+        { "num": "11.2", "title": "Making Good Decisions", "items": ["decidir_momento"] },
+        { "num": "11.3", "title": "Reflecting After the Fact", "items": ["reflexion_moral"] }
+      ]
+    },
+    {
+      "num": 12, "title": "From Purpose to Impact", "page": 145, "block": "lide",
+      "summary": "Craig y Snook (2014): pocos líderes conocen su propósito; se descubre en la propia historia de vida, se resume en una declaración que da energía y se convierte en acción con un plan de propósito a impacto.",
+      "sections": [
+        { "num": "12.1", "title": "What Is Purpose?", "items": ["proposito_liderazgo"] },
+        { "num": "12.2", "title": "How Do You Find It?", "items": ["historia_vida", "declaracion_proposito"] },
+        { "num": "12.3", "title": "How Do You Put Your Purpose into Action?", "items": ["plan_impacto"] }
+      ]
+    }
+  ],
+  "items": {
+    "exito_propio": { "title": "Definir el éxito propio", "summary": "Decidir qué significa ganar en el trabajo y en casa, sabiendo que la definición cambia con el tiempo." },
+    "limites_tecnologia": { "title": "Límites a la tecnología", "summary": "Decidir cuándo estar conectado para que el correo y el teléfono no borren la frontera con la vida personal." },
+    "red_apoyo": { "title": "Redes de apoyo", "summary": "Equipos en el trabajo y ayuda en casa que permiten delegar y sostener los compromisos." },
+    "pareja_aliada": { "title": "La pareja como aliada", "summary": "Decisiones de carrera tomadas en conjunto, con la familia involucrada en las elecciones de trabajo." },
+    "simpatia": { "title": "Simpatía (liking)", "summary": "Seguimos más a quien se parece a nosotros y nos aprecia: buscar similitudes reales y elogiar con sinceridad." },
+    "reciprocidad": { "title": "Reciprocidad", "summary": "Tratamos a los demás como nos tratan: dar primero lo que se quiere recibir." },
+    "prueba_social": { "title": "Prueba social", "summary": "Seguimos lo que hacen personas parecidas: usar a pares como referencia para persuadir." },
+    "consistencia": { "title": "Consistencia", "summary": "Cumplimos compromisos activos, públicos y voluntarios: pedirlos por escrito." },
+    "autoridad": { "title": "Autoridad", "summary": "Atendemos a los expertos: dar a conocer la propia experiencia antes de intentar influir." },
+    "escasez": { "title": "Escasez", "summary": "Valoramos más lo único o lo que se puede perder: destacar beneficios e información exclusiva." },
+    "enmarcar_historia": { "title": "Enmarcar la historia", "summary": "Saber dónde empieza y dónde termina la charla; sin una idea que valga la pena, el estilo no la salva." },
+    "datos_relato": { "title": "Mezcla de datos y relato", "summary": "Equilibrar evidencia y narrativa para que los datos convenzan y el relato se recuerde." },
+    "preparar_entrega": { "title": "Memorizar o guion por puntos", "summary": "Elegir cómo preparar el texto y ensayarlo una y otra vez." },
+    "presencia": { "title": "Presencia en escena", "summary": "Contacto visual y naturalidad; los nervios importan menos que la historia." },
+    "muletillas": { "title": "Eliminar muletillas", "summary": "Pausas en lugar de \"este…\" o \"o sea\", con práctica y conciencia de los propios hábitos." },
+    "circuito_recompensa": { "title": "Circuito de recompensa del lector", "summary": "Ciertos rasgos del texto activan las mismas neuronas que otros estímulos placenteros." },
+    "ocho_s": { "title": "Las ocho S", "summary": "Simplicidad, especificidad, sorpresa, lenguaje evocador, seducción, ideas inteligentes, contenido social y relato." },
+    "relato_escrito": { "title": "Relato en la escritura", "summary": "Una historia, incluso breve, atrapa al lector y hace que el mensaje perdure." },
+    "trampas_pensamiento": { "title": "Trampas de pensamiento", "summary": "Patrones automáticos y sesgados: etiquetar, catastrofizar, filtrar, compararse, rumiar, razonamiento emocional, entre otros." },
+    "salidas_trampas": { "title": "Salidas de las trampas", "summary": "Estrategias para reconocer y reencuadrar esos pensamientos, como consultar a alguien de confianza." },
+    "rbs": { "title": "Reflected Best Self (RBS)", "summary": "Pedir a familia, amigos y colegas historias concretas de cuando aportaste lo mejor de ti." },
+    "patrones_fortaleza": { "title": "Patrones de fortaleza", "summary": "Buscar temas comunes en las respuestas para ver qué te hace sobresalir." },
+    "autorretrato": { "title": "Autorretrato", "summary": "Una descripción de ti en tu mejor versión, hecha con los patrones encontrados." },
+    "redisenar_trabajo": { "title": "Rediseñar el trabajo", "summary": "Ajustar tareas y roles para usar más tus fortalezas." },
+    "moxie": { "title": "Moxie", "summary": "Fuerza de voluntad, autodisciplina y persistencia frente a los obstáculos." },
+    "tacticas_moxie": { "title": "Cuatro tácticas del moxie", "summary": "Usar las fortalezas nacidas de la adversidad, darse permiso para jugar, ignorar a los detractores y saber cuándo retirarse." },
+    "evaluador_idiosincratico": { "title": "Evaluadores poco fiables", "summary": "Al calificar a otros revelamos más de nosotros mismos que de la persona evaluada." },
+    "critica_aprendizaje": { "title": "La crítica inhibe el aprendizaje", "summary": "Aprendemos más ampliando lo que ya hacemos bien que corrigiendo fallas." },
+    "excelencia_idiosincratica": { "title": "Excelencia idiosincrática", "summary": "La excelencia es propia de cada persona y no es lo opuesto al fracaso: no se puede definir de antemano." },
+    "si_eso": { "title": "\"¡Sí, eso!\"", "summary": "Detener a la persona cuando algo funciona y contarle cómo lo viviste." },
+    "paradoja_autenticidad": { "title": "Paradoja de la autenticidad", "summary": "Aferrarse a un yo fijo impide crecer en roles nuevos; sentirse impostor es parte de aprender." },
+    "outsight": { "title": "Outsight", "summary": "La perspectiva que da actuar y experimentar, en vez de buscar las respuestas solo por introspección." },
+    "yo_provisional": { "title": "Yo provisional", "summary": "Probar estilos de modelos diversos, buscar mejorar y no aferrarse a la propia historia." },
+    "habilidades_sociales": { "title": "Habilidades sociales en la alta dirección", "summary": "Escuchar, comunicar y relacionarse con muchos públicos pesan hoy más que el pedigrí técnico o financiero." },
+    "motores_cambio": { "title": "Motores del cambio", "summary": "Tamaño y complejidad de la empresa, tecnología y diversidad de la fuerza de trabajo y de los grupos de interés." },
+    "evaluar_sociales": { "title": "Evaluar y desarrollar habilidades sociales", "summary": "Las empresas deben aprender a medirlas al contratar e integrarlas en la gestión del talento." },
+    "humildad_moral": { "title": "Humildad moral", "summary": "Reconocer que cualquiera puede transgredir sus valores si no está atento." },
+    "espejismo_etico": { "title": "Espejismo ético", "summary": "Sobrestimar lo virtuoso que será nuestro yo futuro ante un dilema." },
+    "virtudes_elogio": { "title": "Virtudes de currículum y de elogio fúnebre", "summary": "Pensar la carrera como contribución a otros y no solo como logro propio." },
+    "decidir_momento": { "title": "Decidir bien en el momento", "summary": "Detectar la dimensión ética, evitar racionalizaciones y resolver dilemas entre lealtades." },
+    "reflexion_moral": { "title": "Reflexión posterior", "summary": "Aprender de los aciertos y las faltas morales en lugar de justificarlas." },
+    "proposito_liderazgo": { "title": "Propósito de liderazgo", "summary": "Lo que te define y te da energía, distinto de la misión de la empresa." },
+    "historia_vida": { "title": "Minar la historia de vida", "summary": "Buscar en la infancia, los retos y las pasiones los temas que se repiten." },
+    "declaracion_proposito": { "title": "Declaración de propósito", "summary": "Una frase corta, en palabras propias, que impulsa a actuar." },
+    "plan_impacto": { "title": "Plan de propósito a impacto", "summary": "Metas grandes primero y luego objetivos más cercanos y concretos, con lenguaje propio." }
+  },
+  "requires": {
+    "chapters": {
+      "4": [3],
+      "7": [5, 6],
+      "8": [6],
+      "9": [6],
+      "10": [2],
+      "12": [1, 6]
+    },
+    "sections": {
+      "4.8": ["3.1"],
+      "7.2": ["6.4", "5.2"],
+      "8.4": ["6.1"],
+      "9.2": ["7.1"],
+      "10.3": ["2.7"],
+      "12.2": ["1.1", "6.3"],
+      "12.3": ["1.1"]
+    },
+    "items": {
+      "relato_escrito": ["enmarcar_historia", "ocho_s"],
+      "ocho_s": ["circuito_recompensa"],
+      "salidas_trampas": ["trampas_pensamiento"],
+      "patrones_fortaleza": ["rbs"],
+      "autorretrato": ["patrones_fortaleza"],
+      "redisenar_trabajo": ["autorretrato"],
+      "tacticas_moxie": ["moxie", "salidas_trampas"],
+      "critica_aprendizaje": ["evaluador_idiosincratico"],
+      "excelencia_idiosincratica": ["critica_aprendizaje"],
+      "si_eso": ["excelencia_idiosincratica", "rbs"],
+      "outsight": ["paradoja_autenticidad"],
+      "yo_provisional": ["outsight"],
+      "evaluar_sociales": ["habilidades_sociales", "motores_cambio"],
+      "habilidades_sociales": ["simpatia"],
+      "espejismo_etico": ["humildad_moral"],
+      "decidir_momento": ["espejismo_etico"],
+      "reflexion_moral": ["decidir_momento"],
+      "virtudes_elogio": ["exito_propio"],
+      "historia_vida": ["proposito_liderazgo", "autorretrato"],
+      "declaracion_proposito": ["historia_vida"],
+      "plan_impacto": ["declaracion_proposito", "exito_propio"]
+    }
+  }
+}
