@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "title": "Super Powders",
+    "author": "Katrine van Wyk",
+    "year": 2019,
+    "source": "User-provided EPUB",
+    "note": "Graph of book structure and 25 profiled substances. No independent clinical validation."
+  },
+  "nodes": [
+    {
+      "id": "book",
+      "type": "book",
+      "label": "Super Powders",
+      "author": "Katrine van Wyk",
+      "year": 2019
+    },
+    {
+      "id": "chapter:0",
+      "type": "chapter",
+      "label": "Why We Need Adaptogens"
+    },
+    {
+      "id": "chapter:1",
+      "type": "chapter",
+      "label": "What Are Adaptogens?"
+    },
+    {
+      "id": "chapter:2",
+      "type": "chapter",
+      "label": "How to Find the Right Adaptogenic Super Powder"
+    },
+    {
+      "id": "chapter:3",
+      "type": "chapter",
+      "label": "What to Know Before You Start Taking Adaptogens Safely"
+    },
+    {
+      "id": "chapter:4",
+      "type": "chapter",
+      "label": "Your Adrenals, Their Stress Response, and Chronic Stress"
+    },
+    {
+      "id": "chapter:5",
+      "type": "chapter",
+      "label": "Adaptogens and Mushrooms"
+    },
+    {
+      "id": "chapter:6",
+      "type": "chapter",
+      "label": "Lattes and Drinks"
+    },
+    {
+      "id": "chapter:7",
+      "type": "chapter",
+      "label": "Tonics"
+    },
+    {
+      "id": "chapter:8",
+      "type": "chapter",
+      "label": "Treats"
+    },
+    {
+      "id": "chapter:9",
+      "type": "chapter",
+      "label": "Good Morning Recipes"
+    },
+    {
+      "id": "chapter:10",
+      "type": "chapter",
+      "label": "Broths, Sauces, and Blends"
+    },
+    {
+      "id": "ingredient:0",
+      "type": "ingredient",
+      "label": "Amla"
+    },
+    {
+      "id": "ingredient:1",
+      "type": "ingredient",
+      "label": "Ashitaba"
+    },
+    {
+      "id": "ingredient:2",
+      "type": "ingredient",
+      "label": "Ashwagandha"
+    },
+    {
+      "id": "ingredient:3",
+      "type": "ingredient",
+      "label": "Astragalus"
+    },
+    {
+      "id": "ingredient:4",
+      "type": "ingredient",
+      "label": "Chaga"
+    },
+    {
+      "id": "ingredient:5",
+      "type": "ingredient",
+      "label": "Cordyceps"
+    },
+    {
+      "id": "ingredient:6",
+      "type": "ingredient",
+      "label": "Eleuthero"
+    },
+    {
+      "id": "ingredient:7",
+      "type": "ingredient",
+      "label": "Goji"
+    },
+    {
+      "id": "ingredient:8",
+      "type": "ingredient",
+      "label": "Hawthorn"
+    },
+    {
+      "id": "ingredient:9",
+      "type": "ingredient",
+      "label": "He Shou Wu"
+    },
+    {
+      "id": "ingredient:10",
+      "type": "ingredient",
+      "label": "Holy Basil (Tulsi)"
+    },
+    {
+      "id": "ingredient:11",
+      "type": "ingredient",
+      "label": "Licorice"
+    },
+    {
+      "id": "ingredient:12",
+      "type": "ingredient",
+      "label": "Lion’s Mane"
+    },
+    {
+      "id": "ingredient:13",
+      "type": "ingredient",
+      "label": "Maca"
+    },
+    {
+      "id": "ingredient:14",
+      "type": "ingredient",
+      "label": "Moringa"
+    },
+    {
+      "id": "ingredient:15",
+      "type": "ingredient",
+      "label": "Mucuna pruriens"
+    },
+    {
+      "id": "ingredient:16",
+      "type": "ingredient",
+      "label": "Panax Ginseng (Asian Ginseng)"
+    },
+    {
+      "id": "ingredient:17",
+      "type": "ingredient",
+      "label": "Pearl"
+    },
+    {
+      "id": "ingredient:18",
+      "type": "ingredient",
+      "label": "Pine Pollen"
+    },
+    {
+      "id": "ingredient:19",
+      "type": "ingredient",
+      "label": "Reishi"
+    },
+    {
+      "id": "ingredient:20",
+      "type": "ingredient",
+      "label": "Rhodiola"
+    },
+    {
+      "id": "ingredient:21",
+      "type": "ingredient",
+      "label": "Schisandra Berry"
+    },
+    {
+      "id": "ingredient:22",
+      "type": "ingredient",
+      "label": "Sea Buckthorn"
+    },
+    {
+      "id": "ingredient:23",
+      "type": "ingredient",
+      "label": "Shatavari"
+    },
+    {
+      "id": "ingredient:24",
+      "type": "ingredient",
+      "label": "Turkey Tail"
+    }
+  ],
+  "edges": [
+    {
+      "source": "book",
+      "target": "chapter:0",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:1",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:2",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:3",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:4",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:5",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:6",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:7",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:8",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:9",
+      "relation": "contains"
+    },
+    {
+      "source": "book",
+      "target": "chapter:10",
+      "relation": "contains"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:0",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:1",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:2",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:3",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:4",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:5",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:6",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:7",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:8",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:9",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:10",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:11",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:12",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:13",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:14",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:15",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:16",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:17",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:18",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:19",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:20",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:21",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:22",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:23",
+      "relation": "profiles"
+    },
+    {
+      "source": "chapter:5",
+      "target": "ingredient:24",
+      "relation": "profiles"
+    }
+  ]
+}
