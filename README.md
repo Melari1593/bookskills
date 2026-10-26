@@ -52,6 +52,12 @@ El PDF fuente es un OCR de mala calidad: las cifras clínicas ilegibles se omiti
 
 Los títulos de artículos y secciones van en inglés, como en el libro; los resúmenes están en español y redactados con palabras propias. El libro no numera las secciones, así que la numeración es propia del grafo; las páginas son las de inicio de cada artículo según el índice analítico. Los artículos son independientes entre sí: las conexiones son una interpretación pedagógica de cómo se complementan los temas.
 
+## Grafo de The Five Elements Cookbook
+
+[`grafos/five-elements-cookbook/grafo_five_elements_cookbook.html`](grafos/five-elements-cookbook/grafo_five_elements_cookbook.html) es el mapa interactivo de *The Five Elements Cookbook: A Guide to Traditional Chinese Medicine with Recipes for Everyday Healing* (Zoey Xinyi Gong): 25 capítulos, 165 secciones, 26 conceptos clave, 2 tablas y 703 prerrequisitos, en 5 bloques (fundamentos de la MTC; propiedades de los alimentos; estaciones y constituciones; las 50 hierbas; las 55 recetas). Cada hierba lleva su naturaleza, sabor, meridianos y dosis máxima diaria según el libro, y cada receta sus funciones, energética, clima y las hierbas que usa. Tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_five_elements_cookbook.json`](grafos/five-elements-cookbook/grafo_five_elements_cookbook.json).
+
+La fuente fue un texto plano sin páginas, así que el grafo no tiene páginas. El libro no numera sus secciones: la división de la Parte I en 12 capítulos y la numeración son propias del grafo. Las hierbas, en orden alfabético en el libro, se agruparon en 6 capítulos según la función que les asigna la tabla de hierbas del propio libro. Las hierbas de cada receta se detectaron buscando sus nombres en el texto y pueden incluir alguna que solo se menciona como sustituto. Los resúmenes están en español y redactados con palabras propias; las conexiones son una interpretación pedagógica.
+
 ## Aplicación Python de Graphify
 
 [`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.
