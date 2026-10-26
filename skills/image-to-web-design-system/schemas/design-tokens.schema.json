@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Image to Web Design Tokens",
+  "type": "object",
+  "properties": {
+    "colors": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "typography": {
+      "type": "object"
+    },
+    "spacing": {
+      "type": "object"
+    },
+    "radii": {
+      "type": "object"
+    },
+    "shadows": {
+      "type": "object"
+    },
+    "motion": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "colors"
+  ],
+  "additionalProperties": true
+}
