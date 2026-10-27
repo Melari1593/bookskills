@@ -1,0 +1,513 @@
+{
+ "nota": "Registro de evidencia externa por concepto. Separado del contenido del libro: lo que dice el libro va en book_says; la evidencia externa en current/evidence. Verificación de referencias en log_busqueda.md.",
+ "alertas": [
+  {
+   "item": "c01_eer",
+   "book_says": "EER según las ecuaciones de las DRI de 2002/2005",
+   "current": "Ecuaciones EER de NASEM 2023",
+   "confidence": "alta",
+   "item_title": "Requerimiento Estimado de Energía (EER)",
+   "caution_en_grafo": "El libro se basa en las ecuaciones EER de las DRI de 2002/2005; NASEM publicó nuevas ecuaciones EER en 2023.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_guias_alimentarias",
+   "book_says": "Guías Alimentarias 2005 con colesterol < 300 mg/día y Guías de Actividad Física 2008",
+   "current": "Guías Alimentarias 2025–2030 (límite de colesterol retirado desde 2015–2020) y Guías de Actividad Física, 2.ª ed. (2018)",
+   "confidence": "alta",
+   "item_title": "Recomendaciones clave de las Guías Alimentarias para Estadounidenses",
+   "caution_en_grafo": "El libro usa las Guías Alimentarias 2005 y las Guías de Actividad Física 2008; las vigentes son las Guías Alimentarias 2025–2030 (el límite de 300 mg/día de colesterol se retiró desde las de 2015–2020) y las Guías de Actividad Física, 2.ª ed. (2018).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_usda_food_guide",
+   "book_says": "Guía Alimentaria del USDA y MyPyramid (2005) como herramienta de planificación",
+   "current": "MyPlate (2011) y patrones de las Guías Alimentarias 2025–2030",
+   "confidence": "alta",
+   "item_title": "Guía Alimentaria del USDA, MyPyramid y kcal discrecionales",
+   "caution_en_grafo": "MyPyramid y la Guía Alimentaria del USDA de 2005 fueron reemplazadas por MyPlate (2011) y los patrones de las Guías Alimentarias 2025–2030.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_listas_intercambio",
+   "book_says": "Listas de intercambio para planificar comidas en diabetes",
+   "current": "Estándares de Atención de la ADA (anuales), con conteo de carbohidratos y plan individualizado",
+   "confidence": "alta",
+   "item_title": "Listas de intercambio",
+   "caution_en_grafo": "Las listas de intercambio para diabetes (Apéndice G) fueron desplazadas por los Estándares de Atención de la ADA (actualizados cada año), que priorizan un plan individualizado y el conteo de carbohidratos.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_valores_diarios",
+   "book_says": "Valores Diarios de la etiqueta anterior, basados en parte en los RDA de 1968",
+   "current": "Regla de la FDA de 2016 (vigente desde 2020–2021): nuevos Valores Diarios, azúcares añadidos, vitamina D y potasio obligatorios",
+   "confidence": "alta",
+   "item_title": "Valores Diarios (VD) de la etiqueta y %VD",
+   "caution_en_grafo": "Corresponden a la etiqueta anterior, basada en parte en los RDA de 1968; la regla de la FDA de 2016 (vigente desde 2020–2021) actualizó los Valores Diarios y hace obligatorios los azúcares añadidos, la vitamina D y el potasio.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c19_infeccion_vs_intoxicacion",
+   "book_says": "Los CDC estiman 76 millones de casos de enfermedad transmitida por alimentos al año en EE. UU.",
+   "current": "Estimación de los CDC de 2011: unos 48 millones de casos anuales",
+   "confidence": "alta",
+   "item_title": "Infección alimentaria frente a intoxicación alimentaria (incluido el botulismo)",
+   "caution_en_grafo": "El libro cita la estimación de los CDC de 76 millones de casos anuales en EE. UU.; la estimación vigente de los CDC (2011) es de unos 48 millones de casos al año.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c19_temperaturas_seguras",
+   "book_says": "Cocinar el cerdo a 160 °F",
+   "current": "USDA 2011: cortes enteros de cerdo a 145 °F con 3 min de reposo (molida 160 °F)",
+   "confidence": "alta",
+   "item_title": "Zona de peligro y temperaturas seguras de cocción y conservación",
+   "caution_en_grafo": "El USDA (2011) redujo la temperatura segura para cortes enteros de cerdo a 145 °F (≈63 °C) con 3 minutos de reposo; la carne molida sigue en 160 °F.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c19_mercurio_pescado",
+   "book_says": "Embarazo, lactancia e infancia: hasta 12 oz/semana de pescado comercial, ≤6 oz de albacora",
+   "current": "Recomendación FDA/EPA 2017 (actualizada 2021): al menos 8 y hasta 12 oz/semana de opciones bajas en mercurio",
+   "confidence": "alta",
+   "item_title": "Bioacumulación de mercurio y consumo de pescado en embarazo, lactancia e infancia",
+   "caution_en_grafo": "La recomendación conjunta FDA/EPA de 2017 (actualizada en 2021) aconseja en embarazo y lactancia consumir al menos 8 y hasta 12 oz/semana de pescados bajos en mercurio, con una tabla de opciones «mejores», «buenas» y «a evitar».",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c19_ida_aspartamo",
+   "book_says": "Aspartamo seguro; IDA 50 mg/kg/día; estudio italiano de cáncer no respaldado",
+   "current": "IARC 2023: posible carcinógeno (2B); JECFA 2023 mantiene IDA de 40 mg/kg/día",
+   "confidence": "alta",
+   "item_title": "Ingesta diaria admisible (IDA) de edulcorantes: aspartamo",
+   "caution_en_grafo": "En 2023 la IARC clasificó el aspartamo como posiblemente carcinógeno (grupo 2B), mientras el JECFA (FAO/OMS) mantuvo su IDA de 40 mg/kg/día; la FDA conserva 50 mg/kg/día.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c19_biotecnologia_regulacion",
+   "book_says": "El etiquetado de alimentos genéticamente modificados es voluntario",
+   "current": "Estándar Nacional de Divulgación de Alimentos Bioingenierizados del USDA (2018), obligatorio desde 2022",
+   "confidence": "alta",
+   "item_title": "Alimentos genéticamente modificados: usos y regulación",
+   "caution_en_grafo": "El libro describe el etiquetado de alimentos modificados como voluntario; el Estándar Nacional de Divulgación de Alimentos Bioingenierizados del USDA (ley de 2016, regla de 2018) lo hizo obligatorio desde el 1 de enero de 2022.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c20_terapia_rehidratacion_oral",
+   "book_says": "Receta casera de TRO: ½ L de agua, 4 cdtas de azúcar, ½ cdta de sal",
+   "current": "OMS/UNICEF 2004: SRO de osmolaridad reducida más zinc en diarrea infantil",
+   "confidence": "alta",
+   "item_title": "Terapia de rehidratación oral (TRO)",
+   "caution_en_grafo": "La OMS y UNICEF (2004) recomiendan las sales de rehidratación oral de osmolaridad reducida (245 mOsm/L) junto con suplemento de zinc durante 10–14 días en la diarrea infantil.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_erge_ulcera",
+   "book_says": "Cita como bloqueadores H2 de venta libre Pepcid AC, Tagamet HB, Zantac 75 y Axid AR.",
+   "current": "La FDA retiró la ranitidina (Zantac) del mercado de EE. UU. en 2020 por NDMA.",
+   "confidence": "alta",
+   "item_title": "Reflujo gastroesofágico y úlcera péptica",
+   "caution_en_grafo": "Entre los bloqueadores H2 de venta libre que cita el libro figura la ranitidina (Zantac), que la FDA retiró del mercado estadounidense en 2020 por contaminación con NDMA.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_azucares_anadidos",
+   "book_says": "Limitar azúcares añadidos dentro de las kilocalorías discrecionales de MyPyramid/DGA 2010; la DRI sugiere ≤25 % de la energía.",
+   "current": "El libro se apoya en MyPyramid, las kilocalorías discrecionales y las DGA 2010. Las Dietary Guidelines 2025–2030 no recomiendan ninguna cantidad de azúcares añadidos: proponen no más de 10 g por comida y evitarlos en la infancia temprana (y ninguna cantidad entre 5 y 10 años). La OMS (2015) recomienda <10 % de la energía y sugiere <5 %, y la etiqueta de la FDA (regla de 2016) les da un Valor Diario de 50 g.",
+   "confidence": "alta",
+   "item_title": "Azúcares añadidos: efectos y límites de ingesta",
+   "caution_en_grafo": "El libro se apoya en MyPyramid, las kilocalorías discrecionales y las DGA 2010. Las Dietary Guidelines 2025–2030 no recomiendan ninguna cantidad de azúcares añadidos: proponen no más de 10 g por comida y evitarlos en la infancia temprana (y ninguna cantidad entre 5 y 10 años). La OMS (2015) recomienda <10 % de la energía y sugiere <5 %, y la etiqueta de la FDA (regla de 2016) les da un Valor Diario de 50 g.",
+   "fecha_revision": "2026-10-27",
+   "nota_revision": "Texto revisado y verificado contra la fuente primaria el 2026-10-27."
+  },
+  {
+   "item": "c04_edulcorantes_alternativos",
+   "book_says": "Usados con moderación, los edulcorantes alternativos no causan daño y pueden ayudar a limitar la ingesta energética.",
+   "current": "Guía de la OMS sobre edulcorantes no azucarados (2023): no usarlos para control de peso; IARC 2023 clasificó el aspartamo como 2B, con IDA del JECFA de 40 mg/kg/día sin cambios.",
+   "confidence": "alta",
+   "item_title": "Edulcorantes alternativos e ingesta diaria admisible",
+   "caution_en_grafo": "La guía de la OMS de 2023 recomienda no usar edulcorantes no calóricos para controlar el peso ni reducir el riesgo de enfermedades no transmisibles; en 2023 la IARC clasificó el aspartamo como posible carcinógeno (grupo 2B) y el JECFA mantuvo su IDA de 40 mg/kg/día.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_ingesta_cho_fibra",
+   "book_says": "Valores Diarios de etiqueta: 300 g de carbohidrato y 25 g de fibra.",
+   "current": "Regla de etiquetado de la FDA de 2016 (vigente 2020–2021): 275 g de carbohidrato total, 28 g de fibra dietética y 50 g de azúcares añadidos.",
+   "confidence": "alta",
+   "item_title": "Ingestas recomendadas de carbohidrato y fibra",
+   "caution_en_grafo": "La regla de etiquetado de la FDA de 2016 (vigente desde 2020–2021) cambió los Valores Diarios a 275 g de carbohidrato total y 28 g de fibra dietética, y añadió 50 g de azúcares añadidos.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_grasas_trans",
+   "book_says": "Los aceites parcialmente hidrogenados son la principal fuente de grasa trans; se aconseja limitarla al mínimo",
+   "current": "FDA: los aceites parcialmente hidrogenados dejaron de ser GRAS (2015, efectivo 2018)",
+   "confidence": "alta",
+   "item_title": "Hidrogenación y ácidos grasos trans",
+   "caution_en_grafo": "La FDA retiró a los aceites parcialmente hidrogenados la condición GRAS en 2015, con efecto desde 2018, por lo que la principal fuente industrial de grasa trans que describe el libro ya no se permite en EE. UU.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_perfil_lipidico",
+   "book_says": "Perfil deseable con metas fijas: CT <200, LDL <100, HDL ≥60, TG <150 mg/dL (ATP III)",
+   "current": "Guía de colesterol AHA/ACC 2018, con manejo según riesgo cardiovascular",
+   "confidence": "alta",
+   "item_title": "Perfil lipídico deseable",
+   "caution_en_grafo": "Los puntos de corte provienen del ATP III (NCEP, 2002); la guía de colesterol AHA/ACC 2018 decide el tratamiento según el riesgo cardiovascular global y no por metas fijas de LDL.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_recomendaciones_grasa",
+   "book_says": "Valor Diario de grasa 65 g; límite de colesterol <300 mg/día (Dietary Guidelines 2010); MyPyramid con kcal discrecionales",
+   "current": "Regla de etiquetado de la FDA de 2016 (VD de grasa 78 g); límite de colesterol retirado desde las DGA 2015–2020; MyPlate (2011) y DGA 2025–2030",
+   "confidence": "alta",
+   "item_title": "Ingesta recomendada de grasa y Valores Diarios",
+   "caution_en_grafo": "Desde la regla de la FDA de 2016 (vigente desde 2020–2021) el Valor Diario de grasa total es 78 g; el límite de 300 mg/día de colesterol se retiró de las Dietary Guidelines desde la edición 2015–2020, y MyPyramid fue reemplazado por MyPlate (2011) y las Dietary Guidelines for Americans 2025–2030.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_sustitucion_grasa_saturada",
+   "book_says": "Cada 1% de la energía de grasa saturada cambia ≈2% el LDL y el riesgo coronario (ATP III)",
+   "current": "Guía de colesterol AHA/ACC 2018",
+   "confidence": "media",
+   "item_title": "Sustituir grasa saturada por insaturada y dieta mediterránea",
+   "caution_en_grafo": "La relación 1 % → 2 % proviene del ATP III (NCEP, 2002); la referencia vigente para manejo de lípidos es la guía de colesterol AHA/ACC 2018.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c06_calidad_proteica",
+   "book_says": "Calidad proteica medida frente a una proteína de referencia (enfoque PDCAAS, Apéndice D)",
+   "current": "FAO 2013: DIAAS como medida preferida de calidad proteica",
+   "confidence": "alta",
+   "item_title": "Calidad proteica, aminoácido limitante y proteínas complementarias",
+   "caution_en_grafo": "La calidad que se compara con una proteína de referencia (Apéndice D) corresponde al enfoque PDCAAS; la FAO propuso en 2013 el DIAAS como medida preferida.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c06_pem_marasmo_kwashiorkor",
+   "book_says": "Clasificación por % del peso para la edad (<60% marasmo; 60–80% kwashiorkor)",
+   "current": "Puntajes Z de la OMS (patrones 2006) y guía OMS 2013 de desnutrición aguda grave",
+   "confidence": "alta",
+   "item_title": "Malnutrición proteico-energética: marasmo y kwashiorkor",
+   "caution_en_grafo": "La clasificación por porcentaje del peso para la edad está superada por los puntajes Z de la OMS (patrones 2006) y la guía OMS 2013 de desnutrición aguda grave (peso para la talla < −3 DE, perímetro braquial <115 mm o edema bilateral).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c06_rda_proteina",
+   "book_says": "Proteína para deportistas: 1,2–1,7 g/kg/día",
+   "current": "La RDA de 0,8 g/kg/día sigue vigente como DRI, pero las Dietary Guidelines 2025–2030 fijan como meta 1,2–1,6 g/kg/día para adultos; para deportistas, la posición AND/Dietitians of Canada/ACSM (2016) recomienda 1,2–2,0 g/kg/día.",
+   "confidence": "alta",
+   "item_title": "RDA de proteína y AMDR",
+   "caution_en_grafo": "La RDA de 0,8 g/kg/día sigue vigente como DRI, pero las Dietary Guidelines 2025–2030 fijan como meta 1,2–1,6 g/kg/día para adultos; para deportistas, la posición AND/Dietitians of Canada/ACSM (2016) recomienda 1,2–2,0 g/kg/día.",
+   "fecha_revision": "2026-10-27",
+   "nota_revision": "Texto revisado y verificado contra la fuente primaria el 2026-10-27."
+  },
+  {
+   "item": "c06_fenilcetonuria",
+   "book_says": "El único tratamiento de la PKU es la dieta restringida en fenilalanina",
+   "current": "El libro presenta la dieta como único tratamiento; la guía del ACMG (2014, actualizada en 2023) incorpora la sapropterina (aprobada por la FDA en 2007), y la FDA aprobó la pegvaliasa en 2018 para adultos.",
+   "confidence": "alta",
+   "item_title": "Fenilcetonuria (PKU)",
+   "caution_en_grafo": "El libro presenta la dieta como único tratamiento; la guía del ACMG (2014, actualizada en 2023) incorpora la sapropterina (aprobada por la FDA en 2007), y la FDA aprobó la pegvaliasa en 2018 para adultos.",
+   "fecha_revision": "2026-10-27",
+   "nota_revision": "Texto revisado y verificado contra la fuente primaria el 2026-10-27."
+  },
+  {
+   "item": "c07_bebida_estandar_moderacion",
+   "book_says": "Moderación según las Dietary Guidelines for Americans 2010: hasta 1 bebida/día en mujeres y 2 en hombres.",
+   "current": "El libro se apoya en las Dietary Guidelines 2010 (hasta 1 bebida/día en mujeres y 2 en hombres). Las Dietary Guidelines 2025–2030 eliminaron los límites numéricos y solo aconsejan «consumir menos alcohol» y evitarlo en el embarazo; el WCRF/AICR (2018) recomienda no beber alcohol para prevenir el cáncer.",
+   "confidence": "media",
+   "item_title": "Bebida estándar, moderación y consumo excesivo",
+   "caution_en_grafo": "El libro se apoya en las Dietary Guidelines 2010 (hasta 1 bebida/día en mujeres y 2 en hombres). Las Dietary Guidelines 2025–2030 eliminaron los límites numéricos y solo aconsejan «consumir menos alcohol» y evitarlo en el embarazo; el WCRF/AICR (2018) recomienda no beber alcohol para prevenir el cáncer.",
+   "fecha_revision": "2026-10-27",
+   "nota_revision": "Texto revisado y verificado contra la fuente primaria el 2026-10-27."
+  },
+  {
+   "item": "c07_alcohol_consecuencias",
+   "book_says": "Alcoholismo diagnosticado con ≥3 de 7 signos según DSM-IV.",
+   "current": "DSM-5 (2013) / DSM-5-TR (2022): trastorno por consumo de alcohol, ≥2 de 11 criterios",
+   "confidence": "alta",
+   "item_title": "Daño hepático, malnutrición y signos de alcoholismo",
+   "caution_en_grafo": "El libro usa criterios DSM-IV (1994); el DSM-5 (2013) y el DSM-5-TR (2022) los reemplazan por el trastorno por consumo de alcohol, con ≥2 de 11 criterios y gravedad graduada.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_balance_energetico_3500",
+   "book_says": "Cada 3500 kcal de exceso o déficit equivalen a 1 lb de grasa ganada o perdida.",
+   "current": "Modelos dinámicos de cambio de peso (Hall y cols., Lancet 2011; NIH Body Weight Planner)",
+   "confidence": "alta",
+   "item_title": "Balance energético y regla de 3500 kcal por libra de grasa",
+   "caution_en_grafo": "La regla estática de 3500 kcal sobrestima la pérdida de peso a largo plazo; los modelos dinámicos (Hall y cols., Lancet 2011; NIH Body Weight Planner) la reemplazan para predecir cambios de peso.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_eer",
+   "book_says": "Ecuaciones EER de las DRI de 2002/2005 con factores de actividad física.",
+   "current": "Ecuaciones EER de NASEM 2023",
+   "confidence": "alta",
+   "item_title": "Requerimiento energético estimado (EER) del adulto",
+   "caution_en_grafo": "Son las ecuaciones DRI de 2002/2005; las ecuaciones EER de NASEM 2023 las reemplazan.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_triada_atleta",
+   "book_says": "Tríada de la atleta: alimentación desordenada, amenorrea y osteoporosis.",
+   "current": "ACSM 2007 (espectro de baja disponibilidad energética) y RED-S del COI (2014; actualizaciones 2018 y 2023)",
+   "confidence": "alta",
+   "item_title": "Tríada de la atleta femenina",
+   "caution_en_grafo": "La ACSM (2007) ya redefinió la tríada como un espectro de baja disponibilidad energética, disfunción menstrual y baja densidad mineral ósea, y el COI propuso el síndrome RED-S (2014; actualizaciones 2018 y 2023), que incluye a hombres.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_criterios_tca",
+   "book_says": "Criterios DSM-IV-TR: amenorrea y peso <85 % en anorexia; bulimia ≥2 veces/semana por 3 meses; atracón como trastorno no especificado.",
+   "current": "DSM-5 (2013) / DSM-5-TR (2022), con trastorno por atracón y ARFID",
+   "confidence": "alta",
+   "item_title": "Criterios diagnósticos de anorexia, bulimia y trastorno por atracón",
+   "caution_en_grafo": "El libro usa DSM-IV-TR (2000); el DSM-5 (2013) y el DSM-5-TR (2022) eliminaron la amenorrea y el 85 % como criterio de anorexia, bajaron la frecuencia de bulimia y atracón a ≥1 vez por semana durante 3 meses, reconocieron el trastorno por atracón como diagnóstico propio y añadieron ARFID.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c09_farmacos_cirugia_obesidad",
+   "book_says": "Describe la sibutramina entre los fármacos aprobados y criterios quirúrgicos de IMC ≥40 o ≥35 con comorbilidad, sin farmacoterapia incretínica.",
+   "current": "Sibutramina retirada por la FDA (2010); agonistas GLP-1 y GIP/GLP-1 (semaglutida 2021, tirzepatida 2023); criterios de cirugía ASMBS/IFSO 2022",
+   "confidence": "alta",
+   "item_title": "Indicaciones de fármacos y cirugía bariátrica",
+   "caution_en_grafo": "La sibutramina citada por el libro se retiró del mercado de EE. UU. en 2010; hoy se usan agonistas GLP-1 y GIP/GLP-1 (semaglutida 2021, tirzepatida 2023) y los criterios quirúrgicos ASMBS/IFSO 2022 (IMC ≥35 sin importar comorbilidad; considerar desde IMC 30–34,9 con enfermedad metabólica).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c09_actividad_fisica_peso",
+   "book_says": "Recomienda 60 min/día de actividad moderada (DRI) y 60–90 min/día para mantener la pérdida (Dietary Guidelines de la época).",
+   "current": "Physical Activity Guidelines for Americans, 2.ª ed. (2018)",
+   "confidence": "alta",
+   "item_title": "Actividad física para perder y mantener peso",
+   "caution_en_grafo": "Las Physical Activity Guidelines for Americans, 2.ª ed. (2018), reemplazan la guía de 2008 y recomiendan 150–300 min/semana de actividad moderada (o 75–150 de vigorosa) más fortalecimiento muscular, con más actividad si se busca controlar el peso.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c10_criterios_suplementos",
+   "book_says": "Usa los Valores Diarios antiguos de la etiqueta y deja abierta la utilidad de suplementos antioxidantes para prevenir enfermedad.",
+   "current": "Regla de etiquetado de la FDA de 2016 (nuevos Valores Diarios, vigente 2020–2021); USPSTF 2022 en contra de β-caroteno y vitamina E para prevenir ECV o cáncer",
+   "confidence": "alta",
+   "item_title": "Quién necesita suplementos y cómo elegirlos",
+   "caution_en_grafo": "Los Valores Diarios usados por el libro (p. ej., vitamina C 60 mg) fueron actualizados por la regla de etiquetado de la FDA de 2016 (vigente desde 2020–2021); además, la USPSTF (2022) recomienda no usar β-caroteno ni vitamina E para prevenir ECV o cáncer.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c11_ai_vitamina_d",
+   "book_says": "AI de 1997: 5, 10 y 15 µg/día según edad; UL 50 µg/día",
+   "current": "DRI del IOM 2011: RDA 15 µg (600 UI)/día hasta 70 años y 20 µg (800 UI)/día >70; UL 100 µg (4000 UI)/día",
+   "confidence": "alta",
+   "item_title": "Ingesta adecuada y límite superior de vitamina D",
+   "caution_en_grafo": "Recomendación superada: el IOM fijó en 2011 una RDA de 15 µg (600 UI)/día para adultos hasta 70 años y de 20 µg (800 UI)/día para mayores de 70, con UL de 100 µg (4000 UI)/día.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c11_antioxidantes_suplementos",
+   "book_says": "Desaconseja en general los suplementos, aunque cita que dosis altas de vitamina E podrían frenar la enfermedad cardíaca",
+   "current": "USPSTF 2022: no usar β-caroteno ni vitamina E para prevenir enfermedad cardiovascular o cáncer",
+   "confidence": "alta",
+   "item_title": "Radicales libres, estrés oxidativo y antioxidantes: alimentos frente a suplementos",
+   "caution_en_grafo": "Guía más reciente: la USPSTF (2022) recomienda no usar suplementos de β-caroteno ni de vitamina E para prevenir enfermedad cardiovascular o cáncer.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c12_sodio_potasio",
+   "book_says": "Sodio: AI 1500/1300/1200 mg según edad y UL 2300 mg; potasio: AI 4700 mg; Valor Diario de sodio 2400 mg",
+   "current": "DRI de NASEM 2019: CDRR de sodio 2300 mg, AI de sodio 1500 mg para adultos, AI de potasio 3400 mg (hombres) y 2600 mg (mujeres); Valor Diario de sodio 2300 mg (FDA 2016)",
+   "confidence": "alta",
+   "item_title": "Sodio y potasio: recomendaciones e hipertensión",
+   "caution_en_grafo": "Referencias superadas: las DRI de NASEM (2019) reemplazaron el UL de sodio por una CDRR de 2300 mg/día, fijaron la AI de sodio en 1500 mg/día para adultos sin escalones por edad y bajaron la AI de potasio a 3400 mg/día (hombres) y 2600 mg/día (mujeres); la FDA (2016) cambió el Valor Diario de sodio a 2300 mg.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c12_calcio_recomendaciones",
+   "book_says": "AI de calcio: 1300 mg (9–18 años), 1000 mg (19–50 años), 1200 mg (>50 años); UL 2500 mg",
+   "current": "DRI del IOM 2011: RDA de 1000 mg en hombres de 51–70 años y de 1200 mg en mujeres >50 y en todos >70; UL de 2000 mg desde los 51 años",
+   "confidence": "alta",
+   "item_title": "Recomendaciones, absorción y fuentes de calcio",
+   "caution_en_grafo": "Referencia superada: el IOM (2011) convirtió la AI en RDA de 1300 mg (9–18 años), 1000 mg (19–50 años y hombres de 51–70) y 1200 mg (mujeres >50 y todos >70), con UL de 2500 mg hasta 50 años y 2000 mg desde los 51.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c13_fluoruro",
+   "book_says": "Fluorar el agua potable a 1 ppm (≈1 mg/L) da la máxima protección contra caries.",
+   "current": "Recomendación del Servicio de Salud Pública de EE. UU. (2015): 0,7 mg/L para fluoración comunitaria.",
+   "confidence": "alta",
+   "item_title": "Flúor: fluoración del agua y fluorosis",
+   "caution_en_grafo": "El Servicio de Salud Pública de EE. UU. bajó en 2015 la concentración recomendada de fluoración comunitaria a 0,7 mg/L.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c14_recomendaciones_actividad_fisica",
+   "book_says": "Physical Activity Guidelines 2008: 150 min moderada o 75 min vigorosa por semana, en episodios de al menos 10 minutos.",
+   "current": "Physical Activity Guidelines for Americans, 2.ª ed. (2018): mismos minutos, sin requisito mínimo de 10 minutos por episodio.",
+   "confidence": "alta",
+   "item_title": "Recomendaciones de actividad física e intensidad",
+   "caution_en_grafo": "Las Physical Activity Guidelines for Americans, 2.ª ed. (2018), mantienen los minutos semanales pero eliminaron el requisito de episodios de al menos 10 minutos.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c14_glucogeno_carbohidrato",
+   "book_says": "Atletas de resistencia: ≈8 g/kg/día (8–10 g/kg en entrenamiento intenso) y 30–60 g/h durante eventos.",
+   "current": "Posición conjunta AND/Dietitians of Canada/ACSM (2016): 3–12 g/kg/día según carga y hasta ≈90 g/h en eventos >2,5 h.",
+   "confidence": "alta",
+   "item_title": "Glucógeno y carbohidrato antes, durante y después del ejercicio",
+   "caution_en_grafo": "La posición conjunta AND/Dietitians of Canada/ACSM de 2016 individualiza el carbohidrato según la carga de entrenamiento (≈3–12 g/kg/día) y admite hasta ≈90 g/h en eventos de más de 2,5 h.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c15_necesidades_embarazo",
+   "book_says": "La AI de vitamina D y de calcio no aumenta en el embarazo (valores de 1997).",
+   "current": "DRI del IOM 2011: RDA de vitamina D 15 µg (600 UI)/día y de calcio 1000 mg/día (1300 mg en ≤18 años) en el embarazo.",
+   "confidence": "alta",
+   "item_title": "Necesidades de energía y nutrientes en el embarazo",
+   "caution_en_grafo": "Los valores de vitamina D y calcio son los de 1997: las DRI del IOM 2011 fijaron RDA de vitamina D de 15 µg (600 UI)/día y de calcio de 1000 mg/día (1300 mg/día en ≤18 años) para el embarazo.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c15_preeclampsia",
+   "book_says": "Preeclampsia = hipertensión gestacional más proteinuria; ningún factor dietético la previene.",
+   "current": "ACOG Task Force 2013 y Practice Bulletin 222 (2020): diagnóstico sin proteinuria si hay rasgos de gravedad; USPSTF 2021: aspirina a dosis baja en alto riesgo.",
+   "confidence": "alta",
+   "item_title": "Hipertensión gestacional y preeclampsia",
+   "caution_en_grafo": "La definición con proteinuria obligatoria fue superada: ACOG (2013; Practice Bulletin 222, 2020) diagnostica preeclampsia sin proteinuria si hay rasgos de gravedad, y la USPSTF (2021) recomienda aspirina a dosis baja desde la semana 12 en alto riesgo.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c15_lactancia_materna",
+   "book_says": "En países desarrollados las madres con VIH no deben amamantar.",
+   "current": "OMS 2016 y reporte clínico de la AAP 2024: lactancia posible con tratamiento antirretroviral y carga viral suprimida, por decisión compartida.",
+   "confidence": "alta",
+   "item_title": "Lactancia: necesidades maternas y contraindicaciones",
+   "caution_en_grafo": "El libro contraindica la lactancia en madres con VIH en países desarrollados; la OMS (2016) y la AAP (2024) apoyan amamantar con tratamiento antirretroviral y carga viral suprimida, mediante decisión compartida.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_energia_lactante",
+   "book_says": "Vigilancia del crecimiento con curvas de percentiles CDC/NCHS 2000 desde el nacimiento.",
+   "current": "CDC 2010: patrones de crecimiento OMS 2006 para menores de 2 años; CDC 2000 de 2 a 19 años.",
+   "confidence": "alta",
+   "item_title": "Crecimiento y necesidad energética del lactante",
+   "caution_en_grafo": "El ejemplo de percentiles usa las curvas CDC 2000; desde 2010 los CDC recomiendan los patrones de crecimiento OMS 2006 para menores de 2 años.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_alimentacion_complementaria",
+   "book_says": "Introducir alimentos uno a uno para prevenir alergias; jugo 4–6 oz/día de 1 a 6 años.",
+   "current": "NIAID 2017: introducción temprana del maní; AAP 2017: sin jugo antes de 12 meses y máximo 4 oz/día entre 1 y 3 años.",
+   "confidence": "alta",
+   "item_title": "Alimentación complementaria y leche de vaca",
+   "caution_en_grafo": "La NIAID (2017) recomienda introducir el maní temprano (desde 4–6 meses en lactantes de riesgo) en lugar de retrasar alérgenos, y la AAP (2017) desaconseja el jugo antes de los 12 meses y lo limita a 4 oz/día entre 1 y 3 años.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_necesidades_ninez",
+   "book_says": "Vitamina D de 10 µg (400 UI)/día para niños (AAP 2008).",
+   "current": "DRI del IOM 2011: RDA de vitamina D 15 µg (600 UI)/día desde 1 año.",
+   "confidence": "alta",
+   "item_title": "Necesidades nutricionales en la niñez",
+   "caution_en_grafo": "Las DRI del IOM 2011 fijaron la RDA de vitamina D en 15 µg (600 UI)/día a partir del año de edad; la cifra de 10 µg/día sigue vigente solo para lactantes (AI).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_plomo_hierro",
+   "book_says": "Plomo en sangre dañino desde 10 µg/dL.",
+   "current": "Valor de referencia de los CDC: 5 µg/dL (2012) y 3,5 µg/dL (2021).",
+   "confidence": "alta",
+   "item_title": "Deficiencia de hierro e intoxicación por plomo",
+   "caution_en_grafo": "El umbral de 10 µg/dL fue reemplazado por el valor de referencia de los CDC de 5 µg/dL (2012), reducido a 3,5 µg/dL en 2021.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_obesidad_infantil",
+   "book_says": "Obesidad grave ≥percentil 99; solo orlistat y sibutramina aprobados en adolescentes; criterios quirúrgicos IMC ≥50 o ≥40 con comorbilidad.",
+   "current": "Guía de práctica clínica de la AAP 2023: obesidad grave ≥120 % del p95, farmacoterapia desde 12 años (incluidos agonistas GLP-1) y evaluación quirúrgica desde 13 años; sibutramina retirada en 2010.",
+   "confidence": "alta",
+   "item_title": "Obesidad infantil: definición y tratamiento",
+   "caution_en_grafo": "La guía de práctica clínica de la AAP 2023 define la obesidad grave como ≥120 % del percentil 95, recomienda farmacoterapia desde los 12 años y evaluación quirúrgica desde los 13 años con obesidad grave; la sibutramina fue retirada en 2010.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_hierro_calcio_adolescencia",
+   "book_says": "AI de calcio 1300 mg/día (9–13 años) y vitamina D 10 µg/día.",
+   "current": "DRI del IOM 2011: RDA de calcio 1300 mg/día (9–18 años) y de vitamina D 15 µg (600 UI)/día.",
+   "confidence": "alta",
+   "item_title": "Hierro y calcio en la adolescencia",
+   "caution_en_grafo": "Las DRI del IOM 2011 convirtieron el calcio en RDA de 1300 mg/día para 9–18 años y elevaron la RDA de vitamina D a 15 µg (600 UI)/día.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c16_lipidos_pediatricos",
+   "book_says": "Tamizaje de colesterol selectivo en niños con sobrepeso o antecedentes familiares.",
+   "current": "Panel de expertos NHLBI 2011: tamizaje lipídico universal a los 9–11 y 17–21 años.",
+   "confidence": "alta",
+   "item_title": "Colesterol en niños y adolescentes",
+   "caution_en_grafo": "El libro propone tamizaje selectivo; el panel de expertos NHLBI 2011 recomienda tamizaje lipídico universal a los 9–11 y a los 17–21 años.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c17_eer_mayores",
+   "book_says": "Estimar la EER del adulto mayor a partir de las tablas de 2002/2005 restando 7 o 10 kcal/día por año sobre 30",
+   "current": "Ecuaciones EER de NASEM 2023",
+   "confidence": "alta",
+   "item_title": "Estimación de las necesidades energéticas del adulto mayor",
+   "caution_en_grafo": "Las ecuaciones EER de 2002/2005 en que se basan las tablas fueron reemplazadas por las ecuaciones EER de NASEM 2023.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c17_vitamina_d_calcio_mayores",
+   "book_says": "Vitamina D 10 µg/día (51–70 años) y 15 µg/día (>70); calcio 1200 mg/día (DRI 1997)",
+   "current": "DRI del IOM 2011: vitamina D 15 µg (600 UI) y 20 µg (800 UI) para >70 años; calcio 1000–1200 mg según sexo y edad",
+   "confidence": "alta",
+   "item_title": "Vitamina D y calcio en la vejez",
+   "caution_en_grafo": "Superado por las DRI del IOM 2011: vitamina D RDA 15 µg (600 UI) para 51–70 años y 20 µg (800 UI) para >70 años; calcio RDA 1200 mg para mujeres >50 y hombres >70 años y 1000 mg para hombres de 51–70 años.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c18_estandares_riesgo_cc",
+   "book_says": "Cortes de lípidos de ATP III y clasificación de presión arterial de JNC 7 (hipertensión ≥140/90)",
+   "current": "Guía de colesterol AHA/ACC 2018; guía de hipertensión ACC/AHA 2017 (≥130/80 mm Hg) y su actualización de 2025",
+   "confidence": "alta",
+   "item_title": "Estándares de lípidos y presión arterial para el riesgo coronario",
+   "caution_en_grafo": "Los cortes provienen de ATP III (NCEP 2002) y JNC 7 (2003); la guía de colesterol AHA/ACC 2018 sustituyó ATP III y la guía ACC/AHA 2017 (actualizada en 2025) define hipertensión desde ≥130/80 mm Hg.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c18_estrategias_dieta_cc",
+   "book_says": "Colesterol dietario <300 mg/día y minimizar grasas hidrogenadas",
+   "current": "Límite de colesterol retirado de las DGA 2015–2020 y ausente en AHA/ACC 2018; PHO sin estatus GRAS (FDA 2015, efectivo 2018)",
+   "confidence": "alta",
+   "item_title": "Estrategias dietéticas para reducir el riesgo coronario",
+   "caution_en_grafo": "El límite de 300 mg/día de colesterol dietario se retiró en las DGA 2015–2020 y no figura en la guía AHA/ACC 2018; además, los aceites parcialmente hidrogenados dejaron de ser GRAS (FDA 2015, efectivo 2018).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c18_dash_modificaciones_pa",
+   "book_says": "Modificaciones de estilo de vida según JNC 7 y potasio 4700 mg/día",
+   "current": "Guía ACC/AHA 2017 (actualización 2025) y DRI de sodio y potasio de NASEM 2019 (AI de potasio 3400/2600 mg)",
+   "confidence": "alta",
+   "item_title": "Dieta DASH y modificaciones del estilo de vida en hipertensión",
+   "caution_en_grafo": "Se basa en JNC 7 (2003) y en la AI de potasio de 2004; hoy rigen la guía ACC/AHA 2017 (actualizada en 2025) y las DRI de NASEM 2019 (CDRR de sodio 2300 mg; AI de potasio 3400 mg en hombres y 2600 mg en mujeres).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c18_dieta_diabetes",
+   "book_says": "Planificar la dieta con listas de intercambio (Apéndice G) según la posición ADA 2008",
+   "current": "Estándares de atención de la ADA (anuales), con conteo de carbohidratos y plan individualizado",
+   "confidence": "alta",
+   "item_title": "Recomendaciones nutricionales en diabetes",
+   "caution_en_grafo": "El libro se apoya en las listas de intercambio (Apéndice G) y en la posición ADA 2008; hoy rigen los Estándares de atención de la ADA (actualizados cada año), con conteo de carbohidratos y plan de alimentación individualizado.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c18_carcinogenesis_dieta",
+   "book_says": "Recomendaciones WCRF/AICR 2007, incluido limitar el alcohol a 2 tragos/día en hombres y 1 en mujeres",
+   "current": "Tercer Informe de Expertos WCRF/AICR (2018): para prevenir el cáncer, mejor no beber alcohol",
+   "confidence": "alta",
+   "item_title": "Carcinogénesis y factores dietéticos: iniciadores, promotores y antipromotores",
+   "caution_en_grafo": "Las recomendaciones WCRF/AICR 2007 fueron actualizadas en el Tercer Informe de Expertos WCRF/AICR (2018), que para la prevención del cáncer aconseja no beber alcohol.",
+   "fecha_revision": "2026-10-27"
+  }
+ ]
+}

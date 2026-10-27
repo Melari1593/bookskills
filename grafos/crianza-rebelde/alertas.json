@@ -1,0 +1,495 @@
+{
+ "nota": "Registro de evidencia externa por concepto. Separado del contenido del libro: lo que dice el libro va en book_says; la evidencia externa en current/evidence. Verificación de referencias en log_busqueda.md.",
+ "alertas": [
+  {
+   "item": "c00_estallido_no_manipulacion",
+   "book_says": "Los bebés y niños pequeños no premeditan su llanto; su cerebro no lo permite.",
+   "verdict": "respaldada",
+   "evidence": "En lactantes el llanto es una señal de necesidad y la respuesta sensible no 'malcría'; las funciones ejecutivas que permitirían planificar maduran lentamente en la primera infancia. A partir de los 3–4 años sí aparecen conductas instrumentales, como reconoce el propio libro en el capítulo 5.",
+   "confidence": "media",
+   "item_title": "El llanto no es manipulación",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c01_adulto_como_cimiento",
+   "book_says": "La regulación emocional de los padres es la base para la del hijo.",
+   "verdict": "respaldada",
+   "evidence": "El modelo tripartito de Morris y colaboradores (2007) y el modelo de crianza consciente de Duncan, Coatsworth y Greenberg (2009, citado en el libro) vinculan la regulación parental con la del niño.",
+   "confidence": "alta",
+   "item_title": "El adulto como cimiento",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c01_vinculo_conexion",
+   "book_says": "La conexión y la confianza con los padres son el motor de la cooperación del niño.",
+   "verdict": "respaldada",
+   "evidence": "Los estudios de Kochanska sobre la orientación mutuamente receptiva madre-hijo muestran que una relación cálida y receptiva predice una obediencia más voluntaria y el desarrollo de la conciencia moral.",
+   "confidence": "media",
+   "item_title": "Vínculo de conexión",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c01_separar_conducta_persona",
+   "book_says": "Las etiquetas y los gritos dejan huella duradera en el niño.",
+   "verdict": "respaldada",
+   "evidence": "La disciplina verbal dura se asocia a más síntomas depresivos y problemas de conducta (Wang y Kenny, 2014, estudio longitudinal).",
+   "confidence": "alta",
+   "item_title": "Separar la conducta de la persona",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c01_amor_incondicional",
+   "book_says": "El amor condicionado a la conducta genera resentimiento y sentimiento de rechazo.",
+   "verdict": "respaldada",
+   "evidence": "La investigación sobre consideración positiva condicional de los padres (Assor, Roth y Deci, 2004) la asocia a resentimiento, autoestima inestable y menor bienestar.",
+   "confidence": "alta",
+   "item_title": "Amor incondicional",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_piramide_maslow",
+   "book_says": "Las necesidades se ordenan jerárquicamente y las superiores solo importan cuando se satisfacen las básicas.",
+   "verdict": "imprecisa",
+   "evidence": "Hay poco apoyo para una jerarquía estricta (Wahba y Bridwell, 1976); un estudio en 123 países encontró necesidades universales pero satisfechas de forma bastante independiente (Tay y Diener, 2011).",
+   "confidence": "alta",
+   "item_title": "Pirámide de necesidades de Maslow",
+   "caution_en_grafo": "La jerarquía estricta de Maslow tiene poco apoyo empírico: las necesidades se satisfacen de forma bastante independiente (revisión de Wahba y Bridwell, 1976; estudio transcultural de Tay y Diener, 2011).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_autocuidado_materno",
+   "book_says": "El cortisol elevado por el estrés materno mata células del hipocampo; no hacer ejercicio equivale a tomar 'pastillas depresivas'.",
+   "verdict": "imprecisa",
+   "evidence": "El estrés crónico afecta al hipocampo sobre todo en modelos animales y en estrés grave (línea de Sapolsky y McEwen); el ejercicio tiene efecto antidepresivo moderado, pero la equivalencia propuesta es exagerada.",
+   "confidence": "media",
+   "item_title": "Autocuidado materno y tribu",
+   "caution_en_grafo": "Es una extrapolación afirmar que el estrés materno 'mata células del hipocampo' o que no hacer ejercicio equivale a tomar 'pastillas depresivas': la evidencia sobre cortisol e hipocampo procede sobre todo de modelos animales y de estrés crónico grave (línea de Sapolsky y McEwen).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_autocuidado_materno",
+   "book_says": "Los humanos evolucionaron gracias a la crianza cooperativa.",
+   "verdict": "respaldada",
+   "evidence": "La hipótesis de la crianza cooperativa (Hrdy, 2009) tiene amplio apoyo en antropología evolutiva, aunque sigue debatiéndose el peso de cada tipo de cuidador.",
+   "confidence": "media",
+   "item_title": "Autocuidado materno y tribu",
+   "caution_en_grafo": "Es una extrapolación afirmar que el estrés materno 'mata células del hipocampo' o que no hacer ejercicio equivale a tomar 'pastillas depresivas': la evidencia sobre cortisol e hipocampo procede sobre todo de modelos animales y de estrés crónico grave (línea de Sapolsky y McEwen).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c02_reestructuracion_cognitiva",
+   "book_says": "La reestructuración cognitiva ayuda a controlar los miedos ansiosos de la crianza.",
+   "verdict": "respaldada",
+   "evidence": "La terapia cognitivo-conductual, cuya técnica central es la reestructuración cognitiva, es eficaz para los trastornos de ansiedad (revisión de metaanálisis de Hofmann y colaboradores, 2012), también en el periodo perinatal.",
+   "confidence": "alta",
+   "item_title": "Reestructuración cognitiva de los miedos maternos",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_estallido_emocional",
+   "book_says": "Los estallidos son normales entre los 2 y 4 años, disminuyen con la edad y conviene consultar si son intensos y persisten pasados los 5.",
+   "verdict": "respaldada",
+   "evidence": "Los datos normativos muestran que las rabietas son frecuentes en preescolares y disminuyen con la edad; las diarias, muy intensas o destructivas son atípicas y merecen evaluación (Wakschlag y colaboradores, 2012; Potegal y Davidson, 2003).",
+   "confidence": "alta",
+   "item_title": "Estallido o desajuste emocional",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_estallido_respuesta_estres",
+   "book_says": "El estallido activa la respuesta de lucha o huida con niveles altos de cortisol que bloquean el razonamiento.",
+   "verdict": "imprecisa",
+   "evidence": "Las rabietas combinan ira y malestar con un curso temporal y es útil no intervenir con razonamientos en el pico de ira (Potegal, Kosorok y Davidson, 2003), pero no hay mediciones directas que muestren una gran descarga de cortisol en cada rabieta; la cita de apoyo del libro trata sobre ansiedad por separación.",
+   "confidence": "media",
+   "item_title": "El estallido como respuesta de estrés",
+   "caution_en_grafo": "Presentar el estallido como una reacción de lucha o huida con descarga masiva de cortisol simplifica la evidencia: los estudios sobre rabietas describen componentes de ira y de malestar que siguen un curso temporal (Potegal y Davidson, 2003), sin medir ese mecanismo directamente.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_fase_aproximacion",
+   "book_says": "Entre los 18 y 24 meses el niño atraviesa la fase de aproximación de Mahler.",
+   "verdict": "debatida",
+   "evidence": "La ambivalencia entre autonomía y búsqueda de contención está bien descrita, pero el esquema de fases de Mahler fue criticado por la investigación del desarrollo temprano (Stern, 1985) y el campo se rige hoy por la teoría del apego.",
+   "confidence": "media",
+   "item_title": "Fase de aproximación y constancia objetal (Mahler)",
+   "caution_en_grafo": "La teoría de separación-individuación de Mahler es psicoanalítica y observacional; sus fases tempranas fueron cuestionadas por la investigación sobre el bebé (Stern, 1985) y el campo se apoya hoy más en la teoría del apego.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_egocentrismo_preoperacional",
+   "book_says": "Entre los 2 y 4 años el niño es incapaz de percibir el mundo desde otra perspectiva.",
+   "verdict": "imprecisa",
+   "evidence": "La teoría de la mente muestra que hacia los 4 años se comprenden las creencias ajenas (metaanálisis de Wellman, Cross y Watson, 2001) y que antes ya hay formas de toma de perspectiva; Piaget subestimó estas capacidades.",
+   "confidence": "alta",
+   "item_title": "Egocentrismo preoperacional (Piaget)",
+   "caution_en_grafo": "Piaget subestimó la capacidad de los niños pequeños para adoptar otras perspectivas; la investigación sobre teoría de la mente muestra comprensión de creencias ajenas hacia los 4 años y formas más tempranas de toma de perspectiva (metaanálisis de Wellman, Cross y Watson, 2001).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c03_no_forzar_compartir",
+   "book_says": "Antes de los 3 años predomina el juego paralelo y compartir es difícil; el juego cooperativo aparece entre los 3 y 5 años.",
+   "verdict": "respaldada",
+   "evidence": "Las etapas de juego de Parten (1932) siguen siendo una descripción útil, aunque no estricta; la conducta de compartir y el sentido de equidad aumentan durante la etapa preescolar (Fehr, Bernhard y Rockenbach, 2008).",
+   "confidence": "media",
+   "item_title": "No forzar a compartir ni a socializar",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_emociones_basicas",
+   "book_says": "Hay seis emociones básicas universales (Ekman).",
+   "verdict": "debatida",
+   "evidence": "La universalidad del reconocimiento facial de las emociones y la existencia de categorías básicas discretas se discuten (revisión de Barrett y colaboradores, 2019).",
+   "confidence": "alta",
+   "item_title": "Emociones básicas y funcionalidad",
+   "caution_en_grafo": "La universalidad de seis emociones básicas reconocibles por la expresión facial está discutida (revisión de Barrett y colaboradores, 2019), y la idea de que las emociones negativas se procesan en el hemisferio derecho y las positivas en el izquierdo no se sostiene en metaanálisis de neuroimagen (Wager y colaboradores, 2003).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_emociones_basicas",
+   "book_says": "Las emociones negativas se procesan en el hemisferio derecho y las positivas en el izquierdo.",
+   "verdict": "imprecisa",
+   "evidence": "Los metaanálisis de neuroimagen no apoyan una lateralización simple por valencia (Wager y colaboradores, 2003).",
+   "confidence": "media",
+   "item_title": "Emociones básicas y funcionalidad",
+   "caution_en_grafo": "La universalidad de seis emociones básicas reconocibles por la expresión facial está discutida (revisión de Barrett y colaboradores, 2019), y la idea de que las emociones negativas se procesan en el hemisferio derecho y las positivas en el izquierdo no se sostiene en metaanálisis de neuroimagen (Wager y colaboradores, 2003).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_validar_nombrar",
+   "book_says": "Validar y nombrar las emociones ayuda al niño a regularlas.",
+   "verdict": "respaldada",
+   "evidence": "El 'coaching emocional' parental se asocia a mejor regulación infantil (Gottman, Katz y Hooven, 1996) y programas como Tuning in to Kids lo confirman en ensayos; poner nombre al afecto reduce la reactividad de la amígdala (Lieberman y colaboradores, 2007).",
+   "confidence": "alta",
+   "item_title": "Validar y nombrar la emoción",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_validar_nombrar",
+   "book_says": "El afecto físico libera opiáceos endógenos que calman el dolor.",
+   "verdict": "debatida",
+   "evidence": "Hay pruebas de participación opioide en el tacto social en animales y en algún estudio PET en humanos, pero el efecto analgésico del abrazo en niños no está bien cuantificado.",
+   "confidence": "media",
+   "item_title": "Validar y nombrar la emoción",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_corregulacion",
+   "book_says": "El bebé regula sus emociones a través del adulto y pasa gradualmente a la autorregulación.",
+   "verdict": "respaldada",
+   "evidence": "Ampliamente respaldado por la literatura sobre corregulación y socialización emocional (Spinrad y colaboradores, 2004, citado; modelo tripartito de Morris y colaboradores, 2007; paradigma del rostro inmóvil de Tronick).",
+   "confidence": "alta",
+   "item_title": "De la regulación externa a la autorregulación",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c04_distraccion_con_explicacion",
+   "book_says": "La distracción regula mejor que solo tranquilizar, pero su abuso genera dependencia de la regulación externa.",
+   "verdict": "debatida",
+   "evidence": "La distracción es eficaz a corto plazo en niños pequeños; la advertencia sobre la dependencia se basa en pocos estudios (Grolnick y colaboradores, 1998) y no está bien establecida.",
+   "confidence": "media",
+   "item_title": "Distracción con explicación previa",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_cerebro_triuno",
+   "book_says": "El cerebro humano está formado por tres cerebros superpuestos: reptiliano, límbico y neocórtex.",
+   "verdict": "superada",
+   "evidence": "La neurociencia comparada ha abandonado el modelo: los vertebrados comparten las mismas divisiones cerebrales básicas, que se modificaron en lugar de añadirse en capas (Cesario, Johnson y Eisthen, 2020).",
+   "confidence": "alta",
+   "item_title": "Cerebro triuno de MacLean",
+   "caution_en_grafo": "El modelo del cerebro triuno está abandonado en neurociencia comparada: el cerebro no se formó por capas evolutivas superpuestas ni existe un 'cerebro reptiliano' aislado (revisión de Cesario, Johnson y Eisthen, 2020).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_maduracion_cerebral_tardia",
+   "book_says": "El neocórtex no termina de desarrollarse hasta pasados los 20 años.",
+   "verdict": "respaldada",
+   "evidence": "Los estudios longitudinales de resonancia muestran que la corteza prefrontal madura hasta la adultez temprana (Gogtay y colaboradores, 2004).",
+   "confidence": "alta",
+   "item_title": "Maduración tardía del cerebro racional",
+   "caution_en_grafo": "Es correcto que la corteza prefrontal madura hasta pasados los 20 años, pero la división hemisferio izquierdo lógico / derecho emocional es una simplificación que no respalda la neuroimagen (Nielsen y colaboradores, 2013).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_maduracion_cerebral_tardia",
+   "book_says": "El hemisferio izquierdo es lógico y el derecho emocional; en los niños de 1–4 años domina el derecho.",
+   "verdict": "imprecisa",
+   "evidence": "La dicotomía izquierda lógica / derecha emocional es una simplificación (Nielsen y colaboradores, 2013); existe algo de evidencia de maduración temprana del hemisferio derecho, pero no explica por sí sola la conducta del preescolar.",
+   "confidence": "media",
+   "item_title": "Maduración tardía del cerebro racional",
+   "caution_en_grafo": "Es correcto que la corteza prefrontal madura hasta pasados los 20 años, pero la división hemisferio izquierdo lógico / derecho emocional es una simplificación que no respalda la neuroimagen (Nielsen y colaboradores, 2013).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_neuroplasticidad_temprana",
+   "book_says": "La neuroplasticidad es máxima en la primera infancia y las experiencias moldean la arquitectura cerebral.",
+   "verdict": "respaldada",
+   "evidence": "Consenso en neurociencia del desarrollo sobre periodos sensibles (National Scientific Council on the Developing Child, 2007, citado; Center on the Developing Child de Harvard).",
+   "confidence": "alta",
+   "item_title": "Neuroplasticidad en la primera infancia",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c05_berrinche_vs_estallido",
+   "book_says": "Hay rabietas voluntarias del cerebro superior y estallidos involuntarios del cerebro inferior.",
+   "verdict": "debatida",
+   "evidence": "Es una distinción clínica divulgativa (Siegel y Payne Bryson, 2011) sin validación empírica como tipología; la investigación sobre rabietas describe más bien componentes de ira y de malestar (Potegal y Davidson, 2003).",
+   "confidence": "media",
+   "item_title": "Berrinche voluntario vs. estallido involuntario",
+   "caution_en_grafo": "La distinción entre rabietas del 'cerebro superior' e 'inferior' de Siegel y Payne Bryson es una metáfora clínica útil, no una clasificación validada empíricamente, y se apoya en el modelo del cerebro triuno.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c06_disciplina_punitiva",
+   "book_says": "El castigo físico no enseña, hace daño y se asocia a agresividad, baja autoestima y problemas de salud mental.",
+   "verdict": "respaldada",
+   "evidence": "Metaanálisis de Gershoff y Grogan-Kaylor (2016) y declaración de la Academia Americana de Pediatría (2018). Matiz: Gershoff (2002) sí encontró obediencia inmediata asociada al castigo, por lo que 'ningún beneficio' es algo exagerado, aunque no hay beneficios a largo plazo.",
+   "confidence": "alta",
+   "item_title": "Disciplina punitiva",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c07_disciplina_cer",
+   "book_says": "Disciplinar con diálogo, explicaciones, límites y vínculo, sin castigos, favorece el autocontrol y la cooperación.",
+   "verdict": "respaldada",
+   "evidence": "La disciplina inductiva (explicar razones y efectos en otros, Hoffman) y el estilo con autoridad (alta calidez con estructura, Baumrind) se asocian a mejor ajuste y menos problemas externalizantes en metaanálisis (por ejemplo, Pinquart, 2017).",
+   "confidence": "media",
+   "item_title": "Disciplina C.E.R.",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_consciencia",
+   "book_says": "Un programa de ocho semanas con 20 minutos diarios de mindfulness produce cambios permanentes en la estructura cerebral.",
+   "verdict": "imprecisa",
+   "evidence": "Estudios pequeños de morfometría (Hölzel et al., 2011) sugirieron cambios de materia gris tras MBSR, pero dos ensayos aleatorizados combinados y más grandes no encontraron cambios estructurales (Kral et al., 2022, Science Advances); nada respalda que sean permanentes.",
+   "confidence": "alta",
+   "item_title": "Consciencia: atención plena en la crianza (mindful parenting)",
+   "caution_en_grafo": "Los beneficios del mindfulness para el estrés parental tienen respaldo moderado, pero la afirmación de que 8 semanas de práctica producen cambios cerebrales estructurales permanentes no se sostiene: ensayos controlados mayores no los replicaron (Kral et al., 2022).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_consciencia",
+   "book_says": "La crianza consciente mejora la regulación emocional de los padres y su manejo del estrés (Duncan et al., 2009).",
+   "verdict": "respaldada",
+   "evidence": "Metaanálisis de intervenciones de mindful parenting muestran efectos pequeños a moderados sobre estrés parental y algo menores sobre conducta infantil (p. ej. Burgdorf, Szabó y Abbott, 2019), con estudios de calidad heterogénea.",
+   "confidence": "media",
+   "item_title": "Consciencia: atención plena en la crianza (mindful parenting)",
+   "caution_en_grafo": "Los beneficios del mindfulness para el estrés parental tienen respaldo moderado, pero la afirmación de que 8 semanas de práctica producen cambios cerebrales estructurales permanentes no se sostiene: ensayos controlados mayores no los replicaron (Kral et al., 2022).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_empatia",
+   "book_says": "La empatía tiene un componente cognitivo y otro afectivo, y se distingue de la simpatía o contagio emocional que nos hace sufrir con el otro sin ayudarlo.",
+   "verdict": "respaldada",
+   "evidence": "La distinción entre preocupación empática y malestar personal/contagio es central en la investigación sobre empatía (Batson; Decety; Singer y Klimecki, 2014, Current Biology), aunque la terminología varía entre autores.",
+   "confidence": "alta",
+   "item_title": "Empatía frente a simpatía",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_compasion",
+   "book_says": "La compasión es una motivación con dos elementos: sensibilidad al sufrimiento y compromiso de aliviarlo.",
+   "verdict": "respaldada",
+   "evidence": "Coincide con las definiciones de trabajo de Gilbert (2014) y con la revisión conceptual de Strauss et al. (2016, Clinical Psychology Review).",
+   "confidence": "alta",
+   "item_title": "Compasión como empatía en acción",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c08_respeto",
+   "book_says": "Entre las prácticas que favorecen una crianza respetuosa está evitar escolarizar en los primeros años.",
+   "verdict": "debatida",
+   "evidence": "El estudio NICHD de cuidado infantil temprano halló asociaciones pequeñas entre muchas horas de guardería y más problemas externalizantes, pero beneficios cognitivos con cuidado de calidad; la calidad pesa más que la edad de ingreso (NICHD ECCRN; Belsky et al., 2007).",
+   "confidence": "media",
+   "item_title": "Respeto bidireccional",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c09_limites",
+   "book_says": "Los límites claros, explicados y dialogados ayudan al niño a controlar impulsos y emociones y a posponer deseos.",
+   "verdict": "respaldada",
+   "evidence": "La combinación de calidez con estructura y control conductual (estilo democrático o autoritativo, Baumrind) se asocia a mejor autorregulación y menos problemas de conducta en metaanálisis (Pinquart, 2017).",
+   "confidence": "alta",
+   "item_title": "Límite oportuno y límite respetuoso",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c09_castigo_disfrazado",
+   "book_says": "Retirar privilegios o mandar al rincón de pensar son castigos disfrazados que dañan la relación e impiden interiorizar la norma.",
+   "verdict": "debatida",
+   "evidence": "El castigo físico y la disciplina verbal dura sí son dañinos, pero el tiempo fuera breve y las consecuencias lógicas forman parte de programas con evidencia (PCIT, Triple P, Incredible Years) y no muestran daño al apego cuando se usan con calidez (Dadds y Tully, 2019, American Psychologist).",
+   "confidence": "alta",
+   "item_title": "Falsas consecuencias o castigos disfrazados",
+   "caution_en_grafo": "Equiparar toda consecuencia impuesta breve (tiempo fuera, retirada de un privilegio) con castigo dañino no está respaldado: los programas de crianza con evidencia la usan sin efectos adversos (Dadds y Tully, 2019).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c09_comunicacion_cer",
+   "book_says": "Gritar, amenazar o etiquetar escala el conflicto y daña la autoestima del niño.",
+   "verdict": "respaldada",
+   "evidence": "La disciplina verbal dura (gritos, insultos) se asocia longitudinalmente a más problemas de conducta y síntomas depresivos (Wang y Kenny, 2014, Child Development).",
+   "confidence": "alta",
+   "item_title": "Comunicación C.E.R.",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c10_gestion_estallidos",
+   "book_says": "Validar y nombrar la emoción del niño lo ayuda a calmarse.",
+   "verdict": "respaldada",
+   "evidence": "El enfoque de coaching emocional (Gottman, Katz y Hooven, 1997) y ensayos del programa Tuning in to Kids (Havighurst et al.) muestran mejoras en regulación emocional y conducta infantil.",
+   "confidence": "alta",
+   "item_title": "Seis pasos para gestionar un estallido",
+   "caution_en_grafo": "La co-regulación por la calma del adulto tiene respaldo, pero explicarla por neuronas espejo es una sobreinterpretación (Hickok, 2014); y consolar con comida se asocia a comer emocional, sin que esté demostrado que cause trastornos alimentarios.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c10_gestion_estallidos",
+   "book_says": "La calma del adulto se transmite al niño porque las neuronas espejo replican automáticamente las emociones observadas.",
+   "verdict": "imprecisa",
+   "evidence": "La co-regulación emocional padre-hijo está bien documentada, pero atribuir la transmisión emocional a neuronas espejo es una extrapolación no demostrada en humanos (Hickok, 2014; Heyes).",
+   "confidence": "alta",
+   "item_title": "Seis pasos para gestionar un estallido",
+   "caution_en_grafo": "La co-regulación por la calma del adulto tiene respaldo, pero explicarla por neuronas espejo es una sobreinterpretación (Hickok, 2014); y consolar con comida se asocia a comer emocional, sin que esté demostrado que cause trastornos alimentarios.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c10_gestion_estallidos",
+   "book_says": "Calmar al niño con comida predispone a trastornos de la conducta alimentaria.",
+   "verdict": "imprecisa",
+   "evidence": "La alimentación emocional por parte de los padres se asocia de forma bidireccional con el comer emocional infantil (Steinsbekk et al., 2016), pero no hay evidencia de que cause trastornos alimentarios clínicos.",
+   "confidence": "media",
+   "item_title": "Seis pasos para gestionar un estallido",
+   "caution_en_grafo": "La co-regulación por la calma del adulto tiene respaldo, pero explicarla por neuronas espejo es una sobreinterpretación (Hickok, 2014); y consolar con comida se asocia a comer emocional, sin que esté demostrado que cause trastornos alimentarios.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c10_premios_elogios",
+   "book_says": "Cuando el premio cesa la conducta desaparece, y el elogio excesivo crea dependencia de aprobación y puede alimentar el narcisismo.",
+   "verdict": "debatida",
+   "evidence": "Las recompensas tangibles esperadas reducen la motivación intrínseca en tareas interesantes (Deci, Koestner y Ryan, 1999), pero el refuerzo positivo es eficaz en programas conductuales; el elogio al proceso favorece la persistencia (Mueller y Dweck, 1998) y la sobrevaloración parental, no la calidez, predice narcisismo (Brummelman et al., 2015, PNAS).",
+   "confidence": "alta",
+   "item_title": "Sin premios y elogio sincero",
+   "caution_en_grafo": "Las recompensas esperadas pueden reducir la motivación intrínseca (Deci, Koestner y Ryan, 1999), pero el refuerzo positivo es eficaz en programas de crianza con evidencia; el rechazo total es una opción del modelo, no una conclusión científica.",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c11_enfado_cuatro_pasos",
+   "book_says": "Unas respiraciones abdominales profundas regulan la intensidad emocional antes de responder.",
+   "verdict": "respaldada",
+   "evidence": "La respiración lenta se asocia a mayor actividad parasimpática y menor activación y ansiedad (revisión sistemática de Zaccaro et al., 2018), aunque los estudios son pequeños.",
+   "confidence": "media",
+   "item_title": "Gestión del enfado en cuatro pasos",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c12_tu_cerebro_esta_cansado",
+   "book_says": "El cansancio y el sueño desajustado vuelven a los niños más irritables y menos capaces de regularse; nombrarlo los ayuda a reconocerlo.",
+   "verdict": "respaldada",
+   "evidence": "La privación de siesta en niños pequeños aumenta el afecto negativo y reduce el positivo (Berger et al., 2012); poner nombre a la emoción reduce la reactividad (affect labeling, Lieberman et al., 2007).",
+   "confidence": "media",
+   "item_title": "“Tu cerebro está cansado”",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c13_por_que_pegan",
+   "book_says": "Pegar en bebés es normal por dominio del cerebro reptiliano y disminuye cuanto más lenguaje y habilidades sociales tiene el niño.",
+   "verdict": "superada",
+   "evidence": "El modelo del cerebro triuno está abandonado en neurociencia comparada (Cesario, Johnson y Eisthen, 2020); la observación clínica sí es correcta: la agresión física es normativa, alcanza su pico hacia los 2 años y declina (Tremblay et al., 2004, Pediatrics) y se asocia inversamente al vocabulario expresivo (Dionne et al., 2003).",
+   "confidence": "alta",
+   "item_title": "Por qué pegan los niños pequeños",
+   "caution_en_grafo": "El “cerebro reptiliano” del modelo triuno de MacLean está superado (Cesario, Johnson y Eisthen, 2020); lo que sí está respaldado es que la agresión física es normativa, alcanza su pico hacia los dos años y declina con el lenguaje (Tremblay et al., 2004).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c13_no_au_duele",
+   "book_says": "Mostrar un gesto de dolor activa las neuronas espejo del bebé y lo ayuda a aprender.",
+   "verdict": "imprecisa",
+   "evidence": "Señalar la consecuencia emocional para la víctima con calma es razonable, pero el mecanismo de neuronas espejo invocado no está demostrado en humanos (Hickok, 2014).",
+   "confidence": "media",
+   "item_title": "Respuesta al golpe antes de los dos años",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c13_pelea_simulada",
+   "book_says": "Jugar a pelear enseña autocontrol, reglas y reduce la frecuencia de golpes reales.",
+   "verdict": "debatida",
+   "evidence": "El juego de pelea se asocia a competencia social en muchos niños (Pellegrini y Smith, 1998), pero en niños con tendencia agresiva puede escalar a agresión real y el efecto depende de que el adulto marque reglas (Flanders et al., 2009).",
+   "confidence": "media",
+   "item_title": "Juego de pelea simulada",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c14_crisis_pareja_posparto",
+   "book_says": "La llegada de un hijo tensiona la pareja y la satisfacción cae en los primeros años.",
+   "verdict": "respaldada",
+   "evidence": "Estudios longitudinales y metaanálisis muestran un descenso medio de la satisfacción marital tras el nacimiento del primer hijo (Doss et al., 2009; Mitnick, Heyman y Smith Slep, 2009).",
+   "confidence": "alta",
+   "item_title": "Crisis de pareja en los primeros años",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c14_cuidar_el_vinculo",
+   "book_says": "Un divorcio puede impactar más en el niño que los desacuerdos de crianza, por lo que conviene mantenerse unidos.",
+   "verdict": "imprecisa",
+   "evidence": "El divorcio se asocia a peores resultados promedio de tamaño pequeño, pero el conflicto interparental intenso es un predictor más fuerte, y en familias muy conflictivas los hijos están mejor tras la separación (Amato, Loomis y Booth, 1995; Amato, 2001).",
+   "confidence": "alta",
+   "item_title": "Cuidar el vínculo antes de separarse",
+   "caution_en_grafo": "La evidencia indica que lo que más daña al niño es el conflicto interparental intenso; en familias muy conflictivas los hijos pueden estar mejor tras la separación (Amato, 2001).",
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c14_sugerencias_pareja",
+   "book_says": "Agradecer cada noche a la pareja fortalece el vínculo.",
+   "verdict": "respaldada",
+   "evidence": "La gratitud expresada en la pareja predice mayor satisfacción y compromiso (Algoe, Gable y Maisel, 2010; modelo find-remind-bind).",
+   "confidence": "media",
+   "item_title": "Seis sugerencias para la pareja",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c15_herida_materna_paterna",
+   "book_says": "Las experiencias no resueltas con los propios padres se trasladan a la relación con los hijos.",
+   "verdict": "respaldada",
+   "evidence": "Las representaciones de apego de los padres predicen el apego de sus hijos (metaanálisis de van IJzendoorn, 1995) y hay transmisión intergeneracional de prácticas de crianza (Belsky, Conger y Capaldi, 2009), aunque no es determinista.",
+   "confidence": "alta",
+   "item_title": "Herida materna y paterna",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  },
+  {
+   "item": "c15_te_regalo_una_flor",
+   "book_says": "Trabajar el perdón hacia los propios padres ayuda a sanar y a criar mejor.",
+   "verdict": "debatida",
+   "evidence": "Las intervenciones de perdón estructuradas mejoran el bienestar y reducen el malestar (metaanálisis de Wade et al., 2014), pero esta técnica concreta no ha sido evaluada.",
+   "confidence": "media",
+   "item_title": "Técnica “te regalo una flor”",
+   "caution_en_grafo": null,
+   "fecha_revision": "2026-10-27"
+  }
+ ]
+}

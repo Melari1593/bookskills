@@ -1,0 +1,1413 @@
+{
+ "meta": {
+  "title": "La crianza rebelde como grafo",
+  "subtitle": "Ana Acosta Rodríguez, La consciencia y la empatía. La crianza rebelde: educar desde el respeto (2019): capítulos, secciones e ideas clave de la disciplina C.E.R., con alertas de evidencia (octubre de 2026).",
+  "language": "es",
+  "itemLabel": "Idea clave",
+  "itemLabelPlural": "Ideas clave",
+  "searchHint": "Buscar: berrinche, S.E.D.A., límites…"
+ },
+ "blocks": {
+  "base": {
+   "name": "Punto de partida y necesidades"
+  },
+  "desarrollo": {
+   "name": "Desarrollo emocional y cerebral"
+  },
+  "cer": {
+   "name": "El modelo C.E.R."
+  },
+  "tecnicas": {
+   "name": "Técnicas y autorregulación"
+  },
+  "familia": {
+   "name": "Pareja y sanación"
+  }
+ },
+ "chapters": [
+  {
+   "num": 0,
+   "title": "Prólogo e introducción",
+   "summary": "Presenta el libro como una invitación a dejar de ver el llanto y los estallidos como manipulación y a criar desde el respeto; ofrece a madres y padres un punto de partida: liberar al niño de culpa, sanar las propias heridas y aceptarse imperfectos.",
+   "sections": [
+    {
+     "num": "0.1",
+     "title": "Prólogo",
+     "items": [],
+     "summary": "Mónica Rebollo enmarca la crianza respetuosa como continuación del vínculo que empieza en el embarazo."
+    },
+    {
+     "num": "0.2",
+     "title": "Los estallidos no son manipulación",
+     "items": [
+      "c00_estallido_no_manipulacion"
+     ],
+     "summary": "El llanto y las llamadas de atención de los niños pequeños expresan necesidades que aún no saben comunicar de otra forma."
+    },
+    {
+     "num": "0.3",
+     "title": "Tres pasos para empezar",
+     "items": [
+      "c00_tres_pasos"
+     ],
+     "summary": "Propone liberar al niño de culpa, sanar las heridas propias de la infancia y perdonarse como padres imperfectos."
+    },
+    {
+     "num": "0.4",
+     "title": "Una crianza que se rebela",
+     "items": [
+      "c00_crianza_rebelde"
+     ],
+     "summary": "Plantea pasar de modelos disciplinarios centrados en el adulto a otros centrados en el niño, sin renunciar a límites."
+    }
+   ],
+   "block": "base"
+  },
+  {
+   "num": 1,
+   "title": "El punto de partida de una disciplina empática, respetuosa y consciente",
+   "summary": "Sostiene que el problema en los conflictos no es la conducta del niño sino la reacción del adulto, y da a los padres herramientas para construir conexión: presencia real, menos 'no', palabras cuidadas y amor incondicional.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "El verdadero problema de los niños pequeños",
+     "items": [
+      "c01_adulto_como_cimiento"
+     ],
+     "summary": "Los padres son los cimientos: deben trabajar su propia regulación emocional antes de exigirla al hijo."
+    },
+    {
+     "num": "1.2",
+     "title": "Confianza y vínculos de conexión",
+     "items": [
+      "c01_vinculo_conexion"
+     ],
+     "summary": "La atención plena y la presencia genuina generan la confianza que motiva la cooperación y reduce las llamadas de atención negativas."
+    },
+    {
+     "num": "1.3",
+     "title": "Cuando la sobreprotección desconecta",
+     "items": [
+      "c01_economia_domestica_emocional"
+     ],
+     "summary": "El control excesivo y el 'no' continuo frenan la exploración y deterioran el vínculo; conviene reservar las negativas para riesgos reales."
+    },
+    {
+     "num": "1.4",
+     "title": "El poder de las palabras",
+     "items": [
+      "c01_separar_conducta_persona"
+     ],
+     "summary": "Etiquetas, sarcasmo y gritos dejan huella; hay que señalar la acción y no a la persona, y pedir disculpas cuando se pierde el control."
+    },
+    {
+     "num": "1.5",
+     "title": "El amor incondicional",
+     "items": [
+      "c01_amor_incondicional"
+     ],
+     "summary": "Amar al hijo por quien es y no por cómo se porta ayuda a que se acepte, admita errores y confíe en sus padres."
+    }
+   ],
+   "block": "base"
+  },
+  {
+   "num": 2,
+   "title": "Lo que tu hijo necesita, lo que tú necesitas",
+   "summary": "Explica que muchos conflictos nacen de necesidades no cubiertas, tanto del niño como de la madre, y enseña a preguntarse qué necesidad hay detrás de una conducta, a cuidarse a sí misma y a negociar prioridades.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Necesidades humanas y pirámide de Maslow",
+     "items": [
+      "c02_piramide_maslow"
+     ],
+     "summary": "Repasa los cinco niveles de necesidades y cómo los padres deben cubrirlos o facilitar que el niño los cubra."
+    },
+    {
+     "num": "2.2",
+     "title": "Necesidades de interdependencia y la pregunta número uno",
+     "items": [
+      "c02_pregunta_necesidades"
+     ],
+     "summary": "Muchos estallidos responden a necesidades emocionales (amor, aceptación, contención); antes de disciplinar hay que buscar cuál falta."
+    },
+    {
+     "num": "2.3",
+     "title": "Otros disparadores de conducta",
+     "items": [],
+     "summary": "Cambios de rutina, un hermano nuevo, la escolarización o una mudanza sacan al niño de su lugar seguro y alteran su conducta."
+    },
+    {
+     "num": "2.4",
+     "title": "La parte olvidada del binomio madre/hijo",
+     "items": [
+      "c02_autocuidado_materno"
+     ],
+     "summary": "La madre también tiene necesidades; sin tribu, descanso ni apoyo, el agotamiento termina dañando a toda la familia."
+    },
+    {
+     "num": "2.5",
+     "title": "Estrés, miedos maternos y reestructuración cognitiva",
+     "items": [
+      "c02_reestructuracion_cognitiva"
+     ],
+     "summary": "Describe el impacto del estrés crónico y propone una tabla para cuestionar los miedos ansiosos de la crianza."
+    },
+    {
+     "num": "2.6",
+     "title": "Negociando necesidades",
+     "items": [
+      "c02_negociar_necesidades"
+     ],
+     "summary": "Cómo hablar de las propias necesidades con un preescolar y cómo priorizar las profundas sobre las superficiales sin anularse."
+    }
+   ],
+   "block": "base"
+  },
+  {
+   "num": 3,
+   "title": "Estallidos emocionales y berrinches",
+   "summary": "Define los estallidos emocionales como desregulaciones involuntarias propias de los 2–4 años y los explica desde el desarrollo psicológico, para que los padres acompañen en lugar de castigar y sepan cuándo consultar.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Berrinches y rabietas: aspectos generales",
+     "items": [
+      "c03_estallido_emocional"
+     ],
+     "summary": "Qué son los estallidos, por qué la autora evita la palabra berrinche y por qué gritar o ignorar no los resuelve."
+    },
+    {
+     "num": "3.2",
+     "title": "Qué ocurre durante el estallido y cómo acompañar",
+     "items": [
+      "c03_estallido_respuesta_estres"
+     ],
+     "summary": "En pleno desborde el niño no puede razonar; hay que esperar cerca, sin invadir, y consultar si los episodios son intensos y persisten pasados los 5 años."
+    },
+    {
+     "num": "3.3",
+     "title": "Desarrollo psicoafectivo: aproximación y constancia objetal",
+     "items": [
+      "c03_fase_aproximacion"
+     ],
+     "summary": "Según Mahler, el niño oscila entre independencia y necesidad de contención, lo que genera frustración y estallidos."
+    },
+    {
+     "num": "3.4",
+     "title": "Desarrollo cognitivo: egocentrismo preoperacional",
+     "items": [
+      "c03_egocentrismo_preoperacional"
+     ],
+     "summary": "Según Piaget, el preescolar no puede adoptar otra perspectiva y vive como choque cada negativa a sus deseos."
+    },
+    {
+     "num": "3.5",
+     "title": "Desarrollo social: jugar y compartir",
+     "items": [
+      "c03_no_forzar_compartir"
+     ],
+     "summary": "Del juego solitario o paralelo se pasa al cooperativo entre los 3 y 5 años; no se debe obligar a compartir ni a socializar."
+    }
+   ],
+   "block": "desarrollo"
+  },
+  {
+   "num": 4,
+   "title": "Emociones y regulación emocional",
+   "summary": "Explica qué son las emociones y cómo el niño pasa de una regulación guiada por el adulto a la autorregulación, y da pautas concretas sobre qué hacer y qué evitar ante un desajuste.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Qué son las emociones",
+     "items": [
+      "c04_componentes_emocion"
+     ],
+     "summary": "La emoción es una respuesta neurofisiológica, conductual y cognitiva que predispone a actuar, pero puede regularse."
+    },
+    {
+     "num": "4.2",
+     "title": "Emociones positivas, negativas y básicas",
+     "items": [
+      "c04_emociones_basicas"
+     ],
+     "summary": "No hay emociones buenas o malas; todas son funcionales, y Ekman propone seis básicas universales."
+    },
+    {
+     "num": "4.3",
+     "title": "Emociones primarias, secundarias y cómo nombrarlas",
+     "items": [
+      "c04_validar_nombrar"
+     ],
+     "summary": "Las secundarias surgen de combinar las primarias; los padres pueden ayudar a reconocerlas y nombrarlas en lugar de decir 'no pasa nada'."
+    },
+    {
+     "num": "4.4",
+     "title": "Regulación emocional: de la regulación externa a la autorregulación",
+     "items": [
+      "c04_corregulacion"
+     ],
+     "summary": "El bebé regula sus emociones a través del contacto con un adulto y adquiere poco a poco estrategias propias."
+    },
+    {
+     "num": "4.5",
+     "title": "Lo que hay que hacer",
+     "items": [
+      "c04_distraccion_con_explicacion"
+     ],
+     "summary": "El niño aprende por observación del ejemplo y por las prácticas parentales: validar, explicar al calmarse, distraer con moderación y dar afecto."
+    },
+    {
+     "num": "4.6",
+     "title": "Lo que no hay que hacer",
+     "items": [],
+     "summary": "Evitar la disciplina punitiva y también ceder siempre: el niño necesita experimentar frustración con equilibrio."
+    }
+   ],
+   "block": "desarrollo"
+  },
+  {
+   "num": 5,
+   "title": "Neurociencia y estallidos emocionales: el desarrollo cerebral del preescolar",
+   "summary": "Usa el modelo del cerebro triuno y la maduración cerebral para explicar por qué no se puede exigir lógica ni autocontrol adulto a un preescolar, y enseña a distinguir berrinches voluntarios de estallidos involuntarios y a acompañar al hermano mayor.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "El cerebro triuno de MacLean",
+     "items": [
+      "c05_cerebro_triuno"
+     ],
+     "summary": "Describe el cerebro reptiliano, el límbico y el neocórtex, y qué conductas atribuye a cada uno según la edad."
+    },
+    {
+     "num": "5.2",
+     "title": "Maduración cerebral y límites de lo exigible",
+     "items": [
+      "c05_maduracion_cerebral_tardia"
+     ],
+     "summary": "Como el cerebro racional madura tarde, al preescolar no se le puede pedir empatía profunda ni razonamiento adulto."
+    },
+    {
+     "num": "5.3",
+     "title": "Neuroplasticidad y experiencias",
+     "items": [
+      "c05_neuroplasticidad_temprana"
+     ],
+     "summary": "Las experiencias de exploración, juego libre y acompañamiento emocional moldean el cerebro, sobre todo en la primera infancia."
+    },
+    {
+     "num": "5.4",
+     "title": "Berrinches voluntarios versus estallidos involuntarios",
+     "items": [
+      "c05_berrinche_vs_estallido"
+     ],
+     "summary": "Siguiendo a Siegel y Payne Bryson, distingue la rabieta del cerebro superior de la del inferior y cómo responder a cada una."
+    },
+    {
+     "num": "5.5",
+     "title": "Sanar la herida del hermano mayor",
+     "items": [
+      "c05_regla_3r"
+     ],
+     "summary": "La llegada de un hermano supone un duelo para el mayor; hay que acompañarlo, no cargarlo de exigencias y reparar los errores con la regla de las 3R."
+    }
+   ],
+   "block": "desarrollo"
+  },
+  {
+   "num": 6,
+   "title": "Disciplina y disciplina punitiva",
+   "summary": "Denuncia el castigo físico y verbal como violencia con efectos dañinos, invita a romper el ciclo sin hundirse en la culpa y recupera el sentido de disciplina como enseñanza, presentando los componentes del modelo C.E.R.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "La herencia del caos",
+     "items": [
+      "c06_disciplina_punitiva"
+     ],
+     "summary": "Golpes, gritos y humillaciones son abuso: no enseñan y dejan secuelas emocionales y sociales."
+    },
+    {
+     "num": "6.2",
+     "title": "Romper el ciclo sin culpa paralizante",
+     "items": [],
+     "summary": "Quien ha pegado o gritado puede reconocerlo, pedir perdón, buscar ayuda y comprometerse a no repetirlo."
+    },
+    {
+     "num": "6.3",
+     "title": "Qué es disciplina: volviendo a los orígenes",
+     "items": [
+      "c06_disciplina_como_ensenanza"
+     ],
+     "summary": "Por su raíz latina, disciplinar significa enseñar; puede ejercerse con respeto, empatía y atención plena."
+    },
+    {
+     "num": "6.4",
+     "title": "Dos opciones y los componentes de la disciplina C.E.R.",
+     "items": [
+      "c06_componentes_cer"
+     ],
+     "summary": "Frente al modelo de premios y castigos, propone uno basado en la conexión cuyos componentes son límites, consecuencias y comunicación."
+    }
+   ],
+   "block": "cer"
+  },
+  {
+   "num": 7,
+   "title": "La disciplina C.E.R.",
+   "summary": "Expone los principios, el tipo de normas, el papel de los padres y los cuatro pilares de la disciplina consciente, empática y respetuosa, que sirven de marco para decidir qué límites poner y cómo.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Lineamientos y bases",
+     "items": [
+      "c07_disciplina_cer"
+     ],
+     "summary": "La disciplina C.E.R. es no punitiva, dialogada, bidireccional y flexible, y busca una cooperación que nazca del vínculo."
+    },
+    {
+     "num": "7.2",
+     "title": "Las normas",
+     "items": [
+      "c07_normas_democraticas"
+     ],
+     "summary": "Pocas, claras, de convivencia y elaboradas con la participación de los niños."
+    },
+    {
+     "num": "7.3",
+     "title": "El papel de los padres",
+     "items": [],
+     "summary": "Los padres no imponen autoridad: acompañan el paso del control externo al autocontrol y ayudan al hijo a formar su criterio."
+    },
+    {
+     "num": "7.4",
+     "title": "Los cuatro pilares",
+     "items": [
+      "c07_cuatro_pilares"
+     ],
+     "summary": "Integridad del niño, respeto a los demás seres, respeto a materiales y espacios comunes, y diálogo C.E.R."
+    }
+   ],
+   "block": "cer"
+  },
+  {
+   "num": 8,
+   "title": "Dimensiones de la disciplina C.E.R.",
+   "summary": "Desarrolla las tres dimensiones del modelo: la consciencia entendida como atención plena (mindful parenting), la empatía que avanza hacia la compasión y el respeto bidireccional. Le da a la madre o al padre la base interior (pausa, autoconocimiento, mirada desde el niño) sobre la que se apoyan todas las técnicas posteriores.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "C de consciencia: crianza consciente y atención plena",
+     "items": [
+      "c08_consciencia",
+      "c08_pausa_accion_reaccion"
+     ],
+     "summary": "Define la crianza consciente según Kabat-Zinn como atención deliberada, presente y sin juicio, y la presenta como herramienta para elegir la respuesta en lugar de reaccionar en automático."
+    },
+    {
+     "num": "8.2",
+     "title": "La meditación",
+     "items": [],
+     "summary": "Presenta la meditación (budista, secular o cristiana) como la práctica formal principal para entrenar la atención plena, donde importa más la constancia que el estilo."
+    },
+    {
+     "num": "8.3",
+     "title": "Actitud consciente ante los conflictos",
+     "items": [],
+     "summary": "Propone un diario emocional con preguntas tras cada conflicto y recomendaciones prácticas (observar al hijo, revisar expectativas, respirar, escuchar, regla de las 3R: recapacita, reconoce, repara)."
+    },
+    {
+     "num": "8.4",
+     "title": "Autoconocimiento y la niña interior herida",
+     "items": [],
+     "summary": "Explica que el autoconocimiento destapa heridas y automatismos heredados de la infancia y plantea la maternidad como oportunidad para sanarlos y comprender a los propios padres."
+    },
+    {
+     "num": "8.5",
+     "title": "E de empatía y compasión",
+     "items": [
+      "c08_empatia",
+      "c08_compasion"
+     ],
+     "summary": "Distingue empatía de simpatía o contagio emocional, insiste en mirar la situación desde el niño y define la compasión como empatía en acción."
+    },
+    {
+     "num": "8.6",
+     "title": "R de respeto",
+     "items": [
+      "c08_respeto"
+     ],
+     "summary": "Define el respeto como derecho inherente del niño, enumera qué respetar (emociones, etapas, cuerpo, posesiones, hambre y saciedad, esfínteres) y añade el autorrespeto parental y el respeto a otros."
+    },
+    {
+     "num": "8.7",
+     "title": "Prácticas respetuosas sin dogmas",
+     "items": [],
+     "summary": "Lista prácticas que favorecen una maternidad respetuosa (lactancia prolongada, colecho, porteo, juego libre, escolarización tardía) y aclara que no son recetas obligatorias sino elecciones a revisar con honestidad."
+    }
+   ],
+   "block": "cer"
+  },
+  {
+   "num": 9,
+   "title": "Componentes de la disciplina C.E.R.",
+   "summary": "Presenta los tres componentes operativos del modelo: límites (oportunos y respetuosos), consecuencias auténticas frente a castigos disfrazados, y la comunicación consciente, empática y respetuosa. Sirve para saber cuándo poner un límite, cuándo dejar que actúe la consecuencia natural y cómo decirlo.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Límites oportunos y respetuosos",
+     "items": [
+      "c09_limites"
+     ],
+     "summary": "Define el límite como frontera psicológica necesaria para el autocontrol y distingue el que protege la integridad del niño del que protege a su entorno."
+    },
+    {
+     "num": "9.2",
+     "title": "Características de los límites C.E.R.",
+     "items": [],
+     "summary": "Enumera ocho rasgos de un buen límite familiar (claro, en positivo, con sentido, dialogable, dicho con calma, coherente entre cuidadores, atento a necesidades de todos) y la excepción de las situaciones de riesgo vital."
+    },
+    {
+     "num": "9.3",
+     "title": "Consecuencias auténticas frente a castigos disfrazados",
+     "items": [
+      "c09_consecuencia_autentica",
+      "c09_castigo_disfrazado"
+     ],
+     "summary": "Contrasta la consecuencia que se deriva naturalmente de la acción con las amenazas y pérdidas de privilegios sin relación causal, que el libro considera castigos encubiertos."
+    },
+    {
+     "num": "9.4",
+     "title": "Equilibrar límites y consecuencias",
+     "items": [],
+     "summary": "Indica usar más límites en los más pequeños y más consecuencias a medida que maduran, elegir qué normas importan, indagar necesidades no cubiertas antes de actuar y mantenerse firme con las consecuencias."
+    },
+    {
+     "num": "9.5",
+     "title": "Comunicación C.E.R.",
+     "items": [
+      "c09_comunicacion_cer"
+     ],
+     "summary": "Describe la comunicación sin gritos, etiquetas ni amenazas, basada en diálogo empático para entender el conflicto y acordar soluciones, frente a la comunicación violenta que escala y daña la autoestima."
+    },
+    {
+     "num": "9.6",
+     "title": "Características de la comunicación C.E.R.",
+     "items": [
+      "c09_mensajes_yo"
+     ],
+     "summary": "Lista pautas concretas: ponerse a la altura del niño, mensajes en primera persona, centrarse en la conducta, nombrar necesidades y emociones, coherencia no verbal, lenguaje positivo, pedir perdón y sugerir en vez de imponer."
+    }
+   ],
+   "block": "cer"
+  },
+  {
+   "num": 10,
+   "title": "Técnicas de comunicación y abordaje de los estallidos",
+   "summary": "Reúne las técnicas prácticas del modelo: S.E.D.A., disco rayado, nueve estrategias para prevenir estallidos, seis pasos para gestionarlos, lo que conviene evitar y una postura crítica ante premios y elogios. Es la caja de herramientas para el día a día con niños de 1 a 6 años.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Técnica S.E.D.A.",
+     "items": [
+      "c10_seda"
+     ],
+     "summary": "Secuencia de cuatro pasos para corregir una conducta sin etiquetar al niño, recomendada desde los tres años y medio."
+    },
+    {
+     "num": "10.2",
+     "title": "Disco rayado y canales de comunicación empática",
+     "items": [
+      "c10_disco_rayado"
+     ],
+     "summary": "Técnica de repetir con calma la misma frase ante la insistencia, más los mensajes implícitos y frases útiles para abrir el diálogo con el hijo."
+    },
+    {
+     "num": "10.3",
+     "title": "Estrategias para prevenir estallidos emocionales",
+     "items": [
+      "c10_prevencion_estallidos"
+     ],
+     "summary": "Nueve estrategias preventivas que resumen el modelo: atender necesidades, elegir batallas, ofrecer alternativas y opciones, anticipar, implicar al niño, cuidar rutinas, respetar su cuerpo y aceptar."
+    },
+    {
+     "num": "10.4",
+     "title": "Gestionar el estallido: qué hacer y qué evitar",
+     "items": [
+      "c10_gestion_estallidos"
+     ],
+     "summary": "Seis pasos para acompañar un estallido ya desatado y nueve prácticas a evitar durante él (ignorar, etiquetar, chantajear, calmar con comida, razonar en pleno estallido, rincón de pensar, forzar a compartir o a disculparse)."
+    },
+    {
+     "num": "10.5",
+     "title": "Premios, refuerzos y elogios",
+     "items": [
+      "c10_premios_elogios"
+     ],
+     "summary": "Rechaza premios y retirada de privilegios como condicionamiento, critica el elogio excesivo y propone pautas para un elogio sincero, específico y centrado en el proceso, o agradecer en su lugar."
+    }
+   ],
+   "block": "tecnicas"
+  },
+  {
+   "num": 11,
+   "title": "Estrategias para gestionar desajustes emocionales en los adultos",
+   "summary": "Ofrece tres recursos para que el adulto se regule antes de intervenir: el tiempo fuera de los padres, la gestión del enfado en cuatro pasos y el anclaje emocional. Sirve para no responder a gritos cuando el desbordado es el propio adulto.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Tiempo fuera de los padres",
+     "items": [
+      "c11_tiempo_fuera_padres"
+     ],
+     "summary": "Cuando el adulto está a punto de perder el control, deja a otro adulto a cargo, explica al niño que sale a calmarse y vuelve pronto."
+    },
+    {
+     "num": "11.2",
+     "title": "Gestión del enfado en cuatro pasos",
+     "items": [
+      "c11_enfado_cuatro_pasos"
+     ],
+     "summary": "Ejercicio, tomado de Juan Pedro Sánchez, para hacerse cargo del propio enfado, regularlo, decidir qué se busca con la respuesta y hablar de la emoción en vez de desde ella."
+    },
+    {
+     "num": "11.3",
+     "title": "Anclaje emocional",
+     "items": [
+      "c11_anclaje_emocional"
+     ],
+     "summary": "Uso de un objeto o imagen colocado en la situación que dispara al adulto como recordatorio para no reaccionar en automático."
+    }
+   ],
+   "block": "tecnicas"
+  },
+  {
+   "num": 12,
+   "title": "Consejos desde la experiencia con mi hijo mayor",
+   "summary": "La autora comparte dos recursos que inventó con su hijo: devolverle al niño la elección de cómo sigue el conflicto y enseñarle a reconocer que el cansancio altera su cerebro. Ilustra cómo la repetición paciente lleva al niño a autorregularse.",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "“Tú tienes el poder”",
+     "items": [
+      "c12_tu_tienes_el_poder"
+     ],
+     "summary": "Ante insultos o amenazas del niño, el adulto valida su enfado, marca el límite y le ofrece elegir entre seguir discutiendo o reconciliarse; recomendado desde los 3-4 años."
+    },
+    {
+     "num": "12.2",
+     "title": "“Tu cerebro está cansado”",
+     "items": [
+      "c12_tu_cerebro_esta_cansado"
+     ],
+     "summary": "Frase repetida ante los desajustes por sueño que ayuda al niño, desde los dos años, a reconocer el cansancio como causa de su enfado; cierra con un mensaje de ánimo a quienes crían con respeto."
+    }
+   ],
+   "block": "tecnicas"
+  },
+  {
+   "num": 13,
+   "title": "Cuando los bebés pegan",
+   "summary": "Explica por qué los niños pequeños pegan y cómo responder según la edad: gesto y frase simple antes de los dos años, empatía, negociación y pelea simulada de 18 a 36 meses, límites respetuosos después. Incluye la postura de la autora sobre defenderse y cómo acompañar al hijo cuando otros lo hieren.",
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "Por qué pegan los niños pequeños",
+     "items": [
+      "c13_por_que_pegan",
+      "c13_no_au_duele"
+     ],
+     "summary": "Atribuye el golpe a estrés, frustración y falta de lenguaje o habilidades sociales, no a maldad, y propone una respuesta breve y no punitiva para menores de dos años."
+    },
+    {
+     "num": "13.2",
+     "title": "Técnicas para no golpear de 18 a 36 meses",
+     "items": [
+      "c13_pelea_simulada"
+     ],
+     "summary": "Estimular la empatía describiendo conflictos ajenos, fomentar la negociación e intercambio de juguetes y permitir el juego de pelea simulada con reglas."
+    },
+    {
+     "num": "13.3",
+     "title": "Niños mayores, límites y derecho a defenderse",
+     "items": [
+      "c13_defenderse"
+     ],
+     "summary": "A partir de los tres o cuatro años se aplican límites respetuosos y diálogo empático; la autora defiende enseñar a frenar golpes y pedir ayuda, y defenderse solo si ningún adulto interviene."
+    },
+    {
+     "num": "13.4",
+     "title": "Cuando otros niños hieren a tu hijo",
+     "items": [
+      "c13_cuando_hieren"
+     ],
+     "summary": "Ante burlas o críticas, validar el dolor del hijo sin etiquetar al otro niño y enseñarle que los gustos son diversos y que puede pedir respeto."
+    }
+   ],
+   "block": "tecnicas"
+  },
+  {
+   "num": 14,
+   "title": "Crianza y pareja",
+   "summary": "Aborda cómo la llegada de los hijos tensiona la pareja (puerperio, cansancio, reparto de tareas) y defiende cuidar el vínculo y agotar recursos antes de separarse, salvo en casos de abuso. Ofrece sugerencias concretas para reconectar como pareja.",
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "Amor y familia en tiempos líquidos",
+     "items": [
+      "c14_crisis_pareja_posparto"
+     ],
+     "summary": "Describe cómo el puerperio, el agotamiento y la redistribución del amor y las tareas alejan a la pareja en los primeros años de crianza."
+    },
+    {
+     "num": "14.2",
+     "title": "De amantes a socios",
+     "items": [],
+     "summary": "Relato personal del paso de pareja a compañeros de logística y la recomendación de hablar claro de las necesidades y reservar momentos de conexión."
+    },
+    {
+     "num": "14.3",
+     "title": "¿Hundirse con el barco o saltar a tiempo?",
+     "items": [
+      "c14_cuidar_el_vinculo"
+     ],
+     "summary": "Postura de agotar recursos y terapia antes de romper la familia, con la excepción explícita de hogares con abuso o negligencia."
+    },
+    {
+     "num": "14.4",
+     "title": "Sugerencias para la pareja",
+     "items": [
+      "c14_sugerencias_pareja"
+     ],
+     "summary": "Seis propuestas: citas breves semanales, agradecer dos cosas cada noche, comunicación no violenta, trabajar la autoestima posparto, terapia y el koan de “voltear la tortilla”."
+    }
+   ],
+   "block": "familia"
+  },
+  {
+   "num": 15,
+   "title": "Sanar la herida materna y paterna",
+   "summary": "Plantea que para criar con consciencia hay que trabajar los rencores con los propios padres, comprender su historia y perdonar, con una técnica escrita para hacerlo. Cierra el libro reconociendo que la disciplina respetuosa es exigente y dando herramientas frente a la crítica social.",
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "Perdonar a nuestros padres",
+     "items": [
+      "c15_herida_materna_paterna"
+     ],
+     "summary": "Invita a entender el contexto en que criaron los propios padres, aceptarlos, valorar la presencia de los abuelos y usar el perdón y la gratitud para cortar ciclos."
+    },
+    {
+     "num": "15.2",
+     "title": "Técnica: te regalo una flor",
+     "items": [
+      "c15_te_regalo_una_flor"
+     ],
+     "summary": "Ejercicio escrito para comprender y perdonar una herida concreta causada por el padre o la madre, aclarando que perdonar no es negar el daño."
+    },
+    {
+     "num": "15.3",
+     "title": "Criar y disciplinar con respeto no es fácil",
+     "items": [],
+     "summary": "Reconoce que el modelo C.E.R. exige introspección, paciencia y tiempo, y que sanar el niño interior es condición para sostener la atención plena."
+    },
+    {
+     "num": "15.4",
+     "title": "Notas finales: la crítica externa y qué es malcriar",
+     "items": [
+      "c15_malcriar"
+     ],
+     "summary": "Da ánimo ante familiares y opinólogos que tachan de permisiva la crianza respetuosa, redefine qué es malcriar y pide no tomar el libro como dogma."
+    }
+   ],
+   "block": "familia"
+  }
+ ],
+ "items": {
+  "c00_estallido_no_manipulacion": {
+   "title": "El llanto no es manipulación",
+   "summary": "Los bebés y niños pequeños no planifican su llanto ni sus llamadas de atención: expresan miedos y necesidades del único modo que conocen y necesitan ser comprendidos, validados y contenidos."
+  },
+  "c00_tres_pasos": {
+   "title": "Tres pasos iniciales de la crianza consciente",
+   "formula": "Liberar al niño de culpa → Sanar las propias heridas de la infancia → Perdonarse y aceptarse imperfecto",
+   "summary": "Secuencia que la autora propone como punto de partida para guiar a los hijos de forma positiva y respetuosa."
+  },
+  "c00_crianza_rebelde": {
+   "title": "Crianza rebelde",
+   "summary": "Rebelarse contra los modelos disciplinarios adultocéntricos para centrarse en el niño, entendiendo que el respeto no equivale a ausencia de límites."
+  },
+  "c01_adulto_como_cimiento": {
+   "title": "El adulto como cimiento",
+   "summary": "El origen de los conflictos está en cómo reacciona el adulto; antes de corregir al hijo, los padres deben trabajar su propia regulación emocional (por ejemplo, pausar, mirar la pequeñez del niño y respirar)."
+  },
+  "c01_vinculo_conexion": {
+   "title": "Vínculo de conexión",
+   "summary": "Relación basada en la presencia plena, la escucha y la validación que da al niño seguridad y es el motor de su cooperación; cuando falla, aparecen llamadas de atención negativas (remedio: tiempo a solas, 'citas especiales')."
+  },
+  "c01_economia_domestica_emocional": {
+   "title": "Economía doméstica emocional",
+   "summary": "Reducir los 'no' a lo realmente peligroso o injusto e involucrar al niño en las tareas, lo que fortalece el vínculo y evita conflictos que acaban costando más tiempo."
+  },
+  "c01_separar_conducta_persona": {
+   "title": "Separar la conducta de la persona",
+   "summary": "Criticar la acción y nunca etiquetar al niño (tonto, llorón, mandón); si el adulto explota, debe pedir disculpas y corregir lo dicho."
+  },
+  "c01_amor_incondicional": {
+   "title": "Amor incondicional",
+   "summary": "Amar al hijo por quien es y no por su comportamiento o logros, dejando claro que el enfado con una conducta no cambia el amor."
+  },
+  "c02_piramide_maslow": {
+   "title": "Pirámide de necesidades de Maslow",
+   "formula": "Fisiológicas → Seguridad → Sociales → Estima → Autorrealización",
+   "caution": "La jerarquía estricta de Maslow tiene poco apoyo empírico: las necesidades se satisfacen de forma bastante independiente (revisión de Wahba y Bridwell, 1976; estudio transcultural de Tay y Diener, 2011).",
+   "summary": "Las necesidades se ordenan por niveles y las superiores solo captan la atención cuando las básicas están cubiertas; su carencia en el niño se refleja en la conducta."
+  },
+  "c02_pregunta_necesidades": {
+   "title": "¿Qué necesidad no está cubierta?",
+   "summary": "Antes de cualquier medida disciplinaria hay que preguntarse qué necesidad del niño falta, incluidas las de interdependencia de Rosenberg (amor, aceptación, comprensión, seguridad emocional)."
+  },
+  "c02_autocuidado_materno": {
+   "title": "Autocuidado materno y tribu",
+   "caution": "Es una extrapolación afirmar que el estrés materno 'mata células del hipocampo' o que no hacer ejercicio equivale a tomar 'pastillas depresivas': la evidencia sobre cortisol e hipocampo procede sobre todo de modelos animales y de estrés crónico grave (línea de Sapolsky y McEwen).",
+   "summary": "La madre también es parte del binomio: necesita descanso, apoyo de una red ('tribu') y permiso para delegar, porque una madre agotada o deprimida daña más que unas horas de separación."
+  },
+  "c02_reestructuracion_cognitiva": {
+   "title": "Reestructuración cognitiva de los miedos maternos",
+   "formula": "Situación → Pensamiento → Emoción → Conducta → Pensamiento alternativo",
+   "summary": "Tabla de cinco columnas para identificar los pensamientos ansiosos de la crianza y sustituirlos por interpretaciones alternativas más realistas."
+  },
+  "c02_negociar_necesidades": {
+   "title": "Negociar necesidades con el niño",
+   "summary": "Explicar las propias necesidades con frases cortas y concretas, en primera persona y con referencias temporales que el niño entienda ('cuando termine esta canción'), distinguiendo necesidades profundas de superficiales."
+  },
+  "c03_estallido_emocional": {
+   "title": "Estallido o desajuste emocional",
+   "summary": "Forma inmadura e involuntaria de expresar enojo o malestar, típica de los 2 a 4 años, que nace de la frustración, de necesidades no cubiertas o de una integración cerebral aún insuficiente; la autora prefiere este término a berrinche o rabieta."
+  },
+  "c03_estallido_respuesta_estres": {
+   "title": "El estallido como respuesta de estrés",
+   "caution": "Presentar el estallido como una reacción de lucha o huida con descarga masiva de cortisol simplifica la evidencia: los estudios sobre rabietas describen componentes de ira y de malestar que siguen un curso temporal (Potegal y Davidson, 2003), sin medir ese mecanismo directamente.",
+   "summary": "Durante el desborde el niño está bloqueado y no puede razonar; el adulto debe evitar sermones, esperar cerca y a su altura y ofrecer contacto solo si el niño lo acepta."
+  },
+  "c03_fase_aproximacion": {
+   "title": "Fase de aproximación y constancia objetal (Mahler)",
+   "caution": "La teoría de separación-individuación de Mahler es psicoanalítica y observacional; sus fases tempranas fueron cuestionadas por la investigación sobre el bebé (Stern, 1985) y el campo se apoya hoy más en la teoría del apego.",
+   "summary": "Entre los 18 y 24 meses el niño oscila entre buscar independencia y necesitar mucha contención; hacia los 3 años puede representarse mentalmente a su figura de apego y tolerar mejor la separación."
+  },
+  "c03_egocentrismo_preoperacional": {
+   "title": "Egocentrismo preoperacional (Piaget)",
+   "caution": "Piaget subestimó la capacidad de los niños pequeños para adoptar otras perspectivas; la investigación sobre teoría de la mente muestra comprensión de creencias ajenas hacia los 4 años y formas más tempranas de toma de perspectiva (metaanálisis de Wellman, Cross y Watson, 2001).",
+   "summary": "Entre los 2 y 4 años el niño asume que los demás piensan y sienten como él, lo que explica su afán de autonomía ('yo', 'mío', 'no') y su frustración ante las negativas."
+  },
+  "c03_no_forzar_compartir": {
+   "title": "No forzar a compartir ni a socializar",
+   "summary": "Antes de los 3 años predomina el juego solitario o paralelo y compartir es difícil de procesar; entre los 3 y 5 años surge el juego cooperativo, y conviene dejar que resuelvan sus conflictos con mínima intervención adulta."
+  },
+  "c04_componentes_emocion": {
+   "title": "Tres componentes de la emoción",
+   "formula": "Neurofisiológico + Comportamental + Cognitivo",
+   "summary": "Siguiendo a Bisquerra, la emoción es una respuesta corporal, expresiva y de toma de conciencia; el componente cognitivo permite nombrarla y decidir qué hacer con ella."
+  },
+  "c04_emociones_basicas": {
+   "title": "Emociones básicas y funcionalidad",
+   "caution": "La universalidad de seis emociones básicas reconocibles por la expresión facial está discutida (revisión de Barrett y colaboradores, 2019), y la idea de que las emociones negativas se procesan en el hemisferio derecho y las positivas en el izquierdo no se sostiene en metaanálisis de neuroimagen (Wager y colaboradores, 2003).",
+   "summary": "No hay emociones buenas ni malas: todas son adaptativas; Ekman describe seis básicas (tristeza, miedo, alegría, sorpresa, asco, ira) de las que derivan las secundarias."
+  },
+  "c04_validar_nombrar": {
+   "title": "Validar y nombrar la emoción",
+   "summary": "Reconocer lo que el niño siente, ponerle nombre y ofrecer afecto ('te caíste, sé que te duele') en lugar de minimizarlo con 'no pasa nada'."
+  },
+  "c04_corregulacion": {
+   "title": "De la regulación externa a la autorregulación",
+   "summary": "El bebé solo puede calmarse mediante la relación con un adulto disponible (contacto, voz, abrazo); con la maduración y el ejemplo adquiere estrategias propias hasta autorregularse al final de la etapa preescolar."
+  },
+  "c04_distraccion_con_explicacion": {
+   "title": "Distracción con explicación previa",
+   "formula": "Validar → Explicar la negativa → Proponer un cambio de foco",
+   "summary": "La distracción ayuda a regular la emoción negativa, pero debe usarse sin abusar y después de validar y explicar, para no crear dependencia de la regulación externa."
+  },
+  "c05_cerebro_triuno": {
+   "title": "Cerebro triuno de MacLean",
+   "formula": "Reptiliano (supervivencia) → Límbico (emoción) → Neocórtex (pensamiento)",
+   "caution": "El modelo del cerebro triuno está abandonado en neurociencia comparada: el cerebro no se formó por capas evolutivas superpuestas ni existe un 'cerebro reptiliano' aislado (revisión de Cesario, Johnson y Eisthen, 2020).",
+   "summary": "Modelo que divide el cerebro en tres capas evolutivas y que la autora usa para explicar que en los primeros años dominan las respuestas instintivas y emocionales sobre las racionales."
+  },
+  "c05_maduracion_cerebral_tardia": {
+   "title": "Maduración tardía del cerebro racional",
+   "caution": "Es correcto que la corteza prefrontal madura hasta pasados los 20 años, pero la división hemisferio izquierdo lógico / derecho emocional es una simplificación que no respalda la neuroimagen (Nielsen y colaboradores, 2013).",
+   "summary": "Como el neocórtex madura lentamente y en los primeros años predomina el hemisferio derecho, al preescolar no se le puede exigir lógica, noción del tiempo ni empatía de adulto; el lenguaje que entiende es el afecto."
+  },
+  "c05_neuroplasticidad_temprana": {
+   "title": "Neuroplasticidad en la primera infancia",
+   "summary": "Las experiencias modifican el cerebro toda la vida, pero sobre todo en la primera infancia; una crianza que permite explorar, jugar y sentirse acompañado favorece un desarrollo cerebral óptimo."
+  },
+  "c05_berrinche_vs_estallido": {
+   "title": "Berrinche voluntario vs. estallido involuntario",
+   "caution": "La distinción entre rabietas del 'cerebro superior' e 'inferior' de Siegel y Payne Bryson es una metáfora clínica útil, no una clasificación validada empíricamente, y se apoya en el modelo del cerebro triuno.",
+   "summary": "El berrinche voluntario (cerebro superior) se detiene si se cede y se maneja con empatía y firmeza en el límite; el estallido involuntario (cerebro inferior) requiere conectar, proteger y acompañar hasta que el niño se calme."
+  },
+  "c05_regla_3r": {
+   "title": "Regla de las 3R",
+   "formula": "Recapacitar → Reconocer → Reparar",
+   "summary": "Pauta de la autora para que los padres, sin hundirse en la culpa, corrijan sus errores con los hijos (por ejemplo, con el hermano mayor desplazado)."
+  },
+  "c06_disciplina_punitiva": {
+   "title": "Disciplina punitiva",
+   "summary": "Corregir mediante golpes, gritos, amenazas, aislamiento o humillación: no enseña, se basa en el miedo y se asocia a baja autoestima, agresividad y problemas de salud mental."
+  },
+  "c06_disciplina_como_ensenanza": {
+   "title": "Disciplina como enseñanza",
+   "summary": "Por su raíz latina (discere, aprender), disciplinar es enseñar y educar dentro de una relación de amor, no controlar ni castigar."
+  },
+  "c06_componentes_cer": {
+   "title": "Componentes de la disciplina C.E.R.",
+   "formula": "Límites oportunos (LO/LRSE) + Consecuencias auténticas (CA) + Comunicación C.E.R.",
+   "summary": "Los tres elementos con los que la autora construye su modelo de disciplina consciente, empática y respetuosa."
+  },
+  "c07_disciplina_cer": {
+   "title": "Disciplina C.E.R.",
+   "summary": "Modelo no punitivo, consciente, empático y respetuoso: el niño es activo en su aprendizaje, se explican el qué, el porqué y el para qué, las consecuencias se anticipan y la cooperación nace del vínculo."
+  },
+  "c07_normas_democraticas": {
+   "title": "Normas pocas, claras y democráticas",
+   "summary": "Las normas deben ser sobre todo de convivencia, limitarse a lo importante y elaborarse, aplicarse y revisarse con la participación de los niños."
+  },
+  "c07_cuatro_pilares": {
+   "title": "Cuatro pilares de la disciplina C.E.R.",
+   "formula": "Integridad física, mental y emocional · Respeto a personas, animales y seres vivos · Respeto a materiales y espacios comunes · Diálogo C.E.R.",
+   "summary": "Los cuatro ámbitos que justifican poner un límite; fuera de ellos se prioriza la libertad y la exploración."
+  },
+  "c08_consciencia": {
+   "title": "Consciencia: atención plena en la crianza (mindful parenting)",
+   "summary": "Primera dimensión y eje transversal del modelo: atender al hijo y a la propia crianza de forma intencional, en el presente y sin juzgar, entrenada con práctica formal e informal.",
+   "caution": "Los beneficios del mindfulness para el estrés parental tienen respaldo moderado, pero la afirmación de que 8 semanas de práctica producen cambios cerebrales estructurales permanentes no se sostiene: ensayos controlados mayores no los replicaron (Kral et al., 2022)."
+  },
+  "c08_pausa_accion_reaccion": {
+   "title": "El espacio entre acción y reacción",
+   "summary": "Entre lo que hace el hijo y la respuesta del adulto hay un instante que la atención plena permite ampliar para respirar, observar y elegir cómo responder.",
+   "formula": "Respirar → calmar el cuerpo → observar al niño y la situación → elegir la respuesta"
+  },
+  "c08_empatia": {
+   "title": "Empatía frente a simpatía",
+   "summary": "Comprender y sentir lo que vive el niño desde su perspectiva y no desde la del adulto, sin fusionarse con su emoción (simpatía o contagio) para poder ayudarlo a transitarla."
+  },
+  "c08_compasion": {
+   "title": "Compasión como empatía en acción",
+   "summary": "Motivación que une la sensibilidad al sufrimiento propio y ajeno con el compromiso de aliviarlo; va más allá de la empatía y es inseparable de la atención plena."
+  },
+  "c08_respeto": {
+   "title": "Respeto bidireccional",
+   "summary": "El respeto es inherente al niño y no se gana; abarca sus emociones, etapas, cuerpo, posesiones y ritmos, e incluye las necesidades de los padres y el respeto a otras familias."
+  },
+  "c09_limites": {
+   "title": "Límite oportuno y límite respetuoso",
+   "summary": "El límite oportuno protege la integridad física y emocional del niño; el respetuoso, la de su entorno (personas, animales, plantas); ambos detienen o redirigen la acción hacia una alternativa segura."
+  },
+  "c09_consecuencia_autentica": {
+   "title": "Consecuencia auténtica",
+   "summary": "Efecto natural y lógico de una acción que se explica al niño como información, no como amenaza, para que aprenda la relación causa-efecto; se prefiere al límite cuando no hay peligro.",
+   "formula": "Causa (lo que hace) → efecto previsible → consecuencia que vivirá"
+  },
+  "c09_castigo_disfrazado": {
+   "title": "Falsas consecuencias o castigos disfrazados",
+   "summary": "Amenazas o pérdidas de privilegios sin relación causal con la conducta (rincón de pensar, quitar el postre) que el libro considera castigos encubiertos y pide evitar.",
+   "caution": "Equiparar toda consecuencia impuesta breve (tiempo fuera, retirada de un privilegio) con castigo dañino no está respaldado: los programas de crianza con evidencia la usan sin efectos adversos (Dadds y Tully, 2019)."
+  },
+  "c09_comunicacion_cer": {
+   "title": "Comunicación C.E.R.",
+   "summary": "Comunicación consciente, empática y respetuosa, sin gritos, etiquetas, amenazas ni sarcasmo, que usa el diálogo para entender el conflicto, buscar soluciones y aprender para la próxima vez."
+  },
+  "c09_mensajes_yo": {
+   "title": "Mensajes en primera persona",
+   "summary": "Expresar lo que uno piensa, siente o necesita (“yo siento…”) sin atribuir culpa al niño, centrando el mensaje en la conducta y no en la persona (según Satir)."
+  },
+  "c10_seda": {
+   "title": "Técnica S.E.D.A.",
+   "summary": "Secuencia para corregir una conducta sin juicios ni etiquetas, desde los tres años y medio.",
+   "formula": "Señalar la conducta → Explicar cómo me siento → Describir lo esperado → Agradecer"
+  },
+  "c10_disco_rayado": {
+   "title": "Disco rayado",
+   "summary": "Repetir con calma y respeto la misma frase breve (“te entiendo, pero no voy a…”) ante la insistencia del niño, sin entrar en discusiones."
+  },
+  "c10_prevencion_estallidos": {
+   "title": "Nueve estrategias para prevenir estallidos",
+   "summary": "Guía flexible que resume el modelo para anticiparse a los desajustes emocionales del niño.",
+   "formula": "Necesidades básicas → Elegir batallas → Alternativas → Dos opciones → Anticipación → Hacerlos protagonistas → Rutinas → Autoridad sobre su cuerpo → Aceptación"
+  },
+  "c10_gestion_estallidos": {
+   "title": "Seis pasos para gestionar un estallido",
+   "summary": "Secuencia para acompañar un estallido o berrinche ya desatado, junto con prácticas a evitar (ignorar, etiquetar, chantaje, consolar con comida, rincón de pensar).",
+   "formula": "Mantener la calma → Reconocer y validar → Zona segura → Redireccionar → Límites y consecuencias → Educar para el futuro",
+   "caution": "La co-regulación por la calma del adulto tiene respaldo, pero explicarla por neuronas espejo es una sobreinterpretación (Hickok, 2014); y consolar con comida se asocia a comer emocional, sin que esté demostrado que cause trastornos alimentarios."
+  },
+  "c10_premios_elogios": {
+   "title": "Sin premios y elogio sincero",
+   "summary": "El modelo no premia ni retira privilegios para no condicionar conductas; prefiere agradecer y, si se elogia, hacerlo de forma específica, sincera y centrada en el proceso.",
+   "caution": "Las recompensas esperadas pueden reducir la motivación intrínseca (Deci, Koestner y Ryan, 1999), pero el refuerzo positivo es eficaz en programas de crianza con evidencia; el rechazo total es una opción del modelo, no una conclusión científica."
+  },
+  "c11_tiempo_fuera_padres": {
+   "title": "Tiempo fuera de los padres",
+   "summary": "El adulto desbordado se retira brevemente, dejando a otro adulto a cargo y explicando al niño que sale a calmarse él, y vuelve cuando recupera la calma."
+  },
+  "c11_enfado_cuatro_pasos": {
+   "title": "Gestión del enfado en cuatro pasos",
+   "summary": "Ejercicio para que el adulto se responsabilice de su enfado y responda desde la intención y no desde el impulso.",
+   "formula": "Aceptar que el enfado es mío → Regularlo con respiraciones abdominales → Reflexionar qué quiero lograr → Hablar de la emoción, no desde la emoción"
+  },
+  "c11_anclaje_emocional": {
+   "title": "Anclaje emocional",
+   "summary": "Objeto, foto o imagen situada en el contexto que dispara al adulto, que actúa como recordatorio para no reaccionar en automático."
+  },
+  "c12_tu_tienes_el_poder": {
+   "title": "“Tú tienes el poder”",
+   "summary": "Tras validar el enfado y poner el límite, el adulto ofrece al niño elegir entre seguir en conflicto o reconciliarse, devolviéndole la responsabilidad de la decisión."
+  },
+  "c12_tu_cerebro_esta_cansado": {
+   "title": "“Tu cerebro está cansado”",
+   "summary": "Frase repetida ante los desajustes por sueño que enseña al niño a reconocer el cansancio como causa de su malestar y a separarlo de su identidad."
+  },
+  "c13_por_que_pegan": {
+   "title": "Por qué pegan los niños pequeños",
+   "summary": "Pegar es esperable en niños pequeños ante estrés o frustración y, más adelante, una forma torpe de buscar contacto por falta de lenguaje y habilidades sociales; disminuye a medida que estas maduran.",
+   "caution": "El “cerebro reptiliano” del modelo triuno de MacLean está superado (Cesario, Johnson y Eisthen, 2020); lo que sí está respaldado es que la agresión física es normativa, alcanza su pico hacia los dos años y declina con el lenguaje (Tremblay et al., 2004)."
+  },
+  "c13_no_au_duele": {
+   "title": "Respuesta al golpe antes de los dos años",
+   "summary": "Detener la mano con suavidad, nombrar el daño con un gesto de dolor (no de enojo), apartar al niño un momento, validar su enojo y buscar el detonante.",
+   "formula": "Sujetar la mano con suavidad → “No, au, duele” → separar de la escena → validar y explicar que pegar lastima → buscar el detonante"
+  },
+  "c13_pelea_simulada": {
+   "title": "Juego de pelea simulada",
+   "summary": "Jugar a pelear con reglas (no hacer daño, dejar ganar, medir la fuerza) ayuda a niños de 18 a 36 meses a practicar el autocontrol y reduce los golpes reales."
+  },
+  "c13_defenderse": {
+   "title": "Derecho a defenderse",
+   "summary": "Postura personal de la autora: enseñar al niño a frenar el golpe y pedir ayuda a un adulto, y defenderse solo si nadie interviene, para no normalizar el maltrato."
+  },
+  "c13_cuando_hieren": {
+   "title": "Acompañar cuando otros niños hieren a tu hijo",
+   "summary": "Validar el dolor del hijo sin etiquetar ni atacar al otro niño, enseñarle que los gustos son diversos y que puede pedir respeto ante la burla."
+  },
+  "c14_crisis_pareja_posparto": {
+   "title": "Crisis de pareja en los primeros años",
+   "summary": "El puerperio, el agotamiento, el reparto de tareas y los cambios corporales y de libido tensionan la pareja; sostenerla exige humildad, comunicación y priorizar momentos de conexión."
+  },
+  "c14_cuidar_el_vinculo": {
+   "title": "Cuidar el vínculo antes de separarse",
+   "summary": "La autora defiende agotar recursos y terapia antes de romper la familia, salvo abuso o negligencia, argumentando que un divorcio puede afectar más al niño que los desacuerdos de crianza.",
+   "caution": "La evidencia indica que lo que más daña al niño es el conflicto interparental intenso; en familias muy conflictivas los hijos pueden estar mejor tras la separación (Amato, 2001)."
+  },
+  "c14_sugerencias_pareja": {
+   "title": "Seis sugerencias para la pareja",
+   "summary": "Propuestas concretas para reconectar como pareja durante la crianza.",
+   "formula": "Citas en pareja → Te agradezco ×2 → Comunicación no violenta → Trabajar la autoestima → Terapia → Voltear la tortilla"
+  },
+  "c15_herida_materna_paterna": {
+   "title": "Herida materna y paterna",
+   "summary": "Los rencores no resueltos con los propios padres se trasladan a la crianza; comprender su contexto, aceptarlos y perdonar (Perdón y Gracias) permite cortar ciclos y sostener la atención plena."
+  },
+  "c15_te_regalo_una_flor": {
+   "title": "Técnica “te regalo una flor”",
+   "summary": "Ejercicio escrito de comprensión y perdón hacia el padre o la madre, recordando que perdonar no es negar el daño ni renunciar a la justicia.",
+   "formula": "Escribir la herida en el centro → diez pétalos con posibles razones → “te perdono por…” → quemar el papel"
+  },
+  "c15_malcriar": {
+   "title": "Qué es (y qué no es) malcriar",
+   "summary": "Redefine malcriar como negligencia, humillación o desatención, y defiende que abrazar, contener y respetar al niño no es permisividad."
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "0": [],
+   "1": [
+    0
+   ],
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    3,
+    4
+   ],
+   "6": [
+    5
+   ],
+   "7": [
+    6
+   ],
+   "8": [
+    7
+   ],
+   "9": [
+    8
+   ],
+   "10": [
+    3,
+    9
+   ],
+   "11": [
+    8,
+    10
+   ],
+   "12": [
+    5,
+    10
+   ],
+   "13": [
+    5,
+    9,
+    10
+   ],
+   "14": [
+    2,
+    8
+   ],
+   "15": [
+    8
+   ]
+  },
+  "sections": {
+   "0.3": [
+    "0.2"
+   ],
+   "0.4": [
+    "0.3"
+   ],
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "1.4": [
+    "1.1"
+   ],
+   "1.5": [
+    "1.4"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "2.1"
+   ],
+   "2.5": [
+    "2.4"
+   ],
+   "2.6": [
+    "2.4"
+   ],
+   "3.1": [
+    "2.2"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "3.1"
+   ],
+   "3.4": [
+    "3.1"
+   ],
+   "3.5": [
+    "3.4"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "4.4": [
+    "4.1"
+   ],
+   "4.5": [
+    "4.4"
+   ],
+   "4.6": [
+    "4.5"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "5.4": [
+    "3.1",
+    "5.2"
+   ],
+   "5.5": [
+    "2.3"
+   ],
+   "6.2": [
+    "5.5",
+    "6.1"
+   ],
+   "6.4": [
+    "6.3"
+   ],
+   "7.1": [
+    "6.4"
+   ],
+   "7.2": [
+    "7.1"
+   ],
+   "7.3": [
+    "7.1"
+   ],
+   "7.4": [
+    "7.1"
+   ],
+   "8.2": [
+    "8.1"
+   ],
+   "8.3": [
+    "2.1",
+    "8.1"
+   ],
+   "8.4": [
+    "8.1"
+   ],
+   "8.5": [
+    "5.2",
+    "8.1"
+   ],
+   "8.6": [
+    "2.4",
+    "2.6",
+    "8.5"
+   ],
+   "8.7": [
+    "2.2",
+    "8.6"
+   ],
+   "9.1": [
+    "2.1",
+    "8.6"
+   ],
+   "9.2": [
+    "9.1"
+   ],
+   "9.3": [
+    "6.1",
+    "6.3",
+    "9.1"
+   ],
+   "9.4": [
+    "3.4",
+    "9.3"
+   ],
+   "9.5": [
+    "8.5"
+   ],
+   "9.6": [
+    "9.5"
+   ],
+   "10.1": [
+    "9.6"
+   ],
+   "10.2": [
+    "9.5"
+   ],
+   "10.3": [
+    "3.1",
+    "8.1"
+   ],
+   "10.4": [
+    "5.2",
+    "5.4",
+    "8.5",
+    "9.1"
+   ],
+   "11.1": [
+    "10.4"
+   ],
+   "11.2": [
+    "4.4",
+    "8.1"
+   ],
+   "11.3": [
+    "8.3"
+   ],
+   "12.1": [
+    "10.4"
+   ],
+   "13.2": [
+    "13.1"
+   ],
+   "13.3": [
+    "9.1"
+   ],
+   "13.4": [
+    "10.4"
+   ],
+   "14.2": [
+    "14.1"
+   ],
+   "14.3": [
+    "14.1"
+   ],
+   "14.4": [
+    "14.2"
+   ],
+   "15.1": [
+    "8.4"
+   ],
+   "15.2": [
+    "15.1"
+   ],
+   "15.3": [
+    "15.1"
+   ],
+   "15.4": [
+    "8.6"
+   ],
+   "8.1": [
+    "7.1",
+    "7.4"
+   ],
+   "10.5": [
+    "6.3"
+   ],
+   "12.2": [
+    "2.3",
+    "5.2"
+   ],
+   "13.1": [
+    "3.1",
+    "5.2"
+   ],
+   "14.1": [
+    "2.4"
+   ]
+  },
+  "items": {
+   "c00_tres_pasos": [
+    "c00_estallido_no_manipulacion"
+   ],
+   "c01_amor_incondicional": [
+    "c01_separar_conducta_persona"
+   ],
+   "c02_pregunta_necesidades": [
+    "c02_piramide_maslow"
+   ],
+   "c02_negociar_necesidades": [
+    "c02_autocuidado_materno"
+   ],
+   "c03_estallido_emocional": [
+    "c02_pregunta_necesidades"
+   ],
+   "c03_estallido_respuesta_estres": [
+    "c03_estallido_emocional"
+   ],
+   "c03_no_forzar_compartir": [
+    "c03_egocentrismo_preoperacional"
+   ],
+   "c04_validar_nombrar": [
+    "c04_componentes_emocion"
+   ],
+   "c04_corregulacion": [
+    "c04_componentes_emocion"
+   ],
+   "c04_distraccion_con_explicacion": [
+    "c04_corregulacion",
+    "c04_validar_nombrar"
+   ],
+   "c05_maduracion_cerebral_tardia": [
+    "c05_cerebro_triuno"
+   ],
+   "c05_neuroplasticidad_temprana": [
+    "c05_maduracion_cerebral_tardia"
+   ],
+   "c05_berrinche_vs_estallido": [
+    "c03_estallido_emocional",
+    "c05_cerebro_triuno"
+   ],
+   "c06_componentes_cer": [
+    "c06_disciplina_como_ensenanza"
+   ],
+   "c07_disciplina_cer": [
+    "c06_disciplina_como_ensenanza",
+    "c06_disciplina_punitiva"
+   ],
+   "c07_normas_democraticas": [
+    "c07_disciplina_cer"
+   ],
+   "c07_cuatro_pilares": [
+    "c07_disciplina_cer"
+   ],
+   "c08_pausa_accion_reaccion": [
+    "c08_consciencia"
+   ],
+   "c08_empatia": [
+    "c08_consciencia"
+   ],
+   "c08_compasion": [
+    "c08_empatia"
+   ],
+   "c08_respeto": [
+    "c08_empatia"
+   ],
+   "c09_limites": [
+    "c08_respeto"
+   ],
+   "c09_castigo_disfrazado": [
+    "c09_consecuencia_autentica"
+   ],
+   "c09_comunicacion_cer": [
+    "c08_compasion"
+   ],
+   "c09_mensajes_yo": [
+    "c09_comunicacion_cer"
+   ],
+   "c10_seda": [
+    "c09_mensajes_yo"
+   ],
+   "c10_disco_rayado": [
+    "c09_comunicacion_cer"
+   ],
+   "c10_gestion_estallidos": [
+    "c08_empatia",
+    "c09_limites"
+   ],
+   "c11_tiempo_fuera_padres": [
+    "c10_gestion_estallidos"
+   ],
+   "c11_enfado_cuatro_pasos": [
+    "c08_pausa_accion_reaccion"
+   ],
+   "c12_tu_tienes_el_poder": [
+    "c10_gestion_estallidos"
+   ],
+   "c13_no_au_duele": [
+    "c13_por_que_pegan"
+   ],
+   "c14_sugerencias_pareja": [
+    "c09_comunicacion_cer"
+   ],
+   "c15_herida_materna_paterna": [
+    "c08_consciencia"
+   ],
+   "c15_te_regalo_una_flor": [
+    "c15_herida_materna_paterna"
+   ],
+   "c15_malcriar": [
+    "c08_respeto"
+   ]
+  }
+ }
+}

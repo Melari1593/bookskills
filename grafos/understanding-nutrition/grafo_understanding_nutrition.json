@@ -1,0 +1,3651 @@
+{
+ "meta": {
+  "title": "Understanding Nutrition como grafo",
+  "subtitle": "Whitney y Rolfes, 12.ª ed. (Cengage, 2011): capítulos, Highlights, conceptos clave y apéndices. Alertas de evidencia y guías actualizadas a octubre de 2026.",
+  "language": "es",
+  "itemLabel": "Concepto clave",
+  "itemLabelPlural": "Conceptos",
+  "resourceLabel": "Apéndice",
+  "resourceLabelPlural": "Apéndices",
+  "searchHint": "Buscar: índice glucémico, EER, hierro, 4.3…"
+ },
+ "blocks": {
+  "fund": {
+   "name": "Fundamentos y planificación"
+  },
+  "macro": {
+   "name": "Digestión y macronutrientes"
+  },
+  "energia": {
+   "name": "Metabolismo, energía, peso y actividad"
+  },
+  "micro": {
+   "name": "Vitaminas, agua y minerales"
+  },
+  "ciclo": {
+   "name": "Ciclo vital"
+  },
+  "salud": {
+   "name": "Salud, inocuidad y ambiente"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Panorama de la nutrición",
+   "page": 2,
+   "summary": "Presenta qué determina la elección de alimentos, las seis clases de nutrientes y su aporte energético, cómo se genera y valida la evidencia en nutrición, las Ingestas Dietéticas de Referencia y los métodos de evaluación nutricional. Sirve de base conceptual y de vocabulario para todo el libro.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Elección de alimentos",
+     "page": 3,
+     "items": [],
+     "summary": "Motivos personales, culturales, sociales, emocionales y de salud que guían qué come la gente, incluidos los alimentos funcionales."
+    },
+    {
+     "num": "1.2",
+     "title": "Los nutrientes",
+     "page": 5,
+     "items": [
+      "c01_valor_energetico"
+     ],
+     "summary": "Composición de alimentos y cuerpo, nutrientes esenciales, nutrientes energéticos medidos en kcal, vitaminas, minerales y agua."
+    },
+    {
+     "num": "1.3",
+     "title": "La ciencia de la nutrición",
+     "page": 11,
+     "items": [],
+     "summary": "Método científico, diseños de estudio (epidemiológicos, de laboratorio, ensayos clínicos), controles, aleatorización, placebo, doble ciego, correlación frente a causalidad y revisión por pares."
+    },
+    {
+     "num": "1.4",
+     "title": "Ingestas Dietéticas de Referencia (DRI)",
+     "page": 17,
+     "items": [
+      "c01_ear_rda",
+      "c01_ai_ul",
+      "c01_eer",
+      "c01_amdr"
+     ],
+     "summary": "Cómo se fijan EAR, RDA, AI, UL, EER y AMDR, para qué sirve cada una y cómo se comparan con estándares internacionales FAO/OMS."
+    },
+    {
+     "num": "1.5",
+     "title": "Evaluación nutricional",
+     "page": 21,
+     "items": [
+      "c01_etapas_deficiencia"
+     ],
+     "summary": "Historia, antropometría, examen físico y laboratorio en individuos; encuestas nacionales (NHANES) y metas Healthy People en poblaciones."
+    },
+    {
+     "num": "1.6",
+     "title": "Dieta y salud",
+     "page": 25,
+     "items": [],
+     "summary": "Enfermedades crónicas ligadas a la dieta y factores de riesgo modificables, que persisten en el tiempo y tienden a agruparse."
+    },
+    {
+     "num": "1.7",
+     "title": "Highlight 1: Información y desinformación nutricional en internet y en las noticias",
+     "page": 28,
+     "items": [],
+     "summary": "Cómo juzgar la fiabilidad de sitios web y noticias, quién es un experto en nutrición (dietista registrado) y señales de alarma de charlatanería."
+    }
+   ],
+   "block": "fund"
+  },
+  {
+   "num": 2,
+   "title": "Planificación de una dieta saludable",
+   "page": 34,
+   "summary": "Expone los principios de planificación dietética y las herramientas para aplicarlos: Guías Alimentarias, Guía Alimentaria del USDA/MyPyramid, listas de intercambio y etiquetado nutricional. Sirve para pasar de las recomendaciones a menús y compras concretas.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Principios de planificación dietética",
+     "page": 35,
+     "items": [
+      "c02_principios_densidad"
+     ],
+     "summary": "Adecuación, equilibrio, control de kcal, densidad de nutrientes, moderación y variedad."
+    },
+    {
+     "num": "2.2",
+     "title": "Guías Alimentarias para Estadounidenses",
+     "page": 38,
+     "items": [
+      "c02_guias_alimentarias"
+     ],
+     "summary": "Recomendaciones clave sobre energía, peso, actividad física, grupos de alimentos, grasas, carbohidratos, sodio, alcohol e inocuidad."
+    },
+    {
+     "num": "2.3",
+     "title": "Guía Alimentaria del USDA y MyPyramid",
+     "page": 39,
+     "items": [
+      "c02_usda_food_guide"
+     ],
+     "summary": "Plan por grupos de alimentos con cantidades diarias según nivel calórico, subgrupos de verduras, kcal discrecionales, equivalencias de porción y críticas a MyPyramid."
+    },
+    {
+     "num": "2.4",
+     "title": "Listas de intercambio y puesta en práctica del plan",
+     "page": 47,
+     "items": [
+      "c02_listas_intercambio"
+     ],
+     "summary": "Sistema que agrupa alimentos por su contenido de macronutrientes y ejemplo de cómo convertir un patrón de 2000 kcal en un menú."
+    },
+    {
+     "num": "2.5",
+     "title": "De las guías a la compra",
+     "page": 48,
+     "items": [],
+     "summary": "Elegir granos integrales frente a refinados o enriquecidos, verduras, frutas, carnes magras y lácteos bajos en grasa al comprar."
+    },
+    {
+     "num": "2.6",
+     "title": "Etiquetas: ingredientes, porciones y Nutrition Facts",
+     "page": 53,
+     "items": [
+      "c02_valores_diarios"
+     ],
+     "summary": "Lista de ingredientes, tamaños de porción estandarizados, panel Nutrition Facts y uso de los Valores Diarios y del %VD."
+    },
+    {
+     "num": "2.7",
+     "title": "Declaraciones de nutrientes, de salud y de estructura-función",
+     "page": 57,
+     "items": [],
+     "summary": "Definiciones de la FDA para términos como libre, bajo o alto; grados de evidencia de las declaraciones de salud y diferencia con las de estructura-función."
+    },
+    {
+     "num": "2.8",
+     "title": "Highlight 2: Dietas vegetarianas",
+     "page": 62,
+     "items": [
+      "c02_vegetarianos"
+     ],
+     "summary": "Tipos de vegetarianismo, beneficios en peso, presión arterial, cardiopatía y cáncer, y planificación para cubrir nutrientes críticos."
+    }
+   ],
+   "block": "fund"
+  },
+  {
+   "num": 3,
+   "title": "Digestión, absorción y transporte",
+   "page": 68,
+   "summary": "Sigue el recorrido de los alimentos por el tracto gastrointestinal, desde la masticación hasta la excreción, y explica cómo los nutrientes se absorben y llegan a las células por la sangre o la linfa. Sirve de base fisiológica para entender la digestión de cada macronutriente y los trastornos digestivos frecuentes.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Digestión: retos y anatomía del tracto gastrointestinal",
+     "page": 69,
+     "items": [],
+     "summary": "Presenta los retos que resuelve el aparato digestivo y recorre sus órganos y esfínteres desde la boca hasta el ano."
+    },
+    {
+     "num": "3.2",
+     "title": "Acción muscular de la digestión",
+     "page": 72,
+     "items": [],
+     "summary": "Describe la peristalsis, la mezcla gástrica, la segmentación intestinal y la apertura controlada de los esfínteres."
+    },
+    {
+     "num": "3.3",
+     "title": "Secreciones digestivas y etapa final",
+     "page": 74,
+     "items": [
+      "c03_secreciones_digestivas"
+     ],
+     "summary": "Explica las enzimas e hidrólisis, la saliva, el jugo gástrico, el jugo pancreático con bicarbonato y la bilis, y qué ocurre con los residuos en el colon."
+    },
+    {
+     "num": "3.4",
+     "title": "Absorción: vellosidades y células intestinales",
+     "page": 78,
+     "items": [
+      "c03_absorcion_vellosidades"
+     ],
+     "summary": "Muestra cómo pliegues, vellosidades y microvellosidades amplían la superficie absortiva y cómo los nutrientes entran por difusión simple, difusión facilitada o transporte activo."
+    },
+    {
+     "num": "3.5",
+     "title": "Sistemas circulatorios: vascular y linfático",
+     "page": 80,
+     "items": [
+      "c03_circulacion_portal_linfatica"
+     ],
+     "summary": "Contrasta la ruta de los nutrientes hidrosolubles por la vena porta hacia el hígado con la de las grasas y vitaminas liposolubles por la linfa."
+    },
+    {
+     "num": "3.6",
+     "title": "Salud y regulación del tracto GI: bacterias, hormonas y nervios",
+     "page": 83,
+     "items": [
+      "c03_hormonas_gi"
+     ],
+     "summary": "Aborda la microbiota intestinal, los probióticos y prebióticos, y la regulación por retroalimentación negativa mediante gastrina, secretina, colecistocinina y vías nerviosas."
+    },
+    {
+     "num": "3.7",
+     "title": "El sistema digestivo en su mejor estado",
+     "page": 86,
+     "items": [],
+     "summary": "Resume cómo flujo sanguíneo, sueño, actividad física, estado mental y una dieta equilibrada, moderada, variada y adecuada sostienen la salud digestiva."
+    },
+    {
+     "num": "3.8",
+     "title": "Highlight 3: Problemas digestivos comunes",
+     "page": 88,
+     "items": [
+      "c03_erge_ulcera",
+      "c03_estrenimiento_diarrea"
+     ],
+     "summary": "Repasa atragantamiento y maniobra de Heimlich, vómito, diarrea, estreñimiento, gases, pirosis/reflujo gastroesofágico y úlcera péptica, con estrategias de prevención."
+    }
+   ],
+   "block": "macro"
+  },
+  {
+   "num": 4,
+   "title": "Carbohidratos: azúcares, almidones y fibras",
+   "page": 96,
+   "summary": "Describe la química, digestión, absorción y metabolismo de los carbohidratos, la regulación de la glucemia y los efectos en la salud de azúcares, edulcorantes, almidones y fibras. Sirve para fijar ingestas recomendadas (AMDR, RDA, fibra) y orientar la elección de alimentos ricos en carbohidratos.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Visión química de los carbohidratos",
+     "page": 97,
+     "items": [
+      "c04_fibra_soluble_insoluble"
+     ],
+     "summary": "Clasifica monosacáridos, disacáridos y polisacáridos (glucógeno, almidones y fibras), con las reacciones de condensación e hidrólisis."
+    },
+    {
+     "num": "4.2",
+     "title": "Digestión y absorción de carbohidratos",
+     "page": 103,
+     "items": [],
+     "summary": "Sigue la acción de las amilasas y de maltasa, sacarasa y lactasa, la fermentación bacteriana de la fibra y la absorción de monosacáridos con su conversión hepática a glucosa."
+    },
+    {
+     "num": "4.3",
+     "title": "Intolerancia a la lactosa",
+     "page": 105,
+     "items": [
+      "c04_intolerancia_lactosa"
+     ],
+     "summary": "Explica síntomas, causas, prevalencia por grupos étnicos y manejo dietético de la intolerancia a la lactosa."
+    },
+    {
+     "num": "4.4",
+     "title": "La glucosa en el cuerpo: panorama del metabolismo de los carbohidratos",
+     "page": 107,
+     "items": [
+      "c04_gluconeogenesis_cetosis"
+     ],
+     "summary": "Describe el almacenamiento como glucógeno, el uso energético de la glucosa, la gluconeogénesis a partir de proteína, la cetosis y la conversión de glucosa en grasa."
+    },
+    {
+     "num": "4.5",
+     "title": "Constancia de la glucemia y respuesta glucémica",
+     "page": 108,
+     "items": [
+      "c04_homeostasis_glucemia",
+      "c04_indice_glucemico"
+     ],
+     "summary": "Expone la regulación por insulina, glucagón y epinefrina, la diabetes tipos 1 y 2, la hipoglucemia y el índice glucémico con sus limitaciones."
+    },
+    {
+     "num": "4.6",
+     "title": "Efectos en la salud e ingestas recomendadas de azúcares",
+     "page": 112,
+     "items": [
+      "c04_azucares_anadidos"
+     ],
+     "summary": "Analiza cómo el exceso de azúcares añadidos desplaza nutrientes y favorece la caries dental, y presenta los límites recomendados."
+    },
+    {
+     "num": "4.7",
+     "title": "Edulcorantes alternativos",
+     "page": 115,
+     "items": [
+      "c04_edulcorantes_alternativos"
+     ],
+     "summary": "Compara edulcorantes artificiales, estevia y alcoholes de azúcar (polioles) según energía, ingesta diaria admisible, efectos y etiquetado."
+    },
+    {
+     "num": "4.8",
+     "title": "Efectos en la salud e ingestas recomendadas de almidón y fibras",
+     "page": 118,
+     "items": [
+      "c04_ingesta_cho_fibra"
+     ],
+     "summary": "Revisa los beneficios de almidones y fibras en enfermedad cardiovascular, diabetes, salud intestinal, cáncer de colon y peso, los riesgos del exceso de fibra, las ingestas recomendadas y su traducción a grupos de alimentos y etiquetas."
+    },
+    {
+     "num": "4.9",
+     "title": "Highlight 4: Carbohidratos, kilocalorías y controversias",
+     "page": 126,
+     "items": [],
+     "summary": "Examina la evidencia sobre carbohidratos y obesidad: dietas bajas en carbohidratos, jarabe de maíz alto en fructosa, bebidas azucaradas, insulina e índice glucémico en el control del peso."
+    }
+   ],
+   "block": "macro"
+  },
+  {
+   "num": 5,
+   "title": "Lípidos: triglicéridos, fosfolípidos y esteroles",
+   "page": 132,
+   "summary": "Describe la química de los lípidos, cómo se digieren, absorben y transportan en lipoproteínas, sus funciones en el cuerpo y su relación con la enfermedad cardiovascular, el cáncer y la obesidad; termina con las recomendaciones de ingesta y su aplicación al elegir alimentos.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Química de los ácidos grasos y los triglicéridos",
+     "page": 133,
+     "items": [
+      "c05_grasas_trans"
+     ],
+     "summary": "Longitud de cadena, grado de insaturación, familias omega-3 y omega-6, formación de triglicéridos, y cómo la saturación y la hidrogenación determinan firmeza, estabilidad y grasas trans."
+    },
+    {
+     "num": "5.2",
+     "title": "Fosfolípidos y esteroles",
+     "page": 139,
+     "items": [],
+     "summary": "La lecitina como emulsionante y componente de membranas, y el colesterol y los esteroles vegetales, con los compuestos que el cuerpo sintetiza a partir del colesterol."
+    },
+    {
+     "num": "5.3",
+     "title": "Digestión y absorción de los lípidos",
+     "page": 142,
+     "items": [],
+     "summary": "Acción de las lipasas lingual, gástrica y pancreática, emulsificación por la bilis, circulación enterohepática, micelas y formación de quilomicrones."
+    },
+    {
+     "num": "5.4",
+     "title": "Transporte de lípidos: lipoproteínas",
+     "page": 145,
+     "items": [
+      "c05_lipoproteinas"
+     ],
+     "summary": "Quilomicrones, VLDL, LDL y HDL: composición, origen, destino y su significado para la salud cardiovascular."
+    },
+    {
+     "num": "5.5",
+     "title": "Lípidos en el cuerpo: funciones y ácidos grasos esenciales",
+     "page": 148,
+     "items": [
+      "c05_acidos_grasos_esenciales"
+     ],
+     "summary": "Funciones de los triglicéridos y del tejido adiposo (adipocinas), ácidos linoleico y linolénico, sus derivados de cadena larga, eicosanoides y deficiencia."
+    },
+    {
+     "num": "5.6",
+     "title": "Avance del metabolismo de los lípidos",
+     "page": 150,
+     "items": [],
+     "summary": "Almacenamiento de grasa mediante la lipoproteína lipasa y movilización por la lipasa sensible a hormonas durante el ayuno, con los límites de la grasa como fuente de glucosa."
+    },
+    {
+     "num": "5.7",
+     "title": "Efectos de los lípidos sobre la salud",
+     "page": 151,
+     "items": [
+      "c05_perfil_lipidico",
+      "c05_omega3_pescado"
+     ],
+     "summary": "Perfil lipídico, riesgos de las grasas saturadas, trans y del colesterol dietario, beneficios de las grasas mono y poliinsaturadas y omega-3, y relación con cáncer y obesidad."
+    },
+    {
+     "num": "5.8",
+     "title": "Ingestas recomendadas de grasa y elección de alimentos",
+     "page": 154,
+     "items": [
+      "c05_recomendaciones_grasa"
+     ],
+     "summary": "Rango de distribución de energía para grasa, IA de ácidos grasos esenciales, Valores Diarios, estrategias por grupo de alimentos, sustitutos de grasa como el olestra y lectura de etiquetas."
+    },
+    {
+     "num": "5.9",
+     "title": "Highlight 5: Alimentos ricos en grasa, ¿amigos o enemigos?",
+     "page": 164,
+     "items": [
+      "c05_sustitucion_grasa_saturada"
+     ],
+     "summary": "Aceite de oliva, frutos secos y pescado frente a carnes grasas, lácteos enteros, aceites tropicales e hidrogenados, y la dieta mediterránea como patrón cardiosaludable."
+    }
+   ],
+   "block": "macro"
+  },
+  {
+   "num": 6,
+   "title": "Proteínas: aminoácidos",
+   "page": 172,
+   "summary": "Explica la estructura de los aminoácidos y las proteínas, su digestión, síntesis y funciones, el recambio proteico y el balance nitrogenado, la calidad proteica de los alimentos, la malnutrición proteico-energética y las recomendaciones de ingesta; cierra con la genómica nutricional.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Química de las proteínas",
+     "page": 173,
+     "items": [
+      "c06_aminoacidos_esenciales"
+     ],
+     "summary": "Estructura de los aminoácidos, aminoácidos esenciales, no esenciales y condicionalmente esenciales, enlace peptídico, niveles de estructura proteica y desnaturalización."
+    },
+    {
+     "num": "6.2",
+     "title": "Digestión y absorción de las proteínas",
+     "page": 176,
+     "items": [],
+     "summary": "Desnaturalización por el ácido clorhídrico, acción de la pepsina y de las proteasas pancreáticas e intestinales, y absorción de aminoácidos y péptidos pequeños."
+    },
+    {
+     "num": "6.3",
+     "title": "Síntesis de proteínas y expresión génica",
+     "page": 178,
+     "items": [],
+     "summary": "Transcripción y traducción, errores de secuencia como en la anemia de células falciformes, y regulación de la expresión génica por nutrientes."
+    },
+    {
+     "num": "6.4",
+     "title": "Funciones de las proteínas",
+     "page": 181,
+     "items": [],
+     "summary": "Proteínas como material estructural, enzimas, hormonas, reguladoras del equilibrio hídrico (edema) y ácido-base, transportadoras, anticuerpos y fuente de energía y glucosa."
+    },
+    {
+     "num": "6.5",
+     "title": "Avance del metabolismo proteico",
+     "page": 184,
+     "items": [
+      "c06_balance_nitrogenado"
+     ],
+     "summary": "Recambio proteico, reserva de aminoácidos, balance nitrogenado, uso de aminoácidos para otros compuestos, energía o grasa, desaminación, transaminación y síntesis y excreción de urea."
+    },
+    {
+     "num": "6.6",
+     "title": "Proteína en los alimentos: calidad proteica",
+     "page": 187,
+     "items": [
+      "c06_calidad_proteica"
+     ],
+     "summary": "Digestibilidad, composición de aminoácidos, aminoácido limitante, proteína de referencia, proteínas complementarias y normas de etiquetado de proteína."
+    },
+    {
+     "num": "6.7",
+     "title": "Malnutrición proteico-energética",
+     "page": 188,
+     "items": [
+      "c06_pem_marasmo_kwashiorkor"
+     ],
+     "summary": "Formas aguda y crónica, marasmo, kwashiorkor y su forma mixta, el papel de las infecciones y la rehabilitación nutricional."
+    },
+    {
+     "num": "6.8",
+     "title": "Efectos del exceso de proteína e ingestas recomendadas",
+     "page": 191,
+     "items": [
+      "c06_rda_proteina"
+     ],
+     "summary": "Relación de la ingesta alta de proteína con enfermedad cardiaca (homocisteína), cáncer, pérdida ósea, control de peso y enfermedad renal; RDA, AMDR y la condición de energía adecuada."
+    },
+    {
+     "num": "6.9",
+     "title": "Suplementos de proteína y aminoácidos",
+     "page": 194,
+     "items": [],
+     "summary": "Por qué las proteínas en polvo, el suero y los aminoácidos aislados (ramificados, lisina, triptófano) no aportan beneficios y pueden causar daño, como el síndrome eosinofilia-mialgia."
+    },
+    {
+     "num": "6.10",
+     "title": "Highlight 6: Genómica nutricional",
+     "page": 198,
+     "items": [
+      "c06_genomica_nutricional",
+      "c06_fenilcetonuria"
+     ],
+     "summary": "Nutrigenómica, nutrigenética y epigenética, trastornos monogénicos como la fenilcetonuria y multigénicos como la enfermedad cardiaca, polimorfismos de un solo nucleótido y sus implicaciones clínicas."
+    }
+   ],
+   "block": "macro"
+  },
+  {
+   "num": 7,
+   "title": "Metabolismo: transformaciones e interacciones",
+   "page": 204,
+   "summary": "Sigue a la glucosa, el glicerol, los ácidos grasos y los aminoácidos por las vías que liberan energía (glucólisis, β-oxidación, ciclo TCA, cadena de transporte de electrones) y explica qué combustibles pueden o no formar glucosa. Con esa base interpreta el exceso de energía, el ayuno, las dietas bajas en carbohidratos y el metabolismo del alcohol.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Reacciones químicas del cuerpo: anabolismo, catabolismo y ATP",
+     "page": 206,
+     "items": [],
+     "summary": "Presenta la célula como sitio del metabolismo, el papel del hígado, las reacciones de síntesis y degradación, el ATP como moneda energética con acoplamiento de reacciones y la función de enzimas y coenzimas derivadas de vitaminas B."
+    },
+    {
+     "num": "7.2",
+     "title": "Degradación de la glucosa: glucólisis, lactato y acetil-CoA",
+     "page": 209,
+     "items": [
+      "c07_glucolisis_cori",
+      "c07_piruvato_acetilcoa"
+     ],
+     "summary": "Describe la glucólisis hasta piruvato, la vía anaeróbica a lactato con el ciclo de Cori y el paso aeróbico e irreversible de piruvato a acetil-CoA."
+    },
+    {
+     "num": "7.3",
+     "title": "Glicerol, ácidos grasos y aminoácidos como combustible",
+     "page": 215,
+     "items": [
+      "c07_beta_oxidacion"
+     ],
+     "summary": "Explica que el glicerol puede formar glucosa, que los ácidos grasos se degradan a acetil-CoA sin poder formar glucosa y que los aminoácidos desaminados son glucogénicos o cetogénicos."
+    },
+    {
+     "num": "7.4",
+     "title": "Pasos finales del catabolismo: ciclo TCA y cadena de transporte de electrones",
+     "page": 218,
+     "items": [
+      "c07_ciclo_tca_cadena_electrones"
+     ],
+     "summary": "Muestra cómo el acetil-CoA se oxida en el ciclo TCA (que necesita oxalacetato derivado de carbohidratos), cómo la cadena respiratoria genera ATP y por qué la grasa rinde más kcal por gramo."
+    },
+    {
+     "num": "7.5",
+     "title": "Balance energético en el exceso: de la dieta a la grasa corporal",
+     "page": 222,
+     "items": [],
+     "summary": "Compara cómo el exceso de proteína, carbohidrato y grasa termina en tejido adiposo: almacenar grasa dietaria cuesta cerca del 5 % de su energía y convertir carbohidrato en grasa cerca del 25 %, y la grasa no aumenta su propia oxidación."
+    },
+    {
+     "num": "7.6",
+     "title": "Del ayuno a la inanición: gluconeogénesis y cetosis",
+     "page": 225,
+     "items": [
+      "c07_ayuno_cetosis"
+     ],
+     "summary": "Detalla las adaptaciones al ayuno: uso de glucógeno y grasa, degradación de proteína para gluconeogénesis, producción de cuerpos cetónicos para el cerebro, supresión del apetito y descenso del metabolismo."
+    },
+    {
+     "num": "7.7",
+     "title": "Dietas bajas en carbohidratos",
+     "page": 227,
+     "items": [],
+     "summary": "Aplica la fisiología del ayuno a las dietas cetogénicas: la pérdida rápida es sobre todo agua, glucógeno y proteína, la pérdida de grasa no supera a la de otras dietas isocalóricas y hay efectos adversos."
+    },
+    {
+     "num": "7.8",
+     "title": "Highlight 7: Alcohol y nutrición",
+     "page": 230,
+     "items": [
+      "c07_bebida_estandar_moderacion",
+      "c07_metabolismo_alcohol",
+      "c07_alcohol_consecuencias"
+     ],
+     "summary": "Define la bebida estándar y la moderación, describe la absorción y el metabolismo hepático del etanol (alcohol deshidrogenasa, MEOS, NAD/NADH) y sus efectos en hígado, cerebro, estado nutricional y salud a corto y largo plazo."
+    }
+   ],
+   "block": "energia"
+  },
+  {
+   "num": 8,
+   "title": "Balance energético y composición corporal",
+   "page": 240,
+   "summary": "Plantea la ecuación de energía que entra frente a energía que sale, los factores que regulan el apetito y los componentes del gasto energético, con las ecuaciones para estimarlo. Después define el peso saludable con IMC, grasa corporal y perímetro de cintura y revisa los riesgos de salud del bajo peso y la obesidad, cerrando con los trastornos de la conducta alimentaria.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Balance energético",
+     "page": 241,
+     "items": [
+      "c08_balance_energetico_3500"
+     ],
+     "summary": "Define el balance como ingreso frente a gasto de energía y explica la composición del peso ganado o perdido (agua, grasa y tejido magro)."
+    },
+    {
+     "num": "8.2",
+     "title": "Energía que entra: composición de los alimentos e ingesta",
+     "page": 242,
+     "items": [
+      "c08_hambre_saciacion_saciedad"
+     ],
+     "summary": "Explica cómo se mide la energía de los alimentos (calorimetría y factores por macronutriente) y cómo hambre, saciación, saciedad, señales cognitivas y el hipotálamo regulan la ingesta."
+    },
+    {
+     "num": "8.3",
+     "title": "Energía que sale: componentes del gasto energético",
+     "page": 245,
+     "items": [
+      "c08_componentes_gasto_tmb"
+     ],
+     "summary": "Describe el metabolismo basal, la actividad física, el efecto térmico de los alimentos y la termogénesis adaptativa, junto con los factores que suben o bajan la tasa metabólica basal."
+    },
+    {
+     "num": "8.4",
+     "title": "Estimación de los requerimientos de energía (EER)",
+     "page": 248,
+     "items": [
+      "c08_eer"
+     ],
+     "summary": "Presenta las ecuaciones DRI de requerimiento energético estimado según sexo, edad, peso, talla y nivel de actividad física, con su margen de error individual."
+    },
+    {
+     "num": "8.5",
+     "title": "Peso saludable e índice de masa corporal",
+     "page": 249,
+     "items": [
+      "c08_imc"
+     ],
+     "summary": "Distingue peso y composición corporal, critica el ideal estético y adopta el criterio de salud mediante el IMC con sus puntos de corte y limitaciones."
+    },
+    {
+     "num": "8.6",
+     "title": "Grasa corporal y su distribución",
+     "page": 254,
+     "items": [
+      "c08_grasa_corporal_cintura"
+     ],
+     "summary": "Da rangos de porcentaje de grasa por sexo, distingue grasa visceral de subcutánea, fija puntos de corte de perímetro de cintura y resume los métodos para medir composición corporal."
+    },
+    {
+     "num": "8.7",
+     "title": "Riesgos para la salud según peso y grasa corporal",
+     "page": 256,
+     "items": [],
+     "summary": "Relaciona el IMC con la mortalidad en curva en J, revisa los riesgos del bajo peso y de la obesidad (enfermedad cardiovascular, diabetes tipo 2, inflamación y síndrome metabólico, cáncer) y el papel protector de la condición física."
+    },
+    {
+     "num": "8.8",
+     "title": "Highlight 8: Trastornos de la conducta alimentaria",
+     "page": 261,
+     "items": [
+      "c08_triada_atleta",
+      "c08_criterios_tca"
+     ],
+     "summary": "Revisa la tríada de la atleta, las prácticas peligrosas en deportistas y los criterios, consecuencias y tratamiento de la anorexia nerviosa, la bulimia nerviosa y el trastorno por atracón, con el papel de la sociedad."
+    }
+   ],
+   "block": "energia"
+  },
+  {
+   "num": 9,
+   "title": "Control del peso: sobrepeso, obesidad y bajo peso",
+   "page": 270,
+   "summary": "Explica cómo se desarrolla y regula el tejido adiposo, qué factores genéticos y ambientales favorecen la obesidad y cómo evaluar el riesgo y tratar el exceso o el déficit de peso con dieta, actividad física, conducta, fármacos o cirugía. Sirve para decidir quién necesita perder o ganar peso y con qué estrategia segura.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Sobrepeso y obesidad: el adipocito y el punto de ajuste",
+     "page": 271,
+     "items": [],
+     "summary": "Prevalencia de la obesidad, crecimiento de los adipocitos en número y tamaño, papel de la lipoproteína lipasa y teoría del punto de ajuste del peso."
+    },
+    {
+     "num": "9.2",
+     "title": "Causas del sobrepeso y la obesidad",
+     "page": 273,
+     "items": [
+      "c09_hormonas_apetito"
+     ],
+     "summary": "Influencias genéticas y epigenéticas (leptina, adiponectina, grelina, PYY, proteínas desacoplantes y grasa parda) y ambientales (porciones grandes, densidad energética, sedentarismo y NEAT)."
+    },
+    {
+     "num": "9.3",
+     "title": "Problemas del sobrepeso y la obesidad",
+     "page": 278,
+     "items": [
+      "c09_criterios_riesgo_obesidad"
+     ],
+     "summary": "Indicadores para valorar el riesgo (IMC, cintura, perfil de riesgo), cuándo está indicado bajar de peso, estigma social y peligros de dietas de moda, suplementos y otros artificios."
+    },
+    {
+     "num": "9.4",
+     "title": "Tratamientos agresivos: fármacos y cirugía",
+     "page": 282,
+     "items": [
+      "c09_farmacos_cirugia_obesidad"
+     ],
+     "summary": "Criterios, mecanismos, eficacia y efectos adversos de los fármacos antiobesidad y de la cirugía bariátrica (bypass gástrico y banda), y límites de la liposucción."
+    },
+    {
+     "num": "9.5",
+     "title": "Estrategias para perder peso: el plan de alimentación",
+     "page": 284,
+     "items": [
+      "c09_deficit_energetico",
+      "c09_densidad_energetica"
+     ],
+     "summary": "Metas realistas, ritmo seguro de pérdida, déficit energético, adecuación nutricional, porciones, densidad energética, agua, fibra, grasas, carbohidratos y calorías vacías."
+    },
+    {
+     "num": "9.6",
+     "title": "Actividad física en el control del peso",
+     "page": 289,
+     "items": [
+      "c09_actividad_fisica_peso"
+     ],
+     "summary": "Cómo el ejercicio aumenta el gasto, amplía la asignación discrecional de kcal, mejora composición corporal, apetito y bienestar, y por qué no existe la reducción localizada."
+    },
+    {
+     "num": "9.7",
+     "title": "Influencias ambientales, conducta y actitud",
+     "page": 293,
+     "items": [],
+     "summary": "Señales del entorno que aumentan la ingesta (accesibilidad, distracciones, variedad, tamaño de envases y platos) y técnicas de modificación de conducta, reestructuración cognitiva y grupos de apoyo."
+    },
+    {
+     "num": "9.8",
+     "title": "Mantenimiento, prevención y programas de salud pública",
+     "page": 296,
+     "items": [],
+     "summary": "Rasgos de quienes mantienen la pérdida de peso, estrategias para prevenir la ganancia gradual y medidas de política pública contra la obesidad."
+    },
+    {
+     "num": "9.9",
+     "title": "Bajo peso",
+     "page": 298,
+     "items": [
+      "c09_ganancia_peso"
+     ],
+     "summary": "Causas y problemas del bajo peso y estrategias para ganar peso con alimentos de alta densidad energética, comidas regulares, refrigerios y entrenamiento de fuerza."
+    },
+    {
+     "num": "9.10",
+     "title": "Highlight 9: La dieta milagro más reciente, otra vez",
+     "page": 305,
+     "items": [
+      "c09_dietas_moda"
+     ],
+     "summary": "Por qué atraen las dietas de moda, qué afirman y qué es cierto, comparación de dietas populares y pautas para distinguirlas de un programa razonable."
+    }
+   ],
+   "block": "energia"
+  },
+  {
+   "num": 10,
+   "title": "Vitaminas hidrosolubles: vitaminas B y vitamina C",
+   "page": 310,
+   "summary": "Presenta las características generales de las vitaminas y describe cada vitamina B y la vitamina C: funciones como coenzimas o cofactores, recomendaciones, deficiencias, toxicidad y fuentes alimentarias. Sirve como referencia para reconocer carencias (beriberi, pelagra, anemias macrocíticas, escorbuto) y valorar el uso de suplementos.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Panorama de las vitaminas",
+     "page": 311,
+     "items": [],
+     "summary": "Qué distingue a las vitaminas, biodisponibilidad, precursores, labilidad, diferencias entre hidrosolubles y liposolubles, y relación dosis-efecto con los UL."
+    },
+    {
+     "num": "10.2",
+     "title": "Vitaminas B como individuos: tiamina y riboflavina",
+     "page": 314,
+     "items": [
+      "c10_tiamina_beriberi"
+     ],
+     "summary": "Coenzimas TPP, FMN y FAD en el metabolismo energético, beriberi y síndrome de Wernicke-Korsakoff, arriboflavinosis y fuentes alimentarias."
+    },
+    {
+     "num": "10.3",
+     "title": "Niacina, biotina y ácido pantoténico",
+     "page": 320,
+     "items": [
+      "c10_niacina_equivalentes"
+     ],
+     "summary": "NAD/NADP y equivalentes de niacina a partir del triptófano, pelagra y rubor por ácido nicotínico; biotina y avidina; ácido pantoténico como parte de la coenzima A."
+    },
+    {
+     "num": "10.4",
+     "title": "Vitamina B6",
+     "page": 323,
+     "items": [
+      "c10_vitamina_b6"
+     ],
+     "summary": "PLP en el metabolismo de aminoácidos, neurotransmisores y hemo; antagonismo por alcohol e isoniazida y neuropatía por megadosis."
+    },
+    {
+     "num": "10.5",
+     "title": "Folato",
+     "page": 325,
+     "items": [
+      "c10_folato_dfe"
+     ],
+     "summary": "Absorción y activación del folato, equivalentes dietéticos de folato, prevención de defectos del tubo neural, fortificación, homocisteína, cáncer, deficiencia e interacciones con fármacos."
+    },
+    {
+     "num": "10.6",
+     "title": "Vitamina B12",
+     "page": 330,
+     "items": [
+      "c10_b12_anemia_perniciosa"
+     ],
+     "summary": "Absorción dependiente de ácido gástrico y factor intrínseco, anemia perniciosa por gastritis atrófica, riesgo en veganos y enmascaramiento de la deficiencia por el folato."
+    },
+    {
+     "num": "10.7",
+     "title": "Compuestos similares a vitaminas y falsas vitaminas",
+     "page": 333,
+     "items": [],
+     "summary": "Colina como nutriente condicionalmente esencial con AI y UL, inositol y carnitina sin recomendación, y sustancias promocionadas falsamente como vitaminas."
+    },
+    {
+     "num": "10.8",
+     "title": "Las vitaminas B en conjunto",
+     "page": 334,
+     "items": [
+      "c10_coenzimas_b"
+     ],
+     "summary": "Interdependencia de las vitaminas B en las vías metabólicas, signos comunes de deficiencia (glositis, queilosis, anemia), toxicidad por suplementos y fuentes por grupo de alimentos."
+    },
+    {
+     "num": "10.9",
+     "title": "Vitamina C",
+     "page": 337,
+     "items": [
+      "c10_vitamina_c"
+     ],
+     "summary": "Funciones antioxidante y de cofactor (colágeno, carnitina, neurotransmisores), estrés y resfriado común, recomendaciones, escorbuto, toxicidad y fuentes."
+    },
+    {
+     "num": "10.10",
+     "title": "Highlight 10: Suplementos de vitaminas y minerales",
+     "page": 346,
+     "items": [
+      "c10_criterios_suplementos"
+     ],
+     "summary": "Argumentos a favor y en contra de los suplementos, quiénes los necesitan, cómo elegirlos y cómo los regula la DSHEA de 1994."
+    }
+   ],
+   "block": "micro"
+  },
+  {
+   "num": 11,
+   "title": "Vitaminas liposolubles: A, D, E y K",
+   "page": 354,
+   "summary": "Describe las cuatro vitaminas liposolubles: sus formas activas, funciones, deficiencias, toxicidades, recomendaciones y fuentes. Sirve para reconocer cuadros clínicos como xeroftalmia, raquitismo, hemólisis o enfermedad hemorrágica, y para valorar con criterio el uso de suplementos.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Vitamina A y betacaroteno: formas y funciones",
+     "page": 355,
+     "items": [],
+     "summary": "Retinol, retinal y ácido retinoico, la conversión del betacaroteno y el papel de la vitamina A en la visión, la diferenciación epitelial, la reproducción y el crecimiento."
+    },
+    {
+     "num": "11.2",
+     "title": "Deficiencia, toxicidad, recomendaciones y fuentes de vitamina A",
+     "page": 358,
+     "items": [
+      "c11_deficiencia_vitamina_a",
+      "c11_rae_vitamina_a"
+     ],
+     "summary": "Ceguera nocturna, xeroftalmia, queratinización e infecciones por deficiencia; daño óseo y efecto teratógeno por exceso; RAE, conversión de UI y alimentos fuente."
+    },
+    {
+     "num": "11.3",
+     "title": "Vitamina D: síntesis, activación y funciones",
+     "page": 363,
+     "items": [
+      "c11_activacion_vitamina_d"
+     ],
+     "summary": "Síntesis cutánea con luz UV, doble hidroxilación hepática y renal, y acción hormonal sobre intestino, riñón y hueso para mantener calcio y fósforo."
+    },
+    {
+     "num": "11.4",
+     "title": "Deficiencia, toxicidad, recomendaciones y fuentes de vitamina D",
+     "page": 364,
+     "items": [
+      "c11_raquitismo_osteomalacia",
+      "c11_ai_vitamina_d"
+     ],
+     "summary": "Raquitismo, osteomalacia y riesgo en ancianos; hipercalcemia por exceso; ingestas recomendadas, leche fortificada y factores que limitan la síntesis solar."
+    },
+    {
+     "num": "11.5",
+     "title": "Vitamina E",
+     "page": 368,
+     "items": [
+      "c11_vitamina_e_antioxidante"
+     ],
+     "summary": "El alfa-tocoferol como antioxidante de membranas, la hemólisis por deficiencia en prematuros y malabsorción, su baja toxicidad y sus fuentes en aceites vegetales."
+    },
+    {
+     "num": "11.6",
+     "title": "Vitamina K",
+     "page": 370,
+     "items": [
+      "c11_vitamina_k_coagulacion"
+     ],
+     "summary": "Activación de factores de coagulación y de osteocalcina, deficiencia secundaria por antibióticos o malabsorción, profilaxis neonatal e interacción con anticoagulantes."
+    },
+    {
+     "num": "11.7",
+     "title": "Las vitaminas liposolubles en conjunto: interacciones",
+     "page": 372,
+     "items": [],
+     "summary": "Interacciones entre vitaminas A, D, E y K y con minerales como calcio, zinc y hierro, con tabla resumen de funciones, deficiencias, toxicidades y fuentes."
+    },
+    {
+     "num": "11.8",
+     "title": "Highlight 11: Nutrientes antioxidantes en la prevención de enfermedades",
+     "page": 376,
+     "items": [
+      "c11_antioxidantes_suplementos"
+     ],
+     "summary": "Radicales libres y estrés oxidativo, defensas antioxidantes y evidencia sobre cáncer y enfermedad cardiovascular, comparando alimentos frente a suplementos."
+    }
+   ],
+   "block": "micro"
+  },
+  {
+   "num": 12,
+   "title": "Agua y minerales mayores",
+   "page": 382,
+   "summary": "Explica el agua corporal, el balance hídrico y su regulación hormonal, el equilibrio hidroelectrolítico y ácido-base, y los minerales mayores (sodio, cloruro, potasio, calcio, fósforo, magnesio y sulfato). Es la base para entender deshidratación, hipertensión sensible a la sal y salud ósea.",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "Agua: funciones, balance hídrico y recomendaciones",
+     "page": 383,
+     "items": [
+      "c12_balance_hidrico",
+      "c12_deshidratacion"
+     ],
+     "summary": "Funciones del agua, compartimentos líquidos, ingresos y pérdidas diarias, sed, deshidratación, intoxicación hídrica, recomendaciones y tipos de agua."
+    },
+    {
+     "num": "12.2",
+     "title": "Volumen sanguíneo y presión arterial",
+     "page": 387,
+     "items": [
+      "c12_sistema_raa"
+     ],
+     "summary": "Cómo el riñón, la ADH y el sistema renina-angiotensina-aldosterona ajustan la retención de agua y sodio para sostener volumen y presión."
+    },
+    {
+     "num": "12.3",
+     "title": "Equilibrio y desequilibrio hidroelectrolítico",
+     "page": 389,
+     "items": [],
+     "summary": "Electrolitos, neutralidad eléctrica, ósmosis, bomba sodio-potasio, regulación intestinal y renal, y pérdidas por vómito, diarrea o sudor con su reposición oral."
+    },
+    {
+     "num": "12.4",
+     "title": "Equilibrio ácido-base",
+     "page": 392,
+     "items": [
+      "c12_tampon_bicarbonato"
+     ],
+     "summary": "Control del pH sanguíneo por los tampones, la respiración y la excreción renal."
+    },
+    {
+     "num": "12.5",
+     "title": "Los minerales: panorama general",
+     "page": 393,
+     "items": [],
+     "summary": "Minerales mayores frente a oligoelementos, su naturaleza inorgánica, manejo corporal, biodisponibilidad (fitatos, oxalatos) e interacciones."
+    },
+    {
+     "num": "12.6",
+     "title": "Sodio, cloruro y potasio",
+     "page": 394,
+     "items": [
+      "c12_sodio_potasio"
+     ],
+     "summary": "Funciones en el balance de líquidos, recomendaciones, sensibilidad a la sal, dieta DASH, sodio de alimentos procesados y consecuencias de deficiencia y exceso."
+    },
+    {
+     "num": "12.7",
+     "title": "Calcio",
+     "page": 400,
+     "items": [
+      "c12_regulacion_calcemia",
+      "c12_calcio_recomendaciones"
+     ],
+     "summary": "Calcio óseo y en líquidos, regulación hormonal de la calcemia, absorción, recomendaciones, fuentes y biodisponibilidad, y deficiencia como pérdida ósea."
+    },
+    {
+     "num": "12.8",
+     "title": "Fósforo, magnesio y sulfato",
+     "page": 406,
+     "items": [],
+     "summary": "Funciones del fósforo en hueso, ATP y fosfolípidos; del magnesio como cofactor enzimático y en la presión arterial; y del sulfato en las proteínas."
+    },
+    {
+     "num": "12.9",
+     "title": "Highlight 12: Osteoporosis y calcio",
+     "page": 413,
+     "items": [
+      "c12_osteoporosis_tipos"
+     ],
+     "summary": "Hueso cortical y trabecular, tipos de osteoporosis, factores de riesgo (edad, sexo, hormonas, genética, actividad, tabaco, alcohol, nutrientes) y elección de suplementos de calcio."
+    }
+   ],
+   "block": "micro"
+  },
+  {
+   "num": 13,
+   "title": "Oligoelementos",
+   "page": 422,
+   "summary": "Describe los minerales traza (hierro, zinc, yodo, selenio, cobre, manganeso, flúor, cromo, molibdeno y otros): funciones, absorción, deficiencias, toxicidades, recomendaciones y fuentes, y cierra con los minerales contaminantes. Sirve para evaluar y prevenir carencias y excesos de micronutrientes minerales, con el hierro como eje clínico.",
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "Panorama de los oligoelementos",
+     "page": 423,
+     "items": [],
+     "summary": "Los minerales traza se requieren en cantidades mínimas, su contenido en los alimentos depende del suelo y el procesamiento, y varios son tóxicos a ingestas solo 2,5–7 veces mayores que el requerimiento, con interacciones frecuentes entre ellos."
+    },
+    {
+     "num": "13.2",
+     "title": "Hierro: funciones, absorción y metabolismo",
+     "page": 425,
+     "items": [
+      "c13_homeostasis_hierro",
+      "c13_absorcion_hierro"
+     ],
+     "summary": "El hierro alterna entre forma ferrosa y férrica, forma parte de hemoglobina, mioglobina y la cadena respiratoria, y su balance se regula sobre todo en la absorción mediante ferritina, transferrina, hemosiderina y la hormona hepcidina."
+    },
+    {
+     "num": "13.3",
+     "title": "Deficiencia y toxicidad del hierro",
+     "page": 427,
+     "items": [
+      "c13_estadios_deficiencia_hierro",
+      "c13_sobrecarga_hierro"
+     ],
+     "summary": "Explica los grupos de riesgo, los estadios y pruebas de la deficiencia, la anemia microcítica hipocrómica, sus efectos conductuales y la pica, así como la hemocromatosis y la intoxicación aguda por suplementos de hierro."
+    },
+    {
+     "num": "13.4",
+     "title": "Recomendaciones, fuentes y suplementación de hierro",
+     "page": 431,
+     "items": [
+      "c13_rda_hierro"
+     ],
+     "summary": "Presenta la RDA de hierro y su cálculo, el ajuste para vegetarianos, las fuentes y alimentos enriquecidos, cómo maximizar la absorción, el hierro de contaminación (utensilios) y el uso correcto de suplementos."
+    },
+    {
+     "num": "13.5",
+     "title": "Zinc",
+     "page": 434,
+     "items": [
+      "c13_zinc"
+     ],
+     "summary": "El zinc es cofactor de más de cien enzimas, circula entre páncreas e intestino (circulación enteropancreática), compite con hierro y cobre, y su deficiencia produce retraso del crecimiento y de la maduración sexual."
+    },
+    {
+     "num": "13.6",
+     "title": "Yodo y selenio",
+     "page": 438,
+     "items": [
+      "c13_yodo"
+     ],
+     "summary": "El yoduro integra las hormonas tiroideas y su déficit causa bocio y cretinismo, prevenibles con sal yodada; el selenio actúa como antioxidante en la glutatión peroxidasa y su deficiencia predispone a la enfermedad de Keshan."
+    },
+    {
+     "num": "13.7",
+     "title": "Cobre, manganeso, flúor, cromo, molibdeno y otros oligoelementos",
+     "page": 441,
+     "items": [
+      "c13_fluoruro"
+     ],
+     "summary": "Repasa el cobre (metabolismo del hierro; enfermedades de Menkes y Wilson), el manganeso, el flúor (fluorapatita, fluoración del agua y fluorosis), el cromo (acción de la insulina), el molibdeno y minerales de función incierta como níquel, silicio, vanadio, cobalto y boro."
+    },
+    {
+     "num": "13.8",
+     "title": "Minerales contaminantes y reflexiones finales sobre los nutrientes",
+     "page": 445,
+     "items": [],
+     "summary": "Los metales pesados como plomo, mercurio y cadmio desplazan a minerales nutrientes de sus sitios funcionales, y el capítulo cierra subrayando que los nutrientes actúan en interacción dentro de alimentos completos."
+    },
+    {
+     "num": "13.9",
+     "title": "Highlight 13: Fitoquímicos y alimentos funcionales",
+     "page": 449,
+     "items": [
+      "c13_fitoesteroles"
+     ],
+     "summary": "Revisa fitoquímicos con posible efecto protector frente a cáncer y enfermedad cardiovascular (fitoestrógenos, licopeno, flavonoides, fitoesteroles) y discute los alimentos funcionales que se sitúan entre alimento y fármaco."
+    }
+   ],
+   "block": "micro"
+  },
+  {
+   "num": 14,
+   "title": "Condición física: actividad física, nutrientes y adaptaciones del cuerpo",
+   "page": 456,
+   "summary": "Explica los beneficios y las recomendaciones de actividad física, cómo los músculos usan ATP, fosfocreatina, glucosa, grasa y proteína según la intensidad, la duración y el entrenamiento, y qué necesidades de líquidos, electrolitos y dieta tienen las personas activas. Sirve para prescribir actividad y orientar la nutrición deportiva.",
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "Condición física y sus beneficios",
+     "page": 457,
+     "items": [
+      "c14_recomendaciones_actividad_fisica"
+     ],
+     "summary": "Distingue actividad física de ejercicio, enumera los beneficios de la condición física y presenta las recomendaciones de minutos semanales de actividad aeróbica y de fortalecimiento muscular según intensidad."
+    },
+    {
+     "num": "14.2",
+     "title": "Desarrollo de la condición física: sobrecarga, resistencia cardiorrespiratoria y entrenamiento de fuerza",
+     "page": 460,
+     "items": [],
+     "summary": "Expone el principio de sobrecarga progresiva (frecuencia, intensidad, duración), la hipertrofia y la atrofia, el acondicionamiento cardiorrespiratorio y el VO2max, y cómo el entrenamiento de resistencia desarrolla fuerza, potencia y resistencia muscular."
+    },
+    {
+     "num": "14.3",
+     "title": "Sistemas energéticos: ATP y fosfocreatina",
+     "page": 464,
+     "items": [
+      "c14_sistema_atp_cp"
+     ],
+     "summary": "Los músculos usan primero ATP y fosfocreatina y luego una mezcla de combustibles cuya proporción depende de la dieta, la intensidad y duración de la actividad y el grado de entrenamiento."
+    },
+    {
+     "num": "14.4",
+     "title": "Uso de glucosa durante la actividad física",
+     "page": 466,
+     "items": [
+      "c14_glucogeno_carbohidrato",
+      "c14_carga_carbohidratos"
+     ],
+     "summary": "El glucógeno limita el rendimiento de resistencia; su uso depende de la dieta, la intensidad (lactato y ciclo de Cori), la duración y el entrenamiento, y puede optimizarse con carbohidrato antes, durante y después del ejercicio."
+    },
+    {
+     "num": "14.5",
+     "title": "Uso de grasa y proteína durante la actividad y entre sesiones",
+     "page": 469,
+     "items": [],
+     "summary": "La grasa corporal alimenta la actividad aeróbica moderada y prolongada y el entrenamiento aumenta su uso; la proteína aporta poco combustible pero su síntesis se acelera en la recuperación y las necesidades de atletas superan a las de sedentarios."
+    },
+    {
+     "num": "14.6",
+     "title": "Vitaminas y minerales para la actividad física",
+     "page": 472,
+     "items": [
+      "c14_anemia_deportiva"
+     ],
+     "summary": "Los suplementos no mejoran el rendimiento de personas bien nutridas; se discuten la vitamina E frente al estrés oxidativo del ejercicio y el riesgo de deficiencia de hierro en mujeres activas, distinguiéndola de la anemia deportiva."
+    },
+    {
+     "num": "14.7",
+     "title": "Líquidos y electrolitos: termorregulación, hidratación y bebidas",
+     "page": 474,
+     "items": [
+      "c14_hidratacion_hiponatremia"
+     ],
+     "summary": "Trata la pérdida de agua por sudor, la hipertermia, el golpe de calor y la hipotermia, los esquemas de hidratación, la reposición de electrolitos y la hiponatremia, y compara agua, bebidas deportivas, aguas enriquecidas, cafeína y alcohol."
+    },
+    {
+     "num": "14.8",
+     "title": "Dietas para personas físicamente activas",
+     "page": 479,
+     "items": [
+      "c14_dieta_rendimiento"
+     ],
+     "summary": "Una dieta de rendimiento aporta agua, energía suficiente y alimentos densos en nutrientes con alto carbohidrato; se describen un menú de ejemplo y las comidas previas y posteriores a la competencia."
+    },
+    {
+     "num": "14.9",
+     "title": "Highlight 14: Suplementos como ayudas ergogénicas",
+     "page": 485,
+     "items": [
+      "c14_ayudas_ergogenicas"
+     ],
+     "summary": "Evalúa ayudas ergogénicas (carnitina, picolinato de cromo, creatina, ácido linoleico conjugado, cafeína) y advierte sobre los riesgos de esteroides anabólicos, DHEA, androstenediona y hormona de crecimiento, además de la contaminación de suplementos."
+    }
+   ],
+   "block": "energia"
+  },
+  {
+   "num": 15,
+   "title": "Nutrición en el ciclo vital: embarazo y lactancia",
+   "page": 492,
+   "summary": "Explica cómo la nutrición antes, durante y después del embarazo condiciona la salud materna y el desarrollo fetal, con metas de ganancia de peso, necesidades de energía y nutrientes, embarazos de alto riesgo y requerimientos de la madre lactante.",
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "Nutrición antes del embarazo",
+     "page": 493,
+     "items": [],
+     "summary": "Hábitos preconcepcionales (peso sano, dieta adecuada, actividad física, control de enfermedades crónicas y evitar tóxicos) que favorecen la fertilidad y un embarazo sano."
+    },
+    {
+     "num": "15.2",
+     "title": "Crecimiento y desarrollo durante el embarazo",
+     "page": 494,
+     "items": [
+      "c15_periodos_criticos",
+      "c15_folato_dtn"
+     ],
+     "summary": "Placenta, etapas de cigoto, embrión y feto, periodos críticos, defectos del tubo neural y su prevención con folato, y programación fetal de enfermedades crónicas."
+    },
+    {
+     "num": "15.3",
+     "title": "Peso materno y ejercicio en el embarazo",
+     "page": 499,
+     "items": [
+      "c15_ganancia_peso_gestacional"
+     ],
+     "summary": "Influencia del peso pregestacional y de la ganancia de peso en el peso al nacer, componentes de la ganancia, pérdida posparto y pautas de ejercicio durante el embarazo."
+    },
+    {
+     "num": "15.4",
+     "title": "Necesidades nutricionales durante el embarazo",
+     "page": 503,
+     "items": [
+      "c15_necesidades_embarazo"
+     ],
+     "summary": "Aumentos de energía, proteína, ácidos grasos esenciales y micronutrientes para la sangre, la división celular y el hueso; suplementos prenatales, dietas vegetarianas y molestias digestivas comunes."
+    },
+    {
+     "num": "15.5",
+     "title": "Embarazos de alto riesgo",
+     "page": 509,
+     "items": [
+      "c15_diabetes_gestacional",
+      "c15_preeclampsia"
+     ],
+     "summary": "Factores de riesgo, bajo peso al nacer, desnutrición materna, programa WIC, diabetes previa y gestacional, trastornos hipertensivos y efecto de la edad materna."
+    },
+    {
+     "num": "15.6",
+     "title": "Prácticas incompatibles con el embarazo",
+     "page": 513,
+     "items": [],
+     "summary": "Alcohol, fármacos, hierbas, drogas ilícitas, tabaco, contaminantes como plomo y mercurio, listeriosis, megadosis de vitamina A, cafeína, dietas para adelgazar y edulcorantes."
+    },
+    {
+     "num": "15.7",
+     "title": "Lactancia: proceso fisiológico y conducta aprendida",
+     "page": 516,
+     "items": [],
+     "summary": "Beneficios de amamantar, regulación hormonal por prolactina y oxitocina, reflejo de eyección y apoyo profesional y familiar para una lactancia exitosa."
+    },
+    {
+     "num": "15.8",
+     "title": "Necesidades y salud de la madre lactante",
+     "page": 517,
+     "items": [
+      "c15_lactancia_materna"
+     ],
+     "summary": "Energía, nutrientes, agua y suplementos durante la lactancia, condiciones maternas (VIH, diabetes, amenorrea posparto) y prácticas incompatibles con amamantar."
+    },
+    {
+     "num": "15.9",
+     "title": "Highlight 15: Síndrome alcohólico fetal",
+     "page": 525,
+     "items": [
+      "c15_sindrome_alcoholico_fetal"
+     ],
+     "summary": "Espectro de trastornos por exposición prenatal al alcohol, mecanismos de daño, momento de mayor vulnerabilidad y la abstinencia como única prevención."
+    }
+   ],
+   "block": "ciclo"
+  },
+  {
+   "num": 16,
+   "title": "Nutrición en el ciclo vital: lactante, niñez y adolescencia",
+   "page": 528,
+   "summary": "Describe las necesidades nutricionales y la alimentación desde el nacimiento hasta la adolescencia: leche materna y fórmula, alimentación complementaria, problemas nutricionales de la niñez como hierro, plomo, alergias y obesidad, y hábitos del adolescente.",
+   "sections": [
+    {
+     "num": "16.1",
+     "title": "Crecimiento y necesidades de energía y nutrientes del lactante",
+     "page": 529,
+     "items": [
+      "c16_energia_lactante"
+     ],
+     "summary": "Ritmo de crecimiento en el primer año, uso de curvas de percentiles y necesidades de energía, macronutrientes, vitaminas, minerales y agua por kilo de peso."
+    },
+    {
+     "num": "16.2",
+     "title": "Leche materna",
+     "page": 532,
+     "items": [
+      "c16_leche_materna"
+     ],
+     "summary": "Recomendación de lactancia exclusiva, frecuencia de tomas, composición nutricional, suplementos necesarios, factores inmunológicos y bancos de leche."
+    },
+    {
+     "num": "16.3",
+     "title": "Fórmula infantil y necesidades del prematuro",
+     "page": 535,
+     "items": [],
+     "summary": "Composición y estándares de las fórmulas, riesgos de su preparación, fórmulas especiales e inadecuadas, caries por biberón y alimentación del recién nacido prematuro."
+    },
+    {
+     "num": "16.4",
+     "title": "Introducción de leche de vaca y alimentos sólidos",
+     "page": 536,
+     "items": [
+      "c16_alimentacion_complementaria"
+     ],
+     "summary": "Momento y orden de la alimentación complementaria, fuentes de hierro y vitamina C, alimentos a evitar, dietas vegetarianas en el lactante, alimentación al año y comidas con niños pequeños."
+    },
+    {
+     "num": "16.5",
+     "title": "Necesidades de energía y nutrientes en la niñez",
+     "page": 540,
+     "items": [
+      "c16_necesidades_ninez"
+     ],
+     "summary": "Crecimiento y apetito del niño, recomendaciones de energía, carbohidratos, fibra, grasa, proteína, hierro y vitamina D, suplementos y planificación de comidas."
+    },
+    {
+     "num": "16.6",
+     "title": "Hambre, plomo, hiperactividad y alergias alimentarias",
+     "page": 544,
+     "items": [
+      "c16_plomo_hierro"
+     ],
+     "summary": "Efectos del hambre y la deficiencia de hierro en la conducta, relación entre desnutrición e intoxicación por plomo, mitos sobre azúcar e hiperactividad, alergias e intolerancias alimentarias."
+    },
+    {
+     "num": "16.7",
+     "title": "Obesidad infantil",
+     "page": 549,
+     "items": [
+      "c16_obesidad_infantil"
+     ],
+     "summary": "Definición por percentiles de IMC, factores genéticos y ambientales, consecuencias físicas y psicológicas, y prevención y tratamiento con dieta, actividad, apoyo, fármacos y cirugía."
+    },
+    {
+     "num": "16.8",
+     "title": "Comidas en casa y en la escuela",
+     "page": 554,
+     "items": [],
+     "summary": "Estrategias familiares para la alimentación infantil (preferencias, participación, evitar luchas de poder, meriendas, caries, modelos de rol) y programas de alimentación escolar."
+    },
+    {
+     "num": "16.9",
+     "title": "Nutrición en la adolescencia",
+     "page": 559,
+     "items": [
+      "c16_hierro_calcio_adolescencia"
+     ],
+     "summary": "Estirón puberal, necesidades de energía, vitamina D, hierro y calcio, y hábitos del adolescente: desayuno, meriendas, bebidas, comidas fuera, alcohol, drogas y tabaco."
+    },
+    {
+     "num": "16.10",
+     "title": "Highlight 16: Obesidad infantil y desarrollo temprano de enfermedades crónicas",
+     "page": 569,
+     "items": [
+      "c16_lipidos_pediatricos"
+     ],
+     "summary": "Inicio en la niñez de la diabetes tipo 2 y la aterosclerosis, valores de colesterol pediátrico, presión arterial, actividad física, recomendaciones dietéticas y tabaquismo."
+    }
+   ],
+   "block": "ciclo"
+  },
+  {
+   "num": 17,
+   "title": "Nutrición en el ciclo vital: adultez y vejez",
+   "page": 574,
+   "summary": "Explica cómo la dieta y la actividad física influyen en el envejecimiento y la longevidad, qué cambios fisiológicos, psicológicos y sociales alteran el estado nutricional del adulto mayor y cómo ajustar sus necesidades de energía, agua y micronutrientes. Sirve para valorar el riesgo de malnutrición en la vejez y anticipar interacciones entre fármacos y nutrientes.",
+   "sections": [
+    {
+     "num": "17.1",
+     "title": "Nutrición y longevidad",
+     "page": 576,
+     "items": [
+      "c17_restriccion_energetica"
+     ],
+     "summary": "Esperanza de vida frente a duración máxima de la vida, hábitos que retrasan el envejecimiento fisiológico, pautas de ejercicio para mayores y efectos de la restricción energética en animales y humanos."
+    },
+    {
+     "num": "17.2",
+     "title": "El proceso de envejecimiento: cambios fisiológicos y de otro tipo",
+     "page": 580,
+     "items": [
+      "c17_peso_imc_mayores",
+      "c17_sarcopenia"
+     ],
+     "summary": "Estrés y respuesta al estrés, cambios de peso y composición corporal, inmunidad e «inflammaging», tracto gastrointestinal (gastritis atrófica, disfagia), pérdida dental y sensorial, y factores psicológicos, económicos y sociales que comprometen la ingesta."
+    },
+    {
+     "num": "17.3",
+     "title": "Necesidades de agua, energía y macronutrientes del adulto mayor",
+     "page": 583,
+     "items": [
+      "c17_hidratacion_mayores",
+      "c17_eer_mayores"
+     ],
+     "summary": "Riesgo de deshidratación, descenso del gasto energético con la edad, cálculo aproximado de la EER y prioridades de proteína, carbohidrato, fibra y grasa en una dieta de alta densidad nutricional."
+    },
+    {
+     "num": "17.4",
+     "title": "Vitaminas, minerales y suplementos en la vejez",
+     "page": 586,
+     "items": [
+      "c17_gastritis_atrofica_b12",
+      "c17_vitamina_d_calcio_mayores"
+     ],
+     "summary": "Nutrientes de mayor preocupación en mayores (vitamina B12, vitamina D, folato, calcio, hierro, zinc) y criterios para usar suplementos."
+    },
+    {
+     "num": "17.5",
+     "title": "Problemas relacionados con la nutrición: visión y artritis",
+     "page": 588,
+     "items": [],
+     "summary": "Cataratas y degeneración macular asociadas al estrés oxidativo y posibles factores dietéticos protectores; osteoartritis, artritis reumatoide y gota, con su relación con el peso, los ácidos grasos omega-3, los antioxidantes y las purinas."
+    },
+    {
+     "num": "17.6",
+     "title": "El cerebro que envejece y la enfermedad de Alzheimer",
+     "page": 589,
+     "items": [],
+     "summary": "Cambios normales del cerebro, relación de los nutrientes con la función cognitiva, demencia senil y enfermedad de Alzheimer, y manejo nutricional del paciente con demencia."
+    },
+    {
+     "num": "17.7",
+     "title": "Elección de alimentos, programas de asistencia y comidas para personas solas",
+     "page": 591,
+     "items": [],
+     "summary": "Hábitos alimentarios de los mayores, tamizaje de riesgo de malnutrición, programas de asistencia alimentaria (comidas congregadas, entrega a domicilio) y estrategias de compra, inocuidad y preparación para quien vive solo."
+    },
+    {
+     "num": "17.8",
+     "title": "Highlight 17: interacciones entre nutrientes y fármacos",
+     "page": 599,
+     "items": [
+      "c17_interacciones_farmaco_nutriente"
+     ],
+     "summary": "Cómo los fármacos alteran la ingesta, la absorción, el metabolismo y la excreción de nutrientes, cómo la dieta modifica la acción de los fármacos y qué ingredientes inactivos de los medicamentos importan en dietas especiales."
+    }
+   ],
+   "block": "ciclo"
+  },
+  {
+   "num": 18,
+   "title": "Dieta y salud",
+   "page": 604,
+   "summary": "Describe el sistema inmunitario y la inflamación como base de las enfermedades crónicas, y explica cómo se desarrollan la enfermedad cardiovascular, la hipertensión, la diabetes y el cáncer, con sus factores de riesgo y recomendaciones dietéticas. Sirve para relacionar criterios clínicos (lípidos, presión arterial, glucemia) con estrategias de prevención; cierra con un análisis de la medicina complementaria y alternativa.",
+   "sections": [
+    {
+     "num": "18.1",
+     "title": "Nutrición y enfermedades infecciosas",
+     "page": 605,
+     "items": [],
+     "summary": "Componentes del sistema inmunitario (fagocitos, linfocitos B y T), espiral entre malnutrición, inmunidad deprimida e infección, VIH/sida e inflamación aguda frente a crónica."
+    },
+    {
+     "num": "18.2",
+     "title": "Nutrición y enfermedades crónicas",
+     "page": 608,
+     "items": [],
+     "summary": "Principales causas de muerte vinculadas con la dieta, interrelación entre enfermedades crónicas y su vínculo con la obesidad, e interacción entre genética y estilo de vida."
+    },
+    {
+     "num": "18.3",
+     "title": "Enfermedad cardiovascular: aterosclerosis y factores de riesgo",
+     "page": 610,
+     "items": [
+      "c18_aterosclerosis_inflamacion",
+      "c18_estandares_riesgo_cc",
+      "c18_sindrome_metabolico"
+     ],
+     "summary": "Formación de placas como respuesta inflamatoria, trombosis y embolia, papel de los eicosanoides, y factores de riesgo coronario modificables y no modificables, incluidos los emergentes y el síndrome metabólico."
+    },
+    {
+     "num": "18.4",
+     "title": "Recomendaciones para reducir el riesgo de cardiopatía coronaria",
+     "page": 615,
+     "items": [
+      "c18_estrategias_dieta_cc"
+     ],
+     "summary": "Tamizaje de colesterol, estimación del riesgo coronario a 10 años con puntaje tipo Framingham, cambios de estilo de vida y pautas prácticas de una dieta cardiosaludable."
+    },
+    {
+     "num": "18.5",
+     "title": "Hipertensión",
+     "page": 618,
+     "items": [
+      "c18_dash_modificaciones_pa"
+     ],
+     "summary": "Determinantes de la presión arterial (gasto cardíaco y resistencia periférica), factores de riesgo de hipertensión y su tratamiento con control de peso, actividad física, dieta DASH, restricción de sodio, moderación del alcohol y fármacos."
+    },
+    {
+     "num": "18.6",
+     "title": "Diabetes mellitus",
+     "page": 620,
+     "items": [
+      "c18_diabetes_tipos_glucemia",
+      "c18_dieta_diabetes"
+     ],
+     "summary": "Diferencias entre diabetes tipo 1 y tipo 2, consecuencias metabólicas agudas y complicaciones crónicas macro y microvasculares y neuropáticas, y recomendaciones de nutrición y actividad física."
+    },
+    {
+     "num": "18.7",
+     "title": "Cáncer",
+     "page": 625,
+     "items": [
+      "c18_carcinogenesis_dieta"
+     ],
+     "summary": "Etapas de la carcinogénesis, factores ambientales y obesidad, factores dietéticos iniciadores, promotores y antipromotores, y recomendaciones para reducir el riesgo de cáncer."
+    },
+    {
+     "num": "18.8",
+     "title": "Recomendaciones para las enfermedades crónicas",
+     "page": 629,
+     "items": [],
+     "summary": "Coincidencias entre las recomendaciones para cardiopatía, hipertensión, diabetes y cáncer, pirámide alternativa de Harvard, y enfoques poblacional frente a individual de la prevención."
+    },
+    {
+     "num": "18.9",
+     "title": "Highlight 18: medicina complementaria y alternativa",
+     "page": 636,
+     "items": [],
+     "summary": "Definición de medicina complementaria, alternativa e integrativa, efecto placebo, balance riesgo-beneficio, terapias relacionadas con la nutrición, precauciones con hierbas medicinales (regulación, pureza, dosis, interacciones con fármacos) y perspectiva del consumidor."
+    }
+   ],
+   "block": "salud"
+  },
+  {
+   "num": 19,
+   "title": "Preocupaciones del consumidor sobre alimentos y agua",
+   "page": 646,
+   "summary": "Revisa los riesgos de inocuidad de la cadena alimentaria —enfermedades transmitidas por alimentos, contaminantes ambientales, tóxicos naturales, plaguicidas, aditivos y agua de consumo— y las medidas regulatorias y caseras para reducirlos; distingue toxicidad de riesgo real.",
+   "sections": [
+    {
+     "num": "19.1",
+     "title": "Enfermedades transmitidas por alimentos",
+     "page": 648,
+     "items": [
+      "c19_infeccion_vs_intoxicacion",
+      "c19_temperaturas_seguras"
+     ],
+     "summary": "Infecciones e intoxicaciones alimentarias, controles industriales (HACCP), manejo seguro en mercado, cocina y viajes, y riesgos específicos de carnes, aves y mariscos."
+    },
+    {
+     "num": "19.2",
+     "title": "Avances en inocuidad: irradiación y otras tecnologías",
+     "page": 656,
+     "items": [
+      "c19_irradiacion"
+     ],
+     "summary": "Usos, beneficios, regulación, etiquetado (radura) y percepción pública de la irradiación de alimentos y de otros sistemas de pasteurización en frío."
+    },
+    {
+     "num": "19.3",
+     "title": "Adecuación nutricional de alimentos y dietas",
+     "page": 657,
+     "items": [],
+     "summary": "Herramientas para obtener información nutricional y prácticas de almacenamiento y cocción que minimizan la pérdida de vitaminas hidrosolubles y minerales."
+    },
+    {
+     "num": "19.4",
+     "title": "Contaminantes ambientales",
+     "page": 658,
+     "items": [
+      "c19_mercurio_pescado"
+     ],
+     "summary": "Persistencia y bioacumulación de contaminantes (metilmercurio de Minamata, PBB y PCB) y pautas de consumo de pescado que equilibran riesgo de mercurio y beneficio de omega-3."
+    },
+    {
+     "num": "19.5",
+     "title": "Tóxicos naturales en los alimentos",
+     "page": 661,
+     "items": [
+      "c19_toxicos_naturales"
+     ],
+     "summary": "Bociógenos de crucíferas, cianógenos de habas lima y semillas, y solanina de la papa como ejemplo de que la dosis y la estructura, no el origen, determinan el peligro."
+    },
+    {
+     "num": "19.6",
+     "title": "Plaguicidas",
+     "page": 662,
+     "items": [],
+     "summary": "Riesgos, niveles de tolerancia de la EPA, vigilancia de la FDA (incluido el Estudio de Dieta Total), plaguicidas importados, formas de minimizar residuos, alternativas y alimentos orgánicos."
+    },
+    {
+     "num": "19.7",
+     "title": "Aditivos alimentarios",
+     "page": 666,
+     "items": [
+      "c19_margen_seguridad_aditivos",
+      "c19_ida_aspartamo"
+     ],
+     "summary": "Regulación de aditivos (lista GRAS, cláusula Delaney, regla de minimis, margen de seguridad), aditivos intencionales por clase y aditivos indirectos como acrilamida, dioxinas, hormonas y antibióticos."
+    },
+    {
+     "num": "19.8",
+     "title": "Preocupaciones sobre el agua",
+     "page": 673,
+     "items": [],
+     "summary": "Fuentes de agua potable (superficial y subterránea), cloración y regulación de la EPA, sistemas de tratamiento domésticos y agua embotellada."
+    },
+    {
+     "num": "19.9",
+     "title": "Highlight 19: Biotecnología alimentaria",
+     "page": 677,
+     "items": [
+      "c19_biotecnologia_regulacion"
+     ],
+     "summary": "Promesas de la ingeniería genética (vida útil, biofortificación, procesamiento, fármacos, cultivos resistentes), sus riesgos y controversias, y la postura regulatoria de la FDA."
+    }
+   ],
+   "block": "salud"
+  },
+  {
+   "num": 20,
+   "title": "Hambre y medio ambiente global",
+   "page": 684,
+   "summary": "Analiza la inseguridad alimentaria en Estados Unidos y el hambre mundial, sus vínculos con la pobreza, la sobrepoblación y la degradación ambiental, y las soluciones sostenibles desde los programas públicos hasta las elecciones alimentarias individuales.",
+   "sections": [
+    {
+     "num": "20.1",
+     "title": "Hambre en Estados Unidos: definición e inseguridad alimentaria",
+     "page": 686,
+     "items": [
+      "c20_seguridad_alimentaria",
+      "c20_paradoja_hambre_obesidad"
+     ],
+     "summary": "Conceptos de seguridad e inseguridad alimentaria, su medición por encuesta de hogares, la pobreza como causa principal y la coexistencia de hambre y obesidad."
+    },
+    {
+     "num": "20.2",
+     "title": "Alivio del hambre en Estados Unidos",
+     "page": 687,
+     "items": [],
+     "summary": "Programas federales de asistencia (SNAP, WIC, comedores escolares, programas para adultos mayores), recuperación de alimentos, bancos de alimentos y esfuerzos comunitarios, con consejos para comer sano con poco presupuesto."
+    },
+    {
+     "num": "20.3",
+     "title": "Hambre mundial y escasez de alimentos",
+     "page": 689,
+     "items": [],
+     "summary": "La pobreza extrema como causa primaria del hambre mundial y las hambrunas por inestabilidad política, conflictos armados y desastres naturales."
+    },
+    {
+     "num": "20.4",
+     "title": "Malnutrición en el mundo",
+     "page": 691,
+     "items": [
+      "c20_deficiencias_micronutrientes",
+      "c20_sinergia_desnutricion_infeccion",
+      "c20_terapia_rehidratacion_oral"
+     ],
+     "summary": "Deficiencias de hierro, yodo y vitamina A, bajo peso infantil, sinergia entre desnutrición e infección, mortalidad por diarrea y su prevención con rehidratación oral, y la disminución de la oferta de alimentos."
+    },
+    {
+     "num": "20.5",
+     "title": "Pobreza y sobrepoblación",
+     "page": 691,
+     "items": [],
+     "summary": "Relación bidireccional entre crecimiento poblacional, hambre y pobreza, y cómo la mejora del nivel de vida, la educación y la planificación familiar rompen el ciclo."
+    },
+    {
+     "num": "20.6",
+     "title": "Medio ambiente global: conexiones entre hambre y ambiente",
+     "page": 693,
+     "items": [],
+     "summary": "Costos ambientales de cultivos, ganadería, pesca, energía y agua en la producción de alimentos, y pérdida de biodiversidad que amenaza la oferta futura."
+    },
+    {
+     "num": "20.7",
+     "title": "Soluciones sostenibles",
+     "page": 695,
+     "items": [],
+     "summary": "Límites del riego, los fertilizantes y las variedades de alto rendimiento; agricultura y desarrollo sostenibles; y acciones de gobiernos, profesionales de la nutrición e individuos."
+    },
+    {
+     "num": "20.8",
+     "title": "Highlight 20: Elecciones alimentarias ambientalmente responsables",
+     "page": 700,
+     "items": [
+      "c20_comer_bajo_cadena_alimentaria"
+     ],
+     "summary": "Huella ecológica, ventajas de dietas basadas en plantas y de alimentos locales, y acciones cotidianas de compra, cocina y manejo de residuos que ahorran recursos."
+    }
+   ],
+   "block": "salud"
+  }
+ ],
+ "items": {
+  "c01_valor_energetico": {
+   "title": "Valor energético de los macronutrientes y cálculo del % de energía",
+   "formula": "Carbohidrato 4 kcal/g (17 kJ); proteína 4 kcal/g (17 kJ); grasa 9 kcal/g (37 kJ); alcohol 7 kcal/g (29 kJ, no es nutriente). kcal × 4,2 = kJ. % kcal de un macronutriente = (g × kcal/g) ÷ kcal totales × 100. Densidad energética = kcal ÷ g de alimento.",
+   "summary": "Permite estimar la energía de un alimento a partir de sus gramos de carbohidrato, proteína y grasa, y la proporción de energía que aporta cada uno."
+  },
+  "c01_ear_rda": {
+   "title": "Requerimiento Promedio Estimado (EAR) y Aporte Dietético Recomendado (RDA)",
+   "formula": "EAR = ingesta que cubre al 50 % de las personas sanas de un grupo de edad y sexo; RDA = valor fijado por encima del EAR que cubre a ~98 %. Evaluación de un individuo: ingesta habitual > RDA → probablemente adecuada; entre EAR y RDA → posiblemente inadecuada; < EAR → probablemente inadecuada.",
+   "summary": "El EAR sirve para planear y evaluar programas en grupos y el RDA es la meta de ingesta individual para personas sanas."
+  },
+  "c01_ai_ul": {
+   "title": "Ingesta Adecuada (AI) y Nivel Máximo Tolerable (UL)",
+   "summary": "La AI reemplaza al RDA cuando no hay evidencia para fijar un EAR, y el UL marca la ingesta diaria máxima sin riesgo de efectos adversos, útil sobre todo ante suplementos y alimentos fortificados."
+  },
+  "c01_eer": {
+   "title": "Requerimiento Estimado de Energía (EER)",
+   "formula": "Ingesta energética promedio (kcal/día) que mantiene el balance energético según edad, sexo, peso, talla y actividad; no tiene UL. Adultos de referencia de 19–30 años: hombre 5 ft 10 in y 154 lb; mujer 5 ft 4 in y 126 lb.",
+   "caution": "El libro se basa en las ecuaciones EER de las DRI de 2002/2005; NASEM publicó nuevas ecuaciones EER en 2023.",
+   "summary": "A diferencia de los nutrientes, la recomendación de energía no es generosa: se fija en el promedio porque el exceso se almacena como grasa."
+  },
+  "c01_amdr": {
+   "title": "Rangos Aceptables de Distribución de Macronutrientes (AMDR)",
+   "formula": "Adultos: carbohidrato 45–65 % de las kcal; grasa 20–35 %; proteína 10–35 %.",
+   "summary": "Proporciones de energía de cada macronutriente que aseguran nutrientes suficientes y reducen el riesgo de enfermedad crónica."
+  },
+  "c01_etapas_deficiencia": {
+   "title": "Etapas de una deficiencia nutricional y métodos para detectarlas",
+   "summary": "Una deficiencia primaria (dieta) o secundaria (absorción, excreción o uso alterados) pasa por depleción de reservas subclínica, detectable por laboratorio, antes de dar signos manifiestos visibles en el examen físico y la antropometría, como ilustra el hierro."
+  },
+  "c02_principios_densidad": {
+   "title": "Principios de planificación y densidad de nutrientes",
+   "formula": "Densidad de nutrientes = cantidad de nutriente ÷ kcal del alimento. Ejemplo del libro: leche descremada 300 mg de calcio ÷ 85 kcal ≈ 3,5 mg/kcal; hojas de nabo cocidas 100 mg ÷ 15 kcal ≈ 6,7 mg/kcal.",
+   "summary": "Los seis principios (adecuación, equilibrio, control de kcal, densidad de nutrientes, moderación y variedad) se cumplen mejor eligiendo alimentos que aportan más nutrientes por kcal."
+  },
+  "c02_guias_alimentarias": {
+   "title": "Recomendaciones clave de las Guías Alimentarias para Estadounidenses",
+   "formula": "Adultos y niños sanos ≥2 años: grasa total 20–35 % de las kcal; grasa saturada < 10 % de las kcal; colesterol < 300 mg/día; grasas trans lo más bajas posible; sodio < 2300 mg/día (≈1 cucharadita de sal); ≥ 3 onzas-equivalentes de granos integrales al día (al menos la mitad de los granos); 3 tazas/día de lácteos descremados o bajos en grasa; alcohol hasta 1 trago/día en mujeres y 2 en hombres.",
+   "caution": "El libro usa las Guías Alimentarias 2005 y las Guías de Actividad Física 2008; las vigentes son las Guías Alimentarias 2025–2030 (el límite de 300 mg/día de colesterol se retiró desde las de 2015–2020) y las Guías de Actividad Física, 2.ª ed. (2018).",
+   "summary": "Consejos basados en evidencia para cubrir nutrientes dentro de las necesidades de energía, mantener el peso y reducir el riesgo de enfermedad crónica."
+  },
+  "c02_usda_food_guide": {
+   "title": "Guía Alimentaria del USDA, MyPyramid y kcal discrecionales",
+   "formula": "Patrón de 2000 kcal: frutas 2 tazas; verduras 2½ tazas; granos 6 oz; carnes y leguminosas 5½ oz; lácteos 3 tazas; aceites 6 cucharaditas; kcal discrecionales 267. Necesidad estimada (sedentario/activo): mujeres 19–30 años 2000/2400 kcal, 31–50 años 1800/2200, ≥51 años 1600/2100; hombres 19–30 años 2400/3000, 31–50 años 2200/2900, ≥51 años 2000/2600.",
+   "caution": "MyPyramid y la Guía Alimentaria del USDA de 2005 fueron reemplazadas por MyPlate (2011) y los patrones de las Guías Alimentarias 2025–2030.",
+   "summary": "Plan por cinco grupos de alimentos más aceites, con cantidades según nivel calórico; las kcal discrecionales son las que quedan tras cubrir los nutrientes con alimentos densos en nutrientes."
+  },
+  "c02_listas_intercambio": {
+   "title": "Listas de intercambio",
+   "caution": "Las listas de intercambio para diabetes (Apéndice G) fueron desplazadas por los Estándares de Atención de la ADA (actualizados cada año), que priorizan un plan individualizado y el conteo de carbohidratos.",
+   "summary": "Herramienta creada para la diabetes que agrupa los alimentos por su proporción de carbohidrato, grasa y proteína, de modo que los de una misma lista son intercambiables; ayuda al control de kcal y a la moderación."
+  },
+  "c02_valores_diarios": {
+   "title": "Valores Diarios (VD) de la etiqueta y %VD",
+   "formula": "Base de 2000 kcal (adultos y niños > 4 años): grasa 65 g (30 % de kcal); grasa saturada 20 g (10 %); colesterol 300 mg; carbohidrato 300 g (60 %); fibra 25 g (11,5 g/1000 kcal); proteína 50 g (10 %); sodio 2400 mg; potasio 3500 mg; vitamina C 60 mg; vitamina A 1500 µg; calcio 1000 mg; hierro 18 mg. %VD ≥ 20 % = fuente alta; 10–19 % = buena fuente; 5 % = fuente baja. VD personal = VD × (kcal propias ÷ 2000).",
+   "caution": "Corresponden a la etiqueta anterior, basada en parte en los RDA de 1968; la regla de la FDA de 2016 (vigente desde 2020–2021) actualizó los Valores Diarios y hace obligatorios los azúcares añadidos, la vitamina D y el potasio.",
+   "summary": "Estándares de la FDA para expresar en la etiqueta cuánto aporta una porción respecto a una dieta de 2000 kcal y comparar productos."
+  },
+  "c02_vegetarianos": {
+   "title": "Nutrientes críticos en dietas vegetarianas",
+   "summary": "Una dieta vegetariana bien planificada debe asegurar proteína, hierro (cuyo RDA es mayor en vegetarianos por su menor absorción), zinc, calcio, vitamina B12 (en veganos solo con alimentos fortificados o suplementos), vitamina D y ácidos grasos omega-3."
+  },
+  "c19_infeccion_vs_intoxicacion": {
+   "title": "Infección alimentaria frente a intoxicación alimentaria (incluido el botulismo)",
+   "formula": "Infección = ingestión de microbios patógenos (p. ej., Salmonella, principal causa de enfermedad; Listeria, principal causa de muerte). Intoxicación = ingestión de toxinas naturales o producidas por microbios (p. ej., Staphylococcus aureus, la más común; Clostridium botulinum en medios anaerobios de baja acidez). No dar miel a menores de 1 año.",
+   "caution": "El libro cita la estimación de los CDC de 76 millones de casos anuales en EE. UU.; la estimación vigente de los CDC (2011) es de unos 48 millones de casos al año.",
+   "summary": "La enfermedad transmitida por alimentos se produce por infección con microorganismos o por intoxicación con sus toxinas; el botulismo exige atención inmediata por la parálisis que produce."
+  },
+  "c19_temperaturas_seguras": {
+   "title": "Zona de peligro y temperaturas seguras de cocción y conservación",
+   "formula": "Zona de peligro: 40–140 °F (≈4–60 °C); no más de 2 h en ella (1 h si el aire supera 90 °F ≈ 32 °C). Refrigerador ≤40 °F (≈4 °C); congelador ≤0 °F (≈−18 °C). Cocción interna: res poco hecha, ternera y cordero 145 °F (≈63 °C); carnes término medio, huevos, cerdo y carne molida 160 °F (≈71 °C); aves, relleno y recalentado de sobras 165 °F (≈74 °C); mantener caliente ≥140 °F.",
+   "caution": "El USDA (2011) redujo la temperatura segura para cortes enteros de cerdo a 145 °F (≈63 °C) con 3 minutos de reposo; la carne molida sigue en 160 °F.",
+   "summary": "Las cuatro reglas básicas (limpiar, separar, cocinar y enfriar) se apoyan en temperaturas internas medidas con termómetro y en evitar la zona de peligro donde las bacterias se multiplican."
+  },
+  "c19_irradiacion": {
+   "title": "Irradiación de alimentos",
+   "summary": "La irradiación en dosis bajas controla mohos, insectos y bacterias y prolonga la vida útil sin volver radiactivo el alimento ni causar más pérdida vitamínica que otros procesos; debe declararse en la etiqueta con el símbolo radura."
+  },
+  "c19_mercurio_pescado": {
+   "title": "Bioacumulación de mercurio y consumo de pescado en embarazo, lactancia e infancia",
+   "formula": "Embarazadas, lactantes y niños pequeños: evitar blanquillo (tilefish), pez espada, caballa rey y tiburón; consumir hasta 12 oz/semana (≈340 g) de pescado y mariscos comerciales cocidos o enlatados, de los cuales como máximo 6 oz/semana (≈170 g) de atún blanco albacora.",
+   "caution": "La recomendación conjunta FDA/EPA de 2017 (actualizada en 2021) aconseja en embarazo y lactancia consumir al menos 8 y hasta 12 oz/semana de pescados bajos en mercurio, con una tabla de opciones «mejores», «buenas» y «a evitar».",
+   "summary": "Los contaminantes persistentes se concentran en cada nivel de la cadena trófica, por lo que los grandes peces depredadores acumulan más metilmercurio, tóxico para el cerebro en desarrollo."
+  },
+  "c19_toxicos_naturales": {
+   "title": "Tóxicos naturales: bociógenos, cianógenos y solanina",
+   "formula": "Solanina: contenido medio ≈8 mg/100 g de papa; dosis tóxica 20–25 mg/100 g de papa; se concentra en brotes y capa verde bajo la piel, no se destruye con la cocción y se elimina al pelar.",
+   "summary": "Las crucíferas aportan bociógenos que pueden agravar una enfermedad tiroidea previa, las habas lima y semillas de frutas contienen cianógenos, y la papa contiene solanina, lo que ilustra que la toxicidad depende de la dosis y no del origen natural o sintético."
+  },
+  "c19_margen_seguridad_aditivos": {
+   "title": "Aprobación de aditivos: GRAS, cláusula Delaney, regla de minimis y margen de seguridad",
+   "formula": "Uso permitido ≤1/100 del nivel más bajo que causa daño en animales (margen de seguridad 1/100). Regla de minimis: riesgo aceptable <1 cáncer por millón de personas expuestas durante 70 años. Sal de mesa: margen ≈1/5 (3–5 veces lo habitual sería peligroso).",
+   "summary": "La FDA exige que un aditivo sea eficaz, detectable y seguro; los de la lista GRAS están exentos, la cláusula Delaney prohíbe carcinógenos a cualquier dosis y en la práctica se aplica un estándar de riesgo insignificante."
+  },
+  "c19_ida_aspartamo": {
+   "title": "Ingesta diaria admisible (IDA) de edulcorantes: aspartamo",
+   "formula": "IDA = cantidad consumible a diario de por vida con amplio margen, en general 1/100 del nivel sin efecto observado en animales. Aspartamo: 50 mg/kg de peso/día (la mayoría consume <5 mg/kg/día). Advertencia obligatoria para fenilcetonuria.",
+   "caution": "En 2023 la IARC clasificó el aspartamo como posiblemente carcinógeno (grupo 2B), mientras el JECFA (FAO/OMS) mantuvo su IDA de 40 mg/kg/día; la FDA conserva 50 mg/kg/día.",
+   "summary": "La seguridad de los sustitutos del azúcar se expresa como IDA; el aspartamo aporta fenilalanina, peligrosa en fenilcetonuria, y metanol en cantidades por debajo del umbral de daño."
+  },
+  "c19_biotecnologia_regulacion": {
+   "title": "Alimentos genéticamente modificados: usos y regulación",
+   "caution": "El libro describe el etiquetado de alimentos modificados como voluntario; el Estándar Nacional de Divulgación de Alimentos Bioingenierizados del USDA (ley de 2016, regla de 2018) lo hizo obligatorio desde el 1 de enero de 2022.",
+   "summary": "La ingeniería genética transfiere genes específicos para lograr rasgos como mayor vida útil, biofortificación (p. ej., arroz dorado) o resistencia a plagas; la FDA los considera sustancialmente equivalentes (GRAS) salvo que cambien la composición o introduzcan alérgenos."
+  },
+  "c20_seguridad_alimentaria": {
+   "title": "Seguridad e inseguridad alimentaria: categorías y medición en hogares",
+   "formula": "Hogares con niños (18 preguntas): ≤2 respuestas positivas = seguridad alimentaria; 3–7 = seguridad alimentaria baja; ≥8 = muy baja. Hogares sin niños (10 preguntas): ≤2 = seguridad; 3–5 = baja; ≥6 = muy baja.",
+   "summary": "La inseguridad alimentaria es el acceso limitado o incierto a alimentos suficientes y seguros; se clasifica en seguridad alta, marginal, baja y muy baja según respuestas a una encuesta de 12 meses."
+  },
+  "c20_paradoja_hambre_obesidad": {
+   "title": "Paradoja pobreza–obesidad",
+   "summary": "La pobreza y la inseguridad alimentaria llevan tanto a ingesta insuficiente de nutrientes como a exceso de energía, grasa y azúcar, porque los alimentos densos en energía son los más baratos y saciantes."
+  },
+  "c20_deficiencias_micronutrientes": {
+   "title": "Deficiencias de hierro, yodo y vitamina A en el mundo",
+   "formula": "Anemia ferropénica: >30 % de la población mundial. Deficiencia de yodo: 1 de cada 7 personas. Vitamina A: casi 80 millones de niños menores de 5 años con síntomas de deficiencia.",
+   "summary": "Hierro, yodo y vitamina A son los nutrientes que más faltan en el mundo, con consecuencias como mortalidad materna, cretinismo, ceguera y mayor susceptibilidad a infecciones."
+  },
+  "c20_sinergia_desnutricion_infeccion": {
+   "title": "Sinergia desnutrición–infección y riesgo de muerte infantil",
+   "formula": "Riesgo de muerte frente a niños bien nutridos: 2,5 veces en desnutrición leve, 4,6 veces en moderada y 8,4 veces en grave.",
+   "summary": "La desnutrición y las infecciones (diarrea, infecciones respiratorias, sarampión, malaria) se potencian entre sí; la mayoría de los niños que mueren por hambre fallecen por diarrea y deshidratación."
+  },
+  "c20_terapia_rehidratacion_oral": {
+   "title": "Terapia de rehidratación oral (TRO)",
+   "formula": "Receta casera del libro: ½ L de agua hervida + 4 cucharaditas de azúcar + ½ cucharadita de sal, por vía oral.",
+   "caution": "La OMS y UNICEF (2004) recomiendan las sales de rehidratación oral de osmolaridad reducida (245 mOsm/L) junto con suplemento de zinc durante 10–14 días en la diarrea infantil.",
+   "summary": "Una solución de azúcar, sal y agua por boca revierte la deshidratación de la diarrea de forma simple y barata, y junto con agua segura y saneamiento salva millones de vidas."
+  },
+  "c20_comer_bajo_cadena_alimentaria": {
+   "title": "Comer bajo en la cadena alimentaria y costo energético de los alimentos",
+   "formula": "Granos: ≈1/3 kcal de combustible por kcal de alimento; la mayoría de los alimentos de origen animal: 10–90 kcal de combustible por kcal comestible.",
+   "summary": "Las dietas basadas en plantas, y sobre todo las veganas, requieren menos combustible, tierra y agua que las basadas en carne de animales alimentados con grano; comprar local reduce además el transporte."
+  },
+  "c03_secreciones_digestivas": {
+   "title": "Secreciones digestivas y sus acciones",
+   "formula": "Jugo gástrico: pH < 2 (HCl, enzimas, moco). Jugo pancreático: bicarbonato que neutraliza el quimo + enzimas para carbohidrato, grasa y proteína. Bilis: emulsionante (no enzima), liberada por la vesícula ante grasa en el duodeno.",
+   "summary": "Cinco órganos (glándulas salivales, estómago, páncreas, hígado vía vesícula e intestino delgado) aportan agua, enzimas hidrolíticas, ácido, bicarbonato y bilis que descomponen los alimentos en nutrientes absorbibles."
+  },
+  "c03_absorcion_vellosidades": {
+   "title": "Superficie absortiva y mecanismos de absorción",
+   "summary": "Pliegues, vellosidades y microvellosidades del intestino delgado multiplican la superficie absortiva, y los nutrientes entran a los enterocitos por difusión simple (agua, lípidos pequeños), difusión facilitada (vitaminas hidrosolubles), transporte activo (glucosa, aminoácidos) u ocasionalmente endocitosis."
+  },
+  "c03_circulacion_portal_linfatica": {
+   "title": "Transporte de nutrientes: vena porta hepática frente a linfa",
+   "formula": "Hidrosolubles y fragmentos grasos pequeños: intestino → vena porta hepática → hígado → vena hepática → corazón. Grasas grandes y vitaminas liposolubles: quilomicrones → linfa (conducto torácico) → vena subclavia, sin pasar primero por el hígado.",
+   "summary": "La circulación portal hace del hígado el primer órgano en recibir los nutrientes hidrosolubles, mientras que los lípidos empaquetados en quilomicrones llegan a la sangre por la linfa y evitan inicialmente el hígado."
+  },
+  "c03_hormonas_gi": {
+   "title": "Hormonas gastrointestinales y retroalimentación negativa",
+   "formula": "Gastrina (pared gástrica; estímulo: alimento en el estómago) → secreción de HCl; el estómago mantiene pH 1,5–1,7. Secretina (pared duodenal; estímulo: quimo ácido) → jugo pancreático rico en bicarbonato. Colecistocinina (pared intestinal; estímulo: grasa o proteína) → contracción vesicular, enzimas pancreáticas y menor motilidad.",
+   "summary": "La digestión se regula por circuitos de retroalimentación negativa hormonales y nerviosos que ajustan la acidez, la neutralización del quimo, la liberación de bilis y la velocidad del tránsito."
+  },
+  "c03_erge_ulcera": {
+   "title": "Reflujo gastroesofágico y úlcera péptica",
+   "formula": "ERGE: síntomas de reflujo dos o más veces por semana. Causas de úlcera péptica: infección por Helicobacter pylori (la más frecuente), antiinflamatorios como aspirina, ibuprofeno y naproxeno, y trastornos con hipersecreción ácida.",
+   "caution": "Entre los bloqueadores H2 de venta libre que cita el libro figura la ranitidina (Zantac), que la FDA retiró del mercado estadounidense en 2020 por contaminación con NDMA.",
+   "summary": "La pirosis ocurre cuando el esfínter esofágico inferior permite el reflujo ácido y, si se repite, puede llevar a esófago de Barrett; la úlcera péptica se trata según su causa (antibióticos si hay H. pylori, suspender AINE) y no debe automedicarse con antiácidos."
+  },
+  "c03_estrenimiento_diarrea": {
+   "title": "Estreñimiento y diarrea: manejo dietético",
+   "formula": "Estreñimiento: menos de 3 deposiciones por semana, esfuerzo y heces duras. Manejo: aumentar la fibra dietética a 20–25 g/día de forma gradual en 1–2 semanas, con abundantes líquidos y unos 30 min/día de actividad física. Diarrea: el tratamiento siempre empieza por la rehidratación.",
+   "summary": "Estreñimiento y diarrea son síntomas, no enfermedades: el primero suele responder a fibra, líquidos, ejercicio y atender el reflejo defecatorio antes de recurrir a laxantes, y la diarrea grave o persistente en lactantes, ancianos o inmunodeprimidos exige atención médica."
+  },
+  "c04_fibra_soluble_insoluble": {
+   "title": "Fibras solubles e insolubles, almidón resistente y fibra funcional",
+   "formula": "Fibra total = fibra dietética (intrínseca de los vegetales) + fibra funcional (extraída o fabricada, con efecto benéfico demostrado).",
+   "summary": "Las fibras son polisacáridos no amiláceos que las enzimas humanas no digieren: las solubles (viscosas, fermentables; avena, cebada, leguminosas, cítricos) bajan colesterol y glucemia, y las insolubles (salvado, verduras) aumentan el bolo fecal y previenen estreñimiento y diverticulosis."
+  },
+  "c04_intolerancia_lactosa": {
+   "title": "Intolerancia a la lactosa",
+   "formula": "Muchas personas intolerantes toleran hasta 6 g de lactosa (½ taza de leche) sin síntomas; 1 taza de leche aporta unos 12 g de lactosa. Solo alrededor del 30 % de la población mundial conserva lactasa suficiente en la edad adulta.",
+   "summary": "La lactosa no digerida por déficit de lactasa atrae agua y es fermentada por bacterias, causando distensión, dolor y diarrea; el manejo consiste en dosificar y distribuir los lácteos, preferir yogur, quesos maduros o productos con lactasa, y asegurar calcio, vitamina D y riboflavina."
+  },
+  "c04_gluconeogenesis_cetosis": {
+   "title": "Gluconeogénesis, efecto ahorrador de proteína y cetosis",
+   "formula": "Se necesitan al menos 50–100 g/día de carbohidrato para ahorrar proteína corporal y prevenir la cetosis.",
+   "summary": "Sin carbohidrato suficiente, el cuerpo degrada proteína de músculo e hígado para fabricar glucosa (gluconeogénesis) y forma cuerpos cetónicos a partir de fragmentos de grasa, cuya acumulación altera el equilibrio ácido-base."
+  },
+  "c04_homeostasis_glucemia": {
+   "title": "Homeostasis de la glucemia y puntos de corte",
+   "formula": "Glucemia en ayunas: normal 70–100 mg/dL; prediabetes 100–125 mg/dL; diabetes ≥126 mg/dL (repetir la prueba en ayunas para confirmar).",
+   "summary": "La insulina (células beta) introduce la glucosa en las células y promueve su almacenamiento como glucógeno y grasa, mientras que el glucagón (células alfa) y la epinefrina liberan glucosa del glucógeno hepático; su falla da lugar a diabetes tipo 1 (falta de insulina) o tipo 2 (resistencia a la insulina) o a hipoglucemia."
+  },
+  "c04_indice_glucemico": {
+   "title": "Respuesta glucémica e índice glucémico",
+   "formula": "Generalizaciones del libro: IG bajo, leguminosas y lácteos; moderado, cereales integrales y frutas; alto, productos de harina refinada (snacks, panes, cereales listos para comer). La carga glucémica combina el IG con la cantidad de carbohidrato.",
+   "summary": "El índice glucémico clasifica los alimentos según su potencial para elevar la glucemia y puede ayudar al control glucémico en diabetes, pero su utilidad práctica es discutida porque varía con la variedad, el procesamiento, la cocción, la combinación de alimentos y el individuo."
+  },
+  "c04_azucares_anadidos": {
+   "title": "Azúcares añadidos: efectos y límites de ingesta",
+   "formula": "DRI: azúcares añadidos ≤25 % de la energía total (en 2000 kcal = 500 kcal ≈ 125 g ≈ 31 cucharaditas). OMS/FAO: <10 % de la energía. 1 cucharadita de azúcar concentrado ≈ 5 g de carbohidrato ≈ 20 kcal.",
+   "caution": "El libro se apoya en MyPyramid, las kilocalorías discrecionales y las DGA 2010. Las Dietary Guidelines 2025–2030 no recomiendan ninguna cantidad de azúcares añadidos: proponen no más de 10 g por comida y evitarlos en la infancia temprana (y ninguna cantidad entre 5 y 10 años). La OMS (2015) recomienda <10 % de la energía y sugiere <5 %, y la etiqueta de la FDA (regla de 2016) les da un Valor Diario de 50 g.",
+   "summary": "Los azúcares añadidos aportan energía sin nutrientes, desplazan alimentos nutritivos y favorecen la caries según la frecuencia de exposición y la adherencia del alimento; miel y azúcar de mesa son nutricionalmente equivalentes."
+  },
+  "c04_edulcorantes_alternativos": {
+   "title": "Edulcorantes alternativos e ingesta diaria admisible",
+   "formula": "IDA (tabla 4-2): aspartamo 50 mg/kg/día en EE. UU. (40 mg/kg/día según OMS, Europa y Canadá; advertencia para fenilcetonuria); sucralosa 5 mg/kg/día; acesulfame K 15 mg/kg/día. Polioles: la etiqueta debe advertir efecto laxante si el consumo razonable puede llegar a 50 g/día.",
+   "caution": "La guía de la OMS de 2023 recomienda no usar edulcorantes no calóricos para controlar el peso ni reducir el riesgo de enfermedades no transmisibles; en 2023 la IARC clasificó el aspartamo como posible carcinógeno (grupo 2B) y el JECFA mantuvo su IDA de 40 mg/kg/día.",
+   "summary": "Edulcorantes artificiales, estevia y alcoholes de azúcar permiten reducir azúcar y energía; los polioles aportan algo de energía, tienen baja respuesta glucémica y no causan caries, pero en exceso producen gases y diarrea."
+  },
+  "c04_ingesta_cho_fibra": {
+   "title": "Ingestas recomendadas de carbohidrato y fibra",
+   "formula": "AMDR de carbohidrato: 45–65 % de la energía (en 2000 kcal ≈ 225–325 g). RDA de carbohidrato: 130 g/día (glucosa mínima promedio que usa el cerebro). Fibra (DRI): 14 g/1000 kcal ≈ 25–35 g/día; sin UL. Valores Diarios de etiqueta: carbohidrato 300 g (60 % de 2000 kcal), fibra 25 g (11,5 g/1000 kcal).",
+   "caution": "La regla de etiquetado de la FDA de 2016 (vigente desde 2020–2021) cambió los Valores Diarios a 275 g de carbohidrato total y 28 g de fibra dietética, y añadió 50 g de azúcares añadidos.",
+   "summary": "Una dieta con 45–65 % de la energía en carbohidratos, procedente sobre todo de cereales integrales, verduras, leguminosas y frutas, y con fibra suficiente, protege frente a enfermedad cardiovascular, diabetes tipo 2, trastornos intestinales y posiblemente cáncer de colon, y ayuda al control del peso."
+  },
+  "c05_grasas_trans": {
+   "title": "Hidrogenación y ácidos grasos trans",
+   "formula": "Ingesta media de grasa trans en EE. UU. ≈ 6 g/día; en la etiqueta puede declararse «sin grasa trans» si la porción tiene ≤0,5 g de grasa trans y ≤0,5 g de grasa saturada",
+   "caution": "La FDA retiró a los aceites parcialmente hidrogenados la condición GRAS en 2015, con efecto desde 2018, por lo que la principal fuente industrial de grasa trans que describe el libro ya no se permite en EE. UU.",
+   "summary": "La hidrogenación parcial satura dobles enlaces y convierte configuraciones cis en trans; estas grasas trans elevan el LDL y, a ingestas altas, reducen el HDL, igual que las saturadas."
+  },
+  "c05_lipoproteinas": {
+   "title": "Lipoproteínas: quilomicrones, VLDL, LDL y HDL",
+   "formula": "Quilomicrones: los más grandes y menos densos, sobre todo triglicéridos de la dieta; VLDL ≈ mitad triglicéridos; LDL ≈ mitad colesterol; HDL ≈ mitad proteína",
+   "summary": "Los quilomicrones llevan los lípidos de la dieta desde el intestino por la linfa; el hígado produce VLDL, que se convierten en LDL al ceder triglicéridos, y HDL, que devuelven el colesterol al hígado."
+  },
+  "c05_acidos_grasos_esenciales": {
+   "title": "Ácidos grasos esenciales y eicosanoides",
+   "formula": "Esenciales: ácido linoleico (18:2, omega-6) y ácido linolénico (18:3, omega-3); derivados: araquidónico (20:4, omega-6), EPA (20:5) y DHA (22:6, omega-3)",
+   "summary": "El cuerpo no puede sintetizar los ácidos linoleico y linolénico ni convertir una familia omega en otra; a partir de ellos alarga y desatura cadenas para formar araquidónico, EPA y DHA, precursores de eicosanoides, y su deficiencia es rara."
+  },
+  "c05_perfil_lipidico": {
+   "title": "Perfil lipídico deseable",
+   "formula": "Colesterol total <200 mg/dL; colesterol LDL <100 mg/dL; colesterol HDL ≥60 mg/dL; triglicéridos <150 mg/dL (adultos)",
+   "caution": "Los puntos de corte provienen del ATP III (NCEP, 2002); la guía de colesterol AHA/ACC 2018 decide el tratamiento según el riesgo cardiovascular global y no por metas fijas de LDL.",
+   "summary": "El LDL elevado aumenta el riesgo de infarto y el HDL alto parece protector; las grasas saturadas y trans son los principales determinantes dietarios del LDL."
+  },
+  "c05_omega3_pescado": {
+   "title": "Omega-3, pescado y suplementos",
+   "formula": "AHA: 2 porciones de pescado por semana, preferiblemente pescado graso (salmón, arenque, caballa); no superar 3 g/día de omega-3 sin supervisión médica",
+   "summary": "Los omega-3 previenen trombos y arritmias y bajan la presión arterial; se recomienda obtenerlos del pescado no frito y no se aconseja la suplementación rutinaria porque las dosis altas prolongan el sangrado y suprimen la inmunidad."
+  },
+  "c05_recomendaciones_grasa": {
+   "title": "Ingesta recomendada de grasa y Valores Diarios",
+   "formula": "AMDR: 20–35% de la energía como grasa (adultos). IA de ácido linoleico: hombres 19–50 años 17 g/día, ≥51 años 14 g/día; mujeres 19–50 años 12 g/día, ≥51 años 11 g/día (5–10% de la energía). IA de ácido linolénico: hombres 1,6 g/día, mujeres 1,1 g/día (0,6–1,2% de la energía). Valores Diarios: grasa 65 g (30% de 2000 kcal), saturada 20 g (10%), colesterol 300 mg. Gramos de grasa = kcal totales × % de grasa ÷ 9 kcal/g",
+   "caution": "Desde la regla de la FDA de 2016 (vigente desde 2020–2021) el Valor Diario de grasa total es 78 g; el límite de 300 mg/día de colesterol se retiró de las Dietary Guidelines desde la edición 2015–2020, y MyPyramid fue reemplazado por MyPlate (2011) y las Dietary Guidelines for Americans 2025–2030.",
+   "summary": "Las DRI y las Dietary Guidelines de 2010 piden 20–35% de la energía como grasa, menos del 10% como saturada y la grasa trans lo más baja posible; el % de Valor Diario de la etiqueta no equivale al % de kcal provenientes de grasa."
+  },
+  "c05_sustitucion_grasa_saturada": {
+   "title": "Sustituir grasa saturada por insaturada y dieta mediterránea",
+   "formula": "Cada 1% de la energía de ácidos grasos saturados que aumenta o disminuye ≈ 2% de cambio en el LDL ≈ 2% de cambio en el riesgo de enfermedad coronaria",
+   "caution": "La relación 1 % → 2 % proviene del ATP III (NCEP, 2002); la referencia vigente para manejo de lípidos es la guía de colesterol AHA/ACC 2018.",
+   "summary": "La grasa saturada es el principal determinante dietario del LDL; reemplazarla por aceite de oliva, frutos secos y pescado, como en la dieta mediterránea tradicional, mejora el perfil lipídico y reduce el riesgo cardiovascular sin cambiar la grasa total."
+  },
+  "c06_aminoacidos_esenciales": {
+   "title": "Aminoácidos esenciales y condicionalmente esenciales",
+   "formula": "9 esenciales: histidina, isoleucina, leucina, lisina, metionina, fenilalanina, treonina, triptófano y valina; ramificados: leucina, isoleucina y valina",
+   "summary": "De unos 20 aminoácidos comunes, nueve deben venir de la dieta; un no esencial como la tirosina se vuelve condicionalmente esencial si falta su precursor o la conversión falla, como en la fenilcetonuria."
+  },
+  "c06_balance_nitrogenado": {
+   "title": "Recambio proteico, balance nitrogenado y urea",
+   "formula": "Balance nitrogenado = N ingerido − N excretado (orina, heces, sudor); positivo si N ingerido > N excretado, negativo si es menor. Proteína (g) ≈ nitrógeno (g) × 6,25 (la proteína tiene ≈16% de N)",
+   "summary": "El balance es cero en el adulto sano, positivo durante el crecimiento, el embarazo y la recuperación, y negativo en el ayuno, quemaduras, infecciones y fiebre; el nitrógeno sobrante se desamina y el hígado lo convierte en urea, que excretan los riñones."
+  },
+  "c06_calidad_proteica": {
+   "title": "Calidad proteica, aminoácido limitante y proteínas complementarias",
+   "formula": "Digestibilidad: proteínas animales 90–99%; vegetales 70–90% (soya y leguminosas >90%). Aminoácidos limitantes más frecuentes: lisina, metionina, treonina y triptófano. Valor Diario de proteína: 50 g (10% de 2000 kcal)",
+   "caution": "La calidad que se compara con una proteína de referencia (Apéndice D) corresponde al enfoque PDCAAS; la FAO propuso en 2013 el DIAAS como medida preferida.",
+   "summary": "La calidad depende de la digestibilidad y de la composición de aminoácidos esenciales frente a las necesidades de preescolares; combinar leguminosas y cereales a lo largo del día compensa sus aminoácidos limitantes."
+  },
+  "c06_pem_marasmo_kwashiorkor": {
+   "title": "Malnutrición proteico-energética: marasmo y kwashiorkor",
+   "formula": "Marasmo: <2 años, crónico, <60% del peso para la edad, sin edema ni hígado graso. Kwashiorkor: 1–3 años, agudo, 60–80% del peso para la edad, con edema e hígado graso. Rehabilitación: reponer líquidos y minerales en las primeras 24–48 h; luego dieta inicial con ≈10% de la energía como proteína",
+   "caution": "La clasificación por porcentaje del peso para la edad está superada por los puntajes Z de la OMS (patrones 2006) y la guía OMS 2013 de desnutrición aguda grave (peso para la talla < −3 DE, perímetro braquial <115 mm o edema bilateral).",
+   "summary": "La MPE aguda produce emaciación y la crónica retraso de talla; el marasmo es inanición prolongada con pérdida grave de músculo y grasa, y el kwashiorkor, desencadenado a menudo por infecciones, cursa con edema, hígado graso y cambios en piel y cabello."
+  },
+  "c06_rda_proteina": {
+   "title": "RDA de proteína y AMDR",
+   "formula": "Adultos: 0,8 g/kg de peso saludable/día; adolescentes de 14–18 años: 0,85 g/kg/día; AMDR 10–35% de la energía (50–175 g en una dieta de 2000 kcal); deportistas: 1,2–1,7 g/kg/día. Peso en kg = libras ÷ 2,2",
+   "caution": "La RDA de 0,8 g/kg/día sigue vigente como DRI, pero las Dietary Guidelines 2025–2030 fijan como meta 1,2–1,6 g/kg/día para adultos; para deportistas, la posición AND/Dietitians of Canada/ACSM (2016) recomienda 1,2–2,0 g/kg/día.",
+   "summary": "La RDA cubre la reposición y el crecimiento de tejido si la energía es suficiente; un porcentaje de energía solo sirve como referencia si la ingesta energética es razonable, por eso hay que verificar también los gramos."
+  },
+  "c06_genomica_nutricional": {
+   "title": "Nutrigenómica, nutrigenética y epigenética",
+   "summary": "La genómica nutricional estudia cómo los nutrientes activan o silencian genes (nutrigenómica, incluida la metilación del ADN) y cómo las variantes genéticas, como los polimorfismos de un solo nucleótido, modifican la respuesta a la dieta (nutrigenética)."
+  },
+  "c06_fenilcetonuria": {
+   "title": "Fenilcetonuria (PKU)",
+   "formula": "≈1 de cada 15 000 recién nacidos en EE. UU.; tratamiento: dieta restringida en fenilalanina con aporte de tirosina, fórmula especial y controles sanguíneos periódicos",
+   "caution": "El libro presenta la dieta como único tratamiento; la guía del ACMG (2014, actualizada en 2023) incorpora la sapropterina (aprobada por la FDA en 2007), y la FDA aprobó la pegvaliasa en 2018 para adultos.",
+   "summary": "Trastorno monogénico por falta de la enzima que convierte fenilalanina en tirosina; la fenilalanina se acumula y daña el sistema nervioso, y la tirosina pasa a ser esencial."
+  },
+  "c07_glucolisis_cori": {
+   "title": "Glucólisis, lactato y ciclo de Cori",
+   "formula": "1 glucosa (6 C) → 2 piruvato (3 C); gasta 2 ATP y produce 4 ATP: ganancia neta 2 ATP (en el citosol, sin oxígeno). En anaerobiosis piruvato → lactato; lactato muscular → hígado → glucosa (ciclo de Cori, con gasto de energía).",
+   "summary": "La glucólisis rinde poca energía pero rápida; cuando faltan oxígeno o mitocondrias el piruvato se convierte en lactato, que el hígado recicla a glucosa en el ciclo de Cori."
+  },
+  "c07_piruvato_acetilcoa": {
+   "title": "Paso irreversible de piruvato a acetil-CoA y combustibles glucogénicos",
+   "formula": "Piruvato → acetil-CoA + CO2 (mitocondria, irreversible). Pueden formar glucosa: carbohidratos, glicerol y aminoácidos glucogénicos. No pueden: ácidos grasos ni aminoácidos cetogénicos. El glicerol es ~3 de ~50 carbonos de un triglicérido (~5 % de su peso).",
+   "summary": "Lo que llega a piruvato puede volver a glucosa, pero el acetil-CoA no; por eso la grasa casi no aporta glucosa y, sin carbohidrato, el cuerpo degrada proteína para obtenerla."
+  },
+  "c07_beta_oxidacion": {
+   "title": "Oxidación de ácidos grasos (β-oxidación)",
+   "formula": "Ácido graso de 16 C → 8 acetil-CoA (7 vueltas, cada una libera un fragmento de 2 C); la activación inicial con CoA gasta ATP; ocurre en la mitocondria con coenzimas de riboflavina y niacina.",
+   "summary": "Los ácidos grasos se desarman de dos en dos carbonos hasta acetil-CoA, que entra al ciclo TCA o se usa para sintetizar grasa, pero nunca para formar glucosa."
+  },
+  "c07_ciclo_tca_cadena_electrones": {
+   "title": "Ciclo TCA, cadena de transporte de electrones y rendimiento energético",
+   "formula": "Oxalacetato (4 C) + acetil-CoA (2 C) → compuesto de 6 C → 2 CO2 por vuelta; el oxalacetato se forma sobre todo a partir de piruvato, no de grasa. Oxidación completa: 1 glucosa ≈ 30–32 ATP; 1 ácido graso de 16 C ≈ 129 ATP. Grasa 9 kcal/g; carbohidrato y proteína 4 kcal/g. Eficiencia de captura en ATP ≈ 50 %.",
+   "summary": "Todas las vías convergen en el ciclo TCA y la cadena respiratoria, donde el oxígeno acepta los electrones y se sintetiza ATP; la oxidación completa de la grasa requiere carbohidrato para aportar oxalacetato."
+  },
+  "c07_ayuno_cetosis": {
+   "title": "Adaptación al ayuno y cetosis",
+   "formula": "1 g de proteína → ½ g de glucosa. Primeros días de ayuno: proteína corporal ≈ 90 % de la glucosa nueva y glicerol ≈ 10 %. Cerebro y nervios ≈ la mitad de la glucosa diaria (~500 kcal). Glucógeno agotado ~24 h; hacia ~10 días los cuerpos cetónicos cubren buena parte de la energía del sistema nervioso.",
+   "summary": "En el ayuno el cuerpo usa grasa para la mayoría de las células, degrada proteína para la glucosa de cerebro y eritrocitos, produce cuerpos cetónicos que ahorran proteína y reduce el gasto energético."
+  },
+  "c07_bebida_estandar_moderacion": {
+   "title": "Bebida estándar, moderación y consumo excesivo",
+   "formula": "1 bebida = ½ oz de etanol puro (≈14 g según la tabla H7-3) = 12 oz de cerveza = 5 oz de vino = 10 oz de wine cooler = 1½ oz de licor de 80 grados. Moderación: ≤2 bebidas/día en hombres y ≤1 en mujeres (máximo, no promedio). Consumo intenso: >2/día en hombres y >1/día en mujeres. Atracón: ≥5 (hombres) o ≥4 (mujeres) seguidas en ~2 h. Etanol = 7 kcal/g.",
+   "caution": "El libro se apoya en las Dietary Guidelines 2010 (hasta 1 bebida/día en mujeres y 2 en hombres). Las Dietary Guidelines 2025–2030 eliminaron los límites numéricos y solo aconsejan «consumir menos alcohol» y evitarlo en el embarazo; el WCRF/AICR (2018) recomienda no beber alcohol para prevenir el cáncer.",
+   "summary": "Define cuánto alcohol contiene una bebida y qué se considera consumo moderado, intenso y en atracón, con la advertencia de que la moderación es un máximo diario."
+  },
+  "c07_metabolismo_alcohol": {
+   "title": "Metabolismo del alcohol: alcohol deshidrogenasa, MEOS y NAD",
+   "formula": "Etanol → acetaldehído (alcohol deshidrogenasa) → acetato (acetaldehído deshidrogenasa) → acetil-CoA o CO2; cada paso consume NAD y genera NADH. El hígado procesa ~½ oz de etanol por hora (≈1 bebida/h); el MEOS maneja ~1/5 del alcohol; ~10 % sale por aliento y orina.",
+   "summary": "El alcohol se absorbe sin digestión y tiene prioridad metabólica; el exceso de NADH frena el ciclo TCA y desvía el acetil-CoA hacia ácidos grasos y cuerpos cetónicos, y el MEOS inducido altera el metabolismo de fármacos."
+  },
+  "c07_alcohol_consecuencias": {
+   "title": "Daño hepático, malnutrición y signos de alcoholismo",
+   "formula": "Progresión hepática: hígado graso (reversible) → fibrosis → cirrosis. Deficiencias típicas: folato, tiamina (síndrome de Wernicke-Korsakoff) y vitamina B6. Diagnóstico de alcoholismo en el libro (DSM-IV): ≥3 de 7 signos (tolerancia, abstinencia, control alterado, desinterés, tiempo, capacidad alterada, problemas).",
+   "caution": "El libro usa criterios DSM-IV (1994); el DSM-5 (2013) y el DSM-5-TR (2022) los reemplazan por el trastorno por consumo de alcohol, con ≥2 de 11 criterios y gravedad graduada.",
+   "summary": "El consumo crónico intenso daña el hígado por etapas, desplaza alimentos e interfiere con la absorción y activación de nutrientes, de modo que ninguna dieta compensa el daño."
+  },
+  "c08_balance_energetico_3500": {
+   "title": "Balance energético y regla de 3500 kcal por libra de grasa",
+   "formula": "1 lb de grasa corporal (454 g) ≈ 87 % grasa → 454 × 0,87 = 395 g × 9 kcal/g ≈ 3500 kcal. A largo plazo el peso ganado o perdido es ~75 % grasa y ~25 % tejido magro; en inanición, mitad y mitad. Reserva grasa de un adulto sano: 50 000–200 000 kcal.",
+   "caution": "La regla estática de 3500 kcal sobrestima la pérdida de peso a largo plazo; los modelos dinámicos (Hall y cols., Lancet 2011; NIH Body Weight Planner) la reemplazan para predecir cambios de peso.",
+   "summary": "Si la energía que entra iguala a la que sale el peso es estable; el excedente se guarda como grasa y los cambios rápidos de peso reflejan sobre todo agua y tejido magro."
+  },
+  "c08_hambre_saciacion_saciedad": {
+   "title": "Hambre, saciación y saciedad",
+   "summary": "El hambre inicia la ingesta, la saciación la termina durante la comida y la saciedad retrasa la siguiente; el hipotálamo integra señales del tubo digestivo (colecistocinina, grelina, GLP-1, PYY), nutrientes y factores cognitivos, y la proteína y los alimentos de baja densidad energética son los más saciantes."
+  },
+  "c08_componentes_gasto_tmb": {
+   "title": "Componentes del gasto energético y metabolismo basal",
+   "formula": "Metabolismo basal 50–65 %, actividad física 30–50 %, efecto térmico de los alimentos ≈10 % del gasto total. Efecto térmico por nutriente: carbohidrato 5–10 %, grasa 0–5 %, proteína 20–30 %, alcohol 15–20 %. TMB rápida: hombres 1,1–1,3 kcal/min o 24 kcal/kg/día; mujeres 0,8–1,0 kcal/min o 23 kcal/kg/día. Ecuación de TMB (peso kg, talla cm, edad años): hombres (10 × peso) + (6,25 × talla) − (5 × edad) + 5; mujeres (10 × peso) + (6,25 × talla) − (5 × edad) − 161. La fiebre sube la TMB 7 % por cada °F.",
+   "summary": "La mayor parte del gasto diario es el metabolismo basal, que aumenta con la masa magra, el crecimiento, la fiebre y el estrés y baja con la edad, el ayuno y la malnutrición; la actividad física es el componente más variable."
+  },
+  "c08_eer": {
+   "title": "Requerimiento energético estimado (EER) del adulto",
+   "formula": "Adultos ≥19 años (edad en años, peso en kg, talla en m). Hombres: EER = [662 − (9,53 × edad)] + AF × [(15,91 × peso) + (539,6 × talla)]; AF = 1,0 sedentario, 1,11 poco activo, 1,25 activo, 1,48 muy activo. Mujeres: EER = [354 − (6,91 × edad)] + AF × [(9,36 × peso) + (726 × talla)]; AF = 1,0; 1,12; 1,27; 1,45. Requerimiento real: la mayoría dentro de EER ± 200 kcal (hombres) o ± 160 kcal (mujeres); casi todos dentro de ± 400 o ± 320 kcal.",
+   "caution": "Son las ecuaciones DRI de 2002/2005; las ecuaciones EER de NASEM 2023 las reemplazan.",
+   "summary": "Las ecuaciones DRI estiman la energía diaria según sexo, edad, peso, talla y nivel de actividad física, con un margen de error individual considerable."
+  },
+  "c08_imc": {
+   "title": "Índice de masa corporal y clasificación del peso",
+   "formula": "IMC = peso (kg) / talla (m)² = peso (lb) / talla (in)² × 703. Adultos: bajo peso <18,5; saludable 18,5–24,9; sobrepeso 25–29,9; obesidad ≥30; obesidad extrema ≥40. Con IMC <17 aparecen signos de enfermedad y menor función reproductiva. Supervivencia óptima con IMC 22,5–25. Meta inicial razonable: bajar 2 unidades de IMC.",
+   "summary": "El IMC relaciona peso y talla y se asocia con riesgo de enfermedad y mortalidad en curva en J, pero no mide grasa y puede clasificar mal a personas musculosas y a algunos grupos étnicos."
+  },
+  "c08_grasa_corporal_cintura": {
+   "title": "Porcentaje de grasa corporal y perímetro de cintura",
+   "formula": "Grasa normal: hombres 13–21 %, mujeres 23–31 %. Riesgo cuando supera 22 % (hombres jóvenes), 25 % (hombres >40 años), 32 % (mujeres jóvenes) y 35 % (mujeres >40 años). Perímetro de cintura de alto riesgo: >88 cm (35 in) en mujeres y >102 cm (40 in) en hombres.",
+   "summary": "La grasa visceral o central predice riesgo cardiometabólico independientemente del IMC; el perímetro de cintura es la medida clínica preferida y, junto con el IMC, sirve para valorar y seguir el riesgo."
+  },
+  "c08_triada_atleta": {
+   "title": "Tríada de la atleta femenina",
+   "formula": "Tríada: alimentación desordenada + amenorrea + osteoporosis. Amenorrea en mujeres premenopáusicas de EE. UU.: 2–5 %, hasta 66 % en atletas. Recomendación para atletas jóvenes: 1300 mg/día de calcio.",
+   "caution": "La ACSM (2007) ya redefinió la tríada como un espectro de baja disponibilidad energética, disfunción menstrual y baja densidad mineral ósea, y el COI propuso el síndrome RED-S (2014; actualizaciones 2018 y 2023), que incluye a hombres.",
+   "summary": "La restricción energética y el sobreentrenamiento en deportes estéticos o de categoría de peso causan amenorrea y pérdida ósea con fracturas por estrés que pueden no revertirse, por lo que la prevención es clave."
+  },
+  "c08_criterios_tca": {
+   "title": "Criterios diagnósticos de anorexia, bulimia y trastorno por atracón",
+   "formula": "Según DSM-IV-TR en el libro. Anorexia nerviosa: peso <85 % del esperado, miedo intenso a engordar, alteración de la imagen corporal y amenorrea de ≥3 ciclos consecutivos; tipos restrictivo y compulsivo/purgativo. Bulimia nerviosa: atracones y conductas compensatorias en promedio ≥2 veces por semana durante 3 meses; tipos purgativo y no purgativo. Trastorno por atracón (no especificado): atracones ≥2 días por semana durante 6 meses, con ≥3 de 5 rasgos, sin conductas compensatorias. Prevalencia de por vida: anorexia 0,9 % en mujeres y 0,3 % en hombres; bulimia 1,5 % y 0,5 %; atracón 3,5 % y 2 %.",
+   "caution": "El libro usa DSM-IV-TR (2000); el DSM-5 (2013) y el DSM-5-TR (2022) eliminaron la amenorrea y el 85 % como criterio de anorexia, bajaron la frecuencia de bulimia y atracón a ≥1 vez por semana durante 3 meses, reconocieron el trastorno por atracón como diagnóstico propio y añadieron ARFID.",
+   "summary": "Resume los criterios, las complicaciones similares a la desnutrición proteico-energética y el tratamiento multidisciplinario de los trastornos de la conducta alimentaria, que en la anorexia empieza con ingestas pequeñas (~1200 kcal/día) que se aumentan de forma gradual."
+  },
+  "c09_hormonas_apetito": {
+   "title": "Hormonas que regulan apetito y gasto (leptina, grelina, adiponectina, PYY)",
+   "summary": "La leptina del adipocito suprime el apetito y sube con el IMC (resistencia a la leptina), la grelina gástrica lo estimula y aumenta en balance negativo, la adiponectina baja en la obesidad y protege frente a resistencia a la insulina, y el PYY intestinal señala saciedad."
+  },
+  "c09_criterios_riesgo_obesidad": {
+   "title": "Criterios de riesgo para indicar pérdida de peso",
+   "formula": "Adultos: IMC 25,0–29,9 = sobrepeso; IMC ≥30 = obesidad; IMC <18,5 = bajo peso. Perímetro de cintura de riesgo: hombres >102 cm (>40 in), mujeres >88 cm (>35 in). Pérdida de peso indicada si hay obesidad, o sobrepeso (o cintura alta) con ≥2 factores de riesgo (HTA, tabaquismo, LDL alto, HDL bajo, intolerancia a la glucosa, antecedente familiar de cardiopatía, hombre ≥45 años, mujer ≥55 años) o con enfermedad grave (cardiopatía, diabetes tipo 2, apnea del sueño).",
+   "summary": "El riesgo se valora combinando IMC, perímetro de cintura y perfil de enfermedad; el sobrepeso en buena salud puede manejarse solo evitando más ganancia."
+  },
+  "c09_farmacos_cirugia_obesidad": {
+   "title": "Indicaciones de fármacos y cirugía bariátrica",
+   "formula": "Fármacos: sin respuesta a dieta y ejercicio + IMC ≥30, o IMC ≥27 con problemas de salud relacionados con el peso, sin contraindicaciones. Cirugía: sin respuesta a dieta y ejercicio + IMC ≥40, o IMC ≥35 con comorbilidad (p. ej., diabetes o HTA), sin contraindicaciones médicas ni psicológicas y con motivación para el seguimiento. El orlistat reduce la absorción de grasa dietaria en ~30 %.",
+   "caution": "La sibutramina citada por el libro se retiró del mercado de EE. UU. en 2010; hoy se usan agonistas GLP-1 y GIP/GLP-1 (semaglutida 2021, tirzepatida 2023) y los criterios quirúrgicos ASMBS/IFSO 2022 (IMC ≥35 sin importar comorbilidad; considerar desde IMC 30–34,9 con enfermedad metabólica).",
+   "summary": "Para obesidad grave o con comorbilidades el libro describe sibutramina, orlistat, fentermina/dietilpropión y la cirugía gástrica, que exige supervisión de por vida por deficiencias de vitaminas y minerales."
+  },
+  "c09_deficit_energetico": {
+   "title": "Déficit energético y ritmo seguro de pérdida de peso",
+   "formula": "Déficit de 500–1000 kcal/día (dieta + actividad) → pérdida de 0,45–0,9 kg (1–2 lb)/semana. Ritmo razonable: 0,2–0,9 kg (½–2 lb)/semana o 10 % del peso corporal en 6 meses. Reducción según IMC: IMC ≥35 → 500–1000 kcal/día menos de lo habitual; IMC 27–35 → 300–500 kcal/día menos. Dietas típicas: ~1200 kcal/día en mujeres y ~1600 kcal/día en hombres; por debajo de 1200 kcal/día es difícil cubrir nutrientes. Meta inicial realista: 5–10 % del peso.",
+   "summary": "La dieta para adelgazar debe aportar menos energía de la que se gasta sin comprometer la adecuación nutricional; las pérdidas rápidas sacrifican tejido magro y favorecen la recuperación."
+  },
+  "c09_densidad_energetica": {
+   "title": "Densidad energética de los alimentos",
+   "formula": "Densidad energética (kcal/g) = kcal del alimento ÷ gramos. Ejemplo: zanahoria 31 kcal ÷ 72 g = 0,43 kcal/g; papas fritas 167 kcal ÷ 50 g = 3,34 kcal/g.",
+   "summary": "Elegir alimentos ricos en agua y fibra y bajos en grasa reduce la densidad energética y permite porciones saciantes con menos kcal; los alimentos densos ayudan a ganar peso."
+  },
+  "c09_actividad_fisica_peso": {
+   "title": "Actividad física para perder y mantener peso",
+   "formula": "Prevenir ganancia: ~60 min/día de actividad moderada además de las actividades cotidianas (DRI). Mantener una pérdida: 60–90 min/día de actividad moderada (Dietary Guidelines) o un gasto ≥2500 kcal/semana en actividad física. Actividad que gasta ≥2000 kcal/semana es especialmente útil para el control del peso. Caminar a ritmo moderado ≈ 1 kcal/milla/kg de peso.",
+   "caution": "Las Physical Activity Guidelines for Americans, 2.ª ed. (2018), reemplazan la guía de 2008 y recomiendan 150–300 min/semana de actividad moderada (o 75–150 de vigorosa) más fortalecimiento muscular, con más actividad si se busca controlar el peso.",
+   "summary": "Combinar dieta y ejercicio pierde más grasa, conserva músculo, mejora la adherencia y reduce la grasa abdominal y el riesgo metabólico aun sin bajar de peso."
+  },
+  "c09_ganancia_peso": {
+   "title": "Estrategia para ganar peso en el bajo peso",
+   "formula": "Bajo peso: IMC <18,5. Aporte adicional de 500–1000 kcal/día sobre las necesidades, junto con entrenamiento de fuerza; al inicio pueden requerirse 750–800 kcal/día extra para ganar ~0,45 kg (1 lb)/semana por termogénesis adaptativa; ritmo razonable ≈ 0,45 kg (1 lb)/mes.",
+   "summary": "Ganar peso saludable exige entrenamiento de fuerza y mayor ingesta con alimentos de alta densidad energética, tres comidas o más, porciones grandes, refrigerios y bebidas calóricas."
+  },
+  "c09_dietas_moda": {
+   "title": "Cómo reconocer una dieta de moda frente a un plan razonable",
+   "formula": "Plan razonable: pérdida gradual ≤0,9 kg (2 lb)/semana; no menos de 1000 kcal/día en mujeres ni 1200 kcal/día en hombres; proteína entre la RDA y 2 veces la RDA; grasa 20–35 % de la energía; carbohidratos ≥100 g/día para evitar cetosis; fibra 20–30 g/día; agua ≥1 L/día o 1 mL/kcal (lo que sea mayor); actividad física que gaste ≥300 kcal/día.",
+   "summary": "Toda dieta que restrinja la energía produce pérdida transitoria; las dietas de moda fallan por no mantener la pérdida ni la salud y por prometer resultados rápidos, productos especiales o pagos por adelantado."
+  },
+  "c10_tiamina_beriberi": {
+   "title": "Tiamina: coenzima TPP y beriberi",
+   "formula": "RDA de tiamina (adultos): hombres 1,2 mg/día; mujeres 1,1 mg/día. Sin UL.",
+   "summary": "La TPP interviene en la conversión de piruvato a acetil-CoA; su deficiencia causa beriberi seco (neuromuscular) o húmedo (cardiovascular con edema) y, en el alcoholismo, síndrome de Wernicke-Korsakoff."
+  },
+  "c10_niacina_equivalentes": {
+   "title": "Equivalentes de niacina y pelagra",
+   "formula": "1 NE = 1 mg de niacina = 60 mg de triptófano. Estimación: triptófano (mg) ≈ g de proteína ÷ 100 × 1000; NE = mg triptófano ÷ 60 + mg de niacina preformada. RDA (adultos): hombres 16 mg NE/día; mujeres 14 mg NE/día. UL adultos: 35 mg/día.",
+   "summary": "La niacina (NAD/NADP) puede sintetizarse a partir del triptófano; su deficiencia produce pelagra (dermatitis, diarrea, demencia y muerte) y el ácido nicotínico en dosis altas causa rubor y daño hepático."
+  },
+  "c10_vitamina_b6": {
+   "title": "Vitamina B6: PLP, antagonistas y neurotoxicidad",
+   "formula": "RDA adultos (19–50 años): 1,3 mg/día. UL adultos: 100 mg/día; se describió daño neurológico con >2 g/día durante ≥2 meses.",
+   "summary": "El PLP transfiere grupos amino y participa en la síntesis de aminoácidos no esenciales, serotonina, niacina y hemo; el alcohol y la isoniazida inducen deficiencia (depresión, confusión, convulsiones)."
+  },
+  "c10_folato_dfe": {
+   "title": "Folato: equivalentes dietéticos y prevención de defectos del tubo neural",
+   "formula": "DFE (µg) = µg de folato natural de alimentos + 1,7 × µg de folato sintético (suplementos y alimentos fortificados). RDA adultos: 400 µg DFE/día; embarazo: 600 µg DFE/día. UL adultos: 1000 µg/día de folato de suplementos o alimentos fortificados. Mujeres que pueden embarazarse: 400 µg (0,4 mg)/día de folato; con hijo previo con defecto del tubo neural: 4 mg/día desde antes de la concepción hasta el fin del primer trimestre. Fortificación obligatoria en EE. UU.: 140 µg de folato por 100 g de grano.",
+   "summary": "El folato (THF) es indispensable para la síntesis de ADN; su deficiencia causa anemia macrocítica y deterioro gastrointestinal, y su suplementación periconcepcional reduce los defectos del tubo neural."
+  },
+  "c10_b12_anemia_perniciosa": {
+   "title": "Vitamina B12: factor intrínseco, anemia perniciosa y enmascaramiento por folato",
+   "formula": "RDA adultos: 2,4 µg/día. Sin UL.",
+   "summary": "La absorción de B12 requiere ácido clorhídrico y factor intrínseco, por lo que la gastritis atrófica en mayores de 50 años causa anemia perniciosa; el folato en dosis altas corrige la anemia pero deja avanzar el daño neurológico."
+  },
+  "c10_coenzimas_b": {
+   "title": "Coenzimas de las vitaminas B en el metabolismo energético",
+   "formula": "Tiamina → TPP; riboflavina → FMN y FAD; niacina → NAD y NADP; ácido pantoténico → CoA; biotina → coenzima de carboxilación (piruvato → oxalacetato); B6 → PLP; folato → THF; B12 → metilcobalamina y desoxiadenosilcobalamina.",
+   "summary": "Cada vitamina B forma parte de coenzimas que hacen funcionar glucólisis, ciclo TCA, cadena de transporte de electrones y síntesis de células nuevas, por lo que una sola deficiencia altera múltiples sistemas."
+  },
+  "c10_vitamina_c": {
+   "title": "Vitamina C: recomendaciones, escorbuto y toxicidad",
+   "formula": "RDA adultos: hombres 90 mg/día; mujeres 75 mg/día; fumadores +35 mg/día. UL adultos: 2000 mg/día. ~10 mg/día previenen el escorbuto; ~100 mg/día saturan los tejidos en el 95 % de la población; la absorción se satura hacia 200 mg/día.",
+   "summary": "Antioxidante y cofactor de la hidroxilación del colágeno; su deficiencia causa escorbuto (encías sangrantes, petequias, mala cicatrización) y las megadosis provocan diarrea, interfieren con pruebas de glucosa y favorecen cálculos renales en predispuestos."
+  },
+  "c10_criterios_suplementos": {
+   "title": "Quién necesita suplementos y cómo elegirlos",
+   "formula": "Si la dieta no puede corregirse: multivitamínico-mineral con 50–150 % del Valor Diario de cada nutriente; ninguna dosis diaria por encima del UL; ≤10 mg de hierro por dosis salvo prescripción; preferir sello USP (desintegración en 30–45 min). Necesitan suplemento, entre otros: ingestas <1600 kcal/día, veganos y adultos mayores con gastritis atrófica (B12), mujeres en edad fértil y embarazadas (folato, hierro).",
+   "caution": "Los Valores Diarios usados por el libro (p. ej., vitamina C 60 mg) fueron actualizados por la regla de etiquetado de la FDA de 2016 (vigente desde 2020–2021); además, la USPSTF (2022) recomienda no usar β-caroteno ni vitamina E para prevenir ECV o cáncer.",
+   "summary": "Los suplementos se justifican ante deficiencias, necesidades aumentadas o enfermedad; en los demás casos no sustituyen a una dieta variada y pueden causar toxicidad o interacciones."
+  },
+  "c11_deficiencia_vitamina_a": {
+   "title": "Deficiencia de vitamina A: ceguera nocturna, xeroftalmia y queratinización",
+   "summary": "Al agotarse las reservas hepáticas, la falta de retinal impide regenerar la rodopsina (ceguera nocturna, signo temprano) y la sequedad corneal progresa de xerosis a queratomalacia y ceguera irreversible, junto con queratinización epitelial e infecciones."
+  },
+  "c11_rae_vitamina_a": {
+   "title": "Equivalentes de actividad de retinol (RAE), RDA y UL de vitamina A",
+   "formula": "1 µg RAE = 1 µg retinol = 2 µg β-caroteno (suplemento) = 12 µg β-caroteno (dietario) = 24 µg de otros carotenoides provitamina A; 1 UI retinol = 0,3 µg retinol. RDA adultos: hombres 900 µg RAE/día, mujeres 700 µg RAE/día. UL adultos: 3000 µg/día de vitamina A preformada.",
+   "summary": "Unidad que integra retinoides y carotenoides; el exceso de vitamina A preformada (no de betacaroteno alimentario) daña el hueso y es teratógeno, sobre todo antes de la séptima semana de gestación."
+  },
+  "c11_activacion_vitamina_d": {
+   "title": "Síntesis y activación de la vitamina D",
+   "formula": "7-dehidrocolesterol (piel) + UV → previtamina D3 → vitamina D3 → hidroxilación hepática → 25-hidroxivitamina D (calcidiol) → hidroxilación renal → 1,25-dihidroxivitamina D (calcitriol, forma activa).",
+   "summary": "La vitamina D actúa como hormona tras dos hidroxilaciones, por lo que la enfermedad hepática o renal puede causar deficiencia aunque la ingesta o la exposición solar sean suficientes."
+  },
+  "c11_raquitismo_osteomalacia": {
+   "title": "Raquitismo y osteomalacia",
+   "formula": "Prevención del raquitismo (AAP): mínimo 400 UI/día de vitamina D para todos los lactantes, niños y adolescentes.",
+   "summary": "Sin vitamina D no se sintetiza la proteína fijadora de calcio intestinal; la mineralización falla y aparecen piernas arqueadas y rosario raquítico en niños, y huesos blandos y dolorosos en adultos."
+  },
+  "c11_ai_vitamina_d": {
+   "title": "Ingesta adecuada y límite superior de vitamina D",
+   "formula": "AI 1997 adultos: 5 µg/día (19–50 años), 10 µg/día (51–70 años), 15 µg/día (>70 años). UL adultos: 50 µg/día. Conversión: 1 UI = 0,025 µg; 1 µg = 40 UI.",
+   "caution": "Recomendación superada: el IOM fijó en 2011 una RDA de 15 µg (600 UI)/día para adultos hasta 70 años y de 20 µg (800 UI)/día para mayores de 70, con UL de 100 µg (4000 UI)/día.",
+   "summary": "El libro advierte que estas cifras asumen ausencia de síntesis cutánea y podrían ser insuficientes; la vitamina D es la vitamina con mayor riesgo de toxicidad (hipercalcemia y calcificación de tejidos blandos)."
+  },
+  "c11_vitamina_e_antioxidante": {
+   "title": "Vitamina E (alfa-tocoferol): función antioxidante, deficiencia y valores de referencia",
+   "formula": "RDA adultos: 15 mg/día de alfa-tocoferol. UL adultos: 1000 mg/día. 1 UI de alfa-tocoferol natural = 0,67 mg. Equivalentes de tocoferol × 0,8 ≈ mg de alfa-tocoferol.",
+   "summary": "Detiene la reacción en cadena de radicales libres que oxida los ácidos grasos poliinsaturados de las membranas; su deficiencia, propia de prematuros y de la malabsorción de grasas, causa hemólisis eritrocitaria y daño neuromuscular, y en dosis muy altas potencia los anticoagulantes."
+  },
+  "c11_vitamina_k_coagulacion": {
+   "title": "Vitamina K: coagulación, profilaxis neonatal y anticoagulantes",
+   "formula": "AI adultos: hombres 120 µg/día, mujeres 90 µg/día. Sin UL establecido. Dosis única al nacer, oral o intramuscular.",
+   "summary": "Activa la protrombina y otros factores de coagulación, además de la osteocalcina ósea; la deficiencia secundaria (recién nacidos, antibióticos, malabsorción) provoca hemorragia, y una ingesta variable altera el efecto de los anticoagulantes."
+  },
+  "c11_antioxidantes_suplementos": {
+   "title": "Radicales libres, estrés oxidativo y antioxidantes: alimentos frente a suplementos",
+   "caution": "Guía más reciente: la USPSTF (2022) recomienda no usar suplementos de β-caroteno ni de vitamina E para prevenir enfermedad cardiovascular o cáncer.",
+   "summary": "Las vitaminas E y C, el betacaroteno y las enzimas dependientes de selenio, cobre, manganeso y zinc frenan el daño oxidativo; la protección se asocia a frutas y verduras, mientras que los suplementos no muestran beneficio o aumentan el riesgo (betacaroteno en fumadores)."
+  },
+  "c12_balance_hidrico": {
+   "title": "Balance hídrico y recomendación de agua",
+   "formula": "Ingresos = egresos ≈ 1450–2800 mL/día. Excreción urinaria obligatoria ≈ 500 mL/día. Recomendación: 1,0–1,5 mL/kcal gastada en adultos; 1,5 mL/kcal en lactantes y deportistas. AI de agua total: hombres 3,7 L/día, mujeres 2,7 L/día.",
+   "summary": "El agua (≈60 % del peso adulto) entra con bebidas, alimentos y agua metabólica y sale por orina, piel, pulmones y heces; el riñón ajusta la orina para mantener el equilibrio."
+  },
+  "c12_deshidratacion": {
+   "title": "Deshidratación e intoxicación hídrica (hiponatremia)",
+   "formula": "Pérdida de peso corporal: 1–2 % sed, fatiga, debilidad; 3–4 % menor rendimiento físico, boca seca, menos orina; 5–6 % dificultad para concentrarse, cefalea, mala termorregulación; 7–10 % mareo, espasticidad, delirio, colapso. Con sudoración intensa: limitar la ingesta a 1–1,5 L/hora.",
+   "summary": "La sed llega tarde, sobre todo en ancianos; el exceso de agua (10–20 L en pocas horas) diluye el sodio y produce hiponatremia con confusión, convulsiones y riesgo de muerte."
+  },
+  "c12_sistema_raa": {
+   "title": "ADH y sistema renina-angiotensina-aldosterona",
+   "formula": "↓ volumen o presión → renina (riñón) → angiotensinógeno → angiotensina I → angiotensina II (vasoconstricción) → aldosterona (retención de Na⁺ y excreción de K⁺) y ADH (reabsorción de agua).",
+   "summary": "Con hipovolemia, hipotensión o líquidos concentrados, estas hormonas retienen agua y sodio; explica por qué las dietas altas en sodio agravan la hipertensión y el edema."
+  },
+  "c12_tampon_bicarbonato": {
+   "title": "Sistema tampón bicarbonato-ácido carbónico",
+   "formula": "CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻",
+   "summary": "El pH sanguíneo se mantiene en un rango estrecho gracias a los tampones, al pulmón (que regula el ácido carbónico eliminando CO₂) y al riñón (que reabsorbe o excreta bicarbonato); el vómito intenso causa alcalosis metabólica."
+  },
+  "c12_sodio_potasio": {
+   "title": "Sodio y potasio: recomendaciones e hipertensión",
+   "formula": "Sodio, AI adultos: 1500 mg/día (19–50 años), 1300 mg/día (51–70 años), 1200 mg/día (>70 años); UL 2300 mg/día (Valor Diario de etiqueta 2400 mg). La sal tiene ≈40 % de sodio: 1 g de sal ≈ 400 mg de Na; 1 cucharadita (6 g) ≈ 2300 mg de Na. Potasio, AI adultos: 4700 mg/día.",
+   "caution": "Referencias superadas: las DRI de NASEM (2019) reemplazaron el UL de sodio por una CDRR de 2300 mg/día, fijaron la AI de sodio en 1500 mg/día para adultos sin escalones por edad y bajaron la AI de potasio a 3400 mg/día (hombres) y 2600 mg/día (mujeres); la FDA (2016) cambió el Valor Diario de sodio a 2300 mg.",
+   "summary": "El sodio es el principal catión extracelular y el potasio el intracelular; alrededor del 75 % del sodio proviene de alimentos procesados, que además pierden potasio, y la combinación de restricción de sodio con dieta DASH baja la presión arterial."
+  },
+  "c12_regulacion_calcemia": {
+   "title": "Regulación hormonal de la calcemia",
+   "formula": "↓ Ca sérico → PTH → activación de vitamina D → ↑ absorción intestinal, ↑ reabsorción renal, ↑ liberación ósea (osteoclastos). ↑ Ca sérico → calcitonina → efectos opuestos.",
+   "summary": "La calcemia se mantiene a costa del hueso aunque la dieta sea deficiente, por lo que no refleja la ingesta; la rigidez muscular por hipercalcemia y la tetania por hipocalcemia se deben a fallos de vitamina D u hormonales, no a la dieta."
+  },
+  "c12_calcio_recomendaciones": {
+   "title": "Recomendaciones, absorción y fuentes de calcio",
+   "formula": "AI: 1300 mg/día (9–18 años), 1000 mg/día (19–50 años), 1200 mg/día (>50 años). UL: 2500 mg/día. Absorción: ≈30 % en adultos, ≈50 % en embarazo, 50–60 % en niños y adolescentes en crecimiento. 1 taza de leche ≈ 300 mg de calcio.",
+   "caution": "Referencia superada: el IOM (2011) convirtió la AI en RDA de 1300 mg (9–18 años), 1000 mg (19–50 años y hombres de 51–70) y 1200 mg (mujeres >50 y todos >70), con UL de 2500 mg hasta 50 años y 2000 mg desde los 51.",
+   "summary": "Las recomendaciones buscan maximizar la masa ósea pico; la vitamina D y el ácido gástrico favorecen la absorción, mientras que fitatos y oxalatos la reducen (la espinaca aporta poco calcio absorbible)."
+  },
+  "c12_osteoporosis_tipos": {
+   "title": "Osteoporosis tipo I y tipo II",
+   "formula": "Tipo I (posmenopáusica): 50–70 años, hueso trabecular, fracturas de muñeca y columna, razón mujeres:hombres 6:1, por caída de estrógenos. Tipo II (senil): ≥70 años, hueso trabecular y cortical, fractura de cadera, razón 2:1, por menor absorción de calcio y más caídas.",
+   "summary": "Depende de la masa ósea pico alcanzada hacia los 30 años y de la pérdida posterior; los factores modificables son calcio y vitamina D, ejercicio con carga, peso, tabaco y alcohol, y la densitometría (DEXA) permite el diagnóstico."
+  },
+  "c13_homeostasis_hierro": {
+   "title": "Homeostasis del hierro: ferritina, transferrina, hepcidina y reciclaje",
+   "summary": "Como el hierro casi no se excreta, el balance se regula en la absorción: la ferritina almacena, la transferrina transporta, la hemosiderina guarda el exceso, la hepcidina hepática limita absorción y liberación, y el hierro de los eritrocitos viejos se recicla."
+  },
+  "c13_absorcion_hierro": {
+   "title": "Absorción del hierro hemo y no hemo",
+   "formula": "Absorción aproximada: hierro hemo ≈25 %, hierro no hemo ≈17 %; dieta mixta ≈18 %, dieta vegetariana ≈10 % (rango 2 % en enfermedad GI a 35 % en niños en crecimiento). Hemo ≈10 % del hierro ingerido diario.",
+   "summary": "El hierro hemo de carnes se absorbe mejor; la absorción del no hemo aumenta con factor MFP y vitamina C y disminuye con fitatos, proteínas vegetales, calcio y polifenoles, y se ajusta según las reservas corporales."
+  },
+  "c13_estadios_deficiencia_hierro": {
+   "title": "Estadios y evaluación de la deficiencia de hierro",
+   "formula": "1) Caen las reservas: ferritina sérica baja. 2) Cae el hierro de transporte: hierro sérico bajo, transferrina alta, saturación de transferrina baja. 3) Cae la síntesis de hemoglobina: protoporfirina eritrocitaria alta, hemoglobina y hematocrito bajos (anemia microcítica hipocrómica).",
+   "summary": "La deficiencia de hierro progresa de depleción de reservas a anemia; hemoglobina y hematocrito son marcadores tardíos, y puede haber deficiencia sin anemia con efectos sobre conducta, rendimiento y pica."
+  },
+  "c13_sobrecarga_hierro": {
+   "title": "Sobrecarga e intoxicación por hierro (hemocromatosis)",
+   "formula": "UL de hierro en adultos: 45 mg/día (basado en molestias GI). En niños pequeños, 5 tabletas con ≈200 mg de hierro han causado muertes.",
+   "summary": "La hemocromatosis hereditaria, ligada a falla de la hepcidina, causa depósito de hierro y daño de órganos; se evalúa con saturación de transferrina y ferritina sérica, y la ingesta accidental de suplementos es causa importante de intoxicación infantil."
+  },
+  "c13_rda_hierro": {
+   "title": "RDA de hierro y su cálculo",
+   "formula": "RDA: hombres 8 mg/día; mujeres 19–50 años 18 mg/día; mujeres ≥51 años 8 mg/día. Vegetarianos ×1,8 (≈14 mg/día hombres; ≈32 mg/día mujeres 19–50). Mujer 19–50: pérdidas basales 1,0 mg + menstruales 0,5 mg = 1,5 mg absorbidos/día ÷ 0,18 ≈ 8 mg (EAR), más margen → RDA 18 mg.",
+   "summary": "La RDA se deriva de las pérdidas diarias y una absorción supuesta del 18 %, con ajuste para la menor biodisponibilidad de las dietas vegetarianas."
+  },
+  "c13_zinc": {
+   "title": "Zinc: circulación enteropancreática, deficiencia y valores de referencia",
+   "formula": "RDA: hombres 11 mg/día; mujeres 8 mg/día. UL adultos: 40 mg/día (por interferencia con el cobre). Absorción ≈15–40 % según el estado de zinc.",
+   "summary": "La metalotioneína intestinal regula la absorción de zinc, que recircula vía secreciones pancreáticas; su deficiencia causa retraso del crecimiento, inmadurez sexual, diarrea e inmunodeficiencia, y el exceso altera cobre y hierro."
+  },
+  "c13_yodo": {
+   "title": "Yodo: bocio, cretinismo y sal yodada",
+   "formula": "RDA adultos: 150 µg/día; UL adultos: 1100 µg/día. Sal yodada ≈60 µg de yodo por gramo; ½ cucharadita aporta la RDA.",
+   "summary": "La deficiencia de yodo eleva la TSH y agranda la tiroides (bocio simple) y en el embarazo causa cretinismo, la principal causa prevenible de daño cerebral; el exceso también altera la tiroides."
+  },
+  "c13_fluoruro": {
+   "title": "Flúor: fluoración del agua y fluorosis",
+   "formula": "Fluoración del agua a 1 ppm (≈1 mg/L). AI: hombres 4 mg/día, mujeres 3 mg/día; UL adultos: 10 mg/día.",
+   "caution": "El Servicio de Salud Pública de EE. UU. bajó en 2015 la concentración recomendada de fluoración comunitaria a 0,7 mg/L.",
+   "summary": "El flúor forma fluorapatita en huesos y dientes y la fluoración del agua previene caries, pero el exceso durante el desarrollo dental causa fluorosis irreversible."
+  },
+  "c13_fitoesteroles": {
+   "title": "Fitoesteroles y alimentos funcionales",
+   "formula": "Margarina con 2–3 g de fitoesteroles: reducción de colesterol de hasta ≈15 % (fármacos hipolipemiantes: >30 %).",
+   "summary": "Los fitoesteroles compiten con la absorción del colesterol y lo reducen, ejemplo de alimento funcional que actúa como fármaco y requiere consumo sostenido."
+  },
+  "c14_recomendaciones_actividad_fisica": {
+   "title": "Recomendaciones de actividad física e intensidad",
+   "formula": "Adultos: ≥150 min/semana de intensidad moderada o 75 min/semana vigorosa (o combinación), en episodios de ≥10 min; para beneficios adicionales, 300 min moderada o 150 min vigorosa. Fortalecimiento muscular ≥2 días/semana. Moderada: 3,5–7 kcal/min (caminar 3–4,5 mph); vigorosa: >7 kcal/min.",
+   "caution": "Las Physical Activity Guidelines for Americans, 2.ª ed. (2018), mantienen los minutos semanales pero eliminaron el requisito de episodios de al menos 10 minutos.",
+   "summary": "Las guías de actividad física de 2008 fijan los minutos semanales de actividad aeróbica y fortalecimiento que dan beneficios sustanciales, con una relación dosis-respuesta."
+  },
+  "c14_sistema_atp_cp": {
+   "title": "Sistema ATP-fosfocreatina y combustible según intensidad y duración",
+   "formula": "Reposo: ATP + creatina → CP; actividad: CP → ATP + creatina. CP dura ≈10 s. Extrema 8–10 s: ATP-CP (anaeróbico); 20 s–3 min: carbohidrato anaeróbico (lactato); 3–20 min: carbohidrato aeróbico; >20 min moderada: grasa aeróbica.",
+   "summary": "La fosfocreatina repone el ATP en los primeros segundos y luego la mezcla de combustibles pasa de glucosa anaeróbica a grasa aeróbica según la intensidad y la duración."
+  },
+  "c14_glucogeno_carbohidrato": {
+   "title": "Glucógeno y carbohidrato antes, durante y después del ejercicio",
+   "formula": "Dieta habitual de atletas de resistencia ≈8 g CHO/kg/día (≈70 % de la energía); entrenamiento intenso 8–10 g/kg/día. Durante eventos >1 h: 30–60 g CHO/h, p. ej. 0,5–1 L/h de bebida al 4–8 %. Después: ≈60 g CHO de inmediato; dentro de 15 min la síntesis de glucógeno aumenta ≈300 %. Reservas de glucógeno <2000 kcal.",
+   "caution": "La posición conjunta AND/Dietitians of Canada/ACSM de 2016 individualiza el carbohidrato según la carga de entrenamiento (≈3–12 g/kg/día) y admite hasta ≈90 g/h en eventos de más de 2,5 h.",
+   "summary": "Las reservas de glucógeno limitan la resistencia; una dieta alta en carbohidrato, el aporte durante eventos largos y la ingesta temprana posterior prolongan el rendimiento y aceleran la recuperación."
+  },
+  "c14_carga_carbohidratos": {
+   "title": "Carga de carbohidratos",
+   "formula": "6 días antes: 90 min al 70 % VO2max, 5 g CHO/kg; 4–5 días: 40 min, 5 g/kg; 2–3 días: 20 min, 10 g/kg; 1 día: descanso, 10 g/kg. Útil para esfuerzos de ≥90 min.",
+   "summary": "Reducir el entrenamiento y aumentar el carbohidrato los últimos días casi duplica el glucógeno muscular para competencias de resistencia prolongadas."
+  },
+  "c14_anemia_deportiva": {
+   "title": "Deficiencia de hierro y anemia deportiva en atletas",
+   "summary": "Las mujeres activas, sobre todo vegetarianas y de resistencia, tienen riesgo de deficiencia de hierro que requiere suplementación, mientras que la anemia deportiva es una caída transitoria de hemoglobina por expansión plasmática que no necesita hierro."
+  },
+  "c14_hidratacion_hiponatremia": {
+   "title": "Hidratación, golpe de calor e hiponatremia",
+   "formula": "Pérdida de agua >2 % del peso reduce la capacidad de trabajo; ≈7 % lleva al colapso. Esquema: 2–3 h antes 2–3 tazas; 15 min antes 1–2 tazas; cada 15 min ½–1 taza; después 2 tazas por cada libra perdida. Bebidas deportivas 6–8 % de carbohidrato; >8 % puede causar molestias GI. Riesgo de hiponatremia en eventos >3 h.",
+   "summary": "La reposición de líquidos es prioritaria en el ejercicio; en eventos prolongados hay que reponer sodio para evitar la hiponatremia por sudoración intensa o por beber agua en exceso."
+  },
+  "c14_dieta_rendimiento": {
+   "title": "Dieta de rendimiento y comidas precompetencia",
+   "formula": "Distribución: carbohidrato 60–70 % de las kcal, grasa 20–35 %, proteína 10–20 %. Comida precompetencia: 300–800 kcal, principalmente carbohidrato, baja en grasa y fibra, terminada 3–4 h antes.",
+   "summary": "La dieta del deportista se basa en alimentos densos en nutrientes con alto carbohidrato y energía suficiente, y las comidas previas y posteriores deben ser ligeras y ricas en carbohidrato."
+  },
+  "c14_ayudas_ergogenicas": {
+   "title": "Ayudas ergogénicas: creatina, cafeína y hormonas",
+   "formula": "Creatina: hasta 5 g/día a corto plazo considerada segura en adultos sanos. NCAA: cafeína permitida hasta 15 mg/L en orina (≈5 tazas de café pocas horas antes).",
+   "summary": "La creatina puede mejorar esfuerzos breves y repetidos de alta intensidad y la cafeína la resistencia, mientras que la mayoría de los demás suplementos carecen de eficacia y los esteroides, la DHEA, la androstenediona y la hGH son peligrosos y están prohibidos."
+  },
+  "c15_periodos_criticos": {
+   "title": "Periodos críticos del desarrollo fetal",
+   "formula": "Embrión: 2–8 semanas tras la concepción; feto: 8 semanas hasta el término (38–42 semanas). Periodo crítico del tubo neural: días 17–30 de gestación.",
+   "summary": "Fases de división celular intensa en las que una deficiencia, un exceso de nutrientes o un tóxico produce daño irreversible en el órgano que se está formando."
+  },
+  "c15_folato_dtn": {
+   "title": "Folato y prevención de defectos del tubo neural",
+   "formula": "Mujeres en edad fértil: 400 µg (0,4 mg)/día de folato sintético (alimentos fortificados o suplemento) además del folato de la dieta; RDA en embarazo: 600 µg/día; antecedente de hijo con defecto del tubo neural: 4 mg/día por indicación médica. Iniciar 1 mes antes de la concepción y mantener en el primer trimestre; dosis ≥1 mg requieren prescripción.",
+   "summary": "La suplementación periconcepcional con folato y la fortificación de cereales reducen la espina bífida y la anencefalia, que se producen antes de que la mujer sepa que está embarazada."
+  },
+  "c15_ganancia_peso_gestacional": {
+   "title": "Ganancia de peso recomendada en el embarazo",
+   "formula": "Feto único según IMC pregestacional: <18,5 → 12,5–18 kg (28–40 lb); 18,5–24,9 → 11,5–16 kg (25–35 lb); 25–29,9 → 7–11,5 kg (15–25 lb); ≥30 → 5–9 kg (11–20 lb). Gemelos: 17–25 kg (peso sano), 14–23 kg (sobrepeso), 11–19 kg (obesidad). Patrón en peso normal: ≈1,6 kg (3½ lb) en el primer trimestre y ≈0,45 kg (1 lb)/semana después.",
+   "summary": "Metas de aumento de peso del IOM 2009 según el IMC previo, que predicen el peso al nacer y limitan la retención de peso posparto."
+  },
+  "c15_necesidades_embarazo": {
+   "title": "Necesidades de energía y nutrientes en el embarazo",
+   "formula": "Energía: +0 kcal/día (1.er trimestre), +340 kcal/día (2.º), +450 kcal/día (3.º). Proteína: +25 g/día. Carbohidrato: ideal ≥175 g/día, nunca <135 g/día. RDA: folato 600 µg/día, vitamina B12 2,6 µg/día, hierro 27 mg/día (suplemento diario en 2.º y 3.er trimestre; prenatales con 30–60 mg), zinc 11 mg/día (19–50 años) o 12 mg/día (≤18 años). La AI de calcio y de vitamina D no aumenta. Intervalo óptimo entre embarazos: 18–23 meses.",
+   "caution": "Los valores de vitamina D y calcio son los de 1997: las DRI del IOM 2011 fijaron RDA de vitamina D de 15 µg (600 UI)/día y de calcio de 1000 mg/día (1300 mg/día en ≤18 años) para el embarazo.",
+   "summary": "Incrementos de energía y nutrientes que exige el embarazo, con el hierro como el nutriente que casi siempre requiere suplemento."
+  },
+  "c15_diabetes_gestacional": {
+   "title": "Diabetes gestacional",
+   "formula": "Afecta ≈1 de cada 25 embarazadas. Tamizaje: de inmediato en mujeres de alto riesgo y entre las semanas 24 y 28 en riesgo promedio. Factores de riesgo: edad ≥25 años, IMC ≥25 o ganancia excesiva, DG o recién nacido macrosómico previos, prediabetes, antecedente familiar de diabetes y etnias de alto riesgo.",
+   "summary": "Intolerancia a la glucosa de inicio o reconocimiento en el embarazo que aumenta las complicaciones del parto y la macrosomía y predispone a diabetes tipo 2 posterior; se trata con dieta, ejercicio y, si falla, insulina."
+  },
+  "c15_preeclampsia": {
+   "title": "Hipertensión gestacional y preeclampsia",
+   "formula": "Hipertensión gestacional: PA ≥140/90 mmHg en la segunda mitad del embarazo en una mujer sin hipertensión previa. Preeclampsia: hipertensión gestacional + proteinuria, generalmente después de la semana 20; eclampsia: convulsiones.",
+   "caution": "La definición con proteinuria obligatoria fue superada: ACOG (2013; Practice Bulletin 222, 2020) diagnostica preeclampsia sin proteinuria si hay rasgos de gravedad, y la USPSTF (2021) recomienda aspirina a dosis baja desde la semana 12 en alto riesgo.",
+   "summary": "Complicación materna más grave del embarazo, que reduce el flujo placentario y puede progresar a eclampsia; ningún factor dietético ha demostrado prevenirla."
+  },
+  "c15_lactancia_materna": {
+   "title": "Lactancia: necesidades maternas y contraindicaciones",
+   "formula": "Producción ≈25 oz (≈750 mL) de leche/día. Energía: +330 kcal/día (primeros 6 meses) y +400 kcal/día (segundos 6 meses), con el resto aportado por la grasa gestacional; ingesta mínima ≈1800 kcal/día. AI de agua total: 3,8 L/día (≈3,1 L de bebidas). Tras una bebida alcohólica ocasional, esperar ≥2 h para amamantar; cafeína equivalente a 1–2 tazas de café/día.",
+   "caution": "El libro contraindica la lactancia en madres con VIH en países desarrollados; la OMS (2016) y la AAP (2024) apoyan amamantar con tratamiento antirretroviral y carga viral suprimida, mediante decisión compartida.",
+   "summary": "Energía, líquidos y nutrientes que necesita la madre lactante, en general las carencias reducen el volumen y no la calidad de la leche, y situaciones y sustancias incompatibles con amamantar."
+  },
+  "c15_sindrome_alcoholico_fetal": {
+   "title": "Síndrome alcohólico fetal",
+   "formula": "El daño más grave ocurre antes de completarse la placenta (≈12 semanas); no existe una dosis segura establecida: abstinencia desde que se planea el embarazo.",
+   "summary": "Extremo grave del espectro de trastornos por exposición prenatal al alcohol (retraso del crecimiento, daño del sistema nervioso central y rasgos faciales), prevenible pero no tratable."
+  },
+  "c16_energia_lactante": {
+   "title": "Crecimiento y necesidad energética del lactante",
+   "formula": "Peso al nacer ×2 hacia los 5 meses y ×3 al año; talla +≈25 cm (10 in) en el primer año. Energía ≈100 kcal/kg/día (≈45 kcal/lb) frente a <40 kcal/kg/día del adulto; ≈450 kcal/día en el recién nacido. El cerebro del lactante consume ≈60 % de la energía diaria.",
+   "caution": "El ejemplo de percentiles usa las curvas CDC 2000; desde 2010 los CDC recomiendan los patrones de crecimiento OMS 2006 para menores de 2 años.",
+   "summary": "El crecimiento es el principal indicador del estado nutricional del lactante, cuya necesidad de energía por kilo duplica la del adulto y se vigila con curvas de percentiles."
+  },
+  "c16_leche_materna": {
+   "title": "Leche materna y suplementos del lactante",
+   "formula": "Lactancia exclusiva 6 meses y continuada con alimentos complementarios ≥12 meses (AAP, ADA, CPS); 8–12 tomas/día a demanda en las primeras semanas. Vitamina D suplementaria a todo lactante con lactancia exclusiva o que tome <1 L/día de fórmula fortificada; vitamina K en dosis única al nacer; hierro adicional desde los 6 meses; flúor desde los 6 meses si el agua tiene <0,3 ppm.",
+   "summary": "Composición (lactosa, alfa-lactoalbúmina, DHA, hierro y zinc biodisponibles) y factores protectores (anticuerpos, oligosacáridos, lactoferrina) que hacen de la leche humana el alimento de referencia, con sus suplementos necesarios."
+  },
+  "c16_alimentacion_complementaria": {
+   "title": "Alimentación complementaria y leche de vaca",
+   "formula": "Sólidos entre los 4 y 6 meses según madurez; alimentos de un solo ingrediente, uno nuevo cada 3–5 días (cereal de arroz primero, trigo al final). Sin miel ni jarabe de maíz antes del año (botulismo). Jugo: 4–6 oz (≈120–180 mL)/día de 1 a 6 años, diluido y en taza. Leche entera de vaca no antes de los 12 meses; leche entera de 1 a 2 años; al año, 2–3 tazas/día.",
+   "caution": "La NIAID (2017) recomienda introducir el maní temprano (desde 4–6 meses en lactantes de riesgo) en lugar de retrasar alérgenos, y la AAP (2017) desaconseja el jugo antes de los 12 meses y lo limita a 4 oz/día entre 1 y 3 años.",
+   "summary": "Momento, orden y selección de los primeros alimentos para cubrir hierro y vitamina C, detectar alergias y evitar la anemia por leche de vaca, el atragantamiento y el botulismo."
+  },
+  "c16_necesidades_ninez": {
+   "title": "Necesidades nutricionales en la niñez",
+   "formula": "Energía ≈800 kcal/día a 1 año, ≈2000 kcal/día a los 10 años si es activo. Grasa: 30–40 % de la energía (1–3 años) y 25–35 % (4–18 años). AI de fibra: 19 g (1–3 años), 25 g (4–8), 31 g varones / 26 g mujeres (9–13), 38 g / 26 g (14–18). Hierro: 7–10 mg/día para prevenir la deficiencia. Vitamina D: suplemento de 10 µg (400 UI)/día si no se alcanza con leche y alimentos fortificados (AAP 2008).",
+   "caution": "Las DRI del IOM 2011 fijaron la RDA de vitamina D en 15 µg (600 UI)/día a partir del año de edad; la cifra de 10 µg/día sigue vigente solo para lactantes (AI).",
+   "summary": "Las necesidades totales crecen con la edad mientras las necesidades por kilo bajan; hierro y vitamina D son los nutrientes que con más frecuencia faltan."
+  },
+  "c16_plomo_hierro": {
+   "title": "Deficiencia de hierro e intoxicación por plomo",
+   "formula": "Plomo en sangre reconocido como dañino: 10 µg/dL (con posibles efectos por debajo). Tamizaje en comunidades con muchas viviendas anteriores a 1950 o con muchos niños con plomo elevado.",
+   "caution": "El umbral de 10 µg/dL fue reemplazado por el valor de referencia de los CDC de 5 µg/dL (2012), reducido a 3,5 µg/dL en 2021.",
+   "summary": "La deficiencia de hierro altera la atención y el aprendizaje y aumenta la absorción de plomo, cuya anemia y síntomas inespecíficos pueden confundirse con una simple ferropenia."
+  },
+  "c16_obesidad_infantil": {
+   "title": "Obesidad infantil: definición y tratamiento",
+   "formula": "IMC para la edad (2–20 años): sobrepeso >percentil 85; obesidad ≥percentil 95 (o IMC ≥30 si es menor); obesidad grave ≥percentil 99. <2 años: peso para la talla >percentil 95 = sobrepeso. Cirugía en adolescentes: madurez física, IMC ≥50 o ≥40 con comorbilidad importante, fracaso de un programa formal de 6 meses y capacidad de adherencia.",
+   "caution": "La guía de práctica clínica de la AAP 2023 define la obesidad grave como ≥120 % del percentil 95, recomienda farmacoterapia desde los 12 años y evaluación quirúrgica desde los 13 años con obesidad grave; la sibutramina fue retirada en 2010.",
+   "summary": "Criterios por percentiles de IMC y abordaje escalonado centrado en frenar la ganancia de peso mientras el niño crece, con dieta, actividad, apoyo familiar y conducta antes que fármacos o cirugía."
+  },
+  "c16_hierro_calcio_adolescencia": {
+   "title": "Hierro y calcio en la adolescencia",
+   "formula": "RDA de hierro: varones 9–13 años 8 mg/día (10,9 en estirón), 14–18 años 11 mg/día (13,9 en estirón); mujeres 9–13 años 8 mg/día (10,5 si ya menstrúan; 11,6 con menarquia y estirón), 14–18 años 15 mg/día (16,1 en estirón). AI de calcio 9–13 años: 1300 mg/día. Vitamina D: 10 µg (400 UI)/día por suplemento si no se cubre con alimentos (AAP).",
+   "caution": "Las DRI del IOM 2011 convirtieron el calcio en RDA de 1300 mg/día para 9–18 años y elevaron la RDA de vitamina D a 15 µg (600 UI)/día.",
+   "summary": "El estirón, la masa magra y la menstruación elevan las necesidades de hierro, y la formación de masa ósea pico hace del calcio un nutriente crítico, sobre todo en las adolescentes."
+  },
+  "c16_lipidos_pediatricos": {
+   "title": "Colesterol en niños y adolescentes",
+   "formula": "2–18 años, colesterol total / LDL: aceptable <170 / <110 mg/dL; limítrofe 170–199 / 110–129 mg/dL; alto ≥200 / ≥130 mg/dL. Dieta (4–18 años): grasa 25–35 % de la energía, saturada <10 %, colesterol <300 mg/día. Fármacos si la hipercolesterolemia persiste tras la dieta a partir de los 8 años.",
+   "caution": "El libro propone tamizaje selectivo; el panel de expertos NHLBI 2011 recomienda tamizaje lipídico universal a los 9–11 y a los 17–21 años.",
+   "summary": "Puntos de corte de colesterol pediátrico y estrategia de dieta primero y fármacos después para frenar la aterosclerosis que comienza en la niñez."
+  },
+  "c17_restriccion_energetica": {
+   "title": "Restricción energética y longevidad",
+   "formula": "Animales: ingesta energética ≈70 % de la normal, sin malnutrición, prolonga la vida; humanos: reducir la ingesta habitual un 10–20 % mejora peso, grasa corporal, presión arterial, lípidos y respuesta insulínica.",
+   "summary": "La restricción energética nutricionalmente adecuada alarga la vida en animales, probablemente al reducir el estrés oxidativo y modificar la expresión génica, pero en humanos solo se apoya una moderación de la ingesta."
+  },
+  "c17_peso_imc_mayores": {
+   "title": "Peso corporal e IMC en adultos mayores",
+   "formula": "Adultos >65 años: el riesgo para la salud no se hace evidente hasta un IMC ≥27, y la relación se atenúa hasta desaparecer hacia los 75 años; en personas con bajo peso, una pérdida de solo el 5 % aumenta el riesgo de enfermedad y muerte prematura.",
+   "summary": "En la vejez el bajo peso y la pérdida involuntaria de peso suelen ser más peligrosos que el sobrepeso moderado, aunque la obesidad sigue causando complicaciones."
+  },
+  "c17_sarcopenia": {
+   "title": "Sarcopenia",
+   "summary": "Pérdida de masa, fuerza y calidad del músculo esquelético con la edad que favorece caídas y dependencia; se atenúa con proteína suficiente y entrenamiento de fuerza, y sus factores de riesgo incluyen pérdida de peso, sedentarismo, tabaquismo y obesidad inflamatoria."
+  },
+  "c17_hidratacion_mayores": {
+   "title": "Hidratación en el adulto mayor",
+   "formula": "Adultos ≥51 años: bebidas ≈13 tazas/día (hombres) y ≈9 tazas/día (mujeres); como mínimo, 6 vasos de agua u otras bebidas al día.",
+   "summary": "La menor sensación de sed y la disminución del agua corporal total hacen que la deshidratación sea frecuente en mayores y se manifieste con confusión, infecciones urinarias, neumonía o úlceras por presión."
+  },
+  "c17_eer_mayores": {
+   "title": "Estimación de las necesidades energéticas del adulto mayor",
+   "formula": "EER (adulto >30 años) ≈ valor tabulado para 30 años (Apéndice F) − 7 kcal/día (mujeres) o − 10 kcal/día (hombres) por cada año por encima de 30. Contexto: las necesidades energéticas bajan ≈5 % por década y el metabolismo basal 1–2 % por década.",
+   "caution": "Las ecuaciones EER de 2002/2005 en que se basan las tablas fueron reemplazadas por las ecuaciones EER de NASEM 2023.",
+   "summary": "Como el gasto energético cae con la pérdida de masa magra y de actividad, el adulto mayor necesita menos kilocalorías y alimentos de alta densidad nutricional para cubrir requerimientos que no disminuyen."
+  },
+  "c17_gastritis_atrofica_b12": {
+   "title": "Gastritis atrófica y deficiencia de vitamina B12",
+   "formula": "Gastritis atrófica en ≈10–30 % de los adultos >50 años; RDA de B12 igual a la de adultos jóvenes, pero obtener la mayor parte de la ingesta de alimentos fortificados o suplementos.",
+   "summary": "La falta de ácido clorhídrico y factor intrínseco y el sobrecrecimiento bacteriano reducen la absorción de vitamina B12 (y de folato, biotina, calcio, hierro y zinc), con riesgo de anemia, deterioro cognitivo y daño neurológico."
+  },
+  "c17_vitamina_d_calcio_mayores": {
+   "title": "Vitamina D y calcio en la vejez",
+   "formula": "Vitamina D: 10 µg/día (51–70 años) y 15 µg/día (>70 años). Calcio: 1200 mg/día en mayores (según el Comité DRI de 1997).",
+   "caution": "Superado por las DRI del IOM 2011: vitamina D RDA 15 µg (600 UI) para 51–70 años y 20 µg (800 UI) para >70 años; calcio RDA 1200 mg para mujeres >50 y hombres >70 años y 1000 mg para hombres de 51–70 años.",
+   "summary": "La menor exposición solar, la reducida síntesis cutánea y la menor activación renal aumentan el riesgo de deficiencia de vitamina D en mayores, que a menudo tampoco alcanzan el calcio recomendado para prevenir la osteoporosis."
+  },
+  "c17_interacciones_farmaco_nutriente": {
+   "title": "Interacciones entre fármacos y nutrientes",
+   "summary": "Los fármacos pueden alterar la ingesta, la absorción, el metabolismo y la excreción de nutrientes (p. ej., metotrexato-folato, isoniazida-B6, anticonvulsivantes-vitaminas D y K, antiácidos-B12 y hierro, diuréticos-minerales), y la dieta modifica fármacos (pomelo, vitamina K con warfarina, tiramina con IMAO, sodio con litio, calcio con tetraciclina); el riesgo es máximo en mayores polimedicados."
+  },
+  "c18_aterosclerosis_inflamacion": {
+   "title": "Aterosclerosis como proceso inflamatorio",
+   "summary": "El daño endotelial (LDL elevado, hipertensión, tabaco, homocisteína, infecciones) atrae macrófagos que fagocitan LDL oxidado y forman células espumosas y placas; las placas inestables (cápsula fibrosa delgada, núcleo lipídico grande) se rompen y desencadenan trombosis, infarto o ictus, y la PCR y la Lp-PLA(2) sirven como marcadores inflamatorios."
+  },
+  "c18_estandares_riesgo_cc": {
+   "title": "Estándares de lípidos y presión arterial para el riesgo coronario",
+   "formula": "Colesterol total (mg/dL): deseable <200, limítrofe 200–239, alto ≥240. LDL: deseable <100 (100–129 casi óptimo), limítrofe 130–159, alto 160–189, muy alto ≥190. HDL: deseable ≥60, bajo <40. Triglicéridos en ayunas: deseable <150, limítrofe 150–199, alto 200–499, muy alto ≥500. Presión arterial (mm Hg): deseable <120/<80; prehipertensión 120–139/80–89; hipertensión estadio 1 ≥140/≥90; estadio 2 ≥160/≥100. IMC deseable 18,5–24,9.",
+   "caution": "Los cortes provienen de ATP III (NCEP 2002) y JNC 7 (2003); la guía de colesterol AHA/ACC 2018 sustituyó ATP III y la guía ACC/AHA 2017 (actualizada en 2025) define hipertensión desde ≥130/80 mm Hg.",
+   "summary": "Tabla de referencia del libro para clasificar lípidos sanguíneos, presión arterial e IMC según el riesgo de cardiopatía coronaria."
+  },
+  "c18_sindrome_metabolico": {
+   "title": "Síndrome metabólico",
+   "formula": "Tres o más de: perímetro de cintura >40 pulg (hombres) o >35 pulg (mujeres); triglicéridos ≥150 mg/dL; HDL <40 mg/dL (hombres) o <50 mg/dL (mujeres); presión arterial ≥130/85 mm Hg; glucosa en ayunas ≥100 mg/dL.",
+   "summary": "Agrupación de resistencia a la insulina, obesidad abdominal, dislipidemia e hipertensión, con marcadores inflamatorios y protrombóticos, que eleva el riesgo de cardiopatía coronaria y diabetes tipo 2 y se trata primero con cambios de estilo de vida."
+  },
+  "c18_estrategias_dieta_cc": {
+   "title": "Estrategias dietéticas para reducir el riesgo coronario",
+   "formula": "Grasa saturada <7 % de las kcal; grasa trans <1 % de las kcal; colesterol <300 mg/día; sodio ≤2300 mg/día; pescado graso ≥2 veces/semana; alcohol ≤1 trago/día (mujeres) y ≤2 (hombres); actividad moderada ≥30 min la mayoría de los días, con meta de ≥2000 kcal/semana.",
+   "caution": "El límite de 300 mg/día de colesterol dietario se retiró en las DGA 2015–2020 y no figura en la guía AHA/ACC 2018; además, los aceites parcialmente hidrogenados dejaron de ser GRAS (FDA 2015, efectivo 2018).",
+   "summary": "Resumen del libro (AHA 2006 y ATP III) de cambios en la dieta y el estilo de vida para bajar el LDL: balance energético, menos grasa saturada y trans, más fibra soluble, potasio, omega-3, esteroles vegetales y soya, y abandono del tabaco."
+  },
+  "c18_dash_modificaciones_pa": {
+   "title": "Dieta DASH y modificaciones del estilo de vida en hipertensión",
+   "formula": "Reducción esperada de la presión sistólica: bajar de peso 5–20 mm Hg por cada 10 kg perdidos; dieta DASH 8–14 mm Hg; sodio <2400 mg/día 2–8 mm Hg; actividad aeróbica ≥30 min/día 4–9 mm Hg; alcohol ≤2 tragos/día (hombres) o ≤1 (mujeres) 2–4 mm Hg. Hipertensos, personas negras y adultos de mediana edad y mayores: sodio ≤1500 mg/día y potasio 4700 mg/día con alimentos.",
+   "caution": "Se basa en JNC 7 (2003) y en la AI de potasio de 2004; hoy rigen la guía ACC/AHA 2017 (actualizada en 2025) y las DRI de NASEM 2019 (CDRR de sodio 2300 mg; AI de potasio 3400 mg en hombres y 2600 mg en mujeres).",
+   "summary": "El control de peso es la medida no farmacológica más eficaz contra la hipertensión, y la dieta DASH (rica en frutas, verduras, frutos secos y lácteos bajos en grasa) combinada con la restricción de sodio la reduce más que cada estrategia por separado."
+  },
+  "c18_diabetes_tipos_glucemia": {
+   "title": "Tipos de diabetes y glucemia en ayunas",
+   "formula": "Glucosa plasmática en ayunas: normal <100 mg/dL; prediabetes 100–125 mg/dL; diabetes por encima del rango de prediabetes. Tipo 1: 5–10 % de los casos, destrucción autoinmune de células β, requiere siempre insulina. Tipo 2: 90–95 % de los casos, resistencia a la insulina con deficiencia relativa de insulina.",
+   "caution": "Cifra dudosa en la fuente: el libro imprime el umbral de diabetes como «≥125 mg/dL», que se superpone con el rango de prediabetes; verificar en el original, pág. 620 (el criterio ADA es ≥126 mg/dL).",
+   "summary": "La diabetes agrupa trastornos con hiperglucemia por falta de insulina, insulina ineficaz o ambas, con complicaciones agudas (cetoacidosis, estado hiperosmolar) y crónicas (macroangiopatía, microangiopatía y neuropatía)."
+  },
+  "c18_dieta_diabetes": {
+   "title": "Recomendaciones nutricionales en diabetes",
+   "formula": "Carbohidrato constante y repartido a lo largo del día; no se recomiendan dietas bajas en carbohidrato (<130 g/día); grasa saturada <7 % de las kcal, trans mínima y colesterol <200 mg/día; proteína 15–20 % de las kcal si la función renal es normal; alcohol ≤1 trago/día (mujeres) y ≤2 (hombres); en tipo 2, bajar 10–20 lb mejora la resistencia a la insulina.",
+   "caution": "El libro se apoya en las listas de intercambio (Apéndice G) y en la posición ADA 2008; hoy rigen los Estándares de atención de la ADA (actualizados cada año), con conteo de carbohidratos y plan de alimentación individualizado.",
+   "summary": "La cantidad de carbohidrato influye más en la glucemia que su fuente, el azúcar con moderación cabe dentro del plan, y en la diabetes tipo 1 la dieta debe coordinarse con la insulina y la actividad física para evitar la hipoglucemia."
+  },
+  "c18_carcinogenesis_dieta": {
+   "title": "Carcinogénesis y factores dietéticos: iniciadores, promotores y antipromotores",
+   "formula": "Recomendaciones WCRF/AICR 2007: carne roja ≤18 oz (≈500 g)/semana y muy poca o ninguna procesada; sal <6 g/día (2,4 g de sodio); alimentos de alta densidad energética (>225 kcal/100 g) con moderación; ≥5 porciones/día de verduras y frutas no feculentas; alcohol ≤2 tragos/día (hombres) y ≤1 (mujeres); suplementos no recomendados para prevenir cáncer.",
+   "caution": "Las recomendaciones WCRF/AICR 2007 fueron actualizadas en el Tercer Informe de Expertos WCRF/AICR (2018), que para la prevención del cáncer aconseja no beber alcohol.",
+   "summary": "El cáncer surge por iniciación (mutación por carcinógenos como aminas heterocíclicas e hidrocarburos aromáticos policíclicos), promoción y progresión; la carne roja y procesada, el alcohol y la obesidad aumentan el riesgo, mientras que la fibra, las frutas, las verduras y la actividad física lo reducen."
+  }
+ },
+ "resources": [
+  {
+   "id": "A",
+   "title": "Células, hormonas y nervios",
+   "usedBy": [
+    "3.6",
+    "6.4",
+    "7.1"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Conceptos básicos de química",
+   "usedBy": [
+    "11.8",
+    "12.3",
+    "12.6",
+    "13.2"
+   ]
+  },
+  {
+   "id": "C",
+   "title": "Estructuras y vías bioquímicas",
+   "usedBy": [
+    "4.1",
+    "5.1",
+    "6.1",
+    "6.5",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.6",
+    "7.8",
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.5",
+    "10.8",
+    "11.1",
+    "11.3",
+    "11.5",
+    "11.6",
+    "13.2"
+   ]
+  },
+  {
+   "id": "D",
+   "title": "Medidas de calidad proteica (PDCAAS, valor biológico)",
+   "usedBy": [
+    "6.6"
+   ]
+  },
+  {
+   "id": "E",
+   "title": "Evaluación nutricional (historia, antropometría, examen físico, laboratorio)",
+   "usedBy": [
+    "1.5",
+    "8.6",
+    "10.6",
+    "13.3",
+    "14.6",
+    "16.1"
+   ]
+  },
+  {
+   "id": "F",
+   "title": "Actividad física y requerimientos de energía",
+   "usedBy": [
+    "2.3",
+    "8.4",
+    "17.3"
+   ]
+  },
+  {
+   "id": "G",
+   "title": "Listas de intercambio para diabetes",
+   "usedBy": [
+    "2.4",
+    "18.6"
+   ]
+  },
+  {
+   "id": "H",
+   "title": "Tabla de composición de alimentos",
+   "usedBy": [
+    "1.5",
+    "4.8",
+    "5.1",
+    "5.9",
+    "8.2",
+    "10.1",
+    "11.5",
+    "12.1",
+    "14.7",
+    "14.9",
+    "15.6",
+    "16.9",
+    "19.9"
+   ]
+  },
+  {
+   "id": "I",
+   "title": "Recomendaciones nutricionales de la OMS y guías de Canadá",
+   "usedBy": [
+    "1.4",
+    "2.3",
+    "2.4",
+    "18.6",
+    "18.8"
+   ]
+  },
+  {
+   "id": "J",
+   "title": "Healthy People 2010",
+   "usedBy": [
+    "1.5"
+   ]
+  },
+  {
+   "id": "K",
+   "title": "Tablas DRI, Valores Diarios e IMC (contraportadas)",
+   "usedBy": [
+    "1.4",
+    "2.3",
+    "6.8",
+    "8.5",
+    "10.1",
+    "10.5",
+    "11.2",
+    "12.8",
+    "13.1",
+    "15.4",
+    "16.5",
+    "16.9",
+    "18.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "1": [],
+   "2": [
+    1
+   ],
+   "19": [
+    2,
+    4,
+    10
+   ],
+   "20": [
+    6,
+    9,
+    19
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    2,
+    3
+   ],
+   "5": [
+    3,
+    4
+   ],
+   "6": [
+    3,
+    4,
+    5
+   ],
+   "7": [
+    4,
+    5,
+    6
+   ],
+   "8": [
+    1,
+    7
+   ],
+   "9": [
+    2,
+    8
+   ],
+   "10": [
+    6,
+    7
+   ],
+   "11": [
+    5,
+    10
+   ],
+   "12": [
+    6,
+    11
+   ],
+   "13": [
+    7,
+    12
+   ],
+   "14": [
+    7,
+    12,
+    13
+   ],
+   "15": [
+    8,
+    10,
+    13
+   ],
+   "16": [
+    8,
+    13,
+    15
+   ],
+   "17": [
+    8,
+    10,
+    14
+   ],
+   "18": [
+    4,
+    5,
+    8
+   ]
+  },
+  "sections": {
+   "1.4": [
+    "1.2",
+    "1.3"
+   ],
+   "1.5": [
+    "1.4"
+   ],
+   "1.6": [
+    "1.3"
+   ],
+   "1.7": [
+    "1.3"
+   ],
+   "2.1": [
+    "1.2"
+   ],
+   "2.2": [
+    "1.4",
+    "2.1"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "2.3"
+   ],
+   "2.5": [
+    "2.3"
+   ],
+   "2.6": [
+    "1.4",
+    "2.1"
+   ],
+   "2.7": [
+    "2.6"
+   ],
+   "2.8": [
+    "2.3"
+   ],
+   "19.2": [
+    "19.1"
+   ],
+   "19.6": [
+    "19.4"
+   ],
+   "19.8": [
+    "12.1",
+    "13.7",
+    "19.1",
+    "19.4",
+    "19.6",
+    "19.7"
+   ],
+   "19.9": [
+    "4.3",
+    "11.2",
+    "13.9",
+    "19.6",
+    "19.7"
+   ],
+   "20.2": [
+    "2.3",
+    "15.4",
+    "16.8",
+    "17.7",
+    "20.1"
+   ],
+   "20.3": [
+    "20.1"
+   ],
+   "20.4": [
+    "6.7",
+    "11.2",
+    "12.1",
+    "13.3",
+    "13.6",
+    "20.3"
+   ],
+   "20.5": [
+    "20.3"
+   ],
+   "20.6": [
+    "19.4",
+    "19.6",
+    "20.5"
+   ],
+   "20.7": [
+    "19.9",
+    "20.6"
+   ],
+   "20.8": [
+    "20.6"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "1.2",
+    "3.1"
+   ],
+   "3.4": [
+    "3.3"
+   ],
+   "3.5": [
+    "3.4"
+   ],
+   "3.6": [
+    "3.2",
+    "3.3"
+   ],
+   "3.7": [
+    "2.1",
+    "3.6"
+   ],
+   "3.8": [
+    "3.2",
+    "3.3"
+   ],
+   "4.2": [
+    "3.4",
+    "4.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "4.4": [
+    "4.2"
+   ],
+   "4.5": [
+    "4.4"
+   ],
+   "4.6": [
+    "2.3",
+    "4.1"
+   ],
+   "4.7": [
+    "4.6"
+   ],
+   "4.8": [
+    "2.3",
+    "4.1",
+    "4.5"
+   ],
+   "4.9": [
+    "1.5",
+    "4.5",
+    "4.6"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "3.3",
+    "4.8",
+    "5.2"
+   ],
+   "5.4": [
+    "5.3"
+   ],
+   "5.5": [
+    "5.1"
+   ],
+   "5.6": [
+    "4.5",
+    "5.4",
+    "5.5"
+   ],
+   "5.7": [
+    "5.4"
+   ],
+   "5.8": [
+    "1.2",
+    "2.3",
+    "5.7"
+   ],
+   "5.9": [
+    "5.8"
+   ],
+   "6.2": [
+    "3.3",
+    "6.1"
+   ],
+   "6.3": [
+    "6.1"
+   ],
+   "6.4": [
+    "4.5",
+    "5.4",
+    "6.3"
+   ],
+   "6.5": [
+    "6.3"
+   ],
+   "6.6": [
+    "2.8",
+    "6.2"
+   ],
+   "6.7": [
+    "6.4"
+   ],
+   "6.8": [
+    "2.3",
+    "5.9",
+    "6.5",
+    "6.6"
+   ],
+   "6.9": [
+    "6.8"
+   ],
+   "6.10": [
+    "5.5",
+    "6.3"
+   ],
+   "7.2": [
+    "4.5",
+    "7.1"
+   ],
+   "7.3": [
+    "5.5",
+    "6.5",
+    "7.2"
+   ],
+   "7.4": [
+    "1.2",
+    "7.3"
+   ],
+   "7.5": [
+    "6.5",
+    "7.4"
+   ],
+   "7.6": [
+    "7.5"
+   ],
+   "7.7": [
+    "7.6"
+   ],
+   "7.8": [
+    "3.5",
+    "7.6"
+   ],
+   "8.2": [
+    "1.2",
+    "8.1"
+   ],
+   "8.3": [
+    "7.4",
+    "8.1"
+   ],
+   "8.4": [
+    "8.3"
+   ],
+   "8.5": [
+    "8.1"
+   ],
+   "8.6": [
+    "8.5"
+   ],
+   "8.7": [
+    "8.6"
+   ],
+   "8.8": [
+    "2.3",
+    "6.7",
+    "8.2",
+    "8.5"
+   ],
+   "9.2": [
+    "6.3",
+    "7.4",
+    "9.1"
+   ],
+   "9.3": [
+    "8.6",
+    "9.1"
+   ],
+   "9.4": [
+    "9.3"
+   ],
+   "9.5": [
+    "2.3",
+    "4.9",
+    "9.3"
+   ],
+   "9.6": [
+    "2.3",
+    "8.3",
+    "9.5"
+   ],
+   "9.7": [
+    "8.2",
+    "9.5"
+   ],
+   "9.8": [
+    "9.5",
+    "9.6"
+   ],
+   "9.9": [
+    "8.8",
+    "9.5"
+   ],
+   "9.10": [
+    "2.1",
+    "9.5"
+   ],
+   "10.2": [
+    "7.4",
+    "10.1"
+   ],
+   "10.3": [
+    "6.1",
+    "7.1",
+    "10.1"
+   ],
+   "10.4": [
+    "6.5",
+    "10.1"
+   ],
+   "10.5": [
+    "5.3",
+    "10.1"
+   ],
+   "10.6": [
+    "3.3",
+    "10.5"
+   ],
+   "10.7": [
+    "5.2",
+    "10.1"
+   ],
+   "10.8": [
+    "1.5",
+    "7.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.6"
+   ],
+   "10.9": [
+    "6.5",
+    "10.1"
+   ],
+   "10.10": [
+    "2.6",
+    "10.1"
+   ],
+   "11.2": [
+    "11.1"
+   ],
+   "11.4": [
+    "11.3"
+   ],
+   "11.7": [
+    "11.1",
+    "11.3",
+    "11.5",
+    "11.6"
+   ],
+   "11.8": [
+    "5.7",
+    "7.4",
+    "10.9",
+    "11.5"
+   ],
+   "12.2": [
+    "12.1"
+   ],
+   "12.3": [
+    "6.4",
+    "12.2"
+   ],
+   "12.4": [
+    "3.3",
+    "7.6",
+    "12.3"
+   ],
+   "12.6": [
+    "2.7",
+    "12.3",
+    "12.5"
+   ],
+   "12.7": [
+    "4.3",
+    "11.4",
+    "12.5"
+   ],
+   "12.8": [
+    "6.1",
+    "12.7"
+   ],
+   "12.9": [
+    "8.8",
+    "12.7"
+   ],
+   "13.2": [
+    "7.4",
+    "11.8",
+    "13.1"
+   ],
+   "13.3": [
+    "13.2"
+   ],
+   "13.4": [
+    "13.2"
+   ],
+   "13.5": [
+    "11.1",
+    "13.2"
+   ],
+   "13.6": [
+    "11.8",
+    "13.1"
+   ],
+   "13.7": [
+    "12.7",
+    "13.1"
+   ],
+   "13.8": [
+    "13.1"
+   ],
+   "14.2": [
+    "14.1"
+   ],
+   "14.4": [
+    "4.5",
+    "7.2",
+    "14.3"
+   ],
+   "14.5": [
+    "6.4",
+    "8.7",
+    "14.4"
+   ],
+   "14.7": [
+    "12.6",
+    "14.4"
+   ],
+   "14.8": [
+    "2.1",
+    "14.4",
+    "14.7"
+   ],
+   "14.9": [
+    "13.7",
+    "14.3"
+   ],
+   "15.4": [
+    "2.3",
+    "5.5",
+    "13.2",
+    "15.2"
+   ],
+   "15.5": [
+    "15.3"
+   ],
+   "15.6": [
+    "5.7",
+    "15.2"
+   ],
+   "15.8": [
+    "15.7"
+   ],
+   "15.9": [
+    "7.8",
+    "15.6"
+   ],
+   "16.2": [
+    "5.5",
+    "11.6",
+    "15.7",
+    "16.1"
+   ],
+   "16.3": [
+    "15.5",
+    "16.2"
+   ],
+   "16.4": [
+    "16.3"
+   ],
+   "16.5": [
+    "16.1"
+   ],
+   "16.6": [
+    "13.3",
+    "16.5"
+   ],
+   "16.7": [
+    "8.6",
+    "9.4",
+    "16.5"
+   ],
+   "16.8": [
+    "16.5"
+   ],
+   "16.9": [
+    "16.5"
+   ],
+   "16.10": [
+    "16.7"
+   ],
+   "17.3": [
+    "2.3",
+    "8.4",
+    "17.2"
+   ],
+   "17.4": [
+    "10.6",
+    "11.3",
+    "12.9",
+    "17.2"
+   ],
+   "17.5": [
+    "17.2"
+   ],
+   "17.6": [
+    "17.4"
+   ],
+   "17.7": [
+    "17.2"
+   ],
+   "17.8": [
+    "7.8",
+    "17.4"
+   ],
+   "18.2": [
+    "18.1"
+   ],
+   "18.3": [
+    "5.7",
+    "8.5",
+    "16.10",
+    "18.2"
+   ],
+   "18.4": [
+    "18.3"
+   ],
+   "18.5": [
+    "2.3",
+    "12.2",
+    "18.3"
+   ],
+   "18.6": [
+    "4.5",
+    "18.3"
+   ],
+   "18.7": [
+    "4.8",
+    "18.2"
+   ],
+   "18.8": [
+    "2.3",
+    "6.10",
+    "18.4",
+    "18.5",
+    "18.6",
+    "18.7"
+   ],
+   "19.3": [
+    "2.3",
+    "10.1"
+   ],
+   "19.4": [
+    "5.5",
+    "15.4"
+   ],
+   "19.5": [
+    "13.6"
+   ],
+   "19.7": [
+    "4.7",
+    "6.1",
+    "10.2",
+    "11.8"
+   ],
+   "20.1": [
+    "9.5"
+   ],
+   "5.1": [
+    "4.1"
+   ],
+   "6.1": [
+    "4.1"
+   ],
+   "7.1": [
+    "6.5"
+   ],
+   "8.1": [
+    "7.5"
+   ],
+   "9.1": [
+    "5.6",
+    "8.1"
+   ],
+   "10.1": [
+    "3.5"
+   ],
+   "11.1": [
+    "5.4",
+    "10.1"
+   ],
+   "11.3": [
+    "5.2"
+   ],
+   "11.5": [
+    "5.1"
+   ],
+   "12.1": [
+    "1.2",
+    "7.4"
+   ],
+   "12.5": [
+    "10.1"
+   ],
+   "13.1": [
+    "10.10",
+    "12.5"
+   ],
+   "13.9": [
+    "1.1",
+    "5.3"
+   ],
+   "14.1": [
+    "8.5"
+   ],
+   "14.3": [
+    "7.2"
+   ],
+   "14.6": [
+    "11.8",
+    "13.3"
+   ],
+   "15.2": [
+    "10.5"
+   ],
+   "15.3": [
+    "8.5"
+   ],
+   "16.1": [
+    "4.4",
+    "6.8"
+   ],
+   "17.1": [
+    "11.8",
+    "14.1"
+   ],
+   "17.2": [
+    "8.5"
+   ],
+   "18.1": [
+    "6.7"
+   ],
+   "18.9": [
+    "1.7",
+    "10.10",
+    "13.9"
+   ]
+  },
+  "items": {
+   "c01_ai_ul": [
+    "c01_ear_rda"
+   ],
+   "c01_eer": [
+    "c01_valor_energetico"
+   ],
+   "c01_amdr": [
+    "c01_valor_energetico"
+   ],
+   "c02_principios_densidad": [
+    "c01_valor_energetico"
+   ],
+   "c02_guias_alimentarias": [
+    "c01_amdr",
+    "c02_principios_densidad"
+   ],
+   "c02_usda_food_guide": [
+    "c01_eer",
+    "c02_guias_alimentarias"
+   ],
+   "c02_listas_intercambio": [
+    "c01_valor_energetico"
+   ],
+   "c02_valores_diarios": [
+    "c01_ear_rda"
+   ],
+   "c02_vegetarianos": [
+    "c02_usda_food_guide"
+   ],
+   "c19_temperaturas_seguras": [
+    "c19_infeccion_vs_intoxicacion"
+   ],
+   "c19_ida_aspartamo": [
+    "c19_margen_seguridad_aditivos"
+   ],
+   "c19_biotecnologia_regulacion": [
+    "c19_margen_seguridad_aditivos"
+   ],
+   "c20_paradoja_hambre_obesidad": [
+    "c20_seguridad_alimentaria"
+   ],
+   "c20_terapia_rehidratacion_oral": [
+    "c20_sinergia_desnutricion_infeccion"
+   ],
+   "c03_absorcion_vellosidades": [
+    "c03_secreciones_digestivas"
+   ],
+   "c03_circulacion_portal_linfatica": [
+    "c03_absorcion_vellosidades"
+   ],
+   "c03_hormonas_gi": [
+    "c03_secreciones_digestivas"
+   ],
+   "c03_erge_ulcera": [
+    "c03_secreciones_digestivas"
+   ],
+   "c04_intolerancia_lactosa": [
+    "c03_absorcion_vellosidades"
+   ],
+   "c04_homeostasis_glucemia": [
+    "c04_gluconeogenesis_cetosis"
+   ],
+   "c04_indice_glucemico": [
+    "c04_homeostasis_glucemia"
+   ],
+   "c04_edulcorantes_alternativos": [
+    "c04_azucares_anadidos"
+   ],
+   "c04_ingesta_cho_fibra": [
+    "c04_fibra_soluble_insoluble",
+    "c04_gluconeogenesis_cetosis"
+   ],
+   "c05_perfil_lipidico": [
+    "c05_lipoproteinas"
+   ],
+   "c05_omega3_pescado": [
+    "c05_acidos_grasos_esenciales"
+   ],
+   "c05_recomendaciones_grasa": [
+    "c05_acidos_grasos_esenciales",
+    "c05_grasas_trans"
+   ],
+   "c05_sustitucion_grasa_saturada": [
+    "c05_perfil_lipidico",
+    "c05_recomendaciones_grasa"
+   ],
+   "c06_calidad_proteica": [
+    "c06_aminoacidos_esenciales"
+   ],
+   "c06_rda_proteina": [
+    "c06_balance_nitrogenado",
+    "c06_calidad_proteica"
+   ],
+   "c06_fenilcetonuria": [
+    "c06_aminoacidos_esenciales",
+    "c06_genomica_nutricional"
+   ],
+   "c07_piruvato_acetilcoa": [
+    "c07_glucolisis_cori"
+   ],
+   "c07_beta_oxidacion": [
+    "c07_piruvato_acetilcoa"
+   ],
+   "c07_ciclo_tca_cadena_electrones": [
+    "c07_beta_oxidacion"
+   ],
+   "c07_ayuno_cetosis": [
+    "c07_ciclo_tca_cadena_electrones"
+   ],
+   "c07_metabolismo_alcohol": [
+    "c07_ciclo_tca_cadena_electrones"
+   ],
+   "c07_alcohol_consecuencias": [
+    "c07_bebida_estandar_moderacion",
+    "c07_metabolismo_alcohol"
+   ],
+   "c08_componentes_gasto_tmb": [
+    "c08_balance_energetico_3500"
+   ],
+   "c08_eer": [
+    "c08_componentes_gasto_tmb"
+   ],
+   "c08_grasa_corporal_cintura": [
+    "c08_imc"
+   ],
+   "c08_criterios_tca": [
+    "c08_imc"
+   ],
+   "c08_triada_atleta": [
+    "c08_criterios_tca"
+   ],
+   "c09_farmacos_cirugia_obesidad": [
+    "c09_criterios_riesgo_obesidad"
+   ],
+   "c09_deficit_energetico": [
+    "c09_criterios_riesgo_obesidad"
+   ],
+   "c09_actividad_fisica_peso": [
+    "c09_deficit_energetico"
+   ],
+   "c09_ganancia_peso": [
+    "c09_densidad_energetica"
+   ],
+   "c09_dietas_moda": [
+    "c09_deficit_energetico"
+   ],
+   "c10_b12_anemia_perniciosa": [
+    "c10_folato_dfe"
+   ],
+   "c10_coenzimas_b": [
+    "c10_b12_anemia_perniciosa",
+    "c10_niacina_equivalentes",
+    "c10_tiamina_beriberi",
+    "c10_vitamina_b6"
+   ],
+   "c11_deficiencia_vitamina_a": [
+    "c11_rae_vitamina_a"
+   ],
+   "c11_raquitismo_osteomalacia": [
+    "c11_activacion_vitamina_d"
+   ],
+   "c11_antioxidantes_suplementos": [
+    "c11_vitamina_e_antioxidante"
+   ],
+   "c12_deshidratacion": [
+    "c12_balance_hidrico"
+   ],
+   "c12_sistema_raa": [
+    "c12_balance_hidrico"
+   ],
+   "c12_sodio_potasio": [
+    "c12_sistema_raa"
+   ],
+   "c12_regulacion_calcemia": [
+    "c11_activacion_vitamina_d"
+   ],
+   "c12_calcio_recomendaciones": [
+    "c12_regulacion_calcemia"
+   ],
+   "c12_osteoporosis_tipos": [
+    "c12_calcio_recomendaciones"
+   ],
+   "c13_absorcion_hierro": [
+    "c13_homeostasis_hierro"
+   ],
+   "c13_estadios_deficiencia_hierro": [
+    "c13_homeostasis_hierro"
+   ],
+   "c13_sobrecarga_hierro": [
+    "c13_homeostasis_hierro"
+   ],
+   "c13_rda_hierro": [
+    "c13_absorcion_hierro"
+   ],
+   "c13_zinc": [
+    "c13_homeostasis_hierro"
+   ],
+   "c14_glucogeno_carbohidrato": [
+    "c14_sistema_atp_cp"
+   ],
+   "c14_carga_carbohidratos": [
+    "c14_glucogeno_carbohidrato"
+   ],
+   "c14_dieta_rendimiento": [
+    "c14_glucogeno_carbohidrato"
+   ],
+   "c14_hidratacion_hiponatremia": [
+    "c14_glucogeno_carbohidrato"
+   ],
+   "c14_ayudas_ergogenicas": [
+    "c14_sistema_atp_cp"
+   ],
+   "c15_folato_dtn": [
+    "c15_periodos_criticos"
+   ],
+   "c15_sindrome_alcoholico_fetal": [
+    "c15_periodos_criticos"
+   ],
+   "c15_diabetes_gestacional": [
+    "c15_ganancia_peso_gestacional"
+   ],
+   "c16_leche_materna": [
+    "c15_lactancia_materna"
+   ],
+   "c16_alimentacion_complementaria": [
+    "c16_leche_materna"
+   ],
+   "c16_necesidades_ninez": [
+    "c16_energia_lactante"
+   ],
+   "c16_plomo_hierro": [
+    "c16_necesidades_ninez"
+   ],
+   "c16_hierro_calcio_adolescencia": [
+    "c16_necesidades_ninez"
+   ],
+   "c16_lipidos_pediatricos": [
+    "c16_obesidad_infantil"
+   ],
+   "c17_eer_mayores": [
+    "c17_sarcopenia"
+   ],
+   "c18_estandares_riesgo_cc": [
+    "c18_aterosclerosis_inflamacion"
+   ],
+   "c18_sindrome_metabolico": [
+    "c18_estandares_riesgo_cc"
+   ],
+   "c18_estrategias_dieta_cc": [
+    "c18_estandares_riesgo_cc"
+   ],
+   "c18_dash_modificaciones_pa": [
+    "c18_estandares_riesgo_cc"
+   ],
+   "c18_diabetes_tipos_glucemia": [
+    "c18_sindrome_metabolico"
+   ],
+   "c18_dieta_diabetes": [
+    "c18_diabetes_tipos_glucemia",
+    "c18_estrategias_dieta_cc"
+   ]
+  }
+ }
+}
