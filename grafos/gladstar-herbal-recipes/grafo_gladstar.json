@@ -1,0 +1,3957 @@
+{
+ "meta": {
+  "title": "Herbal Recipes for Vibrant Health como grafo",
+  "subtitle": "Rosemary Gladstar (Storey, 2008; ed. 2015) · 152 recetas, 98 fichas de plantas y alertas de evidencia",
+  "itemLabel": "Receta o planta",
+  "itemLabelPlural": "Recetas y plantas",
+  "resourceLabel": "Recurso",
+  "resourceLabelPlural": "Recursos",
+  "searchHint": "Buscar: valeriana, insomnio, consuelda, Elderberry Syrup…"
+ },
+ "blocks": {
+  "fundamentos": {
+   "name": "Fundamentos y vida sana",
+   "color": "#6B8E4E"
+  },
+  "remedios": {
+   "name": "Nervios y remedios caseros",
+   "color": "#3F6FA0"
+  },
+  "belleza": {
+   "name": "Belleza natural",
+   "color": "#B5658A"
+  },
+  "etapas": {
+   "name": "Niños, mujeres, hombres y mayores",
+   "color": "#B0782E"
+  },
+  "referencia": {
+   "name": "Botica y técnicas",
+   "color": "#6B5B95"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Herbolaria eco-lógica",
+   "block": "fundamentos",
+   "summary": "La autora presenta el libro como guía práctica de herbolaria casera sostenible y propone que nuestra salud está ligada a la de las plantas y el planeta.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Medicina antigua para tiempos modernos",
+     "summary": "La autora defiende la herbolaria como sistema de curación eficaz, natural y barato, respaldado por milenios de experiencia, y critica la ciencia centrada en constituyentes aislados."
+    },
+    {
+     "num": "1.2",
+     "title": "Honrar a las plantas",
+     "summary": "Según la autora, el saber sobre plantas medicinales vino de una relación de escucha con ellas; afirma que pocas hierbas son tóxicas y que el riesgo aumenta con cápsulas y extractos estandarizados."
+    },
+    {
+     "num": "1.3",
+     "title": "Cultivar la sabiduría herbal hoy",
+     "summary": "El libro invita a reconocer a los niños con afinidad por las plantas y a llevarlos a la naturaleza para transmitir la tradición herbal."
+    },
+    {
+     "num": "1.4",
+     "title": "Replantar los campos",
+     "summary": "La autora alerta sobre la desaparición de plantas medicinales silvestres, presenta United Plant Savers y pide comprar hierbas cultivadas orgánicas y evitar especies en riesgo."
+    },
+    {
+     "num": "1.5",
+     "title": "Herbolaria para el futuro",
+     "summary": "La autora propone que quien usa plantas como medicina asume la responsabilidad de cuidarlas y reponerlas: una herbolaria eco-lógica."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Una receta para la vida",
+   "block": "fundamentos",
+   "summary": "Según la autora, la buena salud nace del autocuidado diario: ejercicio, sueño, buena comida, manejo del estrés y uso cotidiano de hierbas tónicas y superalimentos.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Vivir sano",
+     "summary": "El libro recomienda ejercicio diario, dieta de alimentos enteros, 7–8 horas de sueño, reducir el estrés y usar a diario hierbas nutritivas, tónicas y de longevidad.",
+     "items": [
+      "i_sueno",
+      "h_passionflower",
+      "h_cleavers",
+      "h_chickweed",
+      "h_red_clover",
+      "h_lemon_balm",
+      "h_dandelion",
+      "h_nettle",
+      "h_burdock",
+      "h_oats",
+      "h_ginkgo",
+      "h_hawthorn"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Superalimentos para el bienestar",
+     "summary": "El libro recomienda espirulina, algas, polen, linaza, shiitake, levadura nutricional, vitaminas B y antioxidantes; según la autora, el espino reduce angina, presión y colesterol.",
+     "items": [
+      "i_linaza",
+      "i_vitaminas_b",
+      "h_hawthorn",
+      "h_bilberry",
+      "h_cayenne_pepper",
+      "h_garlic",
+      "h_ginkgo",
+      "h_milk_thistle",
+      "h_nettle"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Construir energía y resistencia duraderas",
+     "summary": "Para el cansancio, el libro recomienda dormir bien, reducir el café (que según la autora agota las suprarrenales) y tomar hierbas tónicas y nervinas a diario.",
+     "items": [
+      "h_valerian",
+      "h_hops",
+      "h_skullcap",
+      "h_burdock",
+      "h_fo_ti",
+      "h_ginkgo",
+      "h_gotu_kola",
+      "h_licorice",
+      "h_lycium",
+      "h_nettle",
+      "h_oats",
+      "h_ginseng_siberian"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Mejorar la agudeza mental",
+     "summary": "El libro recomienda ashwagandha, ginkgo, ginseng y gotu kola en ciclos de varias semanas para la memoria; afirma que el ginkgo frena el deterioro en Alzheimer temprano.",
+     "items": [
+      "i_smart_drugs",
+      "h_ashwagandha",
+      "h_ginkgo",
+      "h_gotu_kola"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Recetas para la longevidad y el bienestar radiante",
+     "summary": "La autora propone usar hierbas de longevidad a diario como alimento (sopas, tés, miel, encurtidos) y advierte sobre químicos en hierbas importadas.",
+     "items": [
+      "r_7_herb_long_life_soup",
+      "r_nettle_spanakopita",
+      "r_seaweed_salad",
+      "r_zoom_balls",
+      "r_fire_cider_zest",
+      "r_longevity_tonic",
+      "r_longevity_chai",
+      "r_long_life_elixir",
+      "r_brain_tonic_tincture",
+      "r_longevity_liqueur",
+      "h_nettle",
+      "h_astragalus",
+      "h_ashwagandha",
+      "h_fo_ti",
+      "h_garlic",
+      "h_cayenne_pepper",
+      "h_cinnamon",
+      "h_ginger"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Cómo dominar el estrés y la ansiedad",
+   "block": "remedios",
+   "summary": "Capítulo sobre el sistema nervioso: remedios herbales para estrés, ansiedad, insomnio y depresión, y consejos de dieta, baños, masaje y ejercicio para fortalecerlo.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Comprender el sistema nervioso",
+     "summary": "La autora describe el sistema nervioso como enlace con el entorno y con la conciencia, y sostiene que la cirugía debe ser el último recurso."
+    },
+    {
+     "num": "3.2",
+     "title": "Tratar el sistema nervioso",
+     "summary": "Según la autora, las hierbas nutren y fortalecen el sistema nervioso a largo plazo como medicina preventiva, aunque son menos eficaces que los fármacos para el dolor agudo.",
+     "items": [
+      "h_chamomile"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "El botiquín herbal casero",
+     "summary": "El libro clasifica las hierbas nervinas en tónicos, sedantes, demulcentes y estimulantes suaves, y da ejemplos de cada grupo.",
+     "items": [
+      "h_oats",
+      "h_skullcap",
+      "h_chamomile",
+      "h_valerian",
+      "h_hops",
+      "h_lemon_balm",
+      "h_california_poppy",
+      "h_passionflower",
+      "h_st_johns_wort",
+      "h_lobelia",
+      "h_slippery_elm",
+      "h_ginkgo"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Fórmulas herbales para fortalecer el sistema nervioso",
+     "summary": "Según la autora, las fórmulas nervinas usadas con constancia y durante largo tiempo reconstruyen las conexiones nerviosas, junto con nutrición, ejercicio y cambios de estilo de vida.",
+     "items": [
+      "r_valerian_tea_blend",
+      "r_nerve_tonic_formula_1",
+      "r_nerve_tonic_formula_2",
+      "r_high_calcium_tea"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Esencias florales: los remedios más radiantes de la naturaleza",
+     "summary": "La autora recomienda las esencias florales de Bach, unas gotas bajo la lengua, para trauma, ansiedad y estrés, y afirma que no tienen efectos secundarios."
+    },
+    {
+     "num": "3.6",
+     "title": "Cómo mantener el equilibrio mental",
+     "summary": "El libro recomienda dieta alcalinizante y rica en calcio, evitar cafeína, azúcar y alcohol, baños herbales, masaje, ejercicio y un protocolo de valeriana y escutelaria para el insomnio.",
+     "items": [
+      "r_herbal_footbath",
+      "r_sleep_pillow",
+      "r_nerve_formula_for_insomnia",
+      "h_valerian",
+      "h_skullcap",
+      "h_lavender",
+      "h_hops",
+      "h_nettle",
+      "h_oats",
+      "h_chickweed",
+      "h_dandelion"
+     ]
+    },
+    {
+     "num": "3.7",
+     "title": "Reducir la ansiedad y los ataques de pánico",
+     "summary": "Para la ansiedad crónica el libro recomienda dieta estricta, tés nervinos diarios, tintura de valeriana cada hora y Rescue Remedy en las crisis de pánico, también en niños.",
+     "items": [
+      "r_melissa_tea_blend",
+      "r_california_poppy_blend",
+      "r_chamomile_tisane",
+      "h_california_poppy",
+      "h_hops",
+      "h_kava_kava",
+      "h_lemon_balm",
+      "h_oats",
+      "h_valerian"
+     ]
+    },
+    {
+     "num": "3.8",
+     "title": "Superar la depresión",
+     "summary": "La autora propone el hipérico como principal hierba para la depresión leve, junto con avena, melisa, lavanda, pasiflora, dieta, ejercicio, masaje y esencias florales.",
+     "items": [
+      "r_nerve_formula_for_depression",
+      "h_st_johns_wort",
+      "h_oats",
+      "h_lemon_balm",
+      "h_lavender",
+      "h_passionflower",
+      "h_valerian",
+      "h_ashwagandha",
+      "h_astragalus",
+      "h_licorice",
+      "h_borage"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Remedios caseros para dolencias cotidianas",
+   "block": "remedios",
+   "summary": "Remedios herbales caseros para dolencias comunes, del pie de atleta a la cistitis, con la regla de la autora: si tu abuela lo trataba en casa, probablemente tú también puedes.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Herbolaria frente a medicina alopática",
+     "summary": "Según la autora, hierbas y fármacos son complementarios; las hierbas previenen, tienen pocos efectos secundarios y apoyan tratamientos de cáncer o sida, pero conviene consultar si se toman medicamentos."
+    },
+    {
+     "num": "4.2",
+     "title": "Pie de atleta",
+     "summary": "Para el pie de atleta el libro recomienda mantener los pies secos y aireados, aplicar aceite esencial de árbol de té y hacer baños de pies con chaparral.",
+     "items": [
+      "r_antifungal_powder",
+      "r_antifungal_salve",
+      "h_chaparral"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Quemaduras",
+     "summary": "Para quemaduras leves el libro recomienda enfriar con agua helada o vinagre, aplicar miel con menta, aloe o pomada de hipérico, y tomar valeriana para el dolor.",
+     "items": [
+      "r_st_johns_wort_salve",
+      "h_peppermint",
+      "h_aloe_vera",
+      "h_valerian",
+      "h_slippery_elm",
+      "h_st_johns_wort"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Resfriados y gripes",
+     "summary": "Para resfriados y gripe el libro recomienda caldos con astrágalo y equinácea, ajo, cebolla, curry, tés de milenrama, menta y saúco o de jengibre, y tintura de equinácea frecuente.",
+     "items": [
+      "r_hair_raising_cider",
+      "h_astragalus",
+      "h_echinacea",
+      "h_garlic",
+      "h_cayenne_pepper",
+      "h_yarrow",
+      "h_peppermint",
+      "h_elder",
+      "h_ginger"
+     ]
+    },
+    {
+     "num": "4.5",
+     "title": "Conjuntivitis",
+     "summary": "Para la conjuntivitis el libro propone tintura de equinácea cada hora, té de manzanilla, lavanda y melisa, y tintura de valeriana para el picor.",
+     "items": [
+      "r_herbal_eyewash",
+      "h_echinacea",
+      "h_chamomile",
+      "h_lavender",
+      "h_lemon_balm",
+      "h_valerian"
+     ]
+    },
+    {
+     "num": "4.6",
+     "title": "Estreñimiento",
+     "summary": "Según la autora, las hierbas son el mejor tratamiento del estreñimiento; recomienda agua, ejercicio, evitar queso, pasta y pan, y psyllium con linaza a diario.",
+     "items": [
+      "r_yellow_dock_constipation_remedy",
+      "r_emergency_constipation_remedy"
+     ]
+    },
+    {
+     "num": "4.7",
+     "title": "Cortes y heridas",
+     "summary": "El libro recomienda lavar las heridas con hamamelis y árbol de té, detener el sangrado con bolsa de pastor, milenrama o telarañas limpias y aplicar pomada de hipérico.",
+     "items": [
+      "r_klosss_liniment",
+      "r_goldenseal_salve",
+      "h_witch_hazel",
+      "h_yarrow",
+      "h_st_johns_wort",
+      "h_lemon_balm",
+      "h_valerian",
+      "h_chamomile"
+     ]
+    },
+    {
+     "num": "4.8",
+     "title": "Diarrea",
+     "summary": "Para la diarrea la autora prefiere tintura de raíz de zarzamora cada 30 minutos, astringentes y hierbas mucilaginosas, e insiste en hidratarse bien, sobre todo los niños.",
+     "items": [
+      "h_blackberry",
+      "h_white_oak",
+      "h_witch_hazel",
+      "h_red_raspberry",
+      "h_marsh_mallow",
+      "h_licorice",
+      "h_slippery_elm",
+      "h_chaparral",
+      "h_goldenseal"
+     ]
+    },
+    {
+     "num": "4.9",
+     "title": "Dolor de oído",
+     "summary": "Para el dolor de oído el libro propone compresas calientes de cebolla o sal, equinácea, aceite de ajo y gordolobo, y gotas de alcohol con aceites esenciales.",
+     "items": [
+      "r_garlicmullein_flower_oil",
+      "h_echinacea",
+      "h_garlic",
+      "h_mullein",
+      "h_lavender"
+     ]
+    },
+    {
+     "num": "4.10",
+     "title": "Fiebre",
+     "summary": "Para fiebres leves el libro recomienda sudar con tés calientes, mucho líquido, equinácea, paños y sábanas frías y, en casos extremos, enemas de nébeda, sobre todo en niños.",
+     "items": [
+      "h_ginger",
+      "h_peppermint",
+      "h_elder",
+      "h_yarrow",
+      "h_echinacea",
+      "h_catnip",
+      "h_lavender"
+     ]
+    },
+    {
+     "num": "4.11",
+     "title": "Dolores de cabeza",
+     "summary": "El libro distingue cefaleas vasculares, tensionales y migrañas, y propone alimentos alcalinizantes, baños de lavanda, valeriana, niacinamida, vitaminas, cafeína o guaraná y matricaria preventiva.",
+     "items": [
+      "r_alkalizing_herb_blend_for_vascular_headaches",
+      "r_headache_tea",
+      "r_nerve_formula_for_headaches",
+      "r_skullcap_headache_blend",
+      "r_jethro_klosss_famous_antispasmodic_tincture",
+      "h_lavender",
+      "h_skullcap",
+      "h_feverfew",
+      "h_chamomile",
+      "h_valerian",
+      "h_lemon_balm"
+     ]
+    },
+    {
+     "num": "4.12",
+     "title": "Acidez estomacal",
+     "summary": "Para prevenir la acidez el libro recomienda nervinas digestivas como manzanilla, lúpulo y melisa, mucilaginosas como malvavisco y regaliz, amargos digestivos, menta y comer con calma.",
+     "items": [
+      "h_chamomile",
+      "h_hops",
+      "h_lemon_balm",
+      "h_marsh_mallow",
+      "h_licorice",
+      "h_slippery_elm",
+      "h_peppermint"
+     ]
+    },
+    {
+     "num": "4.13",
+     "title": "Herpes",
+     "summary": "Contra el herpes la autora recomienda cuidar el sistema nervioso, hongos medicinales, equinácea y lisina, evitar azúcar y arginina, y aplicar tintura de regaliz, su remedio favorito.",
+     "items": [
+      "h_oregon_grape",
+      "h_dandelion",
+      "h_yellow_dock",
+      "h_echinacea",
+      "h_astragalus",
+      "h_licorice",
+      "h_lemon_balm",
+      "h_st_johns_wort",
+      "h_calendula"
+     ]
+    },
+    {
+     "num": "4.14",
+     "title": "Indigestión y mala digestión",
+     "summary": "Para la mala digestión el libro sugiere comer despacio y con gratitud, combinar bien los alimentos, tés de menta o manzanilla, amargos, jengibre, enzimas de papaya y semillas carminativas.",
+     "items": [
+      "r_digestive_bitter_tincture",
+      "h_peppermint",
+      "h_chamomile",
+      "h_ginger",
+      "h_cayenne_pepper",
+      "h_anise",
+      "h_dill",
+      "h_fennel"
+     ]
+    },
+    {
+     "num": "4.15",
+     "title": "Laringitis y dolor de garganta",
+     "summary": "Para la laringitis y el dolor de garganta el libro recomienda descansar la voz, té y gárgaras de salvia, y aerosoles con equinácea, regaliz y olmo americano.",
+     "items": [
+      "r_triple_strength_throat_spray",
+      "r_throat_coat_balls",
+      "r_throat_soother_tea",
+      "r_sore_throat_gargle",
+      "r_cough_be_gone_sore_throat_syrup",
+      "h_sage",
+      "h_echinacea",
+      "h_licorice",
+      "h_slippery_elm"
+     ]
+    },
+    {
+     "num": "4.16",
+     "title": "Neuralgia y dolor",
+     "summary": "El libro propone alternativas herbales a los analgésicos: aceite y tintura de hipérico, valeriana, hierbas ricas en salicilatos, sedantes herbales en dosis frecuentes y amapola de California.",
+     "items": [
+      "r_st_johns_wort_oil",
+      "h_st_johns_wort",
+      "h_valerian",
+      "h_california_poppy"
+     ]
+    },
+    {
+     "num": "4.17",
+     "title": "Roble venenoso e hiedra venenosa",
+     "summary": "Para la dermatitis por hiedra o roble venenoso el libro recomienda pasta de arcilla, hierbas refrescantes, linimento de Kloss, equinácea, yogur, agua tibia y baños salinos.",
+     "items": [
+      "r_rosemarys_itch_relief_remedy",
+      "h_kava_kava",
+      "h_valerian",
+      "h_peppermint",
+      "h_cleavers",
+      "h_chickweed",
+      "h_burdock",
+      "h_dandelion",
+      "h_echinacea",
+      "h_witch_hazel"
+     ]
+    },
+    {
+     "num": "4.18",
+     "title": "Dolor de muelas",
+     "summary": "Ante el dolor de muelas el libro indica ir al dentista y, mientras tanto, usar cataplasma de hierbas, aceite esencial de clavo, árbol de té y dosis altas de valeriana.",
+     "items": [
+      "r_toothache_poultice",
+      "r_healing_mouthwash",
+      "h_valerian"
+     ]
+    },
+    {
+     "num": "4.19",
+     "title": "Infecciones urinarias y cistitis",
+     "summary": "Según el libro, la cistitis suele tratarse en casa con reposo, jugo de arándano, hierbas urinarias como la gayuba, equinácea, agua y calor; consultar si dura más de una semana.",
+     "items": [
+      "r_cystitis_remedy",
+      "h_uva_ursi",
+      "h_pipsissewa",
+      "h_buchu",
+      "h_cleavers",
+      "h_chickweed",
+      "h_nettle",
+      "h_dandelion",
+      "h_echinacea"
+     ]
+    },
+    {
+     "num": "4.20",
+     "title": "Verrugas",
+     "summary": "Para las verrugas el libro reúne remedios como cáscara de plátano, jugo de celidonia, tintura de nogal negro, equinácea y pau d'arco, aceites esenciales y linimento de Kloss.",
+     "items": [
+      "h_black_walnut",
+      "h_echinacea",
+      "h_cayenne_pepper"
+     ]
+    },
+    {
+     "num": "4.21",
+     "title": "Primeros auxilios al alcance de la mano",
+     "summary": "La autora presenta malezas medicinales y especias de cocina con sus usos, como ortiga, diente de león, ajo y jengibre, y explica cómo armar un botiquín herbal.",
+     "items": [
+      "h_burdock",
+      "h_chickweed",
+      "h_cleavers",
+      "h_dandelion",
+      "h_mullein",
+      "h_nettle",
+      "h_plantain",
+      "h_red_clover",
+      "h_st_johns_wort",
+      "h_yarrow",
+      "h_garlic",
+      "h_ginger"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Recetas para una belleza radiante",
+   "block": "belleza",
+   "summary": "Inspirado en la diosa Cosmeos, el capítulo presenta la belleza como armonía y salud, con recetas caseras de cuidado de piel, baños, cabello y henna hechas con hierbas y flores.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Aprender las lecciones de la diosa",
+     "summary": "La autora critica la belleza «a cualquier precio» y sostiene que la belleza ayuda a sanar, con baños, aceites y tratamientos compartidos."
+    },
+    {
+     "num": "5.2",
+     "title": "Prepara tus propias pociones de belleza",
+     "summary": "Explica cómo reunir utensilios e ingredientes cosméticos (aceites, aloe, bórax, arcillas, lanolina, agua de rosas, hamamelis) y para qué sirve cada uno, para poder sustituirlos.",
+     "items": [
+      "r_rose_water_method_1",
+      "r_rose_water_method_2",
+      "h_aloe_vera",
+      "h_witch_hazel"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Mis recetas favoritas para la piel",
+     "summary": "Presenta granos limpiadores, vapores faciales, astringentes y una crema facial casera, y aconseja desconfiar de los ingredientes «naturales» de los cosméticos comerciales.",
+     "items": [
+      "r_miracle_grains",
+      "r_moist_miracle_grains",
+      "r_steam_for_dry_to_normal_skin",
+      "r_steam_for_normal_to_oily_skin",
+      "r_the_queen_of_hungarys_water",
+      "r_bay_rum_aftershave_and_astringent",
+      "r_rosemarys_perfect_cream",
+      "h_chamomile",
+      "h_lavender"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Rutina habitual de cuidado de la piel",
+     "summary": "Propone limpiar, tonificar e hidratar a diario, una mascarilla de miel o arcilla semanal y el programa completo de cinco pasos cada mes."
+    },
+    {
+     "num": "5.5",
+     "title": "Programa de cinco pasos para una piel perfecta",
+     "summary": "Describe una sesión de 45 minutos: granos limpiadores, vapor de hierbas, mascarilla de arcilla o miel, astringente y masaje con crema, una o dos veces al mes."
+    },
+    {
+     "num": "5.6",
+     "title": "La belleza y el baño",
+     "summary": "Según la autora, los baños de hierbas son terapéuticos para dolor de cabeza, estrés y problemas de piel; cuenta un caso de herpes zóster que mejoró con avena, sal y lavanda.",
+     "items": [
+      "r_relaxing_bath_blend",
+      "r_stimulating_bath_blend",
+      "r_body_powder",
+      "r_bath_salts",
+      "r_salt_glow",
+      "h_oats",
+      "h_lavender"
+     ]
+    },
+    {
+     "num": "5.7",
+     "title": "Un cabello glorioso",
+     "summary": "El libro recomienda lavar el cabello solo una o dos veces por semana, usar champús suaves, enjuagues herbales o de vinagre, masaje del cuero cabelludo y cepillado frecuente.",
+     "items": [
+      "r_make_it_yourself_herbal_shampoo",
+      "r_goldie_locks_infusion",
+      "r_dark_of_the_night_infusion",
+      "r_desert_bloom_infusion",
+      "r_rapunzels_locks_infusion",
+      "r_vinegar_hair_rinse",
+      "r_herbal_hair_rinse",
+      "r_hair_conditioning_treatment"
+     ]
+    },
+    {
+     "num": "5.8",
+     "title": "Colorea tu vida con henna",
+     "summary": "Explica cómo elegir y mezclar tonos de henna según el color del cabello, cómo aplicarla y cuánto dejarla; la autora le atribuye además efectos relajantes y medicinales."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Para los niños",
+   "block": "etapas",
+   "summary": "La autora propone enseñar a los niños el amor por las plantas y ofrece preparaciones, dosis y remedios herbales para dolencias infantiles comunes, junto con productos caseros para el cuidado del bebé.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Las plantas y los niños",
+     "summary": "La autora recomienda acercar a los niños a la naturaleza y afirma que las hierbas ayudan en dolencias infantiles, desde raspones y resfriados hasta varicela y sarampión.",
+     "items": [
+      "h_nettle"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Usar las hierbas con sensatez",
+     "summary": "Indica cuándo usar hierbas y cuándo buscar atención médica urgente, y afirma que casi cualquier hierba segura en adultos lo es en niños ajustando la dosis.",
+     "items": [
+      "h_goldenseal",
+      "h_valerian",
+      "h_st_johns_wort"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Preparaciones de hierbas para niños",
+     "summary": "Propone dulces de hierbas, paletas heladas, tinturas en glicerina, jarabes y baños de hierbas para que los niños acepten los remedios.",
+     "items": [
+      "h_anise",
+      "h_cinnamon",
+      "h_fennel",
+      "h_ginger",
+      "h_hibiscus",
+      "h_licorice",
+      "h_marsh_mallow",
+      "h_stevia",
+      "h_calendula",
+      "h_chamomile",
+      "h_comfrey",
+      "h_lavender"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Cómo calcular las dosis para niños",
+     "summary": "Ofrece tablas de dosis por edad, las reglas de Young y de Cowling, y recomienda dar hierbas a lactantes a través de la leche materna."
+    },
+    {
+     "num": "6.5",
+     "title": "Remedios herbales para dolencias infantiles comunes",
+     "summary": "El libro da remedios para dentición, cólico, costra láctea, dermatitis del pañal, diarrea, estreñimiento, otitis, fiebre, varicela, sarampión, resfriados y picaduras.",
+     "items": [
+      "r_high_calcium_childrens_tea",
+      "r_slippery_elm_gruel",
+      "r_cradle_cap_tea",
+      "r_cradle_cap_oil",
+      "r_blackberry_root_tea",
+      "r_diarrhea_remedy_tea",
+      "r_tea_for_constipation",
+      "r_ear_infection_tincture",
+      "r_catnipelder_fever_reducing_tea",
+      "r_super_immunity_syrup",
+      "r_tea_for_chicken_pox_and_measles",
+      "r_valerianburdock_tincture_for_itching_and_skin_rash",
+      "r_disinfectant_powder",
+      "r_rescue_remedy_flower_essence_spritzer",
+      "r_elderberry_syrup",
+      "r_formula_for_lung_and_chest_congestion",
+      "r_gingerechinacea_cold_syrup",
+      "r_decongesting_herbal_steam",
+      "r_respiratory_tonic_tea",
+      "r_high_c_tonic_tea",
+      "r_healing_clay",
+      "h_catnip",
+      "h_rose_hips",
+      "h_anise",
+      "h_dill",
+      "h_fennel",
+      "h_slippery_elm",
+      "h_garlic",
+      "h_mullein",
+      "h_echinacea"
+     ]
+    },
+    {
+     "num": "6.6",
+     "title": "Recetas de productos para el cuidado del bebé",
+     "summary": "La autora propone preparar en casa productos naturales para el bebé, más puros y baratos que los comerciales.",
+     "items": [
+      "r_babys_bath_herbs",
+      "r_baby_powder",
+      "r_bottoms_up_salve",
+      "r_baby_oil"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Para mujeres",
+   "block": "etapas",
+   "summary": "Capítulo sobre salud femenina centrado en la prevención: hábitos de vida, plantas tónicas y protocolos para mamas, útero, menstruación, infecciones vaginales y menopausia.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Mantenerse sana",
+     "summary": "Según la autora, dieta natural y alcalinizante, apoyo al hígado, descanso y plantas tónicas uterinas, emenagogas y reguladoras hormonales sostienen la salud femenina.",
+     "items": [
+      "r_herbal_iron_syrup",
+      "r_liver_tonic_formula_1",
+      "r_liver_tonic_formula_2",
+      "r_womens_tonic_tea",
+      "r_womens_libertea",
+      "h_dong_quai",
+      "h_chaste_tree",
+      "h_nettle",
+      "h_red_raspberry",
+      "h_dandelion",
+      "h_black_cohosh",
+      "h_wild_yam",
+      "h_milk_thistle",
+      "h_motherwort",
+      "h_crampbark",
+      "h_yarrow"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "Salud de las mamas",
+     "summary": "El libro recomienda autoexamen semanal, masaje mamario diario con aceites herbales y compresas de aceite de ricino para mantener el flujo linfático y tratar quistes fibroquísticos.",
+     "items": [
+      "r_breast_health_tea",
+      "r_lymph_congestion_tea",
+      "r_love_my_breasts_massage_oil",
+      "r_yances_poke_oil_plus",
+      "h_calendula",
+      "h_red_clover",
+      "h_cleavers",
+      "h_mullein",
+      "h_comfrey",
+      "h_lavender",
+      "h_rosemary"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Salud del útero",
+     "summary": "Según la autora, masaje uterino, cataplasmas calientes de jengibre, baños de asiento alternos y ejercicios de Kegel devuelven tono y circulación a la pelvis.",
+     "items": [
+      "r_womb_tea",
+      "r_womb_belly_rub",
+      "h_ginger",
+      "h_comfrey",
+      "h_chamomile",
+      "h_nettle",
+      "h_white_oak",
+      "h_oats"
+     ]
+    },
+    {
+     "num": "7.4",
+     "title": "Menstruación saludable",
+     "summary": "El libro atribuye los cólicos a la baja de calcio y al hígado; recomienda calcio, tónicos hepáticos y fórmulas antiespasmódicas, y algas y hierro para el sangrado abundante.",
+     "items": [
+      "r_liver_tonic_formula_for_menstruation",
+      "r_high_calcium_tea_for_menstruation",
+      "r_cramp_relief_formula",
+      "r_womens_reproductive_tonic",
+      "r_balancing_blend",
+      "h_dandelion",
+      "h_burdock",
+      "h_red_clover",
+      "h_chaste_tree",
+      "h_licorice",
+      "h_crampbark",
+      "h_yarrow",
+      "h_red_raspberry",
+      "h_dong_quai"
+     ]
+    },
+    {
+     "num": "7.5",
+     "title": "Infecciones vaginales por hongos e inespecíficas",
+     "summary": "Según la autora, las infecciones vaginales se curan restaurando flora y pH con dieta sin azúcar, yogur, tés, cápsulas, óvulos de ajo, lavados vaginales y polvos secantes.",
+     "items": [
+      "r_yoni_powder",
+      "r_anti_yeast_tea",
+      "r_anti_yeast_capsules",
+      "r_anti_yeast_douche",
+      "h_garlic",
+      "h_goldenseal",
+      "h_black_walnut",
+      "h_myrrh",
+      "h_mullein",
+      "h_sage",
+      "h_chaparral",
+      "h_echinacea",
+      "h_marsh_mallow"
+     ]
+    },
+    {
+     "num": "7.6",
+     "title": "Menopausia saludable",
+     "summary": "El libro presenta la menopausia como etapa natural y propone suplementos, tónicos suprarrenales, ginseng y salvia para sofocos, remedios para sequedad vaginal y medidas contra la osteoporosis.",
+     "items": [
+      "r_adrenal_tonic_tea",
+      "r_adrenal_tonic_capsules",
+      "r_heat_relief",
+      "r_hot_flash_relief_tincture",
+      "h_dong_quai",
+      "h_sage",
+      "h_black_cohosh",
+      "h_licorice",
+      "h_wild_yam",
+      "h_chaste_tree",
+      "h_comfrey",
+      "h_calendula",
+      "h_st_johns_wort",
+      "h_slippery_elm",
+      "h_aloe_vera"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Para hombres",
+   "block": "etapas",
+   "summary": "Capítulo sobre salud masculina: tónicos revitalizantes, baños, próstata, impotencia e infertilidad, infecciones genitourinarias, hernia inguinal, corazón e hipertensión.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Herbolaria para hombres",
+     "summary": "La autora reflexiona sobre por qué los hombres buscan poco la herbolaria y propone combinar medicina alopática y plantas preventivas como palma enana americana y ginseng.",
+     "items": [
+      "h_saw_palmetto",
+      "h_st_johns_wort",
+      "h_nettle"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Fórmulas revitalizantes para hombres",
+     "summary": "El libro reúne tónicos masculinos (jarabes, elixires, vino, pastas, tés y chai) con ginseng, damiana y fo-ti, y alimentos ricos en zinc para la próstata.",
+     "items": [
+      "r_fertility_potency_syrup",
+      "r_mens_long_life_elixir",
+      "r_energy_balls",
+      "r_once_a_day_male_tonic",
+      "r_good_life_wine",
+      "r_ginseng_tonic_tea",
+      "r_male_toner_tea",
+      "r_chai_hombre",
+      "r_damiana_chocolate_love_liqueur",
+      "h_damiana",
+      "h_fo_ti",
+      "h_ashwagandha",
+      "h_muira_puama",
+      "h_saw_palmetto",
+      "h_astragalus",
+      "h_licorice",
+      "h_wild_yam",
+      "h_ginseng_siberian",
+      "h_pumpkin"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Mezclas para el baño",
+     "summary": "La autora propone tres mezclas de baño para hombres, en bolsa de tela o como té concentrado, para estimular, relajar o aliviar músculos adoloridos.",
+     "items": [
+      "r_refreshing_stimulating_bath_blend",
+      "r_deep_relaxation_bath",
+      "r_bath_blend_for_sore_muscles",
+      "h_peppermint",
+      "h_rosemary",
+      "h_chamomile",
+      "h_sage",
+      "h_hops",
+      "h_lavender",
+      "h_eucalyptus"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Buena salud para la próstata",
+     "summary": "El libro recomienda dieta, semillas de calabaza y sandía, palma enana americana, tés, cataplasmas y compresas alternas para prostatitis e hiperplasia, y plantas y hongos anticáncer para el cáncer prostático.",
+     "items": [
+      "r_prostate_formula_1",
+      "r_prostate_formula_2",
+      "h_saw_palmetto",
+      "h_pygeum",
+      "h_pumpkin",
+      "h_comfrey",
+      "h_slippery_elm",
+      "h_corn_silk",
+      "h_uva_ursi"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Desequilibrios glandulares",
+     "summary": "Para falta de energía, depresión e impotencia, la autora recomienda tónicos masculinos diarios, semillas de calabaza, ginseng y duchas frías en lugar de estimulantes.",
+     "items": [
+      "h_pumpkin"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Impotencia e infertilidad",
+     "summary": "La autora prefiere tratar las causas con plantas, ejercicio y dieta; recomienda ginseng siberiano, muira puama, palma enana americana, vitamina E, zinc y polen.",
+     "items": [
+      "h_ginseng_siberian",
+      "h_muira_puama",
+      "h_saw_palmetto",
+      "h_astragalus",
+      "h_ashwagandha",
+      "h_nettle",
+      "h_oats",
+      "h_dandelion",
+      "h_sarsaparilla",
+      "h_licorice",
+      "h_wild_yam",
+      "h_fo_ti"
+     ]
+    },
+    {
+     "num": "8.7",
+     "title": "Infecciones genitourinarias",
+     "summary": "El libro propone polvos, baños y lavados herbales para infecciones del prepucio (también en niños), arándano rojo y plantas urinarias para infecciones urinarias, y Kegel.",
+     "items": [
+      "h_slippery_elm",
+      "h_marsh_mallow",
+      "h_goldenseal",
+      "h_comfrey",
+      "h_witch_hazel",
+      "h_white_oak",
+      "h_chaparral",
+      "h_echinacea",
+      "h_myrrh",
+      "h_uva_ursi",
+      "h_buchu"
+     ]
+    },
+    {
+     "num": "8.8",
+     "title": "Tratamiento de la hernia inguinal",
+     "summary": "Según la autora, la hernia se trata con cataplasmas de arcilla, evitar esfuerzos y estreñimiento, vitamina C y un té con consuelda pese a la controversia.",
+     "items": [
+      "r_oatstraw_and_horsetail_hernia_remedy",
+      "h_yellow_dock",
+      "h_licorice",
+      "h_senna",
+      "h_cascara_sagrada",
+      "h_fennel",
+      "h_comfrey"
+     ]
+    },
+    {
+     "num": "8.9",
+     "title": "Salud del corazón",
+     "summary": "El libro destaca el espino blanco como imprescindible y seguro con fármacos cardíacos, además de agripalma, ajo, valeriana, cayena, milenrama, coenzima Q10, dieta y ejercicio.",
+     "items": [
+      "h_hawthorn",
+      "h_motherwort",
+      "h_garlic",
+      "h_valerian",
+      "h_cayenne_pepper",
+      "h_yarrow"
+     ]
+    },
+    {
+     "num": "8.10",
+     "title": "Hipertensión",
+     "summary": "Según la autora, la hipertensión se trata ante todo con cambios de vida; sugiere coenzima Q10, ácidos grasos, ajo, espino, diente de león y muérdago solo bajo supervisión.",
+     "items": [
+      "h_garlic",
+      "h_hawthorn",
+      "h_motherwort",
+      "h_ginseng_siberian",
+      "h_yarrow",
+      "h_dandelion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Para las personas mayores",
+   "block": "etapas",
+   "summary": "La autora honra a los mayores del herbolarismo y propone hierbas, dieta, ejercicio y suplementos para la vista, la memoria, el corazón, la energía, las várices, las úlceras y la audición en la vejez.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Recordar a nuestros mayores",
+     "summary": "La autora reivindica el papel de los mayores en la comunidad y critica que la cultura moderna los aparte y trate el envejecimiento como enfermedad."
+    },
+    {
+     "num": "9.2",
+     "title": "Los años de la sabiduría",
+     "summary": "Según la autora, la vejez es tiempo de introspección y legado; critica el impacto ambiental y los daños de los fármacos y presenta la herbolaria como medicina ecológica."
+    },
+    {
+     "num": "9.3",
+     "title": "Usar las hierbas en las personas mayores",
+     "summary": "El libro recomienda en mayores dosis menores (la mitad de la dosis adulta después de los 60), precaución con fármacos y ofrece una tabla de hierbas por objetivo de salud.",
+     "items": [
+      "h_ginkgo",
+      "h_gotu_kola",
+      "h_hawthorn",
+      "h_garlic",
+      "h_valerian",
+      "h_chamomile",
+      "h_echinacea",
+      "h_ginseng_siberian",
+      "h_bilberry",
+      "h_st_johns_wort",
+      "h_licorice",
+      "h_comfrey"
+     ]
+    },
+    {
+     "num": "9.4",
+     "title": "Ojos que envejecen, vista que se deteriora",
+     "summary": "El libro recomienda descanso, ejercicios oculares, bayas, vitamina A, betacaroteno y zinc, y para cataratas, degeneración macular y glaucoma ginkgo, espino, jaborandi y coleus.",
+     "items": [
+      "r_vegetable_juice_for_the_eyes",
+      "r_berry_good_tea",
+      "r_good_vision_no_cook_herbal_jam",
+      "h_chamomile",
+      "h_bilberry",
+      "h_ginkgo",
+      "h_hawthorn",
+      "h_chickweed"
+     ]
+    },
+    {
+     "num": "9.5",
+     "title": "Mantener la capacidad mental y la memoria",
+     "summary": "Según la autora, la pérdida de memoria se debe sobre todo a estrés y mala nutrición; para prevenir el Alzheimer recomienda evitar aluminio, y tomar ginkgo, acetil-L-carnitina, vitaminas B y omega-3.",
+     "items": [
+      "r_brain_balls",
+      "r_brainpower_seasoning_sprinkle",
+      "r_brain_alert_formula",
+      "h_ginkgo",
+      "h_bilberry",
+      "h_garlic",
+      "h_hawthorn",
+      "h_milk_thistle",
+      "h_ginger",
+      "h_cayenne_pepper",
+      "h_gotu_kola"
+     ]
+    },
+    {
+     "num": "9.6",
+     "title": "Salud del corazón",
+     "summary": "El libro propone ejercicio, dieta cardiosaludable, hierbas tónicas como espino, ajo y agripalma, y suplementos como vitamina E y coenzima Q10 para prevenir enfermedades cardíacas.",
+     "items": [
+      "r_hawthorn_berry_conserve",
+      "h_hawthorn",
+      "h_garlic",
+      "h_cayenne_pepper",
+      "h_ginkgo",
+      "h_motherwort",
+      "h_oats",
+      "h_passionflower",
+      "h_ginseng_siberian",
+      "h_valerian",
+      "h_yarrow"
+     ]
+    },
+    {
+     "num": "9.7",
+     "title": "Energía para las personas mayores",
+     "summary": "El libro propone un programa de cinco pasos (sueño, ejercicio, digestión, suprarrenales con té Pick-Me-Up y bebidas verdes) para recuperar la energía en 4 a 8 semanas.",
+     "items": [
+      "r_elder_energy_balls",
+      "r_energy_shake",
+      "r_quick_energy_rush",
+      "r_pick_me_up_tea",
+      "h_licorice"
+     ]
+    },
+    {
+     "num": "9.8",
+     "title": "Tratar las várices",
+     "summary": "El libro aconseja evitar estar mucho de pie, elevar las piernas, tomar vitamina C y bioflavonoides, y usar hierbas circulatorias como pimienta de cayena, saúco, jengibre, ginkgo y espino.",
+     "items": [
+      "r_healing_liniment_for_varicose_veins",
+      "r_healing_tea_for_healthy_veins",
+      "r_vitamin_c_poultice",
+      "h_rose_hips",
+      "h_bilberry",
+      "h_cayenne_pepper",
+      "h_elder",
+      "h_ginger",
+      "h_ginkgo",
+      "h_hawthorn"
+     ]
+    },
+    {
+     "num": "9.9",
+     "title": "Prevenir y tratar las úlceras",
+     "summary": "Según la autora, las úlceras se deben al estrés, la mala dieta y Helicobacter pylori; recomienda el jugo fresco de repollo, con ayuno, como remedio favorito.",
+     "items": [
+      "r_grandma_marys_cabbage_juice_cocktail",
+      "r_stress_relief_tea",
+      "r_ulcer_relief_tea"
+     ]
+    },
+    {
+     "num": "9.10",
+     "title": "Pérdida auditiva y tinnitus",
+     "summary": "Según la autora, la pérdida auditiva y el tinnitus se deben a mala circulación, ruido y alergias; recomienda ginkgo, dieta de eliminación y rábano picante, jengibre y cayena.",
+     "items": [
+      "r_circulatory_tea_for_ears_and_tinnitus",
+      "r_horseradish_sauce_for_sinus_congestion_and_tinnitus",
+      "h_ginkgo",
+      "h_ginger",
+      "h_cayenne_pepper"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Apéndice I. La botica herbal de la A a la Z",
+   "block": "referencia",
+   "summary": "Fichas de 98 hierbas de uso tradicional en remedios caseros, con partes usadas, beneficios, usos y precauciones. La autora aconseja probar cada hierba como té y consultarla en al menos tres libros.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Hierbas A–B",
+     "summary": "13 fichas: Aloe vera, Anís, Alcachofa, Ashwagandha, Astrágalo, Arándano europeo (mirtilo)….",
+     "items": [
+      "h_aloe_vera",
+      "h_anise",
+      "h_artichoke",
+      "h_ashwagandha",
+      "h_astragalus",
+      "h_bilberry",
+      "h_blackberry",
+      "h_black_cohosh",
+      "h_black_walnut",
+      "h_blue_cohosh",
+      "h_borage",
+      "h_buchu",
+      "h_burdock"
+     ]
+    },
+    {
+     "num": "10.2",
+     "title": "Hierbas C",
+     "summary": "15 fichas: Caléndula, Amapola de California, Cáscara sagrada, Nébeda (hierba gatera), Pimienta de cayena, Manzanilla….",
+     "items": [
+      "h_calendula",
+      "h_california_poppy",
+      "h_cascara_sagrada",
+      "h_catnip",
+      "h_cayenne_pepper",
+      "h_chamomile",
+      "h_chaparral",
+      "h_chaste_tree",
+      "h_chickweed",
+      "h_cinnamon",
+      "h_cleavers",
+      "h_coltsfoot",
+      "h_comfrey",
+      "h_corn_silk",
+      "h_crampbark"
+     ]
+    },
+    {
+     "num": "10.3",
+     "title": "Hierbas D–F",
+     "summary": "12 fichas: Damiana, Diente de león, Eneldo, Dong quai (angélica china), Equinácea, Saúco….",
+     "items": [
+      "h_damiana",
+      "h_dandelion",
+      "h_dill",
+      "h_dong_quai",
+      "h_echinacea",
+      "h_elder",
+      "h_elecampane",
+      "h_eucalyptus",
+      "h_fennel",
+      "h_fenugreek",
+      "h_feverfew",
+      "h_fo_ti"
+     ]
+    },
+    {
+     "num": "10.4",
+     "title": "Hierbas G",
+     "summary": "9 fichas: Ajo, Genciana, Jengibre, Ginkgo, Ginseng americano, Ginseng asiático….",
+     "items": [
+      "h_garlic",
+      "h_gentian",
+      "h_ginger",
+      "h_ginkgo",
+      "h_ginseng_american",
+      "h_ginseng_asian",
+      "h_ginseng_siberian",
+      "h_goldenseal",
+      "h_gotu_kola"
+     ]
+    },
+    {
+     "num": "10.5",
+     "title": "Hierbas H–L",
+     "summary": "9 fichas: Espino blanco, Hibisco (flor de Jamaica), Lúpulo, Kava, Lavanda, Toronjil (melisa)….",
+     "items": [
+      "h_hawthorn",
+      "h_hibiscus",
+      "h_hops",
+      "h_kava_kava",
+      "h_lavender",
+      "h_lemon_balm",
+      "h_licorice",
+      "h_lobelia",
+      "h_lycium"
+     ]
+    },
+    {
+     "num": "10.6",
+     "title": "Hierbas M–O",
+     "summary": "9 fichas: Malvavisco, Cardo mariano, Agripalma, Muira puama, Gordolobo, Mirra….",
+     "items": [
+      "h_marsh_mallow",
+      "h_milk_thistle",
+      "h_motherwort",
+      "h_muira_puama",
+      "h_mullein",
+      "h_myrrh",
+      "h_nettle",
+      "h_oats",
+      "h_oregon_grape"
+     ]
+    },
+    {
+     "num": "10.7",
+     "title": "Hierbas P–R",
+     "summary": "10 fichas: Pasiflora (maracuyá), Menta piperita (hierbabuena), Pipsissewa (Chimaphila), Llantén, Calabaza (semillas), Pygeum (ciruelo africano)….",
+     "items": [
+      "h_passionflower",
+      "h_peppermint",
+      "h_pipsissewa",
+      "h_plantain",
+      "h_pumpkin",
+      "h_pygeum",
+      "h_red_clover",
+      "h_red_raspberry",
+      "h_rose_hips",
+      "h_rosemary"
+     ]
+    },
+    {
+     "num": "10.8",
+     "title": "Hierbas S",
+     "summary": "11 fichas: Salvia, Hipérico (hierba de San Juan), Zarzaparrilla, Sasafrás, Palma enana (saw palmetto), Schisandra….",
+     "items": [
+      "h_sage",
+      "h_st_johns_wort",
+      "h_sarsaparilla",
+      "h_sassafras",
+      "h_saw_palmetto",
+      "h_schisandra",
+      "h_senna",
+      "h_skullcap",
+      "h_slippery_elm",
+      "h_spearmint",
+      "h_stevia"
+     ]
+    },
+    {
+     "num": "10.9",
+     "title": "Hierbas T–Z",
+     "summary": "10 fichas: Usnea (barba de viejo), Gayuba (uva ursi), Valeriana, Roble blanco, Cerezo silvestre (Prunus serotina), Ñame silvestre (Dioscorea villosa)….",
+     "items": [
+      "h_usnea",
+      "h_uva_ursi",
+      "h_valerian",
+      "h_white_oak",
+      "h_wild_cherry",
+      "h_wild_yam",
+      "h_witch_hazel",
+      "h_yarrow",
+      "h_yellow_dock",
+      "h_yohimbe"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Apéndice II. El arte de preparar remedios",
+   "block": "referencia",
+   "summary": "Guía práctica para comprar, guardar y preparar hierbas: tés, jarabes, dulces, aceites, ungüentos, tinturas, linimentos, polvos, cápsulas y baños, con pautas generales de dosis.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Comprar y guardar hierbas",
+     "summary": "El libro recomienda comprar hierbas orgánicas y de origen ético, juzgar su calidad por color, olor y sabor, cultivarlas y guardarlas en frascos de vidrio al abrigo de la luz."
+    },
+    {
+     "num": "11.2",
+     "title": "El laboratorio en la cocina",
+     "summary": "La autora enumera utensilios útiles, desaconseja ollas de aluminio por considerarlo tóxico y anima a experimentar entendiendo la función de cada ingrediente."
+    },
+    {
+     "num": "11.3",
+     "title": "El método de medida del herbolario tradicional",
+     "summary": "Explica la medida por \"partes\": cualquier unidad sirve siempre que se use la misma en toda la receta."
+    },
+    {
+     "num": "11.4",
+     "title": "Cómo determinar la dosis",
+     "summary": "El libro ofrece dosis adultas orientativas para problemas crónicos y agudos (tés, tinturas, cápsulas) y aconseja usar la dosis mínima eficaz."
+    },
+    {
+     "num": "11.5",
+     "title": "Tés de hierbas",
+     "summary": "Explica cómo preparar infusiones (hojas y flores) y decocciones (raíces y cortezas), tés solares y lunares, y cómo conservarlos 3 a 4 días en la nevera."
+    },
+    {
+     "num": "11.6",
+     "title": "Jarabes",
+     "summary": "Explica cómo hacer jarabes reduciendo un té concentrado y mezclándolo con miel u otro endulzante, sin cocinar la miel; se conservan semanas en refrigeración."
+    },
+    {
+     "num": "11.7",
+     "title": "Dulces de hierbas",
+     "summary": "Explica cómo hacer bolitas con frutos secos o mantequilla de nueces, miel y hierbas en polvo; la autora cuestiona la recomendación de no dar miel cruda a menores de un año."
+    },
+    {
+     "num": "11.8",
+     "title": "Aceites infusionados",
+     "summary": "Explica cómo hacer aceites de hierbas por infusión solar o al baño María, preferiblemente con aceite de oliva, y cómo evitar el moho."
+    },
+    {
+     "num": "11.9",
+     "title": "Pomadas y ungüentos",
+     "summary": "Explica cómo hacer ungüentos añadiendo 1/4 de taza de cera de abejas por cada taza de aceite herbal."
+    },
+    {
+     "num": "11.10",
+     "title": "Tinturas",
+     "summary": "Explica cómo hacer tinturas por maceración de 4 a 6 semanas en alcohol de 40 a 50 %, glicerina vegetal o vinagre de manzana, estos últimos preferidos para niños."
+    },
+    {
+     "num": "11.11",
+     "title": "Linimentos de hierbas",
+     "summary": "Los linimentos se hacen como las tinturas pero con alcohol de fricción o hamamelis, solo para uso externo."
+    },
+    {
+     "num": "11.12",
+     "title": "Hierbas en polvo",
+     "summary": "Explica cómo moler y guardar hierbas en polvo y usarlas en comidas, bebidas o pastas con miel, útiles para dar hierbas amargas a los niños."
+    },
+    {
+     "num": "11.13",
+     "title": "Cápsulas y píldoras de hierbas",
+     "summary": "Explica cómo elegir cápsulas comerciales de calidad, llenar cápsulas tamaño 00 y hacer píldoras caseras con polvo de hierbas, miel y algarroba."
+    },
+    {
+     "num": "11.14",
+     "title": "Baños de hierbas",
+     "summary": "Explica cómo preparar baños, maniluvios y pediluvios con 90 a 120 g de hierbas, el efecto de la temperatura del agua y la cautela con aceites esenciales.",
+     "items": [
+      "h_lavender"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "h_aloe_vera": {
+   "title": "Aloe vera (Aloe vera)",
+   "summary": "Hojas frescas, gel y resina. El libro lo usa por fuera para quemaduras (incluso por radiación), heridas, escaras y acné, y por dentro, como jugo preparado, como laxante y para problemas de piel.",
+   "formula": "Precaución del libro: Uso interno con cautela y a dosis recomendadas: puede causar cólicos y diarrea. Evitarlo por vía interna en lactancia y embarazo. No aplicarlo sobre infecciones por estafilococo o impétigo.",
+   "caution": "El jugo o extracto de hoja entera de aloe con látex causó tumores intestinales en ratas. La IARC lo clasifica como posible carcinógeno (2B) y la FDA lo retiró de los laxantes de venta libre en 2002. Hay casos de hepatitis. El gel de uso externo es otro producto. No hay estudios de que el aloe «encierre» o empeore el estafilococo: una infección de piel necesita valoración. No hay beneficio demostrado en el VIH. En quemaduras, no use hielo: enfríe con agua corriente fresca unos 20 minutos. No tome bentonita: la FDA halló plomo en estos productos. (NTP; IARC 2016; FDA 2002; FDA 2016; Cruz Roja 2019; ERC 2021)"
+  },
+  "h_anise": {
+   "title": "Anís (Pimpinella anisum)",
+   "summary": "Semillas y hojas. Según el libro, es carminativo y digestivo cálido; se usa en té para el cólico y otros problemas digestivos, y para mejorar el sabor de otras hierbas."
+  },
+  "h_artichoke": {
+   "title": "Alcachofa (Cynara scolymus)",
+   "summary": "Sobre todo las hojas grandes. El libro la describe como amargo que protege y estimula el hígado y la vesícula, indicada para digestión lenta, y como alimento que ayuda a bajar el azúcar en diabéticos."
+  },
+  "h_ashwagandha": {
+   "title": "Ashwagandha (Withania somnifera)",
+   "summary": "Raíz. Adaptógeno ayurvédico, el «ginseng indio»: el libro lo propone para baja energía, debilidad, estrés, ansiedad, memoria y energía sexual, en té, leche, tintura o cápsulas.",
+   "caution": "La ashwagandha puede causar hepatitis colestásica con ictericia y prurito, por lo general tras 2–12 semanas de uso. Dinamarca la prohibió en complementos alimenticios y Países Bajos desaconseja su uso. Francia la desaconseja en el embarazo, la lactancia, los menores de 18 años, la enfermedad tiroidea, hepática o cardíaca y con sedantes. Si aparece ictericia u orina oscura, suspéndala y consulte. (Björnsson 2020; LiverTox; ANSES 2024)"
+  },
+  "h_astragalus": {
+   "title": "Astrágalo (Astragalus membranaceus)",
+   "summary": "Raíz. El libro lo considera tónico inmunitario y energizante para infecciones crónicas, candida, Epstein-Barr y diabetes, y menciona estudios en pacientes con cáncer en quimio o radioterapia; en té, sopa o cápsulas."
+  },
+  "h_bilberry": {
+   "title": "Arándano europeo (mirtilo) (Vaccinium myrtillus)",
+   "summary": "Hojas y bayas. Según el libro, previene y trata problemas oculares (degeneración macular, retinopatía diabética), baja el azúcar en sangre y sirve para infecciones urinarias, várices y hemorroides."
+  },
+  "h_blackberry": {
+   "title": "Zarzamora (Rubus spp.)",
+   "summary": "Fruto, hojas y raíz. El libro usa la hoja (suave, apta para niños) y sobre todo la raíz en tintura contra la diarrea y la disentería, incluida la del viajero."
+  },
+  "h_black_cohosh": {
+   "title": "Cohosh negro (Cimifuga racemosa)",
+   "summary": "Rizoma y raíz. El libro le atribuye acción similar al estrógeno para equilibrar hormonas en la menopausia, traer la menstruación retrasada, preparar el útero en la última semana de embarazo, y aliviar dolor y espasmos.",
+   "formula": "Precaución del libro: No usarlo en el embarazo salvo para preparar el parto, y solo bajo supervisión de un profesional holístico calificado.",
+   "caution": "El cohosh negro es una causa establecida de daño hepático, con más de 50 casos, y lleva advertencia en la etiqueta. Suspéndalo y consulte ante ictericia, orina oscura o cansancio intenso, sobre todo si toma otros fármacos que afectan al hígado. No lo tome a demanda sin límite. Su seguridad en el embarazo y la lactancia no está establecida, y no hay ensayos de que prepare el útero o induzca el parto. Ante un retraso menstrual, descarte un embarazo. En los sofocos la evidencia es mixta: Cochrane no halló beneficio frente a placebo. (LiverTox; USP 2008; Cochrane 2012; Dugoua 2006)"
+  },
+  "h_black_walnut": {
+   "title": "Nogal negro (Juglans nigra)",
+   "summary": "Cáscara verde de la nuez. El libro la usa por fuera para pie de atleta y hongos, y por dentro en tintura o cápsulas para parásitos intestinales, giardia y candida, por ciclos de 3–4 semanas.",
+   "formula": "Precaución del libro: No para uso prolongado; vigilar dosis y frecuencia (máx. 2 goteros de tintura 3–4 veces al día o 2 cápsulas 3 veces al día durante 3–4 semanas). Mancha la piel.",
+   "caution": "La tintura antiverrugas lleva pau d'arco, que puede causar vómitos y sangrado e interactúa con anticoagulantes: no la tome de forma prolongada. La celidonia por vía oral daña el hígado; úsela solo sobre la verruga. El aceite de tuya puede causar convulsiones: lejos de niños y no en el embarazo. (EMA 2011; Stafstrom 2007)"
+  },
+  "h_blue_cohosh": {
+   "title": "Cohosh azul (Caulophyllum thalictroides)",
+   "summary": "Raíz y rizoma. Estimulante uterino y emenagogo usado tradicionalmente al final del embarazo para facilitar el parto; el libro también lo propone para cólicos menstruales.",
+   "formula": "Precaución del libro: Usarlo solo bajo supervisión de un herbolario experto; no usarlo en el embarazo por ser estimulante uterino; las bayas son venenosas. La autora discute los estudios que lo asocian con daño cardíaco.",
+   "caution": "No use cohosh azul en el embarazo. Tomado cerca del parto se ha asociado a infarto, insuficiencia cardíaca e ictus en recién nacidos. Contiene alcaloides vasoconstrictores y teratógenos en estudios de laboratorio. No hay ensayos que demuestren que facilite o induzca el parto, y no debe usarse para ello sin supervisión obstétrica. (Jones 1998; Finkel 2004; Dugoua 2008)"
+  },
+  "h_borage": {
+   "title": "Borraja (Borago officinalis)",
+   "summary": "Flores y hojas, mejor frescas. El libro la recomienda en té o esencia floral para la ansiedad, el estrés y para aliviar la depresión."
+  },
+  "h_buchu": {
+   "title": "Buchu (Barosma betulina)",
+   "summary": "Hojas. Antiséptico y diurético urinario que el libro propone en té o tintura para cistitis, uretritis, edema y cálculos renales, con dosis horarias en infecciones agudas.",
+   "formula": "Precaución del libro: No debe tomarse en el embarazo: contiene pulegona, compuesto abortivo. Planta escasa en estado silvestre: comprar solo cultivada.",
+   "caution": "No hay ensayos que demuestren que el buchu cure las infecciones urinarias. El aceite esencial de algunas especies (A. crenulata) contiene mucha pulegona, tóxica para el hígado en dosis altas. Consultar si hay fiebre, dolor lumbar, sangre en la orina, embarazo o si no mejora en 48 horas: puede ser una pielonefritis. (Brendler 2022; Gágyor 2015)"
+  },
+  "h_burdock": {
+   "title": "Bardana (Arctium lappa)",
+   "summary": "Raíz y semillas; hojas por fuera. Para el libro es el mejor tónico para la piel (eccema, psoriasis, acné), depurativo, hepático y útil en gota; también se come como verdura."
+  },
+  "h_calendula": {
+   "title": "Caléndula (Calendula officinalis)",
+   "summary": "Flores. Cicatrizante y antiséptica: el libro la usa en ungüentos para quemaduras, golpes y úlceras de piel, y en infusión para fiebre y molestias digestivas; también como enjuague capilar."
+  },
+  "h_california_poppy": {
+   "title": "Amapola de California (Eschscholzia californica)",
+   "summary": "Semillas, flores y hojas. Sedante suave y no adictivo según el libro, recomendado para niños con dificultad para dormir o sobreexcitados, en té, tintura o tortitas de semilla con miel."
+  },
+  "h_cascara_sagrada": {
+   "title": "Cáscara sagrada (Rhamnus purshiana)",
+   "summary": "Corteza envejecida. Laxante fuerte que estimula el colon; el libro también la usa en dosis pequeñas como tónico hepático y para cálculos biliares, combinada con jengibre, canela o hinojo.",
+   "formula": "Precaución del libro: No usarla con diarrea, heces blandas o dolor abdominal; consultar al médico en embarazo, lactancia o si se toman medicamentos. Usar solo corteza envejecida: la fresca es tóxica. El uso prolongado de laxantes crea hábito.",
+   "caution": "La cáscara sagrada no es apta para uso crónico. La FDA la retiró de los laxantes de venta libre en 2002 por falta de datos de seguridad. Usarla solo unos días. El uso prolongado altera los electrolitos y crea dependencia. Hay casos de hepatitis. No hay pruebas de beneficio para el hígado ni los cálculos biliares. (FDA 2002; EMA; Nadir 2000)"
+  },
+  "h_catnip": {
+   "title": "Nébeda (hierba gatera) (Nepeta cataria)",
+   "summary": "Hojas y flores. Calmante que el libro valora como relajante seguro para bebés y niños: para dentición, fiebre, cólico e indigestión, en té, gotas de tintura o enema.",
+   "caution": "No hay estudios de la nébeda en lactantes ni pruebas de que sirva para la fiebre o la dentición. Se describió somnolencia marcada en un niño tras una dosis alta. Las tinturas llevan alcohol. No se recomiendan enemas para la fiebre ni para hidratar: en lactantes pueden causar perforación o alteraciones de agua y sodio. La dentición no causa fiebre alta. Un bebé menor de 3 meses con fiebre, o un niño decaído que no tolera líquidos, necesita valoración urgente. (Osterhoudt 1997; AAP 2011; NICE; EMA 2014)"
+  },
+  "h_cayenne_pepper": {
+   "title": "Pimienta de cayena (Capsicum annuum)",
+   "summary": "Fruto. Estimulante circulatorio y digestivo; el libro la llama uno de los mejores tónicos cardíacos y coagulante que detiene sangrados. Se usa en pequeñas cantidades como catalizador.",
+   "formula": "Precaución del libro: Es muy picante; usar con moderación incluso en tinturas y píldoras."
+  },
+  "h_chamomile": {
+   "title": "Manzanilla (Anthemis Nobilis and Matricaria Recutita)",
+   "summary": "Sobre todo las flores. Según el libro es de las mejores hierbas para niños: cólico, estrés, infecciones y estómago; antiinflamatoria, en té con miel, tintura, aceite de masaje o baño del bebé.",
+   "caution": "Para la dentición, no use tabletas homeopáticas como las de Hyland's: la FDA halló en ellas cantidades variables de belladona, hubo informes de convulsiones y muertes, y se retiraron en 2017. El aceite de clavo, aun diluido, ha intoxicado a lactantes; es mejor masajear la encía o dar un mordedor frío. Las compresas o lavados de manzanilla en los ojos pueden causar conjuntivitis alérgica e hinchazón de párpados, sobre todo en alérgicos al polen o a las compuestas. Una infusión casera no es estéril. (FDA 2017; FDA 2018; Lane 1991; Subiza 1990; Rák 2025)"
+  },
+  "h_chaparral": {
+   "title": "Chaparral (gobernadora) (Larrea Tridentata)",
+   "summary": "Hojas y ramitas en flor. El libro lo presenta como depurativo, antiinflamatorio, antitumoral (tumores, fibromas, quistes) y antifúngico, en tintura o ungüentos; discute la retirada por la FDA tras casos de daño hepático.",
+   "formula": "Precaución del libro: Hierba potente: seguir las dosis con cuidado y no usarla por períodos largos.",
+   "caution": "El chaparral por vía oral (té, cápsulas) se asocia a hepatitis grave, cirrosis e insuficiencia hepática con trasplante, a veces tras semanas o meses de uso. No lo tome, y menos en niños o lactantes. Consulte si aparece ictericia u orina oscura. No consta daño hepático por uso sobre piel intacta, pero no se ha estudiado en heridas ni en niños: evítelo en piel lesionada. No hay evidencia de que trate tumores, fibromas ni quistes; usarlo en su lugar puede retrasar un diagnóstico. Hay antifúngicos eficaces. (Sheikh 1997; LiverTox 2022)"
+  },
+  "h_chaste_tree": {
+   "title": "Sauzgatillo (vitex) (Vitex agnus-castus)",
+   "summary": "Bayas. Según el libro estimula la hipófisis y normaliza hormonas: para menopausia, síndrome premenstrual, trastornos menstruales y vitalidad sexual, en tintura, cápsulas, vino o licor.",
+   "caution": "El sauzgatillo tiene buena evidencia en dolor mamario premenstrual y síndrome premenstrual; en infertilidad los datos son escasos. La infertilidad merece estudio de su causa. Puede interferir con fármacos dopaminérgicos y anticonceptivos hormonales (Ooi 2020, J Womens Health)."
+  },
+  "h_chickweed": {
+   "title": "Pamplina (hierba gallinera) (Stellaria Media)",
+   "summary": "Partes aéreas. Emoliente y diurético suave que el libro usa para irritaciones de piel y ojos, retención de líquidos y en cataplasmas y ungüentos; también se come en ensalada.",
+   "caution": "Las cataplasmas caseras sobre los ojos no son estériles y pueden contaminarlos. El glaucoma puede causar ceguera irreversible y necesita control oftalmológico. El jaborandi oral no está estandarizado y puede causar sudoración, bradicardia y broncoespasmo; la forskolina solo tiene evidencia preliminar. (AAO; Loskutova 2019)"
+  },
+  "h_cinnamon": {
+   "title": "Canela (Cinnamomum Zeylanicum)",
+   "summary": "Corteza y aceite esencial. Digestivo cálido, estimulante suave, antiviral y antiséptico según el libro; en té para digestión, circulación y resfriados, y su aceite en bálsamos analgésicos."
+  },
+  "h_cleavers": {
+   "title": "Amor de hortelano (galio) (Galium Aparine)",
+   "summary": "Partes aéreas. Diurético suave y limpiador linfático que el libro propone para irritación urinaria, ganglios inflamados, amigdalitis y algunos tumores; mejor en tintura fresca."
+  },
+  "h_coltsfoot": {
+   "title": "Tusílago (uña de caballo) (Tussilago Farfara)",
+   "summary": "Hojas. Antiasmático y expectorante: el libro lo usa en té para tos, resfriado y congestión bronquial, combinado con consuelda, énula, gordolobo y ortiga.",
+   "formula": "Precaución del libro: Contiene alcaloides pirrolizidínicos ligados a enfermedad hepática mortal; la autora considera los estudios inconclusos y sigue usándolo.",
+   "caution": "El tusílago contiene alcaloides pirrolizidínicos hepatotóxicos y genotóxicos. Hay casos de enfermedad venooclusiva hepática en un recién nacido por el té que tomó la madre y en un lactante. Evítelo en el embarazo, la lactancia, los niños y los mayores, y no lo tome de forma habitual. La EMA recomienda limitar la exposición diaria a menos de 1 µg. No lo combine con consuelda. Use solo productos certificados libres de estos alcaloides. (EMA 2021; Roulet 1988; Sperl 1995; BfR 2013)"
+  },
+  "h_comfrey": {
+   "title": "Consuelda (Symphytum Officinale)",
+   "summary": "Hojas y raíz. Rica en alantoína y mucílago: el libro la usa en cataplasmas y ungüentos para ligamentos, esguinces, golpes y lesiones de hueso, y en té o cápsulas para inflamación.",
+   "formula": "Precaución del libro: Se han hallado alcaloides pirrolizidínicos; la autora la usa personalmente pero no se la recomienda a otros: cada quien decide.",
+   "caution": "No tome consuelda por vía oral, tampoco en té ni en tintura: no es más segura que una cápsula. Sus alcaloides pirrolizidínicos son genotóxicos y dañan el hígado (enfermedad venooclusiva, cirrosis). La FDA pidió retirar los productos orales en 2001. La EMA solo admite la raíz sobre piel intacta, en adultos y 10 días como máximo. Nunca la aplique sobre heridas, úlceras, várices con piel lesionada o piel irritada. Ninguna hierba cierra una hernia. (FDA 2001; EMA; Stickel 2000; Byeon 2019; LiverTox)"
+  },
+  "h_corn_silk": {
+   "title": "Barba de maíz (Zea Mays)",
+   "summary": "Estigmas dorados del maíz. Tónico urinario, diurético y demulcente que el libro considera de los más eficaces para la enuresis y la incontinencia, en té de día y tintura al acostarse.",
+   "formula": "Precaución del libro: Usar de fuente orgánica por los pesticidas; para la enuresis se combina con otras terapias."
+  },
+  "h_crampbark": {
+   "title": "Bola de nieve (Viburnum opulus) (Viburnum Opulus)",
+   "summary": "Corteza y tallos jóvenes. Relajante uterino que el libro usa para cólicos menstruales, sangrado menstrual excesivo y amenaza de aborto por tensión nerviosa.",
+   "caution": "El sangrado o el dolor en el embarazo requieren valoración médica urgente, para descartar una amenaza de aborto, un embarazo ectópico u otras causas. No hay estudios de seguridad ni de eficacia del viburno (crampbark, black haw) en el embarazo. No lo use para retrasar la consulta. (Dante 2013)"
+  },
+  "h_damiana": {
+   "title": "Damiana (Turnera Aphrodisiaca)",
+   "summary": "Hojas. Restauradora, nervina y afrodisíaca según el libro: para baja vitalidad sexual, impotencia, infertilidad, agotamiento, ansiedad y depresión, y para recordar sueños; en tintura, cápsulas, té o licor."
+  },
+  "h_dandelion": {
+   "title": "Diente de león",
+   "summary": "Hojas, raíz y flores. El libro lo llama gran tónico: la raíz es amargo hepático y diurético que conserva el potasio; las hojas, nutritivas, se comen; las flores dan vino."
+  },
+  "h_dill": {
+   "title": "Eneldo (Anethum Graveolens)",
+   "summary": "Sobre todo las semillas. Digestivo y carminativo; el libro lo usa en té o cápsulas para el cólico y los gases, y en la cocina."
+  },
+  "h_dong_quai": {
+   "title": "Dong quai (angélica china) (Angelica sinensis)",
+   "summary": "Raíz. Tónico femenino que, según el libro, fortalece el útero, nutre la sangre y regula hormonas; se recomienda para irregularidades menstruales, dismenorrea y ausencia de menstruación.",
+   "formula": "Precaución del libro: Puede estimular el sangrado: no usarlo durante la menstruación ni en el embarazo; en uso prolongado, suspenderlo una semana antes de la regla.",
+   "caution": "Puede potenciar la warfarina y otros anticoagulantes: hay un caso con INR más del doble. Puede causar fotosensibilidad. Un ensayo controlado no mostró beneficio sobre los sofocos. Evítelo si toma anticoagulantes o antiagregantes (Page 1999, Pharmacotherapy; Hirata 1997, Fertil Steril)."
+  },
+  "h_echinacea": {
+   "title": "Equinácea (Echinacea angustifolia, E. Purpurea, and E. Pallida)",
+   "summary": "Raíz, hojas y flores. Estimulante inmunitario para prevenir y tratar resfriados, gripe e infecciones bronquiales, en dosis pequeñas y frecuentes, por ciclos de 5 días sí y 2 no; el libro la declara 100 % segura para niños.",
+   "formula": "Precaución del libro: Pierde eficacia con uso continuo; usar solo equinácea cultivada por la sobrecosecha silvestre.",
+   "caution": "La equinácea no es «100 % segura». Puede causar alergia grave, sobre todo en personas con atopia, asma o alergia a las margaritas. La MHRA y la EMA no la recomiendan por vía oral en menores de 12 años. En un ensayo con 407 niños no acortó ni alivió los resfriados y aumentó los exantemas (7,1 % frente a 2,7 %). Cochrane no encuentra que acorte el resfriado. (Taylor 2003; MHRA 2012; EMA 2014; Cochrane 2014)"
+  },
+  "h_elder": {
+   "title": "Saúco (Sambucus nigra)",
+   "summary": "Bayas y flores. Diaforético que baja la fiebre e inmunoestimulante; el libro usa el jarabe de flor o baya para resfriados, gripe e infecciones respiratorias, y el agua de flor como cosmético."
+  },
+  "h_elecampane": {
+   "title": "Énula campana (helenio) (Inula helenium)",
+   "summary": "Raíz. Expectorante y tónico que el libro recomienda para tos, bronquitis, asma, afecciones pulmonares crónicas e incluso tuberculosis, en decocción o tintura con equinácea."
+  },
+  "h_eucalyptus": {
+   "title": "Eucalipto (Eucalyptus globulus)",
+   "summary": "Hojas y aceite esencial. El libro usa el aceite en baños, vahos y bálsamos para resfriados, sinusitis e infecciones respiratorias, y la infusión de hojas como gárgara.",
+   "caution": "El aceite de eucalipto, ingerido o absorbido por la piel, puede causar en niños vómitos, letargo, convulsiones y coma. La EMA lo contraindica en menores de 30 meses, por riesgo de laringoespasmo, y en niños con antecedentes de convulsiones. Vicks VapoRub no debe usarse en menores de 2 años. No se recomiendan envolturas ni baños fríos para la fiebre. Además, 37 °C es normal: la fiebre empieza hacia 38 °C. (Flaman 2001; EMA 2025; Kolassa 2013; NICE)"
+  },
+  "h_fennel": {
+   "title": "Hinojo (Foeniculum Vulgare)",
+   "summary": "Semillas, hojas y flores. Carminativo y antiácido: el libro lo usa en té para cólico y gases, de 2 a 4 tazas diarias para aumentar la leche materna, y en lavado para la conjuntivitis.",
+   "caution": "No hay pruebas de que el hinojo aumente la leche. La EMA no lo recomienda en el embarazo, la lactancia ni en menores de 4 años. Se describió toxicidad en dos recién nacidos cuyas madres tomaban mucha tisana con hinojo, anís, regaliz y galega. No usar infusiones caseras en los ojos: no son estériles. (LactMed; EMA; Rosti 1994)"
+  },
+  "h_fenugreek": {
+   "title": "Fenogreco (alholva) (Trigonella Foenum-Graecum)",
+   "summary": "Semillas. Mucilaginosas y nutritivas: el libro las usa para garganta y estómago irritados, trastornos de desgaste, regular el azúcar en sangre y, en té, para aumentar la leche materna."
+  },
+  "h_feverfew": {
+   "title": "Matricaria (Tanacetum parthenium) (Tanacetum parthenium)",
+   "summary": "Hojas y flores. El libro la recomienda sobre todo para prevenir migrañas, tomada de 1 a 3 meses o comiendo una o dos hojas frescas al día; también para inflamación y tensión.",
+   "formula": "Precaución del libro: Puede estimular la menstruación y causar cólicos; no se recomienda en el embarazo ni con anticoagulantes.",
+   "caution": "Masticar la hoja fresca puede causar úlceras en la boca. Suspenderla de golpe puede dar cefalea de rebote: retírela de forma gradual. Puede aumentar el sangrado con anticoagulantes. Evítela en el embarazo. En la prevención de la migraña el efecto es pequeño (menos de una crisis al mes) y la evidencia, de baja calidad. En la misma sección, 200 mg/día de vitamina B6 superan el límite seguro y causan neuropatía, y la cafeína frecuente puede cronificar la migraña. (Cochrane Wider 2015; Johnson 1985; MSKCC; Muhamad 2023)"
+  },
+  "h_fo_ti": {
+   "title": "Fo-ti (he shou wu) (Polygonum Multiflorum)",
+   "summary": "Raíz. Tónico chino de longevidad: según el libro restaura la vitalidad, la energía sexual y la fertilidad, limpia el hígado y mejora el colesterol; en té, cápsulas o pasta con miel diaria.",
+   "caution": "El fo-ti es una causa reconocida de hepatitis tóxica, a veces grave, sobre todo en las primeras semanas o meses de uso. No se recomienda tomarlo a diario durante largos periodos sin control médico. Si aparece ictericia u orina oscura, suspéndalo y consulte. No lo vuelva a tomar después de una hepatitis. (LiverTox; TGA 2019)"
+  },
+  "h_garlic": {
+   "title": "Ajo (Allium Sativum)",
+   "summary": "Bulbo. Antiséptico, inmunoestimulante y vermífugo; el libro afirma que mantiene el colesterol sano y baja la presión alta, y recomienda comerlo, tinturarlo, encurtirlo o hacer aceites.",
+   "caution": "En hipertensos, el ajo baja la presión sistólica unos 8–9 mmHg: efecto moderado que complementa, no sustituye, la medicación. La tricomoniasis es una infección de transmisión sexual: se trata con metronidazol, también a la pareja; los óvulos de ajo no han demostrado curarla (Ried 2016, J Nutr; CDC 2021)."
+  },
+  "h_gentian": {
+   "title": "Genciana (Gentiana Lutea)",
+   "summary": "Raíz. El amargo digestivo más apreciado de Europa: el libro la usa para abrir el apetito y mejorar la digestión, tomada 30 minutos antes de comer junto con hierbas cálidas.",
+   "formula": "Precaución del libro: No recomendada con úlceras o inflamación o irritación del estómago. Especie amenazada: usar solo cultivada orgánica."
+  },
+  "h_ginger": {
+   "title": "Jengibre (Zingiber Officinale)",
+   "summary": "Raíz. Para el libro es hierba clave digestiva, respiratoria y reproductiva: su remedio favorito para cólicos, seguro para náuseas del embarazo y mareo, y diaforético; en té, jarabe, comida o cataplasma."
+  },
+  "h_ginkgo": {
+   "title": "Ginkgo (Ginkgo biloba)",
+   "summary": "Sobre todo las hojas. El libro lo propone para memoria, circulación, Alzheimer, ictus, vértigo, tinnitus y disfunción eréctil, como tónico regular para mayores de 45, en té, tintura o extracto estandarizado.",
+   "caution": "El ginkgo puede aumentar el sangrado con anticoagulantes, antiagregantes o aspirina: suspéndalo 3–4 días antes de una cirugía. Precaución en la epilepsia. El ensayo GEM no mostró que prevenga la demencia ni que frene su progresión. Cochrane no halla un beneficio fiable en el Alzheimer, la demencia ni el tinnitus. La EMA solo acepta el extracto estandarizado en la demencia leve. No hay buena evidencia en la disfunción eréctil ni el ictus. Las dosis estudiadas son 120–240 mg/día; el libro llega a 600 mg. (DeKosky 2008; Cochrane 2009, 2013, 2022; EMA 2015; NCCIH)"
+  },
+  "h_ginseng_american": {
+   "title": "Ginseng americano (Panax Quinquefolius)",
+   "summary": "Raíz de al menos 5–6 años. Adaptógeno más neutro y refrescante que el asiático; el libro lo usa para debilidad general, claridad mental, anemia, agotamiento e insuficiencia sexual.",
+   "formula": "Precaución del libro: El silvestre está amenazado: usar solo cultivado orgánico o criado en bosque."
+  },
+  "h_ginseng_asian": {
+   "title": "Ginseng asiático (Panax Ginseng)",
+   "summary": "Raíz madura. «Rey de los tónicos» según el libro: adaptógeno que restaura energía, vitalidad sexual y sistema nervioso y combate la depresión si se toma 3–4 meses; en decocción, polvo, miel o sopas.",
+   "formula": "Precaución del libro: Puede producir exceso de calor o congestión, sobre todo en personas con tendencia a hipertensión; contraproducente en personalidades tipo A. Mucho del importado está fumigado: comprar orgánico."
+  },
+  "h_ginseng_siberian": {
+   "title": "Ginseng siberiano (eleuterococo) (Eleutherococcus Senticosus)",
+   "summary": "Raíz y corteza. Adaptógeno que el libro prefiere a los Panax: aumenta resistencia, aguante y tolerancia al estrés, y tonifica la reproducción masculina; en té, polvo, vinos y elixires."
+  },
+  "h_goldenseal": {
+   "title": "Sello de oro (Hydrastis Canadensis)",
+   "summary": "Raíz y hojas. Antibiótico natural y amargo que cura mucosas: el libro lo usa en lavados oculares, duchas vaginales, enjuagues bucales, cataplasmas y, con equinácea, contra infecciones, resfriados y gripe.",
+   "formula": "Precaución del libro: Usado de forma continua irrita las mucosas: no tomarlo más de 3 semanas seguidas. Planta amenazada: usar solo cultivada.",
+   "caution": "No dé sello de oro a recién nacidos, lactantes ni niños pequeños: la berberina puede agravar la ictericia neonatal, con riesgo de daño cerebral. Tampoco en el embarazo ni en la lactancia. Inhibe CYP3A4 y CYP2D6 y puede causar interacciones graves, por ejemplo con la metformina. Las tinturas llevan alcohol. Evite las duchas vaginales y no aplique preparados caseros no estériles en los ojos. Una infección del prepucio en un niño necesita valoración pediátrica. (Gurley 2005; NCCIH; ACOG 2006)"
+  },
+  "h_gotu_kola": {
+   "title": "Gotu kola (centella asiática) (Centella Asiatica)",
+   "summary": "Hojas. Tónico nervioso y cerebral que el libro recomienda para la pérdida de memoria y dice haberse usado en epilepsia, esquizofrenia y Alzheimer; en tintura de 4–6 semanas o fresca.",
+   "formula": "Precaución del libro: Gran parte de la comercial es de mala calidad: cultivarla o comprarla orgánica de fuentes fiables.",
+   "caution": "Se han descrito hepatitis graves, incluso granulomatosas, tras 20–60 días de uso de gotu kola, con recurrencia al reintroducirla. Si aparece ictericia, orina oscura o cansancio intenso, suspéndala y consulte. Evítela si tiene una enfermedad hepática. (Jorge 2005; Philips 2024)"
+  },
+  "h_hawthorn": {
+   "title": "Espino blanco (Crataegus Oxyacantha and C. Monogyna)",
+   "summary": "Hojas, flores, bayas y puntas. Para el libro es la hierba suprema del corazón: baja la presión, el colesterol y trata angina, arritmia y edema; también la tristeza. Dosis: 3–4 tazas o 1 cucharadita de tintura 3 veces al día.",
+   "formula": "Precaución del libro: La autora lo considera seguro junto con medicación cardíaca, pero pide consultar antes al profesional de salud.",
+   "caution": "El espino no sustituye el tratamiento de la insuficiencia cardíaca, la angina, la hipertensión ni las arritmias. En insuficiencia cardíaca, añadido al tratamiento, fue seguro en el ensayo SPICE, pero no redujo eventos ni muertes. En HERB CHF no mejoró la capacidad funcional y hubo más efectos adversos. La evidencia en angina, tensión, colesterol o prevención es insuficiente. No alteró la digoxina en un ensayo pequeño, pero puede sumar efectos con digoxina, betabloqueantes, nitratos o antihipertensivos: informe a su médico. No deje los antihipertensivos: reducen ictus, infartos y mortalidad. (Holubarsch 2008; Zick 2009; Tankanow 2003; Ettehad 2016; Cochrane 2008; NCCIH)"
+  },
+  "h_hibiscus": {
+   "title": "Hibisco (flor de Jamaica) (Hibiscus Sabdariffa)",
+   "summary": "Flores. Rico en vitamina C y bioflavonoides y algo astringente; el libro lo usa en té para resfriados leves, gripe, golpes e hinchazón."
+  },
+  "h_hops": {
+   "title": "Lúpulo (Humulus lupulus)",
+   "summary": "Estróbilos y polen. Sedante y amargo digestivo: el libro lo usa en tintura con valeriana para el insomnio, para hipertensión, ansiedad, deseo sexual excesivo e indigestión nerviosa.",
+   "formula": "Precaución del libro: Por su fuerte efecto sedante, no se recomienda en dosis altas a personas con depresión."
+  },
+  "h_kava_kava": {
+   "title": "Kava (Piper Methysticum)",
+   "summary": "Raíz. Relaja el cuerpo y despierta la mente según el libro; se usa para tensión, ansiedad, estrés y dolor, en tintura, cápsulas, té fuerte o ponche con piña y coco.",
+   "formula": "Precaución del libro: Puede usarse en exceso: causa náusea, sueño, falta de coordinación e incluso pérdida de conciencia; hay casos de conducción bajo sus efectos.",
+   "caution": "El kava se ha asociado a hepatitis grave, fallo hepático y trasplantes, a veces tras meses de uso. La FDA advirtió en 2002 y varios países restringieron su venta. No lo use de forma regular o prolongada ni en dosis grandes. Evítelo si tiene una enfermedad hepática y no lo combine con alcohol, paracetamol, sedantes ni otros fármacos hepatotóxicos. Suspéndalo y consulte si aparecen ictericia, orina oscura o cansancio intenso. Alivia algo la ansiedad a corto plazo. (LiverTox; FDA 2002; CDC MMWR 2002; Cochrane Pittler 2003)"
+  },
+  "h_lavender": {
+   "title": "Lavanda (Lavandula spp.)",
+   "summary": "Flores. Nervina y antidepresivo suave: el libro la usa en baño para tensión e insomnio, 2–3 gotas de aceite en sienes y nuca para el dolor de cabeza, y el aceite para picaduras y quemaduras.",
+   "caution": "No aplique aceites esenciales puros ni en compresas sobre la piel de lactantes: pueden irritarla y absorberse. Si se usan, muy diluidos y nunca en menores de 3 meses. Para el oído de nadador no hay ensayos con lavanda o árbol de té en alcohol, y el aceite concentrado fue ototóxico en animales. No lo use si hay dolor intenso, supuración o posible perforación del tímpano. Consulte si no mejora en 48–72 horas. (Flaman 2001; Zhang 2000; AAO-HNS 2014)"
+  },
+  "h_lemon_balm": {
+   "title": "Toronjil (melisa) (Melissa Officinalis)",
+   "summary": "Hojas y flores. Nervina, antiviral y antiespasmódica: el libro la usa para estrés, malestar estomacal, insomnio leve, herpes por vía tópica y, en tintura de glicerina, para niños."
+  },
+  "h_licorice": {
+   "title": "Regaliz (orozuz) (Glycyrrhiza Glabra)",
+   "summary": "Raíz. Tónico endocrino y suprarrenal, demulcente respiratorio y digestivo; el libro lo considera de los remedios más importantes para niños (tos, garganta, úlceras) y armonizador de fórmulas.",
+   "formula": "Precaución del libro: No recomendado con presión alta por retención de líquidos; con medicación cardíaca, consultar antes. No darlo a niños con hipertensión, problemas renales o vesicales, o en tratamiento con esteroides.",
+   "caution": "La glicirricina del regaliz retiene sodio, baja el potasio y sube la tensión si se toma a diario durante semanas. Hay casos de arritmias graves. La EMA no lo recomienda en menores de 18 años, en el embarazo ni en la lactancia, ni más de 4 semanas. Evítelo en hipertensión, hipopotasemia o enfermedad renal, hepática o cardíaca. No lo combine con diuréticos, digoxina, corticoides ni laxantes estimulantes. La «fatiga suprarrenal» no es un diagnóstico validado: evalúe menopausia, depresión o hipotiroidismo. En el herpes, ni la lisina ni el regaliz tópico tienen eficacia demostrada. No hay estudios en infertilidad. (EMA 2026; Ceccuzzi 2023; Luís 2018; Cadegiani 2016; Cochrane Chi 2015)"
+  },
+  "h_lobelia": {
+   "title": "Lobelia (Lobelia inflata)",
+   "summary": "Partes aéreas, sobre todo semillas y hojas. Antiespasmódico y expectorante potente para asma, bronquitis y tos seca; el libro cita su uso oral para relajar el útero en el parto. Dosis adulta: 3 gotas a medio gotero de tintura.",
+   "formula": "Precaución del libro: Efectos variables y potente: empezar con dosis pequeñas, combinada y diluida; puede provocar vómito. No se recomienda en el embarazo.",
+   "caution": "La lobelia actúa como la nicotina y tiene un margen estrecho entre dosis útil y tóxica. Puede causar vómitos, alteraciones del ritmo cardíaco, convulsiones y coma. No hay datos de seguridad en el parto. No sustituye el tratamiento del asma. (Cochrane 2012; FDA 21 CFR 310.544)"
+  },
+  "h_lycium": {
+   "title": "Goji (Lycium) (Lycium Chinense)",
+   "summary": "Bayas. Tónico chino de longevidad, hepático, circulatorio y de la sangre según el libro; con schisandra en té, 2–3 tazas diarias, para levantar el ánimo; también como snack."
+  },
+  "h_marsh_mallow": {
+   "title": "Malvavisco (Althaea Officinalis)",
+   "summary": "Sobre todo la raíz. Mucilaginoso, sustituto del olmo rojo: el libro lo usa en té para garganta irritada, diarrea, estreñimiento e inflamación bronquial, y en pasta o baño para la piel."
+  },
+  "h_milk_thistle": {
+   "title": "Cardo mariano (Silybum marianum)",
+   "summary": "Semillas. Antioxidante que, según el libro, regenera y protege el hígado (hepatitis, alcohol, tóxicos) y es lo único que alivia la intoxicación por Amanita phalloides; molido en té, comida, cápsulas o tintura."
+  },
+  "h_motherwort": {
+   "title": "Agripalma (Leonurus Cardiaca)",
+   "summary": "Hojas. Tónico cardíaco y femenino: el libro lo usa para enfermedad cardíaca, taquicardia, neuralgia, menstruación retrasada, retención de líquidos y sofocos de la menopausia, en infusión o tintura."
+  },
+  "h_muira_puama": {
+   "title": "Muira puama (Ptychopetalum Olacoides and Liriosma Ovata)",
+   "summary": "Corteza. Afrodisíaco brasileño que el libro recomienda para impotencia y baja actividad sexual, y como astringente para diarrea; en té, tintura (½–1 cucharadita 2 veces al día) o cápsulas.",
+   "formula": "Precaución del libro: Se sabe poco de esta hierba: usarla con atención y suspenderla si aparecen efectos indeseables."
+  },
+  "h_mullein": {
+   "title": "Gordolobo (Verbascum Thapsus)",
+   "summary": "Hojas, flores y raíz. El libro usa el aceite de flores para infecciones de oído, y las hojas en tintura o infusión para tos, resfriados, bronquitis, asma y problemas glandulares.",
+   "caution": "Las gotas oleosas con gordolobo alivian el dolor de la otitis, pero no se ha demostrado que curen la infección. No hay pruebas de que sean «las mejores». No poner gotas si hay supuración, tubos o sospecha de perforación del tímpano. Consultar si hay fiebre alta, dolor intenso o el niño es menor de 6 meses. (Sarrell 2001, 2003; AAP 2013)"
+  },
+  "h_myrrh": {
+   "title": "Mirra (Commiphora Myrrha)",
+   "summary": "Resina seca. Antiséptico que el libro usa con sello de oro para gripe y congestión, y en tintura diluida o polvo para dolor de garganta, gingivitis, sinusitis, úlceras bucales y heridas."
+  },
+  "h_nettle": {
+   "title": "Ortiga (Urtica dioica)",
+   "summary": "Hojas, semillas, raíz y brotes. Tónico rico en minerales: el libro la usa para hígado, alergias, síndrome premenstrual, menopausia, riñón, edema, dolores de crecimiento y, con palma enana, la próstata agrandada.",
+   "formula": "Precaución del libro: Las hojas deben cocerse bien al vapor para que no piquen."
+  },
+  "h_oats": {
+   "title": "Avena (Avena Sativa [Cultivated] and A. Fatua [Wild])",
+   "summary": "Brotes verdes lechosos, semillas y tallos. Tónico nervioso y cardíaco: el libro la usa para estrés, depresión, ansiedad, abstinencia de nicotina, incontinencia y convalecencia, en té fuerte o baño.",
+   "caution": "Los baños de avena alivian el picor del herpes zóster, pero no lo tratan. Los antivirales, iniciados en los ensayos en las primeras 72 horas, reducen el dolor agudo y prolongado, por lo que conviene consultar pronto (Dworkin 2007)"
+  },
+  "h_oregon_grape": {
+   "title": "Uva de Oregón (mahonia) (Mahonia Aquifolium)",
+   "summary": "Raíz. Con berberina, como el sello de oro, al que puede sustituir: el libro la usa contra infecciones sistémicas y para acné, eccema y psoriasis, digestión y como tónico hepático.",
+   "formula": "Precaución del libro: No recolectarla en exceso del medio silvestre."
+  },
+  "h_passionflower": {
+   "title": "Pasiflora (maracuyá) (Passiflora Incarnata)",
+   "summary": "Hojas y flores. Calmante que el libro usa para ansiedad, insomnio, epilepsia, pánico, hiperactividad en niños, dolor y espasmos, y con hipérico para depresión.",
+   "caution": "No hay ensayos que muestren que la pasiflora, la valeriana, el tilo, la avena o la milenrama bajen la tensión arterial. La EMA solo reconoce usos tradicionales para el estrés leve y el sueño. No deben sustituir el tratamiento de la hipertensión; una taquicardia necesita evaluación médica. (EMA; NCCIH)"
+  },
+  "h_peppermint": {
+   "title": "Menta piperita (hierbabuena) (Mentha x Piperita)",
+   "summary": "Hojas y flores. Ayuda digestiva para náusea y cólicos de estómago y para el aliento; en té, tintura diluida o pasta de dientes."
+  },
+  "h_pipsissewa": {
+   "title": "Pipsissewa (Chimaphila) (Chimaphila Umbellata)",
+   "summary": "Hojas. Diurético y antiséptico urinario suave que, según el libro, rompe cálculos renales y alivia la irritación prostática y la cistitis; en té, cápsulas o tintura.",
+   "formula": "Precaución del libro: Especie en riesgo: no recolectarla silvestre; comprar solo cultivada."
+  },
+  "h_plantain": {
+   "title": "Llantén (Plantago Major and P. Lanceolata)",
+   "summary": "Semillas, raíz y hojas. El «vendaje verde»: el libro lo usa en cataplasma y en té para la septicemia (envenenamiento de la sangre), sus semillas como laxante de volumen y para hígado e intestino."
+  },
+  "h_pumpkin": {
+   "title": "Calabaza (semillas) (Cucurbita Pepo)",
+   "summary": "Semillas. Por su zinc, el libro las propone para el agrandamiento benigno de la próstata y dice que un compuesto citotóxico ayuda en el agrandamiento por cáncer; hasta ¼ de taza diaria."
+  },
+  "h_pygeum": {
+   "title": "Pygeum (ciruelo africano) (Pygeum Africanum)",
+   "summary": "Corteza. Según el libro, revierte la hiperplasia prostática benigna, baja el colesterol y trata infertilidad e impotencia; se combina con palma enana o semillas de calabaza.",
+   "formula": "Precaución del libro: Amenazado en su hábitat: comprar solo de cultivo."
+  },
+  "h_red_clover": {
+   "title": "Trébol rojo (Trifolium Pratense)",
+   "summary": "Sumidades floridas y hojas. Depurativo y tónico respiratorio: el libro lo usa para tos y bronquitis crónicas, piel, y en té o tintura cuando hay quistes, tumores y fibromas.",
+   "formula": "Precaución del libro: Hemofílicos o personas con sangre «fluida» no deben usarlo regularmente."
+  },
+  "h_red_raspberry": {
+   "title": "Frambuesa roja (Rubus Idaeus)",
+   "summary": "Hojas, raíz y bayas. Tónico reproductivo rico en hierro y manganeso: el libro usa la hoja para anemia, diarrea, menstruación abundante y como tónico superior del embarazo y el parto.",
+   "caution": "La seguridad de la hoja de frambueso en el embarazo no está bien establecida, y no hay datos en el primer trimestre. Un estudio la asoció a más cesáreas. En el único ensayo controlado, tomada desde la semana 32, no causó efectos adversos, pero tampoco acortó el parto de forma relevante. La evidencia es débil. Si se usa, mejor en el tercer trimestre y con conocimiento de la matrona o el obstetra. (Bowman 2021; Simpson 2001; Muñoz Balbontín 2019)"
+  },
+  "h_rose_hips": {
+   "title": "Escaramujo (rosa mosqueta) (Rosa canina and Related Species)",
+   "summary": "Frutos, hojas y flores. Riquísimos en vitamina C antioxidante; el libro los usa en jarabe, mermelada o té suave."
+  },
+  "h_rosemary": {
+   "title": "Romero (Rosmarinus Officinalis)",
+   "summary": "Hojas. Ayuda a la memoria, tónico nervioso y circulatorio; el libro afirma que fortalece el corazón y baja la presión alta; se usa en té, tintura con ginkgo y gotu kola, y cosméticos."
+  },
+  "h_sage": {
+   "title": "Salvia (Salvia officinalis)",
+   "summary": "Hojas. Cálida y fortalecedora: el libro la usa para recuperar fuerza en enfermedades largas, en gárgaras para garganta, amigdalitis y boca, y para los sofocos de la menopausia."
+  },
+  "h_st_johns_wort": {
+   "title": "Hipérico (hierba de San Juan) (Hypericum Perforatum)",
+   "summary": "Flores y hojas. El libro lo usa para depresión, ansiedad, trastorno afectivo estacional y daño nervioso, y su aceite para golpes y quemaduras; lo propone como hierba de transición junto con antidepresivos.",
+   "formula": "Precaución del libro: La autora afirma que no es un IMAO y que las restricciones de esos fármacos no aplican; con antidepresivos, trabajar con un profesional holístico experto. Menciona sin confirmar la fotosensibilidad. No es un fármaco milagroso.",
+   "caution": "El hipérico acelera la eliminación de muchos fármacos (CYP3A4) y puede volverlos ineficaces: anticonceptivos, warfarina, anticoagulantes directos, digoxina, estatinas, ciclosporina y antirretrovirales. Con antidepresivos puede causar síndrome serotoninérgico. Revise toda la medicación antes de usarlo. La EMA no lo recomienda en menores de 12 años. Puede causar fotosensibilidad. Es eficaz en la depresión leve a moderada, pero la depresión requiere valoración médica. (EMA 2021; Markowitz 2003; Borrelli 2009; Cochrane Linde 2008; NCCIH)"
+  },
+  "h_sarsaparilla": {
+   "title": "Zarzaparrilla (Smilax officinalis)",
+   "summary": "Raíz y rizoma. Depurativo para sistema genitourinario, hígado y piel; el libro dice que sus saponinas aportan bases para hormonas esteroideas y la usa para psoriasis, artritis, desequilibrio hormonal y baja energía."
+  },
+  "h_sassafras": {
+   "title": "Sasafrás (Sassafras Albidum)",
+   "summary": "Corteza y corteza de raíz. Saborizante de tés de raíces, depurativo de hígado y vesícula y astringente para diarrea y picaduras; el libro lo incluye en tónicos masculinos.",
+   "formula": "Precaución del libro: Es ilegal venderlo para uso interno por el safrol, cancerígeno en ratas; la autora lo considera seguro y sigue usándolo, pero no lo recomienda a sus clientes salvo que lo pidan.",
+   "caution": "La corteza de sasafrás contiene safrol, carcinógeno hepático en animales. La IARC lo clasifica como posible carcinógeno humano (2B) y la FDA lo prohíbe en alimentos y tés. Algunos tés comerciales superan el 1 % de safrol. Que no haya casos humanos registrados no demuestra que sea seguro. No se recomienda su uso interno: omítalo de estas fórmulas. (FDA 21 CFR 189.180; IARC; Heikes 1994)"
+  },
+  "h_saw_palmetto": {
+   "title": "Palma enana (saw palmetto) (Serenoa Repens)",
+   "summary": "Bayas. Para el libro es el mejor remedio para la inflamación y el agrandamiento de la próstata y sus síntomas urinarios; también tónico anabólico, diurético y relajante; en tintura o cápsulas frescas.",
+   "caution": "La palma enana no previene el cáncer de próstata y no superó al placebo ni en hiperplasia benigna. La vigilancia activa sirve solo en cánceres de bajo riesgo y con controles médicos; no equivale a tratar con hierbas. Essiac y pau d'arco no han demostrado eficacia; el pau d'arco puede aumentar el sangrado. La vitamina E aumentó el cáncer de próstata (Bent 2006; ProtecT; NCI PDQ; SELECT)."
+  },
+  "h_schisandra": {
+   "title": "Schisandra (Schisandra Chinensis)",
+   "summary": "Bayas. Adaptógeno que aumenta resistencia y aguante y revitaliza la sexualidad según el libro; en jugo, vino, mermelada, té o tintura, con vitex o ginseng."
+  },
+  "h_senna": {
+   "title": "Sen (Cassia Angustifolia)",
+   "summary": "Hojas y vainas. Laxante estimulante para estreñimiento agudo, a corto plazo, empezando con la dosis mínima y esperando hasta 8 horas; se combina con otras hierbas para evitar cólicos.",
+   "formula": "Precaución del libro: No usarlo a largo plazo (debilita el intestino y crea dependencia), ni con diarrea o dolor abdominal; consultar al médico en embarazo, lactancia o con medicamentos.",
+   "caution": "La EMA limita el sen a mayores de 12 años y a 1 semana como máximo, y no lo recomienda en el embarazo ni en la lactancia. En niños con pañal ha causado dermatitis ampollosa grave; en el estreñimiento infantil se prefiere el polietilenglicol. No lo use con dolor abdominal sin causa conocida. Se ha descrito un caso de fallo hepático con daño renal por abuso de sen. Es útil a corto plazo, como dice el libro. (EMA; ESPGHAN/NASPGHAN 2014; Vanderperren 2005)"
+  },
+  "h_skullcap": {
+   "title": "Escutelaria (Scutellaria lateriflora) (Scutellaria Lateriflora)",
+   "summary": "Hojas. Nervina versátil para dolor de cabeza, temblores, estrés, tensión menstrual, insomnio y agotamiento; el libro dice que no hay riesgo de sobredosis. Dosis: 2–3 tazas o ¼ cucharadita de tintura 3 veces al día."
+  },
+  "h_slippery_elm": {
+   "title": "Olmo rojo (olmo resbaladizo) (Ulmus Fulva and U. Rubra)",
+   "summary": "Corteza interna. Mucilaginoso para cualquier inflamación: quemaduras, garganta, diarrea y estreñimiento; el libro da una mezcla con canela y miel para la tos y pastillas para quemaduras en la boca.",
+   "formula": "Precaución del libro: Especie afectada: usarlo con moderación y solo de cultivo o cosecha ética; por fuera, sustituirlo por malvavisco."
+  },
+  "h_spearmint": {
+   "title": "Hierbabuena (menta verde) (Mentha Spicata)",
+   "summary": "Hojas y flores. Refrescante: el libro la usa para refrescar estómago y aliento tras vómitos, en enjuague con una gota de aceite esencial o en té."
+  },
+  "h_stevia": {
+   "title": "Estevia (Stevia Rebaudiana)",
+   "summary": "Hojas. Endulzante sin calorías que no causa caries; el libro la indica para azúcar alta y desequilibrios del páncreas, y dice que se ha usado para tratar la diabetes.",
+   "formula": "Precaución del libro: Es muy dulce: usar una pizca."
+  },
+  "h_usnea": {
+   "title": "Usnea (barba de viejo) (Usnea Barbata)",
+   "summary": "Liquen. Amargo digestivo y antibiótico que el libro usa para infecciones urinarias, cistitis y hongos, y como inmunoestimulante con equinácea, mejor en tintura alcohólica.",
+   "formula": "Precaución del libro: Asegurarse de que el liquen sea realmente usnea.",
+   "caution": "El ácido úsnico de la usnea es hepatotóxico. Hay casos de hepatitis aguda e insuficiencia hepática con trasplante por suplementos orales. Evitarlo por vía oral, sobre todo en niños (Durazo 2004; FDA 2001)"
+  },
+  "h_uva_ursi": {
+   "title": "Gayuba (uva ursi) (Arctostaphylos Uva-Ursi)",
+   "summary": "Hojas y bayas. Diurético, astringente y antiséptico urinario que el libro usa en infusión, a menudo con jugo de arándano, para cistitis, uretritis, cálculos renales, leucorrea y enuresis.",
+   "caution": "La EMA limita la gayuba a mujeres adultas y a una semana como máximo. No la use en el embarazo, la lactancia, niños ni enfermedad renal. Contiene arbutina, que se transforma en hidroquinona. Consulte si los síntomas urinarios duran más de 4 días. (EMA 2025)"
+  },
+  "h_valerian": {
+   "title": "Valeriana (Valeriana Officinalis)",
+   "summary": "Raíz. Para el libro no hay mejor hierba para estrés, insomnio y nervios: potente, segura y no adictiva; también para dolor, espasmos y, con espino, presión alta y arritmia. Aconseja subir la dosis hasta notar efecto.",
+   "formula": "Precaución del libro: En personas sensibles (cerca del 5 %) puede causar agitación: suspenderla. En dosis muy altas da sensación de músculos «de goma»; reducir la dosis.",
+   "caution": "La valeriana es sedante. No la combine con alcohol, benzodiacepinas, opioides u otros sedantes, y no conduzca si le da somnolencia. Rara vez se ha asociado a lesión hepática, casi siempre junto con otras hierbas. La EMA no la recomienda en menores de 12 años, y las tinturas llevan alcohol. Su eficacia para dormir no es concluyente y no está demostrado que alivie la ansiedad. Tomarla cada hora o en dosis grandes no tiene respaldo. (LiverTox; EMA 2016; Zhang 2022; Taibi 2007)"
+  },
+  "h_white_oak": {
+   "title": "Roble blanco (Quercus Alba)",
+   "summary": "Corteza. Astringente y desinfectante rica en taninos: el libro la usa por dentro para diarrea y hemorroides y por fuera en lavados para heridas e hiedra venenosa, gárgaras, leucorrea y várices."
+  },
+  "h_wild_cherry": {
+   "title": "Cerezo silvestre (Prunus serotina) (Prunus Serotina)",
+   "summary": "Corteza interna. Expectorante que el libro considera de los mejores para calmar la tos; también mejora la digestión. En té, jarabe o tintura."
+  },
+  "h_wild_yam": {
+   "title": "Ñame silvestre (Dioscorea villosa) (Dioscorea Villosa)",
+   "summary": "Rizoma y raíz. Según el libro, precursor hormonal que trata trastornos menstruales y aumenta la fertilidad; también hepático, antiespasmódico para cólicos y útil en presión alta.",
+   "formula": "Precaución del libro: Poblaciones silvestres amenazadas: usar solo cultivado."
+  },
+  "h_witch_hazel": {
+   "title": "Hamamelis (Hamamelis Virginiana)",
+   "summary": "Corteza. Astringente y analgésico que actúa sobre las venas: el libro lo usa por dentro y por fuera para sangrado intestinal, nasal y pulmonar, hemorroides, várices, dermatitis, quemaduras solares y diarrea."
+  },
+  "h_yarrow": {
+   "title": "Milenrama (Achillea Millefolium)",
+   "summary": "Hojas y flores. Diaforético para bajar la fiebre y hierba de primeros auxilios que detiene sangrados internos y externos; el libro pone una pizca de polvo en la nariz para la epistaxis y la usa para cólicos."
+  },
+  "h_yellow_dock": {
+   "title": "Romaza (lengua de vaca) (Rumex crispus)",
+   "summary": "Raíz. Laxante por sus antraquinonas y rica en hierro: el libro la usa para digestión, hígado, anemia, fatiga, síndrome premenstrual y desequilibrios hormonales, en tintura, decocción o jarabes."
+  },
+  "h_yohimbe": {
+   "title": "Yohimbe (Pausinystalia Yohimbe and Corynanthe Yohimbe)",
+   "summary": "Virutas de corteza interna. Afrodisíaco y estimulante potente; el libro da una decocción de 1 onza (~28 g) en 2 tazas de agua, opcionalmente con 1000 mg de vitamina C para potenciarla.",
+   "formula": "Precaución del libro: Potente y potencialmente dañino. Es un IMAO: no combinarlo con sedantes, tranquilizantes, antihistamínicos, narcóticos ni mucho alcohol. Evitarlo con enfermedad renal o cardiovascular, diabetes o alteraciones de presión o glucosa. No para uso prolongado.",
+   "caution": "El yohimbe puede subir la presión, acelerar el corazón y causar ansiedad intensa. Hay intoxicaciones graves documentadas. En una decocción casera la dosis es impredecible. Su mecanismo es el bloqueo alfa-2, no el de un IMAO. Evitar si hay enfermedad cardíaca, hipertensión, trastornos de ansiedad o uso de antidepresivos. (Kearney 2010; Cohen 2015)"
+  },
+  "r_7_herb_long_life_soup": {
+   "title": "7-Herb Long-Life Soup",
+   "summary": "Caldo de shiitake, bardana, diente de león, bayas de goji, astrágalo, fo-ti, jengibre y ginseng con miso, que el libro propone para enfermos o convalecientes.",
+   "formula": "Forma: alimento · Uso: convalecencia y nutrición",
+   "caution": "La sopa lleva fo-ti, que puede dañar el hígado, con más riesgo si ya hay enfermedad hepática. El ginseng reduce el efecto de la warfarina y puede bajar la glucosa junto con antidiabéticos. En personas enfermas o polimedicadas, consulte antes de servirla. El beneficio en cáncer procede del lentinano inyectado, no del shiitake comido. El shiitake poco cocido puede causar una dermatitis pruriginosa. (LiverTox; Yuan 2004; Oba 2009)"
+  },
+  "r_nettle_spanakopita": {
+   "title": "Nettle Spanakopita",
+   "summary": "Pastel griego de masa filo relleno de ortiga cocida, arroz, cebolla, ajo, hierbas aromáticas y quesos, propuesto como forma nutritiva de comer ortiga.",
+   "formula": "Forma: alimento · Uso: alimento nutritivo diario"
+  },
+  "r_seaweed_salad": {
+   "title": "Seaweed Salad",
+   "summary": "Ensalada de algas (hiziki o arame) con arroz integral, zanahoria, cebolla, ajo, jengibre y cayena, propuesta para incorporar algas ricas en minerales.",
+   "formula": "Forma: alimento · Uso: aporte de minerales"
+  },
+  "r_zoom_balls": {
+   "title": "Zoom Balls",
+   "summary": "Bolitas de tahini y miel con guaraná, nuez de cola, ginseng siberiano y asiático, polen y jalea real, que el libro propone para energía equilibrada.",
+   "formula": "Forma: alimento · Uso: energía",
+   "caution": "Según una estimación propia (guaraná 2,5–6 %, cola 1,5–2,5 % de cafeína), cada bolita aportaría unos 70–165 mg de cafeína: dos o tres pueden superar los 400 mg/día que la EFSA considera seguros. No se recomienda en el embarazo, en niños, en arritmias, en hipertensión ni en ansiedad. La jalea real y el polen de abeja pueden causar asma y anafilaxia, sobre todo en personas con rinitis alérgica. No hay pruebas de que el polen trate las alergias. (EFSA 2015; Schimpl 2013; Thien 1996; Leang 2022)"
+  },
+  "r_fire_cider_zest": {
+   "title": "Fire Cider Zest",
+   "summary": "Vinagre de manzana macerado con ginseng, jengibre, rábano picante, ajo y cayena, endulzado con miel; condimento que el libro propone para calentar y energizar.",
+   "formula": "Forma: otro · Uso: calentar y dar energía"
+  },
+  "r_longevity_tonic": {
+   "title": "Longevity Tonic",
+   "summary": "Pasta de hierbas en polvo (fo-ti, ashwagandha, astrágalo, regaliz, ginseng siberiano, equinácea y especias) con miel y concentrado de fruta, propuesta como tónico de longevidad.",
+   "formula": "Forma: otro · Uso: longevidad y vitalidad",
+   "caution": "El fo-ti es una causa reconocida de hepatitis tóxica, a veces grave. Suele aparecer en las primeras semanas o meses de uso. No se recomienda su consumo diario sin control médico. Si aparece ictericia, orina oscura o náuseas, suspéndalo y consulte. Evítelo si tiene una enfermedad hepática. El regaliz diario puede subir la tensión y bajar el potasio. (LiverTox; TGA 2019; EMA 2026)"
+  },
+  "r_longevity_chai": {
+   "title": "Longevity Chai",
+   "summary": "Chai de té negro con jengibre, canela, fo-ti, ginseng, regaliz y especias, servido con leche espumosa y propuesto para la longevidad.",
+   "formula": "Forma: té · Uso: longevidad"
+  },
+  "r_long_life_elixir": {
+   "title": "Long-Life Elixir",
+   "summary": "Licor de brandy con damiana, fo-ti, jengibre, regaliz, sasafrás, astrágalo, anís estrellado, saw palmetto y ginseng asiático; tónico yang para hombres, unos 30 ml diarios.",
+   "formula": "Forma: vino o licor · Uso: fuerza y vitalidad masculina",
+   "caution": "La corteza de sasafrás contiene safrol. La FDA prohíbe añadirlo a alimentos y la IARC lo clasifica como posible carcinógeno: no se recomienda para uso diario. El regaliz tomado a diario puede subir la tensión y bajar el potasio. La EMA limita su uso a 4 semanas y lo desaconseja en hipertensión, enfermedad renal o cardíaca y embarazo. Cada dosis aporta unos 6 g de alcohol. (FDA 21 CFR 189.180; IARC; EMA 2026)"
+  },
+  "r_brain_tonic_tincture": {
+   "title": "Brain Tonic Tincture",
+   "summary": "Tintura en brandy o vodka de ginkgo, gotu kola, menta, romero y salvia que el libro propone para la memoria, tomada 6–8 semanas o más.",
+   "formula": "Forma: tintura · Uso: memoria y función cerebral",
+   "caution": "No hay ensayos con esta tintura, y en personas sanas el ginkgo no mejoró la memoria. No se recomienda en el embarazo ni en la lactancia (salvia, ginkgo). Consulte si toma anticoagulantes o antiagregantes, si tiene epilepsia o si tiene una cirugía próxima. La gotu kola se ha asociado a hepatitis. (Solomon 2002; EMA 2015-2016; Jorge 2005)"
+  },
+  "r_longevity_liqueur": {
+   "title": "Longevity Liqueur",
+   "summary": "Licor de damiana y ginseng extraídos en vodka o brandy y agua, con miel, vainilla y agua de rosas, que el libro sugiere servir en una cita romántica.",
+   "formula": "Forma: vino o licor · Uso: longevidad y afrodisíaco"
+  },
+  "r_valerian_tea_blend": {
+   "title": "Valerian Tea blend",
+   "summary": "Té de regaliz, melisa y valeriana, de mejor sabor que otras fórmulas de valeriana, que el libro propone como té relajante para tomar según necesidad.",
+   "formula": "Forma: té · Uso: relajación"
+  },
+  "r_nerve_tonic_formula_1": {
+   "title": "Nerve Tonic Formula #1",
+   "summary": "Infusión de melisa, manzanilla, avena, crisantemo, rosa y lavanda que el libro recomienda a diario durante 2 a 3 meses como rejuvenecedor del sistema nervioso.",
+   "formula": "Forma: infusión · Uso: tónico nervioso, estrés"
+  },
+  "r_nerve_tonic_formula_2": {
+   "title": "Nerve Tonic Formula #2",
+   "summary": "Decocción energizante de raíces: diente de león, ginseng siberiano, astrágalo, bardana, canela, regaliz, cardamomo, jengibre y ginseng, tres tazas al día para revitalizar el sistema nervioso.",
+   "formula": "Forma: decocción · Uso: energía y vitalidad nerviosa"
+  },
+  "r_high_calcium_tea": {
+   "title": "High-Calcium Tea",
+   "summary": "Infusión de cola de caballo, ortiga y avena, rica en calcio según el libro, para calmar los nervios tomando 3 a 4 tazas diarias durante 3 a 4 meses.",
+   "formula": "Forma: infusión · Uso: calmar nervios, aporte de calcio"
+  },
+  "r_herbal_footbath": {
+   "title": "Herbal Footbath",
+   "summary": "Baño de pies muy caliente con lavanda, lúpulo, salvia y romero que el libro propone para relajarse tras el día o en momentos de ansiedad o estrés.",
+   "formula": "Forma: baño · Uso: relajación, estrés"
+  },
+  "r_sleep_pillow": {
+   "title": "Sleep Pillow",
+   "summary": "Almohadilla rellena de manzanilla, lúpulo, lavanda y rosas secas, con aceite esencial de lavanda, que se mete en la funda para favorecer un sueño profundo.",
+   "formula": "Forma: otro · Uso: sueño reparador"
+  },
+  "r_nerve_formula_for_insomnia": {
+   "title": "Nerve Formula for Insomnia",
+   "summary": "Infusión de manzanilla, avena, pasiflora, valeriana y lúpulo, en tomas pequeñas y frecuentes desde unas 3 horas antes de dormir, que el libro considera muy eficaz.",
+   "formula": "Forma: infusión · Uso: insomnio"
+  },
+  "r_melissa_tea_blend": {
+   "title": "Melissa Tea blend",
+   "summary": "Infusión de melisa con borraja, manzanilla, hierba luisa e hipérico, relajante y suavemente estimulante según el libro, para liberar el estrés y los bloqueos de energía.",
+   "formula": "Forma: infusión · Uso: ansiedad y estrés"
+  },
+  "r_california_poppy_blend": {
+   "title": "California Poppy blend",
+   "summary": "Infusión suave de amapola de California, manzanilla, avena verde y malvavisco que el libro presenta como ideal para calmar a bebés y niños.",
+   "formula": "Forma: infusión · Uso: calmar a bebés y niños",
+   "caution": "La EMA no recomienda la amapola de California en menores de 18 años por falta de datos de seguridad. No hay dosis pediátricas validadas: no la dé sin límite a lactantes. No dé a niños kava ni tinturas con alcohol. La ansiedad infantil persistente merece valoración pediátrica. (EMA 2015)"
+  },
+  "r_chamomile_tisane": {
+   "title": "Chamomile Tisane",
+   "summary": "Tisana nocturna de manzanilla, escaramujo, melisa y borraja que, según el libro, calma los nervios irritados y alivia la tensión del día.",
+   "formula": "Forma: infusión · Uso: tensión nerviosa nocturna"
+  },
+  "r_nerve_formula_for_depression": {
+   "title": "Nerve Formula for Depression",
+   "summary": "Infusión de manzanilla, borraja, melisa, lavanda y rosas que el libro propone tomar tres veces al día para la depresión.",
+   "formula": "Forma: infusión · Uso: depresión"
+  },
+  "r_antifungal_powder": {
+   "title": "Antifungal Powder",
+   "summary": "Polvo de arcilla o arrurruz con chaparral, cáscara de nogal negro, sello de oro y aceite de árbol de té, para aplicar en los pies una o dos veces diarias.",
+   "formula": "Forma: polvo · Uso: pie de atleta",
+   "caution": "Uso tópico: no consta daño hepático por chaparral sobre piel intacta, aunque no se ha estudiado. No lo aplique en heridas abiertas ni lo tome por vía oral, donde sí causa hepatitis grave. (LiverTox 2022)"
+  },
+  "r_antifungal_salve": {
+   "title": "Antifungal Salve",
+   "summary": "Ungüento de chaparral, nogal negro, sello de oro, mirra, equinácea y árbol de té para pie de atleta, grietas, otras micosis y sarna en animales.",
+   "formula": "Forma: ungüento · Uso: pie de atleta, micosis"
+  },
+  "r_st_johns_wort_salve": {
+   "title": "St.-John’s-Wort Salve",
+   "summary": "Ungüento de caléndula, hoja de consuelda e hipérico que el libro recomienda para quemaduras y como remedio general para erupciones, cortes y heridas.",
+   "formula": "Forma: ungüento · Uso: quemaduras, cortes y heridas",
+   "caution": "La consuelda contiene alcaloides pirrolizidínicos hepatotóxicos. La EMA solo avala su uso sobre piel intacta, en adultos y 10 días como máximo; no hay datos en heridas abiertas. Evite cortes profundos, niños, embarazo, lactancia y el uso continuado. (EMA 2015)"
+  },
+  "r_hair_raising_cider": {
+   "title": "Hair-Raising Cider",
+   "summary": "Vinagre macerado con cebolla, ajo, rábano picante, cúrcuma y cayena, endulzado con miel; el libro indica 1 a 2 cucharadas cada 2 a 3 horas al inicio del resfriado.",
+   "formula": "Forma: otro · Uso: resfriado"
+  },
+  "r_herbal_eyewash": {
+   "title": "Herbal Eyewash",
+   "summary": "Lavado ocular de raíz de consuelda y sello de oro en agua hirviendo, bien colado, que el libro propone para tratar la conjuntivitis sin antibióticos.",
+   "formula": "Forma: otro · Uso: conjuntivitis",
+   "caution": "No aplique infusiones caseras en el ojo: no son estériles y pueden causar queratitis. La raíz de consuelda contiene alcaloides tóxicos y no está indicada en mucosas. Consulte de inmediato si hay dolor, visión borrosa, fotofobia, lentes de contacto o un recién nacido afectado. (AAO 2023; EMA)"
+  },
+  "r_yellow_dock_constipation_remedy": {
+   "title": "Yellow Dock Constipation Remedy",
+   "summary": "Decocción de raíz de romaza, diente de león y regaliz, tres tazas al día, que según la autora alivia el estreñimiento sin crear dependencia.",
+   "formula": "Forma: decocción · Uso: estreñimiento"
+  },
+  "r_emergency_constipation_remedy": {
+   "title": "Emergency Constipation Remedy",
+   "summary": "Decocción potente de hinojo, regaliz, romaza, cáscara sagrada, psyllium y sen para el estreñimiento ocasional; el libro advierte no usarla seguido por riesgo de dependencia.",
+   "formula": "Forma: decocción · Uso: estreñimiento ocasional",
+   "caution": "No tener una deposición diaria no es estreñimiento: hasta tres por semana puede ser normal. El sen y la cáscara sagrada son laxantes estimulantes de uso ocasional, una semana como máximo. No los use en niños, embarazo, lactancia ni dolor abdominal sin diagnóstico. No aumente la dosis. (FDA 2002; EMA; Roma IV)"
+  },
+  "r_klosss_liniment": {
+   "title": "Kloss’s Liniment",
+   "summary": "Linimento de uso externo con equinácea, sello de oro, mirra y cayena en alcohol, para desinfectar heridas, reducir la inflamación muscular y calmar picaduras.",
+   "formula": "Forma: linimento · Uso: desinfectar heridas, picaduras"
+  },
+  "r_goldenseal_salve": {
+   "title": "Goldenseal Salve",
+   "summary": "Ungüento de sello de oro y goma de mirra, astringente, desinfectante y emoliente según el libro.",
+   "formula": "Forma: ungüento · Uso: heridas, desinfección"
+  },
+  "r_garlicmullein_flower_oil": {
+   "title": "Garlic–Mullein Flower Oil",
+   "summary": "Aceite de oliva con ajo y flores de gordolobo, entibiado y aplicado en gotas en el oído, que el libro propone para aliviar el dolor y eliminar la infección.",
+   "formula": "Forma: aceite · Uso: infección de oído",
+   "caution": "No use estas gotas si hay supuración, tubos o posible perforación del tímpano. El ajo en aceite puede favorecer el botulismo: prepare poca cantidad, refrigérela y deséchela pronto. Las gotas alivian el dolor de oído, pero no curan la infección. Los menores de 6 meses y los casos graves necesitan valoración médica, y a menudo antibiótico. No aplique sal caliente que queme al tacto. (Sarrell 2001, 2003; Morse 1990; AAO-HNS 2014; AAP 2013)"
+  },
+  "r_alkalizing_herb_blend_for_vascular_headaches": {
+   "title": "Alkalizing Herb Blend for Vascular Headaches",
+   "summary": "Decocción de raíces de diente de león, bardana y romaza con tintura de escutelaria o valeriana, tomada cada 30 minutos para la cefalea vascular.",
+   "formula": "Forma: decocción · Uso: cefalea vascular"
+  },
+  "r_headache_tea": {
+   "title": "Headache Tea",
+   "summary": "Infusión o tintura de melisa, matricaria y lavanda, una de las favoritas de la autora para el dolor de cabeza, más eficaz junto a un baño de lavanda.",
+   "formula": "Forma: infusión · Uso: dolor de cabeza"
+  },
+  "r_nerve_formula_for_headaches": {
+   "title": "Nerve Formula for Headaches",
+   "summary": "Infusión de manzanilla, melisa, pasiflora y escutelaria, media taza cada hora, que el libro propone para el dolor de cabeza con tensión nerviosa.",
+   "formula": "Forma: infusión · Uso: dolor de cabeza tensional"
+  },
+  "r_skullcap_headache_blend": {
+   "title": "Skullcap Headache Blend",
+   "summary": "Infusión de melisa, escutelaria, manzanilla y matricaria, al menos un cuarto de taza cada 30 minutos, para el dolor de cabeza y el estrés nervioso.",
+   "formula": "Forma: infusión · Uso: dolor de cabeza"
+  },
+  "r_jethro_klosss_famous_antispasmodic_tincture": {
+   "title": "Jethro Kloss’s Famous Antispasmodic Tincture",
+   "summary": "Tintura antiespasmódica de Jethro Kloss con cohosh negro, lobelia, mirra, escutelaria, col de mofeta, valeriana y cayena en brandy o vodka, para el dolor de cabeza.",
+   "formula": "Forma: tintura · Uso: dolor de cabeza, espasmos",
+   "caution": "Contiene lobelia, que puede causar náuseas, vómitos y depresión respiratoria a dosis altas, y cohosh negro, asociado a casos raros de daño hepático. La pauta no tiene límite de tomas: no repita dosis sin tope. Evítela con nicotina, sedantes, enfermedad hepática o embarazo. (MSKCC; EMA 2018)"
+  },
+  "r_digestive_bitter_tincture": {
+   "title": "Digestive Bitter Tincture",
+   "summary": "Tintura amarga de hinojo, hoja de alcachofa, diente de león, genciana y jengibre, para tomar antes y después de las comidas y mejorar la digestión.",
+   "formula": "Forma: tintura · Uso: mala digestión"
+  },
+  "r_triple_strength_throat_spray": {
+   "title": "Triple-Strength Throat Spray",
+   "summary": "Aerosol hecho con infusión de equinácea, regaliz y salvia más aceite esencial de árbol de té o eucalipto, para rociar en la garganta según necesidad.",
+   "formula": "Forma: otro · Uso: dolor de garganta, laringitis"
+  },
+  "r_throat_coat_balls": {
+   "title": "Throat-Coat Balls",
+   "summary": "Caramelos herbales de regaliz, olmo americano o malvavisco, equinácea, sello de oro y menta espesados con algarroba, para la garganta irritada o la faringitis estreptocócica.",
+   "formula": "Forma: otro · Uso: dolor de garganta, faringitis"
+  },
+  "r_throat_soother_tea": {
+   "title": "Throat Soother Tea",
+   "summary": "Decocción de regaliz, canela, equinácea, malvavisco y jengibre que, según el libro, fortalece la voz y calma la irritación de garganta.",
+   "formula": "Forma: decocción · Uso: irritación de garganta"
+  },
+  "r_sore_throat_gargle": {
+   "title": "Sore Throat Gargle",
+   "summary": "Gárgara de vinagre de manzana, té concentrado de salvia, sal y cayena, la favorita de la autora para el dolor de garganta y la laringitis.",
+   "formula": "Forma: gárgara o enjuague · Uso: dolor de garganta, laringitis"
+  },
+  "r_cough_be_gone_sore_throat_syrup": {
+   "title": "Cough-Be-Gone & Sore Throat Syrup",
+   "summary": "Jarabe de hinojo, regaliz, olmo americano, valeriana, cerezo silvestre, canela, jengibre y piel de naranja, cada 1 a 2 horas, para la tos y la garganta inflamada.",
+   "formula": "Forma: jarabe · Uso: tos y dolor de garganta"
+  },
+  "r_st_johns_wort_oil": {
+   "title": "St.-John’s-Wort Oil",
+   "summary": "Aceite de oliva macerado al sol con flores y hojas de hipérico, de uso tópico para daño nervioso, dolor, golpes y esguinces; la autora también lo usa en comidas.",
+   "formula": "Forma: aceite · Uso: dolor, daño nervioso, golpes",
+   "caution": "No hay estudios que respalden tomar este aceite ni dárselo a mascotas. La hipericina causa fotosensibilidad en animales que pastan la planta. Por vía oral no se descartan interacciones con fármacos. Consulte al veterinario antes de añadirlo a la comida de sus animales. (Péli 2026; Borrelli 2009)"
+  },
+  "r_rosemarys_itch_relief_remedy": {
+   "title": "Rosemary’s Itch-Relief Remedy",
+   "summary": "Pasta de arcilla verde con agua o hamamelis, sal y aceite esencial de menta, que se deja secar sobre la erupción por hiedra o roble venenoso.",
+   "formula": "Forma: compresa o cataplasma · Uso: picor por hiedra venenosa"
+  },
+  "r_toothache_poultice": {
+   "title": "Toothache Poultice",
+   "summary": "Cataplasma de sello de oro, mirra, espilantes y cúrcuma con aceite de clavo, aplicada sobre el diente para aliviar y, según el libro, a menudo curar el dolor de muelas.",
+   "formula": "Forma: compresa o cataplasma · Uso: dolor de muelas"
+  },
+  "r_healing_mouthwash": {
+   "title": "Healing Mouthwash",
+   "summary": "Enjuague bucal de agua y vodka con tinturas de caléndula, sello de oro o chaparral y mirra, más aceite de menta; según la autora, le redujo las visitas al dentista.",
+   "formula": "Forma: gárgara o enjuague · Uso: salud bucal"
+  },
+  "r_cystitis_remedy": {
+   "title": "Cystitis Remedy",
+   "summary": "Infusión de amor de hortelano, arándanos, gayuba, pamplina y malvavisco, cuatro tazas diarias a sorbos, que el libro presenta como fórmula antiinfecciosa para la cistitis.",
+   "formula": "Forma: infusión · Uso: cistitis",
+   "caution": "Consulte antes de una semana: si no mejora en 2 a 4 días, o si hay fiebre, dolor lumbar, sangre en la orina, embarazo, o se trata de un hombre o un niño. Sin antibiótico aumenta el riesgo de pielonefritis. El arándano ayuda a prevenir recaídas, no a curar. (Gágyor 2015; Cochrane Williams 2023)"
+  },
+  "r_rose_water_method_1": {
+   "title": "Rose Water, Method #1",
+   "summary": "Agua de rosas por maceración de rosas frescas orgánicas en hamamelis, vodka o ginebra con agua destilada durante 2 a 3 semanas.",
+   "formula": "Forma: cosmético · Uso: tónico facial"
+  },
+  "r_rose_water_method_2": {
+   "title": "Rose Water, Method #2",
+   "summary": "Agua de rosas tradicional por destilación casera de pétalos frescos en una olla con tapa invertida y hielo.",
+   "formula": "Forma: cosmético · Uso: tónico facial"
+  },
+  "r_miracle_grains": {
+   "title": "Miracle Grains",
+   "summary": "Granos limpiadores secos de arcilla blanca, avena, almendras, lavanda y rosas molidas, que el libro propone como sustituto suave del jabón facial.",
+   "formula": "Forma: cosmético · Uso: limpieza facial"
+  },
+  "r_moist_miracle_grains": {
+   "title": "Moist Miracle Grains",
+   "summary": "Versión húmeda de los granos limpiadores, mezclados con miel y agua de rosas en pasta para limpiar el rostro.",
+   "formula": "Forma: cosmético · Uso: limpieza facial"
+  },
+  "r_steam_for_dry_to_normal_skin": {
+   "title": "Steam for Dry to Normal Skin",
+   "summary": "Mezcla para vapor facial de hoja de consuelda, caléndula, manzanilla, rosas y lavanda, para piel seca a normal.",
+   "formula": "Forma: otro · Uso: vapor facial piel seca"
+  },
+  "r_steam_for_normal_to_oily_skin": {
+   "title": "Steam for Normal to Oily Skin",
+   "summary": "Mezcla para vapor facial de hoja de consuelda, caléndula, hoja de frambuesa, salvia y romero, para piel normal a grasa.",
+   "formula": "Forma: otro · Uso: vapor facial piel grasa"
+  },
+  "r_the_queen_of_hungarys_water": {
+   "title": "The Queen of Hungary’s Water",
+   "summary": "Vinagre de toronjil, manzanilla, rosas, caléndula, consuelda, limón, romero y salvia, diluido con agua de rosas o hamamelis, como astringente facial y enjuague para cabello oscuro.",
+   "formula": "Forma: cosmético · Uso: astringente facial"
+  },
+  "r_bay_rum_aftershave_and_astringent": {
+   "title": "Bay Rum Aftershave and Astringent",
+   "summary": "Hojas de laurel con pimienta de Jamaica, clavo y jengibre maceradas en ron, como loción para después del afeitado y astringente.",
+   "formula": "Forma: cosmético · Uso: aftershave y astringente"
+  },
+  "r_rosemarys_perfect_cream": {
+   "title": "Rosemary’s Perfect Cream",
+   "summary": "Crema emulsionada de agua de rosas y gel de aloe con aceites (albaricoque, almendra, coco), lanolina y cera, que el libro propone como hidratante facial y corporal.",
+   "formula": "Forma: cosmético · Uso: hidratación de la piel"
+  },
+  "r_relaxing_bath_blend": {
+   "title": "Relaxing Bath Blend",
+   "summary": "Bolsa de baño con manzanilla, lavanda, rosas y hoja de consuelda que, según el libro, favorece un estado mental tranquilo.",
+   "formula": "Forma: baño · Uso: relajación"
+  },
+  "r_stimulating_bath_blend": {
+   "title": "Stimulating Bath Blend",
+   "summary": "Bolsa de baño con menta, caléndula, laurel o eucalipto, romero y salvia para un baño estimulante y renovador.",
+   "formula": "Forma: baño · Uso: baño estimulante"
+  },
+  "r_body_powder": {
+   "title": "Body Powder",
+   "summary": "Talco casero de arcilla blanca y arrurruz o maicena, con aceite esencial y flores de lavanda y rosa molidas, como desodorante natural.",
+   "formula": "Forma: polvo · Uso: desodorante corporal"
+  },
+  "r_bath_salts": {
+   "title": "Bath Salts",
+   "summary": "Sales de baño de bórax, sal marina, arcilla blanca y aceite esencial; el libro las sugiere también para dolor muscular, gripe y congestión sinusal.",
+   "formula": "Forma: baño · Uso: baño, dolor muscular"
+  },
+  "r_salt_glow": {
+   "title": "Salt Glow",
+   "summary": "Exfoliante corporal de sal marina fina con aceite de semilla de uva, albaricoque o almendra y aceite esencial.",
+   "formula": "Forma: cosmético · Uso: exfoliación corporal"
+  },
+  "r_make_it_yourself_herbal_shampoo": {
+   "title": "Make-it-Yourself Herbal Shampoo",
+   "summary": "Champú casero de té de hierbas con jabón de castilla líquido, aceite de jojoba y aceites esenciales, adaptable al tipo de cabello.",
+   "formula": "Forma: cosmético · Uso: lavado del cabello"
+  },
+  "r_goldie_locks_infusion": {
+   "title": "Goldie Locks Infusion",
+   "summary": "Mezcla de flor de caléndula, manzanilla y hoja de consuelda para champú o enjuague que aporta reflejos dorados.",
+   "formula": "Forma: infusión · Uso: reflejos dorados"
+  },
+  "r_dark_of_the_night_infusion": {
+   "title": "Dark of the Night Infusion",
+   "summary": "Mezcla de salvia, cáscara de nogal negro y hoja de consuelda para champú o enjuague que aporta reflejos oscuros.",
+   "formula": "Forma: infusión · Uso: reflejos oscuros"
+  },
+  "r_desert_bloom_infusion": {
+   "title": "Desert Bloom Infusion",
+   "summary": "Mezcla de caléndula, raíz de malvavisco y hoja de ortiga que el libro propone para cabello seco.",
+   "formula": "Forma: infusión · Uso: cabello seco"
+  },
+  "r_rapunzels_locks_infusion": {
+   "title": "Rapunzel’s Locks Infusion",
+   "summary": "Mezcla astringente de romero, corteza de hamamelis y milenrama para cabello graso.",
+   "formula": "Forma: infusión · Uso: cabello graso"
+  },
+  "r_vinegar_hair_rinse": {
+   "title": "Vinegar Hair Rinse",
+   "summary": "Vinagre de manzana o de vino macerado con hierbas y aceites esenciales, diluido en agua; según el libro sirve para caspa, picor y cabello opaco.",
+   "formula": "Forma: cosmético · Uso: enjuague capilar, caspa"
+  },
+  "r_herbal_hair_rinse": {
+   "title": "Herbal Hair Rinse",
+   "summary": "Té concentrado de hierbas a elección con unas gotas de aceite esencial, que se vierte sobre el cabello sin aclarar.",
+   "formula": "Forma: infusión · Uso: acondicionar el cabello"
+  },
+  "r_hair_conditioning_treatment": {
+   "title": "Hair Conditioning Treatment",
+   "summary": "Tratamiento de aceite caliente (jojoba, oliva o coco) con hierbas opcionales, aplicado una o dos horas antes del lavado, sobre todo para cabello seco.",
+   "formula": "Forma: aceite · Uso: cabello seco"
+  },
+  "r_high_calcium_childrens_tea": {
+   "title": "High-Calcium Children’s Tea",
+   "summary": "Té de escaramujo, toronjil, hierba limón, avena, ortiga, hoja de frambuesa y canela que, según el libro, aporta calcio para la dentición y el crecimiento.",
+   "formula": "Forma: infusión · Uso: dentición y crecimiento"
+  },
+  "r_slippery_elm_gruel": {
+   "title": "Slippery Elm Gruel",
+   "summary": "Papilla de olmo americano y raíz de malvavisco en polvo con canela e hinojo, endulzada con jarabe de arce, para calmar el intestino en la diarrea.",
+   "formula": "Forma: alimento · Uso: diarrea, intestino irritado",
+   "caution": "No hay datos que demuestren que las hierbas que toma la madre curen al bebé a través de la leche. Revisar LactMed para cada planta. Los acidófilos tienen beneficio dudoso en la diarrea aguda, y no hay base para duplicar la dosis. Lo esencial es la rehidratación oral (LactMed; Cochrane 2020)"
+  },
+  "r_cradle_cap_tea": {
+   "title": "Cradle Cap tea",
+   "summary": "Té de raíz de bardana, hoja de gordolobo y flor de trébol rojo para dar al lactante con costra láctea persistente.",
+   "formula": "Forma: infusión · Uso: costra láctea"
+  },
+  "r_cradle_cap_oil": {
+   "title": "Cradle Cap Oil",
+   "summary": "Aceite de oliva con manzanilla, gordolobo y ortiga y una gota de lavanda por onza, para masajear el cuero cabelludo con costra láctea.",
+   "formula": "Forma: aceite · Uso: costra láctea"
+  },
+  "r_blackberry_root_tea": {
+   "title": "Blackberry Root Tea",
+   "summary": "Tintura casera de raíz de zarzamora diluida en agua tibia, dada a cucharaditas cada hora para la diarrea infantil.",
+   "formula": "Forma: tintura · Uso: diarrea infantil"
+  },
+  "r_diarrhea_remedy_tea": {
+   "title": "Diarrhea Remedy Tea",
+   "summary": "Decocción de raíz de zarzamora, corteza de olmo americano y canela, de 2 a 4 cucharadas cada hora, para la diarrea.",
+   "formula": "Forma: decocción · Uso: diarrea infantil"
+  },
+  "r_tea_for_constipation": {
+   "title": "Tea for Constipation",
+   "summary": "Decocción de hinojo, psilio, hierbabuena, regaliz, malvavisco, canela y naranja; si persiste el estreñimiento, el libro añade sen.",
+   "formula": "Forma: decocción · Uso: estreñimiento infantil",
+   "caution": "La EMA contraindica el sen en menores de 12 años, y en niños ha causado quemaduras ampollosas en la zona del pañal. El regaliz puede bajar el potasio y subir la presión arterial. El psilio y la linaza exigen mucho líquido, porque si no pueden obstruir (EMA/HMPC; Melvin 2019)"
+  },
+  "r_ear_infection_tincture": {
+   "title": "Ear infection tincture",
+   "summary": "Tintura de equinácea, ajo fresco, usnea, jengibre y sello de oro, 1/8 de cucharadita tres veces al día, para ayudar a combatir la otitis.",
+   "formula": "Forma: tintura · Uso: otitis infantil",
+   "caution": "La usnea contiene ácido úsnico, que ha causado hepatitis e insuficiencia hepática por vía oral. El sello de oro no debe darse a lactantes. La tintura lleva alcohol, y la mezcla no tiene estudios en niños. La otitis requiere valoración médica, sobre todo en menores de 2 años (Durazo 2004; NCCIH)"
+  },
+  "r_catnipelder_fever_reducing_tea": {
+   "title": "Catnip–Elder Fever-Reducing Tea",
+   "summary": "Té de hierba gatera, flor de saúco, equinácea y menta cada 30 minutos para bajar la fiebre; incluye un enema de hierba gatera para casos extremos.",
+   "formula": "Forma: infusión · Uso: fiebre infantil",
+   "caution": "En bebés menores de 3 meses, 38 °C o más requiere consulta inmediata. Las guías no recomiendan enemas para la fiebre ni para hidratar: un niño que no tolera líquidos necesita valoración urgente. Los baños tibios o con vinagre no están recomendados para bajar la fiebre (NICE NG143; AAP 2021)"
+  },
+  "r_super_immunity_syrup": {
+   "title": "Super Immunity Syrup",
+   "summary": "Jarabe de avena verde, astrágalo, bardana y equinácea que, según el libro, ayuda a superar la varicela y el sarampión.",
+   "formula": "Forma: jarabe · Uso: varicela y sarampión",
+   "caution": "Lleva miel: nunca darla a menores de 12 meses, por riesgo de botulismo infantil. En niños, la equinácea no acortó los resfriados y aumentó los exantemas. La MHRA no la recomienda en menores de 12 años. El sarampión y la varicela se previenen con vacunas, no con hierbas (CDC; Taylor 2003; MHRA 2012)"
+  },
+  "r_tea_for_chicken_pox_and_measles": {
+   "title": "Tea for Chicken Pox and Measles",
+   "summary": "Té de caléndula, trébol rojo, avena, toronjil y pasiflora, a libre demanda, para niños con varicela o sarampión.",
+   "formula": "Forma: infusión · Uso: varicela y sarampión"
+  },
+  "r_valerianburdock_tincture_for_itching_and_skin_rash": {
+   "title": "Valerian–Burdock Tincture for Itching and Skin Rash",
+   "summary": "Tintura de bardana, equinácea y valeriana, 1/8 de cucharadita cada 2 horas, para aliviar el picor y relajar; incluye vitamina E contra cicatrices.",
+   "formula": "Forma: tintura · Uso: picor y erupción cutánea",
+   "caution": "La EMA no recomienda la valeriana en menores de 12 años. La vitamina E sobre la piel no previene cicatrices y causó dermatitis de contacto en un tercio de los pacientes de un ensayo. Para la cicatrización, el gel o las láminas de silicona sí tienen evidencia (Baumann 1999; Tran 2020)"
+  },
+  "r_disinfectant_powder": {
+   "title": "Disinfectant Powder",
+   "summary": "Polvo de arcilla verde con caléndula, raíz de consuelda y sello de oro o chaparral, para espolvorear sobre las lesiones de varicela.",
+   "formula": "Forma: polvo · Uso: lesiones de varicela",
+   "caution": "La consuelda contiene alcaloides pirrolizidínicos que dañan el hígado. La EMA indica no aplicarla sobre heridas ni lesiones abiertas, ni en menores de 18 años. El chaparral tomado ha causado hepatitis grave y trasplantes, y no se ha estudiado sobre heridas ni en niños. Evitar ambos en varicela y cortes infantiles (EMA/HMPC 2015; Sheikh 1997)"
+  },
+  "r_rescue_remedy_flower_essence_spritzer": {
+   "title": "Rescue Remedy Flower Essence Spritzer",
+   "summary": "Aerosol ambiental de agua destilada, brandy, Rescue Remedy y aceite de lavanda para calmar la ansiedad del niño con picor.",
+   "formula": "Forma: esencia floral · Uso: ansiedad por picor"
+  },
+  "r_elderberry_syrup": {
+   "title": "Elderberry Syrup",
+   "summary": "Jarabe de bayas de saúco cocidas con miel, que el libro presenta como el remedio herbal para el resfriado más popular de Europa.",
+   "formula": "Forma: jarabe · Uso: resfriado",
+   "caution": "No dé miel, ni cruda ni cocida, a menores de 12 meses: puede causar botulismo del lactante, y cocinarla no elimina el riesgo. No produce diarrea: empieza con estreñimiento, succión y llanto débiles y flacidez, y puede paralizar la respiración. Para esa edad, prepare el jarabe sin miel. (CDC; AAP)"
+  },
+  "r_formula_for_lung_and_chest_congestion": {
+   "title": "Formula for Lung and Chest Congestion",
+   "summary": "Fórmula de regaliz, canela, equinácea, énula y jengibre en té, jarabe o tintura, para despejar la congestión bronquial.",
+   "formula": "Forma: tintura · Uso: congestión bronquial",
+   "caution": "El regaliz contiene glicirricina, que puede bajar el potasio y subir la presión arterial. La EMA no lo recomienda en menores de 18 años. Evitar su uso prolongado en niños (EMA/HMPC 2026)"
+  },
+  "r_gingerechinacea_cold_syrup": {
+   "title": "Ginger–Echinacea Cold Syrup",
+   "summary": "Jarabe de raíz de equinácea y jengibre fresco para el resfriado; admite cerezo silvestre, regaliz, valeriana o énula.",
+   "formula": "Forma: jarabe · Uso: resfriado infantil"
+  },
+  "r_decongesting_herbal_steam": {
+   "title": "Decongesting Herbal Steam",
+   "summary": "Vapor de agua caliente con una o dos gotas de aceite esencial de eucalipto para la congestión nasal, no en menores de cuatro años.",
+   "formula": "Forma: otro · Uso: congestión sinusal",
+   "caution": "El eucalipto puede causar convulsiones en niños pequeños. Los vapores calientes no alivian el resfriado y son una causa frecuente de quemaduras infantiles. Vicks VapoRub no debe usarse en menores de 2 años (Flaman 2001; Cochrane 2017)"
+  },
+  "r_respiratory_tonic_tea": {
+   "title": "Respiratory Tonic Tea",
+   "summary": "Té de hinojo, escaramujo, hierba limón, caléndula, tusílago, gordolobo y trébol rojo para fortalecer los pulmones en niños con problemas respiratorios recurrentes.",
+   "formula": "Forma: infusión · Uso: tónico respiratorio",
+   "caution": "El tusílago contiene alcaloides pirrolizidínicos que dañan el hígado. Se ha descrito enfermedad venooclusiva hepática en un lactante que tomaba un té de hierbas a diario. Evitarlo en niños, sobre todo por tiempo prolongado. El asma necesita tratamiento médico según guías (Sperl 1995; EMA 2021)"
+  },
+  "r_high_c_tonic_tea": {
+   "title": "High-C Tonic Tea",
+   "summary": "Té de escaramujo, hibisco, hierba limón y canela como fuente natural de vitamina C y bioflavonoides, a libre demanda.",
+   "formula": "Forma: infusión · Uso: aporte de vitamina C"
+  },
+  "r_healing_clay": {
+   "title": "Healing Clay",
+   "summary": "Pasta de arcilla verde con aloe, raíz de consuelda y sello de oro o chaparral para cortes, heridas y picaduras.",
+   "formula": "Forma: compresa o cataplasma · Uso: cortes, heridas, picaduras",
+   "caution": "La consuelda contiene alcaloides pirrolizidínicos que dañan el hígado. La EMA indica no aplicarla sobre heridas ni lesiones abiertas, ni en menores de 18 años. El chaparral tomado ha causado hepatitis grave y trasplantes, y no se ha estudiado sobre heridas ni en niños. Evitar ambos en varicela y cortes infantiles (EMA/HMPC 2015; Sheikh 1997)"
+  },
+  "r_babys_bath_herbs": {
+   "title": "Baby’s Bath Herbs",
+   "summary": "Bolsa de baño para el bebé con caléndula, manzanilla, hoja de consuelda, lavanda y rosas, calmante y relajante.",
+   "formula": "Forma: baño · Uso: baño del bebé"
+  },
+  "r_baby_powder": {
+   "title": "Baby Powder",
+   "summary": "Talco de arrurruz, arcilla blanca, raíz de consuelda y olmo o malvavisco; para la dermatitis del pañal añade sello de oro, mirra y equinácea.",
+   "formula": "Forma: polvo · Uso: dermatitis del pañal",
+   "caution": "La consuelda contiene alcaloides pirrolizidínicos que dañan el hígado. La EMA indica no aplicarla sobre piel irritada o lesionada, ni en menores de 18 años. Evitarla en la zona del pañal y en bebés (EMA/HMPC 2015)"
+  },
+  "r_bottoms_up_salve": {
+   "title": "Bottoms-Up Salve",
+   "summary": "Ungüento de aceite de oliva con caléndula, hoja y raíz de consuelda e hipérico, y cera de abeja, para dermatitis del pañal, cortes y piel irritada.",
+   "formula": "Forma: ungüento · Uso: dermatitis del pañal",
+   "caution": "La consuelda contiene alcaloides pirrolizidínicos que dañan el hígado. La EMA indica no aplicarla sobre piel irritada o lesionada, no usarla en menores de 18 años y no más de 10 días. Evitarla en la dermatitis del pañal (EMA/HMPC 2015)"
+  },
+  "r_baby_oil": {
+   "title": "Baby Oil",
+   "summary": "Aceite de albaricoque o almendra macerado con manzanilla, hoja de consuelda y rosas, para después del baño y masaje del bebé.",
+   "formula": "Forma: aceite · Uso: masaje del bebé"
+  },
+  "r_herbal_iron_syrup": {
+   "title": "Herbal Iron Syrup",
+   "summary": "Jarabe de diente de león, ortiga, frambueso, alfalfa, romaza y espino con melaza y espirulina, que el libro propone como fuente de hierro para mujeres.",
+   "formula": "Forma: jarabe · Uso: deficiencia de hierro"
+  },
+  "r_liver_tonic_formula_1": {
+   "title": "Liver Tonic Formula #1",
+   "summary": "Decocción de raíz de diente de león, sauzgatillo, ñame silvestre, romaza y mahonia, tónico para hígado y sistema reproductor.",
+   "formula": "Forma: decocción · Uso: tónico hepático y reproductor"
+  },
+  "r_liver_tonic_formula_2": {
+   "title": "Liver Tonic Formula #2",
+   "summary": "Infusión más suave de ortiga, hoja de diente de león, melisa, trébol rojo y alfalfa, tónico para hígado y sistema reproductor.",
+   "formula": "Forma: infusión · Uso: tónico hepático y reproductor"
+  },
+  "r_womens_tonic_tea": {
+   "title": "Women’s Tonic Tea",
+   "summary": "Infusión ligera de melisa, ortiga, menta, hoja de frambueso y avena lechosa, que el libro propone como tónico nutritivo femenino.",
+   "formula": "Forma: infusión · Uso: tónico femenino"
+  },
+  "r_womens_libertea": {
+   "title": "Women’s LiberTea",
+   "summary": "Decocción de sauzgatillo, diente de león, sasafrás, bardana, jengibre, regaliz y canela que, según el libro, estimula el hígado y normaliza las hormonas.",
+   "formula": "Forma: decocción · Uso: equilibrio hormonal"
+  },
+  "r_breast_health_tea": {
+   "title": "Breast Health Tea",
+   "summary": "Infusión de caléndula, trébol rojo, galio y alquimila, rica en minerales, que el libro propone para nutrir la sangre y favorecer el flujo linfático mamario.",
+   "formula": "Forma: infusión · Uso: salud mamaria"
+  },
+  "r_lymph_congestion_tea": {
+   "title": "Lymph Congestion Tea",
+   "summary": "Infusión de caléndula, galio, gordolobo y hierbabuena que el libro propone para asegurar el drenaje linfático.",
+   "formula": "Forma: infusión · Uso: congestión linfática"
+  },
+  "r_love_my_breasts_massage_oil": {
+   "title": "Love-My-Breasts Massage Oil",
+   "summary": "Aceite de almendra con caléndula y consuelda y aceites esenciales de lavanda, pino y romero para masaje mamario; opcionalmente con fitolaca para mamas fibroquísticas.",
+   "formula": "Forma: aceite · Uso: masaje mamario, fibroquistes",
+   "caution": "La raíz de fitolaca también es tóxica, no solo bayas y hojas; sobre la piel puede causar irritación y edema. No hay ensayos en mastopatía fibroquística. Lo del pino contra el cáncer o la lavanda inmunoestimulante viene solo de laboratorio. Las compresas de ricino no tienen estudios en quistes; use calor moderado. Un bulto mamario nuevo requiere evaluación médica (Woolum 2022, Toxicon; Arslan 2011)."
+  },
+  "r_yances_poke_oil_plus": {
+   "title": "Yance’s Poke Oil Plus",
+   "summary": "Aceite de masaje de fitolaca, árnica, tintura de muérdago e hipérico que, según el libro, previene quistes y tumores en mamas fibroquísticas.",
+   "formula": "Forma: aceite · Uso: mamas fibroquísticas, tumores",
+   "caution": "Ningún estudio muestra que este aceite prevenga tumores o quistes mamarios. La fitolaca puede irritar la piel y el árnica causar dermatitis. No sustituye mamografía ni ecografía. Ante un nódulo nuevo o que cambia, consulte antes de tratarlo en casa (Woolum 2022, Toxicon; NCI PDQ)."
+  },
+  "r_womb_tea": {
+   "title": "Womb Tea",
+   "summary": "Infusión de ortiga, corteza de roble blanco, alquimila, avena y frambueso que el libro recomienda para tonificar la pelvis y la salud del útero.",
+   "formula": "Forma: infusión · Uso: tónico uterino"
+  },
+  "r_womb_belly_rub": {
+   "title": "Womb & Belly Rub",
+   "summary": "Aceite de coco, manteca de cacao, sésamo y ricino con esencia de vainilla o lavanda para masajear el vientre y dar calor al útero.",
+   "formula": "Forma: aceite · Uso: masaje del vientre"
+  },
+  "r_liver_tonic_formula_for_menstruation": {
+   "title": "Liver Tonic Formula for Menstruation",
+   "summary": "Té o tintura de bardana, diente de león, sasafrás, sauzgatillo, regaliz y jengibre que el libro propone como tónico hepático para prevenir cólicos.",
+   "formula": "Forma: decocción · Uso: prevención de cólicos menstruales"
+  },
+  "r_high_calcium_tea_for_menstruation": {
+   "title": "High-Calcium Tea for Menstruation",
+   "summary": "Infusión de ortiga, paja de avena, poleo, cola de caballo, menta y frambueso que se toma 10 días antes de la regla para prevenir cólicos.",
+   "formula": "Forma: infusión · Uso: prevención de cólicos menstruales",
+   "caution": "La hoja de poleo también contiene pulegona, tóxica para el hígado; con té casero se han descrito fallo hepático y muerte en lactantes. Tomar 3–4 tazas al día durante 10 días aumenta la exposición. Se ha usado como abortivo: evítelo si hay posibilidad de embarazo, en niños y en hepatopatía (LiverTox; EMA HMPC; Bakerink 1996)."
+  },
+  "r_cramp_relief_formula": {
+   "title": "Cramp-Relief Formula",
+   "summary": "Té o tintura de viburno, poleo y milenrama que se toma cada 15 minutos o cada hora hasta que ceden los cólicos menstruales.",
+   "formula": "Forma: té · Uso: cólicos menstruales",
+   "caution": "La hoja de poleo también contiene pulegona, tóxica para el hígado; con té casero se han descrito fallo hepático y muerte en lactantes. Las tomas cada 15 minutos acumulan exposición. Se ha usado como abortivo: evítelo si hay posibilidad de embarazo, en niños y en hepatopatía (LiverTox; EMA HMPC; Bakerink 1996)."
+  },
+  "r_womens_reproductive_tonic": {
+   "title": "Women’s Reproductive Tonic",
+   "summary": "Decocción de regaliz, bardana, sauzgatillo, diente de león, canela y jengibre, tónico fuerte para hígado y órganos reproductores durante al menos 4 meses.",
+   "formula": "Forma: decocción · Uso: tónico reproductor",
+   "caution": "Cuatro meses de regaliz a diario puede subir la presión y bajar el potasio; la EMA limita su uso a 4 semanas y lo desaconseja en el embarazo. Evítelo en hipertensión o enfermedad renal o cardíaca. Si la fórmula lleva sasafrás, omítalo: contiene safrol, carcinógeno hepático prohibido por la FDA en alimentos (EMA HMPC 2026; 21 CFR 189.180)."
+  },
+  "r_balancing_blend": {
+   "title": "Balancing Blend",
+   "summary": "Cápsulas de sauzgatillo, diente de león, dong quai, cardo mariano y romaza en ciclos de 5 días, que el libro propone para equilibrar hormonas.",
+   "formula": "Forma: cápsulas · Uso: equilibrio hormonal"
+  },
+  "r_yoni_powder": {
+   "title": "Yoni Powder",
+   "summary": "Talco de arcilla blanca y maicena con nogal negro, mirra, sello de oro y árbol de té para mantener seca la vulva en infecciones por hongos.",
+   "formula": "Forma: polvo · Uso: infección vaginal por hongos"
+  },
+  "r_anti_yeast_tea": {
+   "title": "Anti-Yeast Tea",
+   "summary": "Té de gordolobo, frambueso, salvia y sello de oro que el libro propone tomar a diario contra infecciones vaginales por hongos.",
+   "formula": "Forma: té · Uso: infección vaginal por hongos",
+   "caution": "No hay pruebas de que los remedios naturales o la dieta curen las infecciones vaginales igual que los antifúngicos; los probióticos solo ayudan algo como complemento. Los síntomas vaginales tienen varias causas, algunas de transmisión sexual. Conviene confirmar el diagnóstico. El sello de oro no se recomienda en embarazo ni lactancia (Cochrane 2017; CDC 2021)."
+  },
+  "r_anti_yeast_capsules": {
+   "title": "Anti-Yeast Capsules",
+   "summary": "Cápsulas de nogal negro, chaparral, equinácea, sello de oro, malvavisco y pau d'arco, antifúngicas según el libro, en ciclos durante 4 semanas.",
+   "formula": "Forma: cápsulas · Uso: infección vaginal por hongos",
+   "caution": "El chaparral de estas cápsulas se ha asociado a hepatitis grave, cirrosis y trasplante hepático; el daño puede aparecer tras semanas de uso. Ciclos de 4 semanas no son seguros. Confirme el diagnóstico: hay antifúngicos eficaces (LiverTox; Sheikh 1997, Arch Intern Med)."
+  },
+  "r_anti_yeast_douche": {
+   "title": "Anti-Yeast Douche",
+   "summary": "Lavado vaginal con el té antihongos, vinagre de manzana, acidófilos o yogur y una gota de árbol de té para tratar infecciones vaginales.",
+   "formula": "Forma: otro · Uso: infección vaginal",
+   "caution": "Las duchas vaginales frecuentes alteran la flora y se asocian a vaginosis, enfermedad pélvica inflamatoria y complicaciones del embarazo; no se recomiendan. Pueden enmascarar síntomas y dificultar el diagnóstico. Ante flujo anormal, picor o ardor, consulte (OWH-HHS; CDC 2021)."
+  },
+  "r_adrenal_tonic_tea": {
+   "title": "Adrenal Tonic Tea",
+   "summary": "Decocción de sasafrás, jengibre, regaliz, ñame silvestre, sauzgatillo, canela y dong quai que el libro propone para fortalecer las suprarrenales en la menopausia.",
+   "formula": "Forma: decocción · Uso: tónico suprarrenal, menopausia",
+   "caution": "El sasafrás, ingrediente principal, contiene safrol, carcinógeno hepático en animales que la FDA prohíbe en alimentos; se recomienda omitirlo. El regaliz a diario y prolongado puede subir la presión y bajar el potasio; la EMA limita su uso a 4 semanas. El dong quai puede potenciar anticoagulantes (21 CFR 189.180; EMA HMPC 2026; Page 1999)."
+  },
+  "r_adrenal_tonic_capsules": {
+   "title": "Adrenal Tonic Capsules",
+   "summary": "Cápsulas de kelp, regaliz, cohosh negro, jengibre, ginseng y dong quai para fortalecer las suprarrenales en la menopausia.",
+   "formula": "Forma: cápsulas · Uso: tónico suprarrenal, menopausia"
+  },
+  "r_heat_relief": {
+   "title": "Heat Relief",
+   "summary": "Infusión o cápsulas de cohosh negro, agripalma, salvia, verbena azul y sauzgatillo que el libro propone para los sofocos.",
+   "formula": "Forma: infusión · Uso: sofocos",
+   "caution": "Contra lo que dice el libro, la terapia hormonal sí aumenta la densidad ósea y reduce fracturas (ensayo WHI). La crema de progesterona no ha demostrado revertir la osteoporosis en ensayos controlados. El calcio no trata los sofocos. Hable con su médico sobre densitometría y tratamientos probados (Cauley 2003, JAMA; Leonetti 1999)."
+  },
+  "r_hot_flash_relief_tincture": {
+   "title": "Hot-Flash Relief Tincture",
+   "summary": "Tintura de cohosh negro, ginseng, regaliz y ñame silvestre que el libro propone tomar tres veces al día para los sofocos.",
+   "formula": "Forma: tintura · Uso: sofocos",
+   "caution": "La vitamina E a 400 UI/día o más, que el libro sugiere para sofocos, se ha asociado a mayor mortalidad y su efecto sobre ellos es escaso; puede potenciar anticoagulantes. El regaliz de esta tintura, tomado a diario y de forma prolongada, puede subir la presión y bajar el potasio (Miller 2005, Ann Intern Med; EMA HMPC 2026)."
+  },
+  "r_fertility_potency_syrup": {
+   "title": "Fertility & Potency Syrup",
+   "summary": "Jarabe de ginseng, muira puama, ashwagandha, palma enana americana, damiana y avena que, según el libro, aumenta la virilidad y la fertilidad masculina en 3–6 meses.",
+   "formula": "Forma: jarabe · Uso: virilidad y fertilidad masculina"
+  },
+  "r_mens_long_life_elixir": {
+   "title": "Men’s Long-Life Elixir",
+   "summary": "Tintura en brandy de damiana, fo-ti, jengibre, regaliz, sasafrás, ñame silvestre y ginseng con cereza negra, tónico masculino yang de fuerza y vitalidad.",
+   "formula": "Forma: tintura · Uso: vitalidad masculina"
+  },
+  "r_energy_balls": {
+   "title": "Energy Balls",
+   "summary": "Bolitas de tahini y miel con semillas de calabaza, ginseng siberiano, ginkgo o gotu kola, ginseng y espirulina, que el libro propone para renovar el sistema reproductor masculino.",
+   "formula": "Forma: alimento · Uso: energía y vitalidad masculina"
+  },
+  "r_once_a_day_male_tonic": {
+   "title": "Once-a-Day Male Tonic",
+   "summary": "Pasta de miel con fo-ti, astrágalo, ashwagandha, cardamomo, canela, regaliz, ginseng siberiano y equinácea, para tomar una cucharada al día como tónico masculino.",
+   "formula": "Forma: alimento · Uso: tónico masculino diario"
+  },
+  "r_good_life_wine": {
+   "title": "Good-Life Wine",
+   "summary": "Vino aromático macerado con astrágalo, ginseng, ashwagandha, damiana, fo-ti y especias, que se toma en dosis pequeñas como tónico.",
+   "formula": "Forma: vino o licor · Uso: tónico general"
+  },
+  "r_ginseng_tonic_tea": {
+   "title": "Ginseng Tonic Tea",
+   "summary": "Té de una raíz de ginseng añejo cocida al baño maría 6–8 horas, enseñado por Nam Singh; muy potente según el libro.",
+   "formula": "Forma: decocción · Uso: tónico de vitalidad"
+  },
+  "r_male_toner_tea": {
+   "title": "Male Toner Tea",
+   "summary": "Decocción de zarzaparrilla, sasafrás, bardana, canela, ginsengs, regaliz, muira puama y ñame silvestre, formulada como tónico del sistema masculino.",
+   "formula": "Forma: decocción · Uso: tónico masculino"
+  },
+  "r_chai_hombre": {
+   "title": "Chai Hombre",
+   "summary": "Chai de té negro, jengibre, canela, fo-ti, ginseng, regaliz y especias, con leche espumada, formulado por la autora para la salud masculina.",
+   "formula": "Forma: bebida · Uso: tónico masculino"
+  },
+  "r_damiana_chocolate_love_liqueur": {
+   "title": "Damiana Chocolate Love Liqueur",
+   "summary": "Licor de damiana en vodka o brandy con miel, agua de rosas y sirope de chocolate, que el libro propone como afrodisíaco para una cita.",
+   "formula": "Forma: vino o licor · Uso: afrodisíaco"
+  },
+  "r_refreshing_stimulating_bath_blend": {
+   "title": "Refreshing/Stimulating Bath Blend",
+   "summary": "Mezcla de baño de menta y romero con aceite esencial de pino para dar energía.",
+   "formula": "Forma: baño · Uso: revitalizar"
+  },
+  "r_deep_relaxation_bath": {
+   "title": "Deep Relaxation Bath",
+   "summary": "Mezcla de baño de manzanilla, salvia, lúpulo y lavanda con aceite esencial de salvia esclarea o lavanda para relajarse.",
+   "formula": "Forma: baño · Uso: relajación"
+  },
+  "r_bath_blend_for_sore_muscles": {
+   "title": "Bath Blend for Sore Muscles",
+   "summary": "Mezcla de baño de eucalipto y salvia con aceite esencial de pino o salvia para aliviar músculos adoloridos.",
+   "formula": "Forma: baño · Uso: dolor muscular"
+  },
+  "r_prostate_formula_1": {
+   "title": "Prostate Formula #1",
+   "summary": "Infusión de barbas de maíz, semillas de sandía, ortiga, galio y gayuba que, según el libro, mejora el flujo urinario en problemas de próstata.",
+   "formula": "Forma: infusión · Uso: flujo urinario, próstata"
+  },
+  "r_prostate_formula_2": {
+   "title": "Prostate Formula #2",
+   "summary": "Tintura de malvavisco, equinácea, raíz de grava, pygeum y palma enana americana para aliviar inflamación y congestión de la próstata.",
+   "formula": "Forma: tintura · Uso: prostatitis"
+  },
+  "r_oatstraw_and_horsetail_hernia_remedy": {
+   "title": "Oatstraw and Horsetail Hernia Remedy",
+   "summary": "Infusión de consuelda (opcional), frambueso, melisa, ortiga, roble blanco, cola de caballo y paja de avena que el libro propone para la hernia inguinal.",
+   "formula": "Forma: infusión · Uso: hernia inguinal",
+   "caution": "Omita la consuelda: por vía oral daña el hígado y la FDA pidió retirarla en 2001. Las cataplasmas no cierran una hernia, que necesita valoración quirúrgica; si duele mucho, cambia de color o no se reduce, acuda a urgencias. Use sen o cáscara solo unos días (FDA 2001; Fitzgibbons 2006, JAMA; EMA HMPC)."
+  },
+  "r_vegetable_juice_for_the_eyes": {
+   "title": "Vegetable Juice for the Eyes",
+   "summary": "Jugo de remolacha, zanahoria y pepino a partes iguales que el libro propone para la salud de los ojos.",
+   "formula": "Forma: bebida · Uso: salud ocular",
+   "caution": "Las dosis de suplementos del libro para la vista son altas. La vitamina A a 25.000 UI/día supera 2,5 veces el máximo seguro y puede dañar el hígado y aumentar las fracturas de cadera. El betacaroteno en dosis altas aumentó el cáncer de pulmón en fumadores y exfumadores; la fórmula AREDS2 para la DMAE usa luteína y zeaxantina. (NIH ODS; AREDS2 2013; ATBC/CARET)"
+  },
+  "r_berry_good_tea": {
+   "title": "Berry Good Tea",
+   "summary": "Infusión de bayas de saúco, espino y goji con arándano y hoja de frambueso; el libro aconseja una taza diaria para la vista.",
+   "formula": "Forma: infusión · Uso: salud ocular"
+  },
+  "r_good_vision_no_cook_herbal_jam": {
+   "title": "Good-Vision No-Cook Herbal Jam",
+   "summary": "Mermelada de arándanos, saúco, espino y escaramujo con jengibre y miel, para comer a diario como apoyo a la vista.",
+   "formula": "Forma: alimento · Uso: buena visión",
+   "caution": "La DMAE no tiene cura y la catarata solo se corrige con cirugía. Sus causas principales son la edad, la diabetes, el tabaco y el sol, no la intolerancia al azúcar. No hay evidencia de que hierbas o ejercicios oculares corrijan la presbicia o la miopía; los casos del libro son testimonios. (NEI; AAO)"
+  },
+  "r_brain_balls": {
+   "title": "Brain Balls",
+   "summary": "Bolitas de tahini y miel con ginkgo, gotu kola, ginseng siberiano, goji y romero en polvo; una al día para la memoria.",
+   "formula": "Forma: alimento · Uso: memoria y capacidad mental"
+  },
+  "r_brainpower_seasoning_sprinkle": {
+   "title": "Brainpower Seasoning Sprinkle",
+   "summary": "Condimento de sésamo, levadura nutricional, kelp, ginkgo, gotu kola, lecitina, espirulina y romero para espolvorear en comidas y estimular el cerebro.",
+   "formula": "Forma: alimento · Uso: capacidad mental",
+   "caution": "No consta que la levadura nutricional empeore la candidiasis. Evite la levadura de cerveza si toma IMAO, porque contiene tiramina. Úsela con prudencia si tiene gota o enfermedad de Crohn, o si toma antidiabéticos. En inmunodeprimidos o personas con catéter venoso central, las levaduras vivas pueden causar fungemia. (Enache-Angoulvant 2005; RxList)"
+  },
+  "r_brain_alert_formula": {
+   "title": "Brain Alert Formula",
+   "summary": "Fórmula de ginkgo, gotu kola, arándano, reishi y romero en cápsulas (2, tres veces al día) o tintura (1–2 cucharaditas, tres veces al día) para la mente.",
+   "formula": "Forma: cápsulas · Uso: memoria y alerta mental",
+   "caution": "No está demostrado que el aluminio de ollas, desodorantes o antiácidos cause Alzheimer, ni hay respaldo para la cifra del 600 % con agua fluorada. Una revisión Cochrane no encontró que la acetil-L-carnitina mejore la memoria ni la función en el Alzheimer; el esquema por ciclos no se ha estudiado. (Alzheimer's Association; Cochrane 2003)"
+  },
+  "r_hawthorn_berry_conserve": {
+   "title": "Hawthorn Berry Conserve",
+   "summary": "Conserva de bayas de espino cocidas en jugo de manzana con miel, jengibre y canela, como tónico cardíaco; también puede hacerse jarabe.",
+   "formula": "Forma: alimento · Uso: tónico cardíaco",
+   "caution": "Varios consejos cardíacos del capítulo no se sostienen. La vitamina E a 400 UI/día o más se asoció a mayor mortalidad. Una revisión Cochrane no halló que la CoQ10 baje la presión de forma relevante. La fluoración del agua en niveles recomendados es segura. Las cifras del shiitake y del agua vienen de estudios pequeños u observacionales. (Miller 2005; Cochrane 2016; CDC)"
+  },
+  "r_elder_energy_balls": {
+   "title": "Elder Energy Balls",
+   "summary": "Bolitas de tahini y miel con ginseng, astrágalo, espino, fo-ti, ginseng siberiano y guaraná en polvo, para dar energía a los mayores.",
+   "formula": "Forma: alimento · Uso: energía en mayores",
+   "caution": "El ginseng puede reducir el efecto de la warfarina y bajar la glucosa con hipoglucemiantes. El guaraná contiene cafeína, que puede subir la tensión y causar palpitaciones e insomnio. Consulte si tiene arritmias, hipertensión o diabetes, o si toma anticoagulantes. (Yuan 2004; NCCIH)"
+  },
+  "r_energy_shake": {
+   "title": "Energy Shake",
+   "summary": "Batido de jugo de piña, bebida verde, ginseng, espino, yogur, fruta y banano para aportar energía.",
+   "formula": "Forma: bebida · Uso: energía"
+  },
+  "r_quick_energy_rush": {
+   "title": "Quick Energy Rush",
+   "summary": "Bebida de dos sobres de Emergen-C (2.000 mg de vitamina C) con 1/8 de cucharadita de guaraná, para un impulso ocasional de energía.",
+   "formula": "Forma: bebida · Uso: energía rápida ocasional",
+   "caution": "El guaraná contiene cafeína, que puede subir la tensión y causar palpitaciones, ansiedad e insomnio, sobre todo en mayores con arritmias o hipertensión. El libro lo plantea solo para uso ocasional; conviene respetarlo. (NCCIH)"
+  },
+  "r_pick_me_up_tea": {
+   "title": "Pick-Me-Up Tea",
+   "summary": "Infusión de espino, ortiga, ginkgo, regaliz, canela y jengibre; el libro aconseja 2–3 tazas diarias para restaurar las suprarrenales y la energía.",
+   "formula": "Forma: infusión · Uso: energía y suprarrenales",
+   "caution": "Contiene regaliz para tomar 2–3 tazas diarias. Con el uso prolongado puede subir la tensión y bajar el potasio; la EMA lo limita a 4 semanas. Evítelo con hipertensión, enfermedad renal o cardíaca, o si toma diuréticos o digoxina. Lleva ginkgo, que puede aumentar el sangrado con anticoagulantes. (EMA; NCCIH)"
+  },
+  "r_healing_liniment_for_varicose_veins": {
+   "title": "Healing Liniment for Varicose Veins",
+   "summary": "Linimento de caléndula, castaño de Indias, rusco y corteza de hamamelis macerados en hamamelis, para frotar las piernas cada noche contra las várices.",
+   "formula": "Forma: linimento · Uso: várices",
+   "caution": "El castaño de Indias tiene evidencia Cochrane solo como extracto oral estandarizado en escina; la evidencia del linimento casero es escasa. No aplicar sobre piel lesionada. (Cochrane 2012)"
+  },
+  "r_healing_tea_for_healthy_veins": {
+   "title": "Healing Tea for Healthy Veins",
+   "summary": "Infusión de rusco, espino, escaramujo y corteza de roble blanco, 2–3 tazas diarias para prevenir o aliviar las várices.",
+   "formula": "Forma: infusión · Uso: várices"
+  },
+  "r_vitamin_c_poultice": {
+   "title": "Vitamin C Poultice",
+   "summary": "Cataplasma de caléndula, consuelda y milenrama con vitamina C y extracto de hamamelis, aplicada 30–45 minutos sobre las várices.",
+   "formula": "Forma: compresa o cataplasma · Uso: várices",
+   "caution": "La consuelda contiene alcaloides tóxicos para el hígado. Solo debe aplicarse sobre piel intacta y poco tiempo, nunca sobre úlceras venosas o heridas, frecuentes en várices de mayores. Una úlcera en la pierna necesita valoración médica. (EMA)"
+  },
+  "r_grandma_marys_cabbage_juice_cocktail": {
+   "title": "Grandma Mary’s Cabbage Juice Cocktail",
+   "summary": "Jugo de repollo verde fresco, bebido de inmediato; la autora lo propone como remedio para las úlceras gástricas.",
+   "formula": "Forma: bebida · Uso: úlcera gástrica",
+   "caution": "H. pylori no es un habitante inofensivo: causa la mayoría de las úlceras y aumenta el riesgo de cáncer gástrico. Las guías recomiendan erradicarlo con antibióticos. La evidencia del jugo de repollo es una serie de 13 casos de 1949. Un ayuno de 7 días es arriesgado en mayores. (Maastricht VI 2022; ACG 2024; Cheney 1949)"
+  },
+  "r_stress_relief_tea": {
+   "title": "Stress-Relief Tea",
+   "summary": "Infusión de avena verde, raíz de regaliz, malvavisco y verdolaga o pamplina, 2–3 tazas diarias para calmar la mente y la úlcera.",
+   "formula": "Forma: infusión · Uso: estrés y úlcera",
+   "caution": "Contiene regaliz para tomar 2–3 tazas diarias. Con el uso prolongado puede subir la tensión y bajar el potasio; la EMA lo limita a 4 semanas. Evítelo con hipertensión, enfermedad renal o cardíaca, o si toma diuréticos, digoxina o corticoides. (EMA)"
+  },
+  "r_ulcer_relief_tea": {
+   "title": "Ulcer-Relief Tea",
+   "summary": "Decocción de regaliz, arándanos, raíz de malvavisco, uña de gato o pau d'arco y canela, 2–3 tazas diarias para las úlceras.",
+   "formula": "Forma: decocción · Uso: úlcera",
+   "caution": "El regaliz es el ingrediente principal (2 partes) y se toma 2–3 tazas diarias. Con el uso prolongado puede subir la tensión y bajar el potasio; la EMA lo limita a 4 semanas. Evítelo con hipertensión, enfermedad renal o cardíaca, o si toma diuréticos o digoxina. Una úlcera requiere estudiar H. pylori. (EMA; ACG 2024)"
+  },
+  "r_circulatory_tea_for_ears_and_tinnitus": {
+   "title": "Circulatory Tea for Ears and Tinnitus",
+   "summary": "Infusión de ginkgo, bayas de espino, canela y jengibre, 3–4 tazas diarias para mejorar la circulación y algunos casos de tinnitus y pérdida auditiva.",
+   "formula": "Forma: infusión · Uso: tinnitus y pérdida auditiva"
+  },
+  "r_horseradish_sauce_for_sinus_congestion_and_tinnitus": {
+   "title": "Horseradish Sauce for Sinus Congestion and Tinnitus",
+   "summary": "Salsa de rábano picante rallado con vinagre de manzana y miel, 1–2 cucharaditas diarias para la congestión sinusal y el tinnitus.",
+   "formula": "Forma: alimento · Uso: congestión sinusal y tinnitus"
+  },
+  "i_linaza": {
+   "title": "Linaza: la sanadora del corazón",
+   "summary": "El libro recomienda 1 cucharada de aceite o 2–4 de semillas molidas de linaza al día para prevenir la cardiopatía y mejorar la salud inmune.",
+   "caution": "Aumentar el ALA, el omega-3 de la linaza, apenas cambia la mortalidad cardiovascular, aunque podría reducir ligeramente los eventos. No hay evidencia sobre la «salud inmune». Tome la linaza molida con abundante agua. Consulte si usa anticoagulantes. (Cochrane Abdelhamid 2020; NCCIH)"
+  },
+  "i_vitaminas_b": {
+   "title": "Complejo B y salud mental",
+   "summary": "El libro afirma que la irritabilidad, el pánico, la depresión o las tendencias suicidas a menudo indican un déficit de vitaminas del grupo B.",
+   "caution": "La depresión, el pánico y las ideas suicidas rara vez se deben a falta de vitamina B. Los suplementos no mejoran la depresión si no hay déficit. Las ideas suicidas requieren atención profesional inmediata. No espere a ver si una dieta o un suplemento las corrige. (Markun 2021)"
+  },
+  "i_smart_drugs": {
+   "title": "«Smart drugs»",
+   "summary": "El libro presenta la acetil-L-carnitina, el DMAE, el DHA y la fosfatidilserina como nutrientes cerebrales posiblemente útiles en depresión, Alzheimer precoz o niebla mental, aunque admite que faltan pruebas.",
+   "caution": "No hay pruebas de que la acetil-L-carnitina, el DMAE o la fosfatidilserina sirvan en el Alzheimer o la depresión. En un ensayo, el DMAE aumentó la confusión y la tensión arterial. La depresión y la demencia requieren evaluación y tratamiento médicos. (Cochrane Hudson 2003; Fisman 1981; FDA 2003)"
+  },
+  "i_sueno": {
+   "title": "Sueño y descanso mental",
+   "summary": "El libro sostiene que el cuerpo necesita poco más de dos horas de sueño, que el cerebro necesita siete u ocho y que la serotonina solo se produce en ciertas fases del sueño.",
+   "caution": "Los adultos necesitan 7 horas o más de sueño. Dormir menos de forma habitual aumenta el riesgo de hipertensión, diabetes, obesidad, depresión y accidentes. La serotonina no se produce solo durante el sueño: su actividad es mayor durante la vigilia. (AASM/SRS 2015; Monti 2011)"
+  }
+ },
+ "resources": [
+  {
+   "id": "RS",
+   "title": "Recursos: proveedores de hierbas, productos y escuelas",
+   "usedBy": [
+    "11.1"
+   ]
+  },
+  {
+   "id": "UPS",
+   "title": "United Plant Savers y plantas en riesgo",
+   "usedBy": [
+    "1.4"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    2
+   ],
+   "6": [
+    4
+   ],
+   "7": [
+    4
+   ],
+   "8": [
+    4
+   ],
+   "9": [
+    4
+   ],
+   "10": [
+    1
+   ],
+   "11": [
+    1
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "1.4": [
+    "1.3"
+   ],
+   "1.5": [
+    "1.4"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "2.3"
+   ],
+   "2.5": [
+    "2.4",
+    "11.5",
+    "11.10"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "3.1"
+   ],
+   "3.4": [
+    "3.1",
+    "11.5"
+   ],
+   "3.5": [
+    "3.1"
+   ],
+   "3.6": [
+    "3.1",
+    "11.14",
+    "11.5"
+   ],
+   "3.7": [
+    "3.1",
+    "11.5"
+   ],
+   "3.8": [
+    "3.1",
+    "11.5"
+   ],
+   "4.2": [
+    "4.1",
+    "11.12",
+    "11.9"
+   ],
+   "4.3": [
+    "4.1",
+    "11.9"
+   ],
+   "4.4": [
+    "4.1"
+   ],
+   "4.5": [
+    "4.1"
+   ],
+   "4.6": [
+    "4.1",
+    "11.5"
+   ],
+   "4.7": [
+    "4.1",
+    "11.11",
+    "11.9"
+   ],
+   "4.8": [
+    "4.1"
+   ],
+   "4.9": [
+    "4.1",
+    "11.8"
+   ],
+   "4.10": [
+    "4.1"
+   ],
+   "4.11": [
+    "4.1",
+    "11.5",
+    "11.10"
+   ],
+   "4.12": [
+    "4.1"
+   ],
+   "4.13": [
+    "4.1"
+   ],
+   "4.14": [
+    "4.1",
+    "11.10"
+   ],
+   "4.15": [
+    "4.1",
+    "11.5",
+    "11.6"
+   ],
+   "4.16": [
+    "4.1",
+    "11.8"
+   ],
+   "4.17": [
+    "4.1"
+   ],
+   "4.18": [
+    "4.1"
+   ],
+   "4.19": [
+    "4.1",
+    "11.5"
+   ],
+   "4.20": [
+    "4.1"
+   ],
+   "4.21": [
+    "4.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "5.4": [
+    "5.3"
+   ],
+   "5.5": [
+    "5.4"
+   ],
+   "5.6": [
+    "5.5",
+    "11.14",
+    "11.12"
+   ],
+   "5.7": [
+    "5.6",
+    "11.5",
+    "11.8"
+   ],
+   "5.8": [
+    "5.7"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "6.1"
+   ],
+   "6.4": [
+    "6.1"
+   ],
+   "6.5": [
+    "6.1",
+    "11.5",
+    "11.8",
+    "11.10",
+    "11.6",
+    "11.12"
+   ],
+   "6.6": [
+    "6.1",
+    "11.14",
+    "11.12",
+    "11.9",
+    "11.8"
+   ],
+   "7.2": [
+    "7.1",
+    "11.5",
+    "11.8"
+   ],
+   "7.3": [
+    "7.1",
+    "11.5",
+    "11.8"
+   ],
+   "7.4": [
+    "7.1",
+    "11.5",
+    "11.13"
+   ],
+   "7.5": [
+    "7.1",
+    "11.12",
+    "11.5",
+    "11.13"
+   ],
+   "7.6": [
+    "7.1",
+    "11.5",
+    "11.13",
+    "11.10"
+   ],
+   "8.2": [
+    "8.1",
+    "11.6",
+    "11.10",
+    "11.5"
+   ],
+   "8.3": [
+    "8.1",
+    "11.14"
+   ],
+   "8.4": [
+    "8.1",
+    "11.5",
+    "11.10"
+   ],
+   "8.5": [
+    "8.1"
+   ],
+   "8.6": [
+    "8.1"
+   ],
+   "8.7": [
+    "8.1"
+   ],
+   "8.8": [
+    "8.1",
+    "11.5"
+   ],
+   "8.9": [
+    "8.1"
+   ],
+   "8.10": [
+    "8.1"
+   ],
+   "9.2": [
+    "9.1"
+   ],
+   "9.3": [
+    "9.1"
+   ],
+   "9.4": [
+    "9.1",
+    "11.5"
+   ],
+   "9.5": [
+    "9.1",
+    "11.13"
+   ],
+   "9.6": [
+    "9.1"
+   ],
+   "9.7": [
+    "9.1",
+    "11.5"
+   ],
+   "9.8": [
+    "9.1",
+    "11.11",
+    "11.5"
+   ],
+   "9.9": [
+    "9.1",
+    "11.5"
+   ],
+   "9.10": [
+    "9.1",
+    "11.5"
+   ],
+   "11.2": [
+    "11.1"
+   ],
+   "11.3": [
+    "11.1"
+   ],
+   "11.4": [
+    "11.1"
+   ],
+   "11.5": [
+    "11.1"
+   ],
+   "11.6": [
+    "11.1"
+   ],
+   "11.7": [
+    "11.1"
+   ],
+   "11.8": [
+    "11.1"
+   ],
+   "11.9": [
+    "11.1"
+   ],
+   "11.10": [
+    "11.1"
+   ],
+   "11.11": [
+    "11.1"
+   ],
+   "11.12": [
+    "11.1"
+   ],
+   "11.13": [
+    "11.1"
+   ],
+   "11.14": [
+    "11.1"
+   ],
+   "7.1": [
+    "11.6",
+    "11.5"
+   ]
+  },
+  "items": {
+   "r_7_herb_long_life_soup": [
+    "h_garlic",
+    "h_burdock",
+    "h_dandelion",
+    "h_lycium",
+    "h_astragalus",
+    "h_fo_ti",
+    "h_ginger"
+   ],
+   "r_nettle_spanakopita": [
+    "h_nettle",
+    "h_garlic"
+   ],
+   "r_seaweed_salad": [
+    "h_garlic",
+    "h_ginger",
+    "h_cayenne_pepper"
+   ],
+   "r_zoom_balls": [
+    "h_ginseng_siberian",
+    "h_ginseng_asian"
+   ],
+   "r_fire_cider_zest": [
+    "h_ginger",
+    "h_garlic",
+    "h_cayenne_pepper"
+   ],
+   "r_longevity_tonic": [
+    "h_fo_ti",
+    "h_ashwagandha",
+    "h_astragalus",
+    "h_cinnamon",
+    "h_licorice",
+    "h_ginseng_siberian",
+    "h_echinacea",
+    "h_ginger"
+   ],
+   "r_longevity_chai": [
+    "h_ginger",
+    "h_cinnamon",
+    "h_fo_ti",
+    "h_licorice"
+   ],
+   "r_long_life_elixir": [
+    "h_damiana",
+    "h_fo_ti",
+    "h_ginger",
+    "h_licorice",
+    "h_sassafras",
+    "h_astragalus",
+    "h_saw_palmetto",
+    "h_ginseng_asian"
+   ],
+   "r_brain_tonic_tincture": [
+    "h_ginkgo",
+    "h_gotu_kola",
+    "h_peppermint",
+    "h_rosemary",
+    "h_sage"
+   ],
+   "r_longevity_liqueur": [
+    "h_damiana"
+   ],
+   "r_valerian_tea_blend": [
+    "h_licorice",
+    "h_lemon_balm",
+    "h_valerian"
+   ],
+   "r_nerve_tonic_formula_1": [
+    "h_lemon_balm",
+    "h_chamomile",
+    "h_oats",
+    "h_lavender",
+    "h_stevia"
+   ],
+   "r_nerve_tonic_formula_2": [
+    "h_dandelion",
+    "h_ginseng_siberian",
+    "h_astragalus",
+    "h_burdock",
+    "h_cinnamon",
+    "h_licorice",
+    "h_ginger"
+   ],
+   "r_high_calcium_tea": [
+    "h_nettle",
+    "h_oats"
+   ],
+   "r_herbal_footbath": [
+    "h_lavender",
+    "h_hops",
+    "h_sage",
+    "h_rosemary"
+   ],
+   "r_sleep_pillow": [
+    "h_chamomile",
+    "h_hops",
+    "h_lavender"
+   ],
+   "r_nerve_formula_for_insomnia": [
+    "h_chamomile",
+    "h_oats",
+    "h_passionflower",
+    "h_valerian",
+    "h_hops"
+   ],
+   "r_melissa_tea_blend": [
+    "h_lemon_balm",
+    "h_borage",
+    "h_chamomile",
+    "h_st_johns_wort"
+   ],
+   "r_california_poppy_blend": [
+    "h_california_poppy",
+    "h_chamomile",
+    "h_oats",
+    "h_marsh_mallow"
+   ],
+   "r_chamomile_tisane": [
+    "h_chamomile",
+    "h_rose_hips",
+    "h_lemon_balm",
+    "h_borage"
+   ],
+   "r_nerve_formula_for_depression": [
+    "h_chamomile",
+    "h_borage",
+    "h_lemon_balm",
+    "h_lavender"
+   ],
+   "r_antifungal_powder": [
+    "h_chaparral",
+    "h_black_walnut",
+    "h_goldenseal"
+   ],
+   "r_antifungal_salve": [
+    "h_chaparral",
+    "h_black_walnut",
+    "h_goldenseal",
+    "h_myrrh",
+    "h_echinacea"
+   ],
+   "r_st_johns_wort_salve": [
+    "h_calendula",
+    "h_comfrey",
+    "h_st_johns_wort"
+   ],
+   "r_hair_raising_cider": [
+    "h_garlic",
+    "h_cayenne_pepper"
+   ],
+   "r_herbal_eyewash": [
+    "h_comfrey",
+    "h_goldenseal"
+   ],
+   "r_yellow_dock_constipation_remedy": [
+    "h_yellow_dock",
+    "h_dandelion",
+    "h_licorice"
+   ],
+   "r_emergency_constipation_remedy": [
+    "h_fennel",
+    "h_licorice",
+    "h_yellow_dock",
+    "h_cascara_sagrada",
+    "h_senna"
+   ],
+   "r_klosss_liniment": [
+    "h_echinacea",
+    "h_goldenseal",
+    "h_myrrh",
+    "h_cayenne_pepper"
+   ],
+   "r_goldenseal_salve": [
+    "h_goldenseal",
+    "h_myrrh"
+   ],
+   "r_garlicmullein_flower_oil": [
+    "h_garlic",
+    "h_mullein"
+   ],
+   "r_alkalizing_herb_blend_for_vascular_headaches": [
+    "h_dandelion",
+    "h_burdock",
+    "h_yellow_dock",
+    "h_skullcap",
+    "h_valerian"
+   ],
+   "r_headache_tea": [
+    "h_lemon_balm",
+    "h_feverfew",
+    "h_lavender"
+   ],
+   "r_nerve_formula_for_headaches": [
+    "h_chamomile",
+    "h_lemon_balm",
+    "h_passionflower",
+    "h_skullcap"
+   ],
+   "r_skullcap_headache_blend": [
+    "h_lemon_balm",
+    "h_skullcap",
+    "h_chamomile",
+    "h_feverfew"
+   ],
+   "r_jethro_klosss_famous_antispasmodic_tincture": [
+    "h_black_cohosh",
+    "h_lobelia",
+    "h_myrrh",
+    "h_skullcap",
+    "h_valerian",
+    "h_cayenne_pepper"
+   ],
+   "r_digestive_bitter_tincture": [
+    "h_fennel",
+    "h_artichoke",
+    "h_dandelion",
+    "h_gentian",
+    "h_ginger"
+   ],
+   "r_triple_strength_throat_spray": [
+    "h_echinacea",
+    "h_licorice",
+    "h_sage",
+    "h_eucalyptus"
+   ],
+   "r_throat_coat_balls": [
+    "h_licorice",
+    "h_slippery_elm",
+    "h_marsh_mallow",
+    "h_echinacea",
+    "h_goldenseal",
+    "h_peppermint"
+   ],
+   "r_throat_soother_tea": [
+    "h_licorice",
+    "h_cinnamon",
+    "h_echinacea",
+    "h_marsh_mallow",
+    "h_ginger"
+   ],
+   "r_sore_throat_gargle": [
+    "h_sage",
+    "h_cayenne_pepper"
+   ],
+   "r_cough_be_gone_sore_throat_syrup": [
+    "h_fennel",
+    "h_licorice",
+    "h_slippery_elm",
+    "h_valerian",
+    "h_wild_cherry",
+    "h_cinnamon",
+    "h_ginger"
+   ],
+   "r_st_johns_wort_oil": [
+    "h_st_johns_wort"
+   ],
+   "r_rosemarys_itch_relief_remedy": [
+    "h_witch_hazel",
+    "h_peppermint"
+   ],
+   "r_toothache_poultice": [
+    "h_goldenseal",
+    "h_myrrh"
+   ],
+   "r_healing_mouthwash": [
+    "h_calendula",
+    "h_goldenseal",
+    "h_chaparral",
+    "h_myrrh",
+    "h_peppermint"
+   ],
+   "r_cystitis_remedy": [
+    "h_cleavers",
+    "h_uva_ursi",
+    "h_chickweed",
+    "h_marsh_mallow"
+   ],
+   "r_rose_water_method_1": [
+    "h_witch_hazel"
+   ],
+   "r_miracle_grains": [
+    "h_oats",
+    "h_lavender"
+   ],
+   "r_steam_for_dry_to_normal_skin": [
+    "h_comfrey",
+    "h_calendula",
+    "h_chamomile",
+    "h_lavender"
+   ],
+   "r_steam_for_normal_to_oily_skin": [
+    "h_comfrey",
+    "h_calendula",
+    "h_red_raspberry",
+    "h_sage",
+    "h_rosemary"
+   ],
+   "r_the_queen_of_hungarys_water": [
+    "h_lemon_balm",
+    "h_chamomile",
+    "h_calendula",
+    "h_comfrey",
+    "h_rosemary",
+    "h_sage",
+    "h_witch_hazel",
+    "h_lavender"
+   ],
+   "r_bay_rum_aftershave_and_astringent": [
+    "h_ginger"
+   ],
+   "r_rosemarys_perfect_cream": [
+    "h_aloe_vera"
+   ],
+   "r_relaxing_bath_blend": [
+    "h_chamomile",
+    "h_lavender",
+    "h_comfrey"
+   ],
+   "r_stimulating_bath_blend": [
+    "h_peppermint",
+    "h_calendula",
+    "h_eucalyptus",
+    "h_rosemary",
+    "h_sage"
+   ],
+   "r_body_powder": [
+    "h_lavender"
+   ],
+   "r_bath_salts": [
+    "h_eucalyptus"
+   ],
+   "r_make_it_yourself_herbal_shampoo": [
+    "h_rosemary"
+   ],
+   "r_goldie_locks_infusion": [
+    "h_calendula",
+    "h_chamomile",
+    "h_comfrey"
+   ],
+   "r_dark_of_the_night_infusion": [
+    "h_sage",
+    "h_black_walnut",
+    "h_comfrey"
+   ],
+   "r_desert_bloom_infusion": [
+    "h_calendula",
+    "h_marsh_mallow",
+    "h_nettle"
+   ],
+   "r_rapunzels_locks_infusion": [
+    "h_rosemary",
+    "h_witch_hazel",
+    "h_yarrow"
+   ],
+   "r_high_calcium_childrens_tea": [
+    "h_rose_hips",
+    "h_lemon_balm",
+    "h_oats",
+    "h_nettle",
+    "h_red_raspberry",
+    "h_cinnamon",
+    "h_stevia"
+   ],
+   "r_slippery_elm_gruel": [
+    "h_marsh_mallow",
+    "h_slippery_elm",
+    "h_cinnamon",
+    "h_fennel"
+   ],
+   "r_cradle_cap_tea": [
+    "h_burdock",
+    "h_mullein",
+    "h_red_clover"
+   ],
+   "r_cradle_cap_oil": [
+    "h_chamomile",
+    "h_mullein",
+    "h_nettle",
+    "h_lavender"
+   ],
+   "r_blackberry_root_tea": [
+    "h_blackberry"
+   ],
+   "r_diarrhea_remedy_tea": [
+    "h_blackberry",
+    "h_slippery_elm",
+    "h_cinnamon"
+   ],
+   "r_tea_for_constipation": [
+    "h_fennel",
+    "h_spearmint",
+    "h_licorice",
+    "h_marsh_mallow",
+    "h_cinnamon",
+    "h_stevia",
+    "h_senna"
+   ],
+   "r_ear_infection_tincture": [
+    "h_echinacea",
+    "h_garlic",
+    "h_usnea",
+    "h_ginger",
+    "h_goldenseal"
+   ],
+   "r_catnipelder_fever_reducing_tea": [
+    "h_catnip",
+    "h_elder",
+    "h_echinacea",
+    "h_peppermint"
+   ],
+   "r_super_immunity_syrup": [
+    "h_oats",
+    "h_astragalus",
+    "h_burdock",
+    "h_echinacea"
+   ],
+   "r_tea_for_chicken_pox_and_measles": [
+    "h_calendula",
+    "h_red_clover",
+    "h_oats",
+    "h_lemon_balm",
+    "h_passionflower"
+   ],
+   "r_valerianburdock_tincture_for_itching_and_skin_rash": [
+    "h_burdock",
+    "h_echinacea",
+    "h_valerian",
+    "h_skullcap",
+    "h_catnip"
+   ],
+   "r_disinfectant_powder": [
+    "h_calendula",
+    "h_comfrey",
+    "h_goldenseal",
+    "h_chaparral",
+    "h_slippery_elm"
+   ],
+   "r_rescue_remedy_flower_essence_spritzer": [
+    "h_lavender"
+   ],
+   "r_elderberry_syrup": [
+    "h_elder"
+   ],
+   "r_formula_for_lung_and_chest_congestion": [
+    "h_licorice",
+    "h_cinnamon",
+    "h_echinacea",
+    "h_elecampane",
+    "h_ginger"
+   ],
+   "r_gingerechinacea_cold_syrup": [
+    "h_echinacea",
+    "h_ginger",
+    "h_wild_cherry",
+    "h_licorice",
+    "h_valerian",
+    "h_elecampane"
+   ],
+   "r_decongesting_herbal_steam": [
+    "h_eucalyptus"
+   ],
+   "r_respiratory_tonic_tea": [
+    "h_fennel",
+    "h_rose_hips",
+    "h_calendula",
+    "h_coltsfoot",
+    "h_mullein",
+    "h_red_clover"
+   ],
+   "r_high_c_tonic_tea": [
+    "h_rose_hips",
+    "h_hibiscus",
+    "h_cinnamon"
+   ],
+   "r_healing_clay": [
+    "h_aloe_vera",
+    "h_comfrey",
+    "h_goldenseal",
+    "h_chaparral",
+    "h_lavender"
+   ],
+   "r_babys_bath_herbs": [
+    "h_calendula",
+    "h_chamomile",
+    "h_comfrey",
+    "h_lavender"
+   ],
+   "r_baby_powder": [
+    "h_comfrey",
+    "h_slippery_elm",
+    "h_marsh_mallow",
+    "h_goldenseal",
+    "h_myrrh",
+    "h_echinacea"
+   ],
+   "r_bottoms_up_salve": [
+    "h_calendula",
+    "h_comfrey",
+    "h_st_johns_wort"
+   ],
+   "r_baby_oil": [
+    "h_chamomile",
+    "h_comfrey"
+   ],
+   "r_herbal_iron_syrup": [
+    "h_dandelion",
+    "h_nettle",
+    "h_red_raspberry",
+    "h_yellow_dock",
+    "h_hawthorn"
+   ],
+   "r_liver_tonic_formula_1": [
+    "h_dandelion",
+    "h_chaste_tree",
+    "h_wild_yam",
+    "h_yellow_dock",
+    "h_oregon_grape",
+    "h_cinnamon",
+    "h_ginger",
+    "h_sassafras"
+   ],
+   "r_liver_tonic_formula_2": [
+    "h_nettle",
+    "h_dandelion",
+    "h_lemon_balm",
+    "h_red_clover"
+   ],
+   "r_womens_tonic_tea": [
+    "h_lemon_balm",
+    "h_nettle",
+    "h_peppermint",
+    "h_spearmint",
+    "h_red_raspberry",
+    "h_oats",
+    "h_stevia"
+   ],
+   "r_womens_libertea": [
+    "h_chaste_tree",
+    "h_dandelion",
+    "h_sassafras",
+    "h_burdock",
+    "h_ginger",
+    "h_licorice",
+    "h_cinnamon"
+   ],
+   "r_breast_health_tea": [
+    "h_calendula",
+    "h_red_clover",
+    "h_cleavers",
+    "h_spearmint",
+    "h_peppermint"
+   ],
+   "r_lymph_congestion_tea": [
+    "h_calendula",
+    "h_cleavers",
+    "h_mullein",
+    "h_spearmint"
+   ],
+   "r_love_my_breasts_massage_oil": [
+    "h_calendula",
+    "h_comfrey",
+    "h_lavender",
+    "h_rosemary"
+   ],
+   "r_yances_poke_oil_plus": [
+    "h_st_johns_wort",
+    "h_lavender"
+   ],
+   "r_womb_tea": [
+    "h_nettle",
+    "h_white_oak",
+    "h_oats",
+    "h_red_raspberry",
+    "h_spearmint",
+    "h_peppermint"
+   ],
+   "r_womb_belly_rub": [
+    "h_lavender"
+   ],
+   "r_liver_tonic_formula_for_menstruation": [
+    "h_burdock",
+    "h_dandelion",
+    "h_sassafras",
+    "h_chaste_tree",
+    "h_licorice",
+    "h_ginger",
+    "h_stevia"
+   ],
+   "r_high_calcium_tea_for_menstruation": [
+    "h_nettle",
+    "h_oats",
+    "h_peppermint",
+    "h_red_raspberry"
+   ],
+   "r_cramp_relief_formula": [
+    "h_crampbark",
+    "h_yarrow",
+    "h_peppermint"
+   ],
+   "r_womens_reproductive_tonic": [
+    "h_licorice",
+    "h_burdock",
+    "h_chaste_tree",
+    "h_dandelion",
+    "h_cinnamon",
+    "h_ginger",
+    "h_sassafras"
+   ],
+   "r_balancing_blend": [
+    "h_chaste_tree",
+    "h_dandelion",
+    "h_dong_quai",
+    "h_milk_thistle",
+    "h_yellow_dock"
+   ],
+   "r_yoni_powder": [
+    "h_black_walnut",
+    "h_myrrh",
+    "h_goldenseal"
+   ],
+   "r_anti_yeast_tea": [
+    "h_mullein",
+    "h_red_raspberry",
+    "h_sage",
+    "h_goldenseal"
+   ],
+   "r_anti_yeast_capsules": [
+    "h_black_walnut",
+    "h_chaparral",
+    "h_echinacea",
+    "h_goldenseal",
+    "h_marsh_mallow"
+   ],
+   "r_anti_yeast_douche": [
+    "h_mullein",
+    "h_red_raspberry",
+    "h_sage",
+    "h_goldenseal"
+   ],
+   "r_adrenal_tonic_tea": [
+    "h_sassafras",
+    "h_ginger",
+    "h_licorice",
+    "h_wild_yam",
+    "h_chaste_tree",
+    "h_cinnamon",
+    "h_dong_quai"
+   ],
+   "r_adrenal_tonic_capsules": [
+    "h_licorice",
+    "h_black_cohosh",
+    "h_ginger",
+    "h_dong_quai"
+   ],
+   "r_heat_relief": [
+    "h_black_cohosh",
+    "h_motherwort",
+    "h_sage",
+    "h_chaste_tree"
+   ],
+   "r_hot_flash_relief_tincture": [
+    "h_black_cohosh",
+    "h_licorice",
+    "h_wild_yam"
+   ],
+   "r_fertility_potency_syrup": [
+    "h_muira_puama",
+    "h_ashwagandha",
+    "h_saw_palmetto",
+    "h_wild_yam",
+    "h_oats",
+    "h_red_raspberry",
+    "h_damiana",
+    "h_nettle"
+   ],
+   "r_mens_long_life_elixir": [
+    "h_damiana",
+    "h_fo_ti",
+    "h_ginger",
+    "h_licorice",
+    "h_sassafras",
+    "h_wild_yam",
+    "h_sarsaparilla",
+    "h_saw_palmetto",
+    "h_ginseng_asian"
+   ],
+   "r_energy_balls": [
+    "h_pumpkin",
+    "h_ginseng_siberian",
+    "h_ginkgo",
+    "h_gotu_kola"
+   ],
+   "r_once_a_day_male_tonic": [
+    "h_fo_ti",
+    "h_astragalus",
+    "h_ashwagandha",
+    "h_cinnamon",
+    "h_licorice",
+    "h_ginseng_siberian",
+    "h_echinacea",
+    "h_ginger"
+   ],
+   "r_good_life_wine": [
+    "h_astragalus",
+    "h_ashwagandha",
+    "h_damiana",
+    "h_fo_ti",
+    "h_ginger"
+   ],
+   "r_male_toner_tea": [
+    "h_sarsaparilla",
+    "h_sassafras",
+    "h_burdock",
+    "h_cinnamon",
+    "h_ginseng_siberian",
+    "h_ginseng_asian",
+    "h_ginseng_american",
+    "h_licorice",
+    "h_muira_puama",
+    "h_wild_yam",
+    "h_ginger"
+   ],
+   "r_chai_hombre": [
+    "h_ginger",
+    "h_cinnamon",
+    "h_fo_ti",
+    "h_licorice"
+   ],
+   "r_damiana_chocolate_love_liqueur": [
+    "h_damiana"
+   ],
+   "r_refreshing_stimulating_bath_blend": [
+    "h_peppermint",
+    "h_rosemary"
+   ],
+   "r_deep_relaxation_bath": [
+    "h_chamomile",
+    "h_sage",
+    "h_hops",
+    "h_lavender"
+   ],
+   "r_bath_blend_for_sore_muscles": [
+    "h_eucalyptus",
+    "h_sage"
+   ],
+   "r_prostate_formula_1": [
+    "h_corn_silk",
+    "h_nettle",
+    "h_cleavers",
+    "h_uva_ursi"
+   ],
+   "r_prostate_formula_2": [
+    "h_marsh_mallow",
+    "h_echinacea",
+    "h_pygeum",
+    "h_saw_palmetto"
+   ],
+   "r_oatstraw_and_horsetail_hernia_remedy": [
+    "h_comfrey",
+    "h_lemon_balm",
+    "h_nettle",
+    "h_white_oak",
+    "h_oats"
+   ],
+   "r_berry_good_tea": [
+    "h_elder",
+    "h_hawthorn",
+    "h_lycium",
+    "h_bilberry",
+    "h_red_raspberry"
+   ],
+   "r_good_vision_no_cook_herbal_jam": [
+    "h_elder",
+    "h_hawthorn",
+    "h_rose_hips",
+    "h_ginger"
+   ],
+   "r_brain_balls": [
+    "h_ginkgo",
+    "h_gotu_kola",
+    "h_ginseng_siberian",
+    "h_lycium",
+    "h_rosemary"
+   ],
+   "r_brainpower_seasoning_sprinkle": [
+    "h_ginkgo",
+    "h_gotu_kola",
+    "h_rosemary",
+    "h_garlic"
+   ],
+   "r_brain_alert_formula": [
+    "h_ginkgo",
+    "h_gotu_kola",
+    "h_bilberry",
+    "h_rosemary"
+   ],
+   "r_hawthorn_berry_conserve": [
+    "h_hawthorn",
+    "h_ginger",
+    "h_cinnamon"
+   ],
+   "r_elder_energy_balls": [
+    "h_ginseng_american",
+    "h_ginseng_asian",
+    "h_astragalus",
+    "h_hawthorn",
+    "h_fo_ti",
+    "h_ginseng_siberian"
+   ],
+   "r_energy_shake": [
+    "h_ginseng_asian",
+    "h_ginseng_siberian",
+    "h_hawthorn"
+   ],
+   "r_pick_me_up_tea": [
+    "h_hawthorn",
+    "h_nettle",
+    "h_ginkgo",
+    "h_licorice",
+    "h_cinnamon",
+    "h_ginger"
+   ],
+   "r_healing_liniment_for_varicose_veins": [
+    "h_calendula",
+    "h_witch_hazel"
+   ],
+   "r_healing_tea_for_healthy_veins": [
+    "h_hawthorn",
+    "h_rose_hips",
+    "h_white_oak"
+   ],
+   "r_vitamin_c_poultice": [
+    "h_calendula",
+    "h_comfrey",
+    "h_yarrow",
+    "h_witch_hazel"
+   ],
+   "r_stress_relief_tea": [
+    "h_oats",
+    "h_licorice",
+    "h_marsh_mallow",
+    "h_chickweed"
+   ],
+   "r_ulcer_relief_tea": [
+    "h_licorice",
+    "h_marsh_mallow",
+    "h_cinnamon"
+   ],
+   "r_circulatory_tea_for_ears_and_tinnitus": [
+    "h_ginkgo",
+    "h_hawthorn",
+    "h_cinnamon",
+    "h_ginger"
+   ]
+  }
+ }
+}
