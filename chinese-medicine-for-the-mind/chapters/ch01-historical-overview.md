@@ -37,3 +37,9 @@ Chinese medicine has diagnosed and treated mental illness continuously for over 
 ## Connects To
 - **Ch 2**: Builds directly on qi/Organ theory to introduce the Five Phases and the Five Emotions model.
 - **Ch 3**: Explains how the "science not mysticism" framing carries into herbal formula design and modality selection.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **"Thousands of placebo-controlled trials" / patentability** (1.3): many TCM trials exist, but only 3 % of 3,159 reported adequate randomization, concealment and blinding, and 99 % of trials published in China were positive (publication bias). The patentability explanation is a hypothesis. "Trials since the 1960s" was not confirmed.

@@ -16,23 +16,23 @@
 If no noticeable improvement within **1–2 weeks** at full dosage → wrong pattern match, not a dosage problem. Re-examine physical symptoms (temperature of hands/feet, digestion, pulse quality) to re-diagnose the pattern rather than increasing dose or waiting longer.
 
 ## Decision Rule: First-Line Anxiety Formulas When Pattern Is Unclear
-Try, in order of general safety/availability: **Jia Wei Xiao Yao San/Wan → An Shen Ding Zhi Wan → Gui Pi Tang.** All three are widely available with low side-effect profiles.
+Try, in order of general safety/availability: **Jia Wei Xiao Yao San/Wan → An Shen Ding Zhi Wan → Gui Pi Tang.** All three are widely available; the book describes them as low side-effect. *Evidence note: no dedicated safety trials support "low side-effect profile"; long-term Gardenia use (Jia Wei Xiao Yao San) is linked to mesenteric phlebosclerosis on Japanese labels; choose products tested for heavy metals ([evidence.md](evidence.md) 2.1, 2.5).*
 
 ## Thresholds & Defaults
 | Parameter | Value |
 |---|---|
 | Standard herbal formula course | 4–6 weeks at full dose, then taper/PRN |
 | Time to expect noticeable improvement | 1–2 weeks |
-| Spacing from Western medications | ≥1 hour |
+| Spacing from Western medications | ≥1 hour (book) — spacing does not prevent interactions; check them with a pharmacist ([evidence.md](evidence.md) 2.1) |
 | Footbath temperature | 104–110°F (40–43°C) |
-| Footbath duration (researched optimum) | 24 minutes (range 15–30 min) |
+| Footbath duration | 24 minutes per the book (range 15–30 min); meta-analyses favor ~40 °C for ≤20 min, so 24 min is not an established optimum ([evidence.md](evidence.md) 2.11) |
 | Acupressure point pressure duration | 1–3 minutes per point |
 | TCM optimal bedtime | 9–11 p.m. (San Jiao window) |
 | TCM "must be asleep by" | 11 p.m.–1 a.m. (Gallbladder window) |
 | Five Element music session | 30 min, 1–2x/day, for 1–4+ weeks |
 | Ginseng decoction dose | 3–9 g dried root per 3–4 cups water, simmered ~1 hr (30 min if sliced) |
 | Yunnan Baiyao course | Escalating to 2 capsules 4x/day, total 64 capsules |
-| Additional tea for depression risk reduction | +3 cups/day associated with 37% lower depression risk |
+| Additional tea for depression risk reduction | +3 cups/day associated with 37% lower depression risk (observational; other meta-analyses found no significant association — [evidence.md](evidence.md) 1.7) |
 
 ## Trade-off Matrix: Ginseng Selection
 | Constitution | Type | Notes |
@@ -48,10 +48,14 @@ Try, in order of general safety/availability: **Jia Wei Xiao Yao San/Wan → An 
 | Dang Gui Si Ni Tang | Kidney disease |
 | Gan Mai Da Zao Tang | Celiac disease / gluten intolerance (contains wheat) |
 | Fu Ling Gui Zhi Gan Cao Da Zao Tang | Digestive issues |
-| Yunnan Baiyao | On blood thinners (seek guidance) |
-| Footbaths | Diabetes |
+| Yunnan Baiyao | On blood thinners (seek guidance); also contains aconite (Cao Wu) — avoid in pregnancy and never exceed the label; 2013 Hong Kong recall for undeclared aconite alkaloids ([evidence.md](evidence.md) 2.8) |
+| Tian Wang Bu Xin Dan | Classical recipe contains cinnabar (Zhu Sha, mercury sulfide): use only cinnabar-free, metal-tested products ([evidence.md](evidence.md) 2.5) |
+| Jia Wei Xiao Yao San (long-term) | Use beyond years: Gardenia-linked mesenteric phlebosclerosis on Japanese labels; check drug interactions rather than relying on spacing ([evidence.md](evidence.md) 2.1) |
+| Huang Lian / berberine formulas (e.g., Huang Lian Wen Dan Tang) | Jaundiced newborns (bilirubin displacement in lab and animal studies) ([evidence.md](evidence.md) 2.6) |
+| Ma Huang (any form) | Heart disease, hypertension, stimulant use; no human evidence that a formula removes ephedrine's cardiovascular risk ([evidence.md](evidence.md) 2.2) |
+| Footbaths | Diabetes (confirmed: neuropathy-related burns from foot soaking are documented — [evidence.md](evidence.md) 2.11) |
 | Unsupervised qigong | Severe mental illness or family history of it; pregnancy/menstruation |
-| Ginseng (either type) | Causes insomnia/nervousness after taking |
+| Ginseng (either type) | Causes insomnia/nervousness after taking; on warfarin (American ginseng lowered INR in a controlled trial — [evidence.md](evidence.md) 2.10) |
 
 ## Tells & Smells
 - **Cold hands/feet + irritability/stuck feeling** → Liver Qi Stagnation family (Si Ni San, Xiao Yao San) — don't mistake for a purely circulatory issue.

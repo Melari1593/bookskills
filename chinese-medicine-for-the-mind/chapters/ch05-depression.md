@@ -52,3 +52,13 @@ Depression in TCM is read as Yu (郁) — stagnation, exhausted or immobilized q
 - **Ch 2**: Builds on the Liver/Lung-emotion correspondence and Liver Qi Stagnation pattern established there.
 - **Ch 4**: Shares overlapping patterns and formulas (Jia Wei Xiao Yao San) with insomnia.
 - **Ch 6**: Anxiety is explicitly framed as depression's energetic mirror image — read together.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Xiao Yao San vs. sertraline, "2001 double-blind RCT", "no adverse effects across 1,837 patients"** (1.1): the double-blind sertraline trial tested *Jia Wei* Xiao Yao capsules (n=210) and was published in 2019; faster onset only for anxiety; adverse events similar in both arms. The 1,837-patient review says trials *did not report* adverse effects and rates them low quality.
+- **"SSRIs no better than placebo for ~85 %"** (1.2): Stone et al. 2022 (BMJ) covered all antidepressants; ~15 % get a *substantial* effect beyond placebo, which does not mean no effect for the rest. Do not use this to discourage prescribed antidepressants.
+- **Safe to combine with SSRIs if spaced ≥1 hour** (2.1): no evidence that spacing prevents interactions; combining should be reviewed by the prescriber or a pharmacist.
+- **Tea and depression, 37 % lower risk** (1.7): correct figure from observational data; other meta-analyses found no significant association.
+- **Feng shui 2021 RCT, sleeping under a beam and heart attack** (1.9): no such RCT found; a 2016 survey found no link between feng shui layout and sleep; nothing links beams to heart attack.

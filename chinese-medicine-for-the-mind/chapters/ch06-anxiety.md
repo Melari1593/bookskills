@@ -73,3 +73,12 @@ Anxiety is the TCM condition with the most granular pattern differentiation — 
 - **Ch 4**: Shares Deficient Vexation pattern and several formulas (Suan Zao Ren Tang, Tian Wang Bu Xin Dan) with insomnia.
 - **Ch 5**: Jia Wei Xiao Yao San is the anxiety-adapted version of the depression chapter's Xiao Yao San.
 - **Ch 7**: ADHD shares the Gui Zhi Gan Cao Long Gu Mu Li Tang formula and restlessness symptom overlap.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **First-line formulas are safe with low side effects** (2.5): no dedicated safety trials; Tian Wang Bu Xin Dan's classical recipe contains cinnabar; long-term Gardenia use (Jia Wei Xiao Yao San) is linked to mesenteric phlebosclerosis on Japanese labels.
+- **Caffeine and panic** (1.8): confirmed (panic in 51 % of panic-disorder patients at ~5 cups' worth vs. 0 % on placebo).
+- **Tea / L-theanine as a well-evidenced anxiety adjunct** (1.8): L-theanine effects were inconsistent and non-significant across 31 RCTs; GABA tea not checked.
+- **Five Element music, 2018 Beijing Normal University study** (1.6): the specific study was not located; meta-analyses favor the therapy with low or very low certainty.

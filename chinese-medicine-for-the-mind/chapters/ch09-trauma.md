@@ -72,3 +72,10 @@ A simple grounding technique requiring no point knowledge: cup both hands on the
 - **Ch 1**: Daoist philosophy (Zhuangzi) is recommended as a complementary resource for trauma sufferers, echoing Ch 1's discussion of Daoist medicine.
 - **Ch 4, 5, 6**: Insomnia, Depression, and Anxiety chapters share extensive formula and pattern overlap with trauma (Suan Zao Ren Tang, An Shen Ding Zhi Wan, Gan Mai Da Zao Tang, Xiao Yao San family).
 - **Ch 2**: The Liver's association with fright/shock extends the Five Emotions framework into trauma's etiology.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Yunnan Baiyao for emotional trauma** (2.8): it contains aconite (Cao Wu); Hong Kong recalled five products in 2013 for undeclared aconite alkaloids. No evidence for use in emotional trauma was found. Warn about aconite and pregnancy, not only blood thinners, and do not exceed the label.
+- **Trauma care**: the formulas and techniques here are adjuncts, not substitutes; current clinical guidelines (e.g., WHO, NICE) recommend trauma-focused psychotherapies as first-line treatment for PTSD, and the book itself urges professional support.

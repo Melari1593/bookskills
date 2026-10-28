@@ -16,7 +16,7 @@
 
 **Fan (煩, vexation)** — "Fire next to the head" — an overwhelming heat-y mental irritability/restlessness. (Ch 6)
 
-**Feng shui (風水, "wind and water")** — Environmental qi theory; preliminary studies support its effects on mood, heart rate variability, and sleep quality. (Ch 5)
+**Feng shui (風水, "wind and water")** — Environmental qi theory; the book cites preliminary studies on mood, heart rate variability and sleep; the evidence check found no 2021 RCT and a 2016 survey with no sleep association ([evidence.md](evidence.md) 1.9). (Ch 5)
 
 **Five Element Music Therapy** — Pentatonic-scale music (Gong/Shang/Jue/Zhi/Yu) matched to the five Organ systems, first defined in the Zhou-dynasty *Book of Rites*; clinically studied for insomnia, depression, and anxiety. (Ch 3, 4, 6)
 
@@ -68,7 +68,7 @@
 
 **Tian (天)** — Commonly mistranslated as "heaven"; actually means sky/universe/nature — illustrates translation-driven "mysticism" misconceptions about TCM. (Ch 1)
 
-**Tui Na (推拿)** — Therapeutic massage/bodywork; outperformed benzodiazepines and other TCM therapies for primary insomnia in 2018/2023 meta-analyses. (Ch 4)
+**Tui Na (推拿)** — Therapeutic massage/bodywork; outperformed benzodiazepines and other TCM therapies for primary insomnia in 2018/2023 meta-analyses (low certainty, unblinded trials — [evidence.md](evidence.md) 1.5). (Ch 4)
 
 **Vexation and agitation** — A TCM term-cluster that can correspond to Western generalized anxiety disorder. (Ch 2, 6, 7)
 

@@ -3,7 +3,7 @@
 ## Jun-Chen-Zuo-Shi Formula Architecture
 **When to use**: Evaluating or understanding any Chinese herbal formula's structure — why it has multiple herbs instead of one "active ingredient."
 **How**: Every well-balanced formula has (1) Jun/Emperor — main herb(s), highest ratio, targets the disease directly; (2) Chen/Minister — adjuvant, boosts main herb or targets secondary symptoms; (3) Zuo/Assistant — reduces the main herb's side effects; (4) Shi/Courier — guides the formula to target Organs / harmonizes the whole.
-**Trade-offs**: Multi-herb complexity increases bioavailability and safety but makes formulas harder to "simplify" — isolating one herb (see Ma Huang → Ephedra) breaks the built-in safety design.
+**Trade-offs**: Multi-herb complexity increases bioavailability and safety but makes formulas harder to "simplify" — isolating one herb (see Ma Huang → Ephedra) breaks the built-in safety design. *Evidence note: this safety rationale is supported only by computer and animal studies ([evidence.md](evidence.md) 2.2, 2.12).*
 
 ## Pattern Differentiation (core diagnostic method)
 **When to use**: Before selecting any herbal formula for any condition in this book.
@@ -22,7 +22,7 @@
 
 ## Footbath Protocol (insomnia)
 **When to use**: Nightly sleep-hygiene ritual, especially for heat/stress-driven insomnia.
-**How**: Fill a basin with 104–110°F (40–43°C) water covering the ankles; optional mugwort or ginger herbal sachet; soak 15–30 minutes (24 min is the researched optimum); dry feet immediately; hydrate with warm water after.
+**How**: Fill a basin with 104–110°F (40–43°C) water covering the ankles; optional mugwort or ginger herbal sachet; soak 15–30 minutes (the book calls 24 min the researched optimum; meta-analyses favor ~40 °C for ≤20 min — [evidence.md](evidence.md) 2.11); dry feet immediately; hydrate with warm water after.
 **Trade-offs**: Contraindicated for diabetics (reduced peripheral sensation risk). Preferred over full-body baths, which TCM considers overly heating/draining.
 
 ## Qigong's Three Adjustments
@@ -38,7 +38,7 @@
 ## Formula-Taking Protocol (general)
 **When to use**: Starting any new herbal formula in this book.
 **How**: Take with warm water only (never juice or coffee — alters pharmacology); space ≥1 hour from Western medications; take at full dosage for 4–6 weeks; expect noticeable improvement within 1–2 weeks; if none, the formula likely doesn't match your pattern — reassess. After improvement, taper to as-needed or discontinue.
-**Trade-offs**: Slower onset than sedatives/stimulants, but designed for sustainable resolution rather than symptom masking, with better long-term safety profiles in the cited trials.
+**Trade-offs**: Slower onset than sedatives/stimulants, but designed for sustainable resolution rather than symptom masking, with better long-term safety profiles in the cited trials (per the book; most trials were small and did not report adverse effects systematically — [evidence.md](evidence.md) 1.1, 2.5).
 
 ## Environmental Qi Engineering (Feng Shui, depression-focused)
 **When to use**: Structuring a bedroom/living space to support mood, especially for depression.

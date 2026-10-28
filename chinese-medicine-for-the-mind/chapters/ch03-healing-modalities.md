@@ -56,3 +56,13 @@ A patient wants a formula "distilled to the one active ingredient" to avoid taki
 ## Connects To
 - **Ch 1**: Extends the "TCM is scientifically testable, not mystical" framing into specific modalities (music therapy cellular studies, acupuncture RCTs).
 - **Ch 4–9**: Every condition chapter recommends specific herbal formulas (built on this Jun-Chen-Zuo-Shi structure), specific Five Element music tracks, and specific food/qigong practices — this chapter is the "how to use" manual for those recommendations.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Jun-Chen-Zuo-Shi increases bioavailability and safety** (2.12): supported only by computer models and rat studies; combinations have not prevented harm (aristolochic acid products caused kidney failure and urothelial cancer in Taiwan).
+- **Ma Huang is safe within a formula** (2.2): no human evidence that a formula removes ephedrine's cardiovascular risk; FDA banned ephedrine-alkaloid supplements in 2004 after strokes, seizures and deaths.
+- **Acetaminophen comparison** (2.3): ~56,000 ER visits/year is correct and it is the leading cause of *acute liver failure*; "#1 cause of liver transplant" was not confirmed. A comparison with another drug's risk does not establish a herb's safety.
+- **Five Element music therapy is evidence-supported** (1.6): meta-analyses favor it, but all rate certainty low or very low with no blinding; one in cancer found no effect on anxiety. Treat it as a promising, low-risk adjunct.
+- **Ginger palm-temperature trial** (1.10): real, but 6 participants, ~20-minute effect, industry authors — pilot data, not validation.

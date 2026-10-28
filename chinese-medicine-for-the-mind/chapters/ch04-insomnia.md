@@ -56,3 +56,14 @@ TCM insomnia treatment targets the specific pattern disrupting the Heart's abili
 - **Ch 2**: Uses the Five Emotions/Organ framework — Liver stagnation and Heart-Kidney disruption patterns directly extend that model.
 - **Ch 3**: Applies the Jun-Chen-Zuo-Shi formula structure and Five Element music protocol introduced there.
 - **Ch 5, 6, 9**: Depression, Anxiety, and Trauma chapters share overlapping insomnia patterns — cross-check when insomnia doesn't resolve with sleep-specific treatment alone.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Organ clock and heart attacks 11 a.m.–1 p.m.** (2.4): myocardial infarction and sudden cardiac death peak 6 a.m.–noon (maximum ~9 a.m.); this does not corroborate the organ clock.
+- **Suan Zao Ren Tang + Zhi Zi Chi Tang vs. lorazepam** (1.4): the 2015 trial exists (119 people with insomnia and anxiety, 4 weeks); one small trial, blinding not reported.
+- **Tui na vs. benzodiazepines** (1.5): both meta-analyses exist and favor tui na; certainty is low (unblinded trials).
+- **Footbath "24 minutes is the researched optimum"** (2.11): not found; meta-analyses favor ~40 °C for ≤20 min. The diabetes warning is well founded.
+- **Tian Wang Bu Xin Dan** (2.5): the classical recipe contains cinnabar (mercury sulfide); use only cinnabar-free, metal-tested products.
+- **Five Element music studies** (1.6): the Shanghai COVID-quarantine study was not located; overall certainty low.

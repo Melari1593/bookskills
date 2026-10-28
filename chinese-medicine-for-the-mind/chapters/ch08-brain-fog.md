@@ -59,3 +59,11 @@ Brain fog — a condition modern medicine has "no approved treatments and few st
 - **Ch 5**: Depression shares fatigue/Kidney Yang Deficiency overlap with brain fog's Kidney pattern.
 - **Ch 7**: Shares the Bu Nao Wan formula and phlegm-clouding-the-Heart model with ADHD's inattentive pole.
 - **Ch 3**: Applies the qigong safety guidelines and Jun-Chen-Zuo-Shi formula logic established there.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Ginsenosides reduce neuroinflammation (NLRP3/AIM2)** (2.10): mouse and cell-culture data only, one AIM2 study retracted. The only human long-COVID trial found (n=216) showed less fatigue in women only, with no validated brain-fog outcome. "3,400+ studies" not confirmed.
+- **Ginseng and warfarin** (2.10): American ginseng lowered warfarin's effect (INR) in a controlled trial — check before combining.
+- **Qigong caution** (2.9): well founded (qigong-related psychosis in vulnerable people).

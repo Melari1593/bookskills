@@ -53,3 +53,11 @@ A simple non-point-specific reset: place hands just below the navel and follow t
 - **Ch 3**: References the Ma Huang/Ephedra history (stimulant origin story) established there.
 - **Ch 4, 6**: Shares the vexation/agitation and Running Piglet frameworks and several formulas (Gui Zhi Gan Cao Long Gu Mu Li Tang) with insomnia and anxiety.
 - **Ch 8**: Brain Fog shares significant pattern overlap (Phlegm/Dampness clouding the Heart/senses) with ADHD's inattentive pole.
+
+## Evidence notes (checked 2026-10-28)
+
+The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
+
+- **Formulas "safe long-term" in children** (2.6): a 2022 meta-analysis (42 studies, 3,484 children) found efficacy similar to conventional drugs, with moderate to very low certainty and no long-term pediatric safety studies. Avoid Huang Lian (berberine) in jaundiced newborns. Do not stop prescribed ADHD medication without the prescriber.
+- **Adderall originated from attempts to synthesize Ma Huang** (2.7): amphetamine was synthesized in 1887 (Edeleanu); Alles revisited it in 1929 seeking an ephedrine substitute — a loose link.
+- **Stimulants cause gray-matter abnormalities** (2.7): a meta-analysis associated stimulant treatment with *more normal* basal-ganglia gray matter in ADHD, not damage.
