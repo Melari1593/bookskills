@@ -74,6 +74,14 @@ Las ideas que se apoyan en una afirmación científica se contrastaron con evide
 
 El EPUB no tiene páginas y el libro no numera sus secciones: la numeración es propia del grafo. Es un mapa de estudio, no el grafo de afirmaciones trazables que propone [`grafo-crianza/SPEC.md`](grafo-crianza/SPEC.md); sus alertas pueden servir de insumo para la fase de evidencia de esa especificación.
 
+## Grafo de Super Powders
+
+[`grafos/super-powders/grafo_super_powders.html`](grafos/super-powders/grafo_super_powders.html) es el mapa interactivo de *Super Powders: Adaptogenic Herbs and Mushrooms for Energy, Beauty, Mood, and Well-Being* (Katrine van Wyk, 2018): 15 capítulos, 104 secciones, 48 nodos de polvo o concepto (25 adaptógenos y hongos, 10 superpolvos y 13 conceptos de la Parte I), 47 recetas y 259 prerrequisitos, en 6 bloques (fundamentos; hongos medicinales; raíces, hierbas y hojas; bayas, polen y perla; otros superpolvos; recetas). Cada receta está enlazada con los polvos que usa, así que trazar los prerrequisitos de una receta muestra qué fichas leer antes. Los datos están en [`grafo_super_powders.json`](grafos/super-powders/grafo_super_powders.json).
+
+33 nodos llevan una alerta de evidencia, contrastada en PubMed y en agencias (EMA, EFSA, BfR, LactMed, LiverTox, NIH ODS). Entre los riesgos que el libro omite están la hepatotoxicidad del He Shou Wu, la levodopa de la mucuna, el daño hepático y la tirotoxicosis asociados a la ashwagandha, la cumarina de la canela cassia y el daño hepático por suplementos de cúrcuma con mayor absorción; entre las afirmaciones sin respaldo, la «fatiga suprarrenal» y la B12 de la ashitaba. [`alertas.json`](grafos/super-powders/alertas.json) reúne los textos de las alertas, [`verif_A.md`](grafos/super-powders/verif_A.md) y [`verif_B.md`](grafos/super-powders/verif_B.md) traen el veredicto, las fuentes con DOI y la confianza de cada una, y [`log_busqueda.md`](grafos/super-powders/log_busqueda.md) documenta las búsquedas.
+
+El EPUB no tiene páginas ni numera las secciones: la numeración es propia del grafo y solo las recetas llevan la página impresa, tomada de las referencias cruzadas del libro. Los polvos se agruparon por tipo; el libro los presenta en orden alfabético. Las alertas resumen evidencia publicada y no sustituyen la valoración clínica.
+
 ## Aplicación Python de Graphify
 
 [`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.
