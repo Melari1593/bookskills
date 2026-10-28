@@ -4,6 +4,7 @@ Skills de Claude basadas en libros y obras de referencia.
 
 | Skill | Descripción |
 |---|---|
+| [`ideas-a-animacion`](.claude/skills/ideas-a-animacion/SKILL.md) | Convierte ideas de grafos de libros y archivos PDF, TXT o EPUB en guiones, storyboards y prompts de video con fuentes trazables y estilo de animación seleccionado por el usuario. |
 | [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md) | Los 361 puntos clásicos de acupuntura (MTC) por meridiano, con índice por síntoma y categorías (Shu, Yuan, Luo, Xi, Mu, Hui…). |
 | [`harrys-cosmeticology`](.claude/skills/harrys-cosmeticology/SKILL.md) | *Harry's Cosmeticology* 9.ª ed. (Vol. 1, Vol. 2 y Sostenibilidad): 59 fichas de capítulo sobre formulación, ingredientes, sustratos, regulación y antienvejecimiento, con glosario, patrones, cheatsheet y consulta del grafo de conocimiento. |
 | [`hemodinamia-grafo`](.claude/skills/hemodinamia-grafo/SKILL.md) | Mapa de estudio del *Manual de hemodinamia y aplicaciones clínicas en cardiología*: 16 capítulos, 149 secciones, 63 conceptos y rutas de prerrequisitos. |
