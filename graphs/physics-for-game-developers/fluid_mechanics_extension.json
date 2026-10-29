@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Complement equations knowledge graph with fluid mechanics; not extracted from Physics for Game Developers",
+  "sources": [
+    {
+      "repository": "maziarraissi/HFM",
+      "role": "fluid mechanics machine learning"
+    },
+    {
+      "repository": "ikespand/awesome-machine-learning-fluid-mechanics",
+      "role": "curated bibliography"
+    },
+    {
+      "repository": "AndreWeiner/ml-cfd-lecture",
+      "role": "CFD and ML instructional materials"
+    }
+  ],
+  "equations": [
+    {
+      "id": "fluid_continuity_incompressible",
+      "expression": "∇·u=0",
+      "category": "mass_conservation",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_continuity_compressible",
+      "expression": "∂ρ/∂t+∇·(ρu)=0",
+      "category": "mass_conservation",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_navier_stokes_incompressible",
+      "expression": "ρ(∂u/∂t+(u·∇)u)=-∇p+μ∇²u+ρg",
+      "category": "momentum_conservation",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_reynolds_number",
+      "expression": "Re=ρUL/μ",
+      "category": "dimensionless_number",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_bernoulli",
+      "expression": "p+0.5ρv²+ρgz=constant",
+      "category": "energy_conservation",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_hydrostatic_pressure",
+      "expression": "dp/dz=-ρg",
+      "category": "hydrostatics",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_darcy_law",
+      "expression": "q=-(k/μ)(∇p-ρg)",
+      "category": "porous_media",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_poiseuille",
+      "expression": "Q=πr⁴Δp/(8μL)",
+      "category": "laminar_pipe_flow",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_froude_number",
+      "expression": "Fr=U/√(gL)",
+      "category": "dimensionless_number",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    },
+    {
+      "id": "fluid_weber_number",
+      "expression": "We=ρU²L/σ",
+      "category": "dimensionless_number",
+      "source_type": "external_standard_physics",
+      "verification": "requires_reference_specific_review"
+    }
+  ],
+  "notes": [
+    "Darcy law uses permeability k, dynamic viscosity μ, and vector gravity g; sign convention must be checked.",
+    "Bernoulli requires steady inviscid flow along a streamline, with additional conditions for broader use.",
+    "Poiseuille assumes steady laminar fully developed Newtonian flow in a circular pipe."
+  ]
+}
