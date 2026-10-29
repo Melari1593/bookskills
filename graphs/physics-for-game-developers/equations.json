@@ -1,0 +1,77 @@
+{
+  "equations": [
+    {
+      "id": "newton_second_law",
+      "pdf_page": 46,
+      "normalized_expression": "F=m*a",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "linear_velocity_definition",
+      "pdf_page": 50,
+      "normalized_expression": "v=ds/dt",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "linear_acceleration_definition",
+      "pdf_page": 50,
+      "normalized_expression": "a=d²s/dt²",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "position_vector_2d",
+      "pdf_page": 48,
+      "normalized_expression": "s=x*i+y*j",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "position_vector_3d",
+      "pdf_page": 50,
+      "normalized_expression": "s=x*i+y*j+z*k",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "centripetal_acceleration",
+      "pdf_page": 69,
+      "normalized_expression": "a_c=v²/r",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "cross_product",
+      "pdf_page": 70,
+      "normalized_expression": "C=A×B",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "cross_product_magnitude",
+      "pdf_page": 70,
+      "normalized_expression": "|C|=|A|*|B|*sin(theta)",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "linear_acceleration_components",
+      "pdf_page": 50,
+      "normalized_expression": "a=d²x/dt²*i+d²y/dt²*j+d²z/dt²*k",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "linear_velocity_components",
+      "pdf_page": 50,
+      "normalized_expression": "v=dx/dt*i+dy/dt*j+dz/dt*k",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "angular_velocity_tangent",
+      "pdf_page": 68,
+      "normalized_expression": "v_t=r*omega",
+      "verification": "editorial_normalization_from_extracted_text"
+    },
+    {
+      "id": "kinematic_differential",
+      "pdf_page": 44,
+      "normalized_expression": "v*dv=a*ds",
+      "verification": "editorial_normalization_from_extracted_text"
+    }
+  ],
+  "warning": "Formulas normalized from PDF text; verify against original page images before numerical use."
+}
