@@ -143,7 +143,7 @@ const itemHome={};
   add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
   (c.sections||[]).forEach((s,si)=>{
     const sid="s"+s.num;
-    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,caution:s.caution,order:(ci+1)*1000+si+1});
     links.push({source:cid,target:sid,kind:"contains"});
     (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
   });

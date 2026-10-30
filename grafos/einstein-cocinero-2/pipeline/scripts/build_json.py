@@ -1,12 +1,13 @@
 """Construye salida/grafo.json (versión profunda) de Lo que Einstein le contó a su cocinero 2 (Robert L. Wolke).
 Entradas: trabajo/toc.json (estructura y páginas), trabajo/resumenes_*.json (resúmenes parafraseados de capítulos y secciones),
 trabajo/sintesis.json (conceptos con tres capas, enlaces con tipo y motivo, requisitos entre secciones),
-trabajo/alertas.json (opcional: {id_concepto: alerta de vigencia científica}).
+trabajo/alertas_*.json (opcional: {id_sección: alerta de vigencia científica}).
 Uso: python3 scripts/build_json.py salida/grafo.json"""
 import json, glob, os, sys
 TOC = json.load(open('trabajo/toc.json', encoding='utf-8'))
 S = json.load(open('trabajo/sintesis.json', encoding='utf-8'))
-AL = json.load(open('trabajo/alertas.json', encoding='utf-8')) if os.path.exists('trabajo/alertas.json') else {}
+AL = {}   # alertas de vigencia por sección (verificación frente a la ciencia actual)
+for f in sorted(glob.glob('trabajo/alertas_*.json')): AL.update(json.load(open(f, encoding='utf-8')))
 RS = {"chapters": {}, "sections": {}}
 for f in sorted(glob.glob('trabajo/resumenes_*.json')):
     d = json.load(open(f, encoding='utf-8'))
@@ -18,7 +19,6 @@ items = {}
 for cid, c in C.items():
     it = {"title": c["title"], "summary": c["mecanismo"], "misconception": c.get("error_comun", ""),
           "formula": "En la cocina: " + c["en_cocina"] if c.get("en_cocina") else ""}
-    if cid in AL and AL[cid]: it["caution"] = AL[cid]
     items[cid] = {k: v for k, v in it.items() if v}
 
 # sección → conceptos; la sección de origen va primero para que la plantilla la tome como "dónde se presenta"
@@ -46,6 +46,7 @@ for c in TOC["chapters"]:
         if s["ch"] != c["num"]: continue
         sec = {"num": s["id"], "title": s["title"], "summary": RS["sections"].get(s["id"], {}).get("summary", ""), "page": s["page"]}
         if sec_items.get(s["id"]): sec["items"] = sec_items[s["id"]]
+        if AL.get(s["id"]): sec["caution"] = AL[s["id"]]
         secs.append(sec)
     chapters.append({"num": c["num"], "title": c["title"], "block": BLOCK[c["num"]], "page": c["page"],
                      "summary": RS["chapters"].get(str(c["num"]), {}).get("summary", ""), "sections": secs})
@@ -77,5 +78,5 @@ g = {"meta": {"title": "Lo que Einstein le contó a su cocinero 2 como grafo",
  "chapters": chapters, "items": items, "resources": [],
  "requires": {"chapters": req_ch, "sections": req_sec, "items": req_it}, "why": why}
 json.dump(g, open(sys.argv[1], 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-print("secciones", len(TOC["sections"]), "conceptos", len(items), "alertas", sum('caution' in v for v in items.values()),
+print("secciones", len(TOC["sections"]), "conceptos", len(items), "alertas", sum(1 for c in chapters for x in c["sections"] if "caution" in x), "alertas sin sección", [k for k in AL if k not in order],
       "requisitos sección", sum(map(len, req_sec.values())), "enlaces concepto", sum(map(len, req_it.values())), "motivos", len(why))
