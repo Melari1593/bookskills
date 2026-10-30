@@ -1,81 +1,81 @@
-"""Construye grafo.json de Lo que Einstein le contó a su cocinero 2 (Robert L. Wolke).
-Entradas: trabajo/toc.json, trabajo/conceptos.md, trabajo/resumenes_*.json. Uso: python3 scripts/build_json.py salida/grafo.json"""
-import json, re, glob, sys
-from collections import Counter
+"""Construye salida/grafo.json (versión profunda) de Lo que Einstein le contó a su cocinero 2 (Robert L. Wolke).
+Entradas: trabajo/toc.json (estructura y páginas), trabajo/resumenes_*.json (resúmenes parafraseados de capítulos y secciones),
+trabajo/sintesis.json (conceptos con tres capas, enlaces con tipo y motivo, requisitos entre secciones),
+trabajo/alertas.json (opcional: {id_concepto: alerta de vigencia científica}).
+Uso: python3 scripts/build_json.py salida/grafo.json"""
+import json, glob, os, sys
 TOC = json.load(open('trabajo/toc.json', encoding='utf-8'))
-TIT = {m.group(1): m.group(2).strip() for m in re.finditer(r'^\| (c_\w+) \| (.+?) \|$', open('trabajo/conceptos.md', encoding='utf-8').read(), re.M)}
-R = {"chapters": {}, "sections": {}, "conceptos": {}, "conceptos_nuevos": {}}
+S = json.load(open('trabajo/sintesis.json', encoding='utf-8'))
+AL = json.load(open('trabajo/alertas.json', encoding='utf-8')) if os.path.exists('trabajo/alertas.json') else {}
+RS = {"chapters": {}, "sections": {}}
 for f in sorted(glob.glob('trabajo/resumenes_*.json')):
     d = json.load(open(f, encoding='utf-8'))
-    R["chapters"].update(d.get("chapters", {})); R["sections"].update(d.get("sections", {}))
-    for k in ("conceptos", "conceptos_nuevos"):
-        for c, v in d.get(k, {}).items(): R[k].setdefault(c, v)
-for c, v in R["conceptos_nuevos"].items():
-    TIT.setdefault(c, v["title"]); R["conceptos"].setdefault(c, v)
+    for k in RS: RS[k].update(d.get(k, {}))
 order = {s["id"]: i for i, s in enumerate(TOC["sections"])}
-present = {}
+C = S["conceptos"]
+
+items = {}
+for cid, c in C.items():
+    it = {"title": c["title"], "summary": c["mecanismo"], "misconception": c.get("error_comun", ""),
+          "formula": "En la cocina: " + c["en_cocina"] if c.get("en_cocina") else ""}
+    if cid in AL and AL[cid]: it["caution"] = AL[cid]
+    items[cid] = {k: v for k, v in it.items() if v}
+
+# sección → conceptos; la sección de origen va primero para que la plantilla la tome como "dónde se presenta"
+sec_items = {sid: list(v.get("conceptos", [])) for sid, v in S["secciones"].items()}
+for cid, c in C.items():
+    for sid in c.get("secciones", []):
+        sec_items.setdefault(sid, [])
+        if cid not in sec_items[sid]: sec_items[sid].append(cid)
+first = {}
 for s in TOC["sections"]:
-    for c in R["sections"].get(s["id"], {}).get("presenta", []): present.setdefault(c, []).append(s["id"])
-canon = {}
-for c in TIT:
-    sec = R["conceptos"].get(c, {}).get("section")
-    if sec not in order: sec = (present.get(c) or [None])[0]
-    if sec: canon[c] = sec
-items = {c: {"title": TIT[c], "summary": R["conceptos"].get(c, {}).get("summary", "")} for c in canon}
+    for cid in sec_items.get(s["id"], []): first.setdefault(cid, s["id"])
+for cid, c in C.items():   # el origen declarado debe ser la primera aparición; si no, se usa la primera
+    if c.get("origen") in order and order[c["origen"]] <= order[first.get(cid, c["origen"])]: first[cid] = c["origen"]
+for sid in sec_items:
+    sec_items[sid] = [x for x in sec_items[sid] if x in items]
+for cid, sid in first.items():   # quita el concepto de secciones anteriores a su origen
+    for s in TOC["sections"]:
+        if order[s["id"]] < order[sid] and cid in sec_items.get(s["id"], []): sec_items[s["id"]].remove(cid)
+
 BLOCK = {1: "bebidas", 2: "granja", 3: "huerto", 4: "huerto", 5: "cereales", 6: "mar_carne", 7: "mar_carne", 8: "especias", 9: "cocina", 10: "cereales"}
 chapters = []
 for c in TOC["chapters"]:
     secs = []
     for s in TOC["sections"]:
         if s["ch"] != c["num"]: continue
-        r = R["sections"].get(s["id"], {})
-        its = [x for x in r.get("presenta", []) if x in items]
-        its += [x for x, v in canon.items() if v == s["id"] and x not in its]
-        sec = {"num": s["id"], "title": s["title"], "summary": r.get("summary", ""), "page": s["page"]}
-        if its: sec["items"] = its
+        sec = {"num": s["id"], "title": s["title"], "summary": RS["sections"].get(s["id"], {}).get("summary", ""), "page": s["page"]}
+        if sec_items.get(s["id"]): sec["items"] = sec_items[s["id"]]
         secs.append(sec)
     chapters.append({"num": c["num"], "title": c["title"], "block": BLOCK[c["num"]], "page": c["page"],
-                     "summary": R["chapters"].get(str(c["num"]), {}).get("summary", ""), "sections": secs})
+                     "summary": RS["chapters"].get(str(c["num"]), {}).get("summary", ""), "sections": secs})
+
+why = {}
 req_sec = {}
-for s in TOC["sections"]:
-    deps = []
-    for c in R["sections"].get(s["id"], {}).get("requiere", []):
-        t = canon.get(c)
-        if t and t != s["id"] and order[t] < order[s["id"]] and t not in deps: deps.append(t)
-    if deps: req_sec[s["id"]] = deps[:4]
-cnt = {}
-for a, deps in req_sec.items():
-    ca = int(a.split(".")[0])
-    for b in deps:
-        cb = int(b.split(".")[0])
-        if cb < ca: cnt.setdefault(ca, Counter())[cb] += 1
-req_ch = {str(a): [b for b, n in c.most_common(3) if n >= 2] for a, c in cnt.items()}
-req_ch = {k: v for k, v in req_ch.items() if v}
-DEP = {"c_indicadores": ["c_ph"], "c_clorofila": ["c_ph"], "c_maillard": ["c_proteinas", "c_azucares"], "c_caramelizacion": ["c_azucares"],
-       "c_grasas_trans": ["c_grasas"], "c_oxidacion": ["c_grasas"], "c_punto_humo": ["c_grasas"], "c_emulsion": ["c_grasas", "c_solubilidad"],
-       "c_espuma": ["c_proteinas"], "c_osmosis": ["c_solubilidad"], "c_curado": ["c_mioglobina", "c_osmosis"], "c_colageno": ["c_proteinas"],
-       "c_pardeamiento_enzimatico": ["c_enzimas"], "c_gluten": ["c_proteinas"], "c_fermentacion": ["c_microbios", "c_azucares"],
-       "c_alcohol": ["c_fermentacion"], "c_ebullicion": ["c_evaporacion"], "c_capacidad_calorifica": ["c_transferencia_calor"],
-       "c_microondas": ["c_transferencia_calor"], "c_lacteos": ["c_proteinas", "c_grasas"], "c_huevo": ["c_proteinas"],
-       "c_cristalizacion": ["c_solubilidad"], "c_conservacion": ["c_microbios"], "c_pungencia": ["c_gusto"], "c_polifenoles": ["c_gusto"],
-       "c_cafeina": ["c_gusto"], "c_etileno": ["c_enzimas"], "c_azufrados": ["c_aroma"], "c_gases_disueltos": ["c_solubilidad"]}
+for sid, v in S["secciones"].items():
+    for r in v.get("requiere", []):
+        if r["sec"] in order and order[r["sec"]] < order[sid]:
+            req_sec.setdefault(sid, []).append(r["sec"]); why[f"s{sid}>s{r['sec']}"] = r["porque"]
 req_it = {}
-for a, bs in DEP.items():
-    if a in items:
-        v = [b for b in bs if b in items and order[canon[b]] < order[canon[a]]]
-        if v: req_it[a] = v
-n_sec = len(TOC["sections"])
+for e in S["enlaces_conceptos"]:
+    a, b = e["de"], e["a"]
+    if a in items and b in items and a != b:
+        req_it.setdefault(a, [])
+        if b not in req_it[a]: req_it[a].append(b)
+        why[f"i:{a}>i:{b}"] = f"{e['tipo'].capitalize()}: {e['porque']}"
+req_ch = {k: v["requiere"] for k, v in S.get("capitulos", {}).items() if v.get("requiere")}
+
 g = {"meta": {"title": "Lo que Einstein le contó a su cocinero 2 como grafo",
-  "subtitle": f"Robert L. Wolke · química y física de la cocina: 10 capítulos, {n_sec} preguntas y {len(items)} conceptos científicos",
+  "subtitle": f"Robert L. Wolke · química y física de la cocina: {len(TOC['sections'])} preguntas y {len(items)} conceptos con su mecanismo, el error que corrigen y su uso en la cocina",
   "language": "es", "itemLabel": "Concepto científico", "itemLabelPlural": "Conceptos científicos",
-  "resourceLabel": "Recurso", "resourceLabelPlural": "Recursos", "searchHint": "Buscar: Maillard, emulsión, hielo, aguacate…"},
+  "resourceLabel": "Recurso", "resourceLabelPlural": "Recursos", "searchHint": "Buscar: Maillard, emulsión, yema verde, aguacate…"},
  "blocks": {"bebidas": {"name": "Bebidas", "color": "#3F6FA0"}, "granja": {"name": "Lácteos y huevos", "color": "#B08A2E"},
             "huerto": {"name": "Verduras, legumbres, frutas y aceites", "color": "#4E8A5B"},
             "cereales": {"name": "Cereales, azúcares y dulces", "color": "#A05A3C"},
             "mar_carne": {"name": "Pescados, mariscos y carnes", "color": "#B5465A"},
             "especias": {"name": "Especias y sabores", "color": "#C07A1E"}, "cocina": {"name": "La cocina y sus utensilios", "color": "#6B5B95"}},
  "chapters": chapters, "items": items, "resources": [],
- "requires": {"chapters": req_ch, "sections": req_sec, "items": req_it}}
+ "requires": {"chapters": req_ch, "sections": req_sec, "items": req_it}, "why": why}
 json.dump(g, open(sys.argv[1], 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-print("secciones", n_sec, "conceptos", len(items), "prerreq. secciones", len(req_sec), "capítulos", req_ch,
-      "faltan resúmenes", [s["id"] for s in TOC["sections"] if s["id"] not in R["sections"]])
+print("secciones", len(TOC["sections"]), "conceptos", len(items), "alertas", sum('caution' in v for v in items.values()),
+      "requisitos sección", sum(map(len, req_sec.values())), "enlaces concepto", sum(map(len, req_it.values())), "motivos", len(why))
