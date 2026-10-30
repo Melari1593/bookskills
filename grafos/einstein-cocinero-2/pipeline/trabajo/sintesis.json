@@ -1,0 +1,2059 @@
+{
+ "conceptos": {
+  "c_ph": {
+   "title": "Ácidos, bases y pH",
+   "mecanismo": "El pH expresa cuántos iones hidrógeno hay libres. Los ácidos los ceden y las bases los captan, y ese cambio altera la carga de proteínas, pigmentos y paredes vegetales. Por eso limón, bicarbonato o cal cambian color, textura y reactividad; un medio alcalino ataca además metales anfóteros como el aluminio.",
+   "error_comun": "Que la acidez solo cambia el sabor; en realidad decide si una proteína cuaja, si un pigmento vira o si la piel de una legumbre se ablanda.",
+   "en_cocina": "Usar unas gotas de ácido para fijar rojos y cuajar, y una pizca de álcali para ablandar legumbres o maíz, sin abusar: destruye vitaminas y vira pigmentos.",
+   "origen": "1.4",
+   "secciones": [
+    "1.4",
+    "2.19",
+    "2.23",
+    "3.1",
+    "3.2",
+    "3.11",
+    "3.14",
+    "4.2",
+    "4.9",
+    "5.13",
+    "6.5",
+    "7.5",
+    "7.9",
+    "9.1",
+    "9.5"
+   ],
+   "fusiona": [
+    "c_ph",
+    "c_nixtamalizacion",
+    "c_corrosion_galvanica"
+   ]
+  },
+  "c_pigmentos": {
+   "title": "Pigmentos y color",
+   "mecanismo": "El color sale de moléculas que absorben parte de la luz, y su estructura depende del entorno: la clorofila pierde su magnesio con calor y ácido, las antocianinas viran con el pH, los carotenoides aparecen al soltarse de proteínas y el hierro de la mioglobina cambia de tono según lleve oxígeno, agua u óxido nítrico unido.",
+   "error_comun": "Que el color revela frescura: la carne picada parda por dentro, la gamba cruda rosada o el salmón pálido no indican por sí mismos si el alimento está bien o mal.",
+   "en_cocina": "Cocer verduras verdes poco tiempo y destapadas, acidular la col lombarda y juzgar la carne por el olor y no por el tono.",
+   "origen": "1.4",
+   "secciones": [
+    "1.4",
+    "1.17",
+    "2.14",
+    "3.1",
+    "3.2",
+    "3.4",
+    "3.6",
+    "5.6",
+    "6.1",
+    "6.2",
+    "6.9",
+    "7.2",
+    "7.3",
+    "7.4"
+   ],
+   "fusiona": [
+    "c_indicadores",
+    "c_clorofila",
+    "c_carotenoides",
+    "c_antoxantinas",
+    "c_mioglobina",
+    "c_curado"
+   ],
+   "discrepancia": "La IARC clasificó en 2015 la carne procesada como cancerígena (grupo 1); los nitritos y las nitrosaminas del curado forman parte del riesgo."
+  },
+  "c_proteinas": {
+   "title": "Desnaturalización y redes de proteínas",
+   "mecanismo": "Las proteínas son cadenas plegadas por enlaces débiles. El calor, el ácido, el álcali, la sal o el batido rompen ese plegado; las cadenas abiertas se enganchan entre sí y forman una red que retiene agua. Así cuaja la clara, se vuelve opaco el ceviche y se arma el gluten al amasar harina de trigo hidratada.",
+   "error_comun": "Que solo el calor cocina: el limón del ceviche o la pasta alcalina del huevo milenario también desnaturalizan, aunque no eliminan parásitos ni microbios como el calor.",
+   "en_cocina": "Controlar temperatura y tiempo para coagular sin resecar, amasar si se busca gluten o mezclar poco para masas tiernas, y no fiarse del ácido para sanear pescado.",
+   "origen": "2.3",
+   "secciones": [
+    "2.3",
+    "2.10",
+    "2.18",
+    "2.19",
+    "2.22",
+    "2.23",
+    "3.11",
+    "5.6",
+    "5.8",
+    "6.5",
+    "6.9",
+    "7.5",
+    "7.7"
+   ],
+   "fusiona": [
+    "c_proteinas",
+    "c_gluten"
+   ]
+  },
+  "c_colageno": {
+   "title": "Colágeno y gelatina",
+   "mecanismo": "El colágeno del tejido conectivo forma triples hélices muy resistentes. Con calor húmedo mantenido, por encima de unos 70 °C y durante horas, las hélices se deshacen y se fragmentan en gelatina soluble; al enfriar, esas cadenas se reasocian en parte y el líquido gelifica.",
+   "error_comun": "Que una carne dura se ablanda con fuego fuerte; el colágeno necesita tiempo y humedad, y el calor intenso solo contrae y reseca las fibras musculares.",
+   "en_cocina": "Brasear los cortes con mucho tejido conectivo: dorar, tapar con poco líquido y cocer suave durante horas; enfriar el caldo para comprobar que cuaja.",
+   "origen": "7.6",
+   "secciones": [
+    "7.6",
+    "7.7",
+    "10.4"
+   ],
+   "fusiona": [
+    "c_colageno"
+   ]
+  },
+  "c_huevo": {
+   "title": "Anatomía y envejecimiento del huevo",
+   "mecanismo": "El huevo combina clara (agua y proteínas), yema (grasa, lecitina, hierro), membranas y una cámara de aire en el polo ancho. Con los días pierde agua y dióxido de carbono por los poros: la clara se alcaliniza y se vuelve fluida, la cámara crece y la membrana interna se despega mejor.",
+   "error_comun": "Que la cáscara morena, la yema intensa o la fecundación hacen el huevo más nutritivo; dependen de la raza y del pienso de la gallina.",
+   "en_cocina": "Reservar los huevos más frescos para escalfar o freír, usar los de una o dos semanas para cocer y pelar, y guardarlos en frío para frenar su envejecimiento.",
+   "origen": "2.13",
+   "secciones": [
+    "2.13",
+    "2.14",
+    "2.15",
+    "2.16",
+    "2.17",
+    "2.18",
+    "2.19",
+    "2.20",
+    "2.21"
+   ],
+   "fusiona": [
+    "c_huevo"
+   ]
+  },
+  "c_lacteos": {
+   "title": "Leche: grasa, caseína y suero",
+   "mecanismo": "La leche lleva glóbulos de grasa emulsionados en agua, micelas de caseína en suspensión y proteínas de suero disueltas. La grasa, menos densa, asciende y forma la nata; el ácido o el cuajo desestabilizan las micelas de caseína, que se unen en cuajada y separan el suero.",
+   "error_comun": "Que quitar grasa a la leche o elegir quesos con poco porcentaje ahorra tantas calorías como parece; los porcentajes se calculan sobre bases distintas.",
+   "en_cocina": "Elegir la nata por su porcentaje de grasa según se vaya a montar o a hervir, y leer si la grasa de un queso se expresa sobre el extracto seco.",
+   "origen": "2.1",
+   "secciones": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.7",
+    "2.8",
+    "2.9",
+    "2.10",
+    "2.11",
+    "2.12"
+   ],
+   "fusiona": [
+    "c_lacteos"
+   ]
+  },
+  "c_enzimas": {
+   "title": "Enzimas",
+   "mecanismo": "Las enzimas son proteínas que aceleran reacciones concretas. En la célula vegetal suelen estar separadas de sus sustratos; al cortar o golpear se mezclan y generan pardeamiento o compuestos picantes, y en la maduración el etileno activa las que pasan almidón a azúcar y ablandan la pulpa. El calor las desnaturaliza; frío y ácido las frenan.",
+   "error_comun": "Que la fruta golpeada es más dulce o que el té negro está fermentado por microbios: ambos cambios son oxidaciones causadas por enzimas de la propia planta.",
+   "en_cocina": "Escaldar para fijar color, rociar con limón la fruta cortada, madurar frutas climatéricas en bolsa de papel y enfriar la cebolla antes de picarla.",
+   "origen": "1.3",
+   "secciones": [
+    "1.3",
+    "3.7",
+    "3.10",
+    "3.13",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "8.3",
+    "8.12",
+    "9.3"
+   ],
+   "fusiona": [
+    "c_enzimas",
+    "c_pardeamiento_enzimatico",
+    "c_etileno"
+   ]
+  },
+  "c_maillard": {
+   "title": "Dorado: Maillard y caramelización",
+   "mecanismo": "Por encima de unos 120–140 °C y con poca agua, azúcares reductores y aminoácidos reaccionan y crean cientos de compuestos pardos y aromáticos (Maillard); el azúcar solo, a mayor temperatura, se descompone y carameliza. Mientras la superficie siga mojada, la evaporación la retiene cerca de 100 °C y no dora.",
+   "error_comun": "Que basta fuego fuerte para dorar: si la superficie está húmeda, como en las vieiras tratadas con fosfatos o la carne recién sacada del adobo, el agua frena el dorado.",
+   "en_cocina": "Secar bien la superficie, no llenar la sartén en exceso, dorar antes de guisar y preferir vieiras sin tratar.",
+   "origen": "7.6",
+   "secciones": [
+    "5.14",
+    "6.8",
+    "7.6",
+    "7.11",
+    "8.3",
+    "9.8",
+    "10.4"
+   ],
+   "fusiona": [
+    "c_maillard",
+    "c_caramelizacion"
+   ],
+   "discrepancia": "El libro habla del azúcar que se funde a 177 °C; hoy se sabe que la sacarosa se descompone sin fundirse de verdad y carameliza a temperaturas más bajas."
+  },
+  "c_almidon": {
+   "title": "Almidón: gelatinización y retrogradación",
+   "mecanismo": "El almidón se almacena en gránulos de amilosa (lineal) y amilopectina (ramificada). En agua caliente los gránulos se hinchan y espesan; si se rompen, sueltan una pasta gomosa. Al enfriar, las cadenas, sobre todo de amilosa, se reordenan en zonas cristalinas que expulsan agua y endurecen el conjunto.",
+   "error_comun": "Que el arroz o la sopa de la víspera se endurecen porque se secan; el agua sigue dentro, pero el almidón se ha reordenado en cristales.",
+   "en_cocina": "Recalentar arroz o sopas espesas con un chorrito de agua, aplastar las patatas sin triturarlas y elegir grano corto para un arroz pegajoso y largo para uno suelto.",
+   "origen": "5.2",
+   "secciones": [
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.12"
+   ],
+   "fusiona": [
+    "c_almidon"
+   ]
+  },
+  "c_carbohidratos": {
+   "title": "Azúcares y carbohidratos no digeribles",
+   "mecanismo": "Azúcares y almidón aportan la misma energía por gramo, unas 4 kcal. Otros carbohidratos tienen enlaces que nuestras enzimas no rompen: celulosa y pectinas (fibra), oligosacáridos de las legumbres y polioles. Llegan intactos al colon, donde las bacterias los fermentan y producen gases.",
+   "error_comun": "Que un plátano más dulce engorda más o que la batidora destruye la fibra; madurar solo convierte almidón en azúcar y licuar no cambia la química de la fibra.",
+   "en_cocina": "Restar fibra y polioles en la etiqueta para estimar los carbohidratos aprovechables; remojar legumbres desechando el agua o usar alfa-galactosidasa para reducir gases.",
+   "origen": "3.13",
+   "secciones": [
+    "3.13",
+    "3.14",
+    "4.3",
+    "5.10",
+    "5.11",
+    "5.14",
+    "5.15"
+   ],
+   "fusiona": [
+    "c_azucares",
+    "c_fibra_alimentaria",
+    "c_oligosacaridos",
+    "c_polioles"
+   ],
+   "discrepancia": "Licuar no altera la química de la fibra, pero rompe paredes celulares: los azúcares se absorben antes y la saciedad baja frente a la fruta entera."
+  },
+  "c_grasas": {
+   "title": "Grasas: estructura y saturación",
+   "mecanismo": "Las grasas son triglicéridos: glicerol unido a tres ácidos grasos. Las cadenas saturadas son rectas y se apilan, por eso dan grasas sólidas; los dobles enlaces cis las doblan y las mantienen líquidas. La hidrogenación parcial satura enlaces y endereza otros en forma trans, que el cuerpo trata como saturados.",
+   "error_comun": "Que un aceite light tiene menos calorías; todas las grasas rinden unas 9 kcal por gramo y esa palabra solo alude al color o al sabor suave.",
+   "en_cocina": "Elegir grasa sólida o líquida según la textura buscada, evitar productos con grasas parcialmente hidrogenadas y usar aceite suave por su sabor, no para adelgazar.",
+   "origen": "4.5",
+   "secciones": [
+    "2.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "10.5",
+    "10.6",
+    "10.7",
+    "10.8"
+   ],
+   "fusiona": [
+    "c_grasas",
+    "c_grasas_trans"
+   ],
+   "discrepancia": "Los aceites parcialmente hidrogenados están prohibidos en EE. UU. desde 2018 y limitados en la UE desde 2021; el problema trans es hoy mucho menor."
+  },
+  "c_oxidacion": {
+   "title": "Oxidación y enranciamiento",
+   "mecanismo": "El oxígeno ataca los dobles enlaces de las grasas insaturadas mediante radicales libres que se propagan en cadena; la luz, el calor y trazas de metales la aceleran y aparecen aldehídos de olor rancio. El agua, además, hidroliza triglicéridos y libera ácidos grasos que bajan el punto de humo. Los antioxidantes cortan la cadena.",
+   "error_comun": "Que el aceite o la mantequilla solo se estropean por microbios; la rancidez es química y avanza aunque el producto esté limpio.",
+   "en_cocina": "Guardar aceites, harinas integrales y frutos secos en frío, a oscuras y cerrados; reutilizar poco el aceite de fritura y no dejar la mantequilla expuesta en la puerta de la nevera.",
+   "origen": "4.7",
+   "secciones": [
+    "3.10",
+    "4.7",
+    "5.12",
+    "9.2",
+    "9.3"
+   ],
+   "fusiona": [
+    "c_oxidacion",
+    "c_punto_humo"
+   ]
+  },
+  "c_dispersiones": {
+   "title": "Emulsiones y espumas",
+   "mecanismo": "Una emulsión reparte gotitas de un líquido dentro de otro con el que no se mezcla; una espuma reparte burbujas de gas en un líquido o sólido. Ambas tienden a separarse y solo duran si moléculas con una parte afín al agua y otra a la grasa o al aire, como lecitina, proteínas o saponinas, recubren la interfase.",
+   "error_comun": "Que emulsionar es espesar o mezclar con fuerza; sin un emulsionante que recubra las gotitas, estas se reúnen y la salsa se corta.",
+   "en_cocina": "Ligar salsas con mantequilla fría o yema, batir claras en un bol sin restos de grasa y contar con que las claras pasteurizadas tardan más en montar.",
+   "origen": "2.12",
+   "secciones": [
+    "2.6",
+    "2.11",
+    "2.12",
+    "2.22",
+    "3.10",
+    "5.14",
+    "9.6",
+    "10.4"
+   ],
+   "fusiona": [
+    "c_emulsion",
+    "c_espuma"
+   ]
+  },
+  "c_cristalizacion": {
+   "title": "Cristalización y punto de congelación",
+   "mecanismo": "Al cristalizar, las moléculas se ordenan en una red y expulsan lo que no encaja: el hielo deja fuera azúcar y colorantes. Los solutos entorpecen ese orden y bajan el punto de congelación. Las grasas, como la manteca de cacao, pueden cristalizar en varias formas, y solo una da brillo y chasquido.",
+   "error_comun": "Que el chocolate blanquecino está estropeado o la miel cristalizada adulterada; en ambos casos son cristales reorganizados, no deterioro.",
+   "en_cocina": "Templar el chocolate con un ciclo preciso de calentar, enfriar y recalentar; entibiar la miel para redisolverla; servir el helado algo menos frío para que esté cremoso.",
+   "origen": "1.1",
+   "secciones": [
+    "1.1",
+    "1.14",
+    "2.4",
+    "4.13",
+    "5.3",
+    "5.15",
+    "10.6",
+    "10.7"
+   ],
+   "fusiona": [
+    "c_cristalizacion",
+    "c_descenso_crioscopico"
+   ]
+  },
+  "c_cambios_estado": {
+   "title": "Calor latente, evaporación y ebullición",
+   "mecanismo": "Fundir hielo o evaporar agua absorbe mucha energía sin subir la temperatura: es el calor latente. Mientras quede agua líquida, el hervor fija la temperatura en el punto de ebullición, que depende de la presión. Evaporar enfría lo que queda, y destilar separa líquidos según su volatilidad.",
+   "error_comun": "Que hervir más tiempo o a fuego más alto calienta más el agua; solo hace que se evapore antes.",
+   "en_cocina": "Bajar el fuego en cuanto hierve, enfriar bebidas con mucho hielo muy frío y usar olla a presión cuando haga falta pasar de 100 °C.",
+   "origen": "1.6",
+   "secciones": [
+    "1.6",
+    "1.14",
+    "1.15",
+    "2.5",
+    "4.13",
+    "7.7",
+    "7.8"
+   ],
+   "fusiona": [
+    "c_calor_latente",
+    "c_evaporacion",
+    "c_ebullicion"
+   ]
+  },
+  "c_transferencia_calor": {
+   "title": "Transferencia de calor",
+   "mecanismo": "El calor viaja por conducción (contacto), convección (fluidos que se mueven) y radiación infrarroja; las microondas, en cambio, agitan las moléculas de agua dentro del propio alimento. La rapidez depende de la diferencia de temperatura, de la superficie expuesta y de cuánto calor almacena, conduce o emite cada material.",
+   "error_comun": "Que el tiempo de cocción depende solo del peso; la forma fija la superficie por la que entra el calor, y una pieza plana se hace antes que una compacta del mismo peso.",
+   "en_cocina": "Ajustar tiempos a la forma y al grosor, precalentar bien una piedra para pizza, acercar la pieza al grill para dorar y bajar la temperatura con moldes de vidrio u oscuros.",
+   "origen": "1.7",
+   "secciones": [
+    "1.7",
+    "1.15",
+    "2.17",
+    "2.21",
+    "7.11",
+    "9.7",
+    "9.8",
+    "9.9",
+    "9.10",
+    "9.11",
+    "9.12",
+    "9.13",
+    "9.14"
+   ],
+   "fusiona": [
+    "c_transferencia_calor",
+    "c_capacidad_calorifica",
+    "c_superficie_volumen",
+    "c_microondas"
+   ],
+   "discrepancia": "Que el vapor de la llama de gas impida dorar es discutido; la ventaja del carbón se atribuye sobre todo a su radiación más intensa."
+  },
+  "c_magnitudes": {
+   "title": "Magnitudes físicas: calor, masa y densidad",
+   "mecanismo": "Calor es energía en tránsito; temperatura, la intensidad media del movimiento molecular. Masa y volumen difieren y los une la densidad: un cuerpo flota si es menos denso que el líquido, y un mismo volumen puede esconder mucho aire o agua. Peso, superficie y adherencia explican también cómo fluyen gotas o salsas.",
+   "error_comun": "Que el mando del fogón marca una temperatura o que una cucharada siempre contiene lo mismo; el mando regula energía y el volumen cambia con el aire y el troceado.",
+   "en_cocina": "Pesar en vez de medir por volumen cuando importe la precisión, usar termómetro y emplear menos hierba seca que fresca.",
+   "origen": "9.7",
+   "secciones": [
+    "1.16",
+    "2.2",
+    "2.5",
+    "2.6",
+    "2.8",
+    "4.11",
+    "5.7",
+    "5.9",
+    "8.7",
+    "9.7",
+    "9.14",
+    "10.1",
+    "10.3"
+   ],
+   "fusiona": [
+    "c_medidas"
+   ]
+  },
+  "c_osmosis": {
+   "title": "Ósmosis y difusión",
+   "mecanismo": "El agua cruza las membranas celulares desde donde hay menos solutos hacia donde hay más, hasta equilibrar concentraciones; los solutos, en cambio, se difunden despacio y avanzan pocos milímetros. Por eso sal y azúcar extraen agua de los tejidos, y el agua pura los hincha hasta reventar sus células.",
+   "error_comun": "Que un marinado llega al centro si se deja más tiempo; apenas penetra unos milímetros y el exceso de ácido solo estropea la superficie.",
+   "en_cocina": "Marinar poco y en piezas finas, cocer la fruta en almíbar para que conserve su forma, salar pepinos para que crujan y preferir mariscos no inflados con fosfatos.",
+   "origen": "4.10",
+   "secciones": [
+    "3.9",
+    "3.14",
+    "4.10",
+    "6.3",
+    "6.4",
+    "6.8",
+    "7.5"
+   ],
+   "fusiona": [
+    "c_osmosis"
+   ]
+  },
+  "c_solubilidad": {
+   "title": "Disolución y precipitación",
+   "mecanismo": "Lo semejante disuelve a lo semejante: iones y moléculas polares se rodean de agua; las apolares prefieren grasa o alcohol. Calentar suele disolver más sólidos y menos gases. Algunos iones, como oxalato con calcio o hierro, forman sales insolubles que precipitan, y superficies porosas como el carbón activo retienen moléculas por adsorción.",
+   "error_comun": "Que el azúcar se derrite en el café; se disuelve: sus moléculas se separan y se dispersan entre las del agua, sin fundirse.",
+   "en_cocina": "Servir el espumoso muy frío para que retenga el gas, añadir limón al té frío turbio y no esperar que un vino disuelva más sabor que el agua.",
+   "origen": "1.2",
+   "secciones": [
+    "1.2",
+    "1.5",
+    "1.12",
+    "3.5",
+    "3.6",
+    "7.9",
+    "7.10",
+    "8.13",
+    "8.14",
+    "9.1",
+    "10.1"
+   ],
+   "fusiona": [
+    "c_solubilidad",
+    "c_gases_disueltos",
+    "c_adsorcion",
+    "c_acido_oxalico"
+   ],
+   "discrepancia": "La anécdota del error decimal que hizo famosas a las espinacas por su hierro es en sí un mito desmontado en 2010; el oxalato sí limita su absorción."
+  },
+  "c_fermentacion": {
+   "title": "Fermentación y alcohol",
+   "mecanismo": "Levaduras, bacterias lácticas y mohos obtienen energía de los azúcares sin necesidad de oxígeno: las levaduras liberan etanol y CO₂, las bacterias lácticas ácido que cuaja la leche, y mohos como el koji degradan proteínas y almidón en sabores. Más allá de un 15 % de alcohol, la levadura muere: hay que destilar o encabezar.",
+   "error_comun": "Que cualquier alcohol es bebible o que la sidra es solo zumo; únicamente el etanol se bebe, y la sidra es zumo transformado por levaduras.",
+   "en_cocina": "Refrigerar el zumo sin pasteurizar, respetar tiempo y temperatura de yogures y fermentos, y contar el alcohol en gramos de etanol, no en copas.",
+   "origen": "1.11",
+   "secciones": [
+    "1.8",
+    "1.11",
+    "1.13",
+    "1.16",
+    "2.3",
+    "2.7",
+    "2.9",
+    "3.12",
+    "3.13",
+    "4.9",
+    "4.12",
+    "4.13",
+    "7.10"
+   ],
+   "fusiona": [
+    "c_fermentacion",
+    "c_alcohol"
+   ],
+   "discrepancia": "El cálculo de efectos del alcohol omite el riesgo a largo plazo: la OMS afirma desde 2023 que ningún nivel de consumo es seguro para la salud."
+  },
+  "c_microbios": {
+   "title": "Microbios: qué necesitan y cómo frenarlos",
+   "mecanismo": "Bacterias y mohos necesitan agua disponible, nutrientes, temperaturas templadas y poca acidez. Algunas bacterias forman esporas que aguantan el hervor y germinan al templarse, como la del botulismo en medios sin aire. Conservar es negarles una condición: frío, acidez, sal o azúcar, sequedad, radiación o conservantes.",
+   "error_comun": "Que hervir esteriliza o que lo natural es inocuo; las esporas resisten 100 °C, y el ajo en aceite o la miel pueden albergar botulismo.",
+   "en_cocina": "Enfriar deprisa caldos y arroces, no guardar ajo en aceite a temperatura ambiente, no dar miel a menores de un año y mantener en frío los zumos crudos.",
+   "origen": "9.3",
+   "secciones": [
+    "1.10",
+    "2.9",
+    "2.22",
+    "3.3",
+    "3.12",
+    "4.12",
+    "5.15",
+    "6.4",
+    "6.5",
+    "6.6",
+    "6.7",
+    "7.2",
+    "7.4",
+    "7.8",
+    "7.12",
+    "8.5",
+    "8.8",
+    "8.9",
+    "9.3",
+    "9.4"
+   ],
+   "fusiona": [
+    "c_microbios",
+    "c_conservacion",
+    "c_irradiacion"
+   ]
+  },
+  "c_azufrados": {
+   "title": "Compuestos azufrados",
+   "mecanismo": "Muchos olores potentes llevan azufre. En cebolla, ajo y crucíferas se forman cuando una enzima actúa sobre precursores al romperse las células, y el calor convierte esos compuestos agresivos en otros suaves y dulces. La clara cocida libera sulfuro de hidrógeno, y la luz genera tioles malolientes en la cerveza.",
+   "error_comun": "Que la yema verdosa delata un huevo malo o que la cebolla dulce tiene más azúcar; es sulfuro de hierro por exceso de cocción, y la cebolla suave tiene menos azufre.",
+   "en_cocina": "Cocer los huevos lo justo y enfriarlos enseguida, guardar la cerveza a oscuras y prolongar la cocción de ajo y cebolla para suavizarlos.",
+   "origen": "3.7",
+   "secciones": [
+    "1.9",
+    "1.10",
+    "2.20",
+    "3.7",
+    "3.8",
+    "8.2",
+    "8.3"
+   ],
+   "fusiona": [
+    "c_azufrados"
+   ]
+  },
+  "c_gusto": {
+   "title": "Gusto y pungencia",
+   "mecanismo": "Las papilas captan cinco gustos con receptores propios; el amargor de cafeína, cucurbitacinas o lúpulo funciona como alarma ante posibles tóxicos. La pungencia no es un gusto: capsaicina, piperina e isotiocianatos activan receptores de dolor y calor del nervio trigémino, que los insectos no tienen.",
+   "error_comun": "Que el picante es un sabor más o que el agua lo calma; es una señal de dolor, y la capsaicina, poco soluble en agua, se arrastra mejor con leche.",
+   "en_cocina": "Calmar el picante con lácteos, añadir rábano picante o wasabi al final porque calor y tiempo apagan su picor, y descartar los extremos amargos del pepino.",
+   "origen": "8.2",
+   "secciones": [
+    "1.5",
+    "1.9",
+    "3.9",
+    "8.2",
+    "8.9",
+    "8.11",
+    "8.12",
+    "10.8"
+   ],
+   "fusiona": [
+    "c_gusto",
+    "c_pungencia",
+    "c_cafeina"
+   ]
+  },
+  "c_aroma": {
+   "title": "Aroma: moléculas volátiles",
+   "mecanismo": "Gran parte del sabor es olfato: moléculas pequeñas y volátiles, como los terpenos de los aceites esenciales o los fenoles del humo, se evaporan y alcanzan los receptores nasales. Moler, secar o calentar las libera antes, y por la misma razón se pierden antes.",
+   "error_comun": "Que el aceite esencial es una grasa o que el ajo en polvo equivale al fresco; son volátiles que se evaporan, y el secado se lleva buena parte.",
+   "en_cocina": "Añadir especias molidas al final y enteras al principio, comprarlas en pequeñas cantidades, guardarlas cerradas y preferir el humo controlado al humo directo.",
+   "origen": "8.1",
+   "secciones": [
+    "1.6",
+    "4.8",
+    "7.10",
+    "7.12",
+    "8.1",
+    "8.4",
+    "8.6",
+    "8.7",
+    "8.8",
+    "8.10",
+    "8.15",
+    "9.1",
+    "10.2"
+   ],
+   "fusiona": [
+    "c_aroma",
+    "c_aceites_esenciales",
+    "c_ahumado"
+   ],
+   "discrepancia": "En 2024 la UE decidió no renovar varios aromas de humo por dudas de genotoxicidad (EFSA, 2023), lo que matiza la seguridad del humo líquido."
+  },
+  "c_polifenoles": {
+   "title": "Polifenoles y taninos",
+   "mecanismo": "Los polifenoles son moléculas con varios anillos fenólicos. Se unen a las proteínas de la saliva y dan astringencia, se oxidan y oscurecen, como en el té negro, y precipitan en frío o con agua dura. Algunos fenoles son amargos, como la oleuropeína de la aceituna, o irritantes, como las resinas del anacardo o el eugenol del clavo.",
+   "error_comun": "Que un anacardo «crudo» no ha sido tratado o que la aceituna se come tal cual; ambos necesitan procesado para eliminar fenoles irritantes o amargos.",
+   "en_cocina": "Preparar el té frío con agua blanda o con limón, elegir chocolate de alto porcentaje si se busca amargor y no moler clavo en molinillos de plástico.",
+   "origen": "1.2",
+   "secciones": [
+    "1.2",
+    "1.3",
+    "1.4",
+    "4.9",
+    "4.14",
+    "8.13",
+    "10.5"
+   ],
+   "fusiona": [
+    "c_polifenoles"
+   ]
+  },
+  "c_etiquetado": {
+   "title": "Etiquetas y definiciones legales",
+   "mecanismo": "Las denominaciones comerciales se basan en definiciones legales de composición, proceso u origen, no en propiedades moleculares: una molécula es idéntica venga de una planta o de un laboratorio. Los porcentajes, además, se calculan sobre bases distintas, como peso total, extracto seco o proporción de cacao.",
+   "error_comun": "Que «natural», «light» o «crudo» garantizan salud o seguridad; describen origen, color o proceso, no inocuidad ni calorías.",
+   "en_cocina": "Leer la lista de ingredientes y las cifras reales en lugar del reclamo de portada, y comprobar sobre qué base se expresa cada porcentaje.",
+   "origen": "10.2",
+   "secciones": [
+    "1.10",
+    "1.13",
+    "2.1",
+    "2.8",
+    "2.11",
+    "4.6",
+    "4.8",
+    "4.14",
+    "5.11",
+    "6.8",
+    "7.1",
+    "8.10",
+    "8.11",
+    "8.15",
+    "10.2",
+    "10.5"
+   ],
+   "fusiona": [
+    "c_etiquetado"
+   ]
+  }
+ },
+ "enlaces_conceptos": [
+  {
+   "de": "c_pigmentos",
+   "a": "c_ph",
+   "tipo": "se apoya en",
+   "porque": "antocianinas y ciertos taninos cambian de estructura y de color según la acidez del medio"
+  },
+  {
+   "de": "c_pigmentos",
+   "a": "c_polifenoles",
+   "tipo": "se apoya en",
+   "porque": "las antocianinas son polifenoles; su química explica su sensibilidad al oxígeno y al pH"
+  },
+  {
+   "de": "c_proteinas",
+   "a": "c_ph",
+   "tipo": "se apoya en",
+   "porque": "ácidos y álcalis alteran las cargas de las proteínas y las desnaturalizan sin calor"
+  },
+  {
+   "de": "c_colageno",
+   "a": "c_proteinas",
+   "tipo": "se apoya en",
+   "porque": "la gelatina es colágeno desnaturalizado y fragmentado por el calor húmedo"
+  },
+  {
+   "de": "c_colageno",
+   "a": "c_transferencia_calor",
+   "tipo": "se apoya en",
+   "porque": "convertir colágeno exige calor húmedo sostenido, y el braseado controla cómo llega ese calor"
+  },
+  {
+   "de": "c_lacteos",
+   "a": "c_dispersiones",
+   "tipo": "se apoya en",
+   "porque": "leche, nata y mantequilla son emulsiones de grasa y agua"
+  },
+  {
+   "de": "c_huevo",
+   "a": "c_proteinas",
+   "tipo": "se apoya en",
+   "porque": "cocer, batir o curar huevos son maneras de desnaturalizar sus proteínas"
+  },
+  {
+   "de": "c_enzimas",
+   "a": "c_proteinas",
+   "tipo": "se apoya en",
+   "porque": "las enzimas son proteínas: el calor que las desnaturaliza las inactiva"
+  },
+  {
+   "de": "c_enzimas",
+   "a": "c_maillard",
+   "tipo": "contrasta con",
+   "porque": "ambos oscurecen alimentos, pero uno es enzimático y en frío y el otro térmico y sin enzimas"
+  },
+  {
+   "de": "c_azufrados",
+   "a": "c_enzimas",
+   "tipo": "es consecuencia de",
+   "porque": "los compuestos de cebolla, ajo y mostaza aparecen cuando una enzima actúa al romper células"
+  },
+  {
+   "de": "c_gusto",
+   "a": "c_aroma",
+   "tipo": "contrasta con",
+   "porque": "gusto y picor se perciben en la boca; el aroma, en la nariz, y explica casi todo el sabor"
+  },
+  {
+   "de": "c_almidon",
+   "a": "c_cristalizacion",
+   "tipo": "se apoya en",
+   "porque": "la retrogradación es una recristalización parcial del almidón al enfriarse"
+  },
+  {
+   "de": "c_carbohidratos",
+   "a": "c_enzimas",
+   "tipo": "es consecuencia de",
+   "porque": "la fibra y los oligosacáridos no se digieren porque nuestras enzimas no rompen sus enlaces"
+  },
+  {
+   "de": "c_carbohidratos",
+   "a": "c_almidon",
+   "tipo": "contrasta con",
+   "porque": "azúcar y almidón aportan igual energía; difieren en estructura, dulzor y textura"
+  },
+  {
+   "de": "c_fermentacion",
+   "a": "c_microbios",
+   "tipo": "se apoya en",
+   "porque": "fermentar es metabolismo microbiano dirigido hacia productos deseados"
+  },
+  {
+   "de": "c_fermentacion",
+   "a": "c_carbohidratos",
+   "tipo": "se apoya en",
+   "porque": "levaduras y bacterias obtienen su energía de los azúcares"
+  },
+  {
+   "de": "c_microbios",
+   "a": "c_osmosis",
+   "tipo": "se apoya en",
+   "porque": "sal y azúcar conservan porque deshidratan a los microbios por ósmosis"
+  },
+  {
+   "de": "c_microbios",
+   "a": "c_ph",
+   "tipo": "se apoya en",
+   "porque": "la acidez es una de las barreras que impiden crecer a las bacterias peligrosas"
+  },
+  {
+   "de": "c_microbios",
+   "a": "c_cambios_estado",
+   "tipo": "se apoya en",
+   "porque": "las esporas resisten 100 °C; superarlo exige subir la presión del hervor"
+  },
+  {
+   "de": "c_oxidacion",
+   "a": "c_grasas",
+   "tipo": "es consecuencia de",
+   "porque": "el enranciamiento nace de los dobles enlaces de las grasas insaturadas"
+  },
+  {
+   "de": "c_microbios",
+   "a": "c_oxidacion",
+   "tipo": "contrasta con",
+   "porque": "dos vías de deterioro, biológica y química, con remedios distintos"
+  },
+  {
+   "de": "c_cristalizacion",
+   "a": "c_solubilidad",
+   "tipo": "se apoya en",
+   "porque": "un soluto disuelto estorba la formación del cristal y queda excluido de él"
+  },
+  {
+   "de": "c_grasas",
+   "a": "c_cristalizacion",
+   "tipo": "se apoya en",
+   "porque": "las cadenas saturadas se apilan en cristales, y por eso unas grasas son sólidas"
+  },
+  {
+   "de": "c_cambios_estado",
+   "a": "c_magnitudes",
+   "tipo": "se apoya en",
+   "porque": "el calor latente solo se entiende distinguiendo calor de temperatura"
+  },
+  {
+   "de": "c_transferencia_calor",
+   "a": "c_magnitudes",
+   "tipo": "se apoya en",
+   "porque": "la velocidad de cocción depende de la energía transferida, no solo de la temperatura"
+  },
+  {
+   "de": "c_maillard",
+   "a": "c_cambios_estado",
+   "tipo": "se apoya en",
+   "porque": "mientras se evapora agua, la superficie no supera 100 °C y no puede dorar"
+  },
+  {
+   "de": "c_maillard",
+   "a": "c_carbohidratos",
+   "tipo": "se apoya en",
+   "porque": "Maillard necesita azúcares reductores, y el azúcar solo carameliza"
+  },
+  {
+   "de": "c_aroma",
+   "a": "c_cambios_estado",
+   "tipo": "se apoya en",
+   "porque": "un aroma solo se percibe si sus moléculas se evaporan"
+  },
+  {
+   "de": "c_aroma",
+   "a": "c_solubilidad",
+   "tipo": "se apoya en",
+   "porque": "los volátiles apolares se disuelven en grasa o alcohol, lo que decide cómo se extraen"
+  },
+  {
+   "de": "c_osmosis",
+   "a": "c_solubilidad",
+   "tipo": "se apoya en",
+   "porque": "el agua se desplaza según la concentración de solutos disueltos a cada lado"
+  },
+  {
+   "de": "c_dispersiones",
+   "a": "c_solubilidad",
+   "tipo": "contrasta con",
+   "porque": "dispersar gotitas no es disolver: las dos fases siguen separadas"
+  },
+  {
+   "de": "c_dispersiones",
+   "a": "c_proteinas",
+   "tipo": "se apoya en",
+   "porque": "proteínas parcialmente desplegadas recubren burbujas y gotas y las estabilizan"
+  },
+  {
+   "de": "c_polifenoles",
+   "a": "c_solubilidad",
+   "tipo": "se apoya en",
+   "porque": "los taninos precipitan en frío o con agua dura y se redisuelven al acidular"
+  },
+  {
+   "de": "c_etiquetado",
+   "a": "c_magnitudes",
+   "tipo": "se apoya en",
+   "porque": "los porcentajes de etiqueta exigen distinguir peso total, extracto seco y volumen"
+  },
+  {
+   "de": "c_etiquetado",
+   "a": "c_aroma",
+   "tipo": "contrasta con",
+   "porque": "un aroma natural y uno artificial pueden ser la misma molécula volátil"
+  },
+  {
+   "de": "c_gusto",
+   "a": "c_solubilidad",
+   "tipo": "se apoya en",
+   "porque": "la capsaicina es apolar: el agua no la arrastra y la leche o la grasa sí"
+  },
+  {
+   "de": "c_almidon",
+   "a": "c_colageno",
+   "tipo": "contrasta con",
+   "porque": "ambos espesan y gelifican al enfriar, uno con un polisacárido y otro con una proteína"
+  }
+ ],
+ "secciones": {
+  "1.1": {
+   "conceptos": [
+    "c_cristalizacion"
+   ],
+   "requiere": []
+  },
+  "1.2": {
+   "conceptos": [
+    "c_polifenoles",
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "1.3": {
+   "conceptos": [
+    "c_enzimas",
+    "c_polifenoles"
+   ],
+   "requiere": []
+  },
+  "1.4": {
+   "conceptos": [
+    "c_ph",
+    "c_pigmentos",
+    "c_polifenoles"
+   ],
+   "requiere": []
+  },
+  "1.5": {
+   "conceptos": [
+    "c_solubilidad",
+    "c_gusto"
+   ],
+   "requiere": []
+  },
+  "1.6": {
+   "conceptos": [
+    "c_cambios_estado",
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "1.7": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "1.8": {
+   "conceptos": [
+    "c_fermentacion"
+   ],
+   "requiere": []
+  },
+  "1.9": {
+   "conceptos": [
+    "c_gusto",
+    "c_azufrados"
+   ],
+   "requiere": []
+  },
+  "1.10": {
+   "conceptos": [
+    "c_azufrados",
+    "c_microbios",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "1.11": {
+   "conceptos": [
+    "c_fermentacion"
+   ],
+   "requiere": []
+  },
+  "1.12": {
+   "conceptos": [
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "1.13": {
+   "conceptos": [
+    "c_etiquetado",
+    "c_fermentacion"
+   ],
+   "requiere": []
+  },
+  "1.14": {
+   "conceptos": [
+    "c_cristalizacion",
+    "c_cambios_estado"
+   ],
+   "requiere": []
+  },
+  "1.15": {
+   "conceptos": [
+    "c_cambios_estado",
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "1.16": {
+   "conceptos": [
+    "c_fermentacion",
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "1.17": {
+   "conceptos": [
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "2.1": {
+   "conceptos": [
+    "c_lacteos",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "2.2": {
+   "conceptos": [
+    "c_lacteos",
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "2.3": {
+   "conceptos": [
+    "c_fermentacion",
+    "c_lacteos",
+    "c_proteinas"
+   ],
+   "requiere": []
+  },
+  "2.4": {
+   "conceptos": [
+    "c_cristalizacion",
+    "c_grasas"
+   ],
+   "requiere": [
+    {
+     "sec": "1.14",
+     "porque": "azúcar y alcohol bajan el punto de congelación; por eso el helado nunca se congela del todo"
+    }
+   ]
+  },
+  "2.5": {
+   "conceptos": [
+    "c_cambios_estado",
+    "c_magnitudes"
+   ],
+   "requiere": [
+    {
+     "sec": "1.15",
+     "porque": "explica que el hielo absorbe calor al fundirse; aquí se mide lo poco que eso enfría al cuerpo"
+    }
+   ]
+  },
+  "2.6": {
+   "conceptos": [
+    "c_dispersiones",
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "2.7": {
+   "conceptos": [
+    "c_lacteos",
+    "c_fermentacion"
+   ],
+   "requiere": []
+  },
+  "2.8": {
+   "conceptos": [
+    "c_lacteos",
+    "c_magnitudes",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "2.9": {
+   "conceptos": [
+    "c_microbios",
+    "c_fermentacion",
+    "c_lacteos"
+   ],
+   "requiere": []
+  },
+  "2.10": {
+   "conceptos": [
+    "c_lacteos",
+    "c_proteinas"
+   ],
+   "requiere": []
+  },
+  "2.11": {
+   "conceptos": [
+    "c_etiquetado",
+    "c_dispersiones",
+    "c_lacteos"
+   ],
+   "requiere": []
+  },
+  "2.12": {
+   "conceptos": [
+    "c_dispersiones",
+    "c_lacteos"
+   ],
+   "requiere": []
+  },
+  "2.13": {
+   "conceptos": [
+    "c_huevo"
+   ],
+   "requiere": []
+  },
+  "2.14": {
+   "conceptos": [
+    "c_huevo",
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "2.15": {
+   "conceptos": [
+    "c_huevo"
+   ],
+   "requiere": []
+  },
+  "2.16": {
+   "conceptos": [
+    "c_huevo"
+   ],
+   "requiere": []
+  },
+  "2.17": {
+   "conceptos": [
+    "c_huevo",
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "2.18": {
+   "conceptos": [
+    "c_proteinas",
+    "c_huevo"
+   ],
+   "requiere": []
+  },
+  "2.19": {
+   "conceptos": [
+    "c_huevo",
+    "c_proteinas",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "2.20": {
+   "conceptos": [
+    "c_azufrados",
+    "c_huevo"
+   ],
+   "requiere": []
+  },
+  "2.21": {
+   "conceptos": [
+    "c_huevo",
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "2.22": {
+   "conceptos": [
+    "c_dispersiones",
+    "c_proteinas",
+    "c_microbios"
+   ],
+   "requiere": [
+    {
+     "sec": "2.18",
+     "porque": "muestra cómo el calor coagula la clara; un calentamiento parcial dificulta luego montarla"
+    }
+   ]
+  },
+  "2.23": {
+   "conceptos": [
+    "c_proteinas",
+    "c_ph"
+   ],
+   "requiere": [
+    {
+     "sec": "2.18",
+     "porque": "el ácido coagula la clara; el álcali del huevo milenario produce un efecto análogo"
+    }
+   ]
+  },
+  "3.1": {
+   "conceptos": [
+    "c_pigmentos",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "3.2": {
+   "conceptos": [
+    "c_pigmentos",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "3.3": {
+   "conceptos": [
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "3.4": {
+   "conceptos": [
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "3.5": {
+   "conceptos": [
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "3.6": {
+   "conceptos": [
+    "c_solubilidad",
+    "c_pigmentos"
+   ],
+   "requiere": [
+    {
+     "sec": "3.5",
+     "porque": "presenta el ácido oxálico, que es lo que vuelve inaprovechable el hierro de la espinaca"
+    }
+   ]
+  },
+  "3.7": {
+   "conceptos": [
+    "c_azufrados",
+    "c_enzimas"
+   ],
+   "requiere": []
+  },
+  "3.8": {
+   "conceptos": [
+    "c_azufrados"
+   ],
+   "requiere": []
+  },
+  "3.9": {
+   "conceptos": [
+    "c_gusto",
+    "c_osmosis"
+   ],
+   "requiere": []
+  },
+  "3.10": {
+   "conceptos": [
+    "c_dispersiones",
+    "c_enzimas",
+    "c_oxidacion"
+   ],
+   "requiere": []
+  },
+  "3.11": {
+   "conceptos": [
+    "c_proteinas",
+    "c_ph"
+   ],
+   "requiere": [
+    {
+     "sec": "2.7",
+     "porque": "los quesos frescos cuajados con ácido son el paralelo lácteo del tofu coagulado"
+    }
+   ]
+  },
+  "3.12": {
+   "conceptos": [
+    "c_fermentacion",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "3.13": {
+   "conceptos": [
+    "c_carbohidratos",
+    "c_fermentacion",
+    "c_enzimas"
+   ],
+   "requiere": []
+  },
+  "3.14": {
+   "conceptos": [
+    "c_osmosis",
+    "c_ph",
+    "c_carbohidratos"
+   ],
+   "requiere": []
+  },
+  "4.1": {
+   "conceptos": [
+    "c_enzimas"
+   ],
+   "requiere": []
+  },
+  "4.2": {
+   "conceptos": [
+    "c_enzimas",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "4.3": {
+   "conceptos": [
+    "c_carbohidratos",
+    "c_almidon",
+    "c_enzimas"
+   ],
+   "requiere": []
+  },
+  "4.4": {
+   "conceptos": [
+    "c_almidon",
+    "c_enzimas"
+   ],
+   "requiere": [
+    {
+     "sec": "4.1",
+     "porque": "explica que la fruta cosechada madura por el etileno, no por el sol"
+    }
+   ]
+  },
+  "4.5": {
+   "conceptos": [
+    "c_grasas"
+   ],
+   "requiere": []
+  },
+  "4.6": {
+   "conceptos": [
+    "c_grasas",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "4.7": {
+   "conceptos": [
+    "c_oxidacion",
+    "c_grasas"
+   ],
+   "requiere": []
+  },
+  "4.8": {
+   "conceptos": [
+    "c_grasas",
+    "c_aroma",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "4.9": {
+   "conceptos": [
+    "c_polifenoles",
+    "c_ph",
+    "c_fermentacion"
+   ],
+   "requiere": []
+  },
+  "4.10": {
+   "conceptos": [
+    "c_osmosis"
+   ],
+   "requiere": []
+  },
+  "4.11": {
+   "conceptos": [
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "4.12": {
+   "conceptos": [
+    "c_fermentacion",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "4.13": {
+   "conceptos": [
+    "c_fermentacion",
+    "c_cambios_estado",
+    "c_cristalizacion"
+   ],
+   "requiere": [
+    {
+     "sec": "1.14",
+     "porque": "el alcohol baja el punto de congelación, lo que permite concentrar sidra helándola"
+    }
+   ]
+  },
+  "4.14": {
+   "conceptos": [
+    "c_polifenoles",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "5.1": {
+   "conceptos": [
+    "c_almidon"
+   ],
+   "requiere": []
+  },
+  "5.2": {
+   "conceptos": [
+    "c_almidon"
+   ],
+   "requiere": []
+  },
+  "5.3": {
+   "conceptos": [
+    "c_almidon",
+    "c_cristalizacion"
+   ],
+   "requiere": []
+  },
+  "5.4": {
+   "conceptos": [
+    "c_almidon"
+   ],
+   "requiere": []
+  },
+  "5.5": {
+   "conceptos": [
+    "c_almidon"
+   ],
+   "requiere": []
+  },
+  "5.6": {
+   "conceptos": [
+    "c_proteinas",
+    "c_pigmentos"
+   ],
+   "requiere": [
+    {
+     "sec": "3.1",
+     "porque": "presenta los carotenoides que el blanqueo de la harina decolora"
+    }
+   ]
+  },
+  "5.7": {
+   "conceptos": [
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "5.8": {
+   "conceptos": [
+    "c_proteinas"
+   ],
+   "requiere": []
+  },
+  "5.9": {
+   "conceptos": [
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "5.10": {
+   "conceptos": [
+    "c_carbohidratos"
+   ],
+   "requiere": []
+  },
+  "5.11": {
+   "conceptos": [
+    "c_carbohidratos",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "5.12": {
+   "conceptos": [
+    "c_almidon",
+    "c_oxidacion"
+   ],
+   "requiere": []
+  },
+  "5.13": {
+   "conceptos": [
+    "c_ph"
+   ],
+   "requiere": [
+    {
+     "sec": "3.14",
+     "porque": "el álcali ablanda pieles vegetales igual que el bicarbonato en el remojo de garbanzos"
+    }
+   ]
+  },
+  "5.14": {
+   "conceptos": [
+    "c_carbohidratos",
+    "c_maillard",
+    "c_dispersiones"
+   ],
+   "requiere": []
+  },
+  "5.15": {
+   "conceptos": [
+    "c_carbohidratos",
+    "c_cristalizacion",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "6.1": {
+   "conceptos": [
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "6.2": {
+   "conceptos": [
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "6.3": {
+   "conceptos": [
+    "c_osmosis"
+   ],
+   "requiere": []
+  },
+  "6.4": {
+   "conceptos": [
+    "c_osmosis",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "6.5": {
+   "conceptos": [
+    "c_proteinas",
+    "c_ph",
+    "c_microbios"
+   ],
+   "requiere": [
+    {
+     "sec": "2.18",
+     "porque": "la coagulación de la clara por ácido es el mismo fenómeno que vuelve firme el pescado"
+    }
+   ]
+  },
+  "6.6": {
+   "conceptos": [
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "6.7": {
+   "conceptos": [
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "6.8": {
+   "conceptos": [
+    "c_osmosis",
+    "c_maillard",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "6.9": {
+   "conceptos": [
+    "c_pigmentos",
+    "c_proteinas"
+   ],
+   "requiere": [
+    {
+     "sec": "6.1",
+     "porque": "explica la astaxantina, el pigmento que la cocción deja a la vista"
+    }
+   ]
+  },
+  "7.1": {
+   "conceptos": [
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "7.2": {
+   "conceptos": [
+    "c_pigmentos",
+    "c_microbios"
+   ],
+   "requiere": [
+    {
+     "sec": "6.2",
+     "porque": "presenta la mioglobina y cómo cambia su color según lo que lleva unido"
+    }
+   ]
+  },
+  "7.3": {
+   "conceptos": [
+    "c_pigmentos"
+   ],
+   "requiere": []
+  },
+  "7.4": {
+   "conceptos": [
+    "c_pigmentos",
+    "c_microbios"
+   ],
+   "requiere": [
+    {
+     "sec": "7.2",
+     "porque": "describe las formas de la mioglobina que el nitrito modifica"
+    }
+   ]
+  },
+  "7.5": {
+   "conceptos": [
+    "c_osmosis",
+    "c_proteinas",
+    "c_ph"
+   ],
+   "requiere": [
+    {
+     "sec": "6.5",
+     "porque": "el ácido desnaturaliza la superficie de la carne igual que en el ceviche"
+    }
+   ]
+  },
+  "7.6": {
+   "conceptos": [
+    "c_colageno",
+    "c_maillard"
+   ],
+   "requiere": []
+  },
+  "7.7": {
+   "conceptos": [
+    "c_proteinas",
+    "c_colageno",
+    "c_cambios_estado"
+   ],
+   "requiere": []
+  },
+  "7.8": {
+   "conceptos": [
+    "c_microbios",
+    "c_cambios_estado"
+   ],
+   "requiere": []
+  },
+  "7.9": {
+   "conceptos": [
+    "c_solubilidad",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "7.10": {
+   "conceptos": [
+    "c_solubilidad",
+    "c_fermentacion",
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "7.11": {
+   "conceptos": [
+    "c_transferencia_calor",
+    "c_maillard"
+   ],
+   "requiere": []
+  },
+  "7.12": {
+   "conceptos": [
+    "c_aroma",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "8.1": {
+   "conceptos": [
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "8.2": {
+   "conceptos": [
+    "c_gusto",
+    "c_azufrados"
+   ],
+   "requiere": []
+  },
+  "8.3": {
+   "conceptos": [
+    "c_azufrados",
+    "c_enzimas",
+    "c_maillard"
+   ],
+   "requiere": []
+  },
+  "8.4": {
+   "conceptos": [
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "8.5": {
+   "conceptos": [
+    "c_microbios"
+   ],
+   "requiere": [
+    {
+     "sec": "7.8",
+     "porque": "explica las esporas que sobreviven a la cocción y germinan sin aire"
+    }
+   ]
+  },
+  "8.6": {
+   "conceptos": [
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "8.7": {
+   "conceptos": [
+    "c_magnitudes",
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "8.8": {
+   "conceptos": [
+    "c_aroma",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "8.9": {
+   "conceptos": [
+    "c_gusto",
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "8.10": {
+   "conceptos": [
+    "c_aroma",
+    "c_etiquetado"
+   ],
+   "requiere": [
+    {
+     "sec": "7.12",
+     "porque": "describe cómo el humo aporta fenoles aromáticos y también hidrocarburos nocivos"
+    }
+   ]
+  },
+  "8.11": {
+   "conceptos": [
+    "c_gusto",
+    "c_etiquetado"
+   ],
+   "requiere": []
+  },
+  "8.12": {
+   "conceptos": [
+    "c_gusto",
+    "c_enzimas"
+   ],
+   "requiere": [
+    {
+     "sec": "3.7",
+     "porque": "la cebolla muestra la misma reacción enzimática que se dispara al romper células"
+    }
+   ]
+  },
+  "8.13": {
+   "conceptos": [
+    "c_polifenoles",
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "8.14": {
+   "conceptos": [
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "8.15": {
+   "conceptos": [
+    "c_etiquetado",
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "9.1": {
+   "conceptos": [
+    "c_solubilidad",
+    "c_aroma",
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "9.2": {
+   "conceptos": [
+    "c_oxidacion"
+   ],
+   "requiere": []
+  },
+  "9.3": {
+   "conceptos": [
+    "c_microbios",
+    "c_oxidacion",
+    "c_enzimas"
+   ],
+   "requiere": []
+  },
+  "9.4": {
+   "conceptos": [
+    "c_microbios"
+   ],
+   "requiere": []
+  },
+  "9.5": {
+   "conceptos": [
+    "c_ph"
+   ],
+   "requiere": []
+  },
+  "9.6": {
+   "conceptos": [
+    "c_dispersiones"
+   ],
+   "requiere": []
+  },
+  "9.7": {
+   "conceptos": [
+    "c_magnitudes",
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "9.8": {
+   "conceptos": [
+    "c_transferencia_calor",
+    "c_maillard"
+   ],
+   "requiere": [
+    {
+     "sec": "7.11",
+     "porque": "contrasta la radiación del carbón con la combustión del gas"
+    }
+   ]
+  },
+  "9.9": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "9.10": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "9.11": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": [
+    {
+     "sec": "9.10",
+     "porque": "explica por qué cada material almacena y emite el calor de forma distinta"
+    }
+   ]
+  },
+  "9.12": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "9.13": {
+   "conceptos": [
+    "c_transferencia_calor"
+   ],
+   "requiere": []
+  },
+  "9.14": {
+   "conceptos": [
+    "c_transferencia_calor",
+    "c_magnitudes"
+   ],
+   "requiere": [
+    {
+     "sec": "7.8",
+     "porque": "la zona de temperaturas peligrosas limita cuánto puede alargarse una cocción lenta"
+    }
+   ]
+  },
+  "10.1": {
+   "conceptos": [
+    "c_magnitudes",
+    "c_solubilidad"
+   ],
+   "requiere": []
+  },
+  "10.2": {
+   "conceptos": [
+    "c_etiquetado",
+    "c_aroma"
+   ],
+   "requiere": []
+  },
+  "10.3": {
+   "conceptos": [
+    "c_magnitudes"
+   ],
+   "requiere": []
+  },
+  "10.4": {
+   "conceptos": [
+    "c_dispersiones",
+    "c_colageno",
+    "c_maillard"
+   ],
+   "requiere": [
+    {
+     "sec": "2.22",
+     "porque": "explica cómo se forma y estabiliza una espuma batida"
+    }
+   ]
+  },
+  "10.5": {
+   "conceptos": [
+    "c_etiquetado",
+    "c_polifenoles",
+    "c_grasas"
+   ],
+   "requiere": []
+  },
+  "10.6": {
+   "conceptos": [
+    "c_cristalizacion",
+    "c_grasas"
+   ],
+   "requiere": []
+  },
+  "10.7": {
+   "conceptos": [
+    "c_cristalizacion",
+    "c_grasas"
+   ],
+   "requiere": [
+    {
+     "sec": "10.6",
+     "porque": "presenta las formas cristalinas de la manteca de cacao"
+    }
+   ]
+  },
+  "10.8": {
+   "conceptos": [
+    "c_grasas",
+    "c_gusto"
+   ],
+   "requiere": [
+    {
+     "sec": "10.5",
+     "porque": "explica qué mide el porcentaje de cacao y qué aportan sus componentes"
+    }
+   ]
+  }
+ },
+ "capitulos": {
+  "2": {
+   "requiere": [
+    1
+   ]
+  },
+  "3": {
+   "requiere": [
+    1
+   ]
+  },
+  "4": {
+   "requiere": [
+    1
+   ]
+  },
+  "5": {
+   "requiere": [
+    3
+   ]
+  },
+  "6": {
+   "requiere": [
+    2
+   ]
+  },
+  "7": {
+   "requiere": [
+    6
+   ]
+  },
+  "8": {
+   "requiere": [
+    7
+   ]
+  },
+  "9": {
+   "requiere": [
+    7
+   ]
+  },
+  "10": {
+   "requiere": [
+    1
+   ]
+  }
+ },
+ "preguntas_control": [
+  {
+   "pregunta": "¿Por qué se pone verdosa la yema de un huevo duro cocido demasiado tiempo?",
+   "seccion": "2.20",
+   "debe_pasar_por": [
+    "c_azufrados",
+    "c_huevo"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué las verduras verdes se vuelven pardas si se cuecen mucho o con ácido?",
+   "seccion": "3.2",
+   "debe_pasar_por": [
+    "c_pigmentos",
+    "c_ph"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué el arroz sobrante se pone duro en la nevera?",
+   "seccion": "5.3",
+   "debe_pasar_por": [
+    "c_almidon",
+    "c_cristalizacion"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué las fresas conservadas sin azúcar quedaron pastosas?",
+   "seccion": "4.10",
+   "debe_pasar_por": [
+    "c_osmosis",
+    "c_solubilidad"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué hace llorar cortar cebolla?",
+   "seccion": "3.7",
+   "debe_pasar_por": [
+    "c_azufrados",
+    "c_enzimas"
+   ]
+  },
+  {
+   "pregunta": "¿Se calienta más el agua si hierve más tiempo o a fuego más fuerte?",
+   "seccion": "1.6",
+   "debe_pasar_por": [
+    "c_cambios_estado",
+    "c_magnitudes"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué el braseado ablanda los cortes duros de carne?",
+   "seccion": "7.6",
+   "debe_pasar_por": [
+    "c_colageno",
+    "c_proteinas"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué se enrancia el aceite?",
+   "seccion": "4.7",
+   "debe_pasar_por": [
+    "c_oxidacion",
+    "c_grasas"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué un caldo hervido puede volverse peligroso si se enfría despacio?",
+   "seccion": "7.8",
+   "debe_pasar_por": [
+    "c_microbios",
+    "c_cambios_estado"
+   ]
+  },
+  {
+   "pregunta": "¿Por qué aparece una capa blanca en el chocolate viejo?",
+   "seccion": "10.7",
+   "debe_pasar_por": [
+    "c_cristalizacion",
+    "c_grasas"
+   ]
+  }
+ ]
+}
