@@ -1696,7 +1696,9 @@
      "num": "25.8",
      "title": "Dietas sin maní, frutos secos y mariscos",
      "page": 379,
-     "items": [],
+     "items": [
+      "c25_dieta_sin_mani"
+     ],
      "summary": "El maní es una leguminosa; fuentes ocultas, contaminación cruzada y clasificación de mariscos."
     },
     {
@@ -2608,7 +2610,8 @@
   "c07_un_alimento_nuevo": {
    "title": "Introducir un alimento nuevo cada 3–4 días",
    "formula": "1 alimento nuevo de un solo ingrediente cada 3–4 días",
-   "summary": "Permite identificar con facilidad una posible intolerancia alimentaria."
+   "summary": "Permite identificar con facilidad una posible intolerancia alimentaria.",
+   "caution": "Las guías actuales no piden esperar para los alérgenos: huevo y maní se introducen hacia los 6 meses, no antes de los 4 (AAAAI/ACAAI/CSACI 2020)."
   },
   "c07_inicio_solidos": {
    "title": "Momento de inicio de los sólidos",
@@ -3308,6 +3311,11 @@
    "title": "Inicio y avance enteral en el lactante",
    "formula": "Inicio 10–20 mL/kg/d continuo por 24 h; heces <10 g/kg/d → avanzar 10–20 mL/kg/d; 10–20 g/kg/d → sin cambio; >20 g/kg/d → reducir o suspender; ostomía <2 g/kg/h avanzar, 2–3 sin cambio, >3 reducir; metas 130–200 mL/kg/d y 100–140 kcal/kg/d; tras suspender 8 h, reiniciar a 3/4 de la velocidad previa",
    "summary": "Un solo avance por 24 h guiado por gasto fecal u ostomía, sustancias reductoras, hidratación y residuos gástricos, reduciendo la NP de forma isocalórica."
+  },
+  "c25_dieta_sin_mani": {
+   "title": "Dieta sin maní",
+   "summary": "El maní es una leguminosa, no un fruto seco. La dieta exige evitar fuentes ocultas y la contaminación cruzada; la alergia al maní rara vez se supera.",
+   "caution": "Para prevenir (no para tratar), las guías actuales recomiendan introducir el maní hacia los 4–6 meses en forma segura (crema diluida, nunca entero) y mantenerlo (~2 g de proteína unas 3 veces por semana); con eccema grave o alergia al huevo, evaluar antes (NIAID 2017; EAACI 2020). En LEAP, comerlo bajó la alergia de 13,7 % a 1,9 %."
   }
  },
  "resources": [
@@ -4182,6 +4190,10 @@
    ],
    "c36_avance_enteral": [
     "c36_formula_enteral"
+   ],
+   "c25_dieta_sin_mani": [
+    "c25_tipos_hipersensibilidad",
+    "c25_provocacion_doble_ciego"
    ]
   }
  }
