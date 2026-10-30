@@ -150,7 +150,7 @@ const itemHome={};
 });
 Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
   const home=byId[itemHome[id]];
-  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,misc:it.misconception,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,misc:it.misconception,contr:it.contrasts,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
 });
 (GRAPH.resources||[]).forEach((r,ri)=>{
   add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
@@ -359,6 +359,7 @@ function select(id,center){
   if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
   if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
   if(n.misc) html+=`<p class="p-desc"><strong>Error común:</strong> ${esc(n.misc)}</p>`;
+  if(n.contr) html+=`<p class="p-desc"><strong>Contrasta con:</strong> ${esc(n.contr)}</p>`;
   if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
   if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"),false,id)+list("Lo usan después",inT("req"),false,id,true);
   if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"),false,id)+list("Lo usan después",inT("req"),false,id,true)+list(M.resourceLabelPlural+" que consulta",outT("data"));

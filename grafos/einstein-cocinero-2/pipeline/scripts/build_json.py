@@ -1,7 +1,7 @@
 """Construye salida/grafo.json (versión profunda) de Lo que Einstein le contó a su cocinero 2 (Robert L. Wolke).
 Entradas: trabajo/toc.json (estructura y páginas), trabajo/resumenes_*.json (resúmenes parafraseados de capítulos y secciones),
 trabajo/sintesis.json (conceptos con tres capas, enlaces con tipo y motivo, requisitos entre secciones),
-trabajo/alertas_*.json (opcional: {id_sección: alerta de vigencia científica}).
+trabajo/correcciones.json (opcional: revisión independiente), trabajo/alertas_*.json (opcional: {id_sección: alerta de vigencia científica}).
 Uso: python3 scripts/build_json.py salida/grafo.json"""
 import json, glob, os, sys
 TOC = json.load(open('trabajo/toc.json', encoding='utf-8'))
@@ -13,6 +13,16 @@ for f in sorted(glob.glob('trabajo/resumenes_*.json')):
     d = json.load(open(f, encoding='utf-8'))
     for k in RS: RS[k].update(d.get(k, {}))
 order = {s["id"]: i for i, s in enumerate(TOC["sections"])}
+# correcciones de la revisión independiente (trabajo/correcciones.json), si existen
+CO = json.load(open('trabajo/correcciones.json', encoding='utf-8')) if os.path.exists('trabajo/correcciones.json') else {}
+FIELD = {"summary": "mecanismo", "misconception": "error_comun", "formula": "en_cocina"}
+for cid, ch in CO.get("items", {}).items():
+    for f, v in ch.items():
+        if cid in S["conceptos"]: S["conceptos"][cid][FIELD.get(f, f)] = v.removeprefix("En la cocina: ")
+for sid, ch in CO.get("sections", {}).items():
+    RS["sections"].setdefault(sid, {}).update(ch)
+quitar = {tuple(x) for x in CO.get("quitar_enlaces", [])}
+S["enlaces_conceptos"] = [e for e in S["enlaces_conceptos"] if (e["de"], e["a"]) not in quitar] + CO.get("anadir_enlaces", [])
 C = S["conceptos"]
 
 items = {}
@@ -58,7 +68,14 @@ for sid, v in S["secciones"].items():
         if r["sec"] in order and order[r["sec"]] < order[sid]:
             req_sec.setdefault(sid, []).append(r["sec"]); why[f"s{sid}>s{r['sec']}"] = r["porque"]
 req_it = {}
+contr = {}
+for e in S["enlaces_conceptos"]:   # "contrasta con" no es dependencia: se muestra como texto en ambos conceptos
+    if e["tipo"].startswith("contrasta") and e["de"] in items and e["a"] in items:
+        contr.setdefault(e["de"], []).append(f'{items[e["a"]]["title"]} ({e["porque"]})')
+        contr.setdefault(e["a"], []).append(f'{items[e["de"]]["title"]} ({e["porque"]})')
+for k, v in contr.items(): items[k]["contrasts"] = "; ".join(v)
 for e in S["enlaces_conceptos"]:
+    if e["tipo"].startswith("contrasta"): continue
     a, b = e["de"], e["a"]
     if a in items and b in items and a != b:
         req_it.setdefault(a, [])

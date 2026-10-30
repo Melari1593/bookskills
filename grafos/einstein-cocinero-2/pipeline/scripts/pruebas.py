@@ -17,7 +17,7 @@ for c in g["chapters"]:
     texts.append((f"cap {c['num']}", c.get("summary", "")))
     for s in c["sections"]: texts += [(f"sec {s['num']}", s.get("summary", "")), (f"sec {s['num']}.caution", s.get("caution", ""))]
 for k, it in g["items"].items():
-    for f in ("summary", "misconception", "formula", "caution"): texts.append((f"{k}.{f}", it.get(f, "") or ""))
+    for f in ("summary", "misconception", "formula", "caution", "contrasts"): texts.append((f"{k}.{f}", it.get(f, "") or ""))
 for k, v in g.get("why", {}).items(): texts.append((f"why {k}", v))
 copias = []
 for where, t in texts:
