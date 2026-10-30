@@ -446,7 +446,6 @@
    "secciones": [
     "1.8",
     "1.11",
-    "1.13",
     "1.16",
     "2.3",
     "2.7",
@@ -924,7 +923,7 @@
   "1.13": {
    "conceptos": [
     "c_etiquetado",
-    "c_fermentacion"
+    "c_cambios_estado"
    ],
    "requiere": []
   },
@@ -1120,12 +1119,7 @@
     "c_proteinas",
     "c_microbios"
    ],
-   "requiere": [
-    {
-     "sec": "2.18",
-     "porque": "muestra cómo el calor coagula la clara; un calentamiento parcial dificulta luego montarla"
-    }
-   ]
+   "requiere": []
   },
   "2.23": {
    "conceptos": [
@@ -1179,7 +1173,7 @@
    "requiere": [
     {
      "sec": "3.5",
-     "porque": "presenta el ácido oxálico, que es lo que vuelve inaprovechable el hierro de la espinaca"
+     "porque": "presenta el ácido oxálico, al que el libro atribuye que el hierro de la espinaca no se aproveche (ver la alerta)"
     }
    ]
   },
@@ -1303,7 +1297,8 @@
    "conceptos": [
     "c_grasas",
     "c_aroma",
-    "c_etiquetado"
+    "c_etiquetado",
+    "c_oxidacion"
    ],
    "requiere": []
   },
@@ -1880,12 +1875,7 @@
     "c_colageno",
     "c_maillard"
    ],
-   "requiere": [
-    {
-     "sec": "2.22",
-     "porque": "explica cómo se forma y estabiliza una espuma batida"
-    }
-   ]
+   "requiere": []
   },
   "10.5": {
    "conceptos": [

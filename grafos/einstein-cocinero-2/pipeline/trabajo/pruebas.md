@@ -1,7 +1,7 @@
 # Pruebas de contenido
 
 ## 1. Control de copia (8-gramas frente al libro)
-Textos revisados: 476. Coincidencias: 0.
+Textos revisados: 474. Coincidencias: 0.
 
 ## 2. Preguntas de control: 10/10 superadas
 - OK · ¿Por qué se pone verdosa la yema de un huevo duro cocido demasiado tiempo? (2.20)
@@ -19,4 +19,4 @@ Textos revisados: 476. Coincidencias: 0.
 - Conceptos: 26; en menos de 2 secciones: []
 - Conceptos sin enlaces conceptuales: []
 - Secciones sin conceptos: 0 de 141
-- Enlaces entre secciones con motivo: 24; entre conceptos: 30
+- Enlaces entre secciones con motivo: 22; entre conceptos: 30

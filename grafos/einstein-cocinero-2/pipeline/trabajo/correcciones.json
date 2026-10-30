@@ -1,0 +1,61 @@
+{
+  "items": {
+    "c_ph": {
+      "summary": "El pH mide, en escala logarítmica inversa, la concentración de iones hidrógeno: cuanto más bajo, más ácido. Los ácidos ceden esos iones y las bases los captan, y el cambio altera la carga de proteínas, pigmentos y paredes vegetales. Por eso limón, bicarbonato o cal cambian color, textura y reactividad; un medio alcalino ataca además metales anfóteros como el aluminio."
+    },
+    "c_pigmentos": {
+      "summary": "El color sale de moléculas que absorben parte de la luz, y su estructura depende del entorno: la clorofila pierde su magnesio con calor y ácido, las antocianinas viran con el pH, la astaxantina de los crustáceos aflora al desnaturalizarse la proteína que la enmascara, y la mioglobina cambia de tono según su hierro esté reducido u oxidado y lleve unido oxígeno, óxido nítrico o monóxido de carbono."
+    },
+    "c_proteinas": {
+      "summary": "Las proteínas son cadenas plegadas por enlaces débiles. El calor, el ácido, el álcali, la sal o el batido rompen ese plegado; las cadenas abiertas se enganchan entre sí y forman una red que retiene agua. Así cuaja la clara y se vuelve opaco el ceviche. El gluten es una red parecida: al hidratar y amasar harina de trigo, gliadinas y gluteninas se enlazan entre sí."
+    },
+    "c_huevo": {
+      "misconception": "Que la cáscara morena, la yema intensa o un huevo fecundado son más nutritivos; el color de la cáscara depende de la raza, el de la yema del pienso, y la fecundación no cambia su valor nutritivo."
+    },
+    "c_lacteos": {
+      "misconception": "Que desnatar la leche ahorra muchas calorías o que el porcentaje del queso es su grasa real; quitar casi toda la grasa ahorra unas 60 kcal por taza, y el porcentaje del queso va sobre extracto seco, así que su grasa real es menor."
+    },
+    "c_enzimas": {
+      "misconception": "Que la fruta golpeada se vuelve más dulce o que al té negro lo fermentan microbios; el golpe solo pardea la pulpa y el té se oscurece, en ambos casos por oxidación catalizada por enzimas de la propia planta."
+    },
+    "c_maillard": {
+      "summary": "Azúcares reductores y aminoácidos reaccionan y forman cientos de compuestos pardos y aromáticos (Maillard). La reacción avanza despacio incluso a temperatura ambiente, pero solo es rápida, la del dorado, bastante por encima de 100 °C y con poca agua. El azúcar solo, sin compuestos nitrogenados, carameliza desde unos 120 °C según el azúcar. Mientras la superficie siga mojada, la evaporación la retiene cerca de 100 °C y no dora."
+    },
+    "c_carbohidratos": {
+      "summary": "Azúcares y almidón aportan la misma energía por gramo, unas 4 kcal. Otros carbohidratos tienen enlaces que nuestras enzimas digestivas no rompen: la fibra (celulosa, pectinas) y los oligosacáridos de las legumbres llegan intactos al colon, donde las bacterias los fermentan y producen gases. Los polioles se absorben solo en parte, aportan menos energía y el resto fermenta igual.",
+      "formula": "En la cocina: Si la etiqueta incluye la fibra dentro de los carbohidratos totales (EE. UU. y buena parte de Latinoamérica), restarla para estimar los aprovechables; en la UE ya viene aparte. Remojar legumbres desechando el agua o usar alfa-galactosidasa para reducir gases."
+    },
+    "c_grasas": {
+      "summary": "Las grasas son triglicéridos: glicerol unido a tres ácidos grasos. Las cadenas saturadas son rectas y se apilan, por eso dan grasas sólidas; los dobles enlaces cis las doblan y las mantienen líquidas. La hidrogenación parcial satura enlaces y endereza otros en forma trans: esas cadenas se apilan como las saturadas, pero en la sangre son aún peores, porque suben el colesterol LDL y bajan el HDL."
+    },
+    "c_osmosis": {
+      "summary": "El agua cruza las membranas celulares desde donde hay menos solutos hacia donde hay más, hasta equilibrar concentraciones; los solutos se difunden mucho más despacio. Por eso sal y azúcar extraen agua de los tejidos, y el agua pura los hincha hasta reventar sus células. La sal, pequeña, avanza centímetros en horas o días; ácidos y aromas apenas pasan de la superficie.",
+      "misconception": "Que cualquier marinado llega al centro si se deja más tiempo; ácidos y aromas apenas penetran unos milímetros y el exceso de ácido estropea la superficie; solo la sal avanza de forma apreciable con el tiempo.",
+      "formula": "En la cocina: Marinar poco y en piezas finas, salar con antelación si se quiere sazonar por dentro, cocer la fruta en almíbar para que conserve su forma y salar el pepino para que suelte agua antes de aliñarlo."
+    },
+    "c_microbios": {
+      "summary": "Bacterias y mohos necesitan agua disponible, nutrientes y temperaturas templadas; la acidez frena a la mayoría de bacterias peligrosas, aunque mohos y levaduras la toleran bien. Algunas bacterias forman esporas que aguantan el hervor y germinan al templarse, como la del botulismo en medios sin aire. Conservar es negarles una condición: frío, acidez, sal o azúcar, sequedad, radiación o conservantes."
+    },
+    "c_fermentacion": {
+      "summary": "Levaduras y bacterias lácticas obtienen energía de los azúcares sin necesidad de oxígeno: las levaduras liberan etanol y CO₂, y las bacterias lácticas, ácido que cuaja la leche. Mohos como el koji, que sí necesitan aire, segregan enzimas que degradan proteínas y almidón en sabores. Hacia el 14–16 % de alcohol la mayoría de levaduras se detiene: para más hay que destilar o encabezar."
+    },
+    "c_gusto": {
+      "summary": "Las papilas captan cinco gustos con receptores propios; el amargor de cafeína, cucurbitacinas o lúpulo funciona como alarma ante posibles tóxicos. La pungencia no es un gusto: capsaicina, piperina e isotiocianatos activan receptores de dolor y calor del nervio trigémino, distintos de los del gusto."
+    },
+    "c_solubilidad": {
+      "formula": "En la cocina: Servir el espumoso muy frío para que retenga el gas, añadir limón al té frío turbio y cocinar con vino sobre todo por el sabor que aporta; su alcohol ayuda algo a disolver aromas apolares, pero en la olla se diluye y se evapora."
+    }
+  },
+  "sections": {},
+  "quitar_enlaces": [
+    ["c_colageno", "c_transferencia_calor"]
+  ],
+  "anadir_enlaces": [
+    {
+      "de": "c_polifenoles",
+      "a": "c_enzimas",
+      "tipo": "se apoya en",
+      "porque": "el té negro y la fruta cortada se oscurecen porque una enzima de la planta oxida sus polifenoles"
+    }
+  ]
+}

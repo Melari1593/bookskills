@@ -173,7 +173,7 @@
      "page": 50,
      "items": [
       "c_etiquetado",
-      "c_fermentacion"
+      "c_cambios_estado"
      ]
     },
     {
@@ -697,7 +697,8 @@
      "items": [
       "c_grasas",
       "c_aroma",
-      "c_etiquetado"
+      "c_etiquetado",
+      "c_oxidacion"
      ]
     },
     {
@@ -1547,19 +1548,19 @@
  "items": {
   "c_ph": {
    "title": "Ácidos, bases y pH",
-   "summary": "El pH expresa cuántos iones hidrógeno hay libres. Los ácidos los ceden y las bases los captan, y ese cambio altera la carga de proteínas, pigmentos y paredes vegetales. Por eso limón, bicarbonato o cal cambian color, textura y reactividad; un medio alcalino ataca además metales anfóteros como el aluminio.",
+   "summary": "El pH mide, en escala logarítmica inversa, la concentración de iones hidrógeno: cuanto más bajo, más ácido. Los ácidos ceden esos iones y las bases los captan, y el cambio altera la carga de proteínas, pigmentos y paredes vegetales. Por eso limón, bicarbonato o cal cambian color, textura y reactividad; un medio alcalino ataca además metales anfóteros como el aluminio.",
    "misconception": "Que la acidez solo cambia el sabor; en realidad decide si una proteína cuaja, si un pigmento vira o si la piel de una legumbre se ablanda.",
    "formula": "En la cocina: Usar unas gotas de ácido para fijar rojos y cuajar, y una pizca de álcali para ablandar legumbres o maíz, sin abusar: destruye vitaminas y vira pigmentos."
   },
   "c_pigmentos": {
    "title": "Pigmentos y color",
-   "summary": "El color sale de moléculas que absorben parte de la luz, y su estructura depende del entorno: la clorofila pierde su magnesio con calor y ácido, las antocianinas viran con el pH, los carotenoides aparecen al soltarse de proteínas y el hierro de la mioglobina cambia de tono según lleve oxígeno, agua u óxido nítrico unido.",
+   "summary": "El color sale de moléculas que absorben parte de la luz, y su estructura depende del entorno: la clorofila pierde su magnesio con calor y ácido, las antocianinas viran con el pH, la astaxantina de los crustáceos aflora al desnaturalizarse la proteína que la enmascara, y la mioglobina cambia de tono según su hierro esté reducido u oxidado y lleve unido oxígeno, óxido nítrico o monóxido de carbono.",
    "misconception": "Que el color revela frescura: la carne picada parda por dentro, la gamba cruda rosada o el salmón pálido no indican por sí mismos si el alimento está bien o mal.",
    "formula": "En la cocina: Cocer verduras verdes poco tiempo y destapadas, acidular la col lombarda y juzgar la carne por el olor y no por el tono."
   },
   "c_proteinas": {
    "title": "Desnaturalización y redes de proteínas",
-   "summary": "Las proteínas son cadenas plegadas por enlaces débiles. El calor, el ácido, el álcali, la sal o el batido rompen ese plegado; las cadenas abiertas se enganchan entre sí y forman una red que retiene agua. Así cuaja la clara, se vuelve opaco el ceviche y se arma el gluten al amasar harina de trigo hidratada.",
+   "summary": "Las proteínas son cadenas plegadas por enlaces débiles. El calor, el ácido, el álcali, la sal o el batido rompen ese plegado; las cadenas abiertas se enganchan entre sí y forman una red que retiene agua. Así cuaja la clara y se vuelve opaco el ceviche. El gluten es una red parecida: al hidratar y amasar harina de trigo, gliadinas y gluteninas se enlazan entre sí.",
    "misconception": "Que solo el calor cocina: el limón del ceviche o la pasta alcalina del huevo milenario también desnaturalizan, aunque no eliminan parásitos ni microbios como el calor.",
    "formula": "En la cocina: Controlar temperatura y tiempo para coagular sin resecar, amasar si se busca gluten o mezclar poco para masas tiernas, y no fiarse del ácido para sanear pescado."
   },
@@ -1573,25 +1574,25 @@
   "c_huevo": {
    "title": "Anatomía y envejecimiento del huevo",
    "summary": "El huevo combina clara (agua y proteínas), yema (grasa, lecitina, hierro), membranas y una cámara de aire en el polo ancho. Con los días pierde agua y dióxido de carbono por los poros: la clara se alcaliniza y se vuelve fluida, la cámara crece y la membrana interna se despega mejor.",
-   "misconception": "Que la cáscara morena, la yema intensa o la fecundación hacen el huevo más nutritivo; dependen de la raza y del pienso de la gallina.",
+   "misconception": "Que la cáscara morena, la yema intensa o un huevo fecundado son más nutritivos; el color de la cáscara depende de la raza, el de la yema del pienso, y la fecundación no cambia su valor nutritivo.",
    "formula": "En la cocina: Reservar los huevos más frescos para escalfar o freír, usar los de una o dos semanas para cocer y pelar, y guardarlos en frío para frenar su envejecimiento."
   },
   "c_lacteos": {
    "title": "Leche: grasa, caseína y suero",
    "summary": "La leche lleva glóbulos de grasa emulsionados en agua, micelas de caseína en suspensión y proteínas de suero disueltas. La grasa, menos densa, asciende y forma la nata; el ácido o el cuajo desestabilizan las micelas de caseína, que se unen en cuajada y separan el suero.",
-   "misconception": "Que quitar grasa a la leche o elegir quesos con poco porcentaje ahorra tantas calorías como parece; los porcentajes se calculan sobre bases distintas.",
+   "misconception": "Que desnatar la leche ahorra muchas calorías o que el porcentaje del queso es su grasa real; quitar casi toda la grasa ahorra unas 60 kcal por taza, y el porcentaje del queso va sobre extracto seco, así que su grasa real es menor.",
    "formula": "En la cocina: Elegir la nata por su porcentaje de grasa según se vaya a montar o a hervir, y leer si la grasa de un queso se expresa sobre el extracto seco."
   },
   "c_enzimas": {
    "title": "Enzimas",
    "summary": "Las enzimas son proteínas que aceleran reacciones concretas. En la célula vegetal suelen estar separadas de sus sustratos; al cortar o golpear se mezclan y generan pardeamiento o compuestos picantes, y en la maduración el etileno activa las que pasan almidón a azúcar y ablandan la pulpa. El calor las desnaturaliza; frío y ácido las frenan.",
-   "misconception": "Que la fruta golpeada es más dulce o que el té negro está fermentado por microbios: ambos cambios son oxidaciones causadas por enzimas de la propia planta.",
+   "misconception": "Que la fruta golpeada se vuelve más dulce o que al té negro lo fermentan microbios; el golpe solo pardea la pulpa y el té se oscurece, en ambos casos por oxidación catalizada por enzimas de la propia planta.",
    "formula": "En la cocina: Escaldar para fijar color, rociar con limón la fruta cortada, madurar frutas climatéricas en bolsa de papel y enfriar la cebolla antes de picarla.",
    "contrasts": "Dorado: Maillard y caramelización (ambos oscurecen alimentos, pero uno es enzimático y en frío y el otro térmico y sin enzimas)"
   },
   "c_maillard": {
    "title": "Dorado: Maillard y caramelización",
-   "summary": "Por encima de unos 120–140 °C y con poca agua, azúcares reductores y aminoácidos reaccionan y crean cientos de compuestos pardos y aromáticos (Maillard); el azúcar solo, a mayor temperatura, se descompone y carameliza. Mientras la superficie siga mojada, la evaporación la retiene cerca de 100 °C y no dora.",
+   "summary": "Azúcares reductores y aminoácidos reaccionan y forman cientos de compuestos pardos y aromáticos (Maillard). La reacción avanza despacio incluso a temperatura ambiente, pero solo es rápida, la del dorado, bastante por encima de 100 °C y con poca agua. El azúcar solo, sin compuestos nitrogenados, carameliza desde unos 120 °C según el azúcar. Mientras la superficie siga mojada, la evaporación la retiene cerca de 100 °C y no dora.",
    "misconception": "Que basta fuego fuerte para dorar: si la superficie está húmeda, como en las vieiras tratadas con fosfatos o la carne recién sacada del adobo, el agua frena el dorado.",
    "formula": "En la cocina: Secar bien la superficie, no llenar la sartén en exceso, dorar antes de guisar y preferir vieiras sin tratar.",
    "contrasts": "Enzimas (ambos oscurecen alimentos, pero uno es enzimático y en frío y el otro térmico y sin enzimas)"
@@ -1605,14 +1606,14 @@
   },
   "c_carbohidratos": {
    "title": "Azúcares y carbohidratos no digeribles",
-   "summary": "Azúcares y almidón aportan la misma energía por gramo, unas 4 kcal. Otros carbohidratos tienen enlaces que nuestras enzimas no rompen: celulosa y pectinas (fibra), oligosacáridos de las legumbres y polioles. Llegan intactos al colon, donde las bacterias los fermentan y producen gases.",
+   "summary": "Azúcares y almidón aportan la misma energía por gramo, unas 4 kcal. Otros carbohidratos tienen enlaces que nuestras enzimas digestivas no rompen: la fibra (celulosa, pectinas) y los oligosacáridos de las legumbres llegan intactos al colon, donde las bacterias los fermentan y producen gases. Los polioles se absorben solo en parte, aportan menos energía y el resto fermenta igual.",
    "misconception": "Que un plátano más dulce engorda más o que la batidora destruye la fibra; madurar solo convierte almidón en azúcar y licuar no cambia la química de la fibra.",
-   "formula": "En la cocina: Restar fibra y polioles en la etiqueta para estimar los carbohidratos aprovechables; remojar legumbres desechando el agua o usar alfa-galactosidasa para reducir gases.",
+   "formula": "En la cocina: Si la etiqueta incluye la fibra dentro de los carbohidratos totales (EE. UU. y buena parte de Latinoamérica), restarla para estimar los aprovechables; en la UE ya viene aparte. Remojar legumbres desechando el agua o usar alfa-galactosidasa para reducir gases.",
    "contrasts": "Almidón: gelatinización y retrogradación (azúcar y almidón aportan igual energía; difieren en estructura, dulzor y textura)"
   },
   "c_grasas": {
    "title": "Grasas: estructura y saturación",
-   "summary": "Las grasas son triglicéridos: glicerol unido a tres ácidos grasos. Las cadenas saturadas son rectas y se apilan, por eso dan grasas sólidas; los dobles enlaces cis las doblan y las mantienen líquidas. La hidrogenación parcial satura enlaces y endereza otros en forma trans, que el cuerpo trata como saturados.",
+   "summary": "Las grasas son triglicéridos: glicerol unido a tres ácidos grasos. Las cadenas saturadas son rectas y se apilan, por eso dan grasas sólidas; los dobles enlaces cis las doblan y las mantienen líquidas. La hidrogenación parcial satura enlaces y endereza otros en forma trans: esas cadenas se apilan como las saturadas, pero en la sangre son aún peores, porque suben el colesterol LDL y bajan el HDL.",
    "misconception": "Que un aceite light tiene menos calorías; todas las grasas rinden unas 9 kcal por gramo y esa palabra solo alude al color o al sabor suave.",
    "formula": "En la cocina: Elegir grasa sólida o líquida según la textura buscada, evitar productos con grasas parcialmente hidrogenadas y usar aceite suave por su sabor, no para adelgazar."
   },
@@ -1656,26 +1657,26 @@
   },
   "c_osmosis": {
    "title": "Ósmosis y difusión",
-   "summary": "El agua cruza las membranas celulares desde donde hay menos solutos hacia donde hay más, hasta equilibrar concentraciones; los solutos, en cambio, se difunden despacio y avanzan pocos milímetros. Por eso sal y azúcar extraen agua de los tejidos, y el agua pura los hincha hasta reventar sus células.",
-   "misconception": "Que un marinado llega al centro si se deja más tiempo; apenas penetra unos milímetros y el exceso de ácido solo estropea la superficie.",
-   "formula": "En la cocina: Marinar poco y en piezas finas, cocer la fruta en almíbar para que conserve su forma, salar pepinos para que crujan y preferir mariscos no inflados con fosfatos."
+   "summary": "El agua cruza las membranas celulares desde donde hay menos solutos hacia donde hay más, hasta equilibrar concentraciones; los solutos se difunden mucho más despacio. Por eso sal y azúcar extraen agua de los tejidos, y el agua pura los hincha hasta reventar sus células. La sal, pequeña, avanza centímetros en horas o días; ácidos y aromas apenas pasan de la superficie.",
+   "misconception": "Que cualquier marinado llega al centro si se deja más tiempo; ácidos y aromas apenas penetran unos milímetros y el exceso de ácido estropea la superficie; solo la sal avanza de forma apreciable con el tiempo.",
+   "formula": "En la cocina: Marinar poco y en piezas finas, salar con antelación si se quiere sazonar por dentro, cocer la fruta en almíbar para que conserve su forma y salar el pepino para que suelte agua antes de aliñarlo."
   },
   "c_solubilidad": {
    "title": "Disolución y precipitación",
    "summary": "Lo semejante disuelve a lo semejante: iones y moléculas polares se rodean de agua; las apolares prefieren grasa o alcohol. Calentar suele disolver más sólidos y menos gases. Algunos iones, como oxalato con calcio o hierro, forman sales insolubles que precipitan, y superficies porosas como el carbón activo retienen moléculas por adsorción.",
    "misconception": "Que el azúcar se derrite en el café; se disuelve: sus moléculas se separan y se dispersan entre las del agua, sin fundirse.",
-   "formula": "En la cocina: Servir el espumoso muy frío para que retenga el gas, añadir limón al té frío turbio y no esperar que un vino disuelva más sabor que el agua.",
+   "formula": "En la cocina: Servir el espumoso muy frío para que retenga el gas, añadir limón al té frío turbio y cocinar con vino sobre todo por el sabor que aporta; su alcohol ayuda algo a disolver aromas apolares, pero en la olla se diluye y se evapora.",
    "contrasts": "Emulsiones y espumas (dispersar gotitas no es disolver: las dos fases siguen separadas)"
   },
   "c_fermentacion": {
    "title": "Fermentación y alcohol",
-   "summary": "Levaduras, bacterias lácticas y mohos obtienen energía de los azúcares sin necesidad de oxígeno: las levaduras liberan etanol y CO₂, las bacterias lácticas ácido que cuaja la leche, y mohos como el koji degradan proteínas y almidón en sabores. Más allá de un 15 % de alcohol, la levadura muere: hay que destilar o encabezar.",
+   "summary": "Levaduras y bacterias lácticas obtienen energía de los azúcares sin necesidad de oxígeno: las levaduras liberan etanol y CO₂, y las bacterias lácticas, ácido que cuaja la leche. Mohos como el koji, que sí necesitan aire, segregan enzimas que degradan proteínas y almidón en sabores. Hacia el 14–16 % de alcohol la mayoría de levaduras se detiene: para más hay que destilar o encabezar.",
    "misconception": "Que cualquier alcohol es bebible o que la sidra es solo zumo; únicamente el etanol se bebe, y la sidra es zumo transformado por levaduras.",
    "formula": "En la cocina: Refrigerar el zumo sin pasteurizar, respetar tiempo y temperatura de yogures y fermentos, y contar el alcohol en gramos de etanol, no en copas."
   },
   "c_microbios": {
    "title": "Microbios: qué necesitan y cómo frenarlos",
-   "summary": "Bacterias y mohos necesitan agua disponible, nutrientes, temperaturas templadas y poca acidez. Algunas bacterias forman esporas que aguantan el hervor y germinan al templarse, como la del botulismo en medios sin aire. Conservar es negarles una condición: frío, acidez, sal o azúcar, sequedad, radiación o conservantes.",
+   "summary": "Bacterias y mohos necesitan agua disponible, nutrientes y temperaturas templadas; la acidez frena a la mayoría de bacterias peligrosas, aunque mohos y levaduras la toleran bien. Algunas bacterias forman esporas que aguantan el hervor y germinan al templarse, como la del botulismo en medios sin aire. Conservar es negarles una condición: frío, acidez, sal o azúcar, sequedad, radiación o conservantes.",
    "misconception": "Que hervir esteriliza o que lo natural es inocuo; las esporas resisten 100 °C, y el ajo en aceite o la miel pueden albergar botulismo.",
    "formula": "En la cocina: Enfriar deprisa caldos y arroces, no guardar ajo en aceite a temperatura ambiente, no dar miel a menores de un año y mantener en frío los zumos crudos.",
    "contrasts": "Oxidación y enranciamiento (dos vías de deterioro, biológica y química, con remedios distintos)"
@@ -1688,7 +1689,7 @@
   },
   "c_gusto": {
    "title": "Gusto y pungencia",
-   "summary": "Las papilas captan cinco gustos con receptores propios; el amargor de cafeína, cucurbitacinas o lúpulo funciona como alarma ante posibles tóxicos. La pungencia no es un gusto: capsaicina, piperina e isotiocianatos activan receptores de dolor y calor del nervio trigémino, que los insectos no tienen.",
+   "summary": "Las papilas captan cinco gustos con receptores propios; el amargor de cafeína, cucurbitacinas o lúpulo funciona como alarma ante posibles tóxicos. La pungencia no es un gusto: capsaicina, piperina e isotiocianatos activan receptores de dolor y calor del nervio trigémino, distintos de los del gusto.",
    "misconception": "Que el picante es un sabor más o que el agua lo calma; es una señal de dolor, y la capsaicina, poco soluble en agua, se arrastra mejor con leche.",
    "formula": "En la cocina: Calmar el picante con lácteos, añadir rábano picante o wasabi al final porque calor y tiempo apagan su picor, y descartar los extremos amargos del pepino.",
    "contrasts": "Aroma: moléculas volátiles (gusto y picor se perciben en la boca; el aroma, en la nariz, y explica casi todo el sabor)"
@@ -1752,9 +1753,6 @@
    "2.5": [
     "1.15"
    ],
-   "2.22": [
-    "2.18"
-   ],
    "2.23": [
     "2.18"
    ],
@@ -1809,9 +1807,6 @@
    "9.14": [
     "7.8"
    ],
-   "10.4": [
-    "2.22"
-   ],
    "10.7": [
     "10.6"
    ],
@@ -1828,8 +1823,7 @@
     "c_ph"
    ],
    "c_colageno": [
-    "c_proteinas",
-    "c_transferencia_calor"
+    "c_proteinas"
    ],
    "c_lacteos": [
     "c_dispersiones"
@@ -1888,7 +1882,8 @@
     "c_proteinas"
    ],
    "c_polifenoles": [
-    "c_solubilidad"
+    "c_solubilidad",
+    "c_enzimas"
    ],
    "c_etiquetado": [
     "c_magnitudes"
@@ -1901,9 +1896,8 @@
  "why": {
   "s2.4>s1.14": "azúcar y alcohol bajan el punto de congelación; por eso el helado nunca se congela del todo",
   "s2.5>s1.15": "explica que el hielo absorbe calor al fundirse; aquí se mide lo poco que eso enfría al cuerpo",
-  "s2.22>s2.18": "muestra cómo el calor coagula la clara; un calentamiento parcial dificulta luego montarla",
   "s2.23>s2.18": "el ácido coagula la clara; el álcali del huevo milenario produce un efecto análogo",
-  "s3.6>s3.5": "presenta el ácido oxálico, que es lo que vuelve inaprovechable el hierro de la espinaca",
+  "s3.6>s3.5": "presenta el ácido oxálico, al que el libro atribuye que el hierro de la espinaca no se aproveche (ver la alerta)",
   "s3.11>s2.7": "los quesos frescos cuajados con ácido son el paralelo lácteo del tofu coagulado",
   "s4.4>s4.1": "explica que la fruta cosechada madura por el etileno, no por el sol",
   "s4.13>s1.14": "el alcohol baja el punto de congelación, lo que permite concentrar sidra helándola",
@@ -1920,14 +1914,12 @@
   "s9.8>s7.11": "contrasta la radiación del carbón con la combustión del gas",
   "s9.11>s9.10": "explica por qué cada material almacena y emite el calor de forma distinta",
   "s9.14>s7.8": "la zona de temperaturas peligrosas limita cuánto puede alargarse una cocción lenta",
-  "s10.4>s2.22": "explica cómo se forma y estabiliza una espuma batida",
   "s10.7>s10.6": "presenta las formas cristalinas de la manteca de cacao",
   "s10.8>s10.5": "explica qué mide el porcentaje de cacao y qué aportan sus componentes",
   "i:c_pigmentos>i:c_ph": "Se apoya en: antocianinas y ciertos taninos cambian de estructura y de color según la acidez del medio",
   "i:c_pigmentos>i:c_polifenoles": "Se apoya en: las antocianinas son polifenoles; su química explica su sensibilidad al oxígeno y al pH",
   "i:c_proteinas>i:c_ph": "Se apoya en: ácidos y álcalis alteran las cargas de las proteínas y las desnaturalizan sin calor",
   "i:c_colageno>i:c_proteinas": "Se apoya en: la gelatina es colágeno desnaturalizado y fragmentado por el calor húmedo",
-  "i:c_colageno>i:c_transferencia_calor": "Se apoya en: convertir colágeno exige calor húmedo sostenido, y el braseado controla cómo llega ese calor",
   "i:c_lacteos>i:c_dispersiones": "Se apoya en: leche, nata y mantequilla son emulsiones de grasa y agua",
   "i:c_huevo>i:c_proteinas": "Se apoya en: cocer, batir o curar huevos son maneras de desnaturalizar sus proteínas",
   "i:c_enzimas>i:c_proteinas": "Se apoya en: las enzimas son proteínas: el calor que las desnaturaliza las inactiva",
@@ -1952,6 +1944,7 @@
   "i:c_dispersiones>i:c_proteinas": "Se apoya en: proteínas parcialmente desplegadas recubren burbujas y gotas y las estabilizan",
   "i:c_polifenoles>i:c_solubilidad": "Se apoya en: los taninos precipitan en frío o con agua dura y se redisuelven al acidular",
   "i:c_etiquetado>i:c_magnitudes": "Se apoya en: los porcentajes de etiqueta exigen distinguir peso total, extracto seco y volumen",
-  "i:c_gusto>i:c_solubilidad": "Se apoya en: la capsaicina es apolar: el agua no la arrastra y la leche o la grasa sí"
+  "i:c_gusto>i:c_solubilidad": "Se apoya en: la capsaicina es apolar: el agua no la arrastra y la leche o la grasa sí",
+  "i:c_polifenoles>i:c_enzimas": "Se apoya en: el té negro y la fruta cortada se oscurecen porque una enzima de la planta oxida sus polifenoles"
  }
 }
