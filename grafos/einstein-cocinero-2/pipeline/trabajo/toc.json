@@ -1,0 +1,1043 @@
+{
+ "chapters": [
+  {
+   "num": 1,
+   "title": "¿Algo para beber?",
+   "page": 23
+  },
+  {
+   "num": 2,
+   "title": "En la granja",
+   "page": 63
+  },
+  {
+   "num": 3,
+   "title": "Lo que el hombre sembrare",
+   "page": 111
+  },
+  {
+   "num": 4,
+   "title": "Delicias de la huerta",
+   "page": 147
+  },
+  {
+   "num": 5,
+   "title": "De los campos de cereales al granero",
+   "page": 197
+  },
+  {
+   "num": 6,
+   "title": "El mar y sus manjares",
+   "page": 229
+  },
+  {
+   "num": 7,
+   "title": "Carnaval para carnívoros",
+   "page": 255
+  },
+  {
+   "num": 8,
+   "title": "En las especias está la salsa de la vida",
+   "page": 303
+  },
+  {
+   "num": 9,
+   "title": "La cocina, centro de operaciones",
+   "page": 339
+  },
+  {
+   "num": 10,
+   "title": "Ñapas para insaciables",
+   "page": 383
+  }
+ ],
+ "sections": [
+  {
+   "ch": 1,
+   "title": "Hielo albino",
+   "page": 25,
+   "found": true,
+   "id": "1.1"
+  },
+  {
+   "ch": 1,
+   "title": "Té turbio",
+   "page": 26,
+   "found": true,
+   "id": "1.2"
+  },
+  {
+   "ch": 1,
+   "title": "Verde que te quiero verde",
+   "page": 29,
+   "found": true,
+   "id": "1.3"
+  },
+  {
+   "ch": 1,
+   "title": "Té de tornasol",
+   "page": 31,
+   "found": true,
+   "id": "1.4"
+  },
+  {
+   "ch": 1,
+   "title": "Cafeína no, gracias",
+   "page": 33,
+   "found": true,
+   "id": "1.5"
+  },
+  {
+   "ch": 1,
+   "title": "Té (y café) para dos",
+   "page": 33,
+   "found": true,
+   "id": "1.6"
+  },
+  {
+   "ch": 1,
+   "title": "¿Quiere leche?",
+   "page": 35,
+   "found": true,
+   "id": "1.7"
+  },
+  {
+   "ch": 1,
+   "title": "Nuestros parientes alcohólicos",
+   "page": 38,
+   "found": true,
+   "id": "1.8"
+  },
+  {
+   "ch": 1,
+   "title": "Sabor amargo",
+   "page": 39,
+   "found": true,
+   "id": "1.9"
+  },
+  {
+   "ch": 1,
+   "title": "Sulfitos",
+   "page": 42,
+   "found": true,
+   "id": "1.10"
+  },
+  {
+   "ch": 1,
+   "title": "Una de jerez, por favor",
+   "page": 44,
+   "found": true,
+   "id": "1.11"
+  },
+  {
+   "ch": 1,
+   "title": "El truco de la cuchara",
+   "page": 48,
+   "found": true,
+   "id": "1.12"
+  },
+  {
+   "ch": 1,
+   "title": "Guerra entre estados",
+   "page": 50,
+   "found": true,
+   "id": "1.13"
+  },
+  {
+   "ch": 1,
+   "title": "¡Y listos!",
+   "page": 52,
+   "found": true,
+   "id": "1.14"
+  },
+  {
+   "ch": 1,
+   "title": "Agitado y revuelto",
+   "page": 54,
+   "found": true,
+   "id": "1.15"
+  },
+  {
+   "ch": 1,
+   "title": "Mida su alegría",
+   "page": 55,
+   "found": true,
+   "id": "1.16"
+  },
+  {
+   "ch": 1,
+   "title": "Síndrome de estrés posgastronómico",
+   "page": 58,
+   "found": true,
+   "id": "1.17"
+  },
+  {
+   "ch": 2,
+   "title": "El galimatías de los desnatados",
+   "page": 64,
+   "found": true,
+   "id": "2.1"
+  },
+  {
+   "ch": 2,
+   "title": "La créme de la créme",
+   "page": 67,
+   "found": true,
+   "id": "2.2"
+  },
+  {
+   "ch": 2,
+   "title": "El bueno y el malo",
+   "page": 70,
+   "found": true,
+   "id": "2.3"
+  },
+  {
+   "ch": 2,
+   "title": "¿Cuán cremoso es el helado cremoso?",
+   "page": 75,
+   "found": true,
+   "id": "2.4"
+  },
+  {
+   "ch": 2,
+   "title": "Frío frío",
+   "page": 76,
+   "found": true,
+   "id": "2.5"
+  },
+  {
+   "ch": 2,
+   "title": "Vivir del aire",
+   "page": 77,
+   "found": true,
+   "id": "2.6"
+  },
+  {
+   "ch": 2,
+   "title": "A la sombra de Filadelfia",
+   "page": 78,
+   "found": true,
+   "id": "2.7"
+  },
+  {
+   "ch": 2,
+   "title": "Re: Brie",
+   "page": 81,
+   "found": true,
+   "id": "2.8"
+  },
+  {
+   "ch": 2,
+   "title": "Queso: ¿qué es eso?",
+   "page": 83,
+   "found": true,
+   "id": "2.9"
+  },
+  {
+   "ch": 2,
+   "title": "De buena hebra",
+   "page": 86,
+   "found": true,
+   "id": "2.10"
+  },
+  {
+   "ch": 2,
+   "title": "¿Se le puede llamar queso?",
+   "page": 87,
+   "found": true,
+   "id": "2.11"
+  },
+  {
+   "ch": 2,
+   "title": "Desglase con clase",
+   "page": 89,
+   "found": true,
+   "id": "2.12"
+  },
+  {
+   "ch": 2,
+   "title": "Hay huevos y huevos",
+   "page": 92,
+   "found": true,
+   "id": "2.13"
+  },
+  {
+   "ch": 2,
+   "title": "Los huevos de oro",
+   "page": 96,
+   "found": true,
+   "id": "2.14"
+  },
+  {
+   "ch": 2,
+   "title": "Gallinas vírgenes",
+   "page": 97,
+   "found": true,
+   "id": "2.15"
+  },
+  {
+   "ch": 2,
+   "title": "Yemas gemelas",
+   "page": 99,
+   "found": true,
+   "id": "2.16"
+  },
+  {
+   "ch": 2,
+   "title": "¡Que se casca la cáscara!",
+   "page": 100,
+   "found": true,
+   "id": "2.17"
+  },
+  {
+   "ch": 2,
+   "title": "El remedio de los pesimistas",
+   "page": 101,
+   "found": true,
+   "id": "2.18"
+  },
+  {
+   "ch": 2,
+   "title": "Huevos equilibristas",
+   "page": 101,
+   "found": true,
+   "id": "2.19"
+  },
+  {
+   "ch": 2,
+   "title": "Huevos verdes sin jamón",
+   "page": 103,
+   "found": true,
+   "id": "2.20"
+  },
+  {
+   "ch": 2,
+   "title": "Huevos con personalidad",
+   "page": 106,
+   "found": true,
+   "id": "2.21"
+  },
+  {
+   "ch": 2,
+   "title": "A darle al merengue",
+   "page": 107,
+   "found": true,
+   "id": "2.22"
+  },
+  {
+   "ch": 2,
+   "title": "Exagerando un huevo",
+   "page": 109,
+   "found": true,
+   "id": "2.23"
+  },
+  {
+   "ch": 3,
+   "title": "Colores para el paladar",
+   "page": 112,
+   "found": true,
+   "id": "3.1"
+  },
+  {
+   "ch": 3,
+   "title": "Cuando el verde pierde el verde",
+   "page": 114,
+   "found": true,
+   "id": "3.2"
+  },
+  {
+   "ch": 3,
+   "title": "Guerra bacteriológica",
+   "page": 116,
+   "found": true,
+   "id": "3.3"
+  },
+  {
+   "ch": 3,
+   "title": "Patatas oxidadas",
+   "page": 120,
+   "found": true,
+   "id": "3.4"
+  },
+  {
+   "ch": 3,
+   "title": "Ruibarbo sobre ruibarbo",
+   "page": 122,
+   "found": true,
+   "id": "3.5"
+  },
+  {
+   "ch": 3,
+   "title": "Lo que Brutus no sabía",
+   "page": 124,
+   "found": true,
+   "id": "3.6"
+  },
+  {
+   "ch": 3,
+   "title": "Gas lacrimógeno",
+   "page": 126,
+   "found": true,
+   "id": "3.7"
+  },
+  {
+   "ch": 3,
+   "title": "Georgia on my mind",
+   "page": 129,
+   "found": true,
+   "id": "3.8"
+  },
+  {
+   "ch": 3,
+   "title": "Qué amargo ser verde",
+   "page": 131,
+   "found": true,
+   "id": "3.9"
+  },
+  {
+   "ch": 3,
+   "title": "Leche desparramada",
+   "page": 133,
+   "found": true,
+   "id": "3.10"
+  },
+  {
+   "ch": 3,
+   "title": "Oda al tofu",
+   "page": 135,
+   "found": true,
+   "id": "3.11"
+  },
+  {
+   "ch": 3,
+   "title": "Ponga el miso en su vida",
+   "page": 137,
+   "found": true,
+   "id": "3.12"
+  },
+  {
+   "ch": 3,
+   "title": "El que come fabada lo paga",
+   "page": 140,
+   "found": true,
+   "id": "3.13"
+  },
+  {
+   "ch": 3,
+   "title": "Remojar o no remojar",
+   "page": 142,
+   "found": true,
+   "id": "3.14"
+  },
+  {
+   "ch": 4,
+   "title": "Aguacate maduro, gas seguro",
+   "page": 149,
+   "found": true,
+   "id": "4.1"
+  },
+  {
+   "ch": 4,
+   "title": "Maltratadas pero dulces",
+   "page": 154,
+   "found": true,
+   "id": "4.2"
+  },
+  {
+   "ch": 4,
+   "title": "Plátanos atómicos",
+   "page": 155,
+   "found": true,
+   "id": "4.3"
+  },
+  {
+   "ch": 4,
+   "title": "El segundo plátano",
+   "page": 155,
+   "found": true,
+   "id": "4.4"
+  },
+  {
+   "ch": 4,
+   "title": "Aceites y aceites",
+   "page": 158,
+   "found": true,
+   "id": "4.5"
+  },
+  {
+   "ch": 4,
+   "title": "Grasas trans: ¿me lo transcribe?",
+   "page": 163,
+   "found": true,
+   "id": "4.6"
+  },
+  {
+   "ch": 4,
+   "title": "Cuando las grasas buenas se vuelven malas",
+   "page": 169,
+   "found": true,
+   "id": "4.7"
+  },
+  {
+   "ch": 4,
+   "title": "¿Es light el aceite light?",
+   "page": 172,
+   "found": true,
+   "id": "4.8"
+  },
+  {
+   "ch": 4,
+   "title": "¿Verde aceituna o negro aceituna?",
+   "page": 181,
+   "found": true,
+   "id": "4.9"
+  },
+  {
+   "ch": 4,
+   "title": "La osmosis es una calle de doble sentido",
+   "page": 182,
+   "found": true,
+   "id": "4.10"
+  },
+  {
+   "ch": 4,
+   "title": "Pescar calabazas con la boca",
+   "page": 187,
+   "found": true,
+   "id": "4.11"
+  },
+  {
+   "ch": 4,
+   "title": "Sidra con o sin",
+   "page": 189,
+   "found": true,
+   "id": "4.12"
+  },
+  {
+   "ch": 4,
+   "title": "Bacanal de abejas",
+   "page": 191,
+   "found": true,
+   "id": "4.13"
+  },
+  {
+   "ch": 4,
+   "title": "Cuando crudo significa tostado",
+   "page": 194,
+   "found": true,
+   "id": "4.14"
+  },
+  {
+   "ch": 5,
+   "title": "Pegamento de patata",
+   "page": 201,
+   "found": true,
+   "id": "5.1"
+  },
+  {
+   "ch": 5,
+   "title": "De guisante a guisote",
+   "page": 203,
+   "found": true,
+   "id": "5.2"
+  },
+  {
+   "ch": 5,
+   "title": "Arroz chino recalentado",
+   "page": 205,
+   "found": true,
+   "id": "5.3"
+  },
+  {
+   "ch": 5,
+   "title": "Cómo jugar a los palillos",
+   "page": 206,
+   "found": true,
+   "id": "5.4"
+  },
+  {
+   "ch": 5,
+   "title": "Que no se le pase el arroz",
+   "page": 209,
+   "found": true,
+   "id": "5.5"
+  },
+  {
+   "ch": 5,
+   "title": "No es oro todo lo que se blanquea",
+   "page": 210,
+   "found": true,
+   "id": "5.6"
+  },
+  {
+   "ch": 5,
+   "title": "Mezclar y levantar",
+   "page": 212,
+   "found": true,
+   "id": "5.7"
+  },
+  {
+   "ch": 5,
+   "title": "Ni de Oriente ni de moliente",
+   "page": 212,
+   "found": true,
+   "id": "5.8"
+  },
+  {
+   "ch": 5,
+   "title": "Inventario de pasta",
+   "page": 213,
+   "found": true,
+   "id": "5.9"
+  },
+  {
+   "ch": 5,
+   "title": "Por favor, no se coma el colchón",
+   "page": 215,
+   "found": true,
+   "id": "5.10"
+  },
+  {
+   "ch": 5,
+   "title": "Lo que no engorda también pesa",
+   "page": 216,
+   "found": true,
+   "id": "5.11"
+  },
+  {
+   "ch": 5,
+   "title": "Vayamos al grano",
+   "page": 217,
+   "found": true,
+   "id": "5.12"
+  },
+  {
+   "ch": 5,
+   "title": "Tortilla linda",
+   "page": 221,
+   "found": true,
+   "id": "5.13"
+  },
+  {
+   "ch": 5,
+   "title": "Ni los perros ni los niños ni el azúcar",
+   "page": 223,
+   "found": true,
+   "id": "5.14"
+  },
+  {
+   "ch": 5,
+   "title": "El cara a cara de la miel y el azúcar",
+   "page": 226,
+   "found": true,
+   "id": "5.15"
+  },
+  {
+   "ch": 6,
+   "title": "Píntame el salmón",
+   "page": 230,
+   "found": true,
+   "id": "6.1"
+  },
+  {
+   "ch": 6,
+   "title": "Calibración de atún",
+   "page": 232,
+   "found": true,
+   "id": "6.2"
+  },
+  {
+   "ch": 6,
+   "title": "Raya por vieira",
+   "page": 235,
+   "found": true,
+   "id": "6.3"
+  },
+  {
+   "ch": 6,
+   "title": "Huevas limpias, secas y prensadas",
+   "page": 237,
+   "found": true,
+   "id": "6.4"
+  },
+  {
+   "ch": 6,
+   "title": "La prueba del ácido",
+   "page": 238,
+   "found": true,
+   "id": "6.5"
+  },
+  {
+   "ch": 6,
+   "title": "Mejillones que caminan por el lado salvaje de la vida",
+   "page": 241,
+   "found": true,
+   "id": "6.6"
+  },
+  {
+   "ch": 6,
+   "title": "¿Por qué no? ¡Aféitame con una almeja!",
+   "page": 244,
+   "found": true,
+   "id": "6.7"
+  },
+  {
+   "ch": 6,
+   "title": "Vieiras de ojos azules",
+   "page": 248,
+   "found": true,
+   "id": "6.8"
+  },
+  {
+   "ch": 6,
+   "title": "Camuflaje crustáceo",
+   "page": 251,
+   "found": true,
+   "id": "6.9"
+  },
+  {
+   "ch": 7,
+   "title": "La carne y la máquina",
+   "page": 257,
+   "found": true,
+   "id": "7.1"
+  },
+  {
+   "ch": 7,
+   "title": "¡Cómo son! ¿Carne marrón?",
+   "page": 261,
+   "found": true,
+   "id": "7.2"
+  },
+  {
+   "ch": 7,
+   "title": "Arco iris sobre el centeno",
+   "page": 265,
+   "found": true,
+   "id": "7.3"
+  },
+  {
+   "ch": 7,
+   "title": "Un curado muy florido",
+   "page": 266,
+   "found": true,
+   "id": "7.4"
+  },
+  {
+   "ch": 7,
+   "title": "Pon la carne a remojar",
+   "page": 269,
+   "found": true,
+   "id": "7.5"
+  },
+  {
+   "ch": 7,
+   "title": "Elogio del braseado",
+   "page": 276,
+   "found": true,
+   "id": "7.6"
+  },
+  {
+   "ch": 7,
+   "title": "Que no le amarguen el caldo",
+   "page": 283,
+   "found": true,
+   "id": "7.7"
+  },
+  {
+   "ch": 7,
+   "title": "Bacterias con armadura",
+   "page": 289,
+   "found": true,
+   "id": "7.8"
+  },
+  {
+   "ch": 7,
+   "title": "Cómo doblar un hueso",
+   "page": 291,
+   "found": true,
+   "id": "7.9"
+  },
+  {
+   "ch": 7,
+   "title": "¿Por qué vino?",
+   "page": 291,
+   "found": true,
+   "id": "7.10"
+  },
+  {
+   "ch": 7,
+   "title": "A todo gas, o mejor no",
+   "page": 295,
+   "found": true,
+   "id": "7.11"
+  },
+  {
+   "ch": 7,
+   "title": "Cada leña, un humo",
+   "page": 298,
+   "found": true,
+   "id": "7.12"
+  },
+  {
+   "ch": 8,
+   "title": "Quintaesencial pero no esencial",
+   "page": 307,
+   "found": true,
+   "id": "8.1"
+  },
+  {
+   "ch": 8,
+   "title": "¡Cómo pican!",
+   "page": 309,
+   "found": true,
+   "id": "8.2"
+  },
+  {
+   "ch": 8,
+   "title": "¡No me beses!",
+   "page": 315,
+   "found": false,
+   "id": "8.3"
+  },
+  {
+   "ch": 8,
+   "title": "Amor verdadero",
+   "page": 318,
+   "found": true,
+   "id": "8.4"
+  },
+  {
+   "ch": 8,
+   "title": "¿Botulismo en una botella?",
+   "page": 319,
+   "found": true,
+   "id": "8.5"
+  },
+  {
+   "ch": 8,
+   "title": "Comprueba esa «esperbia»",
+   "page": 321,
+   "found": true,
+   "id": "8.6"
+  },
+  {
+   "ch": 8,
+   "title": "¿Cuántas hierbas me caben en una cucharadita?",
+   "page": 322,
+   "found": true,
+   "id": "8.7"
+  },
+  {
+   "ch": 8,
+   "title": "Especias desaboridas",
+   "page": 324,
+   "found": true,
+   "id": "8.8"
+  },
+  {
+   "ch": 8,
+   "title": "Volkswagens en la despensa",
+   "page": 324,
+   "found": true,
+   "id": "8.9"
+  },
+  {
+   "ch": 8,
+   "title": "Una botella de humo",
+   "page": 326,
+   "found": true,
+   "id": "8.10"
+  },
+  {
+   "ch": 8,
+   "title": "Cosa fina",
+   "page": 329,
+   "found": true,
+   "id": "8.11"
+  },
+  {
+   "ch": 8,
+   "title": "Rallado y apocado",
+   "page": 331,
+   "found": true,
+   "id": "8.12"
+  },
+  {
+   "ch": 8,
+   "title": "¿Qué ha estado fumando?",
+   "page": 333,
+   "found": true,
+   "id": "8.13"
+  },
+  {
+   "ch": 8,
+   "title": "Cerditos kosher",
+   "page": 334,
+   "found": true,
+   "id": "8.14"
+  },
+  {
+   "ch": 8,
+   "title": "Tomaré vainilla",
+   "page": 335,
+   "found": true,
+   "id": "8.15"
+  },
+  {
+   "ch": 9,
+   "title": "En busca de los olores perdidos",
+   "page": 340,
+   "found": true,
+   "id": "9.1"
+  },
+  {
+   "ch": 9,
+   "title": "Mantequeras faroleras",
+   "page": 343,
+   "found": true,
+   "id": "9.2"
+  },
+  {
+   "ch": 9,
+   "title": "Santa Lucía nos conserve... los alimentos",
+   "page": 344,
+   "found": true,
+   "id": "9.3"
+  },
+  {
+   "ch": 9,
+   "title": "¿Nucleares? No, gracias",
+   "page": 347,
+   "found": true,
+   "id": "9.4"
+  },
+  {
+   "ch": 9,
+   "title": "Una cuestión básica",
+   "page": 347,
+   "found": true,
+   "id": "9.5"
+  },
+  {
+   "ch": 9,
+   "title": "Emulsión compulsiva",
+   "page": 349,
+   "found": true,
+   "id": "9.6"
+  },
+  {
+   "ch": 9,
+   "title": "El calor del hogar",
+   "page": 355,
+   "found": true,
+   "id": "9.7"
+  },
+  {
+   "ch": 9,
+   "title": "Grills grillados",
+   "page": 359,
+   "found": true,
+   "id": "9.8"
+  },
+  {
+   "ch": 9,
+   "title": "2 x 1 = 1,8",
+   "page": 362,
+   "found": true,
+   "id": "9.9"
+  },
+  {
+   "ch": 9,
+   "title": "Piedra de toque",
+   "page": 364,
+   "found": true,
+   "id": "9.10"
+  },
+  {
+   "ch": 9,
+   "title": "El método del palillo",
+   "page": 367,
+   "found": true,
+   "id": "9.11"
+  },
+  {
+   "ch": 9,
+   "title": "Maravillas de silicona",
+   "page": 372,
+   "found": true,
+   "id": "9.12"
+  },
+  {
+   "ch": 9,
+   "title": "La forma sí importa",
+   "page": 375,
+   "found": true,
+   "id": "9.13"
+  },
+  {
+   "ch": 9,
+   "title": "La temperatura y el tiempo no esperan",
+   "page": 376,
+   "found": true,
+   "id": "9.14"
+  },
+  {
+   "ch": 10,
+   "title": "Cuida lo que dices",
+   "page": 384,
+   "found": true,
+   "id": "10.1"
+  },
+  {
+   "ch": 10,
+   "title": "Es natural, ¿sí o sí?",
+   "page": 386,
+   "found": true,
+   "id": "10.2"
+  },
+  {
+   "ch": 10,
+   "title": "Gota a gota",
+   "page": 389,
+   "found": true,
+   "id": "10.3"
+  },
+  {
+   "ch": 10,
+   "title": "Dulces nubes",
+   "page": 390,
+   "found": true,
+   "id": "10.4"
+  },
+  {
+   "ch": 10,
+   "title": "El alimento de los dioses",
+   "page": 393,
+   "found": true,
+   "id": "10.5"
+  },
+  {
+   "ch": 10,
+   "title": "El chocolate se me apelmazó y perdí el temple",
+   "page": 397,
+   "found": true,
+   "id": "10.6"
+  },
+  {
+   "ch": 10,
+   "title": "Chocolate eflorescente",
+   "page": 401,
+   "found": true,
+   "id": "10.7"
+  },
+  {
+   "ch": 10,
+   "title": "El impostor",
+   "page": 402,
+   "found": true,
+   "id": "10.8"
+  }
+ ]
+}

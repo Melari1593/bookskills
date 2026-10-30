@@ -1,0 +1,57 @@
+{
+ "chapters": {
+  "7": {"summary": "Ciencia de la carne: color y curado, irisaciones, marinados, braseado, caldos, esporas bacterianas, vino en la cocina, combustibles de parrilla y química del humo de leña."},
+  "8": {"summary": "Hierbas y especias: aceites esenciales, compuestos picantes, ajo y cebolla, conservación y dosificación de especias secas, humo líquido, wasabi, rábano picante, clavo, sal y vainilla."}
+ },
+ "sections": {
+  "7.1": {"summary": "Qué es la carne separada mecánicamente: restos raspados de los huesos con máquinas; la variante con hueso molido se vetó por riesgo de tejido nervioso con priones.", "presenta": [], "requiere": ["c_etiquetado"]},
+  "7.2": {"summary": "Por qué la carne picada se ve marrón por dentro: con poco oxígeno domina la metamioglobina parda, inocua; solo el mal olor indica deterioro bacteriano.", "presenta": ["c_mioglobina"], "requiere": ["c_oxidacion", "c_microbios"]},
+  "7.3": {"summary": "Qué son los reflejos de arco iris en lonchas de carne: un efecto óptico inofensivo por difracción o doble refracción de la luz en las fibras cortadas.", "presenta": [], "requiere": []},
+  "7.4": {"summary": "Por qué los embutidos curados son rosados: el nitrito forma nitrosomioglobina, que con calor da un pigmento rosa estable; además frena el botulismo, aunque genera nitrosaminas.", "presenta": ["c_curado"], "requiere": ["c_mioglobina", "c_microbios"]},
+  "7.5": {"summary": "Cuánto marinar la carne: el líquido apenas entra unos milímetros, el ácido ablanda pero en exceso endurece la superficie, y el marinado al vacío no ayuda.", "presenta": ["c_osmosis"], "requiere": ["c_proteinas", "c_ph"]},
+  "7.6": {"summary": "Qué es brasear: dorar primero para generar sabores de Maillard y luego cocer tapado con poco líquido para convertir el colágeno duro en gelatina.", "presenta": ["c_maillard", "c_colageno"], "requiere": ["c_caramelizacion", "c_transferencia_calor"]},
+  "7.7": {"summary": "Por qué el caldo se empieza en agua fría y sin hervir: las proteínas se disuelven antes de coagular y forman espuma retirable, logrando un caldo limpio.", "presenta": ["c_proteinas"], "requiere": ["c_colageno", "c_maillard", "c_ebullicion"]},
+  "7.8": {"summary": "Por qué el caldo hervido puede contaminarse al enfriar: ciertas bacterias forman esporas que resisten 100 °C y germinan al templarse; solo la olla a presión las elimina.", "presenta": ["c_microbios"], "requiere": ["c_ebullicion"]},
+  "7.9": {"summary": "Si el ácido saca calcio de los huesos del caldo: los ácidos suaves disuelven muy poca hidroxiapatita; solo semanas en vinagre dejan el hueso flexible.", "presenta": [], "requiere": ["c_ph", "c_solubilidad"]},
+  "7.10": {"summary": "Si el vino libera sabores solubles en alcohol: una mezcla diluida de agua y alcohol no disuelve como el alcohol puro; el vino aporta su propio sabor y forma ésteres.", "presenta": ["c_solubilidad", "c_alcohol"], "requiere": ["c_aroma"]},
+  "7.11": {"summary": "Si es mejor parrilla de gas o de carbón: el gas al arder genera vapor de agua que humedece la carne, mientras el carbón seco dora mejor por radiación.", "presenta": ["c_transferencia_calor"], "requiere": ["c_maillard"]},
+  "7.12": {"summary": "Cómo cocina y aromatiza el humo de leña: la combustión incompleta de lignina y celulosa genera fenoles aromáticos y bactericidas, pero también hidrocarburos cancerígenos.", "presenta": ["c_ahumado"], "requiere": ["c_aroma", "c_conservacion"]},
+  "8.1": {"summary": "Qué son los aceites esenciales: no son grasas ni imprescindibles, sino mezclas volátiles de aroma vegetal, como terpenos, que percibimos sobre todo por el olfato.", "presenta": ["c_aceites_esenciales", "c_aroma"], "requiere": []},
+  "8.2": {"summary": "Por qué pican pimienta, chiles y mostazas: piperina, capsaicinoides e isotiocianatos activan nervios de dolor y calor; la capsaicina se mide en unidades Scoville y se calma con leche.", "presenta": ["c_pungencia"], "requiere": ["c_aceites_esenciales", "c_enzimas", "c_azufrados"]},
+  "8.3": {"summary": "Por qué el ajo y la cebolla cocidos saben suaves: al cortarlos una enzima forma compuestos azufrados fuertes que el agua caliente transforma en otros suaves; al dorarlos actúa Maillard.", "presenta": ["c_azufrados"], "requiere": ["c_enzimas", "c_maillard", "c_caramelizacion"]},
+  "8.4": {"summary": "Si el ajo en polvo sustituye al fresco: el secado y la molienda eliminan gran parte de sus compuestos volátiles, así que su sabor es claramente inferior.", "presenta": [], "requiere": ["c_aroma", "c_conservacion"]},
+  "8.5": {"summary": "Si el aceite con ajo casero es peligroso: el ajo sumergido en aceite ofrece un medio sin aire donde las esporas de botulismo germinan y producen toxina.", "presenta": [], "requiere": ["c_microbios", "c_ph"]},
+  "8.6": {"summary": "Cuándo añadir hierbas y especias: las molidas liberan sus aceites volátiles rápido y van al final; las enteras los sueltan despacio y van al inicio.", "presenta": [], "requiere": ["c_aceites_esenciales", "c_evaporacion"]},
+  "8.7": {"summary": "Cuánta hierba seca reemplaza a la fresca: al perder el agua concentran el sabor, pero medir por volumen es impreciso; conviene usar entre un cuarto y la mitad.", "presenta": ["c_medidas"], "requiere": ["c_aceites_esenciales"]},
+  "8.8": {"summary": "Cuánto duran las especias secas y si les afecta helar: sin agua no se estropean ni se congelan, pero pierden aroma al evaporarse sus aceites; el frío lo retrasa.", "presenta": ["c_conservacion"], "requiere": ["c_aceites_esenciales", "c_evaporacion"]},
+  "8.9": {"summary": "Cómo resisten insectos la cayena picante: los capsaicinoides irritan el nervio trigémino de los mamíferos, que los insectos no tienen; congelar o irradiar elimina plagas.", "presenta": [], "requiere": ["c_pungencia", "c_irradiacion"]},
+  "8.10": {"summary": "Qué es el humo líquido: humo de leña condensado y purificado que da sabor ahumado sin los hidrocarburos cancerígenos del humo directo; incluye ahumado en frío y caliente.", "presenta": [], "requiere": ["c_ahumado", "c_conservacion", "c_etiquetado"]},
+  "8.11": {"summary": "Si el wasabi de restaurante es auténtico: casi siempre es rábano picante con mostaza y colorante; el rizoma real es raro, más suave y pierde su picor con el calor.", "presenta": [], "requiere": ["c_pungencia"]},
+  "8.12": {"summary": "Cómo mantener picante el rábano rallado: el isotiocianato de alilo se forma por acción enzimática y se evapora pronto; el frío hermético o el vinagre lo preservan.", "presenta": [], "requiere": ["c_pungencia", "c_enzimas", "c_ph"]},
+  "8.13": {"summary": "Por qué el clavo dañó un molinillo de plástico: su aceite es rico en eugenol, un fenol capaz de disolver y ablandar ciertos plásticos y dejar olor permanente.", "presenta": [], "requiere": ["c_aceites_esenciales", "c_solubilidad"]},
+  "8.14": {"summary": "Por qué un salero de cerámica porosa mantiene seca la sal: su interior sin esmaltar retiene el vapor de agua que atraen las impurezas higroscópicas de la sal marina.", "presenta": [], "requiere": ["c_solubilidad"]},
+  "8.15": {"summary": "Si la vainilla mexicana barata es natural: la auténtica es cara por su polinización manual y curado; muchas imitaciones usan vainillina sintética o incluso cumarina tóxica.", "presenta": ["c_etiquetado"], "requiere": ["c_aroma", "c_fermentacion"]}
+ },
+ "conceptos": {
+  "c_mioglobina": {"summary": "La mioglobina de la carne cambia de color según el oxígeno y el estado del hierro: violácea sin oxígeno, roja con mucho oxígeno y parda cuando el hierro se oxida.", "section": "7.2"},
+  "c_curado": {"summary": "El nitrito añadido a la sal se convierte en óxido nítrico, que se une a la mioglobina y da el rosa típico; además inhibe bacterias como la del botulismo.", "section": "7.4"},
+  "c_osmosis": {"summary": "Los líquidos del marinado solo avanzan unos milímetros en la carne; cortar trozos pequeños o abiertos aumenta la superficie de contacto más que alargar el remojo.", "section": "7.5"},
+  "c_maillard": {"summary": "Reacción entre azúcares reductores y grupos amino de proteínas que, con calor, produce pigmentos pardos y cientos de compuestos sabrosos; distinta de la caramelización del azúcar solo.", "section": "7.6"},
+  "c_colageno": {"summary": "El colágeno del tejido conectivo endurece la carne; con calor húmedo prolongado su triple hélice se desenrolla y forma gelatina blanda que retiene mucha agua.", "section": "7.6"},
+  "c_proteinas": {"summary": "Al calentarse, las proteínas se despliegan y se reagrupan en masas compactas e insolubles; por eso conviene disolverlas en frío antes de que coagulen.", "section": "7.7"},
+  "c_microbios": {"summary": "Algunas bacterias, como Clostridium, forman esporas que soportan la ebullición y germinan al enfriarse el alimento; destruirlas exige temperaturas de olla a presión.", "section": "7.8"},
+  "c_solubilidad": {"summary": "Una mezcla de agua y alcohol no disuelve como cada líquido puro: los enlaces de hidrógeno entre ambos dificultan rodear y disolver las moléculas de soluto.", "section": "7.10"},
+  "c_alcohol": {"summary": "En la cocción, el etanol del vino no extrae sabores ocultos, pero reacciona con ácidos y oxidantes para formar ésteres afrutados y aldehídos aromáticos.", "section": "7.10"},
+  "c_transferencia_calor": {"summary": "En la parrilla el calor llega por aire caliente ascendente y por radiación infrarroja; con fuego indirecto domina la radiación y la cocción es más lenta.", "section": "7.11"},
+  "c_aroma": {"summary": "Gran parte de lo que llamamos sabor lo capta el olfato: moléculas pequeñas y volátiles llegan a los receptores nasales, por la nariz o desde la boca.", "section": "8.1"},
+  "c_pungencia": {"summary": "Compuestos como capsaicina, piperina e isotiocianatos no se huelen ni se saborean: estimulan nervios de dolor y calor, sobre todo el trigémino, generando sensación de ardor.", "section": "8.2"},
+  "c_azufrados": {"summary": "Al romper las células de ajo o cebolla, una enzima actúa sobre precursores azufrados y produce compuestos intensos que luego se transforman con el calor en otros más suaves.", "section": "8.3"},
+  "c_medidas": {"summary": "Pesar es más fiable que medir por volumen: la forma de las hierbas, enteras, picadas o en polvo, cambia cuánto cabe en una cuchara.", "section": "8.7"},
+  "c_conservacion": {"summary": "Los alimentos totalmente secos no se estropean por microbios ni se congelan; su pérdida de calidad viene de la evaporación de aromas, que el frío ralentiza.", "section": "8.8"},
+  "c_etiquetado": {"summary": "El extracto puro de vainilla debe hacerse con vainas y alcohol en proporciones fijadas; si lleva vainillina sintética debe declararse como imitación.", "section": "8.15"}
+ },
+ "conceptos_nuevos": {
+  "c_ahumado": {"title": "Ahumado y química del humo de leña", "summary": "El humo nace de la combustión incompleta de la madera; sus fenoles dan aroma y frenan microbios, pero también contiene hidrocarburos aromáticos policíclicos cancerígenos.", "section": "7.12"},
+  "c_aceites_esenciales": {"title": "Aceites esenciales de hierbas y especias", "summary": "Mezclas volátiles de compuestos aromáticos vegetales, como terpenos o fenoles, que concentran el sabor de hierbas y especias y se pierden al evaporarse.", "section": "8.1"}
+ }
+}

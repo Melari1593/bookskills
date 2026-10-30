@@ -1,0 +1,7 @@
+# Texto del libro: no se versiona (derechos de autor). Se regenera con `make texto` desde el PDF.
+trabajo/texto.txt
+trabajo/lotes/
+trabajo/esqueleto.json
+trabajo/estructura.md
+salida/*_local.html
+capturas/

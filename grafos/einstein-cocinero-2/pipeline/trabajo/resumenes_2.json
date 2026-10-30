@@ -1,0 +1,395 @@
+{
+ "chapters": {
+  "3": {
+   "summary": "Hortalizas y legumbres: pigmentos vegetales y su cambio al cocinar, higiene de vegetales, toxinas naturales, química de la cebolla, derivados de la soja y digestión y remojo de legumbres."
+  },
+  "4": {
+   "summary": "Frutas y aceites: maduración y etileno, pardeamiento, tipos y refinado de aceites, grasas trans y rancidez, aceitunas, ósmosis en conservas, densidad, sidras y destilados, y anacardos."
+  }
+ },
+ "sections": {
+  "3.1": {
+   "summary": "Qué sustancias dan color a frutas y hortalizas: clorofilas, carotenoides, antocianinas sensibles al pH y betalaínas; su colorido atrae animales que dispersan semillas.",
+   "presenta": [
+    "c_carotenoides",
+    "c_indicadores"
+   ],
+   "requiere": [
+    "c_clorofila",
+    "c_ph"
+   ]
+  },
+  "3.2": {
+   "summary": "Por qué las verduras cocidas se vuelven pardas: el calor y el ácido sacan el magnesio de la clorofila y la convierten en feofitina; cocción breve y sales ayudan.",
+   "presenta": [
+    "c_clorofila"
+   ],
+   "requiere": [
+    "c_ph"
+   ]
+  },
+  "3.3": {
+   "summary": "Cómo lavar frutas y verduras: los productos comerciales solo limpian; basta agua corriente o cepillado, y para desinfectar sirven lejía diluida o agua oxigenada con vinagre.",
+   "presenta": [
+    "c_microbios"
+   ],
+   "requiere": [
+    "c_solubilidad"
+   ]
+  },
+  "3.4": {
+   "summary": "Por qué salen manchas grisáceas en patatas amarillas: sus antoxantinas reaccionan con hierro o aluminio y se oscurecen; también explica zanahorias verdosas en moldes metálicos.",
+   "presenta": [
+    "c_antoxantinas"
+   ],
+   "requiere": []
+  },
+  "3.5": {
+   "summary": "Si el ruibarbo es venenoso: contiene ácido oxálico, sobre todo en las hojas; los tallos tienen poco y la toxicidad depende de la dosis ingerida.",
+   "presenta": [
+    "c_acido_oxalico"
+   ],
+   "requiere": []
+  },
+  "3.6": {
+   "summary": "Si las espinacas son ricas en hierro: no, la fama vino de un error decimal, y su oxalato vuelve insoluble el poco hierro; sin hierro la planta amarillea.",
+   "presenta": [],
+   "requiere": [
+    "c_acido_oxalico",
+    "c_clorofila"
+   ]
+  },
+  "3.7": {
+   "summary": "Por qué la cebolla hace llorar: al romper células, la enzima aliinasa transforma precursores azufrados en un gas lacrimógeno; enfriarla y usar cuchillo afilado reduce el efecto.",
+   "presenta": [
+    "c_azufrados",
+    "c_enzimas"
+   ],
+   "requiere": [
+    "c_evaporacion"
+   ]
+  },
+  "3.8": {
+   "summary": "Por qué las cebollas Vidalia son suaves: no tienen más azúcar sino menos compuestos azufrados, atribuido al suelo pobre en azufre y al conjunto de factores del terruño.",
+   "presenta": [],
+   "requiere": [
+    "c_azufrados"
+   ]
+  },
+  "3.9": {
+   "summary": "Por qué amargan algunos pepinos: el estrés de la planta concentra cucurbitacinas, amargas pero inofensivas; salar las rodajas las vuelve crujientes al extraer agua.",
+   "presenta": [
+    "c_gusto"
+   ],
+   "requiere": [
+    "c_osmosis"
+   ]
+  },
+  "3.10": {
+   "summary": "Por qué la leche de soja rebosa al hervir: sus saponinas forman espuma; calentarla suave primero las destruye, y ese calor también inactiva la lipoxigenasa de malos sabores.",
+   "presenta": [
+    "c_espuma"
+   ],
+   "requiere": [
+    "c_enzimas",
+    "c_oxidacion"
+   ]
+  },
+  "3.11": {
+   "summary": "De dónde sale la variedad de tofus: la leche de soja se coagula con sales, ácidos o enzimas y el prensado define la firmeza; el sedoso se gelifica con GDL.",
+   "presenta": [
+    "c_proteinas",
+    "c_lacteos"
+   ],
+   "requiere": [
+    "c_ph",
+    "c_enzimas"
+   ]
+  },
+  "3.12": {
+   "summary": "Qué es el miso: soja cocida y salada fermentada largo tiempo con el hongo koji; la sal frena a otros microbios y hay variedades de distinto color y sabor.",
+   "presenta": [
+    "c_fermentacion"
+   ],
+   "requiere": [
+    "c_conservacion"
+   ]
+  },
+  "3.13": {
+   "summary": "Por qué las legumbres dan gases: contienen oligosacáridos que no digerimos y que las bacterias del colon fermentan; ayudan la enzima alfagalactosidasa o el carbón adsorbente.",
+   "presenta": [
+    "c_oligosacaridos"
+   ],
+   "requiere": [
+    "c_enzimas",
+    "c_fermentacion"
+   ]
+  },
+  "3.14": {
+   "summary": "Para qué remojar garbanzos con bicarbonato: el álcali ablanda la piel y neutraliza la dureza del agua; remojar conviene en legumbres grandes, aunque cocer hidrata más rápido.",
+   "presenta": [
+    "c_osmosis"
+   ],
+   "requiere": [
+    "c_ph",
+    "c_oligosacaridos"
+   ]
+  },
+  "4.1": {
+   "summary": "Cómo saber si una fruta madurará en casa: las climatéricas siguen madurando gracias al etileno y se aceleran en bolsa de papel; las demás conviene refrigerarlas ya maduras.",
+   "presenta": [
+    "c_etileno",
+    "c_conservacion"
+   ],
+   "requiere": [
+    "c_azucares"
+   ]
+  },
+  "4.2": {
+   "summary": "Si la fruta golpeada es más dulce: el daño rompe células y libera polifenoloxidasas que pardean la pulpa; el ácido, el calor o evitar el oxígeno lo frenan.",
+   "presenta": [
+    "c_pardeamiento_enzimatico"
+   ],
+   "requiere": [
+    "c_enzimas",
+    "c_ph"
+   ]
+  },
+  "4.3": {
+   "summary": "Si un plátano más dulce tiene más calorías: no, al madurar el almidón solo se convierte en azúcar y ambos aportan la misma energía por gramo.",
+   "presenta": [
+    "c_almidon"
+   ],
+   "requiere": [
+    "c_azucares"
+   ]
+  },
+  "4.4": {
+   "summary": "Qué son los plátanos macho: parientes del plátano con mucho más almidón y poco azúcar, por eso se cocinan; la fruta cosechada no necesita sol para madurar.",
+   "presenta": [],
+   "requiere": [
+    "c_almidon",
+    "c_etileno"
+   ]
+  },
+  "4.5": {
+   "summary": "En qué se parecen aceites comestibles y lubricantes: solo en ser resbaladizos; los vegetales son triglicéridos digeribles y se refinan por extracción, neutralizado, blanqueo y desodorización.",
+   "presenta": [
+    "c_grasas"
+   ],
+   "requiere": [
+    "c_ebullicion",
+    "c_cristalizacion"
+   ]
+  },
+  "4.6": {
+   "summary": "Qué son las grasas trans: la hidrogenación parcial endereza dobles enlaces de cis a trans y el cuerpo los trata como saturados; el fraccionado no genera trans.",
+   "presenta": [
+    "c_grasas_trans",
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_grasas"
+   ]
+  },
+  "4.7": {
+   "summary": "Cómo se enrancia el aceite: por oxidación de insaturados vía radicales libres, por hidrólisis con agua y por el calor de freír; protegerlo de luz, calor y aire.",
+   "presenta": [
+    "c_oxidacion",
+    "c_punto_humo"
+   ],
+   "requiere": [
+    "c_grasas",
+    "c_enzimas"
+   ]
+  },
+  "4.8": {
+   "summary": "Qué es el aceite de oliva light: igual de calórico, solo más claro y sin sabor por refinado; repasa categorías del aceite de oliva, sus aromas y cómo guardarlo.",
+   "presenta": [
+    "c_aroma",
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_grasas",
+    "c_oxidacion",
+    "c_polifenoles"
+   ]
+  },
+  "4.9": {
+   "summary": "De qué depende que una aceituna sea verde o negra: de su madurez, aunque algunas se ennegrecen con lejía, aire y hierro; todas requieren quitar la amarga oleuropeína.",
+   "presenta": [
+    "c_polifenoles"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_ph"
+   ]
+  },
+  "4.10": {
+   "summary": "Por qué la conserva de fresas sin azúcar quedó pastosa: el agua entró por ósmosis hasta reventar las células; con jarabe concentrado salen agua y la fruta resiste.",
+   "presenta": [
+    "c_osmosis"
+   ],
+   "requiere": [
+    "c_azucares"
+   ]
+  },
+  "4.11": {
+   "summary": "Qué frutas flotan: depende de si su densidad es menor que la del agua, según Arquímedes; también explica por qué los ñoquis suben y los buñuelos se voltean.",
+   "presenta": [
+    "c_medidas"
+   ],
+   "requiere": [
+    "c_almidon",
+    "c_evaporacion"
+   ]
+  },
+  "4.12": {
+   "summary": "En qué se diferencian zumo y sidra de manzana: la sidra es zumo fermentado; el zumo sin pasteurizar debe refrigerarse porque fermenta con microbios desconocidos.",
+   "presenta": [],
+   "requiere": [
+    "c_fermentacion",
+    "c_microbios",
+    "c_etiquetado"
+   ]
+  },
+  "4.13": {
+   "summary": "Cómo difieren sidra, vino de manzana, brandy y applejack: por cómo suben el alcohol, con más azúcar, destilando o congelando el agua para concentrarlo.",
+   "presenta": [
+    "c_alcohol"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_ebullicion",
+    "c_cristalizacion"
+   ]
+  },
+  "4.14": {
+   "summary": "Si los anacardos crudos son tóxicos: su cáscara tiene resinas fenólicas corrosivas, por eso siempre se tuestan antes de venderse, aunque se etiqueten como crudos.",
+   "presenta": [],
+   "requiere": [
+    "c_polifenoles",
+    "c_etiquetado"
+   ]
+  }
+ },
+ "conceptos": {
+  "c_carotenoides": {
+   "summary": "Pigmentos liposolubles amarillos, naranjas y rojos, como betacaroteno, precursor de vitamina A, y licopeno del tomate; el rojo del tomate se debe a una mezcla de ellos.",
+   "section": "3.1"
+  },
+  "c_indicadores": {
+   "summary": "Las antocianinas son pigmentos hidrosolubles que viran a rojo en medio ácido y a morado o azul en medio alcalino, como en rosas y violetas.",
+   "section": "3.1"
+  },
+  "c_clorofila": {
+   "summary": "Pigmento verde con magnesio central que capta la luz; al cocer en medio ácido pierde el magnesio, se convierte en feofitina y la verdura se torna oliva.",
+   "section": "3.2"
+  },
+  "c_microbios": {
+   "summary": "Las bacterias de la tierra se eliminan sobre todo arrastrándolas con agua; desinfectar requiere agentes como lejía diluida o agua oxigenada seguida de vinagre.",
+   "section": "3.3"
+  },
+  "c_azufrados": {
+   "summary": "Al cortar cebolla, la aliinasa actúa sobre sulfóxidos de cisteína y genera un gas lacrimógeno azufrado y tiosulfinatos que dan el sabor picante.",
+   "section": "3.7"
+  },
+  "c_enzimas": {
+   "summary": "Catalizadores biológicos separados dentro de las células que reaccionan al romperse los tejidos, como la aliinasa de la cebolla; el frío los ralentiza y el calor los inactiva.",
+   "section": "3.7"
+  },
+  "c_gusto": {
+   "summary": "El amargor suele advertir de compuestos defensivos de las plantas, como las cucurbitacinas del pepino o los alcaloides, aunque no siempre indique peligro real.",
+   "section": "3.9"
+  },
+  "c_espuma": {
+   "summary": "Las saponinas, glucósidos de la soja, se comportan como jabones y estabilizan burbujas, por lo que la leche de soja hace espuma y rebosa al hervir.",
+   "section": "3.10"
+  },
+  "c_proteinas": {
+   "summary": "Sales, ácidos o enzimas despliegan las proteínas de la leche de soja, que se enlazan entre sí formando una red sólida que se separa del suero.",
+   "section": "3.11"
+  },
+  "c_lacteos": {
+   "summary": "La leche animal se cuaja con quimosina del estómago de ternero; luego microbios fermentan y maduran la cuajada para producir queso.",
+   "section": "3.11"
+  },
+  "c_fermentacion": {
+   "summary": "Microorganismos como hongos o levaduras transforman los alimentos; en el miso el koji fermenta soja salada y en la sidra las levaduras convierten azúcar en alcohol.",
+   "section": "3.12"
+  },
+  "c_etileno": {
+   "summary": "Gas que actúa como hormona de maduración en cantidades mínimas; las frutas climatéricas lo producen en un pico y se aceleran entre sí de forma autocatalítica.",
+   "section": "4.1"
+  },
+  "c_conservacion": {
+   "summary": "El frío y la atmósfera controlada, con poco oxígeno y más dióxido de carbono, frenan la respiración y la senescencia de las frutas almacenadas.",
+   "section": "4.1"
+  },
+  "c_pardeamiento_enzimatico": {
+   "summary": "Al dañarse la fruta, las polifenoloxidasas oxidan fenoles y forman polímeros marrones; se evita con ácido, calor, antioxidantes o cortando el contacto con oxígeno.",
+   "section": "4.2"
+  },
+  "c_almidon": {
+   "summary": "Polímero de glucosa que al madurar la fruta se descompone en azúcares; ambos aportan la misma energía por gramo al metabolizarse.",
+   "section": "4.3"
+  },
+  "c_grasas": {
+   "summary": "Los aceites comestibles son triglicéridos: tres ácidos grasos unidos a glicerol, saturados o insaturados según tengan dobles enlaces que doblan la cadena y la hacen más líquida.",
+   "section": "4.5"
+  },
+  "c_grasas_trans": {
+   "summary": "La hidrogenación parcial añade hidrógeno a dobles enlaces y hace que otros pasen de cis a trans; esas cadenas rectas se comportan como grasa saturada en el cuerpo.",
+   "section": "4.6"
+  },
+  "c_etiquetado": {
+   "summary": "Términos como 'sin trans', 'light' o 'crudo' pueden engañar: admiten cantidades pequeñas, aluden al color o sabor, o ignoran procesos previos como el tostado.",
+   "section": "4.6"
+  },
+  "c_oxidacion": {
+   "summary": "Los ácidos grasos insaturados reaccionan con oxígeno mediante cadenas de radicales libres, favorecidas por luz, calor y metales; antioxidantes como tocoferoles las cortan.",
+   "section": "4.7"
+  },
+  "c_punto_humo": {
+   "summary": "Al freír, el agua libera ácidos grasos libres y el glicerol se degrada a acroleína; reutilizar el aceite baja su punto de humo y lo polimeriza.",
+   "section": "4.7"
+  },
+  "c_aroma": {
+   "summary": "Al prensar aceitunas, las lipoxigenasas oxidan ácidos grasos y generan más de cien compuestos volátiles que forman el aroma del aceite de oliva.",
+   "section": "4.8"
+  },
+  "c_polifenoles": {
+   "summary": "Compuestos fenólicos vegetales con funciones defensivas, como la oleuropeína amarga de la aceituna, que se elimina por fermentación o tratamiento alcalino.",
+   "section": "4.9"
+  },
+  "c_osmosis": {
+   "summary": "El agua atraviesa una membrana desde la solución más diluida hacia la más concentrada; la ósmosis inversa usa presión para forzar el flujo contrario y concentrar.",
+   "section": "4.10"
+  },
+  "c_medidas": {
+   "summary": "La densidad relaciona peso y volumen; un objeto flota si es menos denso que el líquido, porque el empuje equivale al peso del líquido desplazado.",
+   "section": "4.11"
+  },
+  "c_alcohol": {
+   "summary": "La fermentación da bebidas de baja graduación; destilar aprovecha que el alcohol se evapora antes que el agua, y congelar retira agua en forma de hielo.",
+   "section": "4.13"
+  }
+ },
+ "conceptos_nuevos": {
+  "c_antoxantinas": {
+   "title": "Antoxantinas y metales",
+   "summary": "Pigmentos flavonoides amarillentos que reaccionan con iones de hierro o aluminio formando compuestos gris azulados, causa de manchas en patatas y zanahorias verdosas.",
+   "section": "3.4"
+  },
+  "c_acido_oxalico": {
+   "title": "Ácido oxálico y oxalatos",
+   "summary": "Ácido presente en ruibarbo y espinacas, tóxico en dosis altas, que además se une al hierro formando sales insolubles que el cuerpo no absorbe.",
+   "section": "3.5"
+  },
+  "c_oligosacaridos": {
+   "title": "Oligosacáridos de las legumbres",
+   "summary": "Azúcares de pocas unidades, como rafinosa y estaquiosa, que no digerimos por falta de enzima; las bacterias del colon los fermentan y producen gases.",
+   "section": "3.13"
+  }
+ }
+}

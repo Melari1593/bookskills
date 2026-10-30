@@ -1,0 +1,501 @@
+{
+ "chapters": {
+  "1": {
+   "summary": "Ciencia de las bebidas: té, café, cerveza, vino, jerez, champán y licores; solubilidad, pigmentos indicadores, ebullición, enfriamiento con hielo, efectos del alcohol y manchas de vino."
+  },
+  "2": {
+   "summary": "Lácteos y huevos: tipos de leche y nata, yogur, helado, quesos frescos, curados y procesados, mantequilla como emulsión, y calidad, cocción y curiosidades del huevo."
+  }
+ },
+ "sections": {
+  "1.1": {
+   "summary": "Por qué un refresco congelado deja hielo blanco y líquido oscuro: al cristalizar, el agua excluye colorantes y azúcares, que se concentran en el líquido restante.",
+   "presenta": [
+    "c_cristalizacion"
+   ],
+   "requiere": [
+    "c_descenso_crioscopico"
+   ]
+  },
+  "1.2": {
+   "summary": "Por qué el té se enturbia en la nevera: al enfriarse, parte de los taninos precipita; el agua dura lo empeora y el limón lo revierte.",
+   "presenta": [
+    "c_polifenoles",
+    "c_solubilidad"
+   ],
+   "requiere": [
+    "c_ph",
+    "c_cafeina"
+   ]
+  },
+  "1.3": {
+   "summary": "Qué diferencia al té verde del negro y del oolong: en el verde el calor inactiva las enzimas; en los otros, la oxidación enzimática de los taninos oscurece la hoja.",
+   "presenta": [
+    "c_enzimas",
+    "c_pardeamiento_enzimatico"
+   ],
+   "requiere": [
+    "c_polifenoles"
+   ]
+  },
+  "1.4": {
+   "summary": "Por qué el limón aclara el té y el bicarbonato lo oscurece: ciertos taninos actúan como indicadores ácido-base y cambian de color según la acidez, igual que la col lombarda.",
+   "presenta": [
+    "c_indicadores",
+    "c_ph"
+   ],
+   "requiere": [
+    "c_polifenoles"
+   ]
+  },
+  "1.5": {
+   "summary": "Si una taza más pequeña reduce la cafeína del té: no, porque la cafeína es tan soluble que el agua extrae casi toda la de la bolsa en un minuto.",
+   "presenta": [],
+   "requiere": [
+    "c_cafeina",
+    "c_solubilidad"
+   ]
+  },
+  "1.6": {
+   "summary": "Si el agua se calienta más hirviendo más rato: nunca supera su punto de ebullición; el té negro pide hervor pleno y el café, agua algo menos caliente.",
+   "presenta": [
+    "c_ebullicion",
+    "c_aroma"
+   ],
+   "requiere": [
+    "c_evaporacion",
+    "c_polifenoles"
+   ]
+  },
+  "1.7": {
+   "summary": "Cuándo añadir la leche para que el café siga más caliente: cuanto antes, porque una mezcla más tibia y voluminosa pierde calor más despacio frente al aire.",
+   "presenta": [
+    "c_transferencia_calor"
+   ],
+   "requiere": [
+    "c_capacidad_calorifica"
+   ]
+  },
+  "1.8": {
+   "summary": "Qué alcoholes se pueden beber: son una familia química amplia; el metanol es muy tóxico, el isopropanol sirve como desinfectante y sólo el etanol se bebe.",
+   "presenta": [
+    "c_alcohol"
+   ],
+   "requiere": []
+  },
+  "1.9": {
+   "summary": "Qué aporta el lúpulo a la cerveza: amargor, aroma, claridad y conservación; además, la luz degrada sus compuestos y genera tioles con olor a mofeta.",
+   "presenta": [
+    "c_azufrados"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_alcohol",
+    "c_gusto"
+   ]
+  },
+  "1.10": {
+   "summary": "Por qué los vinos advierten que contienen sulfitos: se forman al fermentar y se añaden para evitar oxidación y microbios; algunas personas son sensibles y la ley exige avisar.",
+   "presenta": [
+    "c_azufrados"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_etiquetado"
+   ]
+  },
+  "1.11": {
+   "summary": "Qué hace único al jerez: uva y suelo propios, pero sobre todo el encabezado, la crianza bajo velo de levaduras u oxidativa y el sistema de soleras y criaderas.",
+   "presenta": [
+    "c_fermentacion"
+   ],
+   "requiere": [
+    "c_alcohol"
+   ]
+  },
+  "1.12": {
+   "summary": "Si una cuchara conserva las burbujas del champán: no; ayudan el frío, que mantiene el gas disuelto, y la limpieza del vino, sin puntos de nucleación.",
+   "presenta": [
+    "c_gases_disueltos"
+   ],
+   "requiere": [
+    "c_fermentacion"
+   ]
+  },
+  "1.13": {
+   "summary": "Qué distingue el bourbon de Kentucky y el whisky de Tennessee: definiciones legales de cereal, graduación y barricas; el de Tennessee añade un filtrado por carbón vegetal.",
+   "presenta": [
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_alcohol",
+    "c_fermentacion"
+   ]
+  },
+  "1.14": {
+   "summary": "Por qué se escarcha el vaso del julepe: alcohol y azúcar bajan el punto de congelación, el hielo picado se funde absorbiendo calor y la mezcla baja de cero.",
+   "presenta": [
+    "c_descenso_crioscopico",
+    "c_capacidad_calorifica"
+   ],
+   "requiere": [
+    "c_alcohol",
+    "c_transferencia_calor"
+   ]
+  },
+  "1.15": {
+   "summary": "Cómo enfriar una bebida sin aguarla: usar mucho hielo bien frío y por poco tiempo; el hielo absorbe calor antes de fundirse y más superficie acelera el intercambio.",
+   "presenta": [
+    "c_calor_latente"
+   ],
+   "requiere": [
+    "c_transferencia_calor"
+   ]
+  },
+  "1.16": {
+   "summary": "Cómo estimar los efectos del alcohol: dependen de los gramos de etanol, el peso y el agua corporal; el cálculo es orientativo y conviene vigilar la propia conducta.",
+   "presenta": [],
+   "requiere": [
+    "c_alcohol",
+    "c_medidas"
+   ]
+  },
+  "1.17": {
+   "summary": "Cómo quitar manchas de vino tinto: la sal o el agua con gas sirven poco; los productos con percarbonato de sodio oxidan los pigmentos y los vuelven incoloros.",
+   "presenta": [],
+   "requiere": [
+    "c_indicadores",
+    "c_ph"
+   ]
+  },
+  "2.1": {
+   "summary": "Qué diferencia los tipos de leche y nata del supermercado: se clasifican por su contenido de grasa, y quitarla a la leche ahorra menos calorías de lo que se cree.",
+   "presenta": [
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_lacteos",
+    "c_grasas"
+   ]
+  },
+  "2.2": {
+   "summary": "Cómo se obtienen los tipos de nata: la grasa láctea, menos densa, se separa del agua por reposo o centrifugado y cada nata se define por su porcentaje de grasa.",
+   "presenta": [
+    "c_lacteos"
+   ],
+   "requiere": [
+    "c_grasas",
+    "c_medidas"
+   ]
+  },
+  "2.3": {
+   "summary": "Si la pectina convierte el yogur en gelatina: el yogur nace de bacterias lácticas que acidifican la leche y cuajan la caseína; el espesante sólo compensa la falta de grasa.",
+   "presenta": [
+    "c_fermentacion"
+   ],
+   "requiere": [
+    "c_lacteos",
+    "c_proteinas",
+    "c_ph",
+    "c_microbios"
+   ]
+  },
+  "2.4": {
+   "summary": "Por qué el helado cremoso se endurece en el congelador: es helado común servido menos frío; a menor temperatura cristaliza más la grasa y se endurecen los espesantes.",
+   "presenta": [],
+   "requiere": [
+    "c_cristalizacion",
+    "c_grasas"
+   ]
+  },
+  "2.5": {
+   "summary": "Si comer helado refresca en verano: apenas, porque el cuerpo regula su temperatura evaporando sudor y el calor que absorbe un bocado frío es insignificante.",
+   "presenta": [
+    "c_evaporacion"
+   ],
+   "requiere": [
+    "c_calor_latente"
+   ]
+  },
+  "2.6": {
+   "summary": "Por qué el helado derretido ocupa mucho menos: hasta la mitad de su volumen puede ser aire batido, que le da textura ligera; pesarlo revela cuánto aire contiene.",
+   "presenta": [
+    "c_espuma"
+   ],
+   "requiere": [
+    "c_medidas"
+   ]
+  },
+  "2.7": {
+   "summary": "Qué distingue al cottage cheese del queso crema: ambos son quesos frescos cuajados con ácido láctico sin madurar; el queso crema, más graso, es invento estadounidense y lleva espesantes.",
+   "presenta": [
+    "c_lacteos"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_microbios"
+   ]
+  },
+  "2.8": {
+   "summary": "Qué indica el porcentaje en la etiqueta del brie: la grasa sobre el peso seco del queso, sin agua, por lo que la grasa real del queso húmedo es menor.",
+   "presenta": [
+    "c_medidas"
+   ],
+   "requiere": [
+    "c_lacteos",
+    "c_etiquetado"
+   ]
+  },
+  "2.9": {
+   "summary": "Si el moho del camembert afecta a alérgicos a la penicilina: no, esos mohos no producen el fármaco; la pasteurización o una maduración larga, ácida y seca frenan bacterias patógenas.",
+   "presenta": [
+    "c_microbios"
+   ],
+   "requiere": [
+    "c_fermentacion",
+    "c_lacteos",
+    "c_conservacion"
+   ]
+  },
+  "2.10": {
+   "summary": "Por qué el queso de hebra se deshilacha: la cuajada de mozzarella se funde y se estira en una sola dirección, alineando las proteínas en fibras.",
+   "presenta": [
+    "c_lacteos"
+   ],
+   "requiere": [
+    "c_proteinas"
+   ]
+  },
+  "2.11": {
+   "summary": "Cuánto queso tienen los quesos procesados: mezclas fundidas con emulsionantes que se clasifican por su proporción de queso y grasa láctea, hasta productos casi sin queso.",
+   "presenta": [
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_emulsion",
+    "c_lacteos"
+   ]
+  },
+  "2.12": {
+   "summary": "Por qué la mantequilla liga una salsa y el aceite no: es una emulsión de agua en grasa con lecitina, que une grasa y líquido en una salsa espesa.",
+   "presenta": [
+    "c_emulsion"
+   ],
+   "requiere": [
+    "c_lacteos",
+    "c_grasas",
+    "c_evaporacion",
+    "c_fermentacion"
+   ]
+  },
+  "2.13": {
+   "summary": "Cómo elegir huevos por categoría, tamaño y frescura: la categoría depende de cámara de aire, cáscara, clara y yema; con la edad la clara se debilita y la cámara crece.",
+   "presenta": [
+    "c_huevo",
+    "c_conservacion"
+   ],
+   "requiere": []
+  },
+  "2.14": {
+   "summary": "Si los huevos morenos o fecundados son más nutritivos: no; el color de la cáscara depende de la raza de la gallina y el de la yema, de su alimentación.",
+   "presenta": [],
+   "requiere": [
+    "c_huevo"
+   ]
+  },
+  "2.15": {
+   "summary": "Qué es el punto rojo en una yema: un pequeño vaso sanguíneo roto durante la formación del huevo, no un embrión; el huevo es apto para comer.",
+   "presenta": [],
+   "requiere": [
+    "c_huevo"
+   ]
+  },
+  "2.16": {
+   "summary": "Cómo se forman los huevos de dos yemas: algunas gallinas, por genética y forma del oviducto, los producen; suelen ser huevos más grandes con yemas menores.",
+   "presenta": [],
+   "requiere": [
+    "c_huevo"
+   ]
+  },
+  "2.17": {
+   "summary": "Si la sal evita que la cáscara se rompa al hervir: no; la rompe la dilatación brusca y desigual por el cambio de temperatura y la expansión del aire interior.",
+   "presenta": [],
+   "requiere": [
+    "c_huevo",
+    "c_transferencia_calor"
+   ]
+  },
+  "2.18": {
+   "summary": "Si el vinagre evita que se agrieten los huevos al hervir: no; el ácido, como la sal, sólo coagula rápido la clara que se escapa y limita la fuga.",
+   "presenta": [
+    "c_proteinas"
+   ],
+   "requiere": [
+    "c_ph",
+    "c_huevo"
+   ]
+  },
+  "2.19": {
+   "summary": "Por qué unos huevos duros se pelan mejor: en los muy frescos la clara se pega a la membrana; enfriarlos rápido ayuda. Por inercia, el duro gira mejor.",
+   "presenta": [],
+   "requiere": [
+    "c_huevo",
+    "c_proteinas"
+   ]
+  },
+  "2.20": {
+   "summary": "Por qué la yema cocida se pone verdosa: el calor libera sulfuro de hidrógeno de la clara, que reacciona con el hierro de la yema; cocer menos lo evita.",
+   "presenta": [
+    "c_azufrados"
+   ],
+   "requiere": [
+    "c_proteinas",
+    "c_huevo"
+   ]
+  },
+  "2.21": {
+   "summary": "Por qué el huevo duro tiene un hoyuelo: la cámara de aire se expande con el calor y la clara cuaja alrededor; las chalazas sólo sujetan la yema.",
+   "presenta": [
+    "c_huevo"
+   ],
+   "requiere": [
+    "c_transferencia_calor"
+   ]
+  },
+  "2.22": {
+   "summary": "Si las claras pasteurizadas sirven para merengue: sí, pero cuestan más de montar porque el calor de la pasteurización desnaturaliza en parte sus proteínas.",
+   "presenta": [
+    "c_proteinas",
+    "c_espuma"
+   ],
+   "requiere": [
+    "c_microbios",
+    "c_huevo"
+   ]
+  },
+  "2.23": {
+   "summary": "Qué son los huevos milenarios: huevos de pato curados unos cien días en una pasta alcalina que transforma las proteínas de la clara y da sabores intensos a la yema.",
+   "presenta": [
+    "c_proteinas"
+   ],
+   "requiere": [
+    "c_ph",
+    "c_huevo"
+   ]
+  }
+ },
+ "conceptos": {
+  "c_cristalizacion": {
+   "summary": "Al congelarse, las moléculas de agua se ordenan en una red sólida y expulsan las sustancias ajenas, por lo que los cristales que se forman son casi agua pura.",
+   "section": "1.1"
+  },
+  "c_polifenoles": {
+   "summary": "Los taninos son polifenoles vegetales astringentes que se unen a las proteínas, por eso sirven para curtir; su solubilidad depende de la temperatura, la acidez y los minerales del agua.",
+   "section": "1.2"
+  },
+  "c_solubilidad": {
+   "summary": "La cantidad de una sustancia que cabe disuelta en agua depende de la temperatura y la acidez; al enfriar una solución cargada, el exceso precipita como partículas.",
+   "section": "1.2"
+  },
+  "c_enzimas": {
+   "summary": "Las enzimas son proteínas catalizadoras, no seres vivos: aceleran muchísimo reacciones concretas sin gastarse, y cada una actúa sólo sobre su sustrato gracias a su forma.",
+   "section": "1.3"
+  },
+  "c_pardeamiento_enzimatico": {
+   "summary": "Al romper las células de la hoja, la polifenol oxidasa oxida los taninos con oxígeno y forma pigmentos rojizos y anaranjados; el vapor o el tostado la desactivan.",
+   "section": "1.3"
+  },
+  "c_indicadores": {
+   "summary": "Algunos pigmentos, como ciertos taninos del té y las antocianinas de la col lombarda o de la uva, cambian de color según el medio sea ácido o alcalino.",
+   "section": "1.4"
+  },
+  "c_ph": {
+   "summary": "Los ácidos aportan iones de hidrógeno y los álcalis los retiran; en un ácido débil coloreado, ganar o perder ese hidrógeno altera la molécula y con ello su color.",
+   "section": "1.4"
+  },
+  "c_ebullicion": {
+   "summary": "El agua hierve cuando sus moléculas tienen energía para vencer la presión atmosférica; desde ese punto el calor extra se va con el vapor y la temperatura deja de subir.",
+   "section": "1.6"
+  },
+  "c_aroma": {
+   "summary": "Los compuestos aromáticos volátiles escapan con facilidad junto con el vapor; por eso un café preparado con agua en ebullición fuerte pierde buena parte de su aroma.",
+   "section": "1.6"
+  },
+  "c_transferencia_calor": {
+   "summary": "El calor fluye siempre de lo caliente a lo frío, y un objeto se enfría más rápido cuanto más caliente está y mayor es su diferencia de temperatura con el entorno.",
+   "section": "1.7"
+  },
+  "c_alcohol": {
+   "summary": "Los alcoholes son una familia de compuestos con grupos hidroxilo: el metanol es muy tóxico, el isopropanol se usa como desinfectante y el etanol de las bebidas es menos tóxico pero potente.",
+   "section": "1.8"
+  },
+  "c_azufrados": {
+   "summary": "Los sulfitos son sales derivadas del dióxido de azufre; surgen al fermentar la uva y se añaden al vino como antioxidante y antimicrobiano, aunque algunas personas reaccionan a ellos.",
+   "section": "1.10"
+  },
+  "c_gases_disueltos": {
+   "summary": "Los gases se disuelven mejor en líquidos fríos y, para salir en burbujas, necesitan partículas diminutas donde agruparse; un líquido frío y muy limpio retiene más el gas.",
+   "section": "1.12"
+  },
+  "c_etiquetado": {
+   "summary": "Algunas denominaciones están fijadas por ley: el bourbon exige mínimos de maíz, límites de graduación y barricas nuevas de roble tostado, y sólo es de Kentucky si se elabora allí.",
+   "section": "1.13"
+  },
+  "c_capacidad_calorifica": {
+   "summary": "Los materiales conducen el calor de forma muy distinta: el vidrio es mal conductor y la plata excelente, así que un vaso de plata transmite mucho mejor el frío.",
+   "section": "1.14"
+  },
+  "c_lacteos": {
+   "summary": "La grasa de la leche es menos densa que el agua; al reposar o centrifugar, sus glóbulos se separan como nata, y cada tipo de nata se define por su porcentaje de grasa.",
+   "section": "2.2"
+  },
+  "c_fermentacion": {
+   "summary": "Las bacterias lácticas convierten la lactosa en ácido láctico y aromas; el ácido neutraliza las cargas de las micelas de caseína, que se agrupan y espesan la leche en yogur.",
+   "section": "2.3"
+  },
+  "c_evaporacion": {
+   "summary": "El cuerpo se refresca sobre todo cuando el sudor se evapora de la piel y se lleva calor; comer algo frío apenas modifica la temperatura corporal.",
+   "section": "2.5"
+  },
+  "c_medidas": {
+   "summary": "Como el agua de un alimento varía mucho, su composición se expresa a menudo sobre peso seco; por eso la grasa declarada de un queso supera la real del queso húmedo.",
+   "section": "2.8"
+  },
+  "c_microbios": {
+   "summary": "Bacterias como Listeria o Brucella pueden contaminar la leche; la pasteurización las elimina y una maduración larga ayuda, porque la acidez y la sequedad frenan su multiplicación.",
+   "section": "2.9"
+  },
+  "c_emulsion": {
+   "summary": "Una emulsión dispersa gotitas de un líquido en otro con el que no se mezcla; la mantequilla es agua en grasa, la nata grasa en agua, y la lecitina estabiliza la unión.",
+   "section": "2.12"
+  },
+  "c_huevo": {
+   "summary": "El huevo tiene cáscara porosa, membranas, cámara de aire, clara densa y fluida, yema y chalazas; con la edad la clara se vuelve aguada, la yema se aplana y la cámara crece.",
+   "section": "2.13"
+  },
+  "c_conservacion": {
+   "summary": "Los huevos aguantan semanas refrigerados en un compartimento cerrado y en su cartón; la fina capa de aceite de la cáscara sella poros, retiene humedad y frena bacterias.",
+   "section": "2.13"
+  },
+  "c_proteinas": {
+   "summary": "El calor, los ácidos o la sal desnaturalizan las proteínas: sus largas cadenas se despliegan y luego se enredan y contraen, lo que las coagula o cambia su textura.",
+   "section": "2.22"
+  },
+  "c_espuma": {
+   "summary": "Batir la clara atrapa aire en una red de proteínas; si estas ya están en parte desnaturalizadas por calor, como en los huevos pasteurizados, la espuma cuesta mucho más de formar.",
+   "section": "2.22"
+  }
+ },
+ "conceptos_nuevos": {
+  "c_descenso_crioscopico": {
+   "title": "Descenso del punto de congelación",
+   "summary": "Las sustancias disueltas, como alcohol, azúcar o sal, bajan la temperatura de congelación del agua; el hielo que se funde para alcanzar ese punto absorbe calor y enfría la mezcla.",
+   "section": "1.14"
+  },
+  "c_calor_latente": {
+   "title": "Calor latente de fusión",
+   "summary": "El hielo debe absorber una cantidad fija de calor para fundirse sin cambiar de temperatura; por eso enfría aun cerca de 0 °C, y el hielo más frío enfría antes de derretirse.",
+   "section": "1.15"
+  }
+ }
+}

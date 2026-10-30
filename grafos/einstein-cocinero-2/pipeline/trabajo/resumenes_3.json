@@ -1,0 +1,267 @@
+{
+ "chapters": {
+  "5": {
+   "summary": "Cereales, tubérculos y legumbres ricos en almidón: purés, arroces, harinas, pasta y maíz; además, fibra, azúcares añadidos, edulcorantes y diferencias entre miel y azúcar."
+  },
+  "6": {
+   "summary": "Pescados y mariscos: color del salmón y del atún, fraudes y tratamientos comerciales, ceviche y desnaturalización por ácido, y biología y compra de mejillones, navajas, vieiras y gambas."
+  }
+ },
+ "sections": {
+  "5.1": {
+   "summary": "Por qué el puré de patata queda pegajoso: al aplastar o triturar se rompen células y gránulos hinchados de almidón, que liberan una pasta gomosa; conviene cortar, no machacar.",
+   "presenta": [],
+   "requiere": [
+    "c_almidon"
+   ]
+  },
+  "5.2": {
+   "summary": "Por qué la sopa de guisantes se endurece en la nevera: el almidón gelatinizado forma un gel al enfriarse y retrograda a una forma insoluble que no se redispersa.",
+   "presenta": [
+    "c_almidon"
+   ],
+   "requiere": []
+  },
+  "5.3": {
+   "summary": "Por qué el arroz sobrante se pone duro: más que secarse, su almidón gelifica y retrograda en el frío; recalentarlo con algo de agua o freírlo lo hace comestible.",
+   "presenta": [],
+   "requiere": [
+    "c_almidon"
+   ]
+  },
+  "5.4": {
+   "summary": "Por qué el arroz asiático queda pegajoso: el grano corto tiene más amilopectina ramificada que retiene agua; el largo, con más amilosa, queda suelto. Incluye truco para palillos.",
+   "presenta": [],
+   "requiere": [
+    "c_almidon"
+   ]
+  },
+  "5.5": {
+   "summary": "Qué es sancochar arroz: darle un hervor previo parcial; se distingue del arroz vaporizado industrial, que sigue crudo, y del instantáneo, ya cocido y deshidratado.",
+   "presenta": [],
+   "requiere": []
+  },
+  "5.6": {
+   "summary": "Diferencia entre harina blanqueada y sin blanquear: la oxidación, natural con el tiempo o con agentes químicos, decolora los carotenoides y elimina tioles que estorban la formación de gluten.",
+   "presenta": [
+    "c_gluten"
+   ],
+   "requiere": [
+    "c_carotenoides"
+   ]
+  },
+  "5.7": {
+   "summary": "Cómo preparar harina leudante en casa: basta mezclar harina común con polvo de hornear y sal en proporciones fijas por taza.",
+   "presenta": [],
+   "requiere": [
+    "c_medidas"
+   ]
+  },
+  "5.8": {
+   "summary": "Si se puede hacer pan con alforfón: no es trigo ni cereal afín y su harina casi no forma gluten que retenga gas; sirve para crepes o fideos soba.",
+   "presenta": [],
+   "requiere": [
+    "c_gluten"
+   ]
+  },
+  "5.9": {
+   "summary": "Por qué hay tantas formas de pasta: la clave no es la absorción sino cómo cada forma atrapa tropezones o se cubre de salsas adherentes; conviene emparejar forma y salsa.",
+   "presenta": [],
+   "requiere": []
+  },
+  "5.10": {
+   "summary": "Si batir la fruta destruye su fibra: no; la fibra es material vegetal que no digerimos, soluble (pectinas) o insoluble (celulosa, lignina), y licuarla no la altera.",
+   "presenta": [
+    "c_fibra_alimentaria"
+   ],
+   "requiere": [
+    "c_enzimas"
+   ]
+  },
+  "5.11": {
+   "summary": "Por qué la etiqueta cuenta la fibra como hidrato de carbono: químicamente lo es, aunque no aporte calorías; restándola se estiman los carbohidratos digeribles y sus calorías.",
+   "presenta": [
+    "c_etiquetado"
+   ],
+   "requiere": [
+    "c_fibra_alimentaria",
+    "c_polioles"
+   ]
+  },
+  "5.12": {
+   "summary": "Diferencias entre productos de maíz: dependen de qué partes del grano conservan y del grosor de molienda; la harina de molino de piedra conserva germen graso y se enrancia antes.",
+   "presenta": [],
+   "requiere": [
+    "c_oxidacion",
+    "c_gluten",
+    "c_almidon"
+   ]
+  },
+  "5.13": {
+   "summary": "De qué es la tortilla de maíz y por qué lleva cal: el grano se remoja en una solución alcalina que ablanda la cáscara de celulosa y libera el endospermo.",
+   "presenta": [
+    "c_nixtamalizacion"
+   ],
+   "requiere": [
+    "c_ph"
+   ]
+  },
+  "5.14": {
+   "summary": "Por qué tantos alimentos procesados llevan azúcar: además de endulzar, ablanda masas, estabiliza espumas, carameliza y conserva; explica cómo detectar azúcares ocultos y qué son los polioles.",
+   "presenta": [
+    "c_azucares",
+    "c_polioles"
+   ],
+   "requiere": [
+    "c_etiquetado",
+    "c_caramelizacion",
+    "c_espuma"
+   ]
+  },
+  "5.15": {
+   "summary": "Miel frente a azúcar: la miel es una solución sobresaturada de fructosa y glucosa que cristaliza con el tiempo, y puede portar esporas de botulismo peligrosas para bebés.",
+   "presenta": [
+    "c_cristalizacion",
+    "c_microbios"
+   ],
+   "requiere": [
+    "c_azucares",
+    "c_enzimas"
+   ]
+  },
+  "6.1": {
+   "summary": "Por qué tiñen el salmón de cultivo: el silvestre debe su tono rosado a la astaxantina del krill; al de piscifactoría se le añade ese u otro carotenoide al pienso.",
+   "presenta": [
+    "c_carotenoides"
+   ],
+   "requiere": []
+  },
+  "6.2": {
+   "summary": "Si el atún tratado con monóxido de carbono es peligroso: el gas se une a la mioglobina y fija un rojo estable sin residuos, pero puede disimular pescado pasado.",
+   "presenta": [
+    "c_mioglobina"
+   ],
+   "requiere": [
+    "c_oxidacion"
+   ]
+  },
+  "6.3": {
+   "summary": "Si venden raya como vieira: es improbable por su cartílago central y textura hebrosa; además, la urea que la protege de la ósmosis le da olor a amoniaco.",
+   "presenta": [],
+   "requiere": [
+    "c_osmosis"
+   ]
+  },
+  "6.4": {
+   "summary": "Qué es la bottarga: huevas de atún o mújol saladas, prensadas y secadas al sol; la sal extrae el agua y se usa rallada como condimento intenso.",
+   "presenta": [],
+   "requiere": [
+    "c_osmosis",
+    "c_conservacion"
+   ]
+  },
+  "6.5": {
+   "summary": "Si el ceviche está cocinado: el ácido de la lima desnaturaliza las proteínas del pescado igual que el calor, volviéndolo firme y opaco, aunque no mata parásitos internos.",
+   "presenta": [
+    "c_proteinas",
+    "c_ph"
+   ],
+   "requiere": [
+    "c_microbios"
+   ]
+  },
+  "6.6": {
+   "summary": "Por qué los mejillones caseros salen arenosos o fibrosos: probablemente eran silvestres, con arena y biso; los de cultivo crecen limpios, más rápido y en aguas controladas.",
+   "presenta": [],
+   "requiere": [
+    "c_microbios"
+   ]
+  },
+  "6.7": {
+   "summary": "Qué son las navajas y si se comen: almejas alargadas que viven enterradas en la arena y excavan con su pie; son comestibles pero deben cocinarse vivas.",
+   "presenta": [],
+   "requiere": []
+  },
+  "6.8": {
+   "summary": "Diferencia entre vieiras secas y mojadas: las mojadas se remojan en agua con tripolifosfato, ganan agua por ósmosis, pesan más y no se doran; ninguna ley obliga a tratarlas.",
+   "presenta": [
+    "c_osmosis"
+   ],
+   "requiere": [
+    "c_etiquetado",
+    "c_maillard"
+   ]
+  },
+  "6.9": {
+   "summary": "Si las gambas rosadas crudas son menos frescas: no, el color depende de la especie; al cocerlas, el calor destruye pigmentos oscuros y revela el carotenoide rojo oculto.",
+   "presenta": [],
+   "requiere": [
+    "c_carotenoides",
+    "c_conservacion"
+   ]
+  }
+ },
+ "conceptos": {
+  "c_almidon": {
+   "summary": "Al calentarse en agua, los gránulos de almidón se hinchan y espesan (gelatinización); al enfriarse forman un gel que se endurece y retrograda a una forma insoluble difícil de revertir.",
+   "section": "5.2"
+  },
+  "c_gluten": {
+   "summary": "Red proteica elástica que se forma al hidratar y amasar harina de trigo y retiene el gas del pan; los compuestos azufrados llamados tioles dificultan su formación.",
+   "section": "5.6"
+  },
+  "c_etiquetado": {
+   "summary": "Las tablas nutricionales agrupan como carbohidratos la fibra, los azúcares y los almidones, aunque solo los digeribles aportan calorías; leerlas bien exige saber qué incluye cada rubro.",
+   "section": "5.11"
+  },
+  "c_azucares": {
+   "summary": "Bajo el rótulo de azúcares entran la sacarosa y también lactosa, fructosa, glucosa, maltosa, mieles y jarabes; el azúcar además ablanda, estabiliza, colorea al calentarse y conserva.",
+   "section": "5.14"
+  },
+  "c_cristalizacion": {
+   "summary": "Una solución sobresaturada, como la miel, contiene más azúcar disuelto del que admite; con el tiempo el exceso, sobre todo glucosa, se separa en cristales, más rápido a temperatura fresca.",
+   "section": "5.15"
+  },
+  "c_microbios": {
+   "summary": "Clostridium botulinum prospera sin oxígeno y sus esporas pueden llegar a la miel; los adultos las toleran, pero los menores de un año pueden desarrollar botulismo infantil.",
+   "section": "5.15"
+  },
+  "c_carotenoides": {
+   "summary": "Pigmentos amarillos, naranjas y rojos que fabrican las plantas y los animales obtienen al comer; la astaxantina del krill tiñe salmones, flamencos y caparazones de crustáceos.",
+   "section": "6.1"
+  },
+  "c_mioglobina": {
+   "summary": "Proteína que guarda oxígeno en el músculo y cambia de color según se oxigena u oxida: púrpura, rojo y luego marrón; el monóxido de carbono la fija en un rojo estable.",
+   "section": "6.2"
+  },
+  "c_proteinas": {
+   "summary": "Las proteínas mantienen su forma plegada con enlaces débiles; el calor, los ácidos, la sal, el aire o el frío las despliegan y se entrelazan, endureciendo y opacando el alimento.",
+   "section": "6.5"
+  },
+  "c_ph": {
+   "summary": "La acidez influye en casi toda la química culinaria; un pH bajo desnaturaliza proteínas y frena bacterias, mientras que lo alcalino es raro en la comida y sabe amargo y jabonoso.",
+   "section": "6.5"
+  },
+  "c_osmosis": {
+   "summary": "El agua atraviesa membranas hacia donde hay más solutos; por eso la vieira remojada en agua menos salada que el mar absorbe agua, y la raya acumula urea para no deshidratarse.",
+   "section": "6.8"
+  }
+ },
+ "conceptos_nuevos": {
+  "c_fibra_alimentaria": {
+   "title": "Fibra alimentaria (soluble e insoluble)",
+   "summary": "Carbohidratos vegetales complejos que el cuerpo humano no puede digerir; no dan calorías pero ayudan al tránsito intestinal. Las pectinas son solubles; la celulosa y la lignina, insolubles.",
+   "section": "5.10"
+  },
+  "c_polioles": {
+   "title": "Polioles o alcoholes de azúcar",
+   "summary": "Edulcorantes como sorbitol, xilitol o manitol que se metabolizan lenta e incompletamente: dan menos calorías, no dañan los dientes ni elevan mucho la glucemia y en exceso son laxantes.",
+   "section": "5.14"
+  },
+  "c_nixtamalizacion": {
+   "title": "Tratamiento alcalino del maíz (nixtamalización)",
+   "summary": "Cocer o remojar maíz en agua con cal o cenizas, que son alcalinas, ablanda y desprende la cáscara de celulosa y permite moler el grano para obtener masa de tortillas.",
+   "section": "5.13"
+  }
+ }
+}
