@@ -5,3 +5,4 @@ trabajo/esqueleto.json
 trabajo/estructura.md
 salida/*_local.html
 capturas/
+__pycache__/
