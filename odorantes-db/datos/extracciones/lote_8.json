@@ -1,0 +1,1148 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1021/jf030212q",
+   "pmid": "12926889",
+   "pmcid": null,
+   "autor": "Kjeldsen",
+   "anio": 2003,
+   "alimento": "zanahoria",
+   "muestra": "Zanahoria cruda rallada, cv. Bolero y Carlo (Dinamarca); raíces en refrigeración a 1 °C o tiras congeladas a -24 °C hasta 4 meses",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "GC-FID"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Sigue los volátiles de zanahoria cruda rallada durante almacenamiento en frío y congelación. Casi todo el volátil son mono y sesquiterpenos, que suben en refrigeración y se mantienen en congelación. La olfatometría asigna olor a los terpenos mayores y a varias cetonas y fenilpropanoides, con notas de hoja de zanahoria, verde, terroso y cítrico."
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "pmid": "24000828",
+   "pmcid": null,
+   "autor": "Buttery",
+   "anio": 2013,
+   "alimento": "zanahoria",
+   "muestra": "Zanahoria cocida (Daucus carota); forma distinta de la cruda indicada",
+   "metodos": [
+    "AEDA",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Aplica AEDA a volátiles de zanahoria cocida e identifica éter de tilo (linden ether) como el olor de mayor FD. Otros odorantes quedan un orden de magnitud por debajo. Con umbrales y concentraciones de la literatura estima unos 20 compuestos sobre su umbral. Muestra cocida, no cruda."
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "pmid": "39165960",
+   "pmcid": "PMC11334801",
+   "autor": "Buyukkurt",
+   "anio": 2024,
+   "alimento": "zanahoria",
+   "muestra": "Bagazo de zanahoria negra (D. carota ssp. sativus var. atrorubens) de una planta de jugo concentrado en Konya, Turquía; subproducto, no raíz cruda",
+   "metodos": [
+    "AEDA",
+    "GC-O",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "© 2024 The Authors (licencia no declarada en metadatos)",
+   "nota": "Extrae por SAFE el bagazo de zanahoria negra y aplica AEDA y OAV con estándar interno. De 47 volátiles, 29 son activos en olor. Dominan los terpenos en número, pero los de mayor FD son el feniletanol y su acetato, con olor a rosa. El extracto resultó representativo del bagazo en la prueba sensorial."
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "pmid": "17602655",
+   "pmcid": null,
+   "autor": "Steinhaus",
+   "anio": 2007,
+   "alimento": "salsa_soya",
+   "muestra": "Salsa de soya japonesa comercial; también calentada",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA de una salsa de soya japonesa: 30 odorantes con FD de 8 a 4096. Cuantifica 13 por isótopos estables y un modelo acuoso con esos 13 reproduce bien el aroma. Al calentar la salsa baja el sotolón y suben furanonas y 2-acetil-1-pirrolina."
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "pmid": "37003053",
+   "pmcid": null,
+   "autor": "Wang",
+   "anio": 2023,
+   "alimento": "salsa_soya",
+   "muestra": "Salsa de soya china de fermentación líquida con alta sal (HLFSS)",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "HS-GC-IMS",
+    "OAV",
+    "recombinacion",
+    "omision"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Combina GC-MS y GC-IMS para perfilar 174 volátiles de salsa de soya de alta sal. La olfatometría marca 48 olores, 34 clave. Los experimentos de recombinación y omisión señalan ocho compuestos principales: aldehídos de Strecker, furanonas, un alcohol de hongo, acetato de etilo y un fenol ahumado."
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "pmid": "42100304",
+   "pmcid": "PMC13147766",
+   "autor": "Zhou",
+   "anio": 2026,
+   "alimento": "salsa_soya",
+   "muestra": "Salsa de soya de fermentación líquida con alta sal (soya desgrasada y trigo 7:3), Hunan Jiajia, muestreada de 30 a 230 días",
+   "metodos": [
+    "AEDA",
+    "GC-O",
+    "GC-MS",
+    "OAV",
+    "recombinacion",
+    "omision"
+   ],
+   "texto_completo": true,
+   "licencia": "© 2026 The Authors (licencia no declarada en metadatos)",
+   "nota": "Sigue los odorantes de una salsa de soya de alta sal entre 30 y 230 días. Con FD ≥ 27 y OAV ≥ 1 selecciona 17 odorantes clave. El recombinado del día 180 se parece un 86 % a la salsa. Las omisiones más críticas son metional, dos fenoles ahumados y tres furanonas de caramelo."
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "pmid": "16041138",
+   "pmcid": null,
+   "autor": "Tokitomo",
+   "anio": 2005,
+   "alimento": "pina",
+   "muestra": "Piña fresca (Ananas comosus); destilado SAFE de la fruta",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "recombinacion",
+    "omision"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA de piña fresca: 29 odorantes con FD de 2 a 4096. Cuantifica 12 por isótopos estables; su mezcla reproduce el perfil del jugo fresco. Las omisiones muestran que la furanona HDF y el 2-metilbutanoato de etilo son odorantes de impacto."
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "pmid": "30569201",
+   "pmcid": "PMC6768132",
+   "autor": "Lasekan",
+   "anio": 2018,
+   "alimento": "pina",
+   "muestra": "Piña fresca madura de seis variedades cultivadas en Johor, Malasia (Moris, Maspine, MD2, N36, Josapine, Sarawak); jugo",
+   "metodos": [
+    "AEDA",
+    "GC-O",
+    "GC-MS"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Compara seis variedades de piña malaya con GC-O, AEDA y análisis sensorial. Doce odorantes tienen FD ≥ 16. El 2-metilbutanoato de metilo tiene el FD más alto, pero solo en Moris. Las variedades Moris y MD2 se agrupan por sus ésteres frutales; las demás por lactonas y ésteres metílicos de ácidos grasos."
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "pmid": "22837701",
+   "pmcid": "PMC3397533",
+   "autor": "Zheng",
+   "anio": 2012,
+   "alimento": "pina",
+   "muestra": "Piña fresca, pulpa de variedades Tainong No. 4 y No. 6, Zhanjiang (Guangdong, China)",
+   "metodos": [
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 3.0",
+   "nota": "Analiza por SPME y GC-MS la pulpa de dos variedades chinas de piña y calcula OAV con umbrales de la literatura. En Tainong No. 4 domina la furaneol; en No. 6, el 2-metilbutirato de etilo. Los tioésteres metiltiopropanoato aportan a ambas variedades. No usa olfatometría."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(-)-alpha-pinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(+)-alpha-pinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(-)-beta-pinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(+)-beta-pinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "beta-myrcene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(-)-limonene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(+)-limonene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(+)-sabinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "gamma-terpinene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "p-cymene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "terpinolene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "beta-caryophyllene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "alpha-humulene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(E)-gamma-bisabolene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(Z)-gamma-bisabolene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "(-)-beta-bisabolene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "6-methyl-5-hepten-2-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "beta-ionone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf030212q",
+   "alimento": "zanahoria",
+   "nombre": "myristicin",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "linden ether",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "beta-ionone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "eugenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "beta-damascenone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "(E)-2-nonenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "octanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "heptanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "(E)-2-decenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf402827e",
+   "alimento": "zanahoria",
+   "nombre": "p-vinylguaiacol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "phenylethyl alcohol",
+   "descriptor": "rosa",
+   "fd": 512,
+   "oav": 2488,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "phenylethyl acetate",
+   "descriptor": "rosa",
+   "fd": 256,
+   "oav": 280,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "acetic acid",
+   "descriptor": "vinagre",
+   "fd": 128,
+   "oav": 847,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "dimethyl-propanedioic acid",
+   "descriptor": "punzante, agudo",
+   "fd": 128,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "caryophyllene",
+   "descriptor": "queso salado, especiado",
+   "fd": 128,
+   "oav": 525,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "elemicin",
+   "descriptor": "especiado",
+   "fd": 128,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "myristicin",
+   "descriptor": "especiado, dulce",
+   "fd": 64,
+   "oav": 189,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "butanoic acid",
+   "descriptor": "queso",
+   "fd": 64,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "amylbutyrolactone",
+   "descriptor": "frutal",
+   "fd": 32,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "geranyl pentanoate",
+   "descriptor": "frutal",
+   "fd": 16,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "acetoin",
+   "descriptor": "cremoso",
+   "fd": 4,
+   "oav": 15,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2024.e35013",
+   "alimento": "zanahoria",
+   "nombre": "hexanoic acid",
+   "descriptor": "fresco",
+   "fd": 4,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "3-methylbutanal",
+   "descriptor": "malteado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "sotolone",
+   "descriptor": "condimento",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "4-HEMF",
+   "descriptor": "caramelo",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "2-methylbutanal",
+   "descriptor": "malteado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "methional",
+   "descriptor": "papa cocida",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "ethanol",
+   "descriptor": "alcohólico",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "ethyl 2-methylpropanoate",
+   "descriptor": "frutal",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "2-phenylethanol",
+   "descriptor": "",
+   "fd": 4096,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0709092",
+   "alimento": "salsa_soya",
+   "nombre": "4-HDF",
+   "descriptor": "",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "phenylacetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "1-octen-3-ol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "ethyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "2-ethyl-4-hydroxy-5-methyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2023.135995",
+   "alimento": "salsa_soya",
+   "nombre": "4-ethyl guaiacol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "3-methyl-1-butanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "acetoin",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "acetic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "methional",
+   "descriptor": "papa asada",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "γ-butyrolactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "furfuryl alcohol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "methionol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "4-methoxyphenol",
+   "descriptor": "ahumado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "phenethyl alcohol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "3-methoxy-2-methylpyran-4-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "maltol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "HDMF",
+   "descriptor": "caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "4-ethyl-2-methoxyphenol",
+   "descriptor": "ahumado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "HEMF",
+   "descriptor": "caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "4-hydroxy-5-methyl-3-furanone",
+   "descriptor": "caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "4-ethylphenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.103934",
+   "alimento": "salsa_soya",
+   "nombre": "3-(methylthio)propionic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Secciones 3.5-3.6 y Conclusiones; tablas S2-S4 no recuperadas"
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "alimento": "pina",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "dulce, a piña, caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "alimento": "pina",
+   "nombre": "ethyl 2-methylpropanoate",
+   "descriptor": "frutal",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "alimento": "pina",
+   "nombre": "ethyl 2-methylbutanoate",
+   "descriptor": "frutal",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "alimento": "pina",
+   "nombre": "methyl 2-methylbutanoate",
+   "descriptor": "frutal, manzana",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.69.1323",
+   "alimento": "pina",
+   "nombre": "1-(E,Z)-3,5-undecatriene",
+   "descriptor": "fresco, a piña",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "methyl-2-methylbutanoate",
+   "descriptor": "",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "methyl hexanoate",
+   "descriptor": "",
+   "fd": 128,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "2,4-dihydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": 128,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "methyl-3-(methylthiol)-propanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "methyl octanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "2,5-dimethyl-4-methoxy-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "δ-octalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "2-methoxy-4-vinyl phenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "δ-undecalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.1186/s13065-018-0505-3",
+   "alimento": "pina",
+   "nombre": "hexadecanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Resultados (texto) y resumen; tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "ethyl-2-methylbutyrate",
+   "descriptor": "manzana",
+   "fd": null,
+   "oav": 3706.67,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "2,5-dimethyl-4-hydroxy-3(2H)-furanone (furaneol)",
+   "descriptor": "",
+   "fd": null,
+   "oav": 2549,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "methyl-2-methylbutyrate",
+   "descriptor": "",
+   "fd": null,
+   "oav": 77.92,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "decanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": 16.1,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "3-(methylthio)propanoic acid ethyl ester",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "3-(methylthio)propanoic acid methyl ester",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "δ-octalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  },
+  {
+   "doi": "10.3390/ijms13067383",
+   "alimento": "pina",
+   "nombre": "ethyl hexanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 2.2 (texto); tabla no disponible en el texto recuperado"
+  }
+ ]
+}
