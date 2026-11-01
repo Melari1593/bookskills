@@ -1,0 +1,847 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1016/j.foodres.2025.117292",
+   "pmid": "41174382",
+   "pmcid": null,
+   "autor": "Yu",
+   "anio": 2025,
+   "alimento": "cebolla",
+   "muestra": "COCINADA: aceite de cebolla para sazonar obtenido por inmersión de cebolla en aceite caliente (frita en aceite)",
+   "metodos": [
+    "AEDA",
+    "GC-SCD",
+    "OAV",
+    "omision"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Analiza el aceite de cebolla con dilución de aroma y un detector específico de azufre. Halla 50 volátiles y 12 odorantes potentes. Un tiol en traza tiene el OAV más alto. Las pruebas de omisión confirman que el tiol y el disulfuro de dipropilo son indispensables. Solo se leyó el resumen."
+  },
+  {
+   "doi": "10.1021/jf049874l",
+   "pmid": "15137816",
+   "pmcid": null,
+   "autor": "Granvogl",
+   "anio": 2004,
+   "alimento": "cebolla",
+   "muestra": "CRUDA y COCINADA: cebolla (Allium cepa) de varios orígenes, cruda; y cortada, reposada 50 min y luego cocida; también extractos por destilación-extracción simultánea",
+   "metodos": [
+    "SIDA"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Desarrolla un ensayo de dilución isotópica para un tiol clave de la cebolla. La cebolla cruda tiene poco tiol. La cebolla cortada, reposada y cocida tiene varias veces más. Propone precursores formados al cortar. El resumen no da OAV; el nivel C es provisional."
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "pmid": "37048190",
+   "pmcid": "PMC10093356",
+   "autor": "Wang",
+   "anio": 2023,
+   "alimento": "cebolla",
+   "muestra": "CRUDA y COCINADA: cebolla (Allium cepa) fresca de Beijing, picada; y aceite de soya donde se frió la cebolla (140→165 °C). El estudio incluye otros cuatro Allium",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "SAFE"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Compara cinco Allium frescos con sus aceites de fritura mediante GC-O e intensidad de olor. En la planta fresca dominan compuestos azufrados. En los aceites fritos dominan aldehídos insaturados, pirazinas y furanos. Seis odorantes aparecen en todos los aceites. Las tablas no estaban en el texto recuperado; solo se extrajeron compuestos atribuidos a cebolla en el texto."
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "pmid": "39517299",
+   "pmcid": "PMC11545235",
+   "autor": "Sun",
+   "anio": 2024,
+   "alimento": "ciruela",
+   "muestra": "FRESCA: pulpa de fruta madura de 38 variedades de ciruela (tempranas, medias y tardías), Xingcheng, Liaoning, China",
+   "metodos": [
+    "HS-SPME",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Perfila 138 volátiles en 38 variedades de ciruela fresca. Calcula OAV con umbrales de literatura y cuantificación semicuantitativa. Señala 24 compuestos con OAV mayor que 1 y 14 con OAV mayor o igual a 10. Los aldehídos C6 y los ésteres dominan. No usa olfatometría. Las tablas no estaban en el texto recuperado."
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "pmid": "42195989",
+   "pmcid": "PMC13205203",
+   "autor": "Fu",
+   "anio": 2026,
+   "alimento": "ciruela",
+   "muestra": "FRESCA: mesocarpio de ciruela 'Younai' (Prunus salicina var. cordata), tres cultivares de seis huertos de Fujian, China, en madurez comercial",
+   "metodos": [
+    "HS-SPME",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Describe azúcares, ácidos, volátiles y metabolitos de la ciruela Younai fresca. Identifica 28 volátiles. Con OAV relativo selecciona alcoholes y ésteres C6 como base del aroma, y lactonas y terpenos como matices. Los autores advierten que faltan pruebas sensoriales y olfatometría."
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "pmid": "41080141",
+   "pmcid": "PMC12509199",
+   "autor": "Zhang",
+   "anio": 2025,
+   "alimento": "ciruela",
+   "muestra": "FRESCA (y salada): pulpa de cuatro variedades chinas ('Tuogu', 'Bingtang', 'Qilin', 'Pingguo'); comparada con fruta curada en sal 7 días. No es ciruela pasa. Odorantes extraídos de la fruta fresca",
+   "metodos": [
+    "GC-IMS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "sin datos (acceso abierto en PMC)",
+   "nota": "Compara ciruela fresca y curada en sal con GC-IMS y OAV relativo. Ocho aldehídos y ésteres superan ROAV 1 en todas las variedades frescas. El salado baja los aldehídos y sube ésteres y alcoholes. El aroma pasa de herbáceo fresco a afrutado complejo. No usa olfatometría."
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "pmid": "32961789",
+   "pmcid": "PMC7556006",
+   "autor": "Muscolo",
+   "anio": 2020,
+   "alimento": "pimenton",
+   "muestra": "Pimiento dulce rojo fresco 'Topepo' (Capsicum annuum), Calabria, Italia, con distintos abonos orgánicos; fruta recién cosechada y cortada",
+   "metodos": [
+    "HS-SPME",
+    "GC-QTOF-MS",
+    "UFGC"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Compara pimiento rojo dulce abonado con tres enmiendas orgánicas. Mide antioxidantes y volátiles por SPME. Identifica 81 volátiles, sobre todo terpenos. Destaca metoxipirazinas y aldehídos de nota verde como marcadores del aroma. No hay olfatometría ni umbrales: nivel D."
+  },
+  {
+   "doi": "10.1021/jf035008h",
+   "pmid": "14733513",
+   "pmcid": null,
+   "autor": "Simian",
+   "anio": 2004,
+   "alimento": "pimenton",
+   "muestra": "Extractos de pimiento morrón rojo y verde (Capsicum annuum)",
+   "metodos": [
+    "GC-MS",
+    "sintesis",
+    "umbral"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Identifica por primera vez el 2-heptanotiol en pimiento morrón rojo y verde. Confirma la estructura por síntesis. Describe su olor y mide un umbral ortonasal de 10 µg/L en agua. Ambos enantiómeros huelen igual. Solo se leyó el resumen."
+  },
+  {
+   "doi": "10.1016/j.phytochem.2022.113488",
+   "pmid": "36323357",
+   "pmcid": null,
+   "autor": "Zamolo",
+   "anio": 2022,
+   "alimento": "pimenton",
+   "muestra": "Plantas de pimiento morrón (Capsicum annuum): frutos inmaduros y maduros, hojas, tallos y raíces",
+   "metodos": [
+    "SIDA",
+    "HS-SPME",
+    "GC-TOF-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Desarrolla un ensayo de dilución isotópica para la metoxipirazina típica del pimiento. El fruto inmaduro tiene el nivel más alto. La planta la sintetiza en partes aéreas, no en raíz ni en fruto maduro. El resumen no da OAV ni concentraciones; el nivel C es provisional."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1016/j.foodres.2025.117292",
+   "alimento": "cebolla",
+   "nombre": "3-mercapto-2-methylpentan-1-ol",
+   "descriptor": "",
+   "fd": null,
+   "oav": 989,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV 677–989; omisión)"
+  },
+  {
+   "doi": "10.1016/j.foodres.2025.117292",
+   "alimento": "cebolla",
+   "nombre": "dipropyl disulfide",
+   "descriptor": "",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (FD hasta 1024; omisión)"
+  },
+  {
+   "doi": "10.1021/jf049874l",
+   "alimento": "cebolla",
+   "nombre": "3-mercapto-2-methylpentan-1-ol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (8–32 µg/kg cruda; 34–246 µg/kg cocida)"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "nonanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.2.2 (texto; cebolla fresca); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "prenylthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.2.2 (texto; cebolla fresca); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "2-pentenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "1-octen-3-ol",
+   "descriptor": "champiñón, terroso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "2-octenal",
+   "descriptor": "pepino, herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "2,4-decadienal",
+   "descriptor": "aceitoso, cárnico",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "azufrado, cebolla cocida",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "2-furyl methyl ketone",
+   "descriptor": "dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods12071371",
+   "alimento": "cebolla",
+   "nombre": "furaneol",
+   "descriptor": "algodón de azúcar, caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "2-hexenal",
+   "descriptor": "hoja verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "(E)-2-hexenal",
+   "descriptor": "verde, afrutado, especiado, graso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexen-1-ol acetate",
+   "descriptor": "plátano",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "acetic acid butyl ester",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "acetic acid pentyl ester",
+   "descriptor": "afrutado, dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "butyl 2-methylbutanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "hexanoic acid methyl ester",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "1-butanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "2-methyl-1-butanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "1-octanol",
+   "descriptor": "limón",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "butanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "octanal",
+   "descriptor": "rosa, piel de naranja",
+   "fd": null,
+   "oav": 120.06,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "pentanoic acid ethyl ester",
+   "descriptor": "manzana",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "1-octen-3-one",
+   "descriptor": "herbáceo, champiñón, tierra",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3,7-dimethyl-2,6-octadien-1-ol",
+   "descriptor": "rosa, azahar, limón",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "ethyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "2,6,6-trimethyl-1-cyclohexene-1-carboxaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "linalyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "alpha-terpineol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods13213515",
+   "alimento": "ciruela",
+   "nombre": "hexanoic acid ethyl ester",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.4 (texto); Tabla de OAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexen-1-ol",
+   "descriptor": "herbáceo, hoja verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "1-hexanol",
+   "descriptor": "herbáceo, hoja verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexen-1-yl acetate",
+   "descriptor": "afrutado, dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexenyl butanoate",
+   "descriptor": "afrutado, dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexenyl hexanoate",
+   "descriptor": "afrutado, dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "hexanal",
+   "descriptor": "graso, hoja verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "nonanal",
+   "descriptor": "graso, hoja verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "gamma-decalactone",
+   "descriptor": "melocotón, cremoso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "delta-decalactone",
+   "descriptor": "melocotón, cremoso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "linalool",
+   "descriptor": "floral, afrutado dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods15101787",
+   "alimento": "ciruela",
+   "nombre": "beta-dihydroionone",
+   "descriptor": "floral, afrutado dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.5 (texto); tabla de rOAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "heptanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "propanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "3-methylbutanal",
+   "descriptor": "manzana",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "pentanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "hexanal",
+   "descriptor": "herbáceo, afrutado, graso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "(E)-2-hexenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "hexyl acetate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "benzaldehyde",
+   "descriptor": "cereza, fruto seco",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "limonene",
+   "descriptor": "limón",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "(Z)-3-hexenyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "isoamyl acetate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.1016/j.fochx.2025.103053",
+   "alimento": "ciruela",
+   "nombre": "ethyl propanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "2-isobutyl-3-methoxypyrazine",
+   "descriptor": "pimiento verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "2-sec-butyl-3-methoxypyrazine",
+   "descriptor": "zanahoria, lechuga, herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "hexanal",
+   "descriptor": "herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "nonenal",
+   "descriptor": "pepino, herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "3-carene",
+   "descriptor": "pimiento rojo, gomoso",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "beta-ocimene",
+   "descriptor": "rancio, sudor",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "(E,Z)-2,6-nonadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "heptanal",
+   "descriptor": "hierba recién cortada",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "1-octen-3-ol",
+   "descriptor": "hierba recién cortada",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.3390/foods9091323",
+   "alimento": "pimenton",
+   "nombre": "2-methylpropanal",
+   "descriptor": "cacao, especiado",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "Sección 3.3 (texto)"
+  },
+  {
+   "doi": "10.1021/jf035008h",
+   "alimento": "pimenton",
+   "nombre": "2-heptanethiol",
+   "descriptor": "azufrado, cebolla, vegetal; recuerda a pimiento en baja concentración",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.phytochem.2022.113488",
+   "alimento": "pimenton",
+   "nombre": "3-isobutyl-2-methoxypyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  }
+ ]
+}
