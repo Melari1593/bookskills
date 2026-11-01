@@ -1,0 +1,4 @@
+# Nunca se versiona texto completo de artículos: solo datos extraídos y notas propias.
+cache/
+*.pyc
+__pycache__/
