@@ -1,20 +1,122 @@
 {
- "cafe_tostado":      {"nombre": "Café arábica tostado (bebida o grano)", "en": "roasted coffee", "lote": 1},
- "cacao":             {"nombre": "Cacao fermentado y tostado / chocolate negro", "en": "cocoa OR dark chocolate", "lote": 1},
- "matcha":            {"nombre": "Matcha (tencha en polvo)", "en": "matcha OR tencha", "lote": 1},
- "te_negro":          {"nombre": "Té negro (infusión)", "en": "black tea", "lote": 2},
- "vainilla":          {"nombre": "Vainilla curada (vaina o extracto)", "en": "vanilla", "lote": 2},
- "coco":              {"nombre": "Coco (pulpa, leche o agua)", "en": "coconut", "lote": 2},
- "frambuesa":         {"nombre": "Frambuesa roja", "en": "raspberry", "lote": 3},
- "fresa":             {"nombre": "Fresa", "en": "strawberry", "lote": 3},
- "mango":             {"nombre": "Mango", "en": "mango", "lote": 3},
- "banano":            {"nombre": "Banano maduro", "en": "banana", "lote": 4},
- "naranja":           {"nombre": "Naranja (jugo fresco)", "en": "orange juice", "lote": 4},
- "tomate":            {"nombre": "Tomate fresco", "en": "tomato", "lote": 4},
- "ajonjoli_tostado":  {"nombre": "Ajonjolí tostado (semilla, pasta o aceite)", "en": "roasted sesame", "lote": 5},
- "mani_tostado":      {"nombre": "Maní tostado", "en": "roasted peanut", "lote": 5},
- "avellana_tostada":  {"nombre": "Avellana tostada", "en": "roasted hazelnut", "lote": 5},
- "corteza_pan":       {"nombre": "Corteza de pan de trigo", "en": "wheat bread crust", "lote": 6},
- "mantequilla":       {"nombre": "Mantequilla", "en": "butter", "lote": 6},
- "parmesano":         {"nombre": "Queso parmesano (Parmigiano-Reggiano)", "en": "Parmigiano-Reggiano OR Parmesan cheese", "lote": 6}
+ "cafe_tostado": {
+  "nombre": "Café arábica tostado (bebida o grano)",
+  "en": "roasted coffee",
+  "lote": 1
+ },
+ "cacao": {
+  "nombre": "Cacao fermentado y tostado / chocolate negro",
+  "en": "cocoa OR dark chocolate",
+  "lote": 1
+ },
+ "matcha": {
+  "nombre": "Matcha (tencha en polvo)",
+  "en": "matcha OR tencha",
+  "lote": 1
+ },
+ "te_negro": {
+  "nombre": "Té negro (infusión)",
+  "en": "black tea",
+  "lote": 2
+ },
+ "vainilla": {
+  "nombre": "Vainilla curada (vaina o extracto)",
+  "en": "vanilla",
+  "lote": 2
+ },
+ "coco": {
+  "nombre": "Coco (pulpa, leche o agua)",
+  "en": "coconut",
+  "lote": 2
+ },
+ "frambuesa": {
+  "nombre": "Frambuesa roja",
+  "en": "raspberry",
+  "lote": 3
+ },
+ "fresa": {
+  "nombre": "Fresa",
+  "en": "strawberry",
+  "lote": 3
+ },
+ "mango": {
+  "nombre": "Mango",
+  "en": "mango",
+  "lote": 3
+ },
+ "banano": {
+  "nombre": "Banano maduro",
+  "en": "banana",
+  "lote": 4
+ },
+ "naranja": {
+  "nombre": "Naranja (jugo fresco)",
+  "en": "orange juice",
+  "lote": 4
+ },
+ "tomate": {
+  "nombre": "Tomate fresco",
+  "en": "tomato",
+  "lote": 4
+ },
+ "ajonjoli_tostado": {
+  "nombre": "Ajonjolí tostado (semilla, pasta o aceite)",
+  "en": "roasted sesame",
+  "lote": 5
+ },
+ "mani_tostado": {
+  "nombre": "Maní tostado",
+  "en": "roasted peanut",
+  "lote": 5
+ },
+ "avellana_tostada": {
+  "nombre": "Avellana tostada",
+  "en": "roasted hazelnut",
+  "lote": 5
+ },
+ "corteza_pan": {
+  "nombre": "Corteza de pan de trigo",
+  "en": "wheat bread crust",
+  "lote": 6
+ },
+ "mantequilla": {
+  "nombre": "Mantequilla",
+  "en": "butter",
+  "lote": 6
+ },
+ "parmesano": {
+  "nombre": "Queso parmesano (Parmigiano-Reggiano)",
+  "en": "Parmigiano-Reggiano OR Parmesan cheese",
+  "lote": 6
+ },
+ "cebolla": {
+  "nombre": "Cebolla (cruda o cocinada; el estudio indica cuál)",
+  "en": "onion",
+  "lote": 7
+ },
+ "ciruela": {
+  "nombre": "Ciruela (fresca o pasa; el estudio indica cuál)",
+  "en": "plum OR prune",
+  "lote": 7
+ },
+ "pimenton": {
+  "nombre": "Pimentón fresco (pimiento morrón, Capsicum annuum)",
+  "en": "bell pepper OR sweet pepper Capsicum annuum",
+  "lote": 7
+ },
+ "zanahoria": {
+  "nombre": "Zanahoria cruda",
+  "en": "carrot",
+  "lote": 8
+ },
+ "salsa_soya": {
+  "nombre": "Salsa de soya fermentada",
+  "en": "soy sauce",
+  "lote": 8
+ },
+ "pina": {
+  "nombre": "Piña fresca",
+  "en": "pineapple",
+  "lote": 8
+ }
 }
