@@ -1,0 +1,1048 @@
+{
+ "estudios": [
+  {
+   "doi": "10.3390/molecules24132484",
+   "pmid": "31284563",
+   "pmcid": "PMC6651719",
+   "autor": "Paravisini",
+   "anio": 2019,
+   "alimento": "corteza_pan",
+   "muestra": "Corteza de pan de molde de harina integral de trigo duro rojo (King Arthur), horneado 215 °C 17 min; comparado con pasto de trigo intermedio (IWG)",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "SIDA",
+    "adicion_estandar",
+    "recombinacion"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Compara la corteza de pan integral de trigo con la de IWG. Identifica 24 odorantes por GC-O (FD ≥ 16) y los cuantifica. El trigo tiene unas cuatro veces más productos de Maillard y más nota tostada. Los modelos recombinados no difieren del pan en ningún atributo sensorial. La tabla de FD no estaba en el texto recuperado."
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "pmid": "23106092",
+   "pmcid": null,
+   "autor": "Moskowitz",
+   "anio": 2012,
+   "alimento": "corteza_pan",
+   "muestra": "Corteza de pan de trigo con harina refinada frente a harina integral",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "adicion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Compara la corteza de pan de harina refinada e integral con AEDA y cuantificación con isótopos. Cinco odorantes son más altos en el pan refinado. Al añadirlos a la corteza integral, el aroma de corteza fresca sube hasta igualar al refinado. Relaciona la pérdida con el ácido ferúlico liberado."
+  },
+  {
+   "doi": "10.1021/acs.jafc.1c05638",
+   "pmid": "34739243",
+   "pmcid": null,
+   "autor": "Rögner",
+   "anio": 2021,
+   "alimento": "corteza_pan",
+   "muestra": "Corteza y miga de pan de trigo con y sin extracto líquido oscuro de malta en la masa",
+   "metodos": [
+    "AEDA",
+    "GC-O",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Usa AEDA y OAV en corteza y miga de pan de trigo con y sin extracto de malta. Identifica 23 odorantes principales. El extracto de malta sube sobre todo el sotolón en la corteza. El resumen solo nombra los compuestos que cambian con la malta."
+  },
+  {
+   "doi": "10.1021/acs.jafc.9b04800",
+   "pmid": "31487164",
+   "pmcid": null,
+   "autor": "Rohleder",
+   "anio": 2019,
+   "alimento": "corteza_pan",
+   "muestra": "Corteza y miga de pan de trigo comercial frente a pan de arroz sin gluten",
+   "metodos": [
+    "SIDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantifica 18 odorantes con SIDA en pan de arroz y de trigo y calcula OAV. Los perfiles difieren mucho. El maltol solo resulta relevante en la corteza de trigo. El resumen no da cifras ni la lista completa."
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "pmid": "17705437",
+   "pmcid": null,
+   "autor": "Lozano",
+   "anio": 2007,
+   "alimento": "mantequilla",
+   "muestra": "Mantequilla comercial de nata dulce pasteurizada grado AA (EE. UU.), fresca y almacenada 6–12 meses",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "SAFE",
+    "DHA"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Analiza mantequilla de nata dulce por GC-O y GC-MS y sigue el efecto del almacenamiento y del envoltorio. En la mantequilla fresca destacan ácidos, lactonas y compuestos muy potentes. El almacenamiento refrigerado sube productos de oxidación y estireno; congelar y envolver en aluminio protege mejor."
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "pmid": "19630425",
+   "pmcid": null,
+   "autor": "Mallia",
+   "anio": 2009,
+   "alimento": "mantequilla",
+   "muestra": "Mantequilla convencional y enriquecida en AGI/CLA, almacenada y fotooxidada (Suiza)",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "GC-O",
+    "HPLC"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Compara los odorantes de mantequilla convencional y enriquecida en ácidos grasos insaturados. AEDA da 18 odorantes que se cuantifican con SIDA, más escatol por HPLC. Tras almacenar, la mantequilla enriquecida tiene más aldehídos, ácido butanoico y delta-decalactona. La luz sube aldehídos de oxidación, sobre todo en la convencional."
+  },
+  {
+   "doi": "10.3168/jds.2026-29277",
+   "pmid": "42913843",
+   "pmcid": null,
+   "autor": "Best",
+   "anio": 2026,
+   "alimento": "mantequilla",
+   "muestra": "Mantequilla noisette (mantequilla dorada) de mantequilla fresca con y sin sal, con método de dorado estandarizado",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "GC-O",
+    "GC-MS",
+    "modelos"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Primer estudio del aroma de la mantequilla dorada. Combina AEDA, SIDA, umbrales, OAV y sistemas modelo. La mantequilla dorada gana notas de nuez cocida, caramelo y tostado por Maillard y oxidación lipídica. El resumen solo nombra tres contribuyentes clave."
+  },
+  {
+   "doi": "10.1007/s10068-019-00647-z",
+   "pmid": "31976127",
+   "pmcid": "PMC6949335",
+   "autor": "Li",
+   "anio": 2019,
+   "alimento": "mantequilla",
+   "muestra": "Mantequillas comerciales; extracción por SDE frente a SPME",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos (no abierta)",
+   "nota": "Compara dos métodos de extracción para el aroma de mantequilla. SDE genera más metilcetonas por el calor; SPME recoge más ácidos y lactonas. Las lactonas son clave y la delta-decalactona destaca por OAV y GC-O. PMC no devolvió el texto completo."
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "pmid": "12703612",
+   "pmcid": null,
+   "autor": "Qian",
+   "anio": 2003,
+   "alimento": "parmesano",
+   "muestra": "Parmigiano-Reggiano (Italia)",
+   "metodos": [
+    "GC-MS",
+    "OAV",
+    "purga_y_trampa"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantifica ácidos grasos libres y compuestos neutros del Parmigiano-Reggiano y calcula OAV con umbrales de la literatura. Aldehídos de Strecker, compuestos azufrados, diacetilo, ésteres etílicos y ácidos cortos salen como los contribuyentes más importantes. El resumen no da cifras."
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "pmid": "12146465",
+   "pmcid": null,
+   "autor": "Qian",
+   "anio": 2002,
+   "alimento": "parmesano",
+   "muestra": "Parmigiano-Reggiano (Italia), extracto fraccionado en ácidos, bases, solubles en agua y neutros",
+   "metodos": [
+    "GC-O",
+    "Osme",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Fracciona los volátiles del Parmigiano-Reggiano y los evalúa por olfatometría Osme. Los ácidos grasos cortos dan la nota a queso, los ésteres etílicos la afrutada y pirazinas y furanos la de nuez tostada. Por el límite de 25 se omitieron seis compuestos del resumen: una piridina, tres pirazinas y dos furanos."
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "pmid": "12643630",
+   "pmcid": null,
+   "autor": "Boscaini",
+   "anio": 2003,
+   "alimento": "parmesano",
+   "muestra": "Parmigiano-Reggiano comparado con Grana Padano y Grana Trentino; espacio de cabeza dinámico",
+   "metodos": [
+    "GC-O",
+    "PTR-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Perfila tres quesos grana con GC-O sobre espacio de cabeza y con PTR-MS directo. Los ésteres etílicos y la 2-heptanona dominan con notas afrutadas. Metional y 1-octen-3-ona aportan olor aunque el FID no los detecta. El resumen no separa los resultados por queso."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-acetylfuran",
+   "descriptor": "levadura, fermentado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-ethyl-3,5-dimethylpyrazine",
+   "descriptor": "tostado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-ethyl-3,6-dimethylpyrazine",
+   "descriptor": "chocolate",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2,3-diethyl-5-methylpyrazine",
+   "descriptor": "terroso, tostado, vegetal",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "diacetyl",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-acetyl-2-thiazoline",
+   "descriptor": "palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2-nonenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "2,6-nonadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "p-vinylguaiacol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "salicylaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.3390/molecules24132484",
+   "alimento": "corteza_pan",
+   "nombre": "guaiacol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "Sección 2.1 (texto); Tabla 1 no disponible"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "2-phenylethanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "2-acetyl-2-thiazoline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "2,4-dihydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "2-ethyl-3,5-dimethylpyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf303750y",
+   "alimento": "corteza_pan",
+   "nombre": "(E)-2-nonenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.1c05638",
+   "alimento": "corteza_pan",
+   "nombre": "sotolon",
+   "descriptor": "a condimento",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.9b04800",
+   "alimento": "corteza_pan",
+   "nombre": "maltol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "butanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "delta-octalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "delta-decalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "1-octen-3-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf071075q",
+   "alimento": "mantequilla",
+   "nombre": "diacetyl",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "pentanal",
+   "descriptor": "graso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "heptanal",
+   "descriptor": "verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "butanoic acid",
+   "descriptor": "a queso",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "delta-decalactone",
+   "descriptor": "a melocotón",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "(E)-2-octenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "trans-4,5-epoxy-(E)-2-decenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf9002158",
+   "alimento": "mantequilla",
+   "nombre": "3-methyl-1H-indole",
+   "descriptor": "a naftalina",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.2026-29277",
+   "alimento": "mantequilla",
+   "nombre": "furaneol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.2026-29277",
+   "alimento": "mantequilla",
+   "nombre": "diacetyl",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.2026-29277",
+   "alimento": "mantequilla",
+   "nombre": "2-nonanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1007/s10068-019-00647-z",
+   "alimento": "mantequilla",
+   "nombre": "delta-decalactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "3-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "2-methylpropanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "diacetyl",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "phenylacetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "ethyl butanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "ethyl hexanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "ethyl octanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "acetic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "butanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "hexanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(03)73658-3",
+   "alimento": "parmesano",
+   "nombre": "octanoic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "butanoic acid",
+   "descriptor": "a queso, lipolizado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "hexanoic acid",
+   "descriptor": "a queso, lipolizado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "octanoic acid",
+   "descriptor": "a queso, lipolizado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "decanoic acid",
+   "descriptor": "a queso, lipolizado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl butanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl hexanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl octanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl propanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl pentanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl heptanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "ethyl decanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "3-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2,4-hexadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2-butenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "pentanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "hexanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "heptanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "diacetyl",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "phenylacetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "dimethyltrisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2,3-dimethylpyrazine",
+   "descriptor": "a nuez, tostado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2,6-dimethyl-pyrazine",
+   "descriptor": "a nuez, tostado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3168/jds.S0022-0302(02)74202-1",
+   "alimento": "parmesano",
+   "nombre": "2,5-dimethyl-3-ethylpyrazine",
+   "descriptor": "a nuez, tostado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "alimento": "parmesano",
+   "nombre": "ethyl butanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "alimento": "parmesano",
+   "nombre": "2-heptanone",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "alimento": "parmesano",
+   "nombre": "ethyl hexanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "alimento": "parmesano",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf020922g",
+   "alimento": "parmesano",
+   "nombre": "1-octen-3-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  }
+ ]
+}

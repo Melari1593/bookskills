@@ -1,0 +1,739 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1021/jf052495n",
+   "pmid": "16448203",
+   "pmcid": null,
+   "autor": "Schuh",
+   "anio": 2006,
+   "alimento": "te_negro",
+   "muestra": "Infusión de té negro Darjeeling (Gold Selection); también hojas secas",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Analizaron la infusión de un Darjeeling con AEDA (24 zonas olorosas) y cuantificaron con SIDA. Un recombinado con los 18 compuestos de OAV > 1 reprodujo el aroma de la bebida. El nonatrienal resultó odorante clave nuevo; el geraniol sube mucho al pasar de la hoja a la infusión."
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "pmid": "35267261",
+   "pmcid": "PMC8909151",
+   "autor": "Tao",
+   "anio": 2022,
+   "alimento": "te_negro",
+   "muestra": "Infusión de té negro Keemun (Anhui, China), fresco frente a almacenado 1 año; 6 g en 300 mL, 5 min",
+   "metodos": [
+    "AEDA",
+    "OAV",
+    "GC-MS",
+    "adicion"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Compararon infusiones de Keemun fresco y guardado un año. Con AEDA y cuantificación por adición de estándar calcularon OAV; casi todos los odorantes clave bajan con el almacenamiento, salvo β-damascenona. Añadir varios de ellos al té viejo reduce la nota leñosa y devuelve frescura. Valores tomados de la muestra fresca."
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "pmid": "37752697",
+   "pmcid": null,
+   "autor": "Zhou",
+   "anio": 2023,
+   "alimento": "te_negro",
+   "muestra": "Té negro Congou en cuatro grados de fermentación; datos clave de la muestra con fermentación completa (4 h)",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "omision"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Siguieron el aroma del Congou a lo largo de la fermentación con AEDA, cuantificación (estándar interno y SIDA) y pruebas de omisión, reducción y adición. Ocho compuestos con OAV > 100 definen el té bien fermentado. Poca fermentación deja dominar una nota verde; el exceso eleva aldehídos grasos que tapan lo floral y frutal."
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "pmid": "23470766",
+   "pmcid": null,
+   "autor": "Takahashi",
+   "anio": 2013,
+   "alimento": "vainilla",
+   "muestra": "Vainas curadas de vainilla de Tahití (Vanilla tahitensis)",
+   "metodos": [
+    "AEDA",
+    "GC-MS",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Combinaron evaluación sensorial, AEDA, cuantificación y reconstitución en vainas tahitianas. Vainillina y anisaldehído compartieron el FD más alto; siguen alcohol y acetato de anisilo. El reconstituido se percibió parecido a las vainas. Reportan por primera vez 3-metilnonano-2,4-diona en vainilla."
+  },
+  {
+   "doi": "10.1271/bbb.120842",
+   "pmid": "23470767",
+   "pmcid": null,
+   "autor": "Takahashi",
+   "anio": 2013,
+   "alimento": "vainilla",
+   "muestra": "Vainas curadas de Madagascar (V. planifolia): vainas enteras rojas (estándar) frente a cortes (calidad inferior)",
+   "metodos": [
+    "GC-MS",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Compararon dos calidades de vainilla de Madagascar. Las vainas buenas tienen más vainillina y β-damascenona; las de menor calidad, más guayacol y ácido 3-fenilpropanoico. Un reconstituido imitó las vainas buenas, y añadirle guayacol cambió la nota fenólica. Proponen la razón vainillina/guayacol como índice de calidad."
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "pmid": "39141612",
+   "pmcid": null,
+   "autor": "Tran",
+   "anio": 2024,
+   "alimento": "vainilla",
+   "muestra": "Vainas curadas de las tres principales especies de Vanilla, de varios orígenes (incluye Uganda)",
+   "metodos": [
+    "AEDA",
+    "SIDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cribaron odorantes con GC-O y AEDA en vainillas de distintas especies y orígenes, cuantificaron con SIDA y calcularon factores DoT. La vainillina domina en general, pero en algunas especies los compuestos de anisilo la superan. El sotolón marca diferencias de origen (Uganda). Primer hallazgo de 2-metil-3-(metilditio)furano en vainilla."
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "pmid": "38304045",
+   "pmcid": "PMC10831152",
+   "autor": "Li",
+   "anio": 2024,
+   "alimento": "coco",
+   "muestra": "Agua de coco aromático fresca: Thailand Aromatic Green Dwarf (Tailandia) y cv. Wenye No. 4 (Hainan), 7-8 meses",
+   "metodos": [
+    "AEDA",
+    "OAV",
+    "GC-MS"
+   ],
+   "texto_completo": true,
+   "licencia": "acceso abierto en PMC; licencia sin datos",
+   "nota": "Usaron SPME y GC×GC-O-TOF-MS con AEDA y OAV relativo (semicuantitativo) en dos variedades de coco aromático. La 2-acetil-1-pirrolina tuvo el FD más alto en la variedad tailandesa y se asocia a notas de palomitas y crema. Cinco compuestos clave en la tailandesa, tres en Wenye. Datos de FD de la variedad tailandesa."
+  },
+  {
+   "doi": "10.1016/j.foodchem.2025.145123",
+   "pmid": "40554280",
+   "pmcid": null,
+   "autor": "Xing",
+   "anio": 2025,
+   "alimento": "coco",
+   "muestra": "Leche de coco cruda; comparada con leche esterilizada (incluye UHT)",
+   "metodos": [
+    "OAV",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "Elsevier, todos los derechos reservados",
+   "nota": "Describieron el aroma de la leche de coco cruda, dominado por ésteres y lactonas, y el efecto de la esterilización. Por OAV, los compuestos clave de la leche cruda son dos aldehídos y dos ésteres etílicos. El UHT moderado refuerza notas frutales y de coco; el excesivo las daña."
+  },
+  {
+   "doi": "10.1016/j.foodres.2024.114937",
+   "pmid": "39232549",
+   "pmcid": null,
+   "autor": "Deng",
+   "anio": 2024,
+   "alimento": "coco",
+   "muestra": "Leche de coco cruda frente a pasteurizada, esterilizada a 121 °C y UHT",
+   "metodos": [
+    "GC-MS",
+    "GC-IMS"
+   ],
+   "texto_completo": false,
+   "licencia": "Elsevier, todos los derechos reservados",
+   "nota": "Midieron volátiles de leche de coco con GC-IMS y SPME-GC-MS, sin olfatometría, tras tres tratamientos térmicos. El UHT conserva un perfil cercano al crudo. Los tratamientos largos bajan las notas de coco, cremosa y floral, ligadas a ciertos compuestos, y suben notas a cocido."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "(E,E,Z)-2,4,6-nonatrienal",
+   "descriptor": "copos de avena",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "linalool",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "geraniol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "vanillin",
+   "descriptor": "vainilla",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf052495n",
+   "alimento": "te_negro",
+   "nombre": "2-phenylethanol",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "dimethyl sulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3 (OAV > 1000)"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "2-methylpropanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3 (OAV > 100)"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "3-methylbutanal",
+   "descriptor": "malteado",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, secciones 2.7 y 3.3 (OAV > 100)"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3 (OAV > 100)"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "linalool",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": 257,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "geraniol",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "benzeneacetaldehyde",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "β-damascenone",
+   "descriptor": "dulce",
+   "fd": null,
+   "oav": 61,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "methional",
+   "descriptor": "dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "coumarin",
+   "descriptor": "dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "hexanal",
+   "descriptor": "verde, herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "(E,Z)-2,6-nonadienal",
+   "descriptor": "pepino",
+   "fd": null,
+   "oav": 49,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "(E)-2-nonenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": 2,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.3390/foods11050628",
+   "alimento": "te_negro",
+   "nombre": "(Z)-methyl epijasmonate",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": 1,
+   "nivel": "B",
+   "ubicacion": "texto, sección 3.3"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "phenylacetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "2,4-heptadienal",
+   "descriptor": "verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "geraniol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "linalool",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "β-damascenone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "2-methylbutyraldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "dimethyl sulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.3c02813",
+   "alimento": "te_negro",
+   "nombre": "isovaleraldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV > 100)"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "vanillin",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "anisaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "anisyl alcohol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "anisyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "3-methylnonane-2,4-dione",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "β-damascenone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120840",
+   "alimento": "vainilla",
+   "nombre": "phenylacetic acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120842",
+   "alimento": "vainilla",
+   "nombre": "vanillin",
+   "descriptor": "dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120842",
+   "alimento": "vainilla",
+   "nombre": "guaiacol",
+   "descriptor": "fenólico",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120842",
+   "alimento": "vainilla",
+   "nombre": "β-damascenone",
+   "descriptor": "fruta seca",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.120842",
+   "alimento": "vainilla",
+   "nombre": "3-phenylpropanoic acid",
+   "descriptor": "metálico",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "alimento": "vainilla",
+   "nombre": "vanillin",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "alimento": "vainilla",
+   "nombre": "4-methoxybenzyl alcohol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "alimento": "vainilla",
+   "nombre": "4-methoxybenzaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "alimento": "vainilla",
+   "nombre": "3-hydroxy-4,5-dimethyl-2(5H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c04775",
+   "alimento": "vainilla",
+   "nombre": "2-methyl-3-(methyldithio)furan",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "alimento": "coco",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "palomitas de maíz, tostado",
+   "fd": 512,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, secciones 3.3-3.5"
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "alimento": "coco",
+   "nombre": "2,3-butanedione",
+   "descriptor": "mantequilla, cremoso",
+   "fd": 8,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, secciones 3.3-3.5"
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "alimento": "coco",
+   "nombre": "ethyl acetate",
+   "descriptor": "etéreo, frutal",
+   "fd": 8,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, secciones 3.3-3.5"
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "alimento": "coco",
+   "nombre": "acetoin",
+   "descriptor": "mantequilla, cremoso, lácteo",
+   "fd": 8,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, secciones 3.3-3.5"
+  },
+  {
+   "doi": "10.1016/j.fochx.2024.101141",
+   "alimento": "coco",
+   "nombre": "1-nonanal",
+   "descriptor": "ceroso, aldehídico",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, secciones 3.3-3.5"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2025.145123",
+   "alimento": "coco",
+   "nombre": "nonanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": 108.67,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2025.145123",
+   "alimento": "coco",
+   "nombre": "ethyl decanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": 90.69,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2025.145123",
+   "alimento": "coco",
+   "nombre": "octanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": 69.0,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2025.145123",
+   "alimento": "coco",
+   "nombre": "ethyl octanoate",
+   "descriptor": "",
+   "fd": null,
+   "oav": 67.36,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodres.2024.114937",
+   "alimento": "coco",
+   "nombre": "2-heptanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodres.2024.114937",
+   "alimento": "coco",
+   "nombre": "nonanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodres.2024.114937",
+   "alimento": "coco",
+   "nombre": "4-methylvaleric acid",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodres.2024.114937",
+   "alimento": "coco",
+   "nombre": "2-tridecanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  }
+ ]
+}

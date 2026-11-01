@@ -1,0 +1,936 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1021/jf100623a",
+   "pmid": "20491509",
+   "pmcid": null,
+   "autor": "Tamura",
+   "anio": 2010,
+   "alimento": "ajonjoli_tostado",
+   "muestra": "Semillas de ajonjolí blanco tostadas en sartén, recién molidas (destilado de aroma)",
+   "metodos": [
+    "AEDA",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cribado por AEDA de un destilado de ajonjolí blanco recién tostado: 32 zonas olfativas, 29 identificadas. Dominan tioles de tostado y el furaneol. Describe por primera vez varios 1-alqueno-1-tioles, inestables, que se proponen como responsables del aroma fugaz del ajonjolí recién molido."
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "pmid": "21815692",
+   "pmcid": null,
+   "autor": "Tamura",
+   "anio": 2011,
+   "alimento": "ajonjoli_tostado",
+   "muestra": "Semillas de ajonjolí blanco tostadas en sartén",
+   "metodos": [
+    "SIDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantificó por dilución isotópica once tioles olfativamente activos del ajonjolí tostado y calculó sus OAV con umbrales en aceite. Los 3-metil- y 2-metil-1-buteno-1-tioles obtienen los OAV más altos; los autores los proponen como base del aroma sulfuroso, poco estable, del grano recién tostado."
+  },
+  {
+   "doi": "10.1016/j.foodres.2021.110794",
+   "pmid": "34865809",
+   "pmcid": null,
+   "autor": "Yin",
+   "anio": 2021,
+   "alimento": "ajonjoli_tostado",
+   "muestra": "Aceite de ajonjolí tostado comercial (comparado con aceite prensado en frío)",
+   "metodos": [
+    "AEDA",
+    "OAV",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Comparó aceite de ajonjolí tostado y prensado en frío con GC-O y AEDA, y cuantificó con estándar externo los odorantes de FD ≥ 8. El aceite tostado tuvo 23 compuestos con OAV ≥ 1; destacan fenoles ahumados y pirazinas. Solo se extraen los del aceite tostado."
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "pmid": "41517212",
+   "pmcid": "PMC12785710",
+   "autor": "Zheng",
+   "anio": 2026,
+   "alimento": "ajonjoli_tostado",
+   "muestra": "Aceite extraído con hexano de ajonjolí blanco de supermercado (Zhengzhou, China), tostado en horno a 160–210 °C durante 10–30 min (18 combinaciones)",
+   "metodos": [
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "CC BY 4.0",
+   "nota": "Evaluó 18 combinaciones de temperatura y tiempo de tostado. Con SPME/GC-MS y umbrales bibliográficos halló 30 compuestos con OAV semicuantitativo ≥ 1. El tiempo pesó más que la temperatura: tostados largos suman fenoles y heterociclos; el guayacol tuvo los OAV más altos. El texto recuperado no incluye las tablas."
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "pmid": "18939847",
+   "pmcid": null,
+   "autor": "Chetschik",
+   "anio": 2008,
+   "alimento": "mani_tostado",
+   "muestra": "Maní orgánico crudo de África Occidental (Camerún) y harina molida del mismo tostada en sartén",
+   "metodos": [
+    "AEDA",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA comparativa de maní crudo y de su harina tostada en sartén. En el tostado aparecieron 52 zonas olfativas (FD 8–2048). La 2-acetil-1-pirrolina y el furaneol fueron los que más aportaron y los que más subieron con el tostado; se describen por primera vez en maní tostado unas veinte moléculas."
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "pmid": "20866052",
+   "pmcid": null,
+   "autor": "Chetschik",
+   "anio": 2010,
+   "alimento": "mani_tostado",
+   "muestra": "Harina de maní tostada en sartén (misma serie que el estudio de 2008) y productos comerciales de maní",
+   "metodos": [
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantificó 38 odorantes de la harina de maní tostada por SIDA y calculó OAV con umbrales en aceite. Un recombinado confirmó el peso del metanotiol y de productos de oxidación lipídica. Añadir ocho pirazinas no detectadas por olfatometría no cambió el aroma del modelo."
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "pmid": "23832337",
+   "pmcid": null,
+   "autor": "Kaneko",
+   "anio": 2013,
+   "alimento": "mani_tostado",
+   "muestra": "Maní tostado con cáscara, recién tostado y almacenado (Japón)",
+   "metodos": [
+    "AEDA",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA de maní tostado con cáscara, fresco y almacenado: 43 odorantes clave. Cuantificó los de FD alto y comparó con perfiles sensoriales. El 2-metil-3-furanotiol y dos acil-pirrolinas marcan la frescura y caen con el almacenamiento; el carácter quemado-especiado aumenta."
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "pmid": "20426421",
+   "pmcid": null,
+   "autor": "Burdack-Freitag",
+   "anio": 2010,
+   "alimento": "avellana_tostada",
+   "muestra": "Avellanas italianas 'Tonda Romana', crudas y tostadas",
+   "metodos": [
+    "AEDA",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA comparativa de avellana cruda (37 odorantes) y tostada (46). Con el tostado dominan pirrolinas, tioles de tostado y (Z)-2-alquenales. Identifica por primera vez en alimentos la 3,5,5-trimetil-2(5H)-furanona, de olor a condimento. Solo se extraen los odorantes del material tostado."
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "pmid": "22515832",
+   "pmcid": null,
+   "autor": "Burdack-Freitag",
+   "anio": 2012,
+   "alimento": "avellana_tostada",
+   "muestra": "Pasta de avellana italiana 'Tonda Romana' tostada (y avellana cruda)",
+   "metodos": [
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantificó por SIDA los 25 odorantes más activos de la pasta de avellana tostada y calculó OAV en aceite. Un modelo con los 19 compuestos de OAV > 1 reprodujo muy bien el aroma a palomitas, café y dulce-ahumado de la pasta. También desarrolló SIDA nuevos, incluida la filbertona."
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "pmid": "23663154",
+   "pmcid": null,
+   "autor": "Kiefl",
+   "anio": 2013,
+   "alimento": "avellana_tostada",
+   "muestra": "Tres cultivares de avellana tostados con tiempos, temperaturas y técnicas definidos",
+   "metodos": [
+    "SIDA",
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Midió por SIDA con GC×GC-TOF-MS los odorantes clave de tres cultivares tostados en distintas condiciones y los cruzó con pruebas sensoriales. Propone seis marcadores. Un buen tostado exige cetonas tipo filbertona por encima de 450 µg/kg y pirrolinas más pirazinas por debajo de 400 µg/kg para no sobretostar."
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c05302",
+   "pmid": "39258874",
+   "pmcid": null,
+   "autor": "Booth",
+   "anio": 2024,
+   "alimento": "avellana_tostada",
+   "muestra": "Avellana híbrida americano-europea tostada (Medio Oeste de EE. UU.), comparada con 12 híbridas y 2 europeas",
+   "metodos": [
+    "AEDA",
+    "GC-MS",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "GC-O con dilución en avellana híbrida tostada: 33 odorantes con FD ≥ 16. Un recombinado de 27 compuestos sobre su umbral no difirió del original en seis atributos. Perfiló los 33 odorantes en 14 variedades. El resumen solo nombra dos odorantes nuevos para avellana."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-furfurylthiol",
+   "descriptor": "a café",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "a caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-thenylthiol",
+   "descriptor": "a café",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methoxy-4-vinylphenol",
+   "descriptor": "a clavo de olor",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methyl-1-propene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "(Z)-3-methyl-1-butene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "(E)-3-methyl-1-butene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "(Z)-2-methyl-1-butene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "(E)-2-methyl-1-butene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100623a",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "4-mercapto-3-hexanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "3-methyl-1-butene-1-thiols ((Z) and (E))",
+   "descriptor": "",
+   "fd": null,
+   "oav": 2400,
+   "nivel": "B",
+   "ubicacion": "resumen (OAV aproximado dado para el par de isómeros)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methyl-1-butene-1-thiols ((Z) and (E))",
+   "descriptor": "",
+   "fd": null,
+   "oav": 960,
+   "nivel": "B",
+   "ubicacion": "resumen (OAV aproximado dado para el par de isómeros)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methyl-1-propene-1-thiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methyl-3-furanthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "3-mercapto-2-pentanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-mercapto-3-pentanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "4-mercapto-3-hexanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "3-mercapto-3-methylbutyl formate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf202183y",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methyl-3-thiophenethiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV individual no dado en el resumen)"
+  },
+  {
+   "doi": "10.1016/j.foodres.2021.110794",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methoxy-4-vinylphenol",
+   "descriptor": "ahumado",
+   "fd": null,
+   "oav": 385,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodres.2021.110794",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methoxyphenol",
+   "descriptor": "ahumado",
+   "fd": null,
+   "oav": 114,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methoxyphenol",
+   "descriptor": "dulce y ahumado",
+   "fd": null,
+   "oav": 2489,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 (rango 701–2489 entre muestras; se anota el máximo)"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2,4-dimethylthiazole",
+   "descriptor": "tostado, a papa asada",
+   "fd": null,
+   "oav": 505,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 (rango 91–505; se anota el máximo)"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-ethyl-6-methylpyrazine",
+   "descriptor": "tostado, a papa asada",
+   "fd": null,
+   "oav": 367,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 (rango 128–367; se anota el máximo)"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2-methoxy-4-vinylphenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": 22,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 (valor de la muestra 170 °C/20 min)"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "2,6-diethylpyrazine",
+   "descriptor": "a nuez",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 y conclusiones (muestras de 10 min)"
+  },
+  {
+   "doi": "10.3390/foods15010146",
+   "alimento": "ajonjoli_tostado",
+   "nombre": "3-hexanol",
+   "descriptor": "verde",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "texto, sección 3.3 y conclusiones (muestras de 10 min)"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "1-octen-3-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "2-isopropyl-3-methoxypyrazine",
+   "descriptor": "terroso, a arveja",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "trans-4,5-epoxy-(E)-2-decenal",
+   "descriptor": "metálico",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "2-propionyl-1-pyrroline",
+   "descriptor": "a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf802102u",
+   "alimento": "mani_tostado",
+   "nombre": "2-acetyltetrahydropyridine",
+   "descriptor": "a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "methanethiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "2,3-pentanedione",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "3-(methylthio)propanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "2-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "3-methylbutanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf1026636",
+   "alimento": "mani_tostado",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "intenso, a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (entre los OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "2-isobutyl-3-methoxypyrazine",
+   "descriptor": "terroso",
+   "fd": 4096,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "a caramelo",
+   "fd": 4096,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "3,5-dimethyl-2-ethylpyrazine",
+   "descriptor": "a nuez",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "2-methyl-3-furanthiol",
+   "descriptor": "tostado, cárnico",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "2-propionyl-1-pyrroline",
+   "descriptor": "a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "2-methoxy-4-vinylphenol",
+   "descriptor": "especiado, quemado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "3,5-dimethyl-2-vinylpyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1271/bbb.130112",
+   "alimento": "mani_tostado",
+   "nombre": "methyl 2-methyl-3-furyl disulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "2-propionyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "2-furfurylthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "2-thenylthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "(Z)-2-octenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "(Z)-2-nonenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "(Z)-2-decenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más altos en la avellana tostada)"
+  },
+  {
+   "doi": "10.1021/jf100692k",
+   "alimento": "avellana_tostada",
+   "nombre": "3,5,5-trimethyl-2(5H)-furanone",
+   "descriptor": "intenso, a condimento",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "3-methylbutanal",
+   "descriptor": "a malta",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "2,3-pentanedione",
+   "descriptor": "a mantequilla",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "a palomitas de maíz",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "(Z)-2-nonenal",
+   "descriptor": "graso",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "2-furfurylthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "2,3-butanedione",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf300908d",
+   "alimento": "avellana_tostada",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen (OAV más altos; recombinado validado)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "2-acetyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "2-propionyl-1-pyrroline",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "5-methyl-(E)-2-hepten-4-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "2,3-diethyl-5-methylpyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "3,5-dimethyl-2-ethylpyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "2-furfurylthiol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)"
+  },
+  {
+   "doi": "10.1021/jf4008086",
+   "alimento": "avellana_tostada",
+   "nombre": "3-methyl-4-heptanone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (umbral de concentración para aroma óptimo; OAV no dado)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c05302",
+   "alimento": "avellana_tostada",
+   "nombre": "2-acetylpyrazine",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 16; no consta en el resumen si entra en el recombinado)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.4c05302",
+   "alimento": "avellana_tostada",
+   "nombre": "2-aminoacetophenone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 16; no consta en el resumen si entra en el recombinado)"
+  }
+ ]
+}

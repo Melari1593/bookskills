@@ -1,0 +1,903 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "pmid": "42255275",
+   "pmcid": "PMC13233587",
+   "autor": "Zeng",
+   "anio": 2026,
+   "alimento": "banano",
+   "muestra": "Banano 'Fenza 1' (Pisang Awak, ABBB) y 'Baxi' (AAA), Danzhou, Hainan (China); madurado con etefón, pulpa liofilizada; manzana 'Ruixue' como referencia",
+   "metodos": [
+    "GC-MS",
+    "GC-O",
+    "OAV",
+    "adicion"
+   ],
+   "texto_completo": true,
+   "licencia": "sin datos (© autores, en PMC)",
+   "nota": "Comparó un banano con nota de manzana, un Cavendish y una manzana con HS-SPME, GC-O y OAV semicuantitativos. Hexanal, (E)-2-hexenal y acetato de hexilo explican la nota de manzana; añadidos a puré de banano la intensifican de forma aditiva. Los ésteres isoamílicos y butíricos marcan la nota típica. El OAV del acetato de hexilo difiere entre resumen y texto."
+  },
+  {
+   "doi": "10.1021/jf010471k",
+   "pmid": "11600027",
+   "pmcid": null,
+   "autor": "Jordán",
+   "anio": 2001,
+   "alimento": "banano",
+   "muestra": "Pasta de banano fresco y esencia acuosa comercial de banano (EE. UU.)",
+   "metodos": [
+    "GC-MS",
+    "GC-O"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Comparó por GC-MS y GC-O una esencia comercial de banano con pulpa fresca. Unos 42 compuestos aportan al perfil. Solo se extraen los tres que el resumen atribuye exclusivamente a la pulpa fresca y que el panel detectó por olfatometría; los de la esencia no corresponden a la forma culinaria."
+  },
+  {
+   "doi": "10.1021/acs.jafc.1c06434",
+   "pmid": "34898197",
+   "pmcid": null,
+   "autor": "Xiao",
+   "anio": 2021,
+   "alimento": "banano",
+   "muestra": "Banano 'Hongmeiren' (cáscara roja), China",
+   "metodos": [
+    "SAFE",
+    "HS-SPME",
+    "GC-O",
+    "GC-MS",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Con SAFE y SPME más GC-O halló 62 compuestos activos (OAV ≥ 1 o frecuencia modificada ≥ 30 %) y probó que ocho odorantes de tipo dulce elevan el dulzor percibido en sacarosa a 30 g/L. El resumen no nombra los activos clave; no se extraen odorantes. Pendiente: texto completo."
+  },
+  {
+   "doi": "10.1016/j.foodchem.2013.03.064",
+   "pmid": "23790849",
+   "pmcid": null,
+   "autor": "Pino",
+   "anio": 2013,
+   "alimento": "banano",
+   "muestra": "Banano 'Giant Cavendish' maduro",
+   "metodos": [
+    "SPME",
+    "SDE",
+    "LLE",
+    "GC-MS",
+    "AEDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Combinó tres extracciones con AEDA y OAV; identificó 146 volátiles y consideró 31 activos en olor, 11 de ellos nuevos como odorantes del banano. El resumen no nombra los compuestos; no se extraen odorantes. Pendiente: texto completo."
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "pmid": "11368609",
+   "pmcid": null,
+   "autor": "Buettner",
+   "anio": 2001,
+   "alimento": "naranja",
+   "muestra": "Jugo exprimido a mano de naranjas Valencia late y Navel",
+   "metodos": [
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Cuantificó 25 odorantes por SIDA y calculó OAV en agua. Tres ésteres afrutados, la wine lactone, el (Z)-3-hexenal y el decanal fueron los más potentes en ambas variedades. Navel tiene menos nota frutal por OAV menores de ésteres. Los modelos de recombinación reprodujeron ambos jugos."
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "pmid": "29889522",
+   "pmcid": null,
+   "autor": "Sellami",
+   "anio": 2018,
+   "alimento": "naranja",
+   "muestra": "Jugo NFC (no de concentrado) de naranja Hamlin y Valencia, fresco y almacenado a 0 °C hasta 10 meses",
+   "metodos": [
+    "SAFE",
+    "AEDA",
+    "SIDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA del jugo NFC Hamlin halló 51 odorantes (FD 8 a 8192); vainillina, wine lactone y (R)-linalool tuvieron el FD más alto. En frío se pierden pronto 1-penten-3-ona y acetaldehído y bajan los aldehídos, lo que, según SIDA y OAV, explica la pérdida de notas cítricas, punzantes y verdes."
+  },
+  {
+   "doi": "10.1016/j.foodchem.2026.150703",
+   "pmid": "42594653",
+   "pmcid": null,
+   "autor": "Cheng",
+   "anio": 2026,
+   "alimento": "naranja",
+   "muestra": "Jugo de tres mutantes de yema de naranja Longleaf (Xiaxiangmicheng, Changyexiangcheng, Zhongganmicheng), China",
+   "metodos": [
+    "GC-MS",
+    "MDGC-MS/O",
+    "AEDA",
+    "OAV"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Identificó 103 volátiles y 34 odorantes en tres variedades. Limoneno, linalool, geraniol y (E)-3-hexen-1-ol tuvieron FD ≥ 64 (el resumen no da el valor exacto). Más ésteres dieron más nota frutal; una relación éster/aldehído baja no ocultó olores sulfurados."
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "pmid": "28573856",
+   "pmcid": null,
+   "autor": "Kreissl",
+   "anio": 2017,
+   "alimento": "tomate",
+   "muestra": "Tomates italianos madurados en planta, frescos",
+   "metodos": [
+    "SAFE",
+    "AEDA",
+    "SIDA",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "AEDA reveló 44 odorantes (42 identificados), 13 nuevos en tomate, entre ellos un probable 2-metil-2-etoxitetrahidropirano. Con 23 compuestos cuantificados por SIDA armó un recombinado parecido al original. El resumen llama OAV al valor 2048 de los cuatro primeros; por ser potencia de 2 se registra como FD."
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "pmid": "18459793",
+   "pmcid": null,
+   "autor": "Mayer",
+   "anio": 2008,
+   "alimento": "tomate",
+   "muestra": "Cinco cultivares de tomate fresco de invernadero (BR-139, FA-624, FA-612, R-144, R-175)",
+   "metodos": [
+    "AEDA",
+    "GC-MS",
+    "OAV",
+    "recombinacion"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Seleccionó 19 odorantes por AEDA, los cuantificó en cinco cultivares y validó modelos de aroma. Los cultivares preferidos tienen más 1-penten-3-ona, 2,4-decadienales y furaneol; los menos preferidos, más metional, fenilacetaldehído, 2-feniletanol e isobutiltiazol. Confirmó con precursores marcados el origen de epoxidecenales y metional."
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "pmid": "33362814",
+   "pmcid": "PMC7758415",
+   "autor": "Cheng",
+   "anio": 2020,
+   "alimento": "tomate",
+   "muestra": "71 accesiones de tomate fresco maduro (cherry y de fruto grande, rosados y rojos), Shaanxi central (China)",
+   "metodos": [
+    "HS-SPME",
+    "GC-O-MS",
+    "OAV"
+   ],
+   "texto_completo": true,
+   "licencia": "sin datos (© autores, en PMC)",
+   "nota": "Cuantificó 60 volátiles con curvas de calibración en 71 accesiones y calculó OAV con umbrales en agua; 22 superaron 1. Los mayores OAV medios fueron de 2,4-decadienal, 2-hexenal, β-damascenona y 6-metil-5-hepten-2-ona. Los OAV registrados usan la concentración media de todas las accesiones."
+  },
+  {
+   "doi": "10.1016/j.foodchem.2014.05.147",
+   "pmid": "25038709",
+   "pmcid": null,
+   "autor": "Selli",
+   "anio": 2014,
+   "alimento": "tomate",
+   "muestra": "Tomate cherry fresco (Lycopersicum esculentum)",
+   "metodos": [
+    "LLE",
+    "GC-MS-O",
+    "AEDA"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Con un extracto representativo identificó 49 volátiles, sobre todo aldehídos. El AEDA detectó 21 compuestos activos, 18 identificados; los de mayor FD fueron (Z)-3-hexenal y (E)-2-hexenal."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "hexanal",
+   "descriptor": "fresco, verde, herbáceo",
+   "fd": null,
+   "oav": 1191,
+   "nivel": "C",
+   "ubicacion": "resumen; sección 3.3 y 3.4 (OAV en 'Fenza 1')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "trans-2-hexenal",
+   "descriptor": "verde, herbáceo",
+   "fd": null,
+   "oav": 502,
+   "nivel": "C",
+   "ubicacion": "resumen; sección 3.3 y 3.4 (OAV en 'Fenza 1')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "hexyl acetate",
+   "descriptor": "afrutado, manzana, dulce",
+   "fd": null,
+   "oav": 58,
+   "nivel": "C",
+   "ubicacion": "resumen (OAV); sección 3.4 (GC-O)"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "nonanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": 25,
+   "nivel": "C",
+   "ubicacion": "sección 3.3 (OAV en 'Fenza 1')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "isoamyl acetate",
+   "descriptor": "banano, dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "sección 3.4 (GC-O en 'Baxi' y 'Fenza 1')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "2-pentanol, acetate",
+   "descriptor": "afrutado, banano",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "sección 3.4 (GC-O en 'Fenza 1')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "butyl butyrate",
+   "descriptor": "afrutado, banano",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "sección 3.4 (GC-O en 'Baxi')"
+  },
+  {
+   "doi": "10.1016/j.fochx.2026.104047",
+   "alimento": "banano",
+   "nombre": "isoamyl butyrate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "sección 3.4 (GC-O en 'Baxi')"
+  },
+  {
+   "doi": "10.1021/jf010471k",
+   "alimento": "banano",
+   "nombre": "E-2-hexenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf010471k",
+   "alimento": "banano",
+   "nombre": "limonene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf010471k",
+   "alimento": "banano",
+   "nombre": "eugenol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "ethyl 2-methylpropanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "ethyl butanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "(S)-ethyl 2-methylbutanoate",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone (wine lactone)",
+   "descriptor": "afrutado",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "(Z)-hex-3-enal",
+   "descriptor": "herbáceo",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf001363l",
+   "alimento": "naranja",
+   "nombre": "decanal",
+   "descriptor": "cítrico",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "vanillin",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más alto)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "wine lactone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más alto)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "(R)-linalool",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD más alto)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "1-penten-3-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "acetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "(Z)-3-hexenal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "hexanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "octanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "nonanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "decanal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.8b02257",
+   "alimento": "naranja",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "B",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2026.150703",
+   "alimento": "naranja",
+   "nombre": "d-limonene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 64)"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2026.150703",
+   "alimento": "naranja",
+   "nombre": "linalool",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 64)"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2026.150703",
+   "alimento": "naranja",
+   "nombre": "geraniol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 64)"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2026.150703",
+   "alimento": "naranja",
+   "nombre": "(E)-3-hexen-1-ol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen (FD ≥ 64)"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "(Z)-3-hexenal",
+   "descriptor": "verde, herbáceo",
+   "fd": 2048,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "trans-4,5-epoxy-(E)-2-decenal",
+   "descriptor": "metálico",
+   "fd": 2048,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "3-(methylthio)propanal",
+   "descriptor": "papa",
+   "fd": 2048,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone",
+   "descriptor": "caramelo",
+   "fd": 2048,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "wine lactone ((3S,3aS,7aR)-3a,4,5,7a-tetrahydro-3,6-dimethylbenzofuran-2(3H)-one)",
+   "descriptor": "coco, eneldo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/acs.jafc.7b01108",
+   "alimento": "tomate",
+   "nombre": "2-methyl-2-ethoxytetrahydropyran (tentative)",
+   "descriptor": "afrutado, almendra",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "1-penten-3-one",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "(E,E)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "(E,Z)-2,4-decadienal",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "4-hydroxy-2,5-dimethyl-3(2H)-furanone (Furaneol)",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "phenylacetaldehyde",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "2-phenylethanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf0732915",
+   "alimento": "tomate",
+   "nombre": "2-isobutylthiazole",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "A",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2,4-decadienal",
+   "descriptor": "graso, fritura",
+   "fd": null,
+   "oav": 40,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-hexenal",
+   "descriptor": "manzana verde, amargo",
+   "fd": null,
+   "oav": 36,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-2-buten-1-one",
+   "descriptor": "manzana horneada, uva",
+   "fd": null,
+   "oav": 33,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "6-methyl-5-hepten-2-one",
+   "descriptor": "afrutado, floral",
+   "fd": null,
+   "oav": 28,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "hexanal",
+   "descriptor": "verde, herbáceo",
+   "fd": null,
+   "oav": 26,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-isobutylthiazole",
+   "descriptor": "rama de tomate, verde",
+   "fd": null,
+   "oav": 23,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2,6,6-trimethyl-1-cyclohexene-1-carboxaldehyde",
+   "descriptor": "menta, afrutado",
+   "fd": null,
+   "oav": 22,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "6,10-dimethyl-5,9-undecadien-2-one",
+   "descriptor": "dulce, floral, a éster",
+   "fd": null,
+   "oav": 18,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "4-allyl-2-methoxyphenol",
+   "descriptor": "lila, canela, melón cantalupo",
+   "fd": null,
+   "oav": 17,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-octenal",
+   "descriptor": "hongo, terroso",
+   "fd": null,
+   "oav": 15,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-heptenal",
+   "descriptor": "verde",
+   "fd": null,
+   "oav": 15,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "3-hexen-1-ol",
+   "descriptor": "lechuga",
+   "fd": null,
+   "oav": 14,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "methyl salicylate",
+   "descriptor": "gaulteria, herbal",
+   "fd": null,
+   "oav": 12,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "3-(3-pentyl-2-oxiranyl)acrylaldehyde",
+   "descriptor": "metálico",
+   "fd": null,
+   "oav": 9,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "1-hexanol",
+   "descriptor": "resina, floral, verde",
+   "fd": null,
+   "oav": 6,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "decanal",
+   "descriptor": "graso, cítrico, floral",
+   "fd": null,
+   "oav": 6,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "3,7-dimethyl-2,6-octadienal (isómero V22)",
+   "descriptor": "rosa, cítrico",
+   "fd": null,
+   "oav": 6,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "ethyl octanoate",
+   "descriptor": "pera, lichi, dulce",
+   "fd": null,
+   "oav": 6,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "1-octen-3-one",
+   "descriptor": "hongo",
+   "fd": null,
+   "oav": 4,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2,4-nonadienal",
+   "descriptor": "graso, verde",
+   "fd": null,
+   "oav": 3,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-nonenal",
+   "descriptor": "graso, verde",
+   "fd": null,
+   "oav": 1,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.3389/fpls.2020.586834",
+   "alimento": "tomate",
+   "nombre": "2-hydroxy-ethyl benzoate",
+   "descriptor": "hierbas, dulce, especiado",
+   "fd": null,
+   "oav": 1,
+   "nivel": "B",
+   "ubicacion": "Tabla 2"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2014.05.147",
+   "alimento": "tomate",
+   "nombre": "(Z)-3-hexenal",
+   "descriptor": "verde, herbáceo intenso",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.foodchem.2014.05.147",
+   "alimento": "tomate",
+   "nombre": "(E)-2-hexenal",
+   "descriptor": "verde, hoja",
+   "fd": 256,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  }
+ ]
+}

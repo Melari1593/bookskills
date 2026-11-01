@@ -25,6 +25,23 @@ No es para seguridad alimentaria ni toxicología de aromas; si aparece un riesgo
 
 El perfil cambia mucho con el estado del alimento. Fija para cada uno: **especie o variedad, procesamiento (crudo, tostado y grado de tueste, fermentado, cocido, aceite, pasta) y matriz final (grano, bebida, aceite)**. Si la persona no lo dice, asume la forma culinaria más común y decláralo al inicio (p. ej. "café arábica tostado medio, en bebida"). Café verde y café tostado son alimentos distintos para esta skill.
 
+## Paso 1b. Consultar primero la base `odorantes-db`
+
+Si el repositorio bookskills está disponible, consulta la base antes de buscar en PubMed:
+
+```bash
+cd bookskills/odorantes-db
+python3 scripts/build_db.py                  # solo si datos/odorantes.sqlite no existe
+python3 scripts/consulta.py <A> <B>          # odorantes compartidos, con nivel y confianza
+python3 scripts/consulta.py <A>              # perfil de A y alimentos con más puentes
+python3 scripts/buscar.py "<términos>"       # búsqueda de texto en las notas de cada estudio
+```
+
+- Los ids de alimento están en `datos/alimentos.json` (18 alimentos en la versión inicial).
+- Si los dos alimentos están en la base, usa su tabla como punto de partida y cita sus DOI. Complementa con PubMed solo si la base tiene menos de 2 estudios del alimento o si la pregunta trata otra forma del alimento (p. ej. café verde).
+- Si un alimento no está en la base, sigue con el Paso 2. Al terminar, ofrece añadirlo con `docs/instrucciones_extraccion.md`.
+- La base solo guarda datos extraídos y notas propias; nunca texto de los artículos.
+
 ## Paso 2. Buscar en PubMed
 
 Usa las herramientas de PubMed (cárgalas con ToolSearch si hace falta). Lanza en paralelo, por alimento:
