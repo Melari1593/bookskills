@@ -20,7 +20,7 @@ Si la pregunta no está en los marcos centrales, lee el capítulo antes de respo
 
 ## Regla de seguridad (aplícala siempre)
 
-Antes de dar una receta para uso interno o en niños, revisa la tabla **Seguridad clínica** de abajo. Si una alerta aplica, dila junto a la receta. El libro es de herbolaria casera. No reemplaza la valoración médica. Si hay fiebre alta, dolor intenso, signos de alarma, embarazo o polifarmacia, recomienda consultar.
+Antes de dar una receta para uso interno, tópico en piel lesionada o en niños, revisa la tabla **Seguridad clínica** de abajo. Si una alerta aplica, dila junto a la receta. El libro es de herbolaria casera. No reemplaza la valoración médica. Si hay fiebre alta, dolor intenso, signos de alarma, embarazo o polifarmacia, recomienda consultar.
 
 Para verificar una afirmación de salud con evidencia, usa la skill `biotech-research`.
 
@@ -106,8 +106,8 @@ La vida útil es una propiedad del almacenamiento. El límite de uso es una prop
 
 | Hierba o receta | Límite del libro |
 |---|---|
-| Corteza de sauce blanco y de abedul | Máximo 1–2 semanas (efecto anticoagulante como la aspirina) |
-| Gayuba (uva ursi) | Máximo 1 semana. No en menores de 12 años. |
+| Corteza de sauce blanco y de abedul | Máximo 1–2 semanas (efecto anticoagulante como la aspirina). La EMA no lo acepta en menores de 18 años. |
+| Gayuba (uva ursi) | Máximo 1 semana. No en menores de 12 años. (La EMA es más estricta: solo mujeres adultas.) |
 | Hipérico (tintura) | Ciclos de 2–3 semanas de uso y 1 semana de descanso |
 | Valeriana | Ciclos. El efecto tarda semanas. |
 | Matricaria (feverfew) | **Mínimo** 2–3 meses de uso regular para prevenir la migraña |
@@ -117,7 +117,7 @@ La vida útil es una propiedad del almacenamiento. El límite de uso es una prop
 
 - **Minimalismo dirigido:** para una dolencia concreta, usa 2–4 hierbas elegidas por su mecanismo. No agregues hierbas redundantes.
 - **Hierba prioritaria + apoyo:** si la fórmula marca una hierba como la más importante (la gayuba en el té urinario), conserva esa hierba si simplificas la receta.
-- **Mecanismos complementarios:** el ungüento de cuatro hierbas para heridas usa milenrama (detiene el sangrado), llantén (calma y previene la infección), consuelda (regenera la piel) y caléndula (acelera la cicatrización y reduce la cicatriz).
+- **Mecanismos complementarios:** el ungüento de cuatro hierbas para heridas usa milenrama (detiene el sangrado), llantén (calma y previene la infección), consuelda (regenera la piel) y caléndula (acelera la cicatrización y reduce la cicatriz). La EMA no acepta la consuelda en piel lesionada: si das esta receta, quita la consuelda.
 - **Pareja de biodisponibilidad:** la piperina de la pimienta negra aumenta la absorción de la curcumina de la cúrcuma.
 - **Calor funcional:** el cannabis necesita calor bajo y lento (menos de 65 °C, 4–8 h) para descarboxilarse. Aquí el calor es un requisito, no un atajo.
 
@@ -131,33 +131,33 @@ La vida útil es una propiedad del almacenamiento. El límite de uso es una prop
 
 - Antes de cualquier uso tópico, haz una **prueba en la piel**: aplica una cantidad pequeña en el dorso de la mano o la cara interna del brazo y observa la reacción. Es obligatoria en bebés y niños.
 - No dejes que una tapa de metal toque el líquido. Pon papel pergamino debajo de la tapa o usa una tapa plástica.
-- Para quemaduras, **no uses aceite**: el aceite retiene el calor. Usa el ungüento de miel.
+- Para quemaduras, **no uses aceite**: el aceite retiene el calor. Usa el ungüento de miel sin consuelda. No lo uses en menores de 12 meses.
 - Antes de recolectar una planta silvestre, confirma la identificación.
 
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Vienen de monografías oficiales y de referencias toxicológicas estándar. No se reverificaron en PubMed al crear la skill. Para un uso clínico, verifícalas con `biotech-research`.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
-| Tema | Qué dice el libro | Alerta |
-|---|---|---|
-| **Miel en menores de 1 año** | Usa miel y oximiel en niños de 2 años o más. | No des miel cruda ni preparados con miel a menores de 12 meses por el riesgo de botulismo infantil. Esto incluye el ungüento de miel para quemaduras si el bebé puede tragarlo. |
-| **Hipérico** | Ciclos de uso. El efecto tarda semanas. | Omite el riesgo principal: induce CYP3A4 y la glicoproteína P. Reduce el efecto de anticonceptivos orales, warfarina, ciclosporina, tacrolimus, digoxina y antirretrovirales. Con ISRS o triptanes, hay riesgo de síndrome serotoninérgico. Causa fotosensibilidad. Pregunta siempre por los medicamentos. |
-| **Consuelda** | Úsala en el ungüento de heridas y en la pomada de miel para quemaduras. | Contiene alcaloides pirrolizidínicos hepatotóxicos. La EMA limita el uso tópico a piel **intacta** y a periodos cortos. No la apliques en heridas abiertas ni quemaduras. No la uses en embarazo, lactancia ni en niños pequeños. Nunca la uses por vía oral. |
-| **Gayuba (uva ursi)** | Máximo 1 semana. No en menores de 12 años. Si no mejora en 24 h, consultar. | Coincide con la EMA. Agrega: en embarazo, en hombres, con fiebre, dolor lumbar o hematuria, la infección urinaria necesita valoración médica y quizá antibiótico. No retrases ese tratamiento. |
-| **Sauce blanco y abedul** | Máximo 1–2 semanas. Evitar en embarazo. | Agrega: no los des a niños ni adolescentes con fiebre o infección viral (riesgo de síndrome de Reye). Evítalos si hay alergia a la aspirina, úlcera péptica o anticoagulantes. |
-| **Aceite de gordolobo para el oído** | 2–3 gotas tibias desde los 2 años. | No uses gotas si hay secreción, sospecha de perforación del tímpano o tubos de ventilación. Si hay fiebre o dolor intenso, consultar. |
-| **Jarabe de agujas de pino** | Confirma que no es cicuta venenosa. | Agrega: el tejo (*Taxus*) es una conífera de aspecto parecido y es muy tóxico. Evita también el pino ponderosa en el embarazo. |
-| **Vinagre de manzana para la acidez** | La acidez suele venir de poco ácido gástrico. | Esa teoría no tiene respaldo. Si hay disfagia, pérdida de peso, sangrado, vómito o síntomas frecuentes, consultar. No uses vinagre si hay esofagitis o úlcera. |
-| **Clavo para el dolor de muela** | Toque tópico, no en encía expuesta ni en dentición. | El aceite de clavo (eugenol) es tóxico si un niño lo ingiere. Guárdalo fuera de su alcance. El dolor dental necesita odontólogo. |
-| **Cúrcuma con pimienta** | La piperina aumenta la absorción. | La piperina también aumenta la absorción de algunos medicamentos. La cúrcuma potencia los anticoagulantes. Hay casos de hepatotoxicidad con preparados de cúrcuma de alta biodisponibilidad. |
-| **Espino blanco e hibisco** | Consultar si toma medicamentos para la presión. | El espino puede interactuar con la digoxina. El hibisco baja la presión arterial. |
-| **Equinácea y saúco** | Funcionan mejor desde el primer síntoma. | La evidencia en humanos es inconsistente (Cochrane). Preséntalos como opción de bajo riesgo, no como tratamiento probado. El libro advierte que el saúco no es adecuado en enfermedades autoinmunes. |
-| **Asteráceas** | Usa manzanilla, caléndula, milenrama, árnica, equinácea y matricaria. | Si hay alergia a la ambrosía o a otras asteráceas, hay riesgo de reacción cruzada. |
-| **Cannabis** | Solo adultos. Confirma la legalidad local. | No lo uses en embarazo ni lactancia. Puede potenciar los sedantes. |
-| **Amapola de California y pasiflora** | Son suaves y no narcóticas. | Pueden sumar sedación con alcohol, benzodiacepinas u opioides. No conduzcas después de tomarlas. |
-| **Embarazo y lactancia** | Advertencias por receta (hibisco, milenrama, matricaria, sauce; la salvia y la menta reducen la leche). | Ninguna receta tiene datos de seguridad en el embarazo. Si la persona está embarazada, no recomiendes tinturas ni dosis medicinales sin valoración. |
+| Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
+|---|---|---|---|
+| **Miel en menores de 1 año** | Usa miel y oximiel en niños de 2 años o más. | confirmada con matices (alta) | No des miel ni preparados con miel (oximiel, jarabe de pino, miel infusionada) a menores de 12 meses. Hay riesgo de botulismo infantil. La miel es el único alimento confirmado como causa. No apliques el ungüento de miel donde el bebé pueda chuparlo. (CDPH IBTPP; Aricò 2026, doi:10.1111/apa.70538) |
+| **Hipérico** | Ciclos de uso. El efecto tarda semanas. | confirmada con matices (alta) | El libro omite el riesgo principal. El hipérico induce CYP3A4 y la glicoproteína P. Reduce el efecto de anticonceptivos orales, ciclosporina, tacrolimus, digoxina, warfarina y antirretrovirales. Con ISRS o triptanes hay riesgo de síndrome serotoninérgico. Puede causar fotosensibilidad. No lo uses en embarazo ni lactancia. Pregunta siempre por los medicamentos. (Nicolussi 2020, doi:10.1111/bph.14936) |
+| **Consuelda** | Úsala en el ungüento de heridas y en la pomada de miel para quemaduras. | corregir (alta) | Contiene alcaloides pirrolizidínicos hepatotóxicos. La EMA solo acepta el uso cutáneo en esguinces y contusiones, máximo 10 días. No la apliques en piel lesionada o irritada: no en heridas ni quemaduras. No hay datos en menores de 18 años; no la uses en ellos. No en embarazo ni lactancia. Nunca por vía oral. (EMA/HMPC/572846/2009 Corr1, 2024) |
+| **Gayuba (uva ursi)** | Máximo 1 semana. No en menores de 12 años. Si no mejora en 24 h, consultar. | corregir (alta) | No coincide del todo con la EMA. Úsala solo en mujeres adultas, máximo 1 semana. No en menores de 18 años, hombres, embarazo ni enfermedad renal. Consulta si dura más de 4 días o empeora. Con fiebre, dolor lumbar o sangre en la orina, consulta el mismo día: puede necesitar antibiótico. (EMA/HMPC/750269/2016; EMA/HMPC/573460/2009 Rev.1) |
+| **Sauce blanco y abedul** | Máximo 1–2 semanas. Evitar en embarazo. | corregir (alta para el sauce; baja para el abedul) | Aplica a la mezcla las contraindicaciones del sauce de la EMA: menores de 18 años (síndrome de Reye), tercer trimestre, alergia a salicilatos o AINE, asma por salicilatos, úlcera péptica activa, trastornos de la coagulación, déficit de G6PD e insuficiencia hepática o renal grave. Potencia los anticoagulantes. No lo combines con aspirina ni AINE. (EMA/HMPC/80630/2016 Corr1, 2017) |
+| **Aceite de gordolobo para el oído** | 2–3 gotas tibias desde los 2 años. | confirmada con matices (media) | No pongas gotas si hay secreción, sospecha de perforación o tubos de ventilación. En casa no puedes descartar una perforación. Consulta si es menor de 2 años, si hay fiebre o dolor intenso, o si no mejora en 48–72 h. Los ensayos usaron una mezcla de hierbas en niños de 5 años o más. (Rosenfeld 2014, doi:10.1177/0194599813517083; Sarrell 2003, doi:10.1542/peds.111.5.e574) |
+| **Jarabe de agujas de pino** | Confirma que no es cicuta venenosa. | confirmada con matices (alta para el tejo; media para el pino ponderosa) | El tejo (*Taxus*) se parece a otras coníferas. Sus agujas son cardiotóxicas y pueden causar arritmias mortales. Confirma la especie. El pino ponderosa causa aborto en ganado; no hay datos en humanos. Por precaución, no uses jarabe de coníferas en el embarazo. Lleva miel: no en menores de 12 meses. (Rutkiewicz 2019, doi:10.5114/ait.2019.89952; Martinez 2024, doi:10.1016/j.toxicon.2024.107712) |
+| **Vinagre de manzana para la acidez** | La acidez suele venir de poco ácido gástrico. | confirmada con matices (media) | Esa teoría no tiene respaldo. La ERGE depende sobre todo de la barrera antirreflujo, no de poco ácido. No hay evidencia suficiente para el vinagre de manzana. Consulta si hay disfagia, pérdida de peso, sangrado, anemia, vómito o síntomas frecuentes. Por precaución, no lo uses si hay esofagitis o úlcera. (Tack 2017, doi:10.1053/j.gastro.2017.09.047; Wong 2025, doi:10.1097/MCG.0000000000002216) |
+| **Clavo para el dolor de muela** | Toque tópico, no en encía expuesta ni en dentición. | confirmada con matices (alta) | El aceite de clavo (eugenol) ingerido por un niño pequeño puede causar coma, convulsiones e insuficiencia hepática (5–10 ml en menores de 2 años). Guárdalo fuera de su alcance. La EMA no lo recomienda en menores de 18 años. Evita el contacto con la encía. Es solo un alivio temporal: el dolor dental necesita odontólogo (EMA/HMPC/534924/2010). |
+| **Cúrcuma con pimienta** | La piperina aumenta la absorción. | corregir (alta) | La piperina aumenta la absorción de algunos fármacos (fenitoína, carbamazepina, nevirapina). Con anticoagulantes o antiagregantes, la cúrcuma puede sumar riesgo de sangrado; los datos humanos son escasos. Los suplementos concentrados o con pimienta causan hepatitis (latencia 1–4 meses). Evítala con enfermedad hepática o biliar (DILIN 2022, doi:10.1016/j.amjmed.2022.09.026; EMA 2018/2025). |
+| **Espino blanco e hibisco** | Consultar si toma medicamentos para la presión. | corregir (media) | El hibisco baja la presión arterial (−7 mmHg sistólica en metaanálisis); con antihipertensivos, vigila hipotensión. El espino no cambió la digoxina en un estudio pequeño, pero puede sumar efecto a fármacos cardiacos. Úsalo solo si un médico descartó enfermedad cardiaca. Consulta urgente si hay dolor torácico, disnea o edema (doi:10.1093/nutrit/nuab104; EMA/HMPC/159075/2014). |
+| **Equinácea y saúco** | Funcionan mejor desde el primer síntoma. | confirmada con matices (alta (equinácea) · baja (saúco en enfermedades autoinmunes)) | La evidencia es débil e inconsistente: Cochrane no halla beneficio de la equinácea en el tratamiento del resfriado. No la uses en enfermedades autoinmunes, inmunosupresión ni menores de 12 años. El saúco se asoció a brotes de dermatomiositis y lupus (dato observacional). Cocina siempre las bayas de saúco (Cochrane 2014, doi:10.1002/14651858.CD000530.pub3; EMA/HMPC/48704/2014). |
+| **Asteráceas** | Usa manzanilla, caléndula, milenrama, árnica, equinácea y matricaria. | confirmada (alta) | Si hay alergia a la ambrosía, a la margarita o a otras asteráceas, no uses estas plantas. Hay riesgo de reacción cruzada, incluso anafilaxia y con el primer uso. Las personas con atopia tienen más riesgo. Esto incluye el uso tópico (EMA/HMPC/48704/2014; Mullins 1998, doi:10.5694/j.1326-5377.1998.tb126773.x). |
+| **Cannabis** | Solo adultos. Confirma la legalidad local. | confirmada con matices (alta) | No lo uses en el embarazo: se asocia a bajo peso, parto pretérmino y PEG. No lo uses durante la lactancia (CDC). Suma sedación con alcohol, benzodiacepinas y opioides. No conduzcas después de usarlo. Evítalo si hay antecedente de psicosis (JAMA Pediatr 2025, doi:10.1001/jamapediatrics.2025.0689; ACOG 2025). |
+| **Amapola de California y pasiflora** | Son suaves y no narcóticas. | confirmada con matices (media) | Pueden alterar la capacidad de conducir: no conduzcas después de tomarlas. Pueden sumar sedación con benzodiacepinas, alcohol u opioides; no las combines sin indicación médica. La tintura de amapola de California inhibe enzimas CYP in vitro. No las uses en embarazo ni lactancia (EMA/HMPC/669740/2013; EMA/HMPC/680372/2013; doi:10.1055/s-0042-103689). |
+| **Embarazo y lactancia** | Advertencias por receta (hibisco, milenrama, matricaria, sauce; la salvia y la menta reducen la leche). | corregir (media) | La mayoría de estas plantas no tiene datos de seguridad en embarazo ni lactancia (EMA). Si la persona está embarazada o lacta, no recomiendes tinturas ni dosis medicinales sin valoración. Que la salvia y la menta reducen la leche es tradición: no hay estudios que lo prueben (LactMed 2025; SPS-NHS 2024). |
 
 ## Índice de capítulos
 

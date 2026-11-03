@@ -35,10 +35,10 @@
 | Uso tópico sin prueba en la piel | Reacción en la piel | Prueba siempre, sobre todo en niños | 1 |
 | Hierba seca cuando se quiere miel fermentada | No fermenta | Usa hierba fresca | 2 |
 | Empezar equinácea o saúco tarde | El libro dice que pierden efecto | Empieza al primer síntoma | 2 |
-| Aceite en una quemadura | Retiene el calor | Ungüento de miel (sin consuelda en piel abierta) | 3 |
+| Aceite en una quemadura | Retiene el calor | Ungüento de miel sin consuelda | 3 |
 | Árnica por vía oral | Toxicidad | Solo tópica, fuera del alcance de niños | 3 |
 | Sauce o abedul más de 1–2 semanas | Efecto anticoagulante acumulado | Tratamiento corto | 3, 4 |
-| Gayuba más de 1 semana o en menores de 12 | Toxicidad | Respeta el límite | 4 |
+| Gayuba más de 1 semana, en menores de 18 o en hombres | Toxicidad y retraso del tratamiento | Respeta el límite de la EMA: mujeres adultas, máximo 1 semana | 4 |
 | Confundir la tsuga con la cicuta, o una conífera con el tejo | Intoxicación grave | Confirma la especie | 4 |
 | Esperar efecto inmediato de la matricaria | Abandono temprano | Uso regular 2–3 meses | 4 |
 | Amargos dosificados en gotas | Dosis insuficiente | Cucharada u onza, alrededor de las comidas | 5 |
@@ -52,7 +52,9 @@ Ver la tabla **Seguridad clínica** de [SKILL.md](SKILL.md). Los principales son
 
 - Miel en menores de 12 meses (botulismo infantil).
 - Interacciones del hipérico con anticonceptivos, warfarina, ISRS y otros fármacos.
-- Consuelda en heridas abiertas y quemaduras.
-- Salicilatos en niños con fiebre (síndrome de Reye).
+- Consuelda en piel lesionada (heridas y quemaduras). La EMA la acepta solo en esguinces y contusiones de adultos.
+- Salicilatos (sauce, abedul) en menores de 18 años (síndrome de Reye).
 - Gotas en el oído con tímpano perforado.
+- Hepatitis por suplementos concentrados de cúrcuma con pimienta.
+- Equinácea en menores de 12 años y en enfermedades autoinmunes.
 - El tejo como conífera tóxica.

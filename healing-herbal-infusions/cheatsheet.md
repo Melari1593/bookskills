@@ -11,7 +11,7 @@ Regla general: no des preparados con miel a menores de 12 meses.
 | Super Immunity Infusion Tea | Té | Saúco (baya), rosa mosqueta, raíz de equinácea, jengibre | — | Partes iguales secas, 2 cda por taza |
 | Vitamin C Tea | Té | Rosa mosqueta, hibisco, cáscara de naranja, canela | — | Sin hibisco en el embarazo |
 | Elderberry & Astragalus Tincture | Tintura | Saúco, astrágalo | Adultos | Versión en glicerito para niños (capítulo 8, no extraído) |
-| Echinacea Root & Flower Tincture | Tintura | Raíz y flor de equinácea | Adultos | Versión en glicerito para niños. Evidencia inconsistente. |
+| Echinacea Root & Flower Tincture | Tintura | Raíz y flor de equinácea | Adultos | Versión en glicerito para niños. Evidencia inconsistente (Cochrane). EMA: no en menores de 12 años ni en enfermedades autoinmunes. |
 | Fermented Garlic, Ginger & Sage in Honey | Miel fermentada | Ajo, jengibre, salvia | — | Se puede cambiar la salvia por romero, tomillo, orégano o menta |
 | Fermented Red Onion & Thyme in Honey | Miel fermentada | Cebolla roja, tomillo | — | También sirve como marinada |
 | Elderberry, Ginger & Cinnamon Honey | Miel infusionada (seca) | Saúco, jengibre, canela | — | Con hierba fresca, fermenta |
@@ -27,11 +27,11 @@ Regla general: no des preparados con miel a menores de 12 meses.
 | Cannabis-Infused Coconut Oil | Aceite con calor | Cannabis (cepa con más CBD) | 18+ | Descarboxilación a menos de 65 °C, 4–8 h. Confirma la legalidad. |
 | St. John's Wort & Cayenne Warming Oil | Aceite (o ungüento) | Hipérico, ají cayena | — | Prueba en la piel por el ají. Hipérico tópico: fotosensibilidad. |
 | Lavender & Peppermint Sore Muscle Oil | Aceite | Lavanda, menta | — | También en las sienes para la cefalea |
-| White Willow & Birch Bark Tea | Té o decocción | Corteza de sauce blanco, corteza de abedul | Adultos | Máximo 1–2 semanas. No en embarazo. No en niños con fiebre (Reye). No con anticoagulantes. |
+| White Willow & Birch Bark Tea | Té o decocción | Corteza de sauce blanco, corteza de abedul | Adultos (18+) | Máximo 1–2 semanas. EMA: no en menores de 18 años (Reye), tercer trimestre, alergia a salicilatos, úlcera, coagulopatía ni con anticoagulantes. |
 | Basil, Thyme & Oregano Tea for Chronic Pain | Té | Albahaca, tomillo, orégano | — | Uso diario. El efecto tarda semanas. |
-| Turmeric & Black Pepper Tea | Decocción | Cúrcuma, pimienta negra | — | Interacción con anticoagulantes |
-| Four-Herb Wound Salve | Ungüento | Milenrama, llantén, consuelda, caléndula | 13+ | Heridas menores. La consuelda no va en heridas abiertas (EMA). Menores de 13: Boo-Boo Balm (capítulo 8, no extraído). |
-| Herbal Honey Burn Ointment | Miel infusionada | Caléndula, lavanda, raíz de consuelda | — | Sin aceite. La consuelda no va en quemaduras. No en menores de 12 meses. |
+| Turmeric & Black Pepper Tea | Decocción | Cúrcuma, pimienta negra | — | La piperina sube la absorción de algunos fármacos. Riesgo de sangrado con anticoagulantes (datos escasos). |
+| Four-Herb Wound Salve | Ungüento | Milenrama, llantén, consuelda, caléndula | 13+ | Heridas menores. Conflicto con la EMA: la consuelda no va en piel lesionada y solo en adultos. Haz la receta sin consuelda. Menores de 13: Boo-Boo Balm (capítulo 8, no extraído). |
+| Herbal Honey Burn Ointment | Miel infusionada | Caléndula, lavanda, raíz de consuelda | — | Sin aceite. Conflicto con la EMA: haz la receta sin consuelda. No en menores de 12 meses (miel). |
 | Itchy Bite & Sting Balm | Ungüento | Llantén, pamplina, lavanda | — | Empieza la infusión en primavera |
 | Sunburn Aloe Infusion | Infusión en sábila | Caléndula, pamplina, sábila | — | Refrigera para más frescura |
 
@@ -41,16 +41,16 @@ Regla general: no des preparados con miel a menores de 12 meses.
 |---|---|---|---|---|
 | Headache Relief Tea | Té | Escutelaria, toronjil, manzanilla | — | — |
 | Feverfew Migraine Preventative Tincture | Tintura o glicerito | Matricaria | — | Mínimo 2–3 meses de uso. No en embarazo. |
-| Sage, Marshmallow & Ginger Sore Throat Tea | Té | Salvia, raíz de malvavisco, jengibre | — | La salvia reduce la leche. No en lactancia. |
+| Sage, Marshmallow & Ginger Sore Throat Tea | Té | Salvia, raíz de malvavisco, jengibre | — | El libro dice que la salvia reduce la leche (tradición, sin estudios). |
 | Horehound Sore Throat Syrup | Jarabe | Marrubio, olmo rojo | — | El olmo rojo está amenazado: usa malvavisco |
-| Thyme, Peppermint & Honey Tea for Coughs | Té | Tomillo, menta | — | En lactancia, cambia la menta por hierbabuena |
-| Pine Needle Cough Syrup | Infusión + jarabe | Agujas de pino, abeto, pícea o tsuga | — | Confirma la especie. Descarta la cicuta y el tejo (*Taxus*). |
+| Thyme, Peppermint & Honey Tea for Coughs | Té | Tomillo, menta | — | El libro cambia la menta por hierbabuena en lactancia (tradición, sin estudios) |
+| Pine Needle Cough Syrup | Infusión + jarabe | Agujas de pino, abeto, pícea o tsuga | — | Confirma la especie. Descarta la cicuta y el tejo (*Taxus*, cardiotóxico). No en el embarazo. No en menores de 12 meses (miel). |
 | Fever-Reducing Tea | Té | Milenrama, nébeda, flor de saúco, canela | — | Sírvelo caliente para sudar. Sin milenrama en el embarazo. Alternativa en baño para niños. |
-| Mullein Flower Earache Oil | Aceite | Flor de gordolobo | 2+ (1–2 gotas en menores de 8) | No si hay secreción, perforación o tubos |
+| Mullein Flower Earache Oil | Aceite | Flor de gordolobo | 2+ (1–2 gotas en menores de 8) | No si hay secreción, perforación o tubos. Consulta si no mejora en 48–72 h. |
 | Clove Whiskey Tincture for Tooth Pain | Tintura | Clavo | Adultos | Solo un toque tópico. No en encía expuesta ni en dentición. Necesita odontólogo. |
-| Hawthorn & Hibiscus Tea for the Heart | Té | Baya de espino, hibisco | Adultos | Consultar si toma antihipertensivos o digoxina |
+| Hawthorn & Hibiscus Tea for the Heart | Té | Baya de espino, hibisco | Adultos | El hibisco baja la presión. Vigila hipotensión con antihipertensivos. Usa el espino solo si un médico descartó enfermedad cardiaca. |
 | Liver Support Tonic | Té | Raíz de diente de león, astrágalo, ortiga | — | Tuesta la raíz para mejorar el sabor |
-| UTI Relief Tea | Té | Gayuba, milenrama, raíz de diente de león, enebro, malvavisco | 13+ (2+ sin gayuba) | Máximo 1 semana. Consultar si no mejora en 24 h, y siempre en embarazo, hombres, fiebre o dolor lumbar. |
+| UTI Relief Tea | Té | Gayuba, milenrama, raíz de diente de león, enebro, malvavisco | Libro: 13+ (2+ sin gayuba) | EMA: gayuba solo en mujeres adultas, máximo 1 semana. No en hombres, embarazo ni enfermedad renal. Fiebre, dolor lumbar o sangre en la orina: consulta el mismo día. |
 | Eczema Relief Salve | Ungüento | Caléndula, llantén, pamplina | — | Doble manteca de karité |
 | Lemon Balm Cold Sore Balm | Bálsamo labial | Toronjil | — | El libro dice que acorta el herpes labial |
 
@@ -76,8 +76,8 @@ Regla general: no des preparados con miel a menores de 12 meses.
 | Sleep Well Tea | Té | Manzanilla, nébeda, valeriana | — | Para niños: té calmante del capítulo 8 (no extraído) |
 | De-Stress Tea | Té | Albahaca sagrada (tulsi), pasiflora, salvia | — | Sin grandes cantidades en el embarazo |
 | Calming Massage Oil | Aceite | Manzanilla, lavanda, toronjil | Sin aceite esencial en menores de 13 | — |
-| St. John's Wort Tincture | Tintura o glicerito | Hipérico | — | Ciclos de 2–3 semanas y 1 semana de descanso. Interacciones: anticonceptivos, warfarina, ISRS y otros. |
-| California Poppy Tincture | Tintura o glicerito | Amapola de California | — | No es narcótica. Suma sedación con depresores del SNC. |
+| St. John's Wort Tincture | Tintura o glicerito | Hipérico | — | Ciclos de 2–3 semanas y 1 semana de descanso. Interacciones: anticonceptivos, warfarina, ISRS y otros. No en embarazo ni lactancia. |
+| California Poppy Tincture | Tintura o glicerito | Amapola de California | — | No es narcótica. Puede sumar sedación. No conduzcas después de tomarla. |
 | Passionflower-Infused Wine | Vino infusionado | Pasiflora | Adultos | Máximo 4 oz al día |
 | Rejuvenating Flower Bath Soak | Baño de sales | Sal de Epsom, lavanda, manzanilla, pétalos de rosa | 2+ | 1 taza de sal + ¼ taza de cada flor. ¼–½ taza por baño, en bolsa de muselina. |
 | Relaxing Herbal Face Steam | Vaho | Romero, menta, lavanda | — | Eucalipto opcional |
