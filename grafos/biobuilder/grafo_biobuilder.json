@@ -1,0 +1,889 @@
+{
+  "meta": {
+    "title": "BioBuilder · Grafo de conocimiento",
+    "subtitle": "Kuldell, Bernstein, Ingram y Hart · O’Reilly, 2015 · fundamentos y laboratorios",
+    "itemLabel": "Concepto clave",
+    "itemLabelPlural": "Conceptos clave",
+    "searchHint": "Buscar: biodesign, chasis, β-caroteno…"
+  },
+  "blocks": {
+    "fund": {
+      "name": "Fundamentos y diseño",
+      "color": "#28668A"
+    },
+    "eth": {
+      "name": "Bioética",
+      "color": "#8B5B77"
+    },
+    "lab": {
+      "name": "Marco experimental",
+      "color": "#6A7553"
+    },
+    "test": {
+      "name": "Prueba y medición",
+      "color": "#C07839"
+    },
+    "design": {
+      "name": "Modelado",
+      "color": "#6656A0"
+    },
+    "build": {
+      "name": "Construcción y fiabilidad",
+      "color": "#3C8272"
+    }
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "title": "Fundamentals of Synthetic Biology",
+      "page": 1,
+      "block": "fund",
+      "summary": "Presenta la ingeniería de células mediante ADN y el ciclo de diseño, construcción y prueba.",
+      "sections": [
+        {
+          "num": "1.1",
+          "title": "What Is Synthetic Biology?",
+          "page": 1,
+          "summary": "Ingeniería de células para cumplir una función útil.",
+          "items": [
+            "synbio"
+          ]
+        },
+        {
+          "num": "1.2",
+          "title": "Introduction to Engineering and Design",
+          "page": 6,
+          "summary": "Diseño, construcción y prueba iterativos.",
+          "items": [
+            "dbt"
+          ]
+        },
+        {
+          "num": "1.3",
+          "title": "The Synthetic Biology Toolkit",
+          "page": 8,
+          "summary": "ADN, genes y partes funcionales para alterar células.",
+          "items": [
+            "dna_program",
+            "toolkit"
+          ]
+        },
+        {
+          "num": "1.4",
+          "title": "Wrap-Up",
+          "page": 17,
+          "summary": "Recapitula el alcance y los límites del diseño biológico.",
+          "items": []
+        },
+        {
+          "num": "1.5",
+          "title": "Additional Reading and Resources",
+          "page": 17,
+          "summary": "Fuentes complementarias del capítulo.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Fundamentals of Biodesign",
+      "page": 19,
+      "block": "fund",
+      "summary": "Descompone un problema biológico en sistema, dispositivos, partes y ADN; usa un detector de arsénico como ejemplo.",
+      "sections": [
+        {
+          "num": "2.1",
+          "title": "Illustrating a Top-Down Design Approach",
+          "page": 19,
+          "summary": "Analogía para pasar de una meta general a decisiones concretas.",
+          "items": [
+            "topdown"
+          ]
+        },
+        {
+          "num": "2.2",
+          "title": "From Planning Vacations to Biodesign",
+          "page": 21,
+          "summary": "Traslada la jerarquía de decisiones al diseño biológico.",
+          "items": [
+            "abstraction"
+          ]
+        },
+        {
+          "num": "2.3",
+          "title": "Biodesign Process Overview",
+          "page": 24,
+          "summary": "Del problema a especificaciones de sistema, dispositivos, partes y ADN.",
+          "items": [
+            "spec",
+            "arsenic_sensor"
+          ]
+        },
+        {
+          "num": "2.4",
+          "title": "What’s Next?",
+          "page": 40,
+          "summary": "Cierra el proceso y prepara la construcción de los diseños.",
+          "items": []
+        },
+        {
+          "num": "2.5",
+          "title": "Additional Reading and Resources",
+          "page": 42,
+          "summary": "Fuentes complementarias del capítulo.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Fundamentals of DNA Engineering",
+      "page": 43,
+      "block": "fund",
+      "summary": "Explica por qué los estándares y las técnicas de ensamblaje de ADN permiten construir diseños reutilizables.",
+      "sections": [
+        {
+          "num": "3.1",
+          "title": "Framing the Discussion",
+          "page": 43,
+          "summary": "Motiva la necesidad de herramientas de ADN reproducibles.",
+          "items": []
+        },
+        {
+          "num": "3.2",
+          "title": "Standardization of Parts and Measurements",
+          "page": 45,
+          "summary": "Convenciones comunes para ensamblar y comparar componentes.",
+          "items": [
+            "standardization",
+            "biobrick"
+          ]
+        },
+        {
+          "num": "3.3",
+          "title": "DNA Engineering in Practice",
+          "page": 50,
+          "summary": "Relación entre información genética, construcción de ADN y función.",
+          "items": [
+            "central_dogma",
+            "assembly",
+            "plasmid"
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "What’s Next?",
+          "page": 68,
+          "summary": "Conecta las herramientas de ADN con las actividades experimentales.",
+          "items": []
+        },
+        {
+          "num": "3.5",
+          "title": "Additional Reading and Resources",
+          "page": 68,
+          "summary": "Fuentes complementarias del capítulo.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Fundamentals of Bioethics",
+      "page": 69,
+      "block": "eth",
+      "summary": "Plantea criterios éticos, marcos de regulación y casos para examinar los efectos sociales de la biología sintética.",
+      "sections": [
+        {
+          "num": "4.1",
+          "title": "What Makes “Good Work”?",
+          "page": 69,
+          "summary": "Interroga valor, calidad y responsabilidad del trabajo científico.",
+          "items": [
+            "bioethics"
+          ]
+        },
+        {
+          "num": "4.2",
+          "title": "Regulating for Ethical Research",
+          "page": 72,
+          "summary": "Sitúa riesgos, supervisión y diálogo público en su contexto.",
+          "items": [
+            "oversight"
+          ]
+        },
+        {
+          "num": "4.3",
+          "title": "Three Synthetic Biology Case Studies",
+          "page": 78,
+          "summary": "Contrasta proyectos con efectos éticos y sociales diferentes.",
+          "items": [
+            "case_ethics"
+          ]
+        },
+        {
+          "num": "4.4",
+          "title": "Group Bioethics Activities",
+          "page": 83,
+          "summary": "Propone deliberación y análisis de los casos.",
+          "items": [
+            "deliberation"
+          ]
+        },
+        {
+          "num": "4.5",
+          "title": "Additional Reading and Resources",
+          "page": 90,
+          "summary": "Fuentes complementarias del capítulo.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Introduction to the BioBuilder Labs",
+      "page": 91,
+      "block": "lab",
+      "summary": "Relaciona el ciclo de ingeniería con hipótesis y experimentos científicos antes de presentar cinco prácticas.",
+      "sections": [
+        {
+          "num": "5.1",
+          "title": "Biological Engineering with Synthetic Biology’s Toolkit",
+          "page": 91,
+          "summary": "Integra preguntas científicas y ciclos de ingeniería en las prácticas.",
+          "items": [
+            "scientific_cycle",
+            "lab_cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Eau That Smell",
+      "page": 95,
+      "block": "test",
+      "summary": "Compara dos circuitos bacterianos de producción de olor para contrastar diseño esperado y desempeño observado.",
+      "sections": [
+        {
+          "num": "6.1",
+          "title": "Inspiration from the Eau d’coli iGEM Project",
+          "page": 96,
+          "summary": "Estudia producción de olores y regulación vinculada al crecimiento.",
+          "items": [
+            "growth_phase",
+            "scent_pathway"
+          ]
+        },
+        {
+          "num": "6.2",
+          "title": "Additional Reading and Resources",
+          "page": 105,
+          "summary": "Fuentes complementarias de la actividad.",
+          "items": []
+        },
+        {
+          "num": "6.3",
+          "title": "Eau That Smell Lab",
+          "page": 107,
+          "summary": "Compara experimentalmente dos diseños de regulación del olor.",
+          "items": [
+            "scent_compare"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "iTune Device",
+      "page": 119,
+      "block": "test",
+      "summary": "Mide cuantitativamente variantes de un circuito enzimático y examina modularidad, aislamiento y medición.",
+      "sections": [
+        {
+          "num": "7.1",
+          "title": "Modularity",
+          "page": 121,
+          "summary": "Analiza la composición funcional de partes genéticas.",
+          "items": [
+            "modularity"
+          ]
+        },
+        {
+          "num": "7.2",
+          "title": "Insulation",
+          "page": 123,
+          "summary": "Examina cómo limitar interferencias entre módulos.",
+          "items": [
+            "insulation"
+          ]
+        },
+        {
+          "num": "7.3",
+          "title": "Principles of Measurement",
+          "page": 124,
+          "summary": "Define qué cuantificar y cómo comparar resultados.",
+          "items": [
+            "measurement"
+          ]
+        },
+        {
+          "num": "7.4",
+          "title": "Foundational Concepts for the iTune Device Lab",
+          "page": 128,
+          "summary": "Relaciona promotores y sitios de unión ribosomal con enzima producida.",
+          "items": [
+            "promoter_rbs",
+            "lacZ"
+          ]
+        },
+        {
+          "num": "7.5",
+          "title": "Additional Reading and Resources",
+          "page": 131,
+          "summary": "Fuentes complementarias de la actividad.",
+          "items": []
+        },
+        {
+          "num": "7.6",
+          "title": "iTune Device Lab",
+          "page": 133,
+          "summary": "Mide actividad enzimática en variantes de circuito.",
+          "items": [
+            "enzyme_assay"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Picture This",
+      "page": 143,
+      "block": "design",
+      "summary": "Usa fotografía bacteriana para estudiar modelos que anticipan la respuesta de un circuito sensible a luz.",
+      "sections": [
+        {
+          "num": "8.1",
+          "title": "Introduction to Modeling",
+          "page": 144,
+          "summary": "Explora modelos físicos y matemáticos y sus supuestos.",
+          "items": [
+            "model"
+          ]
+        },
+        {
+          "num": "8.2",
+          "title": "Inspiration from the “Coliroid” iGEM Project",
+          "page": 150,
+          "summary": "Presenta un circuito que enlaza detección de luz y producción de color.",
+          "items": [
+            "coliroid",
+            "light_switch"
+          ]
+        },
+        {
+          "num": "8.3",
+          "title": "Additional Reading and Resources",
+          "page": 155,
+          "summary": "Fuentes complementarias de la actividad.",
+          "items": []
+        },
+        {
+          "num": "8.4",
+          "title": "Picture This Lab",
+          "page": 156,
+          "summary": "Modela y evalúa la respuesta del sistema de fotografía bacteriana.",
+          "items": [
+            "photo_model"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "What a Colorful World",
+      "page": 167,
+      "block": "build",
+      "summary": "Compara programas de pigmentación en distintas cepas y muestra cómo el chasis modifica el resultado.",
+      "sections": [
+        {
+          "num": "9.1",
+          "title": "Introduction to Chassis",
+          "page": 168,
+          "summary": "Considera utilidad, seguridad y contexto celular del huésped.",
+          "items": [
+            "chassis"
+          ]
+        },
+        {
+          "num": "9.2",
+          "title": "Background on the E. chromi iGEM Project",
+          "page": 174,
+          "summary": "Describe biosensores con pigmentos visibles y rutas de producción.",
+          "items": [
+            "echromi",
+            "pigment_path"
+          ]
+        },
+        {
+          "num": "9.3",
+          "title": "Additional Reading and Resources",
+          "page": 178,
+          "summary": "Fuentes complementarias de la actividad.",
+          "items": []
+        },
+        {
+          "num": "9.4",
+          "title": "What a Colorful World Lab",
+          "page": 180,
+          "summary": "Compara el mismo programa de color entre cepas bacterianas.",
+          "items": [
+            "chassis_compare"
+          ]
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Golden Bread",
+      "page": 187,
+      "block": "build",
+      "summary": "Estudia levadura productora de β-caroteno y formas de evaluar y mejorar la fiabilidad del sistema.",
+      "sections": [
+        {
+          "num": "10.1",
+          "title": "Engineering Reliability",
+          "page": 188,
+          "summary": "Examina fallas, redundancia y variación en sistemas diseñados.",
+          "items": [
+            "reliability",
+            "redundancy"
+          ]
+        },
+        {
+          "num": "10.2",
+          "title": "Background on the “VitaYeast” iGEM Project",
+          "page": 196,
+          "summary": "Sitúa la producción de β-caroteno en levadura y la motivación nutricional.",
+          "items": [
+            "vitayeast",
+            "carotene"
+          ]
+        },
+        {
+          "num": "10.3",
+          "title": "Additional Reading and Resources",
+          "page": 202,
+          "summary": "Fuentes complementarias de la actividad.",
+          "items": []
+        },
+        {
+          "num": "10.4",
+          "title": "Golden Bread Lab",
+          "page": 204,
+          "summary": "Investiga fuentes de variabilidad y ensaya una mejora de fiabilidad.",
+          "items": [
+            "yeast_variation"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": {
+    "synbio": {
+      "title": "Biología sintética",
+      "summary": "Diseña funciones celulares nuevas o modificadas mediante instrucciones genéticas."
+    },
+    "dbt": {
+      "title": "Ciclo diseñar–construir–probar",
+      "summary": "Itera entre especificación, realización y evaluación de un sistema."
+    },
+    "dna_program": {
+      "title": "ADN como programa",
+      "summary": "Las secuencias introducidas orientan la producción de componentes celulares."
+    },
+    "toolkit": {
+      "title": "Herramientas de ingeniería biológica",
+      "summary": "Combina componentes genéticos y huéspedes existentes para construir funciones."
+    },
+    "topdown": {
+      "title": "Diseño descendente",
+      "summary": "Parte del resultado deseado y divide el problema en decisiones progresivamente más concretas."
+    },
+    "abstraction": {
+      "title": "Jerarquía de abstracción",
+      "summary": "Organiza un diseño en sistema, dispositivos, partes y secuencia de ADN."
+    },
+    "spec": {
+      "title": "Especificación funcional",
+      "summary": "Expresa entradas, salidas y criterios de desempeño antes de elegir componentes."
+    },
+    "arsenic_sensor": {
+      "title": "Biosensor de arsénico",
+      "summary": "Ejemplo de diseño que vincula detección de un contaminante con una salida informativa."
+    },
+    "standardization": {
+      "title": "Estandarización",
+      "summary": "Adopta convenciones compartidas para ensamblar partes y comparar medidas."
+    },
+    "biobrick": {
+      "title": "Partes genéticas estandarizadas",
+      "summary": "Facilitan describir y combinar módulos de ADN bajo reglas comunes."
+    },
+    "central_dogma": {
+      "title": "ADN → ARN → proteína",
+      "summary": "La expresión genética conecta el cambio de secuencia con el comportamiento celular."
+    },
+    "assembly": {
+      "title": "Ensamblaje de ADN",
+      "summary": "Une fragmentos genéticos para construir un programa funcional."
+    },
+    "plasmid": {
+      "title": "Plásmido",
+      "summary": "Vehículo de ADN utilizado para portar programas genéticos en células."
+    },
+    "bioethics": {
+      "title": "Juicio bioético",
+      "summary": "Considera fines, medios y consecuencias del trabajo biológico."
+    },
+    "oversight": {
+      "title": "Supervisión de investigación",
+      "summary": "Enmarca riesgos y beneficios mediante normas, instituciones y participación pública."
+    },
+    "case_ethics": {
+      "title": "Análisis de casos",
+      "summary": "Compara implicaciones concretas de aplicaciones de biología sintética."
+    },
+    "deliberation": {
+      "title": "Deliberación bioética",
+      "summary": "Discute valores y posiciones divergentes para justificar decisiones."
+    },
+    "scientific_cycle": {
+      "title": "Hipótesis–prueba–análisis",
+      "summary": "Formula explicaciones y contrasta sus predicciones con observaciones."
+    },
+    "lab_cycle": {
+      "title": "Prácticas BioBuilder",
+      "summary": "Usan sistemas vivos como puntos de entrada a diseñar, construir o probar."
+    },
+    "growth_phase": {
+      "title": "Fase de crecimiento y expresión",
+      "summary": "La fisiología del cultivo influye en la activación de genes y producción de olor."
+    },
+    "scent_pathway": {
+      "title": "Ruta de olor",
+      "summary": "Un precursor se transforma en una molécula con aroma mediante actividad celular."
+    },
+    "scent_compare": {
+      "title": "Comparación de circuitos de olor",
+      "summary": "Contrasta dos diseños aparentemente similares con la respuesta observada."
+    },
+    "modularity": {
+      "title": "Modularidad genética",
+      "summary": "Busca que una parte conserve su función al combinarse con otras."
+    },
+    "insulation": {
+      "title": "Aislamiento funcional",
+      "summary": "Reduce interacciones indeseadas entre componentes de un circuito."
+    },
+    "measurement": {
+      "title": "Medición comparable",
+      "summary": "Define unidades, controles y métodos para contrastar comportamientos."
+    },
+    "promoter_rbs": {
+      "title": "Promotor y sitio de unión ribosomal",
+      "summary": "Regulan transcripción y traducción, respectivamente, y afectan la cantidad de proteína."
+    },
+    "lacZ": {
+      "title": "Enzima reportera",
+      "summary": "Permite inferir la salida de un circuito mediante una actividad medible."
+    },
+    "enzyme_assay": {
+      "title": "Ensayo de actividad enzimática",
+      "summary": "Cuantifica la salida de circuitos variantes para compararla con predicciones."
+    },
+    "model": {
+      "title": "Modelo del sistema",
+      "summary": "Representación simplificada para anticipar conductas y explorar hipótesis."
+    },
+    "coliroid": {
+      "title": "Fotografía bacteriana Coliroid",
+      "summary": "Sistema de E. coli que convierte patrones de luz en diferencias visibles de color."
+    },
+    "light_switch": {
+      "title": "Circuito sensible a luz",
+      "summary": "Conecta detección lumínica con regulación de genes productores de color."
+    },
+    "photo_model": {
+      "title": "Modelo de fotografía bacteriana",
+      "summary": "Explora cómo las reglas del circuito generan patrones espaciales observables."
+    },
+    "chassis": {
+      "title": "Chasis celular",
+      "summary": "El huésped aporta recursos y contexto que alteran la ejecución de un programa."
+    },
+    "echromi": {
+      "title": "Proyecto E. chromi",
+      "summary": "Biosensores concebidos para indicar contaminantes mediante pigmentos visibles."
+    },
+    "pigment_path": {
+      "title": "Ruta de pigmentos",
+      "summary": "Los genes introducidos permiten producir compuestos coloreados."
+    },
+    "chassis_compare": {
+      "title": "Efecto del chasis en el color",
+      "summary": "Contrasta intensidad del pigmento entre cepas que reciben programas comparables."
+    },
+    "reliability": {
+      "title": "Fiabilidad biológica",
+      "summary": "Evalúa si un sistema mantiene su desempeño entre células, cultivos o ensayos."
+    },
+    "redundancy": {
+      "title": "Redundancia",
+      "summary": "Introduce alternativas funcionales para amortiguar una posible falla."
+    },
+    "vitayeast": {
+      "title": "Proyecto VitaYeast",
+      "summary": "Modificación de levadura de pan para producir un precursor nutricional."
+    },
+    "carotene": {
+      "title": "β-caroteno",
+      "summary": "Pigmento precursor de vitamina A producido por una vía metabólica heteróloga."
+    },
+    "yeast_variation": {
+      "title": "Variabilidad de levadura diseñada",
+      "summary": "Examina por qué cambia la producción y cómo hacerla más estable."
+    }
+  },
+  "resources": [
+    {
+      "id": "A",
+      "title": "Laboratory Reagents and Materials",
+      "page": 211,
+      "usedBy": [
+        "6.3",
+        "7.6",
+        "8.4",
+        "9.4",
+        "10.4"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Glossary",
+      "page": 215,
+      "usedBy": [
+        "1.1",
+        "2.3",
+        "3.3",
+        "7.4",
+        "9.1"
+      ]
+    }
+  ],
+  "requires": {
+    "chapters": {
+      "2": [
+        1
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        5
+      ],
+      "7": [
+        3,
+        5
+      ],
+      "8": [
+        2,
+        5
+      ],
+      "9": [
+        3,
+        5
+      ],
+      "10": [
+        5,
+        9
+      ]
+    },
+    "sections": {
+      "2.2": [
+        "2.1"
+      ],
+      "2.3": [
+        "2.2",
+        "1.2"
+      ],
+      "3.2": [
+        "2.3"
+      ],
+      "3.3": [
+        "1.3",
+        "3.2"
+      ],
+      "4.3": [
+        "4.1",
+        "4.2"
+      ],
+      "4.4": [
+        "4.3"
+      ],
+      "5.1": [
+        "1.2",
+        "2.3",
+        "3.3"
+      ],
+      "6.1": [
+        "2.3",
+        "1.3"
+      ],
+      "6.3": [
+        "6.1",
+        "5.1"
+      ],
+      "7.1": [
+        "3.2"
+      ],
+      "7.2": [
+        "7.1"
+      ],
+      "7.3": [
+        "3.2"
+      ],
+      "7.4": [
+        "1.3",
+        "7.1"
+      ],
+      "7.6": [
+        "7.3",
+        "7.4",
+        "5.1"
+      ],
+      "8.2": [
+        "8.1",
+        "1.3"
+      ],
+      "8.4": [
+        "8.2",
+        "5.1"
+      ],
+      "9.2": [
+        "9.1",
+        "3.3"
+      ],
+      "9.4": [
+        "9.2",
+        "5.1"
+      ],
+      "10.2": [
+        "10.1",
+        "9.1"
+      ],
+      "10.4": [
+        "10.2",
+        "5.1"
+      ]
+    },
+    "items": {
+      "dna_program": [
+        "synbio"
+      ],
+      "toolkit": [
+        "dna_program"
+      ],
+      "abstraction": [
+        "topdown"
+      ],
+      "spec": [
+        "abstraction"
+      ],
+      "arsenic_sensor": [
+        "spec"
+      ],
+      "biobrick": [
+        "standardization"
+      ],
+      "assembly": [
+        "central_dogma",
+        "standardization"
+      ],
+      "plasmid": [
+        "assembly"
+      ],
+      "oversight": [
+        "bioethics"
+      ],
+      "case_ethics": [
+        "oversight"
+      ],
+      "deliberation": [
+        "case_ethics"
+      ],
+      "lab_cycle": [
+        "dbt",
+        "scientific_cycle"
+      ],
+      "scent_pathway": [
+        "dna_program"
+      ],
+      "scent_compare": [
+        "scent_pathway",
+        "growth_phase",
+        "lab_cycle"
+      ],
+      "modularity": [
+        "biobrick"
+      ],
+      "insulation": [
+        "modularity"
+      ],
+      "lacZ": [
+        "promoter_rbs"
+      ],
+      "enzyme_assay": [
+        "lacZ",
+        "measurement",
+        "lab_cycle"
+      ],
+      "light_switch": [
+        "dna_program"
+      ],
+      "coliroid": [
+        "light_switch"
+      ],
+      "photo_model": [
+        "coliroid",
+        "model"
+      ],
+      "echromi": [
+        "chassis"
+      ],
+      "pigment_path": [
+        "assembly"
+      ],
+      "chassis_compare": [
+        "pigment_path",
+        "chassis",
+        "measurement"
+      ],
+      "redundancy": [
+        "reliability"
+      ],
+      "carotene": [
+        "vitayeast"
+      ],
+      "yeast_variation": [
+        "carotene",
+        "redundancy",
+        "measurement"
+      ]
+    }
+  }
+}
