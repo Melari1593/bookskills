@@ -1,0 +1,14 @@
+interface:
+  display_name: Atlas botánico científico
+  short_description: Diseña láminas botánicas verificadas y legibles
+  default_prompt: Usa $crear-atlas-botanico-cientifico para crear una infografía científica
+    de esta especie.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
