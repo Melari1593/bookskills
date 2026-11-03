@@ -117,6 +117,20 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 [`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.
 
+## Grafo de Handbook of Medicinal Herbs (Duke)
+
+[`grafos/duke-medicinal-herbs/grafo_duke_herbs.html`](grafos/duke-medicinal-herbs/grafo_duke_herbs.html) es el mapa interactivo del volumen 1 de *Handbook of Medicinal Herbs* (James A. Duke, CRC Press, 2002): 493 hierbas en 14 grupos de actividad (antiinflamatorio, antimicrobiano, digestivo, ginecológico y reproductivo, etc.), en 10 bloques. Tiene buscador, tres vistas y leyenda filtrable. Los datos están en [`grafo_duke_herbs.json`](grafos/duke-medicinal-herbs/grafo_duke_herbs.json).
+
+El libro es un catálogo A–Z sin capítulos ni prerrequisitos. Por eso el grafo usa una estructura propia:
+
+- Cada hierba va en el grupo de su actividad predominante. Ese criterio es del grafo, no del libro.
+- Los enlaces unen cada hierba con la más documentada de las indicaciones que comparten (38 indicaciones ancla). No son prerrequisitos de lectura.
+- Las páginas son las impresas del catálogo.
+- Los resúmenes son listas de actividades e indicaciones, en inglés, como en el libro. No incluyen dosis, contraindicaciones ni interacciones.
+- Se leyeron 493 de unas 555 fichas detectadas. Unas 60 quedaron fuera por su formato.
+
+`parse_duke.py` y `build_grafo_duke.py` regeneran el JSON a partir del texto extraído del PDF.
+
 ## Instalación
 
 Las skills viven en `.claude/skills/` y Claude Code las carga automáticamente al abrir este repo. Cada carpeta es una skill independiente (`SKILL.md` + `references/`). Para instalarla en claude.ai, comprime la carpeta como `.skill` (zip) y súbela en *Settings → Capabilities → Skills*, o cópiala a `~/.claude/skills/` para Claude Code.
