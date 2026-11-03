@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mirra, olíbano y bálsamo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Mirra, olíbano y apharsemon como grafo", "subtitle": "Ben-Yehoshua y Hanuš, capítulo de Medicinal and Aromatic Plants of the Middle-East (Yaniv y Dudai, eds.; Springer, 2014) · con alertas de evidencia actual", "itemLabel": "Planta, compuesto o uso", "itemLabelPlural": "Plantas, compuestos y usos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: AKBA, incensol, Forsskål, Mirazid, Punt…"}, "blocks": {"botanica": {"name": "Botánica", "color": "#6B8E4E"}, "historia": {"name": "Historia y usos antiguos", "color": "#B08A2E"}, "quimica": {"name": "Química", "color": "#6B5B95"}, "produccion": {"name": "Ecología y producción", "color": "#3F8A8A"}, "investigacion": {"name": "Investigación y futuro", "color": "#3F6FA0"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "botanica", "page": 68, "summary": "Cómo se identificaron el apharsemon, la mirra y el olíbano, y por qué la clasificación de las Burseráceas sigue siendo inestable.", "sections": [{"num": "1.1", "title": "El apharsemon y sus nombres", "summary": "Los autores identifican el bálsamo bíblico con Commiphora gileadensis y proponen que el cultivo en Judea mejoró la planta traída de Saba.", "items": ["p_apharsemon"], "page": 68}, {"num": "1.2", "title": "La expedición de Forsskål", "summary": "En 1763 Forsskål halló en Yemen un árbol aromático y lo vinculó con el bálsamo; murió en el viaje y Niebuhr publicó sus notas.", "items": ["h_forsskal"], "page": 70}, {"num": "1.3", "title": "De Amyris a Commiphora", "summary": "Durante el siglo XIX el bálsamo cambió de género varias veces; Engler adoptó Commiphora en 1883 y la familia sigue siendo difícil de clasificar.", "items": ["p_burseraceae"], "page": 72}, {"num": "1.4", "title": "Taxonomía actual", "summary": "Hoy el nombre aceptado es Commiphora gileadensis, con C. opobalsamum como sinónimo, dentro de Burseraceae y el orden Sapindales.", "page": 76}, {"num": "1.5", "title": "Identificación de la mirra", "summary": "La mirra procede sobre todo de Commiphora myrrha; no hay acuerdo sobre qué especie daba la mirra bíblica.", "items": ["p_mirra"], "page": 77}, {"num": "1.6", "title": "Identificación del olíbano", "summary": "Boswellia agrupa varias especies; B. sacra (o B. carterii) y B. frereana dan el incienso de mayor valor comercial.", "items": ["p_olibano"], "page": 77}]}, {"num": 2, "title": "Usos como droga cruda", "block": "historia", "page": 79, "summary": "Qué productos se obtenían de cada resina en la Antigüedad y qué rastros se han buscado del apharsemon.", "sections": [{"num": "2.1", "title": "La resina del apharsemon", "summary": "La resina servía para incienso, perfume y medicinas; su precio superaba al de cualquier otro producto agrícola.", "page": 79}, {"num": "2.2", "title": "El apharsemon en Judea", "summary": "La Biblia cita el comercio del tzori, aunque los autores fechan su llegada a Judea en la época de Salomón.", "page": 80}, {"num": "2.3", "title": "Búsqueda actual de restos", "summary": "Ningún hallazgo arqueológico de Qumrán ni de cajas antiguas mostró marcadores químicos de Commiphora o Boswellia.", "page": 80}, {"num": "2.4", "title": "La mirra en ritos y embalsamamiento", "summary": "En Egipto la mirra se quemaba en ofrendas y se usaba para embalsamar; también aparece en los Evangelios.", "items": ["h_embalsamamiento"], "page": 82}, {"num": "2.5", "title": "El nombre del olíbano", "summary": "Olíbano y levonah aluden al color blanco de las mejores gotas de resina; su uso principal es quemarlo en ceremonias.", "page": 83}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "page": 84, "summary": "Terpenos y otros compuestos aislados de cada resina, con algunas actividades medidas en laboratorio.", "sections": [{"num": "3.1", "title": "Compuestos del apharsemon", "summary": "Monoterpenos y sesquiterpenos como linalol, germacreno D y β-cariofileno; las muestras de distintos países quizá no sean la misma planta.", "items": ["c_terpenos_apharsemon"], "page": 84}, {"num": "3.2", "title": "Compuestos de la mirra", "summary": "Furanosesquiterpenos típicos y muchos compuestos nuevos; algunos inhiben la aromatasa o el crecimiento de células endoteliales.", "items": ["c_sesquiterpenos_mirra"], "page": 84}, {"num": "3.3", "title": "Compuestos del olíbano", "summary": "Ácidos boswélicos, incensol y su acetato, triterpenos nuevos y un aceite esencial rico en pineno o limoneno según la especie.", "items": ["c_acidos_boswellicos", "c_incensol", "c_aceite_olibano"], "page": 88}]}, {"num": 4, "title": "Descripción morfológica", "block": "botanica", "page": 93, "summary": "Rasgos de hoja, flor, corteza y porte de las tres plantas.", "sections": [{"num": "4.1", "title": "Morfología del apharsemon", "summary": "Árbol mediano de hojas trifoliadas, corteza gris lisa que suelta resina al herirse y flores de cuatro pétalos.", "page": 93}, {"num": "4.2", "title": "Morfología de la mirra", "summary": "Árbol bajo y espinoso de corteza que se pela, casi siempre sin hojas; nunca se ha cultivado en plantaciones.", "page": 94}, {"num": "4.3", "title": "Morfología del olíbano", "summary": "Arbusto o árbol pequeño; el clima de Dhofar da las resinas más finas y B. serrata tiene tronco recto y aroma distinto.", "page": 95}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "produccion", "page": 96, "summary": "Dónde crecen las tres plantas, cómo se comerciaban y por qué hoy su producción es escasa.", "sections": [{"num": "5.1", "title": "Apharsemon y rutas del incienso", "summary": "El apharsemon se cultivó solo en Jericó y Ein Gedi; mirra e incienso viajaban desde el sur de Arabia por rutas controladas por varios pueblos.", "items": ["h_ruta_incienso"], "page": 96}, {"num": "5.2", "title": "Zonas de la mirra", "summary": "La mirra antigua venía del sur de Arabia; hoy se concentra en Somalia y también en la India.", "page": 98}, {"num": "5.3", "title": "Zonas del olíbano", "summary": "La lluvia y el suelo limitan la distribución de Boswellia; el tipo Hojari de Omán es el más caro.", "page": 99}, {"num": "5.4", "title": "Producción actual en África", "summary": "La producción y la exportación son bajas, las poblaciones de árboles disminuyen y la sangría excesiva reduce la germinación.", "items": ["h_produccion_actual"], "page": 99}, {"num": "5.5", "title": "Requisitos ecológicos", "summary": "Mirra e incienso crecen en suelos pobres y rocosos; Boswellia prefiere caliza y clima seco.", "page": 101}]}, {"num": 6, "title": "Cosecha", "block": "produccion", "page": 101, "summary": "Técnicas de incisión para obtener cada resina y costumbres asociadas a la cosecha.", "sections": [{"num": "6.1", "title": "Cosecha del apharsemon", "summary": "Los agricultores de Judea cortaban con vidrio, piedra o hueso, porque el hierro dañaba el arbusto; hoy el hacha daña mirra e incienso.", "items": ["h_cosecha"], "page": 101}, {"num": "6.2", "title": "Cosecha de la mirra", "summary": "Se corta la corteza y la goma amarilla fluye y se endurece en lágrimas rojizas.", "page": 102}, {"num": "6.3", "title": "Cosecha del olíbano y folclore de Dhofar", "summary": "Se raspa la corteza, se recoge a las dos semanas y se cosecha unas dos veces al año; en Dhofar acompaña partos, bodas y funerales.", "page": 102}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y cosmético", "block": "historia", "page": 103, "summary": "Papel de las tres resinas en Egipto, Judea, Roma y las religiones, y causas del fin del apharsemon.", "sections": [{"num": "7.1", "title": "Arqueología e historia", "summary": "La alta demanda de resinas escasas impulsó rutas comerciales largas hacia los grandes imperios.", "page": 103}, {"num": "7.2", "title": "Especias en el antiguo Egipto", "summary": "Egipto importaba mirra de Punt; Hatshepsut envió una expedición que trajo árboles, sin pruebas de que prosperaran.", "items": ["h_punt"], "page": 104}, {"num": "7.3", "title": "Especias en Judea", "summary": "Restos de altares, recipientes y sellos muestran comercio entre el sur de Arabia y Judea desde el siglo IX a. C.", "page": 105}, {"num": "7.4", "title": "Auge y caída del apharsemon", "summary": "Un gremio guardó en secreto su cultivo durante siglos; Herodes y Roma lo explotaron y desapareció tras la conquista árabe.", "items": ["h_gremio_ein_gedi"], "page": 106}, {"num": "7.5", "title": "La mirra en ritos y bebidas", "summary": "La mirra formó parte del kyphi egipcio, de vinos romanos y de licores de hierbas modernos.", "items": ["h_kyphi"], "page": 111}, {"num": "7.6", "title": "El olíbano en religión y folclore", "summary": "El incienso acompaña rezos judíos y cristianos; en Yemen sirve para perfumar, reparar vasijas, teñir y como remedio casero.", "page": 112}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "investigacion", "page": 114, "summary": "Usos tradicionales de cada resina contrastados con estudios de laboratorio, animales, algunos ensayos clínicos y patentes.", "sections": [{"num": "8.1", "title": "Apharsemon en la medicina tradicional", "summary": "Se usó como remedio para casi todo; el capítulo también recoge avisos de alergia y confusiones con otros «bálsamos de Galaad».", "items": ["u_seguridad"], "page": 114}, {"num": "8.2", "title": "Apharsemon: estudios farmacológicos", "summary": "Extractos con efecto antiinflamatorio, antimicrobiano y citotóxico; el β-cariofileno induciría apoptosis en células tumorales.", "items": ["u_antimicrobiano", "c_beta_cariofileno"], "page": 116}, {"num": "8.3", "title": "Mirra: tradición, mitridato y parásitos", "summary": "La mirra entró en antídotos antiguos; un extracto de C. molmol se probó contra la esquistosomiasis con resultados opuestos.", "items": ["h_mitridato", "u_esquistosomiasis"], "page": 118}, {"num": "8.4", "title": "Mirra y guggul: estudios y patentes", "summary": "Estudios en animales y células sobre dolor, lípidos, infección y cáncer, y patentes sobre Commiphora y gugulípido.", "items": ["p_guggul", "u_analgesia", "u_hiperlipidemia"], "page": 120}, {"num": "8.5", "title": "Olíbano: tradición y patentes", "summary": "Textos egipcios, árabes, chinos y ayurvédicos lo recetan; hay patentes de ácidos boswélicos para inflamación, cerebro, piel y cáncer.", "page": 128}, {"num": "8.6", "title": "Olíbano: investigación reciente", "summary": "Ácidos boswélicos en inflamación crónica y artrosis, incensol en el ánimo, efectos antitumorales y daño del humo en ratas.", "items": ["u_artrosis", "u_inflamacion_cronica", "u_animo", "u_cancer", "u_humo_incienso"], "page": 131}]}, {"num": 9, "title": "Conclusiones", "block": "investigacion", "page": 136, "summary": "Los autores ven en el potencial médico de estas resinas una vía para reactivar su producción, incluido el apharsemon en el mar Muerto.", "sections": [{"num": "9.1", "title": "Futuro de mirra e incienso", "summary": "El comercio es mínimo, pero los autores proponen buscar fármacos en textos antiguos y dar ingresos a las regiones productoras.", "items": ["h_arqueofarmacologia"], "page": 136}, {"num": "9.2", "title": "¿Revivir el apharsemon?", "summary": "Ya crecen miles de plantas candidatas cerca del mar Muerto; su resina mostró actividad citotóxica en líneas tumorales.", "page": 138}]}], "items": {"p_apharsemon": {"title": "Apharsemon (bálsamo de Judea)", "summary": "Commiphora gileadensis, sinónimo C. opobalsamum. Según el capítulo, se cultivó solo junto al mar Muerto y hoy está extinguido allí.", "formula": "Precio: el doble de su peso en oro en la Edad Media"}, "h_forsskal": {"title": "Expedición de Forsskål", "summary": "Viaje danés a Yemen en 1763 que identificó un árbol aromático como fuente del opobálsamo; Linneo lo llamó Amyris gileadensis.", "formula": "Año 1763 · unas 2 000 notas sueltas"}, "p_burseraceae": {"title": "Familia Burseraceae", "summary": "Familia de árboles con resina aromática que incluye Commiphora y Boswellia; su taxonomía es inestable porque las plantas pasan casi todo el año sin hojas.", "formula": "17 géneros · unas 560 especies"}, "p_mirra": {"title": "Mirra (Commiphora myrrha y afines)", "summary": "Oleogomorresina amarga de Commiphora myrrha y especies cercanas, recogida de árboles silvestres de Arabia y el Cuerno de África.", "formula": "Aceite volátil 7–17 % · resina 25–40 % · goma 57–61 %"}, "p_olibano": {"title": "Olíbano (Boswellia spp.: incienso)", "summary": "Resina de varias especies de Boswellia; B. sacra (o B. carterii) es el incienso bíblico y B. serrata el indio.", "formula": "5 especies; 2 de valor comercial (van Beek)"}, "h_embalsamamiento": {"title": "Mirra en el embalsamamiento", "summary": "Según el capítulo, los egipcios usaban mucha mirra e incienso para preservar los cuerpos por su acción antibacteriana."}, "c_terpenos_apharsemon": {"title": "Terpenos del apharsemon", "summary": "Monoterpenos y sesquiterpenos como linalol, α-terpineol, germacreno D y β-cariofileno, más lactonas y triterpenos nuevos."}, "c_sesquiterpenos_mirra": {"title": "Furanosesquiterpenos de la mirra", "summary": "Compuestos típicos de la mirra, como curzereno, furanodieno y furanoeudesma-1,3-dieno; algunos inhiben la aromatasa en ensayos.", "formula": "CI50 de aromatasa 0,2–0,3 μM (dos compuestos)", "caution": "El efecto analgésico de los sesquiterpenos de mirra se vio en ratones. No se encontraron ensayos clínicos de analgesia. No debe presentarse como analgésico probado en humanos. (Dolara 1996)"}, "c_acidos_boswellicos": {"title": "Ácidos boswélicos (incluido AKBA)", "summary": "Triterpenos α y β del olíbano y sus acetatos; el AKBA (ácido acetil-11-ceto-β-boswélico) es el más estudiado.", "caution": "Ningún ensayo compara Boswellia con AINE en daño del cartílago. La idea de que no daña el cartílago viene de estudios experimentales. Si se sustituye un AINE, esta afirmación no es un argumento válido. (Cochrane CD002947)"}, "c_incensol": {"title": "Incensol y acetato de incensol", "summary": "Diterpenos característicos del olíbano; el capítulo señala el acetato de incensol como uno de sus principios activos principales."}, "c_aceite_olibano": {"title": "Aceite esencial del olíbano", "summary": "Mezcla de monoterpenos cuya composición cambia con la especie y el origen; domina el limoneno, el ocimeno o el α-pineno.", "formula": "B. sacra: α-pineno 46,8–76,0 % en Omán (tabla 4)"}, "h_ruta_incienso": {"title": "Rutas del incienso", "summary": "Cadenas de pueblos árabes llevaban mirra e incienso del sur de Arabia hasta Egipto, Siria y Mesopotamia, y guardaban en secreto su origen.", "formula": "Aelana–Minea: 70 días de viaje"}, "h_produccion_actual": {"title": "Producción actual y declive", "summary": "Según el capítulo, el comercio es hoy mínimo, viene sobre todo de Somalia y los árboles disminuyen por sobreexplotación, pastoreo y fuego.", "formula": "Exportación 1 000–1 500 t/año · germinación 16 % frente a >80 %"}, "h_cosecha": {"title": "Técnica de cosecha sin hierro", "summary": "Los agricultores de Judea hacían incisiones con vidrio, piedra o hueso; el capítulo atribuye al hierro un efecto letal sobre el arbusto."}, "h_punt": {"title": "Expedición a Punt", "summary": "Hatshepsut envió barcos a Punt que volvieron con árboles de incienso o mirra en macetas; no consta que crecieran en Egipto.", "formula": "Hacia 1500 a. C. · 31 árboles en un barco"}, "h_gremio_ein_gedi": {"title": "Gremio de Ein Gedi", "summary": "Agricultores organizados que guardaron el secreto del cultivo del apharsemon; su producción decayó tras la conquista árabe del siglo VII.", "formula": "Más de 1 000 años de cultivo"}, "h_kyphi": {"title": "Kyphi", "summary": "Perfume sagrado egipcio con mirra e incienso, usado en ritos y como medicina.", "formula": "16 ingredientes"}, "u_seguridad": {"title": "Seguridad y toxicidad", "summary": "Según el capítulo, el bálsamo de La Meca causaba reacciones faciales y alergia, la mirra en exceso da náusea y vómito, y el apharsemon se usaba como abortivo; no trata interacciones.", "caution": "Si hay embarazo, lactancia o edad menor de 12 años, la EMA no recomienda la tintura de mirra. Si se toma warfarina, la mirra puede reducir su efecto. Boswellia y mirra pueden causar dermatitis alérgica de contacto. (EMA 2011; Al Faraj 2005; Buonomo 2021)"}, "u_antimicrobiano": {"title": "Efecto antimicrobiano", "summary": "Según el capítulo, la savia del apharsemon y los aceites de mirra e incienso inhiben bacterias y hongos en ensayos de laboratorio.", "caution": "La actividad antimicrobiana de mirra y olíbano es sobre todo in vitro. La EMA solo reconoce uso tradicional de la tintura de mirra en úlceras bucales leves, gingivitis y heridas menores. Si los síntomas duran más de una semana, se debe consultar. No sustituye antibióticos. (EMA/HMPC 2011)"}, "c_beta_cariofileno": {"title": "β-cariofileno del apharsemon", "summary": "Componente principal del aceite esencial del apharsemon; según los autores, induce apoptosis en células de linfoma y no en células normales.", "formula": "20,12 % del aceite esencial"}, "h_mitridato": {"title": "Mitridato y teriaca", "summary": "Antídoto antiguo con mirra, ampliado por Galeno como teriaca; Jerusalén fue un centro de producción.", "formula": "63 ingredientes en 1659"}, "u_esquistosomiasis": {"title": "Mirra contra parásitos (Mirazid)", "summary": "Según el capítulo, un extracto de C. molmol (Mirazid) curó esquistosomiasis y otras parasitosis en algunos estudios, pero otros no hallaron eficacia.", "caution": "Si se trata esquistosomiasis, Mirazid no es eficaz. En ensayos aleatorizados curó al 9–16 % frente al 63–80 % con praziquantel. Si se trata fasciolosis, las curas del 90–100 % vienen de series pequeñas sin control, y un estudio independiente encontró curación baja. La OMS recomienda praziquantel y triclabendazol, respectivamente. (Botros 2005; Barakat 2005; Osman 2010; OMS)"}, "p_guggul": {"title": "Guggul (Commiphora mukul o wightii)", "summary": "Resina ayurvédica cuyo extracto, el gugulípido, se propone para bajar lípidos; según el capítulo, un ensayo aleatorizado no mejoró el colesterol."}, "u_analgesia": {"title": "Efecto analgésico de la mirra", "summary": "Según el capítulo, el furanoeudesma-1,3-dieno y el curzereno redujeron el dolor en ratones al actuar sobre receptores opioides."}, "u_artrosis": {"title": "Boswellia en artrosis", "summary": "Según el capítulo, un extracto enriquecido de B. serrata (5-Loxin) redujo el dolor de rodilla y mejoró la función frente a placebo.", "formula": "75 pacientes con artrosis de rodilla", "caution": "Si se usa Boswellia en artrosis de rodilla, el beneficio esperado es moderado y a corto plazo. Cochrane encontró menos dolor con 100 mg/día de extracto enriquecido durante 90 días. Los productos son heterogéneos. No hay datos de protección del cartílago. (Cochrane CD002947; Dalmonte 2024)"}, "u_inflamacion_cronica": {"title": "Boswellia en inflamación crónica", "summary": "Según el capítulo, los ácidos boswélicos ayudan en colitis, enfermedad de Crohn, artritis reumatoide y asma, sin dañar el cartílago como los AINE.", "caution": "Si hay enfermedad de Crohn en remisión, Boswellia no mantuvo la remisión mejor que placebo en 52 semanas. El ensayo positivo en colitis tuvo 30 pacientes y no fue ciego. Si hay asma, solo hay ensayos pequeños y antiguos: en 80 pacientes mejoró el 70 % frente al 27 % con placebo. No sustituye el tratamiento estándar. (Holtmeier 2011; Gupta 2001; Gupta 1998)"}, "u_animo": {"title": "Incensol y estado de ánimo", "summary": "Según el capítulo, el acetato de incensol redujo la ansiedad y produjo una conducta similar a la antidepresiva en ratones.", "caution": "El efecto ansiolítico y antidepresivo del acetato de incensol se vio en ratones, no en humanos. El mecanismo propuesto es la activación del canal TRPV3. No hay ensayos clínicos. No debe presentarse como tratamiento de ansiedad o depresión. (Moussaieff 2008)"}, "u_cancer": {"title": "Efectos antitumorales", "summary": "Según el capítulo, extractos y compuestos de las tres plantas frenan o matan células tumorales de próstata, mama, páncreas, vejiga y linfoma en laboratorio.", "caution": "Los efectos anticancerosos de Boswellia y del β-cariofileno del apharsemon vienen sobre todo de células y animales. En humanos solo hay estudios piloto de Boswellia: menos edema cerebral con radioterapia y menos proliferación en cáncer de mama. No hay evidencia de que traten el cáncer. No deben retrasar el tratamiento oncológico. (Kirste 2011; Valente 2024; Amiel 2012)"}, "u_humo_incienso": {"title": "Exposición al humo de incienso", "summary": "Según el capítulo, el humo de B. carterii bajó el recuento de espermatozoides en ratas, y los autores advierten del riesgo en exposición continua en interiores.", "formula": "4 g/día, 30–40 min/día durante 4 meses", "caution": "Si se quema incienso en interiores durante años, hay riesgo respiratorio. En una cohorte de 61 320 adultos, el uso prolongado se asoció con carcinoma escamoso respiratorio (RR 1,8). El daño espermático solo se ha visto en ratas. (Friborg 2008)"}, "h_arqueofarmacologia": {"title": "Arqueofarmacología", "summary": "Propuesta de buscar nuevos fármacos a partir de textos médicos antiguos; los autores la aplican a mirra, incienso y apharsemon."}, "u_hiperlipidemia": {"title": "Gugulípido y colesterol", "summary": "Según el capítulo, el gugulípido de Commiphora mukul se ha estudiado y patentado para bajar el colesterol.", "caution": "Si se busca bajar el colesterol, el gugulípido no lo logró en un ensayo aleatorizado de 103 adultos. El LDL subió 4–5 % frente a −5 % con placebo. Seis pacientes con gugulípido tuvieron exantema. (Szapary 2003)"}}, "resources": [{"id": "1", "title": "Terpenos principales de Boswellia sacra", "page": 91, "usedBy": ["3.3"]}, {"id": "2", "title": "Terpenos principales de B. sacra y B. carterii comparados", "page": 91, "usedBy": ["3.3"]}, {"id": "3", "title": "Terpenos de muestras de B. carterii y B. sacra comparados", "page": 134, "usedBy": ["8.6"]}, {"id": "4", "title": "Terpenos principales de muestras de B. sacra de Omán", "page": 135, "usedBy": ["8.6"]}], "requires": {"chapters": {"2": [1], "3": [1], "4": [1], "5": [4], "6": [4], "7": [2, 5], "8": [3, 7], "9": [8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.2"], "1.4": ["1.3"], "1.5": ["1.3"], "1.6": ["1.3"], "2.1": ["1.1"], "2.2": ["2.1"], "2.3": ["2.2"], "2.4": ["1.5"], "2.5": ["1.6"], "3.1": ["1.4"], "3.2": ["1.5"], "3.3": ["1.6"], "4.1": ["1.4"], "4.2": ["1.5"], "4.3": ["1.6"], "5.1": ["2.2"], "5.2": ["4.2"], "5.3": ["4.3"], "5.4": ["5.3"], "5.5": ["5.3"], "6.1": ["4.1"], "6.2": ["4.2"], "6.3": ["4.3"], "7.1": ["5.1"], "7.2": ["7.1"], "7.3": ["7.1"], "7.4": ["7.3", "6.1"], "7.5": ["2.4"], "7.6": ["2.5"], "8.1": ["2.1"], "8.2": ["3.1", "8.1"], "8.3": ["7.5"], "8.4": ["3.2", "8.3"], "8.5": ["7.6"], "8.6": ["3.3", "8.5"], "9.1": ["8.6", "5.4"], "9.2": ["8.2", "7.4"]}, "items": {"h_forsskal": ["p_apharsemon"], "p_burseraceae": ["h_forsskal"], "p_mirra": ["p_burseraceae"], "p_olibano": ["p_burseraceae"], "h_embalsamamiento": ["p_mirra"], "c_terpenos_apharsemon": ["p_apharsemon"], "c_sesquiterpenos_mirra": ["p_mirra"], "c_acidos_boswellicos": ["p_olibano"], "c_incensol": ["p_olibano"], "c_aceite_olibano": ["p_olibano"], "h_ruta_incienso": ["p_mirra", "p_olibano"], "h_produccion_actual": ["h_ruta_incienso"], "h_cosecha": ["p_apharsemon"], "h_punt": ["h_ruta_incienso"], "h_gremio_ein_gedi": ["h_cosecha"], "h_kyphi": ["p_mirra", "p_olibano"], "u_seguridad": ["p_apharsemon", "p_mirra"], "c_beta_cariofileno": ["c_terpenos_apharsemon"], "u_antimicrobiano": ["c_terpenos_apharsemon", "c_sesquiterpenos_mirra"], "h_mitridato": ["h_kyphi"], "u_esquistosomiasis": ["c_sesquiterpenos_mirra"], "p_guggul": ["p_mirra"], "u_analgesia": ["c_sesquiterpenos_mirra"], "u_artrosis": ["c_acidos_boswellicos"], "u_inflamacion_cronica": ["c_acidos_boswellicos"], "u_animo": ["c_incensol"], "u_cancer": ["c_beta_cariofileno", "c_acidos_boswellicos"], "u_humo_incienso": ["p_olibano"], "h_arqueofarmacologia": ["h_mitridato", "u_cancer"], "u_hiperlipidemia": ["p_guggul"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

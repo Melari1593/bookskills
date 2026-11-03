@@ -1,0 +1,860 @@
+{
+ "meta": {
+  "title": "Mirra, olíbano y apharsemon como grafo",
+  "subtitle": "Ben-Yehoshua y Hanuš, capítulo de Medicinal and Aromatic Plants of the Middle-East (Yaniv y Dudai, eds.; Springer, 2014) · con alertas de evidencia actual",
+  "itemLabel": "Planta, compuesto o uso",
+  "itemLabelPlural": "Plantas, compuestos y usos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: AKBA, incensol, Forsskål, Mirazid, Punt…"
+ },
+ "blocks": {
+  "botanica": {
+   "name": "Botánica",
+   "color": "#6B8E4E"
+  },
+  "historia": {
+   "name": "Historia y usos antiguos",
+   "color": "#B08A2E"
+  },
+  "quimica": {
+   "name": "Química",
+   "color": "#6B5B95"
+  },
+  "produccion": {
+   "name": "Ecología y producción",
+   "color": "#3F8A8A"
+  },
+  "investigacion": {
+   "name": "Investigación y futuro",
+   "color": "#3F6FA0"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "botanica",
+   "page": 68,
+   "summary": "Cómo se identificaron el apharsemon, la mirra y el olíbano, y por qué la clasificación de las Burseráceas sigue siendo inestable.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "El apharsemon y sus nombres",
+     "summary": "Los autores identifican el bálsamo bíblico con Commiphora gileadensis y proponen que el cultivo en Judea mejoró la planta traída de Saba.",
+     "items": [
+      "p_apharsemon"
+     ],
+     "page": 68
+    },
+    {
+     "num": "1.2",
+     "title": "La expedición de Forsskål",
+     "summary": "En 1763 Forsskål halló en Yemen un árbol aromático y lo vinculó con el bálsamo; murió en el viaje y Niebuhr publicó sus notas.",
+     "items": [
+      "h_forsskal"
+     ],
+     "page": 70
+    },
+    {
+     "num": "1.3",
+     "title": "De Amyris a Commiphora",
+     "summary": "Durante el siglo XIX el bálsamo cambió de género varias veces; Engler adoptó Commiphora en 1883 y la familia sigue siendo difícil de clasificar.",
+     "items": [
+      "p_burseraceae"
+     ],
+     "page": 72
+    },
+    {
+     "num": "1.4",
+     "title": "Taxonomía actual",
+     "summary": "Hoy el nombre aceptado es Commiphora gileadensis, con C. opobalsamum como sinónimo, dentro de Burseraceae y el orden Sapindales.",
+     "page": 76
+    },
+    {
+     "num": "1.5",
+     "title": "Identificación de la mirra",
+     "summary": "La mirra procede sobre todo de Commiphora myrrha; no hay acuerdo sobre qué especie daba la mirra bíblica.",
+     "items": [
+      "p_mirra"
+     ],
+     "page": 77
+    },
+    {
+     "num": "1.6",
+     "title": "Identificación del olíbano",
+     "summary": "Boswellia agrupa varias especies; B. sacra (o B. carterii) y B. frereana dan el incienso de mayor valor comercial.",
+     "items": [
+      "p_olibano"
+     ],
+     "page": 77
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como droga cruda",
+   "block": "historia",
+   "page": 79,
+   "summary": "Qué productos se obtenían de cada resina en la Antigüedad y qué rastros se han buscado del apharsemon.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "La resina del apharsemon",
+     "summary": "La resina servía para incienso, perfume y medicinas; su precio superaba al de cualquier otro producto agrícola.",
+     "page": 79
+    },
+    {
+     "num": "2.2",
+     "title": "El apharsemon en Judea",
+     "summary": "La Biblia cita el comercio del tzori, aunque los autores fechan su llegada a Judea en la época de Salomón.",
+     "page": 80
+    },
+    {
+     "num": "2.3",
+     "title": "Búsqueda actual de restos",
+     "summary": "Ningún hallazgo arqueológico de Qumrán ni de cajas antiguas mostró marcadores químicos de Commiphora o Boswellia.",
+     "page": 80
+    },
+    {
+     "num": "2.4",
+     "title": "La mirra en ritos y embalsamamiento",
+     "summary": "En Egipto la mirra se quemaba en ofrendas y se usaba para embalsamar; también aparece en los Evangelios.",
+     "items": [
+      "h_embalsamamiento"
+     ],
+     "page": 82
+    },
+    {
+     "num": "2.5",
+     "title": "El nombre del olíbano",
+     "summary": "Olíbano y levonah aluden al color blanco de las mejores gotas de resina; su uso principal es quemarlo en ceremonias.",
+     "page": 83
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "page": 84,
+   "summary": "Terpenos y otros compuestos aislados de cada resina, con algunas actividades medidas en laboratorio.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Compuestos del apharsemon",
+     "summary": "Monoterpenos y sesquiterpenos como linalol, germacreno D y β-cariofileno; las muestras de distintos países quizá no sean la misma planta.",
+     "items": [
+      "c_terpenos_apharsemon"
+     ],
+     "page": 84
+    },
+    {
+     "num": "3.2",
+     "title": "Compuestos de la mirra",
+     "summary": "Furanosesquiterpenos típicos y muchos compuestos nuevos; algunos inhiben la aromatasa o el crecimiento de células endoteliales.",
+     "items": [
+      "c_sesquiterpenos_mirra"
+     ],
+     "page": 84
+    },
+    {
+     "num": "3.3",
+     "title": "Compuestos del olíbano",
+     "summary": "Ácidos boswélicos, incensol y su acetato, triterpenos nuevos y un aceite esencial rico en pineno o limoneno según la especie.",
+     "items": [
+      "c_acidos_boswellicos",
+      "c_incensol",
+      "c_aceite_olibano"
+     ],
+     "page": 88
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "botanica",
+   "page": 93,
+   "summary": "Rasgos de hoja, flor, corteza y porte de las tres plantas.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Morfología del apharsemon",
+     "summary": "Árbol mediano de hojas trifoliadas, corteza gris lisa que suelta resina al herirse y flores de cuatro pétalos.",
+     "page": 93
+    },
+    {
+     "num": "4.2",
+     "title": "Morfología de la mirra",
+     "summary": "Árbol bajo y espinoso de corteza que se pela, casi siempre sin hojas; nunca se ha cultivado en plantaciones.",
+     "page": 94
+    },
+    {
+     "num": "4.3",
+     "title": "Morfología del olíbano",
+     "summary": "Arbusto o árbol pequeño; el clima de Dhofar da las resinas más finas y B. serrata tiene tronco recto y aroma distinto.",
+     "page": 95
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "produccion",
+   "page": 96,
+   "summary": "Dónde crecen las tres plantas, cómo se comerciaban y por qué hoy su producción es escasa.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Apharsemon y rutas del incienso",
+     "summary": "El apharsemon se cultivó solo en Jericó y Ein Gedi; mirra e incienso viajaban desde el sur de Arabia por rutas controladas por varios pueblos.",
+     "items": [
+      "h_ruta_incienso"
+     ],
+     "page": 96
+    },
+    {
+     "num": "5.2",
+     "title": "Zonas de la mirra",
+     "summary": "La mirra antigua venía del sur de Arabia; hoy se concentra en Somalia y también en la India.",
+     "page": 98
+    },
+    {
+     "num": "5.3",
+     "title": "Zonas del olíbano",
+     "summary": "La lluvia y el suelo limitan la distribución de Boswellia; el tipo Hojari de Omán es el más caro.",
+     "page": 99
+    },
+    {
+     "num": "5.4",
+     "title": "Producción actual en África",
+     "summary": "La producción y la exportación son bajas, las poblaciones de árboles disminuyen y la sangría excesiva reduce la germinación.",
+     "items": [
+      "h_produccion_actual"
+     ],
+     "page": 99
+    },
+    {
+     "num": "5.5",
+     "title": "Requisitos ecológicos",
+     "summary": "Mirra e incienso crecen en suelos pobres y rocosos; Boswellia prefiere caliza y clima seco.",
+     "page": 101
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha",
+   "block": "produccion",
+   "page": 101,
+   "summary": "Técnicas de incisión para obtener cada resina y costumbres asociadas a la cosecha.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Cosecha del apharsemon",
+     "summary": "Los agricultores de Judea cortaban con vidrio, piedra o hueso, porque el hierro dañaba el arbusto; hoy el hacha daña mirra e incienso.",
+     "items": [
+      "h_cosecha"
+     ],
+     "page": 101
+    },
+    {
+     "num": "6.2",
+     "title": "Cosecha de la mirra",
+     "summary": "Se corta la corteza y la goma amarilla fluye y se endurece en lágrimas rojizas.",
+     "page": 102
+    },
+    {
+     "num": "6.3",
+     "title": "Cosecha del olíbano y folclore de Dhofar",
+     "summary": "Se raspa la corteza, se recoge a las dos semanas y se cosecha unas dos veces al año; en Dhofar acompaña partos, bodas y funerales.",
+     "page": 102
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y cosmético",
+   "block": "historia",
+   "page": 103,
+   "summary": "Papel de las tres resinas en Egipto, Judea, Roma y las religiones, y causas del fin del apharsemon.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Arqueología e historia",
+     "summary": "La alta demanda de resinas escasas impulsó rutas comerciales largas hacia los grandes imperios.",
+     "page": 103
+    },
+    {
+     "num": "7.2",
+     "title": "Especias en el antiguo Egipto",
+     "summary": "Egipto importaba mirra de Punt; Hatshepsut envió una expedición que trajo árboles, sin pruebas de que prosperaran.",
+     "items": [
+      "h_punt"
+     ],
+     "page": 104
+    },
+    {
+     "num": "7.3",
+     "title": "Especias en Judea",
+     "summary": "Restos de altares, recipientes y sellos muestran comercio entre el sur de Arabia y Judea desde el siglo IX a. C.",
+     "page": 105
+    },
+    {
+     "num": "7.4",
+     "title": "Auge y caída del apharsemon",
+     "summary": "Un gremio guardó en secreto su cultivo durante siglos; Herodes y Roma lo explotaron y desapareció tras la conquista árabe.",
+     "items": [
+      "h_gremio_ein_gedi"
+     ],
+     "page": 106
+    },
+    {
+     "num": "7.5",
+     "title": "La mirra en ritos y bebidas",
+     "summary": "La mirra formó parte del kyphi egipcio, de vinos romanos y de licores de hierbas modernos.",
+     "items": [
+      "h_kyphi"
+     ],
+     "page": 111
+    },
+    {
+     "num": "7.6",
+     "title": "El olíbano en religión y folclore",
+     "summary": "El incienso acompaña rezos judíos y cristianos; en Yemen sirve para perfumar, reparar vasijas, teñir y como remedio casero.",
+     "page": 112
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "investigacion",
+   "page": 114,
+   "summary": "Usos tradicionales de cada resina contrastados con estudios de laboratorio, animales, algunos ensayos clínicos y patentes.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Apharsemon en la medicina tradicional",
+     "summary": "Se usó como remedio para casi todo; el capítulo también recoge avisos de alergia y confusiones con otros «bálsamos de Galaad».",
+     "items": [
+      "u_seguridad"
+     ],
+     "page": 114
+    },
+    {
+     "num": "8.2",
+     "title": "Apharsemon: estudios farmacológicos",
+     "summary": "Extractos con efecto antiinflamatorio, antimicrobiano y citotóxico; el β-cariofileno induciría apoptosis en células tumorales.",
+     "items": [
+      "u_antimicrobiano",
+      "c_beta_cariofileno"
+     ],
+     "page": 116
+    },
+    {
+     "num": "8.3",
+     "title": "Mirra: tradición, mitridato y parásitos",
+     "summary": "La mirra entró en antídotos antiguos; un extracto de C. molmol se probó contra la esquistosomiasis con resultados opuestos.",
+     "items": [
+      "h_mitridato",
+      "u_esquistosomiasis"
+     ],
+     "page": 118
+    },
+    {
+     "num": "8.4",
+     "title": "Mirra y guggul: estudios y patentes",
+     "summary": "Estudios en animales y células sobre dolor, lípidos, infección y cáncer, y patentes sobre Commiphora y gugulípido.",
+     "items": [
+      "p_guggul",
+      "u_analgesia",
+      "u_hiperlipidemia"
+     ],
+     "page": 120
+    },
+    {
+     "num": "8.5",
+     "title": "Olíbano: tradición y patentes",
+     "summary": "Textos egipcios, árabes, chinos y ayurvédicos lo recetan; hay patentes de ácidos boswélicos para inflamación, cerebro, piel y cáncer.",
+     "page": 128
+    },
+    {
+     "num": "8.6",
+     "title": "Olíbano: investigación reciente",
+     "summary": "Ácidos boswélicos en inflamación crónica y artrosis, incensol en el ánimo, efectos antitumorales y daño del humo en ratas.",
+     "items": [
+      "u_artrosis",
+      "u_inflamacion_cronica",
+      "u_animo",
+      "u_cancer",
+      "u_humo_incienso"
+     ],
+     "page": 131
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "investigacion",
+   "page": 136,
+   "summary": "Los autores ven en el potencial médico de estas resinas una vía para reactivar su producción, incluido el apharsemon en el mar Muerto.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Futuro de mirra e incienso",
+     "summary": "El comercio es mínimo, pero los autores proponen buscar fármacos en textos antiguos y dar ingresos a las regiones productoras.",
+     "items": [
+      "h_arqueofarmacologia"
+     ],
+     "page": 136
+    },
+    {
+     "num": "9.2",
+     "title": "¿Revivir el apharsemon?",
+     "summary": "Ya crecen miles de plantas candidatas cerca del mar Muerto; su resina mostró actividad citotóxica en líneas tumorales.",
+     "page": 138
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_apharsemon": {
+   "title": "Apharsemon (bálsamo de Judea)",
+   "summary": "Commiphora gileadensis, sinónimo C. opobalsamum. Según el capítulo, se cultivó solo junto al mar Muerto y hoy está extinguido allí.",
+   "formula": "Precio: el doble de su peso en oro en la Edad Media"
+  },
+  "h_forsskal": {
+   "title": "Expedición de Forsskål",
+   "summary": "Viaje danés a Yemen en 1763 que identificó un árbol aromático como fuente del opobálsamo; Linneo lo llamó Amyris gileadensis.",
+   "formula": "Año 1763 · unas 2 000 notas sueltas"
+  },
+  "p_burseraceae": {
+   "title": "Familia Burseraceae",
+   "summary": "Familia de árboles con resina aromática que incluye Commiphora y Boswellia; su taxonomía es inestable porque las plantas pasan casi todo el año sin hojas.",
+   "formula": "17 géneros · unas 560 especies"
+  },
+  "p_mirra": {
+   "title": "Mirra (Commiphora myrrha y afines)",
+   "summary": "Oleogomorresina amarga de Commiphora myrrha y especies cercanas, recogida de árboles silvestres de Arabia y el Cuerno de África.",
+   "formula": "Aceite volátil 7–17 % · resina 25–40 % · goma 57–61 %"
+  },
+  "p_olibano": {
+   "title": "Olíbano (Boswellia spp.: incienso)",
+   "summary": "Resina de varias especies de Boswellia; B. sacra (o B. carterii) es el incienso bíblico y B. serrata el indio.",
+   "formula": "5 especies; 2 de valor comercial (van Beek)"
+  },
+  "h_embalsamamiento": {
+   "title": "Mirra en el embalsamamiento",
+   "summary": "Según el capítulo, los egipcios usaban mucha mirra e incienso para preservar los cuerpos por su acción antibacteriana."
+  },
+  "c_terpenos_apharsemon": {
+   "title": "Terpenos del apharsemon",
+   "summary": "Monoterpenos y sesquiterpenos como linalol, α-terpineol, germacreno D y β-cariofileno, más lactonas y triterpenos nuevos."
+  },
+  "c_sesquiterpenos_mirra": {
+   "title": "Furanosesquiterpenos de la mirra",
+   "summary": "Compuestos típicos de la mirra, como curzereno, furanodieno y furanoeudesma-1,3-dieno; algunos inhiben la aromatasa en ensayos.",
+   "formula": "CI50 de aromatasa 0,2–0,3 μM (dos compuestos)",
+   "caution": "El efecto analgésico de los sesquiterpenos de mirra se vio en ratones. No se encontraron ensayos clínicos de analgesia. No debe presentarse como analgésico probado en humanos. (Dolara 1996)"
+  },
+  "c_acidos_boswellicos": {
+   "title": "Ácidos boswélicos (incluido AKBA)",
+   "summary": "Triterpenos α y β del olíbano y sus acetatos; el AKBA (ácido acetil-11-ceto-β-boswélico) es el más estudiado.",
+   "caution": "Ningún ensayo compara Boswellia con AINE en daño del cartílago. La idea de que no daña el cartílago viene de estudios experimentales. Si se sustituye un AINE, esta afirmación no es un argumento válido. (Cochrane CD002947)"
+  },
+  "c_incensol": {
+   "title": "Incensol y acetato de incensol",
+   "summary": "Diterpenos característicos del olíbano; el capítulo señala el acetato de incensol como uno de sus principios activos principales."
+  },
+  "c_aceite_olibano": {
+   "title": "Aceite esencial del olíbano",
+   "summary": "Mezcla de monoterpenos cuya composición cambia con la especie y el origen; domina el limoneno, el ocimeno o el α-pineno.",
+   "formula": "B. sacra: α-pineno 46,8–76,0 % en Omán (tabla 4)"
+  },
+  "h_ruta_incienso": {
+   "title": "Rutas del incienso",
+   "summary": "Cadenas de pueblos árabes llevaban mirra e incienso del sur de Arabia hasta Egipto, Siria y Mesopotamia, y guardaban en secreto su origen.",
+   "formula": "Aelana–Minea: 70 días de viaje"
+  },
+  "h_produccion_actual": {
+   "title": "Producción actual y declive",
+   "summary": "Según el capítulo, el comercio es hoy mínimo, viene sobre todo de Somalia y los árboles disminuyen por sobreexplotación, pastoreo y fuego.",
+   "formula": "Exportación 1 000–1 500 t/año · germinación 16 % frente a >80 %"
+  },
+  "h_cosecha": {
+   "title": "Técnica de cosecha sin hierro",
+   "summary": "Los agricultores de Judea hacían incisiones con vidrio, piedra o hueso; el capítulo atribuye al hierro un efecto letal sobre el arbusto."
+  },
+  "h_punt": {
+   "title": "Expedición a Punt",
+   "summary": "Hatshepsut envió barcos a Punt que volvieron con árboles de incienso o mirra en macetas; no consta que crecieran en Egipto.",
+   "formula": "Hacia 1500 a. C. · 31 árboles en un barco"
+  },
+  "h_gremio_ein_gedi": {
+   "title": "Gremio de Ein Gedi",
+   "summary": "Agricultores organizados que guardaron el secreto del cultivo del apharsemon; su producción decayó tras la conquista árabe del siglo VII.",
+   "formula": "Más de 1 000 años de cultivo"
+  },
+  "h_kyphi": {
+   "title": "Kyphi",
+   "summary": "Perfume sagrado egipcio con mirra e incienso, usado en ritos y como medicina.",
+   "formula": "16 ingredientes"
+  },
+  "u_seguridad": {
+   "title": "Seguridad y toxicidad",
+   "summary": "Según el capítulo, el bálsamo de La Meca causaba reacciones faciales y alergia, la mirra en exceso da náusea y vómito, y el apharsemon se usaba como abortivo; no trata interacciones.",
+   "caution": "Si hay embarazo, lactancia o edad menor de 12 años, la EMA no recomienda la tintura de mirra. Si se toma warfarina, la mirra puede reducir su efecto. Boswellia y mirra pueden causar dermatitis alérgica de contacto. (EMA 2011; Al Faraj 2005; Buonomo 2021)"
+  },
+  "u_antimicrobiano": {
+   "title": "Efecto antimicrobiano",
+   "summary": "Según el capítulo, la savia del apharsemon y los aceites de mirra e incienso inhiben bacterias y hongos en ensayos de laboratorio.",
+   "caution": "La actividad antimicrobiana de mirra y olíbano es sobre todo in vitro. La EMA solo reconoce uso tradicional de la tintura de mirra en úlceras bucales leves, gingivitis y heridas menores. Si los síntomas duran más de una semana, se debe consultar. No sustituye antibióticos. (EMA/HMPC 2011)"
+  },
+  "c_beta_cariofileno": {
+   "title": "β-cariofileno del apharsemon",
+   "summary": "Componente principal del aceite esencial del apharsemon; según los autores, induce apoptosis en células de linfoma y no en células normales.",
+   "formula": "20,12 % del aceite esencial"
+  },
+  "h_mitridato": {
+   "title": "Mitridato y teriaca",
+   "summary": "Antídoto antiguo con mirra, ampliado por Galeno como teriaca; Jerusalén fue un centro de producción.",
+   "formula": "63 ingredientes en 1659"
+  },
+  "u_esquistosomiasis": {
+   "title": "Mirra contra parásitos (Mirazid)",
+   "summary": "Según el capítulo, un extracto de C. molmol (Mirazid) curó esquistosomiasis y otras parasitosis en algunos estudios, pero otros no hallaron eficacia.",
+   "caution": "Si se trata esquistosomiasis, Mirazid no es eficaz. En ensayos aleatorizados curó al 9–16 % frente al 63–80 % con praziquantel. Si se trata fasciolosis, las curas del 90–100 % vienen de series pequeñas sin control, y un estudio independiente encontró curación baja. La OMS recomienda praziquantel y triclabendazol, respectivamente. (Botros 2005; Barakat 2005; Osman 2010; OMS)"
+  },
+  "p_guggul": {
+   "title": "Guggul (Commiphora mukul o wightii)",
+   "summary": "Resina ayurvédica cuyo extracto, el gugulípido, se propone para bajar lípidos; según el capítulo, un ensayo aleatorizado no mejoró el colesterol."
+  },
+  "u_analgesia": {
+   "title": "Efecto analgésico de la mirra",
+   "summary": "Según el capítulo, el furanoeudesma-1,3-dieno y el curzereno redujeron el dolor en ratones al actuar sobre receptores opioides."
+  },
+  "u_artrosis": {
+   "title": "Boswellia en artrosis",
+   "summary": "Según el capítulo, un extracto enriquecido de B. serrata (5-Loxin) redujo el dolor de rodilla y mejoró la función frente a placebo.",
+   "formula": "75 pacientes con artrosis de rodilla",
+   "caution": "Si se usa Boswellia en artrosis de rodilla, el beneficio esperado es moderado y a corto plazo. Cochrane encontró menos dolor con 100 mg/día de extracto enriquecido durante 90 días. Los productos son heterogéneos. No hay datos de protección del cartílago. (Cochrane CD002947; Dalmonte 2024)"
+  },
+  "u_inflamacion_cronica": {
+   "title": "Boswellia en inflamación crónica",
+   "summary": "Según el capítulo, los ácidos boswélicos ayudan en colitis, enfermedad de Crohn, artritis reumatoide y asma, sin dañar el cartílago como los AINE.",
+   "caution": "Si hay enfermedad de Crohn en remisión, Boswellia no mantuvo la remisión mejor que placebo en 52 semanas. El ensayo positivo en colitis tuvo 30 pacientes y no fue ciego. Si hay asma, solo hay ensayos pequeños y antiguos: en 80 pacientes mejoró el 70 % frente al 27 % con placebo. No sustituye el tratamiento estándar. (Holtmeier 2011; Gupta 2001; Gupta 1998)"
+  },
+  "u_animo": {
+   "title": "Incensol y estado de ánimo",
+   "summary": "Según el capítulo, el acetato de incensol redujo la ansiedad y produjo una conducta similar a la antidepresiva en ratones.",
+   "caution": "El efecto ansiolítico y antidepresivo del acetato de incensol se vio en ratones, no en humanos. El mecanismo propuesto es la activación del canal TRPV3. No hay ensayos clínicos. No debe presentarse como tratamiento de ansiedad o depresión. (Moussaieff 2008)"
+  },
+  "u_cancer": {
+   "title": "Efectos antitumorales",
+   "summary": "Según el capítulo, extractos y compuestos de las tres plantas frenan o matan células tumorales de próstata, mama, páncreas, vejiga y linfoma en laboratorio.",
+   "caution": "Los efectos anticancerosos de Boswellia y del β-cariofileno del apharsemon vienen sobre todo de células y animales. En humanos solo hay estudios piloto de Boswellia: menos edema cerebral con radioterapia y menos proliferación en cáncer de mama. No hay evidencia de que traten el cáncer. No deben retrasar el tratamiento oncológico. (Kirste 2011; Valente 2024; Amiel 2012)"
+  },
+  "u_humo_incienso": {
+   "title": "Exposición al humo de incienso",
+   "summary": "Según el capítulo, el humo de B. carterii bajó el recuento de espermatozoides en ratas, y los autores advierten del riesgo en exposición continua en interiores.",
+   "formula": "4 g/día, 30–40 min/día durante 4 meses",
+   "caution": "Si se quema incienso en interiores durante años, hay riesgo respiratorio. En una cohorte de 61 320 adultos, el uso prolongado se asoció con carcinoma escamoso respiratorio (RR 1,8). El daño espermático solo se ha visto en ratas. (Friborg 2008)"
+  },
+  "h_arqueofarmacologia": {
+   "title": "Arqueofarmacología",
+   "summary": "Propuesta de buscar nuevos fármacos a partir de textos médicos antiguos; los autores la aplican a mirra, incienso y apharsemon."
+  },
+  "u_hiperlipidemia": {
+   "title": "Gugulípido y colesterol",
+   "summary": "Según el capítulo, el gugulípido de Commiphora mukul se ha estudiado y patentado para bajar el colesterol.",
+   "caution": "Si se busca bajar el colesterol, el gugulípido no lo logró en un ensayo aleatorizado de 103 adultos. El LDL subió 4–5 % frente a −5 % con placebo. Seis pacientes con gugulípido tuvieron exantema. (Szapary 2003)"
+  }
+ },
+ "resources": [
+  {
+   "id": "1",
+   "title": "Terpenos principales de Boswellia sacra",
+   "page": 91,
+   "usedBy": [
+    "3.3"
+   ]
+  },
+  {
+   "id": "2",
+   "title": "Terpenos principales de B. sacra y B. carterii comparados",
+   "page": 91,
+   "usedBy": [
+    "3.3"
+   ]
+  },
+  {
+   "id": "3",
+   "title": "Terpenos de muestras de B. carterii y B. sacra comparados",
+   "page": 134,
+   "usedBy": [
+    "8.6"
+   ]
+  },
+  {
+   "id": "4",
+   "title": "Terpenos principales de muestras de B. sacra de Omán",
+   "page": 135,
+   "usedBy": [
+    "8.6"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    4
+   ],
+   "6": [
+    4
+   ],
+   "7": [
+    2,
+    5
+   ],
+   "8": [
+    3,
+    7
+   ],
+   "9": [
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "1.4": [
+    "1.3"
+   ],
+   "1.5": [
+    "1.3"
+   ],
+   "1.6": [
+    "1.3"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "1.5"
+   ],
+   "2.5": [
+    "1.6"
+   ],
+   "3.1": [
+    "1.4"
+   ],
+   "3.2": [
+    "1.5"
+   ],
+   "3.3": [
+    "1.6"
+   ],
+   "4.1": [
+    "1.4"
+   ],
+   "4.2": [
+    "1.5"
+   ],
+   "4.3": [
+    "1.6"
+   ],
+   "5.1": [
+    "2.2"
+   ],
+   "5.2": [
+    "4.2"
+   ],
+   "5.3": [
+    "4.3"
+   ],
+   "5.4": [
+    "5.3"
+   ],
+   "5.5": [
+    "5.3"
+   ],
+   "6.1": [
+    "4.1"
+   ],
+   "6.2": [
+    "4.2"
+   ],
+   "6.3": [
+    "4.3"
+   ],
+   "7.1": [
+    "5.1"
+   ],
+   "7.2": [
+    "7.1"
+   ],
+   "7.3": [
+    "7.1"
+   ],
+   "7.4": [
+    "7.3",
+    "6.1"
+   ],
+   "7.5": [
+    "2.4"
+   ],
+   "7.6": [
+    "2.5"
+   ],
+   "8.1": [
+    "2.1"
+   ],
+   "8.2": [
+    "3.1",
+    "8.1"
+   ],
+   "8.3": [
+    "7.5"
+   ],
+   "8.4": [
+    "3.2",
+    "8.3"
+   ],
+   "8.5": [
+    "7.6"
+   ],
+   "8.6": [
+    "3.3",
+    "8.5"
+   ],
+   "9.1": [
+    "8.6",
+    "5.4"
+   ],
+   "9.2": [
+    "8.2",
+    "7.4"
+   ]
+  },
+  "items": {
+   "h_forsskal": [
+    "p_apharsemon"
+   ],
+   "p_burseraceae": [
+    "h_forsskal"
+   ],
+   "p_mirra": [
+    "p_burseraceae"
+   ],
+   "p_olibano": [
+    "p_burseraceae"
+   ],
+   "h_embalsamamiento": [
+    "p_mirra"
+   ],
+   "c_terpenos_apharsemon": [
+    "p_apharsemon"
+   ],
+   "c_sesquiterpenos_mirra": [
+    "p_mirra"
+   ],
+   "c_acidos_boswellicos": [
+    "p_olibano"
+   ],
+   "c_incensol": [
+    "p_olibano"
+   ],
+   "c_aceite_olibano": [
+    "p_olibano"
+   ],
+   "h_ruta_incienso": [
+    "p_mirra",
+    "p_olibano"
+   ],
+   "h_produccion_actual": [
+    "h_ruta_incienso"
+   ],
+   "h_cosecha": [
+    "p_apharsemon"
+   ],
+   "h_punt": [
+    "h_ruta_incienso"
+   ],
+   "h_gremio_ein_gedi": [
+    "h_cosecha"
+   ],
+   "h_kyphi": [
+    "p_mirra",
+    "p_olibano"
+   ],
+   "u_seguridad": [
+    "p_apharsemon",
+    "p_mirra"
+   ],
+   "c_beta_cariofileno": [
+    "c_terpenos_apharsemon"
+   ],
+   "u_antimicrobiano": [
+    "c_terpenos_apharsemon",
+    "c_sesquiterpenos_mirra"
+   ],
+   "h_mitridato": [
+    "h_kyphi"
+   ],
+   "u_esquistosomiasis": [
+    "c_sesquiterpenos_mirra"
+   ],
+   "p_guggul": [
+    "p_mirra"
+   ],
+   "u_analgesia": [
+    "c_sesquiterpenos_mirra"
+   ],
+   "u_artrosis": [
+    "c_acidos_boswellicos"
+   ],
+   "u_inflamacion_cronica": [
+    "c_acidos_boswellicos"
+   ],
+   "u_animo": [
+    "c_incensol"
+   ],
+   "u_cancer": [
+    "c_beta_cariofileno",
+    "c_acidos_boswellicos"
+   ],
+   "u_humo_incienso": [
+    "p_olibano"
+   ],
+   "h_arqueofarmacologia": [
+    "h_mitridato",
+    "u_cancer"
+   ],
+   "u_hiperlipidemia": [
+    "p_guggul"
+   ]
+  }
+ }
+}
