@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guanábana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Guanábana como grafo", "subtitle": "Monografía de Annona muricata L. construida desde literatura científica y fuentes oficiales (no desde un libro) · con alertas de evidencia", "itemLabel": "Planta, compuesto o efecto", "itemLabelPlural": "Plantas, compuestos y efectos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: annonacina, Guadalupe, climaterio, hoja, patentes…"}, "blocks": {"planta": {"name": "La planta", "color": "#6B8E4E"}, "cultivo": {"name": "Cultivo y poscosecha", "color": "#B08A2E"}, "usos": {"name": "Usos tradicionales", "color": "#A0603F"}, "quimica": {"name": "Química", "color": "#6B5B95"}, "evidencia": {"name": "Investigación moderna", "color": "#3F6FA0"}, "sintesis": {"name": "Seguridad y conclusiones", "color": "#B5465A"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "planta", "summary": "Especie de la familia Annonaceae, nativa del sur de México al norte de Sudamérica, con muchos nombres comunes y parientes cercanos.", "sections": [{"num": "1.1", "title": "Nombre científico y clasificación", "summary": "Annona muricata L. (1753), familia Annonaceae; World Flora Online registra seis sinónimos, entre ellos Guanabanus muricatus y Annona macrocarpa.", "items": ["p_guanabana"]}, {"num": "1.2", "title": "Nombres comunes", "summary": "En Colombia: guanábana, guanábano, catuche y anón de espino; graviola en Brasil y soursop en inglés."}, {"num": "1.3", "title": "Especies parecidas", "summary": "Chirimoya, anón y atemoya son parientes del mismo género; el nombre guanábana cimarrona se aplica también a Annona montana.", "items": ["p_annonaceas"]}]}, {"num": 2, "title": "Usos como droga cruda", "block": "usos", "summary": "Hoja, semilla, corteza, raíz y fruto tienen preparados populares distintos; la hoja es la parte más usada.", "sections": [{"num": "2.1", "title": "Hoja", "summary": "Infusión o decocción para dormir, para el dolor, la tos, la diarrea y la diabetes; también en compresas y cataplasmas.", "items": ["p_hoja"]}, {"num": "2.2", "title": "Semilla", "summary": "Polvo como insecticida y tintura emética; su aceite irrita los ojos y se retira antes de licuar la pulpa.", "items": ["p_semilla"]}, {"num": "2.3", "title": "Corteza y raíz", "summary": "La corteza se usó para curtir y como veneno de peces; la raíz, como vermífugo."}, {"num": "2.4", "title": "Fruto como remedio", "summary": "El jugo maduro se usa como diurético y para enfermedad renal; el fruto inmaduro molido, para la disentería."}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "summary": "Acetogeninas, alcaloides isoquinolínicos y fenoles explican casi toda la actividad descrita; la pulpa es un alimento de energía moderada.", "sections": [{"num": "3.1", "title": "Acetogeninas annonáceas", "summary": "Más de 100 acetogeninas aisladas de hoja, corteza, semilla, raíz y fruto; inhiben el complejo I mitocondrial.", "items": ["c_acetogeninas"]}, {"num": "3.2", "title": "Annonacina", "summary": "Acetogenina principal de la especie; se midió su cantidad en fruto, néctar comercial e infusión de hoja.", "items": ["c_annonacina"]}, {"num": "3.3", "title": "Alcaloides isoquinolínicos", "summary": "Annonaína, nornuciferina, asimilobina, reticulina y coreximina; se estudian por efectos en el sistema nervioso.", "items": ["c_alcaloides"]}, {"num": "3.4", "title": "Fenoles y flavonoides de la hoja", "summary": "Ácidos clorogénico y cafeico, procianidinas, quercetina y kaempferol; se asocian a la actividad antioxidante in vitro.", "items": ["c_fenoles"]}, {"num": "3.5", "title": "Composición nutricional de la pulpa", "summary": "Pulpa con 81 % de agua, azúcares, fibra, vitamina C y potasio según USDA FoodData Central.", "items": ["c_nutrientes_pulpa"]}]}, {"num": 4, "title": "Descripción morfológica", "block": "planta", "summary": "Árbol pequeño de hoja brillante, flores en tronco y ramas, y un fruto grande cubierto de espinas blandas.", "sections": [{"num": "4.1", "title": "Árbol y hoja", "summary": "Árbol perenne o semiperenne de 3 a 10 m; hojas oblongas, brillantes, de 8 a 15 cm, con domacios en el envés."}, {"num": "4.2", "title": "Flor", "summary": "Flores solitarias en tronco, ramas o ramillas; seis pétalos, los externos gruesos de 2,5 a 3,5 cm."}, {"num": "4.3", "title": "Fruto y semilla", "summary": "Fruto compuesto ovoide asimétrico, verde y con espinas curvas flexibles; semillas negras de 1,25 a 2 cm, hasta más de 200 por fruto.", "items": ["p_fruto"]}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "cultivo", "summary": "Nativa de la América tropical e introducida en todo el trópico; Colombia, México, Brasil y Venezuela son productores importantes.", "sections": [{"num": "5.1", "title": "Origen y área nativa", "summary": "Nativa del sur de México a Venezuela y Perú, incluida Colombia; hoy cultivada en África, Asia y Oceanía tropicales."}, {"num": "5.2", "title": "Clima y suelo", "summary": "Trópico cálido y húmedo hasta unos 1000 m; no tolera heladas ni vientos fríos; prefiere suelos profundos y bien drenados."}, {"num": "5.3", "title": "Producción en Colombia y otros países", "summary": "Colombia reportó unas 4780 ha productivas en 2018; en México, Nayarit concentra cerca del 73 % del área.", "items": ["h_produccion"]}, {"num": "5.4", "title": "Plagas y enfermedades", "summary": "Perforador de semilla, polilla del fruto y moscas de la fruta; la antracnosis causa caída de flores y frutos en zonas húmedas.", "items": ["h_plagas"]}]}, {"num": 6, "title": "Cosecha y poscosecha", "block": "cultivo", "summary": "Fruto climatérico y muy perecedero: se cosecha firme, madura en pocos días y se procesa sobre todo como pulpa congelada.", "sections": [{"num": "6.1", "title": "Índice de madurez", "summary": "Se cosecha firme, con color verde más claro, espinas separadas y brillo; ningún índice aislado es fiable."}, {"num": "6.2", "title": "Climaterio y maduración", "summary": "Fruto climatérico con pico de etileno hacia el cuarto día; la mejor calidad para consumo llega entre 5 y 6 días.", "items": ["h_climaterio"]}, {"num": "6.3", "title": "Conservación y enfermedades poscosecha", "summary": "Enfriar a unos 15 °C con humedad relativa de 85 a 95 %; por debajo de 12 a 15 °C aparece daño por frío."}, {"num": "6.4", "title": "Procesamiento en pulpa", "summary": "Rendimiento de pulpa cercano al 80 %; la pulpa congelada es el producto principal y el pardeamiento se controla con ácido ascórbico o calor.", "items": ["h_pulpa"]}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y culinario", "block": "usos", "summary": "Fruta americana descrita desde 1526, con amplio uso popular medicinal y un papel central en jugos y helados.", "sections": [{"num": "7.1", "title": "Historia", "summary": "Oviedo la describió en 1526 en las Antillas y el norte de Sudamérica; luego pasó a los trópicos de África y Asia."}, {"num": "7.2", "title": "Uso medicinal tradicional", "summary": "Comunidades de África y Sudamérica usan varias partes de la planta; no se confirmó uso ritual documentado en las fuentes revisadas.", "items": ["h_uso_tradicional"]}, {"num": "7.3", "title": "Uso culinario", "summary": "Jugos, champola, néctares, helados, sorbetes y jaleas; el fruto inmaduro se cocina como verdura en algunas regiones.", "items": ["h_uso_culinario"]}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "evidencia", "summary": "Casi toda la evidencia es in vitro o en animales; los estudios en humanos son escasos y pequeños.", "sections": [{"num": "8.1", "title": "Cáncer", "summary": "Extractos y acetogeninas son citotóxicos en células y reducen tumores en ratones; solo hay un ensayo humano pequeño con desenlaces ex vivo.", "items": ["u_cancer"]}, {"num": "8.2", "title": "Diabetes", "summary": "Extracto acuoso de hoja bajó la glucemia en ratas diabéticas; fracciones de hoja inhiben enzimas digestivas in vitro.", "items": ["u_diabetes"]}, {"num": "8.3", "title": "Hipertensión", "summary": "Extracto de hoja bajó la presión en ratas por un mecanismo de antagonismo del calcio.", "items": ["u_hipertension"]}, {"num": "8.4", "title": "Antiparasitario y antimicrobiano", "summary": "Actividad contra Leishmania y nematodos in vitro, contra Plasmodium en ratones y contra bacterias orales in vitro.", "items": ["u_antiparasitario", "u_antimicrobiano"]}, {"num": "8.5", "title": "Ansiedad y sueño", "summary": "Extracto de hoja con efecto sedante y ansiolítico en ratones; alcaloides del fruto activan receptores 5-HT1A in vitro.", "items": ["u_ansiedad_sueno"]}, {"num": "8.6", "title": "Patentes", "summary": "Las patentes encontradas protegen acetogeninas aisladas y sus usos; las revisadas figuran como vencidas.", "items": ["h_patentes"]}]}, {"num": 9, "title": "Conclusiones: seguridad, vacíos de evidencia y prioridades", "block": "sintesis", "summary": "El principal riesgo descrito es neurológico; faltan ensayos clínicos y la promoción como cura del cáncer no tiene respaldo.", "sections": [{"num": "9.1", "title": "Neurotoxicidad y parkinsonismo atípico", "summary": "En Guadalupe, el parkinsonismo atípico se asoció al consumo de fruto e infusión; la annonacina daña neuronas en cultivo y en ratas.", "items": ["u_neurotoxicidad"]}, {"num": "9.2", "title": "Seguridad general e interacciones", "summary": "Una revisión sistemática describe buena tolerancia con datos limitados; se advierten interacciones con antidiabéticos y antihipertensivos.", "items": ["u_seguridad"]}, {"num": "9.3", "title": "Afirmaciones de cura del cáncer", "summary": "Mensajes virales y productos comerciales prometen curar el cáncer; la FTC de EE. UU. actuó contra un vendedor en 2008.", "items": ["u_bulos_cancer"]}, {"num": "9.4", "title": "Vacíos y prioridades", "summary": "Faltan ensayos clínicos, estandarización química de los preparados y estudios de exposición neurológica en consumidores.", "items": ["h_vacios"]}]}], "items": {"p_guanabana": {"title": "Guanábana (Annona muricata L.)", "summary": "Árbol frutal de la familia Annonaceae, nativo de la América tropical. Se usa como alimento y como planta medicinal popular.", "formula": "Descrita por Linneo en 1753 · 6 sinónimos en WFO"}, "p_annonaceas": {"title": "Parientes del género Annona", "summary": "Chirimoya (A. cherimola), anón (A. squamosa), atemoya (híbrido) y A. montana. Tienen frutos parecidos y también producen acetogeninas.", "formula": "Más de 119 especies en el género Annona"}, "p_hoja": {"title": "Hoja como droga cruda", "summary": "Parte más usada en medicina popular. Se prepara en infusión, decocción o cataplasma para sueño, dolor, tos, diarrea y diabetes."}, "p_semilla": {"title": "Semilla", "summary": "Semilla negra con aceite irritante y acetogeninas. Se usa en polvo como insecticida y no se consume.", "formula": "Aceite cercano al 45 % del peso"}, "c_acetogeninas": {"title": "Acetogeninas annonáceas", "summary": "Policétidos lipofílicos exclusivos de las Annonaceae. Inhiben el complejo I de la cadena respiratoria mitocondrial.", "formula": "Más de 100 aisladas de A. muricata", "caution": "Si se cita la inhibición del complejo I como prueba anticáncer, recuerde que el mismo mecanismo daña neuronas. La potencia en células tumorales no indica seguridad. (Degli Esposti 1994)"}, "c_annonacina": {"title": "Annonacina", "summary": "Acetogenina más abundante de la especie. Es neurotóxica en cultivo y en ratas, y se mide en fruto, néctar e infusión.", "formula": "≈15 mg por fruto · ≈36 mg por lata de néctar · ≈140 µg por taza de infusión", "caution": "Si se consume annonacina de forma repetida, hay riesgo neurotóxico demostrado en cultivos y en ratas. No hay dosis segura en humanos. Una fruta contiene unos 15 mg. Una lata de néctar contiene unos 36 mg. Una taza de infusión contiene unos 140 µg. Una fruta o lata diaria por un año iguala la dosis tóxica en ratas por vía intravenosa. La extrapolación a humanos es incierta. (Champy 2004; Champy 2005)"}, "c_alcaloides": {"title": "Alcaloides isoquinolínicos", "summary": "Annonaína, nornuciferina, asimilobina, reticulina y coreximina. Se estudian por efectos sobre receptores de serotonina y por neurotoxicidad."}, "c_fenoles": {"title": "Fenoles y flavonoides de la hoja", "summary": "Ácidos clorogénico y cafeico, procianidinas, quercetina y kaempferol identificados en extractos de hoja."}, "c_nutrientes_pulpa": {"title": "Nutrientes de la pulpa", "summary": "Pulpa cruda con agua abundante, azúcares, fibra, vitamina C y potasio. Energía moderada y casi sin grasa.", "formula": "Por 100 g: 66 kcal · fibra 3,3 g · vitamina C 20,6 mg · potasio 278 mg", "caution": "Si se presenta la pulpa como \"superalimento\", 100 g aportan 20,6 mg de vitamina C y 3,3 g de fibra. También aportan 13,5 g de azúcar. En diabetes, cuente la porción como fruta. (USDA FDC 167761)"}, "p_fruto": {"title": "Fruto", "summary": "Fruto compuesto, verde, con espinas blandas y pulpa blanca fibrosa. Puede pesar varios kilos.", "formula": "10–30 cm de largo · hasta 4,5–6,8 kg"}, "h_produccion": {"title": "Producción", "summary": "Colombia, México, Brasil y Venezuela son productores importantes. Las estadísticas oficiales son incompletas.", "formula": "Colombia ≈4780 ha productivas (2018) · México ≈2724 ha (2013)"}, "h_plagas": {"title": "Plagas y enfermedades del cultivo", "summary": "Bephratelloides maculicollis, Cerconota anonella y moscas Anastrepha atacan semilla y fruto. La antracnosis por Colletotrichum gloeosporioides es la enfermedad principal."}, "h_climaterio": {"title": "Climaterio del fruto", "summary": "Fruto climatérico con más de un pico respiratorio. Madura rápido tras la cosecha y se daña con frío.", "formula": "Pico de etileno ≈ día 4 · daño por frío ≤12–15 °C"}, "h_pulpa": {"title": "Pulpa procesada", "summary": "La pulpa congelada es el producto comercial principal. Se usa en jugos, néctares, helados y yogures.", "formula": "Rendimiento de pulpa ≈80 %"}, "h_uso_tradicional": {"title": "Uso medicinal tradicional", "summary": "Comunidades de África, el Caribe y Sudamérica usan hoja, fruto, semilla, corteza y raíz. En Puerto Rico estuvo entre las plantas más usadas por pacientes ambulatorios."}, "h_uso_culinario": {"title": "Uso culinario", "summary": "Fruta para jugos, champola, néctares, helados y sorbetes. Las semillas se retiran antes de licuar."}, "u_cancer": {"title": "Afirmación anticancerosa", "summary": "Se afirma que extractos y acetogeninas destruyen células tumorales. Hay estudios in vitro y en ratones, y un ensayo humano pequeño con desenlaces ex vivo.", "formula": "ECA en cáncer colorrectal: 28 pacientes, 8 semanas", "caution": "Si un paciente usa guanábana para tratar cáncer, no hay prueba de beneficio en humanos. La cifra \"10 000 veces más potente que la quimioterapia\" viene de células en laboratorio. No reemplace ni retrase el tratamiento oncológico. Registre el producto y la dosis. (MSKCC 2026; Rieser 1996)"}, "u_diabetes": {"title": "Afirmación antidiabética", "summary": "Se afirma que la hoja baja la glucemia. Hay estudios en ratas diabéticas e in vitro; no se encontraron ensayos en personas.", "caution": "Si un paciente con diabetes toma hoja de guanábana, no la use como sustituto del tratamiento. No hay ensayos en humanos. Vigile la glucemia si la combina con hipoglucemiantes. (Martín del Campo-Rayas 2022; MSKCC 2026)"}, "u_hipertension": {"title": "Afirmación antihipertensiva", "summary": "Se afirma que la hoja baja la presión arterial. Hay estudios en ratas normotensas e hipertensas y en aorta aislada.", "caution": "Si se recomienda jugo de guanábana para la presión, la prueba es un solo ensayo abierto en prehipertensos. No sustituye antihipertensivos. No hay datos en hipertensión establecida. Vigile la presión si se combina con fármacos. (Alatas 2019)"}, "u_antiparasitario": {"title": "Afirmación antiparasitaria", "summary": "Se afirma actividad contra parásitos. Hay estudios in vitro con Leishmania y Haemonchus, y en ratones con Plasmodium berghei.", "caution": "Si se propone la guanábana contra leishmaniasis o parásitos intestinales, solo hay datos de laboratorio. No reemplace antiparasitarios aprobados. Los compuestos activos son acetogeninas con riesgo neurotóxico. (Jaramillo 2000; Ferreira 2013)"}, "u_ansiedad_sueno": {"title": "Afirmación sobre ansiedad y sueño", "summary": "Se afirma un efecto sedante y tranquilizante. Hay estudios en ratones con extracto de hoja e in vitro con alcaloides del fruto.", "caution": "Si un paciente usa té de hoja para ansiedad o insomnio, no hay ensayos en humanos. Los datos son de roedores por vía intraperitoneal. El uso diario y prolongado de hoja aumenta la exposición a annonacina. (Souza 2018; Champy 2005)"}, "u_antimicrobiano": {"title": "Afirmación antimicrobiana", "summary": "Se afirma actividad contra bacterias. Hay estudios in vitro, como contra Enterococcus faecalis en endodoncia.", "caution": "Si se propone la hoja como antibiótico, solo hay datos in vitro y en animales. No sustituya antibióticos indicados. Una infección no tratada puede progresar. (Ngemenya 2022)"}, "h_patentes": {"title": "Patentes", "summary": "Patentes sobre acetogeninas aisladas para uso citotóxico o plaguicida. Solo una de las revisadas se basa en A. muricata.", "formula": "US7223792B2: muricinas A–G de semilla, vencida"}, "u_neurotoxicidad": {"title": "Neurotoxicidad y parkinsonismo atípico", "summary": "En Guadalupe se asoció el consumo de guanábana a parkinsonismo atípico resistente a levodopa. La annonacina reproduce lesiones en ratas.", "formula": "Casos y controles: OR 20,7 para fruto frente a controles", "caution": "Si un paciente consume fruta o infusión de guanábana a diario por años, hay asociación con parkinsonismo atípico resistente a levodopa. La causalidad no está probada. Pregunte por el consumo ante parkinsonismo atípico. (Caparros-Lefebvre 1999; Lannuzel 2007)"}, "u_seguridad": {"title": "Seguridad e interacciones", "summary": "Datos limitados en humanos; en ratas no se vio daño hepático ni renal. Se advierte suma de efectos con antidiabéticos y antihipertensivos; no se hallaron estudios en embarazo humano.", "caution": "Si una paciente está embarazada o lactando, evite hoja, semilla, extractos y cápsulas. No hay datos de seguridad en humanos. Si hay enfermedad hepática o renal, no use extractos. Cancer Research UK advierte posible daño con uso frecuente. Si el paciente toma antihipertensivos o hipoglucemiantes, puede haber efectos aditivos. Mida presión y glucemia. Pregunte por suplementos en cada consulta. (EFSA 2020; Cancer Research UK 2022; MSKCC 2026)"}, "u_bulos_cancer": {"title": "Bulos de cura del cáncer", "summary": "Mensajes virales afirman que la guanábana cura el cáncer mejor que la quimioterapia. Verificadores lo califican como falso y la FTC actuó contra un producto.", "caution": "Si un producto promete curar cáncer con graviola, la publicidad no tiene respaldo. La FTC actuó contra un producto con graviola en 2008. Agencias europeas advierten sobre su seguridad. Reporte la publicidad engañosa a la autoridad sanitaria. (FTC 2008; Cancer Research UK 2022)"}, "h_vacios": {"title": "Vacíos de evidencia", "summary": "Faltan ensayos clínicos controlados, preparados con composición conocida y vigilancia de efectos neurológicos."}}, "resources": [], "requires": {"chapters": {"2": [1], "3": [1], "4": [1], "5": [1, 4], "6": [4, 5], "7": [2], "8": [2, 3], "9": [3, 8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.1"], "2.1": ["1.1"], "2.2": ["2.1"], "2.3": ["2.1"], "2.4": ["2.1"], "3.1": ["1.1"], "3.2": ["3.1"], "3.3": ["1.1"], "3.4": ["2.1"], "3.5": ["2.4"], "4.1": ["1.1"], "4.2": ["4.1"], "4.3": ["4.2"], "5.1": ["1.1"], "5.2": ["5.1"], "5.3": ["5.2"], "5.4": ["5.3", "4.3"], "6.1": ["4.3"], "6.2": ["6.1"], "6.3": ["6.2"], "6.4": ["6.3", "3.5"], "7.1": ["5.1"], "7.2": ["2.1", "7.1"], "7.3": ["6.4"], "8.1": ["3.1"], "8.2": ["3.4", "2.1"], "8.3": ["2.1"], "8.4": ["3.1", "3.4"], "8.5": ["3.3"], "8.6": ["3.1"], "9.1": ["3.2", "3.3"], "9.2": ["9.1", "8.2", "8.3"], "9.3": ["8.1"], "9.4": ["9.2", "9.3"]}, "items": {"p_annonaceas": ["p_guanabana"], "p_hoja": ["p_guanabana"], "p_semilla": ["p_guanabana"], "p_fruto": ["p_guanabana"], "c_acetogeninas": ["p_guanabana"], "c_annonacina": ["c_acetogeninas"], "c_alcaloides": ["p_guanabana"], "c_fenoles": ["p_hoja"], "c_nutrientes_pulpa": ["p_fruto"], "h_produccion": ["p_guanabana"], "h_plagas": ["h_produccion"], "h_climaterio": ["p_fruto"], "h_pulpa": ["h_climaterio", "c_nutrientes_pulpa"], "h_uso_tradicional": ["p_hoja"], "h_uso_culinario": ["p_fruto"], "u_cancer": ["c_acetogeninas"], "u_diabetes": ["c_fenoles"], "u_hipertension": ["p_hoja"], "u_antiparasitario": ["c_acetogeninas"], "u_antimicrobiano": ["p_hoja"], "u_ansiedad_sueno": ["c_alcaloides"], "h_patentes": ["c_acetogeninas"], "u_neurotoxicidad": ["c_annonacina", "c_alcaloides"], "u_seguridad": ["u_neurotoxicidad", "u_diabetes", "u_hipertension"], "u_bulos_cancer": ["u_cancer"], "h_vacios": ["u_seguridad", "u_bulos_cancer"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

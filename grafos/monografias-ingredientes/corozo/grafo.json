@@ -1,0 +1,803 @@
+{
+ "meta": {
+  "title": "Corozo del Caribe como grafo",
+  "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Planta, compuesto o uso",
+  "itemLabelPlural": "Plantas, compuestos y usos",
+  "resourceLabel": "Fuente clave",
+  "resourceLabelPlural": "Fuentes clave",
+  "searchHint": "Buscar: antocianinas, uvital, vino, lata, potasio, Zapatosa…"
+ },
+ "blocks": {
+  "botanica": {
+   "name": "La palma",
+   "color": "#6B8E4E"
+  },
+  "quimica": {
+   "name": "Composición y química",
+   "color": "#6B5B95"
+  },
+  "produccion": {
+   "name": "Ecología, producción y cosecha",
+   "color": "#3F8A8A"
+  },
+  "cultura": {
+   "name": "Usos y cultura",
+   "color": "#B08A2E"
+  },
+  "investigacion": {
+   "name": "Investigación y seguridad",
+   "color": "#3F6FA0"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "botanica",
+   "summary": "Qué especie es el corozo del Caribe colombiano y por qué el mismo nombre designa varias palmas distintas.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Nombre aceptado y familia",
+     "summary": "Bactris guineensis (L.) H.E.Moore es el nombre aceptado; pertenece a Arecaceae y tiene a Bactris minor Jacq. como sinónimo.",
+     "items": [
+      "p_bactris_guineensis"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Nombres comunes",
+     "summary": "En Colombia se llama corozo, lata, uvita de lata o corozo de lata; en Costa Rica, güiscoyol; en inglés, tobago cane.",
+     "items": [
+      "h_nombres_comunes"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Otras palmas llamadas corozo",
+     "summary": "Acrocomia aculeata y Elaeis oleifera también se llaman corozo, y el comercio de botones usa la palabra para el marfil vegetal.",
+     "items": [
+      "p_otros_corozos"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como materia prima tradicional",
+   "block": "cultura",
+   "summary": "La pulpa del fruto es la materia prima de jugos, fermentados y dulces del Caribe.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Pulpa para jugos y refrescos",
+     "summary": "El fruto se despulpa para jugos y refrescos; el prensado y el calentamiento corto conservan parte de las antocianinas.",
+     "items": [
+      "p_jugo"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Fermentados: vino y chicha",
+     "summary": "La pulpa con azúcar se fermenta durante meses para obtener vino de corozo, con producción artesanal y de pequeñas empresas.",
+     "items": [
+      "p_vino_corozo"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Dulces y conservas",
+     "summary": "Con la pulpa se preparan mermeladas, dulces, gelatinas, helados y bolis, casi siempre con azúcar añadido.",
+     "items": [
+      "p_dulces"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "summary": "Composición de la pulpa, pigmentos de la cáscara y lípidos de la almendra según análisis de laboratorio.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Composición proximal y minerales",
+     "summary": "La pulpa es acuosa, con azúcares, fibra y potasio; la vitamina C varía mucho entre lotes y a veces no se detecta.",
+     "items": [
+      "h_composicion_pulpa"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Antocianinas",
+     "summary": "Cianidina-3-rutinósido y cianidina-3-glucósido forman casi todo el pigmento rojo y se concentran en la cáscara.",
+     "items": [
+      "c_antocianinas"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Otros compuestos fenólicos",
+     "summary": "Catequinas, proantocianidinas, glucósidos de quercetina y flavonas C-glucósidos, muchos más abundantes en la cáscara que en la pulpa.",
+     "items": [
+      "c_fenoles"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Carotenoides y tocoferoles",
+     "summary": "Hay quince carotenoides, con β-caroteno y luteína como principales, y α-tocoferol, sobre todo en el exocarpio.",
+     "items": [
+      "c_carotenoides_tocoferol"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Lípidos y minerales de la almendra",
+     "summary": "La semilla tiene un tercio de grasa, casi toda saturada y rica en ácido láurico, más magnesio y hierro.",
+     "items": [
+      "p_almendra"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "botanica",
+   "summary": "Rasgos de la palma, de sus flores y de su fruto pequeño y morado.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Porte, tallos y hojas",
+     "summary": "Palma de muchos tallos delgados y muy espinosos que forma macollas densas; las hojas son pinnadas y cortas.",
+     "items": [
+      "h_morfologia_palma"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Flores y polinización",
+     "summary": "Cada inflorescencia lleva flores masculinas y femeninas; las femeninas abren primero y los gorgojos y escarabajos las polinizan.",
+     "items": [
+      "h_polinizacion"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Fruto y semilla",
+     "summary": "Drupa globosa de 1,5 a 2 cm, morada casi negra, con pulpa blanca agridulce y una semilla dura que pesa un tercio del fruto.",
+     "items": [
+      "p_fruto"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "produccion",
+   "summary": "Dónde crece la palma, qué paisajes forma en Colombia y qué la amenaza.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Área nativa",
+     "summary": "Es nativa de tierras bajas con estación seca marcada, desde Nicaragua hasta el norte de Colombia y Venezuela."
+    },
+    {
+     "num": "5.2",
+     "title": "El corozo en Colombia",
+     "summary": "Crece entre 0 y 300 m en el Caribe y la Orinoquia; el Cesar tiene la mayor área potencial estimada.",
+     "items": [
+      "h_distribucion_colombia"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Uvitales y potreros arbolados",
+     "summary": "Forma rodales densos junto a ciénagas y ríos, y queda dispersa en potreros donde los ganaderos la conservan.",
+     "items": [
+      "h_uvitales"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Conservación y amenazas",
+     "summary": "Las listas difieren sobre su riesgo; la tala, la quema y el arranque con maquinaria reducen sus poblaciones.",
+     "items": [
+      "h_conservacion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha y poscosecha",
+   "block": "produccion",
+   "summary": "Cuándo y cómo se recoge el fruto silvestre y qué se sabe de su manejo después de cortarlo.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Fenología y temporadas",
+     "summary": "Hay fruto casi todo el año, con una cosecha principal de julio a septiembre y otra menor de diciembre a febrero.",
+     "items": [
+      "h_fenologia_cosecha"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Recolección",
+     "summary": "Se cortan con machete los racimos maduros y se llevan en sacos de unos 50 kg; la recolección no destruye la palma."
+    },
+    {
+     "num": "6.3",
+     "title": "Poscosecha y procesamiento",
+     "summary": "No hay estudios publicados de vida útil del fruto fresco; los datos de estabilidad vienen de jugos y extractos procesados.",
+     "items": [
+      "h_poscosecha"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y culinario",
+   "block": "cultura",
+   "summary": "Papel del corozo en la casa, la cocina y las fiestas de las comunidades del Caribe.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "La lata en la vida rural",
+     "summary": "Los tallos, llamados lata, sirven para cercas, techos, muebles, aparejos de pesca y la guacharaca.",
+     "items": [
+      "h_lata_materiales"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "El corozo en la mesa caribeña",
+     "summary": "El fruto se come fresco sin tragar la semilla y se toma en jugos, chichas y helados para refrescarse del calor."
+    },
+    {
+     "num": "7.3",
+     "title": "Fiestas y economía campesina",
+     "summary": "En el Cesar hay asociaciones que recolectan y transforman el fruto, y Becerril celebra una fiesta centrada en el corozo."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "investigacion",
+   "summary": "Estudios de laboratorio sobre extractos del fruto, usos industriales del pigmento y de la semilla, y búsqueda de patentes.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Actividad antioxidante",
+     "summary": "Los extractos atrapan radicales en ensayos químicos y celulares; ningún estudio midió marcadores de estrés oxidativo en personas.",
+     "items": [
+      "u_antioxidante"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Protección de células nerviosas",
+     "summary": "Extractos de pulpa y semilla protegieron neuronas y astrocitos en cultivo frente a rotenona.",
+     "items": [
+      "u_neuroproteccion"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Cáncer, bacterias y virus",
+     "summary": "Extractos redujeron la viabilidad de células tumorales e inhibieron bacterias y virus, siempre en cultivo celular.",
+     "items": [
+      "u_antitumoral",
+      "u_antimicrobiano_antiviral"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Antocianinas y salud cardiometabólica",
+     "summary": "No hay ensayos con corozo; la evidencia viene de suplementos de antocianinas de otras frutas, con resultados heterogéneos.",
+     "items": [
+      "u_cardiometabolico"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Cosmética, colorantes y materiales",
+     "summary": "El extracto se probó en una emulsión cosmética, en películas de empaque y como colorante; la semilla da carbón activado.",
+     "items": [
+      "u_cosmetico",
+      "h_colorante_empaques",
+      "h_carbon_activado"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Patentes",
+     "summary": "No se hallaron patentes que nombren a Bactris guineensis; las patentes con la palabra corozo tratan del marfil vegetal para botones.",
+     "items": [
+      "h_patentes"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "investigacion",
+   "summary": "El corozo es un alimento tradicional valioso con química bien descrita, pero sin evidencia clínica y con vacíos de seguridad.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Seguridad y vacíos",
+     "summary": "No se hallaron estudios de toxicidad ni datos en embarazo; los riesgos conocidos vienen del azúcar añadido y del alcohol.",
+     "items": [
+      "u_seguridad"
+     ]
+    },
+    {
+     "num": "9.2",
+     "title": "Perspectivas",
+     "summary": "El fruto silvestre podría sostener cadenas de valor locales si se conservan los uvitales y se estandarizan los productos."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_bactris_guineensis": {
+   "title": "Corozo (Bactris guineensis)",
+   "summary": "Palma pequeña y espinosa de la familia Arecaceae, nativa de tierras bajas secas de Centroamérica y el norte de Suramérica. Es la especie del jugo y el vino de corozo del Caribe colombiano.",
+   "formula": "Nativa en Nicaragua, Costa Rica, Panamá, Colombia y Venezuela"
+  },
+  "h_nombres_comunes": {
+   "title": "Nombres comunes",
+   "summary": "Además de corozo, en Colombia recibe nombres como lata, uvita de lata, corozo de lata, lata sabanera y tamaquito. En Costa Rica se llama güiscoyol o uvita.",
+   "formula": "Más de 15 nombres locales en Colombia"
+  },
+  "p_otros_corozos": {
+   "title": "Otras palmas llamadas corozo",
+   "summary": "Acrocomia aculeata (corozo, tamaco) y Elaeis oleifera (corozo, nolí) comparten el nombre en Colombia. En la industria de botones, corozo designa el marfil vegetal de la tagua (Phytelephas)."
+  },
+  "p_jugo": {
+   "title": "Jugo y refresco de corozo",
+   "summary": "Bebida de pulpa diluida, la forma de consumo más común. En planta piloto, el jugo conservó cerca de la mitad de las antocianinas del fruto, con o sin tratamiento enzimático o térmico.",
+   "formula": "Antocianinas 18–23 mg/100 g · fenoles 242–283 mg EAG/100 g"
+  },
+  "p_vino_corozo": {
+   "title": "Vino de corozo",
+   "summary": "Bebida alcohólica de pulpa fermentada con azúcar, hecha en casas y pequeñas empresas del Caribe. Un trabajo de grado describió una fermentación de unos 10 meses.",
+   "formula": "Fermentación de ~10 meses (San Alberto, Cesar)",
+   "caution": "El vino de corozo es una bebida alcohólica. Si la fermentación es casera o mal controlada, el metanol puede superar los límites, porque se forma a partir de la pectina de la fruta. En 2025 Colombia tuvo 89 casos de intoxicación por metanol en bebidas adulteradas o informales. Evite bebidas sin registro o de origen desconocido. (Shen 2024; OPS 2025)"
+  },
+  "p_dulces": {
+   "title": "Dulces, mermeladas y bolis",
+   "summary": "Preparaciones caseras y comerciales de pulpa con azúcar añadido: mermeladas, dulces, gelatinas, helados y bolis.",
+   "caution": "Los dulces, mermeladas y bolis de corozo llevan azúcar añadido. La OMS recomienda que los azúcares libres sean menos del 10 % de la energía diaria. Si hay diabetes o sobrepeso, o si se trata de niños, cuente estas preparaciones como dulces y no como fruta. (OMS 2015)"
+  },
+  "h_composicion_pulpa": {
+   "title": "Composición de la pulpa",
+   "summary": "Fruto acuoso con azúcares simples, fibra y potasio, casi sin grasa. La vitamina C no se detectó en cuatro de seis lotes de Costa Rica.",
+   "formula": "Potasio 248–421 mg/100 g · vitamina C ND–48 mg/100 g",
+   "caution": "La vitamina C es muy variable. No se detectó en cuatro de seis lotes; el máximo fue 48 mg/100 g. El jugo tuvo unos 12 mg/100 g. No conviene presentarlo como fuente fiable de vitamina C. El potasio es de 248–421 mg/100 g, un aporte moderado. Si hay enfermedad renal crónica con potasio alto, cuente el corozo en el aporte diario. (Cortés-Herrera 2024)"
+  },
+  "c_antocianinas": {
+   "title": "Antocianinas",
+   "summary": "Pigmentos rojos del fruto; cianidina-3-rutinósido y cianidina-3-glucósido suman casi 88 % del total. Se concentran en la cáscara.",
+   "formula": "28–48 mg eq. cianidina-3-glucósido/100 g de fruto",
+   "caution": "Las antocianinas del corozo están bien documentadas. Se concentran en la cáscara. El fruto entero tiene 28–48 mg/100 g. El jugo conserva cerca de la mitad: 18–23 mg/100 g. El contenido cambia con el lote y el proceso. Este dato no prueba un efecto en la salud. (Osorio 2010; Cortés-Herrera 2024)"
+  },
+  "c_fenoles": {
+   "title": "Otros compuestos fenólicos",
+   "summary": "Catequinas, proantocianidinas, glucósidos de quercetina y C-glucósidos de apigenina y luteolina. La cáscara contiene unas 20 veces más fenoles libres que la pulpa.",
+   "formula": "Fenoles libres: 17 mg/100 g pulpa · 398 mg/100 g cáscara"
+  },
+  "c_carotenoides_tocoferol": {
+   "title": "Carotenoides y α-tocoferol",
+   "summary": "Quince carotenoides, con β-caroteno y luteína como principales, y α-tocoferol como única forma de vitamina E cuantificable.",
+   "formula": "Carotenoides 363 µg/100 g pulpa · 1 728 µg/100 g cáscara"
+  },
+  "p_almendra": {
+   "title": "Almendra (semilla)",
+   "summary": "Semilla dura que no se come con la pulpa. Su grasa es casi toda saturada, con predominio de ácido láurico, y aporta magnesio y hierro.",
+   "formula": "Lípidos 34,1 % m. s. · láurico 56,3 % · mirístico 23,0 %"
+  },
+  "h_morfologia_palma": {
+   "title": "Porte de la palma",
+   "summary": "Palma cespitosa de tallos delgados cubiertos de espinas que forma macollas muy densas. Las hojas son pinnadas, de menos de 1 m, con espinas en el raquis.",
+   "formula": "Tallos hasta 10 m × 1,5–3 cm · macollas de más de 1 400 tallos"
+  },
+  "h_polinizacion": {
+   "title": "Flores y polinización",
+   "summary": "Planta monoica de flores protóginas que necesita polinización cruzada. Gorgojos y escarabajos de savia son los visitantes principales.",
+   "formula": "76 % de flores femeninas cuajan · 57 % de esos frutos maduran"
+  },
+  "p_fruto": {
+   "title": "Fruto de corozo",
+   "summary": "Drupa pequeña y redonda, morada casi negra al madurar, con pulpa blanca agridulce y jugosa. La semilla ocupa cerca de un tercio del peso.",
+   "formula": "1,5–2 cm · 3,6 g · semilla 34 % del peso",
+   "caution": "La pulpa de corozo casi no tiene grasa: 0,04–0,12 g/100 g. Su proteína es baja: 0,6–2,1 g/100 g. El aceite está en la semilla, que no se come, y es casi todo grasa saturada. Si se describe el fruto como rico en aceites y proteínas, la afirmación es incorrecta. (Cortés-Herrera 2024; Erşan 2020)"
+  },
+  "h_distribucion_colombia": {
+   "title": "Distribución en Colombia",
+   "summary": "Crece en el Caribe y la Orinoquia entre 0 y 300 m, en Antioquia, Arauca, Atlántico, Bolívar, Cesar, Córdoba, La Guajira, Magdalena y Sucre.",
+   "formula": "Cesar: 343 938 ha de área potencial alta"
+  },
+  "h_uvitales": {
+   "title": "Uvitales y potreros arbolados",
+   "summary": "Los uvitales son rodales densos de corozo junto a ciénagas y ríos; en los potreros la palma queda dispersa. Ambos están en el bosque seco tropical.",
+   "formula": "Bosque seco tropical: ~4 % de cobertura original"
+  },
+  "h_conservacion": {
+   "title": "Estado de conservación",
+   "summary": "La UICN la clasifica como de preocupación menor, pero la Lista Roja nacional de 2021 la ubica como casi amenazada. La tala, la quema y el arranque con retroexcavadora la reducen.",
+   "formula": "UICN: LC · Colombia 2021: NT"
+  },
+  "h_fenologia_cosecha": {
+   "title": "Temporadas y recolección",
+   "summary": "Hay dos picos de fruto al año. La gente corta los racimos maduros con machete y los vende en sacos.",
+   "formula": "Principal jul–sep · traviesa dic–feb · sacos de ~50 kg"
+  },
+  "h_poscosecha": {
+   "title": "Poscosecha y estabilidad",
+   "summary": "No se encontraron estudios de vida útil del fruto fresco. Los polvos microencapsulados de antocianinas fueron estables por debajo de 37 °C y 76 % de humedad relativa.",
+   "formula": "Pasteurización de jugo: 85 °C por 2–5 s"
+  },
+  "h_lata_materiales": {
+   "title": "La lata como material",
+   "summary": "Los tallos se usan en techos, paredes, cercas, muebles, puertas, cucharas, canastos, aparejos de pesca y la guacharaca."
+  },
+  "u_antioxidante": {
+   "title": "Actividad antioxidante",
+   "summary": "Los extractos de pulpa y cáscara atrapan radicales en ensayos DPPH, ABTS y ORAC, y reducen especies reactivas en células. Son datos in vitro.",
+   "formula": "H-ORAC 6 690–14 688 µmol ET/100 g de fruto",
+   "caution": "La capacidad antioxidante del corozo se midió en tubo de ensayo y en células. Ningún estudio midió estrés oxidativo en personas que lo consumen. Un valor ORAC alto no predice un efecto en el cuerpo. Si se usa como argumento de salud, falta evidencia clínica. (Cortés-Herrera 2024; López 2017)"
+  },
+  "u_neuroproteccion": {
+   "title": "Protección de células nerviosas",
+   "summary": "Extractos de pulpa y semilla protegieron neuronas SH-SY5Y y astrocitos de rata frente al daño por rotenona. Estudio en cultivo celular.",
+   "caution": "El efecto protector se vio en neuronas y astrocitos en cultivo expuestos a rotenona. No hay estudios en animales ni en personas. No hay base para usar corozo en Alzheimer, Parkinson u otras enfermedades neurodegenerativas. (López 2017)"
+  },
+  "u_antitumoral": {
+   "title": "Efecto sobre células tumorales",
+   "summary": "Un extracto rico en proantocianidinas fue citotóxico para células de cáncer de colon e hígado, con menor efecto en células no tumorales. Otro redujo la viabilidad de células de próstata. Solo in vitro.",
+   "formula": "CI50 16,6–24,9 µg/mL (colon e hígado)",
+   "caution": "Los extractos redujeron la viabilidad de células de cáncer de colon, hígado y próstata en cultivo. No hay estudios en animales ni en pacientes. Las concentraciones del laboratorio no equivalen a comer el fruto. Si una persona con cáncer pregunta, no hay evidencia para usarlo como tratamiento. (Quesada 2020; Jaimes Gualdrón 2020)"
+  },
+  "u_antimicrobiano_antiviral": {
+   "title": "Efecto antibacteriano y antiviral",
+   "summary": "Un extracto de pulpa inhibió Klebsiella, Staphylococcus, influenza A, VIH-1 y SARS-CoV-2 en cultivo celular. No hay estudios en animales ni en personas.",
+   "formula": "SARS-CoV-2: 88 % de inhibición a 15,6 g/L",
+   "caution": "La inhibición de bacterias y virus se midió en cultivo celular. Para SARS-CoV-2 se usaron extractos de hasta 15,6 g/L. No hay estudios en animales ni en personas. El corozo no previene ni trata infecciones virales o bacterianas. (Jaimes Gualdrón 2022)"
+  },
+  "u_cardiometabolico": {
+   "title": "Antocianinas y riesgo cardiometabólico",
+   "summary": "Se afirma que las antocianinas del corozo protegen el corazón. No hay ensayos con corozo; los metanálisis de suplementos de antocianinas de otras fuentes muestran efectos pequeños y heterogéneos en lípidos.",
+   "caution": "No hay ensayos clínicos con corozo. Un metanálisis de suplementos de antocianinas halló mejoras en lípidos, con mucha heterogeneidad. Con aronia, otra fruta rica en antocianinas, no hubo efecto global y la certeza fue muy baja. Estos resultados no se trasladan al jugo de corozo. (Wan 2024; Frumuzachi 2025)"
+  },
+  "u_cosmetico": {
+   "title": "Uso cosmético",
+   "summary": "Una emulsión con 5 % de extracto de pulpa mantuvo su actividad antioxidante y su estabilidad durante 150 días. No se probó en piel humana.",
+   "formula": "Emulsión estable 150 días",
+   "caution": "La emulsión con 5 % de extracto solo se evaluó en estabilidad y actividad antioxidante en laboratorio. No se probó en piel humana. No hay datos de eficacia, irritación ni sensibilización. Si se vende como antienvejecimiento, la afirmación no tiene respaldo. (León Méndez 2021)"
+  },
+  "h_colorante_empaques": {
+   "title": "Colorante y empaques inteligentes",
+   "summary": "Las antocianinas se microencapsularon como colorante en polvo y se añadieron a películas biodegradables de PVOH que cambian de color. También sensibilizaron películas fotocatalíticas.",
+   "formula": "Mejor extracción: 50 °C, 75 min"
+  },
+  "h_carbon_activado": {
+   "title": "Carbón activado de la semilla",
+   "summary": "La semilla y la cáscara, residuos del despulpado, se convirtieron en carbón activado que adsorbe propranolol del agua en laboratorio.",
+   "formula": "Área superficial 1 125 m²/g (semilla)"
+  },
+  "h_patentes": {
+   "title": "Patentes",
+   "summary": "La búsqueda en Google Patents no halló patentes que nombren a Bactris guineensis. Las patentes con la palabra corozo tratan de botones de marfil vegetal."
+  },
+  "u_seguridad": {
+   "title": "Seguridad",
+   "summary": "No se hallaron estudios de toxicidad en animales, casos de alergia, interacciones ni datos en embarazo o lactancia. Los riesgos conocidos son indirectos: azúcar añadido en dulces y alcohol en el vino.",
+   "caution": "No se hallaron estudios de toxicidad en animales ni en personas. No hay datos en embarazo, lactancia ni niños pequeños. No se describen interacciones ni alergias, pero eso refleja falta de estudio. Los extractos concentrados no tienen la seguridad del fruto. No trague la semilla. (PubMed 2026; El Espectador 2026)"
+  }
+ },
+ "resources": [
+  {
+   "id": "F1",
+   "title": "Erşan et al. 2020: composición fitoquímica y mineral de frutos y semillas silvestres (J Food Compos Anal)",
+   "usedBy": [
+    "3.3",
+    "3.4",
+    "3.5"
+   ]
+  },
+  {
+   "id": "F2",
+   "title": "Cortés-Herrera et al. 2024: procesamiento de jugo y perfil nutricional (Agron Mesoam)",
+   "usedBy": [
+    "2.1",
+    "3.1",
+    "4.3"
+   ]
+  },
+  {
+   "id": "F3",
+   "title": "Osorio et al. 2010: antocianinas y microencapsulación (J Agric Food Chem)",
+   "usedBy": [
+    "3.2",
+    "6.3",
+    "8.5"
+   ]
+  },
+  {
+   "id": "F4",
+   "title": "Casas Caro et al., Instituto Humboldt: protocolo de manejo sostenible del corozo en el Cesar",
+   "usedBy": [
+    "4.1",
+    "4.2",
+    "5.2",
+    "5.3",
+    "5.4",
+    "6.1",
+    "6.2",
+    "7.1",
+    "7.3"
+   ]
+  },
+  {
+   "id": "F5",
+   "title": "ColPlanta (RBG Kew): ficha de Bactris guineensis en Colombia",
+   "usedBy": [
+    "1.1",
+    "1.2",
+    "5.2",
+    "5.4"
+   ]
+  },
+  {
+   "id": "F6",
+   "title": "Estudios in vitro: López 2017, Quesada 2020, Jaimes Gualdrón 2020 y 2022",
+   "usedBy": [
+    "8.1",
+    "8.2",
+    "8.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    4
+   ],
+   "6": [
+    4,
+    5
+   ],
+   "7": [
+    2,
+    5
+   ],
+   "8": [
+    3,
+    7
+   ],
+   "9": [
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "3.1": [
+    "1.1"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "3.2"
+   ],
+   "3.4": [
+    "3.1"
+   ],
+   "3.5": [
+    "3.1"
+   ],
+   "4.1": [
+    "1.1"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "5.1": [
+    "1.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "5.4": [
+    "5.3"
+   ],
+   "6.1": [
+    "4.2",
+    "5.3"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "6.2",
+    "3.2"
+   ],
+   "7.1": [
+    "4.1"
+   ],
+   "7.2": [
+    "2.1"
+   ],
+   "7.3": [
+    "7.2",
+    "5.2"
+   ],
+   "8.1": [
+    "3.2",
+    "3.3"
+   ],
+   "8.2": [
+    "8.1"
+   ],
+   "8.3": [
+    "3.3"
+   ],
+   "8.4": [
+    "3.2"
+   ],
+   "8.5": [
+    "8.1",
+    "6.3"
+   ],
+   "8.6": [
+    "1.3",
+    "8.5"
+   ],
+   "9.1": [
+    "2.2",
+    "2.3",
+    "3.1"
+   ],
+   "9.2": [
+    "9.1",
+    "8.6",
+    "5.4"
+   ]
+  },
+  "items": {
+   "h_nombres_comunes": [
+    "p_bactris_guineensis"
+   ],
+   "p_otros_corozos": [
+    "h_nombres_comunes"
+   ],
+   "h_morfologia_palma": [
+    "p_bactris_guineensis"
+   ],
+   "h_polinizacion": [
+    "h_morfologia_palma"
+   ],
+   "p_fruto": [
+    "h_polinizacion"
+   ],
+   "p_almendra": [
+    "p_fruto"
+   ],
+   "h_composicion_pulpa": [
+    "p_fruto"
+   ],
+   "c_antocianinas": [
+    "p_fruto"
+   ],
+   "c_fenoles": [
+    "c_antocianinas"
+   ],
+   "c_carotenoides_tocoferol": [
+    "p_fruto"
+   ],
+   "h_distribucion_colombia": [
+    "p_bactris_guineensis"
+   ],
+   "h_uvitales": [
+    "h_distribucion_colombia"
+   ],
+   "h_conservacion": [
+    "h_uvitales"
+   ],
+   "h_fenologia_cosecha": [
+    "h_polinizacion",
+    "h_uvitales"
+   ],
+   "h_poscosecha": [
+    "h_fenologia_cosecha",
+    "c_antocianinas"
+   ],
+   "p_jugo": [
+    "p_fruto"
+   ],
+   "p_vino_corozo": [
+    "p_jugo"
+   ],
+   "p_dulces": [
+    "p_fruto"
+   ],
+   "h_lata_materiales": [
+    "h_morfologia_palma"
+   ],
+   "u_antioxidante": [
+    "c_antocianinas",
+    "c_fenoles"
+   ],
+   "u_neuroproteccion": [
+    "u_antioxidante"
+   ],
+   "u_antitumoral": [
+    "c_fenoles"
+   ],
+   "u_antimicrobiano_antiviral": [
+    "c_antocianinas"
+   ],
+   "u_cardiometabolico": [
+    "c_antocianinas"
+   ],
+   "u_cosmetico": [
+    "u_antioxidante"
+   ],
+   "h_colorante_empaques": [
+    "c_antocianinas",
+    "h_poscosecha"
+   ],
+   "h_carbon_activado": [
+    "p_fruto"
+   ],
+   "h_patentes": [
+    "p_otros_corozos",
+    "h_colorante_empaques"
+   ],
+   "u_seguridad": [
+    "p_vino_corozo",
+    "p_dulces",
+    "h_composicion_pulpa"
+   ]
+  }
+ }
+}

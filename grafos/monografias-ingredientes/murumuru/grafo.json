@@ -1,0 +1,729 @@
+{
+ "meta": {
+  "title": "Murumuru como grafo",
+  "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Planta, compuesto o uso",
+  "itemLabelPlural": "Plantas, compuestos y usos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: láurico, manteca, várzea, Guaviare, Chagas, espinas…"
+ },
+ "blocks": {
+  "botanica": {
+   "name": "Botánica",
+   "color": "#6B8E4E"
+  },
+  "usos": {
+   "name": "Usos e historia",
+   "color": "#B08A2E"
+  },
+  "quimica": {
+   "name": "Química",
+   "color": "#6B5B95"
+  },
+  "produccion": {
+   "name": "Ecología y producción",
+   "color": "#3F8A8A"
+  },
+  "investigacion": {
+   "name": "Investigación y seguridad",
+   "color": "#3F6FA0"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "botanica",
+   "summary": "Qué planta es el murumuru y por qué el nombre cubre más de una especie según el tratamiento taxonómico.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Especie y familia",
+     "summary": "Palma de la familia Arecaceae, tribu Cocoseae, descrita por Martius en 1824; el género Astrocaryum agrupa palmas muy espinosas.",
+     "items": [
+      "p_murumuru"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "El complejo murumuru y Colombia",
+     "summary": "En sentido amplio incluye A. macrocalyx, A. chonta y A. gratum; en sentido estricto, el material colombiano corresponde a A. macrocalyx.",
+     "items": [
+      "h_complejo_taxonomico"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Marcadores genéticos",
+     "summary": "El plastoma y los microsatélites aportan marcadores para separar especies y medir la diversidad de poblaciones silvestres.",
+     "items": [
+      "h_genetica"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como materia prima",
+   "block": "usos",
+   "summary": "Partes de la palma que se aprovechan: manteca de la almendra, pulpa, palmito y residuos del prensado.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Manteca de la semilla",
+     "summary": "La almendra da una grasa sólida, blanca o crema, que se usa en cosméticos, jabones y alimentos.",
+     "items": [
+      "p_manteca"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Pulpa y palmito",
+     "summary": "La pulpa amarilla se come o se da a animales; el palmito es comestible, pero las espinas dificultan su extracción.",
+     "items": [
+      "p_pulpa",
+      "p_palmito"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Torta y residuos",
+     "summary": "Tras el prensado quedan torta rica en proteína y cáscara leñosa, con usos en piensos, catalizadores y extractos.",
+     "items": [
+      "p_torta"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "summary": "La manteca es casi toda grasa saturada láurica y mirística; los componentes menores y los residuos aportan tocoferoles, fitosteroles, fenoles y péptidos.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Ácidos grasos de cadena media",
+     "summary": "Láurico y mirístico suman cerca de tres cuartas partes de los ácidos grasos y explican su punto de fusión cercano a 33 °C.",
+     "items": [
+      "c_acido_laurico",
+      "c_acido_miristico"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Componentes menores",
+     "summary": "Tocoferoles beta y gamma y beta-sitosterol aparecen como minoritarios; los carotenoides fueron despreciables en muestras colombianas.",
+     "items": [
+      "c_tocoferoles"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Compuestos del residuo",
+     "summary": "La biomasa residual rinde fenoles, taninos y péptidos con actividad antioxidante y antimicrobiana en ensayos de laboratorio.",
+     "items": [
+      "c_bioactivos_residuo"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "botanica",
+   "summary": "Palma cespitosa de tallo corto, cubierta de espinas negras largas, con racimos colgantes de frutos amarillos.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Porte y espinas",
+     "summary": "Tallos agrupados y poco desarrollados, hojas largas y espinas negras de más de 20 cm en tallo, hojas y racimo.",
+     "items": [
+      "h_espinas"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Fruto y semilla",
+     "summary": "Fruto oblongo de 4,5 a 9 cm, pulpa amarilla de 6 a 10 mm y endocarpo leñoso duro que encierra una almendra blanca."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "produccion",
+   "summary": "Palma de bosques inundables amazónicos; la oferta comercial depende de la recolección silvestre en Brasil, y Colombia tiene caracterización química pero no estadísticas de producción.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Área de distribución",
+     "summary": "En sentido estricto ocupa el norte de Brasil, las Guayanas y Venezuela; en sentido amplio llega a Colombia, Ecuador, Perú y Bolivia."
+    },
+    {
+     "num": "5.2",
+     "title": "Hábitat de várzea",
+     "summary": "Crece en islas y várzeas del estuario amazónico, a veces con cientos de palmas por hectárea.",
+     "items": [
+      "h_ecologia_varzea"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Depredación y dispersión de semillas",
+     "summary": "Pecaríes, roedores y otros animales comen frutos y semillas; su abundancia cambia el reclutamiento de plántulas.",
+     "items": [
+      "h_dispersion"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Producción y mercado",
+     "summary": "La oferta brasileña es de unas 5 000 a 6 000 t de semilla al año y se vende sobre todo a la industria cosmética.",
+     "items": [
+      "h_produccion"
+     ]
+    },
+    {
+     "num": "5.5",
+     "title": "Colombia",
+     "summary": "El Instituto SINCHI caracterizó manteca del Guaviare; no se hallaron cifras oficiales de producción colombiana.",
+     "items": [
+      "h_colombia_sinchi"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha y poscosecha",
+   "block": "produccion",
+   "summary": "Recolección de frutos caídos, despulpado, secado, partido de la semilla y prensado de la almendra, con puntos críticos de calidad.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Recolección y manejo",
+     "summary": "Se recogen frutos del suelo con botas y guantes y se deja parte para la regeneración y la fauna.",
+     "items": [
+      "h_cosecha"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Beneficio y calidad",
+     "summary": "El secado hasta 5–6 % de humedad y el almacenamiento seco evitan hongos, acidez alta y rancidez.",
+     "items": [
+      "h_poscosecha"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y culinario",
+   "block": "usos",
+   "summary": "Del uso industrial en margarinas a mediados del siglo XX a los usos locales de fruto, fibra y espinas.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "De la margarina a la cosmética",
+     "summary": "En las décadas de 1940 y 1950 la grasa se usó en margarinas; hoy la demanda principal es cosmética, con compradores en Brasil, Europa y Estados Unidos.",
+     "items": [
+      "h_historia_margarina"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "Usos tradicionales",
+     "summary": "Comunidades rurales comen la almendra tierna, tejen la fibra y aplican polvo de espinas en el cuero cabelludo.",
+     "items": [
+      "h_usos_tradicionales"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Alimento local y riesgo de Chagas",
+     "summary": "Las palmas amazónicas, incluido el murumuru, albergan triatominos; los jugos de frutos de palma se asocian a brotes orales de Chagas.",
+     "items": [
+      "h_chagas"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "investigacion",
+   "summary": "Estudios de tecnología de alimentos, cosmética, laboratorio y animales; casi no hay ensayos en humanos.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Tecnología de alimentos y dieta",
+     "summary": "La manteca sirve como sustituto parcial de la manteca de cacao, pero su perfil saturado plantea dudas cardiovasculares.",
+     "items": [
+      "u_sustituto_cacao",
+      "u_dieta_lipidos"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Piel y cabello",
+     "summary": "Su uso cosmético se apoya en el efecto oclusivo de las grasas y en datos de patentes, no en ensayos publicados.",
+     "items": [
+      "u_hidratacion",
+      "u_cabello"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Actividad biológica en laboratorio",
+     "summary": "Efectos antioxidantes en células hepáticas y antimicrobianos de extractos del residuo, sin datos en humanos.",
+     "items": [
+      "u_antioxidante",
+      "u_antimicrobiano"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Nanoportadores y cicatrización",
+     "summary": "La manteca sirve de matriz para nanopartículas lipídicas y de base para pomadas probadas en perros.",
+     "items": [
+      "u_nanoportador",
+      "u_cicatrizacion"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Patentes",
+     "summary": "Patentes sobre hidratación cutánea con grasas de Astrocaryum y sobre cuidado del cabello rizado con manteca de murumuru.",
+     "items": [
+      "h_patentes"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Seguridad",
+     "summary": "Faltan datos de alergia, embarazo e interacciones; los riesgos conocidos son físicos, de calidad y de contaminación del fruto.",
+     "items": [
+      "u_seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "investigacion",
+   "summary": "Materia prima cosmética y alimentaria bien caracterizada en química, con evidencia clínica casi nula y retos de identidad botánica y de manejo silvestre.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Lo que está respaldado",
+     "summary": "Composición láurica, propiedades físicas útiles y función emoliente; los efectos de salud siguen en fase de laboratorio."
+    },
+    {
+     "num": "9.2",
+     "title": "Vacíos y prioridades",
+     "summary": "Faltan ensayos en piel y cabello, datos de seguridad, identificación botánica del material colombiano y estadísticas de producción."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_murumuru": {
+   "title": "Murumuru (Astrocaryum murumuru Mart.)",
+   "summary": "Palma amazónica cespitosa y espinosa de la familia Arecaceae, tribu Cocoseae. Su semilla da una grasa sólida de interés cosmético y alimentario.",
+   "formula": "Descrita en 1824 · Hist. Nat. Palm. 2: 70"
+  },
+  "h_complejo_taxonomico": {
+   "title": "Complejo murumuru e identidad en Colombia",
+   "summary": "Henderson (1995) trató A. macrocalyx como variedad de A. murumuru; POWO acepta A. macrocalyx como especie del sureste de Colombia y noreste de Perú. Los estudios colombianos usan el nombre amplio.",
+   "formula": "A. murumuru var. macrocalyx (Burret) A.J.Hend."
+  },
+  "h_genetica": {
+   "title": "Plastoma y diversidad genética",
+   "summary": "El plastoma muestra una inversión propia del género y ubica a Astrocaryum junto a Acrocomia; los microsatélites indican diversidad moderada en poblaciones de Pará.",
+   "formula": "32 SSR y 150 SNP · He = 0,254"
+  },
+  "p_manteca": {
+   "title": "Manteca de murumuru",
+   "summary": "Grasa sólida de la almendra, obtenida por prensa o solvente. Su nombre INCI es Astrocaryum Murumuru Seed Butter, con función de acondicionador y emoliente de la piel.",
+   "formula": "Almendra: 40–42 % de grasa"
+  },
+  "p_pulpa": {
+   "title": "Pulpa del fruto",
+   "summary": "Mesocarpo amarillo de 6 a 10 mm, pobre en grasa y de corta duración. Se usa en la alimentación local y animal.",
+   "formula": "53 % del fruto · proteína ≈ 4 %"
+  },
+  "p_palmito": {
+   "title": "Palmito",
+   "summary": "El cogollo es comestible, pero las espinas y el tallo corto hacen difícil la cosecha; no se hallaron datos de composición."
+  },
+  "p_torta": {
+   "title": "Torta y biomasa residual",
+   "summary": "Residuo del prensado, rico en proteína. Se ha probado como suplemento de búfalas lecheras y como fuente de extractos y péptidos.",
+   "formula": "Leche de búfala con más láurico y mirístico"
+  },
+  "c_acido_laurico": {
+   "title": "Ácido láurico (C12:0)",
+   "summary": "Ácido graso saturado principal de la manteca. Da firmeza a temperatura ambiente y fusión cercana a la temperatura corporal.",
+   "formula": "44–48,6 % de los ácidos grasos"
+  },
+  "c_acido_miristico": {
+   "title": "Ácido mirístico (C14:0)",
+   "summary": "Segundo ácido graso saturado de la manteca. Junto con el láurico eleva el índice de trombogenicidad.",
+   "formula": "27–30 % de los ácidos grasos"
+  },
+  "c_tocoferoles": {
+   "title": "Tocoferoles y fitosteroles",
+   "summary": "La manteca brasileña mostró tocoferoles beta y gamma altos; la colombiana, beta-sitosterol como fitosterol principal y carotenoides despreciables.",
+   "caution": "La manteca no es fuente relevante de vitamina A. En manteca colombiana los carotenoides fueron despreciables. Contiene tocoferoles y beta-sitosterol en cantidades menores. No hay estudios en humanos sobre efecto antienvejecimiento. (Lozano-Garzón 2023; Souza 2024)"
+  },
+  "c_bioactivos_residuo": {
+   "title": "Fenoles y péptidos del residuo",
+   "summary": "Extractos etanólicos del residuo contienen fenoles, flavonoides y taninos; los hidrolizados de su proteína dan péptidos de 500 a 5 000 Da.",
+   "formula": "Fenoles totales 9,92 mg EAG/g"
+  },
+  "h_espinas": {
+   "title": "Espinas",
+   "summary": "Espinas negras, duras y largas en tallo, hojas y racimo. Obligan a recoger los frutos del suelo y con protección.",
+   "formula": "Más de 20 cm de largo",
+   "caution": "Si se recolectan frutos o palmito, las espinas largas pueden penetrar la piel. En otras palmas, restos de espina causan sinovitis o artritis séptica, a veces de forma tardía. Use botas y guantes. Si un pinchazo deja dolor o inflamación persistente, busque cuerpo extraño. (Sousa 2004; Taşkiran 2002)"
+  },
+  "h_ecologia_varzea": {
+   "title": "Ecología de várzea",
+   "summary": "Especie de bosques inundables, islas y várzeas bajas del estuario amazónico; tolera la sombra. La densidad cambia mucho entre sitios.",
+   "formula": "126–325 palmas/ha en el estuario"
+  },
+  "h_dispersion": {
+   "title": "Depredación y dispersión de semillas",
+   "summary": "En la Amazonia suroccidental, el pecarí de labio blanco y otros animales depredan semillas; en bosques sin perturbar las plántulas crecen más lejos de los adultos.",
+   "formula": "Distancia de plántulas ≈ 1,5 veces mayor"
+  },
+  "h_produccion": {
+   "title": "Producción y mercado",
+   "summary": "La oferta proviene de recolección silvestre en Pará, Amapá, Amazonas y Acre, y no cubre la demanda industrial. Una cooperativa de Acre procesa unas 20 t de manteca al año.",
+   "formula": "Oferta 5 000–6 000 t de semilla/año"
+  },
+  "h_colombia_sinchi": {
+   "title": "Caracterización en Colombia (SINCHI)",
+   "summary": "Manteca del Guaviare prensada en 2019: solo ácidos grasos saturados y acidez alta. Los autores la consideran más apta para cosmética que para alimentos.",
+   "formula": "Acidez 7,28 mg KOH/g · El Retorno, Guaviare"
+  },
+  "h_cosecha": {
+   "title": "Recolección y manejo silvestre",
+   "summary": "Se recogen frutos caídos o se sacuden racimos maduros. Las guías piden cosechar en el pico, dejar frutos y censar la población cada tres años.",
+   "formula": "≈ 4 racimos/año · 243–300 frutos/racimo"
+  },
+  "h_poscosecha": {
+   "title": "Beneficio y calidad de la almendra",
+   "summary": "Remojo, despulpado, secado al sol, partido y prensado en caliente. Humedad, hongos y metales elevan la acidez y la oxidación.",
+   "formula": "100 kg de semilla seca → 27–29 kg de almendra",
+   "caution": "Si la semilla se guarda húmeda, aparecen hongos, acidez alta y rancidez. La manteca colombiana analizada tuvo acidez de 7,28 mg KOH/g. La manteca cruda contiene hierro y calcio, que aceleran la oxidación. Prefiera manteca refinada o con certificado de análisis. (Lozano-Garzón 2023; Souza 2024; Bezerra 2022)"
+  },
+  "h_historia_margarina": {
+   "title": "Margarina y giro cosmético",
+   "summary": "A mediados del siglo XX la grasa de la almendra se usó en margarinas. Después su mercado principal pasó a jabones, cremas y champús.",
+   "formula": "Décadas de 1940 y 1950"
+  },
+  "h_usos_tradicionales": {
+   "title": "Usos tradicionales",
+   "summary": "En Acre se informa que los niños comen la almendra tierna, que el polvo de espinas con agua se aplica contra la caída del cabello y que el jabón calma la piel irritada.",
+   "caution": "Los usos del polvo de espinas en el cuero cabelludo y del jabón en piel inflamada vienen de informes locales de Acre. No se hallaron estudios de eficacia ni de seguridad. No sustituyen la evaluación médica de la caída del cabello ni de la dermatitis. (Sousa 2004)"
+  },
+  "h_chagas": {
+   "title": "Triatominos en palmas y Chagas oral",
+   "summary": "Rhodnius pictipes se halló en palmas de murumuru en Pará. Los brotes orales de Chagas en la Amazonia se asocian a jugos de frutos de palma, sobre todo asaí.",
+   "formula": "17,4 % de triatominos con T. cruzi (Oriximiná)",
+   "caution": "Si se consume pulpa o jugo crudo de frutos de palma en la Amazonia, existe riesgo de Chagas oral. Se hallaron triatominos en palmas de murumuru en Pará. Los brotes documentados se asocian sobre todo al asaí. El procesamiento con higiene estricta reduce el riesgo. (Ricardo-Silva 2012; Pereira 2009)"
+  },
+  "u_sustituto_cacao": {
+   "title": "Sustituto de la manteca de cacao",
+   "summary": "Su curva de grasa sólida permite usarla como sustituto parcial de la manteca de cacao y como base dura en mezclas con aceite de soya.",
+   "formula": "Punto de fusión 32,5 °C"
+  },
+  "u_dieta_lipidos": {
+   "title": "Efecto en lípidos de la dieta",
+   "summary": "No hay ensayos con manteca de murumuru en humanos. Por su perfil láurico y mirístico, se espera un efecto en el LDL similar al del aceite de coco.",
+   "formula": "Índice de trombogenicidad 6,69",
+   "caution": "Si se usa como grasa alimentaria, considere que es casi toda saturada, con láurico y mirístico. Una grasa similar, el aceite de coco, sube el LDL unos 10 mg/dL frente a aceites no tropicales. La OMS recomienda grasa saturada por debajo del 10 % de la energía. (Neelakantan 2020; OMS 2023)"
+  },
+  "u_hidratacion": {
+   "title": "Barrera e hidratación de la piel",
+   "summary": "Una patente informa menor pérdida transepidérmica de agua con cremas de 0,2 a 3 % de grasa de murumuru en 10 voluntarios. No hay ensayos publicados en revistas.",
+   "formula": "10 voluntarios · lectura a 1–4 h",
+   "caution": "Si se busca hidratar piel seca, la manteca actúa como emoliente oclusivo. La única prueba en humanos es una patente: 10 voluntarios, estudio abierto y lecturas de 1 a 4 horas. No hay ensayos publicados ni comparaciones con emolientes comunes. (US 7,045,154)"
+  },
+  "u_cabello": {
+   "title": "Cuidado del cabello",
+   "summary": "Se vende para suavizar y controlar el frizz del cabello rizado. Solo hay patentes de formulación; no se hallaron ensayos clínicos.",
+   "formula": "0,5–2 % en fórmulas patentadas",
+   "caution": "Los beneficios en el cabello vienen de publicidad y de patentes de formulación. No se hallaron ensayos clínicos publicados. Como grasa emoliente, puede suavizar la fibra y reducir el frizz de forma temporal. No repara la estructura del cabello dañado. (US 2021/0128441; búsqueda PubMed 2026)"
+  },
+  "u_antioxidante": {
+   "title": "Actividad antioxidante",
+   "summary": "La manteca, antes y después de interesterificación enzimática, moduló enzimas antioxidantes en células HepG2. Extractos del residuo atraparon radicales en ensayos químicos.",
+   "formula": "Solo in vitro",
+   "caution": "El efecto antioxidante se midió en células hepáticas HepG2 y en ensayos químicos. No hay estudios en animales ni en humanos. No debe presentarse como protector del hígado. (Falcão 2017; Pantoja 2026)"
+  },
+  "u_antimicrobiano": {
+   "title": "Actividad antimicrobiana",
+   "summary": "Péptidos tripsínicos del residuo inhibieron casi por completo una bacteria en placa; los extractos fenólicos tuvieron efecto selectivo y limitado.",
+   "formula": "99,85 % de inhibición a 5 mg/mL (in vitro)",
+   "caution": "La actividad antimicrobiana proviene de péptidos y extractos del residuo, no de la manteca. Se midió solo en cultivo, con 2,5 a 20 mg/mL. No hay datos en infecciones de personas. (Pantoja 2026)"
+  },
+  "u_nanoportador": {
+   "title": "Matriz de nanopartículas lipídicas",
+   "summary": "La manteca forma nanopartículas que transportan curcumina, betacaroteno o ftalocianina contra células tumorales. La actividad viene del fármaco transportado, no de la manteca.",
+   "formula": "CI50 19,62 nM con luz (B16-F10, in vitro)",
+   "caution": "La manteca se usa como vehículo de fármacos en nanopartículas. La acción contra células tumorales viene del fármaco transportado y se vio solo in vitro. Un nanoportador de murumuru fue tóxico para células intestinales y hepáticas. No hay evidencia de efecto contra el cáncer. (Ganassin 2022; Mello 2022; Gomes 2019)"
+  },
+  "u_cicatrizacion": {
+   "title": "Base para pomadas cicatrizantes",
+   "summary": "En 11 perros, una pomada con extracto de jucá en base de manteca de murumuru cerró heridas más que una pomada comercial. No se probó la manteca sola.",
+   "formula": "Retracción 34,0 % frente a 28,4 %",
+   "caution": "El único estudio de cicatrización se hizo en 11 perros. La pomada tenía extracto de jucá en base de murumuru. No se probó la manteca sola ni en personas. No hay base para usarla como tratamiento de heridas humanas. (Américo 2020)"
+  },
+  "h_patentes": {
+   "title": "Patentes",
+   "summary": "US 7,045,154 protege grasas de Astrocaryum para aumentar la hidratación de la piel; US 2021/0128441 reivindica manteca de murumuru para cabello rizado.",
+   "formula": "Prioridad brasileña PI0106625-0 (2001)"
+  },
+  "u_seguridad": {
+   "title": "Seguridad",
+   "summary": "No se hallaron casos publicados de toxicidad ni de alergia a la manteca. Tampoco hay datos en embarazo, lactancia ni interacciones; los riesgos documentados son espinas, rancidez y contaminación del fruto.",
+   "caution": "No hay estudios de seguridad en embarazo, lactancia, niños ni interacciones. No se hallaron casos publicados de alergia. La falta de reportes no prueba que sea hipoalergénica. Si hay piel sensible o dermatitis previa, pruebe primero en un área pequeña. (Búsqueda PubMed 2026)"
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    1,
+    4
+   ],
+   "6": [
+    4,
+    5
+   ],
+   "7": [
+    2
+   ],
+   "8": [
+    3,
+    7
+   ],
+   "9": [
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "1.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "3.1": [
+    "2.1"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "2.3"
+   ],
+   "4.1": [
+    "1.1"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "5.1": [
+    "1.2"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2",
+    "4.2"
+   ],
+   "5.4": [
+    "2.1",
+    "5.2"
+   ],
+   "5.5": [
+    "1.2",
+    "3.1"
+   ],
+   "6.1": [
+    "4.1",
+    "5.2"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "7.1": [
+    "2.1"
+   ],
+   "7.2": [
+    "2.2",
+    "4.1"
+   ],
+   "7.3": [
+    "2.2"
+   ],
+   "8.1": [
+    "3.1"
+   ],
+   "8.2": [
+    "2.1"
+   ],
+   "8.3": [
+    "3.2",
+    "3.3"
+   ],
+   "8.4": [
+    "2.1"
+   ],
+   "8.5": [
+    "8.2"
+   ],
+   "8.6": [
+    "4.1",
+    "6.2",
+    "7.3"
+   ],
+   "9.1": [
+    "8.1",
+    "8.2"
+   ],
+   "9.2": [
+    "8.6",
+    "5.5"
+   ]
+  },
+  "items": {
+   "h_complejo_taxonomico": [
+    "p_murumuru"
+   ],
+   "h_genetica": [
+    "p_murumuru"
+   ],
+   "p_manteca": [
+    "p_murumuru"
+   ],
+   "p_pulpa": [
+    "p_murumuru"
+   ],
+   "p_palmito": [
+    "p_murumuru"
+   ],
+   "p_torta": [
+    "p_manteca"
+   ],
+   "c_acido_laurico": [
+    "p_manteca"
+   ],
+   "c_acido_miristico": [
+    "p_manteca"
+   ],
+   "c_tocoferoles": [
+    "p_manteca"
+   ],
+   "c_bioactivos_residuo": [
+    "p_torta"
+   ],
+   "h_espinas": [
+    "p_murumuru"
+   ],
+   "h_ecologia_varzea": [
+    "p_murumuru"
+   ],
+   "h_dispersion": [
+    "h_ecologia_varzea"
+   ],
+   "h_produccion": [
+    "p_manteca",
+    "h_ecologia_varzea"
+   ],
+   "h_colombia_sinchi": [
+    "h_complejo_taxonomico",
+    "c_acido_laurico"
+   ],
+   "h_cosecha": [
+    "h_espinas",
+    "h_ecologia_varzea"
+   ],
+   "h_poscosecha": [
+    "h_cosecha"
+   ],
+   "h_historia_margarina": [
+    "p_manteca"
+   ],
+   "h_usos_tradicionales": [
+    "h_espinas",
+    "p_pulpa"
+   ],
+   "h_chagas": [
+    "p_pulpa"
+   ],
+   "u_sustituto_cacao": [
+    "c_acido_laurico",
+    "c_acido_miristico"
+   ],
+   "u_dieta_lipidos": [
+    "c_acido_laurico",
+    "c_acido_miristico"
+   ],
+   "u_hidratacion": [
+    "p_manteca"
+   ],
+   "u_cabello": [
+    "u_hidratacion"
+   ],
+   "u_antioxidante": [
+    "c_tocoferoles",
+    "c_bioactivos_residuo"
+   ],
+   "u_antimicrobiano": [
+    "c_bioactivos_residuo"
+   ],
+   "u_nanoportador": [
+    "p_manteca"
+   ],
+   "u_cicatrizacion": [
+    "u_nanoportador"
+   ],
+   "h_patentes": [
+    "u_hidratacion",
+    "u_cabello"
+   ],
+   "u_seguridad": [
+    "h_espinas",
+    "h_poscosecha",
+    "h_chagas"
+   ]
+  }
+ }
+}

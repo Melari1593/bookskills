@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Açaí y asaí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Açaí y asaí como grafo", "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia", "itemLabel": "Planta, compuesto o uso", "itemLabelPlural": "Plantas, compuestos y usos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: antocianinas, Chagas, palmito, blanqueamiento, La Pedrera…"}, "blocks": {"botanica": {"name": "Botánica", "color": "#6B8E4E"}, "quimica": {"name": "Composición y química", "color": "#6B5B95"}, "produccion": {"name": "Producción y poscosecha", "color": "#3F8A8A"}, "historia": {"name": "Usos e historia", "color": "#B08A2E"}, "investigacion": {"name": "Investigación y patentes", "color": "#3F6FA0"}, "riesgo": {"name": "Seguridad y conclusiones", "color": "#B5465A"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "botanica", "summary": "Dos palmas del género Euterpe dan el açaí comercial; en la Amazonia colombiana la especie es E. precatoria, llamada asaí.", "sections": [{"num": "1.1", "title": "Euterpe oleracea, el açaí del estuario", "summary": "Palma de varios tallos descrita por Martius en 1824; domina el mercado brasileño y en Colombia crece en el Pacífico.", "items": ["p_euterpe_oleracea"]}, {"num": "1.2", "title": "Euterpe precatoria, el asaí amazónico", "summary": "Palma de tallo único descrita en 1842; es la especie del asaí en la Amazonia colombiana y podría ser un complejo de especies.", "items": ["p_euterpe_precatoria"]}, {"num": "1.3", "title": "Especies afines y confusiones", "summary": "La juçara (E. edulis) del Bosque Atlántico se usa como sustituto; POWO separa hoy E. longevaginata de E. precatoria.", "items": ["p_jucara"]}]}, {"num": 2, "title": "Usos como materia prima", "block": "historia", "summary": "Del fruto sale la pulpa; del cogollo, el palmito; de la semilla, un subproducto que la industria intenta aprovechar.", "sections": [{"num": "2.1", "title": "La pulpa y la bebida", "summary": "La pulpa se separa con agua de la semilla y se vende fresca, congelada o en polvo; es la forma de consumo principal.", "items": ["p_pulpa"]}, {"num": "2.2", "title": "El palmito", "summary": "El meristemo apical se come como palmito; en E. precatoria, de tallo único, extraerlo mata la palma.", "items": ["p_palmito"]}, {"num": "2.3", "title": "Semilla y otros subproductos", "summary": "La semilla es la mayor parte del fruto y se acumula como residuo; se estudia como fibra, extracto y materia prima cosmética.", "items": ["p_semilla"]}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "summary": "Pulpa grasa y poco dulce, con antocianinas, proantocianidinas, flavonas y ácidos grasos monoinsaturados.", "sections": [{"num": "3.1", "title": "Composición nutricional", "summary": "La pulpa congelada aporta pocas calorías y mucha grasa relativa; el azúcar añadido cambia ese perfil.", "items": ["c_nutrientes"]}, {"num": "3.2", "title": "Antocianinas", "summary": "Cianidina-3-rutinósido y cianidina-3-glucósido son las antocianinas principales y dan el color violeta oscuro.", "items": ["c_antocianinas"]}, {"num": "3.3", "title": "Otros polifenoles", "summary": "Proantocianidinas poliméricas y flavonas como orientina e isoorientina completan el perfil fenólico.", "items": ["c_proantocianidinas"]}, {"num": "3.4", "title": "Lípidos", "summary": "El aceite de la pulpa es rico en ácido oleico; también tiene fitoesteroles como β-sitosterol.", "items": ["c_lipidos"]}, {"num": "3.5", "title": "Datos de frutos colombianos", "summary": "Muestras de Vaupés mostraron concentraciones fenólicas menores que las publicadas en otros países.", "items": ["c_fenoles_colombia"]}]}, {"num": 4, "title": "Descripción morfológica", "block": "botanica", "summary": "Palmas altas y delgadas con racimos de frutos pequeños, esféricos y casi negros al madurar.", "sections": [{"num": "4.1", "title": "Porte y tallo", "summary": "E. precatoria tiene un solo tallo de 10 a 20 m; E. oleracea forma macollas de varios tallos.", "items": ["h_morfologia"]}, {"num": "4.2", "title": "Fruto y racimo", "summary": "El fruto mide algo más de 1 cm, pesa cerca de 1,5 g y tiene una capa comestible delgada sobre una semilla grande."}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "produccion", "summary": "Brasil concentra la producción; Colombia aprovecha sobre todo poblaciones silvestres de asaí en la Amazonia.", "sections": [{"num": "5.1", "title": "Distribución natural", "summary": "Ambas especies van de Trinidad al trópico sudamericano; E. precatoria crece en suelos pobres y bien drenados.", "items": ["h_distribucion"]}, {"num": "5.2", "title": "Producción en Brasil", "summary": "Brasil produjo cerca de 1,7 millones de toneladas en 2023; Pará aportó más del 90 %.", "items": ["h_produccion_brasil"]}, {"num": "5.3", "title": "El asaí en Colombia", "summary": "En La Pedrera (Amazonas) el Sinchi midió unas 104 palmas por hectárea y racimos de unos 9 kg.", "items": ["h_asai_colombia"]}, {"num": "5.4", "title": "Ecología y diversidad genética", "summary": "La presión humana y la defaunación alteran la estructura genética de E. precatoria."}]}, {"num": 6, "title": "Cosecha y poscosecha", "block": "produccion", "summary": "Se trepa la palma para cortar racimos maduros; luego hay que enfriar, despulpar y tratar con calor.", "sections": [{"num": "6.1", "title": "Cosecha", "summary": "El cosechero sube con arnés o lazo y corta el racimo; el plan del Sinchi no requiere tumbar la palma.", "items": ["h_cosecha"]}, {"num": "6.2", "title": "Poscosecha y tratamiento térmico", "summary": "Selección, lavado, blanqueamiento y pasteurización reducen la carga microbiana y eliminan Trypanosoma cruzi.", "items": ["h_poscosecha"]}, {"num": "6.3", "title": "Conservas de palmito", "summary": "El palmito envasado necesita acidificación correcta; si falla, puede crecer Clostridium botulinum.", "items": ["u_botulismo_palmito"]}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y culinario", "block": "historia", "summary": "Alimento diario de comunidades ribereñas que pasó a ser un producto global de moda.", "sections": [{"num": "7.1", "title": "Uso tradicional amazónico", "summary": "Las comunidades toman la pulpa como bebida o chicha y usan el tallo en la construcción.", "items": ["h_uso_tradicional"]}, {"num": "7.2", "title": "Del río al mercado global", "summary": "Desde los años 2000 se vende como superfruta; hubo disputas de marca y publicidad engañosa.", "items": ["h_marca_japon", "h_ftc"]}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "investigacion", "summary": "Muchos estudios de laboratorio y animales; pocos ensayos en humanos, pequeños y con medidas intermedias.", "sections": [{"num": "8.1", "title": "Capacidad antioxidante", "summary": "Tomar pulpa sube la capacidad antioxidante del plasma unas horas; ese dato no equivale a un beneficio clínico.", "items": ["u_antioxidante"]}, {"num": "8.2", "title": "Metabolismo y peso", "summary": "Ensayos pequeños midieron glucosa, lípidos e inflamación con resultados mixtos; ningún ensayo muestra pérdida de peso.", "items": ["u_metabolico", "u_peso"]}, {"num": "8.3", "title": "Función vascular", "summary": "Un ensayo agudo mejoró la dilatación arterial tras una comida grasa.", "items": ["u_vascular"]}, {"num": "8.4", "title": "Ejercicio", "summary": "Ensayos con pocos deportistas midieron marcadores de recuperación y estrés oxidativo.", "items": ["u_deporte"]}, {"num": "8.5", "title": "Cáncer y otros usos", "summary": "Efectos antitumorales en células y animales; un ensayo de fase II no cumplió su objetivo; un ensayo pequeño en acúfenos.", "items": ["u_cancer", "u_acufeno"]}, {"num": "8.6", "title": "Patentes", "summary": "Hay patentes sobre extractos de fruto y semilla para hipertensión y síndrome metabólico.", "items": ["h_patentes"]}]}, {"num": 9, "title": "Conclusiones", "block": "riesgo", "summary": "Alimento con buen perfil de grasas y polifenoles; el riesgo mayor es Chagas oral por pulpa sin tratamiento térmico.", "sections": [{"num": "9.1", "title": "Chagas por vía oral", "summary": "La pulpa artesanal contaminada con heces o restos de triatominos causa brotes de Chagas agudo en la Amazonia.", "items": ["u_chagas"]}, {"num": "9.2", "title": "Otras precauciones", "summary": "El açaí altera la resonancia digestiva y faltan datos en embarazo e interacciones.", "items": ["u_resonancia", "u_seguridad"]}, {"num": "9.3", "title": "Balance", "summary": "La evidencia en humanos no respalda las afirmaciones de salud más difundidas; la higiene del procesamiento es la prioridad."}]}], "items": {"p_euterpe_oleracea": {"title": "Euterpe oleracea (açaí)", "summary": "Palma de varios tallos del estuario amazónico y principal fuente del açaí comercial. En Colombia crece en la costa del Pacífico.", "formula": "Descrita por Martius en 1824"}, "p_euterpe_precatoria": {"title": "Euterpe precatoria (asaí)", "summary": "Palma de tallo único de la Amazonia occidental y especie del asaí colombiano. Una revisión sistemática sugiere que puede ser un complejo de especies.", "formula": "273 de 1568 estudios la tratan como tema central", "caution": "Una revisión sistemática informa más antocianinas en E. precatoria que en E. oleracea. Muestras de Vaupés tuvieron concentraciones menores que las de otros países. Más antocianinas no demuestra más beneficio clínico. (Rocha 2025; Rodríguez 2025)"}, "p_jucara": {"title": "Euterpe edulis (juçara)", "summary": "Palma del Bosque Atlántico de Brasil con un fruto parecido al açaí. La extracción ilegal de palmito la puso en riesgo de extinción."}, "p_pulpa": {"title": "Pulpa y bebida de açaí", "summary": "Parte comestible que se separa de la semilla con agua. Se vende fresca, congelada, pasteurizada o en polvo, sola o con jarabes.", "formula": "Pulpa ≈ 20 % del fruto", "caution": "La pulpa congelada sin azúcar tiene 58 kcal y 6,2 g de carbohidratos por 100 g. Con jarabe de guaraná sube a 110 kcal y 21,5 g. Las mezclas comerciales pueden llevar jarabes. Si hay diabetes o control de peso, hay que leer la etiqueta. (TACO, NEPA-UNICAMP)"}, "p_palmito": {"title": "Palmito de Euterpe", "summary": "Cogollo tierno que se come fresco o en conserva. En las palmas de tallo único su extracción mata el individuo."}, "p_semilla": {"title": "Semilla y subproductos", "summary": "Residuo principal del despulpado. Tiene más de 84 % de fibra en base seca y se estudia para extractos, harinas y cosméticos.", "formula": "Fibra dietaria > 84 % (base seca)"}, "c_nutrientes": {"title": "Composición de la pulpa", "summary": "La pulpa congelada sin azúcar es baja en calorías y carbohidratos, y alta en grasa relativa. Con jarabe de guaraná casi duplica la energía.", "formula": "58 kcal y 3,9 g de lípidos/100 g (TACO)"}, "c_antocianinas": {"title": "Antocianinas", "summary": "Pigmentos violetas; los principales son cianidina-3-rutinósido y cianidina-3-glucósido. Su contenido varía mucho entre genotipos y marcas.", "formula": "3,19 mg/g de polvo liofilizado"}, "c_proantocianidinas": {"title": "Proantocianidinas y flavonas", "summary": "Polímeros de flavanoles más abundantes que las antocianinas en el polvo liofilizado. Se acompañan de orientina, isoorientina y otras flavonas.", "formula": "12,89 mg/g de polvo liofilizado"}, "c_lipidos": {"title": "Ácidos grasos y esteroles", "summary": "La grasa de la pulpa es sobre todo monoinsaturada. Hay β-sitosterol, campesterol y estigmasterol en cantidades pequeñas.", "formula": "Oleico 53,9 % · palmítico 26,7 %"}, "c_fenoles_colombia": {"title": "Fenoles en asaí de Vaupés", "summary": "Un estudio de frutos de Vaupés detectó 14 flavonoides y 23 derivados de ácidos fenólicos. Las cifras fueron más bajas que las de otros países.", "formula": "Catequina 4,86 µg/g en la especie más rica"}, "h_morfologia": {"title": "Morfología de la palma", "summary": "E. precatoria tiene tallo solitario de 10 a 20 m y 10 a 23 cm de diámetro, con 10 a 20 hojas. El fruto maduro es violeta casi negro.", "formula": "Fruto ≈ 1,5 g"}, "h_distribucion": {"title": "Distribución natural", "summary": "Ambas especies crecen en el trópico húmedo desde Trinidad hasta Bolivia y Brasil. En Colombia el asaí llega del nivel del mar a unos 2000 m."}, "h_produccion_brasil": {"title": "Producción en Brasil", "summary": "La producción brasileña creció de 1,40 a 1,70 millones de toneladas entre 2019 y 2023. Pará produce la mayor parte.", "formula": "2023: 1 696 485 t (Pará 1 576 302 t)"}, "h_asai_colombia": {"title": "Asaí en la Amazonia colombiana", "summary": "El Sinchi estudió poblaciones silvestres en La Pedrera (Amazonas). Midió densidad de palmas, peso de racimos y metas de cosecha sostenible.", "formula": "≈ 104 palmas/ha · racimo ≈ 9,25 kg"}, "h_cosecha": {"title": "Cosecha por trepa", "summary": "El cosechero sube con arnés y corta solo racimos maduros. En la Amazonia colombiana la maduración va de marzo a julio según la zona.", "formula": "Solo ≈ 27 % de los frutos llega a madurar"}, "h_poscosecha": {"title": "Poscosecha y tratamiento térmico", "summary": "El fruto se refrigera, se lava y se despulpa. El blanqueamiento y la pasteurización eliminan T. cruzi en ensayos de laboratorio.", "formula": "Blanqueo 80 °C, 10 s · pasteurización 82,5 °C, 1 min", "caution": "El blanqueamiento del fruto y la pasteurización de la pulpa eliminaron T. cruzi en laboratorio. Las cepas amazónicas resistieron más el calor y el hipoclorito que la cepa de referencia. La eficacia depende de cumplir temperatura y tiempo. Si la pulpa es artesanal, conviene confirmar que fue blanqueada o pasteurizada. (de Oliveira 2019; Embrapa 2016)"}, "u_botulismo_palmito": {"title": "Botulismo por palmito en conserva", "summary": "El palmito mal acidificado permite el crecimiento de C. botulinum. En Brasil se documentaron casos por palmito industrial.", "formula": "3 casos en 1997–1999 (São Paulo)", "caution": "El palmito mal acidificado permite el crecimiento de Clostridium botulinum. En São Paulo hubo 3 casos de botulismo por palmito industrial entre 1997 y 1999. Si la conserva es casera, hay que hervirla más de 15 minutos antes de comerla. (BEPA 2006)"}, "h_uso_tradicional": {"title": "Uso tradicional", "summary": "Las comunidades amazónicas preparan el fruto en agua tibia y lo toman como jugo o chicha. El tallo sirve para casas y malocas."}, "h_marca_japon": {"title": "Disputa por la marca «açaí»", "summary": "Una empresa japonesa registró «açaí» como marca en 2003. La oficina japonesa la canceló en 2007 tras una gestión de Brasil.", "formula": "Registro 2003 · cancelación 2007"}, "h_ftc": {"title": "Fraude publicitario en EE. UU.", "summary": "La FTC sancionó a empresas que vendían açaí para adelgazar con falsos sitios de noticias y cargos recurrentes ocultos.", "formula": "Clickbooth: fallo de 2 millones de USD (2012)"}, "u_antioxidante": {"title": "Capacidad antioxidante", "summary": "En humanos la pulpa sube la capacidad antioxidante del plasma de forma aguda (estudio cruzado). La alta capacidad medida in vitro no predice efectos clínicos.", "formula": "Antocianinas en plasma: pico ≈ 2 h", "caution": "La pulpa sube la capacidad antioxidante del plasma durante unas horas. Ese cambio no demuestra protección contra enfermedades. Las cifras ORAC se miden en tubo de ensayo. El USDA retiró su base ORAC en 2012 porque no predice efectos en la salud. (Mertens-Talcott 2008; USDA 2012)"}, "u_metabolico": {"title": "Glucosa, lípidos e inflamación", "summary": "Un estudio sin control mostró menos glucosa y colesterol. Dos ensayos controlados no hallaron cambios en glucosa ni lípidos, pero sí en marcadores oxidativos.", "caution": "Si se busca bajar la glucosa o el colesterol, la evidencia controlada no lo respalda. Dos ensayos con placebo, de 12 semanas y de 60 días, no cambiaron glucosa ni lípidos. Solo un estudio sin grupo control mostró descensos. El açaí no sustituye el tratamiento de diabetes o dislipidemia. (Kim 2018; Aranha 2019; Udani 2011)"}, "u_peso": {"title": "Pérdida de peso", "summary": "Se afirma que el açaí hace adelgazar. No hay ensayos en humanos que lo muestren.", "caution": "Ningún ensayo en humanos muestra que el açaí haga perder peso. La FTC sancionó a vendedores de açaí para adelgazar por publicidad falsa y cobros ocultos. Si el objetivo es bajar de peso, el açaí no sustituye la dieta ni el tratamiento médico. (NCCIH 2024; FTC 2012)"}, "u_vascular": {"title": "Función vascular", "summary": "En un ensayo cruzado agudo con 23 hombres con sobrepeso, un batido de açaí mejoró la dilatación mediada por flujo tras una comida grasa.", "formula": "FMD +1,4 % frente a +0,4 % a las 2 h", "caution": "Un ensayo cruzado en 23 hombres con sobrepeso mostró mejor dilatación arterial durante 6 horas tras una comida grasa. Es un efecto agudo de un solo estudio. No hay datos sobre infarto ni ictus. No sustituye el tratamiento cardiovascular. (Alqurashi 2016)"}, "u_deporte": {"title": "Recuperación y rendimiento deportivo", "summary": "Ensayos con 10 a 24 deportistas reportan menos lactato, menos peroxidación lipídica y recuperación muscular más rápida. Incluyen pulpa de E. precatoria.", "formula": "Lactato −29 % en ciclistas (n = 10)", "caution": "Ensayos con 10 a 24 deportistas reportan menos lactato y recuperación muscular más rápida con pulpa. Son estudios pequeños, de pocos días y con medidas intermedias. No hay datos de rendimiento en competencia ni de lesiones. (Terrazas 2019; Aguiar 2025; Carvalho-Peixoto 2015)"}, "u_cancer": {"title": "Efecto antitumoral", "summary": "Los polifenoles frenan células leucémicas in vitro y tumores en roedores. En humanos, un ensayo de fase II en cáncer de próstata no cumplió su objetivo.", "formula": "1 de 21 pacientes con respuesta de PSA", "caution": "Los efectos antitumorales del açaí vienen de células y roedores. En un ensayo de fase II en cáncer de próstata respondió 1 de 21 pacientes y no se cumplió el objetivo. No hay evidencia de que prevenga o trate el cáncer. No debe retrasar el tratamiento oncológico. (Kessler 2018; Alessandra-Perini 2018)"}, "u_acufeno": {"title": "Acúfenos", "summary": "Un ensayo con placebo en 30 adultos usó 100 mg de extracto durante 3 meses. Redujo la molestia por acúfeno, sin cambiar marcadores oxidativos.", "caution": "Un solo ensayo con placebo en 30 adultos redujo la molestia por acúfeno con 100 mg diarios de extracto durante 3 meses. No hay réplicas. Si hay acúfeno, el extracto no sustituye la evaluación audiológica. (Oppitz 2022)"}, "h_patentes": {"title": "Patentes sobre extractos", "summary": "Hay patentes brasileñas, europeas y estadounidenses sobre extractos de fruto y semilla. Se orientan a hipertensión y síndrome metabólico.", "formula": "EP 2051721 B1 (2018) · US 12 029 774 B2 (2024)"}, "u_chagas": {"title": "Chagas por vía oral", "summary": "La pulpa sin tratamiento térmico puede llevar T. cruzi de triatominos o marsupiales. Causa brotes de Chagas agudo con fiebre y daño cardíaco.", "formula": "114 brotes, 1293 casos, letalidad 5,95 %", "caution": "La pulpa sin tratamiento térmico puede transmitir Trypanosoma cruzi. Una revisión de 114 brotes de Chagas oral halló letalidad de 5,95 %. En Brasil el açaí fue el alimento más implicado. Si hay fiebre unas dos semanas después de tomar pulpa artesanal en zona amazónica, hay que descartar Chagas agudo. (Useche 2026; de Sousa 2023)"}, "u_resonancia": {"title": "Interferencia con la resonancia magnética", "summary": "La pulpa contiene hierro, manganeso y cobre, y actúa como contraste oral. Cambia la señal del tubo digestivo en la resonancia.", "caution": "La pulpa tiene hierro, manganeso y cobre, y se ha probado como contraste oral en colangiorresonancia. Si hay una resonancia abdominal programada, conviene avisar del consumo de açaí. (Sanchez 2009; NCCIH 2024)"}, "u_seguridad": {"title": "Embarazo, interacciones y glucemia", "summary": "No hay datos de seguridad en embarazo ni lactancia, y las interacciones con fármacos solo se han visto en ratones. Una comida con açaí subió la insulina posprandial.", "caution": "No hay datos de seguridad del açaí en embarazo ni lactancia. Las interacciones con atorvastatina, alogliptina y empagliflozina solo se han visto en ratones. Una comida con açaí subió la insulina posprandial en un ensayo. Si se usan antidiabéticos, conviene vigilar la glucemia. (NCCIH 2024; MSKCC 2023; Alqurashi 2016)"}}, "resources": [], "requires": {"chapters": {"2": [1], "3": [2], "4": [1], "5": [4], "6": [4, 5], "7": [2], "8": [3, 7], "9": [6, 8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.1"], "2.1": ["1.1", "1.2"], "2.2": ["1.2"], "2.3": ["2.1"], "3.1": ["2.1"], "3.2": ["2.1"], "3.3": ["3.2"], "3.4": ["3.1"], "3.5": ["3.2", "1.2"], "4.1": ["1.2"], "4.2": ["4.1"], "5.1": ["4.1"], "5.2": ["5.1"], "5.3": ["5.1"], "5.4": ["5.1"], "6.1": ["4.2", "5.3"], "6.2": ["6.1"], "6.3": ["2.2"], "7.1": ["2.1"], "7.2": ["5.2"], "8.1": ["3.2", "3.3"], "8.2": ["8.1", "3.1"], "8.3": ["8.1"], "8.4": ["8.1"], "8.5": ["3.2"], "8.6": ["2.3", "8.3"], "9.1": ["6.2"], "9.2": ["2.1", "8.2"], "9.3": ["9.1", "9.2", "8.5"]}, "items": {"p_euterpe_precatoria": ["p_euterpe_oleracea"], "p_jucara": ["p_euterpe_oleracea"], "p_pulpa": ["p_euterpe_oleracea", "p_euterpe_precatoria"], "p_palmito": ["p_euterpe_precatoria"], "p_semilla": ["p_pulpa"], "c_nutrientes": ["p_pulpa"], "c_antocianinas": ["p_pulpa"], "c_proantocianidinas": ["c_antocianinas"], "c_lipidos": ["c_nutrientes"], "c_fenoles_colombia": ["c_antocianinas", "p_euterpe_precatoria"], "h_morfologia": ["p_euterpe_precatoria"], "h_distribucion": ["h_morfologia"], "h_produccion_brasil": ["h_distribucion"], "h_asai_colombia": ["h_distribucion"], "h_cosecha": ["h_asai_colombia"], "h_poscosecha": ["h_cosecha"], "u_botulismo_palmito": ["p_palmito"], "h_uso_tradicional": ["p_pulpa"], "h_marca_japon": ["h_produccion_brasil"], "h_ftc": ["u_peso"], "u_antioxidante": ["c_antocianinas", "c_proantocianidinas"], "u_metabolico": ["u_antioxidante"], "u_peso": ["c_nutrientes"], "u_vascular": ["u_antioxidante"], "u_deporte": ["u_antioxidante"], "u_cancer": ["c_antocianinas"], "u_acufeno": ["u_antioxidante"], "h_patentes": ["p_semilla", "u_vascular"], "u_chagas": ["p_pulpa", "h_poscosecha"], "u_resonancia": ["p_pulpa"], "u_seguridad": ["u_metabolico"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

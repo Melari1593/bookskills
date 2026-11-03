@@ -1,0 +1,772 @@
+{
+ "meta": {
+  "title": "Aguaje (moriche, canangucha) como grafo",
+  "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Planta, compuesto, uso o hecho",
+  "itemLabelPlural": "Plantas, compuestos, usos y hechos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: β-caroteno, fitoestrógenos, curvas, tala, Chagas, cananguchal…"
+ },
+ "blocks": {
+  "botanica": {
+   "name": "Botánica",
+   "color": "#6B8E4E"
+  },
+  "usos": {
+   "name": "Materia prima y alimento",
+   "color": "#B08A2E"
+  },
+  "quimica": {
+   "name": "Química",
+   "color": "#6B5B95"
+  },
+  "ecologia": {
+   "name": "Ecología, producción y cosecha",
+   "color": "#3F8A8A"
+  },
+  "historia": {
+   "name": "Historia y uso tradicional",
+   "color": "#9A6B3F"
+  },
+  "investigacion": {
+   "name": "Investigación, seguridad y conclusiones",
+   "color": "#3F6FA0"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "botanica",
+   "summary": "Nombre aceptado, familia, sinónimos y nombres comunes del aguaje, y su condición de palma dioica.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Nombre aceptado y familia",
+     "summary": "El nombre aceptado es Mauritia flexuosa L.f. (1782), de la familia Arecaceae, subfamilia Calamoideae.",
+     "items": [
+      "p_mauritia"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Sinónimos y nombres comunes",
+     "summary": "Mauritia vinifera Mart. es un sinónimo; se llama aguaje en Perú, moriche o canangucha en Colombia y buriti o mirití en Brasil."
+    },
+    {
+     "num": "1.3",
+     "title": "Palma dioica",
+     "summary": "Cada palma es macho o hembra; solo las hembras dan fruto, y el sexo se reconoce con seguridad en la primera floración.",
+     "items": [
+      "h_dioecia"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como materia prima",
+   "block": "usos",
+   "summary": "Productos que se obtienen del fruto, las hojas y el tronco de la palma.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Pulpa del fruto",
+     "summary": "La pulpa anaranjada es la parte comestible principal; es una fracción pequeña del fruto y es rica en grasa y fibra.",
+     "items": [
+      "p_pulpa"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Aceite de pulpa",
+     "summary": "El aceite se extrae por prensado de la pulpa y se vende para alimentos y cosméticos.",
+     "items": [
+      "p_aceite"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Bebidas, helados y dulces",
+     "summary": "La pulpa se transforma en jugos, helados, paletas, dulces y mermeladas, y se prueba en yogures y leches fermentadas.",
+     "items": [
+      "p_bebidas"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Hojas, fibras y larvas",
+     "summary": "Las hojas dan techo y fibra para cuerdas y hamacas; en el tronco se crían larvas comestibles de gorgojo.",
+     "items": [
+      "p_suri"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "summary": "Carotenoides, lípidos, fenoles, metoxiflavanos y triterpenos descritos en el fruto y otras partes.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Carotenoides provitamina A",
+     "summary": "La pulpa y su aceite tienen mucho β-caroteno; las cifras varían con el origen, la madurez y la base de cálculo.",
+     "items": [
+      "c_betacaroteno"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Lípidos del aceite",
+     "summary": "El aceite es sobre todo monoinsaturado, con oleico y palmítico como ácidos grasos principales, y contiene tocoferoles.",
+     "items": [
+      "c_acidos_grasos"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Fenoles y flavonoides",
+     "summary": "La pulpa contiene fenoles y flavonoides en cantidades que cambian mucho entre lugares de cosecha.",
+     "items": [
+      "c_fenoles"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Metoxiflavanos",
+     "summary": "Del fruto se aislaron cuatro metoxiflavanos con actividad estrogénica y antiandrogénica en ensayos de laboratorio.",
+     "items": [
+      "c_metoxiflavanos"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Triterpenos de otras partes",
+     "summary": "Un extracto de la planta dio triterpenos pentacíclicos que inhibieron dianas inflamatorias en células.",
+     "items": [
+      "c_triterpenos"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "botanica",
+   "summary": "Rasgos del tronco, las hojas, las flores, el fruto y la semilla.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Estípite y hojas",
+     "summary": "Palma solitaria de 25 a 40 m, con una corona de 8 a 20 hojas en abanico de pecíolo largo."
+    },
+    {
+     "num": "4.2",
+     "title": "Inflorescencias y polinización",
+     "summary": "Cada palma produce unas 8 inflorescencias al año entre las hojas; el viento es el vector principal del polen."
+    },
+    {
+     "num": "4.3",
+     "title": "Fruto y semilla",
+     "summary": "Fruto elipsoide de 5 a 7 cm cubierto de escamas pardo-rojizas; una sola semilla grande ocupa casi dos tercios del peso."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "ecologia",
+   "summary": "Dónde crece la palma, qué ecosistemas forma, su papel en el carbono y su importancia para la fauna.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Área nativa",
+     "summary": "Crece desde Trinidad hasta Bolivia y el Cerrado de Brasil, en suelos inundables y a orillas de ríos."
+    },
+    {
+     "num": "5.2",
+     "title": "Canangucha en Colombia",
+     "summary": "En Colombia crece en la Amazonia, la Orinoquia y la Macarena; el SINCHI apoya su aprovechamiento en cinco departamentos.",
+     "items": [
+      "h_colombia"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Humedales y turberas",
+     "summary": "Forma bosques inundables llamados cananguchales, aguajales o morichales, que en Perú almacenan grandes reservas de carbono en turba.",
+     "items": [
+      "p_cananguchal"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Fauna y dispersión de semillas",
+     "summary": "Muchos mamíferos comen el fruto; algunos dispersan la semilla y otros la consumen bajo la palma.",
+     "items": [
+      "h_dispersion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha y poscosecha",
+   "block": "ecologia",
+   "summary": "Cómo se cosecha el fruto, qué daño causa la tala y cómo se procesa después.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Tala de palmas hembra",
+     "summary": "En Perú gran parte del fruto se obtiene cortando la palma hembra entera, lo que reduce la producción futura.",
+     "items": [
+      "h_tala"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Efecto sobre turberas y carbono",
+     "summary": "La tala degrada los aguajales de turba y libera carbono a la atmósfera.",
+     "items": [
+      "h_carbono"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Cosecha por trepa y planes de manejo",
+     "summary": "Trepar la palma con arnés y planificar con inventarios evita la tala; los drones abaratan esos inventarios.",
+     "items": [
+      "h_cosecha_trepa"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Ablandamiento y procesamiento",
+     "summary": "Los frutos se lavan, desinfectan y remojan para ablandarlos; luego se despulpan, pasteurizan y empacan.",
+     "items": [
+      "h_ablandamiento"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y culinario",
+   "block": "historia",
+   "summary": "Relación de pueblos amazónicos y ribereños con la palma, sus creencias y sus usos de cocina y remedio.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "El árbol de la vida",
+     "summary": "La palma se conoce como árbol de la vida por dar alimento, fibra y techo; su genética refleja la dispersión por ríos y asentamientos."
+    },
+    {
+     "num": "7.2",
+     "title": "Aguajales en la cultura maijuna",
+     "summary": "Para los maijuna del Perú el aguajal es zona de caza y de seres sobrenaturales; la venta destructiva empezó hacia 1990.",
+     "items": [
+      "h_maijuna"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Saber ribereño en Brasil",
+     "summary": "Familias ribereñas del Pará cosechan el mirití sin cortar la palma y transmiten ese saber a los jóvenes."
+    },
+    {
+     "num": "7.4",
+     "title": "Cocina y remedio tradicional",
+     "summary": "El fruto se come fresco tras remojarlo, se fermenta en bebidas y su aceite se usa como remedio contra mordeduras de serpiente."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "investigacion",
+   "summary": "Qué se ha estudiado en laboratorio, en animales y en personas, qué riesgos hay y qué se ha patentado.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Provitamina A y nutrición en humanos",
+     "summary": "Un dulce de buriti revirtió la xeroftalmia en niños brasileños; un suplemento lácteo con buriti se probó en mujeres mayores.",
+     "items": [
+      "u_vitamina_a",
+      "u_desnutricion"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Actividad estrogénica y promesa de curvas",
+     "summary": "Extractos del fruto mostraron efecto estrogénico en células y roedores; el comercio lo vende para aumentar busto y glúteos.",
+     "items": [
+      "u_estrogenico",
+      "u_curvas"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Antioxidante, antitumoral y antimicrobiano",
+     "summary": "Extractos y aceite muestran efecto antioxidante, antiproliferativo y modulador de antibióticos, casi siempre in vitro.",
+     "items": [
+      "u_antioxidante",
+      "u_anticancer",
+      "u_antimicrobiano"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Antiofídico y sistema nervioso",
+     "summary": "El aceite redujo daños del veneno de Bothrops en ratones y cambió conductas de ansiedad y depresión en roedores.",
+     "items": [
+      "u_antiofidico",
+      "u_neuro"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Piel, cosmética y patentes",
+     "summary": "El aceite se usa en cremas y fotoprotectores con baja citotoxicidad in vitro, y aparece en patentes cosméticas.",
+     "items": [
+      "u_piel",
+      "h_patentes"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Seguridad",
+     "summary": "No hay estudios de toxicidad en personas; hay señales en ratas gestantes y riesgo de Chagas oral en bebidas de frutos de palma.",
+     "items": [
+      "u_seguridad",
+      "u_chagas"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "investigacion",
+   "summary": "El aguaje es un alimento valioso por su provitamina A; sus promesas hormonales no tienen prueba en humanos y su cosecha debe evitar la tala.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Lo que respalda la evidencia",
+     "summary": "Está probado su alto contenido de provitamina A y su utilidad frente a la deficiencia de vitamina A; lo demás es preclínico."
+    },
+    {
+     "num": "9.2",
+     "title": "Vacíos y prioridades",
+     "summary": "Faltan ensayos en humanos, datos de seguridad en embarazo y cadenas de suministro que excluyan la tala de palmas hembra."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_mauritia": {
+   "title": "Mauritia flexuosa L.f.",
+   "summary": "Palma de la familia Arecaceae, subfamilia Calamoideae, nativa del norte de Sudamérica y Trinidad. Recibe muchos nombres locales según el país.",
+   "formula": "Descrita en 1782 · sinónimo: M. vinifera Mart."
+  },
+  "h_dioecia": {
+   "title": "Palma dioica",
+   "summary": "Hay palmas macho y palmas hembra; solo las hembras producen fruto. Esto vuelve crítica la conservación de las hembras adultas."
+  },
+  "p_pulpa": {
+   "title": "Pulpa del fruto",
+   "summary": "Mesocarpio anaranjado, ácido y graso que se come fresco o procesado. En Caquetá fue solo el 15–17 % del peso del fruto.",
+   "formula": "Lípidos 34 % · fibra 22 % · proteína 7 % (ecotipo I, Caquetá)"
+  },
+  "p_aceite": {
+   "title": "Aceite de aguaje (buriti)",
+   "summary": "Aceite obtenido por prensado de la pulpa, rico en carotenoides. Se usa en alimentos, cosméticos y como colorante natural."
+  },
+  "p_bebidas": {
+   "title": "Bebidas, helados y dulces",
+   "summary": "Jugos, helados, paletas, dulces y bebidas fermentadas hechos con la pulpa; la industria prueba yogures y leches fermentadas con buriti."
+  },
+  "p_suri": {
+   "title": "Larvas de gorgojo de palma (suri, mojojoy)",
+   "summary": "Larvas de Rhynchophorus palmarum que se crían en el tronco de la palma; son un alimento rico en grasa, proteína y vitamina E."
+  },
+  "c_betacaroteno": {
+   "title": "β-caroteno y carotenoides",
+   "summary": "Pigmentos provitamina A que dan el color al fruto. Su concentración es alta, pero las cifras publicadas cambian según el origen y la base de cálculo.",
+   "formula": "β-caroteno 68–260 mg/100 g según el estudio · 4 449 µg EAR/100 g en fresco (Caquetá)",
+   "caution": "El contenido de β-caroteno es alto, pero varía mucho. Un estudio de Caquetá halló 68 mg/100 g y uno de Perú 260 mg/100 g. Cambian el origen, la madurez y la base de cálculo. (Hermosa 2023; Delgado 2007)"
+  },
+  "c_acidos_grasos": {
+   "title": "Ácidos grasos y tocoferoles del aceite",
+   "summary": "Aceite mayormente monoinsaturado, con ácido oleico y palmítico; contiene tocoferoles y esteroles. Su perfil se parece al del aceite de oliva."
+  },
+  "c_fenoles": {
+   "title": "Fenoles y flavonoides",
+   "summary": "Compuestos fenólicos de la pulpa y la cáscara; su contenido varía mucho entre lugares de cosecha.",
+   "formula": "Fenoles totales 1 467 mg EAG/100 g (ecotipo I, Caquetá)"
+  },
+  "c_metoxiflavanos": {
+   "title": "Metoxiflavanos del fruto",
+   "summary": "Cuatro flavanos aislados del fruto; tres estimularon células MCF-7 dependientes de estrógeno y todos inhibieron la 5α-reductasa in vitro.",
+   "formula": "CI50 5α-reductasa < 10 µg/mL"
+  },
+  "c_triterpenos": {
+   "title": "Triterpenos pentacíclicos",
+   "summary": "Triterpenos aislados de un extracto de la planta que inhibieron NF-κB, PGE2 e IDO1 en células gliales; es un dato solo in vitro."
+  },
+  "h_colombia": {
+   "title": "Canangucha en Colombia",
+   "summary": "Crece en la Amazonia, el Escudo Guayanés, la Macarena y la Orinoquia. El SINCHI trabaja con organizaciones de Amazonas, Caquetá, Cauca, Guaviare y Putumayo.",
+   "formula": "40–450 m de altitud (Colombia)"
+  },
+  "p_cananguchal": {
+   "title": "Cananguchales y aguajales",
+   "summary": "Bosques inundables dominados por la palma. En la Amazonia peruana forman turberas que guardan mucho carbono.",
+   "formula": "3,88 Pg C en turberas de palma y afines (Perú)"
+  },
+  "h_dispersion": {
+   "title": "Dispersión por mamíferos",
+   "summary": "En la Amazonia colombiana 19 mamíferos visitaron frutos y semillas. El guatín fue el principal dispersor y el pecarí se comió muchas semillas sin dispersarlas.",
+   "formula": "Guatín: 63,5 % de la dispersión"
+  },
+  "h_tala": {
+   "title": "Tala de palmas hembra",
+   "summary": "Para cosechar, en Perú se suele derribar la palma hembra adulta, que muere. Esto reduce la oferta futura de fruto y altera el aguajal.",
+   "formula": "≈24 000 palmas cortadas/año (Perú, 2007)",
+   "caution": "En Perú gran parte del aguaje se cosecha cortando la palma hembra. Se estimaron unas 24 000 palmas cortadas al año. La degradación de turberas de palma sumó más de 500 000 ha entre 1990 y 2018. La cosecha por trepa evita este daño. Si se compra aguaje, conviene pedir origen con plan de manejo. (Delgado 2007; Marcus 2023)"
+  },
+  "h_carbono": {
+   "title": "Degradación de turberas y carbono",
+   "summary": "La tala de palmas para cosechar degrada las turberas de palma de Perú y las convierte en fuente de carbono.",
+   "formula": "535 423 ha degradadas o deforestadas en 1990–2018"
+  },
+  "h_cosecha_trepa": {
+   "title": "Cosecha por trepa y manejo",
+   "summary": "La cosecha con arnés y casco evita cortar la palma. Inventarios con drones redujeron mucho el costo de los planes de manejo en Perú.",
+   "formula": "Inventario: 5 frente a 411 USD/ha"
+  },
+  "h_ablandamiento": {
+   "title": "Ablandamiento y procesamiento",
+   "summary": "Los frutos maduros se lavan, se desinfectan y se remojan para ablandar la cáscara; la pulpa se pasteuriza y se empaca sin aire.",
+   "formula": "Pasteurización ≈70 °C por ≥10 min (SINCHI)"
+  },
+  "h_maijuna": {
+   "title": "Aguajales en la cultura maijuna",
+   "summary": "Para los maijuna el aguajal es fuente de más de 60 plantas útiles y zona de caza. El fruto pasó de recogerse del suelo a cosecharse con tala.",
+   "formula": "Iquitos: ≈149 t de fruto al mes"
+  },
+  "u_vitamina_a": {
+   "title": "Provitamina A contra la xeroftalmia",
+   "summary": "Estudio en humanos: un dulce de buriti dado 20 días a 44 niños revirtió la xeroftalmia y repuso reservas hepáticas. No hubo grupo placebo.",
+   "formula": "44 niños · 20 días (1989)",
+   "caution": "Si hay deficiencia de vitamina A, el buriti puede ser una fuente alimentaria útil. La prueba viene de un estudio de 1989 con 44 niños y sin grupo placebo. El dulce revirtió la xeroftalmia en 20 días. No se hallaron ensayos controlados posteriores. (Mariath 1989)"
+  },
+  "u_desnutricion": {
+   "title": "Suplemento contra la desnutrición",
+   "summary": "Estudio en ratones y en 25 mujeres mayores institucionalizadas: un suplemento lácteo con buriti mejoró hemoglobina y glóbulos rojos. El resumen no describe grupo control.",
+   "formula": "25 mujeres ≥65 años"
+  },
+  "u_estrogenico": {
+   "title": "Efecto estrogénico y antiandrogénico",
+   "summary": "Estudio en células y roedores: el extracto aumentó el peso del útero en ratones y la maduración vaginal en ratas, pero no el útero en ratas. No hay estudios en mujeres.",
+   "formula": "Ratones: 400 mg/kg por 2 semanas",
+   "caution": "Extractos del fruto tuvieron efecto estrogénico en células y roedores. En ratones subió el peso del útero con 400 mg/kg. En ratas ovariectomizadas maduró el epitelio vaginal, pero no cambiaron el útero ni el hueso trabecular. No hay estudios en mujeres. Si hay menopausia, no hay prueba de alivio de síntomas. Si hay cáncer sensible a estrógenos, no hay datos de seguridad. (Miyasaka 2021; INMP 2018)"
+  },
+  "u_curvas": {
+   "title": "Promesa comercial de aumentar curvas",
+   "summary": "Afirmación comercial: cápsulas de aguaje que aumentarían busto y glúteos o equilibrarían hormonas. No se halló ningún estudio en humanos que lo evalúe.",
+   "caution": "No hay ningún estudio en humanos que muestre aumento de busto, glúteos o curvas con aguaje. El efecto estrogénico se observó solo en células y roedores. Si se busca un cambio corporal, esta promesa no tiene base. (Miyasaka 2021; Mayo Clinic)"
+  },
+  "u_antioxidante": {
+   "title": "Actividad antioxidante",
+   "summary": "Estudios químicos, celulares y en ratas: extractos, pulpa y aceite atrapan radicales y aumentan enzimas antioxidantes. No hay ensayos clínicos.",
+   "caution": "La actividad antioxidante se midió en ensayos químicos, en células y en ratas. Una capacidad antioxidante alta en el laboratorio no demuestra un beneficio clínico. No hay ensayos de antienvejecimiento en personas. (Barboza 2022; Graça 2025)"
+  },
+  "u_anticancer": {
+   "title": "Efecto antiproliferativo",
+   "summary": "Estudio in vitro: extractos de canangucha y copoazú de Caquetá redujeron células de cáncer colorrectal SW480, sin relación clara con la dosis. Algunos extractos fueron hemolíticos.",
+   "caution": "El efecto antitumoral se vio solo en células de cáncer colorrectal en cultivo. No hay estudios en animales ni en personas. Algunos extractos también dañaron glóbulos rojos in vitro. Si hay cáncer, el aguaje no sustituye ningún tratamiento. (Saldarriaga 2025)"
+  },
+  "u_antimicrobiano": {
+   "title": "Efecto antimicrobiano",
+   "summary": "Estudios in vitro: el aceite no mató bacterias por sí solo, pero potenció antibióticos; un extracto de hoja eliminó biopelículas de estafilococos."
+  },
+  "u_antiofidico": {
+   "title": "Uso contra mordedura de serpiente",
+   "summary": "Estudio en ratones: el aceite inhibió enzimas del veneno de Bothrops moojeni y redujo sangrado y daño muscular. Es un uso tradicional en Brasil.",
+   "formula": "Inhibición de serina proteasa 84 % in vitro",
+   "caution": "Si hay mordedura de serpiente, el tratamiento es el antiveneno en un centro de salud. El aceite redujo daños del veneno de Bothrops solo en ratones. No hay datos en personas. Su uso no debe retrasar la consulta. (Rodrigues 2023)"
+  },
+  "u_neuro": {
+   "title": "Efectos sobre ánimo y memoria",
+   "summary": "Estudios en roedores: el fruto protegió la memoria frente al metilmercurio; el aceite tuvo efecto tipo antidepresivo pero también tipo ansiógeno."
+  },
+  "u_piel": {
+   "title": "Uso en piel y fotoprotección",
+   "summary": "Estudios in vitro: cremas y nanoemulsiones con aceite de buriti mostraron baja citotoxicidad en queratinocitos. No hay ensayos de eficacia en personas.",
+   "caution": "La seguridad del aceite en la piel se probó solo en células, con baja citotoxicidad. No hay ensayos de factor de protección solar ni de regeneración en personas. Si se busca fotoprotección, no reemplaza un protector solar probado. (Zanatta 2008; Reis-Mansur 2023)"
+  },
+  "h_patentes": {
+   "title": "Patentes",
+   "summary": "Hay patentes cosméticas que incluyen aceite de Mauritia, como limpiadores sólidos y kits dermatológicos con aceite de buriti.",
+   "formula": "WO2009082790A1 · EP3006016A1"
+  },
+  "u_seguridad": {
+   "title": "Seguridad, embarazo y toxicidad",
+   "summary": "No hay estudios de toxicidad en personas. En ratas, el aceite en la dieta materna retrasó reflejos de las crías y elevó su retinol; el extracto tiene acción estrogénica.",
+   "caution": "No hay estudios de toxicidad en personas. En ratas, el aceite en la dieta materna retrasó reflejos de las crías y elevó su retinol. El extracto tiene acción estrogénica en roedores. Si hay embarazo o lactancia, no hay datos para recomendar extractos ni cápsulas. La pulpa como alimento no tiene alertas publicadas. (Medeiros 2015; Miyasaka 2021)"
+  },
+  "u_chagas": {
+   "title": "Riesgo de Chagas oral",
+   "summary": "La palma alberga chinches Rhodnius infectadas con Trypanosoma cruzi en Colombia y Brasil. Los jugos de frutos de palma sin pasteurizar se asocian a brotes de Chagas oral.",
+   "caution": "La palma alberga chinches Rhodnius infectadas con Trypanosoma cruzi en Colombia y Brasil. Los jugos de frutos de palma se asocian a brotes de Chagas oral. No se halló un brote atribuido solo al aguaje. Si se prepara jugo, la pulpa debe pasteurizarse, como indica el SINCHI. (Franco-Paredes 2020; Urbano 2024)"
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    1
+   ],
+   "6": [
+    4,
+    5
+   ],
+   "7": [
+    5
+   ],
+   "8": [
+    3,
+    7
+   ],
+   "9": [
+    6,
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "2.4": [
+    "1.1"
+   ],
+   "3.1": [
+    "2.1"
+   ],
+   "3.2": [
+    "2.2"
+   ],
+   "3.3": [
+    "2.1"
+   ],
+   "3.4": [
+    "2.1"
+   ],
+   "3.5": [
+    "1.1"
+   ],
+   "4.1": [
+    "1.1"
+   ],
+   "4.2": [
+    "1.3"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "5.1": [
+    "1.2"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.1"
+   ],
+   "5.4": [
+    "4.3",
+    "5.3"
+   ],
+   "6.1": [
+    "1.3",
+    "5.3"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "6.1"
+   ],
+   "6.4": [
+    "2.1"
+   ],
+   "7.1": [
+    "5.1"
+   ],
+   "7.2": [
+    "5.3",
+    "6.1"
+   ],
+   "7.3": [
+    "6.1"
+   ],
+   "7.4": [
+    "2.3"
+   ],
+   "8.1": [
+    "3.1"
+   ],
+   "8.2": [
+    "3.4"
+   ],
+   "8.3": [
+    "3.1",
+    "3.3"
+   ],
+   "8.4": [
+    "3.2",
+    "7.4"
+   ],
+   "8.5": [
+    "2.2",
+    "3.2"
+   ],
+   "8.6": [
+    "8.2",
+    "2.3",
+    "5.3"
+   ],
+   "9.1": [
+    "8.1"
+   ],
+   "9.2": [
+    "8.6",
+    "6.3"
+   ]
+  },
+  "items": {
+   "p_pulpa": [
+    "p_mauritia"
+   ],
+   "p_aceite": [
+    "p_pulpa"
+   ],
+   "p_bebidas": [
+    "p_pulpa"
+   ],
+   "p_suri": [
+    "p_mauritia"
+   ],
+   "c_betacaroteno": [
+    "p_pulpa"
+   ],
+   "c_acidos_grasos": [
+    "p_aceite"
+   ],
+   "c_fenoles": [
+    "p_pulpa"
+   ],
+   "c_metoxiflavanos": [
+    "p_pulpa"
+   ],
+   "c_triterpenos": [
+    "p_mauritia"
+   ],
+   "h_dioecia": [
+    "p_mauritia"
+   ],
+   "h_colombia": [
+    "p_mauritia"
+   ],
+   "p_cananguchal": [
+    "p_mauritia"
+   ],
+   "h_dispersion": [
+    "p_cananguchal"
+   ],
+   "h_tala": [
+    "h_dioecia",
+    "p_cananguchal"
+   ],
+   "h_carbono": [
+    "h_tala"
+   ],
+   "h_cosecha_trepa": [
+    "h_tala"
+   ],
+   "h_ablandamiento": [
+    "p_pulpa"
+   ],
+   "h_maijuna": [
+    "p_cananguchal",
+    "h_tala"
+   ],
+   "u_vitamina_a": [
+    "c_betacaroteno"
+   ],
+   "u_desnutricion": [
+    "p_pulpa"
+   ],
+   "u_estrogenico": [
+    "c_metoxiflavanos"
+   ],
+   "u_curvas": [
+    "u_estrogenico"
+   ],
+   "u_antioxidante": [
+    "c_fenoles",
+    "c_betacaroteno"
+   ],
+   "u_anticancer": [
+    "u_antioxidante"
+   ],
+   "u_antimicrobiano": [
+    "c_acidos_grasos"
+   ],
+   "u_antiofidico": [
+    "c_acidos_grasos"
+   ],
+   "u_neuro": [
+    "u_antioxidante"
+   ],
+   "u_piel": [
+    "p_aceite"
+   ],
+   "h_patentes": [
+    "p_aceite"
+   ],
+   "u_seguridad": [
+    "u_estrogenico",
+    "c_betacaroteno"
+   ],
+   "u_chagas": [
+    "p_bebidas",
+    "p_cananguchal"
+   ]
+  }
+ }
+}

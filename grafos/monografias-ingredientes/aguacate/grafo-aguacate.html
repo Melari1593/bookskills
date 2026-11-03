@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aguacate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Aguacate como grafo", "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia", "itemLabel": "Planta, compuesto o uso", "itemLabelPlural": "Plantas, compuestos y usos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: Hass, persina, ASU, warfarina, semilla, papelillo…"}, "blocks": {"botanica": {"name": "Botánica", "color": "#6B8E4E"}, "materia": {"name": "Formas de uso", "color": "#B08A2E"}, "quimica": {"name": "Química", "color": "#6B5B95"}, "produccion": {"name": "Producción y cosecha", "color": "#3F8A8A"}, "cultura": {"name": "Historia y cultura", "color": "#A0663F"}, "salud": {"name": "Investigación y seguridad", "color": "#3F6FA0"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "botanica", "summary": "Especie de la familia Lauraceae con tres grupos botánicos y muchos cultivares; Hass domina el comercio.", "sections": [{"num": "1.1", "title": "Nombre y familia", "summary": "Persea americana Mill., descrita en 1768, es un árbol de la familia Lauraceae nativo del centro de México a Costa Rica.", "items": ["p_persea_americana"]}, {"num": "1.2", "title": "Tres grupos botánicos", "summary": "Se reconocen los grupos mexicano, guatemalteco y de tierras bajas (antes «antillano»); el genoma sugiere tres domesticaciones separadas.", "items": ["p_grupos_botanicos"]}, {"num": "1.3", "title": "Cultivares: Hass y criollos", "summary": "Hass surgió de una plántula en California y se patentó en 1935; en Colombia conviven Hass de exportación y criollos como el papelillo.", "items": ["p_hass", "p_criollos_colombia"]}]}, {"num": 2, "title": "Usos como materia prima", "block": "materia", "summary": "Pulpa, aceite, semilla y hoja tienen usos distintos; solo la pulpa tiene una larga historia como alimento estudiado.", "sections": [{"num": "2.1", "title": "Pulpa", "summary": "La pulpa es la parte comestible principal; aporta grasa, fibra y potasio con diferencias claras entre cultivares.", "items": ["p_pulpa"]}, {"num": "2.2", "title": "Aceite", "summary": "El aceite se extrae de la pulpa; no hay estándar obligatorio de identidad en Estados Unidos y se han detectado mezclas y oxidación.", "items": ["p_aceite"]}, {"num": "2.3", "title": "Semilla", "summary": "La semilla es un residuo de la industria; hoy se vende en polvo o infusión, aunque su seguridad como alimento no está establecida.", "items": ["p_semilla"]}, {"num": "2.4", "title": "Hoja", "summary": "La hoja se usa en infusiones populares; contiene persina y, en el grupo mexicano, estragol.", "items": ["p_hoja"]}, {"num": "2.5", "title": "Insaponificables (ASU)", "summary": "La fracción insaponificable de los aceites de aguacate y soya se comercializa como Piascledine para la artrosis.", "items": ["p_asu"]}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "summary": "Grasa monoinsaturada, fitoesteroles y carotenoides en la pulpa; lípidos raros como persina y acetogeninas; polifenoles en la semilla y estragol en la hoja.", "sections": [{"num": "3.1", "title": "Lípidos de la pulpa", "summary": "El ácido oleico y otros monoinsaturados son la mayor parte de la grasa; el β-sitosterol es el fitoesterol principal.", "items": ["c_acidos_grasos_mono", "c_fitosteroles"]}, {"num": "3.2", "title": "Carotenoides y vitaminas", "summary": "La pulpa aporta luteína, vitamina E, vitamina K y folato en cantidades moderadas.", "items": ["c_luteina_carotenoides"]}, {"num": "3.3", "title": "Persina y acetogeninas", "summary": "Lípidos de cadena larga exclusivos del aguacate; la persina es tóxica para varios animales y la avocatina B se estudia en células tumorales.", "items": ["c_persina", "c_acetogeninas"]}, {"num": "3.4", "title": "Compuestos de semilla y hoja", "summary": "La semilla es rica en polifenoles y forma un pigmento naranja; la hoja de la variedad mexicana contiene estragol.", "items": ["c_polifenoles_semilla", "c_estragol"]}]}, {"num": 4, "title": "Descripción morfológica", "block": "botanica", "summary": "Árbol perennifolio con floración de tipo A o B, fruto de una sola semilla grande y variación marcada entre grupos.", "sections": [{"num": "4.1", "title": "Árbol y floración", "summary": "Árbol de hoja perenne con floración heterodicogámica: cada flor funciona primero como femenina y luego como masculina; hay tipos florales A y B."}, {"num": "4.2", "title": "Fruto y semilla", "summary": "Baya carnosa con cáscara, pulpa oleosa y una semilla grande; la cáscara va de lisa y delgada a rugosa y gruesa."}, {"num": "4.3", "title": "Variación entre grupos", "summary": "Los frutos de tierras bajas tienen menos grasa que los de Hass; en USDA, 10,1 g frente a 15,4 g por 100 g."}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "produccion", "summary": "Nativo de Mesoamérica, hoy cultivado en todo el trópico y subtrópico; Colombia es el segundo productor mundial.", "sections": [{"num": "5.1", "title": "Área nativa e introducción", "summary": "POWO sitúa el área nativa en el centro de México y Centroamérica, y registra la especie introducida en unas 64 regiones."}, {"num": "5.2", "title": "Producción mundial y colombiana", "summary": "Según FAOSTAT, en 2023 México produjo cerca de 3 millones de toneladas y Colombia 1,09 millones.", "items": ["h_produccion_colombia"]}, {"num": "5.3", "title": "Zonas de Hass en Colombia", "summary": "Antioquia, Caldas y Valle del Cauca concentran la mayor parte del área de Hass registrada ante el ICA."}]}, {"num": 6, "title": "Cosecha y poscosecha", "block": "produccion", "summary": "El fruto se cosecha por materia seca, madura fuera del árbol y se conserva en frío.", "sections": [{"num": "6.1", "title": "Índice de madurez", "summary": "La materia seca es el índice de cosecha; en Australia Hass debe tener al menos 23 %.", "items": ["h_madurez_cosecha"]}, {"num": "6.2", "title": "Maduración y frío", "summary": "Es un fruto climatérico; madura después de la cosecha por acción del etileno y otras hormonas, y el frío retrasa ese proceso."}, {"num": "6.3", "title": "Subproductos", "summary": "La industria del aceite deja semilla y cáscara como residuos; la semilla es cerca del 13 % del residuo del aceite prensado en frío."}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y culinario", "block": "cultura", "summary": "Más de 11 000 años de uso en Mesoamérica, tres domesticaciones y una expansión global reciente impulsada por Hass.", "sections": [{"num": "7.1", "title": "Uso temprano", "summary": "En El Gigante (Honduras) hay semillas y cáscaras de aguacate desde hace unos 11 000 años.", "items": ["h_domesticacion"]}, {"num": "7.2", "title": "Domesticación múltiple", "summary": "Cada grupo botánico tuvo su propia domesticación; en el guatemalteco se seleccionaron genes de desarrollo y maduración del fruto."}, {"num": "7.3", "title": "Hass y mercado global", "summary": "Una plántula de La Habra Heights dio origen a Hass; su patente de 1935 marca el inicio del cultivar que hoy domina la exportación."}, {"num": "7.4", "title": "Usos tradicionales", "summary": "La semilla se usó como tinta y en remedios populares de Sudamérica; la hoja se usa en infusiones contra la hipertensión en América y África."}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "salud", "summary": "Ensayos en humanos con la pulpa y el ASU; solo estudios de laboratorio y animales para semilla y hoja; riesgos de alergia, interacción y toxicidad animal.", "sections": [{"num": "8.1", "title": "Lípidos y riesgo cardiovascular", "summary": "Metaanálisis muestran cambios pequeños en colesterol; dos cohortes asocian mayor consumo con menos eventos cardiovasculares.", "items": ["u_lipidos", "u_riesgo_cv", "h_declaracion_healthy"]}, {"num": "8.2", "title": "Peso y grasa visceral", "summary": "Un ensayo de 1008 personas no halló reducción de grasa visceral con un aguacate diario durante 6 meses.", "items": ["u_peso_grasa_visceral"]}, {"num": "8.3", "title": "Absorción de carotenoides", "summary": "Añadir aguacate a ensaladas y salsas aumentó la absorción de carotenoides en ensayos cruzados pequeños.", "items": ["u_absorcion_carotenoides"]}, {"num": "8.4", "title": "Artrosis y ASU", "summary": "Cochrane halló un beneficio pequeño en síntomas con ASU 300 mg/día, sin efecto claro en la estructura articular.", "items": ["u_artrosis_asu"]}, {"num": "8.5", "title": "Hoja y semilla en el laboratorio", "summary": "Extractos de hoja bajaron la presión en ratas y extractos de semilla mostraron efectos en células y animales; no hay ensayos en humanos.", "items": ["u_hipertension_hoja", "u_semilla_salud", "u_cancer_lab", "h_patentes"]}, {"num": "8.6", "title": "Seguridad", "summary": "Alergia cruzada con látex, interacción con warfarina en cantidades grandes y toxicidad de la persina en varios animales.", "items": ["u_alergia", "u_warfarina", "u_toxicidad_animal"]}]}, {"num": 9, "title": "Conclusiones", "block": "salud", "summary": "La pulpa es un alimento con evidencia moderada y beneficios pequeños; semilla y hoja carecen de datos de eficacia y seguridad en humanos.", "sections": [{"num": "9.1", "title": "Lo que respalda la evidencia", "summary": "La pulpa puede sustituir grasas saturadas y mejora la absorción de carotenoides; el ASU tiene un efecto pequeño en la artrosis."}, {"num": "9.2", "title": "Vacíos y alertas", "summary": "Faltan ensayos en humanos con semilla y hoja; hay que vigilar alergia al látex, warfarina, calidad del aceite y exposición de mascotas."}]}], "items": {"p_persea_americana": {"title": "Aguacate (Persea americana Mill.)", "summary": "Árbol de la familia Lauraceae descrito por Miller en 1768. POWO ubica su área nativa del centro de México a Costa Rica, en bosque tropical estacionalmente seco.", "formula": "Nativo de 4 regiones de México y 5 países de Centroamérica (POWO)"}, "p_grupos_botanicos": {"title": "Grupos mexicano, guatemalteco y de tierras bajas", "summary": "Tres grupos botánicos dentro de la especie. Un estudio genómico de 34 accesiones apoyó tres domesticaciones separadas.", "formula": "Divergencia del grupo mexicano: más de 1 millón de años"}, "p_hass": {"title": "Cultivar Hass", "summary": "Cultivar que se originó en una plántula de La Habra Heights (California). Es el cultivar dominante del comercio mundial y de la exportación colombiana.", "formula": "Patente de planta n.º 139 (EE. UU., 1935)"}, "p_criollos_colombia": {"title": "Aguacates criollos y papelillo", "summary": "Materiales locales propagados por semilla con gran variación genética. Un estudio en Marsella (Risaralda) caracterizó el papelillo (cv. Lorena) y lo propuso como fuente de portainjertos.", "formula": "50 árboles · 17 microsatélites · aceite de pulpa 6,0–6,6 %"}, "p_pulpa": {"title": "Pulpa (fruto)", "summary": "Parte comestible principal. Aporta grasa, fibra, potasio y folato; el valor energético depende mucho del cultivar.", "formula": "California (Hass): 167 kcal, 15,4 g grasa, 6,8 g fibra, 507 mg K por 100 g"}, "p_aceite": {"title": "Aceite de aguacate", "summary": "Aceite extraído de la pulpa, usado en cocina y cosmética. Estudios de mercado en Estados Unidos hallaron muchas muestras oxidadas o mezcladas con otros aceites.", "formula": "2020: 82 % de 22 muestras rancias o adulteradas", "caution": "Muchos aceites de aguacate del mercado no son lo que dice la etiqueta. En 2020, 82 % de 22 muestras estaban oxidadas o mezcladas con otros aceites. En 2023, solo 31 % de 36 marcas propias eran puras. No existe un estándar obligatorio en Estados Unidos. (Green 2020; UC Davis 2023)"}, "p_semilla": {"title": "Semilla (hueso)", "summary": "Residuo abundante de la industria. Se promueve en polvo o infusión, pero su composición, dosis segura y efectos en humanos no están establecidos.", "caution": "La seguridad de comer semilla de aguacate no está establecida. Contiene persina y amigdalina en niveles variables. Solo hay pruebas de extractos en roedores. La Comisión del Aguacate de California y el Hass Avocado Board desaconsejan su consumo. Si hay embarazo, lactancia o niños, evitarla. (Permal 2022; Padilla-Camberos 2013)"}, "p_hoja": {"title": "Hoja", "summary": "Se usa en infusiones populares. Contiene persina, tóxica para el ganado lechero, y en el grupo mexicano estragol."}, "p_asu": {"title": "Insaponificables de aguacate y soya (ASU)", "summary": "Mezcla de la fracción insaponificable de aceites de aguacate y soya. El producto Piascledine se estudia en artrosis de rodilla y cadera.", "formula": "Dosis de los ensayos: 300 mg/día"}, "c_acidos_grasos_mono": {"title": "Ácidos grasos monoinsaturados", "summary": "El ácido oleico predomina en la grasa de la pulpa. Es la base de la propuesta de usar aguacate en lugar de grasas saturadas.", "formula": "9,8 g de 15,4 g de grasa por 100 g (Hass, USDA)"}, "c_fitosteroles": {"title": "Fitoesteroles (β-sitosterol)", "summary": "Esteroles vegetales que compiten con el colesterol en la absorción intestinal. El β-sitosterol es el principal en la pulpa.", "formula": "76 mg por 100 g (USDA)"}, "c_luteina_carotenoides": {"title": "Luteína y otros micronutrientes", "summary": "La pulpa aporta luteína y zeaxantina, vitamina E, vitamina K y folato. Su grasa facilita absorber carotenoides de otros alimentos.", "formula": "Luteína + zeaxantina 271 µg · vitamina K 21 µg por 100 g"}, "c_persina": {"title": "Persina", "summary": "Lípido aislado de la hoja que causa necrosis de la glándula mamaria en animales en lactancia y daño cardiaco a dosis altas. En células, detiene la división de algunas líneas de cáncer de mama.", "formula": "60–100 mg/kg: necrosis mamaria en ratonas lactantes"}, "c_acetogeninas": {"title": "Acetogeninas (avocatina B, persenona A)", "summary": "Lípidos de pulpa y semilla exclusivos del aguacate. La avocatina B inhibe la oxidación de ácidos grasos en mitocondrias de células de leucemia."}, "c_polifenoles_semilla": {"title": "Polifenoles de la semilla", "summary": "Procianidinas y otros fenoles abundantes en la semilla. Al triturarla en presencia de aire se forma un pigmento naranja llamado perseorangina."}, "c_estragol": {"title": "Estragol de la hoja", "summary": "Fenilpropanoide aromático presente en hojas de la variedad mexicana (drymifolia). La EMA lo considera un carcinógeno genotóxico en medicamentos herbarios.", "formula": "Más del 10 % de los compuestos foliares en muestras de México", "caution": "Las hojas de aguacate de raza mexicana pueden contener estragol. La EMA considera el estragol un carcinógeno genotóxico. La hoja también contiene persina, tóxica para glándula mamaria en animales lactantes. Si hay embarazo o lactancia, no hay datos de seguridad en humanos. Evitar el uso prolongado. (EMA/HMPC/137212/2005 Rev 1; Oelrichs 1995)"}, "h_domesticacion": {"title": "Uso temprano en El Gigante", "summary": "El abrigo rocoso de El Gigante (Honduras) conserva semillas y cáscaras de aguacate fechadas por radiocarbono. Los frutos de árbol aparecen antes que el maíz.", "formula": "Aguacate desde ~11 000 años cal AP · maíz desde ~4 400"}, "h_produccion_colombia": {"title": "Producción mundial y colombiana", "summary": "Colombia es el segundo productor según FAOSTAT 2023, después de México. Hass ocupa casi 40 000 hectáreas registradas y se exporta sobre todo a Países Bajos y Estados Unidos.", "formula": "FAOSTAT 2023: 1,09 Mt · exportación Hass 2024: 138 315 t, USD 309 M"}, "h_madurez_cosecha": {"title": "Madurez de cosecha y frío", "summary": "Se cosecha cuando la materia seca alcanza el mínimo y madura después de la cosecha. El frío retrasa la maduración.", "formula": "Hass: ≥23 % materia seca (Australia) · 4–5 °C hasta 4 semanas"}, "u_lipidos": {"title": "Aguacate y colesterol", "summary": "Afirmación: el aguacate baja el LDL. Metaanálisis de ensayos en humanos muestran cambios pequeños, más claros en personas con colesterol alto.", "formula": "LDL −9,4 mg/dL solo en hipercolesterolemia (certeza baja)", "caution": "Si hay colesterol alto, el aguacate puede bajar un poco el LDL. El efecto fue de unos 9 mg/dL en personas con hipercolesterolemia. En personas con colesterol normal no hubo cambio claro. La certeza es baja. Sirve para sustituir grasas saturadas, no para reemplazar el tratamiento. (James-Martin 2024)"}, "u_riesgo_cv": {"title": "Aguacate y enfermedad cardiovascular", "summary": "Afirmación: el aguacate protege el corazón. Dos cohortes de Estados Unidos asociaron 2 o más porciones por semana con menos eventos coronarios; no hay ensayos con eventos clínicos.", "formula": "HR 0,84 para ECV · 30 años · 110 487 personas", "caution": "El menor riesgo cardiovascular viene de cohortes observacionales. No hay ensayos con infarto o ACV como desenlace. El beneficio se observó al sustituir mantequilla, queso o carnes procesadas. En el ensayo HAT, agregar un aguacate diario tuvo efecto mínimo en los factores de riesgo. (Pacheco 2022; Lichtenstein 2022)"}, "u_peso_grasa_visceral": {"title": "Aguacate, peso y grasa abdominal", "summary": "Afirmación: el aguacate ayuda a perder grasa abdominal. El ensayo HAT no halló reducción de grasa visceral; tampoco aumentó el peso.", "formula": "1008 personas · 1 aguacate/día · 6 meses", "caution": "Un aguacate diario durante 6 meses no redujo la grasa visceral en 1008 adultos con cintura aumentada. Tampoco aumentó el peso. El aguacate no es una herramienta para perder grasa abdominal. (Ensayo HAT, Lichtenstein 2022)"}, "u_absorcion_carotenoides": {"title": "Mayor absorción de carotenoides", "summary": "Afirmación: el aguacate mejora la absorción de carotenoides de otros vegetales. Lo mostró un ensayo cruzado en voluntarios sanos.", "formula": "Betacaroteno de ensalada: 15,3 veces más con 150 g de aguacate", "caution": "Nota de contexto: el efecto se midió en 11 voluntarios sanos por ensayo. El aceite de aguacate tuvo un efecto similar. El beneficio se atribuye a la grasa, no a un compuesto exclusivo. (Unlu 2005)"}, "u_artrosis_asu": {"title": "ASU en artrosis", "summary": "Afirmación: el ASU alivia la artrosis y protege el cartílago. En ensayos en humanos el alivio de síntomas es pequeño y no hay efecto claro en el espacio articular.", "formula": "Dolor −8,5 puntos sobre 100 · NNT 8 (Cochrane)", "caution": "Si se usa ASU en artrosis de rodilla o cadera, el alivio esperado es pequeño. Cochrane halló 8,5 puntos menos de dolor sobre 100 con 300 mg/día. No hubo menor pérdida media del espacio articular a 3 años. Los eventos adversos fueron similares a placebo. (Cochrane CD002947; Maheu 2014)"}, "u_hipertension_hoja": {"title": "Hoja de aguacate e hipertensión", "summary": "Afirmación: la infusión de hoja baja la presión arterial. Solo hay estudios en tejidos aislados y en ratas.", "caution": "Si hay hipertensión, la infusión de hoja no sustituye el tratamiento. Los efectos sobre la presión vienen de tejidos aislados y ratas. No hay ensayos en humanos. No se conoce la dosis ni la interacción con antihipertensivos. (Ojewole 2007; Sokpe 2020)"}, "u_semilla_salud": {"title": "Semilla en polvo y salud", "summary": "Afirmación: la semilla en polvo baja el colesterol y la glucosa. Los datos vienen de extractos en animales y células; no hay ensayos en humanos.", "caution": "No hay ensayos en humanos con semilla de aguacate. Los efectos sobre colesterol y glucosa vienen de extractos en animales y células. Un extracto no equivale al polvo de semilla entera. No se conoce una dosis eficaz. (Dabas 2013)"}, "u_cancer_lab": {"title": "Efectos antitumorales en laboratorio", "summary": "Afirmación: el aguacate o su semilla combaten el cáncer. La avocatina B y la persina mataron células de leucemia y de mama en cultivo y en ratones; no hay ensayos en pacientes.", "caution": "La avocatina B y la persina mataron células de leucemia y de mama en cultivo y en ratones. No hay ensayos clínicos en pacientes. No hay datos de que comer aguacate o semilla alcance dosis activas. Si hay cáncer, no reemplazar el tratamiento. (Lee 2015; Butt 2006)"}, "u_alergia": {"title": "Alergia y síndrome látex-fruta", "summary": "El aguacate es uno de los alimentos típicos del síndrome látex-fruta, por quitinasas que reaccionan de forma cruzada con proteínas del látex.", "formula": "30–50 % de las personas alérgicas al látex reaccionan a frutas", "caution": "Si hay alergia al látex, el aguacate puede causar reacciones cruzadas, incluso graves. Entre 30 y 50 % de las personas alérgicas al látex reaccionan a frutas como aguacate, banano o kiwi. El alérgeno principal es una quitinasa (Pers a 1). (Menon 2025; Palacin 2008)"}, "u_warfarina": {"title": "Interacción con warfarina", "summary": "Revisiones de interacciones clasifican las cantidades grandes de aguacate como causa de menor efecto anticoagulante de la warfarina. La evidencia viene de informes de casos.", "caution": "Si se toma warfarina, el consumo grande o variable de aguacate puede bajar el INR. La evidencia viene de informes de casos. Mantener un consumo estable y avisar al equipo de salud si cambia. Controlar el INR tras cambios de dieta. (Wells 1994; Norwood 2015)"}, "u_toxicidad_animal": {"title": "Toxicidad para animales", "summary": "La persina está en todas las partes de la planta. Aves psitácidas, conejos y ganado en lactancia pueden sufrir daño cardiaco o mamario grave.", "caution": "La persina está en hoja, fruto, cáscara y semilla. Aves psitácidas, conejos y peces son sensibles y pueden sufrir daño cardiaco mortal. El ganado lechero sufre mastitis no infecciosa. Si hay mascotas o animales de granja, no darles aguacate ni hojas. (Cowan 2026; Oelrichs 1995)"}, "h_patentes": {"title": "Patentes", "summary": "Hay patentes sobre avocatina B para obesidad y resistencia a la insulina, y solicitudes sobre colorantes de semilla. Una patente no prueba eficacia en humanos.", "formula": "US12390423B2 (avocatina B) · US20170121363 (colorante)"}, "h_declaracion_healthy": {"title": "Declaración «healthy» de la FDA", "summary": "En diciembre de 2024 la FDA actualizó los criterios del término «healthy» en etiquetas; el aguacate ahora califica. Es un criterio de etiquetado, no una declaración de prevención de enfermedad."}}, "resources": [], "requires": {"chapters": {"2": [1], "3": [2], "4": [1], "5": [1], "6": [4, 5], "7": [1], "8": [3, 7], "9": [8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.2"], "2.1": ["1.1"], "2.2": ["2.1"], "2.3": ["2.1"], "2.4": ["1.2"], "2.5": ["2.2"], "3.1": ["2.1"], "3.2": ["2.1"], "3.3": ["2.3", "2.4"], "3.4": ["2.3", "2.4"], "4.1": ["1.1"], "4.2": ["4.1"], "4.3": ["1.2", "4.2"], "5.1": ["1.1"], "5.2": ["1.3"], "5.3": ["5.2"], "6.1": ["4.2"], "6.2": ["6.1"], "6.3": ["2.2", "2.3"], "7.1": ["1.2"], "7.2": ["7.1"], "7.3": ["1.3", "7.2"], "7.4": ["2.3", "2.4"], "8.1": ["3.1"], "8.2": ["2.1"], "8.3": ["3.2"], "8.4": ["2.5"], "8.5": ["3.3", "3.4", "7.4"], "8.6": ["3.3", "2.1"], "9.1": ["8.1", "8.3", "8.4"], "9.2": ["8.5", "8.6"]}, "items": {"p_grupos_botanicos": ["p_persea_americana"], "p_hass": ["p_grupos_botanicos"], "p_criollos_colombia": ["p_grupos_botanicos"], "p_pulpa": ["p_persea_americana"], "p_aceite": ["p_pulpa"], "p_semilla": ["p_persea_americana"], "p_hoja": ["p_persea_americana"], "p_asu": ["p_aceite"], "c_acidos_grasos_mono": ["p_pulpa"], "c_fitosteroles": ["p_pulpa"], "c_luteina_carotenoides": ["p_pulpa"], "c_persina": ["p_hoja"], "c_acetogeninas": ["p_pulpa", "p_semilla"], "c_polifenoles_semilla": ["p_semilla"], "c_estragol": ["p_hoja"], "h_domesticacion": ["p_grupos_botanicos"], "h_produccion_colombia": ["p_hass", "p_criollos_colombia"], "h_madurez_cosecha": ["p_hass"], "u_lipidos": ["c_acidos_grasos_mono", "c_fitosteroles"], "u_riesgo_cv": ["u_lipidos"], "u_peso_grasa_visceral": ["p_pulpa"], "u_absorcion_carotenoides": ["c_luteina_carotenoides", "c_acidos_grasos_mono"], "u_artrosis_asu": ["p_asu"], "u_hipertension_hoja": ["p_hoja"], "u_semilla_salud": ["c_polifenoles_semilla"], "u_cancer_lab": ["c_acetogeninas", "c_persina"], "u_alergia": ["p_pulpa"], "u_warfarina": ["p_pulpa"], "u_toxicidad_animal": ["c_persina"], "h_patentes": ["u_cancer_lab", "c_polifenoles_semilla"], "h_declaracion_healthy": ["u_lipidos"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

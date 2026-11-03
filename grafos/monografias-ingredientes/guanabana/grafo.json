@@ -1,0 +1,739 @@
+{
+ "meta": {
+  "title": "Guanábana como grafo",
+  "subtitle": "Monografía de Annona muricata L. construida desde literatura científica y fuentes oficiales (no desde un libro) · con alertas de evidencia",
+  "itemLabel": "Planta, compuesto o efecto",
+  "itemLabelPlural": "Plantas, compuestos y efectos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: annonacina, Guadalupe, climaterio, hoja, patentes…"
+ },
+ "blocks": {
+  "planta": {
+   "name": "La planta",
+   "color": "#6B8E4E"
+  },
+  "cultivo": {
+   "name": "Cultivo y poscosecha",
+   "color": "#B08A2E"
+  },
+  "usos": {
+   "name": "Usos tradicionales",
+   "color": "#A0603F"
+  },
+  "quimica": {
+   "name": "Química",
+   "color": "#6B5B95"
+  },
+  "evidencia": {
+   "name": "Investigación moderna",
+   "color": "#3F6FA0"
+  },
+  "sintesis": {
+   "name": "Seguridad y conclusiones",
+   "color": "#B5465A"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "planta",
+   "summary": "Especie de la familia Annonaceae, nativa del sur de México al norte de Sudamérica, con muchos nombres comunes y parientes cercanos.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Nombre científico y clasificación",
+     "summary": "Annona muricata L. (1753), familia Annonaceae; World Flora Online registra seis sinónimos, entre ellos Guanabanus muricatus y Annona macrocarpa.",
+     "items": [
+      "p_guanabana"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Nombres comunes",
+     "summary": "En Colombia: guanábana, guanábano, catuche y anón de espino; graviola en Brasil y soursop en inglés."
+    },
+    {
+     "num": "1.3",
+     "title": "Especies parecidas",
+     "summary": "Chirimoya, anón y atemoya son parientes del mismo género; el nombre guanábana cimarrona se aplica también a Annona montana.",
+     "items": [
+      "p_annonaceas"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como droga cruda",
+   "block": "usos",
+   "summary": "Hoja, semilla, corteza, raíz y fruto tienen preparados populares distintos; la hoja es la parte más usada.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Hoja",
+     "summary": "Infusión o decocción para dormir, para el dolor, la tos, la diarrea y la diabetes; también en compresas y cataplasmas.",
+     "items": [
+      "p_hoja"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Semilla",
+     "summary": "Polvo como insecticida y tintura emética; su aceite irrita los ojos y se retira antes de licuar la pulpa.",
+     "items": [
+      "p_semilla"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Corteza y raíz",
+     "summary": "La corteza se usó para curtir y como veneno de peces; la raíz, como vermífugo."
+    },
+    {
+     "num": "2.4",
+     "title": "Fruto como remedio",
+     "summary": "El jugo maduro se usa como diurético y para enfermedad renal; el fruto inmaduro molido, para la disentería."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "summary": "Acetogeninas, alcaloides isoquinolínicos y fenoles explican casi toda la actividad descrita; la pulpa es un alimento de energía moderada.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Acetogeninas annonáceas",
+     "summary": "Más de 100 acetogeninas aisladas de hoja, corteza, semilla, raíz y fruto; inhiben el complejo I mitocondrial.",
+     "items": [
+      "c_acetogeninas"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Annonacina",
+     "summary": "Acetogenina principal de la especie; se midió su cantidad en fruto, néctar comercial e infusión de hoja.",
+     "items": [
+      "c_annonacina"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Alcaloides isoquinolínicos",
+     "summary": "Annonaína, nornuciferina, asimilobina, reticulina y coreximina; se estudian por efectos en el sistema nervioso.",
+     "items": [
+      "c_alcaloides"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Fenoles y flavonoides de la hoja",
+     "summary": "Ácidos clorogénico y cafeico, procianidinas, quercetina y kaempferol; se asocian a la actividad antioxidante in vitro.",
+     "items": [
+      "c_fenoles"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Composición nutricional de la pulpa",
+     "summary": "Pulpa con 81 % de agua, azúcares, fibra, vitamina C y potasio según USDA FoodData Central.",
+     "items": [
+      "c_nutrientes_pulpa"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "planta",
+   "summary": "Árbol pequeño de hoja brillante, flores en tronco y ramas, y un fruto grande cubierto de espinas blandas.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Árbol y hoja",
+     "summary": "Árbol perenne o semiperenne de 3 a 10 m; hojas oblongas, brillantes, de 8 a 15 cm, con domacios en el envés."
+    },
+    {
+     "num": "4.2",
+     "title": "Flor",
+     "summary": "Flores solitarias en tronco, ramas o ramillas; seis pétalos, los externos gruesos de 2,5 a 3,5 cm."
+    },
+    {
+     "num": "4.3",
+     "title": "Fruto y semilla",
+     "summary": "Fruto compuesto ovoide asimétrico, verde y con espinas curvas flexibles; semillas negras de 1,25 a 2 cm, hasta más de 200 por fruto.",
+     "items": [
+      "p_fruto"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "cultivo",
+   "summary": "Nativa de la América tropical e introducida en todo el trópico; Colombia, México, Brasil y Venezuela son productores importantes.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Origen y área nativa",
+     "summary": "Nativa del sur de México a Venezuela y Perú, incluida Colombia; hoy cultivada en África, Asia y Oceanía tropicales."
+    },
+    {
+     "num": "5.2",
+     "title": "Clima y suelo",
+     "summary": "Trópico cálido y húmedo hasta unos 1000 m; no tolera heladas ni vientos fríos; prefiere suelos profundos y bien drenados."
+    },
+    {
+     "num": "5.3",
+     "title": "Producción en Colombia y otros países",
+     "summary": "Colombia reportó unas 4780 ha productivas en 2018; en México, Nayarit concentra cerca del 73 % del área.",
+     "items": [
+      "h_produccion"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Plagas y enfermedades",
+     "summary": "Perforador de semilla, polilla del fruto y moscas de la fruta; la antracnosis causa caída de flores y frutos en zonas húmedas.",
+     "items": [
+      "h_plagas"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha y poscosecha",
+   "block": "cultivo",
+   "summary": "Fruto climatérico y muy perecedero: se cosecha firme, madura en pocos días y se procesa sobre todo como pulpa congelada.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Índice de madurez",
+     "summary": "Se cosecha firme, con color verde más claro, espinas separadas y brillo; ningún índice aislado es fiable."
+    },
+    {
+     "num": "6.2",
+     "title": "Climaterio y maduración",
+     "summary": "Fruto climatérico con pico de etileno hacia el cuarto día; la mejor calidad para consumo llega entre 5 y 6 días.",
+     "items": [
+      "h_climaterio"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Conservación y enfermedades poscosecha",
+     "summary": "Enfriar a unos 15 °C con humedad relativa de 85 a 95 %; por debajo de 12 a 15 °C aparece daño por frío."
+    },
+    {
+     "num": "6.4",
+     "title": "Procesamiento en pulpa",
+     "summary": "Rendimiento de pulpa cercano al 80 %; la pulpa congelada es el producto principal y el pardeamiento se controla con ácido ascórbico o calor.",
+     "items": [
+      "h_pulpa"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y culinario",
+   "block": "usos",
+   "summary": "Fruta americana descrita desde 1526, con amplio uso popular medicinal y un papel central en jugos y helados.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Historia",
+     "summary": "Oviedo la describió en 1526 en las Antillas y el norte de Sudamérica; luego pasó a los trópicos de África y Asia."
+    },
+    {
+     "num": "7.2",
+     "title": "Uso medicinal tradicional",
+     "summary": "Comunidades de África y Sudamérica usan varias partes de la planta; no se confirmó uso ritual documentado en las fuentes revisadas.",
+     "items": [
+      "h_uso_tradicional"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Uso culinario",
+     "summary": "Jugos, champola, néctares, helados, sorbetes y jaleas; el fruto inmaduro se cocina como verdura en algunas regiones.",
+     "items": [
+      "h_uso_culinario"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "evidencia",
+   "summary": "Casi toda la evidencia es in vitro o en animales; los estudios en humanos son escasos y pequeños.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Cáncer",
+     "summary": "Extractos y acetogeninas son citotóxicos en células y reducen tumores en ratones; solo hay un ensayo humano pequeño con desenlaces ex vivo.",
+     "items": [
+      "u_cancer"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Diabetes",
+     "summary": "Extracto acuoso de hoja bajó la glucemia en ratas diabéticas; fracciones de hoja inhiben enzimas digestivas in vitro.",
+     "items": [
+      "u_diabetes"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Hipertensión",
+     "summary": "Extracto de hoja bajó la presión en ratas por un mecanismo de antagonismo del calcio.",
+     "items": [
+      "u_hipertension"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Antiparasitario y antimicrobiano",
+     "summary": "Actividad contra Leishmania y nematodos in vitro, contra Plasmodium en ratones y contra bacterias orales in vitro.",
+     "items": [
+      "u_antiparasitario",
+      "u_antimicrobiano"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Ansiedad y sueño",
+     "summary": "Extracto de hoja con efecto sedante y ansiolítico en ratones; alcaloides del fruto activan receptores 5-HT1A in vitro.",
+     "items": [
+      "u_ansiedad_sueno"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Patentes",
+     "summary": "Las patentes encontradas protegen acetogeninas aisladas y sus usos; las revisadas figuran como vencidas.",
+     "items": [
+      "h_patentes"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones: seguridad, vacíos de evidencia y prioridades",
+   "block": "sintesis",
+   "summary": "El principal riesgo descrito es neurológico; faltan ensayos clínicos y la promoción como cura del cáncer no tiene respaldo.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Neurotoxicidad y parkinsonismo atípico",
+     "summary": "En Guadalupe, el parkinsonismo atípico se asoció al consumo de fruto e infusión; la annonacina daña neuronas en cultivo y en ratas.",
+     "items": [
+      "u_neurotoxicidad"
+     ]
+    },
+    {
+     "num": "9.2",
+     "title": "Seguridad general e interacciones",
+     "summary": "Una revisión sistemática describe buena tolerancia con datos limitados; se advierten interacciones con antidiabéticos y antihipertensivos.",
+     "items": [
+      "u_seguridad"
+     ]
+    },
+    {
+     "num": "9.3",
+     "title": "Afirmaciones de cura del cáncer",
+     "summary": "Mensajes virales y productos comerciales prometen curar el cáncer; la FTC de EE. UU. actuó contra un vendedor en 2008.",
+     "items": [
+      "u_bulos_cancer"
+     ]
+    },
+    {
+     "num": "9.4",
+     "title": "Vacíos y prioridades",
+     "summary": "Faltan ensayos clínicos, estandarización química de los preparados y estudios de exposición neurológica en consumidores.",
+     "items": [
+      "h_vacios"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_guanabana": {
+   "title": "Guanábana (Annona muricata L.)",
+   "summary": "Árbol frutal de la familia Annonaceae, nativo de la América tropical. Se usa como alimento y como planta medicinal popular.",
+   "formula": "Descrita por Linneo en 1753 · 6 sinónimos en WFO"
+  },
+  "p_annonaceas": {
+   "title": "Parientes del género Annona",
+   "summary": "Chirimoya (A. cherimola), anón (A. squamosa), atemoya (híbrido) y A. montana. Tienen frutos parecidos y también producen acetogeninas.",
+   "formula": "Más de 119 especies en el género Annona"
+  },
+  "p_hoja": {
+   "title": "Hoja como droga cruda",
+   "summary": "Parte más usada en medicina popular. Se prepara en infusión, decocción o cataplasma para sueño, dolor, tos, diarrea y diabetes."
+  },
+  "p_semilla": {
+   "title": "Semilla",
+   "summary": "Semilla negra con aceite irritante y acetogeninas. Se usa en polvo como insecticida y no se consume.",
+   "formula": "Aceite cercano al 45 % del peso"
+  },
+  "c_acetogeninas": {
+   "title": "Acetogeninas annonáceas",
+   "summary": "Policétidos lipofílicos exclusivos de las Annonaceae. Inhiben el complejo I de la cadena respiratoria mitocondrial.",
+   "formula": "Más de 100 aisladas de A. muricata",
+   "caution": "Si se cita la inhibición del complejo I como prueba anticáncer, recuerde que el mismo mecanismo daña neuronas. La potencia en células tumorales no indica seguridad. (Degli Esposti 1994)"
+  },
+  "c_annonacina": {
+   "title": "Annonacina",
+   "summary": "Acetogenina más abundante de la especie. Es neurotóxica en cultivo y en ratas, y se mide en fruto, néctar e infusión.",
+   "formula": "≈15 mg por fruto · ≈36 mg por lata de néctar · ≈140 µg por taza de infusión",
+   "caution": "Si se consume annonacina de forma repetida, hay riesgo neurotóxico demostrado en cultivos y en ratas. No hay dosis segura en humanos. Una fruta contiene unos 15 mg. Una lata de néctar contiene unos 36 mg. Una taza de infusión contiene unos 140 µg. Una fruta o lata diaria por un año iguala la dosis tóxica en ratas por vía intravenosa. La extrapolación a humanos es incierta. (Champy 2004; Champy 2005)"
+  },
+  "c_alcaloides": {
+   "title": "Alcaloides isoquinolínicos",
+   "summary": "Annonaína, nornuciferina, asimilobina, reticulina y coreximina. Se estudian por efectos sobre receptores de serotonina y por neurotoxicidad."
+  },
+  "c_fenoles": {
+   "title": "Fenoles y flavonoides de la hoja",
+   "summary": "Ácidos clorogénico y cafeico, procianidinas, quercetina y kaempferol identificados en extractos de hoja."
+  },
+  "c_nutrientes_pulpa": {
+   "title": "Nutrientes de la pulpa",
+   "summary": "Pulpa cruda con agua abundante, azúcares, fibra, vitamina C y potasio. Energía moderada y casi sin grasa.",
+   "formula": "Por 100 g: 66 kcal · fibra 3,3 g · vitamina C 20,6 mg · potasio 278 mg",
+   "caution": "Si se presenta la pulpa como \"superalimento\", 100 g aportan 20,6 mg de vitamina C y 3,3 g de fibra. También aportan 13,5 g de azúcar. En diabetes, cuente la porción como fruta. (USDA FDC 167761)"
+  },
+  "p_fruto": {
+   "title": "Fruto",
+   "summary": "Fruto compuesto, verde, con espinas blandas y pulpa blanca fibrosa. Puede pesar varios kilos.",
+   "formula": "10–30 cm de largo · hasta 4,5–6,8 kg"
+  },
+  "h_produccion": {
+   "title": "Producción",
+   "summary": "Colombia, México, Brasil y Venezuela son productores importantes. Las estadísticas oficiales son incompletas.",
+   "formula": "Colombia ≈4780 ha productivas (2018) · México ≈2724 ha (2013)"
+  },
+  "h_plagas": {
+   "title": "Plagas y enfermedades del cultivo",
+   "summary": "Bephratelloides maculicollis, Cerconota anonella y moscas Anastrepha atacan semilla y fruto. La antracnosis por Colletotrichum gloeosporioides es la enfermedad principal."
+  },
+  "h_climaterio": {
+   "title": "Climaterio del fruto",
+   "summary": "Fruto climatérico con más de un pico respiratorio. Madura rápido tras la cosecha y se daña con frío.",
+   "formula": "Pico de etileno ≈ día 4 · daño por frío ≤12–15 °C"
+  },
+  "h_pulpa": {
+   "title": "Pulpa procesada",
+   "summary": "La pulpa congelada es el producto comercial principal. Se usa en jugos, néctares, helados y yogures.",
+   "formula": "Rendimiento de pulpa ≈80 %"
+  },
+  "h_uso_tradicional": {
+   "title": "Uso medicinal tradicional",
+   "summary": "Comunidades de África, el Caribe y Sudamérica usan hoja, fruto, semilla, corteza y raíz. En Puerto Rico estuvo entre las plantas más usadas por pacientes ambulatorios."
+  },
+  "h_uso_culinario": {
+   "title": "Uso culinario",
+   "summary": "Fruta para jugos, champola, néctares, helados y sorbetes. Las semillas se retiran antes de licuar."
+  },
+  "u_cancer": {
+   "title": "Afirmación anticancerosa",
+   "summary": "Se afirma que extractos y acetogeninas destruyen células tumorales. Hay estudios in vitro y en ratones, y un ensayo humano pequeño con desenlaces ex vivo.",
+   "formula": "ECA en cáncer colorrectal: 28 pacientes, 8 semanas",
+   "caution": "Si un paciente usa guanábana para tratar cáncer, no hay prueba de beneficio en humanos. La cifra \"10 000 veces más potente que la quimioterapia\" viene de células en laboratorio. No reemplace ni retrase el tratamiento oncológico. Registre el producto y la dosis. (MSKCC 2026; Rieser 1996)"
+  },
+  "u_diabetes": {
+   "title": "Afirmación antidiabética",
+   "summary": "Se afirma que la hoja baja la glucemia. Hay estudios en ratas diabéticas e in vitro; no se encontraron ensayos en personas.",
+   "caution": "Si un paciente con diabetes toma hoja de guanábana, no la use como sustituto del tratamiento. No hay ensayos en humanos. Vigile la glucemia si la combina con hipoglucemiantes. (Martín del Campo-Rayas 2022; MSKCC 2026)"
+  },
+  "u_hipertension": {
+   "title": "Afirmación antihipertensiva",
+   "summary": "Se afirma que la hoja baja la presión arterial. Hay estudios en ratas normotensas e hipertensas y en aorta aislada.",
+   "caution": "Si se recomienda jugo de guanábana para la presión, la prueba es un solo ensayo abierto en prehipertensos. No sustituye antihipertensivos. No hay datos en hipertensión establecida. Vigile la presión si se combina con fármacos. (Alatas 2019)"
+  },
+  "u_antiparasitario": {
+   "title": "Afirmación antiparasitaria",
+   "summary": "Se afirma actividad contra parásitos. Hay estudios in vitro con Leishmania y Haemonchus, y en ratones con Plasmodium berghei.",
+   "caution": "Si se propone la guanábana contra leishmaniasis o parásitos intestinales, solo hay datos de laboratorio. No reemplace antiparasitarios aprobados. Los compuestos activos son acetogeninas con riesgo neurotóxico. (Jaramillo 2000; Ferreira 2013)"
+  },
+  "u_ansiedad_sueno": {
+   "title": "Afirmación sobre ansiedad y sueño",
+   "summary": "Se afirma un efecto sedante y tranquilizante. Hay estudios en ratones con extracto de hoja e in vitro con alcaloides del fruto.",
+   "caution": "Si un paciente usa té de hoja para ansiedad o insomnio, no hay ensayos en humanos. Los datos son de roedores por vía intraperitoneal. El uso diario y prolongado de hoja aumenta la exposición a annonacina. (Souza 2018; Champy 2005)"
+  },
+  "u_antimicrobiano": {
+   "title": "Afirmación antimicrobiana",
+   "summary": "Se afirma actividad contra bacterias. Hay estudios in vitro, como contra Enterococcus faecalis en endodoncia.",
+   "caution": "Si se propone la hoja como antibiótico, solo hay datos in vitro y en animales. No sustituya antibióticos indicados. Una infección no tratada puede progresar. (Ngemenya 2022)"
+  },
+  "h_patentes": {
+   "title": "Patentes",
+   "summary": "Patentes sobre acetogeninas aisladas para uso citotóxico o plaguicida. Solo una de las revisadas se basa en A. muricata.",
+   "formula": "US7223792B2: muricinas A–G de semilla, vencida"
+  },
+  "u_neurotoxicidad": {
+   "title": "Neurotoxicidad y parkinsonismo atípico",
+   "summary": "En Guadalupe se asoció el consumo de guanábana a parkinsonismo atípico resistente a levodopa. La annonacina reproduce lesiones en ratas.",
+   "formula": "Casos y controles: OR 20,7 para fruto frente a controles",
+   "caution": "Si un paciente consume fruta o infusión de guanábana a diario por años, hay asociación con parkinsonismo atípico resistente a levodopa. La causalidad no está probada. Pregunte por el consumo ante parkinsonismo atípico. (Caparros-Lefebvre 1999; Lannuzel 2007)"
+  },
+  "u_seguridad": {
+   "title": "Seguridad e interacciones",
+   "summary": "Datos limitados en humanos; en ratas no se vio daño hepático ni renal. Se advierte suma de efectos con antidiabéticos y antihipertensivos; no se hallaron estudios en embarazo humano.",
+   "caution": "Si una paciente está embarazada o lactando, evite hoja, semilla, extractos y cápsulas. No hay datos de seguridad en humanos. Si hay enfermedad hepática o renal, no use extractos. Cancer Research UK advierte posible daño con uso frecuente. Si el paciente toma antihipertensivos o hipoglucemiantes, puede haber efectos aditivos. Mida presión y glucemia. Pregunte por suplementos en cada consulta. (EFSA 2020; Cancer Research UK 2022; MSKCC 2026)"
+  },
+  "u_bulos_cancer": {
+   "title": "Bulos de cura del cáncer",
+   "summary": "Mensajes virales afirman que la guanábana cura el cáncer mejor que la quimioterapia. Verificadores lo califican como falso y la FTC actuó contra un producto.",
+   "caution": "Si un producto promete curar cáncer con graviola, la publicidad no tiene respaldo. La FTC actuó contra un producto con graviola en 2008. Agencias europeas advierten sobre su seguridad. Reporte la publicidad engañosa a la autoridad sanitaria. (FTC 2008; Cancer Research UK 2022)"
+  },
+  "h_vacios": {
+   "title": "Vacíos de evidencia",
+   "summary": "Faltan ensayos clínicos controlados, preparados con composición conocida y vigilancia de efectos neurológicos."
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    1,
+    4
+   ],
+   "6": [
+    4,
+    5
+   ],
+   "7": [
+    2
+   ],
+   "8": [
+    2,
+    3
+   ],
+   "9": [
+    3,
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "2.4": [
+    "2.1"
+   ],
+   "3.1": [
+    "1.1"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "1.1"
+   ],
+   "3.4": [
+    "2.1"
+   ],
+   "3.5": [
+    "2.4"
+   ],
+   "4.1": [
+    "1.1"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "5.1": [
+    "1.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "5.4": [
+    "5.3",
+    "4.3"
+   ],
+   "6.1": [
+    "4.3"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "6.2"
+   ],
+   "6.4": [
+    "6.3",
+    "3.5"
+   ],
+   "7.1": [
+    "5.1"
+   ],
+   "7.2": [
+    "2.1",
+    "7.1"
+   ],
+   "7.3": [
+    "6.4"
+   ],
+   "8.1": [
+    "3.1"
+   ],
+   "8.2": [
+    "3.4",
+    "2.1"
+   ],
+   "8.3": [
+    "2.1"
+   ],
+   "8.4": [
+    "3.1",
+    "3.4"
+   ],
+   "8.5": [
+    "3.3"
+   ],
+   "8.6": [
+    "3.1"
+   ],
+   "9.1": [
+    "3.2",
+    "3.3"
+   ],
+   "9.2": [
+    "9.1",
+    "8.2",
+    "8.3"
+   ],
+   "9.3": [
+    "8.1"
+   ],
+   "9.4": [
+    "9.2",
+    "9.3"
+   ]
+  },
+  "items": {
+   "p_annonaceas": [
+    "p_guanabana"
+   ],
+   "p_hoja": [
+    "p_guanabana"
+   ],
+   "p_semilla": [
+    "p_guanabana"
+   ],
+   "p_fruto": [
+    "p_guanabana"
+   ],
+   "c_acetogeninas": [
+    "p_guanabana"
+   ],
+   "c_annonacina": [
+    "c_acetogeninas"
+   ],
+   "c_alcaloides": [
+    "p_guanabana"
+   ],
+   "c_fenoles": [
+    "p_hoja"
+   ],
+   "c_nutrientes_pulpa": [
+    "p_fruto"
+   ],
+   "h_produccion": [
+    "p_guanabana"
+   ],
+   "h_plagas": [
+    "h_produccion"
+   ],
+   "h_climaterio": [
+    "p_fruto"
+   ],
+   "h_pulpa": [
+    "h_climaterio",
+    "c_nutrientes_pulpa"
+   ],
+   "h_uso_tradicional": [
+    "p_hoja"
+   ],
+   "h_uso_culinario": [
+    "p_fruto"
+   ],
+   "u_cancer": [
+    "c_acetogeninas"
+   ],
+   "u_diabetes": [
+    "c_fenoles"
+   ],
+   "u_hipertension": [
+    "p_hoja"
+   ],
+   "u_antiparasitario": [
+    "c_acetogeninas"
+   ],
+   "u_antimicrobiano": [
+    "p_hoja"
+   ],
+   "u_ansiedad_sueno": [
+    "c_alcaloides"
+   ],
+   "h_patentes": [
+    "c_acetogeninas"
+   ],
+   "u_neurotoxicidad": [
+    "c_annonacina",
+    "c_alcaloides"
+   ],
+   "u_seguridad": [
+    "u_neurotoxicidad",
+    "u_diabetes",
+    "u_hipertension"
+   ],
+   "u_bulos_cancer": [
+    "u_cancer"
+   ],
+   "h_vacios": [
+    "u_seguridad",
+    "u_bulos_cancer"
+   ]
+  }
+ }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monografías de ingredientes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Herbario: pliegos de colección en rejilla; cada ficha lleva su etiqueta de familia y su barra de veredictos. */
+:root {
+  --papel: #f3f4ee; --pliego: #fbfcf8; --tinta: #1f2a22; --tenue: #5b665d; --linea: #d6dccf;
+  --musgo: #2f5d3f; --musgo-suave: #e3ebe0;
+  --ok: #2e7d4f; --mat: #6f9a3e; --sin: #8d958c; --con: #b3392f; --sup: #8a6a3d; --rdoc: #d07a1f; --romi: #7a4a9a;
+  --f-display: "Alegreya", Georgia, serif; --f-texto: "Alegreya Sans", "Segoe UI", sans-serif;
+  --f-dato: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --papel: #141a16; --pliego: #1b231e; --tinta: #e6ebe3; --tenue: #a3ada3; --linea: #2f3a32;
+  --musgo: #8cc49d; --musgo-suave: #22302a;
+  --ok: #5cbf86; --mat: #a3c96b; --sin: #8e978e; --con: #ec6f63; --sup: #c49a62; --rdoc: #f0a24d; --romi: #b88ad8;
+  color-scheme: dark; } }
+:root[data-theme="dark"] { --papel: #141a16; --pliego: #1b231e; --tinta: #e6ebe3; --tenue: #a3ada3; --linea: #2f3a32;
+  --musgo: #8cc49d; --musgo-suave: #22302a;
+  --ok: #5cbf86; --mat: #a3c96b; --sin: #8e978e; --con: #ec6f63; --sup: #c49a62; --rdoc: #f0a24d; --romi: #b88ad8;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--papel); color: var(--tinta); font: 400 1.0625rem/1.55 var(--f-texto);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.envoltura { max-width: 72rem; margin: 0 auto; padding-block: 2.5rem 4rem; display: grid; gap: 2.5rem; }
+.cabeza { display: grid; gap: .75rem; max-width: 46rem; }
+.eyebrow { font: 500 .75rem/1 var(--f-dato); letter-spacing: .12em; text-transform: uppercase; color: var(--musgo); margin: 0; }
+h1 { font: 700 clamp(2rem, 5vw, 3rem)/1.05 var(--f-display); margin: 0; text-wrap: balance; }
+h2 { font: 700 1.5rem/1.2 var(--f-display); margin: 0; text-wrap: balance; }
+.cabeza p { margin: 0; color: var(--tenue); max-width: 62ch; }
+.resumen { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1.5rem; align-items: center; }
+.totales { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin: 0; }
+.totales div { display: grid; }
+.totales dt { font: 500 .7rem/1.2 var(--f-dato); letter-spacing: .1em; text-transform: uppercase; color: var(--tenue); }
+.totales dd { margin: 0; font: 700 2rem/1.1 var(--f-display); font-variant-numeric: tabular-nums; }
+.leyenda-caja { display: grid; gap: .6rem; min-width: 0; }
+.leyenda, .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem .9rem; font-size: .85rem; color: var(--tenue); }
+.leyenda li, .chips li { display: inline-flex; align-items: center; gap: .35rem; }
+.leyenda b, .chips b { color: var(--tinta); font-family: var(--f-dato); font-weight: 500; }
+.leyenda i, .chips i { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; }
+.v-ok { background: var(--ok); } .v-mat { background: var(--mat); } .v-sin { background: var(--sin); }
+.v-con { background: var(--con); } .v-sup { background: var(--sup); } .v-rdoc { background: var(--rdoc); } .v-romi { background: var(--romi); }
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 1.25rem; }
+.ficha { background: var(--pliego); border: 1px solid var(--linea); border-radius: 6px; padding: 1.25rem 1.25rem 1rem;
+  display: grid; gap: .9rem; align-content: start; min-width: 0; }
+.ficha header { display: grid; gap: .1rem; }
+.familia { margin: 0; font: 500 .7rem/1.2 var(--f-dato); letter-spacing: .12em; text-transform: uppercase; color: var(--musgo); }
+.ficha h3 { margin: 0; font: 700 1.5rem/1.15 var(--f-display); }
+.ficha h3 a { color: inherit; text-decoration: none; }
+.ficha h3 a:hover { text-decoration: underline; text-decoration-color: var(--musgo); }
+.especie { margin: 0; font: italic 400 1rem/1.3 var(--f-display); color: var(--tenue); }
+.cifras { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; margin: 0; padding-block: .6rem; border-block: 1px solid var(--linea); }
+.cifras div { display: grid; gap: .1rem; min-width: 0; }
+.cifras dt { font: 500 .62rem/1.2 var(--f-dato); letter-spacing: .04em; text-transform: uppercase; color: var(--tenue); }
+.cifras dd { margin: 0; font: 500 1.1rem/1.2 var(--f-dato); font-variant-numeric: tabular-nums; }
+.barra { display: flex; height: .55rem; border-radius: 3px; overflow: hidden; gap: 2px; }
+.chips { font-size: .78rem; gap: .25rem .7rem; }
+.hallazgo { margin: 0; font-size: .95rem; }
+.abrir { justify-self: start; font: 500 .85rem/1 var(--f-dato); color: var(--musgo); text-decoration: none; padding: .55rem .8rem;
+  border: 1px solid var(--musgo); border-radius: 4px; }
+.abrir:hover { background: var(--musgo-suave); }
+a:focus-visible { outline: 2px solid var(--musgo); outline-offset: 2px; }
+.transversal { display: grid; gap: 1rem; }
+.transversal ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .6rem; max-width: 70ch; }
+.transversal li::marker { font-family: var(--f-dato); color: var(--musgo); }
+.pie { font-size: .85rem; color: var(--tenue); border-top: 1px solid var(--linea); padding-top: 1rem; margin: 0; max-width: 70ch; }
+@media (max-width: 420px) { .cifras { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<main class="envoltura">
+  <section class="cabeza">
+    <p class="eyebrow">Herbario de evidencia · Colombia y Amazonia</p>
+    <h1>Monografías de ingredientes</h1>
+    <p>Diez frutos y semillas con la estructura de 9 partes del grafo de mirra y olíbano: taxonomía, droga cruda, química, morfología, distribución, poscosecha, historia, investigación y conclusiones. Cada afirmación de salud está verificada en PubMed y fuentes oficiales. El veredicto aparece como alerta dentro del grafo.</p>
+  </section>
+  <section class="resumen" aria-label="Resumen">
+    <dl class="totales">
+      <div><dt>Monografías</dt><dd>10</dd></div>
+      <div><dt>Afirmaciones</dt><dd>134</dd></div>
+      <div><dt>Alertas</dt><dd>124</dd></div>
+    </dl>
+    <div class="leyenda-caja">
+      <div class="barra" role="img" aria-label="respaldado: 9, respaldado con matices: 34, sin evidencia en humanos: 49, contradicho: 14, riesgo documentado: 14, riesgo omitido: 14"><span class="v-ok" style="flex:9" title="respaldado: 9"></span><span class="v-mat" style="flex:34" title="respaldado con matices: 34"></span><span class="v-sin" style="flex:49" title="sin evidencia en humanos: 49"></span><span class="v-con" style="flex:14" title="contradicho: 14"></span><span class="v-rdoc" style="flex:14" title="riesgo documentado: 14"></span><span class="v-romi" style="flex:14" title="riesgo omitido: 14"></span></div>
+      <ul class="leyenda"><li><i class="v-ok"></i>respaldado <b>9</b></li><li><i class="v-mat"></i>respaldado con matices <b>34</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>49</b></li><li><i class="v-con"></i>contradicho <b>14</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>14</b></li><li><i class="v-romi"></i>riesgo omitido <b>14</b></li></ul>
+    </div>
+  </section>
+  <section class="rejilla" aria-label="Monografías">
+<article class="ficha">
+  <header>
+    <p class="familia">Annonaceae</p>
+    <h3><a href="guanabana/grafo-guanabana.html">Guanábana</a></h3>
+    <p class="especie">Annona muricata</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>36</dd></div>
+    <div><dt>Ítems</dt><dd>27</dd></div>
+    <div><dt>Alertas</dt><dd>12</dd></div>
+    <div><dt>Afirmaciones</dt><dd>15</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 2, respaldado con matices: 3, sin evidencia en humanos: 8, riesgo documentado: 2"><span class="v-ok" style="flex:2" title="respaldado: 2"></span><span class="v-mat" style="flex:3" title="respaldado con matices: 3"></span><span class="v-sin" style="flex:8" title="sin evidencia en humanos: 8"></span><span class="v-rdoc" style="flex:2" title="riesgo documentado: 2"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>2</b></li><li><i class="v-mat"></i>respaldado con matices <b>3</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>8</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>2</b></li></ul>
+  <p class="hallazgo">La annonacina es neurotóxica. La cifra «10 000 veces más potente que la quimioterapia» viene de un estudio in vitro de 1996.</p>
+  <a class="abrir" href="guanabana/grafo-guanabana.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Myrtaceae</p>
+    <h3><a href="guayaba/grafo-guayaba.html">Guayaba</a></h3>
+    <p class="especie">Psidium guajava</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>31</dd></div>
+    <div><dt>Ítems</dt><dd>31</dd></div>
+    <div><dt>Alertas</dt><dd>12</dd></div>
+    <div><dt>Afirmaciones</dt><dd>13</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 1, respaldado con matices: 4, sin evidencia en humanos: 5, contradicho: 1, riesgo documentado: 1, riesgo omitido: 1"><span class="v-ok" style="flex:1" title="respaldado: 1"></span><span class="v-mat" style="flex:4" title="respaldado con matices: 4"></span><span class="v-sin" style="flex:5" title="sin evidencia en humanos: 5"></span><span class="v-con" style="flex:1" title="contradicho: 1"></span><span class="v-rdoc" style="flex:1" title="riesgo documentado: 1"></span><span class="v-romi" style="flex:1" title="riesgo omitido: 1"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>1</b></li><li><i class="v-mat"></i>respaldado con matices <b>4</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>5</b></li><li><i class="v-con"></i>contradicho <b>1</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>1</b></li><li><i class="v-romi"></i>riesgo omitido <b>1</b></li></ul>
+  <p class="hallazgo">La infusión de hoja no reemplaza el suero oral y el zinc en la diarrea infantil.</p>
+  <a class="abrir" href="guayaba/grafo-guayaba.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Arecaceae</p>
+    <h3><a href="corozo/grafo-corozo.html">Corozo</a></h3>
+    <p class="especie">Bactris guineensis</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>32</dd></div>
+    <div><dt>Ítems</dt><dd>30</dd></div>
+    <div><dt>Alertas</dt><dd>12</dd></div>
+    <div><dt>Afirmaciones</dt><dd>13</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado con matices: 2, sin evidencia en humanos: 7, contradicho: 2, riesgo omitido: 2"><span class="v-mat" style="flex:2" title="respaldado con matices: 2"></span><span class="v-sin" style="flex:7" title="sin evidencia en humanos: 7"></span><span class="v-con" style="flex:2" title="contradicho: 2"></span><span class="v-romi" style="flex:2" title="riesgo omitido: 2"></span></div>
+  <ul class="chips"><li><i class="v-mat"></i>respaldado con matices <b>2</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>7</b></li><li><i class="v-con"></i>contradicho <b>2</b></li><li><i class="v-romi"></i>riesgo omitido <b>2</b></li></ul>
+  <p class="hallazgo">7 de 13 afirmaciones no tienen evidencia en humanos. El vino artesanal tiene riesgo de metanol.</p>
+  <a class="abrir" href="corozo/grafo-corozo.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Lauraceae</p>
+    <h3><a href="aguacate/grafo-aguacate.html">Aguacate</a></h3>
+    <p class="especie">Persea americana</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>33</dd></div>
+    <div><dt>Ítems</dt><dd>32</dd></div>
+    <div><dt>Alertas</dt><dd>14</dd></div>
+    <div><dt>Afirmaciones</dt><dd>14</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 1, respaldado con matices: 3, sin evidencia en humanos: 4, contradicho: 2, riesgo documentado: 3, riesgo omitido: 1"><span class="v-ok" style="flex:1" title="respaldado: 1"></span><span class="v-mat" style="flex:3" title="respaldado con matices: 3"></span><span class="v-sin" style="flex:4" title="sin evidencia en humanos: 4"></span><span class="v-con" style="flex:2" title="contradicho: 2"></span><span class="v-rdoc" style="flex:3" title="riesgo documentado: 3"></span><span class="v-romi" style="flex:1" title="riesgo omitido: 1"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>1</b></li><li><i class="v-mat"></i>respaldado con matices <b>3</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>4</b></li><li><i class="v-con"></i>contradicho <b>2</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>3</b></li><li><i class="v-romi"></i>riesgo omitido <b>1</b></li></ul>
+  <p class="hallazgo">El ensayo HAT contradice el efecto sobre el peso. Interactúa con la warfarina. La semilla no tiene evidencia en humanos.</p>
+  <a class="abrir" href="aguacate/grafo-aguacate.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Rubiaceae</p>
+    <h3><a href="cafe/grafo-cafe.html">Café</a></h3>
+    <p class="especie">Coffea arabica · C. canephora</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>30</dd></div>
+    <div><dt>Ítems</dt><dd>32</dd></div>
+    <div><dt>Alertas</dt><dd>13</dd></div>
+    <div><dt>Afirmaciones</dt><dd>14</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 2, respaldado con matices: 4, contradicho: 4, riesgo documentado: 3, riesgo omitido: 1"><span class="v-ok" style="flex:2" title="respaldado: 2"></span><span class="v-mat" style="flex:4" title="respaldado con matices: 4"></span><span class="v-con" style="flex:4" title="contradicho: 4"></span><span class="v-rdoc" style="flex:3" title="riesgo documentado: 3"></span><span class="v-romi" style="flex:1" title="riesgo omitido: 1"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>2</b></li><li><i class="v-mat"></i>respaldado con matices <b>4</b></li><li><i class="v-con"></i>contradicho <b>4</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>3</b></li><li><i class="v-romi"></i>riesgo omitido <b>1</b></li></ul>
+  <p class="hallazgo">Interacción con fluvoxamina. La cafeína pura en polvo y los enemas de café tienen riesgo documentado.</p>
+  <a class="abrir" href="cafe/grafo-cafe.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Passifloraceae</p>
+    <h3><a href="gulupa/grafo-gulupa.html">Gulupa</a></h3>
+    <p class="especie">Passiflora edulis f. edulis</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>29</dd></div>
+    <div><dt>Ítems</dt><dd>31</dd></div>
+    <div><dt>Alertas</dt><dd>12</dd></div>
+    <div><dt>Afirmaciones</dt><dd>13</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 1, respaldado con matices: 5, sin evidencia en humanos: 4, riesgo documentado: 1, riesgo omitido: 2"><span class="v-ok" style="flex:1" title="respaldado: 1"></span><span class="v-mat" style="flex:5" title="respaldado con matices: 5"></span><span class="v-sin" style="flex:4" title="sin evidencia en humanos: 4"></span><span class="v-rdoc" style="flex:1" title="riesgo documentado: 1"></span><span class="v-romi" style="flex:2" title="riesgo omitido: 2"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>1</b></li><li><i class="v-mat"></i>respaldado con matices <b>5</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>4</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>1</b></li><li><i class="v-romi"></i>riesgo omitido <b>2</b></li></ul>
+  <p class="hallazgo">Los ensayos con P. incarnata no aplican a la gulupa. La cáscara tiene glucósidos cianogénicos.</p>
+  <a class="abrir" href="gulupa/grafo-gulupa.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Arecaceae</p>
+    <h3><a href="acai/grafo-acai.html">Açaí y asaí</a></h3>
+    <p class="especie">Euterpe oleracea · E. precatoria</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>31</dd></div>
+    <div><dt>Ítems</dt><dd>32</dd></div>
+    <div><dt>Alertas</dt><dd>14</dd></div>
+    <div><dt>Afirmaciones</dt><dd>14</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 1, respaldado con matices: 6, sin evidencia en humanos: 3, contradicho: 1, riesgo documentado: 2, riesgo omitido: 1"><span class="v-ok" style="flex:1" title="respaldado: 1"></span><span class="v-mat" style="flex:6" title="respaldado con matices: 6"></span><span class="v-sin" style="flex:3" title="sin evidencia en humanos: 3"></span><span class="v-con" style="flex:1" title="contradicho: 1"></span><span class="v-rdoc" style="flex:2" title="riesgo documentado: 2"></span><span class="v-romi" style="flex:1" title="riesgo omitido: 1"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>1</b></li><li><i class="v-mat"></i>respaldado con matices <b>6</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>3</b></li><li><i class="v-con"></i>contradicho <b>1</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>2</b></li><li><i class="v-romi"></i>riesgo omitido <b>1</b></li></ul>
+  <p class="hallazgo">La pulpa sin pasteurizar transmite Chagas oral. Interfiere con la resonancia magnética.</p>
+  <a class="abrir" href="acai/grafo-acai.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Arecaceae</p>
+    <h3><a href="murumuru/grafo-murumuru.html">Murumuru</a></h3>
+    <p class="especie">Astrocaryum murumuru s.l.</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>29</dd></div>
+    <div><dt>Ítems</dt><dd>31</dd></div>
+    <div><dt>Alertas</dt><dd>13</dd></div>
+    <div><dt>Afirmaciones</dt><dd>13</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado con matices: 1, sin evidencia en humanos: 7, contradicho: 1, riesgo documentado: 1, riesgo omitido: 3"><span class="v-mat" style="flex:1" title="respaldado con matices: 1"></span><span class="v-sin" style="flex:7" title="sin evidencia en humanos: 7"></span><span class="v-con" style="flex:1" title="contradicho: 1"></span><span class="v-rdoc" style="flex:1" title="riesgo documentado: 1"></span><span class="v-romi" style="flex:3" title="riesgo omitido: 3"></span></div>
+  <ul class="chips"><li><i class="v-mat"></i>respaldado con matices <b>1</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>7</b></li><li><i class="v-con"></i>contradicho <b>1</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>1</b></li><li><i class="v-romi"></i>riesgo omitido <b>3</b></li></ul>
+  <p class="hallazgo">El material colombiano puede ser A. macrocalyx. La manteca es rica en ácidos láurico y mirístico.</p>
+  <a class="abrir" href="murumuru/grafo-murumuru.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Myrtaceae</p>
+    <h3><a href="camu-camu/grafo-camu-camu.html">Camu camu</a></h3>
+    <p class="especie">Myrciaria dubia</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>30</dd></div>
+    <div><dt>Ítems</dt><dd>32</dd></div>
+    <div><dt>Alertas</dt><dd>11</dd></div>
+    <div><dt>Afirmaciones</dt><dd>13</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado con matices: 4, sin evidencia en humanos: 5, contradicho: 2, riesgo omitido: 2"><span class="v-mat" style="flex:4" title="respaldado con matices: 4"></span><span class="v-sin" style="flex:5" title="sin evidencia en humanos: 5"></span><span class="v-con" style="flex:2" title="contradicho: 2"></span><span class="v-romi" style="flex:2" title="riesgo omitido: 2"></span></div>
+  <ul class="chips"><li><i class="v-mat"></i>respaldado con matices <b>4</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>5</b></li><li><i class="v-con"></i>contradicho <b>2</b></li><li><i class="v-romi"></i>riesgo omitido <b>2</b></li></ul>
+  <p class="hallazgo">No previene resfriados. El polvo pierde vitamina C. Las dosis altas tienen riesgo de cálculos renales.</p>
+  <a class="abrir" href="camu-camu/grafo-camu-camu.html">Abrir grafo →</a>
+</article>
+<article class="ficha">
+  <header>
+    <p class="familia">Arecaceae</p>
+    <h3><a href="aguaje/grafo-aguaje.html">Aguaje (canangucha)</a></h3>
+    <p class="especie">Mauritia flexuosa</p>
+  </header>
+  <dl class="cifras">
+    <div><dt>Secciones</dt><dd>35</dd></div>
+    <div><dt>Ítems</dt><dd>32</dd></div>
+    <div><dt>Alertas</dt><dd>11</dd></div>
+    <div><dt>Afirmaciones</dt><dd>12</dd></div>
+  </dl>
+  <div class="barra" role="img" aria-label="respaldado: 1, respaldado con matices: 2, sin evidencia en humanos: 6, contradicho: 1, riesgo documentado: 1, riesgo omitido: 1"><span class="v-ok" style="flex:1" title="respaldado: 1"></span><span class="v-mat" style="flex:2" title="respaldado con matices: 2"></span><span class="v-sin" style="flex:6" title="sin evidencia en humanos: 6"></span><span class="v-con" style="flex:1" title="contradicho: 1"></span><span class="v-rdoc" style="flex:1" title="riesgo documentado: 1"></span><span class="v-romi" style="flex:1" title="riesgo omitido: 1"></span></div>
+  <ul class="chips"><li><i class="v-ok"></i>respaldado <b>1</b></li><li><i class="v-mat"></i>respaldado con matices <b>2</b></li><li><i class="v-sin"></i>sin evidencia en humanos <b>6</b></li><li><i class="v-con"></i>contradicho <b>1</b></li><li><i class="v-rdoc"></i>riesgo documentado <b>1</b></li><li><i class="v-romi"></i>riesgo omitido <b>1</b></li></ul>
+  <p class="hallazgo">La cosecha con tala de palmas hembra no es sostenible. Falta evidencia de seguridad en el embarazo.</p>
+  <a class="abrir" href="aguaje/grafo-aguaje.html">Abrir grafo →</a>
+</article>
+  </section>
+  <section class="transversal">
+    <h2>Riesgos que se repiten</h2>
+    <ol>
+      <li><b>Chagas oral.</b> El riesgo aplica a la pulpa y los jugos de frutos de palma sin pasteurizar: açaí, murumuru y aguaje. Para murumuru y aguaje el dato viene de otras palmas.</li>
+      <li><b>Embarazo y lactancia.</b> Ninguna monografía encontró datos de seguridad para extractos, infusiones de hoja o aceites concentrados.</li>
+      <li><b>Etiqueta «superalimento».</b> Los efectos antioxidante, anticáncer y metabólico de los frutos amazónicos vienen de estudios in vitro o en animales.</li>
+      <li><b>Producción en Colombia.</b> Faltan cifras oficiales actuales en casi todos los ingredientes. Cada <code>verif.md</code> lista los datos no confirmados.</li>
+    </ol>
+  </section>
+  <p class="pie">Construido el 3 de noviembre de 2026 desde literatura científica (PubMed) y fuentes oficiales. Los resúmenes están en palabras propias. No reemplaza el juicio clínico.</p>
+</main>
+</body>
+</html>

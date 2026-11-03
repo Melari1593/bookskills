@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Murumuru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Murumuru como grafo", "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia", "itemLabel": "Planta, compuesto o uso", "itemLabelPlural": "Plantas, compuestos y usos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: láurico, manteca, várzea, Guaviare, Chagas, espinas…"}, "blocks": {"botanica": {"name": "Botánica", "color": "#6B8E4E"}, "usos": {"name": "Usos e historia", "color": "#B08A2E"}, "quimica": {"name": "Química", "color": "#6B5B95"}, "produccion": {"name": "Ecología y producción", "color": "#3F8A8A"}, "investigacion": {"name": "Investigación y seguridad", "color": "#3F6FA0"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "botanica", "summary": "Qué planta es el murumuru y por qué el nombre cubre más de una especie según el tratamiento taxonómico.", "sections": [{"num": "1.1", "title": "Especie y familia", "summary": "Palma de la familia Arecaceae, tribu Cocoseae, descrita por Martius en 1824; el género Astrocaryum agrupa palmas muy espinosas.", "items": ["p_murumuru"]}, {"num": "1.2", "title": "El complejo murumuru y Colombia", "summary": "En sentido amplio incluye A. macrocalyx, A. chonta y A. gratum; en sentido estricto, el material colombiano corresponde a A. macrocalyx.", "items": ["h_complejo_taxonomico"]}, {"num": "1.3", "title": "Marcadores genéticos", "summary": "El plastoma y los microsatélites aportan marcadores para separar especies y medir la diversidad de poblaciones silvestres.", "items": ["h_genetica"]}]}, {"num": 2, "title": "Usos como materia prima", "block": "usos", "summary": "Partes de la palma que se aprovechan: manteca de la almendra, pulpa, palmito y residuos del prensado.", "sections": [{"num": "2.1", "title": "Manteca de la semilla", "summary": "La almendra da una grasa sólida, blanca o crema, que se usa en cosméticos, jabones y alimentos.", "items": ["p_manteca"]}, {"num": "2.2", "title": "Pulpa y palmito", "summary": "La pulpa amarilla se come o se da a animales; el palmito es comestible, pero las espinas dificultan su extracción.", "items": ["p_pulpa", "p_palmito"]}, {"num": "2.3", "title": "Torta y residuos", "summary": "Tras el prensado quedan torta rica en proteína y cáscara leñosa, con usos en piensos, catalizadores y extractos.", "items": ["p_torta"]}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "summary": "La manteca es casi toda grasa saturada láurica y mirística; los componentes menores y los residuos aportan tocoferoles, fitosteroles, fenoles y péptidos.", "sections": [{"num": "3.1", "title": "Ácidos grasos de cadena media", "summary": "Láurico y mirístico suman cerca de tres cuartas partes de los ácidos grasos y explican su punto de fusión cercano a 33 °C.", "items": ["c_acido_laurico", "c_acido_miristico"]}, {"num": "3.2", "title": "Componentes menores", "summary": "Tocoferoles beta y gamma y beta-sitosterol aparecen como minoritarios; los carotenoides fueron despreciables en muestras colombianas.", "items": ["c_tocoferoles"]}, {"num": "3.3", "title": "Compuestos del residuo", "summary": "La biomasa residual rinde fenoles, taninos y péptidos con actividad antioxidante y antimicrobiana en ensayos de laboratorio.", "items": ["c_bioactivos_residuo"]}]}, {"num": 4, "title": "Descripción morfológica", "block": "botanica", "summary": "Palma cespitosa de tallo corto, cubierta de espinas negras largas, con racimos colgantes de frutos amarillos.", "sections": [{"num": "4.1", "title": "Porte y espinas", "summary": "Tallos agrupados y poco desarrollados, hojas largas y espinas negras de más de 20 cm en tallo, hojas y racimo.", "items": ["h_espinas"]}, {"num": "4.2", "title": "Fruto y semilla", "summary": "Fruto oblongo de 4,5 a 9 cm, pulpa amarilla de 6 a 10 mm y endocarpo leñoso duro que encierra una almendra blanca."}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "produccion", "summary": "Palma de bosques inundables amazónicos; la oferta comercial depende de la recolección silvestre en Brasil, y Colombia tiene caracterización química pero no estadísticas de producción.", "sections": [{"num": "5.1", "title": "Área de distribución", "summary": "En sentido estricto ocupa el norte de Brasil, las Guayanas y Venezuela; en sentido amplio llega a Colombia, Ecuador, Perú y Bolivia."}, {"num": "5.2", "title": "Hábitat de várzea", "summary": "Crece en islas y várzeas del estuario amazónico, a veces con cientos de palmas por hectárea.", "items": ["h_ecologia_varzea"]}, {"num": "5.3", "title": "Depredación y dispersión de semillas", "summary": "Pecaríes, roedores y otros animales comen frutos y semillas; su abundancia cambia el reclutamiento de plántulas.", "items": ["h_dispersion"]}, {"num": "5.4", "title": "Producción y mercado", "summary": "La oferta brasileña es de unas 5 000 a 6 000 t de semilla al año y se vende sobre todo a la industria cosmética.", "items": ["h_produccion"]}, {"num": "5.5", "title": "Colombia", "summary": "El Instituto SINCHI caracterizó manteca del Guaviare; no se hallaron cifras oficiales de producción colombiana.", "items": ["h_colombia_sinchi"]}]}, {"num": 6, "title": "Cosecha y poscosecha", "block": "produccion", "summary": "Recolección de frutos caídos, despulpado, secado, partido de la semilla y prensado de la almendra, con puntos críticos de calidad.", "sections": [{"num": "6.1", "title": "Recolección y manejo", "summary": "Se recogen frutos del suelo con botas y guantes y se deja parte para la regeneración y la fauna.", "items": ["h_cosecha"]}, {"num": "6.2", "title": "Beneficio y calidad", "summary": "El secado hasta 5–6 % de humedad y el almacenamiento seco evitan hongos, acidez alta y rancidez.", "items": ["h_poscosecha"]}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y culinario", "block": "usos", "summary": "Del uso industrial en margarinas a mediados del siglo XX a los usos locales de fruto, fibra y espinas.", "sections": [{"num": "7.1", "title": "De la margarina a la cosmética", "summary": "En las décadas de 1940 y 1950 la grasa se usó en margarinas; hoy la demanda principal es cosmética, con compradores en Brasil, Europa y Estados Unidos.", "items": ["h_historia_margarina"]}, {"num": "7.2", "title": "Usos tradicionales", "summary": "Comunidades rurales comen la almendra tierna, tejen la fibra y aplican polvo de espinas en el cuero cabelludo.", "items": ["h_usos_tradicionales"]}, {"num": "7.3", "title": "Alimento local y riesgo de Chagas", "summary": "Las palmas amazónicas, incluido el murumuru, albergan triatominos; los jugos de frutos de palma se asocian a brotes orales de Chagas.", "items": ["h_chagas"]}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "investigacion", "summary": "Estudios de tecnología de alimentos, cosmética, laboratorio y animales; casi no hay ensayos en humanos.", "sections": [{"num": "8.1", "title": "Tecnología de alimentos y dieta", "summary": "La manteca sirve como sustituto parcial de la manteca de cacao, pero su perfil saturado plantea dudas cardiovasculares.", "items": ["u_sustituto_cacao", "u_dieta_lipidos"]}, {"num": "8.2", "title": "Piel y cabello", "summary": "Su uso cosmético se apoya en el efecto oclusivo de las grasas y en datos de patentes, no en ensayos publicados.", "items": ["u_hidratacion", "u_cabello"]}, {"num": "8.3", "title": "Actividad biológica en laboratorio", "summary": "Efectos antioxidantes en células hepáticas y antimicrobianos de extractos del residuo, sin datos en humanos.", "items": ["u_antioxidante", "u_antimicrobiano"]}, {"num": "8.4", "title": "Nanoportadores y cicatrización", "summary": "La manteca sirve de matriz para nanopartículas lipídicas y de base para pomadas probadas en perros.", "items": ["u_nanoportador", "u_cicatrizacion"]}, {"num": "8.5", "title": "Patentes", "summary": "Patentes sobre hidratación cutánea con grasas de Astrocaryum y sobre cuidado del cabello rizado con manteca de murumuru.", "items": ["h_patentes"]}, {"num": "8.6", "title": "Seguridad", "summary": "Faltan datos de alergia, embarazo e interacciones; los riesgos conocidos son físicos, de calidad y de contaminación del fruto.", "items": ["u_seguridad"]}]}, {"num": 9, "title": "Conclusiones", "block": "investigacion", "summary": "Materia prima cosmética y alimentaria bien caracterizada en química, con evidencia clínica casi nula y retos de identidad botánica y de manejo silvestre.", "sections": [{"num": "9.1", "title": "Lo que está respaldado", "summary": "Composición láurica, propiedades físicas útiles y función emoliente; los efectos de salud siguen en fase de laboratorio."}, {"num": "9.2", "title": "Vacíos y prioridades", "summary": "Faltan ensayos en piel y cabello, datos de seguridad, identificación botánica del material colombiano y estadísticas de producción."}]}], "items": {"p_murumuru": {"title": "Murumuru (Astrocaryum murumuru Mart.)", "summary": "Palma amazónica cespitosa y espinosa de la familia Arecaceae, tribu Cocoseae. Su semilla da una grasa sólida de interés cosmético y alimentario.", "formula": "Descrita en 1824 · Hist. Nat. Palm. 2: 70"}, "h_complejo_taxonomico": {"title": "Complejo murumuru e identidad en Colombia", "summary": "Henderson (1995) trató A. macrocalyx como variedad de A. murumuru; POWO acepta A. macrocalyx como especie del sureste de Colombia y noreste de Perú. Los estudios colombianos usan el nombre amplio.", "formula": "A. murumuru var. macrocalyx (Burret) A.J.Hend."}, "h_genetica": {"title": "Plastoma y diversidad genética", "summary": "El plastoma muestra una inversión propia del género y ubica a Astrocaryum junto a Acrocomia; los microsatélites indican diversidad moderada en poblaciones de Pará.", "formula": "32 SSR y 150 SNP · He = 0,254"}, "p_manteca": {"title": "Manteca de murumuru", "summary": "Grasa sólida de la almendra, obtenida por prensa o solvente. Su nombre INCI es Astrocaryum Murumuru Seed Butter, con función de acondicionador y emoliente de la piel.", "formula": "Almendra: 40–42 % de grasa"}, "p_pulpa": {"title": "Pulpa del fruto", "summary": "Mesocarpo amarillo de 6 a 10 mm, pobre en grasa y de corta duración. Se usa en la alimentación local y animal.", "formula": "53 % del fruto · proteína ≈ 4 %"}, "p_palmito": {"title": "Palmito", "summary": "El cogollo es comestible, pero las espinas y el tallo corto hacen difícil la cosecha; no se hallaron datos de composición."}, "p_torta": {"title": "Torta y biomasa residual", "summary": "Residuo del prensado, rico en proteína. Se ha probado como suplemento de búfalas lecheras y como fuente de extractos y péptidos.", "formula": "Leche de búfala con más láurico y mirístico"}, "c_acido_laurico": {"title": "Ácido láurico (C12:0)", "summary": "Ácido graso saturado principal de la manteca. Da firmeza a temperatura ambiente y fusión cercana a la temperatura corporal.", "formula": "44–48,6 % de los ácidos grasos"}, "c_acido_miristico": {"title": "Ácido mirístico (C14:0)", "summary": "Segundo ácido graso saturado de la manteca. Junto con el láurico eleva el índice de trombogenicidad.", "formula": "27–30 % de los ácidos grasos"}, "c_tocoferoles": {"title": "Tocoferoles y fitosteroles", "summary": "La manteca brasileña mostró tocoferoles beta y gamma altos; la colombiana, beta-sitosterol como fitosterol principal y carotenoides despreciables.", "caution": "La manteca no es fuente relevante de vitamina A. En manteca colombiana los carotenoides fueron despreciables. Contiene tocoferoles y beta-sitosterol en cantidades menores. No hay estudios en humanos sobre efecto antienvejecimiento. (Lozano-Garzón 2023; Souza 2024)"}, "c_bioactivos_residuo": {"title": "Fenoles y péptidos del residuo", "summary": "Extractos etanólicos del residuo contienen fenoles, flavonoides y taninos; los hidrolizados de su proteína dan péptidos de 500 a 5 000 Da.", "formula": "Fenoles totales 9,92 mg EAG/g"}, "h_espinas": {"title": "Espinas", "summary": "Espinas negras, duras y largas en tallo, hojas y racimo. Obligan a recoger los frutos del suelo y con protección.", "formula": "Más de 20 cm de largo", "caution": "Si se recolectan frutos o palmito, las espinas largas pueden penetrar la piel. En otras palmas, restos de espina causan sinovitis o artritis séptica, a veces de forma tardía. Use botas y guantes. Si un pinchazo deja dolor o inflamación persistente, busque cuerpo extraño. (Sousa 2004; Taşkiran 2002)"}, "h_ecologia_varzea": {"title": "Ecología de várzea", "summary": "Especie de bosques inundables, islas y várzeas bajas del estuario amazónico; tolera la sombra. La densidad cambia mucho entre sitios.", "formula": "126–325 palmas/ha en el estuario"}, "h_dispersion": {"title": "Depredación y dispersión de semillas", "summary": "En la Amazonia suroccidental, el pecarí de labio blanco y otros animales depredan semillas; en bosques sin perturbar las plántulas crecen más lejos de los adultos.", "formula": "Distancia de plántulas ≈ 1,5 veces mayor"}, "h_produccion": {"title": "Producción y mercado", "summary": "La oferta proviene de recolección silvestre en Pará, Amapá, Amazonas y Acre, y no cubre la demanda industrial. Una cooperativa de Acre procesa unas 20 t de manteca al año.", "formula": "Oferta 5 000–6 000 t de semilla/año"}, "h_colombia_sinchi": {"title": "Caracterización en Colombia (SINCHI)", "summary": "Manteca del Guaviare prensada en 2019: solo ácidos grasos saturados y acidez alta. Los autores la consideran más apta para cosmética que para alimentos.", "formula": "Acidez 7,28 mg KOH/g · El Retorno, Guaviare"}, "h_cosecha": {"title": "Recolección y manejo silvestre", "summary": "Se recogen frutos caídos o se sacuden racimos maduros. Las guías piden cosechar en el pico, dejar frutos y censar la población cada tres años.", "formula": "≈ 4 racimos/año · 243–300 frutos/racimo"}, "h_poscosecha": {"title": "Beneficio y calidad de la almendra", "summary": "Remojo, despulpado, secado al sol, partido y prensado en caliente. Humedad, hongos y metales elevan la acidez y la oxidación.", "formula": "100 kg de semilla seca → 27–29 kg de almendra", "caution": "Si la semilla se guarda húmeda, aparecen hongos, acidez alta y rancidez. La manteca colombiana analizada tuvo acidez de 7,28 mg KOH/g. La manteca cruda contiene hierro y calcio, que aceleran la oxidación. Prefiera manteca refinada o con certificado de análisis. (Lozano-Garzón 2023; Souza 2024; Bezerra 2022)"}, "h_historia_margarina": {"title": "Margarina y giro cosmético", "summary": "A mediados del siglo XX la grasa de la almendra se usó en margarinas. Después su mercado principal pasó a jabones, cremas y champús.", "formula": "Décadas de 1940 y 1950"}, "h_usos_tradicionales": {"title": "Usos tradicionales", "summary": "En Acre se informa que los niños comen la almendra tierna, que el polvo de espinas con agua se aplica contra la caída del cabello y que el jabón calma la piel irritada.", "caution": "Los usos del polvo de espinas en el cuero cabelludo y del jabón en piel inflamada vienen de informes locales de Acre. No se hallaron estudios de eficacia ni de seguridad. No sustituyen la evaluación médica de la caída del cabello ni de la dermatitis. (Sousa 2004)"}, "h_chagas": {"title": "Triatominos en palmas y Chagas oral", "summary": "Rhodnius pictipes se halló en palmas de murumuru en Pará. Los brotes orales de Chagas en la Amazonia se asocian a jugos de frutos de palma, sobre todo asaí.", "formula": "17,4 % de triatominos con T. cruzi (Oriximiná)", "caution": "Si se consume pulpa o jugo crudo de frutos de palma en la Amazonia, existe riesgo de Chagas oral. Se hallaron triatominos en palmas de murumuru en Pará. Los brotes documentados se asocian sobre todo al asaí. El procesamiento con higiene estricta reduce el riesgo. (Ricardo-Silva 2012; Pereira 2009)"}, "u_sustituto_cacao": {"title": "Sustituto de la manteca de cacao", "summary": "Su curva de grasa sólida permite usarla como sustituto parcial de la manteca de cacao y como base dura en mezclas con aceite de soya.", "formula": "Punto de fusión 32,5 °C"}, "u_dieta_lipidos": {"title": "Efecto en lípidos de la dieta", "summary": "No hay ensayos con manteca de murumuru en humanos. Por su perfil láurico y mirístico, se espera un efecto en el LDL similar al del aceite de coco.", "formula": "Índice de trombogenicidad 6,69", "caution": "Si se usa como grasa alimentaria, considere que es casi toda saturada, con láurico y mirístico. Una grasa similar, el aceite de coco, sube el LDL unos 10 mg/dL frente a aceites no tropicales. La OMS recomienda grasa saturada por debajo del 10 % de la energía. (Neelakantan 2020; OMS 2023)"}, "u_hidratacion": {"title": "Barrera e hidratación de la piel", "summary": "Una patente informa menor pérdida transepidérmica de agua con cremas de 0,2 a 3 % de grasa de murumuru en 10 voluntarios. No hay ensayos publicados en revistas.", "formula": "10 voluntarios · lectura a 1–4 h", "caution": "Si se busca hidratar piel seca, la manteca actúa como emoliente oclusivo. La única prueba en humanos es una patente: 10 voluntarios, estudio abierto y lecturas de 1 a 4 horas. No hay ensayos publicados ni comparaciones con emolientes comunes. (US 7,045,154)"}, "u_cabello": {"title": "Cuidado del cabello", "summary": "Se vende para suavizar y controlar el frizz del cabello rizado. Solo hay patentes de formulación; no se hallaron ensayos clínicos.", "formula": "0,5–2 % en fórmulas patentadas", "caution": "Los beneficios en el cabello vienen de publicidad y de patentes de formulación. No se hallaron ensayos clínicos publicados. Como grasa emoliente, puede suavizar la fibra y reducir el frizz de forma temporal. No repara la estructura del cabello dañado. (US 2021/0128441; búsqueda PubMed 2026)"}, "u_antioxidante": {"title": "Actividad antioxidante", "summary": "La manteca, antes y después de interesterificación enzimática, moduló enzimas antioxidantes en células HepG2. Extractos del residuo atraparon radicales en ensayos químicos.", "formula": "Solo in vitro", "caution": "El efecto antioxidante se midió en células hepáticas HepG2 y en ensayos químicos. No hay estudios en animales ni en humanos. No debe presentarse como protector del hígado. (Falcão 2017; Pantoja 2026)"}, "u_antimicrobiano": {"title": "Actividad antimicrobiana", "summary": "Péptidos tripsínicos del residuo inhibieron casi por completo una bacteria en placa; los extractos fenólicos tuvieron efecto selectivo y limitado.", "formula": "99,85 % de inhibición a 5 mg/mL (in vitro)", "caution": "La actividad antimicrobiana proviene de péptidos y extractos del residuo, no de la manteca. Se midió solo en cultivo, con 2,5 a 20 mg/mL. No hay datos en infecciones de personas. (Pantoja 2026)"}, "u_nanoportador": {"title": "Matriz de nanopartículas lipídicas", "summary": "La manteca forma nanopartículas que transportan curcumina, betacaroteno o ftalocianina contra células tumorales. La actividad viene del fármaco transportado, no de la manteca.", "formula": "CI50 19,62 nM con luz (B16-F10, in vitro)", "caution": "La manteca se usa como vehículo de fármacos en nanopartículas. La acción contra células tumorales viene del fármaco transportado y se vio solo in vitro. Un nanoportador de murumuru fue tóxico para células intestinales y hepáticas. No hay evidencia de efecto contra el cáncer. (Ganassin 2022; Mello 2022; Gomes 2019)"}, "u_cicatrizacion": {"title": "Base para pomadas cicatrizantes", "summary": "En 11 perros, una pomada con extracto de jucá en base de manteca de murumuru cerró heridas más que una pomada comercial. No se probó la manteca sola.", "formula": "Retracción 34,0 % frente a 28,4 %", "caution": "El único estudio de cicatrización se hizo en 11 perros. La pomada tenía extracto de jucá en base de murumuru. No se probó la manteca sola ni en personas. No hay base para usarla como tratamiento de heridas humanas. (Américo 2020)"}, "h_patentes": {"title": "Patentes", "summary": "US 7,045,154 protege grasas de Astrocaryum para aumentar la hidratación de la piel; US 2021/0128441 reivindica manteca de murumuru para cabello rizado.", "formula": "Prioridad brasileña PI0106625-0 (2001)"}, "u_seguridad": {"title": "Seguridad", "summary": "No se hallaron casos publicados de toxicidad ni de alergia a la manteca. Tampoco hay datos en embarazo, lactancia ni interacciones; los riesgos documentados son espinas, rancidez y contaminación del fruto.", "caution": "No hay estudios de seguridad en embarazo, lactancia, niños ni interacciones. No se hallaron casos publicados de alergia. La falta de reportes no prueba que sea hipoalergénica. Si hay piel sensible o dermatitis previa, pruebe primero en un área pequeña. (Búsqueda PubMed 2026)"}}, "resources": [], "requires": {"chapters": {"2": [1], "3": [2], "4": [1], "5": [1, 4], "6": [4, 5], "7": [2], "8": [3, 7], "9": [8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.2"], "2.1": ["1.1"], "2.2": ["1.1"], "2.3": ["2.1"], "3.1": ["2.1"], "3.2": ["3.1"], "3.3": ["2.3"], "4.1": ["1.1"], "4.2": ["4.1"], "5.1": ["1.2"], "5.2": ["5.1"], "5.3": ["5.2", "4.2"], "5.4": ["2.1", "5.2"], "5.5": ["1.2", "3.1"], "6.1": ["4.1", "5.2"], "6.2": ["6.1"], "7.1": ["2.1"], "7.2": ["2.2", "4.1"], "7.3": ["2.2"], "8.1": ["3.1"], "8.2": ["2.1"], "8.3": ["3.2", "3.3"], "8.4": ["2.1"], "8.5": ["8.2"], "8.6": ["4.1", "6.2", "7.3"], "9.1": ["8.1", "8.2"], "9.2": ["8.6", "5.5"]}, "items": {"h_complejo_taxonomico": ["p_murumuru"], "h_genetica": ["p_murumuru"], "p_manteca": ["p_murumuru"], "p_pulpa": ["p_murumuru"], "p_palmito": ["p_murumuru"], "p_torta": ["p_manteca"], "c_acido_laurico": ["p_manteca"], "c_acido_miristico": ["p_manteca"], "c_tocoferoles": ["p_manteca"], "c_bioactivos_residuo": ["p_torta"], "h_espinas": ["p_murumuru"], "h_ecologia_varzea": ["p_murumuru"], "h_dispersion": ["h_ecologia_varzea"], "h_produccion": ["p_manteca", "h_ecologia_varzea"], "h_colombia_sinchi": ["h_complejo_taxonomico", "c_acido_laurico"], "h_cosecha": ["h_espinas", "h_ecologia_varzea"], "h_poscosecha": ["h_cosecha"], "h_historia_margarina": ["p_manteca"], "h_usos_tradicionales": ["h_espinas", "p_pulpa"], "h_chagas": ["p_pulpa"], "u_sustituto_cacao": ["c_acido_laurico", "c_acido_miristico"], "u_dieta_lipidos": ["c_acido_laurico", "c_acido_miristico"], "u_hidratacion": ["p_manteca"], "u_cabello": ["u_hidratacion"], "u_antioxidante": ["c_tocoferoles", "c_bioactivos_residuo"], "u_antimicrobiano": ["c_bioactivos_residuo"], "u_nanoportador": ["p_manteca"], "u_cicatrizacion": ["u_nanoportador"], "h_patentes": ["u_hidratacion", "u_cabello"], "u_seguridad": ["h_espinas", "h_poscosecha", "h_chagas"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

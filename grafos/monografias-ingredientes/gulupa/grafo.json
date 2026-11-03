@@ -1,0 +1,712 @@
+{
+ "meta": {
+  "title": "Gulupa como grafo",
+  "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Planta, compuesto o uso",
+  "itemLabelPlural": "Plantas, compuestos y usos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: piceatanol, antocianinas, látex, cáscara, flavicarpa…"
+ },
+ "blocks": {
+  "botanica": {
+   "name": "Botánica",
+   "color": "#6B8E4E"
+  },
+  "usos": {
+   "name": "Usos e historia",
+   "color": "#B08A2E"
+  },
+  "quimica": {
+   "name": "Química",
+   "color": "#6B5B95"
+  },
+  "produccion": {
+   "name": "Producción y poscosecha",
+   "color": "#3F8A8A"
+  },
+  "investigacion": {
+   "name": "Investigación y seguridad",
+   "color": "#3F6FA0"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Taxonomía e identificación",
+   "block": "botanica",
+   "summary": "Qué especie es la gulupa, cómo se separa del maracuyá amarillo y por qué no es la pasiflora medicinal de las farmacias.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Especie y familia",
+     "summary": "Plants of the World Online acepta Passiflora edulis Sims (1818), una liana de la familia Passifloraceae; la gulupa es su forma de fruto morado.",
+     "items": [
+      "p_gulupa"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Gulupa frente a maracuyá amarillo",
+     "summary": "La forma flavicarpa da el maracuyá amarillo de clima cálido; varios estudios clínicos usan esa forma y no la gulupa.",
+     "items": [
+      "p_maracuya_amarillo"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "No confundir con Passiflora incarnata",
+     "summary": "Los ensayos sobre ansiedad e insomnio usan la parte aérea de P. incarnata, otra especie; sus resultados no se transfieren a la gulupa.",
+     "items": [
+      "p_pasiflora_incarnata"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Usos como droga cruda o materia prima tradicional",
+   "block": "usos",
+   "summary": "Partes de la planta que se usan: pulpa y jugo como alimento, hoja como infusión, y cáscara y semilla como subproductos.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Fruto, pulpa y jugo",
+     "summary": "La parte comestible aporta fibra, vitamina C, carotenoides y potasio; se consume fresca o en jugo.",
+     "items": [
+      "c_nutrientes"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Hoja en infusión",
+     "summary": "En Colombia la infusión de hoja se usa como calmante; los datos de seguridad vienen de un estudio en ratas.",
+     "items": [
+      "p_hoja",
+      "u_hoja_tradicional"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Cáscara y semilla",
+     "summary": "Son residuos de la industria del jugo; la cáscara aporta pigmentos y pectina, y la semilla, piceatanol.",
+     "items": [
+      "p_cascara",
+      "p_semilla"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Constituyentes químicos y compuestos bioactivos",
+   "block": "quimica",
+   "summary": "Pigmentos, polifenoles, oxilipinas, estilbenos, saponinas, glucósidos cianogénicos y volátiles en cada parte de la planta.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Pigmentos y polifenoles de la cáscara",
+     "summary": "La cáscara morada acumula antocianinas y flavonoides; también contiene fitoprostanos, oxilipinas descritas por primera vez en gulupa.",
+     "items": [
+      "c_antocianinas",
+      "c_fitoprostanos"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Flavonoides y saponinas de la hoja",
+     "summary": "La hoja tiene flavonas C-glicosiladas, como vitexina e isoorientina, y saponinas triterpénicas llamadas ciclopasiflósidos.",
+     "items": [
+      "c_flavonoides_c",
+      "c_saponinas"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Piceatanol de la semilla",
+     "summary": "La semilla es fuente de piceatanol, un estilbeno análogo del resveratrol usado en suplementos.",
+     "items": [
+      "c_piceatanol"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Glucósidos cianogénicos",
+     "summary": "Hoja, tallo y fruto contienen glucósidos que pueden liberar cianuro; no se hallaron cifras publicadas para la gulupa.",
+     "items": [
+      "c_cianogenicos"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Aroma",
+     "summary": "El aroma depende de ésteres, alcoholes y otros volátiles que aumentan durante la maduración.",
+     "items": [
+      "c_volatiles"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Descripción morfológica",
+   "block": "botanica",
+   "summary": "Rasgos de la planta, la flor y el fruto de la gulupa.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Planta y flor",
+     "summary": "Liana trepadora; flor solitaria, hermafrodita, de cinco pétalos blancos y corona blanca y púrpura; abre temprano en la mañana.",
+     "items": [
+      "h_flor"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Fruto",
+     "summary": "Baya ovoide algo más larga que ancha, de cáscara morado oscuro, pulpa amarilla anaranjada y semillas negras y duras."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Distribución geográfica, producción y ecología",
+   "block": "produccion",
+   "summary": "Origen sudamericano, cultivo andino de altura en Colombia y peso de la gulupa en las exportaciones de frutas.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Origen y expansión",
+     "summary": "La especie es nativa del sur de Brasil, Paraguay y el noreste de Argentina; hoy está introducida en todos los trópicos.",
+     "items": [
+      "h_origen"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "Clima de cultivo en Colombia",
+     "summary": "Se cultiva en zonas frías de montaña, cerca de 2 100–2 300 m y 17 °C de media en los sitios estudiados.",
+     "items": [
+      "h_clima_cultivo"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Exportación colombiana",
+     "summary": "La gulupa domina las exportaciones colombianas de pasifloras; Europa es el destino principal.",
+     "items": [
+      "h_exportacion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Cosecha y poscosecha",
+   "block": "produccion",
+   "summary": "Cuándo se cosecha la gulupa y cómo se conserva para viajar a Europa.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Momento de cosecha",
+     "summary": "El fruto crece sobre todo en su primer mes; se sugiere cosechar entre 85 y 90 días después de la floración.",
+     "items": [
+      "h_desarrollo_fruto"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Conservación y empaque",
+     "summary": "Es un fruto climatérico de vida corta; el frío y las atmósferas modificadas alargan su vida comercial.",
+     "items": [
+      "h_poscosecha"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Historia, uso tradicional, ritual y culinario",
+   "block": "usos",
+   "summary": "Descripción científica de la especie, creencias populares sobre su efecto calmante y su papel en la cocina.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Descripción y difusión",
+     "summary": "Sims describió la especie en 1818 en el Botanical Magazine; luego se difundió como frutal por zonas tropicales y subtropicales."
+    },
+    {
+     "num": "7.2",
+     "title": "Fama de calmante",
+     "summary": "La fruta y sus hojas cargan la fama de la pasiflora medicinal, aunque esa fama se apoya en otra especie.",
+     "items": [
+      "u_calmante"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Uso culinario",
+     "summary": "Se aprecia fresca y en jugo por su sabor dulce y poca acidez; el procesamiento cambia su aroma y color."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Investigación moderna basada en usos tradicionales, y patentes",
+   "block": "investigacion",
+   "summary": "Ensayos pequeños con extractos de cáscara, harina de cáscara y piceatanol, estudios de laboratorio con hoja, patentes y datos de seguridad.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Extracto de cáscara en ensayos humanos",
+     "summary": "Un grupo de investigación probó extracto de cáscara morada en hipertensión, asma y artrosis; ese grupo también patentó el extracto.",
+     "items": [
+      "u_presion_arterial",
+      "u_artrosis_asma"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Harina de cáscara y glucemia",
+     "summary": "Un ensayo en diabetes tipo 2 usó harina de albedo de maracuyá amarillo, no de gulupa.",
+     "items": [
+      "u_glucemia_harina"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Piceatanol de la semilla",
+     "summary": "Ensayos financiados por el fabricante evaluaron el piceatanol en metabolismo y en piel.",
+     "items": [
+      "u_insulina_piceatanol",
+      "u_piel"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Hoja en el laboratorio",
+     "summary": "Extractos de hoja de gulupa mostraron efectos antiinflamatorios en ratones y antivirales en células.",
+     "items": [
+      "u_hoja_laboratorio"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Patentes",
+     "summary": "Hay patentes sobre extracto de cáscara para inflamación y sobre composiciones de piceatanol de semilla.",
+     "items": [
+      "h_patentes"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Seguridad",
+     "summary": "Riesgos descritos: alergia cruzada con látex, glucósidos cianogénicos y falta de datos en embarazo e interacciones.",
+     "items": [
+      "u_alergia",
+      "u_seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "investigacion",
+   "summary": "La gulupa es un alimento valioso y un producto de exportación; sus usos medicinales siguen sin confirmar.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Lo que se sabe",
+     "summary": "La pulpa es un alimento seguro para la mayoría; los subproductos tienen compuestos de interés y algunos ensayos pequeños positivos."
+    },
+    {
+     "num": "9.2",
+     "title": "Lo que falta",
+     "summary": "Faltan ensayos independientes con gulupa, datos de cianógenos en cáscara y hoja, y datos de seguridad en embarazo."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_gulupa": {
+   "title": "Gulupa (Passiflora edulis f. edulis)",
+   "summary": "Forma de fruto morado de P. edulis, liana de la familia Passifloraceae. En Colombia se cultiva en clima frío, sobre todo para exportar.",
+   "formula": "Nombre aceptado: Passiflora edulis Sims, 1818"
+  },
+  "p_maracuya_amarillo": {
+   "title": "Maracuyá amarillo (f. flavicarpa)",
+   "summary": "Forma de fruto amarillo de la misma especie, cultivada en clima cálido. Su cáscara tiene menos antocianinas que la de la gulupa. Varios estudios de salud usan esta forma."
+  },
+  "p_pasiflora_incarnata": {
+   "title": "Passiflora incarnata",
+   "summary": "Especie distinta, nativa del sureste de Estados Unidos. Su parte aérea es la «pasiflora» de los fitoterápicos para ansiedad y sueño."
+  },
+  "p_hoja": {
+   "title": "Hoja de gulupa",
+   "summary": "Hoja usada en infusión en la medicina popular colombiana. Contiene flavonoides, saponinas y glucósidos cianogénicos."
+  },
+  "p_cascara": {
+   "title": "Cáscara de gulupa",
+   "summary": "Residuo de la industria del jugo, rico en pectina, antocianinas y otros polifenoles. Se estudia como colorante, empaque y harina funcional.",
+   "formula": "Pectina: rendimiento de extracción 29,8 % del mesocarpio seco (un estudio)"
+  },
+  "p_semilla": {
+   "title": "Semilla",
+   "summary": "Semilla negra y dura. Es la fuente industrial del piceatanol de los suplementos."
+  },
+  "c_nutrientes": {
+   "title": "Nutrientes de la parte comestible",
+   "summary": "Pulpa con semillas rica en fibra y con aporte moderado de vitamina C, carotenoides y potasio. En Ecuador, la gulupa tuvo más vitamina C que otras pasifloras.",
+   "formula": "Por 100 g (USDA, maracuyá morado): 97 kcal · fibra 10,4 g · vitamina C 30 mg · potasio 348 mg",
+   "caution": "Contexto: la parte comestible del maracuyá morado aporta 30 mg de vitamina C y 10,4 g de fibra por 100 g. La cifra cambia con la variedad, el origen y la madurez. (USDA FDC 169108; Viera 2022)"
+  },
+  "c_antocianinas": {
+   "title": "Antocianinas y flavonoides de la cáscara",
+   "summary": "La cáscara morada acumula cianidina-3-glucósido, rutina, luteolina y quercetina, más que la amarilla. Su actividad antioxidante se mide en el laboratorio.",
+   "caution": "La actividad antioxidante de la cáscara se midió en el laboratorio y en modelos de digestión. No hay estudios en humanos sobre cáncer ni envejecimiento con cáscara de gulupa. Una medida antioxidante in vitro no prueba un efecto en el cuerpo. (Medina 2017; Taborda 2021)"
+  },
+  "c_fitoprostanos": {
+   "title": "Fitoprostanos y polifenoles raros",
+   "summary": "Oxilipinas no enzimáticas detectadas en la cáscara de gulupa, junto con glicósidos de luteolina y quercetina no descritos antes.",
+   "formula": "6 fitoprostanos detectados"
+  },
+  "c_flavonoides_c": {
+   "title": "Flavonas C-glicosiladas de la hoja",
+   "summary": "Vicenina-2, orientina, isoorientina, vitexina e isovitexina. Se proponen como responsables de los efectos sobre el sistema nervioso en animales."
+  },
+  "c_saponinas": {
+   "title": "Ciclopasiflósidos",
+   "summary": "Saponinas triterpénicas aisladas de la hoja de gulupa (ciclopasiflósidos III, IX y XI).",
+   "formula": "3 saponinas identificadas"
+  },
+  "c_piceatanol": {
+   "title": "Piceatanol",
+   "summary": "Estilbeno de la semilla, análogo hidroxilado del resveratrol. En las pruebas de la patente europea solo apareció en la semilla, no en cáscara ni pulpa. Se comercializa como extracto de semilla de maracuyá."
+  },
+  "c_cianogenicos": {
+   "title": "Glucósidos cianogénicos",
+   "summary": "Prunasina y sambunigrina en el fruto, y alósidos cianogénicos en hoja y tallo. Al hidrolizarse liberan cianuro de hidrógeno."
+  },
+  "c_volatiles": {
+   "title": "Compuestos volátiles",
+   "summary": "Ésteres, alcoholes, cetonas y aldehídos que forman el aroma; aumentan al madurar y cambian con la pasteurización.",
+   "formula": "148 volátiles en fruto morado (un estudio)"
+  },
+  "h_flor": {
+   "title": "Flor y polinización",
+   "summary": "Flor solitaria, hermafrodita y pentámera. La mayoría abre entre las 6 y las 8 de la mañana y dura hasta un día.",
+   "formula": "80 % de antesis entre 6:00 y 8:00"
+  },
+  "h_origen": {
+   "title": "Área nativa",
+   "summary": "Nativa del noreste de Argentina, Paraguay y el centro y sur de Brasil. Introducida en África, Asia, Oceanía y el resto de América, incluida Colombia."
+  },
+  "h_clima_cultivo": {
+   "title": "Clima de cultivo en Colombia",
+   "summary": "Sitios de estudio en Antioquia y Caldas a 2 090–2 340 m, con 17 °C de media y 1 800–2 500 mm de lluvia al año.",
+   "formula": "Densidad de referencia: 1 428 plantas/ha (FINAGRO)"
+  },
+  "h_exportacion": {
+   "title": "Exportación de gulupa",
+   "summary": "La gulupa es casi toda la exportación colombiana de pasifloras. Países Bajos es el comprador principal. Cundinamarca, Antioquia, Bogotá y Santander lideran las ventas.",
+   "formula": "US$ 43,4 millones (ene–sep 2024) · 91 % de las pasifloras exportadas"
+  },
+  "h_desarrollo_fruto": {
+   "title": "Desarrollo y cosecha del fruto",
+   "summary": "El fruto gana peso sobre todo en el primer mes. Se recomienda cosecharlo a los 85–90 días después de la floración.",
+   "formula": "Fruto de 57 × 53 mm (un estudio en Rionegro)"
+  },
+  "h_poscosecha": {
+   "title": "Conservación poscosecha",
+   "summary": "Fruto climatérico que pierde calidad rápido. A 25 °C dura unos 5 días; en frío y con atmósfera modificada dura semanas.",
+   "formula": "36 días a 6 °C en bolsa perforada"
+  },
+  "h_patentes": {
+   "title": "Patentes",
+   "summary": "Una patente canadiense, hoy vencida, cubre extracto de cáscara para artrosis. Una solicitud europea de Morinaga cubre la extracción de piceatanol de la semilla para alimentos y cosméticos.",
+   "formula": "CA 2587126 · EP 2415743"
+  },
+  "u_hoja_tradicional": {
+   "title": "Infusión de hoja como calmante",
+   "summary": "Uso popular sin ensayos en humanos. En ratas, 1 000 mg/kg/día de extracto acuoso durante 28 días no causó efectos adversos graves, pero subió la ALT.",
+   "formula": "NOAEL 1 000 mg/kg (ratas, 28 días)",
+   "caution": "No hay ensayos en humanos con infusión de hoja de gulupa. En ratas, la dosis alta durante 28 días fue tolerada, pero subió la ALT. La hoja contiene glucósidos cianogénicos. La seguridad del uso prolongado en personas no está estudiada. (Rodríguez-Usaquén 2023; Seigler 2002)"
+  },
+  "u_calmante": {
+   "title": "Fama de calmante de la fruta",
+   "summary": "Se dice que la gulupa o el maracuyá calman los nervios y ayudan a dormir. Los ensayos humanos son con P. incarnata; con P. edulis solo hay estudios en ratones.",
+   "caution": "Los ensayos de ansiedad e insomnio usan Passiflora incarnata, otra especie. Con fruta o jugo de gulupa no hay ensayos en humanos. Los efectos sedantes de P. edulis solo se han visto en ratones. (Cochrane CD004518; Lee 2020; Klein 2013)"
+  },
+  "u_presion_arterial": {
+   "title": "Extracto de cáscara y presión arterial",
+   "summary": "Un ensayo de 4 semanas con 400 mg/día de extracto de cáscara morada informó un gran descenso de la presión frente a placebo. No se ha replicado.",
+   "formula": "−30,9 mm Hg sistólica (un ensayo)",
+   "caution": "Si se considera el extracto de cáscara para la hipertensión, la evidencia es un solo ensayo de 4 semanas. El descenso informado fue muy grande y no se ha replicado. Lo hizo el grupo que patentó el extracto. No sustituye el tratamiento antihipertensivo. (Zibadi 2007)"
+  },
+  "u_artrosis_asma": {
+   "title": "Extracto de cáscara en artrosis y asma",
+   "summary": "Dos ensayos pequeños con 150 mg/día de extracto informaron menos síntomas de artrosis de rodilla y de asma frente a placebo. Los hizo el mismo grupo que patentó el extracto.",
+   "formula": "Artrosis: 33 pacientes, WOMAC −19 % en 60 días",
+   "caution": "Los ensayos en artrosis y asma son pequeños y cortos. Usaron 150 mg/día de un extracto concreto. Los firmó el mismo grupo que patentó el extracto. Comer la fruta no reproduce esa dosis. Si hay asma, el extracto no reemplaza el tratamiento inhalado. (Farid 2010; Watson 2008)"
+  },
+  "u_glucemia_harina": {
+   "title": "Harina de cáscara y diabetes",
+   "summary": "En un ensayo con diabetes tipo 2, la harina de albedo de maracuyá amarillo bajó la HbA1c igual que la cúrcuma. No hay ensayos con cáscara de gulupa.",
+   "formula": "89 pacientes · HbA1c −0,8 puntos en 120 días",
+   "caution": "El ensayo usó harina de albedo de maracuyá amarillo, no de gulupa. La HbA1c bajó 0,8 puntos en 120 días, igual que con cúrcuma. Si hay diabetes, la harina no reemplaza el tratamiento. La cáscara contiene glucósidos cianogénicos. (Sousa 2020)"
+  },
+  "u_insulina_piceatanol": {
+   "title": "Piceatanol y sensibilidad a la insulina",
+   "summary": "Con 20 mg/día durante 8 semanas, mejoraron insulina, HOMA-IR y presión solo en hombres con sobrepeso. Estudio pequeño con participación del fabricante.",
+   "formula": "39 participantes; efecto en 10 hombres",
+   "caution": "El beneficio apareció solo en 10 hombres con sobrepeso, en un análisis por subgrupos. En mujeres y en personas sin sobrepeso no hubo efecto. El fabricante participó en el estudio. No hay datos en diabetes. (Kitada 2017)"
+  },
+  "u_piel": {
+   "title": "Piceatanol y piel",
+   "summary": "Dos ensayos financiados por el fabricante informaron más hidratación de la piel facial y, en uno, menos arrugas con 5–10 mg/día durante 8 semanas.",
+   "formula": "32 y 86 mujeres japonesas",
+   "caution": "Los dos ensayos en piel los financió el fabricante del ingrediente. Incluyeron solo mujeres japonesas sanas durante 8 semanas. Ambos midieron más hidratación; solo uno midió menos arrugas. Faltan estudios independientes. (Maruki-Uchida 2018; Seto 2026)"
+  },
+  "u_hoja_laboratorio": {
+   "title": "Hoja: efectos en laboratorio",
+   "summary": "Fracciones de hoja de gulupa redujeron la inflamación cutánea en ratones. Extractos de hoja y tallo bajaron la carga del virus de la fiebre amarilla en células.",
+   "caution": "El efecto contra el virus de la fiebre amarilla se vio solo en células. El efecto antiinflamatorio se vio en ratones. No hay ensayos en humanos. (Elmaidomy 2025; Urrego 2021)"
+  },
+  "u_alergia": {
+   "title": "Alergia y síndrome látex-fruta",
+   "summary": "Las personas alérgicas al látex pueden reaccionar al maracuyá por quitinasas de clase I. Hay un caso clínico publicado de reactividad cruzada relevante.",
+   "formula": "IgE frente a frutas en 69 % de 136 alérgicos al látex",
+   "caution": "Si hay alergia al látex, el maracuyá puede causar reacciones por alergia cruzada. En 136 alérgicos al látex, el 42,5 % refirió síntomas con frutas de este grupo. Hay un caso publicado con maracuyá. (Brehler 1997; Cabanillas 2009)"
+  },
+  "u_seguridad": {
+   "title": "Seguridad, embarazo e interacciones",
+   "summary": "La pulpa como alimento se considera segura. No hay datos de hoja ni extractos de gulupa en embarazo, lactancia o con sedantes; para P. incarnata se desaconseja el embarazo.",
+   "caution": "Fruto, cáscara y hoja contienen glucósidos que liberan cianuro. No hay cifras publicadas para gulupa. Si se hacen harinas o tés, este riesgo no está controlado. En embarazo y lactancia no hay datos de hoja ni extractos. Para P. incarnata se desaconseja el uso en embarazo. Si se toman sedantes o hay cirugía próxima, consultar antes de usar pasifloras. (Seigler 2002; NCCIH)"
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    1
+   ],
+   "5": [
+    4
+   ],
+   "6": [
+    4,
+    5
+   ],
+   "7": [
+    2,
+    5
+   ],
+   "8": [
+    3,
+    7
+   ],
+   "9": [
+    6,
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "1.1"
+   ],
+   "2.3": [
+    "1.1"
+   ],
+   "3.1": [
+    "2.3"
+   ],
+   "3.2": [
+    "2.2"
+   ],
+   "3.3": [
+    "2.3"
+   ],
+   "3.4": [
+    "3.2"
+   ],
+   "3.5": [
+    "2.1"
+   ],
+   "4.1": [
+    "1.1"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "5.1": [
+    "1.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "6.1": [
+    "4.2"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "7.1": [
+    "5.1"
+   ],
+   "7.2": [
+    "1.3",
+    "2.2"
+   ],
+   "7.3": [
+    "2.1",
+    "3.5"
+   ],
+   "8.1": [
+    "3.1"
+   ],
+   "8.2": [
+    "1.2",
+    "2.3"
+   ],
+   "8.3": [
+    "3.3"
+   ],
+   "8.4": [
+    "3.2",
+    "2.2"
+   ],
+   "8.5": [
+    "8.1",
+    "8.3"
+   ],
+   "8.6": [
+    "3.4",
+    "7.2"
+   ],
+   "9.1": [
+    "8.6",
+    "5.3"
+   ],
+   "9.2": [
+    "9.1"
+   ]
+  },
+  "items": {
+   "p_maracuya_amarillo": [
+    "p_gulupa"
+   ],
+   "p_pasiflora_incarnata": [
+    "p_gulupa"
+   ],
+   "p_hoja": [
+    "p_gulupa"
+   ],
+   "p_cascara": [
+    "p_gulupa"
+   ],
+   "p_semilla": [
+    "p_gulupa"
+   ],
+   "c_nutrientes": [
+    "p_gulupa"
+   ],
+   "c_antocianinas": [
+    "p_cascara"
+   ],
+   "c_fitoprostanos": [
+    "p_cascara"
+   ],
+   "c_flavonoides_c": [
+    "p_hoja"
+   ],
+   "c_saponinas": [
+    "p_hoja"
+   ],
+   "c_piceatanol": [
+    "p_semilla"
+   ],
+   "c_cianogenicos": [
+    "p_hoja",
+    "p_cascara"
+   ],
+   "c_volatiles": [
+    "p_gulupa"
+   ],
+   "h_flor": [
+    "p_gulupa"
+   ],
+   "h_origen": [
+    "p_gulupa"
+   ],
+   "h_clima_cultivo": [
+    "h_origen"
+   ],
+   "h_exportacion": [
+    "h_clima_cultivo"
+   ],
+   "h_desarrollo_fruto": [
+    "h_flor"
+   ],
+   "h_poscosecha": [
+    "h_desarrollo_fruto"
+   ],
+   "h_patentes": [
+    "u_artrosis_asma",
+    "c_piceatanol"
+   ],
+   "u_hoja_tradicional": [
+    "p_hoja"
+   ],
+   "u_calmante": [
+    "p_pasiflora_incarnata"
+   ],
+   "u_presion_arterial": [
+    "c_antocianinas"
+   ],
+   "u_artrosis_asma": [
+    "c_antocianinas"
+   ],
+   "u_glucemia_harina": [
+    "p_cascara",
+    "p_maracuya_amarillo"
+   ],
+   "u_insulina_piceatanol": [
+    "c_piceatanol"
+   ],
+   "u_piel": [
+    "c_piceatanol"
+   ],
+   "u_hoja_laboratorio": [
+    "c_flavonoides_c",
+    "c_saponinas",
+    "u_hoja_tradicional"
+   ],
+   "u_alergia": [
+    "p_gulupa"
+   ],
+   "u_seguridad": [
+    "c_cianogenicos",
+    "u_hoja_tradicional"
+   ]
+  }
+ }
+}

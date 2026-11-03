@@ -105,6 +105,10 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 [`grafos/nuts-seeds/`](grafos/nuts-seeds/README.md) reúne cuatro capítulos de *Nuts and Seeds in Health and Disease Prevention* (Elsevier, 2011 y 2020) como grafos interactivos con alertas de evidencia: ácidos grasos (39 alertas en total), minerales y tóxicos, semilla de orégano y semilla de tamarindo. Entre los hallazgos: riesgos omitidos de la semilla de ginkgo, el cáñamo, el bario de la nuez de Brasil y el uso del tamarindo como "alternativa al antiveneno"; valores de referencia ya retirados para plomo y arsénico; y errores del capítulo de tamarindo.
 
+## Monografías de ingredientes
+
+[`grafos/monografias-ingredientes/`](grafos/monografias-ingredientes/README.md) reúne 10 monografías en grafo con la estructura de 9 partes del grafo de mirra y olíbano: guanábana, guayaba, corozo, aguacate, café, gulupa, açaí y asaí, murumuru, camu camu y aguaje. Cada una se construyó desde PubMed y fuentes oficiales, no desde un libro. En total hay 134 afirmaciones verificadas y 124 alertas. 49 afirmaciones no tienen evidencia en humanos, 14 están contradichas y 28 señalan un riesgo documentado u omitido. Los riesgos que se repiten son el Chagas oral por frutos de palma y la falta de datos de seguridad en el embarazo. El índice visual está en [`index.html`](grafos/monografias-ingredientes/index.html).
+
 ## Skill de odorantes clave
 
 [`skills/odorantes-clave/`](skills/odorantes-clave/SKILL.md) busca en PubMed los odorantes clave de uno o más alimentos (estudios con recombinación, SIDA/OAV, AEDA u olfactometría), clasifica cada hallazgo por nivel de evidencia, unifica sinónimos de compuestos y arma una tabla de odorantes compartidos con DOI. Después traduce el resultado a maridajes con el método de [`foodpairing/`](foodpairing/SKILL.md) (14 tipos de aroma, overtoning, reglas de equilibrio), separando evidencia de interpretación. Incluye como ejemplo verificado el caso café tostado + ajonjolí tostado (2-furfuriltiol, furaneol, 4-vinilguayacol, guayacoles y alquilpirazinas compartidos).

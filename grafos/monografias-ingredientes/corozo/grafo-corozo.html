@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Corozo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Corozo del Caribe como grafo", "subtitle": "Monografía construida desde literatura científica y fuentes oficiales · con alertas de evidencia", "itemLabel": "Planta, compuesto o uso", "itemLabelPlural": "Plantas, compuestos y usos", "resourceLabel": "Fuente clave", "resourceLabelPlural": "Fuentes clave", "searchHint": "Buscar: antocianinas, uvital, vino, lata, potasio, Zapatosa…"}, "blocks": {"botanica": {"name": "La palma", "color": "#6B8E4E"}, "quimica": {"name": "Composición y química", "color": "#6B5B95"}, "produccion": {"name": "Ecología, producción y cosecha", "color": "#3F8A8A"}, "cultura": {"name": "Usos y cultura", "color": "#B08A2E"}, "investigacion": {"name": "Investigación y seguridad", "color": "#3F6FA0"}}, "chapters": [{"num": 1, "title": "Taxonomía e identificación", "block": "botanica", "summary": "Qué especie es el corozo del Caribe colombiano y por qué el mismo nombre designa varias palmas distintas.", "sections": [{"num": "1.1", "title": "Nombre aceptado y familia", "summary": "Bactris guineensis (L.) H.E.Moore es el nombre aceptado; pertenece a Arecaceae y tiene a Bactris minor Jacq. como sinónimo.", "items": ["p_bactris_guineensis"]}, {"num": "1.2", "title": "Nombres comunes", "summary": "En Colombia se llama corozo, lata, uvita de lata o corozo de lata; en Costa Rica, güiscoyol; en inglés, tobago cane.", "items": ["h_nombres_comunes"]}, {"num": "1.3", "title": "Otras palmas llamadas corozo", "summary": "Acrocomia aculeata y Elaeis oleifera también se llaman corozo, y el comercio de botones usa la palabra para el marfil vegetal.", "items": ["p_otros_corozos"]}]}, {"num": 2, "title": "Usos como materia prima tradicional", "block": "cultura", "summary": "La pulpa del fruto es la materia prima de jugos, fermentados y dulces del Caribe.", "sections": [{"num": "2.1", "title": "Pulpa para jugos y refrescos", "summary": "El fruto se despulpa para jugos y refrescos; el prensado y el calentamiento corto conservan parte de las antocianinas.", "items": ["p_jugo"]}, {"num": "2.2", "title": "Fermentados: vino y chicha", "summary": "La pulpa con azúcar se fermenta durante meses para obtener vino de corozo, con producción artesanal y de pequeñas empresas.", "items": ["p_vino_corozo"]}, {"num": "2.3", "title": "Dulces y conservas", "summary": "Con la pulpa se preparan mermeladas, dulces, gelatinas, helados y bolis, casi siempre con azúcar añadido.", "items": ["p_dulces"]}]}, {"num": 3, "title": "Constituyentes químicos y compuestos bioactivos", "block": "quimica", "summary": "Composición de la pulpa, pigmentos de la cáscara y lípidos de la almendra según análisis de laboratorio.", "sections": [{"num": "3.1", "title": "Composición proximal y minerales", "summary": "La pulpa es acuosa, con azúcares, fibra y potasio; la vitamina C varía mucho entre lotes y a veces no se detecta.", "items": ["h_composicion_pulpa"]}, {"num": "3.2", "title": "Antocianinas", "summary": "Cianidina-3-rutinósido y cianidina-3-glucósido forman casi todo el pigmento rojo y se concentran en la cáscara.", "items": ["c_antocianinas"]}, {"num": "3.3", "title": "Otros compuestos fenólicos", "summary": "Catequinas, proantocianidinas, glucósidos de quercetina y flavonas C-glucósidos, muchos más abundantes en la cáscara que en la pulpa.", "items": ["c_fenoles"]}, {"num": "3.4", "title": "Carotenoides y tocoferoles", "summary": "Hay quince carotenoides, con β-caroteno y luteína como principales, y α-tocoferol, sobre todo en el exocarpio.", "items": ["c_carotenoides_tocoferol"]}, {"num": "3.5", "title": "Lípidos y minerales de la almendra", "summary": "La semilla tiene un tercio de grasa, casi toda saturada y rica en ácido láurico, más magnesio y hierro.", "items": ["p_almendra"]}]}, {"num": 4, "title": "Descripción morfológica", "block": "botanica", "summary": "Rasgos de la palma, de sus flores y de su fruto pequeño y morado.", "sections": [{"num": "4.1", "title": "Porte, tallos y hojas", "summary": "Palma de muchos tallos delgados y muy espinosos que forma macollas densas; las hojas son pinnadas y cortas.", "items": ["h_morfologia_palma"]}, {"num": "4.2", "title": "Flores y polinización", "summary": "Cada inflorescencia lleva flores masculinas y femeninas; las femeninas abren primero y los gorgojos y escarabajos las polinizan.", "items": ["h_polinizacion"]}, {"num": "4.3", "title": "Fruto y semilla", "summary": "Drupa globosa de 1,5 a 2 cm, morada casi negra, con pulpa blanca agridulce y una semilla dura que pesa un tercio del fruto.", "items": ["p_fruto"]}]}, {"num": 5, "title": "Distribución geográfica, producción y ecología", "block": "produccion", "summary": "Dónde crece la palma, qué paisajes forma en Colombia y qué la amenaza.", "sections": [{"num": "5.1", "title": "Área nativa", "summary": "Es nativa de tierras bajas con estación seca marcada, desde Nicaragua hasta el norte de Colombia y Venezuela."}, {"num": "5.2", "title": "El corozo en Colombia", "summary": "Crece entre 0 y 300 m en el Caribe y la Orinoquia; el Cesar tiene la mayor área potencial estimada.", "items": ["h_distribucion_colombia"]}, {"num": "5.3", "title": "Uvitales y potreros arbolados", "summary": "Forma rodales densos junto a ciénagas y ríos, y queda dispersa en potreros donde los ganaderos la conservan.", "items": ["h_uvitales"]}, {"num": "5.4", "title": "Conservación y amenazas", "summary": "Las listas difieren sobre su riesgo; la tala, la quema y el arranque con maquinaria reducen sus poblaciones.", "items": ["h_conservacion"]}]}, {"num": 6, "title": "Cosecha y poscosecha", "block": "produccion", "summary": "Cuándo y cómo se recoge el fruto silvestre y qué se sabe de su manejo después de cortarlo.", "sections": [{"num": "6.1", "title": "Fenología y temporadas", "summary": "Hay fruto casi todo el año, con una cosecha principal de julio a septiembre y otra menor de diciembre a febrero.", "items": ["h_fenologia_cosecha"]}, {"num": "6.2", "title": "Recolección", "summary": "Se cortan con machete los racimos maduros y se llevan en sacos de unos 50 kg; la recolección no destruye la palma."}, {"num": "6.3", "title": "Poscosecha y procesamiento", "summary": "No hay estudios publicados de vida útil del fruto fresco; los datos de estabilidad vienen de jugos y extractos procesados.", "items": ["h_poscosecha"]}]}, {"num": 7, "title": "Historia, uso tradicional, ritual y culinario", "block": "cultura", "summary": "Papel del corozo en la casa, la cocina y las fiestas de las comunidades del Caribe.", "sections": [{"num": "7.1", "title": "La lata en la vida rural", "summary": "Los tallos, llamados lata, sirven para cercas, techos, muebles, aparejos de pesca y la guacharaca.", "items": ["h_lata_materiales"]}, {"num": "7.2", "title": "El corozo en la mesa caribeña", "summary": "El fruto se come fresco sin tragar la semilla y se toma en jugos, chichas y helados para refrescarse del calor."}, {"num": "7.3", "title": "Fiestas y economía campesina", "summary": "En el Cesar hay asociaciones que recolectan y transforman el fruto, y Becerril celebra una fiesta centrada en el corozo."}]}, {"num": 8, "title": "Investigación moderna basada en usos tradicionales, y patentes", "block": "investigacion", "summary": "Estudios de laboratorio sobre extractos del fruto, usos industriales del pigmento y de la semilla, y búsqueda de patentes.", "sections": [{"num": "8.1", "title": "Actividad antioxidante", "summary": "Los extractos atrapan radicales en ensayos químicos y celulares; ningún estudio midió marcadores de estrés oxidativo en personas.", "items": ["u_antioxidante"]}, {"num": "8.2", "title": "Protección de células nerviosas", "summary": "Extractos de pulpa y semilla protegieron neuronas y astrocitos en cultivo frente a rotenona.", "items": ["u_neuroproteccion"]}, {"num": "8.3", "title": "Cáncer, bacterias y virus", "summary": "Extractos redujeron la viabilidad de células tumorales e inhibieron bacterias y virus, siempre en cultivo celular.", "items": ["u_antitumoral", "u_antimicrobiano_antiviral"]}, {"num": "8.4", "title": "Antocianinas y salud cardiometabólica", "summary": "No hay ensayos con corozo; la evidencia viene de suplementos de antocianinas de otras frutas, con resultados heterogéneos.", "items": ["u_cardiometabolico"]}, {"num": "8.5", "title": "Cosmética, colorantes y materiales", "summary": "El extracto se probó en una emulsión cosmética, en películas de empaque y como colorante; la semilla da carbón activado.", "items": ["u_cosmetico", "h_colorante_empaques", "h_carbon_activado"]}, {"num": "8.6", "title": "Patentes", "summary": "No se hallaron patentes que nombren a Bactris guineensis; las patentes con la palabra corozo tratan del marfil vegetal para botones.", "items": ["h_patentes"]}]}, {"num": 9, "title": "Conclusiones", "block": "investigacion", "summary": "El corozo es un alimento tradicional valioso con química bien descrita, pero sin evidencia clínica y con vacíos de seguridad.", "sections": [{"num": "9.1", "title": "Seguridad y vacíos", "summary": "No se hallaron estudios de toxicidad ni datos en embarazo; los riesgos conocidos vienen del azúcar añadido y del alcohol.", "items": ["u_seguridad"]}, {"num": "9.2", "title": "Perspectivas", "summary": "El fruto silvestre podría sostener cadenas de valor locales si se conservan los uvitales y se estandarizan los productos."}]}], "items": {"p_bactris_guineensis": {"title": "Corozo (Bactris guineensis)", "summary": "Palma pequeña y espinosa de la familia Arecaceae, nativa de tierras bajas secas de Centroamérica y el norte de Suramérica. Es la especie del jugo y el vino de corozo del Caribe colombiano.", "formula": "Nativa en Nicaragua, Costa Rica, Panamá, Colombia y Venezuela"}, "h_nombres_comunes": {"title": "Nombres comunes", "summary": "Además de corozo, en Colombia recibe nombres como lata, uvita de lata, corozo de lata, lata sabanera y tamaquito. En Costa Rica se llama güiscoyol o uvita.", "formula": "Más de 15 nombres locales en Colombia"}, "p_otros_corozos": {"title": "Otras palmas llamadas corozo", "summary": "Acrocomia aculeata (corozo, tamaco) y Elaeis oleifera (corozo, nolí) comparten el nombre en Colombia. En la industria de botones, corozo designa el marfil vegetal de la tagua (Phytelephas)."}, "p_jugo": {"title": "Jugo y refresco de corozo", "summary": "Bebida de pulpa diluida, la forma de consumo más común. En planta piloto, el jugo conservó cerca de la mitad de las antocianinas del fruto, con o sin tratamiento enzimático o térmico.", "formula": "Antocianinas 18–23 mg/100 g · fenoles 242–283 mg EAG/100 g"}, "p_vino_corozo": {"title": "Vino de corozo", "summary": "Bebida alcohólica de pulpa fermentada con azúcar, hecha en casas y pequeñas empresas del Caribe. Un trabajo de grado describió una fermentación de unos 10 meses.", "formula": "Fermentación de ~10 meses (San Alberto, Cesar)", "caution": "El vino de corozo es una bebida alcohólica. Si la fermentación es casera o mal controlada, el metanol puede superar los límites, porque se forma a partir de la pectina de la fruta. En 2025 Colombia tuvo 89 casos de intoxicación por metanol en bebidas adulteradas o informales. Evite bebidas sin registro o de origen desconocido. (Shen 2024; OPS 2025)"}, "p_dulces": {"title": "Dulces, mermeladas y bolis", "summary": "Preparaciones caseras y comerciales de pulpa con azúcar añadido: mermeladas, dulces, gelatinas, helados y bolis.", "caution": "Los dulces, mermeladas y bolis de corozo llevan azúcar añadido. La OMS recomienda que los azúcares libres sean menos del 10 % de la energía diaria. Si hay diabetes o sobrepeso, o si se trata de niños, cuente estas preparaciones como dulces y no como fruta. (OMS 2015)"}, "h_composicion_pulpa": {"title": "Composición de la pulpa", "summary": "Fruto acuoso con azúcares simples, fibra y potasio, casi sin grasa. La vitamina C no se detectó en cuatro de seis lotes de Costa Rica.", "formula": "Potasio 248–421 mg/100 g · vitamina C ND–48 mg/100 g", "caution": "La vitamina C es muy variable. No se detectó en cuatro de seis lotes; el máximo fue 48 mg/100 g. El jugo tuvo unos 12 mg/100 g. No conviene presentarlo como fuente fiable de vitamina C. El potasio es de 248–421 mg/100 g, un aporte moderado. Si hay enfermedad renal crónica con potasio alto, cuente el corozo en el aporte diario. (Cortés-Herrera 2024)"}, "c_antocianinas": {"title": "Antocianinas", "summary": "Pigmentos rojos del fruto; cianidina-3-rutinósido y cianidina-3-glucósido suman casi 88 % del total. Se concentran en la cáscara.", "formula": "28–48 mg eq. cianidina-3-glucósido/100 g de fruto", "caution": "Las antocianinas del corozo están bien documentadas. Se concentran en la cáscara. El fruto entero tiene 28–48 mg/100 g. El jugo conserva cerca de la mitad: 18–23 mg/100 g. El contenido cambia con el lote y el proceso. Este dato no prueba un efecto en la salud. (Osorio 2010; Cortés-Herrera 2024)"}, "c_fenoles": {"title": "Otros compuestos fenólicos", "summary": "Catequinas, proantocianidinas, glucósidos de quercetina y C-glucósidos de apigenina y luteolina. La cáscara contiene unas 20 veces más fenoles libres que la pulpa.", "formula": "Fenoles libres: 17 mg/100 g pulpa · 398 mg/100 g cáscara"}, "c_carotenoides_tocoferol": {"title": "Carotenoides y α-tocoferol", "summary": "Quince carotenoides, con β-caroteno y luteína como principales, y α-tocoferol como única forma de vitamina E cuantificable.", "formula": "Carotenoides 363 µg/100 g pulpa · 1 728 µg/100 g cáscara"}, "p_almendra": {"title": "Almendra (semilla)", "summary": "Semilla dura que no se come con la pulpa. Su grasa es casi toda saturada, con predominio de ácido láurico, y aporta magnesio y hierro.", "formula": "Lípidos 34,1 % m. s. · láurico 56,3 % · mirístico 23,0 %"}, "h_morfologia_palma": {"title": "Porte de la palma", "summary": "Palma cespitosa de tallos delgados cubiertos de espinas que forma macollas muy densas. Las hojas son pinnadas, de menos de 1 m, con espinas en el raquis.", "formula": "Tallos hasta 10 m × 1,5–3 cm · macollas de más de 1 400 tallos"}, "h_polinizacion": {"title": "Flores y polinización", "summary": "Planta monoica de flores protóginas que necesita polinización cruzada. Gorgojos y escarabajos de savia son los visitantes principales.", "formula": "76 % de flores femeninas cuajan · 57 % de esos frutos maduran"}, "p_fruto": {"title": "Fruto de corozo", "summary": "Drupa pequeña y redonda, morada casi negra al madurar, con pulpa blanca agridulce y jugosa. La semilla ocupa cerca de un tercio del peso.", "formula": "1,5–2 cm · 3,6 g · semilla 34 % del peso", "caution": "La pulpa de corozo casi no tiene grasa: 0,04–0,12 g/100 g. Su proteína es baja: 0,6–2,1 g/100 g. El aceite está en la semilla, que no se come, y es casi todo grasa saturada. Si se describe el fruto como rico en aceites y proteínas, la afirmación es incorrecta. (Cortés-Herrera 2024; Erşan 2020)"}, "h_distribucion_colombia": {"title": "Distribución en Colombia", "summary": "Crece en el Caribe y la Orinoquia entre 0 y 300 m, en Antioquia, Arauca, Atlántico, Bolívar, Cesar, Córdoba, La Guajira, Magdalena y Sucre.", "formula": "Cesar: 343 938 ha de área potencial alta"}, "h_uvitales": {"title": "Uvitales y potreros arbolados", "summary": "Los uvitales son rodales densos de corozo junto a ciénagas y ríos; en los potreros la palma queda dispersa. Ambos están en el bosque seco tropical.", "formula": "Bosque seco tropical: ~4 % de cobertura original"}, "h_conservacion": {"title": "Estado de conservación", "summary": "La UICN la clasifica como de preocupación menor, pero la Lista Roja nacional de 2021 la ubica como casi amenazada. La tala, la quema y el arranque con retroexcavadora la reducen.", "formula": "UICN: LC · Colombia 2021: NT"}, "h_fenologia_cosecha": {"title": "Temporadas y recolección", "summary": "Hay dos picos de fruto al año. La gente corta los racimos maduros con machete y los vende en sacos.", "formula": "Principal jul–sep · traviesa dic–feb · sacos de ~50 kg"}, "h_poscosecha": {"title": "Poscosecha y estabilidad", "summary": "No se encontraron estudios de vida útil del fruto fresco. Los polvos microencapsulados de antocianinas fueron estables por debajo de 37 °C y 76 % de humedad relativa.", "formula": "Pasteurización de jugo: 85 °C por 2–5 s"}, "h_lata_materiales": {"title": "La lata como material", "summary": "Los tallos se usan en techos, paredes, cercas, muebles, puertas, cucharas, canastos, aparejos de pesca y la guacharaca."}, "u_antioxidante": {"title": "Actividad antioxidante", "summary": "Los extractos de pulpa y cáscara atrapan radicales en ensayos DPPH, ABTS y ORAC, y reducen especies reactivas en células. Son datos in vitro.", "formula": "H-ORAC 6 690–14 688 µmol ET/100 g de fruto", "caution": "La capacidad antioxidante del corozo se midió en tubo de ensayo y en células. Ningún estudio midió estrés oxidativo en personas que lo consumen. Un valor ORAC alto no predice un efecto en el cuerpo. Si se usa como argumento de salud, falta evidencia clínica. (Cortés-Herrera 2024; López 2017)"}, "u_neuroproteccion": {"title": "Protección de células nerviosas", "summary": "Extractos de pulpa y semilla protegieron neuronas SH-SY5Y y astrocitos de rata frente al daño por rotenona. Estudio en cultivo celular.", "caution": "El efecto protector se vio en neuronas y astrocitos en cultivo expuestos a rotenona. No hay estudios en animales ni en personas. No hay base para usar corozo en Alzheimer, Parkinson u otras enfermedades neurodegenerativas. (López 2017)"}, "u_antitumoral": {"title": "Efecto sobre células tumorales", "summary": "Un extracto rico en proantocianidinas fue citotóxico para células de cáncer de colon e hígado, con menor efecto en células no tumorales. Otro redujo la viabilidad de células de próstata. Solo in vitro.", "formula": "CI50 16,6–24,9 µg/mL (colon e hígado)", "caution": "Los extractos redujeron la viabilidad de células de cáncer de colon, hígado y próstata en cultivo. No hay estudios en animales ni en pacientes. Las concentraciones del laboratorio no equivalen a comer el fruto. Si una persona con cáncer pregunta, no hay evidencia para usarlo como tratamiento. (Quesada 2020; Jaimes Gualdrón 2020)"}, "u_antimicrobiano_antiviral": {"title": "Efecto antibacteriano y antiviral", "summary": "Un extracto de pulpa inhibió Klebsiella, Staphylococcus, influenza A, VIH-1 y SARS-CoV-2 en cultivo celular. No hay estudios en animales ni en personas.", "formula": "SARS-CoV-2: 88 % de inhibición a 15,6 g/L", "caution": "La inhibición de bacterias y virus se midió en cultivo celular. Para SARS-CoV-2 se usaron extractos de hasta 15,6 g/L. No hay estudios en animales ni en personas. El corozo no previene ni trata infecciones virales o bacterianas. (Jaimes Gualdrón 2022)"}, "u_cardiometabolico": {"title": "Antocianinas y riesgo cardiometabólico", "summary": "Se afirma que las antocianinas del corozo protegen el corazón. No hay ensayos con corozo; los metanálisis de suplementos de antocianinas de otras fuentes muestran efectos pequeños y heterogéneos en lípidos.", "caution": "No hay ensayos clínicos con corozo. Un metanálisis de suplementos de antocianinas halló mejoras en lípidos, con mucha heterogeneidad. Con aronia, otra fruta rica en antocianinas, no hubo efecto global y la certeza fue muy baja. Estos resultados no se trasladan al jugo de corozo. (Wan 2024; Frumuzachi 2025)"}, "u_cosmetico": {"title": "Uso cosmético", "summary": "Una emulsión con 5 % de extracto de pulpa mantuvo su actividad antioxidante y su estabilidad durante 150 días. No se probó en piel humana.", "formula": "Emulsión estable 150 días", "caution": "La emulsión con 5 % de extracto solo se evaluó en estabilidad y actividad antioxidante en laboratorio. No se probó en piel humana. No hay datos de eficacia, irritación ni sensibilización. Si se vende como antienvejecimiento, la afirmación no tiene respaldo. (León Méndez 2021)"}, "h_colorante_empaques": {"title": "Colorante y empaques inteligentes", "summary": "Las antocianinas se microencapsularon como colorante en polvo y se añadieron a películas biodegradables de PVOH que cambian de color. También sensibilizaron películas fotocatalíticas.", "formula": "Mejor extracción: 50 °C, 75 min"}, "h_carbon_activado": {"title": "Carbón activado de la semilla", "summary": "La semilla y la cáscara, residuos del despulpado, se convirtieron en carbón activado que adsorbe propranolol del agua en laboratorio.", "formula": "Área superficial 1 125 m²/g (semilla)"}, "h_patentes": {"title": "Patentes", "summary": "La búsqueda en Google Patents no halló patentes que nombren a Bactris guineensis. Las patentes con la palabra corozo tratan de botones de marfil vegetal."}, "u_seguridad": {"title": "Seguridad", "summary": "No se hallaron estudios de toxicidad en animales, casos de alergia, interacciones ni datos en embarazo o lactancia. Los riesgos conocidos son indirectos: azúcar añadido en dulces y alcohol en el vino.", "caution": "No se hallaron estudios de toxicidad en animales ni en personas. No hay datos en embarazo, lactancia ni niños pequeños. No se describen interacciones ni alergias, pero eso refleja falta de estudio. Los extractos concentrados no tienen la seguridad del fruto. No trague la semilla. (PubMed 2026; El Espectador 2026)"}}, "resources": [{"id": "F1", "title": "Erşan et al. 2020: composición fitoquímica y mineral de frutos y semillas silvestres (J Food Compos Anal)", "usedBy": ["3.3", "3.4", "3.5"]}, {"id": "F2", "title": "Cortés-Herrera et al. 2024: procesamiento de jugo y perfil nutricional (Agron Mesoam)", "usedBy": ["2.1", "3.1", "4.3"]}, {"id": "F3", "title": "Osorio et al. 2010: antocianinas y microencapsulación (J Agric Food Chem)", "usedBy": ["3.2", "6.3", "8.5"]}, {"id": "F4", "title": "Casas Caro et al., Instituto Humboldt: protocolo de manejo sostenible del corozo en el Cesar", "usedBy": ["4.1", "4.2", "5.2", "5.3", "5.4", "6.1", "6.2", "7.1", "7.3"]}, {"id": "F5", "title": "ColPlanta (RBG Kew): ficha de Bactris guineensis en Colombia", "usedBy": ["1.1", "1.2", "5.2", "5.4"]}, {"id": "F6", "title": "Estudios in vitro: López 2017, Quesada 2020, Jaimes Gualdrón 2020 y 2022", "usedBy": ["8.1", "8.2", "8.3"]}], "requires": {"chapters": {"2": [1], "3": [1], "4": [1], "5": [4], "6": [4, 5], "7": [2, 5], "8": [3, 7], "9": [8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.2"], "2.1": ["1.1"], "2.2": ["2.1"], "2.3": ["2.1"], "3.1": ["1.1"], "3.2": ["3.1"], "3.3": ["3.2"], "3.4": ["3.1"], "3.5": ["3.1"], "4.1": ["1.1"], "4.2": ["4.1"], "4.3": ["4.2"], "5.1": ["1.1"], "5.2": ["5.1"], "5.3": ["5.2"], "5.4": ["5.3"], "6.1": ["4.2", "5.3"], "6.2": ["6.1"], "6.3": ["6.2", "3.2"], "7.1": ["4.1"], "7.2": ["2.1"], "7.3": ["7.2", "5.2"], "8.1": ["3.2", "3.3"], "8.2": ["8.1"], "8.3": ["3.3"], "8.4": ["3.2"], "8.5": ["8.1", "6.3"], "8.6": ["1.3", "8.5"], "9.1": ["2.2", "2.3", "3.1"], "9.2": ["9.1", "8.6", "5.4"]}, "items": {"h_nombres_comunes": ["p_bactris_guineensis"], "p_otros_corozos": ["h_nombres_comunes"], "h_morfologia_palma": ["p_bactris_guineensis"], "h_polinizacion": ["h_morfologia_palma"], "p_fruto": ["h_polinizacion"], "p_almendra": ["p_fruto"], "h_composicion_pulpa": ["p_fruto"], "c_antocianinas": ["p_fruto"], "c_fenoles": ["c_antocianinas"], "c_carotenoides_tocoferol": ["p_fruto"], "h_distribucion_colombia": ["p_bactris_guineensis"], "h_uvitales": ["h_distribucion_colombia"], "h_conservacion": ["h_uvitales"], "h_fenologia_cosecha": ["h_polinizacion", "h_uvitales"], "h_poscosecha": ["h_fenologia_cosecha", "c_antocianinas"], "p_jugo": ["p_fruto"], "p_vino_corozo": ["p_jugo"], "p_dulces": ["p_fruto"], "h_lata_materiales": ["h_morfologia_palma"], "u_antioxidante": ["c_antocianinas", "c_fenoles"], "u_neuroproteccion": ["u_antioxidante"], "u_antitumoral": ["c_fenoles"], "u_antimicrobiano_antiviral": ["c_antocianinas"], "u_cardiometabolico": ["c_antocianinas"], "u_cosmetico": ["u_antioxidante"], "h_colorante_empaques": ["c_antocianinas", "h_poscosecha"], "h_carbon_activado": ["p_fruto"], "h_patentes": ["p_otros_corozos", "h_colorante_empaques"], "u_seguridad": ["p_vino_corozo", "p_dulces", "h_composicion_pulpa"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>
