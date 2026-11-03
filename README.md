@@ -113,6 +113,10 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 [`skills/odorantes-clave/`](skills/odorantes-clave/SKILL.md) busca en PubMed los odorantes clave de uno o más alimentos (estudios con recombinación, SIDA/OAV, AEDA u olfactometría), clasifica cada hallazgo por nivel de evidencia, unifica sinónimos de compuestos y arma una tabla de odorantes compartidos con DOI. Después traduce el resultado a maridajes con el método de [`foodpairing/`](foodpairing/SKILL.md) (14 tipos de aroma, overtoning, reglas de equilibrio), separando evidencia de interpretación. Incluye como ejemplo verificado el caso café tostado + ajonjolí tostado (2-furfuriltiol, furaneol, 4-vinilguayacol, guayacoles y alquilpirazinas compartidos).
 
+## Skill de Healing Herbal Infusions
+
+[`healing-herbal-infusions/`](healing-herbal-infusions/SKILL.md) convierte los capítulos 1 a 6 de *Healing Herbal Infusions* (Colleen Codekas, 2018) en una skill. Incluye la elección del medio de infusión (agua, alcohol, vinagre, miel, oximiel, glicerina, aceite), la regla de hierba fresca o seca, los métodos para aceite y la receta base de ungüento. También tiene un cheatsheet de 53 recetas con edad mínima, un glosario con nombres científicos y una tabla de seguridad clínica. Esa tabla agrega los riesgos que el libro omite: miel en menores de 1 año, interacciones del hipérico, consuelda en piel abierta, salicilatos y síndrome de Reye, y el tejo como conífera tóxica. Los capítulos 7 a 9 no están extraídos.
+
 ## Aplicación Python de Graphify
 
 [`apps/graphify-py/`](apps/graphify-py/) instala la distribución oficial `graphifyy==0.9.91` con soporte para PDF y Office, y expone el comando `bookskills-graphify`. Incluye instrucciones para generar un grafo de código local y consultarlo. El código del proyecto original permanece en su distribución oficial bajo licencia Apache 2.0.
