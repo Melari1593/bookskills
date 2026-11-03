@@ -1,0 +1,13 @@
+# Afirmaciones a verificar: capítulo 14 de *Nuts and Seeds in Health and Disease Prevention*, 2.ª ed. (Pal y Mukherjee, Elsevier 2020): semilla de tamarindo
+
+Id del ítem del grafo entre corchetes. Texto del capítulo en trabajo/texto.txt (no copiar).
+
+T1 [i_proteina] La semilla de tamarindo es buena fuente de proteína con aminoácidos esenciales equilibrados, cercanos o superiores al patrón de la OMS salvo triptófano. → Calidad proteica (PDCAAS/DIAAS), antinutrientes (taninos de la testa, inhibidores de tripsina) y necesidad de procesado (tostado, descascarado, cocción).
+T2 [i_aceite] El aceite de semilla "puede ser buen aceite comestible" y el linoleico protege del riesgo cardiovascular; además el capítulo da 55,6 % insaturados/44,4 % saturados y, en su figura, ácido "araquidónico" 2–4 %. → Composición publicada (¿araquídico 20:0 en lugar de araquidónico 20:4?), uso alimentario aprobado del aceite.
+T3 [i_minerales] Buena fuente de calcio, fósforo, magnesio y potasio (rangos muy amplios, p. ej. calcio 9,3–786 mg/100 g); el extracto contiene además arsénico, cadmio y plomo. → Variabilidad y su causa; contaminantes en semilla de tamarindo.
+T4 [i_antidiabetico] El extracto acuoso de semilla tiene potente actividad antidiabética e hipolipemiante en ratas diabéticas por estreptozotocina; el TSP reduce la glucemia. → Ensayos en humanos (si existen); revisión sistemática.
+T5 [i_antiveneno] El extracto de semilla neutraliza enzimas y efectos miotóxicos del veneno de serpiente, por lo que es "una alternativa a la sueroterapia". → Riesgo de esta afirmación: el antiveneno es el único tratamiento eficaz (OMS); la evidencia es in vitro/animal.
+T6 [i_anticancer] El extracto mejora la nefrotoxicidad química y el carcinoma de células renales; polifenoles con efecto quimiopreventivo. → Nivel de evidencia (preclínica).
+T7 [i_tsp_ojo] El polisacárido de semilla de tamarindo (TSP, xiloglucano) se usa en colirios por su mucoadhesividad; con hialurónico para ojo seco; acelera la cicatrización corneal. → Ensayos clínicos de TSP en ojo seco (p. ej. TSP 0,5–1 % frente a hialuronato); productos autorizados.
+T8 [i_tsp_aditivo] El TSP es excipiente y aditivo alimentario prometedor, no tóxico. → Estatus regulatorio (Japón aditivo; EFSA/ FDA), toxicología.
+T9 [i_seguridad] "No hay riesgo ni efectos adversos con la administración adecuada"; puede bajar la glucemia (vigilar en diabetes, suspender 2 semanas antes de cirugía) y aumentar la absorción de aspirina e ibuprofeno. → Origen de esas afirmaciones (parecen de bases de suplementos como WebMD/MedlinePlus); evidencia real de las interacciones (estudios de Mustapha 1996 sobre aspirina, ibuprofeno con pulpa); ausencia de datos de seguridad de la semilla.

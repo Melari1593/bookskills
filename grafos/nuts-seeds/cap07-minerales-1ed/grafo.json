@@ -1,0 +1,491 @@
+{
+ "meta": {
+  "title": "Minerales y tóxicos en frutos secos y semillas como grafo",
+  "subtitle": "Rodushkin, Baxter y Engström, capítulo 7 de Nuts and Seeds in Health and Disease Prevention (Elsevier, 2011) · con alertas de evidencia actual",
+  "itemLabel": "Elemento o alimento",
+  "itemLabelPlural": "Elementos y alimentos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: selenio, cadmio, nuez de Brasil…"
+ },
+ "blocks": {
+  "base": {
+   "name": "Planteamiento y resumen",
+   "color": "#6B8E4E"
+  },
+  "consumo": {
+   "name": "Consumo",
+   "color": "#B08A2E"
+  },
+  "composicion": {
+   "name": "Composición",
+   "color": "#6B5B95"
+  },
+  "nutricion": {
+   "name": "Importancia nutricional",
+   "color": "#3F6FA0"
+  },
+  "toxicos": {
+   "name": "Efectos adversos",
+   "color": "#B5465A"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Minerales esenciales y elementos tóxicos",
+   "block": "base",
+   "page": 65,
+   "summary": "Planteamiento: los frutos secos y las semillas aportan minerales esenciales, pero también pueden contener elementos tóxicos; para valorarlos hace falta saber cuánto se consume y en qué concentración.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Riqueza mineral y salud",
+     "summary": "Los autores atribuyen parte de los beneficios de los frutos secos (hueso, presión arterial, insulina, corazón) a su calcio, magnesio y potasio y a su bajo sodio.",
+     "items": [
+      "i_minerales_salud",
+      "i_selenio"
+     ],
+     "page": 65
+    },
+    {
+     "num": "1.2",
+     "title": "Qué datos hacen falta para evaluar el riesgo",
+     "summary": "Para estimar beneficio o daño se necesitan tres datos: consumo diario, concentración típica y valores de referencia (ingesta recomendada, máxima tolerable o tolerable semanal).",
+     "items": [
+      "i_valores_referencia"
+     ],
+     "page": 66
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Cuántos frutos secos se consumen",
+   "block": "consumo",
+   "page": 66,
+   "summary": "El consumo medio en Europa y EE. UU. es de pocos gramos al día, lejos de los 30–40 g que proponen las guías.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Consumo medio en Europa y EE. UU.",
+     "summary": "En el estudio europeo EPIC el promedio fue de unos 4–5 g/día; en EE. UU., 3–7 g/día, sobre todo maní, almendra y nuez. Las encuestas probablemente lo subestiman.",
+     "items": [
+      "i_consumo"
+     ],
+     "page": 66
+    },
+    {
+     "num": "2.2",
+     "title": "Porciones y recomendación",
+     "summary": "Las porciones de los envases van de 10 a 100 g; las guías suelen recomendar unos 30 g/día y algunos estudios, 40 g o más.",
+     "items": [
+      "i_consumo"
+     ],
+     "page": 67
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Composición inorgánica",
+   "block": "composicion",
+   "page": 67,
+   "summary": "Concentraciones de 27 elementos en 12 frutos secos y semillas crudos, compiladas de más de 60 fuentes, y por qué varían tanto los oligoelementos.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Cómo se compilaron los datos",
+     "summary": "Tablas nacionales para los macroelementos y publicaciones científicas para el resto; se dan medianas con su variabilidad, o rangos cuando los valores difieren más de diez veces.",
+     "items": [
+      "i_variabilidad"
+     ],
+     "page": 67
+    },
+    {
+     "num": "3.2",
+     "title": "Por qué varían los oligoelementos",
+     "summary": "Los macroelementos varían poco; los oligoelementos varían hasta varios órdenes de magnitud por suelo y clima, contaminación al pelar y envasar, y errores analíticos.",
+     "items": [
+      "i_variabilidad",
+      "f_nuez_brasil"
+     ],
+     "page": 68
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Importancia nutricional",
+   "block": "nutricion",
+   "page": 69,
+   "summary": "Cuántos gramos de cada fruto seco cubren el 10 % de la necesidad diaria de cada elemento (tabla 7.2).",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Fuentes ricas: magnesio, cobre, manganeso, hierro, zinc, potasio",
+     "summary": "Los frutos secos y semillas son fuentes muy ricas de magnesio, cobre y manganeso, e importantes de hierro, zinc y potasio; la semilla de calabaza encabeza la lista y el coco la cierra.",
+     "items": [
+      "i_mg_cu_mn",
+      "f_calabaza",
+      "f_coco",
+      "i_niquel"
+     ],
+     "page": 69
+    },
+    {
+     "num": "4.2",
+     "title": "Selenio de la nuez de Brasil",
+     "summary": "Incluso una nuez de Brasil con poco selenio aporta una parte importante del día; girasol, cashew y nuez también son fuentes relevantes.",
+     "items": [
+      "f_nuez_brasil",
+      "i_selenio"
+     ],
+     "page": 69
+    },
+    {
+     "num": "4.3",
+     "title": "Calcio y elementos escasos",
+     "summary": "Salvo la almendra, no son una fuente importante de calcio; el aporte de sodio, cloro, yodo y vanadio es despreciable.",
+     "items": [
+      "i_calcio",
+      "f_almendra"
+     ],
+     "page": 69
+    },
+    {
+     "num": "4.4",
+     "title": "Cromo, molibdeno y boro",
+     "summary": "El valor del cromo es incierto porque los datos varían casi cien veces; maní y semillas aportan molibdeno; nuez de Brasil, avellana, almendra y cashew aportan boro.",
+     "items": [
+      "i_cromo",
+      "i_boro"
+     ],
+     "page": 69
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Efectos adversos",
+   "block": "toxicos",
+   "page": 70,
+   "summary": "Cuándo el consumo de frutos secos acerca a los límites de seguridad: selenio, cadmio, bario y, con dudas analíticas, arsénico, plomo y mercurio.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Exceso de elementos esenciales",
+     "summary": "Para fósforo, manganeso, cobre, níquel, zinc y hierro harían falta más de 300 g/día para llegar al máximo tolerable; con el selenio de la nuez de Brasil bastan pocas unidades.",
+     "items": [
+      "f_nuez_brasil",
+      "i_niquel"
+     ],
+     "page": 70
+    },
+    {
+     "num": "5.2",
+     "title": "Elementos tóxicos en concentraciones bajas",
+     "summary": "La mayoría de los tóxicos (aluminio, antimonio, estaño, talio, uranio y otros) aparece en cantidades muy pequeñas en frutos secos crudos.",
+     "items": [
+      "i_aluminio"
+     ],
+     "page": 70
+    },
+    {
+     "num": "5.3",
+     "title": "Cadmio",
+     "summary": "El cadmio es tóxico para el riñón y el hueso y cancerígeno; la semilla de girasol, la almendra, el piñón y el maní pesan en la exposición, sobre todo con el límite más estricto de la EFSA.",
+     "items": [
+      "i_cadmio",
+      "f_girasol",
+      "f_pinon"
+     ],
+     "page": 71
+    },
+    {
+     "num": "5.4",
+     "title": "Arsénico, plomo y mercurio",
+     "summary": "Con los valores bajos publicados el riesgo es mínimo; los valores altos de nuez, pistacho, piñón y nuez de Brasil podrían deberse a errores analíticos.",
+     "items": [
+      "i_as_pb_hg"
+     ],
+     "page": 71
+    },
+    {
+     "num": "5.5",
+     "title": "Bario de la nuez de Brasil",
+     "summary": "La nuez de Brasil tiene mucho bario; según el capítulo, más de 50 g/día superarían el nivel considerado seguro.",
+     "items": [
+      "i_bario",
+      "f_nuez_brasil"
+     ],
+     "page": 71
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Puntos de resumen",
+   "block": "base",
+   "page": 71,
+   "summary": "Fuentes importantes de varios minerales, escasas de calcio y sodio, con riesgo a vigilar por selenio y bario de la nuez de Brasil y por cadmio de ciertas semillas.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Balance de beneficios y riesgos",
+     "summary": "Aportan muchos minerales esenciales con poco consumo; el selenio y el bario de la nuez de Brasil y el cadmio de girasol, almendra, piñón y maní merecen atención.",
+     "page": 71
+    }
+   ]
+  }
+ ],
+ "items": {
+  "i_minerales_salud": {
+   "title": "Minerales y beneficios de los frutos secos",
+   "summary": "El capítulo atribuye a la riqueza en calcio, magnesio y potasio y al bajo sodio parte de la protección asociada a los frutos secos.",
+   "caution": "Si se cita este beneficio, distinga la fuerza de la evidencia. La asociación con menor cardiopatía coronaria es consistente. El efecto sobre la presión arterial es pequeño o nulo. El efecto sobre la diabetes tipo 2 no es concluyente. Ningún estudio atribuye el beneficio a los minerales. (Aune 2016; Arnesen 2023)"
+  },
+  "i_valores_referencia": {
+   "title": "Valores de referencia",
+   "summary": "Ingesta recomendada (RDA/RDI) y máxima tolerable (UL) para elementos esenciales; ingesta tolerable semanal o diaria (PTWI, TWI, TDI) para tóxicos."
+  },
+  "i_consumo": {
+   "title": "Consumo de frutos secos",
+   "summary": "Consumo real bajo en la población frente a la recomendación de las guías.",
+   "formula": "Europa 4–5 g/día · EE. UU. 3–7 g/día · guías ≈ 30 g/día",
+   "caution": "Recomiende unos 30 g/día. Esta cantidad tiene respaldo en estudios de dosis-respuesta. No hay evidencia de que 40 g o más den más beneficio. La FDA usa 42 g/día en una declaración calificada que \"sugiere pero no prueba\" el beneficio. (Arnesen 2023; FDA 2003)"
+  },
+  "i_variabilidad": {
+   "title": "Variabilidad y errores analíticos",
+   "summary": "Los oligoelementos varían mucho entre muestras por suelo, contaminación y errores de laboratorio; los autores desconfían de los valores extremos.",
+   "formula": "Macroelementos: RSD < 30 %"
+  },
+  "i_mg_cu_mn": {
+   "title": "Magnesio, cobre y manganeso",
+   "summary": "Los tres elementos para los que los frutos secos y semillas son fuentes más ricas; los frutos secos se consideran la mejor fuente dietética de manganeso.",
+   "formula": "10–30 g cubren el 10 % del magnesio diario"
+  },
+  "i_selenio": {
+   "title": "Selenio",
+   "summary": "Oligoelemento esencial; la nuez de Brasil es probablemente el alimento más rico. El capítulo menciona un efecto antitumoral en animales.",
+   "caution": "La protección antitumoral en animales no se confirma en humanos. Los ensayos aleatorizados no muestran menos cáncer con selenio. Algunos ensayos muestran más diabetes tipo 2 y más cáncer de próstata de alto grado. No indique selenio ni nuez de Brasil para prevenir cáncer. (Vinceti 2018, Cochrane)"
+  },
+  "i_calcio": {
+   "title": "Calcio",
+   "summary": "Los frutos secos son una fuente moderada a pobre de calcio, salvo la almendra.",
+   "formula": "Almendra: 2500 mg/kg"
+  },
+  "i_cromo": {
+   "title": "Cromo",
+   "summary": "El capítulo lo trata como esencial; sus datos en frutos secos varían casi cien veces, así que su aporte es incierto.",
+   "caution": "El valor de 120 µg/día de cromo no está vigente. EFSA 2014 no fija un valor de referencia porque no hay evidencia de esencialidad. En EE. UU., la ingesta adecuada es 25–35 µg/día en adultos. No use los frutos secos como argumento para aportar cromo. (EFSA 2014; NIH ODS)"
+  },
+  "i_boro": {
+   "title": "Boro",
+   "summary": "Elemento potencialmente esencial; los frutos secos son una buena fuente, sobre todo para vegetarianos.",
+   "formula": "Nuez de Brasil 40 mg/kg",
+   "caution": "El boro no tiene esencialidad demostrada en humanos. No hay ingesta recomendada. Los frutos secos aportan boro, pero esto no es un beneficio probado. EFSA fija un UL de 10 mg/día y EE. UU. de 20 mg/día. La cifra de 10 mg/día del capítulo coincide con el UL de EFSA. (EFSA 2004; NIH ODS)"
+  },
+  "i_niquel": {
+   "title": "Níquel",
+   "summary": "El capítulo lo cuenta entre los elementos de los que los frutos secos son fuente muy rica, con cashew y semilla de calabaza a la cabeza.",
+   "formula": "Nuez de Brasil 7 mg/kg · cashew, calabaza y girasol 3 mg/kg",
+   "caution": "No trate el níquel como nutriente. EFSA lo evalúa como contaminante, con una TDI de 13 µg/kg/día. Si el paciente tiene alergia de contacto al níquel, una porción de nuez de Brasil, anacardo o semillas puede causar dermatitis sistémica. EFSA identifica un efecto agudo desde 4,3 µg/kg. (EFSA 2020)"
+  },
+  "i_cadmio": {
+   "title": "Cadmio",
+   "summary": "Metal tóxico para riñón y hueso y cancerígeno; los alimentos son la principal fuente en no fumadores y algunas semillas aportan una parte relevante.",
+   "formula": "Girasol: hasta 1 mg/kg",
+   "caution": "EFSA mantuvo en 2011 la TWI de 2,5 µg/kg/semana. La IARC clasifica el cadmio en el grupo 1. La UE limita el cadmio a 0,50 mg/kg en girasol y 0,30 mg/kg en piñón. (EFSA 2011; Reg. UE 2021/1323)"
+  },
+  "i_as_pb_hg": {
+   "title": "Arsénico, plomo y mercurio",
+   "summary": "Concentraciones muy bajas en la mayoría de los estudios; los valores altos aislados podrían ser artefactos analíticos.",
+   "caution": "Las PTWI de plomo y arsénico inorgánico ya no están vigentes. JECFA las retiró porque no protegían la salud. Para estos dos elementos no hay umbral seguro; se usa el margen de exposición. Para mercurio, EFSA fija TWI de 1,3 µg/kg (metilmercurio) y 4 µg/kg (inorgánico). (JECFA 2010; EFSA 2010, 2012, 2024)"
+  },
+  "i_bario": {
+   "title": "Bario",
+   "summary": "Elemento no esencial; la nuez de Brasil lo acumula en concentraciones muy altas y variables.",
+   "formula": "Nuez de Brasil: 70–2000 mg/kg",
+   "caution": "El capítulo subestima el riesgo por bario. La RfD de US EPA es 0,2 mg/kg/día, unos 14 mg/día para 70 kg. Con 1270 mg/kg de bario, unos 11 g/día de nuez de Brasil alcanzan ese valor. Según el origen, o si el peso es menor de 60 kg, 2 nueces/día pueden superarlo. (US EPA IRIS 2005; Koeder 2025)"
+  },
+  "i_aluminio": {
+   "title": "Aluminio",
+   "summary": "Presente en concentraciones bajas; el piñón tiene los valores más altos del grupo.",
+   "formula": "Piñón: 4–40 mg/kg",
+   "caution": "El aporte de aluminio suele ser bajo, pero no siempre. EFSA fija una TWI de 1 mg/kg por semana, unos 10 mg/día para 70 kg. Con piñón de 40 mg/kg, 30 g/día aportan el 12 % de la TWI. La dieta europea ya puede superar la TWI sin frutos secos. (EFSA 2008)"
+  },
+  "f_nuez_brasil": {
+   "title": "Nuez de Brasil",
+   "summary": "El fruto seco más extremo del capítulo: muy rica en selenio y bario, con concentraciones que dependen del suelo de origen.",
+   "formula": "Selenio 1–50 mg/kg · bario 70–2000 mg/kg",
+   "caution": "Si el paciente come nuez de Brasil a diario, limite la cantidad. El selenio por nuez varía hasta 512 mg/kg según el origen. EFSA fijó en 2023 un UL de 255 µg/día en adultos. Con nueces de más de 100 µg, 3 nueces/día superan ese UL. No combine nuez de Brasil diaria con suplementos de selenio. (EFSA 2023; Chang 1995)"
+  },
+  "f_calabaza": {
+   "title": "Semilla de calabaza",
+   "summary": "La de mayor potencial nutricional mineral: fósforo, magnesio, hierro, zinc y manganeso.",
+   "formula": "Fósforo 11 000 mg/kg · magnesio 5300 mg/kg"
+  },
+  "f_girasol": {
+   "title": "Semilla de girasol",
+   "summary": "Buena fuente de selenio, cobre y níquel; también la que más cadmio puede aportar.",
+   "formula": "Selenio 0,6 mg/kg · cadmio 0,01–1 mg/kg"
+  },
+  "f_pinon": {
+   "title": "Piñón",
+   "summary": "Rico en manganeso; con cadmio y aluminio relativamente altos en algunos estudios.",
+   "formula": "Manganeso 91 mg/kg"
+  },
+  "f_almendra": {
+   "title": "Almendra",
+   "summary": "El único fruto seco del grupo que es fuente relevante de calcio.",
+   "formula": "Calcio 2500 mg/kg"
+  },
+  "f_coco": {
+   "title": "Coco",
+   "summary": "El de menor aporte mineral del grupo, salvo sodio.",
+   "formula": "Sodio 370 mg/kg"
+  }
+ },
+ "resources": [
+  {
+   "id": "7.1",
+   "title": "Concentración de 27 elementos en 12 frutos secos y semillas",
+   "page": 68,
+   "usedBy": [
+    "3.1",
+    "3.2",
+    "4.2",
+    "5.3",
+    "5.5"
+   ]
+  },
+  {
+   "id": "7.2",
+   "title": "Gramos diarios que cubren el 10 % de la ingesta recomendada o tolerable",
+   "page": 70,
+   "usedBy": [
+    "4.1",
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.4"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    2,
+    3
+   ],
+   "5": [
+    4
+   ],
+   "6": [
+    5
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "3.1": [
+    "1.2"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "4.1": [
+    "2.2",
+    "3.1"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "4.3": [
+    "4.1"
+   ],
+   "4.4": [
+    "3.2"
+   ],
+   "5.1": [
+    "4.1",
+    "4.2"
+   ],
+   "5.2": [
+    "3.2"
+   ],
+   "5.3": [
+    "5.2"
+   ],
+   "5.4": [
+    "3.2"
+   ],
+   "5.5": [
+    "5.2"
+   ],
+   "6.1": [
+    "5.1",
+    "5.3",
+    "5.5"
+   ]
+  },
+  "items": {
+   "i_selenio": [
+    "i_valores_referencia"
+   ],
+   "i_cadmio": [
+    "i_valores_referencia"
+   ],
+   "i_bario": [
+    "i_valores_referencia"
+   ],
+   "i_as_pb_hg": [
+    "i_variabilidad",
+    "i_valores_referencia"
+   ],
+   "i_aluminio": [
+    "i_valores_referencia"
+   ],
+   "i_niquel": [
+    "i_valores_referencia"
+   ],
+   "i_cromo": [
+    "i_variabilidad"
+   ],
+   "f_nuez_brasil": [
+    "i_selenio",
+    "i_bario"
+   ],
+   "f_girasol": [
+    "i_cadmio"
+   ],
+   "f_pinon": [
+    "i_cadmio"
+   ],
+   "f_calabaza": [
+    "i_mg_cu_mn"
+   ],
+   "f_almendra": [
+    "i_calcio"
+   ],
+   "i_mg_cu_mn": [
+    "i_consumo"
+   ],
+   "i_minerales_salud": [
+    "i_mg_cu_mn",
+    "i_calcio"
+   ]
+  }
+ }
+}

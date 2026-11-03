@@ -100,6 +100,11 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 [`grafos/mirra-olibano-apharsemon/grafo_mirra_olibano.html`](grafos/mirra-olibano-apharsemon/grafo_mirra_olibano.html) es el mapa del capítulo "Apharsemon, Myrrh and Olibanum: Ancient Medical Plants" (Ben-Yehoshua y Hanuš, 2014) de *Medicinal and Aromatic Plants of the Middle-East*: 9 partes, 39 secciones y 31 nodos sobre el bálsamo de Judea, la mirra y el incienso. Lleva 11 alertas de evidencia de 14 afirmaciones verificadas: ninguna afirmación médica queda respaldada sin matices; el Mirazid y el gugulípido quedan contradichos, la Boswellia en Crohn superada y el capítulo omite el riesgo del humo de incienso y las precauciones de la mirra en embarazo y niños. Detalle en [`grafos/mirra-olibano-apharsemon/`](grafos/mirra-olibano-apharsemon/README.md).
 
+
+## Grafos de capítulos de Nuts and Seeds in Health and Disease Prevention
+
+[`grafos/nuts-seeds/`](grafos/nuts-seeds/README.md) reúne cuatro capítulos de *Nuts and Seeds in Health and Disease Prevention* (Elsevier, 2011 y 2020) como grafos interactivos con alertas de evidencia: ácidos grasos (39 alertas en total), minerales y tóxicos, semilla de orégano y semilla de tamarindo. Entre los hallazgos: riesgos omitidos de la semilla de ginkgo, el cáñamo, el bario de la nuez de Brasil y el uso del tamarindo como "alternativa al antiveneno"; valores de referencia ya retirados para plomo y arsénico; y errores del capítulo de tamarindo.
+
 ## Skill de odorantes clave
 
 [`skills/odorantes-clave/`](skills/odorantes-clave/SKILL.md) busca en PubMed los odorantes clave de uno o más alimentos (estudios con recombinación, SIDA/OAV, AEDA u olfactometría), clasifica cada hallazgo por nivel de evidencia, unifica sinónimos de compuestos y arma una tabla de odorantes compartidos con DOI. Después traduce el resultado a maridajes con el método de [`foodpairing/`](foodpairing/SKILL.md) (14 tipos de aroma, overtoning, reglas de equilibrio), separando evidencia de interpretación. Incluye como ejemplo verificado el caso café tostado + ajonjolí tostado (2-furfuriltiol, furaneol, 4-vinilguayacol, guayacoles y alquilpirazinas compartidos).

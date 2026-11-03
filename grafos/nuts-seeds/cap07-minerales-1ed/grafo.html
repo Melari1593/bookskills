@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minerales en frutos secos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Minerales y tóxicos en frutos secos y semillas como grafo", "subtitle": "Rodushkin, Baxter y Engström, capítulo 7 de Nuts and Seeds in Health and Disease Prevention (Elsevier, 2011) · con alertas de evidencia actual", "itemLabel": "Elemento o alimento", "itemLabelPlural": "Elementos y alimentos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: selenio, cadmio, nuez de Brasil…"}, "blocks": {"base": {"name": "Planteamiento y resumen", "color": "#6B8E4E"}, "consumo": {"name": "Consumo", "color": "#B08A2E"}, "composicion": {"name": "Composición", "color": "#6B5B95"}, "nutricion": {"name": "Importancia nutricional", "color": "#3F6FA0"}, "toxicos": {"name": "Efectos adversos", "color": "#B5465A"}}, "chapters": [{"num": 1, "title": "Minerales esenciales y elementos tóxicos", "block": "base", "page": 65, "summary": "Planteamiento: los frutos secos y las semillas aportan minerales esenciales, pero también pueden contener elementos tóxicos; para valorarlos hace falta saber cuánto se consume y en qué concentración.", "sections": [{"num": "1.1", "title": "Riqueza mineral y salud", "summary": "Los autores atribuyen parte de los beneficios de los frutos secos (hueso, presión arterial, insulina, corazón) a su calcio, magnesio y potasio y a su bajo sodio.", "items": ["i_minerales_salud", "i_selenio"], "page": 65}, {"num": "1.2", "title": "Qué datos hacen falta para evaluar el riesgo", "summary": "Para estimar beneficio o daño se necesitan tres datos: consumo diario, concentración típica y valores de referencia (ingesta recomendada, máxima tolerable o tolerable semanal).", "items": ["i_valores_referencia"], "page": 66}]}, {"num": 2, "title": "Cuántos frutos secos se consumen", "block": "consumo", "page": 66, "summary": "El consumo medio en Europa y EE. UU. es de pocos gramos al día, lejos de los 30–40 g que proponen las guías.", "sections": [{"num": "2.1", "title": "Consumo medio en Europa y EE. UU.", "summary": "En el estudio europeo EPIC el promedio fue de unos 4–5 g/día; en EE. UU., 3–7 g/día, sobre todo maní, almendra y nuez. Las encuestas probablemente lo subestiman.", "items": ["i_consumo"], "page": 66}, {"num": "2.2", "title": "Porciones y recomendación", "summary": "Las porciones de los envases van de 10 a 100 g; las guías suelen recomendar unos 30 g/día y algunos estudios, 40 g o más.", "items": ["i_consumo"], "page": 67}]}, {"num": 3, "title": "Composición inorgánica", "block": "composicion", "page": 67, "summary": "Concentraciones de 27 elementos en 12 frutos secos y semillas crudos, compiladas de más de 60 fuentes, y por qué varían tanto los oligoelementos.", "sections": [{"num": "3.1", "title": "Cómo se compilaron los datos", "summary": "Tablas nacionales para los macroelementos y publicaciones científicas para el resto; se dan medianas con su variabilidad, o rangos cuando los valores difieren más de diez veces.", "items": ["i_variabilidad"], "page": 67}, {"num": "3.2", "title": "Por qué varían los oligoelementos", "summary": "Los macroelementos varían poco; los oligoelementos varían hasta varios órdenes de magnitud por suelo y clima, contaminación al pelar y envasar, y errores analíticos.", "items": ["i_variabilidad", "f_nuez_brasil"], "page": 68}]}, {"num": 4, "title": "Importancia nutricional", "block": "nutricion", "page": 69, "summary": "Cuántos gramos de cada fruto seco cubren el 10 % de la necesidad diaria de cada elemento (tabla 7.2).", "sections": [{"num": "4.1", "title": "Fuentes ricas: magnesio, cobre, manganeso, hierro, zinc, potasio", "summary": "Los frutos secos y semillas son fuentes muy ricas de magnesio, cobre y manganeso, e importantes de hierro, zinc y potasio; la semilla de calabaza encabeza la lista y el coco la cierra.", "items": ["i_mg_cu_mn", "f_calabaza", "f_coco", "i_niquel"], "page": 69}, {"num": "4.2", "title": "Selenio de la nuez de Brasil", "summary": "Incluso una nuez de Brasil con poco selenio aporta una parte importante del día; girasol, cashew y nuez también son fuentes relevantes.", "items": ["f_nuez_brasil", "i_selenio"], "page": 69}, {"num": "4.3", "title": "Calcio y elementos escasos", "summary": "Salvo la almendra, no son una fuente importante de calcio; el aporte de sodio, cloro, yodo y vanadio es despreciable.", "items": ["i_calcio", "f_almendra"], "page": 69}, {"num": "4.4", "title": "Cromo, molibdeno y boro", "summary": "El valor del cromo es incierto porque los datos varían casi cien veces; maní y semillas aportan molibdeno; nuez de Brasil, avellana, almendra y cashew aportan boro.", "items": ["i_cromo", "i_boro"], "page": 69}]}, {"num": 5, "title": "Efectos adversos", "block": "toxicos", "page": 70, "summary": "Cuándo el consumo de frutos secos acerca a los límites de seguridad: selenio, cadmio, bario y, con dudas analíticas, arsénico, plomo y mercurio.", "sections": [{"num": "5.1", "title": "Exceso de elementos esenciales", "summary": "Para fósforo, manganeso, cobre, níquel, zinc y hierro harían falta más de 300 g/día para llegar al máximo tolerable; con el selenio de la nuez de Brasil bastan pocas unidades.", "items": ["f_nuez_brasil", "i_niquel"], "page": 70}, {"num": "5.2", "title": "Elementos tóxicos en concentraciones bajas", "summary": "La mayoría de los tóxicos (aluminio, antimonio, estaño, talio, uranio y otros) aparece en cantidades muy pequeñas en frutos secos crudos.", "items": ["i_aluminio"], "page": 70}, {"num": "5.3", "title": "Cadmio", "summary": "El cadmio es tóxico para el riñón y el hueso y cancerígeno; la semilla de girasol, la almendra, el piñón y el maní pesan en la exposición, sobre todo con el límite más estricto de la EFSA.", "items": ["i_cadmio", "f_girasol", "f_pinon"], "page": 71}, {"num": "5.4", "title": "Arsénico, plomo y mercurio", "summary": "Con los valores bajos publicados el riesgo es mínimo; los valores altos de nuez, pistacho, piñón y nuez de Brasil podrían deberse a errores analíticos.", "items": ["i_as_pb_hg"], "page": 71}, {"num": "5.5", "title": "Bario de la nuez de Brasil", "summary": "La nuez de Brasil tiene mucho bario; según el capítulo, más de 50 g/día superarían el nivel considerado seguro.", "items": ["i_bario", "f_nuez_brasil"], "page": 71}]}, {"num": 6, "title": "Puntos de resumen", "block": "base", "page": 71, "summary": "Fuentes importantes de varios minerales, escasas de calcio y sodio, con riesgo a vigilar por selenio y bario de la nuez de Brasil y por cadmio de ciertas semillas.", "sections": [{"num": "6.1", "title": "Balance de beneficios y riesgos", "summary": "Aportan muchos minerales esenciales con poco consumo; el selenio y el bario de la nuez de Brasil y el cadmio de girasol, almendra, piñón y maní merecen atención.", "page": 71}]}], "items": {"i_minerales_salud": {"title": "Minerales y beneficios de los frutos secos", "summary": "El capítulo atribuye a la riqueza en calcio, magnesio y potasio y al bajo sodio parte de la protección asociada a los frutos secos.", "caution": "Si se cita este beneficio, distinga la fuerza de la evidencia. La asociación con menor cardiopatía coronaria es consistente. El efecto sobre la presión arterial es pequeño o nulo. El efecto sobre la diabetes tipo 2 no es concluyente. Ningún estudio atribuye el beneficio a los minerales. (Aune 2016; Arnesen 2023)"}, "i_valores_referencia": {"title": "Valores de referencia", "summary": "Ingesta recomendada (RDA/RDI) y máxima tolerable (UL) para elementos esenciales; ingesta tolerable semanal o diaria (PTWI, TWI, TDI) para tóxicos."}, "i_consumo": {"title": "Consumo de frutos secos", "summary": "Consumo real bajo en la población frente a la recomendación de las guías.", "formula": "Europa 4–5 g/día · EE. UU. 3–7 g/día · guías ≈ 30 g/día", "caution": "Recomiende unos 30 g/día. Esta cantidad tiene respaldo en estudios de dosis-respuesta. No hay evidencia de que 40 g o más den más beneficio. La FDA usa 42 g/día en una declaración calificada que \"sugiere pero no prueba\" el beneficio. (Arnesen 2023; FDA 2003)"}, "i_variabilidad": {"title": "Variabilidad y errores analíticos", "summary": "Los oligoelementos varían mucho entre muestras por suelo, contaminación y errores de laboratorio; los autores desconfían de los valores extremos.", "formula": "Macroelementos: RSD < 30 %"}, "i_mg_cu_mn": {"title": "Magnesio, cobre y manganeso", "summary": "Los tres elementos para los que los frutos secos y semillas son fuentes más ricas; los frutos secos se consideran la mejor fuente dietética de manganeso.", "formula": "10–30 g cubren el 10 % del magnesio diario"}, "i_selenio": {"title": "Selenio", "summary": "Oligoelemento esencial; la nuez de Brasil es probablemente el alimento más rico. El capítulo menciona un efecto antitumoral en animales.", "caution": "La protección antitumoral en animales no se confirma en humanos. Los ensayos aleatorizados no muestran menos cáncer con selenio. Algunos ensayos muestran más diabetes tipo 2 y más cáncer de próstata de alto grado. No indique selenio ni nuez de Brasil para prevenir cáncer. (Vinceti 2018, Cochrane)"}, "i_calcio": {"title": "Calcio", "summary": "Los frutos secos son una fuente moderada a pobre de calcio, salvo la almendra.", "formula": "Almendra: 2500 mg/kg"}, "i_cromo": {"title": "Cromo", "summary": "El capítulo lo trata como esencial; sus datos en frutos secos varían casi cien veces, así que su aporte es incierto.", "caution": "El valor de 120 µg/día de cromo no está vigente. EFSA 2014 no fija un valor de referencia porque no hay evidencia de esencialidad. En EE. UU., la ingesta adecuada es 25–35 µg/día en adultos. No use los frutos secos como argumento para aportar cromo. (EFSA 2014; NIH ODS)"}, "i_boro": {"title": "Boro", "summary": "Elemento potencialmente esencial; los frutos secos son una buena fuente, sobre todo para vegetarianos.", "formula": "Nuez de Brasil 40 mg/kg", "caution": "El boro no tiene esencialidad demostrada en humanos. No hay ingesta recomendada. Los frutos secos aportan boro, pero esto no es un beneficio probado. EFSA fija un UL de 10 mg/día y EE. UU. de 20 mg/día. La cifra de 10 mg/día del capítulo coincide con el UL de EFSA. (EFSA 2004; NIH ODS)"}, "i_niquel": {"title": "Níquel", "summary": "El capítulo lo cuenta entre los elementos de los que los frutos secos son fuente muy rica, con cashew y semilla de calabaza a la cabeza.", "formula": "Nuez de Brasil 7 mg/kg · cashew, calabaza y girasol 3 mg/kg", "caution": "No trate el níquel como nutriente. EFSA lo evalúa como contaminante, con una TDI de 13 µg/kg/día. Si el paciente tiene alergia de contacto al níquel, una porción de nuez de Brasil, anacardo o semillas puede causar dermatitis sistémica. EFSA identifica un efecto agudo desde 4,3 µg/kg. (EFSA 2020)"}, "i_cadmio": {"title": "Cadmio", "summary": "Metal tóxico para riñón y hueso y cancerígeno; los alimentos son la principal fuente en no fumadores y algunas semillas aportan una parte relevante.", "formula": "Girasol: hasta 1 mg/kg", "caution": "EFSA mantuvo en 2011 la TWI de 2,5 µg/kg/semana. La IARC clasifica el cadmio en el grupo 1. La UE limita el cadmio a 0,50 mg/kg en girasol y 0,30 mg/kg en piñón. (EFSA 2011; Reg. UE 2021/1323)"}, "i_as_pb_hg": {"title": "Arsénico, plomo y mercurio", "summary": "Concentraciones muy bajas en la mayoría de los estudios; los valores altos aislados podrían ser artefactos analíticos.", "caution": "Las PTWI de plomo y arsénico inorgánico ya no están vigentes. JECFA las retiró porque no protegían la salud. Para estos dos elementos no hay umbral seguro; se usa el margen de exposición. Para mercurio, EFSA fija TWI de 1,3 µg/kg (metilmercurio) y 4 µg/kg (inorgánico). (JECFA 2010; EFSA 2010, 2012, 2024)"}, "i_bario": {"title": "Bario", "summary": "Elemento no esencial; la nuez de Brasil lo acumula en concentraciones muy altas y variables.", "formula": "Nuez de Brasil: 70–2000 mg/kg", "caution": "El capítulo subestima el riesgo por bario. La RfD de US EPA es 0,2 mg/kg/día, unos 14 mg/día para 70 kg. Con 1270 mg/kg de bario, unos 11 g/día de nuez de Brasil alcanzan ese valor. Según el origen, o si el peso es menor de 60 kg, 2 nueces/día pueden superarlo. (US EPA IRIS 2005; Koeder 2025)"}, "i_aluminio": {"title": "Aluminio", "summary": "Presente en concentraciones bajas; el piñón tiene los valores más altos del grupo.", "formula": "Piñón: 4–40 mg/kg", "caution": "El aporte de aluminio suele ser bajo, pero no siempre. EFSA fija una TWI de 1 mg/kg por semana, unos 10 mg/día para 70 kg. Con piñón de 40 mg/kg, 30 g/día aportan el 12 % de la TWI. La dieta europea ya puede superar la TWI sin frutos secos. (EFSA 2008)"}, "f_nuez_brasil": {"title": "Nuez de Brasil", "summary": "El fruto seco más extremo del capítulo: muy rica en selenio y bario, con concentraciones que dependen del suelo de origen.", "formula": "Selenio 1–50 mg/kg · bario 70–2000 mg/kg", "caution": "Si el paciente come nuez de Brasil a diario, limite la cantidad. El selenio por nuez varía hasta 512 mg/kg según el origen. EFSA fijó en 2023 un UL de 255 µg/día en adultos. Con nueces de más de 100 µg, 3 nueces/día superan ese UL. No combine nuez de Brasil diaria con suplementos de selenio. (EFSA 2023; Chang 1995)"}, "f_calabaza": {"title": "Semilla de calabaza", "summary": "La de mayor potencial nutricional mineral: fósforo, magnesio, hierro, zinc y manganeso.", "formula": "Fósforo 11 000 mg/kg · magnesio 5300 mg/kg"}, "f_girasol": {"title": "Semilla de girasol", "summary": "Buena fuente de selenio, cobre y níquel; también la que más cadmio puede aportar.", "formula": "Selenio 0,6 mg/kg · cadmio 0,01–1 mg/kg"}, "f_pinon": {"title": "Piñón", "summary": "Rico en manganeso; con cadmio y aluminio relativamente altos en algunos estudios.", "formula": "Manganeso 91 mg/kg"}, "f_almendra": {"title": "Almendra", "summary": "El único fruto seco del grupo que es fuente relevante de calcio.", "formula": "Calcio 2500 mg/kg"}, "f_coco": {"title": "Coco", "summary": "El de menor aporte mineral del grupo, salvo sodio.", "formula": "Sodio 370 mg/kg"}}, "resources": [{"id": "7.1", "title": "Concentración de 27 elementos en 12 frutos secos y semillas", "page": 68, "usedBy": ["3.1", "3.2", "4.2", "5.3", "5.5"]}, {"id": "7.2", "title": "Gramos diarios que cubren el 10 % de la ingesta recomendada o tolerable", "page": 70, "usedBy": ["4.1", "4.3", "4.4", "5.1", "5.4"]}], "requires": {"chapters": {"2": [1], "3": [1], "4": [2, 3], "5": [4], "6": [5]}, "sections": {"1.2": ["1.1"], "2.2": ["2.1"], "3.1": ["1.2"], "3.2": ["3.1"], "4.1": ["2.2", "3.1"], "4.2": ["4.1"], "4.3": ["4.1"], "4.4": ["3.2"], "5.1": ["4.1", "4.2"], "5.2": ["3.2"], "5.3": ["5.2"], "5.4": ["3.2"], "5.5": ["5.2"], "6.1": ["5.1", "5.3", "5.5"]}, "items": {"i_selenio": ["i_valores_referencia"], "i_cadmio": ["i_valores_referencia"], "i_bario": ["i_valores_referencia"], "i_as_pb_hg": ["i_variabilidad", "i_valores_referencia"], "i_aluminio": ["i_valores_referencia"], "i_niquel": ["i_valores_referencia"], "i_cromo": ["i_variabilidad"], "f_nuez_brasil": ["i_selenio", "i_bario"], "f_girasol": ["i_cadmio"], "f_pinon": ["i_cadmio"], "f_calabaza": ["i_mg_cu_mn"], "f_almendra": ["i_calcio"], "i_mg_cu_mn": ["i_consumo"], "i_minerales_salud": ["i_mg_cu_mn", "i_calcio"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

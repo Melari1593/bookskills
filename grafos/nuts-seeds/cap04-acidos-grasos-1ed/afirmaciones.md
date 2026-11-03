@@ -1,0 +1,16 @@
+# Afirmaciones a verificar: capítulo 4 de *Nuts and Seeds in Health and Disease Prevention* (Li y Hu, Elsevier 2011)
+
+El capítulo es de composición: tablas de lípidos y ácidos grasos de 20 frutos secos y semillas, más semillas especiales. Casi no hace afirmaciones de salud directas; las alertas deben contextualizar lo que el lector podría deducir. Id del ítem del grafo entre corchetes.
+
+V1 [i_salud] Introducción: "evidencia epidemiológica sustancial" asocia los ácidos grasos de frutos secos y semillas con efectos en la salud (cita Li 2002). → Metaanálisis actuales de consumo de frutos secos y enfermedad cardiovascular, mortalidad, diabetes (p. ej. Aune 2016 BMC Med; PREDIMED reanalizado 2018); declaraciones de salud calificadas de la FDA (2003 frutos secos; nueces y ALA).
+V2 [i_ala] Nuez (11,4 %) y semilla de cáñamo (15,2 %) como fuentes ricas de ALA (18:3n-3), precursor de EPA y DHA. → Conversión ALA→EPA/DHA en humanos (baja, sobre todo a DHA); metaanálisis de ALA y riesgo cardiovascular (p. ej. Naghshi 2021 BMJ).
+V3 [f_ginkgo] La semilla de Ginkgo biloba se presenta entre los frutos secos "comúnmente consumidos". → Ginkgotoxina (4'-O-metilpiridoxina): intoxicaciones con convulsiones, sobre todo en niños; dosis implicadas; papel de la vitamina B6.
+V4 [f_canamo] Semilla de Cannabis sativa como fruto seco común (ALA 15,2 %). → THC residual en semillas y productos; límites máximos de la UE (Reglamento 2022/1393) y otros.
+V5 [i_gla] Las Boraginaceae (Borago, Echium, Anchusa…) y Ribes como fuentes de ácido γ-linolénico (GLA, 18:3n-6). → Alcaloides pirrolizidínicos en semillas/aceites de Boraginaceae (EFSA, BfR); eficacia clínica del GLA (p. ej. Cochrane 2013 en dermatitis atópica).
+V6 [i_sda] Ribes y Boraginaceae (Echium) contienen ácido estearidónico (SDA, 18:4n-3). → Evidencia humana de que el SDA eleva EPA más que el ALA; estatus de novel food del aceite de Echium (EFSA/UE).
+V7 [i_clna] Granada (punícico 73–78 %) y Trichosanthes kirilowii (CLNA 36,9 %). → Evidencia en humanos del ácido punícico (Yuan 2009: conversión a CLA 9c,11t); ensayos clínicos posteriores; seguridad de semilla de T. kirilowii.
+V8 [i_ximeninico] Semillas de Santalum (sándalo) con ácido ximenínico hasta 82,8 %. → Seguridad como alimento (FSANZ: Santalum spicatum / nueces de quandong o sándalo), efectos biológicos en humanos.
+V9 [f_mani] El maní figura entre los frutos secos y semillas comunes. → Alergia a maní y frutos secos (prevalencia; guías de introducción temprana: ensayo LEAP 2015, guía NIAID 2017).
+V10 [i_linoleico] El 18:2n-6 es el PUFA más abundante (hasta 75,7 % en semilla de melón negro). → Evidencia actual sobre ácido linoleico y riesgo cardiovascular (AHA 2009; metaanálisis de biomarcadores Marklund 2019 Circulation); estado de la hipótesis "exceso de omega-6 / cociente n-6:n-3".
+V11 [f_macadamia] La macadamia tiene 25,5 % de 16:1n-7 (palmitoleico) y 82,6 % de MUFA. → Evidencia de macadamia y lípidos (declaración de salud calificada de la FDA 2017); efectos del ácido palmitoleico en humanos.
+V12 [i_composicion] Los valores proceden de muestras pequeñas (n = 3) de mercados de Hangzhou y otras fuentes únicas. → Comparar 2–3 valores clave (ALA de nuez, MUFA de macadamia, SFA de nuez de Brasil) con USDA FoodData Central; advertir variabilidad por variedad y origen.

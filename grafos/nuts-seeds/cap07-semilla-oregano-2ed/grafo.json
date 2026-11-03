@@ -1,0 +1,250 @@
+{
+ "meta": {
+  "title": "Semilla de orégano como grafo",
+  "subtitle": "Atar y Çölgeçen, capítulo 7 de Nuts and Seeds in Health and Disease Prevention, 2.ª ed. (Elsevier, 2020) · con alertas de evidencia actual",
+  "itemLabel": "Concepto o afirmación",
+  "itemLabelPlural": "Conceptos y afirmaciones",
+  "resourceLabel": "Recurso",
+  "resourceLabelPlural": "Recursos",
+  "searchHint": "Buscar: carvacrol, colesterol, aceite esencial…"
+ },
+ "blocks": {
+  "planta": {
+   "name": "La planta y su uso",
+   "color": "#6B8E4E"
+  },
+  "salud": {
+   "name": "Salud y composición",
+   "color": "#3F6FA0"
+  },
+  "riesgo": {
+   "name": "Seguridad",
+   "color": "#B5465A"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "El orégano y su cultivo",
+   "block": "planta",
+   "page": 73,
+   "summary": "Qué es el género Origanum, por qué Turquía lo cultiva cada vez más y cómo se ha usado desde la Antigüedad.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Introducción",
+     "summary": "El orégano es la planta medicinal más extendida de Turquía; su producción crece por sus compuestos bioactivos: aceite esencial, fenoles, flavonoides y ácido rosmarínico.",
+     "items": [
+      "i_compuestos"
+     ],
+     "page": 73
+    },
+    {
+     "num": "1.2",
+     "title": "Descripción botánica",
+     "summary": "Género de la familia Lamiaceae con 41 especies; en Turquía se cultivan con fines medicinales O. onites, O. vulgare, O. majorana, O. minutiflorum y O. syriacum.",
+     "items": [
+      "i_especies"
+     ],
+     "page": 74
+    },
+    {
+     "num": "1.3",
+     "title": "Usos históricos",
+     "summary": "Planta ligada a ritos y mitos antiguos; los autores afirman que la investigación ya demostró que las plantas tratan enfermedades graves.",
+     "items": [
+      "i_plantas_curan"
+     ],
+     "page": 74
+    },
+    {
+     "num": "1.4",
+     "title": "Cultivo y usos actuales",
+     "summary": "Se usa como especia, en infusiones y cosméticos; su aceite esencial alarga la vida útil de carnes, pescados y frutas en recubrimientos comestibles.",
+     "items": [
+      "i_conservacion_alimentos"
+     ],
+     "page": 74
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Salud y composición de la semilla",
+   "block": "salud",
+   "page": 75,
+   "summary": "Usos tradicionales y supuestos beneficios del orégano, y lo poco que se sabe de la composición de su semilla.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Usos tradicionales",
+     "summary": "Medicina tradicional iraní y turca: diurético, expectorante y remedio para afecciones respiratorias, menstruales, renales y metabólicas; el agua de orégano bajaría colesterol y glucosa.",
+     "items": [
+      "i_usos_tradicionales"
+     ],
+     "page": 75
+    },
+    {
+     "num": "2.2",
+     "title": "Composición de la semilla",
+     "summary": "Las semillas tienen catequina, ácidos fenólicos y un aceite muy rico en ácido linolénico; también triacilgliceroles y planteosa.",
+     "items": [
+      "i_semilla_acidos"
+     ],
+     "page": 75
+    },
+    {
+     "num": "2.3",
+     "title": "Aceite esencial y sus actividades",
+     "summary": "El aceite (carvacrol, timol, p-cimeno, γ-terpineno) se vende como antioxidante y antimicrobiano y se le atribuyen efectos hipolipemiantes, analgésicos, antivirales y anticancerosos.",
+     "items": [
+      "i_aceite_esencial",
+      "i_compuestos"
+     ],
+     "page": 75
+    },
+    {
+     "num": "2.4",
+     "title": "Efecto protector del ADN",
+     "summary": "Un extracto redujo micronúcleos en linfocitos humanos y médula de ratón y se describe como radioprotector.",
+     "items": [
+      "i_radioproteccion"
+     ],
+     "page": 75
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Efectos adversos y resumen",
+   "block": "riesgo",
+   "page": 75,
+   "summary": "Dosis altas del aceite pueden causar síntomas digestivos y nerviosos; los autores piden prudencia en niños, embarazo, lactancia y diabetes.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Efectos adversos, alergias y toxicidad",
+     "summary": "En dosis altas el aceite causa náuseas, vómitos y molestias gástricas; los fitoquímicos en exceso pueden ser tóxicos para varios órganos.",
+     "items": [
+      "i_seguridad"
+     ],
+     "page": 75
+    },
+    {
+     "num": "3.2",
+     "title": "Puntos de resumen",
+     "summary": "Planta de cultivo antiguo con semillas ricas en aceite esencial y ácidos grasos, útil para la industria y para alimentos funcionales según los autores.",
+     "page": 76
+    }
+   ]
+  }
+ ],
+ "items": {
+  "i_especies": {
+   "title": "Especies de Origanum",
+   "summary": "Las especies medicinales cultivadas en Turquía; O. onites y O. vulgare son las comerciales más importantes.",
+   "formula": "41 especies en el mundo · 23 en Turquía"
+  },
+  "i_compuestos": {
+   "title": "Compuestos bioactivos",
+   "summary": "Aceite esencial con carvacrol y timol, fenoles, flavonoides, tocoferoles y ácidos rosmarínico y cinámico.",
+   "formula": "Carvacrol · timol · p-cimeno · γ-terpineno"
+  },
+  "i_plantas_curan": {
+   "title": "Afirmación: las plantas tratan enfermedades graves",
+   "summary": "El capítulo afirma que la investigación demostró la eficacia de las plantas contra cáncer, sida, Alzheimer, alcoholismo e infecciones.",
+   "caution": "La frase generaliza sin datos clínicos. Ningún ensayo en humanos muestra que el orégano trate cáncer, sida, Alzheimer, alcoholismo o envejecimiento. Los fármacos de origen vegetal con eficacia probada son moléculas aisladas y estudiadas en ensayos. La actividad in vitro no equivale a eficacia clínica. (Heinrich 2006; búsqueda PubMed 2026)"
+  },
+  "i_usos_tradicionales": {
+   "title": "Usos tradicionales del orégano",
+   "summary": "Expectorante, diurético, digestivo y para trastornos menstruales, renales, hepáticos y metabólicos, según la medicina tradicional citada.",
+   "caution": "Si se considera el \"agua de orégano\" para lípidos, la evidencia es un solo ensayo pequeño (n = 48), sin aleatorización descrita. No hay ensayos que muestren descenso de la glucosa. Un metanálisis de especias en diabetes tipo 2 no halló efecto del orégano. Asma, riñón, hígado y hormonas son usos tradicionales sin ensayos. (Ozdemir 2008; Garza 2024)"
+  },
+  "i_semilla_acidos": {
+   "title": "Ácidos grasos del aceite de semilla",
+   "summary": "Un estudio citado halla un aceite de semilla de O. vulgare dominado por ácido linolénico.",
+   "formula": "Linolénico 64,6 % · linoleico 23,8 %",
+   "caution": "Otro análisis confirma que el ácido α-linolénico domina en el aceite de semilla de orégano (61,8 %). La cantidad de semilla consumida como especia es mínima. Su aporte de omega-3 a la dieta es despreciable. (Azcan 2004)"
+  },
+  "i_aceite_esencial": {
+   "title": "Aceite esencial de orégano",
+   "summary": "Concentrado de terpenos y fenoles al que el capítulo atribuye efectos hipolipemiantes, analgésicos, antimicrobianos, antivirales y anticancerosos.",
+   "caution": "El aceite de orégano tiene actividad antimicrobiana in vitro. Los datos en humanos son series pequeñas sin control o mezclas herbales. No hay ensayos para colesterol, dolor reumático, dolor dental, virus ni cáncer. La EMA no tiene monografía del aceite esencial de orégano. No sustituir antibióticos ni tratamientos oncológicos. (Force 2000; Chedid 2014; EMA/HMPC)"
+  },
+  "i_radioproteccion": {
+   "title": "Afirmación: protege el ADN y la radiación",
+   "summary": "Reducción de micronúcleos y efecto radioprotector de un extracto en células humanas y en ratones.",
+   "caution": "Los datos de radioprotección son in vitro (linfocitos en cultivo) y en ratón con inyección intraperitoneal. No hay estudios en pacientes. Si un paciente recibe radioterapia o yodo radiactivo, no usar orégano como protector. (Arami 2013; Ghasemnezhad Targhi 2016)"
+  },
+  "i_seguridad": {
+   "title": "Seguridad del aceite de orégano",
+   "summary": "Riesgo de síntomas digestivos e hiperactividad con dosis altas; prudencia en niños, embarazo, lactancia y diabetes.",
+   "caution": "Si se plantea aceite de orégano oral en embarazo, lactancia, lactantes o niños, no hay datos de seguridad. Seguir la dosis del fabricante no garantiza seguridad. Si hay alergia a otras Lamiaceae (tomillo, menta, salvia), puede haber reacción cruzada. No hay estudios de interacción con anticoagulantes ni hipoglucemiantes. (EMA/HMPC; Benito 1996; 21 CFR 182.20)"
+  },
+  "i_conservacion_alimentos": {
+   "title": "Conservación de alimentos",
+   "summary": "Películas y recubrimientos comestibles con aceite de orégano que reducen el crecimiento microbiano y la oxidación.",
+   "caution": "El efecto conservante está documentado en estudios de laboratorio y alimentos. Los retos son el sabor y olor intensos, la volatilidad y la escala industrial. Su uso en envases requiere cumplir la normativa local. (De Farias 2025; 21 CFR 182.20)"
+  }
+ },
+ "resources": [],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "1.4": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.3"
+   ],
+   "2.2": [
+    "1.2"
+   ],
+   "2.3": [
+    "1.1"
+   ],
+   "2.4": [
+    "2.3"
+   ],
+   "3.1": [
+    "2.3"
+   ],
+   "3.2": [
+    "3.1"
+   ]
+  },
+  "items": {
+   "i_aceite_esencial": [
+    "i_compuestos"
+   ],
+   "i_seguridad": [
+    "i_aceite_esencial"
+   ],
+   "i_conservacion_alimentos": [
+    "i_aceite_esencial"
+   ],
+   "i_radioproteccion": [
+    "i_compuestos"
+   ],
+   "i_semilla_acidos": [
+    "i_especies"
+   ],
+   "i_usos_tradicionales": [
+    "i_especies"
+   ]
+  }
+ }
+}

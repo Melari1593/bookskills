@@ -1,0 +1,499 @@
+{
+ "meta": {
+  "title": "Ácidos grasos de frutos secos y semillas como grafo",
+  "subtitle": "Li y Hu, capítulo 4 de Nuts and Seeds in Health and Disease Prevention (Elsevier, 2011) · con alertas de evidencia actual",
+  "itemLabel": "Ácido graso o alimento",
+  "itemLabelPlural": "Ácidos grasos y alimentos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: nuez, ALA, ginkgo, punícico…"
+ },
+ "blocks": {
+  "base": {
+   "name": "Planteamiento y conclusiones",
+   "color": "#6B8E4E"
+  },
+  "lipidos": {
+   "name": "Clases de lípidos",
+   "color": "#B08A2E"
+  },
+  "perfil": {
+   "name": "Perfil de ácidos grasos",
+   "color": "#3F6FA0"
+  },
+  "especiales": {
+   "name": "Ácidos grasos especiales",
+   "color": "#A05A3C"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Por qué importan las grasas de frutos secos y semillas",
+   "block": "base",
+   "page": 35,
+   "summary": "Planteamiento del capítulo: los frutos secos y las semillas aportan sobre todo grasas insaturadas, incluidos los dos ácidos grasos esenciales y otros poco comunes.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Fuentes de grasas insaturadas",
+     "summary": "Los frutos secos y las semillas destacan por su grasa insaturada; los autores citan evidencia epidemiológica que la asocia con efectos en la salud.",
+     "items": [
+      "i_salud"
+     ],
+     "page": 35
+    },
+    {
+     "num": "1.2",
+     "title": "Ácidos grasos esenciales y raros",
+     "summary": "El linoleico y el α-linolénico son esenciales y precursores de los PUFA de 20 y 22 carbonos; algunas semillas añaden estearidónico, CLNA y ximenínico.",
+     "items": [
+      "i_linoleico",
+      "i_ala"
+     ],
+     "page": 35
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Clases de lípidos",
+   "block": "lipidos",
+   "page": 36,
+   "summary": "Cuánta grasa tienen 12 frutos secos y semillas y en qué forma: casi toda como triacilgliceroles, con fitosteroles en la mayoría.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Contenido total de lípidos",
+     "summary": "La grasa total va de unos 2 g/100 g en la semilla de ginkgo a unos 75 g/100 g en la nuez; los datos vienen de muestras pequeñas (n = 3).",
+     "items": [
+      "i_composicion",
+      "f_ginkgo",
+      "f_nuez"
+     ],
+     "page": 36
+    },
+    {
+     "num": "2.2",
+     "title": "Triacilgliceroles, diacilgliceroles y ácidos grasos libres",
+     "summary": "Los triacilgliceroles superan el 90 % de los lípidos (98 % en macadamia); el cáñamo tiene algo de diacilglicerol y el ginkgo algo de ácidos grasos libres.",
+     "items": [
+      "i_tag",
+      "f_canamo"
+     ],
+     "page": 36
+    },
+    {
+     "num": "2.3",
+     "title": "Fitosteroles y sus ésteres",
+     "summary": "Casi todas las muestras tienen fitosteroles, con el máximo en el pistacho; los ésteres de esterol varían de trazas a cerca del 7 %.",
+     "items": [
+      "i_fitoesteroles"
+     ],
+     "page": 36
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Perfil de ácidos grasos de 20 frutos secos y semillas",
+   "block": "perfil",
+   "page": 36,
+   "summary": "Comparación de saturados, monoinsaturados y poliinsaturados en 20 frutos secos y semillas (tablas 4.2 a 4.4 y figura 4.1).",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Ácidos grasos saturados",
+     "summary": "Palmítico y esteárico son los saturados principales; el total va de unos 6 % en la pecana a unos 26 % en la nuez de Brasil.",
+     "items": [
+      "i_saturados",
+      "f_nuez_brasil"
+     ],
+     "page": 36
+    },
+    {
+     "num": "3.2",
+     "title": "Monoinsaturados",
+     "summary": "El oleico domina en avellana, macadamia, almendra, pistacho, cashew y calabaza; la macadamia destaca además por su palmitoleico.",
+     "items": [
+      "i_mufa",
+      "i_palmitoleico",
+      "f_macadamia",
+      "f_mani"
+     ],
+     "page": 36
+    },
+    {
+     "num": "3.3",
+     "title": "Poliinsaturados n-6 y n-3",
+     "summary": "El linoleico es el PUFA más abundante (hasta unos tres cuartos en la semilla de melón negro); el α-linolénico es mucho menor, salvo en cáñamo y nuez.",
+     "items": [
+      "i_linoleico",
+      "i_ala",
+      "f_semilla_melon_negro",
+      "f_nuez",
+      "f_canamo"
+     ],
+     "page": 37
+    },
+    {
+     "num": "3.4",
+     "title": "Ácidos grasos poco comunes del ginkgo",
+     "summary": "La semilla de ginkgo es la única con 20:2n-6 y 20:3n-6 y con cantidades apreciables de 18:1n-7 y 18:3n-6.",
+     "items": [
+      "f_ginkgo"
+     ],
+     "page": 37
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Semillas con ácidos grasos especiales",
+   "block": "especiales",
+   "page": 37,
+   "summary": "Semillas que aportan ácidos grasos raros: linolénicos conjugados, ximenínico, γ-linolénico y estearidónico (tablas 4.5 a 4.7).",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Linolénicos conjugados en granada y Trichosanthes",
+     "summary": "La semilla de granada tiene más de 80 % de CLNA, sobre todo punícico; la de Trichosanthes kirilowii, algo más de un tercio.",
+     "items": [
+      "i_clna",
+      "f_granada",
+      "f_trichosanthes"
+     ],
+     "page": 37
+    },
+    {
+     "num": "4.2",
+     "title": "Ácido ximenínico en el sándalo",
+     "summary": "Las almendras de varias especies de Santalum contienen ácido ximenínico, un ácido graso con triple enlace; en S. album llega a unos cuatro quintos.",
+     "items": [
+      "i_ximeninico",
+      "f_santalum"
+     ],
+     "page": 39
+    },
+    {
+     "num": "4.3",
+     "title": "GLA y SDA en Ribes y cinco familias",
+     "summary": "Las semillas de grosellas (Ribes) y de Boraginaceae aportan γ-linolénico y estearidónico; todas las familias estudiadas tienen α-linolénico.",
+     "items": [
+      "i_gla",
+      "i_sda",
+      "f_boraginaceas"
+     ],
+     "page": 39
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Conclusiones y puntos de resumen",
+   "block": "base",
+   "page": 39,
+   "summary": "Todos los grupos estudiados son bajos en saturados y altos en insaturados; cada grupo especial se distingue por un ácido graso característico.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Qué distingue a cada grupo",
+     "summary": "Linoleico como PUFA principal; ALA alto en cáñamo, nuez y Ribes; SDA en Ribes y Boraginaceae; CLNA en granada y Trichosanthes; ximenínico en Santalum.",
+     "page": 39
+    }
+   ]
+  }
+ ],
+ "items": {
+  "i_salud": {
+   "title": "Grasas de frutos secos y salud",
+   "summary": "El capítulo afirma, citando una revisión previa, que hay evidencia epidemiológica amplia que asocia estas grasas con efectos en la salud; no la desarrolla.",
+   "caution": "La asociación sigue vigente. La mayor parte de la evidencia es observacional. El único ECA grande (PREDIMED) se reanalizó en 2018. El efecto es del patrón dietético, no de un ácido graso aislado. (Aune 2016, BMC Med; Estruch 2018, NEJM)"
+  },
+  "i_composicion": {
+   "title": "Calidad de los datos de composición",
+   "summary": "Las cifras del capítulo vienen de muestras pequeñas y de orígenes concretos (sobre todo mercados de China y estudios únicos); la composición varía con variedad, cultivo y procesado.",
+   "formula": "n = 3 por muestra en las tablas 4.1–4.2",
+   "caution": "Los perfiles del capítulo proceden de 3 muestras por alimento, de una sola fuente. El MUFA de la macadamia y el SFA de la nuez de Brasil coinciden con el USDA. El ALA de la nuez es menor (11,4 % frente a 14,6 %). Use tablas nacionales para cálculos dietéticos. (USDA FoodData Central, SR Legacy)"
+  },
+  "i_tag": {
+   "title": "Triacilgliceroles",
+   "summary": "Forma principal de la grasa en todas las muestras: más del 90 % de los lípidos.",
+   "formula": "TAG > 90 % · máximo 98,4 % en macadamia"
+  },
+  "i_fitoesteroles": {
+   "title": "Fitosteroles",
+   "summary": "Esteroles vegetales presentes en la mayoría de los frutos secos y semillas analizados; el pistacho tiene la mayor proporción.",
+   "formula": "Pistacho: 5,0 % de los lípidos totales"
+  },
+  "i_saturados": {
+   "title": "Ácidos grasos saturados",
+   "summary": "Sobre todo palmítico (16:0) y esteárico (18:0); minoritarios en todos los frutos secos y semillas del capítulo.",
+   "formula": "SFA: 6,3 % (pecana) – 26,2 % (nuez de Brasil)"
+  },
+  "i_mufa": {
+   "title": "Monoinsaturados (oleico)",
+   "summary": "El oleico (18:1n-9) es el ácido graso principal de avellana, macadamia, almendra, pistacho, cashew y calabaza.",
+   "formula": "MUFA: 42,7 % (calabaza) – 82,6 % (macadamia)"
+  },
+  "i_palmitoleico": {
+   "title": "Ácido palmitoleico (16:1n-7)",
+   "summary": "Monoinsaturado de 16 carbonos casi ausente en los demás frutos secos, pero abundante en la macadamia.",
+   "formula": "Macadamia: 25,5 % de los ácidos grasos"
+  },
+  "i_linoleico": {
+   "title": "Ácido linoleico (18:2n-6)",
+   "summary": "Ácido graso esencial omega-6; es el poliinsaturado más abundante en casi todos los frutos secos y semillas del capítulo.",
+   "formula": "2,5 % (macadamia) – 75,7 % (semilla de melón negro)",
+   "caution": "Un ácido linoleico alto en sangre se asocia a menos enfermedad cardiovascular en cohortes. La AHA recomienda que los omega-6 aporten el 5–10 % de la energía. Los ECA antiguos de sustitución no muestran un beneficio en mortalidad. El cociente n-6:n-3 no tiene validez clínica demostrada. (Marklund 2019, Circulation; Ramsden 2016, BMJ)"
+  },
+  "i_ala": {
+   "title": "Ácido α-linolénico (ALA, 18:3n-3)",
+   "summary": "Ácido graso esencial omega-3 y precursor de EPA y DHA; es escaso en la mayoría de las muestras y abundante en cáñamo y nuez.",
+   "formula": "Cáñamo 15,2 % · nuez 11,4 %",
+   "caution": "La nuez y el cáñamo aportan ALA. En adultos, la conversión de ALA a EPA es limitada. La conversión a DHA es muy baja. El ALA no reemplaza el EPA ni el DHA preformados. En cohortes, cada 1 g/día de ALA se asocia a un 5 % menos de mortalidad cardiovascular. (Burdge 2005; Naghshi 2021, BMJ)"
+  },
+  "i_gla": {
+   "title": "Ácido γ-linolénico (GLA, 18:3n-6)",
+   "summary": "Omega-6 que se forma a partir del linoleico; aparece en semillas de Ribes y de varias familias silvestres, sobre todo Boraginaceae.",
+   "caution": "Las plantas de la familia de la borraja contienen alcaloides pirrolizidínicos, que son tóxicos para el hígado. El aceite refinado suele tener niveles bajos. La hoja, la semilla entera y los productos sin control pueden superar los límites de la UE. El aceite de borraja oral no mejora el eccema atópico. (Reg. UE 2020/2040; Cochrane 2013)"
+  },
+  "i_sda": {
+   "title": "Ácido estearidónico (SDA, 18:4n-3)",
+   "summary": "Omega-3 que sigue al ALA en la ruta de síntesis de EPA; el capítulo lo encuentra en semillas de Ribes y Boraginaceae.",
+   "caution": "El SDA eleva el EPA en sangre más que el ALA, pero mucho menos que el aceite de pescado. No eleva el DHA. No redujo los triglicéridos en un ECA. En la UE solo está autorizado el aceite de Echium refinado, con alcaloides pirrolizidínicos no detectables. (Kuhnt 2016; Decisión 2008/558/CE)"
+  },
+  "i_clna": {
+   "title": "Linolénicos conjugados (CLNA) y ácido punícico",
+   "summary": "Isómeros de 18:3 con dobles enlaces conjugados; el punícico es el principal en la semilla de granada.",
+   "formula": "Granada: CLNA 83–88 %, punícico 73–78 %",
+   "caution": "El ácido punícico se absorbe y se convierte en parte en CLA 9c,11t en humanos. Los ensayos clínicos son pequeños y de corta duración. No hay beneficio clínico demostrado. No hay una evaluación formal de seguridad de la semilla de Trichosanthes kirilowii como alimento. (Yuan 2009, Mol Nutr Food Res; Yin 2024)"
+  },
+  "i_ximeninico": {
+   "title": "Ácido ximenínico",
+   "summary": "Ácido graso poco común con un triple enlace, característico de las almendras de sándalo (Santalum).",
+   "formula": "S. album: 82,8 %",
+   "caution": "El ácido ximenínico de la semilla de sándalo solo se ha estudiado en animales y en células. No hay ensayos de ingesta en humanos. Se acumula en el tejido adiposo de ratas. No hay datos de seguridad a largo plazo. No se pudo confirmar el estatus regulatorio en FSANZ. (Zhang 2021, Food Funct; Li 2012, Lipids)"
+  },
+  "f_nuez": {
+   "title": "Nuez",
+   "summary": "El fruto seco con más grasa del capítulo y uno de los más ricos en linoleico y en ALA.",
+   "formula": "Lípidos 75,4 g/100 g · PUFA 71,7 %"
+  },
+  "f_macadamia": {
+   "title": "Macadamia",
+   "summary": "La más monoinsaturada del grupo, con oleico y un palmitoleico inusualmente alto; casi sin poliinsaturados.",
+   "formula": "MUFA 82,6 % · PUFA 2,8 %",
+   "caution": "La macadamia mejora el LDL-C en un ensayo pequeño. La FDA le reconoce una evidencia limitada (2017). Tiene más grasa saturada que otros frutos secos. El ácido palmitoleico aislado no mejoró la inflamación ni los lípidos en un ECA. El 25,5 % de 16:1 del capítulo es mayor que el valor del USDA (17,9 %). (FDA 2017; Bridges 2025, AJCN)"
+  },
+  "f_mani": {
+   "title": "Maní",
+   "summary": "Legumbre que se consume como fruto seco; su grasa es sobre todo oleico y linoleico, sin ALA detectable.",
+   "formula": "MUFA 44,6 % · PUFA 33,3 %",
+   "caution": "El maní es el alérgeno alimentario más frecuente en niños de EE. UU. (2,2 %). Puede causar anafilaxia. La evitación no previene la alergia. La introducción temprana la reduce: del 13,7 % al 1,9 % en el ensayo LEAP. Si el lactante tiene eczema grave o alergia al huevo, evalúelo antes. (Du Toit 2015, NEJM; NIAID 2017)"
+  },
+  "f_ginkgo": {
+   "title": "Semilla de ginkgo",
+   "summary": "Semilla con muy poca grasa pero con ácidos grasos poco comunes; el capítulo la incluye entre los frutos secos de consumo habitual.",
+   "formula": "Lípidos 2,2 g/100 g",
+   "caution": "La semilla de ginkgo contiene ginkgotoxina, un antagonista de la vitamina B6. Su consumo en exceso causa vómitos y convulsiones. Hay casos en niños de 2 años tras 20–30 semillas. El tratamiento descrito es fosfato de piridoxal o piridoxina. No la recomiende como fruto seco habitual en niños. (Kajiyama 2002, Pediatrics; Sado 2018)"
+  },
+  "f_canamo": {
+   "title": "Semilla de cáñamo (Cannabis sativa)",
+   "summary": "La semilla con más ALA de las 20 estudiadas y con un poco de diacilglicerol.",
+   "formula": "ALA 15,2 % · PUFA 70,9 %",
+   "caution": "Las semillas y el aceite de cáñamo pueden contener THC residual, sobre todo por la cáscara. La UE fija un máximo de 3,0 mg/kg en semillas y de 7,5 mg/kg en aceite. Hay productos comerciales que superan el límite. Considere el riesgo en niños y en pruebas de drogas en orina. (Reg. UE 2022/1393, hoy integrado en el Reg. UE 2023/915; Lindekamp 2024)"
+  },
+  "f_nuez_brasil": {
+   "title": "Nuez de Brasil",
+   "summary": "La de mayor proporción de saturados del grupo, con un esteárico especialmente alto.",
+   "formula": "SFA 26,2 % · esteárico 11,8 %"
+  },
+  "f_semilla_melon_negro": {
+   "title": "Semilla de melón negro",
+   "summary": "Semilla con la mayor proporción de linoleico y de poliinsaturados del capítulo.",
+   "formula": "Linoleico 75,7 % · PUFA 75,8 %"
+  },
+  "f_granada": {
+   "title": "Semilla de granada",
+   "summary": "Semilla dominada por ácido punícico; los autores citan un estudio propio de su metabolismo en humanos."
+  },
+  "f_trichosanthes": {
+   "title": "Semilla de Trichosanthes kirilowii",
+   "summary": "Semilla de una cucurbitácea china con un tercio de punícico junto a oleico y linoleico.",
+   "formula": "CLNA 36,9 %"
+  },
+  "f_santalum": {
+   "title": "Almendras de sándalo (Santalum)",
+   "summary": "Almendras de seis especies de sándalo ricas en ximenínico; algunas se consumen en Australia y el Pacífico."
+  },
+  "f_boraginaceas": {
+   "title": "Semillas de Boraginaceae (borraja, Echium y otras)",
+   "summary": "Familia de plantas cuyas semillas reúnen GLA, SDA y ALA en proporciones variables."
+  }
+ },
+ "resources": [
+  {
+   "id": "4.1",
+   "title": "Lípidos totales y clases de lípidos de 12 frutos secos y semillas",
+   "page": 36,
+   "usedBy": [
+    "2.1",
+    "2.2",
+    "2.3"
+   ]
+  },
+  {
+   "id": "4.2–4.4",
+   "title": "Ácidos grasos de 20 frutos secos y semillas (y figura 4.1)",
+   "page": 37,
+   "usedBy": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4"
+   ]
+  },
+  {
+   "id": "4.5",
+   "title": "Ácidos grasos de semillas de Trichosanthes y granada",
+   "page": 39,
+   "usedBy": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "4.6",
+   "title": "Ácidos grasos de almendras de seis especies de Santalum",
+   "page": 39,
+   "usedBy": [
+    "4.2"
+   ]
+  },
+  {
+   "id": "4.7",
+   "title": "Ácidos grasos de semillas de Ribes y cuatro familias silvestres",
+   "page": 40,
+   "usedBy": [
+    "4.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    4
+   ]
+  },
+  "sections": {
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "3.1": [
+    "2.2"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "1.2"
+   ],
+   "3.4": [
+    "3.3"
+   ],
+   "4.1": [
+    "3.3"
+   ],
+   "4.2": [
+    "3.2"
+   ],
+   "4.3": [
+    "3.3"
+   ],
+   "5.1": [
+    "4.1",
+    "4.2",
+    "4.3"
+   ]
+  },
+  "items": {
+   "i_gla": [
+    "i_linoleico"
+   ],
+   "i_sda": [
+    "i_ala"
+   ],
+   "i_clna": [
+    "i_ala"
+   ],
+   "i_ximeninico": [
+    "i_mufa"
+   ],
+   "i_palmitoleico": [
+    "i_mufa"
+   ],
+   "f_nuez": [
+    "i_ala",
+    "i_linoleico"
+   ],
+   "f_canamo": [
+    "i_ala"
+   ],
+   "f_macadamia": [
+    "i_palmitoleico"
+   ],
+   "f_mani": [
+    "i_mufa"
+   ],
+   "f_ginkgo": [
+    "i_composicion"
+   ],
+   "f_nuez_brasil": [
+    "i_saturados"
+   ],
+   "f_semilla_melon_negro": [
+    "i_linoleico"
+   ],
+   "f_granada": [
+    "i_clna"
+   ],
+   "f_trichosanthes": [
+    "i_clna"
+   ],
+   "f_santalum": [
+    "i_ximeninico"
+   ],
+   "f_boraginaceas": [
+    "i_gla",
+    "i_sda"
+   ],
+   "i_saturados": [
+    "i_tag"
+   ],
+   "i_mufa": [
+    "i_tag"
+   ],
+   "i_linoleico": [
+    "i_tag"
+   ],
+   "i_ala": [
+    "i_tag"
+   ]
+  }
+ }
+}

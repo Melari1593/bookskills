@@ -1,0 +1,367 @@
+{
+ "meta": {
+  "title": "Semilla de tamarindo como grafo",
+  "subtitle": "Pal y Mukherjee, capítulo 14 de Nuts and Seeds in Health and Disease Prevention, 2.ª ed. (Elsevier, 2020) · con alertas de evidencia actual",
+  "itemLabel": "Componente o efecto",
+  "itemLabelPlural": "Componentes y efectos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: proteína, antiveneno, TSP, ojo seco…"
+ },
+ "blocks": {
+  "planta": {
+   "name": "La planta",
+   "color": "#6B8E4E"
+  },
+  "nutricion": {
+   "name": "Composición",
+   "color": "#B08A2E"
+  },
+  "actividad": {
+   "name": "Actividades biológicas",
+   "color": "#3F6FA0"
+  },
+  "tsp": {
+   "name": "Polisacárido (TSP)",
+   "color": "#6B5B95"
+  },
+  "riesgo": {
+   "name": "Seguridad y resumen",
+   "color": "#B5465A"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "El tamarindo y su cultivo",
+   "block": "planta",
+   "page": 171,
+   "summary": "Árbol tropical de la familia Fabaceae cuyas semillas son un subproducto de la industria de la pulpa.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Introducción",
+     "summary": "La semilla es un tercio del fruto y un subproducto de la pulpa; se le atribuyen efectos antidiabéticos, hipolipemiantes, hepatoprotectores y antimicrobianos.",
+     "page": 171
+    },
+    {
+     "num": "1.2",
+     "title": "Descripción, nombres y taxonomía",
+     "summary": "Árbol perenne de hasta 24 m con vainas que contienen de 3 a 10 semillas duras y brillantes; se recogen sus nombres en lenguas de la India.",
+     "page": 172
+    },
+    {
+     "num": "1.3",
+     "title": "Cultivo histórico y actual",
+     "summary": "Probablemente originario de África tropical, cultivado desde hace milenios en la India y llevado a América en el siglo XVI; la pulpa es laxante por sus ácidos orgánicos.",
+     "page": 174
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Composición de la semilla",
+   "block": "nutricion",
+   "page": 176,
+   "summary": "Proteína, aceite, minerales y fitoquímicos de la semilla y de su cubierta.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Proteína y aminoácidos",
+     "summary": "Semilla y almendra son ricas en proteína con aminoácidos esenciales cerca del patrón de la OMS, salvo triptófano; la cubierta tiene mucha fibra y taninos.",
+     "items": [
+      "i_proteina"
+     ],
+     "page": 176
+    },
+    {
+     "num": "2.2",
+     "title": "Aceite y ácidos grasos",
+     "summary": "Aceite ámbar, no secante y estable; el capítulo destaca su linoleico y lo propone como aceite comestible.",
+     "items": [
+      "i_aceite"
+     ],
+     "page": 176
+    },
+    {
+     "num": "2.3",
+     "title": "Minerales",
+     "summary": "Calcio, fósforo, magnesio y potasio con rangos muy amplios entre estudios; el potasio es el más abundante (tabla 14.1).",
+     "items": [
+      "i_minerales"
+     ],
+     "page": 176
+    },
+    {
+     "num": "2.4",
+     "title": "Fitoquímicos",
+     "summary": "Fenoles, procianidinas, flavonoides (apigenina, naringenina, taxifolina), triterpenos y un polisacárido de xiloglucano.",
+     "items": [
+      "i_fitoquimicos"
+     ],
+     "page": 177
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Actividades biológicas",
+   "block": "actividad",
+   "page": 177,
+   "summary": "Efectos descritos sobre todo en extractos, células y animales: antioxidante, antidiabético, antiveneno, anticanceroso, antiinflamatorio, ocular y de reparación nerviosa.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Antioxidante",
+     "summary": "Los extractos de la cubierta muestran actividad antioxidante en ensayos químicos; se proponen como antioxidante barato.",
+     "items": [
+      "i_antioxidante"
+     ],
+     "page": 177
+    },
+    {
+     "num": "3.2",
+     "title": "Antidiabético",
+     "summary": "Un extracto acuoso bajó la glucemia y los lípidos en ratas diabéticas.",
+     "items": [
+      "i_antidiabetico"
+     ],
+     "page": 177
+    },
+    {
+     "num": "3.3",
+     "title": "Antiveneno de serpiente",
+     "summary": "El extracto inhibió enzimas del veneno y redujo sus efectos en modelos; los autores lo plantean como alternativa a la sueroterapia.",
+     "items": [
+      "i_antiveneno"
+     ],
+     "page": 177
+    },
+    {
+     "num": "3.4",
+     "title": "Anticanceroso",
+     "summary": "Efecto protector en nefrotoxicidad química y carcinoma renal atribuido a sus polifenoles.",
+     "items": [
+      "i_anticancer"
+     ],
+     "page": 178
+    },
+    {
+     "num": "3.5",
+     "title": "Antiinflamatorio y analgésico",
+     "summary": "Efecto antiinflamatorio menor que el de la aspirina, con acción analgésica en modelos de dolor.",
+     "items": [
+      "i_antiinflamatorio"
+     ],
+     "page": 178
+    },
+    {
+     "num": "3.6",
+     "title": "Ojo y nervio",
+     "summary": "El polisacárido se usa en colirios para ojo seco y cicatrización corneal; también sirve de soporte para regenerar nervios.",
+     "items": [
+      "i_tsp_ojo"
+     ],
+     "page": 178
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Polisacárido de semilla de tamarindo (TSP)",
+   "block": "tsp",
+   "page": 178,
+   "summary": "El TSP como excipiente farmacéutico y aditivo alimentario.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "TSP como excipiente",
+     "summary": "Espesante, aglutinante, estabilizante y vehículo de liberación de fármacos por vía oral, bucal, colónica y ocular; también en alimentos y cosméticos.",
+     "items": [
+      "i_tsp_aditivo"
+     ],
+     "page": 178
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Seguridad y resumen",
+   "block": "riesgo",
+   "page": 180,
+   "summary": "Los autores consideran la semilla segura y advierten de posibles efectos sobre la glucemia y la absorción de analgésicos.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Posibles efectos adversos",
+     "summary": "Sin riesgo con uso adecuado según el capítulo; advierte de hipoglucemia y de mayor absorción de aspirina e ibuprofeno.",
+     "items": [
+      "i_seguridad"
+     ],
+     "page": 180
+    },
+    {
+     "num": "5.2",
+     "title": "Puntos clave",
+     "summary": "Fuente de aminoácidos esenciales y fitoquímicos con usos tradicionales; los autores piden más investigación.",
+     "page": 180
+    }
+   ]
+  }
+ ],
+ "items": {
+  "i_proteina": {
+   "title": "Proteína de la semilla",
+   "summary": "Proteína con perfil de aminoácidos esenciales cercano al patrón de referencia, salvo triptófano.",
+   "formula": "Leucina 531 mg/g de proteína · lisina 475 mg/g",
+   "caution": "La semilla aporta proteína, pero no hay PDCAAS ni DIAAS publicados. El triptófano es limitante. La testa tiene muchos taninos y la semilla tiene inhibidor de tripsina tipo Kunitz. Si se usa como alimento, descascare y aplique calor antes del consumo. No la presente como proteína completa. (Feedipedia; Oluseyi 2015)"
+  },
+  "i_aceite": {
+   "title": "Aceite de semilla",
+   "summary": "Aceite no secante con linoleico como ácido graso principal; el capítulo lo propone como aceite comestible.",
+   "formula": "Linoleico 36–49 % · palmítico 14–20 %",
+   "caution": "La figura del capítulo dice «araquidónico» (20:4). Los análisis publicados informan ácido araquídico (20:0, saturado). El perfil de ácidos grasos varía mucho: linoleico de 4,9 % a 54 % según la muestra. No se encontró autorización del aceite como alimento. No use este aceite como protector cardiovascular. (Chacón-Fernández 2019)"
+  },
+  "i_minerales": {
+   "title": "Minerales",
+   "summary": "Potasio como mineral más abundante; rangos muy amplios entre estudios.",
+   "formula": "Potasio 273–610 mg/100 g · calcio 9–786 mg/100 g",
+   "caution": "El capítulo llama «esenciales» al arsénico, al cadmio y al plomo. Son contaminantes tóxicos, no nutrientes. Los rangos de minerales varían más de 80 veces entre estudios. El capítulo no explica la causa. Si se consume la semilla o un extracto, exija análisis de metales pesados del lote. (Feedipedia; Khanzada 2008)"
+  },
+  "i_fitoquimicos": {
+   "title": "Fitoquímicos",
+   "summary": "Procianidinas, catequinas, flavonoides y triterpenos (lupeol, lupanona), sobre todo en la cubierta."
+  },
+  "i_antioxidante": {
+   "title": "Actividad antioxidante",
+   "summary": "Capacidad antioxidante de extractos de la cubierta en ensayos químicos de laboratorio."
+  },
+  "i_antidiabetico": {
+   "title": "Efecto antidiabético",
+   "summary": "Descenso de glucemia y lípidos con extracto acuoso en ratas diabéticas.",
+   "caution": "El efecto hipoglucemiante solo está demostrado en ratas con estreptozotocina o aloxano. Las dosis fueron de 800–1200 mg/kg de extracto. No hay ensayos en humanos con semilla ni con TSP oral para la glucemia. No recomiende la semilla para tratar la diabetes. (Maiti 2004; Maiti 2005)"
+  },
+  "i_antiveneno": {
+   "title": "Efecto antiveneno",
+   "summary": "Inhibición de enzimas del veneno de serpiente por el extracto en modelos de laboratorio.",
+   "caution": "La evidencia es in vitro y en ratones, casi siempre con veneno preincubado con el extracto. No hay datos en humanos. El antiveneno es el tratamiento eficaz de la mordedura de serpiente. Si hay mordedura, remita de urgencia para antiveneno. No sustituya ni retrase el antiveneno con extractos vegetales. (OMS, nota descriptiva; Ushanandini 2006)"
+  },
+  "i_anticancer": {
+   "title": "Efecto anticanceroso",
+   "summary": "Protección frente a daño renal químico y carcinoma renal en modelos, atribuida a polifenoles.",
+   "caution": "La evidencia es solo preclínica: un modelo de carcinoma renal inducido en ratas. En ese estudio, la menor incidencia de tumores no fue estadísticamente significativa. No hay datos en humanos. No use el extracto para prevenir ni tratar el cáncer. (Vargas-Olvera 2012)"
+  },
+  "i_antiinflamatorio": {
+   "title": "Efecto antiinflamatorio y analgésico",
+   "summary": "Efecto en modelos de inflamación y dolor, menor que el de la aspirina."
+  },
+  "i_tsp_ojo": {
+   "title": "TSP en el ojo",
+   "summary": "Polisacárido mucoadhesivo usado en colirios para ojo seco y cicatrización corneal.",
+   "caution": "El TSP en colirio tiene ensayos clínicos pequeños en ojo seco (28–49 pacientes). Su eficacia es similar a hialuronato o carmelosa. La cicatrización corneal solo está probada en conejos. El capítulo usa «xeroftalmía» por ojo seco. La xeroftalmía es déficit de vitamina A y necesita otro tratamiento. (Rolando 2007; Barabino 2014)"
+  },
+  "i_tsp_aditivo": {
+   "title": "TSP como excipiente y aditivo",
+   "summary": "Xiloglucano usado como espesante, aglutinante y vehículo de fármacos, y en alimentos.",
+   "caution": "Contexto: el JECFA (2017) asignó IDA «no especificada» a la goma purificada (TSP). La FDA no objetó su GRAS (GRN 503, 2014). Esto no aplica a la semilla entera ni a extractos. (JECFA 84; USDA 2018)"
+  },
+  "i_seguridad": {
+   "title": "Seguridad e interacciones",
+   "summary": "Afirmación de ausencia de riesgo con uso adecuado; posibles efectos sobre glucemia y absorción de aspirina e ibuprofeno.",
+   "caution": "La frase «sin riesgo» no tiene respaldo: no hay datos de seguridad de la semilla en humanos. Las interacciones con aspirina e ibuprofeno vienen de estudios con extracto de pulpa en 6 voluntarios. El texto copia avisos de bases de suplementos. Si un paciente toma semilla y AINE o hipoglucemiantes, vigile efectos adversos. (Mustapha 1996; Garba 2003)"
+  }
+ },
+ "resources": [
+  {
+   "id": "14.1",
+   "title": "Composición mineral de la semilla de tamarindo",
+   "page": 176,
+   "usedBy": [
+    "2.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    2
+   ],
+   "5": [
+    3
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "2.4": [
+    "2.1"
+   ],
+   "3.1": [
+    "2.4"
+   ],
+   "3.2": [
+    "2.4"
+   ],
+   "3.3": [
+    "2.4"
+   ],
+   "3.4": [
+    "3.1"
+   ],
+   "3.5": [
+    "2.4"
+   ],
+   "3.6": [
+    "2.4"
+   ],
+   "4.1": [
+    "2.4"
+   ],
+   "5.1": [
+    "3.2"
+   ],
+   "5.2": [
+    "5.1"
+   ]
+  },
+  "items": {
+   "i_antioxidante": [
+    "i_fitoquimicos"
+   ],
+   "i_anticancer": [
+    "i_antioxidante"
+   ],
+   "i_antiinflamatorio": [
+    "i_fitoquimicos"
+   ],
+   "i_antidiabetico": [
+    "i_fitoquimicos"
+   ],
+   "i_tsp_ojo": [
+    "i_tsp_aditivo"
+   ],
+   "i_seguridad": [
+    "i_antidiabetico"
+   ]
+  }
+ }
+}
