@@ -171,7 +171,7 @@ Estas alertas complementan o corrigen el libro. Vienen de monografías oficiales
 | 6 | [`chapters/ch06-wellbeing.md`](chapters/ch06-wellbeing.md) | Bienestar: nervinos, adaptógenos, sueño, ánimo, baños de sales, vahos |
 
 Archivos de apoyo:
-- [`cheatsheet.md`](cheatsheet.md): todas las recetas de los capítulos 1 a 6, con forma, hierbas clave, edad mínima y alertas.
+- [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima y alertas.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
 

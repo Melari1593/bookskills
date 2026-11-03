@@ -1,4 +1,4 @@
-# Cheatsheet: recetas de Healing Herbal Infusions (capítulos 1 a 6)
+# Cheatsheet: recetas de Healing Herbal Infusions (capítulos 2 a 6)
 
 Edad mínima: es la que da el resumen del capítulo. "—" significa que el resumen no la da. En ese caso, no la supongas. La columna **Notas y alertas** incluye las alertas de la tabla Seguridad clínica de [SKILL.md](SKILL.md).
 
