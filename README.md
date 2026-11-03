@@ -131,6 +131,8 @@ El libro es un catálogo A–Z sin capítulos ni prerrequisitos. Por eso el graf
 
 `parse_duke.py` y `build_grafo_duke.py` regeneran el JSON a partir del texto extraído del PDF.
 
+[`sintesis_luna_interior.md`](grafos/duke-medicinal-herbs/sintesis_luna_interior.md) cruza el libro con PubMed para ocho plantas de salud menstrual (jengibre, canela, hinojo, manzanilla, sauzgatillo, guayaba, pasiflora y cártamo). Separa la evidencia por nivel de confianza, lista las advertencias de Duke con su página y lleva el log de búsqueda. Es una síntesis de literatura, no una recomendación clínica.
+
 ## Instalación
 
 Las skills viven en `.claude/skills/` y Claude Code las carga automáticamente al abrir este repo. Cada carpeta es una skill independiente (`SKILL.md` + `references/`). Para instalarla en claude.ai, comprime la carpeta como `.skill` (zip) y súbela en *Settings → Capabilities → Skills*, o cópiala a `~/.claude/skills/` para Claude Code.
