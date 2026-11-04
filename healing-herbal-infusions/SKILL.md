@@ -134,11 +134,23 @@ La vida útil es una propiedad del almacenamiento. El límite de uso es una prop
 - Para quemaduras, **no uses aceite**: el aceite retiene el calor. Usa el ungüento de miel sin consuelda. No lo uses en menores de 12 meses.
 - Antes de recolectar una planta silvestre, confirma la identificación.
 
+### 12. Diarrea (el libro no la trata)
+
+Revisión de evidencia del 2026-11-04 en [`evidencia/diarrea.md`](evidencia/diarrea.md). Reglas:
+
+- Si hay diarrea, da primero **SRO de baja osmolaridad**. En niños, agrega **zinc** 10–14 días (10 mg/día de 2 a menos de 6 meses; 20 mg/día desde 6 meses). Ninguna infusión reemplaza la SRO.
+- Si hay letargo, no puede beber, vomita todo, tiene ojos hundidos, sangre en las heces, fiebre o 14 días o más de diarrea, consulta el mismo día.
+- Un té suave **sin azúcar ni miel** cuenta solo como líquido adicional. No es antidiarreico.
+- El plátano verde cocido tiene la mejor evidencia como complemento en niños (metaanálisis de 9 ECA). Es un alimento, no una receta del libro.
+- **Receta tipo (solo adultos sin alarma y con SRO):** té de una sola hierba astringente (hoja de frambuesa, agrimonia u hoja de guayaba), sin azúcar, máximo 3 días. Es uso tradicional EMA, sin ensayos de eficacia. Sepáralo 1 h de otros medicamentos.
+- No uses en diarrea: tinturas o amargos en niños, el electuario prebiótico (inulina FODMAP), uzara, berberina ni látex crudo de sangre de drago.
+- En SII-D confirmado, la evidencia (baja) es para cápsulas entéricas de aceite de menta, no para el té.
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 últimas filas vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -158,6 +170,13 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Cannabis** | Solo adultos. Confirma la legalidad local. | confirmada con matices (alta) | No lo uses en el embarazo: se asocia a bajo peso, parto pretérmino y PEG. No lo uses durante la lactancia (CDC). Suma sedación con alcohol, benzodiacepinas y opioides. No conduzcas después de usarlo. Evítalo si hay antecedente de psicosis (JAMA Pediatr 2025, doi:10.1001/jamapediatrics.2025.0689; ACOG 2025). |
 | **Amapola de California y pasiflora** | Son suaves y no narcóticas. | confirmada con matices (media) | Pueden alterar la capacidad de conducir: no conduzcas después de tomarlas. Pueden sumar sedación con benzodiacepinas, alcohol u opioides; no las combines sin indicación médica. La tintura de amapola de California inhibe enzimas CYP in vitro. No las uses en embarazo ni lactancia (EMA/HMPC/669740/2013; EMA/HMPC/680372/2013; doi:10.1055/s-0042-103689). |
 | **Embarazo y lactancia** | Advertencias por receta (hibisco, milenrama, matricaria, sauce; la salvia y la menta reducen la leche). | corregir (media) | La mayoría de estas plantas no tiene datos de seguridad en embarazo ni lactancia (EMA). Si la persona está embarazada o lacta, no recomiendes tinturas ni dosis medicinales sin valoración. Que la salvia y la menta reducen la leche es tradición: no hay estudios que lo prueben (LactMed 2025; SPS-NHS 2024). |
+| **Diarrea: rehidratación primero** | El libro no trata la diarrea. | sin evidencia suficiente (alta) | Si hay diarrea, da primero SRO de baja osmolaridad. En niños, añade zinc 10–14 días. Ninguna infusión reemplaza la SRO. Con letargo, ojos hundidos, mala ingesta, sangre en heces o 14 días o más, consulta el mismo día (OMS IMCI 2014; doi:10.1002/14651858.CD005436.pub5). |
+| **Tés y miel en la diarrea** | Recomienda endulzar tés con miel. | corregir (alta) | Si hay diarrea, no endulces los tés con azúcar, panela ni miel. Las bebidas azucaradas causan diarrea osmótica e hipernatremia. Usa té suave sin azúcar como líquido adicional, no como tratamiento. Nunca miel en menores de 12 meses (OMS; Freedman 2016, doi:10.1001/jama.2016.5352). |
+| **Taninos y hierro** | Recomienda tés diarios de manzanilla y menta. | confirmada con matices (media) | Los tés de hierbas frenan la absorción del hierro de la comida: menta 84 %, manzanilla 47 %. Si hay anemia, embarazo o niños pequeños, toma el té 1 h antes o después de las comidas (Hurrell 1999, PMID 10999016). |
+| **Berberina** | No la menciona. | riesgo documentado (alta) | La berberina (agracejo, sello de oro) aumenta la ciclosporina (AUC +34,5 %) y el midazolam (AUC +40 %). Inhibe CYP3A4, CYP2D6 y CYP2C9. Puede empeorar la ictericia neonatal. No la uses en lactantes, embarazo, lactancia ni con estos fármacos (doi:10.1007/s00228-011-1108-2; doi:10.1007/s00228-005-0952-3; NCCIH). |
+| **Uzara** | No la menciona. | riesgo documentado (alta) | La uzara contiene glucósidos cardiacos. No la uses con digoxina o digitoxina, con potasio o magnesio bajos, en embarazo, lactancia ni menores de 12 años. Falsea los niveles de digoxina en sangre. La sobredosis causa arritmias (doi:10.5414/CP201712; prospecto Uzara 2014). |
+| **Aceite de menta en SII** | Té de cuatro mentas para la digestión. | confirmada con matices (media) | En el SII, la evidencia es para cápsulas entéricas de aceite de menta, no para el té. El efecto es modesto y la calidad de la evidencia es baja. Puede causar reflujo. Antes de tratar un SII-D, un médico debe descartar celiaquía y enfermedad inflamatoria (doi:10.1111/apt.17179; ACG 2021). |
+| **Electuario prebiótico en diarrea** | Electuario de achicoria, diente de león y bardana para la flora. | sin evidencia suficiente (baja) | La inulina de la achicoria es un fructano fermentable (FODMAP). En diarrea o SII-D puede empeorar los gases y la diarrea. No uses el electuario prebiótico mientras haya diarrea. Lleva miel: no en menores de 12 meses (ACG 2021, doi:10.14309/ajg.0000000000001036; inferencia). |
 
 ## Índice de capítulos
 
@@ -174,6 +193,7 @@ Archivos de apoyo:
 - [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima y alertas.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
+- [`evidencia/diarrea.md`](evidencia/diarrea.md): revisión de fitoterapia en diarrea con tabla de evidencia, receta tipo y DOI.
 
 ## Alcance y límites
 
