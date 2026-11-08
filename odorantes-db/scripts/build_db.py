@@ -13,8 +13,13 @@ def clave(n):
 def normaliza(n):
     k = clave(n)
     if k in SIN: return SIN[k]
-    k2 = re.sub(r"^\((e|z|r|s)\)-", "", k)          # prueba sin estereodescriptor inicial
-    if k2 in SIN: return SIN[k2]
+    m = re.match(r"^\((e|z|r|s)\)-(.*)", k)          # prueba sin estereodescriptor inicial
+    if m and m.group(2) in SIN:
+        v = SIN[m.group(2)]
+        mv = re.match(r"^\((\w)\)-", v)
+        if mv and mv.group(1).lower() != m.group(1):     # no cambiar un isómero por otro: (Z) ≠ (E)
+            return f"({m.group(1).upper()})-{m.group(2)}"
+        return v
     return k
 
 # tipos de aroma (14 de Foodpairing) a partir del descriptor del estudio: heurística por palabras clave

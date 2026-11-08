@@ -26,7 +26,7 @@ ajonjoli_tostado,4-vinilguayacol,2-methoxy-4-vinylphenol,a clavo de olor,especia
 ajonjoli_tostado,4-vinilguayacol,2-methoxy-4-vinylphenol,,,,22.0,C,10.3390/foods15010146,"texto, sección 3.3 (valor de la muestra 170 °C/20 min)"
 ajonjoli_tostado,furaneol (HDMF),"4-hydroxy-2,5-dimethyl-3(2H)-furanone",a caramelo,caramelo,,,C,10.1021/jf100623a,resumen
 ajonjoli_tostado,guayacol,2-methoxyphenol,dulce y ahumado,caramelo,,2489.0,C,10.3390/foods15010146,"texto, sección 3.3 (rango 701–2489 entre muestras; se anota el máximo)"
-avellana_tostada,(E)-2-nonenal,(Z)-2-nonenal,graso,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
+avellana_tostada,(Z)-2-nonenal,(Z)-2-nonenal,graso,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
 avellana_tostada,"2,3-butanodiona (diacetilo)","2,3-butanedione",,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
 avellana_tostada,"2,3-pentanodiona","2,3-pentanedione",a mantequilla,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
 avellana_tostada,2-acetil-1-pirrolina,2-acetyl-1-pyrroline,a palomitas de maíz,tostado,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
@@ -34,8 +34,8 @@ avellana_tostada,2-furfuriltiol,2-furfurylthiol,,,,,A,10.1021/jf300908d,resumen 
 avellana_tostada,3-metilbutanal,3-methylbutanal,a malta,tostado,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
 avellana_tostada,furaneol (HDMF),"4-hydroxy-2,5-dimethyl-3(2H)-furanone",,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
 avellana_tostada,trisulfuro de dimetilo,dimethyl trisulfide,,,,,A,10.1021/jf300908d,resumen (OAV más altos; recombinado validado)
-avellana_tostada,(E)-2-nonenal,(Z)-2-nonenal,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
-avellana_tostada,(E)-2-octenal,(Z)-2-octenal,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
+avellana_tostada,(Z)-2-nonenal,(Z)-2-nonenal,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
+avellana_tostada,(Z)-2-octenal,(Z)-2-octenal,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
 avellana_tostada,(z)-2-decenal,(Z)-2-decenal,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
 avellana_tostada,"2,3-dietil-5-metilpirazina","2,3-diethyl-5-methylpyrazine",,,,,C,10.1021/jf4008086,resumen (marcador cuantificado por SIDA; OAV no dado en el resumen)
 avellana_tostada,2-acetil-1-pirrolina,2-acetyl-1-pyrroline,,,,,C,10.1021/jf100692k,resumen (FD más altos en la avellana tostada)
