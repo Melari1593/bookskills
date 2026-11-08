@@ -107,7 +107,7 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 ## Monografías de ingredientes
 
-[`grafos/monografias-ingredientes/`](grafos/monografias-ingredientes/README.md) reúne 10 monografías en grafo con la estructura de 9 partes del grafo de mirra y olíbano: guanábana, guayaba, corozo, aguacate, café, gulupa, açaí y asaí, murumuru, camu camu y aguaje. Cada una se construyó desde PubMed y fuentes oficiales, no desde un libro. En total hay 134 afirmaciones verificadas y 124 alertas. 49 afirmaciones no tienen evidencia en humanos, 14 están contradichas y 28 señalan un riesgo documentado u omitido. Los riesgos que se repiten son el Chagas oral por frutos de palma y la falta de datos de seguridad en el embarazo. El índice visual está en [`index.html`](grafos/monografias-ingredientes/index.html).
+[`grafos/monografias-ingredientes/`](grafos/monografias-ingredientes/README.md) reúne 11 grafos construidos desde PubMed y fuentes oficiales, no desde un libro. Diez son monografías con la estructura de 9 partes del grafo de mirra y olíbano: guanábana, guayaba, corozo, aguacate, café, gulupa, açaí y asaí, murumuru, camu camu y aguaje. El undécimo, [`almendras-gestantes`](grafos/monografias-ingredientes/almendras-gestantes/), es un grafo de pregunta clínica sobre almendras en la gestación y la lactancia. En total hay 147 afirmaciones verificadas y 137 alertas. 53 afirmaciones no tienen evidencia en humanos, 18 están contradichas y 31 señalan un riesgo documentado u omitido. Los riesgos que se repiten son el Chagas oral por frutos de palma y la falta de datos de seguridad en el embarazo. El índice visual está en [`index.html`](grafos/monografias-ingredientes/index.html).
 
 ## Skill de odorantes clave
 

@@ -1,0 +1,781 @@
+{
+ "meta": {
+  "title": "Almendras en gestantes",
+  "subtitle": "Grafo construido desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Producto, componente o efecto",
+  "itemLabelPlural": "Productos, componentes y efectos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: diabetes gestacional, alergia, folato, bebida, amarga, Salmonella, INMA…"
+ },
+ "blocks": {
+  "pregunta": {
+   "name": "Pregunta y guías",
+   "color": "#3F6FA0"
+  },
+  "composicion": {
+   "name": "Composición y formas",
+   "color": "#B08A2E"
+  },
+  "efectos": {
+   "name": "Efectos en madre e hijo",
+   "color": "#6B8E4E"
+  },
+  "alergia": {
+   "name": "Alergia",
+   "color": "#6B5B95"
+  },
+  "seguridad": {
+   "name": "Seguridad alimentaria",
+   "color": "#B5465A"
+  },
+  "contexto": {
+   "name": "Contexto colombiano y síntesis",
+   "color": "#A0663F"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Pregunta, contexto y recomendaciones vigentes",
+   "block": "pregunta",
+   "summary": "Ninguna guía consultada nombra la almendra; todas piden dieta saludable y suplementos de hierro, ácido fólico y calcio.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Pregunta clínica",
+     "summary": "¿Comer almendra dulce o sus derivados en la gestación y la lactancia aporta beneficio o riesgo a la madre y al hijo?",
+     "items": [
+      "p_almendra_dulce"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Guías internacionales",
+     "summary": "OMS 2016 recomienda consejería de alimentación saludable y suplementos; no da metas para frutos secos.",
+     "items": [
+      "h_guias_internacionales"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Normas y guías de Colombia",
+     "summary": "La Resolución 3280 de 2018 fija suplementos; la guía del ICBF para gestantes incluye nueces y maní, no almendra.",
+     "items": [
+      "h_guias_colombia"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Composición relevante para la gestación",
+   "block": "composicion",
+   "summary": "Una porción de 28 g aporta 162 kcal, grasa monoinsaturada, vitamina E y magnesio; aporta poco folato y hierro.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Energía, grasa y proteína",
+     "summary": "La almendra es densa en energía; la mayor parte de su grasa es monoinsaturada.",
+     "items": [
+      "c_energia_macros"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Folato, hierro y zinc",
+     "summary": "Los aportes por porción son pequeños frente a las metas de la gestación.",
+     "items": [
+      "c_folato_hierro"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Vitamina E, magnesio y calcio",
+     "summary": "Una porción cubre cerca de la mitad de la vitamina E y un quinto del magnesio de una gestante.",
+     "items": [
+      "c_vite_magnesio_calcio"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Fibra",
+     "summary": "Una porción aporta 3,5 g de fibra, un octavo de la ingesta adecuada en la gestación.",
+     "items": [
+      "c_fibra"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Fitatos y oxalatos",
+     "summary": "Los fitatos ligan hierro y zinc; los frutos secos contienen oxalato en cantidades variables.",
+     "items": [
+      "c_fitatos_oxalatos"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Efectos maternos",
+   "block": "efectos",
+   "summary": "Hay un ensayo pequeño con almendra en gestantes hipertensas; el resto de la evidencia es de frutos secos o de dieta mediterránea.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Diabetes gestacional y glucemia",
+     "summary": "No hay ensayos publicados con almendra en diabetes gestacional; hay cohortes de frutos secos y un ensayo de dieta mediterránea con pistachos.",
+     "items": [
+      "u_diabetes_gestacional",
+      "h_ensayo_st_carlos"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Presión arterial y lípidos",
+     "summary": "Un ensayo en Pakistán con 25 g/día de almendra bajó la presión y el LDL en gestantes con hipertensión y dislipidemia.",
+     "items": [
+      "u_presion_lipidos"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Ganancia de peso",
+     "summary": "En el ensayo St. Carlos la dieta mediterránea con pistachos redujo la ganancia de peso; no hay datos específicos de almendra."
+    },
+    {
+     "num": "3.4",
+     "title": "Estreñimiento",
+     "summary": "La fibra mejora la frecuencia de deposiciones en la gestación; no hay ensayos con almendra.",
+     "items": [
+      "u_estrenimiento"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Anemia y déficit de folato",
+     "summary": "La almendra no reemplaza el hierro ni el ácido fólico suplementarios que indica la norma.",
+     "items": [
+      "u_anemia_folato"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Efectos fetales y del recién nacido",
+   "block": "efectos",
+   "summary": "La evidencia en el hijo viene de frutos secos en general: un ensayo de dieta mediterránea y una cohorte española de neurodesarrollo.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Peso al nacer y prematuridad",
+     "summary": "La dieta mediterránea con pistachos redujo recién nacidos pequeños y grandes para la edad gestacional; no aumentó el peso al nacer.",
+     "items": [
+      "u_crecimiento_fetal"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Neurodesarrollo",
+     "summary": "En la cohorte INMA, más frutos secos en el primer trimestre se asoció con mejor atención a los 8 años.",
+     "items": [
+      "u_neurodesarrollo"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Salud del niño a 6 años",
+     "summary": "En la cohorte St. Carlos, mayor adherencia materna a la dieta mediterránea con frutos secos se asoció con menos bronquiolitis y eccema."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Alergia",
+   "block": "alergia",
+   "summary": "Comer frutos secos en el embarazo no aumenta la alergia del hijo; las guías desaconsejan evitarlos para prevenir alergia.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Consumo materno y alergia del hijo",
+     "summary": "Tres cohortes grandes (NHS II/GUTS, DNBC, Project Viva) asocian el consumo materno de frutos secos o maní con menos alergia o asma en el hijo.",
+     "items": [
+      "u_alergia_hijo"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "Guías EAACI y AAP",
+     "summary": "EAACI 2020 y AAP 2019 no recomiendan restringir alérgenos en la gestación ni en la lactancia.",
+     "items": [
+      "h_guias_alergia"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Gestante con alergia a la almendra",
+     "summary": "La gestante con alergia confirmada debe evitar la almendra; los tests con extracto tienen baja especificidad.",
+     "items": [
+      "u_alergia_materna"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Lactancia",
+     "summary": "Las mismas guías aplican a la lactancia: no hay que evitar frutos secos para prevenir alergia en el lactante."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Seguridad alimentaria",
+   "block": "seguridad",
+   "summary": "Los riesgos reales son la almendra amarga, las aflatoxinas y la Salmonella en almendra cruda sin tratar.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Almendra amarga y amigdalina",
+     "summary": "La almendra amarga y las semillas de albaricoque liberan cianuro; pocos gramos superan la dosis aguda de referencia de EFSA.",
+     "items": [
+      "p_almendra_amarga",
+      "u_intoxicacion_cianuro"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Aflatoxinas",
+     "summary": "La UE y el Codex fijan límites de aflatoxinas para almendra; la compra a granel sin control aumenta la incertidumbre.",
+     "items": [
+      "c_aflatoxinas"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Salmonella y pasteurización",
+     "summary": "Dos brotes por almendra cruda llevaron a EE. UU. a exigir desde 2007 una reducción de 4 log de Salmonella.",
+     "items": [
+      "h_salmonella_pasteurizacion"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Interacción con hierro y calcio",
+     "summary": "Los fitatos de la almendra pueden reducir la absorción de hierro no hemo; conviene separar el suplemento de hierro de las comidas ricas en fitatos."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Formas, cantidad y preparación",
+   "block": "composicion",
+   "summary": "Porción de 28 g, almendra pasteurizada o tostada; el remojo no mejora minerales y la bebida no reemplaza la leche.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Porción y frecuencia",
+     "summary": "La porción de referencia es 28 g; los estudios en gestantes usaron entre 5 y 25 g/día o porciones por semana.",
+     "items": [
+      "h_porcion"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "Remojo o «activación»",
+     "summary": "Remojar 4–24 h cambió los fitatos entre −12 % y +10 % y bajó algunos minerales.",
+     "items": [
+      "u_absorcion_remojo"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Mantequilla y harina",
+     "summary": "Tienen la misma composición base que la almendra; la mantequilla sin azúcar ni sal añadidos es la opción más simple.",
+     "items": [
+      "p_mantequilla_harina"
+     ]
+    },
+    {
+     "num": "7.4",
+     "title": "Bebida de almendra",
+     "summary": "La bebida aporta 0,66 g de proteína por 100 g y suele no tener yodo; su calcio depende de la fortificación.",
+     "items": [
+      "p_bebida_almendra",
+      "u_bebida_vs_leche"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Contexto colombiano y tradiciones",
+   "block": "contexto",
+   "summary": "La almendra se importa y es costosa; el maní y las nueces ya están en la guía del ICBF; persisten creencias sin respaldo.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Disponibilidad y alternativas en Colombia",
+     "summary": "Colombia no figura como productor de almendra; el maní es la alternativa local más barata y figura en la guía del ICBF.",
+     "items": [
+      "h_colombia_disponibilidad"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Creencias tradicionales",
+     "summary": "Circulan creencias de «calor», aborto o inducción del parto; no hay estudios que liguen la almendra comida con esos desenlaces.",
+     "items": [
+      "h_creencias_calor",
+      "u_parto_aborto"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "contexto",
+   "summary": "La almendra es un alimento seguro y opcional en la gestación sin alergia; no es tratamiento ni sustituye suplementos.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Lo que está respaldado",
+     "summary": "Los frutos secos dentro de una dieta mediterránea se asocian con menos diabetes gestacional; no hay que evitarlos por alergia."
+    },
+    {
+     "num": "9.2",
+     "title": "Lo que no está respaldado",
+     "summary": "La almendra no reemplaza suplementos ni leche, el remojo no mejora minerales y no hay datos propios de almendra en diabetes gestacional."
+    },
+    {
+     "num": "9.3",
+     "title": "Recomendaciones prácticas medibles",
+     "summary": "Si no hay alergia: hasta 28 g/día de almendra dulce pasteurizada o tostada, sin azúcar ni sal añadidos, dentro del plan de alimentación."
+    },
+    {
+     "num": "9.4",
+     "title": "Huecos de evidencia",
+     "summary": "Faltan ensayos con almendra en diabetes gestacional, peso al nacer y neurodesarrollo; un ensayo británico está en curso.",
+     "items": [
+      "h_huecos_evidencia"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "p_almendra_dulce": {
+   "title": "Almendra dulce (Prunus dulcis)",
+   "summary": "Almendra: semilla comestible de la variedad dulce, cruda, tostada o en derivados. Es el alimento al que se refiere la pregunta clínica.",
+   "formula": "Porción de referencia: 28 g (USDA FDC 170567)"
+  },
+  "h_guias_internacionales": {
+   "title": "Guías internacionales de alimentación prenatal",
+   "summary": "No específico de almendra: OMS 2016 recomienda consejería de alimentación saludable, hierro y ácido fólico diarios, y calcio donde la ingesta es baja. No fija metas para frutos secos.",
+   "formula": "Hierro 30–60 mg + ácido fólico 400 µg/día · calcio 1,5–2,0 g/día (OMS 2016)"
+  },
+  "h_guias_colombia": {
+   "title": "Resolución 3280 de 2018 y guía del ICBF",
+   "summary": "No específico de almendra: la ruta materno-perinatal fija suplementos de ácido fólico, calcio y hierro. La guía del ICBF para gestantes nombra nueces y maní, no almendra.",
+   "formula": "Ácido fólico 0,4 mg · calcio 1200 mg/día desde la semana 14"
+  },
+  "c_energia_macros": {
+   "title": "Energía, grasa y proteína",
+   "summary": "Almendra: densa en energía, con grasa sobre todo monoinsaturada y proteína vegetal moderada.",
+   "formula": "28 g: 162 kcal · grasa 14,0 g (monoinsaturada 8,8 g) · proteína 5,9 g"
+  },
+  "c_folato_hierro": {
+   "title": "Folato, hierro y zinc",
+   "summary": "Almendra: aportes pequeños por porción frente a las recomendaciones para la gestación.",
+   "formula": "28 g: folato 12 µg (2 % de 600 µg) · hierro 1,0 mg (4 % de 27 mg) · zinc 0,9 mg"
+  },
+  "c_vite_magnesio_calcio": {
+   "title": "Vitamina E, magnesio y calcio",
+   "summary": "Almendra: buena fuente de vitamina E y de magnesio; aporte moderado de calcio.",
+   "formula": "28 g: vitamina E 7,2 mg (48 % de 15 mg) · magnesio 76 mg · calcio 75 mg"
+  },
+  "c_fibra": {
+   "title": "Fibra",
+   "summary": "Almendra: aporta fibra en cantidad moderada por porción.",
+   "formula": "28 g: 3,5 g de fibra (12,5 % de 28 g/día)"
+  },
+  "c_fitatos_oxalatos": {
+   "title": "Fitatos y oxalatos",
+   "summary": "Almendra y frutos secos en general: el fitato liga hierro y zinc; los frutos secos tienen oxalato total entre 42 y 469 mg/100 g. No se confirmó el valor específico de almendra.",
+   "formula": "Fitato de almendra: 14,7 µmol/g (Lee 2018)"
+  },
+  "u_diabetes_gestacional": {
+   "title": "Diabetes gestacional y glucemia",
+   "summary": "Frutos secos en general: una cohorte china y un ensayo español de dieta mediterránea con pistachos mostraron menos diabetes gestacional. Almendra: no hay ensayos publicados en diabetes gestacional.",
+   "formula": "Cohorte: RR 0,65 (IC 95 % 0,48–0,89) · ECA St. Carlos: RR 0,73 (0,56–0,95)",
+   "caution": "No hay ensayos publicados con almendra en diabetes gestacional. Los datos vienen de frutos secos en general. En un ensayo español, una dieta mediterránea con pistachos y aceite de oliva redujo la diabetes gestacional (RR 0,73). La almendra puede ser parte de esa dieta. No reemplaza el tratamiento ni el control de glucemia. (Assaf-Balut 2017; Pang 2022)"
+  },
+  "h_ensayo_st_carlos": {
+   "title": "Ensayo St. Carlos (Madrid)",
+   "summary": "Frutos secos en general (pistachos): ECA en 1000 gestantes normoglucémicas con dieta mediterránea más aceite de oliva extra virgen y pistachos frente a dieta baja en grasa.",
+   "formula": "Diabetes gestacional 17,1 % frente a 23,4 % · n = 874 analizadas"
+  },
+  "u_presion_lipidos": {
+   "title": "Presión arterial y lípidos",
+   "summary": "Almendra: ECA de 12 semanas en Karachi con gestantes hipertensas y dislipidémicas; 25 g/día bajó más la presión y los lípidos que el control sin intervención.",
+   "formula": "n = 46 · PAS −18,3 % frente a −7,4 % · LDL −27,3 % (25 g/día)",
+   "caution": "Si hay hipertensión o dislipidemia en la gestación, 25 g/día de almendra se asoció con menor presión y LDL en un ensayo pequeño. Fueron 46 gestantes, sin placebo, en un solo centro. No reemplaza el tratamiento antihipertensivo ni el control prenatal. (Arslan 2025)"
+  },
+  "u_estrenimiento": {
+   "title": "Estreñimiento del embarazo",
+   "summary": "No específico de almendra: Cochrane halló más deposiciones con suplementos de fibra en gestantes. No hay ensayos con almendra.",
+   "formula": "Fibra: +2,24 deposiciones/semana (IC 95 % 0,96–3,52) · 1 ECA, n = 40",
+   "caution": "No hay ensayos con almendra en el estreñimiento del embarazo. La fibra en general aumentó la frecuencia de deposiciones (+2,24 por semana) en un ensayo pequeño. La almendra aporta 3,5 g de fibra por porción. Sumar agua y otras fuentes de fibra. (Cochrane, Rungsiprakarn 2015)"
+  },
+  "u_anemia_folato": {
+   "title": "Anemia y prevención de defectos del tubo neural",
+   "summary": "Almendra: una porción cubre 4 % del hierro y 2 % del folato que necesita una gestante. No sustituye los suplementos indicados.",
+   "formula": "Para 27 mg de hierro harían falta unos 730 g de almendra/día",
+   "caution": "La almendra no reemplaza el hierro ni el ácido fólico suplementarios. Una porción de 28 g aporta 4 % del hierro y 2 % del folato que necesita una gestante. Mantener los suplementos que indica la Resolución 3280 de 2018. (USDA FDC; OMS 2016)"
+  },
+  "u_crecimiento_fetal": {
+   "title": "Peso al nacer y prematuridad",
+   "summary": "Frutos secos en general: en el ensayo St. Carlos bajaron los recién nacidos pequeños y grandes para la edad gestacional y la prematuridad. Almendra: sin datos propios.",
+   "formula": "Desenlace compuesto materno-fetal: RR 0,48 (IC 95 % 0,37–0,63) · NNT 5",
+   "caution": "No hay estudios que muestren que la almendra aumente el peso al nacer. En el ensayo St. Carlos, la dieta mediterránea con pistachos redujo tanto los recién nacidos pequeños como los grandes para la edad gestacional. El objetivo es un crecimiento adecuado, no un peso mayor. (Assaf-Balut 2017 y 2019)"
+  },
+  "u_neurodesarrollo": {
+   "title": "Neurodesarrollo del hijo",
+   "summary": "Frutos secos en general: en la cohorte INMA (España), más de 32 g/semana en el primer trimestre se asoció con mejor atención a los 8 años. Almendra: solo un estudio en ratas.",
+   "formula": "n = 2208 · tiempo de reacción −13,82 ms (IC 95 % −23,40 a −4,23)",
+   "caution": "Nota de contexto: el dato viene de una cohorte española (INMA) con frutos secos en general, no de almendra. El efecto fue pequeño, en una prueba de atención a los 8 años. No hay ensayos clínicos. (Gignac 2019)"
+  },
+  "u_alergia_hijo": {
+   "title": "Consumo materno y alergia del hijo",
+   "summary": "Frutos secos en general y maní: en hijos de madres no alérgicas, más consumo periparto se asoció con menos alergia a frutos secos y menos asma.",
+   "formula": "NHS II/GUTS: OR 0,31 (IC 95 % 0,13–0,75) · DNBC asma: OR 0,75 (0,67–0,84)",
+   "caution": "Si la madre no es alérgica, no hay que evitar frutos secos en la gestación ni en la lactancia. Tres cohortes grandes asociaron más consumo con menos alergia o asma en el hijo. EAACI 2020 y AAP 2019 desaconsejan restringir alérgenos para prevenir alergia. (Frazier 2014; Maslova 2012; Halken 2021)"
+  },
+  "h_guias_alergia": {
+   "title": "Guías EAACI 2020 y AAP 2019",
+   "summary": "No específico de almendra: ambas guías desaconsejan restringir alérgenos en la gestación o la lactancia para prevenir alergia en el hijo."
+  },
+  "u_alergia_materna": {
+   "title": "Gestante con alergia a la almendra",
+   "summary": "Almendra: la alergia puede ser primaria (Pru du 6) o cruzada con polen de abedul (Pru du 1). El extracto de almendra tiene baja especificidad diagnóstica.",
+   "formula": "Prevalencia autorreportada en Europa: 2,0 % · especificidad del extracto: 33 %",
+   "caution": "Si la gestante tiene alergia confirmada a la almendra, debe evitarla y sus derivados, incluida la bebida. Si hay alergia a otros frutos secos, consultar antes de introducirla. Un IgE positivo al extracto no confirma alergia. (Kabasser 2021; Brettig 2021)"
+  },
+  "p_almendra_amarga": {
+   "title": "Almendra amarga y semillas de albaricoque",
+   "summary": "Almendra amarga (no la dulce): rica en amigdalina, que libera cianuro al masticarla. Se vende como «vitamina B17» sin eficacia demostrada.",
+   "formula": "Cochrane: 0 ensayos válidos de laetrile en cáncer",
+   "caution": "La almendra amarga y las semillas de albaricoque no son seguras. Liberan cianuro. Entre 0,1 y 1,4 g de almendra amarga pueden superar la dosis aguda de referencia. La «vitamina B17» no es una vitamina y no tiene eficacia probada en cáncer. En la gestación, evitarlas siempre. (EFSA 2016; Milazzo 2015)"
+  },
+  "u_intoxicacion_cianuro": {
+   "title": "Intoxicación por cianuro",
+   "summary": "Almendra amarga: hay casos de acidosis metabólica grave y paro tras ingerirla. EFSA fijó una dosis aguda de referencia de cianuro.",
+   "formula": "ARfD 20 µg/kg · 0,1–1,4 g de almendra amarga pueden alcanzarla"
+  },
+  "c_aflatoxinas": {
+   "title": "Aflatoxinas",
+   "summary": "Almendra: puede contaminarse con aflatoxinas por hongos. La UE y el Codex fijan límites para almendra lista para consumo.",
+   "formula": "UE: B1 8 µg/kg y total 10 µg/kg · Codex: total 10 µg/kg"
+  },
+  "h_salmonella_pasteurizacion": {
+   "title": "Salmonella y pasteurización",
+   "summary": "Almendra: brotes de salmonelosis por almendra cruda en 2000–2001 y 2003–2004. Desde 2007 EE. UU. exige tratamiento validado.",
+   "formula": "Reducción mínima de 4 log (10 000 veces) de Salmonella",
+   "caution": "La almendra cruda sin tratar puede tener Salmonella. Hubo brotes en 2000–2001 y 2003–2004. En la gestación, preferir almendra pasteurizada o tostada de origen controlado. Evitar la almendra cruda a granel sin rotulado. (Chen 2026; USDA 2007)"
+  },
+  "h_porcion": {
+   "title": "Porción y frecuencia",
+   "summary": "Almendra: la porción de referencia es 28 g. Los estudios usaron 10–25 g/día (almendra) o cerca de 5 g/día (frutos secos en cohortes).",
+   "formula": "28 g = 162 kcal"
+  },
+  "u_absorcion_remojo": {
+   "title": "Remojo o «activación»",
+   "summary": "Almendra y frutos secos: remojar 4–24 h casi no cambió el fitato y redujo algunos minerales. No mejora la biodisponibilidad.",
+   "formula": "Fitato: −12 % a +10 % (Kumari 2020) · −4,75 % a 24 h (Lee 2018)",
+   "caution": "El remojo o «activación» no mejora la absorción de minerales de la almendra. En laboratorio, el fitato cambió entre −12 % y +10 %. Algunos minerales bajaron. Remojar es opcional, por gusto o textura. (Kumari 2020; Lee 2018)"
+  },
+  "p_mantequilla_harina": {
+   "title": "Mantequilla y harina de almendra",
+   "summary": "Almendra: derivados con composición base similar. Algunas versiones comerciales añaden azúcar, sal o aceites."
+  },
+  "p_bebida_almendra": {
+   "title": "Bebida de almendra",
+   "summary": "Almendra: bebida vegetal con muy poca almendra. Su calcio y vitaminas dependen de la fortificación.",
+   "formula": "Sin azúcar: 19 kcal y 0,66 g de proteína por 100 g"
+  },
+  "u_bebida_vs_leche": {
+   "title": "Bebida de almendra frente a leche de vaca",
+   "summary": "Almendra: frente a la leche de vaca, la bebida aporta 5 veces menos proteína y suele no tener yodo. Quienes solo la toman tienen menos yodo en orina.",
+   "formula": "Proteína 0,66 g frente a 3,27 g/100 g · yodo urinario 79 frente a 132 µg/L",
+   "caution": "La bebida de almendra no reemplaza la leche en la gestación. Aporta unas 5 veces menos proteína. Suele no tener yodo. Si se usa como sustituto, elegir una fortificada con calcio, yodo y vitamina B12, y cubrir la proteína con otros alimentos. (USDA FDC; Dineva 2020)"
+  },
+  "h_colombia_disponibilidad": {
+   "title": "Disponibilidad y alternativas en Colombia",
+   "summary": "Almendra: producto importado en Colombia. Maní y nueces figuran en la guía del ICBF; el maní cuenta como intercambio de grasa.",
+   "formula": "Maní: 1 cucharada = 1 intercambio de grasa (ICBF)"
+  },
+  "h_creencias_calor": {
+   "title": "Creencias de «calor» y otras",
+   "summary": "Almendra: en redes y comercio circulan creencias de que la almendra da «calor» o es un remedio del embarazo. No se halló un estudio académico que las documente para almendra."
+  },
+  "u_parto_aborto": {
+   "title": "Almendra, aborto e inducción del parto",
+   "summary": "Almendra: no hay estudios que liguen la almendra comida con aborto o parto. Un ensayo iraní usó óvulos vaginales de aceite de almendra a las 40 semanas.",
+   "formula": "Óvulos: inicio espontáneo 66,7 % frente a 40 %",
+   "caution": "No hay evidencia de que comer almendra cause aborto, «calor» o parto. No hay que evitarla por esas creencias. Los estudios de parto usaron aceite de almendra vaginal, no almendra comida. No usar aceites por vía vaginal ni oral para inducir el parto sin indicación médica. (Hosseini 2026; Chen 2026)"
+  },
+  "h_huecos_evidencia": {
+   "title": "Huecos de evidencia",
+   "summary": "Almendra: no hay ensayos publicados en diabetes gestacional, peso al nacer ni neurodesarrollo. El ensayo NUTCRACKER (King's College London) está en curso.",
+   "formula": "NCT07069855 · NCT01919476 sin resultados publicados"
+  }
+ },
+ "resources": [
+  {
+   "id": "T1",
+   "title": "Composición de 28 g de almendra frente a las recomendaciones de la gestación (USDA FDC 170567; NIH ODS)",
+   "usedBy": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    2
+   ],
+   "5": [
+    1
+   ],
+   "6": [
+    1
+   ],
+   "7": [
+    2,
+    6
+   ],
+   "8": [
+    1,
+    7
+   ],
+   "9": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "2.1": [
+    "1.1"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "2.4": [
+    "2.1"
+   ],
+   "2.5": [
+    "2.2"
+   ],
+   "3.1": [
+    "2.1",
+    "2.4"
+   ],
+   "3.2": [
+    "2.3"
+   ],
+   "3.3": [
+    "3.1"
+   ],
+   "3.4": [
+    "2.4"
+   ],
+   "3.5": [
+    "2.2",
+    "1.3"
+   ],
+   "4.1": [
+    "3.1"
+   ],
+   "4.2": [
+    "2.1"
+   ],
+   "4.3": [
+    "4.1"
+   ],
+   "5.1": [
+    "1.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "5.1"
+   ],
+   "5.4": [
+    "5.2"
+   ],
+   "6.1": [
+    "1.1"
+   ],
+   "6.2": [
+    "1.1"
+   ],
+   "6.3": [
+    "1.1"
+   ],
+   "6.4": [
+    "2.5"
+   ],
+   "7.1": [
+    "2.1"
+   ],
+   "7.2": [
+    "2.5"
+   ],
+   "7.3": [
+    "7.1"
+   ],
+   "7.4": [
+    "7.1"
+   ],
+   "8.1": [
+    "1.3"
+   ],
+   "8.2": [
+    "1.1"
+   ],
+   "9.1": [
+    "3.1",
+    "4.2",
+    "5.2"
+   ],
+   "9.2": [
+    "3.5",
+    "7.2",
+    "7.4"
+   ],
+   "9.3": [
+    "9.1",
+    "9.2",
+    "6.1",
+    "6.3"
+   ],
+   "9.4": [
+    "9.1"
+   ]
+  },
+  "items": {
+   "c_energia_macros": [
+    "p_almendra_dulce"
+   ],
+   "c_folato_hierro": [
+    "p_almendra_dulce"
+   ],
+   "c_vite_magnesio_calcio": [
+    "p_almendra_dulce"
+   ],
+   "c_fibra": [
+    "p_almendra_dulce"
+   ],
+   "c_fitatos_oxalatos": [
+    "p_almendra_dulce"
+   ],
+   "h_porcion": [
+    "c_energia_macros"
+   ],
+   "u_diabetes_gestacional": [
+    "c_fibra",
+    "c_energia_macros",
+    "h_ensayo_st_carlos"
+   ],
+   "u_presion_lipidos": [
+    "c_energia_macros",
+    "c_vite_magnesio_calcio"
+   ],
+   "u_estrenimiento": [
+    "c_fibra"
+   ],
+   "u_anemia_folato": [
+    "c_folato_hierro",
+    "c_fitatos_oxalatos",
+    "h_guias_colombia"
+   ],
+   "u_crecimiento_fetal": [
+    "h_ensayo_st_carlos"
+   ],
+   "u_neurodesarrollo": [
+    "c_energia_macros"
+   ],
+   "u_alergia_hijo": [
+    "p_almendra_dulce"
+   ],
+   "h_guias_alergia": [
+    "u_alergia_hijo"
+   ],
+   "u_alergia_materna": [
+    "p_almendra_dulce"
+   ],
+   "p_almendra_amarga": [
+    "p_almendra_dulce"
+   ],
+   "u_intoxicacion_cianuro": [
+    "p_almendra_amarga"
+   ],
+   "c_aflatoxinas": [
+    "p_almendra_dulce"
+   ],
+   "h_salmonella_pasteurizacion": [
+    "p_almendra_dulce"
+   ],
+   "u_absorcion_remojo": [
+    "c_fitatos_oxalatos"
+   ],
+   "p_mantequilla_harina": [
+    "p_almendra_dulce"
+   ],
+   "p_bebida_almendra": [
+    "p_almendra_dulce"
+   ],
+   "u_bebida_vs_leche": [
+    "p_bebida_almendra"
+   ],
+   "h_colombia_disponibilidad": [
+    "p_almendra_dulce",
+    "h_guias_colombia"
+   ],
+   "h_creencias_calor": [
+    "p_almendra_dulce"
+   ],
+   "u_parto_aborto": [
+    "h_creencias_calor"
+   ],
+   "h_huecos_evidencia": [
+    "u_diabetes_gestacional",
+    "u_crecimiento_fetal",
+    "u_neurodesarrollo"
+   ]
+  }
+ }
+}

@@ -1,6 +1,6 @@
 # Monografías de ingredientes
 
-Diez monografías en grafo con la estructura de 9 partes de [`mirra-olibano-apharsemon`](../mirra-olibano-apharsemon/README.md). Cada una se construyó desde literatura científica (PubMed) y fuentes oficiales, no desde un libro. Cada afirmación de salud tiene un veredicto y una alerta dentro del grafo.
+11 grafos: 10 monografías con la estructura de 9 partes de [`mirra-olibano-apharsemon`](../mirra-olibano-apharsemon/README.md). y un grafo de pregunta clínica (almendras en gestantes). Cada uno se construyó desde literatura científica (PubMed) y fuentes oficiales, no desde un libro. Cada afirmación de salud tiene un veredicto y una alerta dentro del grafo.
 
 Índice visual: [`index.html`](index.html).
 
@@ -16,17 +16,18 @@ Diez monografías en grafo con la estructura de 9 partes de [`mirra-olibano-apha
 | Murumuru | *Astrocaryum murumuru s.l.* | 29 | 31 | 13 | 13 | [`grafo-murumuru.html`](murumuru/grafo-murumuru.html) |
 | Camu camu | *Myrciaria dubia* | 30 | 32 | 13 | 11 | [`grafo-camu-camu.html`](camu-camu/grafo-camu-camu.html) |
 | Aguaje (canangucha) | *Mauritia flexuosa* | 35 | 32 | 12 | 11 | [`grafo-aguaje.html`](aguaje/grafo-aguaje.html) |
+| Almendras en gestantes | *Prunus dulcis · gestación y lactancia* | 34 | 31 | 13 | 13 | [`grafo-almendras-gestantes.html`](almendras-gestantes/grafo-almendras-gestantes.html) |
 
-**Total:** 134 afirmaciones y 124 alertas.
+**Total:** 147 afirmaciones y 137 alertas.
 
 | Veredicto | N.º |
 |---|---|
 | respaldado | 9 |
-| respaldado con matices | 34 |
-| sin evidencia en humanos | 49 |
-| contradicho | 14 |
-| riesgo documentado | 14 |
-| riesgo omitido | 14 |
+| respaldado con matices | 36 |
+| sin evidencia en humanos | 53 |
+| contradicho | 18 |
+| riesgo documentado | 16 |
+| riesgo omitido | 15 |
 
 ## Hallazgo principal por ingrediente
 
@@ -40,6 +41,7 @@ Diez monografías en grafo con la estructura de 9 partes de [`mirra-olibano-apha
 - **Murumuru.** El material colombiano puede ser A. macrocalyx. La manteca es rica en ácidos láurico y mirístico.
 - **Camu camu.** No previene resfriados. El polvo pierde vitamina C. Las dosis altas tienen riesgo de cálculos renales.
 - **Aguaje (canangucha).** La cosecha con tala de palmas hembra no es sostenible. Falta evidencia de seguridad en el embarazo.
+- **Almendras en gestantes.** No hay ensayos con almendra en diabetes gestacional. No se deben evitar los frutos secos por alergia. La almendra no reemplaza los suplementos ni la leche.
 
 ## Archivos por carpeta
 
