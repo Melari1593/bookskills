@@ -1,86 +1,86 @@
 # Cheatsheet: recetas de Healing Herbal Infusions (capítulos 2 a 6)
 
-Edad mínima: es la que da el resumen del capítulo. "—" significa que el resumen no la da. En ese caso, no la supongas. La columna **Notas y alertas** incluye las alertas de la tabla Seguridad clínica de [SKILL.md](SKILL.md).
+Edad mínima: es la que da el resumen del capítulo. "—" significa que el resumen no la da. En ese caso, no la supongas. La columna **Notas y alertas** incluye las alertas de la tabla Seguridad clínica de [SKILL.md](SKILL.md). La última columna trae el veredicto de evidencia de cada receta (2026-11-10); el detalle está en [evidencia/recetas.md](evidencia/recetas.md).
 
 Regla general: no des preparados con miel a menores de 12 meses.
 
 ## Capítulo 2. Inmunidad
 
-| Receta | Forma | Hierbas clave | Edad | Notas y alertas |
-|---|---|---|---|---|
-| Super Immunity Infusion Tea | Té | Saúco (baya), rosa mosqueta, raíz de equinácea, jengibre | — | Partes iguales secas, 2 cda por taza |
-| Vitamin C Tea | Té | Rosa mosqueta, hibisco, cáscara de naranja, canela | — | Sin hibisco en el embarazo |
-| Elderberry & Astragalus Tincture | Tintura | Saúco, astrágalo | Adultos | Versión en glicerito para niños (capítulo 8, no extraído) |
-| Echinacea Root & Flower Tincture | Tintura | Raíz y flor de equinácea | Adultos | Versión en glicerito para niños. Evidencia inconsistente (Cochrane). EMA: no en menores de 12 años ni en enfermedades autoinmunes. |
-| Fermented Garlic, Ginger & Sage in Honey | Miel fermentada | Ajo, jengibre, salvia | — | Se puede cambiar la salvia por romero, tomillo, orégano o menta |
-| Fermented Red Onion & Thyme in Honey | Miel fermentada | Cebolla roja, tomillo | — | También sirve como marinada |
-| Elderberry, Ginger & Cinnamon Honey | Miel infusionada (seca) | Saúco, jengibre, canela | — | Con hierba fresca, fermenta |
-| Fresh Kitchen Herb Oxymel | Oximiel | Hierbas frescas de cocina | 2+ | 1 taza de hierbas, ¾ taza de vinagre, ¾ taza de miel, 4–6 semanas. 1 cda hasta 3 veces al día al inicio. 1–2 veces al día como preventivo. |
-| Immune-Boosting Vinegar ("fiery cider") | Vinagre | Ajo, jengibre, cúrcuma, orégano, tomillo, ají (opcional) | Niños: sin ají y diluido | — |
-| Oregano-Infused Oil with Lemon | Aceite con hierba fresca | Orégano fresco, jugo de limón | — | Única receta de aceite con hierba fresca. El limón aporta acidez. Úsalo en 1 mes. |
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |
+|---|---|---|---|---|---|
+| Super Immunity Infusion Tea | Té | Saúco (baya), rosa mosqueta, raíz de equinácea, jengibre | — | Partes iguales secas, 2 cda por taza | sin evidencia en humanos (para el té) · Sin ensayos del té. La evidencia del saúco es de jarabes estandarizados y es incierta. Hierve las bayas a fuego lento; no las dejes solo en reposo. |
+| Vitamin C Tea | Té | Rosa mosqueta, hibisco, cáscara de naranja, canela | — | Sin hibisco en el embarazo | sin evidencia en humanos (para el té) · El té no reemplaza un suplemento: la vitamina C no previene el resfriado. Usa canela de Ceilán, no cassia (cumarina). Sin hibisco en embarazo. |
+| Elderberry & Astragalus Tincture | Tintura | Saúco, astrágalo | Adultos | Versión en glicerito para niños (capítulo 8, no extraído) | sin evidencia en humanos (tintura); saúco: resultados contradictorios en gripe · Saúco en gripe: ECA contradictorios. Astrágalo: no en autoinmunes, embarazo ni con inmunosupresores (tacrolimus). Tintura: solo adultos. |
+| Echinacea Root & Flower Tincture | Tintura | Raíz y flor de equinácea | Adultos | Versión en glicerito para niños. Evidencia inconsistente (Cochrane). EMA: no en menores de 12 años ni en enfermedades autoinmunes. | contradicho (tratamiento al inicio) · respaldado con matices (prevención, extractos estandarizados) · El libro dice que funciona al inicio; los metaanálisis no muestran que acorte el resfriado. La prevención es modesta y con extractos. Consulta si dura más de 10 días. |
+| Fermented Garlic, Ginger & Sage in Honey | Miel fermentada | Ajo, jengibre, salvia | — | Se puede cambiar la salvia por romero, tomillo, orégano o menta | sin evidencia en humanos (preparado); la miel sí alivia la tos · El ajo crudo en miel tiene riesgo de botulismo. Ajo: suspender 7 días antes de cirugía; precaución con anticoagulantes. La miel sí alivia la tos (≥12 meses). |
+| Fermented Red Onion & Thyme in Honey | Miel fermentada | Cebolla roja, tomillo | — | También sirve como marinada | uso tradicional EMA (tomillo, sin ensayos) · miel respaldada con matices para la tos · Tomillo: uso tradicional EMA para la tos; no en asma ni alergia a lamiáceas. La cebolla cruda en miel fermentada tiene riesgo de botulismo. |
+| Elderberry, Ginger & Cinnamon Honey | Miel infusionada (seca) | Saúco, jengibre, canela | — | Con hierba fresca, fermenta | sin evidencia en humanos (preparado) · Las bayas de saúco no se calientan en esta receta. Cocínalas antes o usa jarabe cocido. Usa canela de Ceilán. No en menores de 12 meses. |
+| Fresh Kitchen Herb Oxymel | Oximiel | Hierbas frescas de cocina | 2+ | 1 taza de hierbas, ¾ taza de vinagre, ¾ taza de miel, 4–6 semanas. 1 cda hasta 3 veces al día al inicio. 1–2 veces al día como preventivo. | sin evidencia en humanos · Sin ensayos. Si lleva salvia, no la des a menores de 18 años (EMA). Si lleva tomillo, no la des a menores de 4 años. No en menores de 12 meses (miel). |
+| Immune-Boosting Vinegar ("fiery cider") | Vinagre | Ajo, jengibre, cúrcuma, orégano, tomillo, ají (opcional) | Niños: sin ají y diluido | — | sin evidencia en humanos · Sin ensayos del vinagre en infección. Lleva ajo: suspéndelo 7 días antes de cirugía y avisa si toma anticoagulantes. |
+| Oregano-Infused Oil with Lemon | Aceite con hierba fresca | Orégano fresco, jugo de limón | — | Única receta de aceite con hierba fresca. El limón aporta acidez. Úsalo en 1 mes. | contradicho (el limón no está validado) · riesgo documentado (botulismo) · El jugo de limón no es un método probado contra el botulismo. Usa orégano seco, o refrigera y consume en 2–4 días. |
 
 ## Capítulo 3. Dolor y lesiones
 
-| Receta | Forma | Hierbas clave | Edad | Notas y alertas |
-|---|---|---|---|---|
-| Arnica Salve for Sprains & Bruises | Ungüento | Árnica | 8+ | Solo tópico. Tóxico por vía oral. No en piel abierta. |
-| Cannabis-Infused Coconut Oil | Aceite con calor | Cannabis (cepa con más CBD) | 18+ | Descarboxilación a menos de 65 °C, 4–8 h. Confirma la legalidad. |
-| St. John's Wort & Cayenne Warming Oil | Aceite (o ungüento) | Hipérico, ají cayena | — | Prueba en la piel por el ají. Hipérico tópico: fotosensibilidad. |
-| Lavender & Peppermint Sore Muscle Oil | Aceite | Lavanda, menta | — | También en las sienes para la cefalea |
-| White Willow & Birch Bark Tea | Té o decocción | Corteza de sauce blanco, corteza de abedul | Adultos (18+) | Máximo 1–2 semanas. EMA: no en menores de 18 años (Reye), tercer trimestre, alergia a salicilatos, úlcera, coagulopatía ni con anticoagulantes. |
-| Basil, Thyme & Oregano Tea for Chronic Pain | Té | Albahaca, tomillo, orégano | — | Uso diario. El efecto tarda semanas. |
-| Turmeric & Black Pepper Tea | Decocción | Cúrcuma, pimienta negra | — | La piperina sube la absorción de algunos fármacos. Riesgo de sangrado con anticoagulantes (datos escasos). |
-| Four-Herb Wound Salve | Ungüento | Milenrama, llantén, consuelda, caléndula | 13+ | Heridas menores. Conflicto con la EMA: la consuelda no va en piel lesionada y solo en adultos. Haz la receta sin consuelda. Menores de 13: Boo-Boo Balm (capítulo 8, no extraído). |
-| Herbal Honey Burn Ointment | Miel infusionada | Caléndula, lavanda, raíz de consuelda | — | Sin aceite. Conflicto con la EMA: haz la receta sin consuelda. No en menores de 12 meses (miel). |
-| Itchy Bite & Sting Balm | Ungüento | Llantén, pamplina, lavanda | — | Empieza la infusión en primavera |
-| Sunburn Aloe Infusion | Infusión en sábila | Caléndula, pamplina, sábila | — | Refrigera para más frescura |
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |
+|---|---|---|---|---|---|
+| Arnica Salve for Sprains & Bruises | Ungüento | Árnica | 8+ | Solo tópico. Tóxico por vía oral. No en piel abierta. | respaldado con matices · Solo piel intacta. EMA: desde 12 años, máximo 3–4 días. No en embarazo. Lactancia: no en el pecho. Nunca por vía oral. |
+| Cannabis-Infused Coconut Oil | Aceite con calor | Cannabis (cepa con más CBD) | 18+ | Descarboxilación a menos de 65 °C, 4–8 h. Confirma la legalidad. | riesgo documentado (eficacia tópica no establecida) · Guárdalo bajo llave, rotulado y lejos de la cocina. Un niño que lo coma puede necesitar UCI. Eficacia tópica no demostrada. |
+| St. John's Wort & Cayenne Warming Oil | Aceite (o ungüento) | Hipérico, ají cayena | — | Prueba en la piel por el ají. Hipérico tópico: fotosensibilidad. | respaldado con matices (ají estandarizado; la concentración casera es desconocida) · Solo adultos, piel intacta, sin calor extra. Lávate las manos y no toques los ojos. Máximo 3 semanas. Hipérico: evita el sol en la zona. |
+| Lavender & Peppermint Sore Muscle Oil | Aceite | Lavanda, menta | — | También en las sienes para la cefalea | respaldado con matices (cefalea, aceite esencial al 10 %); uso tradicional EMA (músculo) · Evidencia solo para aceite esencial de menta al 10 %. No en menores de 2 años ni en la cara de niños. Lavanda: no uso diario en niños prepúberes. |
+| White Willow & Birch Bark Tea | Té o decocción | Corteza de sauce blanco, corteza de abedul | Adultos (18+) | Máximo 1–2 semanas. EMA: no en menores de 18 años (Reye), tercer trimestre, alergia a salicilatos, úlcera, coagulopatía ni con anticoagulantes. | respaldado con matices (extracto; el té tiene salicina desconocida) · La evidencia es de extracto con 120–240 mg de salicina, no del té. Máximo 1–2 semanas. Ver alerta de sauce. |
+| Basil, Thyme & Oregano Tea for Chronic Pain | Té | Albahaca, tomillo, orégano | — | Uso diario. El efecto tarda semanas. | sin evidencia en humanos · Sin evidencia en humanos para dolor. Es una bebida culinaria. No reemplaza la valoración del dolor crónico. |
+| Turmeric & Black Pepper Tea | Decocción | Cúrcuma, pimienta negra | — | La piperina sube la absorción de algunos fármacos. Riesgo de sangrado con anticoagulantes (datos escasos). | respaldado con matices (extracto; sin evidencia del té) · La evidencia en artrosis es de extractos en cápsulas, no del té. Ver alerta de cúrcuma y pimienta. |
+| Four-Herb Wound Salve | Ungüento | Milenrama, llantén, consuelda, caléndula | 13+ | Heridas menores. Conflicto con la EMA: la consuelda no va en piel lesionada y solo en adultos. Haz la receta sin consuelda. Menores de 13: Boo-Boo Balm (capítulo 8, no extraído). | uso tradicional EMA (sin ensayos del preparado) · Sin consuelda. Milenrama: no en embarazo, lactancia ni menores de 12. Solo heridas menores. Con signos de infección, consulta. |
+| Herbal Honey Burn Ointment | Miel infusionada | Caléndula, lavanda, raíz de consuelda | — | Sin aceite. Conflicto con la EMA: haz la receta sin consuelda. No en menores de 12 meses (miel). | respaldado con matices (apósito de miel; sin ensayos del preparado casero) · Primero agua corriente fría 20 min, sin hielo. Después, la miel. Sin consuelda. No en menores de 12 meses. |
+| Itchy Bite & Sting Balm | Ungüento | Llantén, pamplina, lavanda | — | Empieza la infusión en primavera | uso tradicional EMA (llantén); sin evidencia en humanos (pamplina) · Llantén: uso tradicional EMA, desde 3 años. Pamplina: sin datos en humanos. No hay evidencia específica en picaduras. |
+| Sunburn Aloe Infusion | Infusión en sábila | Caléndula, pamplina, sábila | — | Refrigera para más frescura | respaldado con matices · Evidencia mixta y de geles comerciales. Caléndula: uso tradicional EMA desde 6 años. Con ampollas extensas o fiebre, consulta. |
 
 ## Capítulo 4. Dolencias comunes
 
-| Receta | Forma | Hierbas clave | Edad | Notas y alertas |
-|---|---|---|---|---|
-| Headache Relief Tea | Té | Escutelaria, toronjil, manzanilla | — | — |
-| Feverfew Migraine Preventative Tincture | Tintura o glicerito | Matricaria | — | Mínimo 2–3 meses de uso. No en embarazo. |
-| Sage, Marshmallow & Ginger Sore Throat Tea | Té | Salvia, raíz de malvavisco, jengibre | — | El libro dice que la salvia reduce la leche (tradición, sin estudios). |
-| Horehound Sore Throat Syrup | Jarabe | Marrubio, olmo rojo | — | El olmo rojo está amenazado: usa malvavisco |
-| Thyme, Peppermint & Honey Tea for Coughs | Té | Tomillo, menta | — | El libro cambia la menta por hierbabuena en lactancia (tradición, sin estudios) |
-| Pine Needle Cough Syrup | Infusión + jarabe | Agujas de pino, abeto, pícea o tsuga | — | Confirma la especie. Descarta la cicuta y el tejo (*Taxus*, cardiotóxico). No en el embarazo. No en menores de 12 meses (miel). |
-| Fever-Reducing Tea | Té | Milenrama, nébeda, flor de saúco, canela | — | Sírvelo caliente para sudar. Sin milenrama en el embarazo. Alternativa en baño para niños. |
-| Mullein Flower Earache Oil | Aceite | Flor de gordolobo | 2+ (1–2 gotas en menores de 8) | No si hay secreción, perforación o tubos. Consulta si no mejora en 48–72 h. |
-| Clove Whiskey Tincture for Tooth Pain | Tintura | Clavo | Adultos | Solo un toque tópico. No en encía expuesta ni en dentición. Necesita odontólogo. |
-| Hawthorn & Hibiscus Tea for the Heart | Té | Baya de espino, hibisco | Adultos | El hibisco baja la presión. Vigila hipotensión con antihipertensivos. Usa el espino solo si un médico descartó enfermedad cardiaca. |
-| Liver Support Tonic | Té | Raíz de diente de león, astrágalo, ortiga | — | Tuesta la raíz para mejorar el sabor |
-| UTI Relief Tea | Té | Gayuba, milenrama, raíz de diente de león, enebro, malvavisco | Libro: 13+ (2+ sin gayuba) | EMA: gayuba solo en mujeres adultas, máximo 1 semana. No en hombres, embarazo ni enfermedad renal. Fiebre, dolor lumbar o sangre en la orina: consulta el mismo día. |
-| Eczema Relief Salve | Ungüento | Caléndula, llantén, pamplina | — | Doble manteca de karité |
-| Lemon Balm Cold Sore Balm | Bálsamo labial | Toronjil | — | El libro dice que acorta el herpes labial |
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |
+|---|---|---|---|---|---|
+| Headache Relief Tea | Té | Escutelaria, toronjil, manzanilla | — | — | sin evidencia en humanos · Sin ensayos en cefalea. Compra escutelaria con identidad verificada: la adulteración con *Teucrium* daña el hígado. Con ictericia u orina oscura, suspende y consulta. Toronjil desde 12 años (EMA). |
+| Feverfew Migraine Preventative Tincture | Tintura o glicerito | Matricaria | — | Mínimo 2–3 meses de uso. No en embarazo. | respaldado con matices · Efecto pequeño: 0,6 crisis menos al mes (Cochrane, calidad baja). Solo adultos. No en embarazo ni lactancia. Suspende 2 semanas antes de una cirugía. No la retires de golpe: cefalea de rebote. |
+| Sage, Marshmallow & Ginger Sore Throat Tea | Té | Salvia, raíz de malvavisco, jengibre | — | El libro dice que la salvia reduce la leche (tradición, sin estudios). | uso tradicional EMA (sin ensayos) · Salvia: uso tradicional EMA en gárgara, máximo 1 semana, solo adultos. Nunca uses aceite esencial de salvia: tuyona y convulsiones. Evítala en epilepsia. Separa el malvavisco 1 h de otros medicamentos. |
+| Horehound Sore Throat Syrup | Jarabe | Marrubio, olmo rojo | — | El olmo rojo está amenazado: usa malvavisco | uso tradicional EMA (sin ensayos) · Marrubio: uso tradicional EMA en la tos del resfriado, desde 12 años. No en enfermedad hepática o biliar, embarazo ni lactancia. Consulta si dura más de 1 semana. Miel: no antes de 12 meses. |
+| Thyme, Peppermint & Honey Tea for Coughs | Té | Tomillo, menta | — | El libro cambia la menta por hierbabuena en lactancia (tradición, sin estudios) | respaldado con matices · La miel alivia la tos aguda desde 1 año (Cochrane, certeza moderada). El tomillo es uso tradicional EMA; su ensayo positivo usó jarabe con hiedra. Consulta si dura más de 1 semana. |
+| Pine Needle Cough Syrup | Infusión + jarabe | Agujas de pino, abeto, pícea o tsuga | — | Confirma la especie. Descarta la cicuta y el tejo (*Taxus*, cardiotóxico). No en el embarazo. No en menores de 12 meses (miel). | sin evidencia en humanos · Sin ensayos en humanos. Alerta existente: confirma la especie (el tejo es cardiotóxico). No en el embarazo. No antes de 12 meses (miel). |
+| Fever-Reducing Tea | Té | Milenrama, nébeda, flor de saúco, canela | — | Sírvelo caliente para sudar. Sin milenrama en el embarazo. Alternativa en baño para niños. | contradicho · No busques "sudar la fiebre" ni abrigues a un niño. NICE no trata la fiebre por sí misma. Menores de 3 meses con 38 °C: consulta. Milenrama y saúco desde 12 años (EMA). |
+| Mullein Flower Earache Oil | Aceite | Flor de gordolobo | 2+ (1–2 gotas en menores de 8) | No si hay secreción, perforación o tubos. Consulta si no mejora en 48–72 h. | sin evidencia en humanos (para el gordolobo solo; ver alerta existente) · Alerta existente: no pongas gotas si hay secreción, perforación o tubos. Consulta si es menor de 2 años, hay fiebre o no mejora en 48–72 h. |
+| Clove Whiskey Tincture for Tooth Pain | Tintura | Clavo | Adultos | Solo un toque tópico. No en encía expuesta ni en dentición. Necesita odontólogo. | riesgo documentado (alerta existente) · Alerta existente: solo un toque tópico en adultos. Guarda el frasco fuera del alcance de niños. Consulta al odontólogo. |
+| Hawthorn & Hibiscus Tea for the Heart | Té | Baya de espino, hibisco | Adultos | El hibisco baja la presión. Vigila hipotensión con antihipertensivos. Usa el espino solo si un médico descartó enfermedad cardiaca. | respaldado con matices · El beneficio del espino es de extractos de hoja y flor como adyuvante en insuficiencia cardiaca, no de la baya en té. Alerta existente: vigila la presión con antihipertensivos. |
+| Liver Support Tonic | Té | Raíz de diente de león, astrágalo, ortiga | — | Tuesta la raíz para mejorar el sabor | sin evidencia en humanos · Sin evidencia de "apoyo hepático". La EMA no recomienda el diente de león si hay enfermedad hepática o biliar. Astrágalo: no con inmunosupresores. No antes de 12 años, ni en embarazo o lactancia. |
+| UTI Relief Tea | Té | Gayuba, milenrama, raíz de diente de león, enebro, malvavisco | Libro: 13+ (2+ sin gayuba) | EMA: gayuba solo en mujeres adultas, máximo 1 semana. No en hombres, embarazo ni enfermedad renal. Fiebre, dolor lumbar o sangre en la orina: consulta el mismo día. | contradicho · La gayuba no alivió síntomas en un ECA de 382 mujeres. Enebro: no en embarazo, lactancia ni pielonefritis (EMA). Con fiebre, dolor lumbar o sangre, consulta el mismo día. |
+| Eczema Relief Salve | Ungüento | Caléndula, llantén, pamplina | — | Doble manteca de karité | uso tradicional EMA (sin ensayos) · Uso tradicional EMA, sin ensayos en eccema. Caléndula desde 6 años y llantén desde 3 (EMA). No uses llantén si hay alergia a su polen. Prueba en la piel antes. |
+| Lemon Balm Cold Sore Balm | Bálsamo labial | Toronjil | — | El libro dice que acorta el herpes labial | respaldado con matices · Un ECA pequeño (66 pacientes) mostró menos síntomas al día 2 con una crema de extracto concentrado. El bálsamo casero no equivale a esa crema. |
 
 ## Capítulo 5. Digestión
 
-| Receta | Forma | Hierbas clave | Edad | Notas y alertas |
-|---|---|---|---|---|
-| Ginger & Turmeric Decoction & Honey Syrup | Decocción + jarabe | Jengibre, cúrcuma, canela | — | Mancha las superficies |
-| Prebiotic Honey Electuary | Electuario | Achicoria, diente de león, bardana, malvavisco (polvo) | 8+ | ½ taza de miel + 1 cda de cada polvo. 1 cda al día. |
-| Fennel & Cardamom After-Meal Tummy Tea | Decocción | Semilla de hinojo, cardamomo | — | Masticar ½ cdta de hinojo alivia rápido |
-| Marshmallow & Cinnamon Digestive Tea | Té o infusión en frío | Raíz de malvavisco, canela | — | — |
-| Roasted Chicory Root Chai | Decocción | Cardamomo, achicoria tostada, jengibre, especias | — | Sustituto de café: achicoria + diente de león |
-| Four-Mints Herbal Hot or Iced Tea | Té | Menta, hierbabuena, toronjil, nébeda | — | Cualquier lamiácea sirve |
-| Dandelion & Burdock Root Bitters | Amargos | Raíz de diente de león, bardana, cáscara de naranja | Adultos | Hasta 1 fl oz antes o después de comer |
-| Sarsaparilla & Fennel Bitters | Amargos | Raíz de zarzaparrilla, hinojo, canela | Adultos | Sabor a "root beer" |
-| Herbal Vinegar Infusion for Heartburn | Vinagre | Vinagre de manzana, jengibre, menta | — | Diluido, máximo 3 veces al día. La teoría del "poco ácido" no tiene respaldo. Con signos de alarma, consultar. |
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |
+|---|---|---|---|---|---|
+| Ginger & Turmeric Decoction & Honey Syrup | Decocción + jarabe | Jengibre, cúrcuma, canela | — | Mancha las superficies | respaldado con matices (náusea y dispepsia con extractos); uso tradicional EMA para el jarabe casero · Evidencia de extractos, no del jarabe. Adultos. Con warfarina, consulta antes. En embarazo, solo con valoración. Usa canela de Ceilán. No en menores de 12 meses (miel). |
+| Prebiotic Honey Electuary | Electuario | Achicoria, diente de león, bardana, malvavisco (polvo) | 8+ | ½ taza de miel + 1 cda de cada polvo. 1 cda al día. | sin evidencia en humanos (preparado); respaldado con matices (inulina aislada en estreñimiento, a dosis de 12–15 g/día) · Sin ensayos del electuario. La EMA da estas raíces desde 12 años (bardana, 18). No en asteráceas, cálculos biliares ni diarrea. Separa 1 h de otros fármacos. |
+| Fennel & Cardamom After-Meal Tummy Tea | Decocción | Semilla de hinojo, cardamomo | — | Masticar ½ cdta de hinojo alivia rápido | uso tradicional EMA (sin ensayos) · EMA: uso tradicional, adultos máximo 2 semanas. No en menores de 4 años, embarazo ni lactancia. No con alergia a apiáceas o artemisa. Usa semilla entera, no molida. |
+| Marshmallow & Cinnamon Digestive Tea | Té o infusión en frío | Raíz de malvavisco, canela | — | — | uso tradicional EMA (sin ensayos) · EMA: uso tradicional. Malvavisco desde 12 años; canela solo adultos. Toma otros fármacos 1 h antes o después. La infusión en frío coincide con la EMA. Usa canela de Ceilán. |
+| Roasted Chicory Root Chai | Decocción | Cardamomo, achicoria tostada, jengibre, especias | — | Sustituto de café: achicoria + diente de león | uso tradicional EMA (sin ensayos) · EMA: uso tradicional, desde 12 años. No con alergia a asteráceas o a polen de abedul. No en embarazo ni lactancia. Como sustituto del café, es aceptable. |
+| Four-Mints Herbal Hot or Iced Tea | Té | Menta, hierbabuena, toronjil, nébeda | — | Cualquier lamiácea sirve | uso tradicional EMA (sin ensayos) para el té; respaldado con matices para el extracto de menta + alcaravea · EMA: uso tradicional. Menta desde 4 años; toronjil desde 12. No si hay reflujo o pirosis. No sustituyas por cualquier menta: el poleo no. |
+| Dandelion & Burdock Root Bitters | Amargos | Raíz de diente de león, bardana, cáscara de naranja | Adultos | Hasta 1 fl oz antes o después de comer | sin evidencia en humanos (preparado y mecanismo) · Sin ensayos de amargos caseros; el reflejo cefálico no está probado. La EMA da 5–10 ml de tintura por toma, no 30 ml. No con cálculos biliares, diuréticos ni embarazo. |
+| Sarsaparilla & Fennel Bitters | Amargos | Raíz de zarzaparrilla, hinojo, canela | Adultos | Sabor a "root beer" | sin evidencia en humanos · Sin evidencia en humanos ni monografía EMA de la zarzaparrilla. Por precaución, no la uses con digoxina. No en embarazo ni lactancia (hinojo). Usa canela de Ceilán. |
+| Herbal Vinegar Infusion for Heartburn | Vinagre | Vinagre de manzana, jengibre, menta | — | Diluido, máximo 3 veces al día. La teoría del "poco ácido" no tiene respaldo. Con signos de alarma, consultar. | contradicho (menta y jengibre en la acidez) · Contradicho: la EMA pide evitar la menta si hay reflujo, y el jengibre puede dar pirosis. El vinagre no tiene respaldo. Con disfagia, sangrado o pérdida de peso, consulta. |
 
 ## Capítulo 6. Bienestar
 
-| Receta | Forma | Hierbas clave | Edad | Notas y alertas |
-|---|---|---|---|---|
-| Nettle & Oatstraw Long-Infused Tea | Infusión larga (4–12 h) | Ortiga, paja de avena | — | Mejor fría. El libro la llama nutritiva, pero pasa poco hierro al agua (~0,2 mg por 10 g). Ortiga: máximo 8–12 g/día y 4 semanas; no en embarazo, lactancia ni menores de 12 años (EMA). Avena: precaución en celiaquía. |
-| Sleep Well Tea | Té | Manzanilla, nébeda, valeriana | — | Para niños: té calmante del capítulo 8 (no extraído) |
-| De-Stress Tea | Té | Albahaca sagrada (tulsi), pasiflora, salvia | — | Tulsi: no en embarazo ni si se busca embarazo; puede bajar la T4 e interferir con levotiroxina; inhibe plaquetas. Pasiflora: no conducir. |
-| Calming Massage Oil | Aceite | Manzanilla, lavanda, toronjil | Sin aceite esencial en menores de 13 | — |
-| St. John's Wort Tincture | Tintura o glicerito | Hipérico | — | Ciclos de 2–3 semanas y 1 semana de descanso. Interacciones: anticonceptivos, warfarina, ISRS y otros. No en embarazo ni lactancia. |
-| California Poppy Tincture | Tintura o glicerito | Amapola de California | — | No es narcótica. Puede sumar sedación. No conduzcas después de tomarla. |
-| Passionflower-Infused Wine | Vino infusionado | Pasiflora | Adultos | Máximo 4 oz al día |
-| Rejuvenating Flower Bath Soak | Baño de sales | Sal de Epsom, lavanda, manzanilla, pétalos de rosa | 2+ | 1 taza de sal + ¼ taza de cada flor. ¼–½ taza por baño, en bolsa de muselina. |
-| Relaxing Herbal Face Steam | Vaho | Romero, menta, lavanda | — | Eucalipto opcional |
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |
+|---|---|---|---|---|---|
+| Nettle & Oatstraw Long-Infused Tea | Infusión larga (4–12 h) | Ortiga, paja de avena | — | Mejor fría. El libro la llama nutritiva, pero pasa poco hierro al agua (~0,2 mg por 10 g). Ortiga: máximo 8–12 g/día y 4 semanas; no en embarazo, lactancia ni menores de 12 años (EMA). Avena: precaución en celiaquía. | uso tradicional EMA (sin ensayos) · Uso tradicional. No es fuente de hierro. Ortiga: máximo 8–12 g/día y 4 semanas; no en embarazo, lactancia ni menores de 12. Avena: precaución en celiaquía. |
+| Sleep Well Tea | Té | Manzanilla, nébeda, valeriana | — | Para niños: té calmante del capítulo 8 (no extraído) | respaldado con matices (calidad subjetiva del sueño; no insomnio) · Mejora la calidad del sueño percibida (evidencia baja, extractos). No trata el insomnio. Nébeda sin ensayos. Insomnio crónico: terapia cognitivo-conductual primero. |
+| De-Stress Tea | Té | Albahaca sagrada (tulsi), pasiflora, salvia | — | Tulsi: no en embarazo ni si se busca embarazo; puede bajar la T4 e interferir con levotiroxina; inhibe plaquetas. Pasiflora: no conducir. | uso tradicional EMA (sin ensayos) para pasiflora; sin evidencia en humanos para salvia · Sin evidencia para el estrés. Pasiflora: datos escasos. Salvia: solo adultos, máximo 2 semanas, no en embarazo ni lactancia (tuyona). Tulsi: no en embarazo. |
+| Calming Massage Oil | Aceite | Manzanilla, lavanda, toronjil | Sin aceite esencial en menores de 13 | — | sin evidencia en humanos (del preparado); aromaterapia: evidencia muy baja · Sin ensayos del aceite. El efecto calmante del masaje es pequeño. Sin aceite esencial en menores de 13 (ginecomastia: evidencia débil). Prueba en la piel. |
+| St. John's Wort Tincture | Tintura o glicerito | Hipérico | — | Ciclos de 2–3 semanas y 1 semana de descanso. Interacciones: anticonceptivos, warfarina, ISRS y otros. No en embarazo ni lactancia. | respaldado con matices (extracto, depresión leve a moderada); uso tradicional EMA para la tintura casera · La evidencia es de extractos, no de tintura casera. Solo depresión leve a moderada con valoración médica. No en depresión grave ni riesgo suicida. No en menores de 18. Interacciones graves. |
+| California Poppy Tincture | Tintura o glicerito | Amapola de California | — | No es narcótica. Puede sumar sedación. No conduzcas después de tomarla. | sin evidencia en humanos (para la planta sola) · Sin ensayos de la planta sola; solo mezclas comerciales. No conduzcas después de tomarla. No la combines con sedantes. |
+| Passionflower-Infused Wine | Vino infusionado | Pasiflora | Adultos | Máximo 4 oz al día | riesgo documentado (alcohol) · Es alcohol, no un sedante herbal. Fragmenta el sueño. No con sedantes, opioides ni antidepresivos. No en embarazo, lactancia, menores ni antecedente de consumo problemático. |
+| Rejuvenating Flower Bath Soak | Baño de sales | Sal de Epsom, lavanda, manzanilla, pétalos de rosa | 2+ | 1 taza de sal + ¼ taza de cada flor. ¼–½ taza por baño, en bolsa de muselina. | contradicho (absorción de magnesio); sin evidencia en humanos (relajación) · Relajación por agua tibia y aroma; no aporta magnesio. No en heridas, fiebre alta, infección grave ni insuficiencia cardiaca. Prueba en la piel. |
+| Relaxing Herbal Face Steam | Vaho | Romero, menta, lavanda | — | Eucalipto opcional | riesgo documentado · Riesgo de quemadura grave: nunca en niños; no en el regazo. Sin beneficio probado. Sin aceite de eucalipto en menores de 4 años ni con convulsiones; sin aceite de menta en menores de 12. |
 
 ## Conversión de unidades
 
