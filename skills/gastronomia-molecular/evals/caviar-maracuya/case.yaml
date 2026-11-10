@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: caviar-maracuya
+expected_outcome: |
+  Detecta que la pulpa de maracuyá es muy ácida para la esferificación directa y propone esferificación inversa o corregir el pH con citrato de sodio, con cantidades en gramos para 200 g, pasos, enjuague y la química del alginato con el calcio.

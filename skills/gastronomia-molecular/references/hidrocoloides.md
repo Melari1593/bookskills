@@ -203,6 +203,7 @@ Condición: identifique primero el agente. Después aplique la corrección.
 | Grumos con carragenano | Hidratación rápida en superficie | Humedezca el polvo con alcohol, glicerol o jarabe de glucosa o sacarosa antes del agua | [S-407] |
 | Grumos con metilcelulosa | Dispersión en agua fría directa | Disperse en poca agua caliente. Después añada agua fría. Hidrate toda la noche en frío | [T] |
 | Gel de agar no cuaja | Agar no llegó a hidratar | Lleve el líquido a ebullición (> 90 °C) | [T] [S-agar] |
+| Gel de gelatina no cuaja con fruta cruda (piña, papaya, kiwi) | Enzimas proteolíticas (bromelina, papaína, actinidina) cortan la gelatina | Caliente el jugo antes de añadir la gelatina, use fruta cocida o enlatada, o cambie a agar o gelana. Ver `reacciones.md` §4.8 | [P-Bromelain2024] en `reacciones.md` |
 | Gel de agar débil | Tanino en el líquido | Tanino inhibe el agar. Cambie de agente o pruebe más concentración (NC dosis) | [T] |
 | Gel de kappa no cuaja | Falta potasio. pH bajo con calor (hidrólisis) | Añada fuente de potasio. Evite calentar kappa en medio ácido (NC protocolo) | [T] |
 | Pectina AM no cuaja | pH ≥ 3,5 o sólidos < 60 % | Baje el pH a < 3,5. Lleve sólidos solubles a 60–80 % | [T] |
@@ -368,7 +369,6 @@ Estos datos se pidieron o son habituales. No los confirmé en una fuente accesib
 - Datos técnicos de almidones modificados específicos (solo hay datos de almidón de maíz nativo).
 - Dosis culinaria de transglutaminasa en % y sus condiciones (T, tiempo, inactivación). Texture v2.2 cita "1–3 %" como promotor de gelatina; la base del porcentaje es ambigua.
 - Dosis de E471 y lecitina para emulsiones estables con un criterio medible.
-- Sensibilidad de la gelatina a enzimas proteolíticas de frutas crudas (piña, kiwi, papaya).
 - Umbral de calcio del agua que impide la esferificación directa.
 - Causa de la gelificación continua de la esfera directa y tiempo máximo en el baño.
 - Mecanismo del colapso de espumas no lecitínicas.
