@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aflatoxinas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-wrap:anywhere;white-space:normal}
+.caution{font-size:.88rem;line-height:1.45;background:#FBF1DC;border-left:3px solid #B07A12;color:#4A3A12;padding:8px 10px;margin:0 0 12px;border-radius:0 3px 3px 0}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Aflatoxinas", "subtitle": "Grafo construido desde literatura científica y fuentes oficiales · con alertas de evidencia", "itemLabel": "Alimento, compuesto, efecto o hecho", "itemLabelPlural": "Alimentos, compuestos, efectos y hechos", "resourceLabel": "Tabla", "resourceLabelPlural": "Tablas", "searchHint": "Buscar: AFM1, arepa, hepatitis B, nixtamalización, INVIMA, nariz electrónica, leche materna…"}, "blocks": {"identidad": {"name": "Qué son y dónde aparecen", "color": "#B08A2E"}, "toxicidad": {"name": "Mecanismo y efectos en salud", "color": "#B5465A"}, "norma": {"name": "Regulación y Colombia", "color": "#3F6FA0"}, "control": {"name": "Mitigación y detección", "color": "#6B8E4E"}, "sintesis": {"name": "Conclusiones", "color": "#A0663F"}}, "chapters": [{"num": 1, "title": "Qué son las aflatoxinas", "block": "identidad", "summary": "Toxinas de Aspergillus flavus y A. parasiticus; la B1 es la más tóxica y la M1 es su metabolito en la leche.", "sections": [{"num": "1.1", "title": "Tipos: B1, B2, G1, G2 y M1", "summary": "La norma regula la suma de B1, B2, G1 y G2; el orden de toxicidad es B1 mayor que G1, B2 y G2.", "items": ["c_afb1", "c_afm1"]}, {"num": "1.2", "title": "Hongos productores y condiciones", "summary": "El moho crece antes y después de la cosecha con calor y humedad; la toxina es máxima cerca de 27 °C.", "items": ["h_hongos_condiciones"]}, {"num": "1.3", "title": "Propiedades físicas y estabilidad", "summary": "Son cristales sin olor, sabor ni color, y en gran parte estables al calor.", "items": ["h_sin_olor"]}]}, {"num": 2, "title": "Alimentos de riesgo y exposición", "block": "identidad", "summary": "Maíz y maní son las fuentes principales; también frutos secos, especias, arroz, café, cacao y leche.", "sections": [{"num": "2.1", "title": "Maíz y arepa", "summary": "El maíz es la fuente principal en países de ingreso bajo y medio; en Colombia el 27 % de las arepas de fábrica tenía aflatoxina B1.", "items": ["p_maiz_arepa"]}, {"num": "2.2", "title": "Maní y frutos secos", "summary": "Maní, almendra, pistacho, avellana y nuez de Brasil tienen límites propios por su riesgo de contaminación.", "items": ["p_mani_frutos_secos"]}, {"num": "2.3", "title": "Arroz, café, cacao y especias", "summary": "Hay datos colombianos de arroz y café; para cacao y especias de Colombia no se confirmaron datos.", "items": ["p_arroz_cafe"]}, {"num": "2.4", "title": "Leche y aflatoxina M1", "summary": "La M1 llega a la leche cuando el ganado come pienso contaminado; la leche no muestra moho.", "items": ["p_leche"]}, {"num": "2.5", "title": "Biomarcadores de exposición", "summary": "La lisina unida a albúmina mide semanas o meses; la M1 urinaria mide exposición reciente.", "items": ["u_biomarcadores"]}]}, {"num": 3, "title": "Mecanismo y toxicidad", "block": "toxicidad", "summary": "Las enzimas CYP activan la B1 a un epóxido que daña el ADN; la IARC la clasifica en el grupo 1.", "sections": [{"num": "3.1", "title": "Activación metabólica y aductos de ADN", "summary": "Los CYP forman el 8,9-exo-epóxido, que se une a la guanina y deja la mutación del codón 249 de TP53.", "items": ["c_epoxido_aductos"]}, {"num": "3.2", "title": "Clasificación de la IARC", "summary": "Las aflatoxinas naturales son cancerígenas para humanos; el volumen 82 reafirmó esa evaluación.", "items": ["h_iarc_grupo1"]}, {"num": "3.3", "title": "Aflatoxicosis aguda", "summary": "Las dosis altas causan daño hepático agudo; en Kenia, en 2004, hubo 317 casos y 125 muertes.", "items": ["u_aflatoxicosis_aguda"]}, {"num": "3.4", "title": "Firma genómica en tumores", "summary": "La secuenciación del exoma de 243 tumores hepáticos identificó firmas mutacionales asociadas a la exposición."}]}, {"num": 4, "title": "Cáncer hepático y hepatitis B", "block": "toxicidad", "summary": "Aflatoxina y virus de hepatitis B multiplican el riesgo de carcinoma hepatocelular; la vacuna quita el cofactor viral.", "sections": [{"num": "4.1", "title": "Cohorte de Shanghái", "summary": "En 18 244 hombres, los metabolitos urinarios se asociaron a cáncer hepático tras ajustar por HBsAg, tabaco y alcohol."}, {"num": "4.2", "title": "Sinergia con hepatitis B", "summary": "En el metaanálisis el OR fue 73,0 con las dos exposiciones; la fracción atribuible poblacional fue 17 %.", "items": ["u_chc_vhb"]}, {"num": "4.3", "title": "Vacuna contra la hepatitis B", "summary": "En Taiwán y en el ensayo de Qidong la vacuna redujo el cáncer hepático; no elimina el riesgo propio de la aflatoxina.", "items": ["u_vacuna_vhb"]}]}, {"num": 5, "title": "Embarazo, lactancia e infancia", "block": "toxicidad", "summary": "La toxina cruza la placenta y pasa a la leche materna; se asocia a menor crecimiento infantil.", "sections": [{"num": "5.1", "title": "Transferencia placentaria y peso al nacer", "summary": "Hay aductos en sangre de cordón; el metaanálisis de peso al nacer no halló asociación significativa.", "items": ["u_embarazo_peso_nacer"]}, {"num": "5.2", "title": "Crecimiento infantil", "summary": "En cohortes prospectivas la exposición se asoció a talla baja; un solo ensayo aportó datos de crecimiento.", "items": ["u_crecimiento_infantil"]}, {"num": "5.3", "title": "Aflatoxina M1 en leche materna", "summary": "La prevalencia global agrupada fue 54,48 %; Colombia figura entre los cinco países con mayor prevalencia.", "items": ["u_lactancia_afm1"]}, {"num": "5.4", "title": "Epigenética e inmunidad", "summary": "Hay asociaciones con metilación del ADN del lactante y con títulos de anticuerpos, sin desenlace clínico."}]}, {"num": 6, "title": "Límites regulatorios", "block": "norma", "summary": "La Unión Europea fija B1 y suma; Codex y Colombia fijan la suma; la FDA usa niveles de acción.", "sections": [{"num": "6.1", "title": "Unión Europea", "summary": "El Reglamento 2023/915 fija límites por alimento y destino, y 0,050 µg/kg de M1 en leche.", "items": ["h_limites_ue"]}, {"num": "6.2", "title": "Codex y Estados Unidos", "summary": "Codex fija 10 a 15 µg/kg en frutos secos y 0,50 en leche; la FDA usa 20 ppb como nivel de acción.", "items": ["h_limites_codex_fda"]}, {"num": "6.3", "title": "Colombia", "summary": "La Resolución 4506 de 2013 fija solo la suma, entre 4 y 20 µg/kg, y 0,5 µg/kg de M1 en leche.", "items": ["h_limites_colombia"]}, {"num": "6.4", "title": "Comparación por alimento", "summary": "Para leche el límite colombiano es diez veces el europeo; para maní de consumo directo es 2,5 veces la suma europea."}]}, {"num": 7, "title": "Situación en Colombia y América Latina", "block": "norma", "summary": "Hay exposición documentada en arepa, arroz, leche, leche materna y orina infantil; la vigilancia no cubre frutos secos importados.", "sections": [{"num": "7.1", "title": "Alimentos en Colombia", "summary": "La arepa, el arroz molido y la leche en polvo del Caribe muestran contaminación frecuente; el café tuvo niveles bajos."}, {"num": "7.2", "title": "Personas en Colombia", "summary": "Hay M1 en el 90 % de las leches maternas estudiadas y en el 41,7 % de las orinas infantiles en Bogotá.", "items": ["h_colombia_exposicion"]}, {"num": "7.3", "title": "Vigilancia del INVIMA", "summary": "En 2020 hubo 2 muestras no conformes de 102; el plan 2024 no incluye leche, cacao, especias ni frutos secos importados.", "items": ["h_vigilancia_invima"]}, {"num": "7.4", "title": "América del Sur", "summary": "En Argentina y Colombia la lisina detectable se asoció a carcinoma hepatocelular; hay datos de Honduras, México y Perú."}]}, {"num": 8, "title": "Mitigación y detección", "block": "control", "summary": "La prevención en campo y almacenamiento es la base; cocinar reduce sin eliminar; los volátiles solo sirven de tamizaje.", "sections": [{"num": "8.1", "title": "Secado, almacenamiento y clasificación", "summary": "Guardar grano húmedo dentro de la vivienda elevó el riesgo; la selección física reduce el contenido del lote.", "items": ["u_prevencion_clasificacion"]}, {"num": "8.2", "title": "Cocción, tostado y nixtamalización", "summary": "El tostado degradó entre 55 % y 81 %; la nixtamalización entre 83 % y 94 %, con reaparición en medio ácido.", "items": ["u_coccion_tostado", "u_nixtamalizacion"]}, {"num": "8.3", "title": "Moho visible y descarte", "summary": "En maní, frutos secos, legumbres, pan y cereales cocidos con moho, la recomendación oficial es descartar.", "items": ["u_retirar_moho"]}, {"num": "8.4", "title": "Biocontrol e intervención dietaria", "summary": "Las cepas atoxigénicas redujeron de 61 % a 98 % en campo; la clorofilina bajó un biomarcador urinario.", "items": ["u_biocontrol"]}, {"num": "8.5", "title": "Volátiles de Aspergillus", "summary": "Los alcoholes ramificados y los compuestos de ocho carbonos marcan crecimiento fúngico, no toxigenicidad.", "items": ["c_mvoc_crecimiento", "c_sesquiterpenos"]}, {"num": "8.6", "title": "Nariz electrónica, GC-IMS y olfato", "summary": "Con muestras naturales de maíz la nariz electrónica clasificó bien el 81 %; el olfato humano no tiene respaldo.", "items": ["u_nariz_electronica", "u_olfato_humano"]}]}, {"num": 9, "title": "Conclusiones", "block": "sintesis", "summary": "El riesgo hepático es real y sinérgico con la hepatitis B; el control está en el origen, la norma y la vacuna.", "sections": [{"num": "9.1", "title": "Lo que está respaldado", "summary": "Grupo 1 de la IARC, sinergia con hepatitis B, aflatoxicosis aguda, menor crecimiento infantil y eficacia de la vacuna y del biocontrol."}, {"num": "9.2", "title": "Lo que no está respaldado", "summary": "Que cocinar, nixtamalizar o quitar el moho vuelva seguro el alimento, ni que el olor o un sensor reemplacen el laboratorio."}, {"num": "9.3", "title": "Recomendaciones prácticas medibles", "summary": "Pendientes de juicio clínico: descartar maní o cereal con moho, comprar empacado con lote, no guardar grano húmedo en la vivienda y verificar la vacuna de hepatitis B."}, {"num": "9.4", "title": "Huecos de evidencia", "summary": "Faltan datos colombianos de cacao, especias y frutos secos importados, carga de enfermedad y estudios de olor frente a concentración.", "items": ["h_huecos"]}]}], "items": {"c_afb1": {"title": "Aflatoxina B1 y familia B1, B2, G1, G2", "summary": "Compuesto: metabolitos de hongos Aspergillus. La B1 es la principal y la más tóxica, y se activa al 8,9-exo-epóxido. La norma regula la suma de las cuatro.", "formula": "Orden de toxicidad: B1 > G1 > B2 > G2 (AESAN; Reg. UE 2023/915)"}, "c_afm1": {"title": "Aflatoxina M1", "summary": "Compuesto: metabolito hidroxilado de la B1. Pasa a la leche animal y a la leche materna, de modo que aparece sin que haya moho en el producto.", "formula": "Leche: límite UE 0,050 µg/kg · Codex y Colombia 0,5 µg/kg"}, "h_hongos_condiciones": {"title": "Hongos productores y condiciones de crecimiento", "summary": "Hecho: Aspergillus flavus y A. parasiticus producen la toxina en campo, poscosecha y almacenamiento. El grano dañado se enmohece más.", "formula": "A. flavus crece con actividad de agua > 0,85 · toxina máxima cerca de 27 °C y casi nula bajo 12 °C (AESAN)"}, "h_sin_olor": {"title": "Sin olor, sabor ni color", "summary": "Hecho: una autoridad de inocuidad describe las aflatoxinas como inodoras, insípidas e incoloras. El olor de un alimento contaminado viene del hongo y de la matriz, no de la toxina. Son en gran parte estables al calor.", "formula": "Cristales incoloros a amarillo pálido, con fluorescencia azul (CAMEO)", "caution": "La ausencia de moho visible u olor no garantiza que no haya aflatoxinas. La toxina puede quedar tras desaparecer el hongo, y los filamentos pueden ser invisibles. En Colombia, 27 % de arepas de fábrica tenían aflatoxina B1, con media de 15,1 µg/kg. La leche contaminada con M1 nunca muestra moho. Solo el análisis de laboratorio confirma el nivel. (USDA FSIS; Blanco-Lizarazo 2019)"}, "p_maiz_arepa": {"title": "Maíz y arepa", "summary": "Alimento: el maíz es la fuente principal de exposición en países de ingreso bajo y medio. En Colombia se analizaron 168 arepas de fábrica en 16 departamentos.", "formula": "Arepa: 27 % contaminadas · media 15,1 µg/kg · máximo 111,1 µg/kg (Blanco-Lizarazo 2019)"}, "p_mani_frutos_secos": {"title": "Maní y frutos secos", "summary": "Alimento: el maní es fuente principal junto con el maíz. También se afectan pistacho, almendra, nuez, nuez de Brasil, avellana y coco. La norma les fija límites propios según el destino del lote.", "formula": "Vigilancia INVIMA 2020: 10 muestras de maní, 1 detectable con 3,87 µg/kg"}, "p_arroz_cafe": {"title": "Arroz, café, cacao y especias", "summary": "Alimento: hay datos colombianos de arroz y café. El cacao figura entre los alimentos afectados en fuentes europeas, pero no se confirmaron datos colombianos de cacao ni de especias.", "formula": "Arroz blanco de Colombia: 50 % positivo · positivos sobre el máximo 62,5 % (10,3–93,9 µg/kg) · café 0,13–0,15 µg/kg"}, "p_leche": {"title": "Leche y productos lácteos", "summary": "Alimento: la M1 aparece cuando el ganado consume pienso contaminado. En leche en polvo del Caribe colombiano se halló M1 en todas las muestras analizadas.", "formula": "Leche en polvo: 100 % positiva (0,20–1,19 µg/kg) · 55 % sobre 0,5 µg/kg (Marimón Sibaja 2019)", "caution": "La leche puede contener aflatoxina M1 y los niños son el grupo más expuesto, por su mayor consumo relativo. En leche en polvo del Caribe colombiano, 55 % de las muestras superó 0,5 µg/kg. El límite europeo es 0,050 µg/kg, diez veces más estricto. No hay que suspender la leche; hay que exigir vigilancia y producto de origen controlado. (Marimón Sibaja 2019; Reg. UE 2023/915)"}, "u_biomarcadores": {"title": "Biomarcadores de exposición", "summary": "Uso de método en humanos: la lisina unida a albúmina mide la exposición de semanas o meses; la M1 urinaria mide exposición reciente; la unión a guanina en orina mide dosis efectiva.", "formula": "Bogotá: M1 urinaria en 41,7 % de niños, media 16 pg/mL en positivos (Sánchez 2019)"}, "c_epoxido_aductos": {"title": "Epóxido y aductos de ADN", "summary": "Compuesto y mecanismo: CYP1A2, 3A4, 3A5 y 3A7 activan la B1 al 8,9-exo-epóxido, que forma el aducto con guanina. La firma típica es la transversión G a T en el codón 249 de TP53.", "formula": "TP53 mutado en 30–55 % de los carcinomas hepatocelulares (Puisieux 1997)"}, "h_iarc_grupo1": {"title": "Clasificación IARC grupo 1", "summary": "Hecho: las aflatoxinas naturales son cancerígenas para humanos. En animales la evidencia es suficiente para las mezclas naturales y para B1, G1 y M1, limitada para B2 e inadecuada para G2.", "formula": "IARC, monografías vol. 82 (evaluación reafirmada)"}, "u_aflatoxicosis_aguda": {"title": "Aflatoxicosis aguda", "summary": "Efecto en humanos: brote documentado en Kenia en 2004 por maíz de autoconsumo. La concentración de aductos en suero se asoció al tiempo entre la ictericia y la muerte.", "formula": "317 casos y 125 muertes · maíz de casos 354,53 ppb frente a 44,14 ppb en controles (Azziz-Baumgartner 2005)"}, "u_chc_vhb": {"title": "Carcinoma hepatocelular y sinergia con hepatitis B", "summary": "Efecto en humanos: metaanálisis de 17 estudios con 1680 casos y 3052 controles. El riesgo con las dos exposiciones es multiplicativo.", "formula": "OR 73,0 (36,0–148,3) con ambas · 11,3 solo virus · 6,37 solo aflatoxina · fracción atribuible 17 % (Liu 2012)"}, "u_vacuna_vhb": {"title": "Vacuna de hepatitis B como medida indirecta", "summary": "Efecto en humanos: en el ensayo por conglomerados de Qidong la vacuna neonatal redujo el cáncer hepático a 30 y 37 años. Quita el cofactor viral, no la exposición alimentaria.", "formula": "Eficacia 84 % (23–97 %) a 30 años · HR 0,28 (0,11–0,70) a 37 años (Qu 2014; Cao 2022)", "caution": "La vacuna de hepatitis B reduce el cáncer de hígado de forma comprobada: 72 % de protección a 37 años en el ensayo de Qidong. Al quitar el virus, desaparece la sinergia con la aflatoxina, que multiplicaba el riesgo (OR 73,0 frente a 6,37). Pero la aflatoxina sigue siendo cancerígena sin el virus. Hay que vacunar y además controlar los alimentos. (Liu 2012; Cao 2022)"}, "u_embarazo_peso_nacer": {"title": "Exposición en el embarazo y peso al nacer", "summary": "Efecto en humanos: la transferencia placentaria está confirmada y hay aductos en sangre de cordón. La revisión de desenlaces neonatales no halló asociación agrupada significativa, con heterogeneidad alta.", "formula": "7 estudios, 4047 participantes, sin asociación significativa · cordón 10,1 pg/mg (Ghorbani Nejad 2025; Turner 2007)", "caution": "La aflatoxina cruza la placenta, pero el metaanálisis de siete estudios no confirmó menor peso al nacer. La heterogeneidad fue muy alta y el análisis de sensibilidad sí apuntó a más bajo peso. Donde la evidencia es más consistente es en el crecimiento del primer año. Reducir la exposición en el embarazo sigue siendo razonable. (Ghorbani Nejad 2025; Turner 2007)"}, "u_crecimiento_infantil": {"title": "Crecimiento infantil", "summary": "Efecto en humanos: metaanálisis de cohortes con menor peso y talla para la edad. La única intervención con datos de crecimiento tuvo certeza muy baja.", "formula": "Talla baja OR 1,21 (1,11–1,33) · peso para la edad −0,18 z (−0,33 a −0,02) (Ghorbani Nejad 2023; Visser 2020)"}, "u_lactancia_afm1": {"title": "Aflatoxina M1 en leche materna", "summary": "Efecto en humanos: la M1 aparece en la leche materna como marcador de exposición de la madre y del lactante. En el metaanálisis global el margen de exposición fue aceptable salvo en un país.", "formula": "Colombia: 90 % de 50 muestras, media 5,2 ng/L (Diaz 2015) · prevalencia global 54,48 % (Fakhri 2025)"}, "h_limites_ue": {"title": "Límites de la Unión Europea", "summary": "Norma: el Reglamento 2023/915 fija la B1 y la suma por alimento y por destino del lote, con límites más estrictos para alimentos infantiles.", "formula": "Maní de consumo directo 2,0/4,0 · almendra y pistacho 8,0/10,0 · leche 0,050 · preparados para lactantes 0,025 µg/kg"}, "h_limites_codex_fda": {"title": "Límites del Codex y niveles de acción de la FDA", "summary": "Norma: el Codex fija aflatoxinas totales por alimento y destino. La FDA usa niveles de acción, no límites máximos.", "formula": "Codex: frutos secos 15 para procesar y 10 listos para consumo · leche 0,50 · FDA: 20 ppb en alimentos y 0,5 ppb en leche"}, "h_limites_colombia": {"title": "Límites de Colombia", "summary": "Norma: la Resolución 4506 de 2013 fija solo la suma de B1, B2, G1 y G2. No tiene fila para la B1 sola ni para alimentos de lactantes.", "formula": "Cereales 4,0 · maní de consumo directo 10,0 · maíz para selección 20,0 · leche 0,5 µg/kg"}, "h_colombia_exposicion": {"title": "Exposición documentada en Colombia", "summary": "Hecho: hay contaminación frecuente en arepa, arroz y leche, y marcadores de exposición en personas. En una serie de carcinomas hepatocelulares la mutación del codón 249 estuvo presente.", "formula": "Leche materna 90 % positiva · orina infantil 41,7 % positiva · codón 249 en 10,5 % de mutaciones TP53 (Navas 2011)"}, "h_vigilancia_invima": {"title": "Vigilancia del INVIMA", "summary": "Hecho: el programa de micotoxinas muestrea arepa, arroz, café, maíz y otros productos. El plan 2024 no incluye leche, cacao, especias ni frutos secos importados.", "formula": "2020: 2 no conformes de 102 muestras · plan 2024: 324 muestras nacionales previstas", "caution": "Colombia tiene límites para frutos secos en la Resolución 4506 de 2013, entre 4 y 15 µg/kg. Pero el plan de vigilancia de micotoxinas 2024 del INVIMA no incluye frutos secos importados: solo muestrea maíz, café y galletas de importación. En la práctica, los frutos secos importados no tienen monitoreo sistemático publicado. Convendría preferir producto empacado con trazabilidad. (Res. 4506 de 2013; INVIMA 2024)"}, "u_prevencion_clasificacion": {"title": "Prevención en campo, almacenamiento y clasificación", "summary": "Uso de método en humanos y en campo: secar el grano, evitar daño mecánico y separar lotes reduce la contaminación. La selección física sustenta los límites más altos para lotes destinados a selección.", "formula": "Kenia 2004: maíz húmedo OR 3,5 (1,2–10,3) · almacenamiento dentro de la vivienda OR 12,0 (1,5–95,7)"}, "u_coccion_tostado": {"title": "Cocción y tostado", "summary": "Uso de método: el tostado degrada parte de la toxina según la temperatura y la contaminación inicial, pero siempre queda residuo. Las micotoxinas de cereales sobreviven al procesado habitual.", "formula": "Maní: degradación 55–81 % a 180 °C por 20 min · 61,6 % a 160 °C y 89,7 % a 200 °C (Martins 2017)", "caution": "Cocinar y tostar no eliminan las aflatoxinas. En maní, el tostado a 180 °C por 20 minutos degradó entre 55 % y 81 %, según la contaminación inicial. Siempre queda toxina residual. Un alimento muy contaminado sigue siendo peligroso después de cocinarlo. La prevención está en el origen: buena cosecha, secado y almacenamiento, y descarte de lotes sospechosos. (Martins 2017; OMS 2023)"}, "u_nixtamalizacion": {"title": "Nixtamalización", "summary": "Uso de método: el tratamiento alcalino reduce mucho el contenido medido, pero el medio ácido reconstituye parte de la molécula, de modo que la detoxificación no es total.", "formula": "Reducción B1 94 % (Elias-Orozco 2002) · al acidificar reaparece 57,2 % en la masa y 33,9 % en la tortilla (Méndez-Albores 2004)", "caution": "La nixtamalización reduce mucho las aflatoxinas, entre 83 % y 94 % según el estudio, pero no las elimina. Al acidificar las muestras reapareció entre 33,9 % y 57,2 % de la toxina, lo que sugiere que el medio ácido del estómago puede reconstituirla. No se debe nixtamalizar maíz visiblemente contaminado para «recuperarlo». (Elias-Orozco 2002; Méndez-Albores 2004)"}, "u_retirar_moho": {"title": "Retirar la parte con moho", "summary": "Uso de método: la autoridad sanitaria indica descartar maní, frutos secos, legumbres, pan, cereales y pastas cocidas con moho. Cortar alrededor solo se acepta en quesos duros y verduras firmes.", "formula": "Corte mínimo de 2,5 cm alrededor y por debajo, solo en quesos duros y verduras firmes (USDA FSIS)", "caution": "En maní, frutos secos, legumbres, pan y cereales cocidos, quitar el moho no vuelve seguro el alimento: hay que descartarlo. Los filamentos penetran y la toxina se extiende más allá de la parte visible. Cortar el moho solo se acepta en quesos duros y verduras firmes, retirando al menos 2,5 cm alrededor. (USDA FSIS)"}, "u_biocontrol": {"title": "Biocontrol con cepas atoxigénicas", "summary": "Uso de método en campo: productos con cepas que no producen toxina, aplicados en maíz y maní, bajaron la contaminación en estudios con cientos de productores.", "formula": "Mozambique: maní −78 a −98 % y maíz −61 a −93 % · 99 % del maíz tratado bajo los máximos UE y EE. UU. (Augusto 2024)"}, "c_mvoc_crecimiento": {"title": "Volátiles de crecimiento fúngico", "summary": "Compuesto: el 3-metil-1-butanol, el 2-metil-1-butanol, el 1-octen-3-ol y la 3-octanona aparecen con el crecimiento del hongo. No separan cepas que producen toxina de las que no. Evidencia de nivel D, sin olfatometría.", "formula": "Los emiten varios hongos y también bacterias (Tuma 1989; Josselin 2021)", "caution": "Los volátiles de olor a moho (3-metil-1-butanol, 1-octen-3-ol, 3-octanona) no separan cepas que producen toxina de las que no: los emiten varios hongos y bacterias. Algunos sesquiterpenos solo aparecieron en cepas toxigénicas, pero la señal fue transitoria: presente el día 3 y ausente los días 1, 2, 8 y 10. (Zeringue 1993; Josselin 2021)"}, "c_sesquiterpenos": {"title": "Sesquiterpenos asociados a cepas toxigénicas", "summary": "Compuesto: el alfa-gurjuneno, el trans-cariofileno y el cadineno aparecieron solo en cepas que producen toxina, con señal transitoria. El 2-metilbutanal también es odorante del maní tostado, así que no sirve de alarma en producto tostado.", "formula": "Señal presente en el día 3 y ausente en los días 1, 2, 8 y 10 (Zeringue 1993)"}, "u_nariz_electronica": {"title": "Nariz electrónica, GC-IMS y sensores", "summary": "Uso de método: clasifican muestras en laboratorio. Las cifras altas vienen de muestras inoculadas; la validación externa es escasa y dos estudios detectan el hongo, no la toxina.", "formula": "Maíz con muestras naturales: 81 % bien clasificadas y 65 % en tres clases (Ottoboni 2018)", "caution": "La nariz electrónica y los sensores de gases son, por ahora, herramientas de tamizaje. Con muestras naturales de maíz la exactitud informada fue 81 %. Las cifras cercanas al 100 % vienen de muestras inoculadas en laboratorio. Ningún estudio informa sensibilidad y especificidad separadas. Para aceptar o rechazar un lote, use un método validado. (Ottoboni 2018)"}, "u_olfato_humano": {"title": "Olfato humano como prueba de seguridad", "summary": "Uso de método: no se halló ningún estudio que compare el olor percibido por personas con la concentración medida de aflatoxina. El olor a moho indica crecimiento fúngico, no cuánta toxina hay.", "formula": "0 estudios de olor percibido frente a concentración (PubMed y web, 2026-11-08)", "caution": "Ningún estudio relaciona el olor percibido por personas con la concentración de aflatoxina. La toxina no tiene olor. Si un lote huele a moho, hay crecimiento fúngico: descártelo. Si no huele, eso no descarta la toxina. El olfato no sirve como prueba de seguridad. (SFA; AGES)"}, "h_huecos": {"title": "Huecos de evidencia", "summary": "Hecho: faltan datos colombianos de cacao, especias y frutos secos importados, la carga de enfermedad atribuible en Colombia, y estudios de olor frente a concentración. No hay estudios de volátiles de A. parasiticus que comparen cepas.", "formula": "Resultados del plan INVIMA 2024: no publicados"}}, "resources": [{"id": "T1", "title": "Límites de aflatoxinas por alimento: Unión Europea, Codex, FDA y Colombia (Reg. UE 2023/915; CXS 193-1995; FDA CPG; Res. 4506 de 2013)", "usedBy": ["6.1", "6.2", "6.3", "6.4"]}, {"id": "T2", "title": "Hallazgos de aflatoxinas en alimentos y personas de Colombia (PubMed e informes del INVIMA)", "usedBy": ["7.1", "7.2", "7.3"]}, {"id": "T3", "title": "Volátiles de Aspergillus flavus y su relación con la toxigenicidad (todos de nivel D, sin olfatometría)", "usedBy": ["8.5"]}, {"id": "T4", "title": "Métodos instrumentales por volátiles y su rendimiento informado (nariz electrónica, GC-IMS, sensores)", "usedBy": ["8.6"]}], "requires": {"chapters": {"2": [1], "3": [1], "4": [3], "5": [3], "6": [1, 2], "7": [2, 6], "8": [1, 2], "9": [3, 4, 5, 6, 7, 8]}, "sections": {"1.2": ["1.1"], "1.3": ["1.1"], "2.1": ["1.2"], "2.2": ["1.2"], "2.3": ["1.2"], "2.4": ["1.1"], "2.5": ["1.1"], "3.1": ["1.1"], "3.2": ["3.1"], "3.3": ["2.1", "2.5"], "3.4": ["3.1"], "4.1": ["2.5", "3.2"], "4.2": ["4.1"], "4.3": ["4.2"], "5.1": ["2.5", "3.1"], "5.2": ["5.1"], "5.3": ["2.4"], "5.4": ["5.1"], "6.1": ["1.1", "2.4"], "6.2": ["6.1"], "6.3": ["6.1"], "6.4": ["6.1", "6.2", "6.3"], "7.1": ["2.1", "6.3"], "7.2": ["2.5", "7.1"], "7.3": ["6.3"], "7.4": ["7.2"], "8.1": ["1.2"], "8.2": ["2.1", "1.3"], "8.3": ["1.3"], "8.4": ["8.1"], "8.5": ["1.2", "1.3"], "8.6": ["8.5"], "9.1": ["3.2", "4.2", "5.2", "8.4"], "9.2": ["8.2", "8.3", "8.6"], "9.3": ["9.1", "9.2", "6.3"], "9.4": ["7.3", "8.6"]}, "items": {"c_afm1": ["c_afb1"], "h_hongos_condiciones": ["c_afb1"], "h_sin_olor": ["c_afb1"], "p_maiz_arepa": ["h_hongos_condiciones"], "p_mani_frutos_secos": ["h_hongos_condiciones"], "p_arroz_cafe": ["h_hongos_condiciones"], "p_leche": ["c_afm1"], "u_biomarcadores": ["c_afb1", "c_afm1"], "c_epoxido_aductos": ["c_afb1"], "h_iarc_grupo1": ["c_epoxido_aductos"], "u_aflatoxicosis_aguda": ["p_maiz_arepa", "u_biomarcadores"], "u_chc_vhb": ["c_epoxido_aductos", "h_iarc_grupo1"], "u_vacuna_vhb": ["u_chc_vhb"], "u_embarazo_peso_nacer": ["u_biomarcadores"], "u_crecimiento_infantil": ["u_biomarcadores"], "u_lactancia_afm1": ["c_afm1", "u_biomarcadores"], "h_limites_ue": ["c_afb1", "c_afm1"], "h_limites_codex_fda": ["h_limites_ue"], "h_limites_colombia": ["h_limites_ue"], "h_colombia_exposicion": ["p_maiz_arepa", "p_leche", "u_biomarcadores"], "h_vigilancia_invima": ["h_limites_colombia"], "u_prevencion_clasificacion": ["h_hongos_condiciones"], "u_coccion_tostado": ["h_sin_olor"], "u_nixtamalizacion": ["p_maiz_arepa"], "u_retirar_moho": ["h_sin_olor"], "u_biocontrol": ["h_hongos_condiciones"], "c_mvoc_crecimiento": ["h_hongos_condiciones"], "c_sesquiterpenos": ["c_mvoc_crecimiento"], "u_nariz_electronica": ["c_mvoc_crecimiento", "c_sesquiterpenos"], "u_olfato_humano": ["h_sin_olor", "c_mvoc_crecimiento"], "h_huecos": ["h_vigilancia_invima", "u_olfato_humano"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,caution:it.caution,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const cap=Array.isArray(sub)?(set.length<4?1.3:1.6):2.2;
+  const k=Math.min(cap,.92*Math.min(w/Math.max(x1-x0,320),h/Math.max(y1-y0,240)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.caution) html+=`<p class="caution"><strong>Atención:</strong> ${esc(n.caution)}</p>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

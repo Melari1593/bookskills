@@ -105,6 +105,10 @@ El EPUB no tiene páginas ni numera las secciones: la numeración es propia del 
 
 [`grafos/nuts-seeds/`](grafos/nuts-seeds/README.md) reúne cuatro capítulos de *Nuts and Seeds in Health and Disease Prevention* (Elsevier, 2011 y 2020) como grafos interactivos con alertas de evidencia: ácidos grasos (39 alertas en total), minerales y tóxicos, semilla de orégano y semilla de tamarindo. Entre los hallazgos: riesgos omitidos de la semilla de ginkgo, el cáñamo, el bario de la nuez de Brasil y el uso del tamarindo como "alternativa al antiveneno"; valores de referencia ya retirados para plomo y arsénico; y errores del capítulo de tamarindo.
 
+## Aflatoxinas
+
+[`grafos/aflatoxinas/`](grafos/aflatoxinas/README.md) tiene un grafo de evidencia y un informe completo sobre las aflatoxinas, construidos desde PubMed y fuentes oficiales. El grafo tiene 9 partes, 37 secciones, 32 ítems y 11 alertas. Cubre toxicología, la sinergia con la hepatitis B, embarazo y lactancia, límites de la UE, el Codex, la FDA y Colombia, la situación en Colombia, la mitigación y la detección por volátiles de *Aspergillus*. 5 de las 11 afirmaciones están contradichas, entre ellas que cocinar las elimina y que la ausencia de olor a moho indica un alimento seguro.
+
 ## Monografías de ingredientes
 
 [`grafos/monografias-ingredientes/`](grafos/monografias-ingredientes/README.md) reúne 11 grafos construidos desde PubMed y fuentes oficiales, no desde un libro. Diez son monografías con la estructura de 9 partes del grafo de mirra y olíbano: guanábana, guayaba, corozo, aguacate, café, gulupa, açaí y asaí, murumuru, camu camu y aguaje. El undécimo, [`almendras-gestantes`](grafos/monografias-ingredientes/almendras-gestantes/), es un grafo de pregunta clínica sobre almendras en la gestación y la lactancia. En total hay 147 afirmaciones verificadas y 137 alertas. 53 afirmaciones no tienen evidencia en humanos, 18 están contradichas y 31 señalan un riesgo documentado u omitido. Los riesgos que se repiten son el Chagas oral por frutos de palma y la falta de datos de seguridad en el embarazo. El índice visual está en [`index.html`](grafos/monografias-ingredientes/index.html).

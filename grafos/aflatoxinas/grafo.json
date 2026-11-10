@@ -1,0 +1,857 @@
+{
+ "meta": {
+  "title": "Aflatoxinas",
+  "subtitle": "Grafo construido desde literatura científica y fuentes oficiales · con alertas de evidencia",
+  "itemLabel": "Alimento, compuesto, efecto o hecho",
+  "itemLabelPlural": "Alimentos, compuestos, efectos y hechos",
+  "resourceLabel": "Tabla",
+  "resourceLabelPlural": "Tablas",
+  "searchHint": "Buscar: AFM1, arepa, hepatitis B, nixtamalización, INVIMA, nariz electrónica, leche materna…"
+ },
+ "blocks": {
+  "identidad": {
+   "name": "Qué son y dónde aparecen",
+   "color": "#B08A2E"
+  },
+  "toxicidad": {
+   "name": "Mecanismo y efectos en salud",
+   "color": "#B5465A"
+  },
+  "norma": {
+   "name": "Regulación y Colombia",
+   "color": "#3F6FA0"
+  },
+  "control": {
+   "name": "Mitigación y detección",
+   "color": "#6B8E4E"
+  },
+  "sintesis": {
+   "name": "Conclusiones",
+   "color": "#A0663F"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Qué son las aflatoxinas",
+   "block": "identidad",
+   "summary": "Toxinas de Aspergillus flavus y A. parasiticus; la B1 es la más tóxica y la M1 es su metabolito en la leche.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Tipos: B1, B2, G1, G2 y M1",
+     "summary": "La norma regula la suma de B1, B2, G1 y G2; el orden de toxicidad es B1 mayor que G1, B2 y G2.",
+     "items": [
+      "c_afb1",
+      "c_afm1"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Hongos productores y condiciones",
+     "summary": "El moho crece antes y después de la cosecha con calor y humedad; la toxina es máxima cerca de 27 °C.",
+     "items": [
+      "h_hongos_condiciones"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Propiedades físicas y estabilidad",
+     "summary": "Son cristales sin olor, sabor ni color, y en gran parte estables al calor.",
+     "items": [
+      "h_sin_olor"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Alimentos de riesgo y exposición",
+   "block": "identidad",
+   "summary": "Maíz y maní son las fuentes principales; también frutos secos, especias, arroz, café, cacao y leche.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Maíz y arepa",
+     "summary": "El maíz es la fuente principal en países de ingreso bajo y medio; en Colombia el 27 % de las arepas de fábrica tenía aflatoxina B1.",
+     "items": [
+      "p_maiz_arepa"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Maní y frutos secos",
+     "summary": "Maní, almendra, pistacho, avellana y nuez de Brasil tienen límites propios por su riesgo de contaminación.",
+     "items": [
+      "p_mani_frutos_secos"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Arroz, café, cacao y especias",
+     "summary": "Hay datos colombianos de arroz y café; para cacao y especias de Colombia no se confirmaron datos.",
+     "items": [
+      "p_arroz_cafe"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Leche y aflatoxina M1",
+     "summary": "La M1 llega a la leche cuando el ganado come pienso contaminado; la leche no muestra moho.",
+     "items": [
+      "p_leche"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Biomarcadores de exposición",
+     "summary": "La lisina unida a albúmina mide semanas o meses; la M1 urinaria mide exposición reciente.",
+     "items": [
+      "u_biomarcadores"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Mecanismo y toxicidad",
+   "block": "toxicidad",
+   "summary": "Las enzimas CYP activan la B1 a un epóxido que daña el ADN; la IARC la clasifica en el grupo 1.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Activación metabólica y aductos de ADN",
+     "summary": "Los CYP forman el 8,9-exo-epóxido, que se une a la guanina y deja la mutación del codón 249 de TP53.",
+     "items": [
+      "c_epoxido_aductos"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Clasificación de la IARC",
+     "summary": "Las aflatoxinas naturales son cancerígenas para humanos; el volumen 82 reafirmó esa evaluación.",
+     "items": [
+      "h_iarc_grupo1"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Aflatoxicosis aguda",
+     "summary": "Las dosis altas causan daño hepático agudo; en Kenia, en 2004, hubo 317 casos y 125 muertes.",
+     "items": [
+      "u_aflatoxicosis_aguda"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Firma genómica en tumores",
+     "summary": "La secuenciación del exoma de 243 tumores hepáticos identificó firmas mutacionales asociadas a la exposición."
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Cáncer hepático y hepatitis B",
+   "block": "toxicidad",
+   "summary": "Aflatoxina y virus de hepatitis B multiplican el riesgo de carcinoma hepatocelular; la vacuna quita el cofactor viral.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Cohorte de Shanghái",
+     "summary": "En 18 244 hombres, los metabolitos urinarios se asociaron a cáncer hepático tras ajustar por HBsAg, tabaco y alcohol."
+    },
+    {
+     "num": "4.2",
+     "title": "Sinergia con hepatitis B",
+     "summary": "En el metaanálisis el OR fue 73,0 con las dos exposiciones; la fracción atribuible poblacional fue 17 %.",
+     "items": [
+      "u_chc_vhb"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Vacuna contra la hepatitis B",
+     "summary": "En Taiwán y en el ensayo de Qidong la vacuna redujo el cáncer hepático; no elimina el riesgo propio de la aflatoxina.",
+     "items": [
+      "u_vacuna_vhb"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Embarazo, lactancia e infancia",
+   "block": "toxicidad",
+   "summary": "La toxina cruza la placenta y pasa a la leche materna; se asocia a menor crecimiento infantil.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Transferencia placentaria y peso al nacer",
+     "summary": "Hay aductos en sangre de cordón; el metaanálisis de peso al nacer no halló asociación significativa.",
+     "items": [
+      "u_embarazo_peso_nacer"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "Crecimiento infantil",
+     "summary": "En cohortes prospectivas la exposición se asoció a talla baja; un solo ensayo aportó datos de crecimiento.",
+     "items": [
+      "u_crecimiento_infantil"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Aflatoxina M1 en leche materna",
+     "summary": "La prevalencia global agrupada fue 54,48 %; Colombia figura entre los cinco países con mayor prevalencia.",
+     "items": [
+      "u_lactancia_afm1"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Epigenética e inmunidad",
+     "summary": "Hay asociaciones con metilación del ADN del lactante y con títulos de anticuerpos, sin desenlace clínico."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Límites regulatorios",
+   "block": "norma",
+   "summary": "La Unión Europea fija B1 y suma; Codex y Colombia fijan la suma; la FDA usa niveles de acción.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Unión Europea",
+     "summary": "El Reglamento 2023/915 fija límites por alimento y destino, y 0,050 µg/kg de M1 en leche.",
+     "items": [
+      "h_limites_ue"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Codex y Estados Unidos",
+     "summary": "Codex fija 10 a 15 µg/kg en frutos secos y 0,50 en leche; la FDA usa 20 ppb como nivel de acción.",
+     "items": [
+      "h_limites_codex_fda"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Colombia",
+     "summary": "La Resolución 4506 de 2013 fija solo la suma, entre 4 y 20 µg/kg, y 0,5 µg/kg de M1 en leche.",
+     "items": [
+      "h_limites_colombia"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Comparación por alimento",
+     "summary": "Para leche el límite colombiano es diez veces el europeo; para maní de consumo directo es 2,5 veces la suma europea."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Situación en Colombia y América Latina",
+   "block": "norma",
+   "summary": "Hay exposición documentada en arepa, arroz, leche, leche materna y orina infantil; la vigilancia no cubre frutos secos importados.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Alimentos en Colombia",
+     "summary": "La arepa, el arroz molido y la leche en polvo del Caribe muestran contaminación frecuente; el café tuvo niveles bajos."
+    },
+    {
+     "num": "7.2",
+     "title": "Personas en Colombia",
+     "summary": "Hay M1 en el 90 % de las leches maternas estudiadas y en el 41,7 % de las orinas infantiles en Bogotá.",
+     "items": [
+      "h_colombia_exposicion"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Vigilancia del INVIMA",
+     "summary": "En 2020 hubo 2 muestras no conformes de 102; el plan 2024 no incluye leche, cacao, especias ni frutos secos importados.",
+     "items": [
+      "h_vigilancia_invima"
+     ]
+    },
+    {
+     "num": "7.4",
+     "title": "América del Sur",
+     "summary": "En Argentina y Colombia la lisina detectable se asoció a carcinoma hepatocelular; hay datos de Honduras, México y Perú."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Mitigación y detección",
+   "block": "control",
+   "summary": "La prevención en campo y almacenamiento es la base; cocinar reduce sin eliminar; los volátiles solo sirven de tamizaje.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Secado, almacenamiento y clasificación",
+     "summary": "Guardar grano húmedo dentro de la vivienda elevó el riesgo; la selección física reduce el contenido del lote.",
+     "items": [
+      "u_prevencion_clasificacion"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Cocción, tostado y nixtamalización",
+     "summary": "El tostado degradó entre 55 % y 81 %; la nixtamalización entre 83 % y 94 %, con reaparición en medio ácido.",
+     "items": [
+      "u_coccion_tostado",
+      "u_nixtamalizacion"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Moho visible y descarte",
+     "summary": "En maní, frutos secos, legumbres, pan y cereales cocidos con moho, la recomendación oficial es descartar.",
+     "items": [
+      "u_retirar_moho"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Biocontrol e intervención dietaria",
+     "summary": "Las cepas atoxigénicas redujeron de 61 % a 98 % en campo; la clorofilina bajó un biomarcador urinario.",
+     "items": [
+      "u_biocontrol"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Volátiles de Aspergillus",
+     "summary": "Los alcoholes ramificados y los compuestos de ocho carbonos marcan crecimiento fúngico, no toxigenicidad.",
+     "items": [
+      "c_mvoc_crecimiento",
+      "c_sesquiterpenos"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Nariz electrónica, GC-IMS y olfato",
+     "summary": "Con muestras naturales de maíz la nariz electrónica clasificó bien el 81 %; el olfato humano no tiene respaldo.",
+     "items": [
+      "u_nariz_electronica",
+      "u_olfato_humano"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Conclusiones",
+   "block": "sintesis",
+   "summary": "El riesgo hepático es real y sinérgico con la hepatitis B; el control está en el origen, la norma y la vacuna.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Lo que está respaldado",
+     "summary": "Grupo 1 de la IARC, sinergia con hepatitis B, aflatoxicosis aguda, menor crecimiento infantil y eficacia de la vacuna y del biocontrol."
+    },
+    {
+     "num": "9.2",
+     "title": "Lo que no está respaldado",
+     "summary": "Que cocinar, nixtamalizar o quitar el moho vuelva seguro el alimento, ni que el olor o un sensor reemplacen el laboratorio."
+    },
+    {
+     "num": "9.3",
+     "title": "Recomendaciones prácticas medibles",
+     "summary": "Pendientes de juicio clínico: descartar maní o cereal con moho, comprar empacado con lote, no guardar grano húmedo en la vivienda y verificar la vacuna de hepatitis B."
+    },
+    {
+     "num": "9.4",
+     "title": "Huecos de evidencia",
+     "summary": "Faltan datos colombianos de cacao, especias y frutos secos importados, carga de enfermedad y estudios de olor frente a concentración.",
+     "items": [
+      "h_huecos"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "c_afb1": {
+   "title": "Aflatoxina B1 y familia B1, B2, G1, G2",
+   "summary": "Compuesto: metabolitos de hongos Aspergillus. La B1 es la principal y la más tóxica, y se activa al 8,9-exo-epóxido. La norma regula la suma de las cuatro.",
+   "formula": "Orden de toxicidad: B1 > G1 > B2 > G2 (AESAN; Reg. UE 2023/915)"
+  },
+  "c_afm1": {
+   "title": "Aflatoxina M1",
+   "summary": "Compuesto: metabolito hidroxilado de la B1. Pasa a la leche animal y a la leche materna, de modo que aparece sin que haya moho en el producto.",
+   "formula": "Leche: límite UE 0,050 µg/kg · Codex y Colombia 0,5 µg/kg"
+  },
+  "h_hongos_condiciones": {
+   "title": "Hongos productores y condiciones de crecimiento",
+   "summary": "Hecho: Aspergillus flavus y A. parasiticus producen la toxina en campo, poscosecha y almacenamiento. El grano dañado se enmohece más.",
+   "formula": "A. flavus crece con actividad de agua > 0,85 · toxina máxima cerca de 27 °C y casi nula bajo 12 °C (AESAN)"
+  },
+  "h_sin_olor": {
+   "title": "Sin olor, sabor ni color",
+   "summary": "Hecho: una autoridad de inocuidad describe las aflatoxinas como inodoras, insípidas e incoloras. El olor de un alimento contaminado viene del hongo y de la matriz, no de la toxina. Son en gran parte estables al calor.",
+   "formula": "Cristales incoloros a amarillo pálido, con fluorescencia azul (CAMEO)",
+   "caution": "La ausencia de moho visible u olor no garantiza que no haya aflatoxinas. La toxina puede quedar tras desaparecer el hongo, y los filamentos pueden ser invisibles. En Colombia, 27 % de arepas de fábrica tenían aflatoxina B1, con media de 15,1 µg/kg. La leche contaminada con M1 nunca muestra moho. Solo el análisis de laboratorio confirma el nivel. (USDA FSIS; Blanco-Lizarazo 2019)"
+  },
+  "p_maiz_arepa": {
+   "title": "Maíz y arepa",
+   "summary": "Alimento: el maíz es la fuente principal de exposición en países de ingreso bajo y medio. En Colombia se analizaron 168 arepas de fábrica en 16 departamentos.",
+   "formula": "Arepa: 27 % contaminadas · media 15,1 µg/kg · máximo 111,1 µg/kg (Blanco-Lizarazo 2019)"
+  },
+  "p_mani_frutos_secos": {
+   "title": "Maní y frutos secos",
+   "summary": "Alimento: el maní es fuente principal junto con el maíz. También se afectan pistacho, almendra, nuez, nuez de Brasil, avellana y coco. La norma les fija límites propios según el destino del lote.",
+   "formula": "Vigilancia INVIMA 2020: 10 muestras de maní, 1 detectable con 3,87 µg/kg"
+  },
+  "p_arroz_cafe": {
+   "title": "Arroz, café, cacao y especias",
+   "summary": "Alimento: hay datos colombianos de arroz y café. El cacao figura entre los alimentos afectados en fuentes europeas, pero no se confirmaron datos colombianos de cacao ni de especias.",
+   "formula": "Arroz blanco de Colombia: 50 % positivo · positivos sobre el máximo 62,5 % (10,3–93,9 µg/kg) · café 0,13–0,15 µg/kg"
+  },
+  "p_leche": {
+   "title": "Leche y productos lácteos",
+   "summary": "Alimento: la M1 aparece cuando el ganado consume pienso contaminado. En leche en polvo del Caribe colombiano se halló M1 en todas las muestras analizadas.",
+   "formula": "Leche en polvo: 100 % positiva (0,20–1,19 µg/kg) · 55 % sobre 0,5 µg/kg (Marimón Sibaja 2019)",
+   "caution": "La leche puede contener aflatoxina M1 y los niños son el grupo más expuesto, por su mayor consumo relativo. En leche en polvo del Caribe colombiano, 55 % de las muestras superó 0,5 µg/kg. El límite europeo es 0,050 µg/kg, diez veces más estricto. No hay que suspender la leche; hay que exigir vigilancia y producto de origen controlado. (Marimón Sibaja 2019; Reg. UE 2023/915)"
+  },
+  "u_biomarcadores": {
+   "title": "Biomarcadores de exposición",
+   "summary": "Uso de método en humanos: la lisina unida a albúmina mide la exposición de semanas o meses; la M1 urinaria mide exposición reciente; la unión a guanina en orina mide dosis efectiva.",
+   "formula": "Bogotá: M1 urinaria en 41,7 % de niños, media 16 pg/mL en positivos (Sánchez 2019)"
+  },
+  "c_epoxido_aductos": {
+   "title": "Epóxido y aductos de ADN",
+   "summary": "Compuesto y mecanismo: CYP1A2, 3A4, 3A5 y 3A7 activan la B1 al 8,9-exo-epóxido, que forma el aducto con guanina. La firma típica es la transversión G a T en el codón 249 de TP53.",
+   "formula": "TP53 mutado en 30–55 % de los carcinomas hepatocelulares (Puisieux 1997)"
+  },
+  "h_iarc_grupo1": {
+   "title": "Clasificación IARC grupo 1",
+   "summary": "Hecho: las aflatoxinas naturales son cancerígenas para humanos. En animales la evidencia es suficiente para las mezclas naturales y para B1, G1 y M1, limitada para B2 e inadecuada para G2.",
+   "formula": "IARC, monografías vol. 82 (evaluación reafirmada)"
+  },
+  "u_aflatoxicosis_aguda": {
+   "title": "Aflatoxicosis aguda",
+   "summary": "Efecto en humanos: brote documentado en Kenia en 2004 por maíz de autoconsumo. La concentración de aductos en suero se asoció al tiempo entre la ictericia y la muerte.",
+   "formula": "317 casos y 125 muertes · maíz de casos 354,53 ppb frente a 44,14 ppb en controles (Azziz-Baumgartner 2005)"
+  },
+  "u_chc_vhb": {
+   "title": "Carcinoma hepatocelular y sinergia con hepatitis B",
+   "summary": "Efecto en humanos: metaanálisis de 17 estudios con 1680 casos y 3052 controles. El riesgo con las dos exposiciones es multiplicativo.",
+   "formula": "OR 73,0 (36,0–148,3) con ambas · 11,3 solo virus · 6,37 solo aflatoxina · fracción atribuible 17 % (Liu 2012)"
+  },
+  "u_vacuna_vhb": {
+   "title": "Vacuna de hepatitis B como medida indirecta",
+   "summary": "Efecto en humanos: en el ensayo por conglomerados de Qidong la vacuna neonatal redujo el cáncer hepático a 30 y 37 años. Quita el cofactor viral, no la exposición alimentaria.",
+   "formula": "Eficacia 84 % (23–97 %) a 30 años · HR 0,28 (0,11–0,70) a 37 años (Qu 2014; Cao 2022)",
+   "caution": "La vacuna de hepatitis B reduce el cáncer de hígado de forma comprobada: 72 % de protección a 37 años en el ensayo de Qidong. Al quitar el virus, desaparece la sinergia con la aflatoxina, que multiplicaba el riesgo (OR 73,0 frente a 6,37). Pero la aflatoxina sigue siendo cancerígena sin el virus. Hay que vacunar y además controlar los alimentos. (Liu 2012; Cao 2022)"
+  },
+  "u_embarazo_peso_nacer": {
+   "title": "Exposición en el embarazo y peso al nacer",
+   "summary": "Efecto en humanos: la transferencia placentaria está confirmada y hay aductos en sangre de cordón. La revisión de desenlaces neonatales no halló asociación agrupada significativa, con heterogeneidad alta.",
+   "formula": "7 estudios, 4047 participantes, sin asociación significativa · cordón 10,1 pg/mg (Ghorbani Nejad 2025; Turner 2007)",
+   "caution": "La aflatoxina cruza la placenta, pero el metaanálisis de siete estudios no confirmó menor peso al nacer. La heterogeneidad fue muy alta y el análisis de sensibilidad sí apuntó a más bajo peso. Donde la evidencia es más consistente es en el crecimiento del primer año. Reducir la exposición en el embarazo sigue siendo razonable. (Ghorbani Nejad 2025; Turner 2007)"
+  },
+  "u_crecimiento_infantil": {
+   "title": "Crecimiento infantil",
+   "summary": "Efecto en humanos: metaanálisis de cohortes con menor peso y talla para la edad. La única intervención con datos de crecimiento tuvo certeza muy baja.",
+   "formula": "Talla baja OR 1,21 (1,11–1,33) · peso para la edad −0,18 z (−0,33 a −0,02) (Ghorbani Nejad 2023; Visser 2020)"
+  },
+  "u_lactancia_afm1": {
+   "title": "Aflatoxina M1 en leche materna",
+   "summary": "Efecto en humanos: la M1 aparece en la leche materna como marcador de exposición de la madre y del lactante. En el metaanálisis global el margen de exposición fue aceptable salvo en un país.",
+   "formula": "Colombia: 90 % de 50 muestras, media 5,2 ng/L (Diaz 2015) · prevalencia global 54,48 % (Fakhri 2025)"
+  },
+  "h_limites_ue": {
+   "title": "Límites de la Unión Europea",
+   "summary": "Norma: el Reglamento 2023/915 fija la B1 y la suma por alimento y por destino del lote, con límites más estrictos para alimentos infantiles.",
+   "formula": "Maní de consumo directo 2,0/4,0 · almendra y pistacho 8,0/10,0 · leche 0,050 · preparados para lactantes 0,025 µg/kg"
+  },
+  "h_limites_codex_fda": {
+   "title": "Límites del Codex y niveles de acción de la FDA",
+   "summary": "Norma: el Codex fija aflatoxinas totales por alimento y destino. La FDA usa niveles de acción, no límites máximos.",
+   "formula": "Codex: frutos secos 15 para procesar y 10 listos para consumo · leche 0,50 · FDA: 20 ppb en alimentos y 0,5 ppb en leche"
+  },
+  "h_limites_colombia": {
+   "title": "Límites de Colombia",
+   "summary": "Norma: la Resolución 4506 de 2013 fija solo la suma de B1, B2, G1 y G2. No tiene fila para la B1 sola ni para alimentos de lactantes.",
+   "formula": "Cereales 4,0 · maní de consumo directo 10,0 · maíz para selección 20,0 · leche 0,5 µg/kg"
+  },
+  "h_colombia_exposicion": {
+   "title": "Exposición documentada en Colombia",
+   "summary": "Hecho: hay contaminación frecuente en arepa, arroz y leche, y marcadores de exposición en personas. En una serie de carcinomas hepatocelulares la mutación del codón 249 estuvo presente.",
+   "formula": "Leche materna 90 % positiva · orina infantil 41,7 % positiva · codón 249 en 10,5 % de mutaciones TP53 (Navas 2011)"
+  },
+  "h_vigilancia_invima": {
+   "title": "Vigilancia del INVIMA",
+   "summary": "Hecho: el programa de micotoxinas muestrea arepa, arroz, café, maíz y otros productos. El plan 2024 no incluye leche, cacao, especias ni frutos secos importados.",
+   "formula": "2020: 2 no conformes de 102 muestras · plan 2024: 324 muestras nacionales previstas",
+   "caution": "Colombia tiene límites para frutos secos en la Resolución 4506 de 2013, entre 4 y 15 µg/kg. Pero el plan de vigilancia de micotoxinas 2024 del INVIMA no incluye frutos secos importados: solo muestrea maíz, café y galletas de importación. En la práctica, los frutos secos importados no tienen monitoreo sistemático publicado. Convendría preferir producto empacado con trazabilidad. (Res. 4506 de 2013; INVIMA 2024)"
+  },
+  "u_prevencion_clasificacion": {
+   "title": "Prevención en campo, almacenamiento y clasificación",
+   "summary": "Uso de método en humanos y en campo: secar el grano, evitar daño mecánico y separar lotes reduce la contaminación. La selección física sustenta los límites más altos para lotes destinados a selección.",
+   "formula": "Kenia 2004: maíz húmedo OR 3,5 (1,2–10,3) · almacenamiento dentro de la vivienda OR 12,0 (1,5–95,7)"
+  },
+  "u_coccion_tostado": {
+   "title": "Cocción y tostado",
+   "summary": "Uso de método: el tostado degrada parte de la toxina según la temperatura y la contaminación inicial, pero siempre queda residuo. Las micotoxinas de cereales sobreviven al procesado habitual.",
+   "formula": "Maní: degradación 55–81 % a 180 °C por 20 min · 61,6 % a 160 °C y 89,7 % a 200 °C (Martins 2017)",
+   "caution": "Cocinar y tostar no eliminan las aflatoxinas. En maní, el tostado a 180 °C por 20 minutos degradó entre 55 % y 81 %, según la contaminación inicial. Siempre queda toxina residual. Un alimento muy contaminado sigue siendo peligroso después de cocinarlo. La prevención está en el origen: buena cosecha, secado y almacenamiento, y descarte de lotes sospechosos. (Martins 2017; OMS 2023)"
+  },
+  "u_nixtamalizacion": {
+   "title": "Nixtamalización",
+   "summary": "Uso de método: el tratamiento alcalino reduce mucho el contenido medido, pero el medio ácido reconstituye parte de la molécula, de modo que la detoxificación no es total.",
+   "formula": "Reducción B1 94 % (Elias-Orozco 2002) · al acidificar reaparece 57,2 % en la masa y 33,9 % en la tortilla (Méndez-Albores 2004)",
+   "caution": "La nixtamalización reduce mucho las aflatoxinas, entre 83 % y 94 % según el estudio, pero no las elimina. Al acidificar las muestras reapareció entre 33,9 % y 57,2 % de la toxina, lo que sugiere que el medio ácido del estómago puede reconstituirla. No se debe nixtamalizar maíz visiblemente contaminado para «recuperarlo». (Elias-Orozco 2002; Méndez-Albores 2004)"
+  },
+  "u_retirar_moho": {
+   "title": "Retirar la parte con moho",
+   "summary": "Uso de método: la autoridad sanitaria indica descartar maní, frutos secos, legumbres, pan, cereales y pastas cocidas con moho. Cortar alrededor solo se acepta en quesos duros y verduras firmes.",
+   "formula": "Corte mínimo de 2,5 cm alrededor y por debajo, solo en quesos duros y verduras firmes (USDA FSIS)",
+   "caution": "En maní, frutos secos, legumbres, pan y cereales cocidos, quitar el moho no vuelve seguro el alimento: hay que descartarlo. Los filamentos penetran y la toxina se extiende más allá de la parte visible. Cortar el moho solo se acepta en quesos duros y verduras firmes, retirando al menos 2,5 cm alrededor. (USDA FSIS)"
+  },
+  "u_biocontrol": {
+   "title": "Biocontrol con cepas atoxigénicas",
+   "summary": "Uso de método en campo: productos con cepas que no producen toxina, aplicados en maíz y maní, bajaron la contaminación en estudios con cientos de productores.",
+   "formula": "Mozambique: maní −78 a −98 % y maíz −61 a −93 % · 99 % del maíz tratado bajo los máximos UE y EE. UU. (Augusto 2024)"
+  },
+  "c_mvoc_crecimiento": {
+   "title": "Volátiles de crecimiento fúngico",
+   "summary": "Compuesto: el 3-metil-1-butanol, el 2-metil-1-butanol, el 1-octen-3-ol y la 3-octanona aparecen con el crecimiento del hongo. No separan cepas que producen toxina de las que no. Evidencia de nivel D, sin olfatometría.",
+   "formula": "Los emiten varios hongos y también bacterias (Tuma 1989; Josselin 2021)",
+   "caution": "Los volátiles de olor a moho (3-metil-1-butanol, 1-octen-3-ol, 3-octanona) no separan cepas que producen toxina de las que no: los emiten varios hongos y bacterias. Algunos sesquiterpenos solo aparecieron en cepas toxigénicas, pero la señal fue transitoria: presente el día 3 y ausente los días 1, 2, 8 y 10. (Zeringue 1993; Josselin 2021)"
+  },
+  "c_sesquiterpenos": {
+   "title": "Sesquiterpenos asociados a cepas toxigénicas",
+   "summary": "Compuesto: el alfa-gurjuneno, el trans-cariofileno y el cadineno aparecieron solo en cepas que producen toxina, con señal transitoria. El 2-metilbutanal también es odorante del maní tostado, así que no sirve de alarma en producto tostado.",
+   "formula": "Señal presente en el día 3 y ausente en los días 1, 2, 8 y 10 (Zeringue 1993)"
+  },
+  "u_nariz_electronica": {
+   "title": "Nariz electrónica, GC-IMS y sensores",
+   "summary": "Uso de método: clasifican muestras en laboratorio. Las cifras altas vienen de muestras inoculadas; la validación externa es escasa y dos estudios detectan el hongo, no la toxina.",
+   "formula": "Maíz con muestras naturales: 81 % bien clasificadas y 65 % en tres clases (Ottoboni 2018)",
+   "caution": "La nariz electrónica y los sensores de gases son, por ahora, herramientas de tamizaje. Con muestras naturales de maíz la exactitud informada fue 81 %. Las cifras cercanas al 100 % vienen de muestras inoculadas en laboratorio. Ningún estudio informa sensibilidad y especificidad separadas. Para aceptar o rechazar un lote, use un método validado. (Ottoboni 2018)"
+  },
+  "u_olfato_humano": {
+   "title": "Olfato humano como prueba de seguridad",
+   "summary": "Uso de método: no se halló ningún estudio que compare el olor percibido por personas con la concentración medida de aflatoxina. El olor a moho indica crecimiento fúngico, no cuánta toxina hay.",
+   "formula": "0 estudios de olor percibido frente a concentración (PubMed y web, 2026-11-08)",
+   "caution": "Ningún estudio relaciona el olor percibido por personas con la concentración de aflatoxina. La toxina no tiene olor. Si un lote huele a moho, hay crecimiento fúngico: descártelo. Si no huele, eso no descarta la toxina. El olfato no sirve como prueba de seguridad. (SFA; AGES)"
+  },
+  "h_huecos": {
+   "title": "Huecos de evidencia",
+   "summary": "Hecho: faltan datos colombianos de cacao, especias y frutos secos importados, la carga de enfermedad atribuible en Colombia, y estudios de olor frente a concentración. No hay estudios de volátiles de A. parasiticus que comparen cepas.",
+   "formula": "Resultados del plan INVIMA 2024: no publicados"
+  }
+ },
+ "resources": [
+  {
+   "id": "T1",
+   "title": "Límites de aflatoxinas por alimento: Unión Europea, Codex, FDA y Colombia (Reg. UE 2023/915; CXS 193-1995; FDA CPG; Res. 4506 de 2013)",
+   "usedBy": [
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4"
+   ]
+  },
+  {
+   "id": "T2",
+   "title": "Hallazgos de aflatoxinas en alimentos y personas de Colombia (PubMed e informes del INVIMA)",
+   "usedBy": [
+    "7.1",
+    "7.2",
+    "7.3"
+   ]
+  },
+  {
+   "id": "T3",
+   "title": "Volátiles de Aspergillus flavus y su relación con la toxigenicidad (todos de nivel D, sin olfatometría)",
+   "usedBy": [
+    "8.5"
+   ]
+  },
+  {
+   "id": "T4",
+   "title": "Métodos instrumentales por volátiles y su rendimiento informado (nariz electrónica, GC-IMS, sensores)",
+   "usedBy": [
+    "8.6"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    3
+   ],
+   "6": [
+    1,
+    2
+   ],
+   "7": [
+    2,
+    6
+   ],
+   "8": [
+    1,
+    2
+   ],
+   "9": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.2"
+   ],
+   "2.2": [
+    "1.2"
+   ],
+   "2.3": [
+    "1.2"
+   ],
+   "2.4": [
+    "1.1"
+   ],
+   "2.5": [
+    "1.1"
+   ],
+   "3.1": [
+    "1.1"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "2.1",
+    "2.5"
+   ],
+   "3.4": [
+    "3.1"
+   ],
+   "4.1": [
+    "2.5",
+    "3.2"
+   ],
+   "4.2": [
+    "4.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "5.1": [
+    "2.5",
+    "3.1"
+   ],
+   "5.2": [
+    "5.1"
+   ],
+   "5.3": [
+    "2.4"
+   ],
+   "5.4": [
+    "5.1"
+   ],
+   "6.1": [
+    "1.1",
+    "2.4"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "6.1"
+   ],
+   "6.4": [
+    "6.1",
+    "6.2",
+    "6.3"
+   ],
+   "7.1": [
+    "2.1",
+    "6.3"
+   ],
+   "7.2": [
+    "2.5",
+    "7.1"
+   ],
+   "7.3": [
+    "6.3"
+   ],
+   "7.4": [
+    "7.2"
+   ],
+   "8.1": [
+    "1.2"
+   ],
+   "8.2": [
+    "2.1",
+    "1.3"
+   ],
+   "8.3": [
+    "1.3"
+   ],
+   "8.4": [
+    "8.1"
+   ],
+   "8.5": [
+    "1.2",
+    "1.3"
+   ],
+   "8.6": [
+    "8.5"
+   ],
+   "9.1": [
+    "3.2",
+    "4.2",
+    "5.2",
+    "8.4"
+   ],
+   "9.2": [
+    "8.2",
+    "8.3",
+    "8.6"
+   ],
+   "9.3": [
+    "9.1",
+    "9.2",
+    "6.3"
+   ],
+   "9.4": [
+    "7.3",
+    "8.6"
+   ]
+  },
+  "items": {
+   "c_afm1": [
+    "c_afb1"
+   ],
+   "h_hongos_condiciones": [
+    "c_afb1"
+   ],
+   "h_sin_olor": [
+    "c_afb1"
+   ],
+   "p_maiz_arepa": [
+    "h_hongos_condiciones"
+   ],
+   "p_mani_frutos_secos": [
+    "h_hongos_condiciones"
+   ],
+   "p_arroz_cafe": [
+    "h_hongos_condiciones"
+   ],
+   "p_leche": [
+    "c_afm1"
+   ],
+   "u_biomarcadores": [
+    "c_afb1",
+    "c_afm1"
+   ],
+   "c_epoxido_aductos": [
+    "c_afb1"
+   ],
+   "h_iarc_grupo1": [
+    "c_epoxido_aductos"
+   ],
+   "u_aflatoxicosis_aguda": [
+    "p_maiz_arepa",
+    "u_biomarcadores"
+   ],
+   "u_chc_vhb": [
+    "c_epoxido_aductos",
+    "h_iarc_grupo1"
+   ],
+   "u_vacuna_vhb": [
+    "u_chc_vhb"
+   ],
+   "u_embarazo_peso_nacer": [
+    "u_biomarcadores"
+   ],
+   "u_crecimiento_infantil": [
+    "u_biomarcadores"
+   ],
+   "u_lactancia_afm1": [
+    "c_afm1",
+    "u_biomarcadores"
+   ],
+   "h_limites_ue": [
+    "c_afb1",
+    "c_afm1"
+   ],
+   "h_limites_codex_fda": [
+    "h_limites_ue"
+   ],
+   "h_limites_colombia": [
+    "h_limites_ue"
+   ],
+   "h_colombia_exposicion": [
+    "p_maiz_arepa",
+    "p_leche",
+    "u_biomarcadores"
+   ],
+   "h_vigilancia_invima": [
+    "h_limites_colombia"
+   ],
+   "u_prevencion_clasificacion": [
+    "h_hongos_condiciones"
+   ],
+   "u_coccion_tostado": [
+    "h_sin_olor"
+   ],
+   "u_nixtamalizacion": [
+    "p_maiz_arepa"
+   ],
+   "u_retirar_moho": [
+    "h_sin_olor"
+   ],
+   "u_biocontrol": [
+    "h_hongos_condiciones"
+   ],
+   "c_mvoc_crecimiento": [
+    "h_hongos_condiciones"
+   ],
+   "c_sesquiterpenos": [
+    "c_mvoc_crecimiento"
+   ],
+   "u_nariz_electronica": [
+    "c_mvoc_crecimiento",
+    "c_sesquiterpenos"
+   ],
+   "u_olfato_humano": [
+    "h_sin_olor",
+    "c_mvoc_crecimiento"
+   ],
+   "h_huecos": [
+    "h_vigilancia_invima",
+    "u_olfato_humano"
+   ]
+  }
+ }
+}
