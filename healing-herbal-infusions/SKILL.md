@@ -146,11 +146,23 @@ Revisión de evidencia del 2026-11-04 en [`evidencia/diarrea.md`](evidencia/diar
 - No uses en diarrea: tinturas o amargos en niños, el electuario prebiótico (inulina FODMAP), uzara, berberina ni látex crudo de sangre de drago.
 - En SII-D confirmado, la evidencia (baja) es para cápsulas entéricas de aceite de menta, no para el té.
 
+### 13. Moringa (el libro no la trata)
+
+Revisión de evidencia del 2026-11-10 en [`evidencia/moringa.md`](evidencia/moringa.md). Reglas:
+
+- Usa la **hoja como alimento cocido**: hojas frescas lavadas y hervidas al menos 5 min en sopa o guiso. Es la forma preferida.
+- Si usas **polvo de hoja**, exige registro INVIMA. Usa 2–5 g/día dentro de una preparación que hierva al menos 5 min. Máximo 12 semanas seguidas sin valoración médica. Guárdalo en frasco opaco y en nevera.
+- **No uses polvo crudo** (batidos, espolvoreado, electuario). Es la forma de los brotes de *Salmonella* de 2025–2026 (CDC).
+- **No uses raíz, corteza ni flor** por vía oral. No uses moringa como suplemento en el embarazo.
+- Para quién: adultos de 18 años o más, fuera del embarazo. En lactancia, solo con valoración (LactMed: evidencia baja como galactagogo).
+- No es tratamiento de anemia, diabetes, hipertensión ni artritis. Con antidiabéticos o antihipertensivos, controla la glucosa y la presión.
+- La semilla solo clarifica el agua. Después, hierve o clora el agua.
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 últimas filas vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 últimas filas vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -177,6 +189,12 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Uzara** | No la menciona. | riesgo documentado (alta) | La uzara contiene glucósidos cardiacos. No la uses con digoxina o digitoxina, con potasio o magnesio bajos, en embarazo, lactancia ni menores de 12 años. Falsea los niveles de digoxina en sangre. La sobredosis causa arritmias (doi:10.5414/CP201712; prospecto Uzara 2014). |
 | **Aceite de menta en SII** | Té de cuatro mentas para la digestión. | confirmada con matices (media) | En el SII, la evidencia es para cápsulas entéricas de aceite de menta, no para el té. El efecto es modesto y la calidad de la evidencia es baja. Puede causar reflujo. Antes de tratar un SII-D, un médico debe descartar celiaquía y enfermedad inflamatoria (doi:10.1111/apt.17179; ACG 2021). |
 | **Electuario prebiótico en diarrea** | Electuario de achicoria, diente de león y bardana para la flora. | sin evidencia suficiente (baja) | La inulina de la achicoria es un fructano fermentable (FODMAP). En diarrea o SII-D puede empeorar los gases y la diarrea. No uses el electuario prebiótico mientras haya diarrea. Lleva miel: no en menores de 12 meses (ACG 2021, doi:10.14309/ajg.0000000000001036; inferencia). |
+| **Polvo de moringa y _Salmonella_** | No la menciona. | riesgo documentado (alta) | El polvo de hoja de moringa causó brotes de *Salmonella* (131 enfermos en 38 estados, 2025–2026), algunos multirresistentes. No lo uses crudo, en batidos ni en electuario. Añádelo a comida que hierva 5 min. Exige registro INVIMA. Mayor riesgo en menores de 5 años, mayores de 65 e inmunosuprimidos (CDC 2026; INVIMA 154-2026). |
+| **Raíz, corteza y flor de moringa** | No la menciona. | riesgo documentado (media; datos animales) | No uses raíz, corteza ni flor por vía oral. La raíz tiene alcaloides tóxicos (espiroquina) y efecto antiimplantación en ratas. No hay datos de seguridad de corteza ni flor. Usa solo la hoja como alimento cocido (Canett-Romero 2014; doi:10.1016/0378-8741(89)90031-7). |
+| **Moringa en el embarazo** | No la menciona. | riesgo documentado (media; datos animales) | No des moringa en el embarazo como suplemento, extracto ni té medicinal. Extractos de hoja fueron 100 % abortivos en ratas a 175 mg/kg. MSKCC aconseja evitarla en embarazo. FSANZ no la aprobó como alimento (doi:10.1016/0378-8741(92)90015-j; FSANZ A1294 2025). |
+| **Moringa con antidiabéticos o antihipertensivos** | No la menciona. | riesgo omitido (baja; inferencia) | La moringa puede bajar la glucosa (prediabetes, 2,4 g/día) y la presión (−6 a −7 mmHg en metaanálisis de evidencia muy baja). Con antidiabéticos o antihipertensivos, mide glucosa o presión. Inhibe o induce CYP3A4 in vitro: pregunta por todos los medicamentos (doi:10.3390/nu14010057; doi:10.3855/jidc.201). |
+| **Moringa como galactagogo** | No la menciona. | confirmada con matices (baja) | Ensayos pequeños muestran más leche y prolactina; la evidencia es baja. LactMed no describe efectos graves a corto plazo. Precaución si hay alto riesgo de trombosis. Ningún galactagogo reemplaza la valoración de la técnica de lactancia (LactMed NBK501899, 2026). |
+| **Moringa, hierro y vitamina C** | No la menciona. | corregir (alta) | La moringa no tiene "7 veces la vitamina C de la naranja": la hoja fresca tiene 52 mg por 100 g y la naranja 53,2 mg; el polvo, unos 17 mg. Su hierro se absorbe poco. 5 g/día no subieron la hemoglobina en lactantes. No reemplaza el hierro medicinal (USDA; doi:10.1002/fsn3.890). |
 
 ## Índice de capítulos
 
@@ -194,6 +212,7 @@ Archivos de apoyo:
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
 - [`evidencia/diarrea.md`](evidencia/diarrea.md): revisión de fitoterapia en diarrea con tabla de evidencia, receta tipo y DOI.
+- [`evidencia/moringa.md`](evidencia/moringa.md): revisión de moringa con composición, evidencia por desenlace, seguridad, afirmaciones comerciales y receta tipo.
 
 ## Alcance y límites
 
