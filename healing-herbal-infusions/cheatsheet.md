@@ -72,9 +72,9 @@ Regla general: no des preparados con miel a menores de 12 meses.
 
 | Receta | Forma | Hierbas clave | Edad | Notas y alertas |
 |---|---|---|---|---|
-| Nettle & Oatstraw Long-Infused Tea | Infusión larga (4–12 h) | Ortiga, paja de avena | — | Mejor fría. Es nutritiva. |
+| Nettle & Oatstraw Long-Infused Tea | Infusión larga (4–12 h) | Ortiga, paja de avena | — | Mejor fría. El libro la llama nutritiva, pero pasa poco hierro al agua (~0,2 mg por 10 g). Ortiga: máximo 8–12 g/día y 4 semanas; no en embarazo, lactancia ni menores de 12 años (EMA). Avena: precaución en celiaquía. |
 | Sleep Well Tea | Té | Manzanilla, nébeda, valeriana | — | Para niños: té calmante del capítulo 8 (no extraído) |
-| De-Stress Tea | Té | Albahaca sagrada (tulsi), pasiflora, salvia | — | Sin grandes cantidades en el embarazo |
+| De-Stress Tea | Té | Albahaca sagrada (tulsi), pasiflora, salvia | — | Tulsi: no en embarazo ni si se busca embarazo; puede bajar la T4 e interferir con levotiroxina; inhibe plaquetas. Pasiflora: no conducir. |
 | Calming Massage Oil | Aceite | Manzanilla, lavanda, toronjil | Sin aceite esencial en menores de 13 | — |
 | St. John's Wort Tincture | Tintura o glicerito | Hipérico | — | Ciclos de 2–3 semanas y 1 semana de descanso. Interacciones: anticonceptivos, warfarina, ISRS y otros. No en embarazo ni lactancia. |
 | California Poppy Tincture | Tintura o glicerito | Amapola de California | — | No es narcótica. Puede sumar sedación. No conduzcas después de tomarla. |

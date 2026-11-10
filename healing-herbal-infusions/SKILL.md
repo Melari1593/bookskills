@@ -109,7 +109,7 @@ La vida útil es una propiedad del almacenamiento. El límite de uso es una prop
 | Corteza de sauce blanco y de abedul | Máximo 1–2 semanas (efecto anticoagulante como la aspirina). La EMA no lo acepta en menores de 18 años. |
 | Gayuba (uva ursi) | Máximo 1 semana. No en menores de 12 años. (La EMA es más estricta: solo mujeres adultas.) |
 | Hipérico (tintura) | Ciclos de 2–3 semanas de uso y 1 semana de descanso |
-| Valeriana | Ciclos. El efecto tarda semanas. |
+| Valeriana | Ciclos. El efecto tarda semanas. (Una revisión paraguas no halló eficacia en el insomnio; ver alerta.) |
 | Matricaria (feverfew) | **Mínimo** 2–3 meses de uso regular para prevenir la migraña |
 | Vino de pasiflora | Máximo una copa de 4 oz (≈120 ml) al día. Solo adultos. |
 
@@ -158,11 +158,22 @@ Revisión de evidencia del 2026-11-10 en [`evidencia/moringa.md`](evidencia/mori
 - No es tratamiento de anemia, diabetes, hipertensión ni artritis. Con antidiabéticos o antihipertensivos, controla la glucosa y la presión.
 - La semilla solo clarifica el agua. Después, hierve o clora el agua.
 
+### 14. Fatiga (el libro no la trata como tema)
+
+Revisión de evidencia del 2026-11-10 en [`evidencia/fatiga.md`](evidencia/fatiga.md). Reglas:
+
+- **Busca la causa primero.** Ningún té trata la fatiga. Si dura 4 semanas o más, o hay un signo de alarma (pérdida de peso, fiebre, sudoración nocturna, disnea, sangrado, ronquido con pausas respiratorias, ánimo bajo 2 semanas), consulta.
+- **Receta tipo (solo como apoyo para estrés leve y sueño, adultos, causas médicas descartadas):** té de avena verde, 3 g de hierba seca en 250 ml de agua hirviendo, tapado 10–15 min, 1 taza al día. Si no mejora en 2 semanas, consulta (EMA, uso tradicional).
+- **Ortiga opcional:** 2 g de hoja seca por taza, máximo 8 g/día y 4 semanas. No en embarazo, lactancia, menores de 12 años ni enfermedad cardiaca o renal grave. Con antidiabéticos, antihipertensivos, diuréticos o litio, consulta antes.
+- La infusión de ortiga **no es fuente de hierro**: pasa unos 0,2 mg por 10 g de hierba. No trata la anemia ni reemplaza un multivitamínico.
+- **Tulsi:** no lo recomiendes como "adaptógeno para la fatiga". La evidencia es de extractos en cápsulas, no de té.
+- No prometas "energía". No uses valeriana para dar energía. No apliques ortiga en los pezones durante la lactancia.
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 últimas filas vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 últimas filas vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -195,6 +206,12 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Moringa con antidiabéticos o antihipertensivos** | No la menciona. | riesgo omitido (baja; inferencia) | La moringa puede bajar la glucosa (prediabetes, 2,4 g/día) y la presión (−6 a −7 mmHg en metaanálisis de evidencia muy baja). Con antidiabéticos o antihipertensivos, mide glucosa o presión. Inhibe o induce CYP3A4 in vitro: pregunta por todos los medicamentos (doi:10.3390/nu14010057; doi:10.3855/jidc.201). |
 | **Moringa como galactagogo** | No la menciona. | confirmada con matices (baja) | Ensayos pequeños muestran más leche y prolactina; la evidencia es baja. LactMed no describe efectos graves a corto plazo. Precaución si hay alto riesgo de trombosis. Ningún galactagogo reemplaza la valoración de la técnica de lactancia (LactMed NBK501899, 2026). |
 | **Moringa, hierro y vitamina C** | No la menciona. | corregir (alta) | La moringa no tiene "7 veces la vitamina C de la naranja": la hoja fresca tiene 52 mg por 100 g y la naranja 53,2 mg; el polvo, unos 17 mg. Su hierro se absorbe poco. 5 g/día no subieron la hemoglobina en lactantes. No reemplaza el hierro medicinal (USDA; doi:10.1002/fsn3.890). |
+| **Fatiga: busca la causa primero** | Propone tés para el bienestar y el sueño. | sin evidencia suficiente (alta) | Ningún té trata la fatiga. Si dura 4 semanas o más, pide hemograma, ferritina, TSH, glucosa o HbA1c y función renal y hepática. Consulta pronto si hay pérdida de peso ≥5 %, adenopatías, sangrado o signos neurológicos. Pregunta por sueño, ánimo, embarazo y fármacos (AFP 2023; resumen de NICE CKS). |
+| **Albahaca sagrada (tulsi)** | Adaptógeno; evitar grandes cantidades en el embarazo. | riesgo omitido (media; datos animales) | No la uses en embarazo ni si se busca embarazo: en animales redujo la implantación y la fertilidad. Puede bajar la T4 y reducir el efecto de la levotiroxina. Inhibe las plaquetas: precaución con anticoagulantes y antes de cirugía. Puede sumar efecto a los antidiabéticos (MSD 2025; doi:10.1006/phrs.1998.0338). |
+| **Hoja de ortiga: límites** | Infusión larga de 4–12 h, "nutritiva". | corregir (alta) | La EMA limita la hoja a 8–12 g/día y 4 semanas. No en menores de 12 años, embarazo ni lactancia. No si hay enfermedad cardiaca o renal grave con restricción de líquidos. Baja la glucemia en ayunas (−18 mg/dl en DM2): vigila con antidiabéticos (EMA/HMPC/508015/2007; doi:10.1002/ptr.6535). |
+| **Infusión "nutritiva" y hierro** | La infusión larga extrae minerales. | corregir (media) | Solo el 4–12 % del hierro de la hierba pasa al agua: unos 0,2 mg por 10 g de hierba, el 1 % de la necesidad diaria. No trata la anemia ni reemplaza un multivitamínico. Para nutrir, la ortiga cocida aporta más (doi:10.3109/09637486.2011.617359; doi:10.1016/j.jtemb.2019.126428). |
+| **Avena y celiaquía** | Paja de avena en infusión larga. | riesgo omitido (media) | La EMA pide precaución en celiaquía: no hay datos de proteína en la hierba. La avena pura fue segura 12 meses en ECA, pero 36 % de productos "sin gluten" superaron 20 ppm. Si hay celiaquía, usa solo producto certificado o evítala (EMEA/HMPC/202966/2007; doi:10.3389/fnut.2022.986282). |
+| **Valeriana para el sueño** | Ciclos; el efecto tarda semanas. | confirmada con matices (media) | Una revisión paraguas de 8 revisiones sistemáticas no halló eficacia de la valeriana en el insomnio. Solo mejoró la calidad del sueño percibida. En el insomnio crónico, la primera línea es la terapia cognitivo-conductual. No la uses para dar energía (doi:10.1016/j.euroneuro.2024.01.008; doi:10.1111/jsr.13979). |
 
 ## Índice de capítulos
 
@@ -213,6 +230,7 @@ Archivos de apoyo:
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
 - [`evidencia/diarrea.md`](evidencia/diarrea.md): revisión de fitoterapia en diarrea con tabla de evidencia, receta tipo y DOI.
 - [`evidencia/moringa.md`](evidencia/moringa.md): revisión de moringa con composición, evidencia por desenlace, seguridad, afirmaciones comerciales y receta tipo.
+- [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
 
 ## Alcance y límites
 
