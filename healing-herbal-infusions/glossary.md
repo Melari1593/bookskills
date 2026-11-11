@@ -72,7 +72,9 @@ Confirma siempre el nombre científico. Los nombres comunes cambian entre paíse
 | Juniper | Enebro | *Juniperus communis* | — |
 | Lavender | Lavanda | *Lavandula angustifolia* | — |
 | Lemon balm | Toronjil, melisa | *Melissa officinalis* | — |
+| Lemongrass | Limonaria, limoncillo, hierba limón | *Cymbopogon citratus* | No está en el libro. No es el toronjil ni la citronela (*C. nardus*). Ver `evidencia/limonaria.md`. |
 | Marshmallow | Malvavisco | *Althaea officinalis* | — |
+| Moringa | Moringa | *Moringa oleifera* | No está en el libro. Ver `evidencia/moringa.md`. |
 | Mullein | Gordolobo | *Verbascum thapsus* | — |
 | Nettle | Ortiga | *Urtica dioica* | — |
 | Oatstraw | Paja de avena | *Avena sativa* | — |

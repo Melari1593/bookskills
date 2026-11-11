@@ -82,6 +82,17 @@ Regla general: no des preparados con miel a menores de 12 meses.
 | Rejuvenating Flower Bath Soak | Baño de sales | Sal de Epsom, lavanda, manzanilla, pétalos de rosa | 2+ | 1 taza de sal + ¼ taza de cada flor. ¼–½ taza por baño, en bolsa de muselina. | contradicho (absorción de magnesio); sin evidencia en humanos (relajación) · Relajación por agua tibia y aroma; no aporta magnesio. No en heridas, fiebre alta, infección grave ni insuficiencia cardiaca. Prueba en la piel. |
 | Relaxing Herbal Face Steam | Vaho | Romero, menta, lavanda | — | Eucalipto opcional | riesgo documentado · Riesgo de quemadura grave: nunca en niños; no en el regazo. Sin beneficio probado. Sin aceite de eucalipto en menores de 4 años ni con convulsiones; sin aceite de menta en menores de 12. |
 
+## Recetas tipo de las revisiones fuera del libro
+
+Estas recetas no son del libro. Vienen de las revisiones de evidencia de la carpeta [evidencia/](evidencia/). Las reglas completas están en las secciones 12 a 16 de [SKILL.md](SKILL.md).
+
+| Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia (veredicto · nota) |
+|---|---|---|---|---|---|
+| Té astringente para diarrea | Té de una sola hierba | Hoja de frambuesa, agrimonia u hoja de guayaba | Adultos | Solo sin signos de alarma y con SRO. Sin azúcar ni miel. Máximo 3 días. Sepáralo 1 h de otros medicamentos. | uso tradicional EMA · Sin ensayos de eficacia. No reemplaza la SRO ([evidencia/diarrea.md](evidencia/diarrea.md)). |
+| Hoja de moringa cocida | Hoja en sopa o guiso | Hoja de moringa | 18 años | Hierve al menos 5 min. Si es polvo: registro INVIMA, 2–5 g/día, nunca crudo. No en embarazo. No uses raíz, corteza ni flor. | alimento · No trata anemia, diabetes ni hipertensión ([evidencia/moringa.md](evidencia/moringa.md)). |
+| Té de avena verde | Té | Avena verde (hierba seca) | Adultos | 3 g en 250 ml de agua hirviendo, tapado 10–15 min, 1 taza al día. Solo con causas médicas de fatiga descartadas. Si no mejora en 2 semanas, consulta. En celiaquía, solo producto certificado. | uso tradicional EMA · Apoyo para estrés leve y sueño; no trata la fatiga ([evidencia/fatiga.md](evidencia/fatiga.md)). |
+| Té de limonaria | Infusión | Hoja de limonaria (*Cymbopogon citratus*) | 2 años | 1 taza 2–3 veces al día (Vademécum Colombiano). No en lactancia. En el embarazo, sin aceite esencial ni dosis medicinales. Con enfermedad renal, evita el uso diario prolongado. Añade el limón al final y sírvelo el mismo día. | uso tradicional (Vademécum Colombiano) para gases y dispepsia · Contradicho para sueño y ansiedad ([evidencia/limonaria.md](evidencia/limonaria.md)). |
+
 ## Conversión de unidades
 
 | Libro | Métrico |

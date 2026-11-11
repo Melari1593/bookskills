@@ -179,11 +179,23 @@ Verificación del 2026-11-10 de las 53 recetas en [`evidencia/recetas.md`](evide
 - **Recetas con riesgo documentado (4):** Cannabis-Infused Coconut Oil; Clove Whiskey Tincture for Tooth Pain; Passionflower-Infused Wine; Relaxing Herbal Face Steam. Da siempre su alerta.
 - Si la edad de la EMA es mayor que la del libro, usa la de la EMA.
 
+### 16. Limonaria (el libro no la trata)
+
+Revisión de evidencia del 2026-11-11 en [`evidencia/limonaria.md`](evidencia/limonaria.md). Reglas:
+
+- **Uso:** la hoja de limonaria (*Cymbopogon citratus*) es alimento y uso tradicional. El Vademécum Colombiano la indica para gases y dispepsia. No hay monografía EMA confirmada ni ECA para esa indicación.
+- **Receta tipo (adultos, gases o dispepsia leve):** infusión de hojas frescas picadas, 1 taza 2–3 veces al día (Vademécum Colombiano). Dilo como uso tradicional.
+- **No la des** a menores de 2 años ni en la lactancia (Vademécum Colombiano). En el embarazo, no uses aceite esencial ni dosis medicinales: no hay datos en humanos.
+- **No la recomiendes para dormir ni para la ansiedad.** Un ensayo controlado con la infusión no encontró efecto. La evidencia de ansiedad es de aromaterapia con aceite, un ECA pequeño.
+- **Riñón:** con enfermedad renal o fármacos nefrotóxicos, evita el uso diario prolongado. Si se usa, vigila la creatinina.
+- **Aceite esencial en la piel:** el citral causa dermatitis de contacto. Haz siempre la prueba en la piel.
+- **En cocina:** el citral se degrada con el ácido y la luz. Añade el limón al final, guarda la infusión lejos de la luz y úsala el mismo día. Las técnicas moleculares con limonaria están en el informe.
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 últimas filas vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 últimas filas vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -245,6 +257,10 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Tintura casera de hipérico** | Tintura para "levantar el ánimo bajo". | corregir (alta) | La eficacia en depresión es de extractos estandarizados, solo en depresión leve a moderada (Cochrane). La EMA acepta la tintura casera solo para el agotamiento mental temporal. No la uses para tratar una depresión sin valoración médica. No en depresión grave, riesgo suicida ni menores de 18 años (doi:10.1002/14651858.CD000448.pub3; EMA/HMPC/7695/2021). |
 | **Vino de pasiflora** | Máximo una copa de 4 oz al día, adultos. | riesgo documentado (media) | Una copa de 4 oz lleva unos 11 g de alcohol (0,8 bebida estándar). El alcohol fragmenta la segunda mitad del sueño. Suma sedación con hipnóticos, benzodiacepinas, opioides, antidepresivos y otras hierbas sedantes. No lo uses a diario para dormir. No en embarazo, lactancia ni consumo problemático de alcohol (NIAAA; doi:10.1111/acer.12006). |
 | **Baño de sales de Epsom** | El magnesio se absorbe por la piel y relaja los músculos. | corregir (media) | No hay evidencia de que el magnesio de la sal de Epsom se absorba por la piel. No uses el baño para corregir un déficit de magnesio. Evita el baño completo caliente si hay heridas abiertas, enfermedad aguda de la piel, fiebre alta, infección grave o insuficiencia cardiaca (doi:10.3390/nu9080813; EMA/HMPC/55843/2011). |
+| **Limonaria para dormir o para la ansiedad** | El libro no la trata. | contradicho (media) | En un ensayo controlado doble ciego, la infusión de limonaria no mejoró el sueño (n = 50) ni la ansiedad inducida (n = 18). No la recomiendes como hipnótico ni ansiolítico. La reducción de ansiedad de un ECA pequeño fue con aromaterapia de aceite, sin placebo aromático (doi:10.1016/0378-8741(86)90074-7; doi:10.1186/s12906-025-04834-w). |
+| **Limonaria y función renal** | El libro no la trata. | riesgo documentado (baja; un estudio sin placebo) | Con infusión de 2–8 g diarios por 30 días bajaron la eGFR y la depuración de creatinina, según la dosis y el tiempo. Con enfermedad renal o fármacos nefrotóxicos, evita el uso diario prolongado y vigila la creatinina (doi:10.1053/j.jrn.2014.08.005). |
+| **Limonaria: niños, lactancia y embarazo** | El libro no la trata. | riesgo documentado (media; norma nacional) | El Vademécum Colombiano la contraindica en menores de 2 años y en la lactancia. En el embarazo no hay datos en humanos; el citral tuvo efectos reproductivos en animales. No uses aceite esencial ni dosis medicinales en el embarazo (Vademécum Colombiano de Plantas Medicinales 2008; doi:10.3390/ijms22052380). |
+| **Aceite esencial de limonaria en la piel** | El libro no la trata. | riesgo documentado (alta) | El citral (geranial y neral) es alergeno de declaración obligatoria en cosméticos de la UE (Reglamento 1223/2009, Anexo III, entrada 70). Diluye siempre el aceite y haz la prueba en la piel. Contra el dengue no reemplaza al DEET: protegió menos contra *Aedes aegypti* (doi:10.1016/j.actatropica.2014.11.010). |
 
 ## Índice de capítulos
 
@@ -258,13 +274,14 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | 6 | [`chapters/ch06-wellbeing.md`](chapters/ch06-wellbeing.md) | Bienestar: nervinos, adaptógenos, sueño, ánimo, baños de sales, vahos |
 
 Archivos de apoyo:
-- [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia.
+- [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia. Al final tiene las 4 recetas tipo de las revisiones fuera del libro (diarrea, moringa, fatiga y limonaria).
 - [`evidencia/recetas.md`](evidencia/recetas.md): verificación de las 53 recetas por capítulo, con veredicto, seguridad nueva, referencias y log de búsqueda.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
 - [`evidencia/diarrea.md`](evidencia/diarrea.md): revisión de fitoterapia en diarrea con tabla de evidencia, receta tipo y DOI.
 - [`evidencia/moringa.md`](evidencia/moringa.md): revisión de moringa con composición, evidencia por desenlace, seguridad, afirmaciones comerciales y receta tipo.
 - [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
+- [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
 
 ## Alcance y límites
 
