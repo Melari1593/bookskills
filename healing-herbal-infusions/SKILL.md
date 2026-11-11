@@ -202,6 +202,7 @@ Revisión del 2026-11-11 en [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 b
 - **Toronjil:** la evidencia es de un extracto estandarizado, no del té casero. No lo presentes como ansiolítico.
 - **Plan de agua:** no lo des si hay insuficiencia cardiaca, enfermedad renal con restricción de líquidos o hiponatremia.
 - Las dosis de jamaica, té y cacao son preparaciones de cocina: los estudios no fijaron una dosis única. Dilo.
+- **Bebidas tradicionales:** [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md) compara 20 bebidas tradicionales (agua de jamaica, karkadé, bissap, zobo, sorrel, matcha, atay, çay, chai, chocolate santafereño, chucula, tejate, kvas de remolacha, sharbat de granada, avena colombiana, mors, isabgol, aromáticas de manzanilla y toronjil) con lo estudiado. Si te piden una bebida tradicional, di si conserva la evidencia y qué ajuste necesita: quitar el azúcar, quitar la leche del té negro, separar el alcohol o usar canela de Ceilán. No recomiendes el chai con leche, el kvas de remolacha ni la aromática de toronjil con fin de salud.
 
 ---
 
@@ -295,6 +296,7 @@ Archivos de apoyo:
 - [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
 - [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
+- [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md): 20 bebidas tradicionales de Colombia y del mundo con ingredientes que tienen evidencia, con veredicto de compatibilidad (conserva, conserva con ajuste, no conserva), ajuste y fuentes.
 
 ## Alcance y límites
 

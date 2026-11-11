@@ -352,6 +352,10 @@ Fuente: [Williams 2023](https://doi.org/10.1002/14651858.CD001321.pub7).
 
 ---
 
+## Bebidas tradicionales con estos ingredientes
+
+La comparación de 20 bebidas tradicionales (agua de jamaica, çay turco, chocolate santafereño, avena colombiana, mors y otras) con estas 15 bebidas está en [bebidas-tradicionales.md](bebidas-tradicionales.md).
+
 ## Bebidas descartadas y por qué
 
 | Bebida | Motivo |
