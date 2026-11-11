@@ -84,7 +84,7 @@ Regla general: no des preparados con miel a menores de 12 meses.
 
 ## Recetas tipo de las revisiones fuera del libro
 
-Estas recetas no son del libro. Vienen de las revisiones de evidencia de la carpeta [evidencia/](evidencia/). Las reglas completas están en las secciones 12 a 16 de [SKILL.md](SKILL.md).
+Estas recetas no son del libro. Vienen de las revisiones de evidencia de la carpeta [evidencia/](evidencia/). Las reglas completas están en las secciones 12 a 17 de [SKILL.md](SKILL.md). Las bebidas 1 a 15 vienen de [evidencia/bebidas.md](evidencia/bebidas.md), que trae la receta completa y los DOI.
 
 | Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia (veredicto · nota) |
 |---|---|---|---|---|---|
@@ -92,6 +92,21 @@ Estas recetas no son del libro. Vienen de las revisiones de evidencia de la carp
 | Hoja de moringa cocida | Hoja en sopa o guiso | Hoja de moringa | 18 años | Hierve al menos 5 min. Si es polvo: registro INVIMA, 2–5 g/día, nunca crudo. No en embarazo. No uses raíz, corteza ni flor. | alimento · No trata anemia, diabetes ni hipertensión ([evidencia/moringa.md](evidencia/moringa.md)). |
 | Té de avena verde | Té | Avena verde (hierba seca) | Adultos | 3 g en 250 ml de agua hirviendo, tapado 10–15 min, 1 taza al día. Solo con causas médicas de fatiga descartadas. Si no mejora en 2 semanas, consulta. En celiaquía, solo producto certificado. | uso tradicional EMA · Apoyo para estrés leve y sueño; no trata la fatiga ([evidencia/fatiga.md](evidencia/fatiga.md)). |
 | Té de limonaria | Infusión | Hoja de limonaria (*Cymbopogon citratus*) | 2 años | 1 taza 2–3 veces al día (Vademécum Colombiano). No en lactancia. En el embarazo, sin aceite esencial ni dosis medicinales. Con enfermedad renal, evita el uso diario prolongado. Añade el limón al final y sírvelo el mismo día. | uso tradicional (Vademécum Colombiano) para gases y dispepsia · Contradicho para sueño y ansiedad ([evidencia/limonaria.md](evidencia/limonaria.md)). |
+| Bebida 1. Agua de jamaica sin azúcar | Infusión | Cáliz de jamaica | Adultos | 10 g por 1 L, 10 min tapado. No en embarazo. Con antihipertensivos, mide la presión. | respaldado con matices (media) · PAS −7,10 mmHg; dosis no establecida ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 2. Té verde | Té | Hoja de té verde | Adultos | 2 g en 250 ml a 80 °C, 3 min. Cafeína. Lejos de las comidas si hay anemia. No extractos en cápsulas. | respaldado con matices (baja-media) · LDL −0,64 mmol/L; PAS −3,18 mmHg (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 3. Té negro sin leche | Té | Hoja de té negro | Adultos | 2 g en 250 ml, 3–4 min. Sin leche. Cafeína y hierro como el té verde. | respaldado con matices (media) · LDL −0,43 mmol/L; PAS −1,85 mmHg (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 4. Cacao rico en flavanoles | Bebida caliente | Cacao en polvo natural | Adultos | 10 g en 250 ml, sin azúcar. Cafeína y teobromina. | respaldado (media) · PAS −1,76 mmHg; −4 mmHg en hipertensos (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 5. Jugo de remolacha | Jugo | Remolacha cruda | Adultos | 250 g licuados. No en lactantes (nitratos). Precaución con cálculos de oxalato. | respaldado con matices (baja) · PAS −4,4 mmHg a corto plazo ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 6. Jugo de granada | Jugo | Granada | Adultos | Unos 150 ml diluidos, sin azúcar. Cuenta el azúcar en diabetes. | respaldado con matices (media) · PAS −4,96 mmHg; PAD −2,01 mmHg ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 7. Salvado de avena | Bebida cocida | Salvado de avena | — | 3–3,5 g/día de betaglucano según etiqueta. En celiaquía, solo certificada. | respaldado (alta) · LDL −0,19 mmol/L (58 ECA) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 8. Jugo de arándano rojo | Jugo diluido | Arándano rojo 100 % | — | Sin azúcar. No trata una ITU activa. Sin beneficio en embarazo ni en mayores institucionalizados. | respaldado (media) · RR 0,74 en ITU recurrente; RR 0,46 en niños (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 9. Agua para cistitis recurrente | Agua | — | Adultas premenopáusicas | 1,5 L/día adicionales si bebe menos de 1,5 L. No con restricción de líquidos. | respaldado (media) · 1,7 frente a 3,2 cistitis/año (un ECA) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 10. Agua para cálculos renales | Agua | — | Adultos | Orina de 2 L/día o más. No con restricción de líquidos. | respaldado con matices (baja) · RR 0,45 de recurrencia (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 11. SRO de baja osmolaridad | Solución | Sobre OMS/UNICEF | Todas | Agua medida según el sobre; usar en 24 h. Sin azúcar añadido. Zinc en niños. Signos de alarma: consulta. | respaldado (alta) · OR 0,59 de líquidos IV no programados (Cochrane) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 12. Psyllium en agua | Fibra en agua | Cáscara de psyllium | Adultos | 5 g en 250 ml + 1 vaso de agua; subir a 10 g/día. No con disfagia u obstrucción. | respaldado (media) · respuesta RR 1,48 con >10 g/día ≥4 semanas ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 13. Té de manzanilla | Té | Flor de manzanilla | Adultas posparto | 2 g en 250 ml, 10 min, antes de dormir. No con alergia a asteráceas. En lactancia, suave y con valoración. | respaldado con matices (baja) · mejor sueño a 2 semanas, no a 4 (un ECA) ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 14. Toronjil | Té | Hoja de toronjil | Adultos | 2 g en 250 ml, 10 min. No es tratamiento de ansiedad. | sin evidencia suficiente para el té (baja) · solo extracto estandarizado, efecto agudo ([evidencia/bebidas.md](evidencia/bebidas.md)). |
+| Bebida 15. Leche chocolatada | Bebida fría | Leche y cacao | Deportistas | 300 ml tras el ejercicio. Azúcar: no para uso diario sedentario. | respaldado con matices (baja) · igual o algo mejor que otras bebidas deportivas ([evidencia/bebidas.md](evidencia/bebidas.md)). |
 
 ## Conversión de unidades
 

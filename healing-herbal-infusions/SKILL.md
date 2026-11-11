@@ -191,6 +191,18 @@ Revisión de evidencia del 2026-11-11 en [`evidencia/limonaria.md`](evidencia/li
 - **Aceite esencial en la piel:** el citral causa dermatitis de contacto. Haz siempre la prueba en la piel.
 - **En cocina:** el citral se degrada con el ácido y la luz. Añade el limón al final, guarda la infusión lejos de la luz y úsala el mismo día. Las técnicas moleculares con limonaria están en el informe.
 
+### 17. Bebidas con evidencia clínica (fuera del libro)
+
+Revisión del 2026-11-11 en [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con ECA o revisión sistemática hechos con la bebida o una forma líquida equivalente. Las 15 están en la tabla de recetas tipo de [`cheatsheet.md`](cheatsheet.md). Reglas:
+
+- **Di siempre el tamaño del efecto.** En la presión arterial es pequeño y de corto plazo: jamaica −7 mmHg, granada −5, remolacha −4, té verde −3, té negro −2, cacao −2. Ninguna bebida reemplaza un antihipertensivo ni tiene datos de infarto o ACV.
+- **Mayor respaldo:** SRO de baja osmolaridad (diarrea), bebida con 3–3,5 g/día de betaglucano de avena (LDL), arándano rojo sin azúcar (prevención de ITU en mujeres con ITU recurrente, niños y tras intervención urológica), agua adicional (cistitis recurrente y cálculos) y psyllium de más de 10 g/día por 4 semanas o más (estreñimiento crónico).
+- **El arándano no trata una ITU activa.** No tiene beneficio demostrado en el embarazo ni en adultos mayores institucionalizados.
+- **Té negro sin leche:** en un ECA pequeño, la leche anuló la mejora vascular.
+- **Toronjil:** la evidencia es de un extracto estandarizado, no del té casero. No lo presentes como ansiolítico.
+- **Plan de agua:** no lo des si hay insuficiencia cardiaca, enfermedad renal con restricción de líquidos o hiponatremia.
+- Las dosis de jamaica, té y cacao son preparaciones de cocina: los estudios no fijaron una dosis única. Dilo.
+
 ---
 
 ## Seguridad clínica
@@ -274,7 +286,7 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | 6 | [`chapters/ch06-wellbeing.md`](chapters/ch06-wellbeing.md) | Bienestar: nervinos, adaptógenos, sueño, ánimo, baños de sales, vahos |
 
 Archivos de apoyo:
-- [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia. Al final tiene las 4 recetas tipo de las revisiones fuera del libro (diarrea, moringa, fatiga y limonaria).
+- [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia. Al final tiene las recetas tipo de las revisiones fuera del libro: diarrea, moringa, fatiga, limonaria y 15 bebidas con evidencia clínica.
 - [`evidencia/recetas.md`](evidencia/recetas.md): verificación de las 53 recetas por capítulo, con veredicto, seguridad nueva, referencias y log de búsqueda.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
@@ -282,6 +294,7 @@ Archivos de apoyo:
 - [`evidencia/moringa.md`](evidencia/moringa.md): revisión de moringa con composición, evidencia por desenlace, seguridad, afirmaciones comerciales y receta tipo.
 - [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
+- [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
 
 ## Alcance y límites
 
