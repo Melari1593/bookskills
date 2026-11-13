@@ -53,6 +53,18 @@ El PDF fuente es un OCR de mala calidad: las cifras clínicas ilegibles se omiti
 
 Los títulos de artículos y secciones van en inglés, como en el libro; los resúmenes están en español y redactados con palabras propias. El libro no numera las secciones, así que la numeración es propia del grafo; las páginas son las de inicio de cada artículo según el índice analítico. Los artículos son independientes entre sí: las conexiones son una interpretación pedagógica de cómo se complementan los temas.
 
+## Grafo de Strategic Analytics (HBR Insights You Need)
+
+[`grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.html`](grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.html) es el mapa interactivo de *Strategic Analytics: The Insights You Need from Harvard Business Review* (Harvard Business Review Press, 2020): la introducción de Thomas H. Davenport y 13 artículos, 65 secciones, 48 ideas clave, 7 figuras o tablas y 131 prerrequisitos, en 4 bloques (introducción; fundamentos de la analítica; organización guiada por la analítica; aplicar la analítica). Tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_hbr_strategic_analytics.json`](grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.json).
+
+Los títulos de artículos y secciones van en inglés, como en el libro; los resúmenes están en español y redactados con palabras propias. El EPUB no tiene páginas. Varios artículos no tienen subtítulos: sus secciones y toda la numeración son propias del grafo. Los artículos son independientes entre sí: las conexiones son una interpretación pedagógica de cómo se complementan los temas.
+
+## Grafo de Unprepared to Entrepreneur
+
+[`grafos/unprepared-to-entrepreneur/grafo_unprepared_to_entrepreneur.html`](grafos/unprepared-to-entrepreneur/grafo_unprepared_to_entrepreneur.html) es el mapa interactivo de *Unprepared to Entrepreneur: A Method to the Madness of Starting Your Own Business* (Sonya Barlow, Kogan Page, 2021): 11 capítulos, 90 secciones (casos de estudio incluidos), 64 herramientas, 13 figuras o tablas y 136 prerrequisitos, en 6 bloques (punto de partida; idea, cliente y modelo; visibilidad y comunidad; equipo y liderazgo; salud y dinero; ventas y reflexiones finales). Cada herramienta (Lean Canvas, regla 3-2-1, tipos de impostor, regla 50:30:20…) lleva su esquema en una línea. Los datos están en [`grafo_unprepared_to_entrepreneur.json`](grafos/unprepared-to-entrepreneur/grafo_unprepared_to_entrepreneur.json).
+
+Los títulos y los resúmenes están en español y redactados con palabras propias. El EPUB no tiene páginas y el libro no numera sus secciones: la numeración es propia del grafo. Quedaron fuera las secciones «Afterthoughts», los cuadernos de trabajo, las referencias y el índice. Las conexiones son una interpretación pedagógica.
+
 ## Grafo de The Five Elements Cookbook
 
 [`grafos/five-elements-cookbook/grafo_five_elements_cookbook.html`](grafos/five-elements-cookbook/grafo_five_elements_cookbook.html) es el mapa interactivo de *The Five Elements Cookbook: A Guide to Traditional Chinese Medicine with Recipes for Everyday Healing* (Zoey Xinyi Gong): 25 capítulos, 165 secciones, 26 conceptos clave, 2 tablas y 703 prerrequisitos, en 5 bloques (fundamentos de la MTC; propiedades de los alimentos; estaciones y constituciones; las 50 hierbas; las 55 recetas). Cada hierba lleva su naturaleza, sabor, meridianos y dosis máxima diaria según el libro, y cada receta sus funciones, energética, clima y las hierbas que usa. Tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_five_elements_cookbook.json`](grafos/five-elements-cookbook/grafo_five_elements_cookbook.json).

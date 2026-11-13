@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Strategic Analytics (HBR Insights You Need) — grafo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Strategic Analytics (HBR Insights You Need) — grafo", "subtitle": "Harvard Business Review Press, 2020: introducción y 13 artículos, sus secciones, ideas clave y cómo se conectan", "language": "es", "chapterLabel": "Artículo", "sectionLabel": "Sección", "itemLabel": "Idea clave", "itemLabelPlural": "Ideas clave", "resourceLabel": "Figura o tabla", "resourceLabelPlural": "Figuras y tablas", "searchHint": "Buscar: última milla, analistas, matriz 2×2…"}, "blocks": {"intro": {"name": "Introducción"}, "bases": {"name": "Sección 1 · Fundamentos de la analítica"}, "org": {"name": "Sección 2 · Organización guiada por la analítica"}, "apli": {"name": "Sección 3 · Aplicar la analítica"}}, "chapters": [{"num": "Int", "title": "What Makes Analytics Strategic", "block": "intro", "summary": "Thomas H. Davenport: la analítica pasa de táctica y retrospectiva a estratégica cuando hace posible el modelo de negocio. Exige datos y tecnología, talento y, sobre todo, cultura.", "sections": [{"num": "I.1", "title": "From Tactical to Strategic Analytics", "items": ["analitica_estrategica"], "summary": "Evolución en 60 años; el caso Capital One y su estrategia basada en información."}, {"num": "I.2", "title": "Common Elements of Strategic Analytics", "items": ["tres_elementos"], "summary": "La mayoría de las grandes empresas encuestadas aún no tiene una cultura guiada por datos."}, {"num": "I.3", "title": "Are You Prepared?", "items": ["preguntas_preparacion"], "summary": "La analítica es sobre todo una cuestión de personas."}]}, {"num": 1, "title": "The Five Essential Elements for Succeeding with Data", "block": "bases", "summary": "Thomas C. Redman: para que los datos rindan hacen falta cinco componentes alineados; si falta uno, el esfuerzo completo se resiente.", "sections": [{"num": "1.1", "title": "Five Components, Aligned", "items": ["cinco_elementos"]}, {"num": "1.2", "title": "Quality Data", "summary": "Datos bien definidos, relevantes, fáciles de hallar y confiables; idealmente parte propietaria. Los silos y la mala calidad son la norma."}, {"num": "1.3", "title": "Means to Monetize", "items": ["monetizar"]}, {"num": "1.4", "title": "Organizational Capabilities", "summary": "Talento técnico y habilidades en todo el organigrama, estructura sin silos y una cultura que trate los datos como activo."}, {"num": "1.5", "title": "Technologies at Scale", "summary": "Necesaria pero solo un componente: muchas empresas esperan demasiado de la tecnología."}, {"num": "1.6", "title": "Defense", "items": ["defensa_datos"]}]}, {"num": 2, "title": "Understanding the Types of Data and How They’re Captured", "block": "bases", "summary": "Hugo Bowne-Anderson: la alfabetización en datos permite hacer las preguntas correctas aunque no trabajes con datos. Se centra en cómo se generan y almacenan y en qué formas tienen.", "sections": [{"num": "2.1", "title": "What We Talk About When We Talk About Data", "items": ["cinco_conceptos"], "summary": "Ejemplo de lectura de modelos probabilísticos en la elección de 2016."}, {"num": "2.2", "title": "How Data Is Generated, Collected, and Stored", "items": ["nube_almacenamiento"]}, {"num": "2.3", "title": "The Feel of Data", "items": ["tres_formas", "bolsa_palabras"]}]}, {"num": 3, "title": "The Right Way to Deploy Predictive Analytics", "block": "bases", "summary": "Eric Siegel: tres errores comunes al formar equipos en analítica predictiva y su remedio: objetivos claros, habilidades antes que software y planificar el despliegue antes de calcular.", "sections": [{"num": "3.1", "title": "Don’t Fall for Buzzwords—Clarify Your Objective", "items": ["analitica_predictiva"]}, {"num": "3.2", "title": "Don’t Lead with Software Selection—Team Skills Come First", "summary": "La herramienta de aprendizaje automático es una pequeña parte de un proceso organizacional."}, {"num": "3.3", "title": "Don’t Leap to the Number Crunching—Strategically Plan the Deployment", "items": ["cinco_pasos_despliegue", "consultor_externo"]}]}, {"num": 4, "title": "What Great Data Analysts Do", "block": "bases", "summary": "Cassie Kozyrkov: analítica, estadística y aprendizaje automático son disciplinas distintas. Los analistas, rápidos y amplios, descubren qué problemas merecen el esfuerzo de los especialistas.", "sections": [{"num": "4.1", "title": "Analytics as a Second-Class Citizen", "items": ["tres_disciplinas"]}, {"num": "4.2", "title": "Excellence in Statistics: Rigor", "summary": "Inferir con seguridad más allá de los datos y frenar conclusiones precipitadas."}, {"num": "4.3", "title": "Excellence in Machine Learning: Performance", "summary": "Prueba y error persistente hasta lograr modelos fiables, escalables y mantenibles en producción."}, {"num": "4.4", "title": "Wide Versus Deep", "items": ["ancho_profundo"]}, {"num": "4.5", "title": "Excellence in Analytics: Speed", "summary": "Explorar grandes conjuntos de datos rápido y visualizarlos bien para encontrar lo desconocido."}, {"num": "4.6", "title": "Sloppy Nonsense or Stellar Storytelling?", "items": ["regla_analista"]}, {"num": "4.7", "title": "Analytics for Decision Making", "items": ["flujo_decisor"]}, {"num": "4.8", "title": "Analytics for Machine Learning and AI", "summary": "El analista recorre el 'almacén' de datos y señala qué variables vale la pena probar."}, {"num": "4.9", "title": "The Dangers of Underappreciating Analysts", "summary": "Ante la duda, contratar analistas antes que otros perfiles."}]}, {"num": 5, "title": "What Data Is and Isn’t Good For", "block": "bases", "summary": "Joel Shapiro: los datos revelan el 'qué' de un problema de conducta, pero rara vez el 'por qué'; hay que combinarlos con investigación cualitativa y pruebas aleatorizadas.", "sections": [{"num": "5.1", "title": "Where Big Data Shines", "summary": "Brilla en sistemas técnicos (mantenimiento predictivo) y rinde menos al influir en conductas humanas."}, {"num": "5.2", "title": "Five Considerations", "items": ["que_vs_porque", "cualitativo", "prueba_aleatorizada"], "summary": "Incluye los factores temporales: el caso del club automovilístico y los tiempos de espera."}]}, {"num": 6, "title": "Prioritize Which Data Skills Your Company Needs", "block": "org", "summary": "Chris Littlewood: no se puede aprender todo; una matriz de tiempo de aprendizaje frente a utilidad ordena qué habilidades de datos priorizar.", "sections": [{"num": "6.1", "title": "Time-Utility Analysis", "items": ["matriz_tiempo_utilidad"]}, {"num": "6.2", "title": "Plotting Data Skills", "summary": "Aplicado a técnicas, no a herramientas; en Filtered la prioridad resultó ser la visualización de datos."}]}, {"num": 7, "title": "How a German Manufacturing Company Set Up Its Analytics Lab", "block": "org", "summary": "Goby, Brandt y Neumann: cómo ZF montó un laboratorio de datos en tres etapas y qué factores lo hicieron funcionar.", "sections": [{"num": "7.1", "title": "Focus on the Right Internal Customers", "summary": "Empezar por producción y calidad, donde el impacto era más inmediato."}, {"num": "7.2", "title": "Identifying High-Impact Problems", "items": ["criterios_proyecto"]}, {"num": "7.3", "title": "Execution", "items": ["regla_tres_meses"]}, {"num": "7.4", "title": "Key Success Factors", "items": ["factores_exito_lab"]}, {"num": "7.5", "title": "Problems Solved", "summary": "Alerta temprana de rotura de anillos y reducción de picos de demanda eléctrica."}]}, {"num": 8, "title": "Cloud Computing Is Helping Smaller, Newer Firms Compete", "block": "org", "summary": "Bloom y Pierri: a diferencia del PC o el comercio electrónico, la nube la adoptan primero las empresas pequeñas y jóvenes; democratiza la computación.", "sections": [{"num": "8.1", "title": "Democratizing Computing", "items": ["computacion_nube"], "summary": "Casos KenSci y Pivothead; datos de más de 150.000 empresas de EE. UU."}, {"num": "8.2", "title": "The Adoption of Cloud Technology Across Industries in the United States", "summary": "Crecimiento en todos los sectores y condados entre 2010 y 2016."}, {"num": "8.3", "title": "Small, Young, and Cloudy", "items": ["curva_adopcion"]}]}, {"num": 9, "title": "Data Science and the Art of Persuasion", "block": "org", "summary": "Scott Berinato: la ciencia de datos falla en la 'última milla', al comunicar a quien decide. La solución es dejar de buscar unicornios y armar equipos por talentos.", "sections": [{"num": "9.1", "title": "The Last-Mile Problem", "items": ["ultima_milla"]}, {"num": "9.2", "title": "Why Are Things Like This?", "items": ["unicornio"]}, {"num": "9.3", "title": "How Communication Fails", "items": ["tres_fallos"]}, {"num": "9.4", "title": "Define Talents, Not Team Members", "items": ["seis_talentos"]}, {"num": "9.5", "title": "Hire to Create a Portfolio of Necessary Talents", "summary": "Cubrir talentos con empleados o contratistas; valorar perfiles mixtos."}, {"num": "9.6", "title": "Expose Team Members to Talents They Don’t Have", "summary": "Aprender lo básico del otro campo crea empatía y confianza."}, {"num": "9.7", "title": "Structure Projects Around Talents", "summary": "Gestión ágil para configurar y reconfigurar talentos en cada fase."}, {"num": "9.8", "title": "Putting It All Together", "items": ["reglas_equipo"]}]}, {"num": 10, "title": "How Vineyard Vines Uses Analytics to Win Over Customers", "block": "apli", "summary": "Dave Sutton: una marca de ropa sustituye los envíos masivos idénticos por marketing uno a uno con un motor de decisión basado en IA.", "sections": [{"num": "10.1", "title": "From Batch-and-Blast to One-to-One", "items": ["batch_blast"]}, {"num": "10.2", "title": "An AI-Driven Decisioning Engine", "items": ["motor_decision", "audiencias_predictivas"]}, {"num": "10.3", "title": "Holiday Campaigns Expand Reach Without Sacrificing Relevance", "summary": "Más destinatarios con mejor apertura e ingreso por correo."}, {"num": "10.4", "title": "A Seasonal Campaign Generates Outsized ROI Through Enhanced Cross-Channel Marketing", "summary": "A quien no abre correos se le busca en otro canal."}, {"num": "10.5", "title": "A Women’s Performance Campaign Far Outperforms Expectations", "summary": "Sin historial de compras, la afinidad predicha sustituye a la segmentación tradicional."}, {"num": "10.6", "title": "The Decisioning Engine Helps Find New Customer Segments", "items": ["joyas_ocultas"]}, {"num": "10.7", "title": "Lessons for Other Companies", "summary": "Uno a uno, mezcla de canales por cliente y comprensión de la salud del cliente."}]}, {"num": 11, "title": "How to Use Employee Data Responsibly", "block": "apli", "summary": "Shook, Sage-Gavin y Cantrell: los empleados aceptan que se usen sus datos si obtienen beneficio; perder su confianza cuesta crecimiento. Tres acciones para un uso ético.", "sections": [{"num": "11.1", "title": "The Stakes of Workforce Data", "items": ["dividendo_confianza"]}, {"num": "11.2", "title": "Give Employees More Control", "items": ["control_empleados"]}, {"num": "11.3", "title": "Create a System of Checks and Balances", "items": ["contrapesos"]}, {"num": "11.4", "title": "Use Data to Elevate People, Not Penalize Them", "items": ["elevar_no_penalizar"]}, {"num": "11.5", "title": "Managing the Privacy-Performance Trade-Off", "items": ["privacidad_rendimiento"]}]}, {"num": 12, "title": "What AI-Driven Decision Making Looks Like", "block": "apli", "summary": "Eric Colson: del juicio humano a decisiones apoyadas en datos y de ahí a flujos guiados por IA, donde las personas aportan estrategia y valores.", "sections": [{"num": "12.1", "title": "Human Judgment as Central Processor", "items": ["sesgos_cognitivos"]}, {"num": "12.2", "title": "Data-Supported Decision Making", "items": ["data_driven"]}, {"num": "12.3", "title": "Bringing AI into the Workflow", "items": ["ai_driven"]}, {"num": "12.4", "title": "Leveraging Both AI and Human Processors in the Workflow", "items": ["ia_humano"]}, {"num": "12.5", "title": "The Next Phase in Our Evolution", "summary": "La selección operará entre organizaciones: surgirán empresas nativas en IA y juicio humano."}]}, {"num": 13, "title": "How Companies Can Use the Data They Collect to Further the Public Good", "block": "apli", "summary": "Glaeser, Kim y Luca: los datos privados (como las reseñas de Yelp) pueden complementar las estadísticas públicas si se reutilizan con rigor; también benefician a la empresa.", "sections": [{"num": "13.1", "title": "Repurposing Private Data", "items": ["reutilizar_datos"]}, {"num": "13.2", "title": "Principle 1: Understand Your Unique Perspective", "items": ["perspectiva_unica"]}, {"num": "13.3", "title": "Principle 2: Develop Credible Analyses", "items": ["analisis_creible"]}, {"num": "13.4", "title": "Principle 3: Build Partnerships", "items": ["alianzas"]}]}], "items": {"analitica_estrategica": {"title": "Analítica estratégica", "formula": "Táctica (retrospectiva) → estratégica (hace posible el modelo de negocio)", "summary": "Analítica que sostiene la estrategia o el modelo de negocio, no solo informes rutinarios."}, "tres_elementos": {"title": "Tres elementos comunes", "formula": "Datos y tecnología · Talento · Cultura guiada por datos", "summary": "La cultura, impulsada desde la dirección, es el más difícil de lograr."}, "preguntas_preparacion": {"title": "Preguntas de preparación", "formula": "Habilidades · Talento · Tecnología · Problemas relevantes · Decisiones con datos · Cultura", "summary": "Autoevaluación para saber si la organización está lista para la analítica estratégica."}, "cinco_elementos": {"title": "Cinco elementos esenciales", "formula": "Datos de calidad · Forma de monetizar · Capacidades organizativas · Tecnología a escala · Defensa", "summary": "Deben estar razonablemente alineados entre sí; faltar uno compromete todo."}, "monetizar": {"title": "Forma de monetizar los datos", "formula": "Vender datos · Integrarlos en productos · Analítica · Mejores decisiones", "summary": "Requiere una dirección de negocio clara y descendente, no solo 'usar analítica donde se pueda'."}, "defensa_datos": {"title": "Defensa", "formula": "Ley y regulación · Seguridad · Privacidad · Relación con clientes · Competencia", "summary": "Minimizar riesgos: rara vez genera dinero, pero una mala defensa cuesta mucho."}, "cinco_conceptos": {"title": "Cinco conceptos de alfabetización en datos", "formula": "Generación y almacenamiento · Cómo se ven los datos · Intuición estadística · Modelos y ML · Ética", "summary": "Los cuatro primeros siguen la jerarquía de necesidades de la ciencia de datos (Rogati); el autor añade la ética."}, "nube_almacenamiento": {"title": "La nube como espacio físico", "formula": "Nube pública (el proveedor gestiona) vs privada (la empresa gestiona)", "summary": "Los datos en la nube están en servidores reales y sujetos a las leyes del país (por ejemplo, el RGPD)."}, "tres_formas": {"title": "Tres formas de los datos", "formula": "Tabulares · Imágenes (matriz de píxeles RGB) · No estructurados (texto, HTML)", "summary": "Los no estructurados son la mayoría y hay que estructurarlos antes de analizarlos."}, "bolsa_palabras": {"title": "Bolsa de palabras", "formula": "Texto → conteo de palabras → números para el modelo", "summary": "Método simple para convertir texto en datos; ignora el orden de las palabras."}, "analitica_predictiva": {"title": "Analítica predictiva", "formula": "Datos de experiencia → modelo → probabilidad de conducta individual → acción", "summary": "Lo más accionable de la ciencia de datos; en negocio equivale a aprendizaje automático."}, "cinco_pasos_despliegue": {"title": "Cinco pasos del proyecto predictivo", "formula": "Objetivo de negocio → objetivo de predicción → datos de entrenamiento → aprendizaje automático → despliegue", "summary": "Se planifica hacia atrás desde el despliegue; la preparación de datos es la mayor carga y hay mucha iteración."}, "consultor_externo": {"title": "Experto externo en los pilotos", "formula": "Equipo interno: pasos 1, 3 y 5 · Experto: paso 4 y guía en 2–3", "summary": "En los primeros proyectos conviene un especialista cuantitativo para el modelado."}, "tres_disciplinas": {"title": "Tres disciplinas distintas", "formula": "Estadística = rigor · Aprendizaje automático = rendimiento · Analítica = velocidad", "summary": "Comparten métodos pero no objetivos; la excelencia en una supera la mediocridad en dos."}, "ancho_profundo": {"title": "Ancho frente a profundo", "formula": "Analistas (ancho y superficial) encuentran el problema; especialistas (estrecho y profundo) lo resuelven", "summary": "Sin analistas, los especialistas pueden resolver con cuidado los problemas equivocados."}, "regla_analista": {"title": "Regla de oro del analista", "formula": "No concluir más allá de los datos: 'nos inspira a preguntarnos…'", "summary": "El analista cuenta lo que hay y genera hipótesis; no las prueba."}, "flujo_decisor": {"title": "El decisor como filtro", "formula": "Analista explora → decisor elige → estadístico verifica", "summary": "Separa la exploración del rigor y evita trabajo estadístico inútil."}, "que_vs_porque": {"title": "El qué frente al porqué", "formula": "Los datos muestran el qué; rara vez el porqué", "summary": "Suponer causas a partir de patrones es solo adivinar."}, "cualitativo": {"title": "Investigación cualitativa", "formula": "Entrevistas · Grupos focales · Observación", "summary": "Única forma de descubrir el porqué de conductas, considerando también factores temporales."}, "prueba_aleatorizada": {"title": "Prueba aleatorizada", "formula": "Grupo con solución vs grupo sin solución → ¿resuelve el problema?", "summary": "La manera más fiable de saber si una solución funciona."}, "matriz_tiempo_utilidad": {"title": "Matriz tiempo–utilidad", "formula": "Aprender (útil, rápido) · Planificar (útil, lento) · Hojear (poco útil, rápido) · Ignorar (poco útil, lento)", "summary": "Matriz 2×2 para priorizar qué habilidades de datos desarrollar."}, "criterios_proyecto": {"title": "Criterios para elegir proyectos", "formula": "Problema bien definido · Datos duros disponibles y de calidad · Equipo motivado", "summary": "Modelo de evaluación del laboratorio de ZF para priorizar proyectos de alto impacto."}, "regla_tres_meses": {"title": "Tres meses y derecho a cancelar", "formula": "Ejecución ≤ 3 meses + el equipo puede cancelar con justificación", "summary": "Esta 'opción nuclear' aumentó el foco y los proyectos terminados."}, "factores_exito_lab": {"title": "Factores de éxito del laboratorio", "formula": "Apoyo directivo · Autoridad externa (universidad) · Expertos del dominio", "summary": "La disponibilidad de expertos del dominio es el cuello de botella más común."}, "computacion_nube": {"title": "Computación en la nube", "formula": "Alquilar capacidad bajo demanda en vez de infraestructura propia", "summary": "Reduce costos fijos y permite escalar y experimentar rápido."}, "curva_adopcion": {"title": "La curva de adopción de la nube", "formula": "Adopción alta en empresas muy pequeñas y en grandes; mínima hacia ~100 empleados", "summary": "Las empresas jóvenes también adoptan antes: patrón opuesto al del PC y el comercio electrónico."}, "ultima_milla": {"title": "El problema de la última milla", "formula": "Buen análisis + mala comunicación = decisión no tomada", "summary": "El valor se pierde al explicar los hallazgos a quien decide."}, "unicornio": {"title": "El mito del unicornio", "formula": "Datos + análisis + negocio + diseño + presentación en una sola persona", "summary": "Desde 'click and viz' se espera que el científico de datos también comunique; esa combinación es rara."}, "tres_fallos": {"title": "Tres formas de fallar al comunicar", "formula": "La maldición del estadístico · La fábrica y el capataz · La verdad conveniente", "summary": "Escenarios típicos de desconexión entre equipo de datos y decisores."}, "seis_talentos": {"title": "Seis talentos centrales", "formula": "Gestión de proyecto · Preparación de datos · Análisis · Experiencia del negocio · Diseño · Narrativa", "summary": "Un talento no es una persona: una persona puede tener varios y varios pueden cubrir uno."}, "reglas_equipo": {"title": "Reglas para equipos de datos", "formula": "Un responsable con poder · Talento líder y de apoyo · Ubicación común · Equipo real sin traspasos · Plantillas reutilizables", "summary": "Cómo poner en marcha un equipo por talentos."}, "batch_blast": {"title": "Envío masivo (batch-and-blast)", "formula": "El mismo mensaje a millones", "summary": "Práctica que contradecía el principio de comunicación auténtica de la marca."}, "motor_decision": {"title": "Motor de decisión con IA", "formula": "Conducta del cliente × catálogo → qué producto, cuándo y por qué canal", "summary": "Plataforma (Bluecore) que dispara campañas personalizadas por cliente."}, "audiencias_predictivas": {"title": "Audiencias predictivas", "formula": "Conducta en línea + compras + nivel de vínculo → mensaje personalizado", "summary": "Permite segmentar incluso productos nuevos sin historial de compras."}, "joyas_ocultas": {"title": "Joyas ocultas", "formula": "Productos con poco tráfico y alta conversión", "summary": "Detectarlos indica a qué productos dirigir más tráfico."}, "dividendo_confianza": {"title": "Dividendo de confianza", "formula": "Más confianza de los empleados → más crecimiento de ingresos", "summary": "Los empleados aceptan compartir datos si obtienen beneficio; perder su confianza tiene un costo medible."}, "control_empleados": {"title": "Más control para los empleados", "formula": "Optar por participar · Ver, gestionar y borrar sus datos", "summary": "Una nueva relación de 'dar y recibir' con la plantilla."}, "contrapesos": {"title": "Sistema de contrapesos", "formula": "Un directivo responsable + coalición (RR. HH., riesgo, legal) + participación de empleados", "summary": "Gobierno ético de los datos del lugar de trabajo."}, "elevar_no_penalizar": {"title": "Elevar, no penalizar", "formula": "Datos para desarrollar y reducir sesgos, no para vigilar", "summary": "El seguimiento en tiempo real con fines punitivos eleva el estrés y la rotación."}, "privacidad_rendimiento": {"title": "Privacidad frente a rendimiento", "formula": "¿Que podamos significa que debamos?", "summary": "La confianza debe estar al nivel del crecimiento y la rentabilidad en la estrategia."}, "sesgos_cognitivos": {"title": "Sesgos cognitivos", "formula": "Heurísticas de supervivencia → juicios sesgados", "summary": "La intuición humana es rápida pero falible como procesador central de decisiones."}, "data_driven": {"title": "Decisión guiada por datos", "formula": "Datos → resúmenes → juicio humano", "summary": "Mejora la intuición, pero los resúmenes pierden información y siguen expuestos a sesgos."}, "ai_driven": {"title": "Decisión guiada por IA", "formula": "Datos → IA como procesador principal → decisión", "summary": "Para decisiones rutinarias con datos estructurados; el objetivo es decidir mejor, no solo automatizar."}, "ia_humano": {"title": "IA y personas combinadas", "formula": "La IA genera opciones → las personas eligen con estrategia, valores y mercado", "summary": "Las personas no tratan con los datos, sino con las posibilidades que produce la IA."}, "reutilizar_datos": {"title": "Reutilizar datos para el bien público", "formula": "Datos de plataforma + estadística oficial → información más rápida y fina", "summary": "También da a la empresa nuevos conocimientos, relaciones y reconocimiento de marca."}, "perspectiva_unica": {"title": "Entender tu perspectiva única", "formula": "Mejor dato disponible → referencia aceptada → meta estrecha", "summary": "Comprobar dónde los datos propios aportan valor real."}, "analisis_creible": {"title": "Análisis creíbles", "formula": "Validar contra la referencia · Explicar diferencias · Transparencia sobre límites", "summary": "Si las diferencias son irreconciliables, reconsiderar el valor de los datos."}, "alianzas": {"title": "Construir alianzas", "formula": "Investigadores externos + responsables de políticas públicas", "summary": "Aportan credibilidad e interés general que el equipo interno no tiene."}}, "resources": [{"id": "F1-1", "title": "Figura 1-1 · Cinco elementos esenciales", "usedBy": ["1.1"]}, {"id": "F6-2", "title": "Figura 6-2 · Matriz de aprendizaje 2×2", "usedBy": ["6.1"]}, {"id": "F6-3", "title": "Figura 6-3 · Ejemplo de habilidades en la matriz", "usedBy": ["6.2"]}, {"id": "F8-2", "title": "Figuras 8-1 a 8-3 · Adopción de la nube", "usedBy": ["8.2", "8.3"]}, {"id": "T9-1", "title": "Tabla 9-1 · Talentos centrales para comunicar datos", "usedBy": ["9.4", "9.7"]}, {"id": "F9-1", "title": "Figuras 9-1 y 9-2 · Tablero de talentos", "usedBy": ["9.5", "9.7"]}, {"id": "F12", "title": "Figuras 12-1 a 12-4 · Modelos de decisión", "usedBy": ["12.1", "12.2", "12.3", "12.4"]}], "requires": {"chapters": {"1": ["Int"], "2": ["Int"], "3": [2], "4": [2], "5": [4], "6": [2], "7": [1, 3], "8": [2], "9": [4], "10": [3], "11": [1], "12": [4, 5], "13": [1]}, "sections": {"I.2": ["I.1"], "I.3": ["I.2"], "1.1": ["I.2"], "1.3": ["1.1"], "1.6": ["1.1"], "2.1": ["I.3"], "2.2": ["2.1"], "2.3": ["2.1"], "3.1": ["2.1"], "3.3": ["3.1", "3.2"], "4.1": ["2.1"], "4.4": ["4.1"], "4.6": ["4.5"], "4.7": ["4.6", "4.4", "4.2"], "4.8": ["4.3", "4.5"], "5.2": ["4.6", "5.1"], "6.1": ["2.1"], "6.2": ["6.1"], "7.2": ["7.1", "1.1"], "7.3": ["7.2", "3.3"], "7.4": ["7.3"], "7.5": ["7.3"], "8.1": ["2.2"], "8.2": ["8.1"], "8.3": ["8.2"], "9.1": ["4.7"], "9.2": ["9.1"], "9.3": ["9.1"], "9.4": ["9.2"], "9.5": ["9.4"], "9.6": ["9.4"], "9.7": ["9.4"], "9.8": ["9.7"], "10.1": ["3.1"], "10.2": ["10.1", "3.3"], "10.3": ["10.2"], "10.4": ["10.2"], "10.5": ["10.2"], "10.6": ["10.2"], "10.7": ["10.6"], "11.1": ["1.6"], "11.2": ["11.1"], "11.3": ["11.1"], "11.4": ["11.2"], "11.5": ["11.3", "11.4"], "12.2": ["12.1", "5.2"], "12.3": ["12.2", "3.1"], "12.4": ["12.3"], "12.5": ["12.4"], "13.1": ["1.3", "1.6"], "13.2": ["13.1"], "13.3": ["13.2"], "13.4": ["13.3"]}, "items": {"tres_elementos": ["analitica_estrategica"], "preguntas_preparacion": ["tres_elementos"], "cinco_elementos": ["tres_elementos"], "monetizar": ["cinco_elementos"], "defensa_datos": ["cinco_elementos"], "cinco_conceptos": ["preguntas_preparacion"], "nube_almacenamiento": ["cinco_conceptos"], "tres_formas": ["cinco_conceptos"], "bolsa_palabras": ["tres_formas"], "analitica_predictiva": ["cinco_conceptos"], "cinco_pasos_despliegue": ["analitica_predictiva"], "consultor_externo": ["cinco_pasos_despliegue"], "tres_disciplinas": ["cinco_conceptos"], "ancho_profundo": ["tres_disciplinas"], "regla_analista": ["tres_disciplinas"], "flujo_decisor": ["regla_analista", "ancho_profundo"], "que_vs_porque": ["regla_analista"], "cualitativo": ["que_vs_porque"], "prueba_aleatorizada": ["cualitativo"], "matriz_tiempo_utilidad": ["cinco_conceptos"], "criterios_proyecto": ["cinco_elementos"], "regla_tres_meses": ["criterios_proyecto"], "factores_exito_lab": ["regla_tres_meses"], "computacion_nube": ["nube_almacenamiento"], "curva_adopcion": ["computacion_nube"], "ultima_milla": ["flujo_decisor"], "unicornio": ["ultima_milla"], "tres_fallos": ["ultima_milla"], "seis_talentos": ["unicornio"], "reglas_equipo": ["seis_talentos"], "motor_decision": ["analitica_predictiva", "batch_blast"], "audiencias_predictivas": ["motor_decision"], "joyas_ocultas": ["audiencias_predictivas"], "dividendo_confianza": ["defensa_datos"], "control_empleados": ["dividendo_confianza"], "contrapesos": ["dividendo_confianza"], "elevar_no_penalizar": ["control_empleados"], "privacidad_rendimiento": ["contrapesos", "elevar_no_penalizar"], "data_driven": ["sesgos_cognitivos", "prueba_aleatorizada"], "ai_driven": ["data_driven", "analitica_predictiva"], "ia_humano": ["ai_driven"], "reutilizar_datos": ["monetizar", "defensa_datos"], "perspectiva_unica": ["reutilizar_datos"], "analisis_creible": ["perspectiva_unica"], "alianzas": ["analisis_creible"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

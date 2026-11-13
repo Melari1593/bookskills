@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unprepared to Entrepreneur como grafo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Unprepared to Entrepreneur como grafo", "subtitle": "Sonya Barlow (Kogan Page, 2021): 11 capítulos, secciones, herramientas, casos y figuras", "language": "es", "itemLabel": "Herramienta", "itemLabelPlural": "Herramientas", "resourceLabel": "Figura o tabla", "resourceLabelPlural": "Figuras y tablas", "searchHint": "Buscar: Lean Canvas, impostor, 3-2-1, pitch…"}, "blocks": {"inicio": {"name": "Punto de partida"}, "idea": {"name": "Idea, cliente y modelo"}, "visib": {"name": "Visibilidad y comunidad"}, "equipo": {"name": "Equipo y liderazgo"}, "sosten": {"name": "Sostenibilidad: salud y dinero"}, "crec": {"name": "Ventas y reflexiones finales"}}, "chapters": [{"num": 1, "title": "¿Estás preparada para emprender?", "block": "inicio", "summary": "Historia de origen de LMF Network: de un brunch al que nadie llegó a una comunidad global. Presenta la 'zona gris' como punto de partida y la idea de avanzar sin un plan de negocio perfecto.", "sections": [{"num": "1.1", "title": "Bienvenida al emprendimiento", "items": ["golden_circle"], "summary": "Por qué el plan perfecto no protege de la disrupción; ejemplos de Apple y Canva."}, {"num": "1.2", "title": "Fracasos y zonas grises", "items": ["grey_area"], "summary": "Datos sobre el auge del emprendimiento y la frustración personal como motor."}, {"num": "1.3", "title": "¿Quién eres?", "summary": "Identidad y pertenencia como base; cómo nació LMF y cuándo un proyecto paralelo deja de serlo."}, {"num": "1.4", "title": "Mi año de 'strategically winging it'", "items": ["swi"], "summary": "Decir sí con un proceso: principios, un umbral de capacidad y aprendizaje tras cada experiencia."}, {"num": "1.5", "title": "¿Qué es lo peor que puede pasar?", "summary": "El camino real tiene obstáculos; ejercicio de describir tu vida hoy y en 12 meses."}]}, {"num": 2, "title": "Emprender: ¿naturaleza o crianza?", "block": "idea", "summary": "La creatividad se entrena. Define tu estilo emprendedor, genera y filtra ideas con mapas mentales y lleva la idea a un Lean Canvas.", "sections": [{"num": "2.1", "title": "¿Estás desbloqueando tu estilo emprendedor?", "summary": "Perder la pasión por perseguir el dinero; redefinir el estilo y el modelo (de limitada a CIC)."}, {"num": "2.2", "title": "Estilos de emprendimiento", "items": ["estilos"]}, {"num": "2.3", "title": "¿Cuándo tuviste tu última idea?", "summary": "Anotar todas las ideas; no existe un 'molde' de emprendedor."}, {"num": "2.4", "title": "No tengo una idea de negocio", "items": ["redes_creatividad"]}, {"num": "2.5", "title": "Un método para la locura emprendedora", "items": ["metodo4"]}, {"num": "2.6", "title": "¿Cómo articulas tu idea?", "items": ["mindmap_pos", "mindmap_neg"], "summary": "Preguntas guía (qué problema, de quién, por qué te importa) y dos ejercicios de mapa mental."}, {"num": "2.7", "title": "De la idea al plan de acción", "summary": "El Business Model Canvas de Osterwalder como referencia previa al Lean Canvas."}, {"num": "2.8", "title": "El modelo Lean Canvas", "items": ["lean_canvas"]}, {"num": "2.9", "title": "El Lean Canvas de LMF", "summary": "Ejemplo completo aplicado a LMF Network, desglosado en tres partes."}, {"num": "2.10", "title": "Caso: David Savage (Tech Talks)", "summary": "Intraemprendimiento: un pódcast creado dentro de una empresa de reclutamiento que acabó siendo unidad de negocio."}]}, {"num": 3, "title": "¿Tu cliente entiende quién eres?", "block": "idea", "summary": "Propuesta de valor, persona de cliente y validación de mercado con datos. Cierra con nombre, identidad visual y web mínima.", "sections": [{"num": "3.1", "title": "Valórate", "items": ["value_prop"]}, {"num": "3.2", "title": "Evoluciona con las necesidades del cliente", "summary": "Blockbuster y Netflix: adaptarse a la innovación y decidir con datos."}, {"num": "3.3", "title": "Encuentra a tu cliente", "items": ["persona"]}, {"num": "3.4", "title": "¿Cómo validas a tu cliente?", "items": ["validacion"], "summary": "Tipos de datos y métodos primarios; caso Beauty Pie."}, {"num": "3.5", "title": "¿Qué hago con los datos recogidos?", "items": ["prueba_mercado"]}, {"num": "3.6", "title": "Haz real tu marca", "items": ["marca_basica"]}, {"num": "3.7", "title": "Caso: Son Chu (Rens)", "summary": "Zapatillas de café reciclado: prototipo probado en la calle y con anuncios antes de invertir más."}]}, {"num": 4, "title": "Redes sociales para tu negocio", "block": "visib", "summary": "Las redes como puente entre marca y cliente: propósito, tipos de red, mezcla de marketing, calendario de contenidos y analítica.", "sections": [{"num": "4.1", "title": "El propósito de estar en línea", "items": ["propositos_online", "embudo"], "summary": "Investigación, reconocimiento de marca, tráfico, conversión y comunidad; metas SMART y 8 semanas antes de medir."}, {"num": "4.2", "title": "Las cinco redes sociales", "items": ["social5"], "summary": "Tipos de red con ejemplos de negocios; el futuro de TikTok y Clubhouse."}, {"num": "4.3", "title": "Que las redes trabajen para tu marca", "summary": "Supuestos frente a realidad del público objetivo de LMF."}, {"num": "4.4", "title": "¿Qué es la mezcla de marketing?", "items": ["mix8p"]}, {"num": "4.5", "title": "La hoja de ruta de contenidos", "items": ["content_roadmap"]}, {"num": "4.6", "title": "Analítica de datos", "items": ["analitica"]}, {"num": "4.7", "title": "Caso: Chanelle Mauricette", "summary": "De 3.000 a casi medio millón de seguidores con un plan simple y analítica; nace una agencia de influencers."}]}, {"num": 5, "title": "Convierte tu red en tu patrimonio", "block": "visib", "summary": "Comunidad y networking como motor de negocio: valores, presentación personal, preguntas frecuentes, plantillas de mensajes y la regla 3-2-1.", "sections": [{"num": "5.1", "title": "Usar internet para encontrar tu comunidad", "items": ["tres_c"]}, {"num": "5.2", "title": "¿Tu red es tu patrimonio?", "items": ["networker3"], "summary": "La media de las cinco personas más cercanas; pedir ayuda para cubrir vacíos de conocimiento."}, {"num": "5.3", "title": "Marca personal y networking van de la mano", "items": ["valores_filtro", "intro3"]}, {"num": "5.4", "title": "Internet: una red de cosas y personas", "summary": "Preguntas frecuentes: pasos clásicos, rechazo, introversión, tarjetas, barreras y cómo convertir conversaciones en clientes."}, {"num": "5.5", "title": "Construir tu red con plantillas", "summary": "Mensajes modelo para iniciar conversación, conectar y pedir un café."}, {"num": "5.6", "title": "Caso: Kanwal Ahmed (Soul Sisters)", "summary": "Un grupo cerrado de Facebook que creció a 300.000+ miembros y se monetizó con marcas."}, {"num": "5.7", "title": "Ejercicio: la regla 3-2-1", "items": ["regla_321"]}]}, {"num": 6, "title": "¿El trabajo en equipo hace realidad el sueño?", "block": "equipo", "summary": "Cuándo y cómo crecer el equipo: formas de vinculación, plan de habilidades, descripciones de puesto y reclutamiento diverso e inclusivo.", "sections": [{"num": "6.1", "title": "Hora de crecer tu equipo", "summary": "La fundadora asume demasiados roles; delegar evita el agotamiento."}, {"num": "6.2", "title": "El futuro del trabajo: funcional y flexible", "items": ["trabajo_flexible"]}, {"num": "6.3", "title": "Siete formas de crecer tu equipo", "items": ["siete_vias"]}, {"num": "6.4", "title": "Mi experiencia creciendo el equipo", "summary": "Consejo asesor, franquicia en Toronto y voluntarios: pasos dados y lecciones (incorporación, revisiones, conversaciones difíciles)."}, {"num": "6.5", "title": "Crezcamos tu equipo", "items": ["plan_equipo"]}, {"num": "6.6", "title": "¿Tu equipo puede encontrarte?", "items": ["job_description", "reclutamiento_justo"]}, {"num": "6.7", "title": "Reclutamiento diverso e inclusivo", "items": ["die"]}, {"num": "6.8", "title": "Cinco cosas a considerar al crecer", "summary": "Contratos, revisiones de desempeño, rotaciones cortas, comunicación abierta y pausar si no encaja."}, {"num": "6.9", "title": "Caso: Beenish Saeed (LMF Toronto)", "summary": "Franquicia remota: tecnología más apoyo emocional; adaptar el modelo a otro mercado."}]}, {"num": 7, "title": "Las tres P del liderazgo: personas, poder y propósito", "block": "equipo", "summary": "Qué es liderar, tipos de personalidad y estilos de liderazgo, síndrome del impostor y marca personal en LinkedIn.", "sections": [{"num": "7.1", "title": "¿Qué es el liderazgo?", "summary": "Guiar, influir y motivar, separado de la edad o la jerarquía."}, {"num": "7.2", "title": "¿Qué tipo de líder eres?", "items": ["disc"], "summary": "Autorreflexión y feedback 360° para conocer tu estilo."}, {"num": "7.3", "title": "¿Los líderes nacen o se hacen?", "items": ["estilos_liderazgo"]}, {"num": "7.4", "title": "Conoce a tu equipo", "items": ["ways_of_working"]}, {"num": "7.5", "title": "¿Sientes que no mereces la estrella dorada?", "summary": "Sentirse impostora es frecuente, incluso tras el éxito."}, {"num": "7.6", "title": "¿Qué es el síndrome del impostor?", "items": ["impostor5", "tres_s"]}, {"num": "7.7", "title": "Construye tu marca de líder en línea", "items": ["objetivos_marca"]}, {"num": "7.8", "title": "Cómo triunfar en LinkedIn", "items": ["vmp", "linkedin_perfil"]}, {"num": "7.9", "title": "Caso: Nadia Edwards-Dashti (Harrington Starr)", "summary": "Liderazgo colaborativo en un sector masculinizado; volver al 'por qué' frente al impostor."}]}, {"num": 8, "title": "La mente sobre la materia", "block": "sosten", "summary": "Salud mental de quien emprende: señales de alerta, cultura de trabajo, relación con las redes, soledad y diez estrategias de cuidado.", "sections": [{"num": "8.1", "title": "¿Qué es la salud mental?", "items": ["senales_alerta"], "summary": "Agotamiento y por qué hablarlo; testimonios de fundadores."}, {"num": "8.2", "title": "Culturas de trabajo", "items": ["cultura_trabajo"]}, {"num": "8.3", "title": "Una relación sana con las redes sociales", "items": ["cuatro_habitos"]}, {"num": "8.4", "title": "Lidiar con la soledad", "items": ["jerarquia_barlow"]}, {"num": "8.5", "title": "Cómo cuidar tu salud mental al emprender", "items": ["diez_formas"]}, {"num": "8.6", "title": "Caso: Hussain Manawer", "summary": "De entrevistas en YouTube al activismo en salud mental; volver siempre al 'por qué'."}]}, {"num": 9, "title": "Cambia tu mentalidad sobre el dinero", "block": "sosten", "summary": "Finanzas básicas para emprender: costos, flujo de caja, presupuesto, gastos, fuentes de financiación y reinversión.", "sections": [{"num": "9.1", "title": "¿Por qué hablar de finanzas?", "summary": "Anticipar necesidades, evaluar riesgos y separar finanzas personales y del negocio."}, {"num": "9.2", "title": "Dedica tiempo a entender tus costos", "summary": "Elegir la forma jurídica sin conocer sus costos; reinvertir y no acaparar efectivo."}, {"num": "9.3", "title": "Cambia tu mentalidad sobre el dinero", "items": ["cash_flow", "mentalidad4"]}, {"num": "9.4", "title": "¿Qué es un presupuesto?", "items": ["presupuesto", "regla_503020"]}, {"num": "9.5", "title": "Gestionar los gastos", "items": ["gastos3"]}, {"num": "9.6", "title": "Finanzas en orden: ¿y ahora qué?", "items": ["fuentes_fin"]}, {"num": "9.7", "title": "Cinco formas de reinvertir los ingresos", "items": ["reinversion5"]}, {"num": "9.8", "title": "Caso: Devina Paul (Galvanise Capital)", "items": ["colchon6"], "summary": "Alfabetización financiera, preparación para inversores y cuándo admitir que algo no funciona."}]}, {"num": 10, "title": "Cómo influir en las personas y ganar clientes", "block": "crec", "summary": "Influencia, tipos de pitch (deck, escrito y presencial), seguimiento, vías para conseguir negocio, 'ghosting' y medida de éxito.", "sections": [{"num": "10.1", "title": "¿Qué significa influir?", "items": ["rasgos_influencia", "pasos_influencia"]}, {"num": "10.2", "title": "Qué es un pitch y sus cinco tipos", "items": ["tipos_pitch"]}, {"num": "10.3", "title": "El pitch deck", "items": ["pitch_deck"]}, {"num": "10.4", "title": "El pitch escrito", "items": ["pitch_escrito"]}, {"num": "10.5", "title": "El pitch en persona", "items": ["pitch_persona", "seguimiento"]}, {"num": "10.6", "title": "¿Cómo convertir prospectos en clientes?", "summary": "Web optimizada, respuesta en menos de 24 h y llamada de descubrimiento."}, {"num": "10.7", "title": "Cinco formas de conseguir negocio nuevo", "items": ["vias_negocio"]}, {"num": "10.8", "title": "La realidad del 'ghosting'", "summary": "Mensajes para retomar una conversación y cuándo dejarla ir."}, {"num": "10.9", "title": "¿Cuál es tu medida de éxito?", "summary": "Volver a los valores y redefinir el éxito más allá del dinero."}, {"num": "10.10", "title": "Caso: Deborah Okenla (YSYS)", "summary": "De grupo de WhatsApp a organización; preparar el primer pitch con feedback de la red y cuidar a los clientes."}]}, {"num": 11, "title": "Once métodos para la locura de emprender", "block": "crec", "summary": "Reflexiones finales de la autora: metas cortas, éxito propio, procrastinación productiva, descanso, marca personal y preguntar siempre '¿por qué?' y '¿qué sigue?'.", "sections": [{"num": "11.1", "title": "Las pequeñas victorias dan confianza", "items": ["metas_18_24"]}, {"num": "11.2", "title": "No necesitas el título ni los premios", "summary": "Un rechazo (Forbes 30 Under 30) no define el impacto."}, {"num": "11.3", "title": "La procrastinación productiva", "items": ["proc_productiva"]}, {"num": "11.4", "title": "Emprender puede tensar las relaciones", "summary": "Compartir tu 'por qué' con tus seres queridos y priorizar el autocuidado."}, {"num": "11.5", "title": "Si dejas de disfrutar, estás agotada", "summary": "Parar, delegar y tomar una semana libre por trimestre."}, {"num": "11.6", "title": "Define tu medida de éxito, no la de otros", "items": ["medida_exito"]}, {"num": "11.7", "title": "Prepárate para practicar, no para la perfección", "summary": "Las habilidades de emprender se aprenden equivocándose."}, {"num": "11.8", "title": "No todo proyecto de pasión debe ser millonario", "summary": "LMF pasa a organización benéfica: saber pronto qué funciona."}, {"num": "11.9", "title": "Deja que tu marca personal hable", "summary": "El 90 % de los ingresos de la consultoría llegó por canales en línea y marca personal."}, {"num": "11.10", "title": "Si emprender no funciona, sigues siendo empleable", "summary": "Articular lo aprendido como habilidades de liderazgo."}, {"num": "11.11", "title": "Pregunta siempre por qué y qué sigue", "items": ["porque_quesigue"]}, {"num": "11.12", "title": "Caso: Edwina Dunn (The Female Lead)", "summary": "De emprendedora innovadora (dunnhumby) a social; equilibrio vital y motivación del equipo."}]}], "items": {"golden_circle": {"title": "Círculo dorado", "formula": "¿Qué? → ¿Cómo? → ¿Por qué?", "summary": "Marco de Simon Sinek; el 'por qué' fija el propósito del negocio, aunque hoy el modelo debe adaptarse."}, "grey_area": {"title": "Zona gris", "formula": "Frustración sin solución (aún) = punto de partida", "summary": "Insatisfacción personal que señala un problema real; la autora la usa como origen de toda idea."}, "swi": {"title": "Strategically winging it", "formula": "5 principios + tu número (p. ej., 60 %) + aprender de cada 'sí'", "summary": "Decir sí a oportunidades que puedes hacer al menos en parte y aprender el resto sobre la marcha."}, "estilos": {"title": "Cinco estilos emprendedores", "formula": "Innovador · Hustler · Social · Imitador · Intraemprendedor", "summary": "Tipos no rígidos; conocer el tuyo orienta el modelo de negocio."}, "redes_creatividad": {"title": "Tres redes cerebrales de la creatividad", "formula": "Por defecto (genera) · Ejecutiva (evalúa) · Saliencia (selecciona)", "summary": "La creatividad surge de su trabajo conjunto y se entrena con hábitos."}, "metodo4": {"title": "Método de cuatro pasos", "formula": "Problema → Idea → Plan lean → Probar (correcto / irrelevante / mejorar)", "summary": "El núcleo del libro: partir del problema y validar rápido, sin plan de negocio formal."}, "mindmap_pos": {"title": "Mapa mental positivo (6 pasos)", "formula": "Límite de tiempo · Materiales · Cantidad · Lo raro · Hipótesis · Filtrar", "summary": "Generar muchas soluciones en 20 minutos (Pomodoro) y agruparlas para quedarte con pocas."}, "mindmap_neg": {"title": "Mapa mental negativo (7 pasos)", "formula": "Problema · Tiempo · Soluciones · Lógica de las malas · Opuesto · Intercambiar · Combinar", "summary": "Partir de las peores ideas e invertirlas para descubrir buenas."}, "lean_canvas": {"title": "Lean Canvas", "formula": "Problema · Segmentos · PUV · Solución · Canales · Ingresos · Costos · Métricas · Ventaja injusta", "summary": "Versión ligera del Business Model Canvas (Ash Maurya), basada en el ciclo construir–medir–aprender."}, "value_prop": {"title": "Propuesta de valor", "formula": "¿Qué es tu negocio? · ¿Por qué existe? · ¿Qué problema resuelve?", "summary": "Enunciado breve que dice por qué elegirte; no es un incentivo, un eslogan ni un posicionamiento."}, "persona": {"title": "Persona de cliente", "formula": "Identificar problema → Entender quién lo necesita → Ficha de una página", "summary": "Datos personales, profesionales, dolores, ganancias, hábitos digitales y motivaciones; máximo tres personas; es una hipótesis."}, "validacion": {"title": "Validación de mercado", "formula": "Cuanti/cuali × primarios/secundarios; encuestas, sondeos, entrevistas, grupos focales", "summary": "Comprobar con datos si el producto interesa antes de producir a gran escala."}, "prueba_mercado": {"title": "Probar antes de invertir", "formula": "Landing page · Muestras · Anuncios de prueba (A/B)", "summary": "Usar los datos para probar o refutar la hipótesis de cliente con bajo presupuesto."}, "marca_basica": {"title": "Marca mínima viable", "formula": "Nombre · Identidad visual (color) · Web: problema, solución, dónde comprar", "summary": "Validar nombre y colores con el público y vigilar dominios y suscripciones."}, "propositos_online": {"title": "Propósitos de estar en línea", "formula": "Investigar/tendencias · Reconocimiento · Tráfico · Convertir · Comunidad", "summary": "Cada cuenta necesita un propósito ligado a un KPI; elegir red principal y secundaria."}, "embudo": {"title": "Embudo de marketing", "formula": "Conocimiento → Interés → Deseo → Acción → Lealtad", "summary": "Cuanto más amplio el conocimiento, más acciones; un CRM registra los leads."}, "social5": {"title": "Las cinco redes", "formula": "Redes sociales · Plataformas de imagen/video · Foros · Reseñas · Blogs", "summary": "Clasificación de la autora para elegir dónde está tu cliente."}, "mix8p": {"title": "Mezcla de marketing (4 + 4 P)", "formula": "Producto · Precio · Plaza · Promoción + Personas · Procesos · Evidencia física · Alianzas", "summary": "4P clásicas (McCarthy, Kotler) ampliadas para la era digital (Chaffey y Smith)."}, "content_roadmap": {"title": "Hoja de ruta de contenidos", "formula": "Llamada a la acción · Estética · Tendencias · Organizar · Textos", "summary": "Planificar y programar el contenido de la semana; 15 minutos diarios de interacción."}, "analitica": {"title": "Analítica a las 8 semanas", "formula": "Interacción · Seguidores · Conexiones · Conversiones", "summary": "Revisar los datos gratuitos de cada red tras 8 semanas para ajustar la estrategia."}, "tres_c": {"title": "Las tres C", "formula": "Cliente · Comunidad · Conversación", "summary": "Nutrir relaciones igual que ideas; la comunidad informa y hace crecer el negocio."}, "networker3": {"title": "De nerviosa a networker", "formula": "Mentalidad positiva · Pasos pequeños · Meta clara antes de hablar", "summary": "Networking para dar, no solo para ganar."}, "valores_filtro": {"title": "Filtro de valores (60 %)", "formula": "Meta final + qué te hace feliz + qué te llena → valores núcleo", "summary": "Si una propuesta no cumple al menos el 60 % de tus valores, pásala a tu red."}, "intro3": {"title": "Presentación en tres pasos", "formula": "3 principios + éxitos recientes + meta con esta conexión", "summary": "Calidad sobre cantidad al presentarte a alguien nuevo."}, "regla_321": {"title": "Regla 3-2-1", "formula": "Cada mes: 1 llamada larga · 2 conexiones · 3 conversaciones nuevas", "summary": "Reto de seis meses para ganar confianza al hacer networking y ampliar la comunidad."}, "trabajo_flexible": {"title": "Trabajo flexible", "formula": "Puesto compartido · Remoto · Horario flexible", "summary": "Permite equipos más diversos e internacionales."}, "siete_vias": {"title": "Siete formas de sumar personas", "formula": "Voluntario · Aprendiz · Freelance · Empleado · Cofundador · Consejo asesor · Franquicia", "summary": "Cada vínculo tiene beneficios, obligaciones y momento adecuado."}, "plan_equipo": {"title": "Plan de crecimiento del equipo", "formula": "Metas a 18 meses → Qué tienes → Qué te falta → Habilidades → Puesto", "summary": "Tabla de cinco columnas para decidir a quién incorporar y por qué."}, "job_description": {"title": "Descripción de puesto", "formula": "Empresa · Resumen · ≤5 responsabilidades · ≤5 requisitos · Beneficios · Contacto · Próximos pasos", "summary": "Corta, clara y con lenguaje neutro en género."}, "reclutamiento_justo": {"title": "Reclutamiento justo", "formula": "Evaluación consistente · Tiempo para preguntas · Entrevistadores diversos · Feedback", "summary": "Reduce sesgos inconscientes; evita contratar por 'encaje cultural'."}, "die": {"title": "Diversidad, inclusión y equidad", "formula": "Invitación + música para bailar + bailar sin barreras = pertenencia", "summary": "Ampliación de la metáfora de Verna Myers."}, "disc": {"title": "DiSC", "formula": "Dominancia · Influencia · Estabilidad · Cumplimiento", "summary": "Rasgos de personalidad de base (Marston, 1928); útil para reflexionar, no como diagnóstico."}, "estilos_liderazgo": {"title": "Seis estilos de liderazgo", "formula": "Autoritario · Participativo · Delegativo · Transaccional · Transformacional · Coach", "summary": "Cada uno con ventajas y costos; el estilo cambia según la situación."}, "ways_of_working": {"title": "Ficha de formas de trabajo", "formula": "Horario · Preferencias · Comunicación · Plazos · 'Si me ves X, en realidad Y'", "summary": "Documento que cada persona comparte al entrar al equipo."}, "impostor5": {"title": "Cinco tipos de impostor", "formula": "Perfeccionista · Superpersona · Genio natural · Solista · Experta", "summary": "Identificar el tuyo es el primer paso para manejar el síndrome."}, "tres_s": {"title": "Las tres S", "formula": "Skills (habilidades) → Success story → So what? (impacto)", "summary": "Registro vivo de fortalezas, logros e impacto para releer en días malos."}, "objetivos_marca": {"title": "Objetivos de marca personal", "formula": "Ingresos · Comunidad · Aprender/educar · Referente", "summary": "Elegir uno o dos antes de construir la marca."}, "vmp": {"title": "Visión, misión y principios", "formula": "Visión (meta) · Misión (hitos SMART) · 5 principios (hashtags)", "summary": "Base del perfil de LinkedIn y del contenido."}, "linkedin_perfil": {"title": "Perfil y plan de LinkedIn", "formula": "Foto · Cabecera · Titular de 120 caracteres · 'Acerca de' · Experiencia + 6 semanas de actividad", "summary": "Optimizar la mitad superior del perfil y publicar con constancia."}, "senales_alerta": {"title": "Señales de alerta", "formula": "Ánimo · Sueño/apetito · Aislamiento · Concentración · Desconexión · Apatía · Energía", "summary": "Indicios tempranos de agotamiento o deterioro de la salud mental."}, "cultura_trabajo": {"title": "Cultura de trabajo propia", "formula": "Comidas sin pantallas · Medio día libre · Día de recuperación mensual", "summary": "La fundadora la vive primero y luego la extiende al equipo."}, "cuatro_habitos": {"title": "Cuatro hábitos digitales", "formula": "Gestionar el calendario · Priorizar tareas críticas · Programar contenido · No compararse", "summary": "Para una relación sana con las redes sociales."}, "jerarquia_barlow": {"title": "Jerarquía de necesidades de Barlow", "formula": "Necesidades básicas → tecnología → comunidad → confianza", "summary": "Adaptación de Maslow: la tecnología facilita la pertenencia."}, "diez_formas": {"title": "Diez formas de cuidar la salud mental", "formula": "Señales · Comunidad · Cultura · Mentoría · Tiempo propio · Rutina · Menos pantallas · Reflexión · Ayuda · Descanso", "summary": "Lista práctica para emprendedores."}, "cash_flow": {"title": "Previsión de flujo de caja", "formula": "Entradas − salidas = caja neta → reinversión", "summary": "Muestra cómo entra y sale el dinero por trimestre; la mala gestión de caja hunde muchos negocios."}, "mentalidad4": {"title": "Cuatro pasos de mentalidad financiera", "formula": "Identificar metas · Pasar de escasez a abundancia · Cambiar el relato · Gratitud", "summary": "Incluye cubrir al menos tres meses de gastos fijos antes de decidir."}, "presupuesto": {"title": "Presupuesto", "formula": "Caja proyectada · Costos (fijos, variables, únicos) · Ingresos · Previsto vs real", "summary": "Revisar cada mes y compartir con el equipo cada trimestre."}, "regla_503020": {"title": "Regla 50:30:20", "formula": "50 % esencial · 30 % deseos · 20 % fondo de emergencia", "summary": "De Warren y Tyagi, aplicada a los ingresos del negocio tras costos."}, "gastos3": {"title": "Rutina mensual de gastos", "formula": "Fotografiar · Categorizar · Totalizar", "summary": "Medio día al mes, en una hoja compartida con el contador."}, "fuentes_fin": {"title": "Fuentes de financiación", "formula": "Préstamos · Aceleradoras · Sobregiro · Tarjeta · Crowdfunding · Ahorros · Ángeles · Capital riesgo · Subvenciones", "summary": "Cada fuente implica deuda, cesión de capital o requisitos distintos; elegir según tu propósito."}, "reinversion5": {"title": "Cinco destinos de reinversión", "formula": "Mejora del negocio · Equipo · Marketing · Externalizar · Colchón de caja", "summary": "Decidir según el plan estratégico, no por impulso."}, "colchon6": {"title": "Colchón de seis meses", "formula": "6 meses de gastos esenciales ahorrados antes de saltar", "summary": "Da margen para ver si el modelo tiene tracción; seis meses también para evaluar si seguir."}, "rasgos_influencia": {"title": "Rasgos de quien influye", "formula": "Hambre · Pasión · Autenticidad · Cuidado · Expectativas altas · Liderazgo", "summary": "Lo que, según la autora, convierte a quien emprende en influyente."}, "pasos_influencia": {"title": "Tres pasos para influir", "formula": "Identificar → Generar confianza → Escuchar", "summary": "La influencia se construye con relación y escucha activa."}, "tipos_pitch": {"title": "Cinco tipos de pitch", "formula": "Inversor · Cliente · Venta · Empleado · Socio", "summary": "Todo pitch es breve, concreto y con una llamada a la acción clara."}, "pitch_deck": {"title": "Pitch deck", "formula": "≤15 diapositivas: resumen · misión · problema · solución · por qué ahora · mercado · producto · equipo · modelo · competencia · finanzas · pedido y salida · contacto", "summary": "Una idea por diapositiva, con la estética de la marca."}, "pitch_escrito": {"title": "Pitch escrito", "formula": "Presentar · Explicar por qué ahora · Resolver su necesidad · Contacto · Web", "summary": "Mensaje breve y personalizado para destacar entre muchos correos."}, "pitch_persona": {"title": "Pitch en persona", "formula": "Inspiración · Problema/solución/USP · Historia del equipo · Llamada a la acción", "summary": "Entre 30 segundos y dos minutos, en tono relajado."}, "seguimiento": {"title": "Cadencia de seguimiento", "formula": "1 semana · 2 semanas · 1 mes", "summary": "Suelen hacer falta unos tres intentos para que te noten."}, "vias_negocio": {"title": "Cinco vías para conseguir negocio", "formula": "Llamadas/correos en frío · Networking · Referidos · Contenido · Boletines", "summary": "Combinar varias y no tener miedo de contactar por varios canales."}, "metas_18_24": {"title": "Metas a 18–24 meses", "formula": "Visión amplia + hitos cercanos + celebrar victorias pequeñas", "summary": "No planificar demasiado lejos en un entorno incierto."}, "proc_productiva": {"title": "Procrastinación productiva", "formula": "Lista total → Prioridad alta/media/baja → Al distraerte, haz tareas bajas", "summary": "Usar la distracción para avanzar en tareas menores en lugar de perder tiempo."}, "medida_exito": {"title": "Medida de éxito propia", "formula": "Impacto propio > premios, financiación o comparación", "summary": "La autora mide por impacto: capacitar personas, progreso y clientes recurrentes."}, "porque_quesigue": {"title": "¿Por qué? y ¿qué sigue?", "formula": "Por qué importa → Qué sigue → Trabajar hacia atrás", "summary": "Preguntas para alinear cada paso con la siguiente meta."}}, "resources": [{"id": "F2.1", "title": "Figura 2.1 · Modelo Lean Canvas", "usedBy": ["2.8", "2.9", "10.3"]}, {"id": "F2.2", "title": "Figuras 2.2–2.5 · Lean Canvas de LMF", "usedBy": ["2.9"]}, {"id": "F3.1", "title": "Figura 3.1 · Plantilla de persona de cliente", "usedBy": ["3.3"]}, {"id": "F4.1", "title": "Figura 4.1 · Supuestos frente a realidad", "usedBy": ["4.3"]}, {"id": "F4.2", "title": "Figura 4.2 · Mezcla de marketing de LMF", "usedBy": ["4.4"]}, {"id": "F4.3", "title": "Figura 4.3 · Plan semanal de contenidos", "usedBy": ["4.5"]}, {"id": "F5.1", "title": "Figura 5.1 · Tu presentación en tres pasos", "usedBy": ["5.3"]}, {"id": "T6.1", "title": "Tabla 6.1 · Cómo crecer tu equipo", "usedBy": ["6.5"]}, {"id": "F6.1", "title": "Figura 6.1 · Diversidad, inclusión y equidad", "usedBy": ["6.7"]}, {"id": "F7.1", "title": "Figura 7.1 · Seis semanas de éxito en LinkedIn", "usedBy": ["7.8"]}, {"id": "F8.1", "title": "Figura 8.1 · Jerarquía de necesidades de Barlow", "usedBy": ["8.4"]}, {"id": "T9.1", "title": "Tablas 9.1–9.2 · Previsión de flujo de caja", "usedBy": ["9.3"]}, {"id": "T9.3", "title": "Tabla 9.3 · Hoja de presupuesto", "usedBy": ["9.4"]}], "requires": {"chapters": {"2": [1], "3": [2], "4": [3], "5": [4], "6": [5], "7": [6], "8": [5], "9": [2], "10": [3, 7, 9], "11": [8, 10]}, "sections": {"2.5": ["1.2"], "2.6": ["2.5"], "2.8": ["2.6", "2.7"], "2.9": ["2.8"], "2.10": ["2.2", "2.8"], "3.1": ["2.8"], "3.3": ["3.1", "2.5"], "3.4": ["3.3"], "3.5": ["3.4"], "3.6": ["3.1"], "3.7": ["3.5"], "4.1": ["3.4"], "4.3": ["3.3"], "4.4": ["4.3"], "4.5": ["4.1"], "4.6": ["4.5"], "4.7": ["4.6"], "5.1": ["4.1"], "5.3": ["5.2", "1.4", "3.1"], "5.4": ["5.3"], "5.5": ["5.4"], "5.7": ["5.5"], "6.3": ["6.2"], "6.4": ["6.3"], "6.5": ["6.1"], "6.6": ["6.5"], "6.7": ["6.6"], "6.9": ["6.4"], "7.2": ["7.1"], "7.3": ["7.2"], "7.4": ["6.4"], "7.6": ["7.5"], "7.7": ["5.3", "3.6"], "7.8": ["7.7", "4.5"], "8.2": ["6.2"], "8.3": ["4.5"], "8.4": ["5.1"], "8.5": ["8.1", "8.2", "5.2"], "9.2": ["2.8"], "9.3": ["9.2"], "9.4": ["9.3"], "9.6": ["9.4"], "9.7": ["9.3"], "9.8": ["9.4"], "10.1": ["7.3"], "10.2": ["10.1"], "10.3": ["10.2", "2.8", "3.1", "9.3"], "10.4": ["10.2"], "10.5": ["10.2", "5.3"], "10.6": ["3.6"], "10.7": ["5.4", "4.1"], "10.8": ["10.5"], "11.1": ["1.5"], "11.3": ["8.3"], "11.5": ["8.5"], "11.6": ["10.9"], "11.9": ["7.8"], "11.11": ["1.1"]}, "items": {"metodo4": ["grey_area"], "mindmap_pos": ["metodo4"], "mindmap_neg": ["metodo4"], "lean_canvas": ["metodo4"], "value_prop": ["lean_canvas"], "persona": ["value_prop"], "validacion": ["persona"], "prueba_mercado": ["validacion"], "marca_basica": ["value_prop"], "propositos_online": ["validacion"], "embudo": ["propositos_online"], "mix8p": ["persona"], "content_roadmap": ["propositos_online"], "analitica": ["content_roadmap"], "tres_c": ["propositos_online"], "valores_filtro": ["swi"], "intro3": ["valores_filtro"], "regla_321": ["intro3", "networker3"], "plan_equipo": ["siete_vias"], "job_description": ["plan_equipo"], "reclutamiento_justo": ["job_description"], "die": ["reclutamiento_justo"], "estilos_liderazgo": ["disc"], "tres_s": ["impostor5"], "vmp": ["objetivos_marca"], "linkedin_perfil": ["vmp", "content_roadmap"], "cuatro_habitos": ["content_roadmap"], "jerarquia_barlow": ["tres_c"], "diez_formas": ["senales_alerta", "cultura_trabajo"], "cash_flow": ["lean_canvas"], "presupuesto": ["cash_flow"], "regla_503020": ["presupuesto"], "fuentes_fin": ["presupuesto"], "reinversion5": ["cash_flow"], "colchon6": ["cash_flow"], "pasos_influencia": ["rasgos_influencia"], "tipos_pitch": ["pasos_influencia"], "pitch_deck": ["tipos_pitch", "lean_canvas", "value_prop"], "pitch_escrito": ["tipos_pitch"], "pitch_persona": ["tipos_pitch", "intro3"], "seguimiento": ["pitch_persona"], "vias_negocio": ["tipos_pitch"], "proc_productiva": ["cuatro_habitos"], "medida_exito": ["golden_circle"], "porque_quesigue": ["golden_circle"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>
