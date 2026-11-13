@@ -29,6 +29,8 @@ Cada archivo termina con referencias (DOI o URL), log de búsqueda y **datos no 
 
 Para el aroma (pirazinas, furanonas, aldehídos de Strecker, maridajes), usa la skill `odorantes-clave` y la base `odorantes-db`. Para verificar una afirmación de salud, usa `biotech-research`.
 
+Para adaptar una receta herbal (té, jarabe, oximiel, vinagre o miel), usa `healing-herbal-infusions/molecular.md` del mismo repositorio: 17 recetas adaptadas con la regla "una porción = una dosis", el manejo de taninos y ácido, y las recetas que no se deben convertir en golosina.
+
 ---
 
 ## Cómo responder

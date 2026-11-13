@@ -4,6 +4,8 @@ Edad mínima: es la que da el resumen del capítulo. "—" significa que el resu
 
 Regla general: no des preparados con miel a menores de 12 meses.
 
+> **Versiones moleculares:** 17 recetas de esta tabla tienen una versión con técnicas de gastronomía molecular (perlas, geles, espumas, aires y polvos), con la misma dosis por porción y las mismas alertas. Están en [molecular.md](molecular.md) y en la sección 18 de [SKILL.md](SKILL.md).
+
 ## Capítulo 2. Inmunidad
 
 | Receta | Forma | Hierbas clave | Edad | Notas y alertas | Evidencia 2026-11-10 (veredicto · nota) |

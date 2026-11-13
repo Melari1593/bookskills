@@ -204,6 +204,18 @@ Revisión del 2026-11-11 en [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 b
 - Las dosis de jamaica, té y cacao son preparaciones de cocina: los estudios no fijaron una dosis única. Dilo.
 - **Bebidas tradicionales:** [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md) compara 20 bebidas tradicionales (agua de jamaica, karkadé, bissap, zobo, sorrel, matcha, atay, çay, chai, chocolate santafereño, chucula, tejate, kvas de remolacha, sharbat de granada, avena colombiana, mors, isabgol, aromáticas de manzanilla y toronjil) con lo estudiado. Si te piden una bebida tradicional, di si conserva la evidencia y qué ajuste necesita: quitar el azúcar, quitar la leche del té negro, separar el alcohol o usar canela de Ceilán. No recomiendes el chai con leche, el kvas de remolacha ni la aromática de toronjil con fin de salud.
 
+### 18. Recetas en clave molecular
+
+[`molecular.md`](molecular.md) adapta 17 recetas del libro para comer o beber con técnicas de la skill `gastronomia-molecular` (esferificación, agar, gelana, gelatina, xantana, lecitina, sifón y polvo de grasa). Excluye 19 recetas con su motivo. Reglas:
+
+- **Una porción molecular = una dosis de la receta original.** Haz el gel, las perlas o el postre con una taza de té (250 g) o con la dosis del jarabe o del oximiel. No multipliques porciones.
+- **Conserva el veredicto y las alertas** de la receta original. La técnica cambia la textura, no la indicación.
+- **Taninos inhiben el agar.** Con espino, hibisco, rosa mosqueta o saúco, haz una prueba de gel; si falla, usa gelana de alta acilación o esferificación inversa.
+- **Ácido:** con vinagre, oximiel, hibisco o rosa mosqueta, no uses alginato directo (pH < 3,65) ni gelatina (pH < 4).
+- **Hierbas sensibles al calor** (malvavisco, toronjil, ortiga, menta): usa alginato o xantana en frío, o gelatina a 50 °C.
+- **No conviertas en golosina** las hierbas con riesgo (sauce, escutelaria, pino, astrágalo, tulsi, pasiflora). Rotula los cubos y las perlas con la hierba y la dosis, y guárdalos fuera del alcance de los niños.
+- **Miel:** no en menores de 12 meses. Añádela por debajo de 60 °C.
+
 ---
 
 ## Seguridad clínica
@@ -288,6 +300,7 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 
 Archivos de apoyo:
 - [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia. Al final tiene las recetas tipo de las revisiones fuera del libro: diarrea, moringa, fatiga, limonaria y 15 bebidas con evidencia clínica.
+- [`molecular.md`](molecular.md): 17 recetas del libro adaptadas con gastronomía molecular (técnica, gramos, proceso, química, fallas y seguridad) y 19 recetas excluidas con su motivo.
 - [`evidencia/recetas.md`](evidencia/recetas.md): verificación de las 53 recetas por capítulo, con veredicto, seguridad nueva, referencias y log de búsqueda.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.
