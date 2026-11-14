@@ -1,0 +1,36 @@
+{
+ "nodes": 3761,
+ "edges": 65742,
+ "node_types": {
+  "Seguridad": 4,
+  "Hierba": 1083,
+  "Actividad": 1140,
+  "Indicación": 1534
+ },
+ "relations": {
+  "calificacion_seguridad": 1083,
+  "tiene_actividad": 19368,
+  "indicada_para": 45291
+ },
+ "score_distribution": {
+  "f": 41445,
+  "1": 21201,
+  "2": 1990,
+  "3": 23
+ },
+ "safety_distribution": {
+  "+": 350,
+  "++": 429,
+  "X": 144,
+  "+++": 160
+ },
+ "duplicate_ids": 0,
+ "orphans": [],
+ "edges_missing_endpoint": 0,
+ "edges_missing_page": 0,
+ "herbs_without_items": [
+  "Kelp",
+  "Wild Servicetree"
+ ],
+ "duplicate_herb_ids_renamed": []
+}
