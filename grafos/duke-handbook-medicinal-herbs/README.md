@@ -19,6 +19,10 @@ Grafo de conocimiento del catálogo completo de *Handbook of Medicinal Herbs* (J
 - El libro omite alertas que hoy están establecidas en hierbas ++ y +++. Por ejemplo: interacciones del hipérico, hepatotoxicidad del kava, el fo-ti y los suplementos de cúrcuma, y la cumarina de la canela cassia.
 - La calificación ++ del tanaceto contradice el propio texto del libro.
 
+## Revisiones derivadas
+
+- Goji (*Lycium*, págs. 495 y 791): [`healing-herbal-infusions/evidencia/goji.md`](../../healing-herbal-infusions/evidencia/goji.md).
+
 ## Archivos
 
 | Archivo | Contenido |

@@ -216,11 +216,23 @@ Revisión del 2026-11-11 en [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 b
 - **No conviertas en golosina** las hierbas con riesgo (sauce, escutelaria, pino, astrágalo, tulsi, pasiflora). Rotula los cubos y las perlas con la hierba y la dosis, y guárdalos fuera del alcance de los niños.
 - **Miel:** no en menores de 12 meses. Añádela por debajo de 60 °C.
 
+### 19. Goji (el libro no la trata)
+
+Revisión de evidencia del 2026-11-14 en [`evidencia/goji.md`](evidencia/goji.md). Incluye lo que dice Duke (2002). Reglas:
+
+- **Uso:** el fruto de goji (*Lycium barbarum*, *L. chinense*) es alimento. Duke da 6–15 g de fruto seco al día y lo califica ++ (tan seguro como el café), pero ninguna de sus afirmaciones supera el puntaje 1 (experimental).
+- **Di el tamaño del efecto.** En metaanálisis de ECA, los triglicéridos bajan 0,14 mmol/L y el HDL sube 0,06 mmol/L. El LDL y la presión arterial no cambian. El fruto entero rinde más que los extractos.
+- **Ojos:** sube el pigmento macular en ensayos pequeños. No la presentes como tratamiento de la degeneración macular ni de la retinosis pigmentaria.
+- **No la recomiendes con warfarina.** Hay casos de INR alto con sangrado después de jugo, té o vino de goji.
+- **Alergia:** si la persona es alérgica al melocotón, al tomate, a los frutos secos o al polen de artemisa (LTP), evita la goji o pide valoración por alergología.
+- **Embarazo:** Duke la clasifica 2b. Como alimento en cantidad normal no hay alerta. No uses extractos.
+- **Receta tipo:** 10 g de fruto seco en infusión o remojados en 250 ml de agua caliente, 10 min; come también el fruto. Ver [`cheatsheet.md`](cheatsheet.md).
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 últimas filas vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 últimas filas vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -286,6 +298,8 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Limonaria y función renal** | El libro no la trata. | riesgo documentado (baja; un estudio sin placebo) | Con infusión de 2–8 g diarios por 30 días bajaron la eGFR y la depuración de creatinina, según la dosis y el tiempo. Con enfermedad renal o fármacos nefrotóxicos, evita el uso diario prolongado y vigila la creatinina (doi:10.1053/j.jrn.2014.08.005). |
 | **Limonaria: niños, lactancia y embarazo** | El libro no la trata. | riesgo documentado (media; norma nacional) | El Vademécum Colombiano la contraindica en menores de 2 años y en la lactancia. En el embarazo no hay datos en humanos; el citral tuvo efectos reproductivos en animales. No uses aceite esencial ni dosis medicinales en el embarazo (Vademécum Colombiano de Plantas Medicinales 2008; doi:10.3390/ijms22052380). |
 | **Aceite esencial de limonaria en la piel** | El libro no la trata. | riesgo documentado (alta) | El citral (geranial y neral) es alergeno de declaración obligatoria en cosméticos de la UE (Reglamento 1223/2009, Anexo III, entrada 70). Diluye siempre el aceite y haz la prueba en la piel. Contra el dengue no reemplaza al DEET: protegió menos contra *Aedes aegypti* (doi:10.1016/j.actatropica.2014.11.010). |
+| **Goji y warfarina** | El libro no la trata. | riesgo omitido (media; casos publicados) | No recomiendes goji (fruto, jugo, té o vino) a quien toma warfarina u otro antagonista de la vitamina K. Hay al menos 4 casos de INR alto con epistaxis, equimosis o rectorragia. In vitro, el jugo inhibe más del 75 % de varias CYP. Si la persona ya la consume, mide el INR y pídele que no cambie la cantidad (Rivera 2012, doi:10.1002/j.1875-9114.2012.01018.x; Tan 2020, doi:10.1111/bcp.14404; Liu 2016, doi:10.1515/jcim-2015-0038). |
+| **Goji y alergia por LTP** | El libro no la trata. | riesgo documentado (media) | La goji es un alérgeno con proteína de transferencia de lípidos (LTP). Tiene reactividad cruzada con melocotón, tomate, frutos secos y polen de artemisa. En personas con alergia alimentaria a plantas, el 77 % tuvo prueba cutánea positiva. Si hay alergia a LTP, evítala o pide valoración por alergología (Carnés 2013, doi:10.1016/j.foodchem.2012.10.005; Larramendi 2012, PMID 23101309). |
 
 ## Índice de capítulos
 
@@ -308,6 +322,7 @@ Archivos de apoyo:
 - [`evidencia/moringa.md`](evidencia/moringa.md): revisión de moringa con composición, evidencia por desenlace, seguridad, afirmaciones comerciales y receta tipo.
 - [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
+- [`evidencia/goji.md`](evidencia/goji.md): revisión de goji con lo que dice Duke (2002), evidencia por desenlace (lípidos, pigmento macular, glucemia), interacción con warfarina, alergia por LTP y log de búsqueda.
 - [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
 - [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md): 20 bebidas tradicionales de Colombia y del mundo con ingredientes que tienen evidencia, con veredicto de compatibilidad (conserva, conserva con ajuste, no conserva), ajuste y fuentes.
 
