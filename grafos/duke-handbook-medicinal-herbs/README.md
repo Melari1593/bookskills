@@ -22,6 +22,7 @@ Grafo de conocimiento del catálogo completo de *Handbook of Medicinal Herbs* (J
 ## Revisiones derivadas
 
 - Goji (*Lycium*, págs. 495 y 791): [`healing-herbal-infusions/evidencia/goji.md`](../../healing-herbal-infusions/evidencia/goji.md).
+- Jujube e higo seco (*Ziziphus*, págs. 406 y 429; *Ficus carica*, pág. 300): [`healing-herbal-infusions/evidencia/jujube-higo.md`](../../healing-herbal-infusions/evidencia/jujube-higo.md).
 
 ## Archivos
 

@@ -228,11 +228,23 @@ Revisión de evidencia del 2026-11-14 en [`evidencia/goji.md`](evidencia/goji.md
 - **Embarazo:** Duke la clasifica 2b. Como alimento en cantidad normal no hay alerta. No uses extractos.
 - **Receta tipo:** 10 g de fruto seco en infusión o remojados en 250 ml de agua caliente, 10 min; come también el fruto. Ver [`cheatsheet.md`](cheatsheet.md).
 
+### 20. Jujube e higo seco (el libro no los trata)
+
+Revisión de evidencia del 2026-11-15 en [`evidencia/jujube-higo.md`](evidencia/jujube-higo.md). Incluye lo que dice Duke (2002). Reglas:
+
+- **Higo seco para el estreñimiento:** es la mejor evidencia de las dos frutas. La pasta de higo acortó el tránsito colónico en un ECA doble ciego (8 semanas). En el SII con estreñimiento mejoró las heces y la distensión, pero no la intensidad del dolor. El kiwi rindió algo más.
+- **Fruto de jujube:** los triglicéridos y la glucemia en ayunas (en diabetes tipo 2) bajan poco; la evidencia es de baja calidad. Preséntalo como alimento.
+- **Sueño:** la evidencia es de la **semilla** de azufaifa ácida (*Z. jujuba* var. *spinosa*, suanzaoren), no del fruto. No la combines con sedantes sin valoración médica.
+- **Embarazo:** Duke clasifica el jujube como 2b (uterotónico). Como alimento no hay alerta. No uses extractos ni semilla en dosis medicinales.
+- **Higuera:** el látex de ramas, hojas y fruto fresco causa fitofotodermatitis con el sol. Usa guantes al recoger o podar.
+- **Higos secos:** cuida el origen por las aflatoxinas. Descarta los que tengan moho. En diabetes, cuenta las porciones.
+- **Recetas tipo:** ver [`cheatsheet.md`](cheatsheet.md).
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 últimas filas vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 filas siguientes vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Las 2 últimas filas vienen de la revisión de jujube e higo seco del 2026-11-15 ([`evidencia/jujube-higo.md`](evidencia/jujube-higo.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -300,6 +312,8 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Aceite esencial de limonaria en la piel** | El libro no la trata. | riesgo documentado (alta) | El citral (geranial y neral) es alergeno de declaración obligatoria en cosméticos de la UE (Reglamento 1223/2009, Anexo III, entrada 70). Diluye siempre el aceite y haz la prueba en la piel. Contra el dengue no reemplaza al DEET: protegió menos contra *Aedes aegypti* (doi:10.1016/j.actatropica.2014.11.010). |
 | **Goji y warfarina** | El libro no la trata. | riesgo omitido (media; casos publicados) | No recomiendes goji (fruto, jugo, té o vino) a quien toma warfarina u otro antagonista de la vitamina K. Hay al menos 4 casos de INR alto con epistaxis, equimosis o rectorragia. In vitro, el jugo inhibe más del 75 % de varias CYP. Si la persona ya la consume, mide el INR y pídele que no cambie la cantidad (Rivera 2012, doi:10.1002/j.1875-9114.2012.01018.x; Tan 2020, doi:10.1111/bcp.14404; Liu 2016, doi:10.1515/jcim-2015-0038). |
 | **Goji y alergia por LTP** | El libro no la trata. | riesgo documentado (media) | La goji es un alérgeno con proteína de transferencia de lípidos (LTP). Tiene reactividad cruzada con melocotón, tomate, frutos secos y polen de artemisa. En personas con alergia alimentaria a plantas, el 77 % tuvo prueba cutánea positiva. Si hay alergia a LTP, evítala o pide valoración por alergología (Carnés 2013, doi:10.1016/j.foodchem.2012.10.005; Larramendi 2012, PMID 23101309). |
+| **Látex de higuera y sol** | El libro no la trata. | riesgo documentado (media; series de casos) | El látex de ramas, hojas y cáscara del higo fresco tiene furocumarinas. Con el sol causa fitofotodermatitis: quemaduras lineales con ampollas e hiperpigmentación. Al recoger higos o podar, usa guantes y manga larga, y lávate antes de salir al sol. El higo seco que se come no tiene esta alerta (Veraldi 2023, doi:10.5070/D329562413; Pinto 2023, doi:10.7759/cureus.41888). |
+| **Aflatoxinas en higos secos** | El libro no la trata. | riesgo documentado (alta; norma oficial) | La UE fija 6,0 µg/kg de aflatoxina B1 y 10,0 µg/kg totales en higos secos; el Codex, 10 µg/kg para higos listos para consumo. Compra higos de origen controlado y descarta los que tengan moho ([`grafos/aflatoxinas/informe-aflatoxinas.md`](../grafos/aflatoxinas/informe-aflatoxinas.md)). |
 
 ## Índice de capítulos
 
@@ -323,6 +337,7 @@ Archivos de apoyo:
 - [`evidencia/fatiga.md`](evidencia/fatiga.md): revisión de tulsi, ortiga, avena verde y valeriana en fatiga, estrés y sueño, con aporte real de minerales de las infusiones y receta tipo de apoyo.
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
 - [`evidencia/goji.md`](evidencia/goji.md): revisión de goji con lo que dice Duke (2002), evidencia por desenlace (lípidos, pigmento macular, glucemia), interacción con warfarina, alergia por LTP y log de búsqueda.
+- [`evidencia/jujube-higo.md`](evidencia/jujube-higo.md): revisión de jujube e higo seco con lo que dice Duke (2002), evidencia en estreñimiento, metabolismo y sueño (semilla de azufaifa ácida), fitofotodermatitis, aflatoxinas y log de búsqueda.
 - [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
 - [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md): 20 bebidas tradicionales de Colombia y del mundo con ingredientes que tienen evidencia, con veredicto de compatibilidad (conserva, conserva con ajuste, no conserva), ajuste y fuentes.
 
