@@ -1,0 +1,808 @@
+{
+ "meta": {
+  "title": "El perfume — grafo del libro",
+  "subtitle": "Agustí Vidal Valls, Parramón Paidotribo (ed. epub 2022): 4 capítulos, 39 secciones, 44 conceptos clave y anexos",
+  "itemLabel": "Concepto clave",
+  "itemLabelPlural": "Conceptos",
+  "resourceLabel": "Anexo",
+  "resourceLabelPlural": "Anexos",
+  "searchHint": "Buscar: cumarina, enfleurage, chipre…"
+ },
+ "blocks": {
+  "olf": {
+   "name": "Olfato y química",
+   "color": "#3F7CAC"
+  },
+  "mat": {
+   "name": "Materias primas",
+   "color": "#5B8C3A"
+  },
+  "cre": {
+   "name": "Creación y mercado",
+   "color": "#8E4A8C"
+  },
+  "seg": {
+   "name": "Seguridad",
+   "color": "#A23B3B"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "El olor, el olfato y la química",
+   "block": "olf",
+   "summary": "Cómo percibimos los olores, por qué despiertan memoria y emoción, y qué rasgos de una molécula (forma, quiralidad, peso) deciden su olor, su intensidad y su duración.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "El sentido del olfato",
+     "items": [
+      "respuesta_global",
+      "umbral"
+     ],
+     "summary": "Recorrido del olor desde la evaporación hasta el bulbo olfatorio; el olor activa el conjunto de receptores, no un grupo fijo."
+    },
+    {
+     "num": "1.2",
+     "title": "El poder emocional del olfato",
+     "items": [
+      "limbico",
+      "lenguaje_olor"
+     ],
+     "summary": "El olfato se procesa en zonas cerebrales antiguas ligadas a emoción y memoria; por eso es difícil nombrar los olores."
+    },
+    {
+     "num": "1.3",
+     "title": "Buenos y malos olores",
+     "summary": "La valoración de un olor depende de la cultura; ejemplo de la teoría del miasma y su efecto en la higiene y la ciudad."
+    },
+    {
+     "num": "1.4",
+     "title": "Olfato y gusto",
+     "items": [
+      "retronasal"
+     ],
+     "summary": "Gran parte de lo que llamamos sabor es olor que llega a la nariz por vía retronasal."
+    },
+    {
+     "num": "1.5",
+     "title": "Los orígenes de la vida",
+     "items": [
+      "isopreno",
+      "quiralidad",
+      "tenacidad"
+     ],
+     "summary": "Del átomo de carbono a las moléculas olorosas: terpenos, isómeros ópticos y la relación entre peso molecular y persistencia."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Las materias primas y su obtención",
+   "block": "mat",
+   "summary": "Técnicas para extraer olores de la naturaleza, análisis químico de los extractos y una clasificación en familias olfativas con sus materias naturales y moléculas emblemáticas.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Las materias de origen natural",
+     "items": [
+      "destilacion",
+      "enfleurage",
+      "disolventes",
+      "expresion",
+      "co2"
+     ],
+     "summary": "Destilación, enfleurage, extracción con disolventes, expresión, resinas, maceración y técnicas modernas; ningún extracto reproduce del todo el olor vivo."
+    },
+    {
+     "num": "2.2",
+     "title": "Los productos químicos",
+     "items": [
+      "gcms",
+      "tipos_quimicos"
+     ],
+     "summary": "La cromatografía de gases acoplada a espectrometría de masas permite identificar y luego sintetizar las moléculas de los extractos."
+    },
+    {
+     "num": "2.3",
+     "title": "Las familias olfativas",
+     "items": [
+      "familia_fase"
+     ],
+     "summary": "Criterio de clasificación de las materias por carácter olfativo y por su fase de evaporación; cinco familias principales y varias secundarias."
+    },
+    {
+     "num": "2.4",
+     "title": "La familia cítrica",
+     "items": [
+      "dihidromircenol"
+     ],
+     "summary": "Naranja, limón, bergamota, mandarina y pomelo; muy volátiles y base de las salidas frescas."
+    },
+    {
+     "num": "2.5",
+     "title": "La familia agreste",
+     "summary": "Lavanda, espliego, lavandino y romero."
+    },
+    {
+     "num": "2.6",
+     "title": "La familia floral",
+     "items": [
+      "damasconas",
+      "hedione"
+     ],
+     "summary": "Rosa, jazmín, muguet, ylang-ylang, tuberosa y otras flores, con las moléculas que explican cada faceta."
+    },
+    {
+     "num": "2.7",
+     "title": "La familia madera",
+     "items": [
+      "iso_e"
+     ],
+     "summary": "Pachulí, sándalo, cedro, vetiver, musgo de encina, iris y oud; une el cuerpo con el fondo."
+    },
+    {
+     "num": "2.8",
+     "title": "La familia animal",
+     "items": [
+      "ambrox"
+     ],
+     "summary": "Civeta, almizcle, ámbar gris y castóreo, hoy sustituidos casi siempre por moléculas de síntesis."
+    },
+    {
+     "num": "2.9",
+     "title": "La familia verde",
+     "summary": "Notas de hoja y tallo; el gálbano como esencia verde de gran potencia."
+    },
+    {
+     "num": "2.10",
+     "title": "La familia frutal",
+     "items": [
+      "aldehido_c14"
+     ],
+     "summary": "Notas de fruta, en su mayoría construidas con moléculas; la grosella negra como caso especial."
+    },
+    {
+     "num": "2.11",
+     "title": "La familia acuosa",
+     "items": [
+      "calone"
+     ],
+     "summary": "Efectos marinos y acuáticos que no existen como extracto natural."
+    },
+    {
+     "num": "2.12",
+     "title": "La familia especiada",
+     "summary": "Nuez moscada, cardamomo, comino, pimienta rosa, coriandro, clavo, canela y azafrán."
+    },
+    {
+     "num": "2.13",
+     "title": "La familia oriental",
+     "items": [
+      "vainillina"
+     ],
+     "summary": "Vainilla y resinas dulces (incienso, mirra, opopónaco)."
+    },
+    {
+     "num": "2.14",
+     "title": "La familia aldehídica",
+     "items": [
+      "aldehidos"
+     ],
+     "summary": "Aldehídos alifáticos: efecto chispeante y abstracto, sin referente natural directo."
+    },
+    {
+     "num": "2.15",
+     "title": "La familia tabaco",
+     "items": [
+      "cumarina"
+     ],
+     "summary": "Hoja de tabaco y haba tonka; la cumarina como molécula central."
+    },
+    {
+     "num": "2.16",
+     "title": "La familia flor de naranjo",
+     "items": [
+      "schiff"
+     ],
+     "summary": "Neroli, azahar y petitgrain; el antranilato de metilo y sus derivados."
+    },
+    {
+     "num": "2.17",
+     "title": "La familia aromática",
+     "summary": "Hierbas como tomillo, cistus y manzanilla."
+    },
+    {
+     "num": "2.18",
+     "title": "La familia anisada",
+     "summary": "Anetol y estragol."
+    },
+    {
+     "num": "2.19",
+     "title": "La familia conífera",
+     "summary": "Pinos, abetos y otras resinosas de efecto balsámico fresco."
+    },
+    {
+     "num": "2.20",
+     "title": "La familia mentolada",
+     "summary": "Menta, hierbabuena y buchu."
+    },
+    {
+     "num": "2.21",
+     "title": "La familia miel y azucarada",
+     "items": [
+      "etilmaltol"
+     ],
+     "summary": "Olor a miel y a bizcocho; base de las notas gourmand."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "La creación de un perfume",
+   "block": "cre",
+   "summary": "Del encargo comercial al frasco: organización del sector, arquitectura y fases de un perfume, práctica de laboratorio y lectura de los grandes perfumes por familia.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "El desarrollo del proyecto",
+     "items": [
+      "briefing",
+      "segmentos"
+     ],
+     "summary": "Evolución de las empresas, niveles de mercado y el papel del briefing, el evaluador y el jefe de proyecto."
+    },
+    {
+     "num": "3.2",
+     "title": "El proceso de creación",
+     "items": [
+      "fases",
+      "estructura_clasica",
+      "armonia"
+     ],
+     "summary": "Armonía, estructura y evaporación en salida, cuerpo y fondo; la fijación como propiedad de toda la fórmula."
+    },
+    {
+     "num": "3.3",
+     "title": "La práctica en el laboratorio",
+     "items": [
+      "diluciones",
+      "dilucion_alcohol",
+      "maceracion",
+      "mouillette"
+     ],
+     "summary": "Paleta, balanza, diluciones de materias potentes, cálculo del alcohol, maceración, filtrado y evaluación."
+    },
+    {
+     "num": "3.4",
+     "title": "Los perfumes del mercado y las familias olfativas",
+     "summary": "Criterio de selección: cítricos como unisex, floral/chipre/oriental en femenino y fougère/madera en masculino."
+    },
+    {
+     "num": "3.5",
+     "title": "La familia cítrica",
+     "items": [
+      "agua_colonia"
+     ],
+     "summary": "Del agua de colonia a los frescos modernos y la nota té verde."
+    },
+    {
+     "num": "3.6",
+     "title": "La familia floral",
+     "summary": "Grupos floral-oriental, aldehídico, verde, flor blanca y frutal, con sus perfumes hito."
+    },
+    {
+     "num": "3.7",
+     "title": "La familia chipre",
+     "items": [
+      "acorde_chipre"
+     ],
+     "summary": "Acorde de cítricos, flores, cistus, pachulí y musgo; variantes cuero, verde y frutal."
+    },
+    {
+     "num": "3.8",
+     "title": "La familia oriental",
+     "items": [
+      "acorde_oriental"
+     ],
+     "summary": "Acorde dulce de vainilla, haba tonka y resinas, y su evolución hacia lo gourmand."
+    },
+    {
+     "num": "3.9",
+     "title": "La familia fougère",
+     "items": [
+      "acorde_fougere"
+     ],
+     "summary": "Lavanda, cumarina y musgo como eje de la perfumería masculina, hasta los frescos marinos."
+    },
+    {
+     "num": "3.10",
+     "title": "La familia madera",
+     "summary": "Perfumes masculinos de dominante amaderada, con o sin flores."
+    },
+    {
+     "num": "3.11",
+     "title": "La perfumería funcional",
+     "items": [
+      "funcional"
+     ],
+     "summary": "Perfume para jabones, detergentes y suavizantes: estabilidad en la base y fijación en el tejido."
+    }
+   ]
+  },
+  {
+   "num": "A",
+   "title": "Anexo: seguridad en el uso de las materias primas",
+   "block": "seg",
+   "summary": "Marco de autorregulación de la industria y obligación europea de declarar alérgenos.",
+   "sections": [
+    {
+     "num": "A.1",
+     "title": "IFRA: materias prohibidas y restringidas",
+     "items": [
+      "ifra"
+     ],
+     "summary": "Fichas que prohíben o limitan cada materia según la categoría del producto; certificado IFRA de una fragancia."
+    },
+    {
+     "num": "A.2",
+     "title": "Alérgenos de declaración obligatoria",
+     "items": [
+      "alergenos"
+     ],
+     "summary": "Lista europea de alérgenos que se declaran por encima de un umbral, distinto en productos con y sin enjuague."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "respuesta_global": {
+   "title": "Respuesta global del olfato",
+   "summary": "Un olor activa un patrón en todo el sistema de receptores, no un receptor único."
+  },
+  "umbral": {
+   "title": "Umbral de percepción",
+   "summary": "Concentración mínima a la que se detecta una molécula; mide su intensidad olfativa."
+  },
+  "limbico": {
+   "title": "Olfato y sistema límbico",
+   "summary": "El bulbo olfatorio conecta con las estructuras de emoción y memoria; de ahí el poder evocador del olor."
+  },
+  "lenguaje_olor": {
+   "title": "Pobreza del lenguaje olfativo",
+   "summary": "No hay palabras propias para los olores; se describen por comparación con objetos."
+  },
+  "retronasal": {
+   "title": "Vía retronasal",
+   "summary": "Los volátiles del alimento llegan a la mucosa desde la boca y forman la mayor parte del sabor."
+  },
+  "isopreno": {
+   "title": "Isopreno y terpenos",
+   "formula": "C₅ → monoterpenos C₁₀ → sesquiterpenos C₁₅",
+   "summary": "Unidad de cinco carbonos que la naturaleza combina para formar la mayoría de las moléculas olorosas."
+  },
+  "quiralidad": {
+   "title": "Quiralidad",
+   "summary": "Dos isómeros especulares de una molécula pueden oler distinto o tener umbrales muy diferentes."
+  },
+  "tenacidad": {
+   "title": "Tenacidad y peso molecular",
+   "summary": "Cuanto más pesada la molécula, menos volátil y más duradero su olor; explica por qué la madera dura más que el cítrico."
+  },
+  "destilacion": {
+   "title": "Destilación y aceite esencial",
+   "summary": "El vapor de agua arrastra los volátiles de la planta; el producto es el aceite esencial."
+  },
+  "enfleurage": {
+   "title": "Enfleurage",
+   "summary": "La grasa absorbe el olor de pétalos frescos; da un absoluto muy fiel, hoy casi en desuso por su coste."
+  },
+  "disolventes": {
+   "title": "Concreto y absoluto",
+   "summary": "La extracción con disolventes da un concreto con ceras; lavado con etanol se obtiene el absoluto."
+  },
+  "expresion": {
+   "title": "Expresión de cítricos",
+   "summary": "El aceite de la cáscara se libera por presión, sin calor."
+  },
+  "co2": {
+   "title": "CO₂ supercrítico",
+   "summary": "Disolvente en estado supercrítico que extrae a baja temperatura y deja un extracto sin residuos."
+  },
+  "gcms": {
+   "title": "Cromatografía de gases–masas",
+   "summary": "Separa los componentes de un extracto y los identifica por su huella de fragmentos."
+  },
+  "tipos_quimicos": {
+   "title": "Químico natural, natural idéntico y artificial",
+   "summary": "Moléculas aisladas de un extracto, sintetizadas igual que en la naturaleza o sin equivalente natural."
+  },
+  "familia_fase": {
+   "title": "Familia olfativa y fase de evaporación",
+   "summary": "Cada materia se clasifica por su nota fundamental y por si actúa en salida, cuerpo o fondo."
+  },
+  "dihidromircenol": {
+   "title": "Dihidromircenol",
+   "summary": "Molécula cítrico-metálica creada para lo funcional que se volvió eje de los frescos masculinos."
+  },
+  "damasconas": {
+   "title": "Damasconas",
+   "summary": "Moléculas de gran potencia responsables de facetas de la rosa, con fuerte efecto a dosis mínimas."
+  },
+  "hedione": {
+   "title": "Hedione",
+   "summary": "Molécula de la familia del jazmín, transparente y difusiva; abre la nota té verde."
+  },
+  "iso_e": {
+   "title": "Iso E Super",
+   "summary": "Madera sintética suave y envolvente, usada en dosis altas en la perfumería moderna."
+  },
+  "ambrox": {
+   "title": "Ambrox",
+   "summary": "Molécula que reproduce la nota principal del ámbar gris."
+  },
+  "aldehido_c14": {
+   "title": "Aldehído C-14 (gamma-undecalactona)",
+   "summary": "Nota de melocotón que armoniza acordes florales; clave en algunos chipres."
+  },
+  "calone": {
+   "title": "Calone",
+   "summary": "Molécula de efecto marino que define la familia acuosa."
+  },
+  "vainillina": {
+   "title": "Vainillina",
+   "summary": "Molécula principal de la vainilla; su síntesis hizo posible el acorde oriental."
+  },
+  "aldehidos": {
+   "title": "Aldehídos alifáticos",
+   "summary": "Moléculas de efecto chispeante y jabonoso, sin olor natural de referencia."
+  },
+  "cumarina": {
+   "title": "Cumarina",
+   "summary": "Olor de heno, almendra y tabaco del haba tonka; base del acorde fougère y del oriental."
+  },
+  "schiff": {
+   "title": "Bases de Schiff",
+   "summary": "Productos de aldehídos con antranilato de metilo que dan notas de azahar muy tenaces."
+  },
+  "etilmaltol": {
+   "title": "Etilmaltol",
+   "summary": "Nota de caramelo tostado que inició la familia gourmand en perfumería."
+  },
+  "briefing": {
+   "title": "Briefing",
+   "summary": "Documento de la marca que fija concepto, público y requisitos; punto de partida de la creación."
+  },
+  "segmentos": {
+   "title": "Prestige, masstige y mass market",
+   "summary": "Niveles de mercado que determinan precio, presupuesto de fórmula y estilo de lanzamiento."
+  },
+  "fases": {
+   "title": "Salida, cuerpo y fondo",
+   "summary": "Tres fases de evaporación: minutos iniciales, unas dos horas siguientes y lo que queda después."
+  },
+  "estructura_clasica": {
+   "title": "Estructura clásica del perfume",
+   "formula": "salida 10–30 % · cuerpo ≈50 % · fondo 20–40 %",
+   "summary": "Proporciones de referencia de la escuela de Carles y Roudnitska, hoy relativizadas por las sobredosis modernas."
+  },
+  "armonia": {
+   "title": "Armonía y fijación",
+   "summary": "No hay regla de equilibrio; la fijación depende de toda la mezcla y no se añade al final."
+  },
+  "diluciones": {
+   "title": "Diluciones de trabajo",
+   "summary": "Las materias muy potentes se pesan diluidas (p. ej. al 10 % en dipropilenglicol) para dosificar con precisión."
+  },
+  "dilucion_alcohol": {
+   "title": "Cálculo del alcohol y el agua",
+   "summary": "Pasar de volumen a peso con las densidades del etanol y el agua para lograr la graduación buscada."
+  },
+  "maceracion": {
+   "title": "Maceración y filtrado",
+   "summary": "Reposo en frío para que la mezcla se integre, seguido de filtrado para eliminar turbidez."
+  },
+  "mouillette": {
+   "title": "Evaluación en mouillette",
+   "summary": "Tiras de papel secante para seguir la evolución del perfume a lo largo del tiempo."
+  },
+  "agua_colonia": {
+   "title": "Agua de colonia",
+   "summary": "Mezcla de cítricos, neroli, lavanda y romero en alcohol; origen de la perfumería moderna y de la familia cítrica."
+  },
+  "acorde_chipre": {
+   "title": "Acorde chipre",
+   "summary": "Contraste entre salida cítrica, cuerpo floral y fondo de cistus, pachulí y musgo."
+  },
+  "acorde_oriental": {
+   "title": "Acorde oriental",
+   "summary": "Fondo dulce de vainillina, cumarina y resinas iluminado por una salida cítrica."
+  },
+  "acorde_fougere": {
+   "title": "Acorde fougère",
+   "summary": "Lavanda, cumarina y musgo de encina."
+  },
+  "funcional": {
+   "title": "Perfume en la base funcional",
+   "summary": "El perfume debe ser estable en la base, cubrir su olor y, en suavizantes, anclarse en la fibra."
+  },
+  "ifra": {
+   "title": "Estándares IFRA",
+   "summary": "Autorregulación de la industria: cada materia se prohíbe o se limita según la categoría de producto."
+  },
+  "alergenos": {
+   "title": "Alérgenos declarables",
+   "formula": "leave-on > 10 ppm · rinse-off > 100 ppm",
+   "summary": "Moléculas que se declaran en la etiqueta por encima de esos umbrales según la normativa europea."
+  }
+ },
+ "resources": [
+  {
+   "id": "G",
+   "title": "Glosario",
+   "usedBy": [
+    "2.1",
+    "3.2",
+    "3.3"
+   ]
+  },
+  {
+   "id": "T1",
+   "title": "Tabla de familias según fase de evaporación",
+   "usedBy": [
+    "2.3",
+    "3.2"
+   ]
+  },
+  {
+   "id": "T2",
+   "title": "Tabla de alcohol y agua por graduación",
+   "usedBy": [
+    "3.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "A": [
+    2
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.4": [
+    "1.1"
+   ],
+   "1.5": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.5"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.2",
+    "1.5"
+   ],
+   "2.4": [
+    "2.3"
+   ],
+   "2.5": [
+    "2.3"
+   ],
+   "2.6": [
+    "2.3"
+   ],
+   "2.7": [
+    "2.3"
+   ],
+   "2.8": [
+    "2.3"
+   ],
+   "2.9": [
+    "2.3"
+   ],
+   "2.10": [
+    "2.3"
+   ],
+   "2.11": [
+    "2.3"
+   ],
+   "2.12": [
+    "2.3"
+   ],
+   "2.13": [
+    "2.3"
+   ],
+   "2.14": [
+    "2.3"
+   ],
+   "2.15": [
+    "2.3"
+   ],
+   "2.16": [
+    "2.3"
+   ],
+   "2.17": [
+    "2.3"
+   ],
+   "2.18": [
+    "2.3"
+   ],
+   "2.19": [
+    "2.3"
+   ],
+   "2.20": [
+    "2.3"
+   ],
+   "2.21": [
+    "2.3"
+   ],
+   "3.2": [
+    "3.1",
+    "2.3"
+   ],
+   "3.3": [
+    "3.2"
+   ],
+   "3.4": [
+    "3.2"
+   ],
+   "3.5": [
+    "3.4",
+    "2.4",
+    "2.5"
+   ],
+   "3.6": [
+    "3.4",
+    "2.6",
+    "2.14"
+   ],
+   "3.7": [
+    "3.4",
+    "2.6",
+    "2.7"
+   ],
+   "3.8": [
+    "3.4",
+    "2.13",
+    "2.15"
+   ],
+   "3.9": [
+    "3.4",
+    "2.5",
+    "2.15"
+   ],
+   "3.10": [
+    "3.4",
+    "2.7"
+   ],
+   "3.11": [
+    "3.3",
+    "2.14"
+   ],
+   "A.1": [
+    "3.3"
+   ],
+   "A.2": [
+    "A.1"
+   ]
+  },
+  "items": {
+   "limbico": [
+    "respuesta_global"
+   ],
+   "umbral": [
+    "respuesta_global"
+   ],
+   "quiralidad": [
+    "isopreno"
+   ],
+   "tenacidad": [
+    "isopreno"
+   ],
+   "disolventes": [
+    "destilacion"
+   ],
+   "enfleurage": [
+    "destilacion"
+   ],
+   "co2": [
+    "disolventes"
+   ],
+   "gcms": [
+    "destilacion"
+   ],
+   "tipos_quimicos": [
+    "gcms"
+   ],
+   "familia_fase": [
+    "tenacidad",
+    "tipos_quimicos"
+   ],
+   "damasconas": [
+    "umbral",
+    "isopreno"
+   ],
+   "iso_e": [
+    "tenacidad"
+   ],
+   "fases": [
+    "familia_fase"
+   ],
+   "estructura_clasica": [
+    "fases"
+   ],
+   "armonia": [
+    "fases"
+   ],
+   "diluciones": [
+    "umbral"
+   ],
+   "maceracion": [
+    "dilucion_alcohol"
+   ],
+   "agua_colonia": [
+    "expresion",
+    "fases"
+   ],
+   "acorde_chipre": [
+    "estructura_clasica"
+   ],
+   "acorde_oriental": [
+    "vainillina",
+    "cumarina"
+   ],
+   "acorde_fougere": [
+    "cumarina"
+   ],
+   "funcional": [
+    "aldehidos",
+    "dihidromircenol"
+   ],
+   "alergenos": [
+    "ifra"
+   ],
+   "dihidromircenol": [
+    "familia_fase"
+   ],
+   "hedione": [
+    "familia_fase"
+   ],
+   "ambrox": [
+    "familia_fase"
+   ],
+   "aldehido_c14": [
+    "familia_fase"
+   ],
+   "calone": [
+    "familia_fase"
+   ],
+   "vainillina": [
+    "familia_fase"
+   ],
+   "aldehidos": [
+    "familia_fase"
+   ],
+   "cumarina": [
+    "familia_fase"
+   ],
+   "schiff": [
+    "familia_fase"
+   ],
+   "etilmaltol": [
+    "familia_fase"
+   ]
+  }
+ }
+}
