@@ -78,11 +78,13 @@ description: "Knowledge base from \"Fruits & Nuts: Recipes and Techniques from t
 - **Sorbet** → ch. 2, `cheatsheet.md`
 - **Stone fruit / drupes** → ch. 6
 - **Vanilla, gelatin, butter, cream basics** → ch. 11
+- **Lychee / mamoncillo (pairing, molecular recipes)** → `molecular.md`
 - **Food safety (kernels, raw egg, jam storage, oysters, goji, lychee, Brazil nut)** → `evidence.md`
 
 ## Supporting Files
 - `glossary.md` — French and technique-specific terms, alphabetical.
 - `patterns.md` — All 40 techniques as a flat, scannable index.
+- `molecular.md` — Lychee and mamoncillo (Spanish lime): key odorants from odorantes-db, pairings (lychee + raspberry share 6 odorants), cold gelatin and reverse-spherification recipes, hypoglycin A / MCPG rules. In Spanish.
 - `evidence.md` — Food-safety evidence check (EFSA, FDA/USDA, NCHFP, PubMed with DOIs), verdict per item S1–S10; Spanish search log in `evidence/verif_seguridad_es.md`.
 - `cheatsheet.md` — Numbers table: sugar/candy stages, blanching times, oven temps, cut sizes, ripening/storage, oxidation fixes.
 

@@ -123,5 +123,10 @@
   "nombre": "Laurel (Laurus nobilis), hoja",
   "en": "Laurus nobilis OR bay leaf",
   "lote": 9
+ },
+ "lichi": {
+  "nombre": "Lichi (Litchi chinensis), pulpa fresca",
+  "en": "Litchi chinensis OR lychee OR litchi",
+  "lote": 10
  }
 }

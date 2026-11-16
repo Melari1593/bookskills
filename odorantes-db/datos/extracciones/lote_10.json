@@ -1,0 +1,251 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "pmid": "29567218",
+   "pmcid": "PMC9322243",
+   "autor": "Feng",
+   "anio": 2017,
+   "alimento": "lichi",
+   "muestra": "Pulpa (arilo) de lichi 'Sweetheart' fresco; extracción SAFE",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "SAFE",
+    "AEDA",
+    "sensorial"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Encontró 31 odorantes activos con FD entre 2 y 1024. Los FD más altos fueron metional (1024) y geraniol (512); siguen furaneol, nerol, trisulfuro de dimetilo, linalol, (E,Z)-2,6-nonadienal y nerolidol. En el panel sensorial puntuaron alto floral, fruta tropical, durazno/albaricoque y miel."
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "pmid": "17266328",
+   "pmcid": null,
+   "autor": "Mahattanatawee",
+   "anio": 2007,
+   "alimento": "lichi",
+   "muestra": "Lichi fresco de tres cultivares (Mauritius, Brewster, Hak Ip)",
+   "metodos": [
+    "GC-O",
+    "GC-MS",
+    "GC-PFPD"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Detectó 59 compuestos con olor, 11 con respuesta de azufre. Las diferencias de nota a repollo y ajo entre cultivares siguieron el contenido de volátiles azufrados (Hak Ip el más alto). 24 odorantes fueron comunes a los tres, entre ellos cis-óxido de rosa, linalol, metional, trisulfuro de dimetilo, beta-damascenona, 2-feniletanol y beta-ionona. El resumen no da FD."
+  },
+  {
+   "doi": "10.1016/j.crfs.2023.100481",
+   "pmid": "37033736",
+   "pmcid": "PMC10074505",
+   "autor": "Wang",
+   "anio": 2023,
+   "alimento": "lichi",
+   "muestra": "Jugo de lichi pasteurizado, con y sin fermentación por Lactiplantibacillus plantarum",
+   "metodos": [
+    "GC-MS",
+    "GC-IMS",
+    "OAV",
+    "nariz electrónica",
+    "sensorial"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "La pasteurización bajó los alcoholes un 28,5 %, sobre todo geraniol y citronelol. Hubo 37 compuestos con OAV > 1; los más altos fueron linalol (7504), óxido de rosa (4265), 1-octen-3-ol (1055) y geraniol (764). OAV con cuantificación semicuantitativa; matriz jugo, no fruta fresca."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "metional",
+   "descriptor": "papa cocida",
+   "fd": 1024,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "geraniol",
+   "descriptor": "floral dulce",
+   "fd": 512,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "furaneol",
+   "descriptor": "caramelo",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "nerol",
+   "descriptor": "floral dulce",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "vegetal en conserva, azufrado",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "linalool",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "(E,Z)-2,6-nonadienal",
+   "descriptor": "pepino",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.jfda.2017.07.013",
+   "alimento": "lichi",
+   "nombre": "nerolidol",
+   "descriptor": "metálico, aceite de ajonjolí",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "cis-rose oxide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "linalool",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "methional",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "dimethyl trisulfide",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "beta-damascenone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "2-phenylethanol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1021/jf062925p",
+   "alimento": "lichi",
+   "nombre": "beta-ionone",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.crfs.2023.100481",
+   "alimento": "lichi",
+   "nombre": "linalool",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": 7504,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.crfs.2023.100481",
+   "alimento": "lichi",
+   "nombre": "rose oxide",
+   "descriptor": "floral, lichi",
+   "fd": null,
+   "oav": 4265,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.crfs.2023.100481",
+   "alimento": "lichi",
+   "nombre": "1-octen-3-ol",
+   "descriptor": "champiñón",
+   "fd": null,
+   "oav": 1055,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.crfs.2023.100481",
+   "alimento": "lichi",
+   "nombre": "geraniol",
+   "descriptor": "floral",
+   "fd": null,
+   "oav": 764,
+   "nivel": "C",
+   "ubicacion": "resumen"
+  }
+ ]
+}

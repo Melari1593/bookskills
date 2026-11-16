@@ -1,6 +1,6 @@
 # Pruebas de la base de odorantes
 
-Filas: 623 · compuestos distintos: 268 · estudios: 80 (texto completo: 19) · por nivel: {'A': 149, 'B': 109, 'C': 350, 'D': 15}
+Filas: 642 · compuestos distintos: 271 · estudios: 83 (texto completo: 19) · por nivel: {'A': 149, 'B': 109, 'C': 369, 'D': 15}
 
 ## Regresión
 - OK · cafe_tostado + ajonjoli_tostado → 2-furfuriltiol (niveles A, C)
