@@ -118,5 +118,10 @@
   "nombre": "Piña fresca",
   "en": "pineapple",
   "lote": 8
+ },
+ "laurel": {
+  "nombre": "Laurel (Laurus nobilis), hoja",
+  "en": "Laurus nobilis OR bay leaf",
+  "lote": 9
  }
 }

@@ -1,10 +1,10 @@
 # odorantes-db: base de odorantes clave de alimentos
 
-Base consultable de **odorantes clave** (compuestos de aroma por encima de su umbral) de 18 alimentos, extraída de estudios con olfatometría, dilución de extracto aromático (AEDA), dilución isotópica (SIDA), valores de actividad de olor (OAV) y recombinación. Da soporte a la skill [`odorantes-clave`](../skills/odorantes-clave/SKILL.md).
+Base consultable de **odorantes clave** (compuestos de aroma por encima de su umbral) de 25 alimentos, extraída de estudios con olfatometría, dilución de extracto aromático (AEDA), dilución isotópica (SIDA), valores de actividad de olor (OAV) y recombinación. Da soporte a la skill [`odorantes-clave`](../skills/odorantes-clave/SKILL.md).
 
 ## Qué contiene
 
-- `datos/alimentos.json`: los 18 alimentos con su forma culinaria definida.
+- `datos/alimentos.json`: los 25 alimentos con su forma culinaria definida.
 - `datos/extracciones/lote_*.json`: estudios (DOI, muestra, métodos, nota propia) y odorantes (nombre, descriptor, FD, OAV, nivel A–D, ubicación en la fuente).
 - `datos/sinonimos.json`: unificación de nombres (por ejemplo, furaneol = HDMF).
 - `datos/odorantes.sqlite` y `datos/odorantes.csv`: la base construida.

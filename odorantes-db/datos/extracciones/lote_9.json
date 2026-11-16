@@ -1,0 +1,38 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1021/jf0306237",
+   "pmid": "15030218",
+   "pmcid": null,
+   "autor": "Kilic",
+   "anio": 2004,
+   "alimento": "laurel",
+   "muestra": "Hojas frescas de Laurus nobilis (Turquía); también yemas, flores y frutos; extracción con disolvente",
+   "metodos": ["GC-MS", "GC-O", "AEDA"],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Comparó los volátiles de hojas, yemas, flores y frutos frescos de laurel. En la hoja dominó el 1,8-cineol. Con AEDA, los odorantes de mayor FD de la hoja fueron (Z)-3-hexenal, 1,8-cineol, linalol, eugenol, (E)-isoeugenol y un compuesto sin identificar con nota de pimienta negra. El resumen no da valores de FD."
+  },
+  {
+   "doi": "10.1002/jsfa.13270",
+   "pmid": "38308484",
+   "pmcid": null,
+   "autor": "Segura-Borrego",
+   "anio": 2024,
+   "alimento": "laurel",
+   "muestra": "Laurel como especia comercial (forma no indicada en el resumen), comparado con cúrcuma y perejil en puré de papa bajo en sal",
+   "metodos": ["GC-O", "sensorial"],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Estudió si el aroma de especias aumenta la percepción de sal. El laurel y la cúrcuma tuvieron el mayor efecto. Por olfatometría, el laurel tuvo sobre todo compuestos activos de la categoría especiada, y el eugenol fue el único que se correlacionó con el realce de lo salado."
+  }
+ ],
+ "odorantes": [
+  {"doi": "10.1021/jf0306237", "alimento": "laurel", "nombre": "(Z)-3-hexenal", "descriptor": "verde fresco", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"},
+  {"doi": "10.1021/jf0306237", "alimento": "laurel", "nombre": "1,8-cineole", "descriptor": "eucalipto", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"},
+  {"doi": "10.1021/jf0306237", "alimento": "laurel", "nombre": "linalool", "descriptor": "floral", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"},
+  {"doi": "10.1021/jf0306237", "alimento": "laurel", "nombre": "eugenol", "descriptor": "clavo", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"},
+  {"doi": "10.1021/jf0306237", "alimento": "laurel", "nombre": "(E)-isoeugenol", "descriptor": "floral", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"},
+  {"doi": "10.1002/jsfa.13270", "alimento": "laurel", "nombre": "eugenol", "descriptor": "", "fd": null, "oav": null, "nivel": "C", "ubicacion": "resumen"}
+ ]
+}

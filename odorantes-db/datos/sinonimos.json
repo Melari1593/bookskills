@@ -169,5 +169,12 @@
  "ethyl 3-(methylthio)propanoate": "3-(metiltio)propanoato de etilo",
  "ethyl octanoate": "octanoato de etilo",
  "methyl octanoate": "octanoato de metilo",
- "ethyl 3-methylbutanoate": "3-metilbutanoato de etilo"
+ "ethyl 3-methylbutanoate": "3-metilbutanoato de etilo",
+ "1,8-cineole": "1,8-cineol",
+ "1,8-cineol": "1,8-cineol",
+ "eucalyptol": "1,8-cineol",
+ "cineole": "1,8-cineol",
+ "(e)-isoeugenol": "(E)-isoeugenol",
+ "trans-isoeugenol": "(E)-isoeugenol",
+ "isoeugenol": "(E)-isoeugenol"
 }
