@@ -108,7 +108,7 @@ When you ask about a topic not covered in Core Frameworks below, I will read the
 - [patterns.md](patterns.md) — techniques, protocols, and treatment patterns
 - [cheatsheet.md](cheatsheet.md) — decision rules, contraindications, quick formula lookup
 - [evidence.md](evidence.md) — evidence check (2026-10-28) of the skill's trial, safety and chronobiology claims: verdict, corrected note and key sources for each; full entries with DOIs and search logs in [evidence/](evidence/)
-- [molecular.md](molecular.md) — molecular-gastronomy adaptations (2026-11-16, in Spanish) of five decoctions (Gan Mai Da Zao Tang, Suan Zao Ren Tang, Bai He Zhi Mu Tang, Sheng Mai San, Huang Lian E Jiao Tang) under the rule "one portion = one dose", with PubMed evidence, safety notes and a table of excluded formulas (aconite, cinnabar, ephedra, pediatric use, long-term use)
+- [molecular.md](molecular.md) — molecular-gastronomy adaptations (2026-11-16, in Spanish) of nine decoctions (Gan Mai Da Zao Tang, Suan Zao Ren Tang, Bai He Zhi Mu Tang, Sheng Mai San, Huang Lian E Jiao Tang, Zhi Zi Chi Tang, Si Jun Zi Tang, Fu Ling Gui Zhi Gan Cao Da Zao Tang, Gui Ling Wu Wei Gan Cao Tang) under the rule "one portion = one dose", with PubMed evidence, safety notes and a table of excluded formulas (aconite, cinnabar, ephedra, pediatric use, long-term use)
 
 ---
 

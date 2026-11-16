@@ -30,6 +30,12 @@ No es asesoría médica. Las fórmulas tienen contraindicaciones (ver [cheatshee
 | 3 | Bai He Zhi Mu Tang (5) | Bebida sedosa tibia | Xantana 0,25 % | Sin metaanálisis localizado | Datos clínicos escasos |
 | 4 | Sheng Mai San (9) | Perlas para agua fría | Esferificación inversa | Baja (insuficiencia cardiaca) | Ginseng y warfarina; schisandra y tacrolimus |
 | 5 | Huang Lian E Jiao Tang (4) | La fórmula ya es un gel | E Jiao (gelatina de piel de burro) | Sin ensayos localizados | Berberina; yema cruda; adulteración del E Jiao |
+| 6 | Zhi Zi Chi Tang (4) | Gel frío, solo curso corto | Agar 0,5 % | Sin ensayos; solo datos de laboratorio | Gardenia a largo plazo; soya (alergeno) |
+| 7 | Si Jun Zi Tang (8) | Bebida tibia espesa | Xantana 0,25 % | No localizada en salud mental | Ginseng y warfarina; regaliz |
+| 8 | Fu Ling Gui Zhi Gan Cao Da Zao Tang (6) | Gel tibio en un molde | Agar 0,5 % | Sin ensayos localizados | Regaliz; el pánico necesita valoración médica |
+| 9 | Gui Ling Wu Wei Gan Cao Tang (6) | Gel para una toma antes de un evento | Gelana de alta acilación 0,5 % | Sin ensayos localizados | Schisandra y tacrolimus; regaliz |
+
+*Recetas 6–9 y las exclusiones de Si Ni San y Shen Ling Bai Zhu San: verificadas el 2026-11-16.*
 
 ## Recetas
 
@@ -155,6 +161,88 @@ El E Jiao es gelatina de piel de burro. Se disuelve en la decocción caliente y,
 - **Huang Lian (berberina):** no en el embarazo ni en recién nacidos con ictericia ([evidence.md](evidence.md) 2.6).
 - **E Jiao adulterado:** según PubMed, de 18 lotes comerciales solo 9 resultaron auténticos y 8 eran sospechosos de llevar material de caballo ([Zhang 2022](https://doi.org/10.1371/journal.pone.0273021)). Es de origen animal: tenga en cuenta restricciones religiosas y veganas.
 
+### 6. Gel frío de Zhi Zi Chi Tang (solo curso corto)
+
+**Objetivo:** un gel fresco para el patrón de calor en el pecho que impide dormir. Una porción = una dosis.
+
+| Ingrediente | % | g |
+|---|---|---|
+| Decocción colada (una toma) | — | 250 |
+| Agar | 0,5 | 1,25 |
+
+**Proceso**
+1. Disperse el agar en la decocción fría. Hierva 3 min.
+2. Haga la prueba del plato frío.
+3. Vierta en un molde y refrigere. Sírvalo frío.
+
+**Por qué funciona:** el agar tolera la ebullición de la decocción. El gel se sirve frío y no se funde en la nevera. La gardenia tiñe de amarillo intenso: es la crocina, un pigmento soluble en agua (interpretación).
+
+**Evidencia:** según PubMed, no encontré ensayos clínicos. Solo hay estudios de farmacología de redes y de laboratorio sobre el genipósido ([Li 2023](https://doi.org/10.1016/j.gene.2023.147564)).
+
+**Seguridad:** solo adultos y solo en cursos cortos. La gardenia a largo plazo se asocia a flebosclerosis mesentérica ([evidence.md](evidence.md) 2.1). Contiene soya fermentada (Dan Dou Chi): es un alergeno. No en el embarazo (no verificado en esta revisión).
+
+### 7. Bebida tibia de Si Jun Zi Tang
+
+**Objetivo:** una bebida espesa y suave para la niebla mental con digestión lenta.
+
+| Ingrediente | % | g |
+|---|---|---|
+| Decocción colada (una toma) | — | 250 |
+| Goma xantana | 0,25 | 0,6 |
+| Azúcar para dispersar | — | 6 |
+
+**Proceso**
+1. Mezcle la xantana con el azúcar.
+2. Licúe con la decocción tibia 30 s. Deje reposar 5 min.
+3. Sirva tibia.
+
+**Por qué funciona:** la xantana espesa sin hervir y tolera el calor de la decocción. El Fu Ling (*Poria*) aporta polisacáridos y algo de cuerpo (interpretación).
+
+**Evidencia:** según PubMed, no encontré revisiones de Si Jun Zi Tang en niebla mental, depresión ni cognición. La búsqueda devolvió solo revisiones de Shen Ling Bai Zhu San, una fórmula derivada (ver exclusiones).
+
+**Seguridad:** solo adultos. Lleva ginseng: interacción con warfarina ([evidence.md](evidence.md) 2.10). Lleva regaliz (regla 3). La niebla mental persistente necesita valoración médica.
+
+### 8. Gel tibio de Fu Ling Gui Zhi Gan Cao Da Zao Tang
+
+**Objetivo:** un gel tibio en un solo molde para el patrón Ben Tun (pánico que sube del abdomen al pecho).
+
+| Ingrediente | % | g |
+|---|---|---|
+| Decocción colada (una toma) | — | 250 |
+| Agar | 0,5 | 1,25 |
+
+**Proceso**
+1. Disperse el agar en la decocción fría. Hierva 3 min.
+2. Haga la prueba del plato frío.
+3. Vierta en un solo molde. Cómalo tibio.
+
+**Por qué funciona:** el gel de agar funde a 80–90 °C, así que se puede recalentar sin perder la forma. El dátil chino puede aportar taninos: haga la prueba de 50 g (regla 4).
+
+**Evidencia:** según PubMed, no encontré ensayos de esta fórmula. Las búsquedas devolvieron fórmulas de nombre parecido (Guizhi Fuling, Linggui Zhugan) que son distintas.
+
+**Seguridad:** solo adultos. El libro la contraindica con problemas digestivos. Lleva regaliz (regla 3). Un primer episodio de pánico con palpitaciones necesita valoración médica para descartar una causa cardiaca.
+
+### 9. Gel ácido de Gui Ling Wu Wei Gan Cao Tang
+
+**Objetivo:** una sola porción para tomar antes de un evento (ansiedad escénica).
+
+| Ingrediente | % | g |
+|---|---|---|
+| Decocción colada (una toma) | — | 250 |
+| Gelana de alta acilación | 0,5 | 1,25 |
+| Azúcar para dispersar | — | 5 |
+
+**Proceso**
+1. Mezcle la gelana con el azúcar. Disperse en la decocción fría.
+2. Caliente a 90 °C revolviendo. En Bogotá, mantenga el hervor suave 3 min.
+3. Vierta en un solo molde. Gelifica al bajar de 70–80 °C.
+
+**Por qué funciona:** la schisandra (Wu Wei Zi) hace ácida la decocción (interpretación; el pH no está medido). La gelana de alta acilación puede hidratar con pH menor de 4, mientras que la gelatina necesita pH 4 o más.
+
+**Evidencia:** según PubMed, no encontré ensayos de esta fórmula.
+
+**Seguridad:** solo adultos. Schisandra: en trasplantados renales, el extracto Wuzhi triplicó en promedio la concentración de tacrolimus ([Chen 2022](https://doi.org/10.1111/ctr.14807)). Evítela con tacrolimus u otros fármacos de CYP3A. Lleva regaliz (regla 3). Pruébela un día sin evento para ver cómo le sienta.
+
 ## Fórmulas excluidas y por qué
 
 | Fórmula | Motivo |
@@ -168,7 +256,8 @@ El E Jiao es gelatina de piel de burro. Se disuelve en la decocción caliente y,
 | Xue Fu Zhu Yu Tang; Tao He Cheng Qi Tang; Dang Gui Shao Yao San | Fórmulas que "mueven la sangre" o purgan: riesgo en el embarazo y con anticoagulantes (no verificado en esta revisión) |
 | Dang Gui Si Ni Tang | El libro la contraindica en enfermedad renal. Las fórmulas con Mu Tong tienen historia de sustitución por especies con ácido aristolóquico ([evidence.md](evidence.md) 2.12) |
 | An Shen Ding Zhi Wan; Gui Pi Wan | Productos de patente en píldora; no se preparan en casa |
-| Zhi Zi Chi Tang; Si Ni San; Si Jun Zi Tang; Shen Ling Bai Zhu San; Fu Ling Gui Zhi Gan Cao Da Zao Tang; Gui Ling Wu Wei Gan Cao Tang | Pendientes: no verifiqué su evidencia ni su seguridad en esta revisión. Shen Ling Bai Zhu San ya se toma como polvo y la técnica aporta poco |
+| Si Ni San | Junta dos ingredientes que suben la presión: Zhi Shi (naranja amarga inmadura, con sinefrina) y regaliz. Según PubMed, la sinefrina subió la presión sistólica unos 6 mmHg con uso prolongado en un metaanálisis de ensayos con placebo ([Koncz 2022](https://doi.org/10.3390/nu14194019)). Un metaanálisis de 7 ensayos (548 pacientes) en depresión posictus favorece la fórmula modificada, con evidencia de baja calidad ([Cai 2020](https://doi.org/10.1016/j.explore.2020.05.008)) |
+| Shen Ling Bai Zhu San | Ya se toma como polvo; la técnica aporta poco. Según PubMed, la evidencia es digestiva, no mental: 14 ensayos en gastritis crónica con calidad no alta y seguridad poco clara ([Jin 2022](https://doi.org/10.3748/wjg.v28.i33.4890)), y estudios en animales de muy baja calidad en diarrea ([Chen 2022](https://doi.org/10.3389/fphar.2022.938932)) |
 
 ## Huecos
 
@@ -189,6 +278,12 @@ El E Jiao es gelatina de piel de burro. Se disuelve en la decocción caliente y,
 | (Schisandra OR schisandrin OR Wuzhi) AND tacrolimus AND (interaction OR pharmacokinetics) | 66 | Chen 2022 |
 | (Colla corii asini OR ejiao OR donkey-hide gelatin) AND (adulteration OR authentication OR species identification) | 27 | Zhang 2022 |
 | (Baihe Zhimu OR "Bai He Zhi Mu" OR "Lily bulb and Anemarrhena") AND (depression OR insomnia OR randomized OR review) | 12 | Pan 2024 |
+| (Zhizichi OR "Zhi Zi Chi" OR "Zhizi Chi" OR "Gardenia and Soybean") AND (depression OR insomnia OR randomized OR review) | 28 | Li 2023 (laboratorio) |
+| (Sini San OR "Si Ni San" OR Sinisan) AND (depression OR anxiety) AND (meta-analysis OR systematic review OR randomized) | 7 | Cai 2020 |
+| (Sijunzi OR "Si Jun Zi" OR "Shenling Baizhu" OR "Shen Ling Bai Zhu") AND (meta-analysis OR systematic review) | 25 | Jin 2022; Chen 2022 (solo Shen Ling Bai Zhu San) |
+| (Linggui OR "Ling Gui" OR "Fuling Guizhi" OR "Poria Cinnamomi" OR "Guiling Wuwei") AND (randomized OR meta-analysis OR systematic review) | 29 | Ninguno: fórmulas distintas |
+| p-synephrine safety review | 16 | Koncz 2022 |
+| (geniposide OR Gardenia jasminoides) AND (hepatotoxicity OR liver injury) AND (human OR clinical OR rats) | 85 | Ninguno útil para seguridad humana |
 
 ## Referencias
 
@@ -201,4 +296,9 @@ El E Jiao es gelatina de piel de burro. Se disuelve en la decocción caliente y,
 - Xiong XJ. Huanglian Ejiao Decoction formula syndrome and its application for refractory insomnia (en chino). *Zhongguo Zhong Yao Za Zhi* 2021;46(14):3732-8. [doi:10.19540/j.cnki.cjcmm.20201030.501](https://doi.org/10.19540/j.cnki.cjcmm.20201030.501)
 - Zhang J et al. Species-specific identification of donkey-hide gelatin and its adulterants using marker peptides. *PLoS One* 2022;17(8):e0273021. [doi:10.1371/journal.pone.0273021](https://doi.org/10.1371/journal.pone.0273021)
 - Zhang B et al. Gan-Mai-Da-Zao decoction ameliorates depressive-like behaviors in CUMS mice. *Phytomedicine* 2025;145:157018. [doi:10.1016/j.phymed.2025.157018](https://doi.org/10.1016/j.phymed.2025.157018)
+- Li B et al. Geniposide improves depression via the Creb1/Six3os1 axis (Zhi-zi-chi decoction). *Gene* 2023;877:147564. [doi:10.1016/j.gene.2023.147564](https://doi.org/10.1016/j.gene.2023.147564)
+- Cai L et al. Modified Sini San for poststroke depression: MA of RCTs. *Explore (NY)* 2020;17(2):162-9. [doi:10.1016/j.explore.2020.05.008](https://doi.org/10.1016/j.explore.2020.05.008)
+- Koncz D et al. Safety and efficacy of *Citrus aurantium* extracts and p-synephrine: SR/MA. *Nutrients* 2022;14(19):4019. [doi:10.3390/nu14194019](https://doi.org/10.3390/nu14194019)
+- Jin W et al. Shen-ling-bai-zhu-san for chronic gastritis: clinical evidence. *World J Gastroenterol* 2022;28(33):4890-908. [doi:10.3748/wjg.v28.i33.4890](https://doi.org/10.3748/wjg.v28.i33.4890)
+- Chen Q et al. Shenling Baizhu powder and immunity in diarrheal disease (animal SR/MA). *Front Pharmacol* 2022;13:938932. [doi:10.3389/fphar.2022.938932](https://doi.org/10.3389/fphar.2022.938932)
 - Dosis técnicas: `skills/gastronomia-molecular/references/hidrocoloides.md` (Lersch, *Texture* v2.2; JECFA; EFSA).
