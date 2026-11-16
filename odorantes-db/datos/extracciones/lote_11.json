@@ -1,0 +1,136 @@
+{
+ "estudios": [
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "pmid": "37579058",
+   "pmcid": null,
+   "autor": "Adhikary",
+   "anio": 2023,
+   "alimento": "limonaria",
+   "muestra": "aceite esencial de hoja de Cymbopogon citratus; revisión sistemática de composición y métodos de extracción",
+   "metodos": [
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "sin datos",
+   "nota": "Revisión sistemática (1996–2022) sobre química y extracción del aceite. Nombra mirceno, limoneno y citral (geranial y neral) como constituyentes principales, además de geraniol, citronelol, acetato de geranilo y nerol. La extracción por microondas o CO2 supercrítico da más citral. Sin olfatometría."
+  },
+  {
+   "doi": "10.1016/j.heliyon.2021.e06744",
+   "pmid": "33912716",
+   "pmcid": "PMC8063751",
+   "autor": "Muala",
+   "anio": 2021,
+   "alimento": "limonaria",
+   "muestra": "decocción de hojas de Cymbopogon citratus en condiciones optimizadas (Camerún)",
+   "metodos": [
+    "GC-MS"
+   ],
+   "texto_completo": false,
+   "licencia": "CC BY (Heliyon)",
+   "nota": "Optimizó la decocción de hojas para fenoles y analizó volátiles del extracto. Citral y geraniol fueron los volátiles principales; atribuye el olor a limón al citral. Sin olfatometría ni umbrales."
+  }
+ ],
+ "odorantes": [
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "geranial",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "neral",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "myrcene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "limonene",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "geraniol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "citronellol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "geranyl acetate",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1080/27697061.2023.2245435",
+   "alimento": "limonaria",
+   "nombre": "nerol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2021.e06744",
+   "alimento": "limonaria",
+   "nombre": "citral",
+   "descriptor": "limón",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  },
+  {
+   "doi": "10.1016/j.heliyon.2021.e06744",
+   "alimento": "limonaria",
+   "nombre": "geraniol",
+   "descriptor": "",
+   "fd": null,
+   "oav": null,
+   "nivel": "D",
+   "ubicacion": "resumen"
+  }
+ ]
+}
