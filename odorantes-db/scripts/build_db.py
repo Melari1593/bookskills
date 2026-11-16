@@ -23,19 +23,26 @@ def normaliza(n):
     return k
 
 # tipos de aroma (14 de Foodpairing) a partir del descriptor del estudio: heurística por palabras clave
-TIPOS = [("tostado", ["tostad", "café", "roast", "palomita", "pan", "cereal", "malta"]), ("frutos secos", ["nuez", "frutos secos", "almendra", "avellana", "maní", "nut"]),
-         ("caramelo", ["caramel", "dulce", "algodón", "miel", "azúcar"]), ("especiado", ["clavo", "especia", "canela", "pimienta", "anís", "curry"]),
+TIPOS = [("tostado", ["tostad", "café", "roast", "palomita", "pan", "cereal", "malta", "chocolate"]), ("frutos secos", ["nuez", "frutos secos", "fruto seco", "almendra", "avellana", "maní", "nut"]),
+         ("caramelo", ["caramel", "acaramel", "dulce", "algodón", "miel", "azúcar"]), ("especiado", ["clavo", "especia", "canela", "pimienta", "anís", "curry"]),
          ("leñoso", ["ahumad", "humo", "madera", "leñ", "fenól"]), ("floral", ["floral", "rosa", "violeta", "flor", "jazmín", "miel"]),
-         ("cítrico", ["cítric", "limón", "naranja", "pomelo", "lima"]), ("frutal", ["frutal", "fruta", "manzana", "plátano", "piña", "fresa", "melocot", "grosella", "coco", "mango"]),
-         ("verde", ["verde", "hierba", "pepino", "césped", "hoja"]), ("herbal", ["herb", "menta", "eucalipto"]),
+         ("cítrico", ["cítric", "limón", "naranja", "pomelo", "lima"]), ("frutal", ["frutal", "fruta", "afrutad", "manzana", "plátano", "piña", "fresa", "melocot", "grosella", "coco", "mango"]),
+         ("verde", ["verde", "hierba", "pepino", "césped", "hoja"]), ("herbal", ["herb", "hierbas", "menta", "eucalipto"]),
          ("vegetal", ["papa", "patata", "col", "maíz", "vegetal", "tomate", "alga", "champiñ", "seta", "terroso", "tierra"]),
          ("quesero", ["queso", "mantec", "lácte", "crem", "rancio", "sudor", "ácido"]), ("animal", ["carne", "cárnic", "animal", "pescad"]),
          ("químico", ["metálic", "químic", "azufr", "sulfur", "gas", "medicin"])]
 def tipo(desc):
+    # Gana la palabra clave que aparece primero en el descriptor ("floral dulce" -> floral).
+    # Las palabras clave deben empezar palabra ("fermentado" no activa "menta").
+    # Empate en la misma posición: gana la palabra clave más larga ("hierbas" -> herbal).
     d = (desc or "").lower()
+    mejor, pos, largo = "", len(d) + 1, 0
     for t, ws in TIPOS:
-        if any(w in d for w in ws): return t
-    return ""
+        for w in ws:
+            m = re.search(r"(?<![a-záéíóúñü])" + re.escape(w), d)
+            if m and (m.start() < pos or (m.start() == pos and len(w) > largo)):
+                mejor, pos, largo = t, m.start(), len(w)
+    return mejor
 
 est, odo = [], []
 for f in sorted(glob.glob("datos/extracciones/lote_*.json")):
