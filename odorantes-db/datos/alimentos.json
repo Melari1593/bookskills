@@ -128,5 +128,10 @@
   "nombre": "Lichi (Litchi chinensis), pulpa fresca",
   "en": "Litchi chinensis OR lychee OR litchi",
   "lote": 10
+ },
+ "limonaria": {
+  "nombre": "Limonaria (Cymbopogon citratus), hoja: aceite esencial y decocción",
+  "en": "lemongrass OR Cymbopogon citratus",
+  "lote": 11
  }
 }

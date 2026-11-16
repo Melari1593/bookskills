@@ -287,6 +287,16 @@ lichi,óxido de rosa,cis-rose oxide,,,,,C,10.1021/jf062925p,resumen
 lichi,óxido de rosa,rose oxide,"floral, lichi",floral,,4265.0,C,10.1016/j.crfs.2023.100481,resumen
 lichi,β-damascenona,beta-damascenone,,,,,C,10.1021/jf062925p,resumen
 lichi,β-ionona,beta-ionone,,,,,C,10.1021/jf062925p,resumen
+limonaria,acetato de geranilo,geranyl acetate,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,citral,citral,limón,cítrico,,,D,10.1016/j.heliyon.2021.e06744,resumen
+limonaria,citronelol,citronellol,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,geranial,geranial,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,geraniol,geraniol,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,geraniol,geraniol,,,,,D,10.1016/j.heliyon.2021.e06744,resumen
+limonaria,limoneno,limonene,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,mirceno,myrcene,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,neral,neral,,,,,D,10.1080/27697061.2023.2245435,resumen
+limonaria,nerol,nerol,,,,,D,10.1080/27697061.2023.2245435,resumen
 mango,"(3e,5z)-undeca-1,3,5-triene","(3E,5Z)-undeca-1,3,5-triene",a piña,frutal,,1900.0,A,10.1021/acs.jafc.6b00822,resumen
 mango,"(E,Z)-2,6-nonadienal","(2E,6Z)-nona-2,6-dienal",a pepino,verde,,,A,10.1021/acs.jafc.6b00822,resumen
 mango,(Z)-3-hexenal,(3Z)-hex-3-enal,verde,verde,,,A,10.1021/acs.jafc.6b00822,resumen
@@ -620,7 +630,6 @@ zanahoria,acetoína,acetoin,cremoso,quesero,4.0,15.0,C,10.1016/j.heliyon.2024.e3
 zanahoria,alpha-humulene,alpha-humulene,,,,,C,10.1021/jf030212q,resumen
 zanahoria,amylbutyrolactone,amylbutyrolactone,frutal,frutal,32.0,,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
 zanahoria,beta-caryophyllene,beta-caryophyllene,,,,,C,10.1021/jf030212q,resumen
-zanahoria,beta-myrcene,beta-myrcene,,,,,C,10.1021/jf030212q,resumen
 zanahoria,caryophyllene,caryophyllene,"queso salado, especiado",quesero,128.0,525.0,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
 zanahoria,dimethyl-propanedioic acid,dimethyl-propanedioic acid,"punzante, agudo",,128.0,,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
 zanahoria,elemicin,elemicin,especiado,especiado,128.0,,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
@@ -630,6 +639,7 @@ zanahoria,geranyl pentanoate,geranyl pentanoate,frutal,frutal,16.0,,C,10.1016/j.
 zanahoria,heptanal,heptanal,,,,,C,10.1021/jf402827e,resumen
 zanahoria,hexanoic acid,hexanoic acid,fresco,,4.0,,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
 zanahoria,linden ether,linden ether,,,,,C,10.1021/jf402827e,resumen
+zanahoria,mirceno,beta-myrcene,,,,,C,10.1021/jf030212q,resumen
 zanahoria,myristicin,myristicin,,,,,C,10.1021/jf030212q,resumen
 zanahoria,myristicin,myristicin,"especiado, dulce",especiado,64.0,189.0,C,10.1016/j.heliyon.2024.e35013,Sección 3.3 (texto); tabla no disponible en el texto recuperado
 zanahoria,octanal,octanal,,,,,C,10.1021/jf402827e,resumen
