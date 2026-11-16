@@ -1,0 +1,43 @@
+{
+  "entities": [
+    "PlantTaxon",
+    "PlantPart",
+    "Extract",
+    "Metabolite",
+    "ChemicalClass",
+    "MolecularTarget",
+    "Assay",
+    "Study",
+    "Community",
+    "TraditionalUse",
+    "SafetySignal"
+  ],
+  "relations": [
+    "HAS_PART",
+    "PRODUCES_EXTRACT",
+    "DETECTED_METABOLITE",
+    "BELONGS_TO_CLASS",
+    "MODULATES_TARGET",
+    "TESTED_IN",
+    "SUPPORTED_BY",
+    "ATTRIBUTED_TO",
+    "DOCUMENTED_USE",
+    "HAS_SAFETY_SIGNAL"
+  ],
+  "evidence_levels": [
+    "traditional_use_only",
+    "in_silico",
+    "in_vitro",
+    "animal",
+    "human_observational",
+    "human_interventional",
+    "systematic_review"
+  ],
+  "required": [
+    "taxon_accepted",
+    "plant_part",
+    "method",
+    "source_doi_or_pmid",
+    "evidence_level"
+  ]
+}
