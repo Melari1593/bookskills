@@ -82,3 +82,4 @@ The book's claims above are kept as the book states them. These notes summarize 
 - **Caffeine and panic** (1.8): confirmed (panic in 51 % of panic-disorder patients at ~5 cups' worth vs. 0 % on placebo).
 - **Tea / L-theanine as a well-evidenced anxiety adjunct** (1.8): L-theanine effects were inconsistent and non-significant across 31 RCTs; GABA tea not checked.
 - **Five Element music, 2018 Beijing Normal University study** (1.6): the specific study was not located; meta-analyses favor the therapy with low or very low certainty.
+- **Gan Mai Da Zao Tang** (1.11, 2.13; added 2026-11-16): no anxiety-specific trials found; evidence in depression is weak and mixed. Contains licorice: risk of pseudoaldosteronism (hypertension, low potassium) in addition to the wheat warning.

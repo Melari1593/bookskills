@@ -31,7 +31,7 @@ Depression in TCM is read as Yu (郁) — stagnation, exhausted or immobilized q
 - **Assuming SSRIs are the only evidence-based option**: New evidence shows SSRIs perform no better than placebo for ~85% of people; Xiao Yao San matched sertraline's efficacy for mild-to-moderate depression with anxiety in a 2001 double-blind RCT, with faster onset and no adverse effects found across systematic review.
 - **Using Zhen Wu Tang if you "run hot"**: Contraindicated — this Kidney-warming formula is for cold, depleted presentations only.
 - **Using Dang Gui Si Ni Tang with kidney disease**: Avoid.
-- **Using Gan Mai Da Zao Tang with celiac disease/gluten intolerance**: Contains wheat — avoid.
+- **Using Gan Mai Da Zao Tang with celiac disease/gluten intolerance**: Contains wheat — avoid. *Evidence note: it is also licorice-based; see 2.13 in [../evidence.md](../evidence.md) for pseudoaldosteronism.*
 - **Treating depression and anxiety as fully separate conditions**: They frequently co-occur and share patterns (Liver Qi Stagnation, Visceral Agitation); check Ch 6 when a pure-depression formula underperforms.
 
 ## Worked Example
@@ -62,3 +62,4 @@ The book's claims above are kept as the book states them. These notes summarize 
 - **Safe to combine with SSRIs if spaced ≥1 hour** (2.1): no evidence that spacing prevents interactions; combining should be reviewed by the prescriber or a pharmacist.
 - **Tea and depression, 37 % lower risk** (1.7): correct figure from observational data; other meta-analyses found no significant association.
 - **Feng shui 2021 RCT, sleeping under a beam and heart attack** (1.9): no such RCT found; a 2016 survey found no link between feng shui layout and sleep; nothing links beams to heart attack.
+- **Gan Mai Da Zao Tang for grief/Visceral Agitation** (1.11, 2.13; added 2026-11-16): a 13-RCT review (all high risk of bias) found no superiority over antidepressants except in post-stroke depression, with low-quality evidence; no grief trial exists. Its main herb is licorice: besides the wheat/celiac warning, flag pseudoaldosteronism (hypertension, low potassium, edema) and check blood pressure and potassium with long use, heart/kidney disease, pregnancy, diuretics, digoxin or corticosteroids.

@@ -78,4 +78,5 @@ A simple grounding technique requiring no point knowledge: cup both hands on the
 The book's claims above are kept as the book states them. These notes summarize what the evidence check found; details and sources in [../evidence.md](../evidence.md).
 
 - **Yunnan Baiyao for emotional trauma** (2.8): it contains aconite (Cao Wu); Hong Kong recalled five products in 2013 for undeclared aconite alkaloids. No evidence for use in emotional trauma was found. Warn about aconite and pregnancy, not only blood thinners, and do not exceed the label.
+- **Gan Mai Da Zao Tang for grief/weeping** (1.11, 2.13; added 2026-11-16): no trial in trauma or bereavement was found; it contains licorice, so flag pseudoaldosteronism (hypertension, low potassium) as well as the wheat warning.
 - **Trauma care**: the formulas and techniques here are adjuncts, not substitutes; current clinical guidelines (e.g., WHO, NICE) recommend trauma-focused psychotherapies as first-line treatment for PTSD, and the book itself urges professional support.

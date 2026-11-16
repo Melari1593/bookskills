@@ -46,7 +46,7 @@ Try, in order of general safety/availability: **Jia Wei Xiao Yao San/Wan → An 
 |---|---|
 | Zhen Wu Tang | You "run hot" |
 | Dang Gui Si Ni Tang | Kidney disease |
-| Gan Mai Da Zao Tang | Celiac disease / gluten intolerance (contains wheat) |
+| Gan Mai Da Zao Tang | Celiac disease / gluten intolerance (contains wheat); main herb is licorice (Gan Cao) — pseudoaldosteronism risk: avoid or monitor BP and potassium in hypertension, heart/kidney/liver disease, pregnancy, or with diuretics, digoxin or corticosteroids ([evidence.md](evidence.md) 2.13) |
 | Fu Ling Gui Zhi Gan Cao Da Zao Tang | Digestive issues |
 | Yunnan Baiyao | On blood thinners (seek guidance); also contains aconite (Cao Wu) — avoid in pregnancy and never exceed the label; 2013 Hong Kong recall for undeclared aconite alkaloids ([evidence.md](evidence.md) 2.8) |
 | Tian Wang Bu Xin Dan | Classical recipe contains cinnabar (Zhu Sha, mercury sulfide): use only cinnabar-free, metal-tested products ([evidence.md](evidence.md) 2.5) |
