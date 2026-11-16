@@ -1,6 +1,6 @@
 ---
 name: ferrandi-fruits-nuts
-description: "Knowledge base from \"Fruits & Nuts: Recipes and Techniques from the Ferrandi School of Culinary Arts\" by Collective FERRANDI Paris. Use when applying French culinary-school techniques for preparing, cutting, and cooking fruits and nuts, choosing a cutting or cooking technique, or referencing specific recipes by fruit/nut category."
+description: "Knowledge base from \"Fruits & Nuts: Recipes and Techniques from the Ferrandi School of Culinary Arts\" by Collective FERRANDI Paris. Use when applying French culinary-school techniques for preparing, cutting, and cooking fruits and nuts, choosing a cutting or cooking technique, or referencing specific recipes by fruit/nut category. Includes an evidence check (evidence.md) of food-safety risks: apricot kernels, raw egg white, open-kettle jam, oyster cooking, goji–warfarin, lychee toxins, Brazil-nut selenium."
 ---
 
 # Fruits & Nuts: Recipes and Techniques from the Ferrandi School of Culinary Arts
@@ -28,7 +28,9 @@ description: "Knowledge base from \"Fruits & Nuts: Recipes and Techniques from t
 
 **Gelatin and butter have hard limits worth remembering.** Gelatin must dissolve into liquid no hotter than 158°F/70°C or it loses its set. Standard butter should be ≥82% butterfat; laminated doughs (puff pastry, croissant, brioche) specifically need 84% for clean layers. Full detail in ch. 11 (General Advice).
 
-**Safety knife/prep notes**: apricot kernels contain trace cyanogenic compounds — adults max 3 kernels at a time, children max half a kernel; prickly pears must be handled with thick gloves when juicing (thorns); pomegranate seeds should be separated by hand over a bowl to avoid staining and crushing.
+**Safety knife/prep notes**: apricot kernels contain cyanogenic amygdalin — per EFSA (2016), adults reach the safe one-off limit with about 3 *small* kernels and less than half a *large* one; avoid for children (see `evidence.md` S1); prickly pears must be handled with thick gloves when juicing (thorns); pomegranate seeds should be separated by hand over a bowl to avoid staining and crushing.
+
+**Food-safety overlay (from `evidence.md`)**: always pair these recipes with the safety note. Raw whipped egg white (crémet d'Anjou, candied petals) → pasteurized whites (S3). Jam stored at room temperature → boiling-water-bath processing, not open-kettle or oven-sterilized jars (S4). Oysters at ~65 °C → texture only; safe cooking is 90 °C for 90 s (S5). Goji → flag for people on warfarin (S6). Lychee/rambutan → modest portions, not on an empty stomach for young children (S7). Brazil nuts → small portions (selenium, S8).
 
 ## Chapter Index
 
@@ -76,10 +78,12 @@ description: "Knowledge base from \"Fruits & Nuts: Recipes and Techniques from t
 - **Sorbet** → ch. 2, `cheatsheet.md`
 - **Stone fruit / drupes** → ch. 6
 - **Vanilla, gelatin, butter, cream basics** → ch. 11
+- **Food safety (kernels, raw egg, jam storage, oysters, goji, lychee, Brazil nut)** → `evidence.md`
 
 ## Supporting Files
 - `glossary.md` — French and technique-specific terms, alphabetical.
 - `patterns.md` — All 40 techniques as a flat, scannable index.
+- `evidence.md` — Food-safety evidence check (EFSA, FDA/USDA, NCHFP, PubMed with DOIs), verdict per item S1–S10; Spanish search log in `evidence/verif_seguridad_es.md`.
 - `cheatsheet.md` — Numbers table: sugar/candy stages, blanching times, oven temps, cut sizes, ripening/storage, oxidation fixes.
 
 ## Scope & Limits

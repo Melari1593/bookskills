@@ -33,7 +33,7 @@ Compact decision rules and numbers pulled from across the book. Keep this open w
 | Peaches (peeling) | 20 sec boil | Loosen skin |
 | Chestnuts (peeling) | 15 min soak + 5 min roast at 480°F/250°C | Loosen shell + pellicle |
 | Citrus (pre-candying/marmalade) | 5 min boil, repeat 3-4x fresh water | Strip bitterness |
-| Oysters (poaching) | To ~149°F/65°C, until edges curl | Avoid rubbery texture — very gentle |
+| Oysters (poaching) | To ~149°F/65°C, until edges curl | Texture target only — safe for norovirus is 194°F/90°C for 90 s (`evidence.md` S5) |
 | Monkfish (steaming) | 8-10 min | Remove immediately — carryover overcooks fast |
 
 ## Roasting / Drying Oven Temps
@@ -82,3 +82,15 @@ Compact decision rules and numbers pulled from across the book. Keep this open w
 - Marmalade needs **fresh-water blanching repeated 3-4 times** before poaching, specifically to mellow the pith's bitterness.
 - Gelatin must dissolve into liquid **no hotter than 158°F/70°C**, or it loses setting power.
 - Butterfat matters: standard butter ≥82%; laminated doughs (puff pastry, croissant, brioche feuilletée) need **84%** butterfat for clean, distinct layers.
+
+## Food-Safety Numbers (verified — see `evidence.md`)
+
+| Item | Safe practice | Source |
+|---|---|---|
+| Raw apricot kernels | Adults ≤ 3 small kernels per sitting (< ½ large kernel); children: avoid | EFSA 2016 |
+| Oysters / bivalves | 194°F/90°C internal for 90 s to inactivate norovirus | FSANZ, HK CFS |
+| Raw whipped egg white (crémet, petals, foams) | Use pasteurized eggs or whites | FDA, USDA |
+| Italian meringue | Hot syrup (243–265°F/117–130°C) into whites: acceptable | USDA |
+| Jam for shelf storage | Boiling-water-bath process filled jars; no open-kettle, no oven-sterilized jars | NCHFP |
+| Goji | Flag for people on warfarin | PubMed case reports |
+| Brazil nuts | Small portions (selenium) | PubMed |

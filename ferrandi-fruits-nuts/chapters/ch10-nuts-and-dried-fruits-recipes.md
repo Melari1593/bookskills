@@ -34,6 +34,7 @@ Method: toasted macadamia halves are folded in **while still warm** (not fully c
 ## Brazil Nut Bars — *Barre aux noix du Brésil*
 Makes 10-12.
 Components: Brazil nut shortbread base, a gelatin-stabilized whipped praline ganache, a soft caramel layer, a full dark chocolate coating (bars speared on toothpicks and dipped whole).
+**Safety note (evidence.md S8)**: Brazil nuts are very rich in selenium; keep portions small, especially for children.
 
 ## Cashew Nut Mendiants — *Mendiants aux noix de cajou*
 Makes 6. The simplest candy technique in this chapter — a good entry point.
@@ -77,3 +78,4 @@ Notable: pressing almonds into the buttered pan before batter goes in is a reusa
 Serves 4.
 Components: goji berries soaked overnight in orange juice (until plump — add more juice if they still look dry), a classic *crémet d'Anjou* (a Loire Valley specialty: whipped cream folded with stiffly whipped egg white, set in cheesecloth-lined molds or small cheese strainers/*faisselles* to drain and firm), toasted sesame seeds, baby cress.
 Notable: crémet d'Anjou is a regional French fresh "cheese" made without any actual cheese — the cheesecloth-lined-mold draining technique is the whole trick and is transferable to any airy cream dessert that needs to hold a firm unmolded shape.
+**Safety notes (evidence.md S3, S6)**: the crémet folds in raw whipped egg white — use pasteurized whites for pregnant, very young, older or immunocompromised guests. Goji has case reports of raised INR with warfarin; flag it for anticoagulated guests.

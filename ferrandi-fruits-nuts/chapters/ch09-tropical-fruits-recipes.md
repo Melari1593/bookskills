@@ -25,6 +25,7 @@ Draws on: *Cutting Mangos* (ch. 3, p. 56), *Peeling Pineapples* (ch. 2, p. 28).
 Serves 6.
 Components: red currant sorbet, lychee crémeux (custard finished with butter, cooked past 180°F/82°C), umeboshi (salted Japanese pickled plum) jelly cubes, a red currant and pink champagne sorbet, ring-shaped shortbread (cut with two round cutters).
 Notable: umeboshi is used as a savory-sour counterpoint inside a fruit dessert — an unusual cross-cultural pairing worth remembering for balancing very sweet fruit (lychee) against something sharply acidic/salty.
+**Safety note (evidence.md S7)**: lychee and rambutan arils contain hypoglycin A and MCPG; dessert portions are low risk, but do not give large amounts to young children on an empty stomach.
 
 ## Mango with Coconut Rings from the Levant — *Mangue au pays du Levant*
 Serves 6.

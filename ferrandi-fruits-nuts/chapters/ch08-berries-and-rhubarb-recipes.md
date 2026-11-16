@@ -50,6 +50,7 @@ Draws on: *Cutting Mangos* (ch. 3, p. 56), *Cutting and Seeding Pomegranates* (c
 ## Cranberry and Beet Juice — *Jus de cranberry et betterave*
 Makes 4 cups (1 L). The simplest recipe in this chapter — a cold-pressed juice/mocktail.
 Components: candied rose petals (egg white + sugar coated, air-set) for garnish, fresh beets + cranberries + raspberries run through a juicer, grated ginger, rose water, cane sugar syrup, chilled and served over ice.
+**Safety note (evidence.md S3)**: the petals are coated in raw egg white and air-dried — use pasteurized whites.
 
 ## Rhubarb, Berry, and Pink Praline Tart — *Tarte boulangère à la rhubarbe, fruits rouges et pralines roses*
 Serves 6. A "bakery-style" tart built on an enriched pink-praline brioche base (true kneaded bread dough, ~20 min total kneading) instead of pastry.

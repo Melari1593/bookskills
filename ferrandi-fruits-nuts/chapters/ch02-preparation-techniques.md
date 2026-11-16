@@ -74,3 +74,4 @@ Eleven foundational techniques for getting raw fruits and nuts ready to cook or 
 **Equipment**: Kitchen scissors, clean airtight glass jar.
 **Key parameters (example)**: 10½ oz (300 g) tart cherries (preferably Montmorency) : scant ½ cup (130 g) sugar : ½ cup (130 ml) kirsch or other 40% ABV brandy. Steeping time **1-2 months minimum**, turning the jar over once a week. Storage: up to 1 year refrigerated once opened (use a clean spoon each time).
 **Method**: Wash/dry cherries; snip off the top half of each stem with scissors (intensifies flavor). Layer cherries and sugar in the jar, pour in the kirsch, seal tightly. Store in a cool, dark place, inverting the jar weekly, for at least 1-2 months before using.
+**Safety note (evidence.md S9)**: alcoholic product — not for children or pregnancy. Use a commercial kirsch (stone-fruit spirits can carry ethyl carbamate; no data on home maceration).

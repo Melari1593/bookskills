@@ -55,6 +55,7 @@ Seventeen techniques: heat treatments, preserving (jams/jellies/marmalade/candyi
 **Key parameters**: Macerate berries + sugar + vanilla **6-12 hours** (draws out juice). Cook to **~223°F/106°C**. Storage: 3 months at room temp, or 1 year if jars are pasteurized/sterilized.
 **Method**: Hull/halve strawberries, toss with most of the sugar and scraped vanilla seeds/pod, cover and let macerate 6-12 h in a cool place. Transfer with juices to a pan, boil, skim foam continuously. Stir in remaining sugar + pectin, cook to 223°F/106°C. Off heat, stir in tartaric acid or lemon juice (needed for proper set). Fill hot sterilized jars, seal, and invert the jars so residual heat pasteurizes the lid/headspace; turn upright once cold.
 **Chef's notes**: Sterilize jars by boiling 20 min or heating 20 min at 300°F/150°C; keep jars warm until filled or they may crack from thermal shock.
+**Safety note (evidence.md S4)**: filling sterilized jars with hot jam and sealing is "open-kettle" canning, which NCHFP does not recommend; oven-sterilizing jars is also not recommended. For room-temperature storage, process filled jars in a boiling-water bath per a tested recipe; otherwise refrigerate.
 
 ## Making Citrus Marmalade
 **For**: A properly bitter-balanced whole-fruit citrus marmalade.
