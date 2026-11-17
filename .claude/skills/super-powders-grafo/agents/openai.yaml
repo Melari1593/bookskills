@@ -1,0 +1,11 @@
+interface:
+  display_name: Grafo de Super Powders
+  short_description: Explora adaptógenos, superpolvos y recetas de Super Powders con alertas de evidencia
+  default_prompt: Usa $super-powders-grafo para trazar qué fichas leer antes del Golden Latte y qué alertas tiene.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

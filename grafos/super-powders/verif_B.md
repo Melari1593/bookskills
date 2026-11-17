@@ -174,8 +174,10 @@ Nota de acceso: las páginas de NCBI Bookshelf (LiverTox, LactMed) a veces devol
 - **id:** B12
 - **verdict:** respaldada
 - **alerta:** La advertencia del libro sobre la warfarina es correcta. Hay al menos cuatro casos publicados de INR elevado, algunos con sangrado, en personas que tomaban warfarina y consumieron té, jugo o vino de goji (Lam 2001; Leung 2008; Rivera 2012; Zhang 2015). La causalidad se calificó de "posible" o "probable".
-- **detalle:** Las advertencias sobre diabetes y presión arterial no se verificaron en este análisis.
+- **detalle:** Las advertencias sobre diabetes y presión arterial no se verificaron en este análisis. Actualización del 2026-11-17: el libro tampoco menciona la alergia. La goji es un alérgeno por proteína de transferencia de lípidos (LTP), con reactividad cruzada con melocotón, tomate, frutos secos y polen de artemisa. En 566 personas con síntomas respiratorios o cutáneos, el 5,8 % tuvo prueba cutánea positiva; en 31 personas con alergia alimentaria a plantas, el 77 %. Revisión completa en `healing-herbal-infusions/evidencia/goji.md`.
 - **fuentes:**
+  - Carnés J et al. Food Chem 2013. doi:10.1016/j.foodchem.2012.10.005
+  - Larramendi CH et al. J Investig Allergol Clin Immunol 2012. PMID 23101309 (sin DOI en PubMed)
   - Lam AY et al. Ann Pharmacother 2001. doi:10.1345/aph.1Z442
   - Leung H et al. Food Chem Toxicol 2008. doi:10.1016/j.fct.2008.01.008
   - Rivera CA et al. Pharmacotherapy 2012. doi:10.1002/j.1875-9114.2012.01018.x

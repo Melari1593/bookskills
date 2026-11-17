@@ -95,6 +95,8 @@ El EPUB no tiene páginas y el libro no numera sus secciones: la numeración es 
 
 El EPUB no tiene páginas ni numera las secciones: la numeración es propia del grafo y solo las recetas llevan la página impresa, tomada de las referencias cruzadas del libro. Los polvos se agruparon por tipo; el libro los presenta en orden alfabético. Las alertas resumen evidencia publicada y no sustituyen la valoración clínica.
 
+La skill [`.claude/skills/super-powders-grafo/`](.claude/skills/super-powders-grafo/SKILL.md) consulta este grafo: `scripts/ruta.py` busca un polvo, una receta o una sección, traza las fichas previas e imprime las alertas de evidencia. El 2026-11-17 se comprobó que los 98 DOI de `verif_A.md` y `verif_B.md` existen en PubMed, y se añadió a la alerta de goji la alergia por LTP.
+
 
 ## Grafo de Herbal Recipes for Vibrant Health
 
