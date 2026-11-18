@@ -148,7 +148,7 @@ Revisión de evidencia del 2026-11-04 en [`evidencia/diarrea.md`](evidencia/diar
 
 ### 13. Moringa (el libro no la trata)
 
-Revisión de evidencia del 2026-11-10 en [`evidencia/moringa.md`](evidencia/moringa.md). Reglas:
+Revisión de evidencia del 2026-11-10 en [`evidencia/moringa.md`](evidencia/moringa.md). Versión molecular (gel, esferas inversas, aire y aceite verde, con hervor de 5 min) en [`molecular.md`](molecular.md), receta 18. Reglas:
 
 - Usa la **hoja como alimento cocido**: hojas frescas lavadas y hervidas al menos 5 min en sopa o guiso. Es la forma preferida.
 - Si usas **polvo de hoja**, exige registro INVIMA. Usa 2–5 g/día dentro de una preparación que hierva al menos 5 min. Máximo 12 semanas seguidas sin valoración médica. Guárdalo en frasco opaco y en nevera.
@@ -206,7 +206,7 @@ Revisión del 2026-11-11 en [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 b
 
 ### 18. Recetas en clave molecular
 
-[`molecular.md`](molecular.md) adapta 17 recetas del libro para comer o beber con técnicas de la skill `gastronomia-molecular` (esferificación, agar, gelana, gelatina, xantana, lecitina, sifón y polvo de grasa). Excluye 19 recetas con su motivo. Reglas:
+[`molecular.md`](molecular.md) adapta 17 recetas del libro y 1 de fuera del libro (moringa, receta 18) para comer o beber con técnicas de la skill `gastronomia-molecular` (esferificación, agar, gelana, gelatina, xantana, lecitina, sifón y polvo de grasa). Excluye 19 recetas con su motivo. Reglas:
 
 - **Una porción molecular = una dosis de la receta original.** Haz el gel, las perlas o el postre con una taza de té (250 g) o con la dosis del jarabe o del oximiel. No multipliques porciones.
 - **Conserva el veredicto y las alertas** de la receta original. La técnica cambia la textura, no la indicación.
@@ -339,7 +339,7 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 
 Archivos de apoyo:
 - [`cheatsheet.md`](cheatsheet.md): las 53 recetas de los capítulos 2 a 6, con forma, hierbas clave, edad mínima, alertas y veredicto de evidencia. Al final tiene las recetas tipo de las revisiones fuera del libro: diarrea, moringa, fatiga, limonaria y 15 bebidas con evidencia clínica.
-- [`molecular.md`](molecular.md): 17 recetas del libro adaptadas con gastronomía molecular (técnica, gramos, proceso, química, fallas y seguridad) y 19 recetas excluidas con su motivo.
+- [`molecular.md`](molecular.md): 17 recetas del libro y 1 de fuera del libro (moringa) adaptadas con gastronomía molecular (técnica, gramos, proceso, química, fallas y seguridad) y 19 recetas excluidas con su motivo.
 - [`evidencia/recetas.md`](evidencia/recetas.md): verificación de las 53 recetas por capítulo, con veredicto, seguridad nueva, referencias y log de búsqueda.
 - [`glossary.md`](glossary.md): términos del libro en inglés y en español, con nombre científico.
 - [`patterns.md`](patterns.md): patrones reutilizables y antipatrones.

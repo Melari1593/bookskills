@@ -209,6 +209,8 @@ USDA FoodData Central **no** tiene un registro de hoja seca o en polvo en las b�
 - **Qué esperar:** calcio adicional y provitamina A. No esperes corregir una anemia ni controlar una diabetes.
 - **Suspende y consulta si:** aparecen ampollas, lesiones en la piel o mucosas, fiebre con erupción, ictericia, diarrea con fiebre o sangre.
 
+**Versión molecular:** gel con agar, esferas inversas, aire y aceite verde, todas con hervor de 5 min o escaldado de hoja fresca, en [`../molecular.md`](../molecular.md), receta 18 (2026-11-18).
+
 ### 7.3 Lo que no debe hacer
 
 - No debe ofrecer raíz, corteza ni flor por vía oral.

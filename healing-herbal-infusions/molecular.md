@@ -42,6 +42,7 @@ Skills usadas: healing-herbal-infusions (recetas, veredictos y alertas de [cheat
 | 15 | Roasted Chicory Root Chai | Chai con nube fría de leche | Sifón con gelatina | 12 años |
 | 16 | Four-Mints Hot or Iced Tea | Gelatina de cuatro mentas | Gelatina a 50 °C | 12 años (toronjil) |
 | 17 | Sleep Well Tea | Panna cotta de manzanilla y nébeda | Gelatina | Adultos |
+| 18 | (Fuera del libro) Moringa | Gel, esferas inversas, aire y aceite verde | Agar; esferificación inversa; lecitina; maltodextrina | Adultos; no en embarazo |
 
 ---
 
@@ -405,6 +406,86 @@ Skills usadas: healing-herbal-infusions (recetas, veredictos y alertas de [cheat
 
 **Seguridad:** mejora la calidad del sueño percibida; no trata el insomnio. No con alergia a asteráceas (manzanilla). En el insomnio crónico, la primera línea es la terapia cognitivo-conductual. Con valeriana, no la combines con sedantes.
 
+## Recetas fuera del libro
+
+Estas recetas usan plantas que el libro no trata. Su evidencia y su seguridad están en [`evidencia/`](evidencia/).
+
+### 18. Moringa: gel, esferas inversas, aire y aceite verde
+
+Generado: 2026-11-18. Evidencia y seguridad: [`evidencia/moringa.md`](evidencia/moringa.md). La hoja de moringa es un **alimento**, no un tratamiento: estas preparaciones no tienen indicación medicinal.
+
+**Regla de la moringa (prima sobre todo lo demás):** el polvo crudo causó brotes de *Salmonella* (2015–2016 y 2025–2026). Usa polvo con registro INVIMA y **hiérvelo 5 min** dentro de la preparación: con un hervor fuerte de 5 min, el riesgo de *Salmonella*, *Listeria* y *S. aureus* baja a "bajo a moderado" (Walia 2019, doi:10.4315/0362-028X.JFP-18-252). El hervor no mata las esporas (*B. cereus*, *C. perfringens*): sirve enseguida o enfría de 57 a 21 °C en 2 h. Máximo 5 g de polvo por persona al día. No en embarazo ni en menores de 1 año. En Bogotá el agua hierve a unos 91 °C; el estudio usó 100 °C, así que mantén el hervor fuerte los 5 min completos (inferencia).
+
+**Química que manda la técnica**
+- **Color:** el calor y el ácido desplazan el magnesio de la clorofila y el verde pasa a oliva (feofitinas; [reacciones.md](../skills/gastronomia-molecular/references/reacciones.md) §8.2). Hierve sin ácido y sin tapa, enfría en hielo y pon el limón al servir.
+- **La clorofila es liposoluble:** tiñe el aceite de verde intenso; el agua de moringa sale amarillo verdosa.
+- **Calcio:** el polvo tiene unos 2 g de calcio por 100 g; con 2,5 % de polvo, el líquido lleva unos 50 mg de calcio por 100 g. Eso gelifica el alginato en el recipiente: usa **esferificación inversa**, no directa.
+- **Amargor:** al 2,5 % en gomitas la aceptación fue igual al control; al 7,5 % bajó por amargor, color y firmeza (Cervera-Chiner 2026, doi:10.1111/1750-3841.71322). Usa 2–3 %.
+- **Conservación del polvo:** a 4 °C y a oscuras conserva mejor el color y los compuestos; a 40 °C en envase transparente el color se pierde en 12 meses (Ndhlala 2025, doi:10.3390/molecules30204048).
+- **Aroma:** en una mezcla de moringa con té dominaron la β-ionona (floral, violeta), el β-ciclocitral y el 2-octenal (verde, graso); dato de una mezcla, solo por GC-MS (Li 2023, doi:10.1039/d2fo03531f). La hoja tiene glucomoringina, que la mirosinasa convierte en isotiocianatos con notas de mostaza; que el calor apague la enzima es una inferencia no verificada.
+
+#### 18a. Gel de moringa con agar
+
+**Objetivo:** cubos o láminas verdes, fríos o tibios; el gel aguanta hasta 80 °C. El agar obliga a hervir, así que el paso de seguridad queda dentro de la técnica.
+
+| Ingrediente | % | g |
+|---|---|---|
+| Agua | 100 | 300 |
+| Polvo de moringa | 2 | 6 |
+| Agar | 0,5 | 1,5 |
+| Azúcar o miel (después de hervir) | 3 | 9 |
+
+**Proceso**
+1. Mezcla en seco el agar y la moringa. Dispérsalos en el agua fría con batidor.
+2. Lleva a hervor fuerte y mantenlo **5 min**, sin tapa, revolviendo.
+3. Apaga. Endulza; la miel, por debajo de 60 °C.
+4. Vierte en un molde frío sobre hielo. Gelifica a 35–45 °C.
+5. Pon el limón encima al servir.
+
+**Por qué funciona:** el agar necesita más de 90 °C para hidratarse, la misma condición que pide la seguridad. Con pH neutro y poco tiempo caliente se pierde menos magnesio de la clorofila.
+
+**Si falla:** gel blando → los taninos de la moringa (≈2 %) inhiben el agar; la dosis correctiva no está confirmada: prueba 0,6–0,7 %. Gel oliva → hubo ácido en la cocción o el enfriado fue lento. Gel arenoso → usa polvo más fino o cuela después de hervir.
+
+#### 18b. Esferas inversas de moringa
+
+| Ingrediente | % | g |
+|---|---|---|
+| Agua de moringa: agua con 2 % de polvo, hervida 5 min, colada y fría | 100 | 200 |
+| Lactato de calcio | 2,4 | 4,8 |
+| Goma xantana | 0,25 | 0,5 |
+| Baño: agua | — | 1000 |
+| Baño: alginato de sodio | 0,5 | 5,0 |
+
+**Proceso**
+1. El día anterior, dispersa el alginato en el agua del baño con la licuadora y refrigéralo toda la noche para quitar el aire.
+2. Disuelve el lactato en el agua de moringa fría y espésala con la xantana.
+3. Deja caer cucharadas en el baño. Retira a los 2–3 min y enjuaga.
+4. Sirve el mismo día.
+
+**Por qué funciona:** el calcio sale de la gota y forma una membrana con el alginato del baño; al enjuagar, la gelificación se detiene. El calcio propio de la moringa no estorba en esta técnica.
+
+#### 18c. Aire de moringa
+
+1. Hierve 250 g de agua con 5 g de polvo (2 %) durante 5 min. Cuela.
+2. Añade lecitina de soja al 0,6 % (1,5 g).
+3. Bate con la licuadora de inmersión en la superficie. Recoge la espuma de arriba.
+4. Pon el limón al servir.
+
+**Nota:** sale amarillo verdoso, porque la clorofila casi no pasa al agua. La lecitina es alérgeno en la UE. El aire es acompañamiento.
+
+#### 18d. Aceite verde de moringa y polvo de grasa (hoja fresca)
+
+1. Escalda 50 g de hojas frescas lavadas en agua hirviendo 15 s y pásalas a agua con hielo.
+2. Sécalas y licúalas con 100 g de aceite neutro.
+3. Cuela con tela sin exprimir.
+4. Para el polvo de grasa, añade maltodextrina de tapioca poco a poco hasta que se vuelva polvo. La proporción no está en la skill: ajústala con la prueba.
+
+**Por qué funciona:** la clorofila es liposoluble y el escaldado breve fija el verde; sin ácido, el color dura más.
+
+**Seguridad:** un aceite con hierbas frescas puede favorecer *C. botulinum* a temperatura ambiente. Guárdalo en nevera y úsalo en pocos días (plazo exacto no verificado en esta sesión).
+
+**Maridaje (interpretación):** limón, coco, maracuyá y jengibre. En una bebida instantánea de moringa, la versión con jengibre rojo fue la preferida (Rahmatu 2025, doi:10.4081/ijfs.2025.13512).
+
 ---
 
 ## Recetas excluidas y por qué
@@ -431,3 +512,4 @@ Skills usadas: healing-herbal-infusions (recetas, veredictos y alertas de [cheat
 2. No verifiqué cuánto cambia la técnica la estabilidad de los compuestos de cada hierba. La regla "una porción = una dosis" asume que el gel no cambia lo que hay en el té.
 3. El pH de cada té no está medido. Mídelo antes de la esferificación directa.
 4. Las cantidades de hierba por taza de la mayoría de las recetas no están en los capítulos extraídos. Usa las del libro impreso.
+5. Moringa: no hay estudios de odorantes clave de la hoja pura; no está verificado que el calor inactive la mirosinasa de la hoja; no hay dosis correctiva de agar con sus taninos; la proporción de maltodextrina para el aceite verde y el plazo de conservación del aceite con hoja fresca no están confirmados.
