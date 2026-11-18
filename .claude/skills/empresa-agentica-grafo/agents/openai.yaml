@@ -1,0 +1,11 @@
+interface:
+  display_name: La empresa agéntica — grafo y asesor
+  short_description: Explora el libro y aplica sus marcos a un sistema multiagente
+  default_prompt: Usa $empresa-agentica-grafo para evaluar si conviene un sistema multiagente en mi consultorio.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
