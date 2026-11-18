@@ -240,11 +240,21 @@ Revisión de evidencia del 2026-11-15 en [`evidencia/jujube-higo.md`](evidencia/
 - **Higos secos:** cuida el origen por las aflatoxinas. Descarta los que tengan moho. En diabetes, cuenta las porciones.
 - **Recetas tipo:** ver [`cheatsheet.md`](cheatsheet.md).
 
+### 21. Tremella (el libro no la trata)
+
+Revisión de evidencia del 2026-11-17 en [`evidencia/tremella.md`](evidencia/tremella.md). La tremella (*Tremella fuciformis*, hongo de nieve) no aparece en Duke (2002) ni en *Super Powders*. Reglas:
+
+- **Memoria:** hay un solo ECA del hongo solo (75 adultos con queja subjetiva de memoria, 8 semanas): mejoró la memoria percibida y la de corto plazo. Preséntalo como evidencia baja.
+- **Piel:** no hay ensayos de tremella oral. No la presentes como "colágeno vegetal" ni como "ácido hialurónico vegetal" que funcione al comerla.
+- **Inmunidad y glucemia:** solo hay estudios en células y animales.
+- **Remojo seguro (lo más importante):** remójala poco tiempo, en la nevera, y cocínala enseguida. Desecha la que huela raro, esté babosa o lleve horas a temperatura ambiente. Así se evita el ácido bongkrékico.
+- **Receta tipo:** ver [`cheatsheet.md`](cheatsheet.md).
+
 ---
 
 ## Seguridad clínica
 
-Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 filas siguientes vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Las 2 últimas filas vienen de la revisión de jujube e higo seco del 2026-11-15 ([`evidencia/jujube-higo.md`](evidencia/jujube-higo.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
+Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 filas siguientes vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Las 2 filas siguientes vienen de la revisión de jujube e higo seco del 2026-11-15 ([`evidencia/jujube-higo.md`](evidencia/jujube-higo.md)). La última fila viene de la revisión de tremella del 2026-11-17 ([`evidencia/tremella.md`](evidencia/tremella.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
 
 | Tema | Qué dice el libro | Veredicto (confianza) | Alerta verificada |
 |---|---|---|---|
@@ -314,6 +324,7 @@ Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con
 | **Goji y alergia por LTP** | El libro no la trata. | riesgo documentado (media) | La goji es un alérgeno con proteína de transferencia de lípidos (LTP). Tiene reactividad cruzada con melocotón, tomate, frutos secos y polen de artemisa. En personas con alergia alimentaria a plantas, el 77 % tuvo prueba cutánea positiva. Si hay alergia a LTP, evítala o pide valoración por alergología (Carnés 2013, doi:10.1016/j.foodchem.2012.10.005; Larramendi 2012, PMID 23101309). |
 | **Látex de higuera y sol** | El libro no la trata. | riesgo documentado (media; series de casos) | El látex de ramas, hojas y cáscara del higo fresco tiene furocumarinas. Con el sol causa fitofotodermatitis: quemaduras lineales con ampollas e hiperpigmentación. Al recoger higos o podar, usa guantes y manga larga, y lávate antes de salir al sol. El higo seco que se come no tiene esta alerta (Veraldi 2023, doi:10.5070/D329562413; Pinto 2023, doi:10.7759/cureus.41888). |
 | **Aflatoxinas en higos secos** | El libro no la trata. | riesgo documentado (alta; norma oficial) | La UE fija 6,0 µg/kg de aflatoxina B1 y 10,0 µg/kg totales en higos secos; el Codex, 10 µg/kg para higos listos para consumo. Compra higos de origen controlado y descarta los que tengan moho ([`grafos/aflatoxinas/informe-aflatoxinas.md`](../grafos/aflatoxinas/informe-aflatoxinas.md)). |
+| **Tremella mal remojada y ácido bongkrékico** | El libro no la trata. | riesgo documentado (media; brotes y detección en alimentos) | El hongo de nieve y la oreja de Judas remojados mucho tiempo o en mal estado pueden contaminarse con *Burkholderia gladioli* pv. *cocovenenans*, que produce ácido bongkrékico, una toxina mitocondrial potencialmente mortal (en un brote de 2024 en Taiwán por fideos de arroz murieron 6 de 33 personas). Remoja la tremella poco tiempo, en la nevera, y cocínala enseguida; desecha la que huela raro, esté babosa o lleve horas a temperatura ambiente (Yang 2026, doi:10.3390/foods15101749; Ong 2026, doi:10.1080/15563650.2026.2673133). |
 
 ## Índice de capítulos
 
@@ -338,6 +349,7 @@ Archivos de apoyo:
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
 - [`evidencia/goji.md`](evidencia/goji.md): revisión de goji con lo que dice Duke (2002), evidencia por desenlace (lípidos, pigmento macular, glucemia), interacción con warfarina, alergia por LTP y log de búsqueda.
 - [`evidencia/jujube-higo.md`](evidencia/jujube-higo.md): revisión de jujube e higo seco con lo que dice Duke (2002), evidencia en estreñimiento, metabolismo y sueño (semilla de azufaifa ácida), fitofotodermatitis, aflatoxinas y log de búsqueda.
+- [`evidencia/tremella.md`](evidencia/tremella.md): revisión de tremella (hongo de nieve) con evidencia en memoria, piel e inmunidad, riesgo de ácido bongkrékico por mal remojo, receta tipo y log de búsqueda.
 - [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
 - [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md): 20 bebidas tradicionales de Colombia y del mundo con ingredientes que tienen evidencia, con veredicto de compatibilidad (conserva, conserva con ajuste, no conserva), ajuste y fuentes.
 

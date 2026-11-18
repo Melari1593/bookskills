@@ -95,6 +95,12 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
   - Sakamoto et al. Efficacy of adjuvant immunochemotherapy with polysaccharide K for patients with curatively resected colorectal cancer: a meta-analysis of centrally randomized controlled clinical trials. *Cancer Immunol Immunother* 2005 (el archivo pedía "2006"; PubMed registra 2005). doi:10.1007/s00262-005-0054-1 (HR de supervivencia global 0,71; IC 95 %: 0,55–0,90)
   - Pilkington et al. Coriolus (Trametes) versicolor mushroom to reduce adverse effects from chemotherapy or radiotherapy in people with colorectal cancer. *Cochrane Database Syst Rev* 2022. doi:10.1002/14651858.CD012053.pub2
   - Narayanan et al. 2023. doi:10.1007/s11912-023-01408-2
+- **actualización 2026-11-17:** Cochrane 2022: supervivencia a 5 años RR 1,08 (IC 95 % 1,01–1,15; NNTB 16; 1094 pacientes, 3 estudios; certeza baja); retiro por efectos adversos RR 1,03 (certeza muy baja). Cáncer gástrico operado: HR 0,88 (0,79–0,98; 8009 pacientes, 8 ECA). VPH: el ensayo PALOMA del gel Papilocare fue abierto (91 mujeres) y FIGO/IGCS 2026 no respalda los tratamientos tópicos. Interacciones: 1200 mg 3 veces al día durante 14 días no cambiaron CYP3A4 (prueba de aliento con eritromicina, 12 voluntarios). Seguridad: fase 1 en cáncer de mama, hasta 9 g/día bien tolerados.
+  - Oba K et al. Cancer Immunol Immunother 2007. doi:10.1007/s00262-006-0248-1
+  - Serrano L et al. J Low Genit Tract Dis 2021 (PALOMA). doi:10.1097/LGT.0000000000000596
+  - Pareja R et al. FIGO/IGCS statement, Int J Gynecol Cancer 2026. doi:10.1016/j.ijgc.2026.104946
+  - Nicandro JP et al. J Herb Pharmacother 2007. PMID 17594986 (sin DOI en PubMed)
+  - Torkelson CJ et al. ISRN Oncol 2012. doi:10.5402/2012/251632
 - **confianza:** alta
 
 ## A9. Carbón activado (resaca, gases, "desintoxicar")
