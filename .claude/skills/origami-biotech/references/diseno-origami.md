@@ -3,6 +3,7 @@
 Cada punto lleva una etiqueta de origen:
 - `[verificado]`: viene de una descripción de video de la playlist (ver `lecciones-playlist.md`).
 - `[curso MIT]`: viene de materiales públicos del curso MIT 6.849 (Geometric Folding Algorithms). No es el contenido de la playlist.
+- `[libro Lang]`: viene del libro *Origami Design Secrets* (Lang, 2011), por medio de `grafo-lang.json`. No es el contenido de la playlist. Cita la sección y la página impresa.
 - `[general]`: conocimiento general de origami. No atribuyas esto al canal.
 - `[externo]`: viene de una fuente pública fuera de la playlist y del curso MIT. Cita siempre la fuente.
 

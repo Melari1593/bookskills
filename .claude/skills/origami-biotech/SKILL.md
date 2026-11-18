@@ -49,6 +49,25 @@ Flujo de trabajo:
 3. Responde con tres bloques: **Concepto**, **Cómo se aplica** y **Fuente y estado** (`[verificado]`, `[transcripción]` o `[general]`).
 4. Si el usuario pide un archivo de apuntes, usa la plantilla de abajo y guarda un `.txt`.
 
+### Libro de Lang como apoyo (grafo)
+
+La skill incluye un mapa del libro *Origami Design Secrets* (Lang, 2011): `references/grafo-lang.json` (14 capítulos, 85 secciones, 70 conceptos clave, 193 prerrequisitos) y `assets/grafo_origami_design_secrets.html` (versión interactiva).
+
+Cuándo usarlo:
+- El usuario pregunta qué leer antes de un tema (circle/river packing, molécula, teoría del árbol, box pleating).
+- El usuario quiere ubicar un concepto en el libro, con sección y página impresa.
+
+Cómo usarlo:
+1. Ejecuta `python scripts/ruta.py "término"`. Acepta un número de sección (`11.2`), un número de capítulo (`12`) o un concepto (`circle/river`).
+2. Lee en `references/grafo-lang.json` el resumen de los nodos encontrados antes de explicar.
+3. Entrega la ruta con secciones y páginas impresas, en orden. Marca el contenido como `[libro Lang]`. No lo atribuyas a la playlist.
+4. Para entregar el mapa visual, envía una copia de `assets/grafo_origami_design_secrets.html`.
+
+Límites:
+- Los prerrequisitos son una interpretación del grafo, no una lista del autor.
+- Solo 5 conceptos del capítulo 14 llevan fórmula con número de ecuación verificado.
+- El grafo no incluye las instrucciones de plegado de los modelos. Los resúmenes están en palabras propias, no son citas.
+
 ### Plantilla de apuntes por lección (.txt)
 
 ```
