@@ -54,6 +54,12 @@ El PDF fuente es un OCR de mala calidad: las cifras clínicas ilegibles se omiti
 
 Los títulos de artículos y secciones van en inglés, como en el libro; los resúmenes están en español y redactados con palabras propias. El libro no numera las secciones, así que la numeración es propia del grafo; las páginas son las de inicio de cada artículo según el índice analítico. Los artículos son independientes entre sí: las conexiones son una interpretación pedagógica de cómo se complementan los temas.
 
+## Grafo de La empresa agéntica
+
+[`grafos/la-empresa-agentica/grafo_la_empresa_agentica.html`](grafos/la-empresa-agentica/grafo_la_empresa_agentica.html) es el mapa interactivo de *La empresa agéntica* (Babak Hodjat y Antoine Blondeau, O'Reilly, edición en español, 2026): introducción y 9 capítulos, 68 secciones, 63 conceptos clave, 12 figuras y 184 prerrequisitos, en 5 bloques (introducción; Parte I · por qué importa; Parte II · tecnología de agentes; Parte III · confianza; Parte IV · el futuro). Cada concepto (AAOSA, sly_data, RACI de segunda capa, pasarela neutral de modelos, MCP y A2A…) lleva su esquema en una línea. Los datos están en [`grafo_la_empresa_agentica.json`](grafos/la-empresa-agentica/grafo_la_empresa_agentica.json).
+
+Las páginas son las impresas del índice del libro. Los resúmenes están redactados con palabras propias. El capítulo 7 no numera sus secciones ni sus viñetas: esa numeración es propia del grafo. Quedaron fuera el prólogo, el prefacio, los agradecimientos y el índice analítico. Las conexiones son una interpretación pedagógica.
+
 ## Grafo de Strategic Analytics (HBR Insights You Need)
 
 [`grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.html`](grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.html) es el mapa interactivo de *Strategic Analytics: The Insights You Need from Harvard Business Review* (Harvard Business Review Press, 2020): la introducción de Thomas H. Davenport y 13 artículos, 65 secciones, 48 ideas clave, 7 figuras o tablas y 131 prerrequisitos, en 4 bloques (introducción; fundamentos de la analítica; organización guiada por la analítica; aplicar la analítica). Tiene buscador, tres vistas y trazado de prerrequisitos. Los datos están en [`grafo_hbr_strategic_analytics.json`](grafos/hbr-strategic-analytics/grafo_hbr_strategic_analytics.json).
