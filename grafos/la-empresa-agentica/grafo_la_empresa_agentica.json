@@ -1,0 +1,1566 @@
+{
+ "meta": {
+  "title": "La empresa agéntica — grafo",
+  "subtitle": "Babak Hodjat y Antoine Blondeau (O'Reilly, ed. en español): introducción, 9 capítulos, conceptos clave y cómo se conectan",
+  "language": "es",
+  "itemLabel": "Concepto clave",
+  "itemLabelPlural": "Conceptos clave",
+  "resourceLabel": "Figura",
+  "resourceLabelPlural": "Figuras",
+  "searchHint": "Buscar: AAOSA, RACI, MCP, pasarela, sly_data…"
+ },
+ "blocks": {
+  "intro": {
+   "name": "Introducción"
+  },
+  "porque": {
+   "name": "Parte I · Por qué importa la empresa agéntica"
+  },
+  "tec": {
+   "name": "Parte II · Tecnología de agentes de IA"
+  },
+  "conf": {
+   "name": "Parte III · Confianza"
+  },
+  "futuro": {
+   "name": "Parte IV · El futuro"
+  }
+ },
+ "chapters": [
+  {
+   "num": "Int",
+   "title": "Introducción",
+   "page": 27,
+   "block": "intro",
+   "summary": "Qué es un agente de IA: de Turing y los sistemas multiagente de los noventa a los agentes basados en LLM. Define agente, indicativo del sistema y arnés agéntico, y presenta la empresa dotada de agentes.",
+   "sections": [
+    {
+     "num": "I.1",
+     "title": "Una breve historia",
+     "page": 28,
+     "items": [
+      "agencia"
+     ],
+     "summary": "Del agente general de los setenta al agente restringido a internet y la ingeniería de software orientada a agentes."
+    },
+    {
+     "num": "I.2",
+     "title": "La era de la IA generativa",
+     "page": 31,
+     "items": [
+      "prompt_sistema",
+      "agente_llm"
+     ],
+     "summary": "El lenguaje natural como protocolo universal entre humanos y máquinas, y entre agentes."
+    },
+    {
+     "num": "I.3",
+     "title": "Sistemas multiagente",
+     "page": 37,
+     "items": [
+      "rag",
+      "agente_proteccion",
+      "modelo_vs_agente"
+     ],
+     "summary": "Del LLM que consulta una base de datos a la empresa dotada de agentes, con los humanos como árbitros finales."
+    }
+   ]
+  },
+  {
+   "num": 1,
+   "title": "De la automatización a los agentes: la evolución de la IA empresarial",
+   "page": 52,
+   "block": "porque",
+   "summary": "De los sistemas expertos y la RPA a los agentes. Argumenta por qué conviene un sistema multiagente en lugar de un único agente todopoderoso, y cómo dividir el trabajo entre el LLM y el código.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "El efecto ChatGPT",
+     "page": 53,
+     "items": [
+      "confabulacion"
+     ],
+     "summary": "Chatbots, RAG y copilotos como primeros usos de bajo riesgo; el ROI inicial no se cumplió."
+    },
+    {
+     "num": "1.2",
+     "title": "Ingeniería de la IA",
+     "page": 55,
+     "items": [
+      "por_que_multiagente"
+     ],
+     "summary": "Con agentes se entra en terreno de ingeniería: roles, herramientas, pruebas y monitoreo."
+    },
+    {
+     "num": "1.3",
+     "title": "Aplicaciones y software agentificados",
+     "page": 60,
+     "items": [
+      "beneficios_agentificacion",
+      "mitigacion_autonomia",
+      "llm_vs_codigo"
+     ],
+     "summary": "Agentes que hablan entre sí; ventajas y riesgos de la autonomía."
+    },
+    {
+     "num": "1.4",
+     "title": "Organizaciones multiagente",
+     "page": 71,
+     "summary": "Flexibilidad de ingeniería, protección, confiabilidad y variedad de LLM frente al costo de más agentes."
+    },
+    {
+     "num": "1.5",
+     "title": "Autonomía y el papel de los humanos",
+     "page": 74,
+     "items": [
+      "metacognicion"
+     ],
+     "summary": "Por qué no entregar todas las API a un único LLM potente."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "El caso de negocio de la IA agéntica",
+   "page": 77,
+   "block": "porque",
+   "summary": "Por qué actuar ahora: tecnología madura, presión competitiva y organizaciones preparadas. La IA agéntica pasa de automatizar pasos a automatizar resultados, en tres capas de valor.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Madurez tecnológica e impulsores competitivos",
+     "page": 79,
+     "items": [
+      "tres_fuerzas",
+      "rpa_vs_agentica"
+     ],
+     "summary": "Casos Allianz Partners (siniestros de 30 a 3–4 días), Franklin Templeton y Artisan."
+    },
+    {
+     "num": "2.2",
+     "title": "Valor estratégico frente a la automatización táctica",
+     "page": 83,
+     "items": [
+      "capas_valor"
+     ],
+     "summary": "Apalancamiento de decisiones: los humanos intervienen solo por excepción."
+    },
+    {
+     "num": "2.3",
+     "title": "Revisión de código: la IA agéntica y la economía de la ingeniería",
+     "page": 88,
+     "items": [
+      "adecuacion_casos"
+     ],
+     "summary": "Revisión de código multiagente: −50 % de tiempo de revisión y −20 % de reescrituras."
+    },
+    {
+     "num": "2.4",
+     "title": "Preparación organizacional y técnica",
+     "page": 92,
+     "items": [
+      "seis_dimensiones"
+     ],
+     "summary": "Autoevaluación de la empresa antes de agentificar."
+    },
+    {
+     "num": "2.5",
+     "title": "Sistemas agénticos: ¿cuál es el beneficio?",
+     "page": 95,
+     "summary": "Resumen: madurez y oportunidad estratégica."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Aplicaciones empresariales de alto impacto",
+   "page": 97,
+   "block": "porque",
+   "summary": "Catálogo de sistemas multiagente construidos o desplegados (muchos con Neuro SAN): desarrollo de software, migración, sectores y funciones transversales.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Ciclo de vida de desarrollo de software agéntico",
+     "page": 98,
+     "items": [
+      "sdlc_multiagente"
+     ],
+     "summary": "Revisión de código y generación de pruebas como puntos de entrada."
+    },
+    {
+     "num": "3.2",
+     "title": "Migración de código y aplicaciones",
+     "page": 108,
+     "items": [
+      "representacion_intermedia"
+     ],
+     "summary": "Ahorros de 40–50 %; caso SAP BO a Power BI."
+    },
+    {
+     "num": "3.3",
+     "title": "Sectores: comercio minorista",
+     "page": 112,
+     "summary": "Líneas de soporte que cruzan departamentos y operaciones internas de grandes almacenes."
+    },
+    {
+     "num": "3.4",
+     "title": "Sectores: telecomunicaciones y agricultura",
+     "page": 117,
+     "items": [
+      "nodos_hoja"
+     ],
+     "summary": "Informes de incidentes y rebalanceo de red por regiones."
+    },
+    {
+     "num": "3.5",
+     "title": "Sectores: finanzas",
+     "page": 128,
+     "items": [
+      "apa"
+     ],
+     "summary": "Contracargos, banca invisible y el escenario del agente financiero personal de Mark."
+    },
+    {
+     "num": "3.6",
+     "title": "Sectores: atención médica",
+     "page": 134,
+     "summary": "Supervisión terapéutica con agentes de distintas corrientes; confidencialidad como requisito."
+    },
+    {
+     "num": "3.7",
+     "title": "Transversales: investigación",
+     "page": 137,
+     "summary": "Agentes que mejoran algoritmos en sistemas cerrados; en el mundo real hace falta un humano en el circuito."
+    },
+    {
+     "num": "3.8",
+     "title": "Transversales: recursos humanos e intranet",
+     "page": 138,
+     "summary": "Intranet multiagente 1C: los tickets de incidentes bajaron de unos 170 000 a 74 000 al mes."
+    },
+    {
+     "num": "3.9",
+     "title": "Transversales: marketing",
+     "page": 144,
+     "items": [
+      "agente_consumidor"
+     ],
+     "summary": "Higgsfield y campañas automatizadas; ¿cómo hacer marketing para agentes?"
+    },
+    {
+     "num": "3.10",
+     "title": "Transversales: TI",
+     "page": 149,
+     "items": [
+      "validacion_logs",
+      "capa_agentica_buffer"
+     ],
+     "summary": "TI como motor de la agentificación; agentes con ID de empleado."
+    },
+    {
+     "num": "3.11",
+     "title": "Negociación multipartita",
+     "page": 157,
+     "summary": "Red de 121 agentes para preparar a delegados de la COP sobre cambio climático."
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Evaluación del ROI y los riesgos",
+   "page": 161,
+   "block": "porque",
+   "summary": "La IA agéntica es un modelo operativo, no un proyecto de TI: el ROI se mide sobre una cartera y una plataforma. Cinco tipos de riesgo, tres viñetas (DBS, JPMorganChase, Siemens), construir frente a comprar y pilotos.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "El ROI agéntico y los cinco tipos de riesgo",
+     "page": 161,
+     "items": [
+      "cinco_riesgos"
+     ],
+     "summary": "ROI beta frente a alfa; la responsabilidad legal recae en humanos y organizaciones."
+    },
+    {
+     "num": "4.2",
+     "title": "Viñeta 1: la trayectoria de IA de DBS Group",
+     "page": 168,
+     "items": [
+      "grupo_control"
+     ],
+     "summary": "Plataformas ADA/ALAN y marco PURE; despliegue de modelos de 12–15 a 2–3 meses."
+    },
+    {
+     "num": "4.3",
+     "title": "Viñeta 2: JPMorganChase",
+     "page": 169,
+     "summary": "LLM Suite en 200 000 escritorios, barreras de 12 niveles y tiempo desde la idea hasta producción."
+    },
+    {
+     "num": "4.4",
+     "title": "Viñeta 3: Siemens y sus agentes de IA",
+     "page": 172,
+     "summary": "ROI en métricas de planta (OEE, tiempo de inactividad, kWh por unidad) e integración OT/IT."
+    },
+    {
+     "num": "4.5",
+     "title": "Conclusiones clave sobre el valor y el ROI",
+     "page": 176,
+     "items": [
+      "plataforma_cartera",
+      "unidades_valor"
+     ],
+     "summary": "Gobernanza integrada en la evaluación del valor."
+    },
+    {
+     "num": "4.6",
+     "title": "Construir frente a comprar en arquitecturas agénticas",
+     "page": 179,
+     "items": [
+      "construir_comprar"
+     ],
+     "summary": "La orquestación y las políticas se vuelven estratégicas; crece el riesgo de lock-in."
+    },
+    {
+     "num": "4.7",
+     "title": "Pilotos iniciales frente a despliegues empresariales",
+     "page": 182,
+     "items": [
+      "piloto_plataforma"
+     ],
+     "summary": "Evitar el purgatorio de pilotos con un modelo federado sobre plataformas comunes."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Capacidades principales y fundamentos técnicos",
+   "page": 189,
+   "block": "tec",
+   "summary": "Los conceptos técnicos para agentificar: por dónde empezar, personalización, anclaje, coordinación, modos de activación, herramientas, ajuste fino, contexto, memoria y planificación.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "¿Por dónde empezar?",
+     "page": 189,
+     "items": [
+      "agentificacion_flujos"
+     ],
+     "summary": "Agentificación orgánica de abajo arriba frente a diseño de arriba abajo; protocolos MCP y A2A."
+    },
+    {
+     "num": "5.2",
+     "title": "Personalización de agentes",
+     "page": 193,
+     "items": [
+      "llm_abierto_comercial"
+     ],
+     "summary": "No hay polvo de hadas: la agentificación exige adaptación y desarrollo."
+    },
+    {
+     "num": "5.3",
+     "title": "Anclaje (fundamentación)",
+     "page": 195,
+     "items": [
+      "anclaje"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Coordinación",
+     "page": 195,
+     "items": [
+      "aaosa"
+     ],
+     "summary": "Del coordinador con reglas a la pizarra (OAA) y a AAOSA."
+    },
+    {
+     "num": "5.5",
+     "title": "Agentes por turnos, continuos y activados por eventos",
+     "page": 198,
+     "items": [
+      "modos_activacion"
+     ],
+     "summary": "Codex, Devin y Claude Code como agentes continuos."
+    },
+    {
+     "num": "5.6",
+     "title": "Elección de herramientas",
+     "page": 200,
+     "items": [
+      "registro_habilidades"
+     ],
+     "summary": "Incidentes de OpenClaw y Moltbook."
+    },
+    {
+     "num": "5.7",
+     "title": "Refinamientos y ajuste fino",
+     "page": 202,
+     "items": [
+      "ajuste_fino"
+     ],
+     "summary": "La agentificación es como pelar una cebolla: un proceso continuo."
+    },
+    {
+     "num": "5.8",
+     "title": "Contexto",
+     "page": 206,
+     "items": [
+      "ingenieria_contexto"
+     ]
+    },
+    {
+     "num": "5.9",
+     "title": "Memoria y planificación",
+     "page": 207,
+     "items": [
+      "memoria_planificacion"
+     ],
+     "summary": "La supervisión humana se volverá el cuello de botella."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Diseño de sistemas agénticos",
+   "page": 211,
+   "block": "tec",
+   "summary": "No hay solución llave en mano: cada empresa necesita su ciclo de vida de desarrollo agéntico (ADLC), con registro central, identidad de agentes, reglas de autonomía, UX, pruebas y errores comunes.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Consideraciones de diseño",
+     "page": 213,
+     "items": [
+      "identidad_agente",
+      "proceso_autonomia"
+     ],
+     "summary": "Repositorio y centro de control centralizados para todos los sistemas agénticos."
+    },
+    {
+     "num": "6.2",
+     "title": "Confianza",
+     "page": 215,
+     "items": [
+      "componentes_confianza"
+     ],
+     "summary": "Ejemplo: medir sesgos en un sistema de contratación."
+    },
+    {
+     "num": "6.3",
+     "title": "La experiencia de usuario agéntica",
+     "page": 218,
+     "items": [
+      "ux_agentica"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Pruebas de sistemas multiagente",
+     "page": 221,
+     "items": [
+      "red_team"
+     ]
+    },
+    {
+     "num": "6.5",
+     "title": "Errores comunes",
+     "page": 222,
+     "items": [
+      "descomposicion"
+     ],
+     "summary": "Costo y latencia: lanzar primero en un sandbox a pequeña escala."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Construcción de sistemas confiables",
+   "page": 226,
+   "block": "conf",
+   "summary": "Cuándo confiar en agentes autónomos: confianza calibrada, mapa de riesgos, rendición de cuentas con RACI de segunda capa, el orquestador como plano de control, tres pilares de mitigación, marcos regulatorios y segmentos de usuarios.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "El espectro de la confianza: de la fe ciega a la confianza calibrada",
+     "page": 227,
+     "items": [
+      "lentes_confiabilidad"
+     ],
+     "summary": "Caso Cruise y marco PRG de Zoox."
+    },
+    {
+     "num": "7.2",
+     "title": "Viñeta: GitHub Copilot con confianza calibrada",
+     "page": 231,
+     "summary": "Cada cambio pasa por una pull request con revisión humana."
+    },
+    {
+     "num": "7.3",
+     "title": "Mapeo del panorama de riesgos",
+     "page": 232,
+     "items": [
+      "panorama_riesgos"
+     ],
+     "summary": "Incidente OpenClaw en Meta: la compresión de contexto borró la orden de esperar aprobación."
+    },
+    {
+     "num": "7.4",
+     "title": "Viñeta: agentes autohospedados de Deviniti",
+     "page": 236,
+     "summary": "Privilegios mínimos, colas de aprobación y cumplimiento por diseño para banca regulada."
+    },
+    {
+     "num": "7.5",
+     "title": "Rendición de cuentas: ¿quién es el responsable?",
+     "page": 241,
+     "items": [
+      "raci_segunda_capa"
+     ],
+     "summary": "«La IA lo hizo» no es admisible."
+    },
+    {
+     "num": "7.6",
+     "title": "Viñeta: RACI de segunda capa en préstamos hipotecarios",
+     "page": 246,
+     "summary": "DualFair del MIT: menos sesgo con precisión similar."
+    },
+    {
+     "num": "7.7",
+     "title": "Los orquestadores como planos de control responsables",
+     "page": 249,
+     "items": [
+      "plano_control"
+     ]
+    },
+    {
+     "num": "7.8",
+     "title": "Mitigaciones técnicas en sistemas agénticos",
+     "page": 250,
+     "items": [
+      "tres_pilares"
+     ],
+     "summary": "De «disparar y olvidar» a autonomía acotada y observable."
+    },
+    {
+     "num": "7.9",
+     "title": "Gobernanza, explicabilidad, registro y cumplimiento",
+     "page": 257,
+     "items": [
+      "nist_ue"
+     ],
+     "summary": "Roles CAIO, CDO y CRO, y comités de gobernanza."
+    },
+    {
+     "num": "7.10",
+     "title": "Viñeta: cumplimiento continuo de Autodesk",
+     "page": 262,
+     "summary": "Agentes que revisan diseños frente a códigos de ingeniería en tiempo real."
+    },
+    {
+     "num": "7.11",
+     "title": "Cultura, adopción, cambios generacionales y agentes que confían en agentes",
+     "page": 266
+    },
+    {
+     "num": "7.12",
+     "title": "Qué dicen los principales estudios sobre la confianza en la IA",
+     "page": 267,
+     "summary": "La confianza varía con la familiaridad, la edad, el rol y el contexto."
+    },
+    {
+     "num": "7.13",
+     "title": "Segmentos prácticos y cómo abordarlos",
+     "page": 269,
+     "items": [
+      "segmentos_confianza"
+     ],
+     "summary": "Los orquestadores también «confían» en agentes según su historial."
+    },
+    {
+     "num": "7.14",
+     "title": "Viñeta: agentes industriales orquestados de Siemens",
+     "page": 273,
+     "summary": "Confianza en capas: copiloto para operadores y contratos de confianza entre agentes."
+    },
+    {
+     "num": "7.15",
+     "title": "Integración de todo",
+     "page": 275,
+     "summary": "Autonomía acotada, rendición de cuentas explícita y confianza calibrada avanzan juntas."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Escalamiento sin lock-in",
+   "page": 278,
+   "block": "conf",
+   "summary": "Cinco secciones que forman un solo argumento: encapsular y coordinar, evitar el vendor lock-in, preparar la arquitectura para actualizaciones, equilibrar el control central con el empoderamiento y crecer con estándares abiertos.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Encapsulamiento y coordinación",
+     "page": 280,
+     "items": [
+      "catalogo_acciones"
+     ],
+     "summary": "Migración incremental: auditar, poner pasarela y catálogo, migrar agente a agente, retirar integraciones frágiles."
+    },
+    {
+     "num": "8.2",
+     "title": "Evitar el vendor lock-in (agnosticismo de LLM y nube)",
+     "page": 286,
+     "items": [
+      "pasarela_neutral",
+      "costos_compuestos"
+     ],
+     "summary": "Caso Grab; tres categorías de capas de orquestación."
+    },
+    {
+     "num": "8.3",
+     "title": "Arquitecturas a prueba de futuro para actualizaciones",
+     "page": 294,
+     "items": [
+      "cuatro_lentes_futuro"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Propiedad centralizada frente al empoderamiento",
+     "page": 298,
+     "items": [
+      "camino_pavimentado"
+     ],
+     "summary": "Caso ANZ Bank y guía de madurez de Microsoft."
+    },
+    {
+     "num": "8.5",
+     "title": "Expandibilidad, Model Context Protocol y de agente a agente",
+     "page": 301,
+     "items": [
+      "mcp_a2a"
+     ],
+     "summary": "MCP como «USB-C» de los agentes."
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "El camino por delante para las empresas agénticas",
+   "page": 309,
+   "block": "futuro",
+   "summary": "La multiagencia es inevitable; la duda es la granularidad. Agentes creados por vibe coding, la Web Agéntica Mundial, robots con agentes y dos escenarios ante la superinteligencia.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Granularidad, vibe coding y la web agéntica",
+     "page": 309,
+     "items": [
+      "granularidad",
+      "vibe_coding_agentes",
+      "web_agentica"
+     ],
+     "summary": "Agentes efímeros: agentificación perpetua."
+    },
+    {
+     "num": "9.2",
+     "title": "Preparación para la próxima ola",
+     "page": 316,
+     "items": [
+      "evaluador_multiagente"
+     ],
+     "summary": "Hackathon de más de 50 000 participantes; 40 % no eran programadores."
+    },
+    {
+     "num": "9.3",
+     "title": "Futuro",
+     "page": 321,
+     "items": [
+      "limites_llm"
+     ],
+     "summary": "Robots controlados por agentes, responsabilidad y personalidad jurídica, AGI/ASI y dos escenarios."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "agencia": {
+   "title": "Agencia",
+   "formula": "Objetivo propio → plan de acción → ejecución → retroalimentación",
+   "summary": "Lo que hace agente a un humano o a una IA; los objetivos y sensores de un agente de IA los diseñan humanos."
+  },
+  "prompt_sistema": {
+   "title": "Indicativo del sistema (system prompt)",
+   "formula": "Rol + experiencia + descripción de puesto, repetidos en cada entrada",
+   "summary": "Confina a un LLM general a un rol concreto dentro de un flujo de trabajo."
+  },
+  "agente_llm": {
+   "title": "Agente basado en LLM",
+   "formula": "Agente = LLM + código (arnés agéntico); meta-arnés = sistema que crea o mejora arneses",
+   "summary": "El código actúa sobre las intenciones del LLM y añade planificación, memoria y herramientas."
+  },
+  "rag": {
+   "title": "RAG como sistema multiagente",
+   "formula": "Agente que resume y codifica → base vectorial → agente que responde",
+   "summary": "Generación aumentada por recuperación: búsqueda por significado en documentos propios."
+  },
+  "agente_proteccion": {
+   "title": "Agente de protección y registro de intenciones",
+   "formula": "Agente registra el «qué» y el «por qué» → agente de protección aplica ética y normas",
+   "summary": "Un agente vigila a otro e interviene si una petición no cumple las políticas."
+  },
+  "modelo_vs_agente": {
+   "title": "Modelo frente a agente",
+   "formula": "Modelo: datos → datos · Agente: LLM + herramientas que actúan e iteran",
+   "summary": "El mismo LLM programa mejor como agente porque ejecuta el código y corrige."
+  },
+  "confabulacion": {
+   "title": "Confabulación (alucinación)",
+   "formula": "Salida muestreada de una distribución → inconsistencia e invención",
+   "summary": "Junto con la seguridad de datos, frenó la adopción empresarial inicial."
+  },
+  "por_que_multiagente": {
+   "title": "Por qué multiagente y no un solo agente",
+   "formula": "Menos contexto por LLM · LLM más pequeños y locales · ajuste fino por agente · paralelismo · menor costo",
+   "summary": "Un agente de línea de comandos puede costar hasta 45 veces más que su equivalente multiagente."
+  },
+  "beneficios_agentificacion": {
+   "title": "Beneficios de agentificar el software",
+   "formula": "Registro de intenciones · comunicación robusta · barreras · modularidad · actualización · interoperabilidad · tolerancia a fallos · fin de silos",
+   "summary": "Ventajas de migrar una pila de aplicaciones a una arquitectura basada en agentes."
+  },
+  "mitigacion_autonomia": {
+   "title": "Mitigar la autonomía",
+   "formula": "Reglas deterministas · umbral de incertidumbre del LLM · agentes de barreras de protección",
+   "summary": "Tres estrategias para decidir cuándo confiar en el LLM, en reglas o en un humano."
+  },
+  "llm_vs_codigo": {
+   "title": "División LLM / código y sly_data",
+   "formula": "Razonamiento y texto no estructurado → LLM · reglas y consistencia → código",
+   "summary": "sly_data: datos que viajan entre agentes por el código, sin pasar por el LLM. Sin autonomía, mejor un módulo de software."
+  },
+  "metacognicion": {
+   "title": "Falta de metacognición",
+   "formula": "El LLM no sabe lo que no sabe",
+   "summary": "Límite que justifica controles y contrapesos en sistemas distribuidos y redundantes."
+  },
+  "tres_fuerzas": {
+   "title": "Tres fuerzas convergentes",
+   "formula": "Madurez tecnológica · presión económica · preparación organizativa",
+   "summary": "Por qué el momento estratégico es ahora."
+  },
+  "rpa_vs_agentica": {
+   "title": "RPA frente a IA agéntica",
+   "formula": "RPA automatiza pasos · IA agéntica automatiza resultados",
+   "summary": "Aporta velocidad de decisión: percibir, evaluar y actuar casi en tiempo real."
+  },
+  "capas_valor": {
+   "title": "Tres capas de valor",
+   "formula": "1 Productividad operativa · 2 Calidad y resiliencia · 3 Sistemas adaptativos empresariales",
+   "summary": "Las herramientas actuales operan sobre todo en las capas 1 y 2."
+  },
+  "adecuacion_casos": {
+   "title": "Dónde encajan y dónde no",
+   "formula": "Sí: soporte proactivo, cadena de suministro, cumplimiento · No: juicio subjetivo, información tácita, alto riesgo",
+   "summary": "Saber dónde no usar agentes es en sí un juicio estratégico."
+  },
+  "seis_dimensiones": {
+   "title": "Seis dimensiones de preparación",
+   "formula": "Liderazgo · infraestructura · gobernanza y riesgo · arquitectura · recursos técnicos · gestión del cambio",
+   "summary": "Se evalúan con semáforo rojo/ámbar/verde para priorizar inversiones."
+  },
+  "sdlc_multiagente": {
+   "title": "SDLC multiagente",
+   "formula": "Agentes por rol (revisión, pruebas, gestión) → subredes → red de SDLC",
+   "summary": "Introducción gradual empezando por procesos menos centrales."
+  },
+  "representacion_intermedia": {
+   "title": "Representación intermedia",
+   "formula": "Código heredado → representación explicada en lenguaje natural → código destino",
+   "summary": "Mejora la migración y sirve para futuras mejoras."
+  },
+  "nodos_hoja": {
+   "title": "Agentes de nodo hoja",
+   "formula": "LLM locales en el borde + jerarquía regional que consolida",
+   "summary": "Decisiones rápidas con conocimiento local; la jerarquía mira el contexto amplio."
+  },
+  "apa": {
+   "title": "Automatización de procesos agénticos (APA)",
+   "formula": "RPA rígida con algunos nodos reemplazados por agentes",
+   "summary": "Agentes orientados a resultados que explican sus pasos."
+  },
+  "agente_consumidor": {
+   "title": "Agentes alineados con el consumidor",
+   "formula": "Red de agentes del usuario ↔ redes de agentes de las empresas",
+   "summary": "Plantea cómo hacer marketing para agentes; analogía con Consumer Reports."
+  },
+  "validacion_logs": {
+   "title": "Red de agentes validadores",
+   "formula": "Registros de cada agente → validadores con distintas perspectivas → informe o intervención",
+   "summary": "Supervisión no intrusiva y asíncrona; la mejor herramienta para supervisar IA es la IA."
+  },
+  "capa_agentica_buffer": {
+   "title": "La capa agéntica como amortiguador",
+   "formula": "UX estable ↔ agentes ↔ fuentes y API que se modernizan",
+   "summary": "Permite cambiar aplicaciones y datos sin que el usuario lo note."
+  },
+  "cinco_riesgos": {
+   "title": "Cinco tipos de riesgo",
+   "formula": "Estratégico · organizacional · gobernanza y cumplimiento · operacional · responsabilidad legal",
+   "summary": "Los agentes son herramientas, no personas jurídicas."
+  },
+  "grupo_control": {
+   "title": "Incremento con grupo de control",
+   "formula": "Valor de la IA = resultado con IA − resultado sin IA",
+   "summary": "Método de DBS para atribuir valor económico y retirar modelos sin beneficio."
+  },
+  "plataforma_cartera": {
+   "title": "Plataforma más cartera",
+   "formula": "Infraestructura compartida (datos, orquestación, gobernanza) + cartera de casos de uso",
+   "summary": "Conclusión común de DBS, JPMC y Siemens."
+  },
+  "unidades_valor": {
+   "title": "Unidades de valor propias",
+   "formula": "Definir unidades → agentes observables · patrones reutilizables · promover solo lo que rinde dentro del riesgo",
+   "summary": "No existe una plantilla de ROI genérica."
+  },
+  "construir_comprar": {
+   "title": "Construir frente a comprar",
+   "formula": "Diferenciación · sensibilidad de datos · talento interno · interoperabilidad y salida",
+   "summary": "Pila híbrida: comprar modelos e infraestructura; construir orquestación, barreras y agentes de dominio."
+  },
+  "piloto_plataforma": {
+   "title": "Pilotos con efecto de plataforma",
+   "formula": "Redes de agentes + fuente única de verdad + gobernanza desde el día 1 + líneas base → valor · riesgo · preparación",
+   "summary": "Criterios de éxito acordados antes de empezar."
+  },
+  "agentificacion_flujos": {
+   "title": "Empezar por los flujos de trabajo",
+   "formula": "Flujo humano codificado → plano del flujo agéntico",
+   "summary": "Preferible al organigrama; tira y afloja entre divisiones y el área central."
+  },
+  "llm_abierto_comercial": {
+   "title": "LLM comerciales frente a abiertos",
+   "formula": "Datos sensibles o borde → código abierto con ajuste fino",
+   "summary": "Los agentes suelen diseñarse independientes del LLM."
+  },
+  "anclaje": {
+   "title": "Anclaje",
+   "formula": "Agente en sandbox simulado → agente anclado a datos y sistemas reales",
+   "summary": "Observar agentes no anclados ayuda a descubrir qué herramientas necesitan."
+  },
+  "aaosa": {
+   "title": "AAOSA y CRUSE",
+   "formula": "Cada agente coordina a sus subordinados y consolida sus respuestas (y su UI)",
+   "summary": "Arquitectura con encapsulación y extensibilidad, independiente del punto de entrada."
+  },
+  "modos_activacion": {
+   "title": "Modos de activación",
+   "formula": "Por turnos · continuo (bucle con plan) · activado por eventos",
+   "summary": "Se alterna entre programas deterministas y agentes según la parte del flujo."
+  },
+  "registro_habilidades": {
+   "title": "Registro de habilidades verificadas",
+   "formula": "Habilidad = archivo .md con pasos y API · solo habilidades registradas y examinadas",
+   "summary": "Dar control total de un equipo a un agente es arriesgado."
+  },
+  "ajuste_fino": {
+   "title": "Ajuste fino y destilación",
+   "formula": "Registros etiquetados → ajuste fino (RLHF) → destilación a SLM",
+   "summary": "Gana especialización y pierde generalidad; conservar los datos etiquetados para modelos nuevos."
+  },
+  "ingenieria_contexto": {
+   "title": "Ingeniería de contexto",
+   "formula": "Añadir a tiempo la información de estado relevante a la entrada del agente",
+   "summary": "Puede ser agéntica: unos agentes alimentan el contexto de otros."
+  },
+  "memoria_planificacion": {
+   "title": "Memoria y planificación",
+   "formula": "Memoria: almacenar, indexar, recuperar · Plan: pasos, ejecución, retroceso",
+   "summary": "Compensan que los LLM no aprenden en ejecución."
+  },
+  "identidad_agente": {
+   "title": "Identidad del agente",
+   "formula": "Firma hash de prompts y arnés en un registro seguro",
+   "summary": "Requisito urgente para la comunicación agéntica B2B y B2C."
+  },
+  "proceso_autonomia": {
+   "title": "Proceso para decidir la autonomía",
+   "formula": "Responsabilidades en el prompt · agentes de protección · middleware determinista · incertidumbre (≈5 muestras) · botón de desconexión",
+   "summary": "Si nada de lo anterior aplica, el sistema opera de forma autónoma."
+  },
+  "componentes_confianza": {
+   "title": "Componentes medibles de la confianza",
+   "formula": "Enumerar → cuantificar → monitorear de forma continua",
+   "summary": "Preferir reglas deterministas como primera línea; no certificar una vez y olvidar."
+  },
+  "ux_agentica": {
+   "title": "Experiencia de usuario agéntica",
+   "formula": "Latencia percibida · multicanal · humano en el ciclo o sobre el ciclo",
+   "summary": "Múltiples puntos de entrada y acceso directo al agente elegido."
+  },
+  "red_team": {
+   "title": "Equipo rojo agéntico",
+   "formula": "Dividir y probar subredes + casos de prueba generados por IA",
+   "summary": "Revela debilidades y cuánto inventa el sistema."
+  },
+  "descomposicion": {
+   "title": "Descomposición",
+   "formula": "Espiral sin salida → tiempo de espera · sobrecarga → dividir agentes · coordinador único → pipeline",
+   "summary": "Errores comunes de diseño y sus mitigaciones."
+  },
+  "lentes_confiabilidad": {
+   "title": "Lentes de confiabilidad",
+   "formula": "Seguridad y fiabilidad · equidad y ética · privacidad · explicabilidad",
+   "summary": "Copiloto, no piloto automático, hasta demostrar rendimiento."
+  },
+  "panorama_riesgos": {
+   "title": "Panorama de riesgos agénticos",
+   "formula": "Acciones inseguras · vulnerabilidades · privacidad · fuga de PI",
+   "summary": "Las restricciones críticas no deben vivir solo en el contexto que el agente puede truncar."
+  },
+  "raci_segunda_capa": {
+   "title": "RACI de segunda capa",
+   "formula": "Alcance del juicio · umbrales de riesgo · límites de datos · conflictos · registro",
+   "summary": "Se gobierna un espacio de comportamientos, no un sistema fijo."
+  },
+  "plano_control": {
+   "title": "Orquestador como plano de control",
+   "formula": "Toda solicitud pasa por el orquestador → reglas de autonomía + auditoría unificada",
+   "summary": "Ser dueño de un sistema agéntico es ser dueño de su orquestador."
+  },
+  "tres_pilares": {
+   "title": "Tres pilares de mitigación",
+   "formula": "Barreras técnicas y control · supervisión humana y flujo · gobernanza y transparencia",
+   "summary": "Incluye vigilantes, kill-switch, enrutamiento por confianza, conjuntos con votación y explicabilidad."
+  },
+  "nist_ue": {
+   "title": "AI RMF del NIST y Ley de IA de la UE",
+   "formula": "Gobernar · mapear · medir · gestionar + registro y trazabilidad en IA de alto riesgo",
+   "summary": "La transparencia se sube un nivel: se registra el orquestador, no las neuronas."
+  },
+  "segmentos_confianza": {
+   "title": "Cuatro segmentos de confianza",
+   "formula": "Entusiastas · expertos escépticos · pragmáticos cautelosos · baja familiaridad",
+   "summary": "Cada grupo necesita comunicación, UX y capacitación propias."
+  },
+  "catalogo_acciones": {
+   "title": "Catálogo de acciones de agentes",
+   "formula": "Acciones de negocio como servicios gobernados detrás de API estables",
+   "summary": "A diferencia de los humanos, los agentes pueden ser obligados a usarlos."
+  },
+  "pasarela_neutral": {
+   "title": "Pasarela neutral de modelos",
+   "formula": "Una API interna → varios proveedores + plantillas de prompt agnósticas al modelo",
+   "summary": "El agente acoplado a un solo proveedor es deuda técnica."
+  },
+  "costos_compuestos": {
+   "title": "Costos que se acumulan",
+   "formula": "Instrumentar cada capa · minimizar llamadas · topes de costo en el contrato de la malla",
+   "summary": "El costo es una restricción arquitectónica, no un tema financiero aparte."
+  },
+  "cuatro_lentes_futuro": {
+   "title": "Cuatro lentes para actualizar sin riesgo",
+   "formula": "Separar capas · versionar · experimentar con despliegue progresivo · reversión y observabilidad",
+   "summary": "Las actualizaciones pasan a ser rutina."
+  },
+  "camino_pavimentado": {
+   "title": "Plataforma central, constructores federados",
+   "formula": "Equipo central: plataforma, gobernanza, evaluación · unidades de negocio: agentes de dominio y KPI",
+   "summary": "Ingeniería de plataformas aplicada a agentes, con niveles de riesgo."
+  },
+  "mcp_a2a": {
+   "title": "MCP y A2A",
+   "formula": "MCP: agente ↔ herramientas y datos · A2A: agente ↔ agente",
+   "summary": "Adoptar MCP como base y A2A como estándar emergente; evitar protocolos propietarios cerrados."
+  },
+  "granularidad": {
+   "title": "Granularidad de los agentes",
+   "formula": "Demasiado fino → módulo de software o sobrecarga · demasiado grueso → sobrecarga del agente",
+   "summary": "Se mitiga con redundancia, corrección de errores y votación."
+  },
+  "vibe_coding_agentes": {
+   "title": "Crear agentes por vibe coding",
+   "formula": "Intención en lenguaje natural → sistema agéntico que diseña la red de agentes → ajustes iterativos",
+   "summary": "Agentes efímeros que se crean, modifican y descartan."
+  },
+  "web_agentica": {
+   "title": "Web Agéntica Mundial",
+   "formula": "Agentes servidos como HTML · ejecutados y pagados por el consumidor · identidad y registros",
+   "summary": "Los agentes compradores pesan menos la marca y la UX; los intermediarios se reestructuran."
+  },
+  "evaluador_multiagente": {
+   "title": "Evaluador multiagente",
+   "formula": "Dimensiones de negocio + técnicas · calibrado contra puntuación humana",
+   "summary": "Más de 30 000 proyectos en ~24 h por algo más de 7 000 USD."
+  },
+  "limites_llm": {
+   "title": "Límites actuales de los LLM",
+   "formula": "No aprenden tras el entrenamiento · sin metacognición · creatividad interpolativa · declive del CoT a escala",
+   "summary": "Pueden hacer falta avances fundamentales para la superinteligencia."
+  }
+ },
+ "resources": [
+  {
+   "id": "I-6",
+   "title": "Figura I-6 · Agente que envuelve datos y agente de protección",
+   "page": 44,
+   "usedBy": [
+    "I.3"
+   ]
+  },
+  {
+   "id": "I-8",
+   "title": "Figura I-8 · Modelo frente a agentes",
+   "page": 49,
+   "usedBy": [
+    "I.3",
+    "1.2"
+   ]
+  },
+  {
+   "id": "1-2",
+   "title": "Figura 1-2 · Comunicación entre agentes: LLM y sly_data",
+   "page": 69,
+   "usedBy": [
+    "1.3"
+   ]
+  },
+  {
+   "id": "3-1",
+   "title": "Figura 3-1 · Agentes en un SDLC",
+   "page": 100,
+   "usedBy": [
+    "3.1"
+   ]
+  },
+  {
+   "id": "3-5",
+   "title": "Figura 3-5 · Ahorro de esfuerzo por fase de modernización",
+   "page": 111,
+   "usedBy": [
+    "3.2"
+   ]
+  },
+  {
+   "id": "3-8",
+   "title": "Figura 3-8 · Red de telecomunicaciones con nodos hoja",
+   "page": 118,
+   "usedBy": [
+    "3.4"
+   ]
+  },
+  {
+   "id": "3-12",
+   "title": "Figuras 3-12 y 3-13 · Intranet multiagente y caída de tickets",
+   "page": 141,
+   "usedBy": [
+    "3.8"
+   ]
+  },
+  {
+   "id": "3-15",
+   "title": "Figura 3-15 · Red de agentes de validación y gobernanza",
+   "page": 151,
+   "usedBy": [
+    "3.10",
+    "6.4"
+   ]
+  },
+  {
+   "id": "3-17",
+   "title": "Figura 3-17 · Red de 121 agentes para la COP",
+   "page": 158,
+   "usedBy": [
+    "3.11"
+   ]
+  },
+  {
+   "id": "7-1",
+   "title": "Figura 7-1 · Bucle de cumplimiento continuo de Autodesk",
+   "page": 265,
+   "usedBy": [
+    "7.10"
+   ]
+  },
+  {
+   "id": "9-1",
+   "title": "Figuras 9-1 y 9-2 · Crear y ampliar una red de agentes por vibe coding",
+   "page": 313,
+   "usedBy": [
+    "9.1"
+   ]
+  },
+  {
+   "id": "9-3",
+   "title": "Figura 9-3 · Evaluador multiagente del hackathon",
+   "page": 320,
+   "usedBy": [
+    "9.2"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "1": [
+    "Int"
+   ],
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    2
+   ],
+   "5": [
+    1
+   ],
+   "6": [
+    5
+   ],
+   "7": [
+    6,
+    4
+   ],
+   "8": [
+    7
+   ],
+   "9": [
+    8,
+    3
+   ]
+  },
+  "sections": {
+   "I.3": [
+    "I.2"
+   ],
+   "I.2": [
+    "I.1"
+   ],
+   "1.2": [
+    "1.1",
+    "I.3"
+   ],
+   "1.3": [
+    "1.1",
+    "1.2",
+    "I.2",
+    "I.3"
+   ],
+   "1.5": [
+    "1.1"
+   ],
+   "2.1": [
+    "1.3"
+   ],
+   "2.2": [
+    "2.1"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "2.1",
+    "2.2"
+   ],
+   "3.1": [
+    "1.2",
+    "I.3"
+   ],
+   "3.2": [
+    "1.2"
+   ],
+   "3.4": [
+    "1.2"
+   ],
+   "3.5": [
+    "2.1"
+   ],
+   "3.9": [
+    "1.3"
+   ],
+   "3.10": [
+    "1.3",
+    "I.3"
+   ],
+   "4.1": [
+    "1.3",
+    "2.2"
+   ],
+   "4.2": [
+    "2.2"
+   ],
+   "4.5": [
+    "4.2",
+    "4.3",
+    "4.4"
+   ],
+   "4.6": [
+    "4.5"
+   ],
+   "4.7": [
+    "4.1",
+    "4.5",
+    "4.6"
+   ],
+   "5.1": [
+    "2.4"
+   ],
+   "5.2": [
+    "1.2"
+   ],
+   "5.3": [
+    "I.2"
+   ],
+   "5.4": [
+    "1.3"
+   ],
+   "5.5": [
+    "1.3"
+   ],
+   "5.6": [
+    "5.3"
+   ],
+   "5.7": [
+    "5.2"
+   ],
+   "5.8": [
+    "1.2"
+   ],
+   "5.9": [
+    "5.8"
+   ],
+   "6.1": [
+    "1.3",
+    "5.4",
+    "5.6"
+   ],
+   "6.2": [
+    "6.1"
+   ],
+   "6.3": [
+    "5.4"
+   ],
+   "6.4": [
+    "6.2"
+   ],
+   "6.5": [
+    "1.2",
+    "5.4"
+   ],
+   "7.1": [
+    "6.2"
+   ],
+   "7.3": [
+    "4.1",
+    "5.8"
+   ],
+   "7.5": [
+    "7.3"
+   ],
+   "7.7": [
+    "5.4",
+    "7.5"
+   ],
+   "7.8": [
+    "6.1",
+    "7.7"
+   ],
+   "7.9": [
+    "7.8"
+   ],
+   "7.13": [
+    "7.1",
+    "7.12"
+   ],
+   "8.1": [
+    "7.7"
+   ],
+   "8.2": [
+    "4.6",
+    "8.1"
+   ],
+   "8.3": [
+    "8.2"
+   ],
+   "8.4": [
+    "8.1"
+   ],
+   "8.5": [
+    "5.6",
+    "8.1"
+   ],
+   "9.1": [
+    "3.1",
+    "3.9",
+    "6.1",
+    "6.5",
+    "8.5"
+   ],
+   "9.2": [
+    "6.2",
+    "9.1"
+   ],
+   "9.3": [
+    "1.5",
+    "9.1"
+   ],
+   "1.4": [
+    "1.2"
+   ],
+   "2.5": [
+    "2.2"
+   ],
+   "3.3": [
+    "1.3"
+   ],
+   "3.6": [
+    "I.3"
+   ],
+   "3.7": [
+    "3.1"
+   ],
+   "3.8": [
+    "1.3"
+   ],
+   "3.11": [
+    "I.3"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "4.4": [
+    "4.2"
+   ],
+   "7.2": [
+    "7.1"
+   ],
+   "7.4": [
+    "7.3"
+   ],
+   "7.6": [
+    "7.5"
+   ],
+   "7.10": [
+    "7.9"
+   ],
+   "7.11": [
+    "7.1"
+   ],
+   "7.12": [
+    "7.11"
+   ],
+   "7.14": [
+    "7.13",
+    "7.7"
+   ],
+   "7.15": [
+    "7.13",
+    "7.8"
+   ]
+  },
+  "items": {
+   "agente_llm": [
+    "prompt_sistema"
+   ],
+   "rag": [
+    "agente_llm"
+   ],
+   "agente_proteccion": [
+    "agente_llm"
+   ],
+   "modelo_vs_agente": [
+    "agente_llm"
+   ],
+   "prompt_sistema": [
+    "agencia"
+   ],
+   "por_que_multiagente": [
+    "modelo_vs_agente",
+    "confabulacion"
+   ],
+   "beneficios_agentificacion": [
+    "por_que_multiagente",
+    "agente_proteccion"
+   ],
+   "mitigacion_autonomia": [
+    "agente_proteccion",
+    "confabulacion"
+   ],
+   "llm_vs_codigo": [
+    "agente_llm"
+   ],
+   "metacognicion": [
+    "confabulacion"
+   ],
+   "rpa_vs_agentica": [
+    "beneficios_agentificacion"
+   ],
+   "capas_valor": [
+    "rpa_vs_agentica"
+   ],
+   "adecuacion_casos": [
+    "capas_valor"
+   ],
+   "seis_dimensiones": [
+    "capas_valor",
+    "tres_fuerzas"
+   ],
+   "sdlc_multiagente": [
+    "modelo_vs_agente",
+    "por_que_multiagente"
+   ],
+   "representacion_intermedia": [
+    "por_que_multiagente"
+   ],
+   "nodos_hoja": [
+    "por_que_multiagente"
+   ],
+   "apa": [
+    "rpa_vs_agentica"
+   ],
+   "agente_consumidor": [
+    "beneficios_agentificacion"
+   ],
+   "validacion_logs": [
+    "agente_proteccion",
+    "beneficios_agentificacion"
+   ],
+   "capa_agentica_buffer": [
+    "beneficios_agentificacion"
+   ],
+   "cinco_riesgos": [
+    "mitigacion_autonomia",
+    "capas_valor"
+   ],
+   "grupo_control": [
+    "capas_valor"
+   ],
+   "plataforma_cartera": [
+    "grupo_control"
+   ],
+   "unidades_valor": [
+    "plataforma_cartera"
+   ],
+   "construir_comprar": [
+    "plataforma_cartera"
+   ],
+   "piloto_plataforma": [
+    "construir_comprar",
+    "unidades_valor",
+    "cinco_riesgos"
+   ],
+   "agentificacion_flujos": [
+    "seis_dimensiones"
+   ],
+   "llm_abierto_comercial": [
+    "por_que_multiagente"
+   ],
+   "anclaje": [
+    "agente_llm"
+   ],
+   "aaosa": [
+    "beneficios_agentificacion"
+   ],
+   "modos_activacion": [
+    "llm_vs_codigo"
+   ],
+   "registro_habilidades": [
+    "anclaje"
+   ],
+   "ajuste_fino": [
+    "llm_abierto_comercial"
+   ],
+   "ingenieria_contexto": [
+    "por_que_multiagente"
+   ],
+   "memoria_planificacion": [
+    "ingenieria_contexto"
+   ],
+   "identidad_agente": [
+    "registro_habilidades"
+   ],
+   "proceso_autonomia": [
+    "mitigacion_autonomia"
+   ],
+   "componentes_confianza": [
+    "proceso_autonomia"
+   ],
+   "ux_agentica": [
+    "aaosa"
+   ],
+   "red_team": [
+    "componentes_confianza"
+   ],
+   "descomposicion": [
+    "por_que_multiagente",
+    "aaosa"
+   ],
+   "lentes_confiabilidad": [
+    "componentes_confianza"
+   ],
+   "panorama_riesgos": [
+    "cinco_riesgos",
+    "ingenieria_contexto"
+   ],
+   "raci_segunda_capa": [
+    "panorama_riesgos"
+   ],
+   "plano_control": [
+    "raci_segunda_capa",
+    "aaosa"
+   ],
+   "tres_pilares": [
+    "plano_control",
+    "proceso_autonomia"
+   ],
+   "nist_ue": [
+    "tres_pilares"
+   ],
+   "segmentos_confianza": [
+    "lentes_confiabilidad"
+   ],
+   "catalogo_acciones": [
+    "plano_control"
+   ],
+   "pasarela_neutral": [
+    "catalogo_acciones",
+    "construir_comprar"
+   ],
+   "costos_compuestos": [
+    "pasarela_neutral"
+   ],
+   "cuatro_lentes_futuro": [
+    "pasarela_neutral"
+   ],
+   "camino_pavimentado": [
+    "catalogo_acciones"
+   ],
+   "mcp_a2a": [
+    "registro_habilidades",
+    "catalogo_acciones"
+   ],
+   "granularidad": [
+    "descomposicion"
+   ],
+   "web_agentica": [
+    "mcp_a2a",
+    "identidad_agente",
+    "agente_consumidor"
+   ],
+   "vibe_coding_agentes": [
+    "sdlc_multiagente"
+   ],
+   "evaluador_multiagente": [
+    "vibe_coding_agentes",
+    "componentes_confianza"
+   ],
+   "limites_llm": [
+    "metacognicion"
+   ]
+  }
+ }
+}
