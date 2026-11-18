@@ -1015,7 +1015,7 @@
    "title": "Moringa",
    "formula": "Moringa oleifera · hoja",
    "summary": "Hoja muy nutritiva que el libro propone para la ansiedad, la digestión, la glucemia, la lactancia y la piel.",
-   "caution": "Respaldada. La precaución con la raíz es razonable por sus alcaloides tóxicos, aunque los datos son casi todos de animales (Canett-Romero 2014); el efecto de la hoja sobre la glucemia es alentador pero con pocos estudios en humanos (Nova 2020)."
+   "caution": "Riesgo omitido. La precaución del libro con la raíz es correcta (alcaloides tóxicos; datos casi todos animales, Canett-Romero 2014), pero omite que el polvo de hoja causó brotes de Salmonella en EE. UU. (131 enfermos en 38 estados, 2025–2026, CDC) y que extractos de hoja fueron abortivos en ratas: no la uses como suplemento en el embarazo. En glucemia, lípidos y presión, un metaanálisis con GRADE (9 ECA) calificó la evidencia de muy baja. Su hierro se absorbe mal (5 g/día no subieron la hemoglobina en lactantes) y no tiene "7 veces la vitamina C de la naranja". Como galactagogo la evidencia es baja pero favorable (LactMed). Detalle en healing-herbal-infusions/evidencia/moringa.md."
   },
   "mucuna": {
    "title": "Mucuna",
