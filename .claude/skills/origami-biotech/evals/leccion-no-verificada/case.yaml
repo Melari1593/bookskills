@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: leccion-no-verificada
+expected_outcome: |
+  La skill detecta que la lección 7 no está verificada. No inventa pasos ni
+  parámetros. Pide el enlace o la transcripción. Puede ofrecer lo verificado
+  de las lecciones 4.1 y 4.2.

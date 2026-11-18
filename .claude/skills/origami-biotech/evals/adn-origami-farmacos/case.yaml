@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: adn-origami-farmacos
+expected_outcome: |
+  La skill resume las revisiones de origami de ADN para administración de
+  fármacos. Atribuye a PubMed. Enlaza el DOI de cada referencia. Aclara que
+  las fuentes son revisiones y que no prueban eficacia clínica.

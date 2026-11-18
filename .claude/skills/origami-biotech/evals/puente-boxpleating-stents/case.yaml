@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: puente-boxpleating-stents
+expected_outcome: |
+  La skill une los dos módulos. Explica el boxpleating con lo verificado.
+  Cita revisiones de dispositivos médicos con DOI. Marca la relación entre
+  boxpleating y stents como analogía de diseño, no como afirmación de las
+  fuentes. No da consejo clínico.
