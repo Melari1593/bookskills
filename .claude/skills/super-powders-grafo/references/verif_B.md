@@ -237,12 +237,15 @@ Nota de acceso: las páginas de NCBI Bookshelf (LiverTox, LactMed) a veces devol
 
 ## B17. Moringa
 - **id:** B17
-- **verdict:** respaldada
+- **verdict:** riesgo_omitido (antes: respaldada; cambiado el 2026-11-17)
 - **alerta:** La precaución del libro con la raíz es razonable. Contiene alcaloides (espiroquina, moringinina) con efectos cardíacos, neurológicos, renales y abortivos descritos, aunque casi todos los datos son de animales (Canett-Romero et al. 2014). Sobre el efecto hipoglucemiante de la hoja, la revisión sistemática de Nova et al. (2020) encontró resultados alentadores pero con pocos estudios en humanos, de diseño variable.
 - **fuentes:**
   - Canett-Romero R et al. Biotecnia 2014;16(2):36-43: https://www.redalyc.org/pdf/6729/672971120007.pdf
   - Nova E et al. Nutrients 2020. doi:10.3390/nu12072050
-- **confianza:** media
+- **actualización 2026-11-17:** La revisión `healing-herbal-infusions/evidencia/moringa.md` (2026-11-10) documentó riesgos que el libro omite: brotes de *Salmonella* por polvo de hoja (CDC, 131 enfermos en 38 estados, 2025–2026), alerta del INVIMA por un producto sin registro, efecto abortivo de extractos de hoja en ratas y absorción pobre del hierro (Boateng 2018: 5 g/día durante 4 meses no subieron la hemoglobina en 237 lactantes). En lo cardiometabólico, un metaanálisis con GRADE (9 ECA, 649 adultos) calificó toda la evidencia de muy baja. Las fuentes con DOI y el log están en ese archivo.
+  - Boateng L et al. Food Sci Nutr 2018. doi:10.1002/fsn3.890
+  - Metaanálisis cardiometabólico con GRADE. Nutrients 2025. doi:10.3390/nu17223501
+- **confianza:** media (eficacia); alta (Salmonella, documentada por la CDC)
 
 ## B18. Perla en polvo
 - **id:** B18

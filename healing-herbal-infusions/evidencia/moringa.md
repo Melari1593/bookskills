@@ -411,7 +411,17 @@ Nota: PubMed devolvió "límite de tasa" dos veces. Las consultas se repitieron.
 
 ---
 
-## 13. Datos no confirmados
+## 12b. Actualización del 2026-11-17
+
+Búsqueda nueva en PubMed: `"Moringa oleifera" AND (randomized controlled trial[pt] OR meta-analysis[pt] OR systematic review[pt])` (65 resultados), metales pesados en polvo o suplemento (97), tiroides o levotiroxina en humanos (4) y *Salmonella* o contaminación desde 2026 (220). Resultado:
+
+- **No hay ECA ni metaanálisis clínicos nuevos** que cambien los veredictos de este archivo.
+- **Cabello:** una revisión sistemática de 2026 halló más largo y peso del pelo en animales y menos caída en participantes humanos con formulaciones de moringa, sobre todo tópicas; pide ECA (Stolyar 2026, doi:10.36849/JDD.9796). Nivel: muy baja.
+- **Metales pesados en polvos comerciales:** siguen sin datos en PubMed; los 97 resultados tratan de suelos, agua o protección en animales. El hueco de la sección 4.4 sigue abierto.
+- **Tiroides y levotiroxina:** solo hay estudios in silico y en células. El hueco de la sección 4.3 sigue abierto.
+- **Super Powders:** la alerta de moringa del grafo se alineó con este archivo (veredicto «riesgo omitido»).
+
+
 
 - **Oxalatos y fitatos de la hoja seca:** no hallé valores medidos. FSANZ sugiere que el oxalato reduce el calcio disponible, pero no da cifras.
 - **Vitamina A del polvo:** no hallé un valor medido. La cifra de la tabla es un cálculo teórico máximo.
