@@ -484,7 +484,7 @@ Generado: 2026-11-18. Evidencia y seguridad: [`evidencia/moringa.md`](evidencia/
 
 **Seguridad:** un aceite con hierbas frescas puede favorecer *C. botulinum* a temperatura ambiente. Guárdalo en nevera y úsalo en pocos días (plazo exacto no verificado en esta sesión).
 
-**Maridaje (interpretación):** limón, coco, maracuyá y jengibre. En una bebida instantánea de moringa, la versión con jengibre rojo fue la preferida (Rahmatu 2025, doi:10.4081/ijfs.2025.13512).
+**Maridaje (interpretación):** limón, coco, maracuyá y jengibre. En una bebida instantánea de moringa con 30 panelistas, la versión con jengibre rojo tuvo el mejor aroma (3,97 de 5) (Rahmatu 2025, doi:10.4081/ijfs.2025.13512). El estudio no da el nombre científico. Probaron la galanga como un tratamiento aparte, y el estudio es de Indonesia, así que el jengibre rojo es casi seguro *jahe merah* (*Zingiber officinale* var. *rubrum*), no *Alpinia purpurata*. No uses la flor ornamental *A. purpurata* («jengibre rojo» en Colombia) en esta receta: no tiene datos de seguridad en humanos.
 
 ---
 
