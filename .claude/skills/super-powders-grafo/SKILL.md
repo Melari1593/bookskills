@@ -24,7 +24,7 @@ Los bloques son:
 
 ## Alertas de evidencia
 
-33 nodos tienen el campo `caution`. Las verificaciones son del 2026-10-28, con PubMed y agencias (EMA, EFSA, BfR, LactMed, LiverTox, NIH ODS, Endocrine Society). La alerta de goji se amplió el 2026-11-17 con la alergia por LTP. Cada alerta empieza con un veredicto:
+33 nodos tienen el campo `caution`. Las verificaciones son del 2026-10-28, con PubMed y agencias (EMA, EFSA, BfR, LactMed, LiverTox, NIH ODS, Endocrine Society). El 2026-11-17 se ampliaron las alertas de goji (alergia por LTP) y cola de pavo (Cochrane 2022, cáncer gástrico, VPH, CYP3A4), y la de melena de león pasó de "sin evidencia humana" a "debatida". La tremella no está en el libro: su revisión está en `healing-herbal-infusions/evidencia/tremella.md`. Cada alerta empieza con un veredicto:
 
 | Veredicto | Significado |
 |---|---|

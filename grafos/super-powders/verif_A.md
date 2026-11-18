@@ -65,7 +65,7 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
 
 ## A6. Melena de león (Hericium erinaceus)
 - **id:** A6
-- **verdict:** sin_evidencia_humana
+- **verdict:** debatida (antes: sin_evidencia_humana; cambiado el 2026-11-17)
 - **alerta:** Que "regenera tejido cerebral" o que sirve para Alzheimer o Parkinson se basa en estudios celulares y en animales. En humanos solo hay ensayos pequeños. En Mori et al. (2009; 30 personas con deterioro cognitivo leve), la mejora desapareció 4 semanas después de dejar el suplemento. En Nagano et al. (2010; 30 mujeres, 4 semanas) los resultados sobre depresión y ansiedad fueron preliminares, y los ensayos piloto posteriores (2023–2026) dan resultados mixtos.
 - **fuentes:**
   - Mori et al. Improving effects of the mushroom Yamabushitake (Hericium erinaceus) on mild cognitive impairment: a double-blind placebo-controlled clinical trial. *Phytother Res* 2009. doi:10.1002/ptr.2634
@@ -74,7 +74,13 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
   - Surendran et al. 2025, ECA de dosis aguda (*Front Nutr*). doi:10.3389/fnut.2025.1405796
   - Muhanna et al. 2023, ALSUntangled #73: el hallazgo de Mori "aún no se ha replicado". doi:10.1080/21678421.2023.2296557
   - Contato et al. 2025, revisión narrativa: "la validación clínica sigue siendo limitada". doi:10.3390/nu17081307
-- **confianza:** alta
+- **actualización 2026-11-17:** La etiqueta "sin evidencia humana" sigue valiendo para la regeneración nerviosa y el Parkinson, pero no para la cognición, donde hay ensayos pequeños con mejoras modestas. Saitsu 2019 (12 semanas, cuerpo fructífero): mejoró el MMSE, no la retención visual de Benton ni el aprendizaje verbal. Li 2020 (piloto doble ciego de 49 semanas en Alzheimer leve, micelio con erinacina A, financiado por Grape King): MMSE e IADL mejores que con placebo; 4 abandonos por molestia abdominal, náusea o erupción. Menon 2025 (revisión sistemática, 5 ECA y 3 pilotos): MMSE +1,17 al combinar un ECA y un piloto; describe molestia gástrica, cefalea y reacciones alérgicas. Smith 2026 (ECA de 84 mujeres de 18–26 años, 1,8 g/día, 28 días): la melena sola no superó al placebo en ansiedad; la mezcla con reishi bajó la GAD-7 frente a la melena sola. Sin casos publicados de lesión hepática ni interacciones en esta búsqueda.
+  - Saitsu Y et al. Biomed Res 2019. doi:10.2220/biomedres.40.125
+  - Li IC et al. Front Aging Neurosci 2020. doi:10.3389/fnagi.2020.00155
+  - Menon R et al. Front Nutr 2025. doi:10.3389/fnut.2025.1641246
+  - Smith et al. Front Nutr 2026. doi:10.3389/fnut.2026.1887408
+  - La Monica MB et al. Nutrients 2023 (dosis única). doi:10.3390/nu15245018
+- **confianza:** media (cognición); alta (regeneración nerviosa sin evidencia humana)
 
 ## A7. Reishi (Ganoderma lucidum)
 - **id:** A7
