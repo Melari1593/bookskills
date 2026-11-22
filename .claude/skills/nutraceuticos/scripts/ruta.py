@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Busca un tema del grafo de Flavonoids as Nutraceuticals (2024) y enumera sus secciones previas,
+"""Busca un tema en un grafo de libro de la skill (flavonoides o crónicas) y enumera sus secciones previas,
 los apéndices que se consultan y las alertas de los conceptos implicados."""
 import json
 import sys
@@ -12,8 +12,12 @@ def norm(s):
                    if not unicodedata.combining(c))
 
 
-def main(query):
-    data = json.loads((Path(__file__).resolve().parents[1] / 'references/grafo_flavonoids.json').read_text())
+GRAFOS = {'flavonoides': 'references/grafo_flavonoids.json',
+          'cronicas': 'references/grafo_functional_foods.json'}
+
+
+def main(query, grafo='flavonoides'):
+    data = json.loads((Path(__file__).resolve().parents[1] / GRAFOS[grafo]).read_text())
     secs = {s['num']: (c, s) for c in data['chapters'] for s in c['sections']}
     items = data['items']
     item_sec = {iid: s['num'] for c in data['chapters'] for s in c['sections']
@@ -83,7 +87,11 @@ def main(query):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print('Uso: python scripts/ruta.py "término o número"', file=sys.stderr)
+    args = sys.argv[1:]
+    grafo = 'flavonoides'
+    if len(args) == 3 and args[0] == '--grafo' and args[1] in GRAFOS:
+        grafo, args = args[1], args[2:]
+    if len(args) != 1:
+        print('Uso: python scripts/ruta.py [--grafo flavonoides|cronicas] "término o número"', file=sys.stderr)
         sys.exit(2)
-    sys.exit(main(sys.argv[1]))
+    sys.exit(main(args[0], grafo))
