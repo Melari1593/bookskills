@@ -1,4 +1,13 @@
 alimento,compuesto,nombre_original,descriptor,tipo,fd,oav,nivel,doi,ubicacion
+aji,(E)-2-nonenal,(E)-2-nonenal,,,,,C,10.1039/d4ra02343a,resumen
+aji,"(E,E)-2,4-decadienal","(E,E)-2,4-decadienal",,,,,C,10.1039/d4ra02343a,resumen
+aji,"1,8-cineol",eucalyptol,,,,,C,10.1039/d4ra02343a,resumen
+aji,2-isobutil-3-metoxipirazina,2-isobutyl-3-methoxypyrazine,,,,,C,10.3389/fnut.2022.1027605,resumen
+aji,2-metilpropanal,2-methylpropanal,,,,,C,10.1039/d4ra02343a,resumen
+aji,3-metilbutanal,3-methylbutanal,,,,,C,10.1039/d4ra02343a,resumen
+aji,fenilacetaldehído,benzeneacetaldehyde,,,,,C,10.1039/d4ra02343a,resumen
+aji,linalol,linalool,,,,,C,10.1039/d4ra02343a,resumen
+aji,metional,methional,,,,,C,10.1039/d4ra02343a,resumen
 ajonjoli_tostado,2-methyl-1-butene-1-thiols ((z) and (e)),2-methyl-1-butene-1-thiols ((Z) and (E)),,,,960.0,B,10.1021/jf202183y,resumen (OAV aproximado dado para el par de isómeros)
 ajonjoli_tostado,3-methyl-1-butene-1-thiols ((z) and (e)),3-methyl-1-butene-1-thiols ((Z) and (E)),,,,2400.0,B,10.1021/jf202183y,resumen (OAV aproximado dado para el par de isómeros)
 ajonjoli_tostado,4-vinilguayacol,2-methoxy-4-vinylphenol,ahumado,leñoso,,385.0,B,10.1016/j.foodres.2021.110794,resumen
@@ -121,6 +130,18 @@ cafe_tostado,furfuryl acetate,furfuryl acetate,"plátano dulce, afrutado",frutal
 cafe_tostado,furfuryl methyl sulfide,furfuryl methyl sulfide,,,2187.0,,C,10.3390/foods14183192,Sección 3.5
 cafe_tostado,guayacol,guaiacol,"fenólico, quemado",leñoso,,,C,10.1016/j.foodchem.2020.127821,resumen
 cafe_tostado,tetrahydrofurfuryl alcohol,tetrahydrofurfuryl alcohol,,,243.0,,C,10.3390/foods14183192,Sección 3.5
+canela,(E)-cinamaldehído,cinnamaldehyde,,,316.0,,C,10.1515/znc-2017-0087,resumen
+canela,(E)-cinamaldehído,trans-cinnamaldehyde,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,2-feniletanol,2-phenylethanol,,,,,C,10.1515/znc-2017-0087,resumen
+canela,alpha-copaene,alpha-copaene,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,benzaldehído,benzaldehyde,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,cinnamyl alcohol,cinnamyl alcohol,,,,,C,10.1515/znc-2017-0087,resumen
+canela,cumarina,coumarin,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,ethyl cinnamate,ethyl cinnamate,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,nonanal,nonanal,,,,,C,10.1016/j.foodres.2024.115446,resumen
+canela,ácido acético,acetic acid,,,,,C,10.1016/j.foodres.2024.115446,resumen
+cardamomo,"1,8-cineol","1,8-cineole",,,,,D,10.1007/s13197-022-05560-8,resumen
+cardamomo,acetato de α-terpinilo,alpha-terpinyl acetate,,,,,D,10.1007/s13197-022-05560-8,resumen
 cebolla,3-mercapto-2-methylpentan-1-ol,3-mercapto-2-methylpentan-1-ol,,,,989.0,A,10.1016/j.foodres.2025.117292,resumen (OAV 677–989; omisión)
 cebolla,dipropyl disulfide,dipropyl disulfide,,,1024.0,,A,10.1016/j.foodres.2025.117292,resumen (FD hasta 1024; omisión)
 cebolla,(E)-2-octenal,2-octenal,"pepino, herbáceo",verde,,,C,10.3390/foods12071371,Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles
@@ -133,6 +154,10 @@ cebolla,furaneol (HDMF),furaneol,"algodón de azúcar, caramelo",caramelo,,,C,10
 cebolla,nonanoic acid,nonanoic acid,,,,,C,10.3390/foods12071371,Sección 3.2.2 (texto; cebolla fresca); tablas no disponibles
 cebolla,prenylthiol,prenylthiol,,,,,C,10.3390/foods12071371,Sección 3.2.2 (texto; cebolla fresca); tablas no disponibles
 cebolla,trisulfuro de dimetilo,dimethyl trisulfide,"azufrado, cebolla cocida",químico,,,C,10.3390/foods12071371,Sección 3.3.2 (texto; aceite de cebolla frita); tablas no disponibles
+cilantro_semilla,camphor,camphor,,,,,D,10.3390/molecules29040844,resumen
+cilantro_semilla,gamma-terpinene,gamma-terpinene,,,,,D,10.3390/molecules29040844,resumen
+cilantro_semilla,geraniol,geraniol,,,,,D,10.3390/molecules29040844,resumen
+cilantro_semilla,linalol,linalool,,,,,D,10.3390/molecules29040844,resumen
 ciruela,(E)-2-hexenal,2-hexenal,hoja verde,verde,,,C,10.3390/foods13213515,Sección 3.4 (texto); Tabla de OAV no disponible
 ciruela,(E)-2-hexenal,(E)-2-hexenal,"verde, afrutado, especiado, graso",verde,,,C,10.3390/foods13213515,Sección 3.4 (texto); Tabla de OAV no disponible
 ciruela,(E)-2-hexenal,(E)-2-hexenal,,,,,C,10.1016/j.fochx.2025.103053,Sección 3.3 (texto; fruta fresca); tabla de ROAV no disponible
@@ -177,6 +202,7 @@ ciruela,propanal,propanal,,,,,C,10.1016/j.fochx.2025.103053,Sección 3.3 (texto;
 ciruela,ácido butanoico,butanoic acid,,,,,C,10.3390/foods13213515,Sección 3.4 (texto); Tabla de OAV no disponible
 ciruela,γ-decalactona,gamma-decalactone,"melocotón, cremoso",frutal,,,C,10.3390/foods15101787,Sección 3.5 (texto); tabla de rOAV no disponible
 ciruela,δ-decalactona,delta-decalactone,"melocotón, cremoso",frutal,,,C,10.3390/foods15101787,Sección 3.5 (texto); tabla de rOAV no disponible
+clavo,eugenol,eugenol,,,,,D,10.1016/j.jep.2026.122073,resumen
 coco,ethyl decanoate,ethyl decanoate,,,,90.69,B,10.1016/j.foodchem.2025.145123,resumen
 coco,nonanal,nonanal,,,,108.67,B,10.1016/j.foodchem.2025.145123,resumen
 coco,octanal,octanal,,,,69.0,B,10.1016/j.foodchem.2025.145123,resumen
@@ -190,6 +216,7 @@ coco,2-heptanol,2-heptanol,,,,,D,10.1016/j.foodres.2024.114937,resumen
 coco,2-tridecanone,2-tridecanone,,,,,D,10.1016/j.foodres.2024.114937,resumen
 coco,4-methylvaleric acid,4-methylvaleric acid,,,,,D,10.1016/j.foodres.2024.114937,resumen
 coco,nonanal,nonanal,,,,,D,10.1016/j.foodres.2024.114937,resumen
+comino,cuminaldehyde,cuminaldehyde,,,,,D,10.1007/s13197-016-2258-0,resumen
 corteza_pan,(E)-2-nonenal,2-nonenal,,,,,A,10.3390/molecules24132484,Sección 2.1 (texto); Tabla 1 no disponible
 corteza_pan,"(E,Z)-2,6-nonadienal","2,6-nonadienal",,,,,A,10.3390/molecules24132484,Sección 2.1 (texto); Tabla 1 no disponible
 corteza_pan,"2,3-butanodiona (diacetilo)",diacetyl,,,,,A,10.3390/molecules24132484,Sección 2.1 (texto); Tabla 1 no disponible
@@ -213,6 +240,9 @@ corteza_pan,(E)-2-nonenal,(E)-2-nonenal,,,,,C,10.1021/jf303750y,resumen
 corteza_pan,"(E,E)-2,4-decadienal","(E,E)-2,4-decadienal",,,,,C,10.1021/jf303750y,resumen
 corteza_pan,"2-etil-3,5-dimetilpirazina","2-ethyl-3,5-dimethylpyrazine",,,,,C,10.1021/jf303750y,resumen
 corteza_pan,sotolón,sotolon,a condimento,,,,C,10.1021/acs.jafc.1c05638,resumen
+curcuma,alpha-zingiberene,alpha-zingiberene,,,,,D,10.3390/metabo11010021,resumen
+curcuma,ar-turmerone,ar-turmerone,,,,,D,10.3390/metabo11010021,resumen
+curcuma,beta-sesquiphellandrene,beta-sesquiphellandrene,,,,,D,10.3390/metabo11010021,resumen
 frambuesa,β-ionona,β-ionone,floral,floral,512.0,9507.0,B,10.1016/j.foodchem.2020.127721,resumen
 frambuesa,(E)-2-hexenal,(E)-2-hexenal,,,,,C,10.1021/jf0498721,resumen
 frambuesa,(E)-2-hexenal,(E)-2-hexenal,"verde, herbáceo, graso",verde,,,C,10.3390/plants15111639,Sección 2.2 (OAV > 1 en todas las muestras; valor solo en figura)
@@ -262,6 +292,11 @@ fresa,ácido butanoico,butanoic acid,,,,,C,10.1021/jf2030924,resumen
 fresa,γ-decalactona,γ-decalactone,,,128.0,,C,10.1016/j.foodchem.2026.151051,resumen
 fresa,γ-decalactona,γ-decalactone,,,,,C,10.1021/jf2030924,resumen
 fresa,γ-decalactona,γ-decalactone,,,,,C,10.1016/j.foodchem.2025.145619,resumen (zumo fresco; baja con el calor)
+jengibre,"1,8-cineol",eucalyptol,,,2187.0,,C,10.1021/acs.jafc.7b00559,resumen
+jengibre,bornyl acetate,bornyl acetate,,,2187.0,,C,10.1021/acs.jafc.7b00559,resumen
+jengibre,geranial,geranial,,,2187.0,,C,10.1021/acs.jafc.7b00559,resumen
+jengibre,linalol,beta-linalool,,,2187.0,,C,10.1021/acs.jafc.7b00559,resumen
+jengibre,α-pineno,alpha-pinene,,,,,C,10.1021/acs.jafc.7b00559,resumen (dilución del espacio de cabeza)
 laurel,(E)-isoeugenol,(E)-isoeugenol,floral,floral,,,C,10.1021/jf0306237,resumen
 laurel,(Z)-3-hexenal,(Z)-3-hexenal,verde fresco,verde,,,C,10.1021/jf0306237,resumen
 laurel,"1,8-cineol","1,8-cineole",eucalipto,herbal,,,C,10.1021/jf0306237,resumen
@@ -333,7 +368,7 @@ mango,2-carene,2-carene,,,,,C,10.3390/foods9010075,"Sección 3.3 (frecuencia de 
 mango,furaneol (HDMF),"4-hydroxy-2,5-dimethyl-3(2H)-furanone",,,,,C,10.1021/jf5008743,resumen (importante en los cinco cultivares)
 mango,ocimeno,ocimene,,,,,C,10.3390/foods9010075,"Sección 3.3 (intensidad OSME 2,5, cv. Hongyu)"
 mango,β-myrcene,β-myrcene,,,,,C,10.3390/foods9010075,"Sección 3.3 (frecuencia de detección 6/8, cv. Tainong)"
-mango,β-pinene,β-pinene,a hierba verde,verde,,,C,10.3390/foods9010075,"Sección 3.3 (frecuencia de detección 7/8; OAV ≤ 0,1)"
+mango,β-pineno,β-pinene,a hierba verde,verde,,,C,10.3390/foods9010075,"Sección 3.3 (frecuencia de detección 7/8; OAV ≤ 0,1)"
 mani_tostado,"2,3-pentanodiona","2,3-pentanedione",,,,,A,10.1021/jf1026636,resumen (entre los OAV más altos; recombinado validado)
 mani_tostado,2-acetil-1-pirrolina,2-acetyl-1-pyrroline,"intenso, a palomitas de maíz",tostado,,,A,10.1021/jf1026636,resumen (entre los OAV más altos; recombinado validado)
 mani_tostado,2-metilbutanal,2-methylbutanal,,,,,A,10.1021/jf1026636,resumen (entre los OAV más altos; recombinado validado)
@@ -346,7 +381,7 @@ mani_tostado,"2-acetil-1,4,5,6-tetrahidropiridina",2-acetyltetrahydropyridine,a 
 mani_tostado,2-acetil-1-pirrolina,2-acetyl-1-pyrroline,,,,,C,10.1021/jf802102u,resumen
 mani_tostado,2-acetil-1-pirrolina,2-acetyl-1-pyrroline,a palomitas de maíz,tostado,,,C,10.1271/bbb.130112,resumen
 mani_tostado,"2-etil-3,5-dimetilpirazina","3,5-dimethyl-2-ethylpyrazine",a nuez,frutos secos,1024.0,,C,10.1271/bbb.130112,resumen
-mani_tostado,2-isobutyl-3-methoxypyrazine,2-isobutyl-3-methoxypyrazine,terroso,vegetal,4096.0,,C,10.1271/bbb.130112,resumen
+mani_tostado,2-isobutil-3-metoxipirazina,2-isobutyl-3-methoxypyrazine,terroso,vegetal,4096.0,,C,10.1271/bbb.130112,resumen
 mani_tostado,2-isopropyl-3-methoxypyrazine,2-isopropyl-3-methoxypyrazine,"terroso, a arveja",vegetal,,,C,10.1021/jf802102u,resumen
 mani_tostado,2-methyl-3-furanthiol,2-methyl-3-furanthiol,"tostado, cárnico",tostado,,,C,10.1271/bbb.130112,resumen
 mani_tostado,2-propionyl-1-pyrroline,2-propionyl-1-pyrroline,a palomitas de maíz,tostado,,,C,10.1021/jf802102u,resumen
@@ -413,6 +448,9 @@ naranja,linalol,(R)-linalool,,,,,C,10.1021/acs.jafc.8b02257,resumen (FD más alt
 naranja,linalol,linalool,,,,,C,10.1016/j.foodchem.2026.150703,resumen (FD ≥ 64)
 naranja,vainillina,vanillin,,,,,C,10.1021/acs.jafc.8b02257,resumen (FD más alto)
 naranja,wine lactone,wine lactone,,,,,C,10.1021/acs.jafc.8b02257,resumen (FD más alto)
+nuez_moscada,sabinene,sabinene,,,,,C,pmid:26434138,resumen
+nuez_moscada,α-pineno,alpha-pinene,,,,,C,pmid:26434138,resumen
+nuez_moscada,β-pineno,beta-pinene,,,,,C,pmid:26434138,resumen
 parmesano,"2,3-butanodiona (diacetilo)",diacetyl,,,,,B,10.3168/jds.S0022-0302(03)73658-3,resumen
 parmesano,2-metilbutanal,2-methylbutanal,,,,,B,10.3168/jds.S0022-0302(03)73658-3,resumen
 parmesano,2-metilpropanal,2-methylpropanal,,,,,B,10.3168/jds.S0022-0302(03)73658-3,resumen
@@ -458,11 +496,11 @@ parmesano,pentanal,pentanal,,,,,C,10.3168/jds.S0022-0302(02)74202-1,resumen
 parmesano,trisulfuro de dimetilo,dimethyltrisulfide,,,,,C,10.3168/jds.S0022-0302(02)74202-1,resumen
 parmesano,ácido butanoico,butanoic acid,"a queso, lipolizado",quesero,,,C,10.3168/jds.S0022-0302(02)74202-1,resumen
 pimenton,2-heptanethiol,2-heptanethiol,"azufrado, cebolla, vegetal; recuerda a pimiento en baja concentración",químico,,,C,10.1021/jf035008h,resumen
-pimenton,3-isobutyl-2-methoxypyrazine,3-isobutyl-2-methoxypyrazine,,,,,C,10.1016/j.phytochem.2022.113488,resumen
+pimenton,2-isobutil-3-metoxipirazina,3-isobutyl-2-methoxypyrazine,,,,,C,10.1016/j.phytochem.2022.113488,resumen
 pimenton,"(E,E)-2,4-decadienal","(E,E)-2,4-decadienal",,,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,"(E,Z)-2,6-nonadienal","(E,Z)-2,6-nonadienal",,,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,1-octen-3-ol,1-octen-3-ol,hierba recién cortada,verde,,,D,10.3390/foods9091323,Sección 3.3 (texto)
-pimenton,2-isobutyl-3-methoxypyrazine,2-isobutyl-3-methoxypyrazine,pimiento verde,verde,,,D,10.3390/foods9091323,Sección 3.3 (texto)
+pimenton,2-isobutil-3-metoxipirazina,2-isobutyl-3-methoxypyrazine,pimiento verde,verde,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,2-metilpropanal,2-methylpropanal,"cacao, especiado",especiado,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,2-sec-butyl-3-methoxypyrazine,2-sec-butyl-3-methoxypyrazine,"zanahoria, lechuga, herbáceo",herbal,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,3-carene,3-carene,"pimiento rojo, gomoso",,,,D,10.3390/foods9091323,Sección 3.3 (texto)
@@ -470,6 +508,8 @@ pimenton,beta-ocimene,beta-ocimene,"rancio, sudor",quesero,,,D,10.3390/foods9091
 pimenton,heptanal,heptanal,hierba recién cortada,verde,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,hexanal,hexanal,herbáceo,herbal,,,D,10.3390/foods9091323,Sección 3.3 (texto)
 pimenton,nonenal,nonenal,"pepino, herbáceo",verde,,,D,10.3390/foods9091323,Sección 3.3 (texto)
+pimienta_de_olor,eugenol,eugenol,,,,,D,10.3390/ph17010064,resumen
+pimienta_negra,rotundone,rotundone,"pimienta, especiado",especiado,,,B,10.1021/jf800183k,resumen (OAV 50 000-250 000)
 pina,"1-(e,z)-3,5-undecatriene","1-(E,Z)-3,5-undecatriene","fresco, a piña",frutal,,,A,10.1271/bbb.69.1323,resumen
 pina,2-metilbutanoato de etilo,ethyl 2-methylbutanoate,frutal,frutal,,,A,10.1271/bbb.69.1323,resumen
 pina,2-metilbutanoato de metilo,methyl 2-methylbutanoate,"frutal, manzana",frutal,,,A,10.1271/bbb.69.1323,resumen

@@ -189,5 +189,18 @@
  "geranial": "geranial",
  "neral": "neral",
  "citronellol": "citronelol",
- "geranyl acetate": "acetato de geranilo"
+ "geranyl acetate": "acetato de geranilo",
+ "cinnamaldehyde": "(E)-cinamaldehído",
+ "trans-cinnamaldehyde": "(E)-cinamaldehído",
+ "(e)-cinnamaldehyde": "(E)-cinamaldehído",
+ "beta-linalool": "linalol",
+ "β-linalool": "linalol",
+ "alpha-pinene": "α-pineno",
+ "α-pinene": "α-pineno",
+ "beta-pinene": "β-pineno",
+ "β-pinene": "β-pineno",
+ "alpha-terpinyl acetate": "acetato de α-terpinilo",
+ "α-terpinyl acetate": "acetato de α-terpinilo",
+ "2-isobutyl-3-methoxypyrazine": "2-isobutil-3-metoxipirazina",
+ "3-isobutyl-2-methoxypyrazine": "2-isobutil-3-metoxipirazina"
 }

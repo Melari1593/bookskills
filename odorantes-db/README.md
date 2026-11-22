@@ -1,10 +1,10 @@
 # odorantes-db: base de odorantes clave de alimentos
 
-Base consultable de **odorantes clave** (compuestos de aroma por encima de su umbral) de 26 alimentos, extraída de estudios con olfatometría, dilución de extracto aromático (AEDA), dilución isotópica (SIDA), valores de actividad de olor (OAV) y recombinación. Da soporte a la skill [`odorantes-clave`](../skills/odorantes-clave/SKILL.md).
+Base consultable de **odorantes clave** (compuestos de aroma por encima de su umbral) de 38 alimentos (incluidas 11 especias), extraída de estudios con olfatometría, dilución de extracto aromático (AEDA), dilución isotópica (SIDA), valores de actividad de olor (OAV) y recombinación. Da soporte a la skill [`odorantes-clave`](../skills/odorantes-clave/SKILL.md).
 
 ## Qué contiene
 
-- `datos/alimentos.json`: los 26 alimentos con su forma culinaria definida.
+- `datos/alimentos.json`: los 38 alimentos con su forma culinaria definida. El lote 12 trae 11 especias: canela, clavo, nuez moscada, pimienta negra, comino, cilantro en semilla, cúrcuma, jengibre, cardamomo, ají y pimienta de olor. Varias solo tienen datos de composición (nivel D). La evidencia de salud y seguridad de estas especias está en el documento [Especias: odorantes clave, salud y seguridad](https://claude.ai/artifact/4CDxKYH1jZVe7VdBJ5gYms), y su receta en la sección 19 de la skill [`nutraceuticos`](../.claude/skills/nutraceuticos/SKILL.md).
 - `datos/extracciones/lote_*.json`: estudios (DOI, muestra, métodos, nota propia) y odorantes (nombre, descriptor, FD, OAV, nivel A–D, ubicación en la fuente).
 - `datos/sinonimos.json`: unificación de nombres (por ejemplo, furaneol = HDMF).
 - `datos/odorantes.sqlite` y `datos/odorantes.csv`: la base construida.
