@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Busca un tema en un grafo de libro de la skill (flavonoides o crónicas) y enumera sus secciones previas,
+"""Busca un tema en un grafo de libro de la skill (flavonoides, crónicas o prenatal) y enumera sus secciones previas,
 los apéndices que se consultan y las alertas de los conceptos implicados."""
 import json
 import sys
@@ -13,7 +13,8 @@ def norm(s):
 
 
 GRAFOS = {'flavonoides': 'references/grafo_flavonoids.json',
-          'cronicas': 'references/grafo_functional_foods.json'}
+          'cronicas': 'references/grafo_functional_foods.json',
+          'prenatal': 'references/grafo_prenatal.json'}
 
 
 def main(query, grafo='flavonoides'):
@@ -92,6 +93,6 @@ if __name__ == '__main__':
     if len(args) == 3 and args[0] == '--grafo' and args[1] in GRAFOS:
         grafo, args = args[1], args[2:]
     if len(args) != 1:
-        print('Uso: python scripts/ruta.py [--grafo flavonoides|cronicas] "término o número"', file=sys.stderr)
+        print('Uso: python scripts/ruta.py [--grafo flavonoides|cronicas|prenatal] "término o número"', file=sys.stderr)
         sys.exit(2)
     sys.exit(main(args[0], grafo))

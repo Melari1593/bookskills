@@ -1,0 +1,1789 @@
+{
+ "meta": {
+  "title": "Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health como grafo",
+  "subtitle": "Bhatt, Miraghajani, Pathak y otros (eds.), CRC Press · 19 capítulos, secciones y conceptos clave",
+  "language": "es",
+  "itemLabel": "Concepto clave",
+  "itemLabelPlural": "Conceptos",
+  "searchHint": "Buscar: anemia, preeclampsia, DOHaD, 10.3…"
+ },
+ "blocks": {
+  "bases": {
+   "name": "Bases y periconcepción"
+  },
+  "materna": {
+   "name": "Complicaciones maternas del embarazo"
+  },
+  "sistemas": {
+   "name": "Anemia, infección y hormonas"
+  },
+  "posparto": {
+   "name": "Salud mental y posparto"
+  },
+  "descendencia": {
+   "name": "Resultados fetales y de la descendencia"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Introducción",
+   "page": 1,
+   "block": "bases",
+   "summary": "Define los nutracéuticos, su alcance y desarrollo futuro, y su papel en una vida saludable como marco de todo el libro.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Qué son los nutracéuticos",
+     "page": 1,
+     "items": [
+      "nutraceutico"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Alcance y desarrollo futuro",
+     "page": 2
+    },
+    {
+     "num": "1.3",
+     "title": "Importancia en la vida saludable",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Nutracéuticos preconcepcionales durante la gestación y salud de la mujer",
+   "page": 9,
+   "block": "bases",
+   "summary": "Repasa probióticos, ácidos grasos de cadena larga, hierro, ácido fólico, calcio, vitaminas D y C, zinc, magnesio y jengibre en el embarazo, con una tabla de ingestas recomendadas.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Introducción",
+     "page": 9
+    },
+    {
+     "num": "2.2",
+     "title": "Nutracéuticos en el embarazo",
+     "page": 11,
+     "items": [
+      "requerimientos_embarazo"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Probióticos: tipos y funciones",
+     "page": 11,
+     "items": [
+      "probioticos_embarazo"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Ácidos grasos de cadena larga",
+     "page": 12,
+     "items": [
+      "dha_epa"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Beneficios para el feto",
+     "page": 13
+    },
+    {
+     "num": "2.6",
+     "title": "Beneficios para la madre",
+     "page": 14
+    },
+    {
+     "num": "2.7",
+     "title": "Hierro",
+     "page": 14
+    },
+    {
+     "num": "2.8",
+     "title": "Ácido fólico",
+     "page": 14
+    },
+    {
+     "num": "2.9",
+     "title": "Calcio",
+     "page": 15
+    },
+    {
+     "num": "2.10",
+     "title": "Vitamina D",
+     "page": 15
+    },
+    {
+     "num": "2.11",
+     "title": "Vitamina C",
+     "page": 15
+    },
+    {
+     "num": "2.12",
+     "title": "Zinc",
+     "page": 16
+    },
+    {
+     "num": "2.13",
+     "title": "Magnesio",
+     "page": 16
+    },
+    {
+     "num": "2.14",
+     "title": "Jengibre",
+     "page": 16,
+     "items": [
+      "jengibre_nauseas"
+     ]
+    },
+    {
+     "num": "2.15",
+     "title": "Conclusión",
+     "page": 16
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Efectos de los nutracéuticos preconcepcionales en el desarrollo y la salud fetal",
+   "page": 21,
+   "block": "bases",
+   "summary": "Estudios en animales y humanos sobre hierbas, vitaminas (D, A, B6, B12, ácido fólico), omega-3, polifenoles (resveratrol, quercetina, genisteína), yodo, probióticos y metalonutracéuticos antes de la concepción.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Introducción y salud preconcepcional",
+     "page": 22,
+     "items": [
+      "salud_preconcepcional"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Nutracéuticos, salud materna preconcepcional y salud fetal",
+     "page": 23
+    },
+    {
+     "num": "3.3",
+     "title": "Nutracéuticos herbales",
+     "page": 23
+    },
+    {
+     "num": "3.4",
+     "title": "Vitamina D en la preconcepción",
+     "page": 24
+    },
+    {
+     "num": "3.5",
+     "title": "Vitamina A y betacaroteno",
+     "page": 25,
+     "items": [
+      "vitamina_a_exceso"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Vitaminas B6, B12 y oligoelementos",
+     "page": 26
+    },
+    {
+     "num": "3.7",
+     "title": "Ácido fólico en la preconcepción",
+     "page": 26,
+     "items": [
+      "folico_dtn"
+     ]
+    },
+    {
+     "num": "3.8",
+     "title": "EPA, DHA y folato",
+     "page": 27
+    },
+    {
+     "num": "3.9",
+     "title": "Ácidos grasos monoinsaturados (aguacate)",
+     "page": 28
+    },
+    {
+     "num": "3.10",
+     "title": "Polifenoles: resveratrol con vitaminas",
+     "page": 29,
+     "items": [
+      "polifenoles_preconcepcion"
+     ]
+    },
+    {
+     "num": "3.11",
+     "title": "Flavonoides: quercetina y genisteína",
+     "page": 30
+    },
+    {
+     "num": "3.12",
+     "title": "Yodo en la preconcepción",
+     "page": 30,
+     "items": [
+      "yodo"
+     ]
+    },
+    {
+     "num": "3.13",
+     "title": "Probióticos",
+     "page": 31
+    },
+    {
+     "num": "3.14",
+     "title": "Metalonutracéuticos: cobre, zinc y hierro",
+     "page": 32,
+     "items": [
+      "metalonutraceuticos"
+     ]
+    },
+    {
+     "num": "3.15",
+     "title": "Perspectivas",
+     "page": 32
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Nutracéuticos en el crecimiento, desarrollo y función de la placenta",
+   "page": 39,
+   "block": "bases",
+   "summary": "Presenta el origen del desarrollo de la salud y la enfermedad (DOHaD) y la placenta como órgano de programación fetal, y revisa ácido fólico, vitamina B12, omega-3, vitamina D y antioxidantes.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Qué son los nutracéuticos",
+     "page": 39
+    },
+    {
+     "num": "4.2",
+     "title": "Origen del desarrollo de la salud y la enfermedad",
+     "page": 40,
+     "items": [
+      "dohad"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "La placenta y la programación fetal",
+     "page": 40,
+     "items": [
+      "placenta_programacion"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Suplementos y crecimiento placentario",
+     "page": 42
+    },
+    {
+     "num": "4.5",
+     "title": "Ácido fólico",
+     "page": 43
+    },
+    {
+     "num": "4.6",
+     "title": "Vitamina B12",
+     "page": 44,
+     "items": [
+      "b12_folato"
+     ]
+    },
+    {
+     "num": "4.7",
+     "title": "Omega-3",
+     "page": 46
+    },
+    {
+     "num": "4.8",
+     "title": "Vitamina D",
+     "page": 47
+    },
+    {
+     "num": "4.9",
+     "title": "Antioxidantes",
+     "page": 48
+    },
+    {
+     "num": "4.10",
+     "title": "Conclusión",
+     "page": 49
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Ganancia de peso gestacional y obesidad posparto",
+   "page": 57,
+   "block": "materna",
+   "summary": "Recomendaciones de ganancia de peso según el IMC previo, requerimientos de macro y micronutrientes y nutracéuticos para una ganancia sana (lácteos, probióticos, nueces) y para bajar peso en el posparto (jamaica, fenogreco, soya, hinojo).",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Introducción",
+     "page": 57
+    },
+    {
+     "num": "5.2",
+     "title": "Ganancia de peso gestacional",
+     "page": 58,
+     "items": [
+      "gpg_iom"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Macronutrientes para una ganancia sana",
+     "page": 60
+    },
+    {
+     "num": "5.4",
+     "title": "Micronutrientes",
+     "page": 62
+    },
+    {
+     "num": "5.5",
+     "title": "Nutracéuticos para una ganancia sana: lácteos, probióticos, nueces",
+     "page": 62,
+     "items": [
+      "nutra_gpg"
+     ]
+    },
+    {
+     "num": "5.6",
+     "title": "Obesidad posparto",
+     "page": 64,
+     "items": [
+      "obesidad_posparto"
+     ]
+    },
+    {
+     "num": "5.7",
+     "title": "Nutracéuticos para bajar peso en el posparto",
+     "page": 65,
+     "items": [
+      "hierbas_posparto"
+     ]
+    },
+    {
+     "num": "5.8",
+     "title": "Conclusión",
+     "page": 67
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Nutracéuticos en el riesgo de aborto, muerte fetal y mortalidad materna",
+   "page": 71,
+   "block": "materna",
+   "summary": "Aplicaciones clínicas de nutracéuticos en embarazadas y su relación con el aborto espontáneo, la muerte fetal y la mortalidad materna.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Introducción",
+     "page": 71
+    },
+    {
+     "num": "6.2",
+     "title": "Nutracéuticos",
+     "page": 72
+    },
+    {
+     "num": "6.3",
+     "title": "Aplicaciones clínicas en embarazadas",
+     "page": 77
+    },
+    {
+     "num": "6.4",
+     "title": "Aborto espontáneo y desenlaces relacionados",
+     "page": 82,
+     "items": [
+      "aborto_nutra"
+     ]
+    },
+    {
+     "num": "6.5",
+     "title": "Muerte fetal",
+     "page": 84
+    },
+    {
+     "num": "6.6",
+     "title": "Mortalidad materna",
+     "page": 87
+    },
+    {
+     "num": "6.7",
+     "title": "Conclusión",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Nutracéuticos y anemia en el embarazo",
+   "page": 91,
+   "block": "sistemas",
+   "summary": "Definición, tipos y gravedad de la anemia del embarazo según la hemoglobina, causas nutricionales y la suplementación con hierro, ácido fólico y vitamina B12. El capítulo no tiene subtítulos; el grafo lo divide por tema.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Introducción: la anemia como causa de muerte materna",
+     "page": 91
+    },
+    {
+     "num": "7.2",
+     "title": "Tipos de anemia",
+     "page": 93
+    },
+    {
+     "num": "7.3",
+     "title": "Gravedad según la hemoglobina",
+     "page": 94,
+     "items": [
+      "anemia_hb"
+     ]
+    },
+    {
+     "num": "7.4",
+     "title": "Causas nutricionales y biodisponibilidad del hierro",
+     "page": 95
+    },
+    {
+     "num": "7.5",
+     "title": "Suplementación con hierro y ácido fólico",
+     "page": 97,
+     "items": [
+      "hierro_folico"
+     ]
+    },
+    {
+     "num": "7.6",
+     "title": "Vitamina B12",
+     "page": 99
+    },
+    {
+     "num": "7.7",
+     "title": "Fuentes e ingestas recomendadas",
+     "page": 100,
+     "items": [
+      "ingestas_anemia"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Nutracéuticos en las infecciones maternas",
+   "page": 105,
+   "block": "sistemas",
+   "summary": "Nutracéuticos frente a infecciones maternas, efecto de la deficiencia materna de hierro en el feto, la leche humana como nutracéutico y el impacto de las infecciones prenatales en el lactante.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Introducción",
+     "page": 105
+    },
+    {
+     "num": "8.2",
+     "title": "Nutracéuticos contra las infecciones maternas",
+     "page": 106,
+     "items": [
+      "inmunidad_materna"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Deficiencia materna de hierro y desarrollo fetal",
+     "page": 108
+    },
+    {
+     "num": "8.4",
+     "title": "La leche humana como nutracéutico",
+     "page": 110,
+     "items": [
+      "leche_humana"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Infecciones prenatales y lactante",
+     "page": 111
+    },
+    {
+     "num": "8.6",
+     "title": "Usos para combatir infecciones maternas",
+     "page": 113
+    },
+    {
+     "num": "8.7",
+     "title": "Infecciones",
+     "page": 115
+    },
+    {
+     "num": "8.8",
+     "title": "Conclusión",
+     "page": 117
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Nutracéuticos y equilibrio hormonal en el embarazo",
+   "page": 121,
+   "block": "sistemas",
+   "summary": "Cambios hormonales del embarazo frente a la mujer no embarazada, nutracéuticos de uso frecuente (multivitamínicos, ácido fólico) y su relación con trastornos del ánimo y obesidad.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Introducción",
+     "page": 121
+    },
+    {
+     "num": "9.2",
+     "title": "Equilibrio hormonal en el embarazo",
+     "page": 123,
+     "items": [
+      "hormonas_embarazo"
+     ]
+    },
+    {
+     "num": "9.3",
+     "title": "Hormonas que disminuyen en el embarazo",
+     "page": 124
+    },
+    {
+     "num": "9.4",
+     "title": "Comparación con la mujer no embarazada",
+     "page": 125
+    },
+    {
+     "num": "9.5",
+     "title": "Nutracéuticos en el embarazo",
+     "page": 126,
+     "items": [
+      "multivitaminico"
+     ]
+    },
+    {
+     "num": "9.6",
+     "title": "Trastornos del ánimo",
+     "page": 129
+    },
+    {
+     "num": "9.7",
+     "title": "Obesidad y nutracéuticos",
+     "page": 129
+    },
+    {
+     "num": "9.8",
+     "title": "Conclusión",
+     "page": 130
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Nutracéuticos en preeclampsia y eclampsia",
+   "page": 133,
+   "block": "materna",
+   "summary": "Definiciones de preeclampsia y eclampsia y evidencia para calcio, magnesio, zinc, vitamina D, folato y B12, vitaminas C y E, omega-3, probióticos y carotenoides en su prevención.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Definición de eclampsia y preeclampsia",
+     "page": 133,
+     "items": [
+      "preeclampsia"
+     ]
+    },
+    {
+     "num": "10.2",
+     "title": "Nutracéuticos en la prevención",
+     "page": 135
+    },
+    {
+     "num": "10.3",
+     "title": "Calcio",
+     "page": 136,
+     "items": [
+      "calcio_preeclampsia"
+     ]
+    },
+    {
+     "num": "10.4",
+     "title": "Magnesio",
+     "page": 137
+    },
+    {
+     "num": "10.5",
+     "title": "Zinc",
+     "page": 138
+    },
+    {
+     "num": "10.6",
+     "title": "Vitamina D",
+     "page": 139
+    },
+    {
+     "num": "10.7",
+     "title": "Ácido fólico y vitamina B12",
+     "page": 140
+    },
+    {
+     "num": "10.8",
+     "title": "Vitaminas C y E",
+     "page": 142,
+     "items": [
+      "antioxidantes_pe"
+     ]
+    },
+    {
+     "num": "10.9",
+     "title": "Omega-3",
+     "page": 142
+    },
+    {
+     "num": "10.10",
+     "title": "Probióticos",
+     "page": 143
+    },
+    {
+     "num": "10.11",
+     "title": "Carotenoides",
+     "page": 144
+    },
+    {
+     "num": "10.12",
+     "title": "Conclusión",
+     "page": 145
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Nutracéuticos en la diabetes gestacional",
+   "page": 153,
+   "block": "materna",
+   "summary": "Diabetes gestacional y papel de vitaminas antioxidantes, A, D, E, nicotinamida, piridoxina, folato y B12, magnesio, zinc, hierro, fibra y ácidos grasos poliinsaturados.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Diabetes mellitus gestacional",
+     "page": 153,
+     "items": [
+      "dmg"
+     ]
+    },
+    {
+     "num": "11.2",
+     "title": "Nutracéutico y alimento funcional",
+     "page": 154
+    },
+    {
+     "num": "11.3",
+     "title": "Vitaminas antioxidantes",
+     "page": 155
+    },
+    {
+     "num": "11.4",
+     "title": "Vitamina A",
+     "page": 156
+    },
+    {
+     "num": "11.5",
+     "title": "Vitamina D",
+     "page": 157,
+     "items": [
+      "vitd_dmg"
+     ]
+    },
+    {
+     "num": "11.6",
+     "title": "Vitamina E",
+     "page": 157
+    },
+    {
+     "num": "11.7",
+     "title": "Nicotinamida y piridoxina",
+     "page": 158
+    },
+    {
+     "num": "11.8",
+     "title": "Folato y vitamina B12",
+     "page": 159
+    },
+    {
+     "num": "11.9",
+     "title": "Magnesio",
+     "page": 159
+    },
+    {
+     "num": "11.10",
+     "title": "Zinc",
+     "page": 160
+    },
+    {
+     "num": "11.11",
+     "title": "Hierro",
+     "page": 160,
+     "items": [
+      "hierro_dmg"
+     ]
+    },
+    {
+     "num": "11.12",
+     "title": "Fibra dietaria",
+     "page": 161
+    },
+    {
+     "num": "11.13",
+     "title": "Ácidos grasos poliinsaturados",
+     "page": 161
+    },
+    {
+     "num": "11.14",
+     "title": "Conclusión",
+     "page": 162
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Nutracéuticos en la depresión del embarazo y el bienestar posparto",
+   "page": 169,
+   "block": "posparto",
+   "summary": "Definiciones, epidemiología, fisiopatología y factores de riesgo de la depresión prenatal y posparto, y evidencia para omega-3, vitaminas D, A y B, zinc, hierro, selenio, flavonoides, astaxantina y probióticos.",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "Introducción y definiciones",
+     "page": 170,
+     "items": [
+      "depresion_perinatal"
+     ]
+    },
+    {
+     "num": "12.2",
+     "title": "Epidemiología",
+     "page": 170
+    },
+    {
+     "num": "12.3",
+     "title": "Fisiopatología",
+     "page": 171
+    },
+    {
+     "num": "12.4",
+     "title": "Factores de riesgo",
+     "page": 171
+    },
+    {
+     "num": "12.5",
+     "title": "Omega-3",
+     "page": 172,
+     "items": [
+      "omega3_depresion"
+     ]
+    },
+    {
+     "num": "12.6",
+     "title": "Vitamina D",
+     "page": 174
+    },
+    {
+     "num": "12.7",
+     "title": "Vitamina A",
+     "page": 176
+    },
+    {
+     "num": "12.8",
+     "title": "Vitaminas B",
+     "page": 176
+    },
+    {
+     "num": "12.9",
+     "title": "Zinc",
+     "page": 177
+    },
+    {
+     "num": "12.10",
+     "title": "Hierro",
+     "page": 177
+    },
+    {
+     "num": "12.11",
+     "title": "Selenio",
+     "page": 178
+    },
+    {
+     "num": "12.12",
+     "title": "Flavonoides",
+     "page": 178
+    },
+    {
+     "num": "12.13",
+     "title": "Astaxantina",
+     "page": 179
+    },
+    {
+     "num": "12.14",
+     "title": "Probióticos",
+     "page": 179,
+     "items": [
+      "eje_intestino_cerebro"
+     ]
+    },
+    {
+     "num": "12.15",
+     "title": "Resumen",
+     "page": 181
+    },
+    {
+     "num": "12.16",
+     "title": "Investigación futura",
+     "page": 182
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Prevalencia de la anemia posparto",
+   "page": 189,
+   "block": "posparto",
+   "summary": "Fisiopatología, prevalencia y factores de riesgo de la anemia en el posparto, y tratamientos con hierro y otros nutracéuticos.",
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "Introducción",
+     "page": 189
+    },
+    {
+     "num": "13.2",
+     "title": "Fisiopatología de la anemia",
+     "page": 189
+    },
+    {
+     "num": "13.3",
+     "title": "Prevalencia y factores de riesgo",
+     "page": 190,
+     "items": [
+      "anemia_posparto"
+     ]
+    },
+    {
+     "num": "13.4",
+     "title": "Tratamientos, intervenciones y nutracéuticos",
+     "page": 192
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Nutracéuticos, crecimiento uterino, edad gestacional y mortalidad",
+   "page": 197,
+   "block": "descendencia",
+   "summary": "Ácido fólico, DHA y aceite de pescado, jengibre, cohosh azul, ginseng y mwanamphepo durante el embarazo; su efecto en el crecimiento uterino, la edad gestacional y la mortalidad, y la regulación y seguridad de las hierbas.",
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "Introducción",
+     "page": 197
+    },
+    {
+     "num": "14.2",
+     "title": "Ácido fólico",
+     "page": 199
+    },
+    {
+     "num": "14.3",
+     "title": "DHA y aceite de pescado",
+     "page": 200,
+     "items": [
+      "dha_edad_gestacional"
+     ]
+    },
+    {
+     "num": "14.4",
+     "title": "Jengibre",
+     "page": 201
+    },
+    {
+     "num": "14.5",
+     "title": "Cohosh azul",
+     "page": 201,
+     "items": [
+      "cohosh_azul"
+     ]
+    },
+    {
+     "num": "14.6",
+     "title": "Ginseng",
+     "page": 201,
+     "items": [
+      "ginseng"
+     ]
+    },
+    {
+     "num": "14.7",
+     "title": "Mwanamphepo",
+     "page": 202,
+     "items": [
+      "mwanamphepo"
+     ]
+    },
+    {
+     "num": "14.8",
+     "title": "Crecimiento uterino",
+     "page": 203
+    },
+    {
+     "num": "14.9",
+     "title": "Edad gestacional",
+     "page": 203
+    },
+    {
+     "num": "14.10",
+     "title": "Mortalidad",
+     "page": 204
+    },
+    {
+     "num": "14.11",
+     "title": "Regulación y seguridad de las hierbas",
+     "page": 205,
+     "items": [
+      "seguridad_hierbas"
+     ]
+    },
+    {
+     "num": "14.12",
+     "title": "Aplicaciones futuras",
+     "page": 206
+    },
+    {
+     "num": "14.13",
+     "title": "Conclusión",
+     "page": 207
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Nutracéuticos para la salud ósea en el embarazo",
+   "page": 211,
+   "block": "descendencia",
+   "summary": "Clasificación de nutracéuticos, estructura y remodelado óseo, osteoporosis, programación neonatal del hueso y nutrientes para el hueso (vitamina C, carotenoides, folato, B12, vitamina K, potasio, magnesio, pescado, omega-3, resveratrol, calcio y vitamina D).",
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "Introducción",
+     "page": 212
+    },
+    {
+     "num": "15.2",
+     "title": "Clasificación: suplemento, alimento funcional, alimento médico, fármaco",
+     "page": 213,
+     "items": [
+      "clasificacion_nutra"
+     ]
+    },
+    {
+     "num": "15.3",
+     "title": "Estructura y función del hueso",
+     "page": 214
+    },
+    {
+     "num": "15.4",
+     "title": "Osteoporosis y nutrición",
+     "page": 216
+    },
+    {
+     "num": "15.5",
+     "title": "Modelado y remodelado óseo",
+     "page": 218,
+     "items": [
+      "remodelado_oseo"
+     ]
+    },
+    {
+     "num": "15.6",
+     "title": "Programación neonatal del hueso",
+     "page": 221,
+     "items": [
+      "programacion_osea"
+     ]
+    },
+    {
+     "num": "15.7",
+     "title": "Referencias dietarias",
+     "page": 222
+    },
+    {
+     "num": "15.8",
+     "title": "Frutas y verduras, vitamina C, carotenoides",
+     "page": 223
+    },
+    {
+     "num": "15.9",
+     "title": "Folato, B12 y vitamina K",
+     "page": 224
+    },
+    {
+     "num": "15.10",
+     "title": "Potasio, magnesio y dietas alcalinas",
+     "page": 225
+    },
+    {
+     "num": "15.11",
+     "title": "Pescado y omega-3",
+     "page": 225
+    },
+    {
+     "num": "15.12",
+     "title": "Agentes naturales contra la pérdida ósea",
+     "page": 226
+    },
+    {
+     "num": "15.13",
+     "title": "Resveratrol",
+     "page": 228
+    },
+    {
+     "num": "15.14",
+     "title": "Calcio y vitamina D",
+     "page": 230,
+     "items": [
+      "calcio_vitd_hueso"
+     ]
+    },
+    {
+     "num": "15.15",
+     "title": "Conclusión",
+     "page": 231
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Nutracéuticos para la salud dental materna y de la descendencia",
+   "page": 235,
+   "block": "descendencia",
+   "summary": "Enfermedades dentales, relación entre salud oral y resultados del embarazo, dieta y salud oral, y el papel de nutracéuticos como vitamina D y calcio en la dentición del niño.",
+   "sections": [
+    {
+     "num": "16.1",
+     "title": "Enfermedades dentales",
+     "page": 235
+    },
+    {
+     "num": "16.2",
+     "title": "Salud oral y resultados del embarazo",
+     "page": 236,
+     "items": [
+      "salud_oral_embarazo"
+     ]
+    },
+    {
+     "num": "16.3",
+     "title": "Dieta y salud oral",
+     "page": 236,
+     "items": [
+      "dieta_dental"
+     ]
+    },
+    {
+     "num": "16.4",
+     "title": "Nutracéuticos en la salud dental materna y del niño",
+     "page": 237,
+     "items": [
+      "vitd_esmalte"
+     ]
+    },
+    {
+     "num": "16.5",
+     "title": "Relevancia terapéutica e investigación futura",
+     "page": 240
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Nutracéuticos en dermatitis atópica, eccema y alergia en el embarazo",
+   "page": 245,
+   "block": "descendencia",
+   "summary": "Dermatitis atópica, eccema y alergia, y nutracéuticos propuestos: Ganoderma, árnica y ajenjo, probióticos y prebióticos, Impatiens y lawsona, aceites de onagra y borraja, antioxidantes, jengibre y curcumina.",
+   "sections": [
+    {
+     "num": "17.1",
+     "title": "Introducción",
+     "page": 246
+    },
+    {
+     "num": "17.2",
+     "title": "Dermatitis atópica",
+     "page": 247,
+     "items": [
+      "dermatitis_atopica"
+     ]
+    },
+    {
+     "num": "17.3",
+     "title": "Ganoderma lucidum",
+     "page": 247
+    },
+    {
+     "num": "17.4",
+     "title": "Arnica montana y Artemisia absinthium",
+     "page": 248
+    },
+    {
+     "num": "17.5",
+     "title": "Eccema frente a dermatitis atópica",
+     "page": 249
+    },
+    {
+     "num": "17.6",
+     "title": "Probióticos en eccema",
+     "page": 249,
+     "items": [
+      "probioticos_eccema"
+     ]
+    },
+    {
+     "num": "17.7",
+     "title": "Impatiens y lawsona",
+     "page": 251
+    },
+    {
+     "num": "17.8",
+     "title": "Aceites de onagra y borraja",
+     "page": 252
+    },
+    {
+     "num": "17.9",
+     "title": "Alergia",
+     "page": 253
+    },
+    {
+     "num": "17.10",
+     "title": "Probióticos y prebióticos en alergia",
+     "page": 254
+    },
+    {
+     "num": "17.11",
+     "title": "Antioxidantes, jengibre y curcumina",
+     "page": 255
+    },
+    {
+     "num": "17.12",
+     "title": "Conclusión y perspectivas",
+     "page": 257
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Nutracéuticos para enfermedades crónicas de la madre y la descendencia",
+   "page": 261,
+   "block": "descendencia",
+   "summary": "Obesidad, resistencia a la insulina, hipertensión y cánceres pediátricos, con vitaminas y minerales, ácidos grasos n-3, probióticos, alimentos de bajo índice glucémico y productos herbales.",
+   "sections": [
+    {
+     "num": "18.1",
+     "title": "Introducción",
+     "page": 262
+    },
+    {
+     "num": "18.2",
+     "title": "Obesidad",
+     "page": 263,
+     "items": [
+      "obesidad_descendencia"
+     ]
+    },
+    {
+     "num": "18.3",
+     "title": "Nutracéuticos contra la obesidad",
+     "page": 264
+    },
+    {
+     "num": "18.4",
+     "title": "Resistencia a la insulina",
+     "page": 269,
+     "items": [
+      "resistencia_insulina"
+     ]
+    },
+    {
+     "num": "18.5",
+     "title": "Nutracéuticos para la resistencia a la insulina",
+     "page": 269
+    },
+    {
+     "num": "18.6",
+     "title": "Hipertensión",
+     "page": 273
+    },
+    {
+     "num": "18.7",
+     "title": "Nutracéuticos para la presión arterial",
+     "page": 273
+    },
+    {
+     "num": "18.8",
+     "title": "Cánceres pediátricos",
+     "page": 275,
+     "items": [
+      "cancer_pediatrico"
+     ]
+    },
+    {
+     "num": "18.9",
+     "title": "Nutracéuticos en cáncer pediátrico",
+     "page": 275
+    },
+    {
+     "num": "18.10",
+     "title": "Resumen y dirección futura",
+     "page": 277
+    }
+   ]
+  },
+  {
+   "num": 19,
+   "title": "Función respiratoria y nutracéuticos",
+   "page": 287,
+   "block": "descendencia",
+   "summary": "Categorías de nutracéuticos por enfermedad, trastornos respiratorios y su tratamiento, nutracéuticos usados en la función respiratoria, productos del mercado, retos, seguridad y regulación en India y EE. UU.",
+   "sections": [
+    {
+     "num": "19.1",
+     "title": "Introducción",
+     "page": 288
+    },
+    {
+     "num": "19.2",
+     "title": "Importancia actual de los nutracéuticos",
+     "page": 289
+    },
+    {
+     "num": "19.3",
+     "title": "Categorías por enfermedad",
+     "page": 290
+    },
+    {
+     "num": "19.4",
+     "title": "Función y trastornos respiratorios",
+     "page": 291,
+     "items": [
+      "trastornos_resp"
+     ]
+    },
+    {
+     "num": "19.5",
+     "title": "Tratamiento actual",
+     "page": 293
+    },
+    {
+     "num": "19.6",
+     "title": "Nutracéuticos en trastornos respiratorios",
+     "page": 293,
+     "items": [
+      "nutra_resp"
+     ]
+    },
+    {
+     "num": "19.7",
+     "title": "Papel emergente en la función respiratoria",
+     "page": 293
+    },
+    {
+     "num": "19.8",
+     "title": "Ventajas",
+     "page": 296
+    },
+    {
+     "num": "19.9",
+     "title": "Investigación avanzada y productos del mercado",
+     "page": 296
+    },
+    {
+     "num": "19.10",
+     "title": "Retos y limitaciones",
+     "page": 298
+    },
+    {
+     "num": "19.11",
+     "title": "Seguridad y eficacia",
+     "page": 300
+    },
+    {
+     "num": "19.12",
+     "title": "Regulación: India y EE. UU.",
+     "page": 301,
+     "items": [
+      "regulacion_nutra"
+     ]
+    },
+    {
+     "num": "19.13",
+     "title": "Perspectivas y conclusión",
+     "page": 302
+    }
+   ]
+  }
+ ],
+ "items": {
+  "nutraceutico": {
+   "title": "Nutracéutico",
+   "summary": "Alimento o parte de un alimento con beneficio médico o de salud, incluida la prevención y el tratamiento de enfermedades."
+  },
+  "requerimientos_embarazo": {
+   "title": "Requerimientos del embarazo",
+   "formula": "hierro 27 mg · ácido fólico 600 µg · yodo 220 µg",
+   "summary": "El capítulo compara en una tabla las ingestas recomendadas de la mujer embarazada y no embarazada."
+  },
+  "probioticos_embarazo": {
+   "title": "Probióticos en el embarazo",
+   "summary": "Tipos, funciones y usos de los probióticos en la gestación."
+  },
+  "dha_epa": {
+   "title": "Ácidos grasos de cadena larga (DHA, EPA)",
+   "summary": "Beneficios propuestos para el feto y la madre."
+  },
+  "jengibre_nauseas": {
+   "title": "Jengibre",
+   "summary": "Uso del jengibre para las náuseas del embarazo."
+  },
+  "salud_preconcepcional": {
+   "title": "Salud preconcepcional",
+   "summary": "El estado nutricional antes de concebir influye en el desarrollo y la salud del feto."
+  },
+  "vitamina_a_exceso": {
+   "title": "Vitamina A: déficit y exceso",
+   "summary": "El exceso materno de vitamina A puede causar malformaciones en la descendencia.",
+   "caution": "Evitar dosis altas de vitamina A preformada en el embarazo."
+  },
+  "folico_dtn": {
+   "title": "Ácido fólico y defectos del tubo neural",
+   "summary": "El ácido fólico antes y durante el embarazo reduce el riesgo de defectos del tubo neural."
+  },
+  "polifenoles_preconcepcion": {
+   "title": "Polifenoles en la preconcepción",
+   "summary": "Resveratrol, quercetina y genisteína, con evidencia sobre todo animal."
+  },
+  "yodo": {
+   "title": "Yodo en la preconcepción",
+   "summary": "Ingesta de yodo antes de concebir y desarrollo fetal."
+  },
+  "metalonutraceuticos": {
+   "title": "Metalonutracéuticos",
+   "formula": "cobre · zinc · hierro",
+   "summary": "Minerales de la dieta como nutracéuticos en la preconcepción."
+  },
+  "dohad": {
+   "title": "Origen del desarrollo de la salud y la enfermedad (DOHaD)",
+   "summary": "La nutrición fetal en periodos críticos programa de forma permanente el metabolismo y la fisiología, con efectos en la adultez."
+  },
+  "placenta_programacion": {
+   "title": "Placenta y programación fetal",
+   "summary": "La placenta media cómo la nutrición materna programa al feto."
+  },
+  "b12_folato": {
+   "title": "Vitamina B12 y folato",
+   "summary": "Papel de B12 y folato en el crecimiento y la función placentaria."
+  },
+  "gpg_iom": {
+   "title": "Ganancia de peso gestacional (IOM)",
+   "formula": "meta de ganancia según el IMC previo al embarazo",
+   "summary": "El IOM recomienda la ganancia de peso según el IMC previo; muchas mujeres ganan más de lo recomendado."
+  },
+  "nutra_gpg": {
+   "title": "Nutracéuticos para una ganancia sana",
+   "formula": "lácteos · probióticos · nueces",
+   "summary": "Alimentos funcionales propuestos para controlar la ganancia de peso."
+  },
+  "obesidad_posparto": {
+   "title": "Obesidad posparto",
+   "summary": "La ganancia excesiva en el embarazo aumenta los problemas de salud y la retención de peso."
+  },
+  "hierbas_posparto": {
+   "title": "Hierbas para bajar peso en el posparto",
+   "formula": "jamaica · fenogreco · soya · hinojo",
+   "summary": "Productos propuestos para la pérdida de peso posparto.",
+   "caution": "Revisar la seguridad en lactancia antes de indicarlos."
+  },
+  "aborto_nutra": {
+   "title": "Nutracéuticos y aborto espontáneo",
+   "summary": "El capítulo vincula ácido fólico, vitamina K y otros nutracéuticos con menor riesgo de aborto.",
+   "caution": "El capítulo atribuye a la clorofila el control de la 'guanidina' en mujeres con abortos previos; no es una afirmación con evidencia establecida."
+  },
+  "anemia_hb": {
+   "title": "Gravedad de la anemia del embarazo",
+   "formula": "leve Hb 100–109 g/L · moderada 70–99 g/L · grave 70 g/L o menos",
+   "summary": "Clasificación de la anemia por hemoglobina y sus consecuencias maternas y fetales."
+  },
+  "hierro_folico": {
+   "title": "Suplementación con hierro y ácido fólico",
+   "summary": "La OMS recomienda hierro diario en el embarazo y programas semanales de hierro y ácido fólico donde la anemia es frecuente."
+  },
+  "ingestas_anemia": {
+   "title": "Ingestas recomendadas contra la anemia",
+   "formula": "hierro 27 mg/día · ácido fólico 600 µg/día",
+   "summary": "Fuentes alimentarias y usos de los nutracéuticos de la tabla 7.3."
+  },
+  "inmunidad_materna": {
+   "title": "Nutracéuticos e inmunidad materna",
+   "summary": "Vitamina D, antioxidantes, omega-3, fibra y calcio frente a las infecciones maternas."
+  },
+  "leche_humana": {
+   "title": "Leche humana como nutracéutico",
+   "summary": "La leche materna protege al lactante frente a infecciones."
+  },
+  "hormonas_embarazo": {
+   "title": "Equilibrio hormonal del embarazo",
+   "summary": "Cambios hormonales de la gestación frente a la mujer no embarazada."
+  },
+  "multivitaminico": {
+   "title": "Multivitamínico y ácido fólico",
+   "summary": "Uso de multivitamínicos y ácido fólico en el embarazo y sus desenlaces asociados."
+  },
+  "preeclampsia": {
+   "title": "Preeclampsia y eclampsia",
+   "summary": "Definición y prevención; además de la aspirina en dosis baja, se proponen antioxidantes y otros nutracéuticos."
+  },
+  "calcio_preeclampsia": {
+   "title": "Calcio y preeclampsia",
+   "formula": "calcio ≥ 1 g/día",
+   "summary": "El capítulo cita menor riesgo de preeclampsia con suplementos de calcio de al menos 1 g/día."
+  },
+  "antioxidantes_pe": {
+   "title": "Vitaminas C y E en preeclampsia",
+   "summary": "Antioxidantes propuestos para prevenir la preeclampsia."
+  },
+  "dmg": {
+   "title": "Diabetes gestacional",
+   "summary": "Intolerancia a la glucosa que aparece en el embarazo y su abordaje nutricional."
+  },
+  "vitd_dmg": {
+   "title": "Vitamina D y diabetes gestacional",
+   "summary": "Relación entre el estado de vitamina D y el riesgo de diabetes gestacional."
+  },
+  "hierro_dmg": {
+   "title": "Hierro y diabetes gestacional",
+   "summary": "El hierro se revisa también como posible factor de riesgo de diabetes gestacional."
+  },
+  "depresion_perinatal": {
+   "title": "Depresión prenatal y posparto",
+   "summary": "Definiciones, epidemiología y fisiopatología de la depresión perinatal."
+  },
+  "omega3_depresion": {
+   "title": "Omega-3 y depresión perinatal",
+   "summary": "Ácidos grasos omega-3 en la depresión del embarazo y el posparto."
+  },
+  "eje_intestino_cerebro": {
+   "title": "Probióticos y ánimo perinatal",
+   "summary": "Probióticos propuestos para el ánimo perinatal."
+  },
+  "anemia_posparto": {
+   "title": "Anemia posparto",
+   "formula": "prevalencia 50–80 % en países en desarrollo",
+   "summary": "La anemia posparto es más frecuente en países en desarrollo y se relaciona con el sangrado obstétrico."
+  },
+  "dha_edad_gestacional": {
+   "title": "DHA y edad gestacional",
+   "summary": "DHA y aceite de pescado en la duración del embarazo."
+  },
+  "cohosh_azul": {
+   "title": "Cohosh azul (Caulophyllum thalictroides)",
+   "summary": "Hierba usada tradicionalmente y por parteras para preparar o inducir el parto.",
+   "caution": "No la indiques para inducir el parto (interpretación de seguridad; ver la sección de regulación y seguridad)."
+  },
+  "ginseng": {
+   "title": "Ginseng en el embarazo",
+   "summary": "Lo consume cerca del 9–10 % de las embarazadas en algunos estudios; hay datos en ratones preñadas.",
+   "caution": "Seguridad en el embarazo no establecida."
+  },
+  "mwanamphepo": {
+   "title": "Mwanamphepo",
+   "summary": "Hierbas tradicionales de Malawi que se dan a las embarazadas para inducir o acelerar el parto.",
+   "caution": "Hierbas para inducir el parto: riesgo materno y fetal."
+  },
+  "seguridad_hierbas": {
+   "title": "Regulación y seguridad de las hierbas",
+   "summary": "Las hierbas en el embarazo tienen regulación y evidencia de seguridad limitadas."
+  },
+  "clasificacion_nutra": {
+   "title": "Clasificación de los nutracéuticos",
+   "formula": "suplemento dietario · alimento funcional · alimento médico · fármaco",
+   "summary": "Categorías usadas en el capítulo de salud ósea."
+  },
+  "remodelado_oseo": {
+   "title": "Modelado y remodelado óseo",
+   "summary": "Formación y resorción del hueso y su dependencia del calcio."
+  },
+  "programacion_osea": {
+   "title": "Programación neonatal del hueso",
+   "summary": "La nutrición materna programa el desarrollo esquelético del feto y del neonato."
+  },
+  "calcio_vitd_hueso": {
+   "title": "Calcio y vitamina D para el hueso",
+   "summary": "Micronutrientes esenciales para la salud ósea de la madre y el niño."
+  },
+  "salud_oral_embarazo": {
+   "title": "Salud oral y resultados del embarazo",
+   "summary": "La enfermedad oral se asocia con resultados del embarazo."
+  },
+  "dieta_dental": {
+   "title": "Dieta y salud dental",
+   "summary": "Déficit de vitamina D con defectos del esmalte, de vitamina C con enfermedad periodontal, y azúcares libres o falta de flúor con caries."
+  },
+  "vitd_esmalte": {
+   "title": "Vitamina D, calcio y dientes del niño",
+   "summary": "Se propone un papel de la vitamina D y el calcio maternos en la dentición del hijo; hay pocos estudios experimentales."
+  },
+  "dermatitis_atopica": {
+   "title": "Dermatitis atópica y eccema",
+   "summary": "Definición y diferencias entre dermatitis atópica y eccema."
+  },
+  "probioticos_eccema": {
+   "title": "Probióticos maternos y eccema",
+   "summary": "La mayoría de estudios apoya que los probióticos maternos reducen el riesgo de eccema; la Organización Mundial de Alergia los sugiere cuando el hijo tiene alto riesgo."
+  },
+  "obesidad_descendencia": {
+   "title": "Obesidad materna e infantil",
+   "summary": "Nutracéuticos para prevenir y tratar la obesidad: vitaminas, minerales, ácidos grasos, probióticos y hierbas."
+  },
+  "resistencia_insulina": {
+   "title": "Resistencia a la insulina",
+   "summary": "Nutracéuticos que podrían mejorar la resistencia a la insulina, incluidos alimentos de bajo índice glucémico."
+  },
+  "cancer_pediatrico": {
+   "title": "Cánceres pediátricos",
+   "summary": "Nutracéuticos propuestos en la prevención de cánceres pediátricos."
+  },
+  "trastornos_resp": {
+   "title": "Trastornos respiratorios",
+   "summary": "Causas y clasificación de los trastornos respiratorios y su tratamiento actual."
+  },
+  "nutra_resp": {
+   "title": "Nutracéuticos respiratorios",
+   "formula": "vitaminas C, D, E · flavonoides · carotenoides · magnesio",
+   "summary": "Nutracéuticos propuestos para asma, EPOC y otras enfermedades respiratorias."
+  },
+  "regulacion_nutra": {
+   "title": "Regulación de nutracéuticos",
+   "summary": "Marco regulatorio en India y Estados Unidos."
+  }
+ },
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    2
+   ],
+   "6": [
+    2
+   ],
+   "7": [
+    2
+   ],
+   "8": [
+    2
+   ],
+   "9": [
+    2
+   ],
+   "10": [
+    2
+   ],
+   "11": [
+    5
+   ],
+   "12": [
+    2
+   ],
+   "13": [
+    7
+   ],
+   "14": [
+    3
+   ],
+   "15": [
+    4
+   ],
+   "16": [
+    15
+   ],
+   "17": [
+    2
+   ],
+   "18": [
+    4
+   ],
+   "19": [
+    1
+   ]
+  },
+  "sections": {
+   "3.7": [
+    "2.8"
+   ],
+   "4.2": [
+    "3.1"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "4.6": [
+    "3.7"
+   ],
+   "7.5": [
+    "2.7",
+    "2.8"
+   ],
+   "10.3": [
+    "2.9"
+   ],
+   "11.11": [
+    "7.5"
+   ],
+   "12.5": [
+    "2.4"
+   ],
+   "13.3": [
+    "7.3"
+   ],
+   "14.3": [
+    "2.4"
+   ],
+   "15.6": [
+    "4.2"
+   ],
+   "16.4": [
+    "15.14"
+   ],
+   "17.6": [
+    "2.3"
+   ],
+   "18.2": [
+    "5.2"
+   ]
+  },
+  "items": {
+   "requerimientos_embarazo": [
+    "nutraceutico"
+   ],
+   "folico_dtn": [
+    "requerimientos_embarazo"
+   ],
+   "placenta_programacion": [
+    "dohad"
+   ],
+   "dohad": [
+    "salud_preconcepcional"
+   ],
+   "b12_folato": [
+    "folico_dtn"
+   ],
+   "hierro_folico": [
+    "anemia_hb"
+   ],
+   "ingestas_anemia": [
+    "requerimientos_embarazo"
+   ],
+   "anemia_posparto": [
+    "anemia_hb"
+   ],
+   "calcio_preeclampsia": [
+    "preeclampsia"
+   ],
+   "antioxidantes_pe": [
+    "preeclampsia"
+   ],
+   "vitd_dmg": [
+    "dmg"
+   ],
+   "hierro_dmg": [
+    "dmg",
+    "hierro_folico"
+   ],
+   "dmg": [
+    "gpg_iom"
+   ],
+   "obesidad_posparto": [
+    "gpg_iom"
+   ],
+   "hierbas_posparto": [
+    "obesidad_posparto"
+   ],
+   "nutra_gpg": [
+    "gpg_iom"
+   ],
+   "omega3_depresion": [
+    "depresion_perinatal",
+    "dha_epa"
+   ],
+   "eje_intestino_cerebro": [
+    "depresion_perinatal",
+    "probioticos_embarazo"
+   ],
+   "dha_edad_gestacional": [
+    "dha_epa"
+   ],
+   "seguridad_hierbas": [
+    "cohosh_azul",
+    "ginseng",
+    "mwanamphepo"
+   ],
+   "programacion_osea": [
+    "dohad"
+   ],
+   "calcio_vitd_hueso": [
+    "remodelado_oseo"
+   ],
+   "vitd_esmalte": [
+    "calcio_vitd_hueso",
+    "dieta_dental"
+   ],
+   "probioticos_eccema": [
+    "dermatitis_atopica",
+    "probioticos_embarazo"
+   ],
+   "obesidad_descendencia": [
+    "dohad",
+    "obesidad_posparto"
+   ],
+   "resistencia_insulina": [
+    "obesidad_descendencia"
+   ],
+   "nutra_resp": [
+    "trastornos_resp"
+   ],
+   "regulacion_nutra": [
+    "nutraceutico"
+   ],
+   "multivitaminico": [
+    "folico_dtn"
+   ],
+   "leche_humana": [
+    "inmunidad_materna"
+   ]
+  }
+ }
+}
