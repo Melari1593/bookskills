@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Veinte preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veintiuna preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,7 @@ Veinte preparaciones llevan un nutracéutico en una porción medida. La técnica
 | Melena de león | Dosis de ensayo alta (3 g/día) en polvo que se asienta; sabor amargo y terroso | Cubos de caldo gelificado con agar, resistentes al caldo caliente | 3 g de polvo de cuerpo fructífero en un cubo de 75 g | Baja: ensayos pequeños en deterioro cognitivo leve; el efecto se perdió al suspender |
 | Especias (jengibre, cardamomo, canela de Ceilán) | Terpenos volátiles que se pierden al hervir; polvos que se asientan; cumarina de la cassia | Leche tibia especiada (60–70 °C) suspendida con xantana | 1 g de jengibre + 0,5 g de cardamomo + 0,5 g de canela de Ceilán | Jengibre: favorable para náusea del embarazo con 1 g/día; calidad metodológica baja |
 | Embarazo: hierro, calcio y folato | Hierro vegetal poco absorbible; vitamina C y folato que se pierden con calor; calcio que compite con el hierro; Listeria | Salsa fría de guayaba con xantana sobre lentejas; panna cotta láctea con gelatina; salsa verde cruda emulsionada | Dosis de alimento; no reemplaza ácido fólico ni hierro en suplemento | Suplementos: ácido fólico alta (defectos del tubo neural); hierro y calcio baja |
+| Bisglicinato ferroso | Sabor metálico; inhibidores en la comida (lácteos, té, café); riesgo de intoxicación infantil si se vuelve golosina | Shot frío de guayaba preparado al momento, una dosis por vaso | La dosis indicada (ensayo de prevención: 25 mg de hierro elemental) | Moderada en embarazo: más hemoglobina y menos efectos digestivos que otras sales |
 
 **Reglas de uso en consulta**
 
@@ -1185,7 +1186,69 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Omega-3: la sección 2 usa aceite de pescado; mercurio y dosis en embarazo no buscados.
 - Pescado crudo y ceviche: no en el embarazo (el limón no pasteuriza).
 
-## 21. Seguridad para todas las preparaciones
+## 21. Bisglicinato ferroso: shot frío de guayaba
+
+**Objetivo.** Tomar la dosis indicada de bisglicinato ferroso en un vaso pequeño, frío y con vitamina C, preparado al momento. **Una porción = una dosis.** La receta no cambia la dosis: la fija el control prenatal o la consulta.
+
+**Qué es.** El bisglicinato ferroso es hierro unido a dos moléculas de glicina (un quelato). Se considera más biodisponible y con menos efectos digestivos que las sales de hierro ([Fischer 2023](https://doi.org/10.1093/nutrit/nuac106)).
+
+**El problema.**
+
+1. Sabe metálico.
+2. Los lácteos, el té y el café reducen la absorción del hierro no hemo (sección 20).
+3. Una golosina con hierro es peligrosa: la ingestión accidental de hierro es una de las primeras causas de muerte por ingestión de medicamentos en niños ([Mehta 1997](https://doi.org/10.1007/BF02737753)).
+
+**La técnica.** Shot frío de pulpa de guayaba, preparado justo antes de tomarlo. El frío y el ácido ocultan el sabor metálico *(interpretación)*. La xantana mantiene suspendidos los excipientes que no se disuelven.
+
+**Ingredientes** (1 dosis)
+
+| Ingrediente | g | Concentración |
+| --- | --- | --- |
+| Pulpa de guayaba colada, fría | 60 | Base |
+| Agua fría | 20 | Base |
+| Bisglicinato ferroso: contenido de 1 cápsula o sobre | Según la etiqueta | La dosis de hierro elemental indicada |
+| Goma xantana | 0,2 | 0,25 % de 80 g |
+| Panela fina | 3 | Opcional, para dispersar la xantana |
+
+**Proceso**
+
+1. Lee la etiqueta. Usa los **mg de hierro elemental**, no los mg de bisglicinato.
+2. Mezcla en seco la xantana con la panela.
+3. Licua la guayaba con el agua fría y la mezcla seca, 30 s.
+4. Abre la cápsula o el sobre sobre el vaso. Revuelve 20 s.
+5. Tómalo enseguida, en la mañana, lejos de las comidas.
+6. No tomes lácteos, té, café ni cacao cerca de la dosis *(intervalo exacto no confirmado; interpretación)*.
+
+**Por qué funciona.** El quelato con glicina protege parte del hierro de los inhibidores: en una papilla de maíz integral, el hierro del bisglicinato se absorbió 4 veces más que el del sulfato ferroso (6,0 % frente a 1,7 %) ([Bovell-Benjamin 2000](https://doi.org/10.1093/ajcn/71.6.1563)). Su absorción sigue regulada por las reservas de hierro: baja cuando la ferritina es alta (mismo estudio). La vitamina C de la guayaba es el potenciador más eficaz del hierro no hemo ([Teucher 2004](https://doi.org/10.1024/0300-9831.74.6.403)).
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Sabor metálico fuerte | Shot tibio o reposado | Prepáralo frío y tómalo de inmediato |
+| Polvo en el fondo | Excipientes de la cápsula | Revuelve antes de tomar; la xantana ayuda |
+| Color oscuro | Hierro con polifenoles *(interpretación)* | No lo mezcles con té, café, cacao ni frutos rojos |
+| Náusea | Estómago vacío | Tómalo con un refrigerio sin lácteos |
+
+**Por qué no gomitas ni bombones.** Una golosina con hierro se confunde con un dulce. Prepara una dosis a la vez y guarda las cápsulas fuera del alcance de los niños.
+
+**Evidencia clínica** (según PubMed)
+
+- **Moderada (embarazo, frente a otras sales):** en 9 ensayos con embarazadas, el bisglicinato por 4–20 semanas dio más hemoglobina (DME 0,54 g/dL) y menos efectos digestivos (IRR 0,36). En niños no hubo diferencia ([Fischer 2023](https://doi.org/10.1093/nutrit/nuac106)). *(Grado GRADE no reportado en el resumen; la calificación es mía.)*
+- **Prevención con dosis baja:** 25 mg/día de hierro como bisglicinato no fueron inferiores a 50 mg/día como sulfato ferroso para prevenir la deficiencia de hierro en 80 embarazadas danesas, con menos molestias digestivas ([Milman 2014](https://doi.org/10.1515/jpm-2013-0153)).
+- **Tolerancia:** con 25 mg de hierro como bisglicinato hubo menos molestias digestivas y menos heces negras (8 %) que con fumarato 40 mg (22 %) o sulfato 50 mg (31 %) ([Milman 2024](https://doi.org/10.1155/2024/1716798)).
+- **Deficiencia de hierro:** 24 mg de hierro como bisglicinato con ácido folínico fueron comparables a 66 mg como fumarato ferroso, con menos efectos adversos ([Bumrungpert 2022](https://doi.org/10.3390/nu14030452)).
+- **Ensayo retractado:** el ensayo de Abbas 2019 (bisglicinato frente a sulfato de glicina) aparece en PubMed como publicación retractada. No lo uses.
+- **Horario:** con sulfato ferroso, dar 60 mg en días alternos aumentó la absorción total frente a días seguidos, porque la hepcidina sube tras cada dosis ([Stoffel 2017](<https://doi.org/10.1016/S2352-3026(17)30182-5>)). Las dosis matinales únicas absorben mejor que las divididas ([Stoffel 2020](https://doi.org/10.1016/j.mam.2020.100865)). No confirmé si esto aplica igual al bisglicinato.
+
+**Seguridad**
+
+- **Intoxicación infantil:** guarda el hierro fuera del alcance de los niños. No lo conviertas en golosina.
+- **Dosis:** no subas la dosis por tu cuenta. En el embarazo la fija el control prenatal.
+- **Heces negras:** son esperables con el hierro; menos frecuentes con bisglicinato 25 mg ([Milman 2024](https://doi.org/10.1155/2024/1716798)). Heces negras con dolor abdominal o debilidad requieren consulta *(interpretación)*.
+- **Hemocromatosis o sobrecarga de hierro:** no buscado; no indiques hierro sin estudio de ferritina.
+
+## 22. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1260,7 +1323,13 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Solo lácteos pasteurizados; hojas crudas bien lavadas; sin germinados crudos.
 - Separa los lácteos y el té de la comida rica en hierro.
 
-## 22. Huecos y log de búsqueda
+**Bisglicinato ferroso (sección 21)**
+
+- Guarda el hierro fuera del alcance de los niños; no lo conviertas en golosina.
+- Dosis en mg de hierro elemental, fijada por el control prenatal o la consulta.
+- Lejos de lácteos, té, café y cacao.
+
+## 23. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1276,6 +1345,7 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Contenido de hericenonas y erinacinas del polvo comercial y su estabilidad al calor.
 - Pérdida de terpenos del jengibre y del cardamomo en leche a 60–70 °C, y equivalencia entre 1 g en bebida y 1 g en cápsulas.
 - Hierro de las lentejas, vitamina C de la guayaba y calcio por porción de la panna cotta (sección 20).
+- Porcentaje de hierro elemental del bisglicinato comercial en Colombia, intervalo seguro entre la dosis y los lácteos, y si el esquema de días alternos aplica al bisglicinato.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1334,5 +1404,7 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 | Búsquedas de odorantes, salud y seguridad de 12 especias (22-11-2026): ver el log del documento de especias | — | Pang 2017, Mishra 2022, Sandner 2018, Viljoen 2014, Li 2024, Tan 2021, Yeh 2014, Iwata 2016 |
 | calcium supplementation pregnancy preeclampsia Cochrane; daily oral iron supplementation pregnancy Cochrane; periconceptional folic acid neural tube defects Cochrane (22-11-2026) | 57 / 13 / 14 | Hofmeyr 2018, Palacios 2024, Peña-Rosas 2015, De-Regil 2015 |
 | ascorbic acid non-heme iron absorption meal; calcium inhibits iron absorption meal; folate retention cooking spinach; Listeria pregnancy dairy (22-11-2026) | 12 / 29 / 1 / 1 | Teucher 2004, Lynch 1980, Zijp 2000, McKillop 2002, Disson 2025 |
+| ferrous bisglycinate pregnancy randomized; ferrous bisglycinate meta-analysis; ferrous bisglycinate absorption phytate (22-11-2026) | 6 / 2 / 4 | Fischer 2023, Milman 2014, Milman 2024, Bumrungpert 2022, Bovell-Benjamin 2000; Abbas 2019 excluido (retractado) |
+| pediatric iron poisoning supplements ingestion; alternate day iron supplementation absorption women (22-11-2026) | 11 / 10 | Mehta 1997, Stoffel 2017, Stoffel 2020 |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
