@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flavonoids as Nutraceuticals como grafo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Flavonoids as Nutraceuticals como grafo", "subtitle": "Kesharwani, Saini, Keservani y Sharma (eds.), Apple Academic Press, 2024 · 13 capítulos, secciones y conceptos clave", "language": "es", "itemLabel": "Concepto clave", "itemLabelPlural": "Conceptos", "searchHint": "Buscar: NF-κB, chalcona, Mpro, 8.15…"}, "blocks": {"quim": {"name": "Química y biosíntesis"}, "agro": {"name": "Plantas y agricultura"}, "salud": {"name": "Nutracéuticos y salud humana"}, "infl": {"name": "Inflamación e inmunidad"}, "vir": {"name": "Antivirales y COVID-19"}, "tex": {"name": "Tintes naturales"}}, "chapters": [{"num": 1, "title": "Nutracéuticos: el nuevo método antienvejecimiento", "page": 1, "block": "salud", "summary": "Repasa las teorías del envejecimiento, los cambios de la dieta en la vejez y varios suplementos con supuesto efecto antienvejecimiento (curcumina, EGCG, colágeno, CoQ10, NR/NAM, crocina). Trata nutracéuticos en general, no solo flavonoides.", "sections": [{"num": "1.1", "title": "Introducción", "page": 2, "items": ["nutraceutico"]}, {"num": "1.2", "title": "¿Por qué envejecemos?", "page": 3, "items": ["teorias_env"]}, {"num": "1.2.1", "title": "Teorías programadas del envejecimiento", "page": 3}, {"num": "1.2.2", "title": "Teorías del error", "page": 4}, {"num": "1.2.3", "title": "Teoría genética", "page": 4}, {"num": "1.2.4", "title": "Teoría bioquímica (radicales libres)", "page": 5}, {"num": "1.3", "title": "Conductas antienvejecimiento", "page": 5}, {"num": "1.4", "title": "Calidad de la dieta en la población mayor", "page": 6}, {"num": "1.5", "title": "Cómo cambian las necesidades nutricionales con la edad", "page": 6}, {"num": "1.6", "title": "Pirámide alimentaria modificada para adultos mayores", "page": 7}, {"num": "1.7", "title": "Patrones dietarios de adultos mayores", "page": 7}, {"num": "1.8", "title": "Suplementos antienvejecimiento", "page": 8}, {"num": "1.8.1", "title": "Curcumina", "page": 8, "items": ["curcumina_sen"]}, {"num": "1.8.2", "title": "EGCG", "page": 9, "items": ["egcg"]}, {"num": "1.8.3", "title": "Colágeno", "page": 9}, {"num": "1.8.4", "title": "CoQ10", "page": 10}, {"num": "1.8.5", "title": "Nicotinamida ribósido y nicotinamida", "page": 10}, {"num": "1.8.6", "title": "Crocina", "page": 11}, {"num": "1.9", "title": "Conclusión", "page": 13}]}, {"num": 2, "title": "Introducción a los flavonoides", "page": 19, "block": "quim", "summary": "Capítulo base: esqueleto químico C6-C3-C6, subclases, funciones en la planta y bioactividades generales (antioxidante, antiinflamatoria, moduladora de enzimas).", "sections": [{"num": "2.1", "title": "Introducción", "page": 20}, {"num": "2.2", "title": "Química de los flavonoides", "page": 20, "items": ["c6c3c6"]}, {"num": "2.3", "title": "Clasificación de los flavonoides", "page": 22, "items": ["subclases"]}, {"num": "2.4", "title": "Importancia de los flavonoides en las plantas", "page": 25}, {"num": "2.4.1", "title": "Moléculas de señalización", "page": 25, "items": ["senal"]}, {"num": "2.4.2", "title": "Fitoalexinas", "page": 25, "items": ["fitoalexina"]}, {"num": "2.4.3", "title": "Agente desintoxicante", "page": 26}, {"num": "2.4.4", "title": "Germinación de semillas", "page": 26}, {"num": "2.4.5", "title": "Atracción de polinizadores", "page": 27}, {"num": "2.5", "title": "Biopotenciales", "page": 27}, {"num": "2.5.1", "title": "Actividad anticolinesterasa", "page": 27}, {"num": "2.5.2", "title": "Moduladores de la esteroidogénesis", "page": 27}, {"num": "2.5.3", "title": "Moduladores de la xantina oxidasa", "page": 28}, {"num": "2.5.4", "title": "Actividad contra enfermedades", "page": 28}, {"num": "2.5.5", "title": "Captación de radicales", "page": 29, "items": ["antioxidante"]}, {"num": "2.5.6", "title": "Antiinflamación", "page": 29}, {"num": "2.6", "title": "Tendencias recientes", "page": 29}]}, {"num": 3, "title": "Importancia de los flavonoides en la agricultura", "page": 37, "block": "agro", "summary": "Funciones agronómicas: regulación del crecimiento, estrés oxidativo y abiótico, rizosfera y simbiosis leguminosa-rizobio, metabolómica, alelopatía y manejo de plagas.", "sections": [{"num": "3.1", "title": "Introducción", "page": 38}, {"num": "3.2", "title": "Clasificación", "page": 39}, {"num": "3.3", "title": "Función de los flavonoides en las plantas", "page": 40}, {"num": "3.4", "title": "Papel de los flavonoides en las plantas", "page": 41}, {"num": "3.4.1", "title": "Como reguladores del crecimiento", "page": 42}, {"num": "3.4.2", "title": "Rendimiento y crecimiento de cultivos", "page": 42}, {"num": "3.4.3", "title": "Combate del estrés oxidativo", "page": 43}, {"num": "3.4.4", "title": "Flavonoides en la rizosfera", "page": 43}, {"num": "3.4.5", "title": "Interacción leguminosa-rizobio", "page": 44, "items": ["rizobio"]}, {"num": "3.4.6", "title": "Estrés abiótico", "page": 45}, {"num": "3.5", "title": "Papel en el transporte", "page": 46}, {"num": "3.6", "title": "Metabolómica vegetal en agricultura", "page": 46, "items": ["metabolomica"]}, {"num": "3.7", "title": "Alelopatía y aplicaciones agrícolas", "page": 48, "items": ["alelopatia"]}, {"num": "3.8", "title": "Manejo de plagas", "page": 49}, {"num": "3.9", "title": "Retos futuros", "page": 50}, {"num": "3.10", "title": "Conclusión", "page": 51}]}, {"num": 4, "title": "Potencial antiviral terapéutico de los flavonoides", "page": 57, "block": "vir", "summary": "Clasifica la acción antiviral por etapa del ciclo viral, revisa flavonoides por familia de virus, estudios estructurales (docking) y los pocos ensayos clínicos.", "sections": [{"num": "4.1", "title": "Introducción", "page": 57}, {"num": "4.2", "title": "Flavonoides como antivirales", "page": 59}, {"num": "4.2.1", "title": "Dianas moleculares de inhibición", "page": 61, "items": ["etapas_virales"]}, {"num": "4.2.2", "title": "Flavonoides contra clases de virus", "page": 63}, {"num": "4.2.3", "title": "Maquinaria del huésped usada por los virus", "page": 76, "items": ["huesped"]}, {"num": "4.3", "title": "Estudios estructurales contra virus", "page": 79, "items": ["docking"]}, {"num": "4.4", "title": "Estudios clínicos contra virus", "page": 81, "items": ["clinica_viral"]}, {"num": "4.5", "title": "Conclusión", "page": 82}]}, {"num": 5, "title": "Regulación de la expresión génica por flavonoides", "page": 103, "block": "salud", "summary": "Bases de genética, epigenética y control de la expresión génica; luego, cómo los flavonoides actúan sobre receptores de esteroides, el sistema antioxidante, las citocinas y las enzimas de desintoxicación.", "sections": [{"num": "5.1", "title": "Introducción", "page": 103}, {"num": "5.1.1", "title": "Clasificación de la genética humana", "page": 104}, {"num": "5.2", "title": "Epigenética", "page": 106, "items": ["epigenetica"]}, {"num": "5.3", "title": "Expresión génica", "page": 107}, {"num": "5.3.1", "title": "El proceso de expresión génica", "page": 108}, {"num": "5.3.2", "title": "Control de la expresión génica", "page": 110}, {"num": "5.4", "title": "Flavonoides", "page": 112}, {"num": "5.4.1", "title": "Actividades biológicas en plantas", "page": 113}, {"num": "5.4.2", "title": "Actividades biológicas en humanos", "page": 114}, {"num": "5.5", "title": "Expresión génica y flavonoides", "page": 114}, {"num": "5.5.1", "title": "Interacción con receptores de esteroides", "page": 114, "items": ["estrogenico"]}, {"num": "5.5.2", "title": "Regulación del sistema antioxidante", "page": 115}, {"num": "5.5.3", "title": "Regulación de citocinas", "page": 116}, {"num": "5.6", "title": "Efectos sobre enzimas de desintoxicación", "page": 117, "items": ["fase2"]}]}, {"num": 6, "title": "Flavonoides de Asteraceae como antiinflamatorios", "page": 121, "block": "infl", "summary": "Inflamación crónica, subclases de flavonoides, mecanismo antiinflamatorio general y flavonoides de plantas de la familia Asteraceae con uso etnomedicinal.", "sections": [{"num": "6.1", "title": "Introducción", "page": 122}, {"num": "6.2", "title": "Inflamación", "page": 123, "items": ["infl_cronica"]}, {"num": "6.3", "title": "Flavonoides", "page": 124}, {"num": "6.3.1", "title": "Flavonoles", "page": 126}, {"num": "6.3.2", "title": "Isoflavonoides", "page": 126}, {"num": "6.3.3", "title": "Neoflavonoides", "page": 126}, {"num": "6.3.4", "title": "Flavanoles, flavan-3-oles o catequinas", "page": 126}, {"num": "6.3.5", "title": "Antocianinas", "page": 127}, {"num": "6.3.6", "title": "Chalconas", "page": 127}, {"num": "6.4", "title": "Mecanismo antiinflamatorio de los flavonoides", "page": 127, "items": ["mediadores"]}, {"num": "6.5", "title": "Usos medicinales de las Asteraceae", "page": 128, "items": ["asteraceae"]}, {"num": "6.6", "title": "Plantas etnomedicinales de Asteraceae", "page": 131}, {"num": "6.7", "title": "Flavonoides en Asteraceae", "page": 132}, {"num": "6.8", "title": "Flavonoides comunes en Asteraceae", "page": 133}, {"num": "6.9", "title": "Mecanismo de acción de los principales flavonoides de Asteraceae", "page": 136}, {"num": "6.10", "title": "Compuestos flavonoides en Asteraceae", "page": 136}, {"num": "6.11", "title": "Conclusión", "page": 138}]}, {"num": 7, "title": "Flavonoides bioactivos como inmunoestimulantes", "page": 143, "block": "infl", "summary": "Repasa las subclases y describe efectos inmunomoduladores (linfocitos T, macrófagos, citocinas), quimioprevención del cáncer y perfil de seguridad.", "sections": [{"num": "7.1", "title": "Introducción", "page": 144}, {"num": "7.2", "title": "Clasificación de los flavonoides", "page": 145}, {"num": "7.2.1", "title": "Flavonas", "page": 145}, {"num": "7.2.2", "title": "Flavonoles", "page": 146}, {"num": "7.2.3", "title": "Isoflavonoides", "page": 146}, {"num": "7.2.4", "title": "Flavanoles o catequinas", "page": 147}, {"num": "7.2.5", "title": "Flavanonoles", "page": 147}, {"num": "7.2.6", "title": "Antocianinas", "page": 147}, {"num": "7.2.7", "title": "Chalconas", "page": 148}, {"num": "7.2.8", "title": "Flavanonas", "page": 149}, {"num": "7.2.9", "title": "Biflavonoides", "page": 149}, {"num": "7.3", "title": "Efectos inmunoestimulantes de flavonoides vegetales", "page": 150, "items": ["inmunomod"]}, {"num": "7.4", "title": "Flavonoides como quimiopreventivos del cáncer", "page": 154, "items": ["quimioprev"]}, {"num": "7.5", "title": "Flavonoides como agentes terapéuticos seguros", "page": 156}, {"num": "7.6", "title": "Perspectivas", "page": 158}, {"num": "7.7", "title": "Conclusión", "page": 159}]}, {"num": 8, "title": "Papel de los flavonoides como antiinflamatorios", "page": 167, "block": "infl", "summary": "El capítulo más mecanístico: fosfodiesterasas, cinasas y factores de transcripción (NF-κB), prostanoides, histamina, células inmunes; y su papel en cáncer, metabolismo, neurodegeneración, enfermedad cardiovascular y asma.", "sections": [{"num": "8.1", "title": "Introducción", "page": 167}, {"num": "8.2", "title": "Flavonoides para tratar la inflamación", "page": 169}, {"num": "8.3", "title": "Mecanismos moleculares y bioquímicos", "page": 170}, {"num": "8.4", "title": "Inhibición de fosfodiesterasas", "page": 171, "items": ["pde"]}, {"num": "8.5", "title": "Inhibición de cinasas y factores de transcripción", "page": 171, "items": ["nfkb"]}, {"num": "8.6", "title": "Actividad antioxidante", "page": 172}, {"num": "8.7", "title": "Inhibición de la síntesis de prostanoides", "page": 172, "items": ["prostanoides"]}, {"num": "8.8", "title": "Inhibición de la liberación de histamina", "page": 173, "items": ["histamina"]}, {"num": "8.9", "title": "Impacto en células inmunes", "page": 173}, {"num": "8.10", "title": "Enfermedad inflamatoria crónica", "page": 173}, {"num": "8.11", "title": "Cáncer", "page": 174}, {"num": "8.12", "title": "Trastornos metabólicos", "page": 175}, {"num": "8.13", "title": "Trastornos neurodegenerativos", "page": 177}, {"num": "8.14", "title": "Enfermedad cardiovascular", "page": 178}, {"num": "8.15", "title": "Funciones en ECV por regulación de NF-κB", "page": 179}, {"num": "8.15.1", "title": "Rutina", "page": 179, "items": ["rutina_nrf2"]}, {"num": "8.15.2", "title": "Quercetina", "page": 180}, {"num": "8.15.3", "title": "Apigenina", "page": 180}, {"num": "8.15.4", "title": "Crisina", "page": 180}, {"num": "8.15.5", "title": "Kaempferol", "page": 181}, {"num": "8.15.6", "title": "Flavonoides en asma", "page": 181}, {"num": "8.16", "title": "Conclusión", "page": 181}]}, {"num": 9, "title": "Tendencias actuales en los beneficios de los flavonoides", "page": 191, "block": "salud", "summary": "Revisión breve de clasificación, fuentes alimentarias y efectos antioxidante, antiinflamatorio, antibacteriano, antiviral y anticáncer.", "sections": [{"num": "9.1", "title": "Introducción", "page": 192}, {"num": "9.2", "title": "Clasificación de los flavonoides", "page": 193}, {"num": "9.3", "title": "Fuentes de flavonoides", "page": 194, "items": ["fuentes"]}, {"num": "9.4", "title": "Actividades biológicas y químicas", "page": 194}, {"num": "9.5", "title": "Efectos biológicos en humanos", "page": 195}, {"num": "9.5.1", "title": "Antioxidante", "page": 195}, {"num": "9.5.2", "title": "Antiinflamatorio", "page": 196}, {"num": "9.5.3", "title": "Antibacteriano", "page": 197}, {"num": "9.5.4", "title": "Antiviral", "page": 197}, {"num": "9.5.5", "title": "Anticáncer", "page": 197}, {"num": "9.6", "title": "Conclusión", "page": 198}]}, {"num": 10, "title": "Solidez del color de un tinte natural de Rhus parviflora en lana", "page": 203, "block": "tex", "summary": "Estudio experimental: tinte de fruto de Rhus parviflora (su colorante activo es la quercetina) en lana, con combinaciones de vinagre blanco y mordientes metálicos, y pruebas de solidez del color.", "sections": [{"num": "10.1", "title": "Introducción", "page": 204}, {"num": "10.1.1", "title": "Clasificación de tintes naturales por origen", "page": 207}, {"num": "10.1.2", "title": "Importancia de los tintes naturales", "page": 208}, {"num": "10.1.3", "title": "Limitaciones de los tintes naturales", "page": 208}, {"num": "10.1.4", "title": "Fijación entre fibra y tinte", "page": 209}, {"num": "10.1.5", "title": "Mordientes y mordentado", "page": 209, "items": ["mordiente"]}, {"num": "10.1.6", "title": "Situación de los tintes y plantas tintóreas", "page": 211}, {"num": "10.1.7", "title": "Mejorar la calidad de los tintes", "page": 212}, {"num": "10.2", "title": "Materiales y métodos", "page": 213}, {"num": "10.2.1", "title": "Extracción del colorante", "page": 214, "items": ["quercetina_tinte"]}, {"num": "10.2.2", "title": "Teñido de lana y mordentado", "page": 214}, {"num": "10.2.3", "title": "Mediciones", "page": 215, "items": ["solidez"]}, {"num": "10.3", "title": "Resultados y discusión", "page": 216}, {"num": "10.3.1", "title": "Vinagre blanco + cloruro estannoso", "page": 216}, {"num": "10.3.2", "title": "Vinagre blanco + sulfato de cobre", "page": 217}, {"num": "10.3.3", "title": "Vinagre blanco + dicromato de potasio", "page": 218}, {"num": "10.3.4", "title": "Vinagre blanco + sulfato ferroso", "page": 219}, {"num": "10.4", "title": "Conclusión", "page": 221}]}, {"num": 11, "title": "Flavonoides en trastornos inducidos por el embarazo", "page": 225, "block": "salud", "summary": "Capítulo corto: papel antiinflamatorio, antioxidante y hormonal de los flavonoides y su posible uso en trastornos del embarazo (hipertensión, preeclampsia, asma).", "sections": [{"num": "11.1", "title": "Introducción", "page": 225}, {"num": "11.2", "title": "Flavonoides", "page": 226}, {"num": "11.3", "title": "Papel en la salud humana", "page": 226}, {"num": "11.3.1", "title": "Actividad antiinflamatoria", "page": 227}, {"num": "11.3.2", "title": "Actividad antioxidante", "page": 227}, {"num": "11.4", "title": "Trastornos de la salud humana", "page": 228}, {"num": "11.4.1", "title": "Durante el embarazo", "page": 228, "items": ["hta_embarazo"]}, {"num": "11.4.2", "title": "Cáncer", "page": 228}, {"num": "11.4.3", "title": "Actividad hormonal de los flavonoides", "page": 229, "items": ["hormonal"]}, {"num": "11.5", "title": "Conclusión", "page": 229}]}, {"num": 12, "title": "Clases y biosíntesis de los flavonoides", "page": 233, "block": "quim", "summary": "Definición y estructura, tres clases según la unión del anillo B (flavonoides, isoflavonoides, neoflavonoides), flavonoides menores, antocianinas y la ruta biosintética desde la fenilalanina.", "sections": [{"num": "12.1", "title": "Introducción", "page": 233}, {"num": "12.2", "title": "Definición y estructura", "page": 234, "items": ["flavan"]}, {"num": "12.3", "title": "Clasificación de los flavonoides", "page": 237, "items": ["tres_clases"]}, {"num": "12.3.1", "title": "Flavonoides", "page": 239}, {"num": "12.3.2", "title": "Isoflavonoides", "page": 240}, {"num": "12.3.3", "title": "Neoflavonoides", "page": 242}, {"num": "12.3.4", "title": "Flavonoides menores", "page": 242}, {"num": "12.3.5", "title": "Antocianinas", "page": 243}, {"num": "12.4", "title": "Biosíntesis de los flavonoides", "page": 245, "items": ["pal", "chs"]}, {"num": "12.4.1", "title": "Biogénesis de isoflavonoides", "page": 248, "items": ["isoflav_bio"]}, {"num": "12.5", "title": "Conclusión", "page": 248}]}, {"num": 13, "title": "Flavonoides vegetales contra la infección por COVID-19", "page": 253, "block": "vir", "summary": "Mecanismos de mitigación contra SARS-CoV-2: estudios in silico (Mpro, proteína S), estudios in vitro e in vivo, y potencial inmunomodulador y antiinflamatorio.", "sections": [{"num": "13.1", "title": "Introducción", "page": 254}, {"num": "13.2", "title": "Mecanismos contra COVID-19: estudios in silico", "page": 257, "items": ["sars_dianas"]}, {"num": "13.3", "title": "Mecanismos contra COVID-19: estudios in vitro e in vivo", "page": 263, "items": ["sars_exp"]}, {"num": "13.4", "title": "Potencial inmunomodulador y antiinflamatorio", "page": 266, "items": ["tormenta"]}, {"num": "13.5", "title": "Conclusión", "page": 270}]}], "items": {"nutraceutico": {"title": "Nutracéutico", "summary": "Alimento o componente con beneficio de salud más allá de la nutrición básica; el capítulo lo plantea frente al envejecimiento."}, "teorias_env": {"title": "Teorías del envejecimiento", "formula": "programadas · error · genética · bioquímica", "summary": "Marco del capítulo 1 para explicar por qué los nutracéuticos podrían actuar sobre el envejecimiento."}, "curcumina_sen": {"title": "Curcumina y senescencia", "formula": "curcumina → sirtuinas, AMPK → menos senescencia celular", "summary": "Mecanismo propuesto en el libro, con base sobre todo preclínica."}, "egcg": {"title": "EGCG (galato de epigalocatequina)", "summary": "Catequina del té verde presentada como suplemento antienvejecimiento."}, "c6c3c6": {"title": "Esqueleto C6-C3-C6", "formula": "anillo A (C6) – puente C3 (anillo C) – anillo B (C6)", "summary": "Estructura común de todos los flavonoides: dos anillos aromáticos unidos por tres carbonos."}, "subclases": {"title": "Subclases de flavonoides", "formula": "flavonas · flavonoles · flavanonas · flavanonoles · flavan-3-oles · antocianinas · isoflavonas · chalconas", "summary": "Se distinguen por el grado de oxidación y la sustitución del anillo C."}, "senal": {"title": "Flavonoides como moléculas señal", "summary": "Mensajeros químicos de la planta con microorganismos y polinizadores."}, "fitoalexina": {"title": "Fitoalexina", "summary": "Compuesto de defensa que la planta produce ante patógenos; varios flavonoides cumplen este papel."}, "antioxidante": {"title": "Captación de radicales libres", "summary": "Actividad antioxidante base que los capítulos clínicos invocan para casi todos los efectos."}, "rizobio": {"title": "Simbiosis leguminosa-rizobio", "summary": "Los flavonoides de la raíz activan la nodulación de bacterias fijadoras de nitrógeno."}, "metabolomica": {"title": "Metabolómica vegetal", "summary": "Análisis global de metabolitos para medir la composición de flavonoides en cultivos."}, "alelopatia": {"title": "Alelopatía", "summary": "Efecto químico de una planta sobre otras; se estudia para controlar malezas y plagas."}, "etapas_virales": {"title": "Etapas virales que inhiben los flavonoides", "formula": "unión/entrada → replicación temprana → transcripción/traducción → ensamblaje y liberación; + huésped", "summary": "Las cinco categorías de acción antiviral con que el capítulo organiza sus tablas."}, "huesped": {"title": "Dianas en la maquinaria del huésped", "summary": "Flavonoides que bloquean componentes celulares que el virus necesita o que modulan la respuesta inmune."}, "docking": {"title": "Estudios estructurales (docking)", "summary": "Modelado de la unión flavonoide-proteína viral para seleccionar candidatos."}, "clinica_viral": {"title": "Ensayos clínicos antivirales", "summary": "El propio capítulo señala que muy pocos flavonoides llegaron a ensayos clínicos."}, "epigenetica": {"title": "Epigenética", "summary": "Cambios de la expresión génica sin cambio en la secuencia del ADN."}, "estrogenico": {"title": "Acción estrogénica de isoflavonas", "formula": "genisteína, daidzeína, biochanina A → receptor de estrógeno", "summary": "Isoflavonas que se unen al receptor de estrógeno con menor afinidad que el estradiol."}, "fase2": {"title": "Enzimas de fase II", "formula": "catequinas → ↑ NQO1, GST", "summary": "Inducción de enzimas de desintoxicación como vía de quimioprevención."}, "infl_cronica": {"title": "Inflamación crónica", "summary": "Base de la mayoría de enfermedades no infecciosas según el capítulo 6."}, "mediadores": {"title": "Mediadores proinflamatorios", "formula": "COX · iNOS · citocinas", "summary": "Blancos que los flavonoides (sobre todo flavonas) regulan a la baja."}, "asteraceae": {"title": "Familia Asteraceae", "summary": "Familia vegetal con uso etnomedicinal y alto contenido de flavonoides (apigenina, luteolina, rutina, entre otros)."}, "inmunomod": {"title": "Inmunomodulación", "summary": "Efecto de los polifenoles sobre linfocitos, células dendríticas, neutrófilos y macrófagos."}, "quimioprev": {"title": "Quimioprevención del cáncer", "summary": "Uso de flavonoides de la dieta para retrasar o prevenir el cáncer; evidencia mayormente preclínica."}, "pde": {"title": "Inhibición de fosfodiesterasas", "summary": "Uno de los mecanismos antiinflamatorios moleculares descritos."}, "nfkb": {"title": "Vía NF-κB", "formula": "flavonoide ⊣ cinasas → ⊣ NF-κB → ↓ citocinas", "summary": "Factor de transcripción central de la inflamación; eje del capítulo 8."}, "prostanoides": {"title": "Síntesis de prostanoides", "formula": "COX y LOX → prostaglandinas, leucotrienos", "summary": "Los flavonoides inhiben las enzimas que producen eicosanoides."}, "histamina": {"title": "Liberación de histamina", "summary": "Estabilización de mastocitos; base del papel propuesto en asma y alergia."}, "rutina_nrf2": {"title": "Rutina y eje Nrf2/NF-κB", "formula": "rutina → ↑ Nrf2, ↓ NF-κB → ↑ NO", "summary": "En ratas hipertensas, la rutina bajó la presión por esta vía (dato preclínico)."}, "fuentes": {"title": "Fuentes alimentarias", "summary": "Frutas, verduras, té, vino, cereales y otras partes vegetales."}, "mordiente": {"title": "Mordiente", "formula": "colorante + ion metálico → complejo fijado a la fibra", "summary": "Sustancia que fija el tinte natural; varios mordientes metálicos son tóxicos."}, "quercetina_tinte": {"title": "Quercetina como colorante", "summary": "Flavonol amarillo, colorante activo del fruto de Rhus parviflora."}, "solidez": {"title": "Solidez del color", "formula": "lavado · frote · luz · sudor", "summary": "Pruebas con que se calificó la resistencia del color en la lana."}, "hta_embarazo": {"title": "Trastornos hipertensivos del embarazo", "summary": "Hipertensión gestacional y preeclampsia, condiciones donde el capítulo propone un papel de los flavonoides."}, "hormonal": {"title": "Actividad hormonal de los flavonoides", "summary": "Efectos tipo hormona relevantes durante el embarazo."}, "flavan": {"title": "Núcleo flavano", "formula": "15 C: 2 anillos aromáticos + puente de 3 C", "summary": "Definición estructural; el nombre viene del latín flavus, amarillo."}, "tres_clases": {"title": "Tres clases por la unión del anillo B", "formula": "flavonoides (C2) · isoflavonoides (C3) · neoflavonoides (C4)", "summary": "Clasificación según dónde se une el anillo B al núcleo benzopirano."}, "pal": {"title": "Fenilalanina amonio liasa (PAL)", "formula": "fenilalanina → trans-cinamato (C6-C3)", "summary": "Primer paso de la ruta fenilpropanoide; aporta el precursor del anillo B."}, "chs": {"title": "Chalcona sintasa (CHS)", "formula": "p-cumaroil-CoA + 3 malonil-CoA → chalcona", "summary": "Enzima que forma el esqueleto C15; después la chalcona isomerasa da la flavanona."}, "isoflav_bio": {"title": "Biogénesis de isoflavonoides", "summary": "Rama de la ruta que migra el anillo B para dar isoflavonoides."}, "sars_dianas": {"title": "Dianas de SARS-CoV-2 in silico", "formula": "Mpro · proteína S · ACE2", "summary": "Docking de flavonoides como naringenina contra proteínas virales clave."}, "sars_exp": {"title": "Estudios in vitro e in vivo en COVID-19", "summary": "Pruebas experimentales de flavonoides contra el virus."}, "tormenta": {"title": "Efecto inmunomodulador en COVID-19", "summary": "Propuesta de que los flavonoides atenúan la respuesta inflamatoria excesiva."}}, "requires": {"chapters": {"3": [2], "4": [2], "5": [2], "6": [2], "7": [6], "8": [6], "9": [2], "10": [2], "11": [9, 5], "12": [2], "13": [4, 8]}, "sections": {"1.8.1": ["1.2.4"], "3.2": ["2.3"], "3.4.5": ["2.4.1"], "3.6": ["2.3"], "3.7": ["2.4"], "4.2.1": ["2.5.4"], "4.3": ["4.2.1"], "4.4": ["4.2.2"], "5.5": ["5.3.2"], "5.5.1": ["2.3", "5.5"], "5.5.2": ["2.5.5"], "6.3": ["2.3"], "6.4": ["6.2"], "6.9": ["6.4"], "7.2": ["2.3"], "7.4": ["7.3"], "8.3": ["6.4"], "8.6": ["2.5.5"], "8.15": ["8.5"], "9.5.1": ["2.5.5"], "9.5.4": ["4.2"], "10.2.1": ["2.3"], "10.2.2": ["10.1.5"], "10.3": ["10.2.3"], "11.3.2": ["2.5.5"], "11.4.3": ["5.5.1"], "12.3": ["12.2"], "12.4": ["12.2"], "12.4.1": ["12.4"], "13.2": ["4.3"], "13.3": ["13.2"], "13.4": ["8.5"]}, "items": {"curcumina_sen": ["teorias_env"], "egcg": ["teorias_env"], "subclases": ["c6c3c6"], "antioxidante": ["c6c3c6"], "fitoalexina": ["senal"], "rizobio": ["senal"], "metabolomica": ["subclases"], "alelopatia": ["senal"], "huesped": ["etapas_virales"], "docking": ["etapas_virales"], "clinica_viral": ["etapas_virales"], "estrogenico": ["subclases", "epigenetica"], "fase2": ["antioxidante"], "mediadores": ["infl_cronica"], "asteraceae": ["mediadores"], "quimioprev": ["inmunomod"], "pde": ["mediadores"], "nfkb": ["mediadores"], "prostanoides": ["mediadores"], "histamina": ["inmunomod"], "rutina_nrf2": ["nfkb", "antioxidante"], "quercetina_tinte": ["subclases"], "solidez": ["mordiente", "quercetina_tinte"], "hormonal": ["estrogenico"], "hta_embarazo": ["antioxidante"], "flavan": ["c6c3c6"], "tres_clases": ["flavan"], "pal": ["flavan"], "chs": ["pal"], "isoflav_bio": ["chs", "tres_clases"], "sars_dianas": ["docking"], "sars_exp": ["sars_dianas"], "tormenta": ["nfkb", "inmunomod"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>
