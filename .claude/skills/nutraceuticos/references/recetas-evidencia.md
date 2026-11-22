@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Diecisiete preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Dieciocho preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -25,6 +25,7 @@ Diecisiete preparaciones llevan un nutracéutico en una porción medida. La téc
 | Açaí | Antocianinas sensibles al calor; riesgo de Chagas oral | Crema fría con xantana; plato combinado | 95 g de pulpa pasteurizada | Baja: biomarcadores de estrés oxidativo y HDL en ensayos pequeños |
 | Brócoli | La cocción destruye la mirosinasa; hervir pierde glucorafanina | Crema tibia al vapor con mostaza parda añadida en frío, estabilizada con xantana | 200 g de brócoli + 1 g de mostaza parda | Baja: la mostaza cuadruplicó el sulforafano urinario; extractos de brotes con resultados mixtos en glucemia |
 | Cordyceps con cacao | Polvo que se asienta; sabor terroso; arsénico en el cordyceps silvestre; efecto del calor sobre la cordicepina no confirmado | Bebida fría de cacao suspendida con xantana (base de la sección 11) | 1 g de Cordyceps militaris cultivado + 10 g de cacao natural | Baja: señal pequeña en resistencia aeróbica con ensayos contradictorios; adyuvante renal con estudios de baja calidad |
+| Melena de león | Dosis de ensayo alta (3 g/día) en polvo que se asienta; sabor amargo y terroso | Cubos de caldo gelificado con agar, resistentes al caldo caliente | 3 g de polvo de cuerpo fructífero en un cubo de 75 g | Baja: ensayos pequeños en deterioro cognitivo leve; el efecto se perdió al suspender |
 
 **Reglas de uso en consulta**
 
@@ -945,7 +946,66 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - **Cacao:** aplica la regla de metales de la sección 11 (cadmio y plomo del lote).
 - No busqué: embarazo, lactancia, anticoagulantes, hipoglucemiantes ni enfermedades autoinmunes.
 
-## 18. Seguridad para todas las preparaciones
+## 18. Melena de león: cubos de caldo gelificado
+
+**Objetivo.** Cubos firmes de caldo con una dosis fija de melena de león (*Hericium erinaceus*): 3 g de polvo de cuerpo fructífero por cubo de 75 g. Se comen fríos o dentro de una sopa caliente. Tres gramos al día es la dosis del ensayo en deterioro cognitivo leve: 12 tabletas de 250 mg con 96 % de polvo del hongo, por 16 semanas ([Mori 2009](https://doi.org/10.1002/ptr.2634)).
+
+**El problema.** Tres gramos de polvo es mucho para una bebida: se asienta y deja sabor terroso. El agar atrapa el polvo en un gel firme. El gel de agar funde a 80–90 °C, así que el cubo resiste una sopa caliente servida.
+
+**Qué producto comprar.** Usa polvo de **cuerpo fructífero**, como en los ensayos de Mori y Saitsu. Los productos de **micelio** son otra cosa: el ensayo en Alzheimer usó micelio enriquecido en erinacina A ([Li 2020](https://doi.org/10.3389/fnagi.2020.00155)), y algunos polvos comerciales son micelio cultivado sobre avena, con el sustrato incluido ([Mahadevan 2025](https://doi.org/10.3389/ftox.2025.1651442)).
+
+**Ingredientes** (4 cubos de 75 g)
+
+| Ingrediente | g | % del total |
+| --- | --- | --- |
+| Caldo de verduras sin grasa, frío | 285 | 95,0 |
+| Melena de león en polvo (cuerpo fructífero) | 12 | 4,0 |
+| Sal | 1,5 | 0,5 |
+| Agar en polvo | 1,5 | 0,5 |
+
+**Proceso**
+
+1. Mezcla en seco el agar y la sal.
+2. Dispersa la mezcla en el caldo frío con batidor.
+3. Lleva a hervor y mantén 2 min, batiendo. El agar necesita más de 90 °C para hidratarse. En Bogotá el agua hierve a unos 91 °C: mantén el hervor completo.
+4. Retira del fuego. Añade la melena de león y licua 30 s con licuadora de inmersión.
+5. Revuelve con suavidad mientras baja a unos 50 °C, para que el polvo no se asiente antes de gelificar *(interpretación)*.
+6. Vierte en un molde plano de 2 cm de alto. Refrigera 1 h.
+7. Corta en 4 cubos iguales. Pesa cada uno: 75 g.
+8. Sirve frío, o pon el cubo en una sopa servida (por debajo de 80 °C) justo antes de comer.
+
+**Por qué funciona.** El agar forma un gel al enfriar a 35–45 °C y no se funde hasta 80–90 °C. Ese margen deja servir el cubo en caldo caliente sin que se deshaga. El gel fija el polvo y reparte la dosis por igual entre cubos.
+
+**Calor.** No encontré datos de estabilidad al calor de las hericenonas ni de las erinacinas. Un ensayo usó galletas horneadas con el hongo y reportó menos síntomas depresivos que al inicio ([Nagano 2010](https://doi.org/10.2220/biomedres.31.231)). Eso no prueba que los compuestos sobrevivan al calor *(interpretación)*.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Capa oscura en el fondo | El polvo se asentó antes de gelificar | Revuelve hasta unos 50 °C; usa molde plano |
+| El gel no cuaja | Agar sin hervir o hervor corto | Hierve 2 min completos; en altura, no bajes el fuego |
+| Gel quebradizo | Mucho agar | Baja a 0,4 % |
+| Grumos de polvo | Polvo añadido sin licuar | Licua 30 s después de añadirlo |
+| Sabor amargo | Polvo del hongo | Usa un caldo más sabroso; no bajes el polvo si quieres la dosis del ensayo |
+
+**Evidencia clínica** (según PubMed)
+
+- **Baja (deterioro cognitivo leve):** en 30 adultos de 50–80 años, 3 g/día por 16 semanas subieron el puntaje cognitivo frente al placebo. El efecto bajó 4 semanas después de suspender ([Mori 2009](https://doi.org/10.1002/ptr.2634)).
+- **Baja:** suplementos de cuerpo fructífero por 12 semanas mejoraron el MMSE, pero no otras dos pruebas ([Saitsu 2019](https://doi.org/10.2220/biomedres.40.125)).
+- **Baja (Alzheimer leve, micelio):** 3 cápsulas de 350 mg de micelio con erinacina A por 49 semanas dieron mejor MMSE y actividades de la vida diaria que el placebo. Cuatro personas salieron por malestar abdominal, náuseas y erupción. El estudio es piloto y lo hizo el fabricante ([Li 2020](https://doi.org/10.3389/fnagi.2020.00155)).
+- **Baja (adultos sanos):** en 41 adultos jóvenes, 1,8 g mejoró la velocidad en la prueba de Stroop a los 60 min. El estrés a 28 días tuvo solo una tendencia (p = 0,051), con otros resultados nulos ([Docherty 2023](https://doi.org/10.3390/nu15224842)).
+- **Muy baja (ánimo):** en 30 mujeres, galletas con el hongo por 4 semanas bajaron los puntajes de depresión frente al inicio, no frente al placebo ([Nagano 2010](https://doi.org/10.2220/biomedres.31.231)).
+- **Síntesis:** una revisión sistemática combinó un ensayo y un piloto: el MMSE subió 1,17 puntos en promedio ([Menon 2025](https://doi.org/10.3389/fnut.2025.1641246)).
+
+**Seguridad**
+
+- **Efectos adversos:** malestar estomacal, dolor de cabeza y reacciones alérgicas, poco reportados ([Menon 2025](https://doi.org/10.3389/fnut.2025.1641246)). En el ensayo de Alzheimer hubo erupción y náuseas ([Li 2020](https://doi.org/10.3389/fnagi.2020.00155)). Pregunta por alergia a hongos.
+- **Toxicología animal:** sin toxicidad subcrónica ni genotoxicidad en ratas hasta 2000 mg/kg/día ([Mahadevan 2025](https://doi.org/10.3389/ftox.2025.1651442)). El micelio con erinacina A no fue tóxico en 13 semanas ([Lee 2019](https://doi.org/10.1615/IntJMedMushrooms.2019030320)) ni en el desarrollo fetal de ratas ([Li 2018](https://doi.org/10.1080/01480545.2017.1381110)). Son datos animales: embarazo y lactancia en humanos no están buscados.
+- **Celiaquía:** los polvos de micelio cultivado sobre avena llevan el sustrato. Pide un producto certificado sin gluten *(interpretación)*.
+- **Libro:** el capítulo 15 de *Functional Foods and Nutraceuticals for Chronic Diseases* trata polifenoles en Alzheimer, no este hongo.
+- No busqué: metales pesados, interacciones con anticoagulantes, hipoglucemiantes ni antidepresivos.
+
+## 19. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1002,7 +1062,13 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - Inmunosupresores o trasplante: no lo indiques sin el equipo tratante.
 - Embarazo, lactancia y anticoagulantes: no buscados; trátalos como no confirmados.
 
-## 19. Huecos y log de búsqueda
+**Melena de león**
+
+- Pregunta por alergia a hongos. Suspende si aparece erupción.
+- Usa cuerpo fructífero; si el producto es micelio sobre cereal, revisa gluten.
+- Embarazo, lactancia e interacciones: no buscados.
+
+## 20. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1015,6 +1081,7 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - Contenido de taninos de la hoja de moringa.
 - Glucorafanina por 100 g del brócoli colombiano, temperatura de inactivación de la mirosinasa de la mostaza y tiempo de reposo de la crema.
 - Cordicepina por gramo del cordyceps comercial en Colombia y estabilidad de la cordicepina al calor.
+- Contenido de hericenonas y erinacinas del polvo comercial y su estabilidad al calor.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1066,5 +1133,8 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 | Cordyceps militaris exercise performance randomized placebo (22-11-2026) | 9 | Chen 2010, Parcell 2004, Hirsch 2017 |
 | Ophiocordyceps sinensis arsenic; Cordyceps adverse effects safety toxicity; Cordyceps tacrolimus (22-11-2026) | 20 / 12 / 3 | Xiao 2021, Li 2019, Chen 2020, Hong 2015 |
 | cordycepin thermal stability degradation; cordycepin stability temperature pH; Cordyceps militaris drying cordycepin (22-11-2026) | 0 / 10 / 2 | Yang 2026 (sin dato de estabilidad al calor) |
+| Hericium erinaceus randomized controlled trial; Hericium erinaceus systematic review human (22-11-2026) | 5 / 3 | Mori 2009, Saitsu 2019, Docherty 2023, Nagano 2010 |
+| erinacine A-enriched Hericium erinaceus mycelia Alzheimer pilot; lion's mane mushroom case report (22-11-2026) | 1 / 1 | Li 2020, Menon 2025 |
+| Hericium erinaceus toxicity; Hericium erinaceus hypersensitivity; hericenones erinacines content cooking (22-11-2026) | 53 / 0 / 0 | Mahadevan 2025, Lee 2019, Li 2018 (sin dato de estabilidad al calor) |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
