@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Diecinueve preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veinte preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Diecinueve preparaciones llevan un nutracéutico en una porción medida. La téc
 | Cordyceps con cacao | Polvo que se asienta; sabor terroso; arsénico en el cordyceps silvestre; efecto del calor sobre la cordicepina no confirmado | Bebida fría de cacao suspendida con xantana (base de la sección 11) | 1 g de Cordyceps militaris cultivado + 10 g de cacao natural | Baja: señal pequeña en resistencia aeróbica con ensayos contradictorios; adyuvante renal con estudios de baja calidad |
 | Melena de león | Dosis de ensayo alta (3 g/día) en polvo que se asienta; sabor amargo y terroso | Cubos de caldo gelificado con agar, resistentes al caldo caliente | 3 g de polvo de cuerpo fructífero en un cubo de 75 g | Baja: ensayos pequeños en deterioro cognitivo leve; el efecto se perdió al suspender |
 | Especias (jengibre, cardamomo, canela de Ceilán) | Terpenos volátiles que se pierden al hervir; polvos que se asientan; cumarina de la cassia | Leche tibia especiada (60–70 °C) suspendida con xantana | 1 g de jengibre + 0,5 g de cardamomo + 0,5 g de canela de Ceilán | Jengibre: favorable para náusea del embarazo con 1 g/día; calidad metodológica baja |
+| Embarazo: hierro, calcio y folato | Hierro vegetal poco absorbible; vitamina C y folato que se pierden con calor; calcio que compite con el hierro; Listeria | Salsa fría de guayaba con xantana sobre lentejas; panna cotta láctea con gelatina; salsa verde cruda emulsionada | Dosis de alimento; no reemplaza ácido fólico ni hierro en suplemento | Suplementos: ácido fólico alta (defectos del tubo neural); hierro y calcio baja |
 
 **Reglas de uso en consulta**
 
@@ -56,7 +57,7 @@ Fuentes técnicas: archivos `hidrocoloides.md` y `tecnicas.md` de la skill de ga
 1. Mezcla 35 g de aceite con la cúrcuma y la pimienta.
 2. Añade el agua. Lleva a ebullición suave y mantén 5 min, con agitación. En Bogotá, el agua hierve a unos 91 °C (cálculo, no medición).
 3. Dispersa la xantana en los 5 g de aceite reservados. Así evitas los grumos.
-4. Retira del fuego. Añade la xantana dispersa y licua con licuadora de inmersión durante 1 min.
+4. Retira del fuego. Añade la xantana dispersa y licua con licuadora de mano inmersión durante 1 min.
 5. Sirve tibia, sobre arroz, verduras o legumbres.
 
 **Por qué funciona.** La curcumina es lipofílica. En un modelo de digestión simulada, una emulsión de aceite mezclada con cúrcuma en polvo aumentó mucho la bioaccesibilidad; el efecto fue mayor a 100 °C que a 30 °C ([Zou 2015](https://doi.org/10.1021/jf506149f)). La piperina de la pimienta inhibe la glucuronidación: con 20 mg de piperina y 2 g de curcumina, la biodisponibilidad en humanos subió 2000 % ([Shoba 1998](https://doi.org/10.1055/s-2006-957450)). La xantana a 0,25 % da una salsa fluida y tolera calor y ácido.
@@ -1067,7 +1068,124 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - **Lactosa:** usa bebida vegetal con grasa si hay intolerancia.
 - **Plomo:** compra especias de marca con registro sanitario (ver cúrcuma y ají en el documento de especias).
 
-## 20. Seguridad para todas las preparaciones
+## 20. Embarazo: hierro, calcio y folato en la comida
+
+**Objetivo.** Tres preparaciones que ayudan a que la comida aporte hierro, calcio y folato en el embarazo. Son dosis de alimento. **No reemplazan** el ácido fólico ni el hierro indicados en el control prenatal. La base del libro está en el grafo de *Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health* (capítulos 2, 7 y 10).
+
+**Reglas de la comida prenatal**
+
+1. Sirve la vitamina C cruda y en la misma comida que el hierro vegetal.
+2. Separa los lácteos y el té o café de la comida rica en hierro. El calcio, el fosfato y el té inhiben la absorción del hierro no hemo; la vitamina C revierte en parte ese efecto ([Lynch 1980](https://doi.org/10.1111/j.1749-6632.1980.tb21325.x); [Zijp 2000](https://doi.org/10.1080/10408690091189194)).
+3. Usa solo lácteos pasteurizados. *Listeria monocytogenes* cruza la placenta ([Disson 2025](https://doi.org/10.1038/s41572-025-00654-x)).
+4. Lava bien las hojas crudas. No uses germinados crudos.
+
+### 20.1 Lentejas con salsa fría de guayaba
+
+**El problema.** El hierro de las lentejas es no hemo y se absorbe poco. La vitamina C es el potenciador más eficaz de su absorción. En comidas con pocos inhibidores, se busca una relación molar de 2:1, por ejemplo 20 mg de vitamina C por 3 mg de hierro ([Teucher 2004](https://doi.org/10.1024/0300-9831.74.6.403)). La vitamina C se pierde con el calor.
+
+**La técnica.** Las lentejas van calientes. La guayaba va cruda, fría y espesada con xantana, y se añade al servir.
+
+**Ingredientes** (4 porciones)
+
+| Ingrediente | g | Concentración |
+| --- | --- | --- |
+| Lentejas cocidas, en puré | 400 | Base caliente |
+| Pulpa de guayaba colada | 200 | Base fría |
+| Agua fría | 40 | — |
+| Panela fina | 10 | — |
+| Goma xantana | 0,6 | 0,25 % de 240 g de salsa |
+| Sal | 3 | Al gusto |
+
+**Proceso**
+
+1. Cocina las lentejas en olla a presión. En Bogotá el agua hierve a unos 91 °C y la olla a presión acorta la cocción.
+2. Haz puré con la sal. Manténlo caliente.
+3. Mezcla en seco la xantana con la panela.
+4. Licua la guayaba con el agua fría. Añade la mezcla seca con el motor en marcha. Licua 1 min.
+5. Sirve 100 g de puré y encima 60 g de salsa fría, justo antes de comer.
+
+**Por qué funciona.** La vitamina C forma un quelato con el hierro férrico en el estómago, que sigue soluble en el duodeno ([Lynch 1980](https://doi.org/10.1111/j.1749-6632.1980.tb21325.x)). Servir la salsa fría y al final evita perder vitamina C por calor.
+
+**Si falla:** salsa aguada → xantana mal dispersa → mézclala en seco con la panela. Salsa oscura o con sabor oxidado → reposo largo → prepárala el mismo día.
+
+**Dato no confirmado.** No confirmé el hierro de las lentejas ni la vitamina C de la guayaba del lote, así que no sé si la porción llega a la relación 2:1.
+
+### 20.2 Panna cotta de leche y yogur (calcio)
+
+**El problema.** En el embarazo, el calcio ≥ 1 g/día reduce la preeclampsia sobre todo cuando la dieta es baja en calcio. El calcio compite con el hierro en la misma comida.
+
+**La técnica.** Gel suave de gelatina con lácteos pasteurizados. Se come como postre o merienda, lejos de la comida rica en hierro.
+
+**Ingredientes** (4 porciones de unos 134 g)
+
+| Ingrediente | g | Concentración |
+| --- | --- | --- |
+| Leche entera pasteurizada | 300 | Base |
+| Yogur natural pasteurizado | 200 | Base |
+| Panela fina | 30 | — |
+| Gelatina sin sabor | 6 | 1,1 % del total |
+
+**Proceso**
+
+1. Hidrata la gelatina en 60 g de la leche fría, 5 min.
+2. Calienta el resto de la leche con la panela hasta unos 50 °C.
+3. Añade la gelatina hidratada y revuelve hasta disolver.
+4. Deja bajar a unos 30 °C. Incorpora el yogur con batidor.
+5. Reparte en 4 moldes. Refrigera 4 h o más: la gelatina cuaja por debajo de 15 °C en horas.
+
+**Por qué funciona.** La gelatina forma un gel que funde a 25–40 °C, en la boca. Añadir el yogur tibio, no caliente, conserva su textura *(interpretación)*.
+
+**Si falla:** no cuaja → gelatina sin hidratar o poco tiempo en frío → hidrata en frío y deja 4 h. Grumos → yogur muy frío sobre la mezcla → añádelo a temperatura ambiente.
+
+**Dato no confirmado.** No confirmé el calcio por porción. Para llegar a 1 g/día, suma toda la dieta y el suplemento indicado.
+
+### 20.3 Salsa verde cruda de espinaca (folato)
+
+**El problema.** Hervir la espinaca dejó solo el 49 % del folato, y el brócoli el 44 % ([McKillop 2002](https://doi.org/10.1079/BJN2002733)).
+
+**La técnica.** Salsa cruda emulsionada con aceite y estabilizada con xantana. El limón aporta vitamina C, útil si la salsa acompaña una comida con hierro vegetal.
+
+**Ingredientes** (unos 270 g, 4 porciones)
+
+| Ingrediente | g | Concentración |
+| --- | --- | --- |
+| Espinaca cruda, lavada | 100 | Base |
+| Perejil | 20 | Base |
+| Aceite de oliva | 60 | Fase grasa |
+| Jugo de limón | 30 | — |
+| Agua fría | 60 | — |
+| Sal | 2 | — |
+| Goma xantana | 0,7 | 0,25 % del total |
+
+**Proceso**
+
+1. Lava la espinaca y el perejil con agua potable. Escúrrelos.
+2. Licua las hojas con el agua, el limón y la sal.
+3. Con el motor en marcha, espolvorea la xantana.
+4. Añade el aceite en hilo hasta emulsionar.
+5. Guárdala en frío y úsala el mismo día.
+
+**Por qué funciona.** Sin cocción no hay pérdida de folato por calor ni por el agua de cocción. La xantana estabiliza la emulsión de aceite en agua.
+
+**Si falla:** se separa el aceite → aceite añadido de golpe → añádelo en hilo. Color pardo → limón y tiempo → usa la salsa el mismo día.
+
+### Evidencia clínica de los suplementos (según PubMed)
+
+- **Ácido fólico, alta:** el ácido fólico periconcepcional diario redujo los defectos del tubo neural (RR 0,31; evidencia de calidad alta), con efecto similar desde 400 µg/día ([De-Regil 2015, Cochrane](https://doi.org/10.1002/14651858.CD007950.pub3)). La salsa verde no reemplaza ese suplemento.
+- **Hierro, baja:** el hierro diario redujo la anemia materna al término un 70 % (RR 0,30; calidad baja) ([Peña-Rosas 2015, Cochrane](https://doi.org/10.1002/14651858.CD004736.pub5)).
+- **Calcio, baja:** el calcio ≥ 1 g/día redujo la preeclampsia (RR 0,45; calidad baja), con efecto claro en dietas bajas en calcio y no en dietas adecuadas ([Hofmeyr 2018, Cochrane](https://doi.org/10.1002/14651858.CD001059.pub5)).
+- **Vitamina D, muy incierta:** la revisión Cochrane de 2024 calificó la evidencia sobre preeclampsia como muy incierta ([Palacios 2024](https://doi.org/10.1002/14651858.CD008873.pub5)). No hice receta de vitamina D.
+
+### Seguridad en el embarazo
+
+- Lácteos: solo pasteurizados, por *Listeria*.
+- Vitamina A: el exceso materno puede causar malformaciones (capítulo 3 del libro prenatal). No uses hígado como fuente de hierro sin indicación.
+- Hierbas: no uses cohosh azul, ginseng ni hierbas para inducir el parto (capítulo 14 del libro prenatal).
+- Jengibre: ver la sección 19 (1 g/día en los ensayos de náusea).
+- Omega-3: la sección 2 usa aceite de pescado; mercurio y dosis en embarazo no buscados.
+- Pescado crudo y ceviche: no en el embarazo (el limón no pasteuriza).
+
+## 21. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1136,7 +1254,13 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Canela: solo de Ceilán, por la cumarina de la cassia.
 - Nuez moscada: solo en pizcas; hay intoxicaciones con 14–21 g.
 
-## 21. Huecos y log de búsqueda
+**Embarazo (sección 20)**
+
+- Las recetas no reemplazan el ácido fólico ni el hierro del control prenatal.
+- Solo lácteos pasteurizados; hojas crudas bien lavadas; sin germinados crudos.
+- Separa los lácteos y el té de la comida rica en hierro.
+
+## 22. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1151,6 +1275,7 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Cordicepina por gramo del cordyceps comercial en Colombia y estabilidad de la cordicepina al calor.
 - Contenido de hericenonas y erinacinas del polvo comercial y su estabilidad al calor.
 - Pérdida de terpenos del jengibre y del cardamomo en leche a 60–70 °C, y equivalencia entre 1 g en bebida y 1 g en cápsulas.
+- Hierro de las lentejas, vitamina C de la guayaba y calcio por porción de la panna cotta (sección 20).
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1207,5 +1332,7 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 | Hericium erinaceus toxicity; Hericium erinaceus hypersensitivity; hericenones erinacines content cooking (22-11-2026) | 53 / 0 / 0 | Mahadevan 2025, Lee 2019, Li 2018 (sin dato de estabilidad al calor) |
 | ginger nausea vomiting pregnancy randomized trial capsules; gingerol shogaol heat drying conversion (22-11-2026) | 11 / 1 | Ozgoli 2009, Pongrojpaw 2007, Sripramote 2003, Ghasemzadeh 2018 |
 | Búsquedas de odorantes, salud y seguridad de 12 especias (22-11-2026): ver el log del documento de especias | — | Pang 2017, Mishra 2022, Sandner 2018, Viljoen 2014, Li 2024, Tan 2021, Yeh 2014, Iwata 2016 |
+| calcium supplementation pregnancy preeclampsia Cochrane; daily oral iron supplementation pregnancy Cochrane; periconceptional folic acid neural tube defects Cochrane (22-11-2026) | 57 / 13 / 14 | Hofmeyr 2018, Palacios 2024, Peña-Rosas 2015, De-Regil 2015 |
+| ascorbic acid non-heme iron absorption meal; calcium inhibits iron absorption meal; folate retention cooking spinach; Listeria pregnancy dairy (22-11-2026) | 12 / 29 / 1 / 1 | Teucher 2004, Lynch 1980, Zijp 2000, McKillop 2002, Disson 2025 |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.

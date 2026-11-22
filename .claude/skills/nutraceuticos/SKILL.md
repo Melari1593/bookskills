@@ -13,7 +13,7 @@ Esta skill tiene cuatro partes:
 
 | Parte | Archivo | Contenido |
 |---|---|---|
-| Recetas y evidencia | `references/recetas-evidencia.md` | 19 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
+| Recetas y evidencia | `references/recetas-evidencia.md` | 20 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
 | Grafo del libro | `references/grafo_flavonoids.json`, `assets/grafo_flavonoids_as_nutraceuticals.html`, `scripts/ruta.py` | *Flavonoids as Nutraceuticals* (Kesharwani et al., Apple Academic Press, 2024): 13 capítulos, 184 secciones, 43 conceptos, 84 prerrequisitos |
 | Grafo del libro | `references/grafo_functional_foods.json`, `assets/grafo_functional_foods_chronic_diseases.html`, `scripts/ruta.py --grafo cronicas` | *Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I* (Mohan, Abdollahi y Pathak, eds., CRC Press, 2023): 15 capítulos, 189 secciones, 50 conceptos, 67 prerrequisitos |
 | Grafo del libro | `references/grafo_prenatal.json`, `assets/grafo_nutraceuticos_prenatal_materno.html`, `scripts/ruta.py --grafo prenatal` | *Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health* (Bhatt, Miraghajani, Pathak y otros, eds., CRC Press): 19 capítulos, 195 secciones, 56 conceptos, 71 prerrequisitos |
@@ -43,8 +43,9 @@ Responde en español. Usa frases cortas, una instrucción por frase y la condici
 | 17 | Cordyceps con cacao | Bebida fría de cacao suspendida con xantana | Arsénico en *O. sinensis* silvestre; inmunosupresores y trasplante |
 | 18 | Melena de león | Cubos de caldo gelificado con agar | Alergia a hongos; micelio sobre cereal (gluten) |
 | 19 | Especias (jengibre, cardamomo, canela de Ceilán) | Leche tibia especiada suspendida con xantana | Jengibre con warfarina; cumarina de la cassia |
+| 20 | Embarazo: hierro, calcio y folato | Salsa fría de guayaba sobre lentejas; panna cotta láctea; salsa verde cruda | No reemplaza ácido fólico ni hierro; lácteos pasteurizados (Listeria) |
 
-Las secciones 20 y 21 traen la tabla de seguridad por situación del paciente, los datos no confirmados y el log de búsqueda de PubMed.
+Las secciones 21 y 22 traen la tabla de seguridad por situación del paciente, los datos no confirmados y el log de búsqueda de PubMed.
 
 **Especias.** El perfil aromático, la evidencia de salud y la seguridad de 12 especias están en el documento [Especias: odorantes clave, salud y seguridad](https://claude.ai/artifact/4CDxKYH1jZVe7VdBJ5gYms). Sus odorantes están en `odorantes-db` (lote 12); consúltalos con `python3 odorantes-db/scripts/consulta.py jengibre cardamomo`.
 
@@ -55,7 +56,7 @@ Las secciones 20 y 21 traen la tabla de seguridad por situación del paciente, l
 1. **Si el compuesto está en el documento:** lee su sección completa antes de dar cifras. Copia gramos, porcentajes y citas tal como están. No des concentraciones de memoria.
 2. **Si piden la receta:** entrega objetivo, tabla de ingredientes, proceso numerado, "por qué funciona", tabla de fallas y seguridad.
 3. **Si piden evidencia:** separa los niveles de confianza (alta, moderada, baja, preclínica). Cita con enlace DOI. Marca *(interpretación)* lo que no viene de una fuente.
-4. **Si la pregunta es clínica:** revisa primero la sección 20 (seguridad por situación del paciente). Di cuándo la receta da dosis de alimento y cuándo da dosis de ensayo.
+4. **Si la pregunta es clínica:** revisa primero la sección 21 (seguridad por situación del paciente). Di cuándo la receta da dosis de alimento y cuándo da dosis de ensayo.
 5. **Si el compuesto no está en el documento:** sigue el método de abajo y ofrece agregarlo como sección nueva.
 
 ## Método para agregar un nutracéutico nuevo
