@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "The Five Elements Cookbook como grafo",
-  "subtitle": "Zoey Xinyi Gong · Fundamentos de la terapia alimentaria china, 50 hierbas y 55 recetas, con sus prerrequisitos",
+  "subtitle": "Zoey Xinyi Gong · Fundamentos de la terapia alimentaria china, 50 hierbas y 55 recetas, con sus prerrequisitos y alertas de evidencia (2026-11-21)",
   "itemLabel": "Concepto clave",
   "itemLabelPlural": "Conceptos",
   "resourceLabel": "Tabla",
@@ -522,22 +522,26 @@
     {
      "num": "13.1",
      "title": "Dátil chino (azufaifa) · 枣 Zao",
-     "summary": "Tonifica el Qi. Naturaleza neutra; sabor dulce; meridianos: Bazo, Estómago. Dosis máxima diaria según el libro: 3 a 12 dátiles al día."
+     "summary": "Tonifica el Qi. Naturaleza neutra; sabor dulce; meridianos: Bazo, Estómago. Dosis máxima diaria según el libro: 3 a 12 dátiles al día.",
+     "caution": "Respaldada como alimento. En la revisión del 2026-11-15 no aparecieron interacciones graves publicadas. Sus efectos metabólicos (triglicéridos y glucemia en diabetes tipo 2) son pequeños y de baja calidad. Fuente: healing-herbal-infusions/evidencia/jujube-higo.md."
     },
     {
      "num": "13.2",
      "title": "Miel · 蜂蜜 Feng Mi",
-     "summary": "Tonifica el Qi. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Bazo, Hígado. Dosis máxima diaria según el libro: no indicada."
+     "summary": "Tonifica el Qi. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Bazo, Hígado. Dosis máxima diaria según el libro: no indicada.",
+     "caution": "Riesgo omitido. No des miel ni recetas con miel a menores de 12 meses: hay riesgo de botulismo infantil, y la miel es el único alimento confirmado como causa (CDPH IBTPP; Aricò 2026, doi:10.1111/apa.70538). Afecta a 15 recetas del libro que llevan miel."
     },
     {
      "num": "13.3",
      "title": "Raíz de astrágalo (huang qi) · 黄芪 Huang Qi",
-     "summary": "Tonifica el Qi. Naturaleza ligeramente tibia; sabor dulce; meridianos: Pulmón, Bazo. Dosis máxima diaria según el libro: 9 a 30 g al día."
+     "summary": "Tonifica el Qi. Naturaleza ligeramente tibia; sabor dulce; meridianos: Pulmón, Bazo. Dosis máxima diaria según el libro: 9 a 30 g al día.",
+     "caution": "Imprecisa. No hay evidencia confiable para ninguna condición. Evítalo en enfermedades autoinmunes y con inmunosupresores: en un paciente bajó el tacrolimus cerca de un 50 %. En animales fue tóxico para el feto: no en el embarazo. Puede bajar la presión arterial (NCCIH 2025; MSKCC 2026; healing-herbal-infusions)."
     },
     {
      "num": "13.4",
      "title": "Raíz de regaliz chino · 甘草 Gan Cao",
-     "summary": "Tonifica el Qi. Naturaleza tibia; sabor dulce; meridianos: Pulmón, Corazón, Pericardio, Triple calentador, Bazo, Estómago, Hígado, Vesícula, Riñón, Intestino delgado, Intestino grueso. Dosis máxima diaria según el libro: hasta 30 g al día."
+     "summary": "Tonifica el Qi. Naturaleza tibia; sabor dulce; meridianos: Pulmón, Corazón, Pericardio, Triple calentador, Bazo, Estómago, Hígado, Vesícula, Riñón, Intestino delgado, Intestino grueso. Dosis máxima diaria según el libro: hasta 30 g al día.",
+     "caution": "Riesgo omitido. El libro admite hasta 30 g de raíz al día. Con 100 mg o más de ácido glicirrícico al día por tiempo prolongado, la presión sistólica sube 5,45 mmHg y el potasio baja 0,33 mmol/L, con relación dosis-respuesta (Penninkilampi 2017, metaanálisis de 18 estudios, doi:10.1038/jhh.2017.45). La glicirricina causa seudohiperaldosteronismo (Ceccuzzi 2023, doi:10.3390/nu15183866). El grafo no da el contenido de glicirricina de la raíz, que varía. No lo uses con hipertensión, enfermedad cardiaca o renal, potasio bajo, diuréticos, digoxina o corticoides, ni en el embarazo."
     },
     {
      "num": "13.5",
@@ -547,7 +551,8 @@
     {
      "num": "13.6",
      "title": "Baya de goji · 枸杞子 Gou Qi Zi",
-     "summary": "Tonifica la Sangre. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Hígado, Riñón. Dosis máxima diaria según el libro: 10 a 20 g al día."
+     "summary": "Tonifica la Sangre. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Hígado, Riñón. Dosis máxima diaria según el libro: 10 a 20 g al día.",
+     "caution": "Respaldada con riesgos añadidos. Hay al menos cuatro casos publicados de INR elevado, algunos con sangrado, tras consumir té, jugo o vino de goji con warfarina (Lam 2001; Leung 2008; Rivera 2012; Zhang 2015). La goji es un alérgeno por proteína de transferencia de lípidos (LTP), con reactividad cruzada con durazno, tomate, frutos secos y polen de artemisa (Larramendi 2012; Carnés 2013, doi:10.1016/j.foodchem.2012.10.005). Fuente: super-powders-grafo y healing-herbal-infusions/evidencia/goji.md."
     },
     {
      "num": "13.7",
@@ -562,7 +567,8 @@
     {
      "num": "13.9",
      "title": "Raíz de angélica (dang gui) · 当归 Dang Gui",
-     "summary": "Tonifica la Sangre. Naturaleza tibia; sabor dulce, aromático, amargo; meridianos: Corazón, Bazo, Hígado. Dosis máxima diaria según el libro: 3 a 15 g al día."
+     "summary": "Tonifica la Sangre. Naturaleza tibia; sabor dulce, aromático, amargo; meridianos: Corazón, Bazo, Hígado. Dosis máxima diaria según el libro: 3 a 15 g al día.",
+     "caution": "Riesgo omitido. Hay reportes de sangrado al combinar dang gui con warfarina (Fugh-Berman 2000, doi:10.1016/S0140-6736(99)06457-0; Milić 2014, PMID 25233607). Con anticoagulantes o antiagregantes, evítalo o controla el INR. En esta búsqueda no encontré datos de seguridad en el embarazo."
     }
    ]
   },
@@ -585,7 +591,8 @@
     {
      "num": "14.3",
      "title": "Ginseng americano · 西洋参 Xi Yang Shen",
-     "summary": "Tonifica el Yin. Naturaleza fría; sabor dulce, ligeramente amargo; meridianos: Pulmón, Corazón, Riñón. Dosis máxima diaria según el libro: 3 a 9 g al día."
+     "summary": "Tonifica el Yin. Naturaleza fría; sabor dulce, ligeramente amargo; meridianos: Pulmón, Corazón, Riñón. Dosis máxima diaria según el libro: 3 a 9 g al día.",
+     "caution": "Imprecisa. Con warfarina, el ginseng americano redujo el efecto anticoagulante en voluntarios sanos (Yuan 2004). La revisión Cochrane de Geng 2010 no halló mejora cognitiva convincente en personas sanas. Fuente: super-powders-grafo."
     },
     {
      "num": "14.4",
@@ -638,12 +645,14 @@
     {
      "num": "15.6",
      "title": "Nuez de ginkgo · 白果 Bai Guo",
-     "summary": "Estabiliza y astringe. Naturaleza neutra; sabor dulce, amargo; meridianos: Pulmón, Riñón. Dosis máxima diaria según el libro: 5 a 10 nueces al día."
+     "summary": "Estabiliza y astringe. Naturaleza neutra; sabor dulce, amargo; meridianos: Pulmón, Riñón. Dosis máxima diaria según el libro: 5 a 10 nueces al día.",
+     "caution": "Riesgo omitido. La nuez de ginkgo tiene ginkgotoxina (4'-O-metilpiridoxina), una antivitamina B6 que causa convulsiones. Una niña de 2 años convulsionó 9 horas después de comer muchas nueces (Kajiyama 2002, doi:10.1542/peds.109.2.325). Una adulta de 51 años tuvo una crisis tonicoclónica con vitamina B6 baja después de comer muchas (Jang 2015, doi:10.14581/jer.15018). La semilla fresca también tiene ácido ginkgólico y glucósidos cianogénicos (Boateng 2022, doi:10.1016/j.foodchem.2022.132408). No la des a niños. Siempre cocida. No pases de la dosis del libro (5 a 10 nueces). Interpretación: no la uses en epilepsia."
     },
     {
      "num": "15.7",
      "title": "Nuez moscada · 肉豆蔻 Rou Dou Kou",
-     "summary": "Estabiliza y astringe. Naturaleza tibia; sabor aromático; meridianos: Bazo, Estómago, Intestino grueso. Dosis máxima diaria según el libro: 9 g enteros o 3 g molidos al día."
+     "summary": "Estabiliza y astringe. Naturaleza tibia; sabor aromático; meridianos: Bazo, Estómago, Intestino grueso. Dosis máxima diaria según el libro: 9 g enteros o 3 g molidos al día.",
+     "caution": "Riesgo omitido. La nuez moscada tiene miristicina y elemicina, con efectos psicoactivos y anticolinérgicos en dosis grandes. Hay intoxicaciones documentadas: 236 consultas en Suiza en 10 años (Bleisch 2026, doi:10.1016/j.toxrep.2026.102274), un delirio que requirió intubación (Casale 2023, doi:10.7759/cureus.46286) y un caso por cantidad excesiva al cocinar (Ichibayashi 2024, doi:10.7759/cureus.71840). Esos alquenilbencenos son posibles genotóxicos (Götz 2022, doi:10.3390/foods11131988). No verifiqué el umbral tóxico en gramos. Interpretación: 9 g enteros o 3 g molidos al día es mucho más que una pizca culinaria; no la uses como hierba diaria."
     },
     {
      "num": "15.8",
@@ -663,12 +672,14 @@
     {
      "num": "15.11",
      "title": "Kombu · 昆布 Kun Bu",
-     "summary": "Resuelve la flema y calma la tos. Naturaleza fría; sabor salado; meridianos: Estómago, Hígado, Riñón. Dosis máxima diaria según el libro: 15 g secos al día."
+     "summary": "Resuelve la flema y calma la tos. Naturaleza fría; sabor salado; meridianos: Estómago, Hígado, Riñón. Dosis máxima diaria según el libro: 15 g secos al día.",
+     "caution": "Riesgo omitido. La dosis del libro, 15 g secos al día, es la misma que en un ensayo con adultos japoneses sanos subió la TSH por encima de lo normal en algunos en 7 a 10 días. Con 15 g diarios durante 55 a 87 días la TSH siguió alta. Se normalizó entre 7 y 40 días después de suspender (Miyai 2008, doi:10.1507/endocrj.k08e-125). Los consumidores habituales de algas en Noruega tenían un yodo urinario mediano de 1200 µg/L (Aakre 2020, doi:10.3390/nu12113483). Usa el kombu para dar sabor al caldo, no como hierba diaria. Interpretación: evítalo en enfermedad tiroidea, embarazo y lactancia sin control médico."
     },
     {
      "num": "15.12",
      "title": "Semilla de albaricoque · 杏仁 Xing Ren",
-     "summary": "Resuelve la flema y calma la tos. Naturaleza ligeramente tibia; sabor amargo, ligeramente tóxico; meridianos: Pulmón, Intestino grueso. Dosis máxima diaria según el libro: 3 a 10 g al día; cocinarla bien, cruda y en exceso puede ser tóxica."
+     "summary": "Resuelve la flema y calma la tos. Naturaleza ligeramente tibia; sabor amargo, ligeramente tóxico; meridianos: Pulmón, Intestino grueso. Dosis máxima diaria según el libro: 3 a 10 g al día; cocinarla bien, cruda y en exceso puede ser tóxica.",
+     "caution": "Imprecisa. El libro advierte que cruda y en exceso es tóxica, pero su dosis (3 a 10 g al día) es alta. La EFSA fijó una dosis aguda de referencia para el cianuro de 20 µg/kg: un adulto llega a ella con 3 semillas pequeñas de albaricoque crudo (370 mg) y un niño pequeño con media semilla (EFSA 2016). Cocinarla no la vuelve segura del todo: sin la enzima de la planta, las bacterias del colon aún liberan cianuro de la amigdalina (Cressey 2019, doi:10.1016/j.fct.2019.01.002). La amigdalina no tiene beneficio en cáncer y tiene riesgo de intoxicación por cianuro (Cochrane, Milazzo 2015, doi:10.1002/14651858.CD005476.pub4). No la des a niños. El grafo no distingue entre semilla dulce y amarga."
     }
    ]
   },
@@ -681,7 +692,8 @@
     {
      "num": "16.1",
      "title": "Diente de león · 蒲公英 Pu Gong Ying",
-     "summary": "Aclara el Calor. Naturaleza fría; sabor amargo, dulce; meridianos: Estómago, Hígado. Dosis máxima diaria según el libro: 9 a 30 g secos al día."
+     "summary": "Aclara el Calor. Naturaleza fría; sabor amargo, dulce; meridianos: Estómago, Hígado. Dosis máxima diaria según el libro: 9 a 30 g secos al día.",
+     "caution": "Matiz. La EMA da el diente de león desde los 12 años. No lo uses con cálculos biliares, colangitis o enfermedad hepática (EMA/HMPC/475726/2020; healing-herbal-infusions)."
     },
     {
      "num": "16.2",
@@ -711,12 +723,14 @@
     {
      "num": "16.7",
      "title": "Jengibre · 姜 Jiang",
-     "summary": "Libera el exterior. Naturaleza tibia; sabor aromático; meridianos: Pulmón, Bazo, Estómago. Dosis máxima diaria según el libro: 30 g al día."
+     "summary": "Libera el exterior. Naturaleza tibia; sabor aromático; meridianos: Pulmón, Bazo, Estómago. Dosis máxima diaria según el libro: 30 g al día.",
+     "caution": "Matiz. En 171 pacientes con warfarina, el jengibre se asoció a más sangrado autorreferido (OR 3,20; dato observacional). Con warfarina, controla el INR. Causa pirosis con frecuencia (1 a 10 %): no lo uses para tratar la acidez. En el embarazo, la EMA prefiere evitarlo (EMA/HMPC/885789/2022; healing-herbal-infusions)."
     },
     {
      "num": "16.8",
      "title": "Menta · 薄荷 Bo He",
-     "summary": "Libera el exterior. Naturaleza fresca; sabor aromático; meridianos: Pulmón, Hígado. Dosis máxima diaria según el libro: 6 g secos o 30 g frescos al día."
+     "summary": "Libera el exterior. Naturaleza fresca; sabor aromático; meridianos: Pulmón, Hígado. Dosis máxima diaria según el libro: 6 g secos o 30 g frescos al día.",
+     "caution": "Matiz. La EMA dice que las personas con reflujo deben evitar la hoja de menta, porque puede aumentar la pirosis. La EMA prohíbe los preparados de aceite de menta en menores de 2 años (EMA/HMPC/572705/2014 Rev. 1; EMA/HMPC/522410/2013 Rev. 1; healing-herbal-infusions)."
     },
     {
      "num": "16.9",
@@ -734,12 +748,14 @@
     {
      "num": "17.1",
      "title": "Clavo de olor · 丁香 Ding Xiang",
-     "summary": "Calienta el interior. Naturaleza tibia; sabor aromático; meridianos: Bazo, Estómago, Riñón. Dosis máxima diaria según el libro: 2 a 5 g enteros o 1 a 1.5 g molidos al día."
+     "summary": "Calienta el interior. Naturaleza tibia; sabor aromático; meridianos: Bazo, Estómago, Riñón. Dosis máxima diaria según el libro: 2 a 5 g enteros o 1 a 1.5 g molidos al día.",
+     "caution": "Matiz. El clavo entero en la comida no tiene esta alerta. El aceite de clavo (eugenol) ingerido por un niño pequeño puede causar coma, convulsiones e insuficiencia hepática; la EMA no lo recomienda en menores de 18 años (EMA/HMPC/534924/2010; healing-herbal-infusions)."
     },
     {
      "num": "17.2",
      "title": "Corteza de canela · 肉桂 Rou Gui",
-     "summary": "Calienta el interior. Naturaleza caliente; sabor dulce, aromático; meridianos: Corazón, Bazo, Hígado, Riñón. Dosis máxima diaria según el libro: 4.5 g enteros o 2 g molidos al día."
+     "summary": "Calienta el interior. Naturaleza caliente; sabor dulce, aromático; meridianos: Corazón, Bazo, Hígado, Riñón. Dosis máxima diaria según el libro: 4.5 g enteros o 2 g molidos al día.",
+     "caution": "Riesgo omitido. La corteza rou gui es canela cassia, que tiene de 1880 a 3260 mg/kg de cumarina (AGES). Los 2 g molidos al día del libro dan unos 3,8 a 6,5 mg de cumarina. La ingesta tolerable es 0,1 mg/kg al día (EFSA 2004; BfR): 6 mg para una persona de 60 kg y 2 mg para un niño de 20 kg. Un adulto llega al límite y un niño lo supera. La canela de Ceilán contiene muy poca. Fuente: super-powders-grafo (A10)."
     },
     {
      "num": "17.3",
@@ -767,12 +783,14 @@
     {
      "num": "18.1",
      "title": "Reishi (ling zhi) · 灵芝 Ling Zhi",
-     "summary": "Calma el Espíritu. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Corazón, Hígado. Dosis máxima diaria según el libro: 15 g secas en rodajas al día."
+     "summary": "Calma el Espíritu. Naturaleza neutra; sabor dulce; meridianos: Pulmón, Corazón, Hígado. Dosis máxima diaria según el libro: 15 g secas en rodajas al día.",
+     "caution": "Imprecisa. La revisión Cochrane de Jin 2016 no halló evidencia suficiente para usarlo contra el cáncer. Hay casos de hepatitis con reishi en polvo, uno mortal (Wanmuang 2007). Fuente: super-powders-grafo."
     },
     {
      "num": "18.2",
      "title": "Semilla de azufaifo ácido (suan zao ren) · 酸枣仁 Suan Zao Ren",
-     "summary": "Calma el Espíritu. Naturaleza neutra; sabor ácido, dulce; meridianos: Corazón, Bazo, Hígado, Vesícula. Dosis máxima diaria según el libro: 20 g al día."
+     "summary": "Calma el Espíritu. Naturaleza neutra; sabor ácido, dulce; meridianos: Corazón, Bazo, Hígado, Vesícula. Dosis máxima diaria según el libro: 20 g al día.",
+     "caution": "Respaldada con matices. La semilla de azufaifo ácido mejora el sueño percibido a corto plazo, con evidencia de baja calidad. El fruto de jujube no tiene ese efecto demostrado. Fuente: healing-herbal-infusions/evidencia/jujube-higo.md."
     },
     {
      "num": "18.3",
@@ -782,7 +800,8 @@
     {
      "num": "18.4",
      "title": "Baya de espino (shan zha) · 山楂 Shan Zha",
-     "summary": "Reduce el estancamiento de alimentos. Naturaleza ligeramente tibia; sabor ácido, dulce; meridianos: Bazo, Estómago, Hígado. Dosis máxima diaria según el libro: 30 g secos o 100 g frescos al día."
+     "summary": "Reduce el estancamiento de alimentos. Naturaleza ligeramente tibia; sabor ácido, dulce; meridianos: Bazo, Estómago, Hígado. Dosis máxima diaria según el libro: 30 g secos o 100 g frescos al día.",
+     "caution": "Matiz. El espino puede sumar efecto a los fármacos cardiacos. Úsalo solo si un médico descartó enfermedad cardiaca. Consulta urgente si hay dolor torácico, disnea o edema (EMA/HMPC/159075/2014; healing-herbal-infusions). El libro usa *Crataegus pinnatifida*; casi toda la evidencia es de *C. monogyna* y *C. laevigata*."
     },
     {
      "num": "18.5",
@@ -802,12 +821,14 @@
     {
      "num": "18.8",
      "title": "Azafrán · 西红花 Xi Hong Hua",
-     "summary": "Regula la Sangre. Naturaleza neutra a tibia; sabor aromático, dulce; meridianos: Corazón, Hígado. Dosis máxima diaria según el libro: 1.5 g al día de azafrán; 10 g al día de cártamo."
+     "summary": "Regula la Sangre. Naturaleza neutra a tibia; sabor aromático, dulce; meridianos: Corazón, Hígado. Dosis máxima diaria según el libro: 1.5 g al día de azafrán; 10 g al día de cártamo.",
+     "caution": "Sin datos de seguridad a esa dosis. Los ensayos en depresión usan extractos estandarizados (Lopresti 2014, doi:10.1002/hup.2434; Shafiee 2025, doi:10.1093/nutrit/nuae076). Una revisión advierte que su perfil toxicológico genera dudas (Kenda 2022, doi:10.3390/molecules27186021). En esta búsqueda no encontré datos que respalden 1,5 g de azafrán ni 10 g de cártamo al día. Interpretación: usa cantidades culinarias (unas hebras) y evita las dosis medicinales en el embarazo."
     },
     {
      "num": "18.9",
      "title": "Cúrcuma · 姜黄 Jiang Huang",
-     "summary": "Regula la Sangre. Naturaleza tibia; sabor aromático, amargo; meridianos: Bazo, Estómago, Hígado. Dosis máxima diaria según el libro: no indicada."
+     "summary": "Regula la Sangre. Naturaleza tibia; sabor aromático, amargo; meridianos: Bazo, Estómago, Hígado. Dosis máxima diaria según el libro: no indicada.",
+     "caution": "Matiz. La cúrcuma como especia en la comida no se asocia a daño hepático. Los suplementos de cúrcuma o curcumina, sobre todo con pimienta negra (piperina), sí: Lombardi 2020 en Italia; red DILIN, 10 casos y 1 muerte (Halegoua-DeMarzio 2022); advertencia de la TGA en 2023. Fuente: super-powders-grafo."
     }
    ]
   },
@@ -865,7 +886,8 @@
     {
      "num": "19.10",
      "title": "Rainbow Stir-Fry with Ginkgo Nuts",
-     "summary": "Funciones: salud respiratoria. Energética: neutra. Meridianos: Pulmón, Estómago, Riñón. Clima: frío, cálido, húmedo, seco. Hierbas del libro: Pimienta negra, Ñame chino (shan yao), Jengibre, Nuez de ginkgo, Dátil chino (azufaifa)."
+     "summary": "Funciones: salud respiratoria. Energética: neutra. Meridianos: Pulmón, Estómago, Riñón. Clima: frío, cálido, húmedo, seco. Hierbas del libro: Pimienta negra, Ñame chino (shan yao), Jengibre, Nuez de ginkgo, Dátil chino (azufaifa).",
+     "caution": "Matiz. Lleva nuez de ginkgo (15.6): no la sirvas a niños y cuece bien las nueces."
     },
     {
      "num": "19.11",
@@ -936,7 +958,8 @@
     {
      "num": "21.3",
      "title": "Lotus Leaf Steamed Sticky Rice with Chicken and Ginkgo Nuts",
-     "summary": "Funciones: ayuda a la digestión, calmante. Energética: neutra. Meridianos: Corazón, Bazo, Estómago, Riñón. Clima: frío, cálido, húmedo, seco. Hierbas del libro: Frijol adzuki, Semilla de coix (lágrimas de Job), Fox nut (semilla de euryale), Jengibre, Nuez de ginkgo, Hoja de loto, Semilla de loto."
+     "summary": "Funciones: ayuda a la digestión, calmante. Energética: neutra. Meridianos: Corazón, Bazo, Estómago, Riñón. Clima: frío, cálido, húmedo, seco. Hierbas del libro: Frijol adzuki, Semilla de coix (lágrimas de Job), Fox nut (semilla de euryale), Jengibre, Nuez de ginkgo, Hoja de loto, Semilla de loto.",
+     "caution": "Matiz. Lleva nuez de ginkgo (15.6): no la sirvas a niños y cuece bien las nueces."
     },
     {
      "num": "21.4",
@@ -946,7 +969,8 @@
     {
      "num": "21.5",
      "title": "Spiced Lily Bulb and Apricot Kernel Pho",
-     "summary": "Funciones: salud respiratoria. Energética: tibia. Meridianos: Pulmón. Clima: seco. Hierbas del libro: Cáscara de mandarina añeja (chen pi), Semilla de albaricoque, Anís estrellado, Corteza de canela, Clavo de olor, Jengibre, Kombu, Bulbo de lirio (bai he), Menta."
+     "summary": "Funciones: salud respiratoria. Energética: tibia. Meridianos: Pulmón. Clima: seco. Hierbas del libro: Cáscara de mandarina añeja (chen pi), Semilla de albaricoque, Anís estrellado, Corteza de canela, Clavo de olor, Jengibre, Kombu, Bulbo de lirio (bai he), Menta.",
+     "caution": "Matiz. Lleva semilla de albaricoque y kombu. Revisa sus alertas (15.12 y 15.11). No la sirvas a niños."
     },
     {
      "num": "21.6",
@@ -999,7 +1023,8 @@
     {
      "num": "22.6",
      "title": "Adzuki and Coix Seed Porridge with Snow Fungus",
-     "summary": "Funciones: ayuda a la digestión. Energética: neutra. Meridianos: Bazo, Estómago. Clima: húmedo. Hierbas del libro: Frijol adzuki, Semilla de coix (lágrimas de Job), Miel, Fruta del monje (luo han guo), Poria (fu ling)."
+     "summary": "Funciones: ayuda a la digestión. Energética: neutra. Meridianos: Bazo, Estómago. Clima: húmedo. Hierbas del libro: Frijol adzuki, Semilla de coix (lágrimas de Job), Miel, Fruta del monje (luo han guo), Poria (fu ling).",
+     "caution": "Riesgo omitido. El hongo de nieve (tremella) remojado mucho tiempo o en mal estado puede contaminarse con *Burkholderia gladioli* pv. *cocovenenans*, que produce ácido bongkrékico, una toxina potencialmente mortal. Remójalo poco tiempo, en la nevera, y cocínalo enseguida. Desecha el que huela raro o esté baboso (Yang 2026, doi:10.3390/foods15101749; Ong 2026, doi:10.1080/15563650.2026.2673133). La miel de la receta: no en menores de 12 meses."
     },
     {
      "num": "22.7",
@@ -1042,7 +1067,8 @@
     {
      "num": "23.6",
      "title": "Saffron Mulled Wine",
-     "summary": "Funciones: tonifica Qi y Sangre, calienta. Energética: caliente. Meridianos: Corazón, Bazo, Hígado. Clima: frío, seco. Hierbas del libro: Raíz de angélica (dang gui), Anís estrellado, Corteza de canela, Clavo de olor, Baya de goji, Miel, Dátil chino (azufaifa), Azafrán."
+     "summary": "Funciones: tonifica Qi y Sangre, calienta. Energética: caliente. Meridianos: Corazón, Bazo, Hígado. Clima: frío, seco. Hierbas del libro: Raíz de angélica (dang gui), Anís estrellado, Corteza de canela, Clavo de olor, Baya de goji, Miel, Dátil chino (azufaifa), Azafrán.",
+     "caution": "Matiz. Es una bebida con alcohol: no en embarazo, lactancia, menores ni con medicamentos que interactúan con el alcohol. Además lleva dang gui (sangrado con warfarina), azafrán, canela cassia (cumarina), goji (warfarina) y miel."
     },
     {
      "num": "23.7",
@@ -1085,7 +1111,8 @@
     {
      "num": "24.2",
      "title": "Apricot Kernel Pear Jelly",
-     "summary": "Funciones: salud respiratoria, refresca, nutre el Yin. Energética: fresca. Meridianos: Pulmón, Estómago. Clima: cálido, seco. Hierbas del libro: Semilla de albaricoque, Raíz de glehnia (sha shen), Miel, Sello de Salomón (yu zhu)."
+     "summary": "Funciones: salud respiratoria, refresca, nutre el Yin. Energética: fresca. Meridianos: Pulmón, Estómago. Clima: cálido, seco. Hierbas del libro: Semilla de albaricoque, Raíz de glehnia (sha shen), Miel, Sello de Salomón (yu zhu).",
+     "caution": "Matiz. Lleva semilla de albaricoque (15.12) y miel. No la sirvas a niños ni a menores de 12 meses."
     },
     {
      "num": "24.3",

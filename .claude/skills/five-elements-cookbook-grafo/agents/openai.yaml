@@ -1,0 +1,11 @@
+interface:
+  display_name: Grafo de The Five Elements Cookbook
+  short_description: Explora la terapia alimentaria china, 50 hierbas y 55 recetas del libro, con alertas de evidencia
+  default_prompt: Usa $five-elements-cookbook-grafo para trazar qué leer antes del Apricot Kernel Pear Jelly y qué alertas tiene.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
