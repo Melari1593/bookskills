@@ -1,10 +1,10 @@
 # Nutracéuticos con gastronomía molecular: recetas y evidencia
 
-Documento de recetas y evidencia · actualizado 2026-11-21
+Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Quince preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Dieciséis preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -23,6 +23,7 @@ Quince preparaciones llevan un nutracéutico en una porción medida. La técnica
 | Camu camu liofilizado | Polvo higroscópico; vitamina C se degrada con calor y humedad | Shot frío suspendido con xantana | 1,5 g de polvo | Misma masa del ensayo de hígado graso; equivalencia no confirmada |
 | Aguaje liofilizado | Carotenoides liposolubles en polvo seco | Polvo de grasa con maltodextrina de tapioca | 1,6 g de polvo en 10 g | Baja (ver aguaje) |
 | Açaí | Antocianinas sensibles al calor; riesgo de Chagas oral | Crema fría con xantana; plato combinado | 95 g de pulpa pasteurizada | Baja: biomarcadores de estrés oxidativo y HDL en ensayos pequeños |
+| Brócoli | La cocción destruye la mirosinasa; hervir pierde glucorafanina | Crema tibia al vapor con mostaza parda añadida en frío, estabilizada con xantana | 200 g de brócoli + 1 g de mostaza parda | Baja: la mostaza cuadruplicó el sulforafano urinario; extractos de brotes con resultados mixtos en glucemia |
 
 **Reglas de uso en consulta**
 
@@ -816,7 +817,67 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - La crema lleva panela. En diabetes, cuenta la porción.
 - Las perlas son bocados redondos: riesgo de atragantamiento en niños pequeños.
 
-## 16. Seguridad para todas las preparaciones
+## 16. Brócoli: crema tibia con mostaza activada
+
+**Objetivo.** Una crema tibia y lisa que forma sulforafano a partir del brócoli cocido. Cada porción lleva 200 g de brócoli y 1 g de mostaza parda molida. Es la misma cantidad del ensayo cruzado en 12 adultos: con mostaza, el sulforafano excretado en orina subió de 9,8 a 44,7 µmol por g de creatinina, más de 4 veces ([Okunade 2018](https://doi.org/10.1002/mnfr.201700980)).
+
+**El problema.** El brócoli no tiene sulforafano. Tiene glucorafanina, y la enzima mirosinasa la convierte en sulforafano al cortar o masticar. La cocción desnaturaliza la mirosinasa ([Okunade 2018](https://doi.org/10.1002/mnfr.201700980)). Hervir y escaldar causan las mayores pérdidas de glucorafanina y sulforafano; el vapor corto y el microondas corto favorecen la conversión ([Sun 2021](https://doi.org/10.1016/j.foodchem.2021.130007)). El vapor fue el método de cocción con menor pérdida de glucosinolatos y de vitamina C ([Yuan 2009](https://doi.org/10.1631/jzus.B0920051)).
+
+**La técnica.** Cocina al vapor para conservar la glucorafanina. Después, en frío, añade una fuente de mirosinasa activa: la mostaza parda. La xantana y el aceite mantienen la crema lisa y sin separación.
+
+**Ingredientes** (2 porciones de unos 330 g)
+
+| Ingrediente | g | Concentración |
+| --- | --- | --- |
+| Brócoli (floretes y tallo pelado) | 400 | Base |
+| Agua | 240 | Base |
+| Aceite de oliva | 20 | Base |
+| Sal | 4 | Al gusto |
+| Goma xantana | 1,3 | 0,2 % de 664 g |
+| Mostaza parda en polvo (semilla molida, sin cocinar) | 2 | 1 g por porción |
+
+**Proceso**
+
+1. Corta el brócoli en trozos iguales. Pela el tallo y córtalo en rodajas finas.
+2. Cocina al vapor, tapado, hasta que el tallo ceda al cuchillo. No hiervas en agua. *(El tiempo, unos 4–5 min, es culinario; no viene de la fuente.)*
+3. Licua el brócoli con el agua, el aceite y la sal hasta que esté liso.
+4. Con la licuadora de inmersión en marcha, espolvorea la xantana. Licua 1 min.
+5. Deja enfriar la crema hasta 40 °C o menos. *(Interpretación: no encontré la temperatura de inactivación de la mirosinasa de la mostaza.)*
+6. Añade la mostaza. Licua 30 s.
+7. Deja reposar 10 min tapado. *(Interpretación: tiempo para que la enzima actúe; no confirmado.)*
+8. Sirve tibia. No vuelvas a hervir la crema.
+
+**Por qué funciona.** La mostaza aporta mirosinasa activa que la cocción del brócoli destruyó. La enzima convierte la glucorafanina conservada al vapor en sulforafano. En 11 personas con ileostomía, añadir semilla de mostaza a una sopa de brócoli multiplicó por 6 el sulforafano disponible para el colon ([Abukhabta 2021](https://doi.org/10.1007/s00394-020-02322-0)). Calentar el brócoli fresco a 60 °C antes de triturarlo también subió el sulforafano y bajó el nitrilo inactivo; a 70 °C o más, los floretes formaron menos de ambos ([Matusheski 2004](https://doi.org/10.1016/j.phytochem.2004.04.013)).
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Color verde oliva | Cocción larga | Saca del vapor cuando el tallo ceda al cuchillo |
+| Picor fuerte | Mostaza activa | Sirve con pan o con yogur; no bajes la mostaza si quieres la dosis del ensayo |
+| Crema granulosa | Tallo sin pelar o licuado corto | Pela el tallo y licua más tiempo |
+| Aceite separado | Xantana mal dispersa | Espolvoréala con la licuadora en marcha |
+| Crema muy espesa | Mucha fibra | Añade agua de 20 g en 20 g y recalcula la xantana al 0,2 % |
+
+**Evidencia clínica** (según PubMed)
+
+- **Baja (biodisponibilidad):** 200 g de brócoli cocido con 1 g de mostaza parda dieron más de 4 veces el sulforafano urinario que el brócoli solo, en 12 adultos sanos ([Okunade 2018](https://doi.org/10.1002/mnfr.201700980)). Es un biomarcador, no un desenlace clínico.
+- **Baja (glucemia):** en prediabetes, un extracto de brotes de brócoli por 12 semanas no cumplió el desenlace principal. La glucemia en ayunas bajó 0,2 mmol/L; hubo efectos gastrointestinales ([Dwibedi 2025](https://doi.org/10.1038/s41564-025-01932-w)). En diabetes tipo 2 con enfermedad renal crónica 3b–4, el extracto no cambió la glucemia, la insulina ni la HbA1c ([Avesani 2026](https://doi.org/10.1053/j.jrn.2026.08.009)). Un estudio previo describió menos glucemia en ayunas y HbA1c en diabetes tipo 2 con obesidad ([Axelsson 2017](https://doi.org/10.1126/scitranslmed.aah4477)).
+- **Grado no confirmado (autismo):** en 6 ensayos, el sulforafano mejoró los síntomas totales (DME −0,27), con eventos adversos similares al placebo ([Wang 2025](https://doi.org/10.17179/excli2025-8239)). El resumen no da la certeza GRADE.
+- **Baja (esquizofrenia):** en 4 ensayos (369 pacientes), no mejoró la PANSS total; hubo mejoras pequeñas en psicopatología general y en lípidos ([Kassar 2025](https://doi.org/10.1186/s12888-025-07515-7)).
+- **Baja (contaminantes):** en 291 adultos de Qidong, una bebida de brotes (600 µmol de glucorafanina y 40 µmol de sulforafano al día) subió la excreción de conjugados de benceno (61 %) y acroleína (23 %) ([Egner 2014](https://doi.org/10.1158/1940-6207.CAPR-14-0103)).
+- **Dosis.** La receta da dosis de alimento. Los ensayos usan extractos medidos en µmol. No confirmé la glucorafanina por 100 g del brócoli colombiano, así que no doy µmol por porción.
+- **Respuesta variable.** En prediabetes, los que respondieron tenían más bacterias intestinales capaces de convertir la glucorafanina ([Dwibedi 2025](https://doi.org/10.1038/s41564-025-01932-w)).
+
+**Seguridad**
+
+- **Tiroides:** una bebida con glucorafanina y sulforafano por 84 días no cambió TSH, T4 libre, tiroglobulina ni autoinmunidad tiroidea en 45 mujeres ([Chartoumpekis 2019](https://doi.org/10.1016/j.fct.2019.02.004)). En fase I, los extractos no alteraron transaminasas ni función tiroidea ([Shapiro 2006](https://doi.org/10.1207/s15327914nc5501_7)).
+- **Mostaza:** es alergeno de declaración obligatoria en la Unión Europea. Pregunta por alergia antes de usarla.
+- **Warfarina:** el brócoli aporta vitamina K. Mantén la ingesta constante y avisa si cambia *(interpretación; no busqué un estudio con brócoli)*.
+- **Brotes crudos:** los germinados se asocian con brotes de *Salmonella* y *E. coli* O157:H7 ([Kim 2009](https://doi.org/10.4315/0362-028x-72.4.856)). Esta receta usa brócoli cocido. No indiques brotes crudos en inmunosupresión, embarazo, niños pequeños ni mayores *(interpretación)*.
+- **Libro:** el capítulo 5 de *Applications of Functional Foods and Nutraceuticals for Chronic Diseases* trata el brócoli (sección 5.15 del grafo, p. 128).
+
+## 17. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -861,7 +922,13 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - Açaí: usa solo pulpa pasteurizada con registro sanitario. La pulpa casera y el jugo informal transmiten Chagas oral.
 - Polvos liofilizados: guarda en frasco hermético, con desecante, en frío y sin luz. Pide al proveedor el análisis del lote.
 
-## 17. Huecos y log de búsqueda
+**Brócoli**
+
+- Mostaza: pregunta por alergia antes de añadirla.
+- Warfarina: mantén constante la ingesta de brócoli y otras verduras verdes *(interpretación)*.
+- Brotes crudos: no los indiques en inmunosupresión ni embarazo. La receta usa brócoli cocido.
+
+## 18. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -872,6 +939,7 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - Plazos de conservación de las cuatro preparaciones.
 - Interacciones de omega-3, probióticos y moringa con anticoagulantes, y seguridad en embarazo: no buscados.
 - Contenido de taninos de la hoja de moringa.
+- Glucorafanina por 100 g del brócoli colombiano, temperatura de inactivación de la mirosinasa de la mostaza y tiempo de reposo de la crema.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -915,5 +983,9 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 | buriti powder drying carotenoids | 2 | Fuzetti 2024 |
 | acai Euterpe oleracea randomized clinical trial | 9 | Aranha 2020, de Liz 2020, Kim 2018, Alqurashi 2016, dos Reis 2024 |
 | acai oral transmission Chagas Trypanosoma cruzi outbreak; acai pulp pasteurization Trypanosoma cruzi inactivation; acai anthocyanins degradation heat | 17 / 1 / 2 | Faier-Pereira 2024, Santana 2019, Silva Amorim 2023, Silva 2025 |
+| sulforaphane broccoli sprout randomized controlled trial; sulforaphane meta-analysis (22-11-2026) | 39 / 15 | Dwibedi 2025, Avesani 2026, Egner 2014, Wang 2025, Kassar 2025 |
+| myrosinase mustard seed cooked broccoli sulforaphane bioavailability; heating broccoli epithiospecifier protein (22-11-2026) | 2 / 1 | Okunade 2018, Abukhabta 2021, Matusheski 2004 |
+| steaming broccoli glucosinolate retention boiling loss; sulforaphane type 2 diabetes hepatic glucose (22-11-2026) | 2 / 2 | Sun 2021, Yuan 2009, Axelsson 2017 |
+| broccoli sprouts thyroid function randomized; broccoli sprouts Salmonella outbreak (22-11-2026) | 2 / 3 | Chartoumpekis 2019, Shapiro 2006, Kim 2009 |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
