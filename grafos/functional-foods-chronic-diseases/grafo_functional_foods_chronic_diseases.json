@@ -1,0 +1,1670 @@
+{
+ "meta": {
+  "title": "Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I como grafo",
+  "subtitle": "Mohan, Abdollahi y Pathak (eds.), CRC Press, 2023 · 15 capítulos, secciones y conceptos clave",
+  "language": "es",
+  "itemLabel": "Concepto clave",
+  "itemLabelPlural": "Conceptos",
+  "searchHint": "Buscar: vitamina D, esteroles, Alzheimer, 9.8…"
+ },
+ "blocks": {
+  "carga": {
+   "name": "Carga e integración de las ECNT"
+  },
+  "base": {
+   "name": "Bases: seguridad, eficacia y regulación"
+  },
+  "metab": {
+   "name": "Metabolismo, endocrino y cardiovascular"
+  },
+  "fuentes": {
+   "name": "Fuentes: vegetales y aceites"
+  },
+  "organos": {
+   "name": "Órganos y sistemas"
+  },
+  "neuro": {
+   "name": "Neurodegeneración"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Tendencias globales en el crecimiento de las enfermedades crónicas",
+   "page": 3,
+   "block": "carga",
+   "summary": "Panorama de la carga de las enfermedades crónicas no transmisibles: tendencias de población, globalización, pandemias, determinantes socioeconómicos y medicalización.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Introducción",
+     "page": 3
+    },
+    {
+     "num": "1.2",
+     "title": "Carga global y regional de enfermedad",
+     "page": 4,
+     "items": [
+      "carga_ecnt"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Tendencias de población",
+     "page": 5
+    },
+    {
+     "num": "1.4",
+     "title": "Relevancia de las enfermedades crónicas",
+     "page": 6
+    },
+    {
+     "num": "1.5",
+     "title": "Enfermedades crónicas y perspectiva humanística",
+     "page": 8
+    },
+    {
+     "num": "1.6",
+     "title": "Implicaciones de la globalización",
+     "page": 9
+    },
+    {
+     "num": "1.7",
+     "title": "Efecto de las pandemias",
+     "page": 10
+    },
+    {
+     "num": "1.8",
+     "title": "Era de la medicalización y el rol de enfermo",
+     "page": 12,
+     "items": [
+      "medicalizacion"
+     ]
+    },
+    {
+     "num": "1.9",
+     "title": "Conclusión",
+     "page": 13
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Importancia de las ciencias de la salud integrativas en la terapia de enfermedades crónicas",
+   "page": 17,
+   "block": "carga",
+   "summary": "Define la medicina integrativa y repasa las terapias complementarias (dietas, terapia nutricional, suplementos herbales, probióticos, mente-cuerpo, trabajo corporal) en el manejo de enfermedades crónicas.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Enfermedades crónicas",
+     "page": 17
+    },
+    {
+     "num": "2.2",
+     "title": "Medicina integrativa",
+     "page": 19,
+     "items": [
+      "med_integrativa"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Tipos de tratamientos complementarios",
+     "page": 20,
+     "items": [
+      "terapias_compl"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Tratamientos naturales: dietas",
+     "page": 20
+    },
+    {
+     "num": "2.5",
+     "title": "Terapia nutricional",
+     "page": 21
+    },
+    {
+     "num": "2.6",
+     "title": "Suplementos herbales",
+     "page": 22
+    },
+    {
+     "num": "2.7",
+     "title": "Probióticos",
+     "page": 23
+    },
+    {
+     "num": "2.8",
+     "title": "Prácticas mente-cuerpo",
+     "page": 23
+    },
+    {
+     "num": "2.9",
+     "title": "Trabajo corporal",
+     "page": 24
+    },
+    {
+     "num": "2.10",
+     "title": "Manejo integrativo de las enfermedades crónicas",
+     "page": 25,
+     "items": [
+      "manejo_integ"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Determinación de seguridad y eficacia en alimentos funcionales y nutracéuticos",
+   "page": 37,
+   "block": "base",
+   "summary": "Capítulo base: definiciones y clasificación, evaluación toxicológica, eficacia de isoflavonas de soya, esteroles y estanoles y fibras (β-glucano, inulina), y marco regulatorio con RDA.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Introducción",
+     "page": 38
+    },
+    {
+     "num": "3.2",
+     "title": "Nutracéuticos",
+     "page": 38,
+     "items": [
+      "nutraceutico"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Clasificación de los nutracéuticos",
+     "page": 39
+    },
+    {
+     "num": "3.4",
+     "title": "Modo de acción de los nutracéuticos",
+     "page": 39
+    },
+    {
+     "num": "3.5",
+     "title": "Alimento funcional",
+     "page": 39,
+     "items": [
+      "alim_funcional"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Beneficios de los alimentos funcionales",
+     "page": 41
+    },
+    {
+     "num": "3.7",
+     "title": "Seguridad de alimentos funcionales y nutracéuticos",
+     "page": 42
+    },
+    {
+     "num": "3.8",
+     "title": "Evaluación de la seguridad",
+     "page": 42,
+     "items": [
+      "toxicologia"
+     ]
+    },
+    {
+     "num": "3.9",
+     "title": "Toxicidad por dosis repetidas a largo plazo",
+     "page": 44
+    },
+    {
+     "num": "3.10",
+     "title": "Toxicidad aguda",
+     "page": 44
+    },
+    {
+     "num": "3.11",
+     "title": "Toxicología reproductiva",
+     "page": 44
+    },
+    {
+     "num": "3.12",
+     "title": "Eficacia de alimentos funcionales y nutracéuticos",
+     "page": 45
+    },
+    {
+     "num": "3.13",
+     "title": "Isoflavonas de soya",
+     "page": 46,
+     "items": [
+      "isoflavonas"
+     ]
+    },
+    {
+     "num": "3.14",
+     "title": "Esteroles y estanoles vegetales",
+     "page": 48,
+     "items": [
+      "esteroles"
+     ]
+    },
+    {
+     "num": "3.15",
+     "title": "Fibra: β-glucano e inulina",
+     "page": 51,
+     "items": [
+      "betaglucano"
+     ]
+    },
+    {
+     "num": "3.16",
+     "title": "Marco regulatorio",
+     "page": 55,
+     "items": [
+      "regulacion"
+     ]
+    },
+    {
+     "num": "3.17",
+     "title": "Lista de ingredientes de suplementos y RDA",
+     "page": 56
+    },
+    {
+     "num": "3.18",
+     "title": "Conclusión",
+     "page": 60
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Carga global de enfermedad y privación solar: fortificación masiva con vitamina D",
+   "page": 67,
+   "block": "base",
+   "summary": "Biología de la vitamina D y aporte de su deficiencia a la carga global de obesidad, diabetes, enfermedad cardiovascular, salud ósea, autoinmunidad, cáncer, depresión y COVID-19; estrategias de suplementación y fortificación.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Introducción",
+     "page": 68
+    },
+    {
+     "num": "4.2",
+     "title": "Carga global de enfermedad: principales contribuyentes",
+     "page": 69
+    },
+    {
+     "num": "4.3",
+     "title": "Biología de la vitamina D",
+     "page": 70,
+     "items": [
+      "vitd_biologia"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Funciones, evaluación, deficiencia y requerimiento",
+     "page": 72
+    },
+    {
+     "num": "4.5",
+     "title": "Contribución de la deficiencia de vitamina D a la carga global",
+     "page": 74,
+     "items": [
+      "vdd_gbd"
+     ]
+    },
+    {
+     "num": "4.6",
+     "title": "Obesidad",
+     "page": 74
+    },
+    {
+     "num": "4.7",
+     "title": "Diabetes mellitus",
+     "page": 75
+    },
+    {
+     "num": "4.8",
+     "title": "Enfermedad cardiovascular",
+     "page": 78
+    },
+    {
+     "num": "4.9",
+     "title": "Salud ósea",
+     "page": 80
+    },
+    {
+     "num": "4.10",
+     "title": "Trastornos autoinmunes",
+     "page": 82
+    },
+    {
+     "num": "4.11",
+     "title": "Cáncer",
+     "page": 84
+    },
+    {
+     "num": "4.12",
+     "title": "Depresión",
+     "page": 86
+    },
+    {
+     "num": "4.13",
+     "title": "COVID-19",
+     "page": 88
+    },
+    {
+     "num": "4.14",
+     "title": "Estrategias contra la deficiencia de vitamina D",
+     "page": 90
+    },
+    {
+     "num": "4.15",
+     "title": "Suplementación con vitamina D",
+     "page": 90
+    },
+    {
+     "num": "4.16",
+     "title": "Fortificación con vitamina D",
+     "page": 91,
+     "items": [
+      "fortificacion"
+     ]
+    },
+    {
+     "num": "4.17",
+     "title": "Comentarios finales",
+     "page": 93
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Vegetales funcionales y usos medicinales: cura y maldición",
+   "page": 117,
+   "block": "fuentes",
+   "summary": "Revisa vegetales comunes como fuente de compuestos funcionales y sus posibles efectos adversos: espinaca, hoja de curry, moringa, zanahoria, cebolla, ajo, jengibre, okra, berenjena, ají, habichuela, coliflor y brócoli.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Introducción",
+     "page": 117,
+     "items": [
+      "cura_maldicion"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "Vegetales como fuente",
+     "page": 118,
+     "items": [
+      "vegetal_funcional"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Espinaca",
+     "page": 119
+    },
+    {
+     "num": "5.4",
+     "title": "Murraya koenigii (hoja de curry)",
+     "page": 120
+    },
+    {
+     "num": "5.5",
+     "title": "Moringa oleifera",
+     "page": 120
+    },
+    {
+     "num": "5.6",
+     "title": "Zanahoria",
+     "page": 121
+    },
+    {
+     "num": "5.7",
+     "title": "Cebolla",
+     "page": 122
+    },
+    {
+     "num": "5.8",
+     "title": "Ajo",
+     "page": 122
+    },
+    {
+     "num": "5.9",
+     "title": "Jengibre",
+     "page": 123
+    },
+    {
+     "num": "5.10",
+     "title": "Okra",
+     "page": 124
+    },
+    {
+     "num": "5.11",
+     "title": "Berenjena",
+     "page": 125
+    },
+    {
+     "num": "5.12",
+     "title": "Ají",
+     "page": 125
+    },
+    {
+     "num": "5.13",
+     "title": "Habichuela",
+     "page": 126
+    },
+    {
+     "num": "5.14",
+     "title": "Coliflor",
+     "page": 127
+    },
+    {
+     "num": "5.15",
+     "title": "Brócoli",
+     "page": 128
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Suplementos y alimentos funcionales en trastornos endocrinos",
+   "page": 137,
+   "block": "metab",
+   "summary": "Nutracéuticos en síndrome metabólico, diabetes tipo 2, tipo 1 y gestacional, hígado graso y enfermedad tiroidea: omega-3, probióticos, flavonoides, vitaminas D, C y E, fibra, cúrcuma, mioinositol, carnitina, yodo y soya.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Trastornos endocrinos",
+     "page": 138
+    },
+    {
+     "num": "6.2",
+     "title": "Nutracéuticos y alimentos funcionales",
+     "page": 138
+    },
+    {
+     "num": "6.3",
+     "title": "Síndrome metabólico",
+     "page": 139,
+     "items": [
+      "sm_nutraceuticos"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Diabetes tipo 2",
+     "page": 143,
+     "items": [
+      "dm_micronutrientes"
+     ]
+    },
+    {
+     "num": "6.5",
+     "title": "Diabetes tipo 1",
+     "page": 146
+    },
+    {
+     "num": "6.6",
+     "title": "Diabetes gestacional",
+     "page": 148
+    },
+    {
+     "num": "6.7",
+     "title": "Hígado graso",
+     "page": 151,
+     "items": [
+      "higado_curcuma"
+     ]
+    },
+    {
+     "num": "6.8",
+     "title": "Trastornos tiroideos",
+     "page": 153,
+     "items": [
+      "tiroides"
+     ]
+    },
+    {
+     "num": "6.9",
+     "title": "Conclusión",
+     "page": 154
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Cambios en la regulación del metabolismo energético en enfermedades crónicas",
+   "page": 167,
+   "block": "metab",
+   "summary": "Regulación del metabolismo energético (cerebro, sistema cardiovascular, microbiota, músculo), factores que la alteran, enfermedades crónicas que la cambian y cómo los alimentos funcionales mejoran esos cambios.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Metabolismo energético y su regulación",
+     "page": 168,
+     "items": [
+      "regulacion_energia"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "Regulación cerebral",
+     "page": 170
+    },
+    {
+     "num": "7.3",
+     "title": "Regulación cardiovascular",
+     "page": 170
+    },
+    {
+     "num": "7.4",
+     "title": "Regulación por la microbiota intestinal",
+     "page": 171,
+     "items": [
+      "microbiota_energia"
+     ]
+    },
+    {
+     "num": "7.5",
+     "title": "Regulación del músculo esquelético",
+     "page": 171
+    },
+    {
+     "num": "7.6",
+     "title": "Factores que alteran la regulación energética",
+     "page": 172
+    },
+    {
+     "num": "7.7",
+     "title": "Metabolismo basal y en reposo; termogénesis inducida por la dieta",
+     "page": 172,
+     "items": [
+      "termogenesis"
+     ]
+    },
+    {
+     "num": "7.8",
+     "title": "Enfermedades crónicas que alteran el metabolismo energético",
+     "page": 173
+    },
+    {
+     "num": "7.9",
+     "title": "Papel de los alimentos funcionales en esos cambios",
+     "page": 179,
+     "items": [
+      "af_energia"
+     ]
+    },
+    {
+     "num": "7.10",
+     "title": "Beneficios por enfermedad",
+     "page": 182
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Alimentos funcionales para prevenir y tratar la enfermedad cardiovascular e hipertensión",
+   "page": 197,
+   "block": "metab",
+   "summary": "Revisa la evidencia de esteroles vegetales, ajo, chocolate, granos enteros, frutas y verduras, nueces, té, fibra, aceite de pescado, aceite de oliva, soya, probióticos y curcumina en enfermedad cardiovascular.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Enfermedades cardiovasculares",
+     "page": 197
+    },
+    {
+     "num": "8.2",
+     "title": "Alimentos funcionales",
+     "page": 198
+    },
+    {
+     "num": "8.3",
+     "title": "Esteroles vegetales",
+     "page": 198
+    },
+    {
+     "num": "8.4",
+     "title": "Ajo",
+     "page": 199,
+     "items": [
+      "ajo_cv"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Chocolate",
+     "page": 201,
+     "items": [
+      "cacao_cv"
+     ]
+    },
+    {
+     "num": "8.6",
+     "title": "Granos enteros",
+     "page": 202
+    },
+    {
+     "num": "8.7",
+     "title": "Frutas y verduras",
+     "page": 203
+    },
+    {
+     "num": "8.8",
+     "title": "Nueces",
+     "page": 205
+    },
+    {
+     "num": "8.9",
+     "title": "Té",
+     "page": 206
+    },
+    {
+     "num": "8.10",
+     "title": "Fibra dietaria",
+     "page": 208
+    },
+    {
+     "num": "8.11",
+     "title": "Ácidos grasos poliinsaturados (aceite de pescado)",
+     "page": 210,
+     "items": [
+      "omega3_cv"
+     ]
+    },
+    {
+     "num": "8.12",
+     "title": "Aceite de oliva",
+     "page": 211,
+     "items": [
+      "oliva"
+     ]
+    },
+    {
+     "num": "8.13",
+     "title": "Soya",
+     "page": 212
+    },
+    {
+     "num": "8.14",
+     "title": "Probióticos",
+     "page": 214
+    },
+    {
+     "num": "8.15",
+     "title": "Curcumina",
+     "page": 216
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Alimentos funcionales y productos naturales para el manejo de la obesidad",
+   "page": 231,
+   "block": "metab",
+   "summary": "Etiología, evaluación, patogenia y complicaciones de la obesidad, manejo médico actual, productos naturales con potencial antiobesidad y mitos frecuentes.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Antecedentes",
+     "page": 231
+    },
+    {
+     "num": "9.2",
+     "title": "Etiología de la obesidad",
+     "page": 233
+    },
+    {
+     "num": "9.3",
+     "title": "Presentación clínica y evaluación",
+     "page": 234
+    },
+    {
+     "num": "9.4",
+     "title": "Patogenia de la obesidad",
+     "page": 235,
+     "items": [
+      "patogenia_obesidad"
+     ]
+    },
+    {
+     "num": "9.5",
+     "title": "Complicaciones",
+     "page": 236
+    },
+    {
+     "num": "9.6",
+     "title": "Manejo médico actual",
+     "page": 236
+    },
+    {
+     "num": "9.7",
+     "title": "Productos naturales y alimentos funcionales para la obesidad",
+     "page": 238,
+     "items": [
+      "antiobesidad"
+     ]
+    },
+    {
+     "num": "9.8",
+     "title": "Estudios del potencial antiobesidad",
+     "page": 241
+    },
+    {
+     "num": "9.9",
+     "title": "Mitos comunes sobre la obesidad",
+     "page": 243,
+     "items": [
+      "mitos_obesidad"
+     ]
+    },
+    {
+     "num": "9.10",
+     "title": "Conclusión",
+     "page": 244
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Aceites vegetales comestibles no comerciales en enfermedades crónicas",
+   "page": 249,
+   "block": "fuentes",
+   "summary": "Composición y estudios preclínicos y clínicos de aceites de semilla poco comercializados: calabaza, sandía, cítricos, Nigella sativa, moringa, pistacho, onagra, melón, pepino y kenaf.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Introducción",
+     "page": 249
+    },
+    {
+     "num": "10.2",
+     "title": "Composición química",
+     "page": 251,
+     "items": [
+      "aceites_semilla"
+     ]
+    },
+    {
+     "num": "10.3",
+     "title": "Estudios preclínicos y clínicos",
+     "page": 251
+    },
+    {
+     "num": "10.4",
+     "title": "Aceite de semilla de calabaza",
+     "page": 251
+    },
+    {
+     "num": "10.5",
+     "title": "Aceite de semilla de sandía",
+     "page": 254
+    },
+    {
+     "num": "10.6",
+     "title": "Aceite de semilla de cítricos",
+     "page": 258
+    },
+    {
+     "num": "10.7",
+     "title": "Aceite de Nigella sativa",
+     "page": 260,
+     "items": [
+      "nigella"
+     ]
+    },
+    {
+     "num": "10.8",
+     "title": "Aceite de semilla de moringa",
+     "page": 262
+    },
+    {
+     "num": "10.9",
+     "title": "Aceite de pistacho",
+     "page": 263
+    },
+    {
+     "num": "10.10",
+     "title": "Aceite de onagra",
+     "page": 265,
+     "items": [
+      "onagra"
+     ]
+    },
+    {
+     "num": "10.11",
+     "title": "Aceite de semilla de melón",
+     "page": 267
+    },
+    {
+     "num": "10.12",
+     "title": "Aceite de semilla de pepino",
+     "page": 267
+    },
+    {
+     "num": "10.13",
+     "title": "Aceite de kenaf",
+     "page": 268
+    },
+    {
+     "num": "10.14",
+     "title": "Conclusiones",
+     "page": 269
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Salud oral en enfermedades crónicas: prevención y tratamiento con alimentos funcionales",
+   "page": 293,
+   "block": "organos",
+   "summary": "Lesiones orales asociadas a tabaco y alcohol y manifestaciones orales de diabetes, artritis, Alzheimer, enfermedad cardiovascular y asma, con los nutracéuticos propuestos para cada una. Secciones sin encabezados propios en el libro: el grafo las agrupa por enfermedad.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Introducción: nutracéuticos y salud oral",
+     "page": 293
+    },
+    {
+     "num": "11.2",
+     "title": "Tabaco, alcohol y lesiones orales",
+     "page": 294,
+     "items": [
+      "tabaco_oral"
+     ]
+    },
+    {
+     "num": "11.3",
+     "title": "Cáncer oral y radioterapia",
+     "page": 299
+    },
+    {
+     "num": "11.4",
+     "title": "Diabetes mellitus",
+     "page": 300,
+     "items": [
+      "dm_periodontitis"
+     ]
+    },
+    {
+     "num": "11.5",
+     "title": "Artritis",
+     "page": 303
+    },
+    {
+     "num": "11.6",
+     "title": "Enfermedad de Alzheimer",
+     "page": 303,
+     "items": [
+      "periodontitis_ea"
+     ]
+    },
+    {
+     "num": "11.7",
+     "title": "Enfermedad cardiovascular",
+     "page": 305
+    },
+    {
+     "num": "11.8",
+     "title": "Asma",
+     "page": 307
+    },
+    {
+     "num": "11.9",
+     "title": "Resumen: enfermedades sistémicas con manifestaciones orales",
+     "page": 310
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Trastornos del sistema urogenital y alimentos funcionales",
+   "page": 317,
+   "block": "organos",
+   "summary": "Infección urinaria, dismenorrea y síndrome premenstrual: fisiopatología, clínica, tratamiento y opciones no farmacológicas (arándano rojo y otras plantas, magnesio, calcio).",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "Introducción",
+     "page": 317
+    },
+    {
+     "num": "12.2",
+     "title": "Infección urinaria",
+     "page": 320
+    },
+    {
+     "num": "12.3",
+     "title": "Agente causal y fisiopatología",
+     "page": 321
+    },
+    {
+     "num": "12.4",
+     "title": "Tratamiento de la infección urinaria",
+     "page": 324
+    },
+    {
+     "num": "12.5",
+     "title": "Tratamiento no farmacológico: nutracéuticos",
+     "page": 325,
+     "items": [
+      "itu_arandano"
+     ]
+    },
+    {
+     "num": "12.6",
+     "title": "Dismenorrea",
+     "page": 329
+    },
+    {
+     "num": "12.7",
+     "title": "Tratamiento de la dismenorrea",
+     "page": 330
+    },
+    {
+     "num": "12.8",
+     "title": "Tratamiento no farmacológico de la dismenorrea",
+     "page": 331,
+     "items": [
+      "dismenorrea_mg"
+     ]
+    },
+    {
+     "num": "12.9",
+     "title": "Síndrome premenstrual y trastorno disfórico premenstrual",
+     "page": 332
+    },
+    {
+     "num": "12.10",
+     "title": "Tratamiento del síndrome premenstrual",
+     "page": 333
+    },
+    {
+     "num": "12.11",
+     "title": "Tratamiento no farmacológico del SPM",
+     "page": 334,
+     "items": [
+      "spm_calcio"
+     ]
+    },
+    {
+     "num": "12.12",
+     "title": "Conclusión",
+     "page": 336
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Alimentos funcionales y nutracéuticos en enfermedades respiratorias",
+   "page": 341,
+   "block": "organos",
+   "summary": "Relación entre nutrición y vía respiratoria: patrones dietarios, frutas, verduras y fibra, vitaminas y minerales, aceite de pescado, probióticos, compuestos fenólicos y tés herbales.",
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "Introducción",
+     "page": 341
+    },
+    {
+     "num": "13.2",
+     "title": "Nutrición y vía respiratoria",
+     "page": 342
+    },
+    {
+     "num": "13.3",
+     "title": "Alimentos funcionales y nutracéuticos",
+     "page": 343
+    },
+    {
+     "num": "13.4",
+     "title": "Patrones dietarios",
+     "page": 344,
+     "items": [
+      "patrones_resp"
+     ]
+    },
+    {
+     "num": "13.5",
+     "title": "Frutas, verduras y fibra",
+     "page": 345
+    },
+    {
+     "num": "13.6",
+     "title": "Vitaminas y minerales",
+     "page": 346
+    },
+    {
+     "num": "13.7",
+     "title": "Aceite de pescado",
+     "page": 348
+    },
+    {
+     "num": "13.8",
+     "title": "Probióticos",
+     "page": 348
+    },
+    {
+     "num": "13.9",
+     "title": "Compuestos fenólicos",
+     "page": 349,
+     "items": [
+      "fenoles_resp"
+     ]
+    },
+    {
+     "num": "13.10",
+     "title": "Té herbal",
+     "page": 352
+    },
+    {
+     "num": "13.11",
+     "title": "Conclusiones",
+     "page": 352
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Estrategias con alimentos funcionales y nutracéuticos para la artritis",
+   "page": 361,
+   "block": "organos",
+   "summary": "Aceite de pescado, glucosamina, condroitina y ácido hialurónico, fórmulas ayurvédicas, jengibre, aceite de oliva, curcumina, vitamina C e insaponificables de aguacate y soya en artritis.",
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "Introducción",
+     "page": 361
+    },
+    {
+     "num": "14.2",
+     "title": "Aceite de pescado",
+     "page": 362,
+     "items": [
+      "omega3_artritis"
+     ]
+    },
+    {
+     "num": "14.3",
+     "title": "Glucosamina, condroitina y ácido hialurónico",
+     "page": 364,
+     "items": [
+      "glucosamina"
+     ]
+    },
+    {
+     "num": "14.4",
+     "title": "Fórmulas ayurvédicas",
+     "page": 365
+    },
+    {
+     "num": "14.5",
+     "title": "Jengibre",
+     "page": 365
+    },
+    {
+     "num": "14.6",
+     "title": "Aceite de oliva",
+     "page": 366
+    },
+    {
+     "num": "14.7",
+     "title": "Curcumina",
+     "page": 367
+    },
+    {
+     "num": "14.8",
+     "title": "Vitamina C",
+     "page": 368
+    },
+    {
+     "num": "14.9",
+     "title": "Insaponificables de aguacate y soya",
+     "page": 369,
+     "items": [
+      "asu"
+     ]
+    },
+    {
+     "num": "14.10",
+     "title": "Conclusión y perspectivas",
+     "page": 369
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Alimentos funcionales polifenólicos para la enfermedad de Alzheimer",
+   "page": 375,
+   "block": "neuro",
+   "summary": "Mecanismos y blancos de los polifenoles en Alzheimer y estudios de resveratrol, curcumina, quercetina, α-mangostina, catequinas, hesperidina, naringenina, luteolina, miricetina, mangiferina, baicaleína, ácido vainíllico, fisetina y rutina; cierra con biodisponibilidad.",
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "Introducción",
+     "page": 378
+    },
+    {
+     "num": "15.2",
+     "title": "Tratamientos actuales de la enfermedad de Alzheimer",
+     "page": 380
+    },
+    {
+     "num": "15.3",
+     "title": "Polifenoles funcionales para Alzheimer",
+     "page": 380
+    },
+    {
+     "num": "15.4",
+     "title": "Mecanismos y vías blanco de los polifenoles",
+     "page": 381,
+     "items": [
+      "mecanismos_ea"
+     ]
+    },
+    {
+     "num": "15.5",
+     "title": "Resveratrol",
+     "page": 381,
+     "items": [
+      "resveratrol_ea"
+     ]
+    },
+    {
+     "num": "15.6",
+     "title": "Curcumina",
+     "page": 383,
+     "items": [
+      "curcumina_ea"
+     ]
+    },
+    {
+     "num": "15.7",
+     "title": "Quercetina",
+     "page": 385
+    },
+    {
+     "num": "15.8",
+     "title": "α-Mangostina",
+     "page": 386
+    },
+    {
+     "num": "15.9",
+     "title": "Catequinas",
+     "page": 386
+    },
+    {
+     "num": "15.10",
+     "title": "Hesperidina y hesperetina",
+     "page": 388
+    },
+    {
+     "num": "15.11",
+     "title": "Naringenina",
+     "page": 389
+    },
+    {
+     "num": "15.12",
+     "title": "Luteolina",
+     "page": 390
+    },
+    {
+     "num": "15.13",
+     "title": "Miricetina",
+     "page": 392
+    },
+    {
+     "num": "15.14",
+     "title": "Mangiferina",
+     "page": 392
+    },
+    {
+     "num": "15.15",
+     "title": "Baicaleína y baicalina",
+     "page": 394
+    },
+    {
+     "num": "15.16",
+     "title": "Ácido vainíllico",
+     "page": 395
+    },
+    {
+     "num": "15.17",
+     "title": "Fisetina",
+     "page": 396
+    },
+    {
+     "num": "15.18",
+     "title": "Rutina",
+     "page": 397
+    },
+    {
+     "num": "15.19",
+     "title": "Biodisponibilidad y farmacocinética de los polifenoles",
+     "page": 398,
+     "items": [
+      "biodisp_polifenoles"
+     ]
+    },
+    {
+     "num": "15.20",
+     "title": "Conclusión",
+     "page": 399
+    }
+   ]
+  }
+ ],
+ "items": {
+  "carga_ecnt": {
+   "title": "Carga de enfermedades no transmisibles",
+   "summary": "Las ECNT causan la mayoría de las muertes globales, con la mayor carga en países de ingreso bajo y medio."
+  },
+  "medicalizacion": {
+   "title": "Medicalización y rol de enfermo",
+   "summary": "Lectura sociológica de cómo la medicina define y gestiona la enfermedad crónica."
+  },
+  "med_integrativa": {
+   "title": "Medicina integrativa",
+   "summary": "Combinación de la medicina convencional con terapias complementarias con evidencia."
+  },
+  "terapias_compl": {
+   "title": "Terapias complementarias",
+   "formula": "naturales (dieta, nutrición, hierbas, probióticos) · mente-cuerpo · trabajo corporal",
+   "summary": "Clasificación de las terapias que el capítulo 2 revisa."
+  },
+  "manejo_integ": {
+   "title": "Manejo integrativo de enfermedades crónicas",
+   "summary": "Aplicación conjunta de las terapias al manejo de enfermedades crónicas."
+  },
+  "nutraceutico": {
+   "title": "Nutracéutico",
+   "summary": "Producto de origen alimentario con beneficio médico o preventivo más allá de la nutrición."
+  },
+  "alim_funcional": {
+   "title": "Alimento funcional",
+   "summary": "Alimento que, además de nutrir, mejora una función o reduce el riesgo de enfermedad."
+  },
+  "toxicologia": {
+   "title": "Evaluación toxicológica",
+   "formula": "toxicidad aguda · dosis repetidas a largo plazo · reproductiva",
+   "summary": "Pruebas de seguridad que un alimento funcional o nutracéutico debe cumplir."
+  },
+  "isoflavonas": {
+   "title": "Isoflavonas de soya",
+   "summary": "Ejemplo de eficacia en estado antioxidante y perfil lipídico."
+  },
+  "esteroles": {
+   "title": "Esteroles y estanoles vegetales",
+   "formula": "eficacia máxima ≈ 1,6 g/día para bajar LDL",
+   "summary": "El capítulo cita respuesta en dosis de 0,3 a 8 g/día, con meseta por encima de 1,6 g/día."
+  },
+  "betaglucano": {
+   "title": "β-glucano e inulina",
+   "summary": "Fibras con efecto en lípidos y microbiota usadas como ingrediente funcional."
+  },
+  "regulacion": {
+   "title": "Marco regulatorio y RDA",
+   "summary": "Normas de suplementos, peso de referencia e ingestas recomendadas de grasas, fibra, carbohidratos y minerales."
+  },
+  "vitd_biologia": {
+   "title": "Biología de la vitamina D",
+   "formula": "piel/dieta → 25(OH)D (hígado) → 1,25(OH)₂D (riñón)",
+   "summary": "Metabolismo, funciones, evaluación por 25(OH)D, deficiencia y requerimiento."
+  },
+  "vdd_gbd": {
+   "title": "Deficiencia de vitamina D y carga global",
+   "summary": "Cómo la deficiencia contribuiría a obesidad, diabetes, ECV, hueso, autoinmunidad, cáncer, depresión y COVID-19; la evidencia varía por desenlace."
+  },
+  "fortificacion": {
+   "title": "Fortificación masiva con vitamina D",
+   "summary": "La dosis del fortificante debe ajustarse a la prevalencia de deficiencia y a los niveles de 25(OH)D de cada subgrupo."
+  },
+  "cura_maldicion": {
+   "title": "Cura y maldición de los alimentos funcionales",
+   "summary": "Los vegetales aportan compuestos útiles, pero también pueden tener efectos adversos."
+  },
+  "vegetal_funcional": {
+   "title": "Vegetales como fuente funcional",
+   "summary": "Vitaminas A, C y E, fibra y fitoquímicos como base del efecto de los vegetales."
+  },
+  "sm_nutraceuticos": {
+   "title": "Nutracéuticos en síndrome metabólico",
+   "formula": "omega-3 · probióticos · flavonoides · vitaminas",
+   "summary": "Primer bloque de evidencia del capítulo endocrino."
+  },
+  "dm_micronutrientes": {
+   "title": "Nutracéuticos en diabetes",
+   "formula": "flavonoides · vitaminas D, C, E · fibra",
+   "summary": "Se revisan por separado para diabetes tipo 2, tipo 1 y gestacional."
+  },
+  "higado_curcuma": {
+   "title": "Hígado graso: antioxidantes y cúrcuma",
+   "summary": "Antioxidantes y hierbas, sobre todo cúrcuma, en hígado graso."
+  },
+  "tiroides": {
+   "title": "Nutracéuticos en tiroides",
+   "formula": "mioinositol · carnitina · yodo · soya",
+   "summary": "Apoyos nutricionales en enfermedad tiroidea, incluida la interacción de la soya."
+  },
+  "regulacion_energia": {
+   "title": "Regulación del metabolismo energético",
+   "summary": "Control integrado por cerebro, sistema cardiovascular, microbiota y músculo esquelético."
+  },
+  "microbiota_energia": {
+   "title": "Microbiota y energía",
+   "summary": "La microbiota intestinal participa en la extracción y regulación de energía."
+  },
+  "termogenesis": {
+   "title": "Metabolismo basal y termogénesis",
+   "summary": "Componentes del gasto energético que alteran las enfermedades crónicas."
+  },
+  "af_energia": {
+   "title": "Alimentos funcionales y metabolismo energético",
+   "summary": "Cómo los alimentos funcionales mejorarían los cambios energéticos de cada enfermedad crónica."
+  },
+  "ajo_cv": {
+   "title": "Ajo en enfermedad cardiovascular",
+   "summary": "Efectos sobre presión arterial y lípidos revisados en el capítulo 8."
+  },
+  "cacao_cv": {
+   "title": "Chocolate y cacao",
+   "summary": "Flavanoles del cacao y su efecto vascular."
+  },
+  "omega3_cv": {
+   "title": "Aceite de pescado (omega-3)",
+   "summary": "Ácidos grasos poliinsaturados marinos en prevención cardiovascular."
+  },
+  "oliva": {
+   "title": "Aceite de oliva",
+   "summary": "Grasa monoinsaturada y polifenoles en protección cardiovascular."
+  },
+  "patogenia_obesidad": {
+   "title": "Patogenia de la obesidad",
+   "summary": "Desequilibrio energético y alteraciones metabólicas que llevan a la obesidad."
+  },
+  "antiobesidad": {
+   "title": "Productos naturales antiobesidad",
+   "summary": "Alimentos funcionales y productos naturales con estudios de potencial antiobesidad."
+  },
+  "mitos_obesidad": {
+   "title": "Mitos sobre la obesidad",
+   "summary": "Ejemplos: que fijar metas realistas mejora la pérdida de peso o que la lactancia protege contra la obesidad; los datos no los sostienen."
+  },
+  "aceites_semilla": {
+   "title": "Composición de aceites de semilla",
+   "formula": "AG saturados · MUFA · PUFA · fitoesteroles · tocoferoles",
+   "summary": "Perfil de cada aceite no comercial que el capítulo 10 compara."
+  },
+  "nigella": {
+   "title": "Aceite de Nigella sativa",
+   "summary": "Aceite de comino negro con estudios preclínicos y clínicos en enfermedades crónicas."
+  },
+  "onagra": {
+   "title": "Aceite de onagra",
+   "summary": "Aceite rico en ácido gamma-linolénico con estudios en enfermedades crónicas."
+  },
+  "tabaco_oral": {
+   "title": "Tabaco, alcohol y lesiones orales",
+   "summary": "Lesiones precancerosas, enfermedad periodontal, caries y candidiasis asociadas al tabaco."
+  },
+  "dm_periodontitis": {
+   "title": "Diabetes y enfermedad periodontal",
+   "summary": "Relación bidireccional: cada una empeora a la otra."
+  },
+  "periodontitis_ea": {
+   "title": "Periodontitis y Alzheimer",
+   "summary": "La inflamación periodontal crónica se propone como factor de neuroinflamación."
+  },
+  "itu_arandano": {
+   "title": "Arándano rojo e infección urinaria",
+   "summary": "Vaccinium macrocarpon y otras plantas propuestas para prevenir la ITU por E. coli."
+  },
+  "dismenorrea_mg": {
+   "title": "Magnesio en dismenorrea",
+   "summary": "Un estudio pequeño mostró menos ausencia laboral y menos medicación con magnesio."
+  },
+  "spm_calcio": {
+   "title": "Calcio en síndrome premenstrual",
+   "summary": "Los esteroides ováricos modulan calcio, magnesio y vitamina D; el calcio se propone como tratamiento."
+  },
+  "patrones_resp": {
+   "title": "Patrones dietarios y vía respiratoria",
+   "summary": "Relación de los patrones dietarios con asma y EPOC."
+  },
+  "fenoles_resp": {
+   "title": "Compuestos fenólicos respiratorios",
+   "summary": "Polifenoles con efecto antiinflamatorio en enfermedades respiratorias."
+  },
+  "omega3_artritis": {
+   "title": "Aceite de pescado en artritis",
+   "summary": "Omega-3 como antiinflamatorio en artritis."
+  },
+  "glucosamina": {
+   "title": "Glucosamina, condroitina y ácido hialurónico",
+   "summary": "Componentes del cartílago usados como nutracéuticos en artrosis."
+  },
+  "asu": {
+   "title": "Insaponificables de aguacate y soya",
+   "summary": "Extracto usado en artrosis de rodilla, con estudios en animales y humanos."
+  },
+  "mecanismos_ea": {
+   "title": "Mecanismos de polifenoles en Alzheimer",
+   "summary": "Blancos: agregación de amiloide y tau, estrés oxidativo, neuroinflamación y señalización neuronal."
+  },
+  "resveratrol_ea": {
+   "title": "Resveratrol en Alzheimer",
+   "summary": "Polifenol con estudios clínicos y farmacología revisados en el capítulo 15."
+  },
+  "curcumina_ea": {
+   "title": "Curcumina en Alzheimer",
+   "summary": "Polifenol con estudios clínicos limitados por baja biodisponibilidad."
+  },
+  "biodisp_polifenoles": {
+   "title": "Biodisponibilidad de polifenoles",
+   "formula": "microencapsulación · liposomas · micelas · nanopartículas",
+   "summary": "Formulaciones para mejorar la absorción y el paso por la barrera hematoencefálica; la evidencia es sobre todo preclínica."
+  }
+ },
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    1,
+    3
+   ],
+   "5": [
+    3
+   ],
+   "6": [
+    3
+   ],
+   "7": [
+    6
+   ],
+   "8": [
+    3
+   ],
+   "9": [
+    7
+   ],
+   "10": [
+    3
+   ],
+   "11": [
+    3
+   ],
+   "12": [
+    3
+   ],
+   "13": [
+    3
+   ],
+   "14": [
+    3
+   ],
+   "15": [
+    3
+   ]
+  },
+  "sections": {
+   "4.5": [
+    "1.2",
+    "4.3"
+   ],
+   "4.16": [
+    "4.5"
+   ],
+   "2.2": [
+    "1.2"
+   ],
+   "6.3": [
+    "3.2"
+   ],
+   "8.3": [
+    "3.14"
+   ],
+   "8.11": [
+    "3.2"
+   ],
+   "9.4": [
+    "7.1"
+   ],
+   "9.7": [
+    "9.4"
+   ],
+   "11.4": [
+    "6.4"
+   ],
+   "11.6": [
+    "11.4"
+   ],
+   "13.7": [
+    "8.11"
+   ],
+   "14.2": [
+    "8.11"
+   ],
+   "15.6": [
+    "15.4"
+   ],
+   "15.19": [
+    "15.5",
+    "15.6"
+   ],
+   "3.8": [
+    "3.5"
+   ],
+   "3.16": [
+    "3.8"
+   ],
+   "10.7": [
+    "10.2"
+   ],
+   "10.10": [
+    "10.2"
+   ]
+  },
+  "items": {
+   "med_integrativa": [
+    "carga_ecnt"
+   ],
+   "terapias_compl": [
+    "med_integrativa"
+   ],
+   "manejo_integ": [
+    "terapias_compl"
+   ],
+   "alim_funcional": [
+    "nutraceutico"
+   ],
+   "toxicologia": [
+    "alim_funcional"
+   ],
+   "isoflavonas": [
+    "alim_funcional"
+   ],
+   "esteroles": [
+    "alim_funcional"
+   ],
+   "betaglucano": [
+    "alim_funcional"
+   ],
+   "regulacion": [
+    "toxicologia"
+   ],
+   "vdd_gbd": [
+    "vitd_biologia",
+    "carga_ecnt"
+   ],
+   "fortificacion": [
+    "vdd_gbd"
+   ],
+   "vegetal_funcional": [
+    "cura_maldicion"
+   ],
+   "sm_nutraceuticos": [
+    "nutraceutico"
+   ],
+   "dm_micronutrientes": [
+    "sm_nutraceuticos"
+   ],
+   "microbiota_energia": [
+    "regulacion_energia"
+   ],
+   "termogenesis": [
+    "regulacion_energia"
+   ],
+   "af_energia": [
+    "termogenesis",
+    "microbiota_energia"
+   ],
+   "omega3_cv": [
+    "sm_nutraceuticos"
+   ],
+   "patogenia_obesidad": [
+    "regulacion_energia"
+   ],
+   "antiobesidad": [
+    "patogenia_obesidad"
+   ],
+   "mitos_obesidad": [
+    "patogenia_obesidad"
+   ],
+   "nigella": [
+    "aceites_semilla"
+   ],
+   "onagra": [
+    "aceites_semilla"
+   ],
+   "dm_periodontitis": [
+    "dm_micronutrientes"
+   ],
+   "periodontitis_ea": [
+    "dm_periodontitis"
+   ],
+   "omega3_artritis": [
+    "omega3_cv"
+   ],
+   "resveratrol_ea": [
+    "mecanismos_ea"
+   ],
+   "curcumina_ea": [
+    "mecanismos_ea"
+   ],
+   "biodisp_polifenoles": [
+    "resveratrol_ea",
+    "curcumina_ea"
+   ]
+  }
+ }
+}

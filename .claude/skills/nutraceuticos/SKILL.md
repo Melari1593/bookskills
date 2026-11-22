@@ -1,6 +1,6 @@
 ---
 name: nutraceuticos
-description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina y açaí, con seguridad e interacciones, más el grafo del libro Flavonoids as Nutraceuticals (2024). Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico o un flavonoide, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
+description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina y açaí, con seguridad e interacciones, más los grafos de los libros Flavonoids as Nutraceuticals (2024) y Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I (2023). Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico, un flavonoide o el uso de alimentos funcionales en una enfermedad crónica, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
 ---
 
 <!-- argument-hint: [nutracéutico, alimento o flavonoide] -->
@@ -9,12 +9,13 @@ description: Nutracéuticos para consulta clínica con recetas de gastronomía m
 
 **Actualizada:** 2026-11-22 · **Uso:** consulta clínica de Espacio Clínico · Dra. Karla.
 
-Esta skill tiene dos partes:
+Esta skill tiene tres partes:
 
 | Parte | Archivo | Contenido |
 |---|---|---|
 | Recetas y evidencia | `references/recetas-evidencia.md` | 15 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
 | Grafo del libro | `references/grafo_flavonoids.json`, `assets/grafo_flavonoids_as_nutraceuticals.html`, `scripts/ruta.py` | *Flavonoids as Nutraceuticals* (Kesharwani et al., Apple Academic Press, 2024): 13 capítulos, 184 secciones, 43 conceptos, 84 prerrequisitos |
+| Grafo del libro | `references/grafo_functional_foods.json`, `assets/grafo_functional_foods_chronic_diseases.html`, `scripts/ruta.py --grafo cronicas` | *Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I* (Mohan, Abdollahi y Pathak, eds., CRC Press, 2023): 15 capítulos, 189 secciones, 50 conceptos, 67 prerrequisitos |
 
 Responde en español. Usa frases cortas, una instrucción por frase y la condición primero.
 
@@ -66,6 +67,16 @@ Las secciones 16 y 17 traen la tabla de seguridad por situación del paciente, l
 4. Bloques: química y biosíntesis (cap. 2, 12); plantas y agricultura (3); nutracéuticos y salud humana (1, 5, 9, 11); inflamación e inmunidad (6, 7, 8); antivirales y COVID-19 (4, 13); tintes naturales (10).
 
 **Advertencias del libro.** Es una obra colectiva. La mayor parte de la evidencia es in vitro, animal o in silico; el capítulo 4 reconoce que muy pocos flavonoides llegaron a ensayos clínicos. El capítulo 1 tiene redacción irregular. Para una conducta clínica, usa el documento de recetas y evidencia, no el libro.
+
+## Grafo de *Functional Foods and Nutraceuticals for Chronic Diseases*, Vol. I
+
+1. Para buscar un tema y sus antecedentes, ejecuta `python scripts/ruta.py --grafo cronicas "término"`. Acepta un número de sección (`9.9`) o el id de un concepto (`esteroles`).
+2. Lee los resúmenes de los nodos en `references/grafo_functional_foods.json` antes de explicar una relación. Los arcos son una interpretación pedagógica.
+3. Para el mapa visual, entrega una copia de `assets/grafo_functional_foods_chronic_diseases.html`.
+4. Bloques: carga e integración de las ECNT (cap. 1, 2); bases de seguridad, eficacia, regulación y vitamina D (3, 4); metabolismo, endocrino y cardiovascular (6, 7, 8, 9); vegetales y aceites de semilla (5, 10); órganos y sistemas: salud oral, urogenital, respiratorio y artritis (11–14); Alzheimer y polifenoles (15).
+5. El capítulo 3 es la base de los demás: definiciones, toxicología, esteroles (eficacia máxima ≈ 1,6 g/día) y marco regulatorio.
+
+**Advertencias del libro.** El libro no numera las secciones: la numeración `capítulo.orden` es propia del grafo. Las páginas son las impresas de cada índice de capítulo. El capítulo 11 no tiene encabezados propios; el grafo agrupa sus secciones por enfermedad. Varios capítulos revisan evidencia preclínica o estudios pequeños (por ejemplo, magnesio en dismenorrea). Para una conducta clínica, usa el documento de recetas y evidencia, no el libro.
 
 ## Alcance y límites
 
