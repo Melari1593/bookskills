@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Dieciséis preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Diecisiete preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -24,6 +24,7 @@ Dieciséis preparaciones llevan un nutracéutico en una porción medida. La téc
 | Aguaje liofilizado | Carotenoides liposolubles en polvo seco | Polvo de grasa con maltodextrina de tapioca | 1,6 g de polvo en 10 g | Baja (ver aguaje) |
 | Açaí | Antocianinas sensibles al calor; riesgo de Chagas oral | Crema fría con xantana; plato combinado | 95 g de pulpa pasteurizada | Baja: biomarcadores de estrés oxidativo y HDL en ensayos pequeños |
 | Brócoli | La cocción destruye la mirosinasa; hervir pierde glucorafanina | Crema tibia al vapor con mostaza parda añadida en frío, estabilizada con xantana | 200 g de brócoli + 1 g de mostaza parda | Baja: la mostaza cuadruplicó el sulforafano urinario; extractos de brotes con resultados mixtos en glucemia |
+| Cordyceps con cacao | Polvo que se asienta; sabor terroso; arsénico en el cordyceps silvestre; efecto del calor sobre la cordicepina no confirmado | Bebida fría de cacao suspendida con xantana (base de la sección 11) | 1 g de Cordyceps militaris cultivado + 10 g de cacao natural | Baja: señal pequeña en resistencia aeróbica con ensayos contradictorios; adyuvante renal con estudios de baja calidad |
 
 **Reglas de uso en consulta**
 
@@ -877,7 +878,74 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - **Brotes crudos:** los germinados se asocian con brotes de *Salmonella* y *E. coli* O157:H7 ([Kim 2009](https://doi.org/10.4315/0362-028x-72.4.856)). Esta receta usa brócoli cocido. No indiques brotes crudos en inmunosupresión, embarazo, niños pequeños ni mayores *(interpretación)*.
 - **Libro:** el capítulo 5 de *Applications of Functional Foods and Nutraceuticals for Chronic Diseases* trata el brócoli (sección 5.15 del grafo, p. 128).
 
-## 17. Seguridad para todas las preparaciones
+## 17. Cordyceps y cacao: bebida fría suspendida
+
+**Objetivo.** Una bebida fría de cacao con una dosis fija de cordyceps: 1 g por porción, sin que el polvo se asiente. Usa la base de la sección 11 (cacao natural con xantana). Un gramo es la dosis de dos ensayos pequeños: 1 g de extracto de *Cordyceps militaris* antes del ejercicio ([Farzan 2026](https://doi.org/10.1371/journal.pone.0351725)) y 1 g/día de Cs-4 por 12 semanas ([Chen 2010](https://doi.org/10.1089/acm.2009.0226)).
+
+**Qué cordyceps comprar.** "Cordyceps" nombra productos distintos:
+
+| Producto | Qué es | Uso en esta receta |
+| --- | --- | --- |
+| *Cordyceps militaris* cultivado (cuerpo fructífero o extracto) | Hongo cultivado en sustrato; contiene cordicepina y adenosina ([Ontawong 2024](https://doi.org/10.1038/s41598-024-58742-z)) | Sí, con análisis del lote |
+| Cs-4, cápsulas Bailing | Micelio fermentado relacionado con *C. sinensis* | Es la forma de los ensayos renales; no es un ingrediente de cocina |
+| *Ophiocordyceps sinensis* silvestre | Hongo y larva del altiplano tibetano | No: arsénico total de 5,77–13,20 µg/g ([Xiao 2021](https://doi.org/10.1155/2021/6651498)) |
+
+**Ingredientes** (4 porciones de unos 200 g)
+
+| Ingrediente | g | % del total |
+| --- | --- | --- |
+| Agua fría | 720 | 90,2 |
+| Cacao en polvo natural, sin alcalinizar | 40 | 5,0 |
+| Panela fina | 32 | 4,0 |
+| *Cordyceps militaris* en polvo, cultivado | 4 | 0,5 |
+| Goma xantana | 2 | 0,25 |
+
+Cada porción lleva 1 g de cordyceps y 10 g de cacao.
+
+**Proceso**
+
+1. Pesa el cordyceps en báscula de 0,01 g.
+2. Mezcla en seco el cordyceps, el cacao, la panela y la xantana. La panela dispersa la xantana.
+3. Pon el agua fría en la licuadora. Añade la mezcla seca con el motor en marcha.
+4. Licua 1 min.
+5. Reposa 10 min en la nevera para sacar las burbujas.
+6. Sirve fría. No hiervas. *(Interpretación: no encontré datos de estabilidad de la cordicepina al calor; una revisión la describe con estabilidad limitada sin dar cifras.)*
+
+**Por qué funciona.** El cacao y el cordyceps en polvo no se disuelven: son partículas que se asientan. La xantana a 0,25 % las mantiene suspendidas en frío. El amargor del cacao cubre el sabor terroso del hongo *(interpretación)*. Servir en frío evita el calor sobre la cordicepina y los flavanoles.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Sedimento oscuro en el fondo | Xantana baja o mal dispersa | Sube a 0,35 %; mezcla siempre en seco con la panela |
+| Sabor terroso fuerte | Cuerpo fructífero entero | Usa extracto o sube la panela poco a poco |
+| Grumos | Polvo añadido de golpe | Añade la mezcla con el motor en marcha |
+| Dosis desigual entre vasos | Bebida sin agitar | Agita la jarra antes de servir cada vaso |
+
+**Dosis de cordicepina.** No la confirmé para tu producto. En un estudio, el sustrato de cultivo tuvo 1,13 % de cordicepina, más de 4 veces el cuerpo fructífero ([Yang 2026](https://doi.org/10.1177/00368504261467525)). Eso sugiere menos de 2,8 mg por gramo de cuerpo fructífero *(cálculo; varía por lote)*. El ensayo de inmunidad usó 2,85 mg de cordicepina al día ([Ontawong 2024](https://doi.org/10.1038/s41598-024-58742-z)). Para dosis de ensayo, compra un producto con cordicepina declarada.
+
+**Evidencia clínica** (según PubMed)
+
+- **Baja (resistencia aeróbica):** en un metaanálisis de 14 ensayos con atletas, 8 entraron al análisis (288 personas). *C. sinensis* mejoró la resistencia (p = 0,05), el umbral ventilatorio y el VO₂ pico, con heterogeneidad baja ([Shu 2025](https://doi.org/10.3389/fnut.2025.1670416)). Los ensayos individuales se contradicen:
+  - En 20 adultos mayores, 1 g/día de Cs-4 por 12 semanas subió el umbral metabólico 10,5 % ([Chen 2010](https://doi.org/10.1089/acm.2009.0226)).
+  - En 22 ciclistas entrenados, 3 g/día por 5 semanas no cambiaron el VO₂ pico ni el rendimiento ([Parcell 2004](https://doi.org/10.1123/ijsnem.14.2.236)).
+  - Una mezcla con *C. militaris* (4 g/día) no cambió el VO₂ máx a la semana ([Hirsch 2017](https://doi.org/10.1080/19390211.2016.1203386)).
+  - En 12 hombres, 1 g de extracto de *C. militaris* no cambió el VO₂ pico; el tiempo de reacción tras el ejercicio fue más rápido ([Farzan 2026](https://doi.org/10.1371/journal.pone.0351725)).
+- **Baja (inmunidad):** una bebida fermentada de *C. militaris* con 2,85 mg de cordicepina por 8 semanas subió la actividad NK en 40 adultos sanos ([Ontawong 2024](https://doi.org/10.1038/s41598-024-58742-z)). Es un biomarcador.
+- **Grado no confirmado (riñón):** en 38 ensayos (3167 pacientes) con enfermedad renal diabética, preparados de *O. sinensis* sumados a IECA o ARA II bajaron creatinina y proteinuria. Ningún ensayo midió progresión renal ni eventos cardiovasculares ([Yan 2023](https://doi.org/10.1016/j.phymed.2022.154531)). Los ensayos usaron cápsulas, no alimento.
+- **Muy baja (EPOC):** 15 estudios (1238 personas) sin control con placebo ni alta calidad metodológica ([Yu 2019](https://doi.org/10.1155/2019/4903671)).
+- **Cacao:** la evidencia está en la sección 11.
+
+**Seguridad**
+
+- **Arsénico:** el *C. sinensis* silvestre tuvo 5,77–13,20 µg/g de arsénico total ([Xiao 2021](https://doi.org/10.1155/2021/6651498)). Una parte desconocida podría convertirse en arsénico inorgánico ([Li 2019](https://doi.org/10.3389/fphar.2019.01471)). Usa *C. militaris* cultivado y pide el análisis de metales del lote.
+- **Cordicepina y pentostatina:** tienen toxicidad celular y neurológica dependiente de la dosis. No se descarta la producción de micotoxinas ([Chen 2020](https://doi.org/10.3390/toxins12060410)).
+- **Trasplante e inmunosupresores:** en China se usa cordyceps como inmunosupresor adyuvante en trasplante renal ([Hong 2015, Cochrane](https://doi.org/10.1002/14651858.CD009698.pub2)). Con tacrolimus, ciclosporina u otros inmunosupresores, no lo indiques sin el equipo de trasplante *(interpretación)*.
+- **Tolerancia:** 1,05 g/día de micelio de *C. cicadae* por 3 meses no alteró función hepática ni renal en 49 personas ([Tsai 2021](https://doi.org/10.1080/07315724.2020.1743211)). Es otra especie.
+- **Cacao:** aplica la regla de metales de la sección 11 (cadmio y plomo del lote).
+- No busqué: embarazo, lactancia, anticoagulantes, hipoglucemiantes ni enfermedades autoinmunes.
+
+## 18. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -928,7 +996,13 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - Warfarina: mantén constante la ingesta de brócoli y otras verduras verdes *(interpretación)*.
 - Brotes crudos: no los indiques en inmunosupresión ni embarazo. La receta usa brócoli cocido.
 
-## 18. Huecos y log de búsqueda
+**Cordyceps**
+
+- Usa solo *Cordyceps militaris* cultivado con análisis de metales. No uses *O. sinensis* silvestre.
+- Inmunosupresores o trasplante: no lo indiques sin el equipo tratante.
+- Embarazo, lactancia y anticoagulantes: no buscados; trátalos como no confirmados.
+
+## 19. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -940,6 +1014,7 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 - Interacciones de omega-3, probióticos y moringa con anticoagulantes, y seguridad en embarazo: no buscados.
 - Contenido de taninos de la hoja de moringa.
 - Glucorafanina por 100 g del brócoli colombiano, temperatura de inactivación de la mirosinasa de la mostaza y tiempo de reposo de la crema.
+- Cordicepina por gramo del cordyceps comercial en Colombia y estabilidad de la cordicepina al calor.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -987,5 +1062,9 @@ Un plato con tres preparaciones de este documento. Cada una lleva su compuesto e
 | myrosinase mustard seed cooked broccoli sulforaphane bioavailability; heating broccoli epithiospecifier protein (22-11-2026) | 2 / 1 | Okunade 2018, Abukhabta 2021, Matusheski 2004 |
 | steaming broccoli glucosinolate retention boiling loss; sulforaphane type 2 diabetes hepatic glucose (22-11-2026) | 2 / 2 | Sun 2021, Yuan 2009, Axelsson 2017 |
 | broccoli sprouts thyroid function randomized; broccoli sprouts Salmonella outbreak (22-11-2026) | 2 / 3 | Chartoumpekis 2019, Shapiro 2006, Kim 2009 |
+| Cordyceps randomized controlled trial; Cordyceps meta-analysis (22-11-2026) | 47 / 19 | Shu 2025, Yan 2023, Yu 2019, Ontawong 2024, Farzan 2026, Tsai 2021 |
+| Cordyceps militaris exercise performance randomized placebo (22-11-2026) | 9 | Chen 2010, Parcell 2004, Hirsch 2017 |
+| Ophiocordyceps sinensis arsenic; Cordyceps adverse effects safety toxicity; Cordyceps tacrolimus (22-11-2026) | 20 / 12 / 3 | Xiao 2021, Li 2019, Chen 2020, Hong 2015 |
+| cordycepin thermal stability degradation; cordycepin stability temperature pH; Cordyceps militaris drying cordycepin (22-11-2026) | 0 / 10 / 2 | Yang 2026 (sin dato de estabilidad al calor) |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
