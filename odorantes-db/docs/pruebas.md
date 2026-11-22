@@ -1,6 +1,6 @@
 # Pruebas de la base de odorantes
 
-Filas: 652 · compuestos distintos: 276 · estudios: 85 (texto completo: 19) · por nivel: {'A': 149, 'B': 109, 'C': 369, 'D': 25}
+Filas: 692 · compuestos distintos: 289 · estudios: 98 (texto completo: 19) · por nivel: {'A': 149, 'B': 110, 'C': 396, 'D': 37}
 
 ## Regresión
 - OK · cafe_tostado + ajonjoli_tostado → 2-furfuriltiol (niveles A, C)
@@ -9,9 +9,18 @@ Filas: 652 · compuestos distintos: 276 · estudios: 85 (texto completo: 19) · 
 - OK · matcha + frambuesa → β-ionona (niveles A, B)
 
 ## Fallos
-ninguno
+DOI con formato raro: pmid:26434138
 
 ## Avisos
+cardamomo: solo 1 estudio(s)
+cilantro_semilla: solo 1 estudio(s)
+clavo: solo 1 estudio(s)
+comino: solo 1 estudio(s)
+curcuma: solo 1 estudio(s)
+jengibre: solo 1 estudio(s)
+nuez_moscada: solo 1 estudio(s)
+pimienta_de_olor: solo 1 estudio(s)
+pimienta_negra: solo 1 estudio(s)
 ¿mismo compuesto? «2-ethyl-6-methylpyrazine» / «2-ethyl-5-methylpyrazine»
 ¿mismo compuesto? «2-metilbutanoato de etilo» / «3-metilbutanoato de etilo»
 ¿mismo compuesto? «2-metilbutanoato de etilo» / «2-metilbutanoato de metilo»

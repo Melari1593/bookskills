@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-22
 
 ## Resumen
 
-Dieciocho preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Diecinueve preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -26,6 +26,7 @@ Dieciocho preparaciones llevan un nutracéutico en una porción medida. La técn
 | Brócoli | La cocción destruye la mirosinasa; hervir pierde glucorafanina | Crema tibia al vapor con mostaza parda añadida en frío, estabilizada con xantana | 200 g de brócoli + 1 g de mostaza parda | Baja: la mostaza cuadruplicó el sulforafano urinario; extractos de brotes con resultados mixtos en glucemia |
 | Cordyceps con cacao | Polvo que se asienta; sabor terroso; arsénico en el cordyceps silvestre; efecto del calor sobre la cordicepina no confirmado | Bebida fría de cacao suspendida con xantana (base de la sección 11) | 1 g de Cordyceps militaris cultivado + 10 g de cacao natural | Baja: señal pequeña en resistencia aeróbica con ensayos contradictorios; adyuvante renal con estudios de baja calidad |
 | Melena de león | Dosis de ensayo alta (3 g/día) en polvo que se asienta; sabor amargo y terroso | Cubos de caldo gelificado con agar, resistentes al caldo caliente | 3 g de polvo de cuerpo fructífero en un cubo de 75 g | Baja: ensayos pequeños en deterioro cognitivo leve; el efecto se perdió al suspender |
+| Especias (jengibre, cardamomo, canela de Ceilán) | Terpenos volátiles que se pierden al hervir; polvos que se asientan; cumarina de la cassia | Leche tibia especiada (60–70 °C) suspendida con xantana | 1 g de jengibre + 0,5 g de cardamomo + 0,5 g de canela de Ceilán | Jengibre: favorable para náusea del embarazo con 1 g/día; calidad metodológica baja |
 
 **Reglas de uso en consulta**
 
@@ -1005,7 +1006,68 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - **Libro:** el capítulo 15 de *Functional Foods and Nutraceuticals for Chronic Diseases* trata polifenoles en Alzheimer, no este hongo.
 - No busqué: metales pesados, interacciones con anticoagulantes, hipoglucemiantes ni antidepresivos.
 
-## 19. Seguridad para todas las preparaciones
+## 19. Especias: leche tibia de jengibre, cardamomo y canela
+
+**Objetivo.** Una bebida tibia con 1 g de jengibre en polvo por porción, la dosis diaria de los ensayos de náusea del embarazo. El cardamomo y la canela de Ceilán van en dosis de aroma, no de ensayo. El perfil aromático, la evidencia y la seguridad de 12 especias están en el documento [Especias: odorantes clave, salud y seguridad](https://claude.ai/artifact/4CDxKYH1jZVe7VdBJ5gYms).
+
+**Por qué estas especias juntas.** Jengibre y cardamomo comparten 1,8-cineol (eucalipto). En el jengibre, geranial, eucaliptol, linalol y acetato de bornilo tienen el mayor factor de dilución ([Pang 2017](https://doi.org/10.1021/acs.jafc.7b00559)). El cardamomo verde es sobre todo acetato de α-terpinilo y 1,8-cineol ([Mishra 2022](https://doi.org/10.1007/s13197-022-05560-8)). La canela aporta cinamaldehído, que ninguna de las dos tiene: es un contraste ([Sandner 2018](https://doi.org/10.1515/znc-2017-0087)). Estos datos están en la base de odorantes (`odorantes-db`, lote 12).
+
+**El problema.** Los odorantes del jengibre y del cardamomo son terpenos volátiles y poco solubles en agua. Un hervor largo los evapora *(interpretación)*. Los polvos se asientan. La canela cassia trae cumarina.
+
+**La técnica.** Calienta la leche a 60–70 °C, sin hervir. La grasa de la leche entera retiene los terpenos *(interpretación)*. La xantana a 0,25 % mantiene los polvos suspendidos. Usa canela de Ceilán.
+
+**Ingredientes** (4 porciones de unos 200 g)
+
+| Ingrediente | g | % del total |
+| --- | --- | --- |
+| Leche entera (o bebida vegetal con grasa) | 760 | 94,8 |
+| Panela fina | 32 | 4,0 |
+| Jengibre en polvo | 4 | 0,5 |
+| Cardamomo verde molido | 2 | 0,25 |
+| Canela de Ceilán en polvo | 2 | 0,25 |
+| Goma xantana | 2 | 0,25 |
+
+Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
+
+**Proceso**
+
+1. Pesa las especias en báscula de 0,01 g.
+2. Mezcla en seco las especias, la panela y la xantana. La panela dispersa la xantana.
+3. Calienta la leche a 60–70 °C. No la dejes hervir.
+4. Pon la leche en la licuadora. Añade la mezcla seca con el motor en marcha. Licua 1 min.
+5. Tapa y deja reposar 5 min. *(Interpretación: tiempo para hidratar los polvos.)*
+6. Sirve tibia. Agita la jarra antes de servir cada taza.
+
+**Por qué funciona.** La xantana da viscosidad sin cambiar con la temperatura y mantiene el polvo suspendido. La leche tibia libera el aroma sin el hervor largo. El 1,8-cineol del jengibre y del cardamomo suma una nota fresca; la canela aporta el contraste dulce y especiado *(interpretación)*.
+
+**Calor sobre el jengibre.** Secar el jengibre a 120–180 °C baja los gingeroles y sube los shogaoles ([Ghasemzadeh 2018](https://doi.org/10.3390/molecules23071646)). A 60–70 °C por minutos, ese cambio no está medido *(interpretación)*.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Sedimento en la taza | Xantana baja o mal dispersa | Sube a 0,35 %; mezcla siempre en seco con la panela |
+| Picor fuerte de jengibre | Jengibre seco concentrado | Sube la panela; no bajes el jengibre si buscas la dosis del ensayo |
+| Aroma apagado | Leche hervida o reposo largo | Calienta a 60–70 °C y sirve enseguida |
+| La leche se corta | Calor alto con panela ácida | Calienta suave y añade la mezcla fuera del fuego |
+
+**Evidencia clínica** (según PubMed)
+
+- **Favorable, calidad baja (náusea del embarazo):** en 12 ensayos (1278 mujeres), el jengibre mejoró la náusea frente al placebo, pero no el número de vómitos ([Viljoen 2014](https://doi.org/10.1186/1475-2891-13-20)). Una revisión de 15 metaanálisis calificó su calidad metodológica de críticamente baja a baja ([Li 2024](https://doi.org/10.1080/09637486.2023.2284647)).
+- **Dosis de 1 g/día:** 250 mg de jengibre en cápsula cuatro veces al día (1 g) mejoraron la náusea en 85 % frente a 56 % con placebo, en 67 embarazadas ([Ozgoli 2009](https://doi.org/10.1089/acm.2008.0406)). 0,5 g dos veces al día fueron tan eficaces como 50 mg de dimenhidrinato, con menos somnolencia (5,88 % frente a 77,64 %) ([Pongrojpaw 2007](https://pubmed.ncbi.nlm.nih.gov/17957907/)).
+- **Frente a vitamina B6:** 500 mg tres veces al día no difirieron de 10 mg de vitamina B6 tres veces al día ([Sripramote 2003](https://pubmed.ncbi.nlm.nih.gov/14649969/)).
+- **Cardamomo y canela:** a 0,5 g por porción, están por debajo de las dosis de los ensayos (cardamomo 3 g/día; canela 120 mg a 6 g/día). Ver el documento de especias.
+- **Forma:** los ensayos usaron cápsulas repartidas en el día. Una bebida con 1 g en una sola toma no está probada *(interpretación)*.
+
+**Seguridad**
+
+- **Anticoagulantes:** el jengibre figura entre las plantas que aumentan el riesgo de sangrado con warfarina ([Tan 2021](https://doi.org/10.1111/bcp.14404)). Con anticoagulantes, no uses la dosis de 1 g sin control del INR.
+- **Canela:** usa canela de Ceilán. La cassia tiene más cumarina, hepatotóxica ([Yeh 2014](https://doi.org/10.1021/jf405312q); [Iwata 2016](https://doi.org/10.3389/fphar.2016.00174)).
+- **Embarazo:** los ensayos de náusea usaron 1–1,5 g/día por pocos días. Para uso prolongado o hiperemesis, remite al control prenatal.
+- **Lactosa:** usa bebida vegetal con grasa si hay intolerancia.
+- **Plomo:** compra especias de marca con registro sanitario (ver cúrcuma y ají en el documento de especias).
+
+## 20. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1068,7 +1130,13 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - Usa cuerpo fructífero; si el producto es micelio sobre cereal, revisa gluten.
 - Embarazo, lactancia e interacciones: no buscados.
 
-## 20. Huecos y log de búsqueda
+**Especias (leche de jengibre)**
+
+- Anticoagulantes: el jengibre aumenta el riesgo de sangrado con warfarina.
+- Canela: solo de Ceilán, por la cumarina de la cassia.
+- Nuez moscada: solo en pizcas; hay intoxicaciones con 14–21 g.
+
+## 21. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1082,6 +1150,7 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 - Glucorafanina por 100 g del brócoli colombiano, temperatura de inactivación de la mirosinasa de la mostaza y tiempo de reposo de la crema.
 - Cordicepina por gramo del cordyceps comercial en Colombia y estabilidad de la cordicepina al calor.
 - Contenido de hericenonas y erinacinas del polvo comercial y su estabilidad al calor.
+- Pérdida de terpenos del jengibre y del cardamomo en leche a 60–70 °C, y equivalencia entre 1 g en bebida y 1 g en cápsulas.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1136,5 +1205,7 @@ Cada porción lleva 1 g de cordyceps y 10 g de cacao.
 | Hericium erinaceus randomized controlled trial; Hericium erinaceus systematic review human (22-11-2026) | 5 / 3 | Mori 2009, Saitsu 2019, Docherty 2023, Nagano 2010 |
 | erinacine A-enriched Hericium erinaceus mycelia Alzheimer pilot; lion's mane mushroom case report (22-11-2026) | 1 / 1 | Li 2020, Menon 2025 |
 | Hericium erinaceus toxicity; Hericium erinaceus hypersensitivity; hericenones erinacines content cooking (22-11-2026) | 53 / 0 / 0 | Mahadevan 2025, Lee 2019, Li 2018 (sin dato de estabilidad al calor) |
+| ginger nausea vomiting pregnancy randomized trial capsules; gingerol shogaol heat drying conversion (22-11-2026) | 11 / 1 | Ozgoli 2009, Pongrojpaw 2007, Sripramote 2003, Ghasemzadeh 2018 |
+| Búsquedas de odorantes, salud y seguridad de 12 especias (22-11-2026): ver el log del documento de especias | — | Pang 2017, Mishra 2022, Sandner 2018, Viljoen 2014, Li 2024, Tan 2021, Yeh 2014, Iwata 2016 |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.

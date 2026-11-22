@@ -133,5 +133,60 @@
   "nombre": "Limonaria (Cymbopogon citratus), hoja: aceite esencial y decocción",
   "en": "lemongrass OR Cymbopogon citratus",
   "lote": 11
+ },
+ "canela": {
+  "nombre": "Canela (corteza, botones o aceite; cassia o Ceilán)",
+  "en": "cinnamon",
+  "lote": 12
+ },
+ "clavo": {
+  "nombre": "Clavo de olor (botón floral seco)",
+  "en": "clove",
+  "lote": 12
+ },
+ "nuez_moscada": {
+  "nombre": "Nuez moscada (semilla o aceite esencial)",
+  "en": "nutmeg",
+  "lote": 12
+ },
+ "pimienta_negra": {
+  "nombre": "Pimienta negra (grano)",
+  "en": "black pepper",
+  "lote": 12
+ },
+ "comino": {
+  "nombre": "Comino (semilla)",
+  "en": "cumin",
+  "lote": 12
+ },
+ "cilantro_semilla": {
+  "nombre": "Cilantro en semilla",
+  "en": "coriander seed",
+  "lote": 12
+ },
+ "curcuma": {
+  "nombre": "Cúrcuma (rizoma)",
+  "en": "turmeric",
+  "lote": 12
+ },
+ "jengibre": {
+  "nombre": "Jengibre (rizoma)",
+  "en": "ginger",
+  "lote": 12
+ },
+ "cardamomo": {
+  "nombre": "Cardamomo verde (fruto seco)",
+  "en": "cardamom",
+  "lote": 12
+ },
+ "aji": {
+  "nombre": "Ají (Capsicum, fresco o frito)",
+  "en": "chili pepper OR Capsicum",
+  "lote": 12
+ },
+ "pimienta_de_olor": {
+  "nombre": "Pimienta de olor (Pimenta dioica)",
+  "en": "allspice OR Pimenta dioica",
+  "lote": 12
  }
 }

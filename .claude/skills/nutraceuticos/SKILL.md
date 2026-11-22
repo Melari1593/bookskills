@@ -1,6 +1,6 @@
 ---
 name: nutraceuticos
-description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina, açaí, brócoli, cordyceps y melena de león, con seguridad e interacciones, más los grafos de los libros Flavonoids as Nutraceuticals (2024) y Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I (2023). Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico, un flavonoide o el uso de alimentos funcionales en una enfermedad crónica, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
+description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina, açaí, brócoli, cordyceps, melena de león y especias, con seguridad e interacciones, más los grafos de los libros Flavonoids as Nutraceuticals (2024) y Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I (2023). Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico, un flavonoide o el uso de alimentos funcionales en una enfermedad crónica, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
 ---
 
 <!-- argument-hint: [nutracéutico, alimento o flavonoide] -->
@@ -13,7 +13,7 @@ Esta skill tiene tres partes:
 
 | Parte | Archivo | Contenido |
 |---|---|---|
-| Recetas y evidencia | `references/recetas-evidencia.md` | 18 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
+| Recetas y evidencia | `references/recetas-evidencia.md` | 19 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
 | Grafo del libro | `references/grafo_flavonoids.json`, `assets/grafo_flavonoids_as_nutraceuticals.html`, `scripts/ruta.py` | *Flavonoids as Nutraceuticals* (Kesharwani et al., Apple Academic Press, 2024): 13 capítulos, 184 secciones, 43 conceptos, 84 prerrequisitos |
 | Grafo del libro | `references/grafo_functional_foods.json`, `assets/grafo_functional_foods_chronic_diseases.html`, `scripts/ruta.py --grafo cronicas` | *Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I* (Mohan, Abdollahi y Pathak, eds., CRC Press, 2023): 15 capítulos, 189 secciones, 50 conceptos, 67 prerrequisitos |
 
@@ -41,8 +41,11 @@ Responde en español. Usa frases cortas, una instrucción por frase y la condici
 | 16 | Brócoli (sulforafano) | Crema tibia al vapor con mostaza parda añadida en frío | Alergia a mostaza; brotes crudos en inmunosupresión |
 | 17 | Cordyceps con cacao | Bebida fría de cacao suspendida con xantana | Arsénico en *O. sinensis* silvestre; inmunosupresores y trasplante |
 | 18 | Melena de león | Cubos de caldo gelificado con agar | Alergia a hongos; micelio sobre cereal (gluten) |
+| 19 | Especias (jengibre, cardamomo, canela de Ceilán) | Leche tibia especiada suspendida con xantana | Jengibre con warfarina; cumarina de la cassia |
 
-Las secciones 19 y 20 traen la tabla de seguridad por situación del paciente, los datos no confirmados y el log de búsqueda de PubMed.
+Las secciones 20 y 21 traen la tabla de seguridad por situación del paciente, los datos no confirmados y el log de búsqueda de PubMed.
+
+**Especias.** El perfil aromático, la evidencia de salud y la seguridad de 12 especias están en el documento [Especias: odorantes clave, salud y seguridad](https://claude.ai/artifact/4CDxKYH1jZVe7VdBJ5gYms). Sus odorantes están en `odorantes-db` (lote 12); consúltalos con `python3 odorantes-db/scripts/consulta.py jengibre cardamomo`.
 
 **Complemento en el repositorio.** `grafos/monografias-ingredientes/` tiene monografías con alertas de evidencia de guanábana, guayaba, açaí y asaí, camu camu y aguaje. Si una pregunta va más allá de la receta (composición, usos tradicionales, afirmaciones contradichas), consúltalas.
 
@@ -51,7 +54,7 @@ Las secciones 19 y 20 traen la tabla de seguridad por situación del paciente, l
 1. **Si el compuesto está en el documento:** lee su sección completa antes de dar cifras. Copia gramos, porcentajes y citas tal como están. No des concentraciones de memoria.
 2. **Si piden la receta:** entrega objetivo, tabla de ingredientes, proceso numerado, "por qué funciona", tabla de fallas y seguridad.
 3. **Si piden evidencia:** separa los niveles de confianza (alta, moderada, baja, preclínica). Cita con enlace DOI. Marca *(interpretación)* lo que no viene de una fuente.
-4. **Si la pregunta es clínica:** revisa primero la sección 19 (seguridad por situación del paciente). Di cuándo la receta da dosis de alimento y cuándo da dosis de ensayo.
+4. **Si la pregunta es clínica:** revisa primero la sección 20 (seguridad por situación del paciente). Di cuándo la receta da dosis de alimento y cuándo da dosis de ensayo.
 5. **Si el compuesto no está en el documento:** sigue el método de abajo y ofrece agregarlo como sección nueva.
 
 ## Método para agregar un nutracéutico nuevo

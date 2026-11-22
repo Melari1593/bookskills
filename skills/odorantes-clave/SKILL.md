@@ -37,7 +37,7 @@ python3 scripts/consulta.py <A>              # perfil de A y alimentos con más 
 python3 scripts/buscar.py "<términos>"       # búsqueda de texto en las notas de cada estudio
 ```
 
-- Los ids de alimento están en `datos/alimentos.json` (18 alimentos en la versión inicial).
+- Los ids de alimento están en `datos/alimentos.json` (38 alimentos; el lote 12 añade 11 especias: canela, clavo, nuez moscada, pimienta negra, comino, cilantro en semilla, cúrcuma, jengibre, cardamomo, ají y pimienta de olor). Para salud y seguridad de esas especias, ve el documento [Especias: odorantes clave, salud y seguridad](https://claude.ai/artifact/4CDxKYH1jZVe7VdBJ5gYms).
 - Si los dos alimentos están en la base, usa su tabla como punto de partida y cita sus DOI. Complementa con PubMed solo si la base tiene menos de 2 estudios del alimento o si la pregunta trata otra forma del alimento (p. ej. café verde).
 - Si un alimento no está en la base, sigue con el Paso 2. Al terminar, ofrece añadirlo con `docs/instrucciones_extraccion.md`.
 - La base solo guarda datos extraídos y notas propias; nunca texto de los artículos.
