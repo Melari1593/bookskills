@@ -1,0 +1,42 @@
+id,label,type,source
+book,Fungal Machines: Sensing and Computing with Fungi,book,"Adamatzky (ed.), 2023"
+part_1,Actividad eléctrica,part,Índice
+chapter_1_1,Action Potential Like Spikes in Oyster Fungi Pleurotus Djamor,chapter,line 350
+chapter_1_2,On Electrical Spiking of Ganoderma Resinaceum,chapter,line 832
+chapter_1_3,Electrical Spiking of Psilocybin Fungi,chapter,line 1192
+chapter_1_4,Complexity of Electrical Spiking of Fungi,chapter,line 1608
+chapter_1_5,Fungi Anaesthesia,chapter,line 3010
+part_2,Sensores y wearables,part,Índice
+chapter_2_1,Living Mycelium Composites Discern Weights via Patterns of the Electrical Activity,chapter,line 3564
+chapter_2_2,Fungal Sensing Skin,chapter,line 3978
+chapter_2_3,Reactive Fungal Wearable,chapter,line 4428
+chapter_2_4,On Stimulating Fungi Pleurotus Ostreatus with Hydrocortisone,chapter,line 4918
+chapter_2_5,Fungal Photosensors,chapter,line 5876
+chapter_2_6,Reactive Fungal Insoles,chapter,line 6256
+chapter_2_7,Electrical Response of Fungi to Changing Moisture Content,chapter,line 6847
+part_3,Electrónica fúngica,part,Índice
+chapter_3_1,Electrical Resistive Spiking of Fungi,chapter,line 7546
+chapter_3_2,Fungal Capacitors,chapter,line 7930
+chapter_3_3,Mem-Fractive Properties of Fungi,chapter,line 8768
+chapter_3_4,Electrical Signal Transfer by Fungi,chapter,line 10288
+part_4,Computación fúngica,part,Índice
+chapter_4_1,Towards Fungal Computer,chapter,line 10876
+chapter_4_2,On Boolean Gates in Fungal Colony,chapter,line 12565
+chapter_4_3,Electrical Frequency Discrimination by Fungi Pleurotus Ostreatus,chapter,line 15515
+chapter_4_4,On Electrical Gates on Fungal Colony,chapter,line 15927
+chapter_4_5,Mining Logical Circuits in Fungi,chapter,line 16415
+chapter_4_6,Fungal Automata,chapter,line 17011
+chapter_4_7,Exploring Dynamics of Fungal Cellular Automata,chapter,line 17833
+chapter_4_8,Computational Universality of Fungal Sandpile Automata,chapter,line 20254
+part_5,Lenguaje y cognición,part,Índice
+chapter_5_1,Language of Fungi Derived from their Electrical Spiking Activity,chapter,line 20865
+chapter_5_2,Fungal Minds,chapter,line 21962
+bioelectric_spikes,Picos de potencial eléctrico,concept,Síntesis temática del índice
+mycelium,Micelio,concept,Síntesis temática del índice
+biosensor,Biosensores fúngicos,concept,Síntesis temática del índice
+electronic_components,Componentes electrónicos fúngicos,concept,Síntesis temática del índice
+logic,Compuertas y circuitos lógicos,concept,Síntesis temática del índice
+automata,Autómatas fúngicos,concept,Síntesis temática del índice
+cognition,Cognición y lenguaje fúngico,concept,Síntesis temática del índice
+pleurotus,Pleurotus,taxon,Título de capítulo
+ganoderma,Ganoderma,taxon,Título de capítulo
