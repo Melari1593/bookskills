@@ -1,6 +1,6 @@
 ---
 name: nutraceuticos
-description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina, açaí, brócoli, cordyceps, melena de león y especias, con seguridad e interacciones, más los grafos de los libros Flavonoids as Nutraceuticals (2024) y Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I (2023). Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico, un flavonoide o el uso de alimentos funcionales en una enfermedad crónica, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
+description: Nutracéuticos para consulta clínica con recetas de gastronomía molecular dosificadas en gramos y evidencia de PubMed con DOI. Cubre curcumina, omega-3, probióticos, moringa, camu camu, aguaje, guayaba, zapote, mango, guanábana, cacao, espirulina, açaí, brócoli, cordyceps, melena de león y especias, con seguridad e interacciones, más los grafos de los libros Flavonoids as Nutraceuticals (2024) , Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I (2023) y Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health. Úsala cuando pregunten por un nutracéutico, un alimento funcional amazónico, un flavonoide, el uso de alimentos funcionales en una enfermedad crónica o nutracéuticos en el embarazo, el posparto o la descendencia, pidan una receta con dosis o quieran saber qué evidencia y qué riesgos tiene, aunque no digan "nutracéutico".
 ---
 
 <!-- argument-hint: [nutracéutico, alimento o flavonoide] -->
@@ -9,13 +9,14 @@ description: Nutracéuticos para consulta clínica con recetas de gastronomía m
 
 **Actualizada:** 2026-11-22 · **Uso:** consulta clínica de Espacio Clínico · Dra. Karla.
 
-Esta skill tiene tres partes:
+Esta skill tiene cuatro partes:
 
 | Parte | Archivo | Contenido |
 |---|---|---|
 | Recetas y evidencia | `references/recetas-evidencia.md` | 19 preparaciones con gramos, proceso, fallas, evidencia por nivel de confianza, seguridad y log de búsqueda |
 | Grafo del libro | `references/grafo_flavonoids.json`, `assets/grafo_flavonoids_as_nutraceuticals.html`, `scripts/ruta.py` | *Flavonoids as Nutraceuticals* (Kesharwani et al., Apple Academic Press, 2024): 13 capítulos, 184 secciones, 43 conceptos, 84 prerrequisitos |
 | Grafo del libro | `references/grafo_functional_foods.json`, `assets/grafo_functional_foods_chronic_diseases.html`, `scripts/ruta.py --grafo cronicas` | *Applications of Functional Foods and Nutraceuticals for Chronic Diseases, Vol. I* (Mohan, Abdollahi y Pathak, eds., CRC Press, 2023): 15 capítulos, 189 secciones, 50 conceptos, 67 prerrequisitos |
+| Grafo del libro | `references/grafo_prenatal.json`, `assets/grafo_nutraceuticos_prenatal_materno.html`, `scripts/ruta.py --grafo prenatal` | *Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health* (Bhatt, Miraghajani, Pathak y otros, eds., CRC Press): 19 capítulos, 195 secciones, 56 conceptos, 71 prerrequisitos |
 
 Responde en español. Usa frases cortas, una instrucción por frase y la condición primero.
 
@@ -83,6 +84,16 @@ Las secciones 20 y 21 traen la tabla de seguridad por situación del paciente, l
 5. El capítulo 3 es la base de los demás: definiciones, toxicología, esteroles (eficacia máxima ≈ 1,6 g/día) y marco regulatorio.
 
 **Advertencias del libro.** El libro no numera las secciones: la numeración `capítulo.orden` es propia del grafo. Las páginas son las impresas de cada índice de capítulo. El capítulo 11 no tiene encabezados propios; el grafo agrupa sus secciones por enfermedad. Varios capítulos revisan evidencia preclínica o estudios pequeños (por ejemplo, magnesio en dismenorrea). Para una conducta clínica, usa el documento de recetas y evidencia, no el libro.
+
+## Grafo de *Nutraceuticals for Prenatal, Maternal and Offspring's Nutritional Health*
+
+1. Para buscar un tema y sus antecedentes, ejecuta `python scripts/ruta.py --grafo prenatal "término"`. Acepta un número de sección (`10.3`) o el id de un concepto (`anemia_hb`).
+2. Lee los resúmenes de los nodos en `references/grafo_prenatal.json` antes de explicar una relación. Los arcos son una interpretación pedagógica.
+3. Para el mapa visual, entrega una copia de `assets/grafo_nutraceuticos_prenatal_materno.html`.
+4. Bloques: bases y periconcepción (cap. 1–4); complicaciones maternas: ganancia de peso, aborto, preeclampsia, diabetes gestacional (5, 6, 10, 11); anemia, infección y hormonas (7, 8, 9); salud mental y posparto (12, 13); resultados fetales y de la descendencia: útero, hueso, dientes, piel y alergia, enfermedad crónica, respiración (14–19).
+5. Para preguntas de embarazo, cruza con la skill `manual-obstetricia-ginecologia` y con la tabla de seguridad del documento de recetas.
+
+**Advertencias del libro.** El libro numera solo algunas secciones: la numeración `capítulo.orden` es propia del grafo. El capítulo 7 no tiene subtítulos; el grafo lo divide por tema. Las dosis (hierro 27 mg/día, ácido fólico 600 µg/día, calcio ≥ 1 g/día en preeclampsia) vienen de las tablas del libro y no están verificadas en PubMed. Conceptos con alerta: exceso de vitamina A; cohosh azul, ginseng y mwanamphepo (hierbas para inducir el parto o sin seguridad establecida); la afirmación del capítulo 6 sobre clorofila y "guanidina" no tiene evidencia establecida.
 
 ## Alcance y límites
 
