@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "title": "Fungal Machines: Sensing and Computing with Fungi",
+    "editor": "Andrew Adamatzky",
+    "year": 2023,
+    "kind": "structural knowledge graph"
+  },
+  "nodes": [
+    {
+      "id": "book",
+      "label": "Fungal Machines: Sensing and Computing with Fungi",
+      "type": "book",
+      "source": "Adamatzky (ed.), 2023"
+    },
+    {
+      "id": "part_1",
+      "label": "Actividad eléctrica",
+      "type": "part",
+      "source": "Índice"
+    },
+    {
+      "id": "chapter_1_1",
+      "label": "Action Potential Like Spikes in Oyster Fungi Pleurotus Djamor",
+      "type": "chapter",
+      "source": "line 350"
+    },
+    {
+      "id": "chapter_1_2",
+      "label": "On Electrical Spiking of Ganoderma Resinaceum",
+      "type": "chapter",
+      "source": "line 832"
+    },
+    {
+      "id": "chapter_1_3",
+      "label": "Electrical Spiking of Psilocybin Fungi",
+      "type": "chapter",
+      "source": "line 1192"
+    },
+    {
+      "id": "chapter_1_4",
+      "label": "Complexity of Electrical Spiking of Fungi",
+      "type": "chapter",
+      "source": "line 1608"
+    },
+    {
+      "id": "chapter_1_5",
+      "label": "Fungi Anaesthesia",
+      "type": "chapter",
+      "source": "line 3010"
+    },
+    {
+      "id": "part_2",
+      "label": "Sensores y wearables",
+      "type": "part",
+      "source": "Índice"
+    },
+    {
+      "id": "chapter_2_1",
+      "label": "Living Mycelium Composites Discern Weights via Patterns of the Electrical Activity",
+      "type": "chapter",
+      "source": "line 3564"
+    },
+    {
+      "id": "chapter_2_2",
+      "label": "Fungal Sensing Skin",
+      "type": "chapter",
+      "source": "line 3978"
+    },
+    {
+      "id": "chapter_2_3",
+      "label": "Reactive Fungal Wearable",
+      "type": "chapter",
+      "source": "line 4428"
+    },
+    {
+      "id": "chapter_2_4",
+      "label": "On Stimulating Fungi Pleurotus Ostreatus with Hydrocortisone",
+      "type": "chapter",
+      "source": "line 4918"
+    },
+    {
+      "id": "chapter_2_5",
+      "label": "Fungal Photosensors",
+      "type": "chapter",
+      "source": "line 5876"
+    },
+    {
+      "id": "chapter_2_6",
+      "label": "Reactive Fungal Insoles",
+      "type": "chapter",
+      "source": "line 6256"
+    },
+    {
+      "id": "chapter_2_7",
+      "label": "Electrical Response of Fungi to Changing Moisture Content",
+      "type": "chapter",
+      "source": "line 6847"
+    },
+    {
+      "id": "part_3",
+      "label": "Electrónica fúngica",
+      "type": "part",
+      "source": "Índice"
+    },
+    {
+      "id": "chapter_3_1",
+      "label": "Electrical Resistive Spiking of Fungi",
+      "type": "chapter",
+      "source": "line 7546"
+    },
+    {
+      "id": "chapter_3_2",
+      "label": "Fungal Capacitors",
+      "type": "chapter",
+      "source": "line 7930"
+    },
+    {
+      "id": "chapter_3_3",
+      "label": "Mem-Fractive Properties of Fungi",
+      "type": "chapter",
+      "source": "line 8768"
+    },
+    {
+      "id": "chapter_3_4",
+      "label": "Electrical Signal Transfer by Fungi",
+      "type": "chapter",
+      "source": "line 10288"
+    },
+    {
+      "id": "part_4",
+      "label": "Computación fúngica",
+      "type": "part",
+      "source": "Índice"
+    },
+    {
+      "id": "chapter_4_1",
+      "label": "Towards Fungal Computer",
+      "type": "chapter",
+      "source": "line 10876"
+    },
+    {
+      "id": "chapter_4_2",
+      "label": "On Boolean Gates in Fungal Colony",
+      "type": "chapter",
+      "source": "line 12565"
+    },
+    {
+      "id": "chapter_4_3",
+      "label": "Electrical Frequency Discrimination by Fungi Pleurotus Ostreatus",
+      "type": "chapter",
+      "source": "line 15515"
+    },
+    {
+      "id": "chapter_4_4",
+      "label": "On Electrical Gates on Fungal Colony",
+      "type": "chapter",
+      "source": "line 15927"
+    },
+    {
+      "id": "chapter_4_5",
+      "label": "Mining Logical Circuits in Fungi",
+      "type": "chapter",
+      "source": "line 16415"
+    },
+    {
+      "id": "chapter_4_6",
+      "label": "Fungal Automata",
+      "type": "chapter",
+      "source": "line 17011"
+    },
+    {
+      "id": "chapter_4_7",
+      "label": "Exploring Dynamics of Fungal Cellular Automata",
+      "type": "chapter",
+      "source": "line 17833"
+    },
+    {
+      "id": "chapter_4_8",
+      "label": "Computational Universality of Fungal Sandpile Automata",
+      "type": "chapter",
+      "source": "line 20254"
+    },
+    {
+      "id": "part_5",
+      "label": "Lenguaje y cognición",
+      "type": "part",
+      "source": "Índice"
+    },
+    {
+      "id": "chapter_5_1",
+      "label": "Language of Fungi Derived from their Electrical Spiking Activity",
+      "type": "chapter",
+      "source": "line 20865"
+    },
+    {
+      "id": "chapter_5_2",
+      "label": "Fungal Minds",
+      "type": "chapter",
+      "source": "line 21962"
+    },
+    {
+      "id": "bioelectric_spikes",
+      "label": "Picos de potencial eléctrico",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "mycelium",
+      "label": "Micelio",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "biosensor",
+      "label": "Biosensores fúngicos",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "electronic_components",
+      "label": "Componentes electrónicos fúngicos",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "logic",
+      "label": "Compuertas y circuitos lógicos",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "automata",
+      "label": "Autómatas fúngicos",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "cognition",
+      "label": "Cognición y lenguaje fúngico",
+      "type": "concept",
+      "source": "Síntesis temática del índice"
+    },
+    {
+      "id": "pleurotus",
+      "label": "Pleurotus",
+      "type": "taxon",
+      "source": "Título de capítulo"
+    },
+    {
+      "id": "ganoderma",
+      "label": "Ganoderma",
+      "type": "taxon",
+      "source": "Título de capítulo"
+    }
+  ],
+  "edges": [
+    {
+      "source": "book",
+      "target": "part_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "chapter_1_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "chapter_1_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "chapter_1_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "chapter_1_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "chapter_1_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "book",
+      "target": "part_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_2",
+      "target": "chapter_2_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "book",
+      "target": "part_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_3",
+      "target": "chapter_3_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_3",
+      "target": "chapter_3_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_3",
+      "target": "chapter_3_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_3",
+      "target": "chapter_3_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "book",
+      "target": "part_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_3",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_4",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_6",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_7",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_4",
+      "target": "chapter_4_8",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "book",
+      "target": "part_5",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_5",
+      "target": "chapter_5_1",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_5",
+      "target": "chapter_5_2",
+      "relation": "CONTIENE"
+    },
+    {
+      "source": "part_1",
+      "target": "bioelectric_spikes",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_1",
+      "target": "mycelium",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_2",
+      "target": "biosensor",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_2",
+      "target": "bioelectric_spikes",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_3",
+      "target": "electronic_components",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_4",
+      "target": "logic",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_4",
+      "target": "automata",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_5",
+      "target": "cognition",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "part_5",
+      "target": "bioelectric_spikes",
+      "relation": "ESTUDIA"
+    },
+    {
+      "source": "chapter_1_1",
+      "target": "pleurotus",
+      "relation": "ESTUDIA_TAXON"
+    },
+    {
+      "source": "chapter_1_2",
+      "target": "ganoderma",
+      "relation": "ESTUDIA_TAXON"
+    },
+    {
+      "source": "chapter_2_4",
+      "target": "pleurotus",
+      "relation": "ESTUDIA_TAXON"
+    },
+    {
+      "source": "chapter_4_3",
+      "target": "pleurotus",
+      "relation": "ESTUDIA_TAXON"
+    }
+  ]
+}
