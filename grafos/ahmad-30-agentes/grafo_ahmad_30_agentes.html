@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grafo del libro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "30 agentes que todo ingeniero de IA debe construir, como grafo", "subtitle": "Imran Ahmad (traducción al español): 17 capítulos, sus secciones, los 30 agentes y los conceptos clave que los sostienen", "language": "es", "itemLabel": "Agente o concepto", "itemLabelPlural": "Agentes y conceptos", "searchHint": "Buscar: RAG, PTCF, orquestador, 7.4…"}, "blocks": {"fund": {"name": "Fundamentos, herramientas y prompts"}, "resp": {"name": "Despliegue responsable y ética"}, "cog": {"name": "Arquitecturas cognitivas y conocimiento"}, "orq": {"name": "Herramientas, orquestación y razonamiento"}, "app": {"name": "Software, conversación y contenido"}, "fis": {"name": "Percepción y mundo físico"}, "dom": {"name": "Dominios especializados"}, "fut": {"name": "Epílogo y futuro"}}, "chapters": [{"num": 1, "title": "Fundamentos de la ingeniería de agentes", "block": "fund", "summary": "Define qué es un agente, su bucle cognitivo y sus variantes (reactivo, deliberativo, híbrido), los protocolos MCP y A2A, el ciclo de vida de desarrollo y una escala de madurez de 0 a 4 que el resto del libro usa como vocabulario.", "sections": [{"num": "1.1", "title": "Introducción a los agentes", "summary": "Qué distingue a un agente de un programa o de un LLM aislado: percibe, mantiene estado, razona sobre objetivos y actúa."}, {"num": "1.2", "title": "Arquitectura de los agentes", "summary": "Componentes del agente, cómo se comunican y cómo elegir su 'cerebro': reactivo, deliberativo (SMPA) o híbrido por capas.", "items": ["bucle_cognitivo", "smpa"]}, {"num": "1.3", "title": "Protocolos de interoperabilidad", "summary": "Model Context Protocol para conectar agentes con herramientas y datos, y protocolos agente a agente para que cooperen entre sí.", "items": ["mcp_a2a"]}, {"num": "1.4", "title": "El ciclo de vida de desarrollo de agentes", "summary": "Fases desde los requisitos hasta la gobernanza: diseño, implementación, evaluación y mantenimiento continuo.", "items": ["adl"]}, {"num": "1.5", "title": "La evolución de los paradigmas de interacción de agentes", "summary": "Del LLM sin estado al proxy, al asistente con herramientas, al agente autónomo y a los sistemas multiagente, con un ejemplo de salida estructurada."}, {"num": "1.6", "title": "Marco de progresión de la IA agente", "summary": "Escala de cinco niveles para ubicar un sistema según su autonomía: de operaciones manuales a agentes que aprenden.", "items": ["progresion"]}, {"num": "1.7", "title": "Impacto empresarial en el mundo real", "summary": "Tres casos de empresa (seguros, soporte, ventas) que muestran el retorno de agentes en producción."}]}, {"num": 2, "title": "El kit de herramientas del ingeniero de agentes", "block": "fund", "summary": "Recorre el ecosistema práctico: frameworks (LangChain, LangGraph, LlamaIndex, AutoGPT, CrewAI, AutoGen), selección de LLM, bases de datos vectoriales, llamada a funciones y las plataformas de AWS, Azure y Google Cloud.", "sections": [{"num": "2.1", "title": "Frameworks de desarrollo de agentes", "summary": "Comparación de los frameworks principales, sus fortalezas y cuándo construir frente a integrar.", "items": ["frameworks"]}, {"num": "2.2", "title": "LLMs: el núcleo cognitivo", "summary": "Cómo elegir e integrar modelos y cómo repartir tareas entre varios modelos según coste y capacidad.", "items": ["modelos_hibridos"]}, {"num": "2.3", "title": "Infraestructura de soporte", "summary": "Bases de datos vectoriales como memoria del agente, técnicas de recuperación y frameworks para integrar herramientas.", "items": ["bd_vectoriales", "function_calling"]}, {"num": "2.4", "title": "Plataformas de desarrollo nativas de la nube", "summary": "Servicios de agentes de AWS (Bedrock), Azure (AI Foundry) y Google Cloud (Vertex AI, ADK), con criterios para escoger plataforma."}]}, {"num": 3, "title": "El arte del prompting de agentes", "block": "fund", "summary": "Trata el prompt como la 'constitución' del agente: separación sistema/usuario, el marco PTCF, descomposición de tareas, few-shot, cadena y árbol de pensamiento, protocolos de comunicación entre agentes y evaluación iterativa.", "sections": [{"num": "3.1", "title": "De las instrucciones a las constituciones", "summary": "Por qué en un agente el prompt define identidad, límites y lógica de decisión persistentes, no una orden puntual."}, {"num": "3.2", "title": "Arquitectura de prompts de dos capas", "summary": "El prompt de sistema fija el marco estable; el de usuario aporta el estímulo cambiante de cada turno.", "items": ["prompt_sistema"]}, {"num": "3.3", "title": "El plano PTCF", "summary": "Marco de cuatro componentes para diseñar prompts con principios, desarrollado con un agente empresarial de ejemplo.", "items": ["ptcf"]}, {"num": "3.4", "title": "Diseñando agentes pensantes", "summary": "Alinear la estrategia de prompting con la capacidad del agente y descomponer intenciones en pasos ejecutables.", "items": ["descomposicion"]}, {"num": "3.5", "title": "Few-shot learning", "summary": "Cuántos ejemplos usar y cómo enseñan un patrón; ejemplo de enrutamiento de tickets.", "items": ["few_shot"]}, {"num": "3.6", "title": "Chain-of-thought y tree-of-thought", "summary": "Hacer explícito el razonamiento: paso a paso (CoT) o explorando ramas con 'expertos' virtuales (ToT).", "items": ["cot_tot"]}, {"num": "3.7", "title": "Protocolos de comunicación basados en prompts", "summary": "Mensajes y roles estandarizados para que varios agentes colaboren mediante prompts."}, {"num": "3.8", "title": "Iterando y evaluando prompts", "summary": "Ciclo de prueba y refinamiento con tres casos: triaje SaaS, revisión de cumplimiento financiero y revisión de código."}]}, {"num": 4, "title": "Despliegue de agentes y desarrollo responsable", "block": "resp", "summary": "Lleva los agentes a producción: infraestructura según el tipo de agente, coste y rendimiento, amenazas como la inyección de prompts, confianza cero, defensa en profundidad y principios de IA responsable con cumplimiento normativo.", "sections": [{"num": "4.1", "title": "Escalado de sistemas de agentes", "summary": "Infraestructura según la tipología del agente y optimización de coste y caudal.", "items": ["optim_costos"]}, {"num": "4.2", "title": "Consideraciones de seguridad y privacidad", "summary": "Panorama de amenazas, confianza cero aplicada a agentes, respuesta a incidentes y defensa en capas.", "items": ["amenazas", "zero_trust"]}, {"num": "4.3", "title": "Desarrollo ético de agentes", "summary": "Transparencia, equidad, responsabilidad y cumplimiento normativo como requisitos de diseño.", "items": ["ia_responsable"]}, {"num": "4.4", "title": "Equilibrando la ética y el rendimiento", "summary": "Cómo diseñar arquitecturas alineadas éticamente sin sacrificar la utilidad, y hacia dónde va la práctica."}, {"num": "4.5", "title": "Referencia rápida de la cadena de herramientas", "summary": "Tabla resumen de herramientas para desplegar, observar y proteger agentes."}]}, {"num": 5, "title": "Arquitecturas cognitivas fundamentales", "block": "cog", "summary": "Los tres bloques sobre los que se apoyan todos los agentes siguientes: decisión autónoma (percepción-cognición-acción), planificación jerárquica y memoria de trabajo, episódica y semántica; con comparación y buenas prácticas.", "sections": [{"num": "5.1", "title": "El agente de toma de decisiones autónoma", "summary": "Implementa el bucle percepción-cognición-acción con LLM y lo valida en un caso de servicio al cliente.", "items": ["ag_decision"]}, {"num": "5.2", "title": "El agente de planificación", "summary": "Descomposición jerárquica, planificación simbólica y dinámica con LLM, ejecución monitorizada y replanificación.", "items": ["ag_planificacion"]}, {"num": "5.3", "title": "El agente aumentado por memoria", "summary": "Tipos de memoria, su arquitectura y un asistente de salud personalizado como caso.", "items": ["tipos_memoria", "ag_memoria"]}, {"num": "5.4", "title": "Análisis comparativo de arquitecturas", "summary": "Fortalezas y compromisos de cada arquitectura y cómo combinarlas."}, {"num": "5.5", "title": "Mejores prácticas de ingeniería", "summary": "Escalabilidad, gestión del contexto y robustez para llevar estos agentes a producción."}]}, {"num": 6, "title": "Recuperación de información y agentes de conocimiento", "block": "cog", "summary": "Conecta los LLM con fuentes vivas y verificables: recuperación aumentada (RAG), inteligencia documental que convierte documentos complejos en datos, y agentes que sintetizan literatura científica.", "sections": [{"num": "6.1", "title": "Agentes de recuperación de conocimiento", "summary": "Principios, proceso de recuperación, un pipeline RAG con estrategias de segmentación y diagnóstico de fallos.", "items": ["rag", "ag_recuperacion"]}, {"num": "6.2", "title": "Agentes de inteligencia documental", "summary": "Pipeline modular de cinco etapas (de la ingesta y el triaje a la validación) con OCR, análisis de diseño y extracción.", "items": ["ag_documental"]}, {"num": "6.3", "title": "Agentes de investigación científica", "summary": "Búsqueda amplia, agrupación temática y síntesis; caso de descubrimiento de fármacos y límites.", "items": ["ag_investigacion"]}, {"num": "6.4", "title": "El espectro de los agentes de conocimiento", "summary": "Ubica los tres tipos en un continuo de complejidad y explica cómo se combinan."}]}, {"num": 7, "title": "Agentes de manipulación y orquestación de herramientas", "block": "orq", "summary": "Del agente único que invoca funciones al orquestador que reparte trabajo entre especialistas y al flujo de trabajo con estado y supervisión humana; incluye selección de herramientas, manejo de errores y resolución de conflictos.", "sections": [{"num": "7.1", "title": "Patrones de invocación de herramientas", "summary": "Núcleo de razonamiento, registro de herramientas, motor de ejecución y patrones de llamada a funciones.", "items": ["ag_herramientas"]}, {"num": "7.2", "title": "Descubrimiento y selección de herramientas", "summary": "Embudo que reduce un catálogo grande a la herramienta adecuada combinando intención, embeddings y restricciones.", "items": ["embudo"]}, {"num": "7.3", "title": "Manejo de errores en la integración de herramientas", "summary": "Modos de fallo típicos y estrategias de recuperación por capas (reintentos, alternativas, degradación)."}, {"num": "7.4", "title": "El orquestador de cadena de agentes", "summary": "Un agente gerente enruta y delega subtareas a agentes especializados.", "items": ["ag_orquestador"]}, {"num": "7.5", "title": "Sistemas multiagente con memoria aumentada", "summary": "Capas de memoria compartida entre especialistas; ejemplo de un sistema de inteligencia de mercado."}, {"num": "7.6", "title": "Mecanismos de resolución de conflictos", "summary": "Arquitectura de arbitraje para cuando los especialistas discrepan.", "items": ["resolucion_conflictos"]}, {"num": "7.7", "title": "El sistema de flujo de trabajo agéntico", "summary": "Procesos con estado, persistencia y puntos de aprobación humana; casos de pedidos de comercio electrónico y reclamos de seguros.", "items": ["ag_flujo"]}]}, {"num": 8, "title": "Agentes de análisis de datos y razonamiento", "block": "orq", "summary": "Agentes que entienden los datos y defienden sus conclusiones: análisis con código y visualización, verificación y validación de hechos y lógica, y un solucionador general que transfiere estrategias entre dominios; dos casos de estudio.", "sections": [{"num": "8.1", "title": "El agente de análisis de datos", "summary": "De la intención del usuario al código, la visualización y el razonamiento estadístico (descriptivo, inferencial, anomalías).", "items": ["ag_datos"]}, {"num": "8.2", "title": "El agente de verificación y validación", "summary": "Comprobación de hechos, coherencia lógica, evaluación con recuperación y manejo de evidencia contradictoria.", "items": ["ag_verificacion"]}, {"num": "8.3", "title": "El solucionador de problemas general", "summary": "Arquitectura que une planificación, recuperación y aprendizaje; coordinación multiagente y metaaprendizaje.", "items": ["ag_gps"]}, {"num": "8.4", "title": "Caso: verificación de hechos en noticias", "summary": "Asistente que extrae afirmaciones de un texto y las contrasta con una base confiable."}, {"num": "8.5", "title": "Caso: hipótesis interdisciplinarias", "summary": "Aplica la resiliencia ecológica a la estabilidad de la red eléctrica en cinco etapas, de descomponer a metaaprender.", "items": ["analogia"]}]}, {"num": 9, "title": "Agentes de desarrollo de software", "block": "app", "summary": "Tres clases de agentes para el ciclo de software, cada una con su bucle: generación guiada por pruebas, cumplimiento integrado en CI/CD y automejora a partir de la retroalimentación.", "sections": [{"num": "9.1", "title": "Contexto del mercado y tendencias", "summary": "Copilotos de IDE, agentes autónomos y capas de herramientas; hacia dónde va la adopción."}, {"num": "9.2", "title": "Agentes de generación de código", "summary": "Flujo TDG con orquestación multiagente, de una función aislada a un sistema full-stack con LangGraph.", "items": ["tdg", "ag_codigo"]}, {"num": "9.3", "title": "Agentes orientados al cumplimiento", "summary": "Validación estática, análisis de flujo de datos, pistas de auditoría y caso PCI DSS en un pipeline fintech.", "items": ["ag_cumplimiento"]}, {"num": "9.4", "title": "El agente automejorable", "summary": "Control de lazo cerrado que convierte la retroalimentación en ajustes; caso de atención al cliente adaptativa.", "items": ["ag_automejora"]}]}, {"num": 10, "title": "Agentes conversacionales y de creación de contenido", "block": "app", "summary": "Agentes juzgados por continuidad, tono y coherencia: un conversacional con memoria dual y personalidad modelada, y un creador de contenido que trata la marca como restricciones.", "sections": [{"num": "10.1", "title": "El agente conversacional", "summary": "Gestión del diálogo, jerarquía de memoria dual, gestión eficiente del contexto, modelado de personalidad y un caso de apoyo empático en salud mental.", "items": ["memoria_dual", "ag_conversacional"]}, {"num": "10.2", "title": "El agente de creación de contenido", "summary": "Escritura en etapas (idear, redactar, revisar), marca como problema de restricciones y un asistente de marketing.", "items": ["marca_csp", "ag_contenido"]}]}, {"num": 11, "title": "Agentes de percepción multimodal", "block": "fis", "summary": "Amplía la percepción más allá del texto: imagen con lenguaje, audio con emoción y sensores de edificios inteligentes, todos organizados con el bucle sentir-modelar-planificar-actuar.", "sections": [{"num": "11.1", "title": "Agentes de visión-lenguaje", "summary": "Codificador visual, alineación y LLM; un agente de preguntas sobre imágenes con razonamiento paso a paso.", "items": ["ag_vision"]}, {"num": "11.2", "title": "Agentes de procesamiento de audio", "summary": "Del audio a tokens: transcripción, prosodia y emoción; caso de servicio al cliente multimodal.", "items": ["vad", "ag_audio"]}, {"num": "11.3", "title": "Agentes de detección del entorno físico", "summary": "Edificio inteligente: detección de eventos por patrones, control con bandas muertas y fusión de sensores.", "items": ["ag_entorno"]}]}, {"num": 12, "title": "Agentes éticos y explicables", "block": "resp", "summary": "Dos arquitecturas que hacen responsables a los agentes: una evalúa cada acción contra restricciones éticas antes de ejecutarla y otra explica sus decisiones según la audiencia; base para los capítulos de dominios regulados.", "sections": [{"num": "12.1", "title": "El agente de razonamiento ético", "summary": "Alineación de valores, lógica deóntica, conflicto entre métricas de equidad, mitigación de sesgos y un asistente de RR. HH.", "items": ["logica_deontica", "imposibilidad", "ag_etico"]}, {"num": "12.2", "title": "El agente explicable", "summary": "Trazas de razonamiento, explicaciones por audiencia, comunicación de la confianza, un asistente diagnóstico y el marco regulatorio (Ley de IA de la UE, NIST).", "items": ["xai", "ag_explicable"]}]}, {"num": 13, "title": "Agentes de atención médica y científicos", "block": "dom", "summary": "Agentes para dominios donde el error cuesta vidas: uno clínico de cuatro capas con confianza calibrada y escalamiento de seguridad, y uno de descubrimiento que detecta brechas y propone hipótesis comprobables.", "sections": [{"num": "13.1", "title": "El agente de inteligencia en atención médica", "summary": "Conocimiento médico con procedencia, datos de pacientes alineados en el tiempo, apoyo a la decisión clínica y un sistema de asistencia diagnóstica.", "items": ["bayes_clinico", "ag_salud"]}, {"num": "13.2", "title": "El agente de descubrimiento científico", "summary": "Síntesis de literatura, identificación de brechas, generación de hipótesis y un caso en ciencia de materiales.", "items": ["hipotesis_abductiva", "ag_descubrimiento"]}]}, {"num": 14, "title": "Agentes del dominio financiero y legal", "block": "dom", "summary": "Agentes para industrias reguladas donde el cumplimiento es una restricción de arquitectura: un asesor financiero con supervisor multiagente y control de riesgo, y un agente legal con recuperación híbrida y verificación de citas.", "sections": [{"num": "14.1", "title": "El agente de asesoría financiera", "summary": "Datos de mercado, evaluación de riesgo, planificación personalizada y un asesor para inversores minoristas.", "items": ["puertas_cumplimiento", "ag_financiero"]}, {"num": "14.2", "title": "El agente de inteligencia legal", "summary": "Bases de conocimiento legal, búsqueda de precedentes, análisis de contratos y preparación de escritos.", "items": ["verificacion_citas", "ag_legal"]}]}, {"num": 15, "title": "Agentes de educación y conocimiento", "block": "dom", "summary": "Un tutor que modela lo que el estudiante sabe y adapta el currículo, y un equipo de agentes que alcanza consenso para producir resultados mejores que cada uno por separado.", "sections": [{"num": "15.1", "title": "El agente de inteligencia educativa", "summary": "POMDP aproximado, currículo con grafo de conocimiento, seguimiento bayesiano del progreso, técnicas adaptativas y un tutor de programación.", "items": ["modelo_estudiante", "ag_educativo"]}, {"num": "15.2", "title": "El agente de inteligencia colectiva", "summary": "Arquitecturas de colaboración, votación y consenso, diseño de rúbricas entre tres agentes e inteligencia emergente.", "items": ["consenso", "ag_colectivo"]}]}, {"num": 16, "title": "Agentes encarnados y del mundo físico", "block": "fis", "summary": "Agentes que actúan donde las acciones son irreversibles y la energía es finita: control profundo de un sistema físico frente a coordinación amplia entre dominios, integrados en una misión de drones en invierno.", "sections": [{"num": "16.1", "title": "La división entre profundidad y amplitud", "summary": "Por qué controlar un sistema con precisión y coordinar muchos sistemas acoplados exigen arquitecturas distintas.", "items": ["profundidad_amplitud"]}, {"num": "16.2", "title": "El agente de inteligencia encarnada", "summary": "Jerarquía de control por escalas de tiempo, modelo del mundo como motor físico e integración percepción-acción multitasa.", "items": ["ag_encarnado"]}, {"num": "16.3", "title": "El agente de integración de transformación de dominios", "summary": "Sistemas dinámicos acoplados modelados como grafo tipado, propagación de influencia y simulación.", "items": ["ag_integracion"]}, {"num": "16.4", "title": "Caso: misiones de drones en el invierno de Ottawa", "summary": "Escenario, formalización de restricciones, asignación de ambas arquitecturas e implementación.", "items": ["envolvente"]}]}, {"num": 17, "title": "Epílogo: el futuro de los agentes inteligentes", "block": "fut", "summary": "Fronteras técnicas (autoevolución, sociedades de agentes, gobernanza interna, encarnación, arquitecturas inspiradas en el cerebro) y una guía estratégica para adoptar agentes en una organización y medir su retorno.", "sections": [{"num": "17.1", "title": "Paradigmas emergentes", "summary": "Agentes que se rediseñan, sociedades con comportamiento emergente, autorregulación y cognición inspirada en el cerebro.", "items": ["sociedades"]}, {"num": "17.2", "title": "Implementación estratégica", "summary": "Hojas de ruta de capacidades, habilidades del equipo, creación de valor, ROI y relación humano-IA.", "items": ["hoja_ruta"]}]}], "items": {"bucle_cognitivo": {"title": "Bucle cognitivo", "formula": "percibir → razonar → planificar → actuar → aprender", "summary": "Ciclo continuo que convierte la percepción en acción y acumula experiencia; es el esqueleto de todos los agentes del libro."}, "smpa": {"title": "Agentes reactivos, deliberativos e híbridos (SMPA)", "formula": "Sentir → Modelar → Planificar → Actuar", "summary": "Tres formas de pasar de la percepción a la acción: reflejo inmediato, deliberación con modelo del mundo, o capas que combinan ambas."}, "mcp_a2a": {"title": "Protocolos MCP y A2A", "summary": "MCP estandariza cómo un agente accede a herramientas y datos; A2A, cómo se descubren y cooperan agentes distintos."}, "adl": {"title": "Ciclo de vida de desarrollo de agentes (ADL)", "formula": "requisitos → diseño → implementación → evaluación → gobernanza", "summary": "Metodología por fases para construir, evaluar y mantener agentes; el capítulo 4 detalla su fase de despliegue."}, "progresion": {"title": "Marco de progresión de la IA agéntica", "formula": "Nivel 0 manual → 1 reactivo → 2 con herramientas → 3 planificador → 4 aprendiz", "summary": "Escala de madurez para clasificar un sistema y planificar su evolución."}, "frameworks": {"title": "Frameworks de agentes", "summary": "LangChain, LangGraph, LlamaIndex, AutoGPT, CrewAI y AutoGen: qué resuelve cada uno y cuándo conviene usarlo."}, "modelos_hibridos": {"title": "Arquitectura de modelos híbridos", "summary": "Varios modelos se reparten las tareas según su fortaleza y coste, en lugar de usar un único LLM para todo."}, "bd_vectoriales": {"title": "Bases de datos vectoriales", "summary": "Guardan embeddings para recuperar por similitud; son la memoria a largo plazo y la base de la recuperación."}, "function_calling": {"title": "Llamada a funciones", "summary": "El modelo devuelve una llamada estructurada a una herramienta declarada con esquema, que el sistema ejecuta."}, "prompt_sistema": {"title": "Prompt de sistema como constitución", "summary": "Capa estable que fija identidad, reglas y límites del agente, separada del prompt de usuario de cada turno."}, "ptcf": {"title": "Marco PTCF", "formula": "Persona + Tarea + Contexto + Formato", "summary": "Plantilla de cuatro componentes para diseñar prompts de agente predecibles y alineados."}, "descomposicion": {"title": "Descomposición de tareas por prompting", "summary": "Guiar al modelo para dividir una intención en subtareas ordenadas y verificables."}, "few_shot": {"title": "Aprendizaje con pocos ejemplos (few-shot)", "summary": "Ejemplos dentro del prompt que enseñan el patrón esperado sin reentrenar el modelo."}, "cot_tot": {"title": "Cadena y árbol de pensamiento (CoT/ToT)", "summary": "CoT obliga a razonar paso a paso; ToT explora varias ramas o perspectivas y elige la más sólida."}, "optim_costos": {"title": "Optimización de coste y caudal", "summary": "Técnicas para bajar el coste por tarea y sostener alto volumen: enrutar a modelos más baratos, caché y paralelismo."}, "amenazas": {"title": "Modelo de amenazas e inyección de prompts", "summary": "Riesgos propios de agentes: instrucciones maliciosas en la entrada, abuso de herramientas y manipulación de la memoria."}, "zero_trust": {"title": "Confianza cero y defensa en profundidad", "summary": "Ningún agente ni herramienta es confiable por defecto: permisos mínimos, verificación continua y controles en capas."}, "ia_responsable": {"title": "Principios de IA responsable", "summary": "Transparencia, equidad, responsabilidad y cumplimiento normativo tratados como requisitos de diseño."}, "ag_decision": {"title": "Agente de toma de decisiones autónoma", "formula": "percepción → cognición → acción", "summary": "Agente 1. Interpreta la entrada, razona y actúa en un ciclo continuo; responde bien en tareas de un solo paso."}, "ag_planificacion": {"title": "Agente de planificación", "summary": "Agente 2. Descompone objetivos complejos en jerarquías de subtareas, monitoriza la ejecución y replanifica."}, "tipos_memoria": {"title": "Memoria de trabajo, episódica y semántica", "summary": "Contexto inmediato de la sesión, historial de interacciones y conocimiento general destilado."}, "ag_memoria": {"title": "Agente aumentado por memoria", "summary": "Agente 3. Conserva contexto entre sesiones para personalizar y aprender de experiencias previas."}, "rag": {"title": "Generación aumentada por recuperación (RAG)", "formula": "consulta → recuperar fragmentos → generar con evidencia", "summary": "Ancla las respuestas en documentos recuperados para superar la fecha de corte del modelo y reducir alucinaciones."}, "ag_recuperacion": {"title": "Agente de recuperación de conocimiento", "summary": "Agente 4. Conecta el LLM con fuentes vivas mediante RAG y decide qué buscar y cómo combinarlo."}, "ag_documental": {"title": "Agente de inteligencia documental", "formula": "ingesta y triaje → … → validación (5 etapas)", "summary": "Agente 5. Convierte documentos visualmente complejos en datos estructurados y validados, con revisión humana si la confianza es baja."}, "ag_investigacion": {"title": "Agente de investigación científica", "formula": "buscar literatura → agrupar y resumir → sintetizar", "summary": "Agente 6. Sintetiza grandes corpus, reconcilia hallazgos y señala consensos y vacíos."}, "ag_herramientas": {"title": "Agente que usa herramientas", "summary": "Agente 7. Un núcleo de razonamiento elige herramientas de un registro y un motor de ejecución las invoca y gestiona resultados."}, "embudo": {"title": "Embudo de selección de herramientas", "formula": "intención → búsqueda semántica → filtro por restricciones", "summary": "Reduce un catálogo grande a pocas candidatas y verifica la final."}, "ag_orquestador": {"title": "Agente orquestador de cadena de agentes", "summary": "Agente 8. Un gerente enruta subtareas a agentes especializados y compone sus resultados."}, "resolucion_conflictos": {"title": "Resolución de conflictos entre agentes", "summary": "Arbitraje cuando los especialistas discrepan: ponderar evidencia y confianza en lugar de ignorar el desacuerdo."}, "ag_flujo": {"title": "Sistema de flujo de trabajo agéntico", "summary": "Agente 9. Procesos de negocio con estado, transiciones con condiciones y pausas para aprobación humana (human-in-the-loop)."}, "ag_datos": {"title": "Agente de análisis de datos", "formula": "intención → código → visualización → presentación", "summary": "Agente 10. Traduce preguntas en lenguaje natural en análisis ejecutados, gráficos y conclusiones estadísticas."}, "ag_verificacion": {"title": "Agente de verificación y validación", "summary": "Agente 11. Auditor interno: comprueba hechos, coherencia lógica y consistencia del razonamiento de otros agentes."}, "ag_gps": {"title": "Solucionador general de problemas", "summary": "Agente 12. Razona a nivel metacognitivo: descompone problemas nuevos, elige estrategias y transfiere lo aprendido entre dominios."}, "analogia": {"title": "Hipótesis por analogía entre dominios", "summary": "Buscar principios de un campo (resiliencia ecológica) para proponer hipótesis en otro (red eléctrica) y probarlas."}, "tdg": {"title": "Generación guiada por pruebas (TDG)", "formula": "rojo → verde → refactorizar", "summary": "Un agente escribe primero las pruebas y otro genera código hasta que pasan, haciendo verificable la salida del LLM."}, "ag_codigo": {"title": "Agente de generación de código", "formula": "generar → probar → refinar", "summary": "Agente 13. Convierte especificaciones en implementaciones verificadas con TDG y orquestación multiagente."}, "ag_cumplimiento": {"title": "Agente orientado al cumplimiento", "formula": "escanear → evaluar → remediar", "summary": "Agente 14. Integra políticas de seguridad y regulación en el flujo de desarrollo y deja pistas de auditoría."}, "ag_automejora": {"title": "Agente automejorable", "formula": "ejecutar → observar → aprender → adaptar", "summary": "Agente 15. Lazo cerrado que traduce la retroalimentación operativa en mejores estrategias sin reentrenamiento manual."}, "memoria_dual": {"title": "Jerarquía de memoria dual", "summary": "Memoria de trabajo para los turnos recientes y almacén vectorial para lo antiguo, recuperado solo cuando hace falta."}, "ag_conversacional": {"title": "Agente conversacional", "summary": "Agente 16. Mantiene estado, intención, personalidad coherente y memoria a lo largo del diálogo."}, "marca_csp": {"title": "Consistencia de marca como satisfacción de restricciones", "summary": "Tratar las guías de marca como restricciones duras mientras se optimiza la creatividad o el interés."}, "ag_contenido": {"title": "Agente de creación de contenido", "formula": "idear → redactar → revisar → refinar", "summary": "Agente 17. Produce contenido en etapas, respetando las restricciones de marca y con puntos de control humano."}, "ag_vision": {"title": "Agente de visión-lenguaje", "formula": "codificador visual + alineación + LLM", "summary": "Agente 18. Razona sobre imágenes y texto juntos; el razonamiento paso a paso mejora las preguntas complejas."}, "vad": {"title": "Modelo emocional VAD", "formula": "Valencia · Activación · Dominancia", "summary": "Representación continua de la emoción en la voz, más rica que etiquetas como 'enojado' o 'feliz'."}, "ag_audio": {"title": "Agente de procesamiento de audio", "summary": "Agente 19. Transcribe y además detecta urgencia y frustración a partir de la prosodia."}, "ag_entorno": {"title": "Agente de detección del entorno físico", "formula": "sentir → modelar → planificar → actuar", "summary": "Agente 20. Integra sensores (IoT) para gestionar un edificio: detecta eventos por patrones y controla sin oscilaciones."}, "logica_deontica": {"title": "Lógica deóntica", "formula": "O(φ) obligatorio · P(φ) permitido · F(φ) prohibido", "summary": "Da a cada acción candidata un estatus moral explícito antes de ejecutarla."}, "imposibilidad": {"title": "Teorema de imposibilidad de la equidad", "summary": "Varias métricas de equidad no pueden cumplirse a la vez; hay que elegir y documentar cuál priorizar."}, "ag_etico": {"title": "Agente de razonamiento ético", "summary": "Agente 21. Inserta una capa de evaluación ética entre razonar y actuar, con métricas de equidad y mitigación de sesgos."}, "xai": {"title": "Técnicas de explicación (LIME, SHAP, contrafactuales)", "summary": "Atribuyen la decisión a sus factores o muestran qué cambio la habría alterado."}, "ag_explicable": {"title": "Agente explicable", "summary": "Agente 22. Registra su traza de razonamiento y genera explicaciones adaptadas a cada audiencia, con confianza comunicada."}, "bayes_clinico": {"title": "Confianza calibrada con actualización bayesiana", "summary": "El diagnóstico se actualiza con cada evidencia y su confianza se calibra; las condiciones críticas se escalan a humanos."}, "ag_salud": {"title": "Agente de inteligencia en atención médica", "formula": "ingesta → conocimiento clínico → razonamiento → explicación", "summary": "Agente 23. Arquitectura de cuatro capas para apoyo diagnóstico con procedencia y escalamiento de seguridad."}, "hipotesis_abductiva": {"title": "Generación de hipótesis abductiva", "summary": "Propone la explicación más plausible para un vacío y la puntúa por adecuación, plausibilidad y novedad."}, "ag_descubrimiento": {"title": "Agente de descubrimiento científico", "summary": "Agente 24. Va más allá de resumir: detecta brechas de conocimiento y propone hipótesis comprobables."}, "puertas_cumplimiento": {"title": "Puertas de validación de cumplimiento", "summary": "Toda recomendación pasa por controles de idoneidad y límites de riesgo y queda registrada para auditoría."}, "ag_financiero": {"title": "Agente de asesoría financiera", "summary": "Agente 25. Supervisor multiagente que analiza mercado, evalúa riesgo y personaliza planes dentro del marco regulatorio."}, "verificacion_citas": {"title": "Verificación de citas legales", "summary": "Etapa que confirma que cada precedente citado existe, aplica en la jurisdicción y dice lo que se afirma."}, "ag_legal": {"title": "Agente de inteligencia legal", "summary": "Agente 26. Recuperación híbrida, búsqueda de precedentes y análisis de contratos con citas verificables."}, "modelo_estudiante": {"title": "Modelo del estudiante (POMDP y BKT)", "summary": "El conocimiento del alumno es un estado oculto que se estima con rastreo bayesiano tras cada respuesta."}, "ag_educativo": {"title": "Agente de inteligencia educativa", "summary": "Agente 27. Planifica un currículo personalizado en la zona de desarrollo próximo y adapta la retroalimentación."}, "consenso": {"title": "Consenso y votación ponderada", "summary": "Votos ponderados por pericia, críticos adversarios contra el pensamiento grupal y polinización cruzada de ideas."}, "ag_colectivo": {"title": "Agente de inteligencia colectiva", "summary": "Agente 28. Equipo de agentes con pericias complementarias que converge en soluciones mejores que las individuales."}, "profundidad_amplitud": {"title": "División profundidad/amplitud", "summary": "Controlar con precisión un sistema físico y coordinar muchos sistemas acoplados son problemas distintos con arquitecturas distintas."}, "ag_encarnado": {"title": "Agente de inteligencia encarnada", "summary": "Agente 29. Jerarquía de control multitasa, planificación sobre estados de creencia y solo acciones admisibles por seguridad."}, "ag_integracion": {"title": "Agente de integración de transformación de dominios", "summary": "Agente 30. Modela dominios acoplados como grafo de conocimiento tipado y propaga la influencia para estimar efectos en cascada."}, "envolvente": {"title": "Envolvente de restricción unificado", "summary": "Clima, energía, regulación y misión se fusionan de forma conservadora; la seguridad es precondición de toda acción."}, "sociedades": {"title": "Agentes autoevolutivos y sociedades de agentes", "summary": "Agentes que rediseñan su propia arquitectura y grupos que generan comportamiento y normas emergentes."}, "hoja_ruta": {"title": "Hoja de ruta de capacidades y ROI", "summary": "Plan por etapas para adoptar agentes en una organización y medir su impacto."}}, "requires": {"chapters": {"2": [1], "3": [1], "4": [3], "5": [2, 3], "6": [5], "7": [5], "8": [6, 7], "9": [4, 7], "10": [6], "11": [7], "12": [4, 8], "13": [12], "14": [9, 12], "15": [13], "16": [11, 12], "17": [9, 15, 16]}, "sections": {"1.2": ["1.1"], "1.3": ["1.2"], "1.4": ["1.1"], "1.5": ["1.2"], "1.6": ["1.5"], "1.7": ["1.6"], "2.1": ["1.2"], "2.3": ["2.1"], "2.4": ["2.1", "2.2"], "3.2": ["3.1"], "3.3": ["3.2"], "3.4": ["3.3"], "3.5": ["3.3"], "3.6": ["3.4"], "3.7": ["3.3", "1.3"], "3.8": ["3.3"], "4.1": ["1.4", "2.4"], "4.2": ["3.2"], "4.3": ["1.4"], "4.4": ["4.1", "4.3"], "4.5": ["2.4"], "5.1": ["1.2"], "5.2": ["5.1", "3.6"], "5.3": ["5.1", "2.3"], "5.4": ["5.2", "5.3"], "5.5": ["5.4"], "6.1": ["5.3"], "6.2": ["5.2"], "6.3": ["6.1"], "6.4": ["6.2", "6.3"], "7.1": ["2.3", "5.1"], "7.2": ["7.1"], "7.3": ["7.1"], "7.4": ["7.1", "3.7"], "7.5": ["7.4", "5.3"], "7.6": ["7.5"], "7.7": ["7.4"], "8.1": ["7.1"], "8.2": ["6.1"], "8.3": ["5.2", "7.4", "8.2"], "8.4": ["8.2"], "8.5": ["8.3"], "9.2": ["7.4"], "9.3": ["9.2", "4.2"], "9.4": ["9.2", "5.3"], "10.1": ["6.1", "5.2"], "10.2": ["3.3", "5.2"], "11.1": ["3.6", "7.1"], "11.2": ["7.1"], "11.3": ["7.1"], "12.1": ["4.2", "4.3"], "12.2": ["8.2", "5.3"], "13.1": ["12.2", "7.4"], "13.2": ["6.3", "8.5"], "14.1": ["12.1", "9.3", "5.3"], "14.2": ["12.2"], "15.1": ["13.1", "5.2"], "15.2": ["7.6"], "16.1": ["11.3"], "16.2": ["16.1", "5.2"], "16.3": ["16.1"], "16.4": ["16.2", "16.3", "12.1"], "17.1": ["9.4", "15.2", "16.2"], "17.2": ["1.6", "1.4"]}, "items": {"smpa": ["bucle_cognitivo"], "progresion": ["smpa"], "frameworks": ["bucle_cognitivo"], "function_calling": ["frameworks"], "ptcf": ["prompt_sistema"], "descomposicion": ["ptcf"], "few_shot": ["ptcf"], "cot_tot": ["ptcf"], "optim_costos": ["modelos_hibridos"], "amenazas": ["prompt_sistema"], "zero_trust": ["amenazas"], "ag_decision": ["smpa"], "ag_planificacion": ["ag_decision", "descomposicion", "cot_tot"], "ag_memoria": ["ag_decision", "tipos_memoria", "bd_vectoriales"], "rag": ["bd_vectoriales"], "ag_recuperacion": ["rag"], "ag_documental": ["ag_planificacion"], "ag_investigacion": ["ag_recuperacion"], "ag_herramientas": ["ag_decision", "function_calling"], "embudo": ["ag_herramientas", "bd_vectoriales"], "ag_orquestador": ["ag_herramientas", "mcp_a2a"], "resolucion_conflictos": ["ag_orquestador"], "ag_flujo": ["ag_orquestador", "ag_memoria"], "ag_datos": ["ag_herramientas"], "ag_verificacion": ["ag_recuperacion"], "ag_gps": ["ag_planificacion", "ag_orquestador", "ag_verificacion"], "analogia": ["ag_gps"], "tdg": ["ag_orquestador"], "ag_codigo": ["tdg"], "ag_cumplimiento": ["ag_codigo", "zero_trust"], "ag_automejora": ["ag_memoria"], "memoria_dual": ["ag_memoria", "rag"], "ag_conversacional": ["memoria_dual", "ag_planificacion"], "ag_contenido": ["marca_csp", "smpa"], "ag_vision": ["smpa", "cot_tot"], "ag_audio": ["vad", "smpa"], "ag_entorno": ["smpa"], "ag_etico": ["logica_deontica", "imposibilidad", "ia_responsable", "amenazas"], "ag_explicable": ["xai", "ag_verificacion", "ag_memoria"], "ag_salud": ["bayes_clinico", "ag_explicable", "ag_orquestador"], "ag_descubrimiento": ["ag_investigacion", "hipotesis_abductiva"], "puertas_cumplimiento": ["ag_cumplimiento", "ag_etico"], "ag_financiero": ["puertas_cumplimiento", "ag_memoria"], "verificacion_citas": ["ag_verificacion"], "ag_legal": ["verificacion_citas", "ag_explicable"], "modelo_estudiante": ["bayes_clinico"], "ag_educativo": ["modelo_estudiante", "ag_planificacion"], "consenso": ["resolucion_conflictos"], "ag_colectivo": ["consenso"], "ag_encarnado": ["profundidad_amplitud", "ag_entorno", "ag_planificacion"], "ag_integracion": ["profundidad_amplitud"], "envolvente": ["ag_encarnado", "ag_integracion"], "sociedades": ["ag_colectivo", "ag_automejora"], "hoja_ruta": ["progresion", "adl"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

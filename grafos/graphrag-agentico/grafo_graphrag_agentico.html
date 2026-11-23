@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grafo del libro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "GraphRAG agéntico como grafo", "subtitle": "Anthony Alcaraz y Sam Julien (O'Reilly, 2026; traducción al español): capítulos, secciones y conceptos o patrones clave", "language": "es", "itemLabel": "Concepto o patrón", "itemLabelPlural": "Conceptos y patrones", "searchHint": "Buscar: PathRAG, bitemporal, MCP, 5.13…"}, "blocks": {"fund": {"name": "Fundamentos (Parte I)", "color": "#5B6770"}, "conoc": {"name": "Representación del conocimiento", "color": "#16808A"}, "mem": {"name": "Memoria de grafos", "color": "#2F4FA8"}, "razon": {"name": "Razonamiento y planificación", "color": "#B0622A"}, "herr": {"name": "Orquestación de herramientas", "color": "#6F7C24"}, "evo": {"name": "Autoevolución y evaluación", "color": "#7A5BA6"}, "prod": {"name": "Optimización y producción", "color": "#A8456B"}}, "chapters": [{"num": 1, "title": "La crisis de la IA agéntica empresarial", "block": "fund", "summary": "Define qué es un agente y por qué los agentes apoyados solo en RAG vectorial fallan en la empresa; presenta GraphRAG y su variante híbrida como la evolución de la recuperación contextual.", "sections": [{"num": "1.1", "title": "Las cinco fallas de la recuperación ingenua", "items": ["cinco_fallas"], "summary": "Amnesia de contexto, ceguera de relaciones, ignorancia temporal, parálisis de razonamiento y caos de herramientas como síntomas de un mismo problema de representación."}, {"num": "1.2", "title": "¿Qué es un agente?", "items": ["agencia"], "summary": "Autonomía, acción y autoridad como escalas graduales, y las capacidades que surgen de ellas."}, {"num": "1.3", "title": "El espectro flujo de trabajo–agente", "summary": "Entre rutas fijas y predecibles y procesos decididos por el modelo; la mayoría de los procesos empresariales están en medio."}, {"num": "1.4", "title": "El triángulo de restricciones del agente", "items": ["triangulo"], "summary": "Complejidad, herramientas y contexto compiten entre sí; mejorar uno presiona a los otros."}, {"num": "1.5", "title": "Arquitectura de agentes", "summary": "Núcleo observar–pensar–actuar, capacidades, recursos y entorno, y los puntos donde cada pieza puede fallar."}, {"num": "1.6", "title": "Recuperación vectorial en breve", "summary": "Embeddings, similitud y aumento del prompt con fragmentos recuperados."}, {"num": "1.7", "title": "Dónde acierta y dónde falla el RAG vectorial", "summary": "Bueno en consultas locales de hechos, débil en consultas globales y de síntesis; una ventana de contexto más grande no lo arregla."}, {"num": "1.8", "title": "Arquitectura de GraphRAG", "items": ["graphrag"], "summary": "Construcción y almacenamiento del grafo, interpretación de la consulta, recorrido, integración de contexto y generación; indexación por comunidades y map-reduce."}, {"num": "1.9", "title": "Fortalezas y dificultades de GraphRAG", "summary": "Control del contexto, flexibilidad, razonamiento, trazabilidad y volante de datos, frente a costo de construcción, latencia, pérdida de matices y evolución del esquema."}, {"num": "1.10", "title": "GraphRAG híbrido", "items": ["hibrido"], "summary": "Búsqueda vectorial para candidatos, recorrido ponderado del grafo y síntesis del contexto."}, {"num": "1.11", "title": "Modelos aprendidos de razonamiento sobre grafos", "summary": "Modelos fundacionales de grafos y agentes entrenados con aprendizaje por refuerzo como alternativa a la búsqueda algorítmica."}]}, {"num": 2, "title": "Fundamentos de la arquitectura de grafos agénticos", "block": "fund", "summary": "Presenta la idea central del libro: un grafo de conocimiento vertical (lo que el agente sabe) y un grafo de flujo de trabajo horizontal (cómo actúa), ejecutados por un arnés, más los ocho pilares y el agente de DevOps que sirve de caso conductor.", "sections": [{"num": "2.1", "title": "De cadenas a entidades", "summary": "Pasar de fragmentos de texto similares a entidades con identidad y relaciones que se pueden recorrer."}, {"num": "2.2", "title": "La arquitectura de doble grafo", "items": ["doble_grafo"], "summary": "Dos estructuras complementarias: el mapa y la ruta."}, {"num": "2.3", "title": "El grafo de conocimiento vertical", "items": ["gc_vertical"], "summary": "Nodos, aristas y propiedades con metadatos temporales; resuelve la ceguera de relaciones y la ignorancia temporal."}, {"num": "2.4", "title": "El grafo de flujo de trabajo horizontal", "items": ["gf_horizontal"], "summary": "DAG de nodos de razonamiento, ejecución, decisión y validación; paralelismo, aislamiento de fallos y modularidad."}, {"num": "2.5", "title": "Definición del arnés", "items": ["arnes"], "summary": "El entorno que ejecuta el grafo y sus seis superficies."}, {"num": "2.6", "title": "División de un flujo de trabajo en nodos", "summary": "Separar nodos cuando necesitan superficies de herramientas distintas; si comparten herramientas, es solo una variación de prompt."}, {"num": "2.7", "title": "Donde se encuentran los dos grafos", "summary": "El flujo de trabajo consulta el grafo de conocimiento y sus conclusiones lo actualizan: interacción en ambos sentidos."}, {"num": "2.8", "title": "Una nota sobre los grafos de contexto", "summary": "Reificación, metadatos bitemporales y rastros de decisión: el término actual para un grafo de conocimiento hecho para agentes."}, {"num": "2.9", "title": "Los ocho pilares de la arquitectura agéntica de grafos", "items": ["ocho_pilares"], "summary": "Mapa de capacidades por capas y su relación con las cinco fallas y con los capítulos 3 a 8."}, {"num": "2.10", "title": "El agente autónomo de DevOps", "summary": "Estado inicial reactivo y arco de transformación hacia un sistema proactivo y autorreparable."}]}, {"num": 3, "title": "Modelado de conocimiento basado en grafos para sistemas agénticos", "block": "conoc", "summary": "Cómo diseñar, poblar y mantener el grafo de conocimiento vertical: modelos de datos, arquitectura de tres grafos, patrones de esquema, ontologías, resolución de entidades y extracción con LLM, aplicados al gemelo digital de la infraestructura.", "sections": [{"num": "3.1", "title": "Componentes de GraphRAG y construir frente a comprar", "summary": "Piezas de un sistema GraphRAG y criterios para elegir una base de grafos administrada o una propia."}, {"num": "3.2", "title": "Modelos de datos de grafos", "items": ["modelos_grafo"], "summary": "Grafos de propiedades, RDF e hipergrafos."}, {"num": "3.3", "title": "Evaluación de modelos de grafos", "summary": "Razonamiento formal, relaciones n-arias, rendimiento, ecosistema de herramientas y expresividad de restricciones."}, {"num": "3.4", "title": "Mundo abierto, mundo cerrado y seguridad de los agentes", "summary": "Qué asume el grafo sobre lo que falta y por qué mezclar ambas suposiciones produce errores silenciosos."}, {"num": "3.5", "title": "La arquitectura de tres grafos", "items": ["tres_grafos"], "summary": "Grafo de dominio, grafo léxico y grafo de sujeto, unidos por resolución de entidades; extensión multimodal."}, {"num": "3.6", "title": "Patrones de diseño de esquemas", "items": ["patrones_esquema"], "summary": "Centrado en eventos, frontera contextual, multiperspectiva y modelo de capacidades."}, {"num": "3.7", "title": "Representación homoicónica del conocimiento", "summary": "El esquema y las reglas viven en el mismo grafo como datos: metaconocimiento y conocimiento ejecutable."}, {"num": "3.8", "title": "Ontologías y organización del conocimiento", "items": ["ontologia"], "summary": "Espectro de vocabularios a ontologías, componentes, base semántica unificada, fusión, anotación para guiar al agente y ontologías de nivel superior."}, {"num": "3.9", "title": "Resolución de entidades", "items": ["resolucion_entidades"], "summary": "Decidir cuándo registros distintos son la misma entidad; enfoque basado en evidencia y casos límite."}, {"num": "3.10", "title": "Extracción desde fuentes heterogéneas", "summary": "Integración de bases estructuradas, extracción con LLM desde texto y frameworks de construcción de grafos."}, {"num": "3.11", "title": "Construcción multiagente del grafo", "summary": "Agentes que proponen esquemas y otros que los aprueban antes de escribir en el grafo."}, {"num": "3.12", "title": "Vinculación de entidades entre grafos", "summary": "Pipeline de tres etapas del grafo de sujeto al de dominio y métricas de calidad del enlace."}, {"num": "3.13", "title": "DevOps: ontología y gemelo digital", "summary": "Tipos canónicos multinube, patrones de esquema aplicados e integración de nube, IaC, observabilidad y metadatos de negocio."}, {"num": "3.14", "title": "DevOps: consultas y calidad del contexto", "summary": "Dependencias, desfase de configuración, análisis de impacto, identidad de recursos y medición de precisión, exhaustividad, actualidad y cobertura."}]}, {"num": 4, "title": "Sistemas de memoria de grafos agénticos", "block": "mem", "summary": "Da al grafo una dimensión temporal: por qué falla la memoria habitual, cómo representar memoria en grafos, las cuatro operaciones esenciales, patrones y productos de producción, y cómo entrenar al agente para que use su memoria.", "sections": [{"num": "4.1", "title": "Por qué falla tu enfoque actual de memoria", "summary": "Modos de fallo de la memoria de agentes y el problema de compartir caché entre varios agentes."}, {"num": "4.2", "title": "La solución: memoria de grafos", "items": ["memoria_grafos"], "summary": "Gestión agéntica de la memoria, qué aporta y modelos de consistencia para coordinar agentes."}, {"num": "4.3", "title": "Evolución de la arquitectura de memoria", "summary": "De clave-valor a vectorial, estructurada, temporal y jerárquica; analogía con la jerarquía de memoria del hardware."}, {"num": "4.4", "title": "Componentes esenciales: nodos, aristas y subgrafos", "summary": "Qué granularidad dar a cada unidad de memoria y cómo agrupar contextos."}, {"num": "4.5", "title": "Conciencia temporal", "items": ["bitemporal"], "summary": "Ventana de validez e instante de ingesta para cada hecho."}, {"num": "4.6", "title": "Primer sistema de memoria de grafos", "summary": "Integración inicial y manejo de relaciones entre muchas entidades."}, {"num": "4.7", "title": "Cuatro operaciones esenciales de memoria", "items": ["cuatro_ops"], "summary": "Consolidación, indexación, actualización y recuperación."}, {"num": "4.8", "title": "Patrones de producción: Letta, A-Mem y Graphiti", "items": ["memoria_jerarquica"], "summary": "Memoria jerárquica, redes de conocimiento que se reorganizan y actualización incremental en tiempo real."}, {"num": "4.9", "title": "Comparación de sistemas: Cognee, Mem0 y Zep", "summary": "Enfoque centrado en grafos, almacenamiento híbrido y grafo temporal; cómo elegir."}, {"num": "4.10", "title": "Funcionalidades y operaciones de producción", "summary": "Razonamiento multisalto, recomendaciones, monitoreo, depuración, resolución de conflictos y rendimiento."}, {"num": "4.11", "title": "Entrenar a los agentes para usar la memoria", "items": ["mem1"], "summary": "Estrategias aprendidas en lugar de reglas fijas; fases de entrenamiento y estrategias prácticas."}, {"num": "4.12", "title": "Memoria para el agente de DevOps", "summary": "Episodios operativos, consultas temporales para causa raíz, consolidación de patrones de incidentes y entrenamiento por refuerzo."}, {"num": "4.13", "title": "Preparar la implementación para el futuro", "summary": "Integración neurosimbólica, escalado distribuido y aprendizaje continuo."}]}, {"num": 5, "title": "Razonamiento y planificación", "block": "razon", "summary": "Construye el grafo de flujo de trabajo y el motor de razonamiento: recuperación resistente a distracciones (PathRAG, R3-RAG), salidas estructuradas, arquitecturas de pipelines, planificación separada de la ejecución y paralelismo controlado.", "sections": [{"num": "5.1", "title": "Por qué importa el razonamiento con grafos", "summary": "Límites del razonamiento solo con prompts; grafos horizontales y verticales y el espacio imaginario que forman."}, {"num": "5.2", "title": "Agentes de programación como sistemas de doble grafo", "summary": "El patrón ya presente en los agentes de código en producción."}, {"num": "5.3", "title": "Fundamentación ontológica", "summary": "Validar que las salidas del agente sean semánticamente válidas en el dominio."}, {"num": "5.4", "title": "El efecto de distracción", "summary": "Fragmentos irrelevantes llevan al modelo a responder mal en lugar de abstenerse."}, {"num": "5.5", "title": "PathRAG", "items": ["pathrag"], "summary": "Recuperar rutas relacionales entre entidades en lugar de fragmentos."}, {"num": "5.6", "title": "R3-RAG", "items": ["r3rag"], "summary": "Aprendizaje por refuerzo para decidir cuándo y cómo recuperar."}, {"num": "5.7", "title": "Taxonomía de patrones de GraphRAG", "summary": "Niveles fundamental, de integración y avanzado según cuánta estructura exige cada consulta."}, {"num": "5.8", "title": "Pensamiento intercalado", "summary": "Razonar entre llamadas a herramientas para ajustar la estrategia en medio de la ejecución; dónde ayuda y dónde estorba."}, {"num": "5.9", "title": "Generación estructurada", "items": ["salida_estructurada"], "summary": "Contratos de salida entre nodos con generación restringida."}, {"num": "5.10", "title": "Arquitecturas de pipelines", "summary": "Secuencial, en bucle y en árbol."}, {"num": "5.11", "title": "Implementación en producción y arquitecturas híbridas", "summary": "Estado, manejo de errores, observabilidad, selección dinámica, anidamiento y degradación elegante."}, {"num": "5.12", "title": "Orquestación orientada a eventos", "summary": "Pasar de llamadas síncronas en proceso a una columna de eventos cuando crece el volumen."}, {"num": "5.13", "title": "Planificación separada de la ejecución", "items": ["planificacion_dag"], "summary": "Planificación jerárquica, guiada por restricciones y construcción dinámica de DAG."}, {"num": "5.14", "title": "Evidencia empírica y grafos de tareas", "summary": "Planificación con grafos a escala de repositorio y su versión ligera para un desarrollador."}, {"num": "5.15", "title": "El debate multiagente", "items": ["paralelismo"], "summary": "El problema no es el paralelismo sino el paralelismo sin coordinación."}, {"num": "5.16", "title": "Agente de diagnóstico para DevOps", "summary": "Grafo de flujo de investigación, hipótesis fundamentadas en el grafo de conocimiento, DAG de pruebas y un incidente real."}]}, {"num": 6, "title": "Orquestación de herramientas basada en grafos agénticos", "block": "herr", "summary": "Conecta al agente con el mundo: MCP como base, descubrimiento de herramientas por recuperación, habilidades, herramientas como nodos del grafo con tipos y flujo de información controlado, ecosistemas que evolucionan y orquestación a escala.", "sections": [{"num": "6.1", "title": "MCP: el protocolo base", "items": ["mcp"], "summary": "Estándar para descubrir e invocar herramientas."}, {"num": "6.2", "title": "Autenticación en MCP y agentes como herramientas", "summary": "Saber quién llama antes de invocar, y exponer un agente completo detrás de una herramienta."}, {"num": "6.3", "title": "La crisis de saturación de prompts", "items": ["rag_herramientas"], "summary": "Demasiadas herramientas en el prompt degradan la selección; recuperar solo las relevantes."}, {"num": "6.4", "title": "Patrón Gateway, Toolshed y COLT", "summary": "Punto central de acceso, descripciones enriquecidas de herramientas y recuperación colaborativa de conjuntos de herramientas."}, {"num": "6.5", "title": "Habilidades: la capa de juicio", "items": ["habilidades"], "summary": "Procedimientos reutilizables sobre cuándo y cómo usar herramientas; calidad y escala."}, {"num": "6.6", "title": "Elegir la primitiva: CLI, MCP o habilidades", "summary": "Cada primitiva sirve a un contexto distinto, del uso personal al empresarial; control de acceso por agente."}, {"num": "6.7", "title": "Herramientas como nodos del grafo", "items": ["herramientas_grafo"], "summary": "Dependencias explícitas y concordancia de tipos entre entradas y salidas."}, {"num": "6.8", "title": "Control del flujo de información", "items": ["ifc"], "summary": "Etiquetas de confianza que impiden que datos no confiables lleguen a acciones sensibles."}, {"num": "6.9", "title": "Evolución guiada por ontologías y metaherramientas", "summary": "Analítica de uso, patrones de uso conjunto, herramientas compuestas y herramientas que crean herramientas."}, {"num": "6.10", "title": "Confianza basada en verificación", "summary": "Comprobar lo que las herramientas hacen de verdad y refinar su documentación con pruebas."}, {"num": "6.11", "title": "El orquestador inteligente", "summary": "Exponer una sola interfaz que oculta la selección de herramientas; oportunidad para el SaaS establecido."}, {"num": "6.12", "title": "Orquestación jerárquica y agrupamiento funcional", "summary": "Varios servidores MCP organizados por dominio y herramientas redundantes como respaldo."}, {"num": "6.13", "title": "La capa de SO de IA empresarial", "summary": "Infraestructura común para una fuerza laboral de agentes."}, {"num": "6.14", "title": "Memoria de orquestación, ejecución anidada y rendimiento", "summary": "Aprender de cada invocación, encadenar salidas como entradas y cifras de rendimiento a escala."}, {"num": "6.15", "title": "Gobernanza de contexto", "summary": "Deriva de configuración entre equipos y arquitectura de contexto federado."}, {"num": "6.16", "title": "Herramientas en el agente de DevOps", "summary": "Registro de herramientas en el grafo, salida estructurada para APIs y continuación de la investigación de latencia."}]}, {"num": 7, "title": "Autoevolución y evaluación", "block": "evo", "summary": "Cierra el ciclo de aprendizaje: el grafo de ejecución como registro de lo que pasó, un diagnóstico por capas, la elección de la intervención, la retropropagación semántica, marcos de automejora y un protocolo para evolucionar con seguridad en producción.", "sections": [{"num": "7.1", "title": "El grafo de ejecución", "items": ["grafo_ejecucion"], "summary": "Registro inmutable de cada ejecución real, contraparte del grafo de flujo de trabajo."}, {"num": "7.2", "title": "Marco de evaluación multicapa", "items": ["eval_multicapa"], "summary": "Autopsia cognitiva en cuatro capas, de la causa más general a la más específica."}, {"num": "7.3", "title": "Señales no tradicionales e interpretabilidad", "summary": "Lo que no mide la corrección binaria, límites de la interpretabilidad mecanicista y detección proactiva de veracidad."}, {"num": "7.4", "title": "Taxonomía de la autoevolución", "summary": "Qué evoluciona, cuándo se dispara, cómo aprende el agente y dónde se aplica."}, {"num": "7.5", "title": "Elegir la intervención", "items": ["intervencion"], "summary": "Prompt, ajuste fino o restricciones según lo que encontró el diagnóstico."}, {"num": "7.6", "title": "Retropropagación semántica", "items": ["retroprop"], "summary": "Propagar la corrección por el grafo sin romper nodos vecinos."}, {"num": "7.7", "title": "Marcos de automejora", "summary": "Generación dirigida de datos, aprendizaje autodirigido, automodificación de código, refuerzo de lo que funciona y reflexionar-reintentar-recompensar."}, {"num": "7.8", "title": "El bucle evolutivo y la validación gradual", "items": ["gvp"], "summary": "Ciclo completo y envolvente de seguridad con niveles de sandbox, sombra y canario."}, {"num": "7.9", "title": "Autoaprendizaje sin colapso entrópico e ingeniería de bucles", "summary": "Evitar que la suma de pequeñas mejoras degrade el sistema; separar conocimiento curado de memoria aprendida."}, {"num": "7.10", "title": "DevOps: predicción de interrupciones y autopsia", "summary": "Una actualización de biblioteca, el grafo de ejecución, el diagnóstico y la corrección del nodo responsable."}, {"num": "7.11", "title": "Aprender sin reentrenar: experiencias y habilidades en el grafo", "summary": "Recuperar experiencia acumulada en inferencia y habilidades que se mejoran a sí mismas."}, {"num": "7.12", "title": "Errores comunes de la autoevolución", "summary": "Fallos frecuentes al llevar el bucle de mejora a producción."}]}, {"num": 8, "title": "Optimización", "block": "prod", "summary": "Hace viable el agente en producción frente a costo, gobernanza y rendimiento: inteligencia selectiva con enrutamiento de modelos, control de acceso y privacidad en el grafo, mantenimiento del grafo y aceleración por hardware dentro de presupuestos de latencia.", "sections": [{"num": "8.1", "title": "Inteligencia selectiva", "items": ["intel_selectiva"], "summary": "Usar el modelo adecuado para cada nodo; la mayoría de los nodos no necesita un modelo de frontera."}, {"num": "8.2", "title": "Estrategias de enrutamiento", "items": ["enrutamiento"], "summary": "Estático por tipo de nodo, cascada por umbral de confianza y enrutador aprendido."}, {"num": "8.3", "title": "Medir el equilibrio costo–rendimiento", "summary": "Datos por nodo para justificar cada decisión de enrutamiento."}, {"num": "8.4", "title": "Control de acceso a nivel de subgrafo", "items": ["acceso_subgrafo"], "summary": "Limitar qué nodos y propiedades puede recorrer cada persona de agente."}, {"num": "8.5", "title": "PII y retención de datos", "items": ["privacidad_arquitectura"], "summary": "Guardar solo identificadores en el grafo y los datos personales en un almacén aparte."}, {"num": "8.6", "title": "El grafo de ejecución como artefacto de cumplimiento", "summary": "La traza de decisiones sirve también para auditoría."}, {"num": "8.7", "title": "Evolución del esquema y ciclo de vida", "summary": "Migraciones sin ALTER TABLE y poda de nodos y relaciones obsoletos."}, {"num": "8.8", "title": "Actualizaciones incrementales y patrones de despliegue", "summary": "Mantener el grafo al día sin reconstruirlo y desplegar grafo, prompts y modelos de forma coordinada."}, {"num": "8.9", "title": "Operaciones de grafos aceleradas por GPU", "summary": "Analítica de grafos (centralidad, comunidades) en milisegundos."}, {"num": "8.10", "title": "Aceleración de inferencia para flotas de especialistas", "summary": "Paralelización, servicio con múltiples adaptadores, hardware especializado y la caché clave-valor como límite de concurrencia."}, {"num": "8.11", "title": "Presupuestos de latencia", "items": ["presupuesto_latencia"], "summary": "Tiempos de referencia por componente y objetivo de extremo a extremo."}, {"num": "8.12", "title": "DevOps: del prototipo a la producción", "summary": "Inteligencia selectiva, aceleración del análisis de dependencias, gobernanza y el agente completo."}, {"num": "8.13", "title": "Errores comunes de la optimización", "summary": "Fallos típicos al optimizar costo, gobernanza y rendimiento."}]}, {"num": "C", "title": "Conclusión", "block": "prod", "summary": "Repasa el arco del libro, señala hacia dónde va el campo y propone preguntas para decidir cuánto de la arquitectura necesita cada sistema.", "sections": [{"num": "C.1", "title": "Hacia dónde se dirige el campo", "summary": "Modelos más baratos, bases de grafos con IA nativa, protocolos que maduran y evaluación como disciplina."}, {"num": "C.2", "title": "Elegir la arquitectura adecuada", "items": ["criterios_adopcion"], "summary": "Preguntas para adoptar los pilares de forma modular."}]}], "items": {"cinco_fallas": {"title": "Las cinco fallas arquitectónicas", "summary": "Amnesia de contexto, ceguera de relaciones, ignorancia temporal, parálisis de razonamiento y caos de herramientas: los agentes con RAG vectorial fallan por cómo se representa la información, no por el modelo."}, "agencia": {"title": "Tres dimensiones de la agencia", "formula": "autonomía · acción · autoridad", "summary": "Un sistema es más o menos agente según cuánto decide solo, cuánto actúa sobre el entorno y dentro de qué límites."}, "triangulo": {"title": "Triángulo de restricciones del agente", "formula": "complejidad ↔ herramientas ↔ contexto", "summary": "Tres restricciones que se presionan entre sí; la ingeniería de contexto busca el mínimo de tokens con más señal."}, "graphrag": {"title": "GraphRAG", "formula": "consulta → recorrido → respuesta", "summary": "Recuperación que guarda hechos como nodos y aristas y responde recorriendo esa estructura."}, "hibrido": {"title": "GraphRAG híbrido", "formula": "vectores → recorrido → síntesis", "summary": "Combina búsqueda vectorial para encontrar puntos de entrada con recorrido del grafo para seguir relaciones."}, "doble_grafo": {"title": "Arquitectura de doble grafo", "formula": "vertical: saber · horizontal: actuar", "summary": "Idea central del libro: un grafo de conocimiento y un grafo de flujo de trabajo que se consultan y se actualizan mutuamente."}, "gc_vertical": {"title": "Grafo de conocimiento vertical", "summary": "Red de entidades, relaciones y propiedades con metadatos temporales: el mapa del dominio que el agente consulta."}, "gf_horizontal": {"title": "Grafo de flujo de trabajo horizontal", "formula": "DAG: razonar · ejecutar · decidir", "summary": "Descompone la tarea en nodos de razonamiento, ejecución, decisión y validación con dependencias explícitas; permite paralelismo y aislar fallos."}, "arnes": {"title": "Arnés del agente (harness)", "summary": "El entorno que ejecuta el grafo de flujo de trabajo. Tiene seis superficies: estado, política de avance, registro de herramientas, interfaz de memoria, validador de esquemas y registro de observaciones."}, "ocho_pilares": {"title": "Los ocho pilares", "summary": "Representación del conocimiento, memoria, razonamiento, planificación, herramientas, salida estructurada, autoevolución y optimización: capacidades por capas que convierten el doble grafo en un sistema de producción."}, "modelos_grafo": {"title": "Grafos de propiedades, RDF e hipergrafos", "summary": "Modelos de datos con distinto equilibrio entre flexibilidad, razonamiento formal y relaciones entre muchas entidades."}, "tres_grafos": {"title": "Arquitectura de tres grafos", "formula": "dominio · léxico · sujeto", "summary": "Separa el conocimiento por origen y certeza: dominio (datos curados), léxico (texto fuente) y sujeto (hechos extraídos por LLM), para no mezclar lo validado con lo automático."}, "patrones_esquema": {"title": "Patrones de esquema para agentes", "formula": "eventos · contexto · perspectivas · capacidades", "summary": "Formas de modelar el tiempo, el contexto de validez, puntos de vista en conflicto y lo que el agente puede hacer."}, "ontologia": {"title": "Ontología organizacional", "summary": "Vocabulario formal de clases, propiedades, relaciones y reglas que unifica la terminología y puede anotar cómo debe actuar el agente."}, "resolucion_entidades": {"title": "Resolución de entidades", "summary": "Determina cuándo registros de sistemas distintos se refieren a la misma cosa; es la base de un grafo coherente."}, "memoria_grafos": {"title": "Memoria de grafos agéntica", "summary": "Memoria donde el agente gestiona activamente entidades, eventos y relaciones en lugar de acumular texto."}, "bitemporal": {"title": "Modelo bitemporal", "formula": "validez (mundo) + ingesta (sistema)", "summary": "Permite saber qué era cierto en una fecha y desde cuándo lo sabe el agente."}, "cuatro_ops": {"title": "Cuatro operaciones de memoria", "summary": "Consolidar, indexar, actualizar y recuperar: el ciclo con el que la experiencia bruta se vuelve conocimiento útil y accesible."}, "memoria_jerarquica": {"title": "Memoria jerárquica", "summary": "Contexto de trabajo pequeño y rápido respaldado por almacenamiento externo que el agente pagina, al estilo de un sistema operativo."}, "mem1": {"title": "Estrategias de memoria aprendidas", "summary": "Entrenar al agente con recompensa por completar la tarea y presupuesto de memoria limitado, en vez de reglas fijas de almacenamiento."}, "pathrag": {"title": "PathRAG", "summary": "Recupera y puntúa rutas entre entidades del grafo, lo que filtra fragmentos irrelevantes que distraen al modelo."}, "r3rag": {"title": "R3-RAG", "summary": "Aprendizaje por refuerzo con recompensa por resultado y por proceso para decidir cuándo recuperar y qué buscar."}, "salida_estructurada": {"title": "Generación estructurada", "summary": "Restringir la salida del modelo a un esquema para que cada nodo entregue datos válidos al siguiente."}, "planificacion_dag": {"title": "Planificación con DAG dinámico", "summary": "Un nodo planificador separado construye el grafo de tareas con dependencias y restricciones antes de ejecutar."}, "paralelismo": {"title": "Paralelismo controlado", "summary": "Ventanas de ejecución paralela dentro de un flujo de control secuencial para evitar agentes que deciden sin coordinarse."}, "mcp": {"title": "Model Context Protocol (MCP)", "summary": "Protocolo estándar para que los agentes descubran e invoquen herramientas, incluidos otros agentes."}, "rag_herramientas": {"title": "Recuperación de herramientas", "summary": "Buscar las herramientas relevantes para la tarea en vez de listar cientos en el prompt."}, "habilidades": {"title": "Habilidades (skills)", "summary": "Procedimientos reutilizables que enseñan a usar bien las herramientas; se recuperan y se califican por calidad."}, "herramientas_grafo": {"title": "Herramientas como nodos del grafo", "summary": "Modelar herramientas con relaciones tipadas a entidades y a otras herramientas para encadenarlas con tipos compatibles."}, "ifc": {"title": "Control del flujo de información", "summary": "Política determinista que rastrea la confianza de los datos entre herramientas y bloquea la propagación de contenido no confiable."}, "grafo_ejecucion": {"title": "Grafo de ejecución", "summary": "Traza inmutable de nodos, recuperaciones y llamadas de una ejecución concreta; materia prima del diagnóstico."}, "eval_multicapa": {"title": "Evaluación multicapa (autopsia cognitiva)", "formula": "capas 0 → 1 → 2 → 3", "summary": "Filtro secuencial: compuerta de alucinaciones, suficiencia del contexto, fallo de conocimiento o de razonamiento y juez con herramientas."}, "intervencion": {"title": "Elección de intervención", "formula": "prompt · ajuste fino · restricciones", "summary": "La corrección se elige según el tipo de fallo que reveló el diagnóstico."}, "retroprop": {"title": "Retropropagación semántica", "summary": "Lleva la retroalimentación al nodo responsable siguiendo las dependencias del grafo para no romper otros nodos."}, "gvp": {"title": "Protocolo de validación gradual", "formula": "sandbox → sombra → canario → producción", "summary": "Ninguna automodificación llega a producción sin superar etapas de prueba crecientes."}, "intel_selectiva": {"title": "Inteligencia selectiva", "summary": "Federación de modelos de distinto tamaño asignados por nodo para que el costo crezca con la complejidad."}, "enrutamiento": {"title": "Enrutamiento de modelos", "formula": "estático · cascada · aprendido", "summary": "Formas de decidir qué modelo atiende cada paso según su dificultad."}, "acceso_subgrafo": {"title": "Control de acceso por subgrafo", "summary": "Restringe qué nodos, relaciones y propiedades puede recorrer cada persona de agente."}, "privacidad_arquitectura": {"title": "Privacidad por arquitectura", "formula": "grafo: UUID · almacén aparte: PII", "summary": "Separar los datos personales del grafo para cumplir la supresión sin romper relaciones."}, "presupuesto_latencia": {"title": "Presupuesto de latencia", "summary": "Reparto del tiempo admisible entre recorrido del grafo, inferencia por paso y flujo completo."}, "criterios_adopcion": {"title": "Criterios para adoptar la arquitectura", "summary": "Preguntas sobre relaciones, razonamiento en varios pasos, necesidad de mejora continua y restricciones de costo, gobernanza y latencia."}}, "requires": {"chapters": {"2": [1], "3": [2], "4": [3], "5": [3], "6": [4, 5], "7": [6], "8": [7], "C": [8]}, "sections": {"1.3": ["1.2"], "1.4": ["1.3"], "1.5": ["1.2"], "1.7": ["1.6"], "1.8": ["1.7"], "1.9": ["1.8", "1.3"], "1.10": ["1.9"], "1.11": ["1.8"], "2.1": ["1.7"], "2.2": ["2.1", "1.1"], "2.3": ["2.2"], "2.4": ["2.2"], "2.5": ["2.4"], "2.6": ["2.5"], "2.7": ["2.3", "2.4"], "2.8": ["2.3"], "2.9": ["2.7"], "2.10": ["2.9"], "3.1": ["1.8"], "3.2": ["2.3"], "3.3": ["3.2"], "3.4": ["3.3"], "3.5": ["3.2"], "3.6": ["3.5"], "3.7": ["3.6"], "3.8": ["3.2"], "3.9": ["3.5"], "3.10": ["3.6", "3.8"], "3.11": ["3.10"], "3.12": ["3.9", "3.10"], "3.13": ["3.12", "3.7", "2.10"], "3.14": ["3.13"], "4.1": ["1.1"], "4.2": ["4.1", "2.3"], "4.3": ["4.2"], "4.4": ["4.3"], "4.5": ["4.4", "3.6"], "4.6": ["4.5"], "4.7": ["4.6"], "4.8": ["4.7"], "4.9": ["4.8"], "4.10": ["4.7"], "4.11": ["4.7"], "4.12": ["4.11", "3.14"], "4.13": ["4.10"], "5.1": ["2.7"], "5.2": ["5.1"], "5.3": ["5.1", "3.8"], "5.4": ["1.7"], "5.5": ["5.4", "2.3"], "5.6": ["5.5"], "5.7": ["5.6", "1.10"], "5.8": ["5.6"], "5.9": ["2.5"], "5.10": ["2.4"], "5.11": ["5.10", "5.9"], "5.12": ["5.11"], "5.13": ["5.10"], "5.14": ["5.13"], "5.15": ["5.13"], "5.16": ["5.15", "5.5", "4.12"], "6.1": ["1.5"], "6.2": ["6.1"], "6.3": ["6.1", "1.4"], "6.4": ["6.3"], "6.5": ["6.4"], "6.6": ["6.5", "6.2"], "6.7": ["6.4", "3.7"], "6.8": ["6.7"], "6.9": ["6.7"], "6.10": ["6.9"], "6.11": ["6.7"], "6.12": ["6.11"], "6.13": ["6.12"], "6.14": ["6.11", "4.7"], "6.15": ["6.6"], "6.16": ["6.8", "5.16"], "7.1": ["2.5", "5.10"], "7.2": ["7.1"], "7.3": ["7.2"], "7.4": ["7.2"], "7.5": ["7.2"], "7.6": ["7.5"], "7.7": ["7.6"], "7.8": ["7.7"], "7.9": ["7.8", "4.8"], "7.10": ["7.8", "6.16"], "7.11": ["7.1", "6.5"], "7.12": ["7.9"], "8.1": ["5.10"], "8.2": ["8.1"], "8.3": ["8.2"], "8.4": ["3.2"], "8.5": ["8.4"], "8.6": ["7.1"], "8.7": ["3.6"], "8.8": ["8.7", "7.8"], "8.9": ["3.14"], "8.10": ["8.1"], "8.11": ["8.9", "8.10"], "8.12": ["8.11", "8.6", "7.10"], "8.13": ["8.12"], "C.1": ["8.12"], "C.2": ["2.9"]}, "items": {"triangulo": ["agencia"], "graphrag": ["cinco_fallas"], "hibrido": ["graphrag"], "doble_grafo": ["cinco_fallas", "graphrag"], "gc_vertical": ["doble_grafo"], "gf_horizontal": ["doble_grafo"], "arnes": ["gf_horizontal"], "ocho_pilares": ["gc_vertical", "gf_horizontal"], "modelos_grafo": ["gc_vertical"], "tres_grafos": ["modelos_grafo"], "patrones_esquema": ["modelos_grafo"], "ontologia": ["modelos_grafo"], "resolucion_entidades": ["tres_grafos"], "memoria_grafos": ["gc_vertical"], "bitemporal": ["memoria_grafos", "patrones_esquema"], "cuatro_ops": ["memoria_grafos"], "memoria_jerarquica": ["cuatro_ops"], "mem1": ["cuatro_ops"], "pathrag": ["gc_vertical"], "r3rag": ["pathrag"], "salida_estructurada": ["arnes"], "planificacion_dag": ["gf_horizontal"], "paralelismo": ["planificacion_dag"], "rag_herramientas": ["mcp", "triangulo"], "habilidades": ["rag_herramientas"], "herramientas_grafo": ["rag_herramientas", "ontologia"], "ifc": ["herramientas_grafo"], "grafo_ejecucion": ["arnes"], "eval_multicapa": ["grafo_ejecucion"], "intervencion": ["eval_multicapa"], "retroprop": ["intervencion"], "gvp": ["retroprop"], "intel_selectiva": ["gf_horizontal"], "enrutamiento": ["intel_selectiva"], "acceso_subgrafo": ["gc_vertical"], "privacidad_arquitectura": ["acceso_subgrafo"], "presupuesto_latencia": ["enrutamiento"], "criterios_adopcion": ["ocho_pilares"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>

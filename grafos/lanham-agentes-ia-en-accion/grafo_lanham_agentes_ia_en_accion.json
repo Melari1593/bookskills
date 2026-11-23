@@ -1,0 +1,2026 @@
+{
+ "meta": {
+  "title": "Agentes de IA en acción como grafo",
+  "subtitle": "Micheal Lanham, 2.ª edición (Manning), traducción al español: capítulos, secciones, patrones clave y apéndices",
+  "language": "es",
+  "itemLabel": "Patrón clave",
+  "itemLabelPlural": "Patrones y conceptos",
+  "resourceLabel": "Apéndice",
+  "resourceLabelPlural": "Apéndices",
+  "searchHint": "Buscar: ReAct, handoff, grounding, 9.2…"
+ },
+ "blocks": {
+  "fund": {
+   "name": "Fundamentos: agentes, LLM y prompts"
+  },
+  "mcp": {
+   "name": "Herramientas y MCP"
+  },
+  "multi": {
+   "name": "Sistemas multiagente"
+  },
+  "cap": {
+   "name": "Razonamiento y memoria"
+  },
+  "calidad": {
+   "name": "Evaluación y producción"
+  },
+  "avanz": {
+   "name": "Bucles y agente cognitivo"
+  },
+  "prac": {
+   "name": "Consejos prácticos"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "El auge de los agentes de IA",
+   "block": "fund",
+   "summary": "Define qué es un agente frente a un asistente o un LLM, el ciclo percibir-planificar-actuar-aprender, MCP, las cinco capas funcionales y los tres patrones multiagente que ordenan todo el libro.",
+   "sections": [
+    {
+     "num": "1.1.1",
+     "title": "Patrones de agente, asistente y LLM",
+     "summary": "Cuatro formas de usar un LLM, desde el chat directo hasta el agente autónomo que decide sus pasos."
+    },
+    {
+     "num": "1.1.2",
+     "title": "Pensar como agentes: percibir-planificar-actuar-aprender",
+     "summary": "La agencia se apoya en un ciclo que recibe un objetivo, arma un plan, ejecuta y revisa el resultado.",
+     "items": [
+      "spal"
+     ]
+    },
+    {
+     "num": "1.1.3",
+     "title": "Los agentes actúan con herramientas",
+     "summary": "Una herramienta se registra con una descripción y el agente la invoca como si fuera una función.",
+     "items": [
+      "uso_herr"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Introducción al Model Context Protocol",
+     "summary": "Primer vistazo a MCP: el agente descubre y usa las herramientas que expone un servidor.",
+     "items": [
+      "mcp"
+     ]
+    },
+    {
+     "num": "1.3.1",
+     "title": "La persona del agente",
+     "summary": "Las cinco capas funcionales; la persona (prompt de sistema) es la capa central que define rol y reglas.",
+     "items": [
+      "cinco_capas"
+     ]
+    },
+    {
+     "num": "1.3.2",
+     "title": "Herramientas y acciones del agente",
+     "summary": "Capa que conecta al agente con el mundo exterior y sostiene a las capas superiores."
+    },
+    {
+     "num": "1.3.3",
+     "title": "Razonamiento y planificación del agente",
+     "summary": "Capa que descompone objetivos y decide el orden de las tareas."
+    },
+    {
+     "num": "1.3.4",
+     "title": "Conocimiento y memoria del agente",
+     "summary": "Diferencia entre conocimiento externo estático y memoria de interacciones pasadas."
+    },
+    {
+     "num": "1.3.5",
+     "title": "Evaluación y retroalimentación del agente",
+     "summary": "Mecanismos externos (por ejemplo, LLM como juez y grounding) que mejoran la precisión."
+    },
+    {
+     "num": "1.4.1",
+     "title": "La línea de ensamblaje del flujo de agentes",
+     "summary": "Agentes especializados en secuencia; el patrón multiagente más simple.",
+     "items": [
+      "patrones_multi"
+     ]
+    },
+    {
+     "num": "1.4.2",
+     "title": "Orquestaciones de agentes (hub-and-spoke)",
+     "summary": "Un agente central delega en agentes trabajadores y decide cuándo terminar."
+    },
+    {
+     "num": "1.4.3",
+     "title": "Colaboración entre agentes (equipos de agentes)",
+     "summary": "Agentes pares que se comunican y critican entre sí, con más costo y latencia."
+    },
+    {
+     "num": "1.5",
+     "title": "Próximos pasos",
+     "summary": "Hoja de ruta del libro organizada por las cinco capas."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Componentes principales: LLM, prompting y agentes",
+   "block": "fund",
+   "summary": "Cómo funciona un LLM (tokens, muestreo), cómo controlarlo con prompts y cómo convertir un prompt en un agente con el OpenAI Agents SDK, con salidas tipadas, tracing y herramientas.",
+   "sections": [
+    {
+     "num": "2.1.1",
+     "title": "LLM: máquinas probabilísticas de tokens",
+     "summary": "El modelo predice y muestrea el siguiente token a partir de probabilidades aprendidas."
+    },
+    {
+     "num": "2.1.2",
+     "title": "¿Qué es un token?",
+     "summary": "La tokenización y por qué la longitud en tokens difiere de la longitud del texto."
+    },
+    {
+     "num": "2.1.3",
+     "title": "Ajuste de temperatura, top-p y más",
+     "summary": "Parámetros de generación que equilibran creatividad, consistencia y costo.",
+     "items": [
+      "muestreo"
+     ]
+    },
+    {
+     "num": "2.2.1",
+     "title": "Técnicas principales de prompts",
+     "summary": "Persona clara, instrucciones al inicio, delimitadores, ejemplos y cadena de pensamiento.",
+     "items": [
+      "persona_prompt"
+     ]
+    },
+    {
+     "num": "2.2.2",
+     "title": "Pensar como un LLM",
+     "summary": "Redactar el prompt como instrucciones para alguien nuevo en la tarea."
+    },
+    {
+     "num": "2.2.3",
+     "title": "Errores comunes en los prompts",
+     "summary": "Exceso de complejidad, contradicciones, delimitadores ambiguos y salidas variables."
+    },
+    {
+     "num": "2.3.1",
+     "title": "Construcción de un agente mínimo",
+     "summary": "Primer agente planificador de investigación con el Agents SDK."
+    },
+    {
+     "num": "2.3.2",
+     "title": "Modelo del agente y otros parámetros",
+     "summary": "Elegir modelo y fijar parámetros según el perfil de la tarea."
+    },
+    {
+     "num": "2.3.3",
+     "title": "Entradas y salidas tipadas",
+     "summary": "Esquemas Pydantic que reemplazan el análisis frágil de texto entre agentes.",
+     "items": [
+      "salida_tipada"
+     ]
+    },
+    {
+     "num": "2.3.4",
+     "title": "Tracing de agentes",
+     "summary": "Revisar cada llamada al LLM en la página de trazas.",
+     "items": [
+      "tracing"
+     ]
+    },
+    {
+     "num": "2.4.1",
+     "title": "Dotar de herramientas a los agentes",
+     "summary": "Funciones locales como herramientas; el agente gana autonomía real.",
+     "items": [
+      "function_tool"
+     ]
+    },
+    {
+     "num": "2.4.2",
+     "title": "Tracing del uso de herramientas",
+     "summary": "Las trazas muestran el encadenamiento de herramientas y los cuellos de botella."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Acciones con Model Context Protocol para agentes de IA",
+   "block": "mcp",
+   "summary": "MCP como estándar para conectar agentes con herramientas, datos y otros agentes: arquitectura, componentes, transportes, servidores estándar y cómo convertir herramientas propias en servidores.",
+   "sections": [
+    {
+     "num": "3.1.1",
+     "title": "El problema de estandarización que resuelve MCP",
+     "summary": "Integraciones fragmentadas, acceso a datos inconsistente y seguridad desigual antes de MCP."
+    },
+    {
+     "num": "3.1.2",
+     "title": "Arquitectura de MCP: clientes, servidores y servicios",
+     "summary": "El agente es un cliente; el servidor expone servicios de forma uniforme.",
+     "items": [
+      "mcp_arq"
+     ]
+    },
+    {
+     "num": "3.1.3",
+     "title": "Componentes: herramientas, recursos y prompts",
+     "summary": "Los tres tipos de capacidad que ofrece un servidor MCP.",
+     "items": [
+      "mcp_comp"
+     ]
+    },
+    {
+     "num": "3.1.4",
+     "title": "Patrones de despliegue de MCP",
+     "summary": "Servidores locales, remotos o híbridos según sensibilidad y carga."
+    },
+    {
+     "num": "3.1.5",
+     "title": "MCP impulsa las capas funcionales",
+     "summary": "MCP no es solo herramientas: también sirve a razonamiento, memoria y evaluación."
+    },
+    {
+     "num": "3.2.1",
+     "title": "Programación de un servidor MCP para Claude",
+     "summary": "La herramienta del capítulo 2 envuelta en un servidor y usada desde Claude Desktop."
+    },
+    {
+     "num": "3.2.2",
+     "title": "Uso de MCP Inspector",
+     "summary": "Explorar y probar las herramientas de un servidor antes de conectarlo a un agente."
+    },
+    {
+     "num": "3.2.3",
+     "title": "Tipos de transporte en MCP",
+     "summary": "STDIO como subproceso local frente a SSE sobre HTTP, multicliente.",
+     "items": [
+      "transporte"
+     ]
+    },
+    {
+     "num": "3.2.4",
+     "title": "Del escritorio a los agentes",
+     "summary": "Asistente interactivo con supervisión frente a agente programático y autónomo."
+    },
+    {
+     "num": "3.3.1",
+     "title": "Servidores MCP locales vía STDIO",
+     "summary": "El agente lanza el servidor como subproceso y descubre sus herramientas."
+    },
+    {
+     "num": "3.3.2",
+     "title": "Servidores MCP locales vía SSE",
+     "summary": "El mismo servidor como servicio HTTP; cambia solo el constructor."
+    },
+    {
+     "num": "3.3.3",
+     "title": "Conexión a los servidores MCP estándar",
+     "summary": "Servidores de referencia (sistema de archivos, búsqueda, etc.) listos para usar."
+    },
+    {
+     "num": "3.4.1",
+     "title": "Conversión de herramientas en un servidor MCP",
+     "summary": "Separar las herramientas del agente en un servidor propio reutilizable.",
+     "items": [
+      "tools_a_mcp"
+     ]
+    },
+    {
+     "num": "3.4.2",
+     "title": "Consumo de servidores MCP local o remoto",
+     "summary": "Consumir el servidor propio por STDIO o SSE sin tocar la lógica del agente."
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Arquitectura y construcción de sistemas multiagente",
+   "block": "multi",
+   "summary": "Patrones de mando, control, comunicación y coordinación entre agentes; cómo dividir un agente en un flujo, transferir el control con handoffs y proteger el flujo con guardrails.",
+   "sections": [
+    {
+     "num": "4.1.1",
+     "title": "Patrones de toma de decisiones y control",
+     "summary": "Flujo, orquestador y gestor-trabajador: quién decide y quién controla.",
+     "items": [
+      "mando_control"
+     ]
+    },
+    {
+     "num": "4.1.2",
+     "title": "Comunicación: memoria compartida, mensajes y MCP",
+     "summary": "Canales de comunicación entre agentes y por qué conviene limitar lo que ve cada uno."
+    },
+    {
+     "num": "4.1.3",
+     "title": "Estrategias de coordinación multiagente",
+     "summary": "Ocho formas de coordinar: secuencial, paralelo, jerárquico, debate, votación, roles, bifurcación y red entre pares.",
+     "items": [
+      "estrategias_coord"
+     ]
+    },
+    {
+     "num": "4.2.1",
+     "title": "Transformación de agentes en flujos de agentes",
+     "summary": "Dividir un agente monolítico con muchos servidores en roles especializados."
+    },
+    {
+     "num": "4.2.2",
+     "title": "Construcción de un flujo de agente a agente",
+     "summary": "Encadenar agentes como prompts encadenados, cada uno con sus herramientas."
+    },
+    {
+     "num": "4.2.3",
+     "title": "Agencia y toma de decisiones en flujos",
+     "summary": "Reemplazar decisiones del LLM por puntos de decisión programados.",
+     "items": [
+      "decision_det"
+     ]
+    },
+    {
+     "num": "4.3.1",
+     "title": "Flujo de agente a agente con handoffs",
+     "summary": "El agente transfiere el control a otro sin código de orquestación.",
+     "items": [
+      "handoff"
+     ]
+    },
+    {
+     "num": "4.3.2",
+     "title": "Visualización de flujos de agentes",
+     "summary": "Grafo del flujo y trazas para ver bucles y cadenas ocultas."
+    },
+    {
+     "num": "4.3.3",
+     "title": "Monitoreo del handoff",
+     "summary": "Registrar qué datos pasan de un agente a otro."
+    },
+    {
+     "num": "4.4.1",
+     "title": "Guardrails de entrada y salida",
+     "summary": "Validadores que rechazan o corrigen datos y disparan excepciones (tripwires).",
+     "items": [
+      "guardrail"
+     ]
+    },
+    {
+     "num": "4.4.2",
+     "title": "Agentes como guardrails",
+     "summary": "Un LLM valida con políticas en lenguaje natural."
+    },
+    {
+     "num": "4.4.3",
+     "title": "Guardrails en flujos con transferencia",
+     "summary": "Validar cada paso y reintentar cuando el guardrail se activa."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Razonamiento y planificación de agentes",
+   "block": "cap",
+   "summary": "Descomposición y planificación en LLM; CoT, ReAct, Tree-of-Thought y Reflexion aplicados a agentes, cómo elegir entre ellos y el servidor MCP de Sequential Thinking como bloc de notas de razonamiento.",
+   "sections": [
+    {
+     "num": "5.1.1",
+     "title": "Razonamiento Chain-of-Thought",
+     "summary": "Pasos de razonamiento explícitos, más fáciles de depurar, a cambio de tokens y latencia.",
+     "items": [
+      "cot"
+     ]
+    },
+    {
+     "num": "5.1.2",
+     "title": "Razonar, actuar, observar: ReAct",
+     "summary": "Alterna razonamiento y llamadas a herramientas en un bucle.",
+     "items": [
+      "react"
+     ]
+    },
+    {
+     "num": "5.1.3",
+     "title": "Planificación con LLM",
+     "summary": "El modelo redacta un plan estratégico y lo revisa con la retroalimentación."
+    },
+    {
+     "num": "5.2.1",
+     "title": "Aplicación de CoT a un agente",
+     "summary": "Instrucciones paso a paso en la persona del agente."
+    },
+    {
+     "num": "5.2.2",
+     "title": "Implementación de ReAct con agentes",
+     "summary": "El agente usa herramientas para el paso de acción y observa el resultado."
+    },
+    {
+     "num": "5.3.1",
+     "title": "Tree-of-Thought",
+     "summary": "Búsqueda deliberada sobre varias ramas de razonamiento, con poda.",
+     "items": [
+      "tot"
+     ]
+    },
+    {
+     "num": "5.3.2",
+     "title": "Reflexion",
+     "summary": "Bucle de autocrítica: evaluar la salida, generar retroalimentación y reintentar.",
+     "items": [
+      "reflexion"
+     ]
+    },
+    {
+     "num": "5.3.3",
+     "title": "Selección del patrón adecuado",
+     "summary": "Qué patrón usar según la tarea y cómo combinarlos."
+    },
+    {
+     "num": "5.4.1",
+     "title": "El servidor de Sequential Thinking",
+     "summary": "Una sola herramienta MCP para escribir, revisar y ramificar pensamientos.",
+     "items": [
+      "seq_thinking"
+     ]
+    },
+    {
+     "num": "5.4.2",
+     "title": "Problemas de viaje en el tiempo con Sequential Thinking",
+     "summary": "Retoma el problema difícil del capítulo con el servidor."
+    },
+    {
+     "num": "5.4.3",
+     "title": "Razonamiento avanzado con Sequential Thinking",
+     "summary": "Combina CoT, ReAct, ToT y Reflexion con seguimiento de pensamientos."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Memoria y RAG de conocimiento para agentes",
+   "block": "cap",
+   "summary": "Recuperación para llevar información externa al contexto: TF-IDF, embeddings, bases vectoriales, búsqueda híbrida, y memoria de agentes con MCP (grafos, sistemas híbridos, compresión y olvido).",
+   "sections": [
+    {
+     "num": "6.1.1",
+     "title": "Fundamentos de RAG",
+     "summary": "Indexar documentos, recuperar fragmentos relevantes y añadirlos al prompt.",
+     "items": [
+      "rag"
+     ]
+    },
+    {
+     "num": "6.1.2",
+     "title": "Búsqueda semántica e indexación de documentos",
+     "summary": "Cómo transformar documentos para buscarlos por significado o por palabras."
+    },
+    {
+     "num": "6.1.3",
+     "title": "Búsqueda por similitud vectorial",
+     "summary": "TF-IDF y similitud coseno como primer motor de búsqueda."
+    },
+    {
+     "num": "6.2.1",
+     "title": "Desmitificación de los embeddings",
+     "summary": "Vectores semánticos frente a TF-IDF: qué captura cada uno.",
+     "items": [
+      "embeddings"
+     ]
+    },
+    {
+     "num": "6.2.2",
+     "title": "Consulta de embeddings desde Chroma DB",
+     "summary": "Una base vectorial local para búsqueda por similitud."
+    },
+    {
+     "num": "6.3.1",
+     "title": "Búsqueda y relevancia",
+     "summary": "Por qué la búsqueda vectorial sola falla con términos exactos, números y jerga."
+    },
+    {
+     "num": "6.3.2",
+     "title": "Agente RAG de búsqueda vectorial",
+     "summary": "Un agente que consulta un índice vectorial como herramienta."
+    },
+    {
+     "num": "6.3.3",
+     "title": "Agente RAG de búsqueda híbrida",
+     "summary": "Vectorial más palabras clave, fusionadas por rango.",
+     "items": [
+      "hibrida"
+     ]
+    },
+    {
+     "num": "6.4.1",
+     "title": "Forma de la memoria y función del agente",
+     "summary": "Memoria sensorial, de trabajo y a largo plazo; episódica, semántica y procedimental."
+    },
+    {
+     "num": "6.4.2",
+     "title": "Base de datos de grafos para memoria vía MCP",
+     "summary": "Entidades, relaciones y observaciones para preguntas de varios saltos.",
+     "items": [
+      "memoria_grafo"
+     ]
+    },
+    {
+     "num": "6.4.3",
+     "title": "Sistemas de memoria híbridos con MCP",
+     "summary": "Combinar memoria de grafos y semántica desde las instrucciones del agente."
+    },
+    {
+     "num": "6.4.4",
+     "title": "Memoria aumentada semántica: semántica, episódica y procedimental",
+     "summary": "Aplicaciones de cada tipo de memoria a agentes."
+    },
+    {
+     "num": "6.4.5",
+     "title": "Compresión y olvido de la memoria",
+     "summary": "Agrupar, resumir y podar recuerdos para controlar costo y ruido.",
+     "items": [
+      "compresion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Agentes robustos con evaluación y retroalimentación",
+   "block": "calidad",
+   "summary": "Cómo medir y mejorar agentes: desarrollo guiado por pruebas (TDAD), agentes evaluadores, de grounding y críticos con rúbricas, y observabilidad y experimentos con Arize Phoenix.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Introducción a la evaluación y retroalimentación",
+     "summary": "Mapa de evaluaciones: red team, benchmarks, retroalimentación humana y evaluadores automáticos."
+    },
+    {
+     "num": "7.2.1",
+     "title": "TDAD en la práctica",
+     "summary": "Definir benchmarks (incluidos casos negativos) antes de construir el agente.",
+     "items": [
+      "tdad"
+     ]
+    },
+    {
+     "num": "7.2.2",
+     "title": "Programación y prueba del agente RAG",
+     "summary": "Código mínimo para responder y medir contra los benchmarks."
+    },
+    {
+     "num": "7.2.3",
+     "title": "Refactorización del agente",
+     "summary": "Cambios mínimos en prompt, herramientas o modelo hasta aprobar; repetir pruebas por estocasticidad."
+    },
+    {
+     "num": "7.2.4",
+     "title": "Agente evaluador",
+     "summary": "Un LLM califica respuestas complejas con salida tipada (aprobado y retroalimentación).",
+     "items": [
+      "agente_evaluador"
+     ]
+    },
+    {
+     "num": "7.3.1",
+     "title": "El agente de grounding",
+     "summary": "Verifica que la respuesta esté respaldada por el contexto o las citas.",
+     "items": [
+      "grounding"
+     ]
+    },
+    {
+     "num": "7.3.2",
+     "title": "Grounding del agente RAG",
+     "summary": "Aplicar la verificación al agente RAG y devolver retroalimentación."
+    },
+    {
+     "num": "7.3.3",
+     "title": "Agentes de grounding como guardrails",
+     "summary": "Bloquear o regenerar respuestas no fundamentadas."
+    },
+    {
+     "num": "7.3.4",
+     "title": "El rol de las rúbricas en la evaluación",
+     "summary": "Convertir calidad subjetiva en criterios y escalas."
+    },
+    {
+     "num": "7.3.5",
+     "title": "Agente crítico basado en rúbricas",
+     "summary": "Bucle generar-criticar hasta una puntuación mínima o un límite de intentos.",
+     "items": [
+      "rubrica_critico"
+     ]
+    },
+    {
+     "num": "7.4.1",
+     "title": "Conexión con Phoenix",
+     "summary": "Instrumentar el agente con OpenTelemetry hacia Phoenix.",
+     "items": [
+      "phoenix"
+     ]
+    },
+    {
+     "num": "7.4.2",
+     "title": "Metadatos y seguimiento de sesiones",
+     "summary": "Etiquetar trazas para filtrar y analizar por cohortes."
+    },
+    {
+     "num": "7.4.3",
+     "title": "Experimentación con evaluadores",
+     "summary": "Conjuntos de datos a partir de trazas reales y experimentos con evaluadores."
+    },
+    {
+     "num": "7.4.4",
+     "title": "Retroalimentación mediante anotaciones",
+     "summary": "Capturar retroalimentación humana estructurada sobre las trazas."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Despliegue de agentes y sistemas agentuales",
+   "block": "calidad",
+   "summary": "Llevar agentes a producción: formas de consumo (embebido, API, eventos), contenedores y Docker Compose, decisiones de arquitectura (canales, estado, versiones, observabilidad, confiabilidad, costos) y seguridad y gobernanza.",
+   "sections": [
+    {
+     "num": "8.1.1",
+     "title": "Agentes de voz en tiempo real en aplicaciones web",
+     "summary": "Agente embebido en el navegador con WebRTC o WebSocket.",
+     "items": [
+      "consumo"
+     ]
+    },
+    {
+     "num": "8.1.2",
+     "title": "Alojamiento de agentes a través de una API",
+     "summary": "Envolver el agente en un servicio web con FastAPI."
+    },
+    {
+     "num": "8.1.3",
+     "title": "Consumo de un servicio de agente desde una aplicación web",
+     "summary": "Una interfaz web que llama al agente alojado."
+    },
+    {
+     "num": "8.2.1",
+     "title": "Contenerización de un microservicio de agente",
+     "summary": "Empaquetar el agente con sus dependencias en un contenedor."
+    },
+    {
+     "num": "8.2.2",
+     "title": "Orquestación con Docker Compose",
+     "summary": "Levantar interfaz, agentes y servicios de herramientas con un solo comando.",
+     "items": [
+      "compose"
+     ]
+    },
+    {
+     "num": "8.2.3",
+     "title": "Externalización de microservicios locales",
+     "summary": "Túneles para compartir prototipos locales sin desplegar en la nube."
+    },
+    {
+     "num": "8.3.1",
+     "title": "Entorno de ejecución: edge, API o eventos",
+     "summary": "Dónde vive el agente define latencia, costo y complejidad."
+    },
+    {
+     "num": "8.3.2",
+     "title": "Los tres «cables» de comunicación",
+     "summary": "Tiempo real, HTTP con streaming o bus de mensajes."
+    },
+    {
+     "num": "8.3.3",
+     "title": "Topologías multiagente que escalan",
+     "summary": "Puerta de entrada ligera que enruta a trabajadores especializados."
+    },
+    {
+     "num": "8.3.4",
+     "title": "Estado, memoria e idempotencia",
+     "summary": "Separar estado de corto y largo plazo; llamadas repetibles sin efectos duplicados.",
+     "items": [
+      "idempotencia"
+     ]
+    },
+    {
+     "num": "8.3.5",
+     "title": "Ingeniería de lanzamientos para agentes",
+     "summary": "Versionar prompts, herramientas y modelos y promover con controles."
+    },
+    {
+     "num": "8.3.6",
+     "title": "La observabilidad importa",
+     "summary": "Trazas de extremo a extremo, métricas y registros con PII enmascarada."
+    },
+    {
+     "num": "8.3.7",
+     "title": "Patrones de confiabilidad",
+     "summary": "Timeouts, fallbacks, disyuntores y presupuestos.",
+     "items": [
+      "confiabilidad"
+     ]
+    },
+    {
+     "num": "8.3.8",
+     "title": "Control de costos y enrutamiento de modelos",
+     "summary": "Costo relativo al valor; enrutar por intención, recortar contexto y usar caché."
+    },
+    {
+     "num": "8.4.1",
+     "title": "Modelo rápido de amenazas",
+     "summary": "Nombrar activos y superficies de ataque de un sistema agentual."
+    },
+    {
+     "num": "8.4.2",
+     "title": "Identidad y acceso",
+     "summary": "Mínimo privilegio para personas, servicios y agentes."
+    },
+    {
+     "num": "8.4.3",
+     "title": "Gestión de secretos y configuración",
+     "summary": "Secretos inyectados en ejecución, nunca dentro de la imagen."
+    },
+    {
+     "num": "8.4.4",
+     "title": "Seguridad de herramientas: sandboxing",
+     "summary": "Aislar herramientas y controlar su salida de red."
+    },
+    {
+     "num": "8.4.5",
+     "title": "Defensas contra inyección de prompts y exfiltración",
+     "summary": "Tratar toda entrada como no confiable; contratos de herramientas y jerarquía de instrucciones.",
+     "items": [
+      "defensa_inyeccion"
+     ]
+    },
+    {
+     "num": "8.4.6",
+     "title": "Seguridad y aplicación de políticas",
+     "summary": "Cumplimiento de políticas más allá de la moderación de contenido."
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Comprensión del bucle agentual",
+   "block": "avanz",
+   "summary": "Las tres capas del bucle agentual (bucle interno, bucle de tareas y metabucle), con un agente de investigación profunda, un agente de tareas repetitivas y bucles de orquestación y colaboración.",
+   "sections": [
+    {
+     "num": "9.1.1",
+     "title": "Capa 1: el bucle interno",
+     "summary": "El ciclo percibir-planificar-actuar-aprender repetido hasta cumplir el objetivo.",
+     "items": [
+      "tres_capas"
+     ]
+    },
+    {
+     "num": "9.1.2",
+     "title": "Capa 2: el bucle de tareas",
+     "summary": "Objetivo, plan, estado y decisión se sacan del agente y los controla el código."
+    },
+    {
+     "num": "9.1.3",
+     "title": "Capa 3: el metabucle",
+     "summary": "Un agente, no el código, controla el plan y el estado."
+    },
+    {
+     "num": "9.2.1",
+     "title": "Estado inicial y plan",
+     "summary": "Objetos de estado y plan externos que se comparten entre iteraciones.",
+     "items": [
+      "estado_externo"
+     ]
+    },
+    {
+     "num": "9.2.2",
+     "title": "Adición de las herramientas",
+     "summary": "Servidores MCP de búsqueda y archivos para el agente de investigación."
+    },
+    {
+     "num": "9.2.3",
+     "title": "Salida del cuerpo de la iteración",
+     "summary": "Resultado tipado de cada ciclo: hallazgos, preguntas de seguimiento y confianza."
+    },
+    {
+     "num": "9.2.4",
+     "title": "La compuerta de terminación",
+     "summary": "Condiciones de salida en capas: límites, presupuesto, objetivo, calidad y estancamiento.",
+     "items": [
+      "compuerta"
+     ]
+    },
+    {
+     "num": "9.2.5",
+     "title": "Programación del bucle de investigación profunda",
+     "summary": "Controlador del bucle, agente, servidores y código de salida juntos."
+    },
+    {
+     "num": "9.2.6",
+     "title": "Síntesis de la salida final",
+     "summary": "Un agente sintetizador convierte los hallazgos en un informe."
+    },
+    {
+     "num": "9.2.7",
+     "title": "Cuándo utilizar un bucle agentual",
+     "summary": "Criterios para decidir si una tarea necesita iterar."
+    },
+    {
+     "num": "9.2.8",
+     "title": "Agente de bucle para tareas repetitivas",
+     "summary": "Cola de trabajo con reintentos, seguimiento de estado y ejecución en paralelo."
+    },
+    {
+     "num": "9.3",
+     "title": "Capa 3: bucles de orquestación multiagente",
+     "summary": "Un orquestador LLM delega en trabajadores, evalúa y decide si iterar.",
+     "items": [
+      "metabucle_orq"
+     ]
+    },
+    {
+     "num": "9.4",
+     "title": "Bucles agentuales colaborativos",
+     "summary": "Agentes pares con estado compartido y rondas de aporte, crítica y síntesis.",
+     "items": [
+      "bucle_colab"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "El agente cognitivo que piensa, monitorea y se adapta",
+   "block": "avanz",
+   "summary": "Por qué apilar patrones no basta: define cognición y metacognición para agentes y construye una arquitectura modular (espacio de trabajo, percepción, planificación, ejecución, evaluación, atención y memoria) con monitoreo metacognitivo.",
+   "sections": [
+    {
+     "num": "10.1.1",
+     "title": "Cinco modos de fallo de agentes no cognitivos",
+     "summary": "Respuesta errónea con seguridad, disco rayado, plan rígido, conjetura sobrecomprometida y composición superficial.",
+     "items": [
+      "modos_fallo"
+     ]
+    },
+    {
+     "num": "10.1.2",
+     "title": "De las primitivas de razonamiento a la arquitectura cognitiva",
+     "summary": "CoT, ReAct, ToT y Reflexion como piezas que hay que componer."
+    },
+    {
+     "num": "10.1.3",
+     "title": "Definición de cognición para agentes",
+     "summary": "Calidad del modelo interno de la tarea: descomponer, combinar herramientas, actualizar."
+    },
+    {
+     "num": "10.1.4",
+     "title": "Definición de metacognición para agentes",
+     "summary": "Supervisar el propio razonamiento: confianza, estancamiento y límites del conocimiento.",
+     "items": [
+      "metacognicion"
+     ]
+    },
+    {
+     "num": "10.1.5",
+     "title": "Tres fundamentos teóricos",
+     "summary": "Sociedad de la mente (Minsky), espacio de trabajo global (Baars) y sistema 1/sistema 2 (Kahneman)."
+    },
+    {
+     "num": "10.2.1",
+     "title": "Visión general de la arquitectura",
+     "summary": "Los siete componentes y sus conexiones."
+    },
+    {
+     "num": "10.2.2",
+     "title": "El espacio de trabajo cognitivo",
+     "summary": "Estado compartido que todos los módulos leen y escriben.",
+     "items": [
+      "espacio_trabajo"
+     ]
+    },
+    {
+     "num": "10.2.3",
+     "title": "El módulo de percepción",
+     "summary": "Convierte la consulta en una representación estructurada de la tarea."
+    },
+    {
+     "num": "10.2.4",
+     "title": "El módulo de planificación",
+     "summary": "Elige una estrategia entre varias según la tarea."
+    },
+    {
+     "num": "10.2.5",
+     "title": "El módulo de ejecución",
+     "summary": "Ejecuta el paso del plan con herramientas MCP o funciones."
+    },
+    {
+     "num": "10.2.6",
+     "title": "El módulo de evaluación",
+     "summary": "Núcleo metacognitivo: revisa si el enfoque está funcionando."
+    },
+    {
+     "num": "10.2.7",
+     "title": "El módulo de atención",
+     "summary": "Decide qué módulo recibe el control a continuación.",
+     "items": [
+      "modulo_atencion"
+     ]
+    },
+    {
+     "num": "10.2.8",
+     "title": "Módulo de memoria y servidor de memoria MCP",
+     "summary": "Grafo de conocimiento persistente con recuperación previa y registro de experiencias."
+    },
+    {
+     "num": "10.3.1",
+     "title": "El bucle cognitivo",
+     "summary": "La arquitectura dentro de cada iteración del bucle de capa 2."
+    },
+    {
+     "num": "10.3.2",
+     "title": "Agente cognitivo completo con MCP",
+     "summary": "Ensamblaje de todos los módulos en un sistema ejecutable."
+    },
+    {
+     "num": "10.3.3",
+     "title": "Demostración: el ciclo cognitivo en acción",
+     "summary": "Una consulta donde un agente ReAct plano fallaría."
+    },
+    {
+     "num": "10.3.4",
+     "title": "Ejecución condicionada por confianza",
+     "summary": "Solo se presenta la respuesta si la confianza lo justifica.",
+     "items": [
+      "gating_confianza"
+     ]
+    },
+    {
+     "num": "10.3.5",
+     "title": "Detección de estancamiento y cambio de estrategia",
+     "summary": "Detecta iteraciones sin progreso y cambia de enfoque."
+    },
+    {
+     "num": "10.3.6",
+     "title": "Conciencia de los límites del conocimiento",
+     "summary": "Reconocer lo que no se sabe y degradar con elegancia."
+    },
+    {
+     "num": "10.3.7",
+     "title": "Comportamientos emergentes",
+     "summary": "Curiosidad, persistencia adaptativa, profundidad selectiva y degradación elegante."
+    },
+    {
+     "num": "10.4.1",
+     "title": "Métricas de eficiencia cognitiva",
+     "summary": "Cuatro métricas para vigilar en producción."
+    },
+    {
+     "num": "10.4.2",
+     "title": "Antes y después: medición del efecto",
+     "summary": "Comparar un agente ReAct estándar con el agente cognitivo."
+    },
+    {
+     "num": "10.4.3",
+     "title": "El camino hacia agentes más generales",
+     "summary": "La generalidad como problema de arquitectura, no solo de escala."
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Consejos para construir sistemas agentuales",
+   "block": "prac",
+   "summary": "Listas de verificación prácticas por cada una de las cinco capas y guías específicas para un agente de atención al cliente, un sistema RAG y un agente de investigación profunda.",
+   "sections": [
+    {
+     "num": "11.1.1",
+     "title": "La capa central: persona",
+     "summary": "La persona como contrato: rol, límites y una salida explícita de «no lo sé».",
+     "items": [
+      "persona_contrato"
+     ]
+    },
+    {
+     "num": "11.1.2",
+     "title": "Herramientas y acciones",
+     "summary": "Herramientas de responsabilidad única, bien nombradas y tipadas; planificar ante fallos."
+    },
+    {
+     "num": "11.1.3",
+     "title": "Razonamiento y planificación",
+     "summary": "Planificar antes de actuar, limitar iteraciones y autoevaluar antes de terminar."
+    },
+    {
+     "num": "11.1.4",
+     "title": "Conocimiento y memoria",
+     "summary": "Recuperación como componente central; separar memoria de sesión y de largo plazo."
+    },
+    {
+     "num": "11.1.5",
+     "title": "Evaluación y retroalimentación",
+     "summary": "Trazar todo, automatizar evaluaciones, incluir revisión humana y guardrails."
+    },
+    {
+     "num": "11.2",
+     "title": "Agente de atención al cliente",
+     "summary": "Alcance estrecho, grounding, escalamiento a humanos y mínimo privilegio.",
+     "items": [
+      "agente_soporte"
+     ]
+    },
+    {
+     "num": "11.3",
+     "title": "Sistema de agentes RAG",
+     "summary": "Roles modulares (triaje, recuperador, generador y crítico) y medición de recall y precisión.",
+     "items": [
+      "rag_modular"
+     ]
+    },
+    {
+     "num": "11.4",
+     "title": "Sistema de agentes de investigación profunda",
+     "summary": "Planificador que delega en trabajadores sin estado, con citas obligatorias y pasada crítica.",
+     "items": [
+      "investigacion_2n"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "spal": {
+   "title": "Ciclo percibir-planificar-actuar-aprender",
+   "summary": "Bucle interno con el que un agente avanza hacia un objetivo de forma autónoma.",
+   "formula": "percibir → planificar → actuar → aprender (↺)"
+  },
+  "uso_herr": {
+   "title": "Uso de herramientas (function calling)",
+   "summary": "El agente actúa fuera de su modelo llamando funciones descritas por un esquema.",
+   "formula": "descripción JSON → registro → invocación"
+  },
+  "mcp": {
+   "title": "Model Context Protocol (MCP)",
+   "summary": "Protocolo abierto (JSON-RPC 2.0) para que un agente descubra y use herramientas sin integración a medida.",
+   "formula": "agente → list_tools → servidor MCP"
+  },
+  "cinco_capas": {
+   "title": "Cinco capas funcionales del agente",
+   "summary": "Marco que organiza el diseño de agentes y la estructura del libro.",
+   "formula": "persona · herramientas · razonamiento · memoria · evaluación"
+  },
+  "patrones_multi": {
+   "title": "Patrones multiagente: flujo, orquestación y colaboración",
+   "summary": "Tres formas básicas de combinar agentes: en cadena, con un centro que delega o como pares."
+  },
+  "muestreo": {
+   "title": "Parámetros de muestreo",
+   "summary": "Controles que regulan variabilidad, longitud y costo de la salida del LLM.",
+   "formula": "temperatura · top-p · max_tokens · penalizaciones"
+  },
+  "persona_prompt": {
+   "title": "Persona e ingeniería de prompts",
+   "summary": "Instrucciones de sistema estructuradas que hacen predecible al agente."
+  },
+  "salida_tipada": {
+   "title": "Salida tipada (output_type)",
+   "summary": "Esquema estricto de entrada/salida que estabiliza flujos con LLM estocásticos.",
+   "formula": "Agente → modelo Pydantic → siguiente agente"
+  },
+  "tracing": {
+   "title": "Tracing de agentes",
+   "summary": "Registro de cada llamada al modelo y a herramientas para depurar y optimizar."
+  },
+  "function_tool": {
+   "title": "Herramientas locales del agente",
+   "summary": "Funciones Python registradas como herramientas en el Agents SDK.",
+   "formula": "@function_tool"
+  },
+  "mcp_arq": {
+   "title": "Arquitectura cliente-servidor-servicio de MCP",
+   "summary": "Separación que permite a cualquier cliente usar cualquier servicio con un mismo protocolo.",
+   "formula": "cliente (agente) ↔ servidor ↔ servicio"
+  },
+  "mcp_comp": {
+   "title": "Componentes de un servidor MCP",
+   "summary": "Los tres tipos de capacidad que expone un servidor.",
+   "formula": "herramientas · recursos · prompts"
+  },
+  "transporte": {
+   "title": "Transportes STDIO y SSE",
+   "summary": "Elección del canal entre agente y servidor; cambiarlo apenas toca el código.",
+   "formula": "STDIO: subproceso local · SSE: HTTP multicliente"
+  },
+  "tools_a_mcp": {
+   "title": "Herramientas propias como servidor MCP",
+   "summary": "Sacar herramientas (o agentes enteros) a un servidor reutilizable y aislado.",
+   "formula": "@mcp.tool()"
+  },
+  "mando_control": {
+   "title": "Mando y control multiagente",
+   "summary": "Quién decide y quién controla la ejecución en un sistema de varios agentes.",
+   "formula": "flujo · orquestador · gestor-trabajador"
+  },
+  "estrategias_coord": {
+   "title": "Estrategias de coordinación",
+   "summary": "Catálogo de formas de coordinar la ejecución entre agentes.",
+   "formula": "secuencial · paralelo · jerárquica · debate · votación · roles · bifurcación · P2P"
+  },
+  "decision_det": {
+   "title": "Punto de decisión determinista",
+   "summary": "Bifurcación programada en lugar de confiar en el juicio del LLM.",
+   "formula": "if salida_tipada: siguiente agente"
+  },
+  "handoff": {
+   "title": "Handoff (transferencia de control)",
+   "summary": "Un agente cede el control a otro; conversacional o por transferencia explícita.",
+   "formula": "agente.handoffs = [siguiente]"
+  },
+  "guardrail": {
+   "title": "Guardrails de entrada y salida",
+   "summary": "Validadores que detienen datos inválidos antes de que contaminen el flujo.",
+   "formula": "validar → tripwire → reintentar/bloquear"
+  },
+  "cot": {
+   "title": "Chain-of-Thought (CoT)",
+   "summary": "Pedir razonamiento paso a paso explícito antes de responder."
+  },
+  "react": {
+   "title": "ReAct",
+   "summary": "Alterna razonamiento con llamadas a herramientas para reunir información y ajustar el plan.",
+   "formula": "razonar → actuar → observar (↺)"
+  },
+  "tot": {
+   "title": "Tree-of-Thought (ToT)",
+   "summary": "Búsqueda sobre varias rutas de razonamiento; potente pero costosa en tokens.",
+   "formula": "ramificar → evaluar → podar → expandir"
+  },
+  "reflexion": {
+   "title": "Reflexion",
+   "summary": "Bucle solucionador-crítico que reintenta incorporando la retroalimentación.",
+   "formula": "resolver → criticar → revisar (↺)"
+  },
+  "seq_thinking": {
+   "title": "Servidor MCP Sequential Thinking",
+   "summary": "Bloc de notas de pensamientos (escribir, revisar, ramificar) expuesto como herramienta."
+  },
+  "rag": {
+   "title": "RAG (generación aumentada por recuperación)",
+   "summary": "Lleva conocimiento externo al contexto del agente en el momento de responder.",
+   "formula": "consulta → recuperar → aumentar prompt → generar"
+  },
+  "embeddings": {
+   "title": "Embeddings y similitud coseno",
+   "summary": "Vectores que representan significado y permiten buscar por similitud.",
+   "formula": "sim(a, b) = a·b / (‖a‖ ‖b‖)"
+  },
+  "hibrida": {
+   "title": "Búsqueda híbrida",
+   "summary": "Combina recuperación semántica y precisión léxica.",
+   "formula": "vectorial + palabras clave → fusión por rango recíproco"
+  },
+  "memoria_grafo": {
+   "title": "Memoria en grafo de conocimiento",
+   "summary": "Memoria relacional vía MCP que responde preguntas de varios saltos.",
+   "formula": "entidades · relaciones · observaciones"
+  },
+  "compresion": {
+   "title": "Compresión y olvido de memoria",
+   "summary": "Agrupar y resumir recuerdos similares o podar los obsoletos."
+  },
+  "tdad": {
+   "title": "Desarrollo de agentes guiado por pruebas (TDAD)",
+   "summary": "Escribir las pruebas antes del agente y repetirlas para medir estabilidad.",
+   "formula": "benchmark → falla → cambio mínimo → repetir"
+  },
+  "agente_evaluador": {
+   "title": "Agente evaluador (LLM como juez)",
+   "summary": "Un LLM califica salidas complejas con resultado tipado.",
+   "formula": "respuesta → {aprobado, retroalimentación}"
+  },
+  "grounding": {
+   "title": "Agente de grounding",
+   "summary": "Comprueba que la respuesta esté respaldada por el contexto recuperado."
+  },
+  "rubrica_critico": {
+   "title": "Crítico con rúbrica",
+   "summary": "Evalúa salidas subjetivas con criterios y escalas definidos.",
+   "formula": "generar → puntuar con rúbrica → regenerar"
+  },
+  "phoenix": {
+   "title": "Observabilidad con Arize Phoenix",
+   "summary": "Plataforma para trazas, evaluadores, experimentos y anotaciones.",
+   "formula": "OpenTelemetry → trazas · sesiones · experimentos"
+  },
+  "consumo": {
+   "title": "Estrategias de consumo de agentes",
+   "summary": "Cómo se integra un agente en una aplicación, que define su despliegue.",
+   "formula": "embebido · API · eventos"
+  },
+  "compose": {
+   "title": "Agentes como microservicios con Docker Compose",
+   "summary": "Contenedores independientes para interfaz, agentes y herramientas."
+  },
+  "idempotencia": {
+   "title": "Estado e idempotencia",
+   "summary": "Separar estados y hacer repetibles las llamadas para permitir caché y reintentos."
+  },
+  "confiabilidad": {
+   "title": "Patrones de confiabilidad",
+   "summary": "Mantienen útil el sistema cuando fallan modelos o herramientas.",
+   "formula": "timeout · fallback · disyuntor · presupuesto"
+  },
+  "defensa_inyeccion": {
+   "title": "Defensa contra inyección de prompts",
+   "summary": "Entrada no confiable, contratos de herramientas y jerarquía de instrucciones."
+  },
+  "tres_capas": {
+   "title": "Tres capas del bucle agentual",
+   "summary": "Niveles de iteración que amplían el horizonte de objetivos del agente.",
+   "formula": "L1 bucle interno · L2 bucle de tareas · L3 metabucle"
+  },
+  "estado_externo": {
+   "title": "Estado y plan externos al agente",
+   "summary": "Acumuladores tipados que transportan el contexto entre iteraciones."
+  },
+  "compuerta": {
+   "title": "Compuerta de terminación",
+   "summary": "Condiciones de salida en capas para que el bucle no corra sin control.",
+   "formula": "límite duro · presupuesto · objetivo · calidad · estancamiento"
+  },
+  "metabucle_orq": {
+   "title": "Metabucle de orquestación",
+   "summary": "Un orquestador LLM controla plan y estado y delega en trabajadores."
+  },
+  "bucle_colab": {
+   "title": "Bucle colaborativo",
+   "summary": "Agentes pares con estado compartido que aportan, critican y deciden cuándo parar."
+  },
+  "modos_fallo": {
+   "title": "Cinco modos de fallo no cognitivos",
+   "summary": "Errores típicos de agentes capaces que no supervisan su razonamiento."
+  },
+  "metacognicion": {
+   "title": "Metacognición del agente",
+   "summary": "Capacidad de saber cuándo está seguro, estancado o fuera de su conocimiento."
+  },
+  "espacio_trabajo": {
+   "title": "Espacio de trabajo cognitivo",
+   "summary": "Estado global compartido inspirado en la teoría de Baars."
+  },
+  "modulo_atencion": {
+   "title": "Módulo de atención",
+   "summary": "Enruta el control entre módulos según las señales del espacio de trabajo."
+  },
+  "gating_confianza": {
+   "title": "Ejecución condicionada por confianza",
+   "summary": "Patrón metacognitivo que evita respuestas erróneas dadas con seguridad."
+  },
+  "persona_contrato": {
+   "title": "Persona como contrato",
+   "summary": "Rol, límites, formato y salida explícita de «no lo sé»."
+  },
+  "agente_soporte": {
+   "title": "Agente de atención al cliente multiagente",
+   "summary": "Varios agentes cooperantes con escalamiento a humanos.",
+   "formula": "triaje → recuperación → grounding → acción → respuesta"
+  },
+  "rag_modular": {
+   "title": "RAG modular con crítico",
+   "summary": "Roles separados para recuperación correctiva y respuestas con citas.",
+   "formula": "enrutador → recuperador → generador (+ crítico)"
+  },
+  "investigacion_2n": {
+   "title": "Investigación profunda en dos niveles",
+   "summary": "Un planificador delega en trabajadores sin estado y exige fuentes citadas.",
+   "formula": "planificador (cerebro) → trabajadores (manos)"
+  }
+ },
+ "resources": [
+  {
+   "id": "A",
+   "title": "Configuración del repositorio de código de ejemplo (Python, dependencias, clave de API)",
+   "usedBy": [
+    "2.3.1",
+    "6.1.3",
+    "9.2.2"
+   ]
+  },
+  {
+   "id": "B",
+   "title": "Node.js y npx para servidores MCP locales",
+   "usedBy": [
+    "3.2.1",
+    "3.3.3",
+    "5.4.1",
+    "6.4.2",
+    "8.2.3"
+   ]
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    3
+   ],
+   "6": [
+    3
+   ],
+   "7": [
+    4,
+    6
+   ],
+   "8": [
+    7
+   ],
+   "9": [
+    5,
+    7
+   ],
+   "10": [
+    9
+   ],
+   "11": [
+    8,
+    9
+   ]
+  },
+  "sections": {
+   "1.1.2": [
+    "1.1.1"
+   ],
+   "1.1.3": [
+    "1.1.2"
+   ],
+   "1.2": [
+    "1.1.3"
+   ],
+   "1.3.2": [
+    "1.3.1",
+    "1.1.3"
+   ],
+   "1.3.3": [
+    "1.3.1",
+    "1.1.2"
+   ],
+   "1.3.4": [
+    "1.3.1"
+   ],
+   "1.3.5": [
+    "1.3.1"
+   ],
+   "1.4.1": [
+    "1.1.2"
+   ],
+   "1.4.2": [
+    "1.4.1"
+   ],
+   "1.4.3": [
+    "1.4.2"
+   ],
+   "2.1.2": [
+    "2.1.1"
+   ],
+   "2.1.3": [
+    "2.1.1"
+   ],
+   "2.2.1": [
+    "2.1.1",
+    "1.3.1"
+   ],
+   "2.2.2": [
+    "2.2.1"
+   ],
+   "2.2.3": [
+    "2.2.1"
+   ],
+   "2.3.1": [
+    "2.2.1"
+   ],
+   "2.3.2": [
+    "2.3.1",
+    "2.1.3"
+   ],
+   "2.3.3": [
+    "2.3.1"
+   ],
+   "2.3.4": [
+    "2.3.1"
+   ],
+   "2.4.1": [
+    "2.3.1",
+    "1.1.3"
+   ],
+   "2.4.2": [
+    "2.4.1",
+    "2.3.4"
+   ],
+   "3.1.1": [
+    "1.2"
+   ],
+   "3.1.2": [
+    "3.1.1"
+   ],
+   "3.1.3": [
+    "3.1.2"
+   ],
+   "3.1.4": [
+    "3.1.2"
+   ],
+   "3.1.5": [
+    "3.1.3",
+    "1.3.1"
+   ],
+   "3.2.1": [
+    "3.1.3",
+    "2.4.1"
+   ],
+   "3.2.2": [
+    "3.2.1"
+   ],
+   "3.2.3": [
+    "3.1.4"
+   ],
+   "3.2.4": [
+    "3.2.1"
+   ],
+   "3.3.1": [
+    "3.2.3",
+    "2.3.1"
+   ],
+   "3.3.2": [
+    "3.3.1"
+   ],
+   "3.3.3": [
+    "3.3.1"
+   ],
+   "3.4.1": [
+    "3.2.1"
+   ],
+   "3.4.2": [
+    "3.4.1",
+    "3.3.2"
+   ],
+   "4.1.1": [
+    "1.4.3"
+   ],
+   "4.1.2": [
+    "4.1.1",
+    "3.1.2"
+   ],
+   "4.1.3": [
+    "4.1.1"
+   ],
+   "4.2.1": [
+    "3.3.3",
+    "1.4.1"
+   ],
+   "4.2.2": [
+    "4.2.1",
+    "2.3.3"
+   ],
+   "4.2.3": [
+    "4.2.2"
+   ],
+   "4.3.1": [
+    "4.2.2"
+   ],
+   "4.3.2": [
+    "4.3.1",
+    "2.3.4"
+   ],
+   "4.3.3": [
+    "4.3.1"
+   ],
+   "4.4.1": [
+    "4.2.2"
+   ],
+   "4.4.2": [
+    "4.4.1"
+   ],
+   "4.4.3": [
+    "4.4.2",
+    "4.3.1"
+   ],
+   "5.1.1": [
+    "2.2.1"
+   ],
+   "5.1.2": [
+    "5.1.1",
+    "2.4.1"
+   ],
+   "5.1.3": [
+    "5.1.1"
+   ],
+   "5.2.1": [
+    "5.1.1",
+    "2.3.1"
+   ],
+   "5.2.2": [
+    "5.1.2",
+    "5.2.1"
+   ],
+   "5.3.1": [
+    "5.1.3"
+   ],
+   "5.3.2": [
+    "5.2.1"
+   ],
+   "5.3.3": [
+    "5.3.1",
+    "5.3.2",
+    "5.2.2"
+   ],
+   "5.4.1": [
+    "3.3.3",
+    "5.1.3"
+   ],
+   "5.4.2": [
+    "5.4.1"
+   ],
+   "5.4.3": [
+    "5.4.2",
+    "5.3.3"
+   ],
+   "6.1.1": [
+    "1.3.4"
+   ],
+   "6.1.2": [
+    "6.1.1"
+   ],
+   "6.1.3": [
+    "6.1.2"
+   ],
+   "6.2.1": [
+    "6.1.3"
+   ],
+   "6.2.2": [
+    "6.2.1"
+   ],
+   "6.3.1": [
+    "6.2.2"
+   ],
+   "6.3.2": [
+    "6.3.1",
+    "2.4.1"
+   ],
+   "6.3.3": [
+    "6.3.2"
+   ],
+   "6.4.1": [
+    "1.3.4"
+   ],
+   "6.4.2": [
+    "6.4.1",
+    "3.3.3"
+   ],
+   "6.4.3": [
+    "6.4.2",
+    "6.2.2"
+   ],
+   "6.4.4": [
+    "6.4.3"
+   ],
+   "6.4.5": [
+    "6.4.3"
+   ],
+   "7.1": [
+    "1.3.5",
+    "1.1.2"
+   ],
+   "7.2.1": [
+    "7.1"
+   ],
+   "7.2.2": [
+    "7.2.1",
+    "6.3.2"
+   ],
+   "7.2.3": [
+    "7.2.2",
+    "2.2.3"
+   ],
+   "7.2.4": [
+    "7.2.3",
+    "2.3.3"
+   ],
+   "7.3.1": [
+    "7.1",
+    "6.1.1"
+   ],
+   "7.3.2": [
+    "7.3.1",
+    "6.3.2"
+   ],
+   "7.3.3": [
+    "7.3.2",
+    "4.4.2"
+   ],
+   "7.3.4": [
+    "7.2.4"
+   ],
+   "7.3.5": [
+    "7.3.4",
+    "5.3.2"
+   ],
+   "7.4.1": [
+    "2.3.4"
+   ],
+   "7.4.2": [
+    "7.4.1"
+   ],
+   "7.4.3": [
+    "7.4.2",
+    "7.2.4"
+   ],
+   "7.4.4": [
+    "7.4.2"
+   ],
+   "8.1.1": [
+    "2.3.1"
+   ],
+   "8.1.2": [
+    "2.3.1"
+   ],
+   "8.1.3": [
+    "8.1.2"
+   ],
+   "8.2.1": [
+    "8.1.2"
+   ],
+   "8.2.2": [
+    "8.2.1"
+   ],
+   "8.2.3": [
+    "8.2.1"
+   ],
+   "8.3.1": [
+    "8.1.1",
+    "8.1.2"
+   ],
+   "8.3.2": [
+    "8.3.1",
+    "3.2.3"
+   ],
+   "8.3.3": [
+    "8.2.2",
+    "4.1.1"
+   ],
+   "8.3.4": [
+    "6.4.1"
+   ],
+   "8.3.5": [
+    "7.2.1"
+   ],
+   "8.3.6": [
+    "7.4.2"
+   ],
+   "8.3.7": [
+    "8.3.1"
+   ],
+   "8.3.8": [
+    "2.3.2",
+    "2.1.2"
+   ],
+   "8.4.1": [
+    "8.3.3"
+   ],
+   "8.4.2": [
+    "8.4.1"
+   ],
+   "8.4.3": [
+    "8.2.1"
+   ],
+   "8.4.4": [
+    "8.4.1",
+    "3.1.3"
+   ],
+   "8.4.5": [
+    "8.4.1",
+    "4.4.1"
+   ],
+   "8.4.6": [
+    "8.4.5",
+    "4.4.2"
+   ],
+   "9.1.1": [
+    "1.1.2"
+   ],
+   "9.1.2": [
+    "9.1.1"
+   ],
+   "9.1.3": [
+    "9.1.2",
+    "4.1.1"
+   ],
+   "9.2.1": [
+    "9.1.2",
+    "2.3.3"
+   ],
+   "9.2.2": [
+    "9.2.1",
+    "3.3.1"
+   ],
+   "9.2.3": [
+    "9.2.1"
+   ],
+   "9.2.4": [
+    "9.2.3"
+   ],
+   "9.2.5": [
+    "9.2.2",
+    "9.2.4"
+   ],
+   "9.2.6": [
+    "9.2.5"
+   ],
+   "9.2.7": [
+    "9.2.5"
+   ],
+   "9.2.8": [
+    "9.2.5",
+    "8.3.7"
+   ],
+   "9.3": [
+    "9.1.3",
+    "9.2.5"
+   ],
+   "9.4": [
+    "9.3",
+    "4.1.3"
+   ],
+   "10.1.1": [
+    "5.3.3",
+    "9.2.5"
+   ],
+   "10.1.2": [
+    "10.1.1"
+   ],
+   "10.1.3": [
+    "10.1.2"
+   ],
+   "10.1.4": [
+    "10.1.3"
+   ],
+   "10.1.5": [
+    "10.1.4"
+   ],
+   "10.2.1": [
+    "10.1.5"
+   ],
+   "10.2.2": [
+    "10.2.1"
+   ],
+   "10.2.3": [
+    "10.2.2"
+   ],
+   "10.2.4": [
+    "10.2.2"
+   ],
+   "10.2.5": [
+    "10.2.4"
+   ],
+   "10.2.6": [
+    "10.2.5"
+   ],
+   "10.2.7": [
+    "10.2.6"
+   ],
+   "10.2.8": [
+    "10.2.2",
+    "6.4.2"
+   ],
+   "10.3.1": [
+    "10.2.7",
+    "10.2.8"
+   ],
+   "10.3.2": [
+    "10.3.1"
+   ],
+   "10.3.3": [
+    "10.3.2"
+   ],
+   "10.3.4": [
+    "10.3.1"
+   ],
+   "10.3.5": [
+    "10.3.1"
+   ],
+   "10.3.6": [
+    "10.3.1"
+   ],
+   "10.3.7": [
+    "10.3.3"
+   ],
+   "10.4.1": [
+    "10.3.2"
+   ],
+   "10.4.2": [
+    "10.4.1"
+   ],
+   "10.4.3": [
+    "10.4.2"
+   ],
+   "11.1.1": [
+    "2.2.3"
+   ],
+   "11.1.2": [
+    "3.4.1",
+    "8.3.7"
+   ],
+   "11.1.3": [
+    "5.3.3",
+    "9.2.4"
+   ],
+   "11.1.4": [
+    "6.3.3",
+    "6.4.5"
+   ],
+   "11.1.5": [
+    "7.4.4",
+    "8.3.6"
+   ],
+   "11.2": [
+    "11.1.4",
+    "7.3.3",
+    "8.4.2"
+   ],
+   "11.3": [
+    "11.1.4",
+    "7.3.2"
+   ],
+   "11.4": [
+    "9.2.6",
+    "9.3"
+   ]
+  },
+  "items": {
+   "uso_herr": [
+    "spal"
+   ],
+   "cinco_capas": [
+    "spal"
+   ],
+   "mcp": [
+    "uso_herr"
+   ],
+   "patrones_multi": [
+    "spal"
+   ],
+   "persona_prompt": [
+    "cinco_capas"
+   ],
+   "function_tool": [
+    "uso_herr"
+   ],
+   "mcp_arq": [
+    "mcp"
+   ],
+   "mcp_comp": [
+    "mcp_arq"
+   ],
+   "transporte": [
+    "mcp_arq"
+   ],
+   "tools_a_mcp": [
+    "mcp_comp",
+    "function_tool"
+   ],
+   "mando_control": [
+    "patrones_multi"
+   ],
+   "estrategias_coord": [
+    "mando_control"
+   ],
+   "decision_det": [
+    "mando_control",
+    "salida_tipada"
+   ],
+   "handoff": [
+    "mando_control"
+   ],
+   "guardrail": [
+    "salida_tipada"
+   ],
+   "cot": [
+    "persona_prompt"
+   ],
+   "react": [
+    "cot",
+    "function_tool"
+   ],
+   "tot": [
+    "cot"
+   ],
+   "reflexion": [
+    "cot"
+   ],
+   "seq_thinking": [
+    "cot",
+    "mcp_comp"
+   ],
+   "rag": [
+    "cinco_capas"
+   ],
+   "embeddings": [
+    "rag"
+   ],
+   "hibrida": [
+    "embeddings"
+   ],
+   "memoria_grafo": [
+    "mcp_comp",
+    "rag"
+   ],
+   "compresion": [
+    "memoria_grafo",
+    "embeddings"
+   ],
+   "tdad": [
+    "spal"
+   ],
+   "agente_evaluador": [
+    "tdad",
+    "salida_tipada"
+   ],
+   "grounding": [
+    "rag"
+   ],
+   "rubrica_critico": [
+    "agente_evaluador",
+    "reflexion"
+   ],
+   "phoenix": [
+    "tracing"
+   ],
+   "compose": [
+    "consumo"
+   ],
+   "idempotencia": [
+    "consumo"
+   ],
+   "confiabilidad": [
+    "consumo"
+   ],
+   "defensa_inyeccion": [
+    "guardrail"
+   ],
+   "tres_capas": [
+    "spal"
+   ],
+   "estado_externo": [
+    "tres_capas",
+    "salida_tipada"
+   ],
+   "compuerta": [
+    "estado_externo"
+   ],
+   "metabucle_orq": [
+    "compuerta",
+    "mando_control"
+   ],
+   "bucle_colab": [
+    "metabucle_orq",
+    "estrategias_coord"
+   ],
+   "modos_fallo": [
+    "react",
+    "compuerta"
+   ],
+   "metacognicion": [
+    "modos_fallo"
+   ],
+   "espacio_trabajo": [
+    "metacognicion"
+   ],
+   "modulo_atencion": [
+    "espacio_trabajo"
+   ],
+   "gating_confianza": [
+    "metacognicion"
+   ],
+   "persona_contrato": [
+    "persona_prompt",
+    "salida_tipada"
+   ],
+   "agente_soporte": [
+    "grounding",
+    "handoff"
+   ],
+   "rag_modular": [
+    "hibrida",
+    "grounding"
+   ],
+   "investigacion_2n": [
+    "metabucle_orq",
+    "grounding"
+   ]
+  }
+ }
+}
