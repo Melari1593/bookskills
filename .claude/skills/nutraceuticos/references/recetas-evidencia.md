@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-23
 
 ## Resumen
 
-Veintitrés preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veinticuatro preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -31,6 +31,7 @@ Veintitrés preparaciones llevan un nutracéutico en una porción medida. La té
 | Bisglicinato ferroso | Sabor metálico; inhibidores en la comida (lácteos, té, café); riesgo de intoxicación infantil si se vuelve golosina | Shot frío de guayaba preparado al momento, una dosis por vaso | La dosis indicada (ensayo de prevención: 25 mg de hierro elemental) | Moderada en embarazo: más hemoglobina y menos efectos digestivos que otras sales |
 | Brownie con bisglicinato ferroso (lote dosificado) | Dosis uniforme por pieza; el cacao inhibe la absorción del hierro; riesgo de golosina con hierro | Dilución geométrica en la harina, corte por peso, salsa fría de guayaba al servir | 25 mg de hierro elemental por pieza (o la dosis indicada); 9 piezas | El cacao redujo la absorción del hierro no hemo en 71 % |
 | Semillas de calabaza (Cucurbita pepo) | Tostado fuerte oxida esteroles y tocoferoles; Salmonella en semilla; alergia | Tostado suave con mejorana (110 °C) y vinagreta fría con xantana 0,25 % | 10 g de semilla por porción (dosis diaria del GRANU) o 20 g de vinagreta = 10 g de aceite | Metaanálisis 2026: beneficio pequeño en IPSS a 3 meses; certeza baja a muy baja |
+| Arepa de maíz integral con bisglicinato ferroso | Fitato del maíz integral; queso y bebidas calientes inhiben; dosis uniforme por arepa | Dilución geométrica en la harina, ácido láctico 6 mg/g de maíz, bolas pesadas, salsa fría de guayaba | Nivel A: 3 mg de hierro por arepa (fortificación). Nivel B: 25 mg por arepa (dosis), 6 arepas | En maíz integral, el bisglicinato se absorbió 4 veces más que el sulfato ferroso |
 
 **Reglas de uso en consulta**
 
@@ -1413,7 +1414,80 @@ Una porción de 20 g lleva 10 g de aceite, la cantidad diaria del estudio de vej
 - **Atragantamiento:** no des semillas enteras a niños pequeños *(interpretación)*.
 - **Grasa y energía:** el aceite aporta unas 90 kcal por porción de 10 g.
 
-## 24. Seguridad para todas las preparaciones
+## 24. Arepa de maíz integral con bisglicinato ferroso
+
+**Objetivo.** 6 arepas de maíz integral con la misma cantidad de hierro elemental cada una. Hay dos niveles:
+
+| Nivel | Hierro por arepa | Para quién | Reglas |
+| --- | --- | --- | --- |
+| A. Fortificación | 3 mg | Adultos; niños solo con indicación del pediatra | Guarda como alimento, rotulado |
+| B. Dosis | 25 mg (o la indicada) | Solo el adulto a quien se indicó | Reglas de la sección 22: rotulado como medicamento, congelado y bajo llave |
+
+Los 3 mg son la cantidad de prueba del estudio en maíz integral ([Bovell-Benjamin 2000](https://doi.org/10.1093/ajcn/71.6.1563)). Los 25 mg son la dosis de prevención de la sección 21 ([Milman 2014](https://doi.org/10.1515/jpm-2013-0153)).
+
+**Por qué bisglicinato en maíz integral.** El maíz integral tiene fitato, que atrapa el hierro. En una colada de maíz integral, el hierro del bisglicinato se absorbió en promedio 6,0 %, cuatro veces más que el del sulfato ferroso (1,7 %). Su absorción siguió regulada por los depósitos de hierro: bajó cuando la ferritina era alta ([Bovell-Benjamin 2000](https://doi.org/10.1093/ajcn/71.6.1563)). Hallberg y Hulthén cuestionaron en una carta la ventaja del bisglicinato como fortificante ([Hallberg 2000](https://doi.org/10.1093/ajcn/72.6.1592)).
+
+**Técnica molecular: ácido láctico en la masa.** Añadir 6 mg de ácido láctico por gramo de maíz aumentó cerca del doble la biodisponibilidad del hierro en células Caco-2. El panel de consumidores no notó cambios en el sabor de la arepa ([Proulx 2007](https://doi.org/10.1021/jf0630015)). Es un dato in vitro; no está probado en personas ni con bisglicinato.
+
+**Cálculo del bisglicinato**
+
+1. Hierro total del lote = hierro por arepa × 6. Nivel A: 3 × 6 = 18 mg. Nivel B: 25 × 6 = 150 mg.
+2. Lee en la etiqueta los mg de hierro elemental por gramo de producto.
+3. Gramos de producto = hierro total ÷ mg de hierro por gramo. Ejemplo con 200 mg/g: nivel A 0,09 g; nivel B 0,75 g.
+4. Pesa en báscula de 0,01 g. Con menos de 0,10 g, la báscula no es exacta: prepara una premezcla 1:10 con harina (por ejemplo, 0,90 g de producto en 9,00 g de harina) y usa 10 veces la cantidad calculada de esa premezcla *(interpretación de la técnica farmacéutica)*.
+
+**Ingredientes** (6 arepas de unos 110 g de masa)
+
+| Ingrediente | g | Nota |
+| --- | --- | --- |
+| Harina de maíz integral precocida | 300 | Vehículo de la dilución |
+| Agua tibia | 360 | Ajusta según la harina |
+| Sal | 3 | — |
+| Ácido láctico (100 %) | 1,8 | 6 mg/g de maíz. Con solución al 80 %: 2,25 g |
+| Bisglicinato ferroso | Según el cálculo | Nivel A o B |
+| **Al servir:** salsa fría de guayaba con xantana 0,25 % | 30 por arepa | Receta de la sección 20.1 |
+
+Las cantidades de agua y sal son de cocina, no de una fuente.
+
+**Proceso**
+
+1. **Dilución geométrica.** Mezcla el bisglicinato con 5 g de harina. Añade 10 g y mezcla. Añade 20 g y mezcla. Añade el resto de la harina y la sal, y mezcla en seco 1 min.
+2. Disuelve el ácido láctico en el agua tibia.
+3. Vierte el agua sobre la harina y amasa 3 min, hasta una masa lisa que no se agriete.
+4. Reposa 5 min tapada.
+5. Pesa la masa total. Divídela entre 6.
+6. Forma 6 bolas de ese peso, ± 5 % *(tolerancia propuesta, no de una fuente)*. Aplánalas a un grosor parejo de 1,5 cm.
+7. Asa en budare o sartén a fuego medio, 6–8 min por lado, hasta dorado claro. No las quemes: la superficie tostada pasa de 120 °C (acrilamida).
+8. Sirve con 30 g de salsa fría de guayaba.
+
+**Cómo servirla**
+
+- **Sin queso ni leche en la misma comida.** 165 mg de calcio como queso o leche redujeron la absorción del hierro 50–60 % ([Hallberg 1991](https://doi.org/10.1093/ajcn/53.1.112)).
+- **Sin café, chocolate ni té en la misma comida** (secciones 20 y 22).
+- **Con vitamina C fría:** la salsa de guayaba, no un hogao cocinado.
+
+**Por qué funciona.** El quelato con glicina mantiene el hierro fuera del alcance del fitato del maíz. El ácido láctico mejora la solubilidad del hierro. La dilución geométrica y las bolas pesadas dan la misma dosis en cada arepa. La salsa fría aporta vitamina C que la plancha no destruye.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Bordes agrietados | Poca agua o masa sin reposo | Añade agua de a 10 g; reposa 5 min |
+| Arepa cruda por dentro | Fuego alto o arepa gruesa | Fuego medio; grosor de 1,5 cm |
+| Puntos grises o verdosos en la masa | Bisglicinato mal disperso | Repite la dilución geométrica; mezcla en seco antes del agua |
+| Sabor metálico | Nivel B en arepa pequeña | Sirve con la salsa ácida |
+
+**Estabilidad.** No encontré datos del bisglicinato en la plancha ni de su estabilidad en arepas congeladas.
+
+**Seguridad**
+
+- **Nivel B:** aplica todas las reglas de almacenamiento de la sección 22. Una arepa al día. Un lote de 6 arepas a 25 mg contiene 150 mg de hierro elemental. La ingestión accidental de hierro es una causa importante de intoxicación grave en niños ([Mehta 1997](https://doi.org/10.1007/BF02737753)).
+- **No mezcles** arepas de nivel A, nivel B y sin hierro en el mismo recipiente.
+- **Embarazo y anemia:** la dosis la fija el control prenatal o el médico.
+- **Hemocromatosis o sobrecarga de hierro:** no uses ninguno de los dos niveles.
+- **Ácido láctico:** usa ácido láctico de grado alimentario.
+
+## 25. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1506,7 +1580,13 @@ Una porción de 20 g lleva 10 g de aceite, la cantidad diaria del estudio de vej
 - Brote de *Salmonella* asociado a semillas (Francia, 2026): lotes sin alerta; tostado comercial en grupos vulnerables.
 - No calentar el aceite; tostar la semilla a 110 °C, no por encima de 120 °C.
 
-## 25. Huecos y log de búsqueda
+**Arepa con hierro (sección 24)**
+
+- Nivel B (25 mg por arepa): mismas reglas que el brownie de la sección 22.
+- Sin queso, leche, café ni chocolate en la misma comida.
+- No usar en hemocromatosis ni sobrecarga de hierro.
+
+## 26. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1525,6 +1605,7 @@ Una porción de 20 g lleva 10 g de aceite, la cantidad diaria del estudio de vej
 - Porcentaje de hierro elemental del bisglicinato comercial en Colombia, intervalo seguro entre la dosis y los lácteos, y si el esquema de días alternos aplica al bisglicinato.
 - Estabilidad del bisglicinato en horneado, protección del quelato frente a polifenoles del cacao y dosis tóxica de hierro por kg en niños.
 - Semillas de calabaza: contenido de zinc y magnesio por gramo, eliminación de *Salmonella* con tostado casero a 110 °C, vida útil de la semilla tostada y cadmio en la semilla.
+- Arepa con hierro: estabilidad del bisglicinato en la plancha y en congelación; efecto del ácido láctico sobre el bisglicinato en personas.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1587,5 +1668,6 @@ Una porción de 20 g lleva 10 g de aceite, la cantidad diaria del estudio de vej
 | pediatric iron poisoning supplements ingestion; alternate day iron supplementation absorption women (22-11-2026) | 11 / 10 | Mehta 1997, Stoffel 2017, Stoffel 2020 |
 | cocoa polyphenols nonheme iron absorption; polyphenols inhibit iron absorption dose-dependent meal; ferrous bisglycinate bread OR baked fortification; iron poisoning children mg/kg (23-11-2026) | 1 / 4 / 127 / 1467 | Buerkli 2022, Hurrell 1999, Tuntawiroon 1991; sin dato de horneado ni umbral tóxico |
 | pumpkin seed Cucurbita benign prostatic hyperplasia randomized; pumpkin seed\* AND (overactive bladder OR nocturia OR urinary symptoms); pumpkin seed\* AND (roasting OR roasted) AND (oil OR tocopherol OR pyrazine OR acrylamide); pumpkin seed\* AND (allergy OR anaphylaxis); pumpkin seed\* AND (aflatoxin OR mycotoxin OR cadmium OR Salmonella); pumpkin seed\* AND (zinc OR magnesium OR tryptophan) AND human (23-11-2026) | 5 / 27 / 14 / 34 / 32 / 27 | Benedicto 2026, Vahlensieck 2015, Zerafatjou 2021, Nishimura 2014, Dragoun 2022, Procida 2013, Raczyk 2017, Kozłowska 2025, Acikalin 2026, Jones 2026; sin dato de zinc ni de cadmio en semilla |
+| ferrous bisglycinate maize OR corn absorption; iron amino acid chelate precooked corn flour arepa Venezuela; calcium cheese inhibits nonheme iron absorption meal; nixtamalization phytate iron bioavailability maize (23-11-2026) | 2972 (query con OR amplio) / 0 / 2 / 3 | Bovell-Benjamin 2000, Hallberg y Hulthén 2000 (carta), Hallberg 1991, Proulx 2007; sin datos de arepa fortificada con bisglicinato |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
