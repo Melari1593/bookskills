@@ -1,10 +1,10 @@
 # Nutracéuticos con gastronomía molecular: recetas y evidencia
 
-Documento de recetas y evidencia · actualizado 2026-11-22
+Documento de recetas y evidencia · actualizado 2026-11-23
 
 ## Resumen
 
-Veintiuna preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veintidós preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -29,6 +29,7 @@ Veintiuna preparaciones llevan un nutracéutico en una porción medida. La técn
 | Especias (jengibre, cardamomo, canela de Ceilán) | Terpenos volátiles que se pierden al hervir; polvos que se asientan; cumarina de la cassia | Leche tibia especiada (60–70 °C) suspendida con xantana | 1 g de jengibre + 0,5 g de cardamomo + 0,5 g de canela de Ceilán | Jengibre: favorable para náusea del embarazo con 1 g/día; calidad metodológica baja |
 | Embarazo: hierro, calcio y folato | Hierro vegetal poco absorbible; vitamina C y folato que se pierden con calor; calcio que compite con el hierro; Listeria | Salsa fría de guayaba con xantana sobre lentejas; panna cotta láctea con gelatina; salsa verde cruda emulsionada | Dosis de alimento; no reemplaza ácido fólico ni hierro en suplemento | Suplementos: ácido fólico alta (defectos del tubo neural); hierro y calcio baja |
 | Bisglicinato ferroso | Sabor metálico; inhibidores en la comida (lácteos, té, café); riesgo de intoxicación infantil si se vuelve golosina | Shot frío de guayaba preparado al momento, una dosis por vaso | La dosis indicada (ensayo de prevención: 25 mg de hierro elemental) | Moderada en embarazo: más hemoglobina y menos efectos digestivos que otras sales |
+| Brownie con bisglicinato ferroso (lote dosificado) | Dosis uniforme por pieza; el cacao inhibe la absorción del hierro; riesgo de golosina con hierro | Dilución geométrica en la harina, corte por peso, salsa fría de guayaba al servir | 25 mg de hierro elemental por pieza (o la dosis indicada); 9 piezas | El cacao redujo la absorción del hierro no hemo en 71 % |
 
 **Reglas de uso en consulta**
 
@@ -1248,7 +1249,85 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - **Heces negras:** son esperables con el hierro; menos frecuentes con bisglicinato 25 mg ([Milman 2024](https://doi.org/10.1155/2024/1716798)). Heces negras con dolor abdominal o debilidad requieren consulta *(interpretación)*.
 - **Hemocromatosis o sobrecarga de hierro:** no buscado; no indiques hierro sin estudio de ferritina.
 
-## 22. Seguridad para todas las preparaciones
+## 22. Brownie con bisglicinato ferroso: lote dosificado
+
+**Antes de hacerlo.** La sección 21 recomienda no convertir el hierro en golosina. Esta receta existe porque se pidió un lote con dosis por pieza. Si la haces, cumple **todas** las reglas de almacenamiento de abajo.
+
+**Objetivo.** 9 brownies con la misma dosis de hierro elemental cada uno. Una pieza = una dosis diaria. Para un adulto.
+
+**Dos problemas de este formato**
+
+1. **El cacao reduce la absorción del hierro.** En adultos, una bebida de cacao redujo la absorción de hierro no hemo de una comida de pan en 71 % ([Hurrell 1999](https://pubmed.ncbi.nlm.nih.gov/10999016/)). Un suplemento con cacao en polvo, té negro y extracto de uva redujo la absorción cerca de 40 % ([Buerkli 2022](https://doi.org/10.1007/s00394-022-02829-8)). No confirmé si el quelato con glicina protege el hierro de los polifenoles; sí lo protegió del fitato del maíz ([Bovell-Benjamin 2000](https://doi.org/10.1093/ajcn/71.6.1563)).
+2. **La vitamina C se pierde en el horno.** Por eso va en una salsa fría al servir. En otro estudio, 100 mg de vitamina C redujeron a la mitad la inhibición causada por un vegetal rico en fenoles ([Tuntawiroon 1991](https://doi.org/10.1093/ajcn/53.2.554)).
+
+Si buscas la mejor absorción, usa el shot de la sección 21.
+
+**Cálculo de la dosis**
+
+1. Elige la dosis por pieza en mg de hierro elemental. Ejemplo: 25 mg, la dosis de prevención del ensayo de Milman en embarazo ([Milman 2014](https://doi.org/10.1515/jpm-2013-0153)).
+2. Hierro total del lote = dosis por pieza × 9. Ejemplo: 25 mg × 9 = 225 mg.
+3. Lee en la etiqueta los mg de hierro elemental por gramo de producto.
+4. Gramos de producto = hierro total del lote ÷ mg de hierro por gramo. Ejemplo: con 200 mg de hierro por gramo, 225 ÷ 200 = 1,13 g.
+5. Pesa el producto en báscula de 0,01 g. No uses cucharitas.
+
+**Ingredientes** (molde de 20 × 20 cm, 9 piezas)
+
+| Ingrediente | g | Nota |
+| --- | --- | --- |
+| Mantequilla | 115 | Fundida y tibia |
+| Panela fina | 150 | — |
+| Huevos | 100 | 2 huevos |
+| Cacao en polvo natural | 40 | Fuente de los polifenoles |
+| Harina de trigo | 65 | Vehículo de la dilución |
+| Sal | 1 | — |
+| Bisglicinato ferroso | Según el cálculo | Ejemplo: 1,13 g |
+| **Salsa al servir:** pulpa de guayaba fría con xantana 0,25 % | 30 por pieza | Receta de la sección 20.1 |
+
+Las cantidades de mantequilla, panela, huevo, cacao y harina son de cocina, no de una fuente.
+
+**Proceso**
+
+1. **Dilución geométrica.** Mezcla el bisglicinato con 5 g de la harina. Añade 10 g más de harina y mezcla. Añade 20 g y mezcla. Añade el resto de la harina, el cacao y la sal, y tamiza dos veces.
+2. Bate la mantequilla tibia con la panela.
+3. Añade los huevos y bate 1 min.
+4. Incorpora la mezcla seca con espátula hasta que no veas polvo.
+5. Pesa el molde vacío. Vierte la masa y alisa la superficie para que el grosor sea parejo.
+6. Hornea a 175 °C por 20–25 min, hasta que un palillo salga con migas húmedas.
+7. Enfría por completo.
+8. Pesa el brownie entero. Divide el peso entre 9.
+9. Corta 9 piezas y ajusta cada una a ese peso, ± 5 % *(tolerancia propuesta, no de una fuente)*.
+10. Al servir, pon 30 g de salsa fría de guayaba sobre la pieza.
+
+**Por qué funciona.** La dilución geométrica reparte una cantidad pequeña de polvo en una masa grande; mezclarlo directo con toda la harina deja zonas con más dosis *(interpretación de la técnica farmacéutica)*. Cortar por peso, y no a ojo, corrige diferencias de grosor. La salsa fría aporta vitamina C que el horno no destruye.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Piezas de peso muy distinto | Masa mal alisada | Alisa con espátula y nivela el horno |
+| Bordes secos | Horno caliente o mucho tiempo | Saca cuando el palillo salga con migas húmedas |
+| Sabor metálico | Dosis alta en pieza pequeña | No bajes la dosis; sirve con la salsa ácida |
+
+**Estabilidad.** No encontré datos del bisglicinato en horneado ni de su estabilidad en un brownie guardado. No sé cuánto hierro queda disponible tras el horno.
+
+**Reglas de almacenamiento (obligatorias)**
+
+1. Envuelve cada pieza por separado.
+2. Rotula cada pieza: "Contiene X mg de hierro. Medicamento. Fuera del alcance de los niños".
+3. Guarda las piezas en un recipiente cerrado, en el congelador y en un lugar alto o con llave.
+4. No guardes brownies sin hierro junto a estos.
+5. Una pieza al día. Nunca dos.
+6. No los ofrezcas a niños, visitas ni otras personas.
+7. Haz solo 9 piezas por vez.
+
+**Seguridad**
+
+- La ingestión accidental de hierro es una de las primeras causas de muerte por ingestión de medicamentos en niños ([Mehta 1997](https://doi.org/10.1007/BF02737753)). Un lote de 9 piezas a 25 mg contiene 225 mg de hierro elemental. No confirmé la dosis tóxica por kg en niños.
+- En el embarazo, la dosis la fija el control prenatal.
+- Sin lácteos, té ni café junto a la pieza (sección 20).
+- Huevo: hornea por completo; no comas la masa cruda.
+
+## 23. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1329,7 +1408,13 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Dosis en mg de hierro elemental, fijada por el control prenatal o la consulta.
 - Lejos de lácteos, té, café y cacao.
 
-## 23. Huecos y log de búsqueda
+**Brownie con hierro (sección 22)**
+
+- Cada pieza rotulada como medicamento, congelada y bajo llave o en lugar alto.
+- Una pieza al día, solo para la persona a quien se indicó.
+- El cacao reduce la absorción; sirve con salsa fría de guayaba.
+
+## 24. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1346,6 +1431,7 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 - Pérdida de terpenos del jengibre y del cardamomo en leche a 60–70 °C, y equivalencia entre 1 g en bebida y 1 g en cápsulas.
 - Hierro de las lentejas, vitamina C de la guayaba y calcio por porción de la panna cotta (sección 20).
 - Porcentaje de hierro elemental del bisglicinato comercial en Colombia, intervalo seguro entre la dosis y los lácteos, y si el esquema de días alternos aplica al bisglicinato.
+- Estabilidad del bisglicinato en horneado, protección del quelato frente a polifenoles del cacao y dosis tóxica de hierro por kg en niños.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1406,5 +1492,6 @@ Cada porción lleva 1 g de jengibre, 0,5 g de cardamomo y 0,5 g de canela.
 | ascorbic acid non-heme iron absorption meal; calcium inhibits iron absorption meal; folate retention cooking spinach; Listeria pregnancy dairy (22-11-2026) | 12 / 29 / 1 / 1 | Teucher 2004, Lynch 1980, Zijp 2000, McKillop 2002, Disson 2025 |
 | ferrous bisglycinate pregnancy randomized; ferrous bisglycinate meta-analysis; ferrous bisglycinate absorption phytate (22-11-2026) | 6 / 2 / 4 | Fischer 2023, Milman 2014, Milman 2024, Bumrungpert 2022, Bovell-Benjamin 2000; Abbas 2019 excluido (retractado) |
 | pediatric iron poisoning supplements ingestion; alternate day iron supplementation absorption women (22-11-2026) | 11 / 10 | Mehta 1997, Stoffel 2017, Stoffel 2020 |
+| cocoa polyphenols nonheme iron absorption; polyphenols inhibit iron absorption dose-dependent meal; ferrous bisglycinate bread OR baked fortification; iron poisoning children mg/kg (23-11-2026) | 1 / 4 / 127 / 1467 | Buerkli 2022, Hurrell 1999, Tuntawiroon 1991; sin dato de horneado ni umbral tóxico |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
