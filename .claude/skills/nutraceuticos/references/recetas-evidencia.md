@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-23
 
 ## Resumen
 
-Veinticuatro preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veinticinco preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -32,6 +32,7 @@ Veinticuatro preparaciones llevan un nutracéutico en una porción medida. La t�
 | Brownie con bisglicinato ferroso (lote dosificado) | Dosis uniforme por pieza; el cacao inhibe la absorción del hierro; riesgo de golosina con hierro | Dilución geométrica en la harina, corte por peso, salsa fría de guayaba al servir | 25 mg de hierro elemental por pieza (o la dosis indicada); 9 piezas | El cacao redujo la absorción del hierro no hemo en 71 % |
 | Semillas de calabaza (Cucurbita pepo) | Tostado fuerte oxida esteroles y tocoferoles; Salmonella en semilla; alergia | Tostado suave con mejorana (110 °C) y vinagreta fría con xantana 0,25 % | 10 g de semilla por porción (dosis diaria del GRANU) o 20 g de vinagreta = 10 g de aceite | Metaanálisis 2026: beneficio pequeño en IPSS a 3 meses; certeza baja a muy baja |
 | Arepa de maíz integral con bisglicinato ferroso | Fitato del maíz integral; queso y bebidas calientes inhiben; dosis uniforme por arepa | Dilución geométrica en la harina, ácido láctico 6 mg/g de maíz, bolas pesadas, salsa fría de guayaba | Nivel A: 3 mg de hierro por arepa (fortificación). Nivel B: 25 mg por arepa (dosis), 6 arepas | En maíz integral, el bisglicinato se absorbió 4 veces más que el sulfato ferroso |
+| Arepa con ácido fólico | Dosis en microgramos imposible de pesar en casa; folato natural inestable al cocinar | Tabletas de 0,4 o 1 mg trituradas, dilución geométrica en la harina, bolas pesadas | 400 µg de ácido fólico por arepa; 6 o 5 arepas según la tableta | Cochrane: el ácido fólico periconcepcional redujo los defectos del tubo neural (RR 0,31) |
 
 **Reglas de uso en consulta**
 
@@ -1487,7 +1488,74 @@ Las cantidades de agua y sal son de cocina, no de una fuente.
 - **Hemocromatosis o sobrecarga de hierro:** no uses ninguno de los dos niveles.
 - **Ácido láctico:** usa ácido láctico de grado alimentario.
 
-## 25. Seguridad para todas las preparaciones
+## 25. Arepa con ácido fólico
+
+**Antes de hacerla.** La forma con más evidencia es la tableta de ácido fólico tomada cada día. La arepa es un vehículo para quien prefiere comerla: no la reemplaza si la dosis no es uniforme. Si la arepa no se come todos los días, toma la tableta.
+
+**Objetivo.** Arepas con 400 µg (0,4 mg) de ácido fólico cada una: una arepa al día. Se puede combinar con el hierro de la sección 24.
+
+**Evidencia**
+
+- **Alta (defectos del tubo neural).** En la revisión Cochrane, el ácido fólico diario antes y al inicio del embarazo redujo los defectos del tubo neural (RR 0,31; IC 95 % 0,17–0,58; 6708 nacimientos). El efecto fue igual con 400 µg o más. No hubo efecto claro en otros defectos ([De-Regil 2015](https://doi.org/10.1002/14651858.CD007950.pub3)).
+- **Poblacional.** En América Latina, la prevalencia de defectos del tubo neural bajó 33–59 % después de fortificar alimentos básicos con ácido fólico ([Rosenthal 2014](https://doi.org/10.1017/S1368980013000256)). En Estados Unidos se propuso fortificar la harina de maíz nixtamalizado para la población hispana ([Hamner 2014](https://doi.org/10.1111/nyas.12325)).
+- **Por qué ácido fólico y no solo folato de alimentos.** El folato natural se pierde al cocinar y se absorbe menos que el ácido fólico sintético ([McNulty 2004](https://doi.org/10.1079/pns2004383)).
+- **Estabilidad al cocinar (indirecta).** En arroz fortificado, la retención de ácido fólico fue de 75–100 % con cinco métodos de cocción ([Wieringa 2014](https://doi.org/10.1111/nyas.12497)). En sal fortificada, el ácido fólico fue estable al cocinar ([Modupe 2021](https://doi.org/10.1038/s41598-021-93194-9)). No encontré datos de retención en arepa ni en tortilla.
+
+**Cálculo con tabletas** (400 µg no se pueden pesar en una báscula de cocina)
+
+| Tableta | Tabletas por lote | Arepas | Ácido fólico por arepa |
+| --- | --- | --- | --- |
+| 0,4 mg | 6 | 6 | 400 µg |
+| 1 mg | 2 | 5 | 400 µg |
+| 5 mg | No la uses | — | Es dosis alta; la fija el médico |
+
+Usa tabletas simples de ácido fólico, no de liberación prolongada ni multivitamínicos.
+
+**Ingredientes** (lote de 6 arepas con tabletas de 0,4 mg; con tabletas de 1 mg, usa 250 g de harina y 300 g de agua para 5 arepas)
+
+| Ingrediente | g | Nota |
+| --- | --- | --- |
+| Harina de maíz integral precocida | 300 | Vehículo de la dilución |
+| Agua tibia | 360 | Ajusta según la harina |
+| Sal | 3 | — |
+| Tabletas de ácido fólico 0,4 mg | 6 tabletas | Trituradas a polvo fino |
+| *Opcional:* bisglicinato ferroso y ácido láctico | Sección 24 | Nivel A o B |
+| **Al servir:** salsa fría de guayaba con xantana 0,25 % | 30 por arepa | Receta de la sección 20.1 |
+
+Las cantidades de agua y sal son de cocina, no de una fuente.
+
+**Proceso**
+
+1. Tritura las tabletas en un mortero hasta un polvo fino, sin grumos.
+2. **Dilución geométrica.** Mezcla el polvo con 5 g de harina en el mortero. Añade 10 g y mezcla. Añade 20 g y mezcla. Pasa a un tazón, añade el resto de la harina y la sal, y mezcla en seco 1 min.
+3. Si añades hierro, dilúyelo en la misma harina con el mismo método (sección 24).
+4. Añade el agua tibia y amasa 3 min hasta una masa lisa.
+5. Reposa 5 min tapada.
+6. Pesa la masa total y divídela entre el número de arepas.
+7. Forma bolas de ese peso, ± 5 % *(tolerancia propuesta, no de una fuente)*. Aplánalas a 1,5 cm.
+8. Asa en budare a fuego medio, 6–8 min por lado, hasta dorado claro.
+9. Enfría, rotula y congela cada arepa por separado.
+
+**Por qué funciona.** El ácido fólico sintético es la forma estudiada en los ensayos y la más biodisponible. La tableta triturada aporta una cantidad conocida; la dilución geométrica la reparte en toda la harina, y las bolas pesadas dan la misma dosis en cada arepa *(interpretación de la técnica farmacéutica)*.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Puntos amarillos en la masa | Polvo de tableta con grumos o mal disperso | Tritura más fino; repite la dilución geométrica |
+| Bordes agrietados | Poca agua | Añade agua de a 10 g; reposa 5 min |
+| Arepas de peso distinto | Bolas a ojo | Pesa cada bola |
+
+**Seguridad**
+
+- **Dosis alta (antecedente de defecto del tubo neural, antiepilépticos u otras indicaciones):** la fija el médico. No la pongas en arepas: usa la tableta.
+- **No sumes sin contar:** si la persona ya toma un multivitamínico prenatal con ácido fólico, la arepa duplica la dosis. Revisa la fórmula con el control prenatal.
+- **Vitamina B12:** las dosis altas y crónicas de ácido fólico generan preocupación ([McNulty 2008](https://doi.org/10.1017/S0007114508006855)). Antes de dar ácido fólico a un adulto mayor o vegano, descarta déficit de B12 *(interpretación)*.
+- **Con hierro nivel B:** aplica las reglas de almacenamiento de la sección 22.
+- **Rotulado:** escribe en cada arepa "400 µg de ácido fólico" y, si aplica, los mg de hierro.
+- **Estabilidad:** no encontré datos de retención del ácido fólico en arepa congelada.
+
+## 26. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1586,7 +1654,13 @@ Las cantidades de agua y sal son de cocina, no de una fuente.
 - Sin queso, leche, café ni chocolate en la misma comida.
 - No usar en hemocromatosis ni sobrecarga de hierro.
 
-## 26. Huecos y log de búsqueda
+**Arepa con ácido fólico (sección 25)**
+
+- No usar tabletas de 5 mg ni dosis altas en arepas; la dosis alta va en tableta y la fija el médico.
+- Revisar si ya toma un prenatal con ácido fólico.
+- Si la arepa no se come cada día, tomar la tableta.
+
+## 27. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1606,6 +1680,7 @@ Las cantidades de agua y sal son de cocina, no de una fuente.
 - Estabilidad del bisglicinato en horneado, protección del quelato frente a polifenoles del cacao y dosis tóxica de hierro por kg en niños.
 - Semillas de calabaza: contenido de zinc y magnesio por gramo, eliminación de *Salmonella* con tostado casero a 110 °C, vida útil de la semilla tostada y cadmio en la semilla.
 - Arepa con hierro: estabilidad del bisglicinato en la plancha y en congelación; efecto del ácido láctico sobre el bisglicinato en personas.
+- Arepa con ácido fólico: retención en arepa o tortilla asada y en congelación; uniformidad de la dosis con tabletas trituradas en casa.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1669,5 +1744,6 @@ Las cantidades de agua y sal son de cocina, no de una fuente.
 | cocoa polyphenols nonheme iron absorption; polyphenols inhibit iron absorption dose-dependent meal; ferrous bisglycinate bread OR baked fortification; iron poisoning children mg/kg (23-11-2026) | 1 / 4 / 127 / 1467 | Buerkli 2022, Hurrell 1999, Tuntawiroon 1991; sin dato de horneado ni umbral tóxico |
 | pumpkin seed Cucurbita benign prostatic hyperplasia randomized; pumpkin seed\* AND (overactive bladder OR nocturia OR urinary symptoms); pumpkin seed\* AND (roasting OR roasted) AND (oil OR tocopherol OR pyrazine OR acrylamide); pumpkin seed\* AND (allergy OR anaphylaxis); pumpkin seed\* AND (aflatoxin OR mycotoxin OR cadmium OR Salmonella); pumpkin seed\* AND (zinc OR magnesium OR tryptophan) AND human (23-11-2026) | 5 / 27 / 14 / 34 / 32 / 27 | Benedicto 2026, Vahlensieck 2015, Zerafatjou 2021, Nishimura 2014, Dragoun 2022, Procida 2013, Raczyk 2017, Kozłowska 2025, Acikalin 2026, Jones 2026; sin dato de zinc ni de cadmio en semilla |
 | ferrous bisglycinate maize OR corn absorption; iron amino acid chelate precooked corn flour arepa Venezuela; calcium cheese inhibits nonheme iron absorption meal; nixtamalization phytate iron bioavailability maize (23-11-2026) | 2972 (query con OR amplio) / 0 / 2 / 3 | Bovell-Benjamin 2000, Hallberg y Hulthén 2000 (carta), Hallberg 1991, Proulx 2007; sin datos de arepa fortificada con bisglicinato |
+| folic acid AND (baking OR bread OR tortilla OR cooking) AND (retention OR stability OR losses); folic acid supplementation neural tube defects prevention Cochrane; De-Regil folic acid periconceptional neural tube defects systematic review; corn masa flour folic acid fortification neural tube defects Hispanic; folic acid fortification Colombia OR Latin America neural tube defects (23-11-2026) | 85 / 43 / 2 / 15 / 42 | De-Regil 2015, Rosenthal 2014, Hamner 2014, McNulty 2004, McNulty 2008, Wieringa 2014, Modupe 2021; sin datos de retención en arepa |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
