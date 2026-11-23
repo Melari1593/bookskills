@@ -4,7 +4,7 @@ Documento de recetas y evidencia · actualizado 2026-11-23
 
 ## Resumen
 
-Veintidós preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
+Veintitrés preparaciones llevan un nutracéutico en una porción medida. La técnica molecular resuelve un problema concreto de cada compuesto: solubilidad, oxidación, supervivencia o suspensión. Las porciones dan **dosis de alimento**, salvo donde se indica cómo llegar a la dosis de los ensayos.
 
 | Compuesto | Problema | Técnica | Por porción | Evidencia clínica |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Veintidós preparaciones llevan un nutracéutico en una porción medida. La téc
 | Embarazo: hierro, calcio y folato | Hierro vegetal poco absorbible; vitamina C y folato que se pierden con calor; calcio que compite con el hierro; Listeria | Salsa fría de guayaba con xantana sobre lentejas; panna cotta láctea con gelatina; salsa verde cruda emulsionada | Dosis de alimento; no reemplaza ácido fólico ni hierro en suplemento | Suplementos: ácido fólico alta (defectos del tubo neural); hierro y calcio baja |
 | Bisglicinato ferroso | Sabor metálico; inhibidores en la comida (lácteos, té, café); riesgo de intoxicación infantil si se vuelve golosina | Shot frío de guayaba preparado al momento, una dosis por vaso | La dosis indicada (ensayo de prevención: 25 mg de hierro elemental) | Moderada en embarazo: más hemoglobina y menos efectos digestivos que otras sales |
 | Brownie con bisglicinato ferroso (lote dosificado) | Dosis uniforme por pieza; el cacao inhibe la absorción del hierro; riesgo de golosina con hierro | Dilución geométrica en la harina, corte por peso, salsa fría de guayaba al servir | 25 mg de hierro elemental por pieza (o la dosis indicada); 9 piezas | El cacao redujo la absorción del hierro no hemo en 71 % |
+| Semillas de calabaza (Cucurbita pepo) | Tostado fuerte oxida esteroles y tocoferoles; Salmonella en semilla; alergia | Tostado suave con mejorana (110 °C) y vinagreta fría con xantana 0,25 % | 10 g de semilla por porción (dosis diaria del GRANU) o 20 g de vinagreta = 10 g de aceite | Metaanálisis 2026: beneficio pequeño en IPSS a 3 meses; certeza baja a muy baja |
 
 **Reglas de uso en consulta**
 
@@ -1327,7 +1328,92 @@ Las cantidades de mantequilla, panela, huevo, cacao y harina son de cocina, no d
 - Sin lácteos, té ni café junto a la pieza (sección 20).
 - Huevo: hornea por completo; no comas la masa cruda.
 
-## 23. Seguridad para todas las preparaciones
+## 23. Semillas de calabaza: crocante suave con mejorana y vinagreta fría
+
+**Objetivo.** Una porción con la cantidad de semilla de calabaza (*Cucurbita pepo*) del ensayo más grande: 10 g al día. Dos formatos: semillas tostadas a baja temperatura, o una vinagreta fría con el aceite.
+
+**Tres problemas de este alimento**
+
+1. **El tostado fuerte daña los lípidos.** Tostar la pasta de semilla por encima de 120 °C durante 30 min aumentó mucho los óxidos de fitoesteroles Δ7 ([Dragoun 2022](https://doi.org/10.1021/acs.jafc.2c03292)). La temperatura del tostado también define el aroma: más calor da más compuestos de Maillard y de Strecker ([Procida 2013](https://doi.org/10.1002/jsfa.5843)).
+2. **La semilla puede llevar *Salmonella*.** En Francia, un brote de *Salmonella* Enteritidis con 81 casos (mayo–agosto de 2026) se asoció a semillas de calabaza ([Jones 2026](https://doi.org/10.2807/1560-7917.ES.2026.31.38.2600796)).
+3. **La alergia es rara pero grave.** En 25 niños con alergia IgE a la semilla, el 64 % tuvo anafilaxia; el 76 % era alérgico también a frutos de árbol y la mayoría estaba sensibilizado a la semilla de sandía. Todos toleraron la pulpa de la calabaza ([Acikalin 2026](https://doi.org/10.2500/aap.2026.47.260028)).
+
+### 23.1 Semillas tostadas con mejorana (técnica FERRANDI de tostado de frutos secos, ajustada)
+
+FERRANDI tuesta los frutos secos del praliné a 140 °C. Aquí se baja a 110 °C, una de las condiciones estudiadas: con mejorana seca, el aceite de las semillas tostadas a 110 °C tuvo menos peróxidos que el de las semillas sin mejorana ([Kozłowska 2025](https://doi.org/10.3390/foods14020172)).
+
+**Ingredientes** (7 porciones)
+
+| Ingrediente | g | Nota |
+| --- | --- | --- |
+| Semillas de calabaza peladas | 70 | 10 g por porción |
+| Mejorana seca | 1,5 | Cantidad de cocina, no de la fuente |
+| Sal fina | 0,7 | Opcional |
+
+**Proceso**
+
+1. Revisa que el lote no esté en una alerta sanitaria.
+2. Mezcla las semillas con la mejorana.
+3. Extiende una sola capa en una bandeja.
+4. Tuesta a 110 °C por 30 min. Mueve la bandeja a los 15 min.
+5. Enfría en la bandeja. Añade la sal.
+6. Pesa porciones de 10 g.
+7. Guarda en frasco cerrado, lejos de la luz. *(No encontré datos de vida útil casera.)*
+
+**Uso.** Una porción al día sobre ensalada, crema o yogur. No la calientes otra vez.
+
+### 23.2 Vinagreta fría de aceite de semilla de calabaza
+
+El aceite prensado de semilla tostada tuvo mejor estabilidad oxidativa que el de semilla cruda ([Raczyk 2017](https://doi.org/10.17306/J.AFS.0494)). El calor culinario forma más óxidos de esteroles en el aceite ([Dragoun 2022](https://doi.org/10.1021/acs.jafc.2c03292)). Por eso va en frío.
+
+**Ingredientes** (100 g, 5 porciones de 20 g)
+
+| Ingrediente | % | g |
+| --- | --- | --- |
+| Aceite de semilla de calabaza prensado en frío | 50 | 50 |
+| Vinagre de manzana | 30 | 30 |
+| Agua | 19,5 | 19,5 |
+| Goma xantana | 0,25 | 0,25 |
+| Sal | 0,25 | 0,25 |
+| **Total** | **100** | **100** |
+
+Una porción de 20 g lleva 10 g de aceite, la cantidad diaria del estudio de vejiga hiperactiva ([Nishimura 2014](https://doi.org/10.4103/2225-4110.124355)).
+
+**Proceso**
+
+1. Mezcla la xantana con la sal en seco.
+2. Dispersa la mezcla en el agua y el vinagre con licuadora de inmersión, 30 s.
+3. Añade el aceite en hilo con la licuadora en marcha.
+4. Guarda en frasco oscuro en la nevera. Agita antes de servir.
+
+**Por qué funciona.** El tostado suave genera aroma sin llevar la semilla a la zona de más oxidación. La mejorana aporta terpenos y frenó la oxidación en el estudio. La xantana espesa la fase acuosa y retrasa la separación del aceite; funciona en frío y con ácido *(interpretación con la tabla de hidrocoloides)*.
+
+**Si falla**
+
+| Síntoma | Causa | Corrección |
+| --- | --- | --- |
+| Semillas amargas o color café oscuro | Horno más caliente que el indicado | Usa termómetro de horno; baja a 110 °C |
+| Semillas blandas | Poco tiempo o capa gruesa | Una sola capa; completa los 30 min |
+| Vinagreta separada | Xantana sin dispersar o aceite añadido rápido | Dispersa la xantana en seco con la sal; añade el aceite en hilo |
+| Grumos en la vinagreta | Xantana directa al líquido | Mézclala antes con la sal |
+
+### Evidencia
+
+**Baja a muy baja (síntomas urinarios de la HPB).** Un metaanálisis de 8 ensayos (2170 hombres) encontró una reducción del IPSS de 0,62 puntos frente a placebo a 3 meses, que no se mantuvo a 6 meses. Frente a los alfabloqueadores no hubo diferencia, pero la equivalencia no está demostrada ([Benedicto 2026](https://doi.org/10.1590/acb416626)). En el ensayo GRANU, 5 g de semilla dos veces al día por 12 meses dio 58,5 % de respondedores frente a 47,3 % con placebo; el extracto en cápsulas no difirió del placebo ([Vahlensieck 2015](https://doi.org/10.1159/000362903)). El aceite (360 mg dos veces al día) redujo el IPSS, pero menos que la tamsulosina ([Zerafatjou 2021](https://doi.org/10.1186/s12894-021-00910-8)).
+
+**Baja (vejiga hiperactiva).** 10 g/día de aceite de *C. maxima* por 12 semanas redujo el puntaje OABSS en 45 personas, sin grupo control ([Nishimura 2014](https://doi.org/10.4103/2225-4110.124355)).
+
+**No confirmado.** No encontré en PubMed el contenido de zinc, magnesio o triptófano por gramo de semilla, ni si 110 °C por 30 min elimina *Salmonella* en semillas secas.
+
+### Seguridad
+
+- **No reemplaza el estudio ni el tratamiento de los síntomas urinarios.** Antes de atribuirlos a la HPB, se necesita valoración médica.
+- **Alergia:** pregunta por alergia a frutos de árbol y a semillas (sandía, girasol, amapola) antes de ofrecerla.
+- ***Salmonella*:** compra lotes sin alerta sanitaria. En embarazo, inmunosupresión, niños pequeños y mayores, prefiere semillas tostadas comerciales de lote verificado *(interpretación)*.
+- **Atragantamiento:** no des semillas enteras a niños pequeños *(interpretación)*.
+- **Grasa y energía:** el aceite aporta unas 90 kcal por porción de 10 g.
+
+## 24. Seguridad para todas las preparaciones
 
 | Situación del paciente | Curcumina | Omega-3 | Probióticos | Moringa |
 | --- | --- | --- | --- | --- |
@@ -1414,7 +1500,13 @@ Las cantidades de mantequilla, panela, huevo, cacao y harina son de cocina, no d
 - Una pieza al día, solo para la persona a quien se indicó.
 - El cacao reduce la absorción; sirve con salsa fría de guayaba.
 
-## 24. Huecos y log de búsqueda
+**Semillas de calabaza (sección 23)**
+
+- Alergia rara pero con anafilaxia frecuente; reactividad con frutos de árbol y semilla de sandía.
+- Brote de *Salmonella* asociado a semillas (Francia, 2026): lotes sin alerta; tostado comercial en grupos vulnerables.
+- No calentar el aceite; tostar la semilla a 110 °C, no por encima de 120 °C.
+
+## 25. Huecos y log de búsqueda
 
 **Datos no confirmados**
 
@@ -1432,6 +1524,7 @@ Las cantidades de mantequilla, panela, huevo, cacao y harina son de cocina, no d
 - Hierro de las lentejas, vitamina C de la guayaba y calcio por porción de la panna cotta (sección 20).
 - Porcentaje de hierro elemental del bisglicinato comercial en Colombia, intervalo seguro entre la dosis y los lácteos, y si el esquema de días alternos aplica al bisglicinato.
 - Estabilidad del bisglicinato en horneado, protección del quelato frente a polifenoles del cacao y dosis tóxica de hierro por kg en niños.
+- Semillas de calabaza: contenido de zinc y magnesio por gramo, eliminación de *Salmonella* con tostado casero a 110 °C, vida útil de la semilla tostada y cadmio en la semilla.
 
 **Próximo paso sugerido.** Para indicar dosis terapéuticas de curcumina, cambia la cúrcuma por un extracto estandarizado con mg declarados y ajusta la receta con la misma emulsión.
 
@@ -1493,5 +1586,6 @@ Las cantidades de mantequilla, panela, huevo, cacao y harina son de cocina, no d
 | ferrous bisglycinate pregnancy randomized; ferrous bisglycinate meta-analysis; ferrous bisglycinate absorption phytate (22-11-2026) | 6 / 2 / 4 | Fischer 2023, Milman 2014, Milman 2024, Bumrungpert 2022, Bovell-Benjamin 2000; Abbas 2019 excluido (retractado) |
 | pediatric iron poisoning supplements ingestion; alternate day iron supplementation absorption women (22-11-2026) | 11 / 10 | Mehta 1997, Stoffel 2017, Stoffel 2020 |
 | cocoa polyphenols nonheme iron absorption; polyphenols inhibit iron absorption dose-dependent meal; ferrous bisglycinate bread OR baked fortification; iron poisoning children mg/kg (23-11-2026) | 1 / 4 / 127 / 1467 | Buerkli 2022, Hurrell 1999, Tuntawiroon 1991; sin dato de horneado ni umbral tóxico |
+| pumpkin seed Cucurbita benign prostatic hyperplasia randomized; pumpkin seed\* AND (overactive bladder OR nocturia OR urinary symptoms); pumpkin seed\* AND (roasting OR roasted) AND (oil OR tocopherol OR pyrazine OR acrylamide); pumpkin seed\* AND (allergy OR anaphylaxis); pumpkin seed\* AND (aflatoxin OR mycotoxin OR cadmium OR Salmonella); pumpkin seed\* AND (zinc OR magnesium OR tryptophan) AND human (23-11-2026) | 5 / 27 / 14 / 34 / 32 / 27 | Benedicto 2026, Vahlensieck 2015, Zerafatjou 2021, Nishimura 2014, Dragoun 2022, Procida 2013, Raczyk 2017, Kozłowska 2025, Acikalin 2026, Jones 2026; sin dato de zinc ni de cadmio en semilla |
 
 Fuentes técnicas: `hidrocoloides.md` y `tecnicas.md`, repositorio Melari1593/bookskills, skill gastronomia-molecular (Lersch, *Texture* v2.2; Harvard/edX). Los enlaces DOI de cada artículo están en su sección.
