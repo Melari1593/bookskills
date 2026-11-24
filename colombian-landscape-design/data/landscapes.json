@@ -1,0 +1,56 @@
+[
+  {
+    "id": "COL-001",
+    "nombre": "Cascadas",
+    "observacion": "Cascadas entre vegetación; Santa Rosa de Cabal posible",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-002",
+    "nombre": "Tatacoa",
+    "observacion": "Surcos y crestas áridas; ubicación tentativa",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-003",
+    "nombre": "Cristales",
+    "observacion": "Río multicolor; Caño Cristales probable",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-004",
+    "nombre": "Cocora",
+    "observacion": "Valle con palmas altas; Cocora probable",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-005",
+    "nombre": "Sabana",
+    "observacion": "Lago, patos y tejas; ubicación desconocida",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-006",
+    "nombre": "Bogotá",
+    "observacion": "Templete, plaza y cerros; Bogotá probable",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-007",
+    "nombre": "Floración",
+    "observacion": "Pueblo y flores amarillas; ubicación desconocida",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-008",
+    "nombre": "Páramo",
+    "observacion": "Rosetas, roca y nieve; ubicación desconocida",
+    "verificacion": "pendiente"
+  },
+  {
+    "id": "COL-009",
+    "nombre": "Meandros",
+    "observacion": "Río multicolor aéreo; Caño Cristales probable",
+    "verificacion": "pendiente"
+  }
+]
