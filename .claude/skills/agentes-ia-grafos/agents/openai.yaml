@@ -1,0 +1,12 @@
+interface:
+  display_name: Grafos de libros de agentes de IA
+  short_description: Ubica conceptos y rutas de lectura en 4 libros de agentes de IA
+  default_prompt: Usa $agentes-ia-grafos para trazar qué leer antes de implementar ReAct
+    y comparar cómo lo tratan los cuatro libros.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,1473 @@
+{
+ "meta": {
+  "title": "30 agentes que todo ingeniero de IA debe construir, como grafo",
+  "subtitle": "Imran Ahmad (traducción al español): 17 capítulos, sus secciones, los 30 agentes y los conceptos clave que los sostienen",
+  "language": "es",
+  "itemLabel": "Agente o concepto",
+  "itemLabelPlural": "Agentes y conceptos",
+  "searchHint": "Buscar: RAG, PTCF, orquestador, 7.4…"
+ },
+ "blocks": {
+  "fund": {
+   "name": "Fundamentos, herramientas y prompts"
+  },
+  "resp": {
+   "name": "Despliegue responsable y ética"
+  },
+  "cog": {
+   "name": "Arquitecturas cognitivas y conocimiento"
+  },
+  "orq": {
+   "name": "Herramientas, orquestación y razonamiento"
+  },
+  "app": {
+   "name": "Software, conversación y contenido"
+  },
+  "fis": {
+   "name": "Percepción y mundo físico"
+  },
+  "dom": {
+   "name": "Dominios especializados"
+  },
+  "fut": {
+   "name": "Epílogo y futuro"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Fundamentos de la ingeniería de agentes",
+   "block": "fund",
+   "summary": "Define qué es un agente, su bucle cognitivo y sus variantes (reactivo, deliberativo, híbrido), los protocolos MCP y A2A, el ciclo de vida de desarrollo y una escala de madurez de 0 a 4 que el resto del libro usa como vocabulario.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Introducción a los agentes",
+     "summary": "Qué distingue a un agente de un programa o de un LLM aislado: percibe, mantiene estado, razona sobre objetivos y actúa."
+    },
+    {
+     "num": "1.2",
+     "title": "Arquitectura de los agentes",
+     "summary": "Componentes del agente, cómo se comunican y cómo elegir su 'cerebro': reactivo, deliberativo (SMPA) o híbrido por capas.",
+     "items": [
+      "bucle_cognitivo",
+      "smpa"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Protocolos de interoperabilidad",
+     "summary": "Model Context Protocol para conectar agentes con herramientas y datos, y protocolos agente a agente para que cooperen entre sí.",
+     "items": [
+      "mcp_a2a"
+     ]
+    },
+    {
+     "num": "1.4",
+     "title": "El ciclo de vida de desarrollo de agentes",
+     "summary": "Fases desde los requisitos hasta la gobernanza: diseño, implementación, evaluación y mantenimiento continuo.",
+     "items": [
+      "adl"
+     ]
+    },
+    {
+     "num": "1.5",
+     "title": "La evolución de los paradigmas de interacción de agentes",
+     "summary": "Del LLM sin estado al proxy, al asistente con herramientas, al agente autónomo y a los sistemas multiagente, con un ejemplo de salida estructurada."
+    },
+    {
+     "num": "1.6",
+     "title": "Marco de progresión de la IA agente",
+     "summary": "Escala de cinco niveles para ubicar un sistema según su autonomía: de operaciones manuales a agentes que aprenden.",
+     "items": [
+      "progresion"
+     ]
+    },
+    {
+     "num": "1.7",
+     "title": "Impacto empresarial en el mundo real",
+     "summary": "Tres casos de empresa (seguros, soporte, ventas) que muestran el retorno de agentes en producción."
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "El kit de herramientas del ingeniero de agentes",
+   "block": "fund",
+   "summary": "Recorre el ecosistema práctico: frameworks (LangChain, LangGraph, LlamaIndex, AutoGPT, CrewAI, AutoGen), selección de LLM, bases de datos vectoriales, llamada a funciones y las plataformas de AWS, Azure y Google Cloud.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Frameworks de desarrollo de agentes",
+     "summary": "Comparación de los frameworks principales, sus fortalezas y cuándo construir frente a integrar.",
+     "items": [
+      "frameworks"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "LLMs: el núcleo cognitivo",
+     "summary": "Cómo elegir e integrar modelos y cómo repartir tareas entre varios modelos según coste y capacidad.",
+     "items": [
+      "modelos_hibridos"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Infraestructura de soporte",
+     "summary": "Bases de datos vectoriales como memoria del agente, técnicas de recuperación y frameworks para integrar herramientas.",
+     "items": [
+      "bd_vectoriales",
+      "function_calling"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "Plataformas de desarrollo nativas de la nube",
+     "summary": "Servicios de agentes de AWS (Bedrock), Azure (AI Foundry) y Google Cloud (Vertex AI, ADK), con criterios para escoger plataforma."
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "El arte del prompting de agentes",
+   "block": "fund",
+   "summary": "Trata el prompt como la 'constitución' del agente: separación sistema/usuario, el marco PTCF, descomposición de tareas, few-shot, cadena y árbol de pensamiento, protocolos de comunicación entre agentes y evaluación iterativa.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "De las instrucciones a las constituciones",
+     "summary": "Por qué en un agente el prompt define identidad, límites y lógica de decisión persistentes, no una orden puntual."
+    },
+    {
+     "num": "3.2",
+     "title": "Arquitectura de prompts de dos capas",
+     "summary": "El prompt de sistema fija el marco estable; el de usuario aporta el estímulo cambiante de cada turno.",
+     "items": [
+      "prompt_sistema"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "El plano PTCF",
+     "summary": "Marco de cuatro componentes para diseñar prompts con principios, desarrollado con un agente empresarial de ejemplo.",
+     "items": [
+      "ptcf"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Diseñando agentes pensantes",
+     "summary": "Alinear la estrategia de prompting con la capacidad del agente y descomponer intenciones en pasos ejecutables.",
+     "items": [
+      "descomposicion"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Few-shot learning",
+     "summary": "Cuántos ejemplos usar y cómo enseñan un patrón; ejemplo de enrutamiento de tickets.",
+     "items": [
+      "few_shot"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Chain-of-thought y tree-of-thought",
+     "summary": "Hacer explícito el razonamiento: paso a paso (CoT) o explorando ramas con 'expertos' virtuales (ToT).",
+     "items": [
+      "cot_tot"
+     ]
+    },
+    {
+     "num": "3.7",
+     "title": "Protocolos de comunicación basados en prompts",
+     "summary": "Mensajes y roles estandarizados para que varios agentes colaboren mediante prompts."
+    },
+    {
+     "num": "3.8",
+     "title": "Iterando y evaluando prompts",
+     "summary": "Ciclo de prueba y refinamiento con tres casos: triaje SaaS, revisión de cumplimiento financiero y revisión de código."
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Despliegue de agentes y desarrollo responsable",
+   "block": "resp",
+   "summary": "Lleva los agentes a producción: infraestructura según el tipo de agente, coste y rendimiento, amenazas como la inyección de prompts, confianza cero, defensa en profundidad y principios de IA responsable con cumplimiento normativo.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Escalado de sistemas de agentes",
+     "summary": "Infraestructura según la tipología del agente y optimización de coste y caudal.",
+     "items": [
+      "optim_costos"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Consideraciones de seguridad y privacidad",
+     "summary": "Panorama de amenazas, confianza cero aplicada a agentes, respuesta a incidentes y defensa en capas.",
+     "items": [
+      "amenazas",
+      "zero_trust"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Desarrollo ético de agentes",
+     "summary": "Transparencia, equidad, responsabilidad y cumplimiento normativo como requisitos de diseño.",
+     "items": [
+      "ia_responsable"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Equilibrando la ética y el rendimiento",
+     "summary": "Cómo diseñar arquitecturas alineadas éticamente sin sacrificar la utilidad, y hacia dónde va la práctica."
+    },
+    {
+     "num": "4.5",
+     "title": "Referencia rápida de la cadena de herramientas",
+     "summary": "Tabla resumen de herramientas para desplegar, observar y proteger agentes."
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Arquitecturas cognitivas fundamentales",
+   "block": "cog",
+   "summary": "Los tres bloques sobre los que se apoyan todos los agentes siguientes: decisión autónoma (percepción-cognición-acción), planificación jerárquica y memoria de trabajo, episódica y semántica; con comparación y buenas prácticas.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "El agente de toma de decisiones autónoma",
+     "summary": "Implementa el bucle percepción-cognición-acción con LLM y lo valida en un caso de servicio al cliente.",
+     "items": [
+      "ag_decision"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "El agente de planificación",
+     "summary": "Descomposición jerárquica, planificación simbólica y dinámica con LLM, ejecución monitorizada y replanificación.",
+     "items": [
+      "ag_planificacion"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "El agente aumentado por memoria",
+     "summary": "Tipos de memoria, su arquitectura y un asistente de salud personalizado como caso.",
+     "items": [
+      "tipos_memoria",
+      "ag_memoria"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Análisis comparativo de arquitecturas",
+     "summary": "Fortalezas y compromisos de cada arquitectura y cómo combinarlas."
+    },
+    {
+     "num": "5.5",
+     "title": "Mejores prácticas de ingeniería",
+     "summary": "Escalabilidad, gestión del contexto y robustez para llevar estos agentes a producción."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Recuperación de información y agentes de conocimiento",
+   "block": "cog",
+   "summary": "Conecta los LLM con fuentes vivas y verificables: recuperación aumentada (RAG), inteligencia documental que convierte documentos complejos en datos, y agentes que sintetizan literatura científica.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Agentes de recuperación de conocimiento",
+     "summary": "Principios, proceso de recuperación, un pipeline RAG con estrategias de segmentación y diagnóstico de fallos.",
+     "items": [
+      "rag",
+      "ag_recuperacion"
+     ]
+    },
+    {
+     "num": "6.2",
+     "title": "Agentes de inteligencia documental",
+     "summary": "Pipeline modular de cinco etapas (de la ingesta y el triaje a la validación) con OCR, análisis de diseño y extracción.",
+     "items": [
+      "ag_documental"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Agentes de investigación científica",
+     "summary": "Búsqueda amplia, agrupación temática y síntesis; caso de descubrimiento de fármacos y límites.",
+     "items": [
+      "ag_investigacion"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "El espectro de los agentes de conocimiento",
+     "summary": "Ubica los tres tipos en un continuo de complejidad y explica cómo se combinan."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Agentes de manipulación y orquestación de herramientas",
+   "block": "orq",
+   "summary": "Del agente único que invoca funciones al orquestador que reparte trabajo entre especialistas y al flujo de trabajo con estado y supervisión humana; incluye selección de herramientas, manejo de errores y resolución de conflictos.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Patrones de invocación de herramientas",
+     "summary": "Núcleo de razonamiento, registro de herramientas, motor de ejecución y patrones de llamada a funciones.",
+     "items": [
+      "ag_herramientas"
+     ]
+    },
+    {
+     "num": "7.2",
+     "title": "Descubrimiento y selección de herramientas",
+     "summary": "Embudo que reduce un catálogo grande a la herramienta adecuada combinando intención, embeddings y restricciones.",
+     "items": [
+      "embudo"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Manejo de errores en la integración de herramientas",
+     "summary": "Modos de fallo típicos y estrategias de recuperación por capas (reintentos, alternativas, degradación)."
+    },
+    {
+     "num": "7.4",
+     "title": "El orquestador de cadena de agentes",
+     "summary": "Un agente gerente enruta y delega subtareas a agentes especializados.",
+     "items": [
+      "ag_orquestador"
+     ]
+    },
+    {
+     "num": "7.5",
+     "title": "Sistemas multiagente con memoria aumentada",
+     "summary": "Capas de memoria compartida entre especialistas; ejemplo de un sistema de inteligencia de mercado."
+    },
+    {
+     "num": "7.6",
+     "title": "Mecanismos de resolución de conflictos",
+     "summary": "Arquitectura de arbitraje para cuando los especialistas discrepan.",
+     "items": [
+      "resolucion_conflictos"
+     ]
+    },
+    {
+     "num": "7.7",
+     "title": "El sistema de flujo de trabajo agéntico",
+     "summary": "Procesos con estado, persistencia y puntos de aprobación humana; casos de pedidos de comercio electrónico y reclamos de seguros.",
+     "items": [
+      "ag_flujo"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Agentes de análisis de datos y razonamiento",
+   "block": "orq",
+   "summary": "Agentes que entienden los datos y defienden sus conclusiones: análisis con código y visualización, verificación y validación de hechos y lógica, y un solucionador general que transfiere estrategias entre dominios; dos casos de estudio.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "El agente de análisis de datos",
+     "summary": "De la intención del usuario al código, la visualización y el razonamiento estadístico (descriptivo, inferencial, anomalías).",
+     "items": [
+      "ag_datos"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "El agente de verificación y validación",
+     "summary": "Comprobación de hechos, coherencia lógica, evaluación con recuperación y manejo de evidencia contradictoria.",
+     "items": [
+      "ag_verificacion"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "El solucionador de problemas general",
+     "summary": "Arquitectura que une planificación, recuperación y aprendizaje; coordinación multiagente y metaaprendizaje.",
+     "items": [
+      "ag_gps"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Caso: verificación de hechos en noticias",
+     "summary": "Asistente que extrae afirmaciones de un texto y las contrasta con una base confiable."
+    },
+    {
+     "num": "8.5",
+     "title": "Caso: hipótesis interdisciplinarias",
+     "summary": "Aplica la resiliencia ecológica a la estabilidad de la red eléctrica en cinco etapas, de descomponer a metaaprender.",
+     "items": [
+      "analogia"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Agentes de desarrollo de software",
+   "block": "app",
+   "summary": "Tres clases de agentes para el ciclo de software, cada una con su bucle: generación guiada por pruebas, cumplimiento integrado en CI/CD y automejora a partir de la retroalimentación.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Contexto del mercado y tendencias",
+     "summary": "Copilotos de IDE, agentes autónomos y capas de herramientas; hacia dónde va la adopción."
+    },
+    {
+     "num": "9.2",
+     "title": "Agentes de generación de código",
+     "summary": "Flujo TDG con orquestación multiagente, de una función aislada a un sistema full-stack con LangGraph.",
+     "items": [
+      "tdg",
+      "ag_codigo"
+     ]
+    },
+    {
+     "num": "9.3",
+     "title": "Agentes orientados al cumplimiento",
+     "summary": "Validación estática, análisis de flujo de datos, pistas de auditoría y caso PCI DSS en un pipeline fintech.",
+     "items": [
+      "ag_cumplimiento"
+     ]
+    },
+    {
+     "num": "9.4",
+     "title": "El agente automejorable",
+     "summary": "Control de lazo cerrado que convierte la retroalimentación en ajustes; caso de atención al cliente adaptativa.",
+     "items": [
+      "ag_automejora"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Agentes conversacionales y de creación de contenido",
+   "block": "app",
+   "summary": "Agentes juzgados por continuidad, tono y coherencia: un conversacional con memoria dual y personalidad modelada, y un creador de contenido que trata la marca como restricciones.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "El agente conversacional",
+     "summary": "Gestión del diálogo, jerarquía de memoria dual, gestión eficiente del contexto, modelado de personalidad y un caso de apoyo empático en salud mental.",
+     "items": [
+      "memoria_dual",
+      "ag_conversacional"
+     ]
+    },
+    {
+     "num": "10.2",
+     "title": "El agente de creación de contenido",
+     "summary": "Escritura en etapas (idear, redactar, revisar), marca como problema de restricciones y un asistente de marketing.",
+     "items": [
+      "marca_csp",
+      "ag_contenido"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Agentes de percepción multimodal",
+   "block": "fis",
+   "summary": "Amplía la percepción más allá del texto: imagen con lenguaje, audio con emoción y sensores de edificios inteligentes, todos organizados con el bucle sentir-modelar-planificar-actuar.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Agentes de visión-lenguaje",
+     "summary": "Codificador visual, alineación y LLM; un agente de preguntas sobre imágenes con razonamiento paso a paso.",
+     "items": [
+      "ag_vision"
+     ]
+    },
+    {
+     "num": "11.2",
+     "title": "Agentes de procesamiento de audio",
+     "summary": "Del audio a tokens: transcripción, prosodia y emoción; caso de servicio al cliente multimodal.",
+     "items": [
+      "vad",
+      "ag_audio"
+     ]
+    },
+    {
+     "num": "11.3",
+     "title": "Agentes de detección del entorno físico",
+     "summary": "Edificio inteligente: detección de eventos por patrones, control con bandas muertas y fusión de sensores.",
+     "items": [
+      "ag_entorno"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Agentes éticos y explicables",
+   "block": "resp",
+   "summary": "Dos arquitecturas que hacen responsables a los agentes: una evalúa cada acción contra restricciones éticas antes de ejecutarla y otra explica sus decisiones según la audiencia; base para los capítulos de dominios regulados.",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "El agente de razonamiento ético",
+     "summary": "Alineación de valores, lógica deóntica, conflicto entre métricas de equidad, mitigación de sesgos y un asistente de RR. HH.",
+     "items": [
+      "logica_deontica",
+      "imposibilidad",
+      "ag_etico"
+     ]
+    },
+    {
+     "num": "12.2",
+     "title": "El agente explicable",
+     "summary": "Trazas de razonamiento, explicaciones por audiencia, comunicación de la confianza, un asistente diagnóstico y el marco regulatorio (Ley de IA de la UE, NIST).",
+     "items": [
+      "xai",
+      "ag_explicable"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Agentes de atención médica y científicos",
+   "block": "dom",
+   "summary": "Agentes para dominios donde el error cuesta vidas: uno clínico de cuatro capas con confianza calibrada y escalamiento de seguridad, y uno de descubrimiento que detecta brechas y propone hipótesis comprobables.",
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "El agente de inteligencia en atención médica",
+     "summary": "Conocimiento médico con procedencia, datos de pacientes alineados en el tiempo, apoyo a la decisión clínica y un sistema de asistencia diagnóstica.",
+     "items": [
+      "bayes_clinico",
+      "ag_salud"
+     ]
+    },
+    {
+     "num": "13.2",
+     "title": "El agente de descubrimiento científico",
+     "summary": "Síntesis de literatura, identificación de brechas, generación de hipótesis y un caso en ciencia de materiales.",
+     "items": [
+      "hipotesis_abductiva",
+      "ag_descubrimiento"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Agentes del dominio financiero y legal",
+   "block": "dom",
+   "summary": "Agentes para industrias reguladas donde el cumplimiento es una restricción de arquitectura: un asesor financiero con supervisor multiagente y control de riesgo, y un agente legal con recuperación híbrida y verificación de citas.",
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "El agente de asesoría financiera",
+     "summary": "Datos de mercado, evaluación de riesgo, planificación personalizada y un asesor para inversores minoristas.",
+     "items": [
+      "puertas_cumplimiento",
+      "ag_financiero"
+     ]
+    },
+    {
+     "num": "14.2",
+     "title": "El agente de inteligencia legal",
+     "summary": "Bases de conocimiento legal, búsqueda de precedentes, análisis de contratos y preparación de escritos.",
+     "items": [
+      "verificacion_citas",
+      "ag_legal"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Agentes de educación y conocimiento",
+   "block": "dom",
+   "summary": "Un tutor que modela lo que el estudiante sabe y adapta el currículo, y un equipo de agentes que alcanza consenso para producir resultados mejores que cada uno por separado.",
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "El agente de inteligencia educativa",
+     "summary": "POMDP aproximado, currículo con grafo de conocimiento, seguimiento bayesiano del progreso, técnicas adaptativas y un tutor de programación.",
+     "items": [
+      "modelo_estudiante",
+      "ag_educativo"
+     ]
+    },
+    {
+     "num": "15.2",
+     "title": "El agente de inteligencia colectiva",
+     "summary": "Arquitecturas de colaboración, votación y consenso, diseño de rúbricas entre tres agentes e inteligencia emergente.",
+     "items": [
+      "consenso",
+      "ag_colectivo"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Agentes encarnados y del mundo físico",
+   "block": "fis",
+   "summary": "Agentes que actúan donde las acciones son irreversibles y la energía es finita: control profundo de un sistema físico frente a coordinación amplia entre dominios, integrados en una misión de drones en invierno.",
+   "sections": [
+    {
+     "num": "16.1",
+     "title": "La división entre profundidad y amplitud",
+     "summary": "Por qué controlar un sistema con precisión y coordinar muchos sistemas acoplados exigen arquitecturas distintas.",
+     "items": [
+      "profundidad_amplitud"
+     ]
+    },
+    {
+     "num": "16.2",
+     "title": "El agente de inteligencia encarnada",
+     "summary": "Jerarquía de control por escalas de tiempo, modelo del mundo como motor físico e integración percepción-acción multitasa.",
+     "items": [
+      "ag_encarnado"
+     ]
+    },
+    {
+     "num": "16.3",
+     "title": "El agente de integración de transformación de dominios",
+     "summary": "Sistemas dinámicos acoplados modelados como grafo tipado, propagación de influencia y simulación.",
+     "items": [
+      "ag_integracion"
+     ]
+    },
+    {
+     "num": "16.4",
+     "title": "Caso: misiones de drones en el invierno de Ottawa",
+     "summary": "Escenario, formalización de restricciones, asignación de ambas arquitecturas e implementación.",
+     "items": [
+      "envolvente"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Epílogo: el futuro de los agentes inteligentes",
+   "block": "fut",
+   "summary": "Fronteras técnicas (autoevolución, sociedades de agentes, gobernanza interna, encarnación, arquitecturas inspiradas en el cerebro) y una guía estratégica para adoptar agentes en una organización y medir su retorno.",
+   "sections": [
+    {
+     "num": "17.1",
+     "title": "Paradigmas emergentes",
+     "summary": "Agentes que se rediseñan, sociedades con comportamiento emergente, autorregulación y cognición inspirada en el cerebro.",
+     "items": [
+      "sociedades"
+     ]
+    },
+    {
+     "num": "17.2",
+     "title": "Implementación estratégica",
+     "summary": "Hojas de ruta de capacidades, habilidades del equipo, creación de valor, ROI y relación humano-IA.",
+     "items": [
+      "hoja_ruta"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "bucle_cognitivo": {
+   "title": "Bucle cognitivo",
+   "formula": "percibir → razonar → planificar → actuar → aprender",
+   "summary": "Ciclo continuo que convierte la percepción en acción y acumula experiencia; es el esqueleto de todos los agentes del libro."
+  },
+  "smpa": {
+   "title": "Agentes reactivos, deliberativos e híbridos (SMPA)",
+   "formula": "Sentir → Modelar → Planificar → Actuar",
+   "summary": "Tres formas de pasar de la percepción a la acción: reflejo inmediato, deliberación con modelo del mundo, o capas que combinan ambas."
+  },
+  "mcp_a2a": {
+   "title": "Protocolos MCP y A2A",
+   "summary": "MCP estandariza cómo un agente accede a herramientas y datos; A2A, cómo se descubren y cooperan agentes distintos."
+  },
+  "adl": {
+   "title": "Ciclo de vida de desarrollo de agentes (ADL)",
+   "formula": "requisitos → diseño → implementación → evaluación → gobernanza",
+   "summary": "Metodología por fases para construir, evaluar y mantener agentes; el capítulo 4 detalla su fase de despliegue."
+  },
+  "progresion": {
+   "title": "Marco de progresión de la IA agéntica",
+   "formula": "Nivel 0 manual → 1 reactivo → 2 con herramientas → 3 planificador → 4 aprendiz",
+   "summary": "Escala de madurez para clasificar un sistema y planificar su evolución."
+  },
+  "frameworks": {
+   "title": "Frameworks de agentes",
+   "summary": "LangChain, LangGraph, LlamaIndex, AutoGPT, CrewAI y AutoGen: qué resuelve cada uno y cuándo conviene usarlo."
+  },
+  "modelos_hibridos": {
+   "title": "Arquitectura de modelos híbridos",
+   "summary": "Varios modelos se reparten las tareas según su fortaleza y coste, en lugar de usar un único LLM para todo."
+  },
+  "bd_vectoriales": {
+   "title": "Bases de datos vectoriales",
+   "summary": "Guardan embeddings para recuperar por similitud; son la memoria a largo plazo y la base de la recuperación."
+  },
+  "function_calling": {
+   "title": "Llamada a funciones",
+   "summary": "El modelo devuelve una llamada estructurada a una herramienta declarada con esquema, que el sistema ejecuta."
+  },
+  "prompt_sistema": {
+   "title": "Prompt de sistema como constitución",
+   "summary": "Capa estable que fija identidad, reglas y límites del agente, separada del prompt de usuario de cada turno."
+  },
+  "ptcf": {
+   "title": "Marco PTCF",
+   "formula": "Persona + Tarea + Contexto + Formato",
+   "summary": "Plantilla de cuatro componentes para diseñar prompts de agente predecibles y alineados."
+  },
+  "descomposicion": {
+   "title": "Descomposición de tareas por prompting",
+   "summary": "Guiar al modelo para dividir una intención en subtareas ordenadas y verificables."
+  },
+  "few_shot": {
+   "title": "Aprendizaje con pocos ejemplos (few-shot)",
+   "summary": "Ejemplos dentro del prompt que enseñan el patrón esperado sin reentrenar el modelo."
+  },
+  "cot_tot": {
+   "title": "Cadena y árbol de pensamiento (CoT/ToT)",
+   "summary": "CoT obliga a razonar paso a paso; ToT explora varias ramas o perspectivas y elige la más sólida."
+  },
+  "optim_costos": {
+   "title": "Optimización de coste y caudal",
+   "summary": "Técnicas para bajar el coste por tarea y sostener alto volumen: enrutar a modelos más baratos, caché y paralelismo."
+  },
+  "amenazas": {
+   "title": "Modelo de amenazas e inyección de prompts",
+   "summary": "Riesgos propios de agentes: instrucciones maliciosas en la entrada, abuso de herramientas y manipulación de la memoria."
+  },
+  "zero_trust": {
+   "title": "Confianza cero y defensa en profundidad",
+   "summary": "Ningún agente ni herramienta es confiable por defecto: permisos mínimos, verificación continua y controles en capas."
+  },
+  "ia_responsable": {
+   "title": "Principios de IA responsable",
+   "summary": "Transparencia, equidad, responsabilidad y cumplimiento normativo tratados como requisitos de diseño."
+  },
+  "ag_decision": {
+   "title": "Agente de toma de decisiones autónoma",
+   "formula": "percepción → cognición → acción",
+   "summary": "Agente 1. Interpreta la entrada, razona y actúa en un ciclo continuo; responde bien en tareas de un solo paso."
+  },
+  "ag_planificacion": {
+   "title": "Agente de planificación",
+   "summary": "Agente 2. Descompone objetivos complejos en jerarquías de subtareas, monitoriza la ejecución y replanifica."
+  },
+  "tipos_memoria": {
+   "title": "Memoria de trabajo, episódica y semántica",
+   "summary": "Contexto inmediato de la sesión, historial de interacciones y conocimiento general destilado."
+  },
+  "ag_memoria": {
+   "title": "Agente aumentado por memoria",
+   "summary": "Agente 3. Conserva contexto entre sesiones para personalizar y aprender de experiencias previas."
+  },
+  "rag": {
+   "title": "Generación aumentada por recuperación (RAG)",
+   "formula": "consulta → recuperar fragmentos → generar con evidencia",
+   "summary": "Ancla las respuestas en documentos recuperados para superar la fecha de corte del modelo y reducir alucinaciones."
+  },
+  "ag_recuperacion": {
+   "title": "Agente de recuperación de conocimiento",
+   "summary": "Agente 4. Conecta el LLM con fuentes vivas mediante RAG y decide qué buscar y cómo combinarlo."
+  },
+  "ag_documental": {
+   "title": "Agente de inteligencia documental",
+   "formula": "ingesta y triaje → … → validación (5 etapas)",
+   "summary": "Agente 5. Convierte documentos visualmente complejos en datos estructurados y validados, con revisión humana si la confianza es baja."
+  },
+  "ag_investigacion": {
+   "title": "Agente de investigación científica",
+   "formula": "buscar literatura → agrupar y resumir → sintetizar",
+   "summary": "Agente 6. Sintetiza grandes corpus, reconcilia hallazgos y señala consensos y vacíos."
+  },
+  "ag_herramientas": {
+   "title": "Agente que usa herramientas",
+   "summary": "Agente 7. Un núcleo de razonamiento elige herramientas de un registro y un motor de ejecución las invoca y gestiona resultados."
+  },
+  "embudo": {
+   "title": "Embudo de selección de herramientas",
+   "formula": "intención → búsqueda semántica → filtro por restricciones",
+   "summary": "Reduce un catálogo grande a pocas candidatas y verifica la final."
+  },
+  "ag_orquestador": {
+   "title": "Agente orquestador de cadena de agentes",
+   "summary": "Agente 8. Un gerente enruta subtareas a agentes especializados y compone sus resultados."
+  },
+  "resolucion_conflictos": {
+   "title": "Resolución de conflictos entre agentes",
+   "summary": "Arbitraje cuando los especialistas discrepan: ponderar evidencia y confianza en lugar de ignorar el desacuerdo."
+  },
+  "ag_flujo": {
+   "title": "Sistema de flujo de trabajo agéntico",
+   "summary": "Agente 9. Procesos de negocio con estado, transiciones con condiciones y pausas para aprobación humana (human-in-the-loop)."
+  },
+  "ag_datos": {
+   "title": "Agente de análisis de datos",
+   "formula": "intención → código → visualización → presentación",
+   "summary": "Agente 10. Traduce preguntas en lenguaje natural en análisis ejecutados, gráficos y conclusiones estadísticas."
+  },
+  "ag_verificacion": {
+   "title": "Agente de verificación y validación",
+   "summary": "Agente 11. Auditor interno: comprueba hechos, coherencia lógica y consistencia del razonamiento de otros agentes."
+  },
+  "ag_gps": {
+   "title": "Solucionador general de problemas",
+   "summary": "Agente 12. Razona a nivel metacognitivo: descompone problemas nuevos, elige estrategias y transfiere lo aprendido entre dominios."
+  },
+  "analogia": {
+   "title": "Hipótesis por analogía entre dominios",
+   "summary": "Buscar principios de un campo (resiliencia ecológica) para proponer hipótesis en otro (red eléctrica) y probarlas."
+  },
+  "tdg": {
+   "title": "Generación guiada por pruebas (TDG)",
+   "formula": "rojo → verde → refactorizar",
+   "summary": "Un agente escribe primero las pruebas y otro genera código hasta que pasan, haciendo verificable la salida del LLM."
+  },
+  "ag_codigo": {
+   "title": "Agente de generación de código",
+   "formula": "generar → probar → refinar",
+   "summary": "Agente 13. Convierte especificaciones en implementaciones verificadas con TDG y orquestación multiagente."
+  },
+  "ag_cumplimiento": {
+   "title": "Agente orientado al cumplimiento",
+   "formula": "escanear → evaluar → remediar",
+   "summary": "Agente 14. Integra políticas de seguridad y regulación en el flujo de desarrollo y deja pistas de auditoría."
+  },
+  "ag_automejora": {
+   "title": "Agente automejorable",
+   "formula": "ejecutar → observar → aprender → adaptar",
+   "summary": "Agente 15. Lazo cerrado que traduce la retroalimentación operativa en mejores estrategias sin reentrenamiento manual."
+  },
+  "memoria_dual": {
+   "title": "Jerarquía de memoria dual",
+   "summary": "Memoria de trabajo para los turnos recientes y almacén vectorial para lo antiguo, recuperado solo cuando hace falta."
+  },
+  "ag_conversacional": {
+   "title": "Agente conversacional",
+   "summary": "Agente 16. Mantiene estado, intención, personalidad coherente y memoria a lo largo del diálogo."
+  },
+  "marca_csp": {
+   "title": "Consistencia de marca como satisfacción de restricciones",
+   "summary": "Tratar las guías de marca como restricciones duras mientras se optimiza la creatividad o el interés."
+  },
+  "ag_contenido": {
+   "title": "Agente de creación de contenido",
+   "formula": "idear → redactar → revisar → refinar",
+   "summary": "Agente 17. Produce contenido en etapas, respetando las restricciones de marca y con puntos de control humano."
+  },
+  "ag_vision": {
+   "title": "Agente de visión-lenguaje",
+   "formula": "codificador visual + alineación + LLM",
+   "summary": "Agente 18. Razona sobre imágenes y texto juntos; el razonamiento paso a paso mejora las preguntas complejas."
+  },
+  "vad": {
+   "title": "Modelo emocional VAD",
+   "formula": "Valencia · Activación · Dominancia",
+   "summary": "Representación continua de la emoción en la voz, más rica que etiquetas como 'enojado' o 'feliz'."
+  },
+  "ag_audio": {
+   "title": "Agente de procesamiento de audio",
+   "summary": "Agente 19. Transcribe y además detecta urgencia y frustración a partir de la prosodia."
+  },
+  "ag_entorno": {
+   "title": "Agente de detección del entorno físico",
+   "formula": "sentir → modelar → planificar → actuar",
+   "summary": "Agente 20. Integra sensores (IoT) para gestionar un edificio: detecta eventos por patrones y controla sin oscilaciones."
+  },
+  "logica_deontica": {
+   "title": "Lógica deóntica",
+   "formula": "O(φ) obligatorio · P(φ) permitido · F(φ) prohibido",
+   "summary": "Da a cada acción candidata un estatus moral explícito antes de ejecutarla."
+  },
+  "imposibilidad": {
+   "title": "Teorema de imposibilidad de la equidad",
+   "summary": "Varias métricas de equidad no pueden cumplirse a la vez; hay que elegir y documentar cuál priorizar."
+  },
+  "ag_etico": {
+   "title": "Agente de razonamiento ético",
+   "summary": "Agente 21. Inserta una capa de evaluación ética entre razonar y actuar, con métricas de equidad y mitigación de sesgos."
+  },
+  "xai": {
+   "title": "Técnicas de explicación (LIME, SHAP, contrafactuales)",
+   "summary": "Atribuyen la decisión a sus factores o muestran qué cambio la habría alterado."
+  },
+  "ag_explicable": {
+   "title": "Agente explicable",
+   "summary": "Agente 22. Registra su traza de razonamiento y genera explicaciones adaptadas a cada audiencia, con confianza comunicada."
+  },
+  "bayes_clinico": {
+   "title": "Confianza calibrada con actualización bayesiana",
+   "summary": "El diagnóstico se actualiza con cada evidencia y su confianza se calibra; las condiciones críticas se escalan a humanos."
+  },
+  "ag_salud": {
+   "title": "Agente de inteligencia en atención médica",
+   "formula": "ingesta → conocimiento clínico → razonamiento → explicación",
+   "summary": "Agente 23. Arquitectura de cuatro capas para apoyo diagnóstico con procedencia y escalamiento de seguridad."
+  },
+  "hipotesis_abductiva": {
+   "title": "Generación de hipótesis abductiva",
+   "summary": "Propone la explicación más plausible para un vacío y la puntúa por adecuación, plausibilidad y novedad."
+  },
+  "ag_descubrimiento": {
+   "title": "Agente de descubrimiento científico",
+   "summary": "Agente 24. Va más allá de resumir: detecta brechas de conocimiento y propone hipótesis comprobables."
+  },
+  "puertas_cumplimiento": {
+   "title": "Puertas de validación de cumplimiento",
+   "summary": "Toda recomendación pasa por controles de idoneidad y límites de riesgo y queda registrada para auditoría."
+  },
+  "ag_financiero": {
+   "title": "Agente de asesoría financiera",
+   "summary": "Agente 25. Supervisor multiagente que analiza mercado, evalúa riesgo y personaliza planes dentro del marco regulatorio."
+  },
+  "verificacion_citas": {
+   "title": "Verificación de citas legales",
+   "summary": "Etapa que confirma que cada precedente citado existe, aplica en la jurisdicción y dice lo que se afirma."
+  },
+  "ag_legal": {
+   "title": "Agente de inteligencia legal",
+   "summary": "Agente 26. Recuperación híbrida, búsqueda de precedentes y análisis de contratos con citas verificables."
+  },
+  "modelo_estudiante": {
+   "title": "Modelo del estudiante (POMDP y BKT)",
+   "summary": "El conocimiento del alumno es un estado oculto que se estima con rastreo bayesiano tras cada respuesta."
+  },
+  "ag_educativo": {
+   "title": "Agente de inteligencia educativa",
+   "summary": "Agente 27. Planifica un currículo personalizado en la zona de desarrollo próximo y adapta la retroalimentación."
+  },
+  "consenso": {
+   "title": "Consenso y votación ponderada",
+   "summary": "Votos ponderados por pericia, críticos adversarios contra el pensamiento grupal y polinización cruzada de ideas."
+  },
+  "ag_colectivo": {
+   "title": "Agente de inteligencia colectiva",
+   "summary": "Agente 28. Equipo de agentes con pericias complementarias que converge en soluciones mejores que las individuales."
+  },
+  "profundidad_amplitud": {
+   "title": "División profundidad/amplitud",
+   "summary": "Controlar con precisión un sistema físico y coordinar muchos sistemas acoplados son problemas distintos con arquitecturas distintas."
+  },
+  "ag_encarnado": {
+   "title": "Agente de inteligencia encarnada",
+   "summary": "Agente 29. Jerarquía de control multitasa, planificación sobre estados de creencia y solo acciones admisibles por seguridad."
+  },
+  "ag_integracion": {
+   "title": "Agente de integración de transformación de dominios",
+   "summary": "Agente 30. Modela dominios acoplados como grafo de conocimiento tipado y propaga la influencia para estimar efectos en cascada."
+  },
+  "envolvente": {
+   "title": "Envolvente de restricción unificado",
+   "summary": "Clima, energía, regulación y misión se fusionan de forma conservadora; la seguridad es precondición de toda acción."
+  },
+  "sociedades": {
+   "title": "Agentes autoevolutivos y sociedades de agentes",
+   "summary": "Agentes que rediseñan su propia arquitectura y grupos que generan comportamiento y normas emergentes."
+  },
+  "hoja_ruta": {
+   "title": "Hoja de ruta de capacidades y ROI",
+   "summary": "Plan por etapas para adoptar agentes en una organización y medir su impacto."
+  }
+ },
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    1
+   ],
+   "4": [
+    3
+   ],
+   "5": [
+    2,
+    3
+   ],
+   "6": [
+    5
+   ],
+   "7": [
+    5
+   ],
+   "8": [
+    6,
+    7
+   ],
+   "9": [
+    4,
+    7
+   ],
+   "10": [
+    6
+   ],
+   "11": [
+    7
+   ],
+   "12": [
+    4,
+    8
+   ],
+   "13": [
+    12
+   ],
+   "14": [
+    9,
+    12
+   ],
+   "15": [
+    13
+   ],
+   "16": [
+    11,
+    12
+   ],
+   "17": [
+    9,
+    15,
+    16
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.2"
+   ],
+   "1.4": [
+    "1.1"
+   ],
+   "1.5": [
+    "1.2"
+   ],
+   "1.6": [
+    "1.5"
+   ],
+   "1.7": [
+    "1.6"
+   ],
+   "2.1": [
+    "1.2"
+   ],
+   "2.3": [
+    "2.1"
+   ],
+   "2.4": [
+    "2.1",
+    "2.2"
+   ],
+   "3.2": [
+    "3.1"
+   ],
+   "3.3": [
+    "3.2"
+   ],
+   "3.4": [
+    "3.3"
+   ],
+   "3.5": [
+    "3.3"
+   ],
+   "3.6": [
+    "3.4"
+   ],
+   "3.7": [
+    "3.3",
+    "1.3"
+   ],
+   "3.8": [
+    "3.3"
+   ],
+   "4.1": [
+    "1.4",
+    "2.4"
+   ],
+   "4.2": [
+    "3.2"
+   ],
+   "4.3": [
+    "1.4"
+   ],
+   "4.4": [
+    "4.1",
+    "4.3"
+   ],
+   "4.5": [
+    "2.4"
+   ],
+   "5.1": [
+    "1.2"
+   ],
+   "5.2": [
+    "5.1",
+    "3.6"
+   ],
+   "5.3": [
+    "5.1",
+    "2.3"
+   ],
+   "5.4": [
+    "5.2",
+    "5.3"
+   ],
+   "5.5": [
+    "5.4"
+   ],
+   "6.1": [
+    "5.3"
+   ],
+   "6.2": [
+    "5.2"
+   ],
+   "6.3": [
+    "6.1"
+   ],
+   "6.4": [
+    "6.2",
+    "6.3"
+   ],
+   "7.1": [
+    "2.3",
+    "5.1"
+   ],
+   "7.2": [
+    "7.1"
+   ],
+   "7.3": [
+    "7.1"
+   ],
+   "7.4": [
+    "7.1",
+    "3.7"
+   ],
+   "7.5": [
+    "7.4",
+    "5.3"
+   ],
+   "7.6": [
+    "7.5"
+   ],
+   "7.7": [
+    "7.4"
+   ],
+   "8.1": [
+    "7.1"
+   ],
+   "8.2": [
+    "6.1"
+   ],
+   "8.3": [
+    "5.2",
+    "7.4",
+    "8.2"
+   ],
+   "8.4": [
+    "8.2"
+   ],
+   "8.5": [
+    "8.3"
+   ],
+   "9.2": [
+    "7.4"
+   ],
+   "9.3": [
+    "9.2",
+    "4.2"
+   ],
+   "9.4": [
+    "9.2",
+    "5.3"
+   ],
+   "10.1": [
+    "6.1",
+    "5.2"
+   ],
+   "10.2": [
+    "3.3",
+    "5.2"
+   ],
+   "11.1": [
+    "3.6",
+    "7.1"
+   ],
+   "11.2": [
+    "7.1"
+   ],
+   "11.3": [
+    "7.1"
+   ],
+   "12.1": [
+    "4.2",
+    "4.3"
+   ],
+   "12.2": [
+    "8.2",
+    "5.3"
+   ],
+   "13.1": [
+    "12.2",
+    "7.4"
+   ],
+   "13.2": [
+    "6.3",
+    "8.5"
+   ],
+   "14.1": [
+    "12.1",
+    "9.3",
+    "5.3"
+   ],
+   "14.2": [
+    "12.2"
+   ],
+   "15.1": [
+    "13.1",
+    "5.2"
+   ],
+   "15.2": [
+    "7.6"
+   ],
+   "16.1": [
+    "11.3"
+   ],
+   "16.2": [
+    "16.1",
+    "5.2"
+   ],
+   "16.3": [
+    "16.1"
+   ],
+   "16.4": [
+    "16.2",
+    "16.3",
+    "12.1"
+   ],
+   "17.1": [
+    "9.4",
+    "15.2",
+    "16.2"
+   ],
+   "17.2": [
+    "1.6",
+    "1.4"
+   ]
+  },
+  "items": {
+   "smpa": [
+    "bucle_cognitivo"
+   ],
+   "progresion": [
+    "smpa"
+   ],
+   "frameworks": [
+    "bucle_cognitivo"
+   ],
+   "function_calling": [
+    "frameworks"
+   ],
+   "ptcf": [
+    "prompt_sistema"
+   ],
+   "descomposicion": [
+    "ptcf"
+   ],
+   "few_shot": [
+    "ptcf"
+   ],
+   "cot_tot": [
+    "ptcf"
+   ],
+   "optim_costos": [
+    "modelos_hibridos"
+   ],
+   "amenazas": [
+    "prompt_sistema"
+   ],
+   "zero_trust": [
+    "amenazas"
+   ],
+   "ag_decision": [
+    "smpa"
+   ],
+   "ag_planificacion": [
+    "ag_decision",
+    "descomposicion",
+    "cot_tot"
+   ],
+   "ag_memoria": [
+    "ag_decision",
+    "tipos_memoria",
+    "bd_vectoriales"
+   ],
+   "rag": [
+    "bd_vectoriales"
+   ],
+   "ag_recuperacion": [
+    "rag"
+   ],
+   "ag_documental": [
+    "ag_planificacion"
+   ],
+   "ag_investigacion": [
+    "ag_recuperacion"
+   ],
+   "ag_herramientas": [
+    "ag_decision",
+    "function_calling"
+   ],
+   "embudo": [
+    "ag_herramientas",
+    "bd_vectoriales"
+   ],
+   "ag_orquestador": [
+    "ag_herramientas",
+    "mcp_a2a"
+   ],
+   "resolucion_conflictos": [
+    "ag_orquestador"
+   ],
+   "ag_flujo": [
+    "ag_orquestador",
+    "ag_memoria"
+   ],
+   "ag_datos": [
+    "ag_herramientas"
+   ],
+   "ag_verificacion": [
+    "ag_recuperacion"
+   ],
+   "ag_gps": [
+    "ag_planificacion",
+    "ag_orquestador",
+    "ag_verificacion"
+   ],
+   "analogia": [
+    "ag_gps"
+   ],
+   "tdg": [
+    "ag_orquestador"
+   ],
+   "ag_codigo": [
+    "tdg"
+   ],
+   "ag_cumplimiento": [
+    "ag_codigo",
+    "zero_trust"
+   ],
+   "ag_automejora": [
+    "ag_memoria"
+   ],
+   "memoria_dual": [
+    "ag_memoria",
+    "rag"
+   ],
+   "ag_conversacional": [
+    "memoria_dual",
+    "ag_planificacion"
+   ],
+   "ag_contenido": [
+    "marca_csp",
+    "smpa"
+   ],
+   "ag_vision": [
+    "smpa",
+    "cot_tot"
+   ],
+   "ag_audio": [
+    "vad",
+    "smpa"
+   ],
+   "ag_entorno": [
+    "smpa"
+   ],
+   "ag_etico": [
+    "logica_deontica",
+    "imposibilidad",
+    "ia_responsable",
+    "amenazas"
+   ],
+   "ag_explicable": [
+    "xai",
+    "ag_verificacion",
+    "ag_memoria"
+   ],
+   "ag_salud": [
+    "bayes_clinico",
+    "ag_explicable",
+    "ag_orquestador"
+   ],
+   "ag_descubrimiento": [
+    "ag_investigacion",
+    "hipotesis_abductiva"
+   ],
+   "puertas_cumplimiento": [
+    "ag_cumplimiento",
+    "ag_etico"
+   ],
+   "ag_financiero": [
+    "puertas_cumplimiento",
+    "ag_memoria"
+   ],
+   "verificacion_citas": [
+    "ag_verificacion"
+   ],
+   "ag_legal": [
+    "verificacion_citas",
+    "ag_explicable"
+   ],
+   "modelo_estudiante": [
+    "bayes_clinico"
+   ],
+   "ag_educativo": [
+    "modelo_estudiante",
+    "ag_planificacion"
+   ],
+   "consenso": [
+    "resolucion_conflictos"
+   ],
+   "ag_colectivo": [
+    "consenso"
+   ],
+   "ag_encarnado": [
+    "profundidad_amplitud",
+    "ag_entorno",
+    "ag_planificacion"
+   ],
+   "ag_integracion": [
+    "profundidad_amplitud"
+   ],
+   "envolvente": [
+    "ag_encarnado",
+    "ag_integracion"
+   ],
+   "sociedades": [
+    "ag_colectivo",
+    "ag_automejora"
+   ],
+   "hoja_ruta": [
+    "progresion",
+    "adl"
+   ]
+  }
+ }
+}
