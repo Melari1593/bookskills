@@ -1,0 +1,1 @@
+Diseño original de {producto}, inspirado en {paisaje}, con {motivos}, técnica {tecnica}, paleta {paleta}, escala {escala}. Mostrar vista general y detalle de textura. No atribuir autenticidad arqueológica.
