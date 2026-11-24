@@ -1,0 +1,5 @@
+---
+name: colombian-landscape-design
+description: Transforma referencias de paisajes colombianos en motivos originales para moda, textiles, cuero y joyería.
+---
+Analiza la referencia visible; separa observación de identificación geográfica tentativa. Consulta data/landscapes.json y data/motifs.json. Define producto, técnica, escala, paleta, cantidad y formato. Si faltan parámetros no críticos, usa valores razonables y decláralos. Extrae siluetas, ritmos, texturas y colores; desarrolla variantes naturalista, lineal, geométrica, topográfica, repetitiva, calada y en relieve. Para fusión con precolombian-design-colombia, distingue creación contemporánea de patrimonio documentado; no inventes significados ni reproduzcas símbolos sensibles sin consulta. Entrega ficha, diseño y controles de calidad. Para SVG verifica rutas y escala; para STL verifica malla cerrada, unidades y espesores; para patrones verifica continuidad; para bordado distingue imagen de archivo de puntadas. No declares archivos generados o pruebas realizadas sin evidencia. No redistribuyas fotografías sin verificar derechos.
