@@ -1,0 +1,2 @@
+# Colombian Landscape Design v0.1
+Skill para convertir paisajes en diseños originales. Nueve referencias visuales, cincuenta conceptos de motivos y nueve paletas propuestas. Las ubicaciones son tentativas y los colores interpretativos. No incluye fotografías, SVG ni STL terminados. Instalar copiando la carpeta al directorio de skills compatible. Invocar `$colombian-landscape-design` con paisaje, producto, técnica y salida.
