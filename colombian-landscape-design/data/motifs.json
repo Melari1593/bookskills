@@ -1,0 +1,72 @@
+{
+  "Hidrográfica": [
+    "cascada",
+    "río",
+    "meandro",
+    "ondas",
+    "confluencia"
+  ],
+  "Geológica": [
+    "estratos",
+    "erosión",
+    "grietas",
+    "crestas",
+    "cañones"
+  ],
+  "Montañosa": [
+    "cordillera",
+    "pico",
+    "valle",
+    "ladera",
+    "nevado"
+  ],
+  "Botánica": [
+    "palma de cera",
+    "frailejón",
+    "helecho",
+    "orquídea",
+    "flor amarilla"
+  ],
+  "Forestal": [
+    "dosel",
+    "ramas",
+    "raíces",
+    "hojas",
+    "sotobosque"
+  ],
+  "Atmosférica": [
+    "nubes",
+    "niebla",
+    "lluvia",
+    "viento",
+    "horizonte"
+  ],
+  "Arquitectónica": [
+    "cúpula",
+    "columna",
+    "balcón",
+    "ventana",
+    "teja"
+  ],
+  "Urbana": [
+    "plaza",
+    "adoquín",
+    "farol",
+    "arco",
+    "fachada"
+  ],
+  "Faunística": [
+    "ave en vuelo",
+    "pato",
+    "colibrí",
+    "mariposa",
+    "rana"
+  ],
+  "Topográfica": [
+    "curvas de nivel",
+    "redes fluviales",
+    "cuencas",
+    "terrazas",
+    "contornos"
+  ]
+}
