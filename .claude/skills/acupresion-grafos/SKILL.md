@@ -1,6 +1,6 @@
 ---
 name: acupresion-grafos
-description: Grafo combinado de tres libros de acupresión y MTC (Dalet, Acupressure Self-Care Handbook; Rosenfarb, Healing Your Eyes; Patzek, Medicina tradicional china para mujeres) con puntos compartidos, 34 artículos de PubMed y alertas de seguridad. Úsala para saber qué dice cada libro de un punto (SP6, PC6, LI4) o de un síntoma (náuseas del embarazo, dolor menstrual, migraña, ojo seco, insomnio), comparar los libros, ver la evidencia y los riesgos, o entregar el HTML, aunque no nombren los libros.
+description: Grafo combinado de tres libros de acupresión y MTC (Dalet, Acupressure Self-Care Handbook; Rosenfarb, Healing Your Eyes; Patzek, Medicina tradicional china para mujeres) con puntos compartidos, 38 artículos de PubMed y alertas de seguridad. Úsala para saber qué dice cada libro de un punto (SP6, PC6, LI4) o de un síntoma (náuseas del embarazo, dolor menstrual, migraña, ojo seco, insomnio, intestino irritable), comparar los libros, ver la evidencia y los riesgos, o entregar el HTML, aunque no nombren los libros.
 ---
 
 # Grafos de acupresión: Dalet, Rosenfarb y Patzek
@@ -12,11 +12,11 @@ Esta skill une tres grafos de libro en uno. Agrega puentes entre ellos: puntos c
 | D | Dalet, *Acupressure Self-Care Handbook* (2023) | 13 partes, 83 cuadros por aparato. Puntos con código asignado y verificado con `acupuntura-puntos`. |
 | R | Rosenfarb, *Healing Your Eyes with Chinese Medicine* (2007) | 8 capítulos: teoría, patrones oculares, acupuntura, hierbas, qigong, casos y terapias en casa. |
 | P | Patzek y Hertzer, *Medicina tradicional china para mujeres* (2003) | Fundamentos, diagnóstico, ginecología y embarazo. Incluye 28 fórmulas, 13 recetas resumidas y 16 puntos de la oreja. |
-| X | Puentes (creados por Claude) | X1: 32 puntos usados en dos o tres libros. X2: evidencia de PubMed por tema. X3: seguridad común. |
+| X | Puentes (creados por Claude) | X1: 32 puntos usados en dos o tres libros. X2: evidencia de PubMed por tema, incluida X2.7 (intestino irritable, sin sección propia en los libros). X3: seguridad común. |
 
 Archivos:
 - `references/grafo.json`: el grafo combinado (esquema de la skill `grafo-de-libro`). Las secciones llevan el prefijo del libro (`P3.5` = Patzek 3.5) y los ítems también (`p_sp6`, `d_ev_pc6_nvp`, `x_sp6`).
-- `references/evidencia.md`: tabla de los 34 artículos de PubMed con PMID, DOI y sección, log de búsqueda y huecos.
+- `references/evidencia.md`: tabla de los 38 artículos de PubMed con PMID, DOI y sección, log de búsqueda y huecos.
 - `scripts/buscar.py`: busca un punto, un síntoma o una sección.
 - `assets/grafo-acupresion-tres-libros.html`: el HTML combinado. También están los tres HTML de cada libro.
 
@@ -65,6 +65,7 @@ Los arcos de prerrequisito son una interpretación de Claude, no una cita de los
 | Prevención de migraña (agujas) | Menos crisis; efecto pequeño frente a simulada | Moderada |
 | Lumbalgia crónica | Menos dolor y discapacidad | Baja (6 ECA pequeños) |
 | Ansiedad | Reduce la ansiedad | Baja, heterogeneidad alta |
+| Intestino irritable (X2.7) | Más respuesta que la acupuntura simulada; la acupresión autoaplicada mejora el SII con diarrea | Baja |
 | Insomnio | Mejor que solo higiene del sueño | Baja |
 | Estreñimiento (auricular, masaje) | Más deposiciones | Baja a muy baja |
 | Ojo seco | Mejora pruebas lagrimales, no los síntomas | Baja |

@@ -3,7 +3,7 @@
 Consulta: 2026-11-26. Fuente: PubMed. Cada fila es una afirmación del grafo con su PMID y DOI.
 El texto completo de cada hallazgo está en el `summary` del ítem en `grafo.json`; `scripts/buscar.py` lo imprime.
 
-Total: 34 artículos distintos.
+Total: 38 artículos distintos.
 
 | Libro | Sección | Ítem | PMID | DOI |
 |---|---|---|---|---|
@@ -21,6 +21,10 @@ Total: 34 artículos distintos.
 | Puentes (nueva) | X2.5 | Evidencia: acupuntura y acupresión en el dolor del parto | 32032444 | [doi:10.1002/14651858.CD009232.pub2](https://doi.org/10.1002/14651858.CD009232.pub2) |
 | Puentes (nueva) | X2.5 | Evidencia: dolor lumbopélvico del embarazo | 26018758 | [doi:10.1111/aogs.12681](https://doi.org/10.1111/aogs.12681) |
 | Puentes (nueva) | X2.5 | Evidencia: acupuntura en FIV | 33040570 | [doi:10.1177/0964528420958711](https://doi.org/10.1177/0964528420958711) |
+| Puentes (nueva) | X2.7 | Evidencia: acupuntura y acupresión en el síndrome de intestino irritable | 42413705 | [doi:10.1053/j.gastro.2026.06.017](https://doi.org/10.1053/j.gastro.2026.06.017) |
+| Puentes (nueva) | X2.7 | Evidencia: acupuntura y acupresión en el síndrome de intestino irritable | 39560589 | [doi:10.1097/MD.0000000000040207](https://doi.org/10.1097/MD.0000000000040207) |
+| Puentes (nueva) | X2.7 | Evidencia: acupuntura y acupresión en el síndrome de intestino irritable | 39875940 | [doi:10.1186/s12912-024-02594-5](https://doi.org/10.1186/s12912-024-02594-5) |
+| Puentes (nueva) | X2.7 | Evidencia: acupuntura y acupresión en el síndrome de intestino irritable | 32251223 | [doi:10.1097/SGA.0000000000000332](https://doi.org/10.1097/SGA.0000000000000332) |
 | Dalet | D11.4 | Evidencia: PC6 en náuseas del embarazo | 42075106 | [doi:10.3390/nu18081293](https://doi.org/10.3390/nu18081293) |
 | Dalet | D11.4 | Evidencia: PC6 en náuseas del embarazo | 30319738 | [doi:10.4103/ijpvm.IJPVM_430_16](https://doi.org/10.4103/ijpvm.IJPVM_430_16) |
 | Rosenfarb | R2.9 | Fármacos y cirugía como último recurso | 32032457 | [doi:10.1002/14651858.CD006030.pub4](https://doi.org/10.1002/14651858.CD006030.pub4) |
@@ -58,6 +62,8 @@ Total: 34 artículos distintos.
 | acupressure labour pain systematic review | desde 2019 | 32032444 |
 | acupuncture in vitro fertilisation live birth meta-analysis | desde 2020 | 33040570 |
 | acupuncture adverse events pregnancy systematic review | — | 26018758 |
+| acupuncture irritable bowel syndrome meta-analysis | desde 2019 | 42413705, 39560589 |
+| acupressure irritable bowel syndrome | — | 39875940, 32251223 |
 
 ## Huecos
 
