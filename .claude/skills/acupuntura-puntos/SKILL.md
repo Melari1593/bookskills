@@ -1,6 +1,6 @@
 ---
 name: acupuntura-puntos
-description: Referencia clínica en español de los 361 puntos clásicos de acupuntura de la Medicina Tradicional China (MTC), organizada por meridiano, con índice por síntoma y tabla de categorías (Cinco Shu, Yuan, Luo, Xi, Shu dorsales, Mu, Hui, puntos de confluencia). Usa esta skill SIEMPRE que el usuario pregunte qué puntos de acupuntura o acupresión usar para un síntoma, patrón o enfermedad (ej. "¿qué puntos para lumbalgia?", "puntos para insomnio por deficiencia de Yin de Riñón"), pida la ubicación, funciones, indicaciones, profundidad de inserción o contraindicaciones de un punto (por código como ST36, LI4, SP6, o por nombre pinyin como Zusanli, Hegu, Sanyinjiao), quiera listar los puntos de un meridiano o una categoría, o arme una receta/protocolo de puntos -- aunque no diga "medicina tradicional china" (ej. "¿dónde queda el 36 de estómago?", "puntos prohibidos en embarazo"). NO usar para fitoterapia china (fórmulas herbales), diagnóstico por lengua/pulso sin relación con puntos, ni medicina convencional.
+description: Referencia clínica en español de los 361 puntos clásicos de acupuntura de la Medicina Tradicional China (MTC), organizada por meridiano, con índice por síntoma y tabla de categorías (Cinco Shu, Yuan, Luo, Xi, Shu dorsales, Mu, Hui, puntos de confluencia). Usa esta skill SIEMPRE que el usuario pregunte qué puntos de acupuntura o acupresión usar para un síntoma, patrón o enfermedad (ej. "¿qué puntos para lumbalgia?", "puntos para insomnio por deficiencia de Yin de Riñón"), pida la ubicación, funciones, indicaciones, profundidad de inserción o contraindicaciones de un punto (por código como ST36, LI4, SP6, o por nombre pinyin como Zusanli, Hegu, Sanyinjiao), quiera listar los puntos de un meridiano o una categoría, o arme una receta/protocolo de puntos -- aunque no diga "medicina tradicional china" (ej. "¿dónde queda el 36 de estómago?", "puntos prohibidos en embarazo"). También cuando haya que diferenciar el patrón (lengua, pulso, ocho reglas) para escoger los puntos. NO usar para fitoterapia china (fórmulas herbales), diagnóstico por lengua/pulso sin relación con puntos, ni medicina convencional.
 ---
 
 # Puntos de acupuntura (MTC)
@@ -14,6 +14,7 @@ Referencia para estudio y práctica profesional. El usuario es estudiante o prac
 | `references/indice-sintomas.md` | **Primero**, ante cualquier consulta por síntoma, enfermedad o patrón. Mapea síntomas → puntos principales y complementarios según patrón. |
 | `references/categorias.md` | Para categorías de puntos (Cinco Shu, Yuan, Luo, Xi, Shu dorsales, Mu, Hui, 8 de confluencia, He inferiores, Ventanas del Cielo, Mar, Estrellas de Ma Danyang…) y para la **lista de puntos contraindicados en embarazo**. |
 | `references/meridianos/<COD>.md` | Ficha completa de cada punto del meridiano. Lee solo los archivos de los meridianos que necesites. |
+| `references/diagnostico.md` | Cuando haya que **elegir el patrón** antes de los puntos: cuatro métodos de exploración, lengua, pulso, ocho reglas, signos clave de los patrones del índice, patrones oculares (Rosenfarb) y la evidencia sobre la fiabilidad del diagnóstico. |
 
 Códigos de meridiano (nomenclatura estándar OMS) y archivos:
 
@@ -45,7 +46,7 @@ Para localizar rápido: `grep -n "^### ST36" references/meridianos/ST.md` y lee 
 ### 1. Por síntoma / enfermedad / patrón (el caso más frecuente)
 
 1. Lee `references/indice-sintomas.md` y ubica la entrada (usa grep con sinónimos: "lumbalgia" / "dolor lumbar" / "espalda baja").
-2. Si el síntoma tiene varios patrones de MTC y el usuario no dio suficiente información para diferenciarlo, presenta los puntos generales y luego los complementarios **por patrón** (ej. insomnio por deficiencia de Sangre de Corazón y Bazo vs. hiperactividad de Fuego de Hígado), explicando brevemente qué signos orientan a cada uno. No inventes un patrón que el usuario no mencionó.
+2. Si el síntoma tiene varios patrones de MTC y el usuario no dio suficiente información para diferenciarlo, presenta los puntos generales y luego los complementarios **por patrón** (ej. insomnio por deficiencia de Sangre de Corazón y Bazo vs. hiperactividad de Fuego de Hígado), explicando brevemente qué signos orientan a cada uno. No inventes un patrón que el usuario no mencionó. Para los signos de lengua, pulso y generales de cada patrón, usa `references/diagnostico.md` §6.
 3. Para cada punto recomendado, consulta su ficha en el meridiano correspondiente y extrae ubicación resumida, por qué se usa aquí (su acción relevante) y la inserción.
 4. Cruza con las precauciones: si algún punto tiene contraindicación relevante (embarazo, órganos subyacentes, vasos), señálalo junto al punto.
 

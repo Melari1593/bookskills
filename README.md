@@ -5,7 +5,7 @@ Skills de Claude basadas en libros y obras de referencia.
 | Skill | Descripción |
 |---|---|
 | [`ideas-a-animacion`](.claude/skills/ideas-a-animacion/SKILL.md) | Convierte ideas de grafos de libros y archivos PDF, TXT o EPUB en guiones, storyboards y prompts de video con fuentes trazables y estilo de animación seleccionado por el usuario. |
-| [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md) | Los 361 puntos clásicos de acupuntura (MTC) por meridiano, con índice por síntoma y categorías (Shu, Yuan, Luo, Xi, Mu, Hui…). |
+| [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md) | Los 361 puntos clásicos de acupuntura (MTC) por meridiano, con índice por síntoma, categorías (Shu, Yuan, Luo, Xi, Mu, Hui…) y guía de diagnóstico por patrón (lengua, pulso, ocho reglas) con evidencia de fiabilidad. |
 | [`harrys-cosmeticology`](.claude/skills/harrys-cosmeticology/SKILL.md) | *Harry's Cosmeticology* 9.ª ed. (Vol. 1, Vol. 2 y Sostenibilidad): 59 fichas de capítulo sobre formulación, ingredientes, sustratos, regulación y antienvejecimiento, con glosario, patrones, cheatsheet y consulta del grafo de conocimiento. |
 | [`hemodinamia-grafo`](.claude/skills/hemodinamia-grafo/SKILL.md) | Mapa de estudio del *Manual de hemodinamia y aplicaciones clínicas en cardiología*: 16 capítulos, 149 secciones, 63 conceptos y rutas de prerrequisitos. |
 | [`empresa-agentica-grafo`](.claude/skills/empresa-agentica-grafo/SKILL.md) | *La empresa agéntica* (Hodjat y Blondeau, 2026) en dos modos: explorar el grafo (introducción y 9 capítulos, 68 secciones, 63 conceptos, rutas de prerrequisitos) y asesorar un proyecto multiagente con los marcos del libro (encaje, preparación, autonomía, riesgos, ROI, lock-in). |
@@ -25,6 +25,16 @@ python3 atlas/build.py
 ```
 
 `atlas/template.html` contiene la página (estilos y lógica) y `atlas/build.py` extrae los datos de `references/` y asigna a cada punto una posición esquemática en la figura.
+
+## Grafos de acupresión y ojos (Dalet y Rosenfarb)
+
+[`grafos/dalet-acupressure-self-care/grafo_dalet_acupressure.html`](grafos/dalet-acupressure-self-care/grafo_dalet_acupressure.html) es el mapa de *Acupressure Self-Care Handbook* (Roger Dalet, 2023): introducción y 12 partes, 77 afecciones y 86 puntos recurrentes. El libro no nombra los puntos; los códigos son una interpretación y están verificados con las fichas de [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md). Cada afección indica cuántos de sus puntos coinciden con el índice de síntomas de la skill (127 de 207 usos, 61 %). Detalle en [`comparacion.md`](grafos/dalet-acupressure-self-care/comparacion.md).
+
+[`grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html`](grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html) es el mapa de *Healing Your Eyes with Chinese Medicine* (Andy Rosenfarb, 2007): 8 capítulos, 81 secciones, 56 conceptos y 3 apéndices, con alertas marcadas con ⚠ y evidencia de PubMed en [`evidencia.md`](grafos/rosenfarb-healing-your-eyes/evidencia.md). La numeración de secciones es propia del grafo; el EPUB no tiene páginas impresas.
+
+## Grafo de Medicina tradicional china para mujeres (Patzek y Hertzer)
+
+[`grafos/patzek-mtc-para-mujeres/grafo_patzek_mtc_mujeres.html`](grafos/patzek-mtc-para-mujeres/grafo_patzek_mtc_mujeres.html) es el mapa de *Medicina tradicional china para mujeres* (Sabine Patzek y Karin Hertzer, Arkano Books, 2003): 4 partes, 56 apartados y 62 conceptos (síndromes, hierbas, puntos y evidencia). Los puntos de cada afección, escritos en notación española (E, BP, VC…), se pasaron a códigos OMS y se cruzaron con [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md). Las alertas de seguridad (acónito en el embarazo, Melia toosendan, mu tong, urgencias obstétricas) y la evidencia de PubMed están en [`comparacion_y_evidencia.md`](grafos/patzek-mtc-para-mujeres/comparacion_y_evidencia.md). La numeración de apartados es propia del grafo; las páginas son las del índice.
 
 ## Graphify — Harry's Cosmeticology
 
