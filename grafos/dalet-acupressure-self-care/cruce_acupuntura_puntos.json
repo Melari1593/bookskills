@@ -1,0 +1,2995 @@
+{
+ "points": {
+  "bl1": {
+   "code": "BL1",
+   "name": "Jīngmíng",
+   "loc": "en la cara, en la depresión entre la parte superomedial del canto interno del ojo y la pared medial de la órbita (≈0,1 cun superior y medial al canto interno).",
+   "prec": "riesgo de hematoma periorbitario y lesión del globo ocular; no manipular; presionar 1–2 min al retirar. Reservar la inserción profunda (>0,5 cun) a practicantes expertos.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li4": {
+   "code": "LI4",
+   "name": "Hégǔ",
+   "loc": "dorso de la mano, entre el 1.er y 2.º metacarpianos, en el punto medio del lado radial del 2.º metacarpiano.",
+   "prec": "contraindicado en el embarazo.",
+   "embarazo": true,
+   "abdomen_bajo": false
+  },
+  "gb20": {
+   "code": "GB20",
+   "name": "Fēngchí",
+   "loc": "En la región posterior del cuello, bajo el occipital, en la depresión entre el origen del esternocleidomastoideo y el trapecio.",
+   "prec": "NO dirigir hacia arriba y medial (foramen magno/bulbo raquídeo); arteria vertebral en profundidad; evitar punción profunda.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "yuyao": {
+   "code": "EX-HN4",
+   "name": "Yuyao",
+   "loc": "Centro de la ceja, sobre la pupila",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb14": {
+   "code": "GB14",
+   "name": "Yángbái",
+   "loc": "En la frente, 1 cun por encima de la ceja, directamente sobre el centro de la pupila.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "ki3": {
+   "code": "KI3",
+   "name": "Tàixī",
+   "loc": "en la cara posteromedial del tobillo, en la depresión entre la prominencia del maléolo medial y el tendón calcáneo (de Aquiles).",
+   "prec": "arteria tibial posterior cercana.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st1": {
+   "code": "ST1",
+   "name": "Chéngqì",
+   "loc": "en la cara, directamente debajo de la pupila, entre el globo ocular y el borde infraorbitario.",
+   "prec": "globo ocular; zona muy vascularizada: riesgo de hematoma (comprimir 1–2 min al retirar la aguja).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "qiuhou": {
+   "code": "EX-HN7",
+   "name": "Qiuhou",
+   "loc": "En el borde infraorbitario, unión del 1/4 lateral con los 3/4 mediales",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv15": {
+   "code": "GV15",
+   "name": "Yǎmén",
+   "loc": "En la región cervical posterior, por encima de la apófisis espinosa de C2, en la línea media posterior (0,5 cun por dentro de la línea posterior del cabello).",
+   "prec": "Nunca hacia arriba ni profundo: riesgo de penetrar la cisterna magna y lesionar el bulbo raquídeo. Detener si hay sensación de descarga eléctrica.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "te17": {
+   "code": "TE17",
+   "name": "Yìfēng",
+   "loc": "Región anterior del cuello, posterior al lóbulo de la oreja, en la depresión entre la apófisis mastoides y el ángulo de la mandíbula.",
+   "prec": "Salida del nervio facial y vasos: no profundizar en exceso.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "si19": {
+   "code": "SI19",
+   "name": "Tīnggōng",
+   "loc": "Cara, en la depresión entre el centro del borde anterior del trago y el borde posterior del cóndilo mandibular (se abre al abrir la boca).",
+   "prec": "Evitar la arteria temporal superficial; mantener la boca abierta durante la inserción.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv23": {
+   "code": "CV23",
+   "name": "Liánquán",
+   "loc": "En la parte anterior del cuello, línea media anterior, por encima de la prominencia laríngea, en la depresión sobre el borde superior del hueso hioides.",
+   "prec": "No puncionar profundo en dirección posterior (laringe/faringe).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "lr3": {
+   "code": "LR3",
+   "name": "Tàichōng",
+   "loc": "Dorso del pie, entre el 1.º y 2.º metatarsianos, en la depresión distal a la unión de sus bases, sobre la arteria dorsal del pie.",
+   "prec": "Evitar la arteria dorsal del pie.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "te3": {
+   "code": "TE3",
+   "name": "Zhōngzhǔ",
+   "loc": "Dorso de la mano, entre 4.º y 5.º metacarpianos, en la depresión proximal a la 4.ª articulación metacarpofalángica.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv23": {
+   "code": "GV23",
+   "name": "Shàngxīng",
+   "loc": "En la cabeza, línea media, 1 cun por encima de la línea anterior del cabello.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li20": {
+   "code": "LI20",
+   "name": "Yíngxiāng",
+   "loc": "en el surco nasolabial, a nivel del punto medio del borde lateral del ala de la nariz.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv13": {
+   "code": "GV13",
+   "name": "Táodào",
+   "loc": "En la región dorsal alta, en la depresión bajo la apófisis espinosa de T1, línea media posterior.",
+   "prec": "No puncionar profundo (médula espinal).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "yintang": {
+   "code": "EX-HN3",
+   "name": "Yintang (GV29)",
+   "loc": "Punto medio entre los extremos internos de las cejas",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st2": {
+   "code": "ST2",
+   "name": "Sìbái",
+   "loc": "en la cara, en el agujero infraorbitario.",
+   "prec": "no penetrar profundamente en el agujero infraorbitario (nervio y vasos infraorbitarios; riesgo de lesión del globo ocular si se dirige hacia arriba).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl2": {
+   "code": "BL2",
+   "name": "Cuánzhú",
+   "loc": "en la cabeza, en la depresión del extremo medial de la ceja (escotadura frontal o supratroclear palpable).",
+   "prec": "evitar la inserción profunda en la órbita.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb21": {
+   "code": "GB21",
+   "name": "Jiānjǐng",
+   "loc": "En el punto medio de la línea que une la apófisis espinosa de C7 con el extremo lateral del acromion.",
+   "prec": "Riesgo de neumotórax (vértice pulmonar): no puncionar perpendicular profundo. Contraindicado en el embarazo.",
+   "embarazo": true,
+   "abdomen_bajo": false
+  },
+  "te5": {
+   "code": "TE5",
+   "name": "Wàiguān",
+   "loc": "Cara posterior del antebrazo, en el punto medio del espacio interóseo entre radio y cúbito, 2 cun proximal al pliegue dorsal de la muñeca.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st6": {
+   "code": "ST6",
+   "name": "Jiáchē",
+   "loc": "un través de dedo (dedo medio) anterosuperior al ángulo mandibular; se palpa en la prominencia del masetero al apretar los dientes.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st45": {
+   "code": "ST45",
+   "name": "Lìduì",
+   "loc": "en el 2.º dedo del pie, lateral a la falange distal, 0,1 cun proximal-lateral al ángulo lateral de la uña.",
+   "prec": "zona dolorosa a la punción.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li1": {
+   "code": "LI1",
+   "name": "Shāngyáng",
+   "loc": "lado radial del dedo índice, 0,1 cun proximal y lateral al ángulo ungueal radial.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li11": {
+   "code": "LI11",
+   "name": "Qūchí",
+   "loc": "en el extremo lateral del pliegue del codo, en el punto medio de la línea que une LU5 con el epicóndilo lateral del húmero (codo flexionado).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv26": {
+   "code": "GV26",
+   "name": "Shuǐgōu",
+   "loc": "En la cara, en el filtrum. Estándar OMS 2008: punto medio del surco nasolabial (filtrum). Tradicionalmente: unión del tercio superior con los dos tercios inferiores del filtrum.",
+   "prec": "Punto muy doloroso.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "lu11": {
+   "code": "LU11",
+   "name": "Shàoshāng",
+   "loc": "en el lado radial del pulgar, 0,1 cun proximal y lateral al ángulo ungueal radial (en la intersección de la línea del borde radial y la línea de la base de la uña).",
+   "prec": "punción muy dolorosa.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "pc6": {
+   "code": "PC6",
+   "name": "Nèiguān",
+   "loc": "cara anterior del antebrazo, entre los tendones del palmar largo y el flexor radial del carpo, 2 cun proximal al pliegue palmar de la muñeca.",
+   "prec": "nervio mediano (sensación eléctrica: retirar ligeramente y reorientar).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sp6": {
+   "code": "SP6",
+   "name": "Sānyīnjiāo",
+   "loc": "en la cara medial de la pierna, posterior al borde medial de la tibia, 3 cun por encima de la prominencia del maléolo medial.",
+   "prec": "**CONTRAINDICADO EN EMBARAZO** (clásicamente, especialmente combinado con LI4, por riesgo de inducir el parto/aborto).",
+   "embarazo": true,
+   "abdomen_bajo": false
+  },
+  "st36": {
+   "code": "ST36",
+   "name": "Zúsānlǐ",
+   "loc": "en la cara anterior de la pierna, 3 cun por debajo de ST35, en la línea ST35–ST41 (aprox. un través de dedo lateral a la cresta anterior de la tibia).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb25": {
+   "code": "GB25",
+   "name": "Jīngmén",
+   "loc": "En la cara lateral del abdomen, inferior al extremo libre de la 12.ª costilla.",
+   "prec": "La punción profunda o dirigida medialmente puede lesionar el riñón.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sp5": {
+   "code": "SP5",
+   "name": "Shāngqiū",
+   "loc": "en el pie, anteroinferior al maléolo medial, en la depresión a mitad de camino entre la tuberosidad del navicular y la punta del maléolo medial.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "dingchuan": {
+   "code": "EX-B1",
+   "name": "Dingchuan",
+   "loc": "0,5 cun lateral a GV14 (bajo la apófisis espinosa de C7)",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "te8": {
+   "code": "TE8",
+   "name": "Sānyángluò",
+   "loc": "Cara posterior del antebrazo, en el punto medio entre radio y cúbito, 4 cun proximal al pliegue dorsal de la muñeca.",
+   "prec": "Algunos textos clásicos contraindicaban la punción (se prefería moxa).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "si3": {
+   "code": "SI3",
+   "name": "Hòuxī",
+   "loc": "Borde cubital de la mano, en la depresión proximal a la 5.ª articulación metacarpofalángica, en la unión piel roja-blanca (extremo de la línea transversa palmar distal con el puño semicerrado).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "luozhen": {
+   "code": "EX-UE8",
+   "name": "Wailaogong (Luozhen)",
+   "loc": "Dorso de la mano, entre 2.º y 3.º metacarpianos, ~0,5 cun proximal a la articulación metacarpofalángica",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li15": {
+   "code": "LI15",
+   "name": "Jiānyú",
+   "loc": "en la depresión entre el extremo anterior del borde lateral del acromion y el troquíter del húmero (depresión anterior que aparece al abducir el brazo).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "li10": {
+   "code": "LI10",
+   "name": "Shǒusānlǐ",
+   "loc": "cara posterolateral del antebrazo, en la línea LI5–LI11, 2 cun distal a LI11.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "ht7": {
+   "code": "HT7",
+   "name": "Shénmén",
+   "loc": "en el extremo cubital del pliegue palmar de la muñeca, radial al tendón del flexor cubital del carpo (proximal al pisiforme).",
+   "prec": "arteria y nervio cubitales.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "pc7": {
+   "code": "PC7",
+   "name": "Dàlíng",
+   "loc": "en el pliegue palmar de la muñeca, entre los tendones del palmar largo y el flexor radial del carpo.",
+   "prec": "nervio mediano.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl40": {
+   "code": "BL40",
+   "name": "Wěizhōng",
+   "loc": "en la región poplítea, en el punto medio del pliegue poplíteo.",
+   "prec": "arteria y vena poplíteas y nervio tibial en profundidad: evitar inserción profunda y manipulación enérgica; sangrar solo vénulas superficiales.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl60": {
+   "code": "BL60",
+   "name": "Kūnlún",
+   "loc": "en la región posterolateral del tobillo, en la depresión entre la prominencia del maléolo externo y el tendón calcáneo.",
+   "prec": "contraindicado en el embarazo.",
+   "embarazo": true,
+   "abdomen_bajo": false
+  },
+  "gb30": {
+   "code": "GB30",
+   "name": "Huántiào",
+   "loc": "En la unión del tercio lateral con los dos tercios mediales de la línea que une la prominencia del trocánter mayor con el hiato sacro (paciente en decúbito lateral, cadera flexionada).",
+   "prec": "Nervio ciático en profundidad: si aparece sensación eléctrica, no manipular más. Contraindicado en embarazo según algunas fuentes (punción fuerte).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl67": {
+   "code": "BL67",
+   "name": "Zhìyīn",
+   "loc": "en el 5º dedo del pie, lateral a la falange distal, 0,1 cun proximal al ángulo lateral de la uña (cruce de la línea del borde lateral y la línea de la base de la uña).",
+   "prec": "contraindicado en el embarazo salvo para corregir la malposición fetal con moxa; punción dolorosa.",
+   "embarazo": true,
+   "abdomen_bajo": false
+  },
+  "lr1": {
+   "code": "LR1",
+   "name": "Dàdūn",
+   "loc": "Dedo gordo del pie, lado lateral de la falange distal, 0,1 cun proximal-lateral al ángulo lateral de la uña.",
+   "prec": "Punción dolorosa.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sp9": {
+   "code": "SP9",
+   "name": "Yīnlíngquán",
+   "loc": "en la cara medial de la pierna, en la depresión entre el borde inferior del cóndilo medial de la tibia y el borde medial de la tibia.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st34": {
+   "code": "ST34",
+   "name": "Liángqiū",
+   "loc": "en la cara anterolateral del muslo, 2 cun por encima de la base de la rótula, entre el vasto lateral y el borde lateral del tendón del recto femoral.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb39": {
+   "code": "GB39",
+   "name": "Xuánzhōng",
+   "loc": "3 cun por encima de la prominencia del maléolo lateral, anterior al peroné (OMS 2008).",
+   "prec": "Divergencia: Deadman lo sitúa en el borde posterior del peroné (entre éste y los tendones peroneos); OMS y textos chinos, en el borde anterior.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st42": {
+   "code": "ST42",
+   "name": "Chōngyáng",
+   "loc": "en el dorso del pie, en la unión de la base del 2.º metatarsiano con el cuneiforme intermedio, sobre la arteria dorsal del pie.",
+   "prec": "arteria dorsal del pie (palpar y evitar).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bafeng": {
+   "code": "EX-LE10",
+   "name": "Bafeng",
+   "loc": "Dorso del pie, en los pliegues interdigitales, en el límite de la piel dorsal y plantar (8 puntos)",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv12": {
+   "code": "CV12",
+   "name": "Zhōngwǎn",
+   "loc": "En el abdomen superior, línea media anterior, 4 cun por encima del centro del ombligo (punto medio entre el ombligo y la unión xifoesternal).",
+   "prec": "Punción profunda en pacientes delgados puede alcanzar la cavidad peritoneal; precaución en embarazo avanzado.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sifeng": {
+   "code": "EX-UE10",
+   "name": "Sifeng",
+   "loc": "Cara palmar, centro del pliegue de la articulación interfalángica proximal del 2.º al 5.º dedo",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb34": {
+   "code": "GB34",
+   "name": "Yánglíngquán",
+   "loc": "En la cara fibular de la pierna, en la depresión anterior y distal a la cabeza del peroné.",
+   "prec": "Nervio peroneo común próximo (posterior e inferior a la cabeza del peroné).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv14": {
+   "code": "GV14",
+   "name": "Dàzhuī",
+   "loc": "En la región cervical posterior, en la depresión bajo la apófisis espinosa de C7, línea media posterior.",
+   "prec": "No profundizar (médula cervical); sangría/ventosas frecuentes para calor.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv9": {
+   "code": "GV9",
+   "name": "Zhìyáng",
+   "loc": "En la región dorsal, en la depresión bajo la apófisis espinosa de T7, línea media posterior (a nivel del ángulo inferior de la escápula).",
+   "prec": "No puncionar profundo (médula espinal).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv1": {
+   "code": "GV1",
+   "name": "Chángqiáng",
+   "loc": "En el periné, por debajo del cóccix, en el punto medio entre la punta del cóccix y el ano.",
+   "prec": "No puncionar perpendicular (riesgo de perforar el recto).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl57": {
+   "code": "BL57",
+   "name": "Chéngshān",
+   "loc": "en la cara posterior de la pierna, en la unión del tendón calcáneo con los dos vientres del gastrocnemio (vértice de la depresión en V al extender el pie contra resistencia; ≈ punto medio entre BL40 y BL60).",
+   "prec": "punción a menudo dolorosa; evitar manipulación excesiva.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv20": {
+   "code": "GV20",
+   "name": "Bǎihuì",
+   "loc": "En la cabeza, línea media, 5 cun por detrás de la línea anterior del cabello (clásicamente en la intersección de la línea media con la línea que une los ápices de ambas orejas).",
+   "prec": "En lactantes, precaución con la fontanela anterior abierta. Evitar moxa en hipertensión o ascenso de Yang de Hígado.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "ht8": {
+   "code": "HT8",
+   "name": "Shàofǔ",
+   "loc": "en la palma, entre el 4.º y 5.º metacarpianos, proximal a la 5.ª articulación metacarpofalángica (donde apoya la punta del meñique al cerrar el puño).",
+   "prec": "punción dolorosa.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl14": {
+   "code": "BL14",
+   "name": "Juéyīnshū",
+   "loc": "en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T4, 1,5 cun lateral a la línea media posterior.",
+   "prec": "riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl13": {
+   "code": "BL13",
+   "name": "Fèishū",
+   "loc": "en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T3, 1,5 cun lateral a la línea media posterior.",
+   "prec": "riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "bl17": {
+   "code": "BL17",
+   "name": "Géshū",
+   "loc": "en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T7 (≈ nivel del ángulo inferior de la escápula), 1,5 cun lateral a la línea media posterior.",
+   "prec": "riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sp10": {
+   "code": "SP10",
+   "name": "Xuèhǎi",
+   "loc": "en la cara anteromedial del muslo, sobre el relieve del vasto medial, 2 cun por encima del extremo medial de la base de la rótula.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv3": {
+   "code": "CV3",
+   "name": "Zhōngjí",
+   "loc": "En el abdomen inferior, línea media anterior, 4 cun por debajo del centro del ombligo.",
+   "prec": "Vaciar la vejiga antes; contraindicado en embarazo.",
+   "embarazo": false,
+   "abdomen_bajo": true
+  },
+  "cv4": {
+   "code": "CV4",
+   "name": "Guānyuán",
+   "loc": "En el abdomen inferior, línea media anterior, 3 cun por debajo del centro del ombligo.",
+   "prec": "Vaciar la vejiga antes; contraindicado en embarazo.",
+   "embarazo": false,
+   "abdomen_bajo": true
+  },
+  "cv6": {
+   "code": "CV6",
+   "name": "Qìhǎi",
+   "loc": "En el abdomen inferior, línea media anterior, 1,5 cun por debajo del centro del ombligo.",
+   "prec": "Contraindicado en embarazo.",
+   "embarazo": false,
+   "abdomen_bajo": true
+  },
+  "lr8": {
+   "code": "LR8",
+   "name": "Qūquán",
+   "loc": "Cara medial de la rodilla, en la depresión medial a los tendones del semitendinoso y semimembranoso, en el extremo medial del pliegue poplíteo (rodilla flexionada).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "ki11": {
+   "code": "KI11",
+   "name": "Hénggǔ",
+   "loc": "en el abdomen inferior, 5 cun por debajo del centro del ombligo, 0,5 cun lateral a la línea media anterior (borde superior del pubis).",
+   "prec": "vaciar la vejiga antes; **precaución/evitar en embarazo**; punción profunda puede penetrar la vejiga o el peritoneo.",
+   "embarazo": false,
+   "abdomen_bajo": true
+  },
+  "yaoyan": {
+   "code": "EX-B7",
+   "name": "Yaoyan",
+   "loc": "En la depresión ~3,5 cun lateral al borde inferior de L4",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "lu9": {
+   "code": "LU9",
+   "name": "Tàiyuān",
+   "loc": "en el pliegue palmar de la muñeca, entre la apófisis estiloides del radio y el escafoides, en la depresión cubital al tendón del abductor largo del pulgar y radial a la arteria radial.",
+   "prec": "arteria radial.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "pc4": {
+   "code": "PC4",
+   "name": "Xìmén",
+   "loc": "cara anterior del antebrazo, entre los tendones del palmar largo y el flexor radial del carpo, 5 cun proximal al pliegue palmar de la muñeca.",
+   "prec": "nervio mediano.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "ki1": {
+   "code": "KI1",
+   "name": "Yǒngquán",
+   "loc": "en la planta del pie, en la depresión más profunda al flexionar los dedos; aprox. en la unión del tercio anterior y los dos tercios posteriores de la línea entre la comisura del 2.º-3.er dedo y el talón.",
+   "prec": "punción muy dolorosa; usar con moderación en pacientes débiles.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv16": {
+   "code": "GV16",
+   "name": "Fēngfǔ",
+   "loc": "En la región cervical posterior, directamente bajo la protuberancia occipital externa, en la depresión entre ambos trapecios (1 cun por encima de la línea posterior del cabello).",
+   "prec": "Nunca hacia arriba ni profundo: riesgo de lesionar el bulbo raquídeo a través del foramen magno.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st40": {
+   "code": "ST40",
+   "name": "Fēnglóng",
+   "loc": "en la cara anterolateral de la pierna, en el borde lateral del tibial anterior, 8 cun por encima de la prominencia del maléolo lateral (dos traveses de dedo lateral a la cresta tibial, a nivel de ST38).",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv17": {
+   "code": "CV17",
+   "name": "Dànzhōng",
+   "loc": "En el tórax, línea media anterior, a la altura del 4º espacio intercostal (en el varón, habitualmente entre los pezones).",
+   "prec": "Nunca perpendicular: posible foramen esternal congénito (riesgo de punción de pericardio/corazón).",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv22": {
+   "code": "CV22",
+   "name": "Tiāntū",
+   "loc": "En la parte anterior del cuello, línea media anterior, en el centro de la fosa supraesternal.",
+   "prec": "Técnica estricta: no desviar lateralmente ni en profundidad (riesgo de tráquea, arco aórtico, tronco braquiocefálico y grandes venas, pulmón). No puncionar en perpendicular profundo.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "yaoqi": {
+   "code": "EX-B9",
+   "name": "Yaoqi",
+   "loc": "2 cun por encima de la punta del coxis",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "shixuan": {
+   "code": "EX-UE11",
+   "name": "Shixuan",
+   "loc": "Punta de los 10 dedos, ~0,1 cun del borde de la uña",
+   "prec": null,
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gb8": {
+   "code": "GB8",
+   "name": "Shuàigǔ",
+   "loc": "Directamente por encima del vértice de la oreja, 1,5 cun por encima de la línea del cabello temporal.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "gv25": {
+   "code": "GV25",
+   "name": "Sùliáo",
+   "loc": "En la cara, en la punta de la nariz.",
+   "prec": "Punto doloroso.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "cv15": {
+   "code": "CV15",
+   "name": "Jiūwěi",
+   "loc": "En el abdomen superior, línea media anterior, 1 cun por debajo de la unión xifoesternal (7 cun por encima del ombligo).",
+   "prec": "No puncionar profundo ni hacia arriba (hígado, corazón). Si falta el apéndice xifoides o es largo, localizar por medición desde el ombligo.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st18": {
+   "code": "ST18",
+   "name": "Rǔgēn",
+   "loc": "en el tórax, en el 5.º espacio intercostal, 4 cun lateral a la línea media anterior (en la mujer, en el surco submamario).",
+   "prec": "riesgo de neumotórax con inserción perpendicular profunda; en el lado izquierdo, proximidad del corazón.",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "lr2": {
+   "code": "LR2",
+   "name": "Xíngjiān",
+   "loc": "Dorso del pie, entre el 1.º y 2.º dedos, proximal al borde de la membrana interdigital, en la unión piel roja-blanca.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "sp3": {
+   "code": "SP3",
+   "name": "Tàibái",
+   "loc": "en el borde medial del pie, en la depresión proximal a la 1.ª articulación metatarsofalángica, en el límite piel roja/blanca.",
+   "prec": "—",
+   "embarazo": false,
+   "abdomen_bajo": false
+  },
+  "st25": {
+   "code": "ST25",
+   "name": "Tiānshū",
+   "loc": "en el abdomen, 2 cun lateral al centro del ombligo.",
+   "prec": "precaución en el embarazo (la mayoría de fuentes lo desaconsejan o lo contraindican en el embarazo avanzado); en personas delgadas, riesgo de perforar el peritoneo.",
+   "embarazo": false,
+   "abdomen_bajo": true
+  }
+ },
+ "sections": {
+  "1.1": {
+   "heads": [
+    "Conjuntivitis"
+   ],
+   "idx": [
+    "BL18",
+    "BL2",
+    "GB1",
+    "GB20",
+    "GB43",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "LR2",
+    "LR3",
+    "SI3",
+    "SP6",
+    "TE5",
+    "x:taiyang"
+   ],
+   "book": [
+    "BL1",
+    "GB20",
+    "LI4",
+    "x:yuyao"
+   ],
+   "comun": [
+    "GB20",
+    "LI4"
+   ],
+   "solo_libro": [
+    "BL1",
+    "x:yuyao"
+   ]
+  },
+  "1.3": {
+   "heads": [
+    "Vista cansada"
+   ],
+   "idx": [
+    "BL1",
+    "BL17",
+    "BL18",
+    "BL2",
+    "BL23",
+    "GB20",
+    "GB37",
+    "KI3",
+    "KI6",
+    "LR3",
+    "LR8",
+    "SP6",
+    "ST1",
+    "ST36",
+    "x:qiuhou",
+    "x:taiyang",
+    "x:yuyao"
+   ],
+   "book": [
+    "BL1",
+    "GB20",
+    "ST1",
+    "x:yuyao"
+   ],
+   "comun": [
+    "BL1",
+    "GB20",
+    "ST1",
+    "x:yuyao"
+   ],
+   "solo_libro": []
+  },
+  "1.6": {
+   "heads": [
+    "Acúfenos e hipoacusia"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "GB2",
+    "GB20",
+    "GB39",
+    "GB41",
+    "GB43",
+    "GV20",
+    "KI3",
+    "KI6",
+    "LR2",
+    "LR3",
+    "PC6",
+    "SI19",
+    "ST36",
+    "ST40",
+    "TE17",
+    "TE21",
+    "TE3",
+    "TE5"
+   ],
+   "book": [
+    "CV23",
+    "GV15",
+    "SI19",
+    "TE17"
+   ],
+   "comun": [
+    "SI19",
+    "TE17"
+   ],
+   "solo_libro": [
+    "CV23",
+    "GV15"
+   ]
+  },
+  "1.7": {
+   "heads": [
+    "Acúfenos e hipoacusia"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "GB2",
+    "GB20",
+    "GB39",
+    "GB41",
+    "GB43",
+    "GV20",
+    "KI3",
+    "KI6",
+    "LR2",
+    "LR3",
+    "PC6",
+    "SI19",
+    "ST36",
+    "ST40",
+    "TE17",
+    "TE21",
+    "TE3",
+    "TE5"
+   ],
+   "book": [
+    "GV15",
+    "KI3",
+    "LR3",
+    "TE17"
+   ],
+   "comun": [
+    "KI3",
+    "LR3",
+    "TE17"
+   ],
+   "solo_libro": [
+    "GV15"
+   ]
+  },
+  "1.8": {
+   "heads": [
+    "Mareo y vértigo"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "CV12",
+    "CV6",
+    "GB20",
+    "GB39",
+    "GB43",
+    "GV20",
+    "KI3",
+    "LR3",
+    "PC6",
+    "SP3",
+    "SP6",
+    "ST36",
+    "ST40",
+    "ST8",
+    "x:yintang"
+   ],
+   "book": [
+    "GB20",
+    "SI19",
+    "TE3"
+   ],
+   "comun": [
+    "GB20"
+   ],
+   "solo_libro": [
+    "SI19",
+    "TE3"
+   ]
+  },
+  "1.9": {
+   "heads": [
+    "Resfriado Viento-Frío",
+    "Rinitis"
+   ],
+   "idx": [
+    "BL11",
+    "BL12",
+    "BL13",
+    "BL20",
+    "BL23",
+    "GB20",
+    "GV14",
+    "GV16",
+    "GV23",
+    "GV4",
+    "KI3",
+    "KI7",
+    "LI11",
+    "LI20",
+    "LI4",
+    "LU5",
+    "LU7",
+    "LU9",
+    "SP3",
+    "ST36",
+    "x:yintang"
+   ],
+   "book": [
+    "GV13",
+    "GV23",
+    "LI20",
+    "x:yintang"
+   ],
+   "comun": [
+    "GV23",
+    "LI20",
+    "x:yintang"
+   ],
+   "solo_libro": [
+    "GV13"
+   ]
+  },
+  "1.10": {
+   "heads": [
+    "Sinusitis"
+   ],
+   "idx": [
+    "BL13",
+    "BL2",
+    "BL20",
+    "GB20",
+    "GB43",
+    "GV23",
+    "LI11",
+    "LI20",
+    "LI4",
+    "LU7",
+    "LU9",
+    "SP9",
+    "ST3",
+    "ST36",
+    "ST40",
+    "ST44",
+    "x:yintang",
+    "x:yuyao"
+   ],
+   "book": [
+    "BL2",
+    "GV23",
+    "LI20",
+    "ST2"
+   ],
+   "comun": [
+    "BL2",
+    "GV23",
+    "LI20"
+   ],
+   "solo_libro": [
+    "ST2"
+   ]
+  },
+  "1.11": {
+   "heads": [
+    "Resfriado Viento-Frío",
+    "Resfriado Viento-Calor"
+   ],
+   "idx": [
+    "BL11",
+    "BL12",
+    "BL13",
+    "GB20",
+    "GV14",
+    "GV16",
+    "KI7",
+    "LI1",
+    "LI11",
+    "LI4",
+    "LU10",
+    "LU11",
+    "LU5",
+    "LU7",
+    "TE5"
+   ],
+   "book": [
+    "GB20",
+    "GB21",
+    "GV13",
+    "LI20",
+    "TE5",
+    "x:yintang"
+   ],
+   "comun": [
+    "GB20",
+    "TE5"
+   ],
+   "solo_libro": [
+    "GB21",
+    "GV13",
+    "LI20",
+    "x:yintang"
+   ]
+  },
+  "1.12": {
+   "heads": [
+    "Aftas"
+   ],
+   "idx": [
+    "CV24",
+    "HT5",
+    "HT8",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "PC8",
+    "SP6",
+    "ST44"
+   ],
+   "book": [
+    "CV23",
+    "LI4",
+    "ST45",
+    "ST6"
+   ],
+   "comun": [
+    "LI4"
+   ],
+   "solo_libro": [
+    "CV23",
+    "ST45",
+    "ST6"
+   ]
+  },
+  "1.13": {
+   "heads": [
+    "Dolor de muelas"
+   ],
+   "idx": [
+    "CV24",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI2",
+    "LI4",
+    "SI18",
+    "ST2",
+    "ST44",
+    "ST45",
+    "ST6",
+    "ST7",
+    "TE5"
+   ],
+   "book": [
+    "CV23",
+    "GV26",
+    "LI1",
+    "LI11",
+    "LI4",
+    "ST6"
+   ],
+   "comun": [
+    "LI11",
+    "LI4",
+    "ST6"
+   ],
+   "solo_libro": [
+    "CV23",
+    "GV26",
+    "LI1"
+   ]
+  },
+  "1.14": {
+   "heads": [
+    "Dolor de garganta"
+   ],
+   "idx": [
+    "CV22",
+    "KI3",
+    "KI6",
+    "LI1",
+    "LI11",
+    "LI4",
+    "LU10",
+    "LU11",
+    "LU7",
+    "SI17",
+    "ST44",
+    "TE1"
+   ],
+   "book": [
+    "LI4",
+    "LU11",
+    "ST45",
+    "ST6"
+   ],
+   "comun": [
+    "LI4",
+    "LU11"
+   ],
+   "solo_libro": [
+    "ST45",
+    "ST6"
+   ]
+  },
+  "2.2": {
+   "heads": [
+    "Diabetes"
+   ],
+   "idx": [
+    "BL13",
+    "BL20",
+    "BL21",
+    "BL23",
+    "CV12",
+    "CV4",
+    "KI3",
+    "KI6",
+    "LU10",
+    "LU9",
+    "SP6",
+    "ST36",
+    "ST44"
+   ],
+   "book": [
+    "BL17",
+    "KI3",
+    "ST36"
+   ],
+   "comun": [
+    "KI3",
+    "ST36"
+   ],
+   "solo_libro": [
+    "BL17"
+   ]
+  },
+  "2.3": {
+   "heads": [
+    "Obesidad"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "CV12",
+    "CV4",
+    "CV6",
+    "CV9",
+    "GV4",
+    "KI7",
+    "LI11",
+    "LI4",
+    "LR3",
+    "PC6",
+    "SP3",
+    "SP6",
+    "SP9",
+    "ST25",
+    "ST28",
+    "ST36",
+    "ST37",
+    "ST40",
+    "ST44"
+   ],
+   "book": [
+    "GB25",
+    "ST36"
+   ],
+   "comun": [
+    "ST36"
+   ],
+   "solo_libro": [
+    "GB25"
+   ]
+  },
+  "3.1": {
+   "heads": [
+    "Síndrome Bi"
+   ],
+   "idx": [
+    "BL11",
+    "BL12",
+    "BL17",
+    "BL23",
+    "BL60",
+    "CV4",
+    "GB20",
+    "GB30",
+    "GB34",
+    "GB39",
+    "GB40",
+    "GV14",
+    "GV4",
+    "KI3",
+    "LI11",
+    "LI15",
+    "LI4",
+    "LI5",
+    "LU5",
+    "SI10",
+    "SI4",
+    "SP10",
+    "SP5",
+    "SP6",
+    "SP9",
+    "ST36",
+    "ST41",
+    "TE10",
+    "TE14",
+    "TE4",
+    "x:bafeng"
+   ],
+   "book": [
+    "SP5",
+    "TE8",
+    "x:dingchuan"
+   ],
+   "comun": [
+    "SP5"
+   ],
+   "solo_libro": [
+    "TE8",
+    "x:dingchuan"
+   ]
+  },
+  "3.2": {
+   "heads": [
+    "Tortícolis"
+   ],
+   "idx": [
+    "BL10",
+    "BL60",
+    "GB20",
+    "GB21",
+    "GB39",
+    "SI15",
+    "SI3",
+    "SI6",
+    "TE5",
+    "x:wailaogong"
+   ],
+   "book": [
+    "SI3",
+    "x:wailaogong"
+   ],
+   "comun": [
+    "SI3",
+    "x:wailaogong"
+   ],
+   "solo_libro": []
+  },
+  "3.3": {
+   "heads": [
+    "Hombro doloroso"
+   ],
+   "idx": [
+    "BL17",
+    "BL20",
+    "BL57",
+    "BL58",
+    "GB20",
+    "GB34",
+    "LI11",
+    "LI15",
+    "LI4",
+    "LR3",
+    "LU1",
+    "LU2",
+    "SI10",
+    "SI11",
+    "SI12",
+    "SI3",
+    "SI9",
+    "SP6",
+    "SP9",
+    "ST36",
+    "ST38",
+    "TE13",
+    "TE14",
+    "TE5",
+    "x:taiyang"
+   ],
+   "book": [
+    "LI15"
+   ],
+   "comun": [
+    "LI15"
+   ],
+   "solo_libro": []
+  },
+  "3.4": {
+   "heads": [
+    "Epicondilitis lateral"
+   ],
+   "idx": [
+    "LI10",
+    "LI11",
+    "LI12",
+    "LI15",
+    "LI4",
+    "ST36",
+    "TE5"
+   ],
+   "book": [
+    "LI10",
+    "LI11",
+    "LI4"
+   ],
+   "comun": [
+    "LI10",
+    "LI11",
+    "LI4"
+   ],
+   "solo_libro": []
+  },
+  "3.5": {
+   "heads": [
+    "Túnel carpiano"
+   ],
+   "idx": [
+    "LI11",
+    "LI4",
+    "LI5",
+    "LU9",
+    "PC3",
+    "PC6",
+    "PC7",
+    "SI4",
+    "TE4",
+    "TE5"
+   ],
+   "book": [
+    "HT7",
+    "PC7",
+    "TE5"
+   ],
+   "comun": [
+    "PC7",
+    "TE5"
+   ],
+   "solo_libro": [
+    "HT7"
+   ]
+  },
+  "3.7": {
+   "heads": [
+    "Dorsalgia"
+   ],
+   "idx": [
+    "BL11",
+    "BL17",
+    "BL40",
+    "BL41",
+    "BL46",
+    "BL58",
+    "BL60",
+    "GV12",
+    "SI11",
+    "SI3",
+    "SI6"
+   ],
+   "book": [
+    "TE3"
+   ],
+   "comun": [],
+   "solo_libro": [
+    "TE3"
+   ]
+  },
+  "3.8": {
+   "heads": [
+    "Lumbalgia aguda"
+   ],
+   "idx": [
+    "BL23",
+    "BL25",
+    "BL40",
+    "BL52",
+    "BL57",
+    "BL60",
+    "BL62",
+    "GV26",
+    "SI3",
+    "SI6",
+    "x:yaoyan"
+   ],
+   "book": [
+    "BL40",
+    "BL60",
+    "GV26"
+   ],
+   "comun": [
+    "BL40",
+    "BL60",
+    "GV26"
+   ],
+   "solo_libro": []
+  },
+  "3.9": {
+   "heads": [
+    "Ciática"
+   ],
+   "idx": [
+    "BL17",
+    "BL23",
+    "BL25",
+    "BL26",
+    "BL36",
+    "BL37",
+    "BL40",
+    "BL54",
+    "BL57",
+    "BL60",
+    "BL62",
+    "GB30",
+    "GB31",
+    "GB34",
+    "GB39",
+    "GB40",
+    "GB41",
+    "GV4",
+    "KI3",
+    "SP6",
+    "SP9",
+    "x:taiyang"
+   ],
+   "book": [
+    "BL67",
+    "GB30",
+    "LR1"
+   ],
+   "comun": [
+    "GB30"
+   ],
+   "solo_libro": [
+    "BL67",
+    "LR1"
+   ]
+  },
+  "3.10": {
+   "heads": [
+    "Dolor de cadera"
+   ],
+   "idx": [
+    "BL54",
+    "GB29",
+    "GB30",
+    "GB31",
+    "GB34",
+    "GB39",
+    "GB41"
+   ],
+   "book": [
+    "GB30",
+    "SP9"
+   ],
+   "comun": [
+    "GB30"
+   ],
+   "solo_libro": [
+    "SP9"
+   ]
+  },
+  "3.11": {
+   "heads": [
+    "Dolor de rodilla"
+   ],
+   "idx": [
+    "BL17",
+    "BL23",
+    "BL40",
+    "GB34",
+    "GB39",
+    "KI10",
+    "KI3",
+    "LI11",
+    "LR8",
+    "SP10",
+    "SP6",
+    "SP9",
+    "ST34",
+    "ST35",
+    "ST36",
+    "ST44",
+    "x:taiyang"
+   ],
+   "book": [
+    "ST34"
+   ],
+   "comun": [
+    "ST34"
+   ],
+   "solo_libro": []
+  },
+  "3.12": {
+   "heads": [
+    "Esguince de tobillo"
+   ],
+   "idx": [
+    "BL60",
+    "BL62",
+    "GB34",
+    "GB40",
+    "KI3",
+    "KI6",
+    "LI5",
+    "SP5",
+    "ST41",
+    "TE4"
+   ],
+   "book": [
+    "GB39",
+    "SP6"
+   ],
+   "comun": [],
+   "solo_libro": [
+    "GB39",
+    "SP6"
+   ]
+  },
+  "3.13": {
+   "heads": [
+    "Talalgia"
+   ],
+   "idx": [
+    "BL23",
+    "BL57",
+    "BL60",
+    "BL61",
+    "BL62",
+    "KI3",
+    "KI5",
+    "KI6",
+    "KI7",
+    "PC7"
+   ],
+   "book": [
+    "ST42",
+    "x:bafeng"
+   ],
+   "comun": [],
+   "solo_libro": [
+    "ST42",
+    "x:bafeng"
+   ]
+  },
+  "4.1": {
+   "heads": [
+    "Náusea y vómito"
+   ],
+   "idx": [
+    "BL21",
+    "CV10",
+    "CV12",
+    "CV13",
+    "GB34",
+    "LR14",
+    "LR3",
+    "PC6",
+    "SP3",
+    "SP4",
+    "ST21",
+    "ST34",
+    "ST36",
+    "ST44"
+   ],
+   "book": [
+    "CV12",
+    "x:sifeng"
+   ],
+   "comun": [
+    "CV12"
+   ],
+   "solo_libro": [
+    "x:sifeng"
+   ]
+  },
+  "4.2": {
+   "heads": [
+    "Dolor de hipocondrio y biliar"
+   ],
+   "idx": [
+    "BL17",
+    "BL18",
+    "BL19",
+    "GB24",
+    "GB34",
+    "GB36",
+    "GB40",
+    "GV9",
+    "LR14",
+    "LR2",
+    "LR3",
+    "SP6",
+    "SP9",
+    "TE6"
+   ],
+   "book": [
+    "GB34",
+    "SP9",
+    "x:yaoyan"
+   ],
+   "comun": [
+    "GB34",
+    "SP9"
+   ],
+   "solo_libro": [
+    "x:yaoyan"
+   ]
+  },
+  "4.4": {
+   "heads": [
+    "Dolor epigástrico"
+   ],
+   "idx": [
+    "BL17",
+    "BL20",
+    "BL21",
+    "CV10",
+    "CV12",
+    "CV6",
+    "GB34",
+    "KI6",
+    "LI11",
+    "LR14",
+    "LR3",
+    "PC6",
+    "SP4",
+    "SP6",
+    "ST21",
+    "ST34",
+    "ST36",
+    "ST44"
+   ],
+   "book": [
+    "CV12",
+    "PC6",
+    "ST36"
+   ],
+   "comun": [
+    "CV12",
+    "PC6",
+    "ST36"
+   ],
+   "solo_libro": []
+  },
+  "4.5": {
+   "heads": [
+    "Estreñimiento"
+   ],
+   "idx": [
+    "BL17",
+    "BL20",
+    "BL21",
+    "BL23",
+    "BL25",
+    "CV4",
+    "CV6",
+    "GB34",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "LR3",
+    "SP15",
+    "SP3",
+    "SP6",
+    "ST25",
+    "ST36",
+    "ST37",
+    "ST44",
+    "TE6"
+   ],
+   "book": [
+    "GB34",
+    "LR1",
+    "SP9",
+    "ST25"
+   ],
+   "comun": [
+    "GB34",
+    "ST25"
+   ],
+   "solo_libro": [
+    "LR1",
+    "SP9"
+   ]
+  },
+  "4.6": {
+   "heads": [
+    "Diarrea"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "BL25",
+    "CV10",
+    "CV12",
+    "CV4",
+    "CV6",
+    "CV8",
+    "GV4",
+    "KI3",
+    "LI11",
+    "LI4",
+    "LR13",
+    "LR3",
+    "SP3",
+    "SP6",
+    "SP9",
+    "ST21",
+    "ST25",
+    "ST36",
+    "ST37",
+    "ST44"
+   ],
+   "book": [
+    "CV6",
+    "LI11",
+    "ST36"
+   ],
+   "comun": [
+    "CV6",
+    "LI11",
+    "ST36"
+   ],
+   "solo_libro": []
+  },
+  "4.7": {
+   "heads": [
+    "Hemorroides"
+   ],
+   "idx": [
+    "BL17",
+    "BL20",
+    "BL25",
+    "BL30",
+    "BL35",
+    "BL40",
+    "BL57",
+    "CV6",
+    "GV1",
+    "GV20",
+    "LI11",
+    "SP10",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "BL57",
+    "GV1",
+    "GV20",
+    "GV26"
+   ],
+   "comun": [
+    "BL57",
+    "GV1",
+    "GV20"
+   ],
+   "solo_libro": [
+    "GV26"
+   ]
+  },
+  "5.1": {
+   "heads": [
+    "Hipertensión"
+   ],
+   "idx": [
+    "BL23",
+    "CV12",
+    "CV4",
+    "GB20",
+    "GB34",
+    "GV20",
+    "KI1",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LR2",
+    "LR3",
+    "PC6",
+    "SP6",
+    "SP9",
+    "ST36",
+    "ST40",
+    "ST9"
+   ],
+   "book": [
+    "GB20",
+    "LI11",
+    "LR3",
+    "ST36"
+   ],
+   "comun": [
+    "GB20",
+    "LI11",
+    "LR3",
+    "ST36"
+   ],
+   "solo_libro": []
+  },
+  "6.1": {
+   "heads": [
+    "Cólico renal"
+   ],
+   "idx": [
+    "BL23",
+    "BL28",
+    "BL39",
+    "BL52",
+    "BL63",
+    "CV3",
+    "GB25",
+    "KI5",
+    "SP6",
+    "SP9"
+   ],
+   "book": [
+    "BL57",
+    "KI3",
+    "SP9",
+    "x:yaoyan"
+   ],
+   "comun": [
+    "SP9"
+   ],
+   "solo_libro": [
+    "BL57",
+    "KI3",
+    "x:yaoyan"
+   ]
+  },
+  "6.2": {
+   "heads": [
+    "Cistitis"
+   ],
+   "idx": [
+    "BL23",
+    "BL28",
+    "BL39",
+    "BL63",
+    "CV3",
+    "CV4",
+    "KI2",
+    "KI3",
+    "LR2",
+    "LR5",
+    "SP10",
+    "SP6",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "CV3",
+    "LR8",
+    "x:yaoyan"
+   ],
+   "comun": [
+    "CV3"
+   ],
+   "solo_libro": [
+    "LR8",
+    "x:yaoyan"
+   ]
+  },
+  "6.3": {
+   "heads": [
+    "Retención urinaria",
+    "Incontinencia urinaria"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "BL28",
+    "BL32",
+    "BL33",
+    "BL39",
+    "BL52",
+    "BL63",
+    "CV2",
+    "CV3",
+    "CV4",
+    "CV6",
+    "GV20",
+    "GV4",
+    "KI3",
+    "KI7",
+    "LR3",
+    "LR8",
+    "LU9",
+    "SP6",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "BL67",
+    "KI11"
+   ],
+   "comun": [],
+   "solo_libro": [
+    "BL67",
+    "KI11"
+   ]
+  },
+  "6.4": {
+   "heads": [
+    "Enuresis"
+   ],
+   "idx": [
+    "BL13",
+    "BL20",
+    "BL23",
+    "BL28",
+    "CV3",
+    "CV4",
+    "GV20",
+    "HT7",
+    "KI3",
+    "LR1",
+    "LR2",
+    "LU9",
+    "SP6",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "CV4",
+    "GV20",
+    "SP6",
+    "SP9"
+   ],
+   "comun": [
+    "CV4",
+    "GV20",
+    "SP6",
+    "SP9"
+   ],
+   "solo_libro": []
+  },
+  "7.1": {
+   "heads": [
+    "Cefalea"
+   ],
+   "idx": [
+    "BL12",
+    "BL17",
+    "BL20",
+    "BL23",
+    "CV12",
+    "GB20",
+    "GB38",
+    "GB39",
+    "GB43",
+    "GV14",
+    "GV20",
+    "KI3",
+    "LI11",
+    "LI4",
+    "LR3",
+    "LU7",
+    "PC6",
+    "SP10",
+    "SP6",
+    "ST36",
+    "ST40",
+    "ST8",
+    "TE5",
+    "x:taiyang"
+   ],
+   "book": [
+    "GB20",
+    "GB39",
+    "LU9",
+    "SI3"
+   ],
+   "comun": [
+    "GB20",
+    "GB39"
+   ],
+   "solo_libro": [
+    "LU9",
+    "SI3"
+   ]
+  },
+  "7.2": {
+   "heads": [
+    "Neuralgia del trigémino"
+   ],
+   "idx": [
+    "BL2",
+    "CV24",
+    "GB14",
+    "GB20",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI20",
+    "LI4",
+    "LR2",
+    "LR3",
+    "SI18",
+    "SI3",
+    "SP6",
+    "ST2",
+    "ST3",
+    "ST44",
+    "ST5",
+    "ST6",
+    "ST7",
+    "TE23",
+    "TE5",
+    "x:taiyang",
+    "x:yuyao"
+   ],
+   "book": [
+    "BL2",
+    "LU9",
+    "ST2"
+   ],
+   "comun": [
+    "BL2",
+    "ST2"
+   ],
+   "solo_libro": [
+    "LU9"
+   ]
+  },
+  "7.3": {
+   "heads": [
+    "Dolor intercostal",
+    "Dolor torácico"
+   ],
+   "idx": [
+    "BL14",
+    "BL15",
+    "BL17",
+    "CV12",
+    "CV17",
+    "CV6",
+    "GB34",
+    "GV14",
+    "HT5",
+    "HT7",
+    "LR14",
+    "LR3",
+    "PC4",
+    "PC5",
+    "PC6",
+    "SP21",
+    "SP4",
+    "SP6",
+    "ST40",
+    "TE6"
+   ],
+   "book": [
+    "GB25",
+    "SP9",
+    "TE8"
+   ],
+   "comun": [],
+   "solo_libro": [
+    "GB25",
+    "SP9",
+    "TE8"
+   ]
+  },
+  "8.2": {
+   "heads": [
+    "Eccema"
+   ],
+   "idx": [
+    "BL13",
+    "BL17",
+    "BL20",
+    "BL40",
+    "GB20",
+    "GB31",
+    "GV14",
+    "KI6",
+    "LI11",
+    "LI4",
+    "SP10",
+    "SP3",
+    "SP6",
+    "SP9",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "BL13",
+    "BL40",
+    "LI11",
+    "SP10"
+   ],
+   "comun": [
+    "BL13",
+    "BL40",
+    "LI11",
+    "SP10"
+   ],
+   "solo_libro": []
+  },
+  "8.3": {
+   "heads": [
+    "Urticaria"
+   ],
+   "idx": [
+    "BL12",
+    "BL17",
+    "BL20",
+    "BL40",
+    "GB20",
+    "GB31",
+    "GV14",
+    "LI11",
+    "LI4",
+    "LU7",
+    "SP10",
+    "SP6",
+    "ST25",
+    "ST36",
+    "ST44"
+   ],
+   "book": [
+    "BL13",
+    "BL40",
+    "GV16",
+    "LI11"
+   ],
+   "comun": [
+    "BL40",
+    "LI11"
+   ],
+   "solo_libro": [
+    "BL13",
+    "GV16"
+   ]
+  },
+  "8.4": {
+   "heads": [
+    "Herpes zóster"
+   ],
+   "idx": [
+    "BL17",
+    "GB34",
+    "GB43",
+    "LI11",
+    "LI4",
+    "LR2",
+    "LR3",
+    "SP10",
+    "SP6",
+    "SP9",
+    "TE6"
+   ],
+   "book": [
+    "BL67",
+    "GB20",
+    "LI4",
+    "PC4",
+    "ST45"
+   ],
+   "comun": [
+    "LI4"
+   ],
+   "solo_libro": [
+    "BL67",
+    "GB20",
+    "PC4",
+    "ST45"
+   ]
+  },
+  "9.1": {
+   "heads": [
+    "Asma"
+   ],
+   "idx": [
+    "BL12",
+    "BL13",
+    "BL23",
+    "BL43",
+    "CV17",
+    "CV22",
+    "CV4",
+    "CV6",
+    "GV4",
+    "KI25",
+    "KI3",
+    "KI7",
+    "LU1",
+    "LU10",
+    "LU5",
+    "LU6",
+    "LU7",
+    "LU9",
+    "PC6",
+    "ST36",
+    "ST40",
+    "x:dingchuan"
+   ],
+   "book": [
+    "BL13",
+    "CV17",
+    "ST40"
+   ],
+   "comun": [
+    "BL13",
+    "CV17",
+    "ST40"
+   ],
+   "solo_libro": []
+  },
+  "9.2": {
+   "heads": [
+    "Tos aguda",
+    "Tos crónica"
+   ],
+   "idx": [
+    "BL12",
+    "BL13",
+    "BL20",
+    "BL43",
+    "CV12",
+    "CV17",
+    "CV22",
+    "CV6",
+    "GV14",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "LR14",
+    "LR2",
+    "LU1",
+    "LU10",
+    "LU5",
+    "LU6",
+    "LU7",
+    "LU9",
+    "PC6",
+    "SP3",
+    "SP6",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "BL13",
+    "GV14",
+    "LI4",
+    "LU9",
+    "ST40",
+    "x:dingchuan"
+   ],
+   "comun": [
+    "BL13",
+    "GV14",
+    "LI4",
+    "LU9",
+    "ST40"
+   ],
+   "solo_libro": [
+    "x:dingchuan"
+   ]
+  },
+  "9.3": {
+   "heads": [
+    "Tos aguda",
+    "Tos crónica"
+   ],
+   "idx": [
+    "BL12",
+    "BL13",
+    "BL20",
+    "BL43",
+    "CV12",
+    "CV17",
+    "CV22",
+    "CV6",
+    "GV14",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "LR14",
+    "LR2",
+    "LU1",
+    "LU10",
+    "LU5",
+    "LU6",
+    "LU7",
+    "LU9",
+    "PC6",
+    "SP3",
+    "SP6",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "CV22",
+    "LI4",
+    "LU9",
+    "x:sifeng"
+   ],
+   "comun": [
+    "CV22",
+    "LI4",
+    "LU9"
+   ],
+   "solo_libro": [
+    "x:sifeng"
+   ]
+  },
+  "10.1": {
+   "heads": [
+    "Síncope y primeros auxilios"
+   ],
+   "idx": [
+    "CV4",
+    "CV6",
+    "CV8",
+    "GV20",
+    "GV26",
+    "KI1",
+    "PC6",
+    "PC9",
+    "ST36",
+    "x:shixuan"
+   ],
+   "book": [
+    "KI1",
+    "x:shixuan"
+   ],
+   "comun": [
+    "KI1",
+    "x:shixuan"
+   ],
+   "solo_libro": []
+  },
+  "10.2": {
+   "heads": [
+    "Epilepsia"
+   ],
+   "idx": [
+    "BL18",
+    "BL23",
+    "BL62",
+    "GB20",
+    "GV14",
+    "GV20",
+    "GV26",
+    "KI3",
+    "KI6",
+    "LR2",
+    "LR3",
+    "PC5",
+    "PC7",
+    "SI3",
+    "ST40",
+    "x:yaoqi"
+   ],
+   "book": [
+    "GV16",
+    "GV20",
+    "x:yaoqi"
+   ],
+   "comun": [
+    "GV20",
+    "x:yaoqi"
+   ],
+   "solo_libro": [
+    "GV16"
+   ]
+  },
+  "10.3": {
+   "heads": [
+    "Parálisis facial"
+   ],
+   "idx": [
+    "BL2",
+    "BL20",
+    "CV24",
+    "GB14",
+    "GB20",
+    "GV26",
+    "LI20",
+    "LI4",
+    "LR3",
+    "SI18",
+    "SP6",
+    "ST2",
+    "ST36",
+    "ST4",
+    "ST44",
+    "ST6",
+    "ST7",
+    "TE17",
+    "x:taiyang",
+    "x:yuyao"
+   ],
+   "book": [
+    "BL1",
+    "GB14",
+    "GB20",
+    "LU9"
+   ],
+   "comun": [
+    "GB14",
+    "GB20"
+   ],
+   "solo_libro": [
+    "BL1",
+    "LU9"
+   ]
+  },
+  "10.4": {
+   "heads": [
+    "Secuelas de ACV"
+   ],
+   "idx": [
+    "BL17",
+    "BL40",
+    "CV12",
+    "CV23",
+    "CV6",
+    "GB20",
+    "GB30",
+    "GB34",
+    "GB39",
+    "GV15",
+    "GV20",
+    "GV26",
+    "HT3",
+    "HT5",
+    "KI10",
+    "KI3",
+    "LI11",
+    "LI15",
+    "LI4",
+    "LR3",
+    "LR8",
+    "LU5",
+    "PC3",
+    "PC6",
+    "SI3",
+    "SP3",
+    "SP6",
+    "ST31",
+    "ST32",
+    "ST36",
+    "ST4",
+    "ST40",
+    "ST41",
+    "ST6",
+    "TE14",
+    "TE5",
+    "x:bafeng"
+   ],
+   "book": [
+    "GB21",
+    "GB30",
+    "GB34",
+    "GV16",
+    "GV20",
+    "LI11",
+    "TE8",
+    "x:bafeng"
+   ],
+   "comun": [
+    "GB30",
+    "GB34",
+    "GV20",
+    "LI11",
+    "x:bafeng"
+   ],
+   "solo_libro": [
+    "GB21",
+    "GV16",
+    "TE8"
+   ]
+  },
+  "10.5": {
+   "heads": [
+    "Adicciones y tabaquismo"
+   ],
+   "idx": [
+    "GV20",
+    "HT7",
+    "LI4",
+    "LR3",
+    "LU7",
+    "LU9",
+    "PC6",
+    "SP6",
+    "ST36",
+    "x:yintang"
+   ],
+   "book": [
+    "GB20",
+    "GB8",
+    "GV25",
+    "x:yintang"
+   ],
+   "comun": [
+    "x:yintang"
+   ],
+   "solo_libro": [
+    "GB20",
+    "GB8",
+    "GV25"
+   ]
+  },
+  "10.6": {
+   "heads": [
+    "Depresión"
+   ],
+   "idx": [
+    "BL15",
+    "BL20",
+    "BL23",
+    "BL42",
+    "BL44",
+    "BL47",
+    "BL49",
+    "BL52",
+    "CV17",
+    "CV22",
+    "GB34",
+    "GV20",
+    "GV4",
+    "HT6",
+    "HT7",
+    "KI3",
+    "KI6",
+    "LI4",
+    "LR14",
+    "LR2",
+    "LR3",
+    "PC6",
+    "PC7",
+    "SP6",
+    "ST36",
+    "ST40",
+    "TE6",
+    "x:yintang"
+   ],
+   "book": [
+    "GV20"
+   ],
+   "comun": [
+    "GV20"
+   ],
+   "solo_libro": []
+  },
+  "10.7": {
+   "heads": [
+    "Agitación y manía"
+   ],
+   "idx": [
+    "BL15",
+    "GV14",
+    "GV20",
+    "GV26",
+    "HT7",
+    "HT8",
+    "LI11",
+    "LR2",
+    "LR3",
+    "PC5",
+    "PC7",
+    "ST40",
+    "ST45"
+   ],
+   "book": [
+    "CV15",
+    "GV20",
+    "GV26",
+    "x:yintang"
+   ],
+   "comun": [
+    "GV20",
+    "GV26"
+   ],
+   "solo_libro": [
+    "CV15",
+    "x:yintang"
+   ]
+  },
+  "11.1": {
+   "heads": [
+    "Impotencia"
+   ],
+   "idx": [
+    "BL15",
+    "BL20",
+    "BL23",
+    "BL32",
+    "BL52",
+    "CV3",
+    "CV4",
+    "CV6",
+    "GV20",
+    "GV4",
+    "HT7",
+    "KI12",
+    "KI3",
+    "KI7",
+    "LR3",
+    "LR5",
+    "PC6",
+    "SP6",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "CV4",
+    "HT7",
+    "SP6"
+   ],
+   "comun": [
+    "CV4",
+    "HT7",
+    "SP6"
+   ],
+   "solo_libro": []
+  },
+  "11.3": {
+   "heads": [
+    "Mastitis"
+   ],
+   "idx": [
+    "GB21",
+    "LI11",
+    "LI4",
+    "LR14",
+    "LR3",
+    "PC6",
+    "SI1",
+    "ST18",
+    "ST34",
+    "ST36",
+    "ST44"
+   ],
+   "book": [
+    "CV17",
+    "LI10",
+    "ST18",
+    "ST34"
+   ],
+   "comun": [
+    "ST18",
+    "ST34"
+   ],
+   "solo_libro": [
+    "CV17",
+    "LI10"
+   ]
+  },
+  "11.4": {
+   "heads": [
+    "Náusea del embarazo"
+   ],
+   "idx": [
+    "CV12",
+    "CV13",
+    "KI21",
+    "LR3",
+    "PC6",
+    "SP4",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "CV12",
+    "PC6"
+   ],
+   "comun": [
+    "CV12",
+    "PC6"
+   ],
+   "solo_libro": []
+  },
+  "11.5": {
+   "heads": [
+    "Amenorrea"
+   ],
+   "idx": [
+    "BL17",
+    "BL18",
+    "BL20",
+    "BL23",
+    "CV12",
+    "CV3",
+    "CV4",
+    "GV4",
+    "KI3",
+    "KI6",
+    "LI4",
+    "LR3",
+    "SP10",
+    "SP6",
+    "SP9",
+    "ST28",
+    "ST29",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "CV6",
+    "SP6",
+    "x:yaoyan"
+   ],
+   "comun": [
+    "SP6"
+   ],
+   "solo_libro": [
+    "CV6",
+    "x:yaoyan"
+   ]
+  },
+  "11.6": {
+   "heads": [
+    "Dismenorrea",
+    "Síndrome premenstrual",
+    "Menstruación irregular"
+   ],
+   "idx": [
+    "BL17",
+    "BL18",
+    "BL20",
+    "BL23",
+    "BL32",
+    "CV17",
+    "CV3",
+    "CV4",
+    "CV6",
+    "GB34",
+    "GB41",
+    "HT7",
+    "KI3",
+    "KI6",
+    "LI11",
+    "LI4",
+    "LR14",
+    "LR2",
+    "LR3",
+    "LR5",
+    "LR8",
+    "LU7",
+    "PC5",
+    "PC6",
+    "SP1",
+    "SP10",
+    "SP4",
+    "SP6",
+    "SP8",
+    "SP9",
+    "ST18",
+    "ST29",
+    "ST36",
+    "ST40",
+    "x:yintang"
+   ],
+   "book": [
+    "CV4",
+    "GB34",
+    "KI11",
+    "LR2",
+    "SP10",
+    "SP6"
+   ],
+   "comun": [
+    "CV4",
+    "GB34",
+    "LR2",
+    "SP10",
+    "SP6"
+   ],
+   "solo_libro": [
+    "KI11"
+   ]
+  },
+  "11.7": {
+   "heads": [
+    "Menorragia y metrorragia"
+   ],
+   "idx": [
+    "BL17",
+    "BL20",
+    "BL23",
+    "CV4",
+    "CV6",
+    "GV20",
+    "KI2",
+    "KI3",
+    "KI8",
+    "LI11",
+    "LR1",
+    "LR2",
+    "SP1",
+    "SP10",
+    "SP6",
+    "SP8",
+    "ST36"
+   ],
+   "book": [
+    "GV20",
+    "LR1",
+    "SP3"
+   ],
+   "comun": [
+    "GV20",
+    "LR1"
+   ],
+   "solo_libro": [
+    "SP3"
+   ]
+  },
+  "11.8": {
+   "heads": [
+    "Prolapso uterino"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "CV4",
+    "CV6",
+    "GV20",
+    "KI6",
+    "LR8",
+    "SP6",
+    "ST36"
+   ],
+   "book": [
+    "GV20",
+    "KI11",
+    "LR8"
+   ],
+   "comun": [
+    "GV20",
+    "LR8"
+   ],
+   "solo_libro": [
+    "KI11"
+   ]
+  },
+  "11.9": {
+   "heads": [
+    "Leucorrea"
+   ],
+   "idx": [
+    "BL20",
+    "BL23",
+    "BL30",
+    "BL32",
+    "CV3",
+    "CV4",
+    "CV6",
+    "GB26",
+    "KI3",
+    "LR2",
+    "LR5",
+    "SP6",
+    "SP9",
+    "ST36"
+   ],
+   "book": [
+    "GV26",
+    "LR2",
+    "SP9"
+   ],
+   "comun": [
+    "LR2",
+    "SP9"
+   ],
+   "solo_libro": [
+    "GV26"
+   ]
+  },
+  "12.1": {
+   "heads": [
+    "Fatiga"
+   ],
+   "idx": [
+    "BL13",
+    "BL17",
+    "BL20",
+    "BL23",
+    "BL43",
+    "CV12",
+    "CV4",
+    "CV6",
+    "GB34",
+    "GV20",
+    "GV4",
+    "KI3",
+    "LI4",
+    "LR3",
+    "LR8",
+    "LU9",
+    "SP3",
+    "SP6",
+    "SP9",
+    "ST36",
+    "ST40"
+   ],
+   "book": [
+    "CV6",
+    "ST36"
+   ],
+   "comun": [
+    "CV6",
+    "ST36"
+   ],
+   "solo_libro": []
+  },
+  "12.2": {
+   "heads": [
+    "Insomnio"
+   ],
+   "idx": [
+    "BL15",
+    "BL19",
+    "BL20",
+    "BL62",
+    "CV12",
+    "GB20",
+    "GB40",
+    "GB44",
+    "GV20",
+    "HT6",
+    "HT7",
+    "HT8",
+    "KI3",
+    "KI6",
+    "LR2",
+    "PC5",
+    "PC6",
+    "PC7",
+    "SP1",
+    "SP6",
+    "ST36",
+    "ST40",
+    "ST44",
+    "ST45",
+    "TE17",
+    "x:yintang"
+   ],
+   "book": [
+    "SP3",
+    "ST45"
+   ],
+   "comun": [
+    "ST45"
+   ],
+   "solo_libro": [
+    "SP3"
+   ]
+  },
+  "12.3": {
+   "heads": [
+    "Ansiedad"
+   ],
+   "idx": [
+    "BL15",
+    "BL17",
+    "CV14",
+    "CV15",
+    "CV17",
+    "GB13",
+    "GB34",
+    "GB40",
+    "GV20",
+    "GV24",
+    "HT6",
+    "HT7",
+    "HT8",
+    "KI3",
+    "KI6",
+    "LI4",
+    "LR3",
+    "PC5",
+    "PC6",
+    "SP6",
+    "ST40",
+    "x:yintang"
+   ],
+   "book": [],
+   "comun": [],
+   "solo_libro": []
+  }
+ }
+}

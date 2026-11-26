@@ -1,0 +1,1772 @@
+{
+ "meta": {
+  "title": "Acupressure Self-Care Handbook como grafo",
+  "subtitle": "Roger Dalet, Healing Arts Press 2023: 12 partes, 77 afecciones y puntos recurrentes, verificados con la skill acupuntura-puntos",
+  "language": "es",
+  "itemLabel": "Punto o concepto",
+  "itemLabelPlural": "Puntos y conceptos",
+  "chapterLabel": "Parte",
+  "sectionLabel": "Afección",
+  "pageLabel": "Página",
+  "searchHint": "Buscar: LI4, ciática, C7, náuseas…",
+  "resourceLabel": "Fuente externa",
+  "resourceLabelPlural": "Fuentes externas"
+ },
+ "blocks": {
+  "fund": {
+   "name": "Fundamentos"
+  },
+  "sent": {
+   "name": "Sentidos y glándulas"
+  },
+  "loco": {
+   "name": "Aparato locomotor y dolor"
+  },
+  "int": {
+   "name": "Órganos internos"
+  },
+  "piel": {
+   "name": "Piel"
+  },
+  "neuro": {
+   "name": "Sistema nervioso y varios"
+  },
+  "repro": {
+   "name": "Salud reproductiva"
+  }
+ },
+ "chapters": [
+  {
+   "num": 0,
+   "title": "Introducción",
+   "block": "fund",
+   "page": 1,
+   "summary": "Métodos caseros (masaje y electroestimulación), mecanismos propuestos, jerarquía de puntos y referencias anatómicas para localizarlos.",
+   "sections": [
+    {
+     "num": "0.1",
+     "title": "Cómo se estimulan los puntos",
+     "summary": "Los dos métodos caseros del libro: masaje con el dedo y estimuladores eléctricos de piel.",
+     "page": 1,
+     "items": [
+      "masaje",
+      "electro",
+      "agudo_cronico"
+     ]
+    },
+    {
+     "num": "0.2",
+     "title": "Mecanismos científicos",
+     "summary": "Analgesia por bloqueo medular y por endorfinas, y lo que aún no se explica (meridianos, efecto contralateral).",
+     "page": 5,
+     "items": [
+      "compuerta",
+      "endorfinas"
+     ]
+    },
+    {
+     "num": "0.3",
+     "title": "Nuevos puntos y microsistemas",
+     "summary": "Puntos extra y empíricos, y sistemas como la oreja o la mano coreana.",
+     "page": 7,
+     "items": [
+      "microsist"
+     ]
+    },
+    {
+     "num": "0.4",
+     "title": "Especialización de los puntos",
+     "summary": "De la anestesia por acupuntura en China surge la selección de 2–4 puntos por órgano y la jerarquía principal/secundario.",
+     "page": 7,
+     "items": [
+      "princ_sec"
+     ]
+    },
+    {
+     "num": "0.5",
+     "title": "Nuevos métodos de trabajo",
+     "summary": "Series de sesiones, moxa, ventosas, ligaduras y electroestimulación.",
+     "page": 8,
+     "items": [
+      "metodos_nuevos"
+     ]
+    },
+    {
+     "num": "0.6",
+     "title": "Notas para la práctica en casa",
+     "summary": "Cómo hallar C7, T1 a T4 y las crestas ilíacas, referencias para los puntos de espalda y lumbares.",
+     "page": 12,
+     "items": [
+      "c7",
+      "cresta",
+      "traves"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 1,
+   "title": "Los órganos de los sentidos",
+   "block": "sent",
+   "page": 13,
+   "summary": "Ojos, oídos, nariz y boca: 15 afecciones con sus puntos principales y secundarios.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Conjuntivitis",
+     "summary": "Ojo rojo con secreción y poca fotofobia. Acupresión como apoyo en las formas viral y alérgica; ojo rojo con fotofobia o dolor exige oftalmólogo. Cruce con el índice de síntomas de acupuntura-puntos (Conjuntivitis): 2 de 4 puntos del libro coinciden. Solo en el libro: BL1, Yuyao.",
+     "page": 14,
+     "items": [
+      "bl1",
+      "li4",
+      "gb20",
+      "yuyao"
+     ]
+    },
+    {
+     "num": "1.2",
+     "title": "Glaucoma",
+     "summary": "El libro no promete curar: en el agudo, masaje camino a urgencias; en el crónico, junto a las gotas. Alerta: el glaucoma agudo es una urgencia que amenaza la visión.",
+     "page": 18,
+     "items": [
+      "gb14",
+      "ki3",
+      "urgencia"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Miopía, presbicia e hipermetropía",
+     "summary": "Defectos de enfoque, no enfermedades. Propone frenar su avance en niños y retrasar la presbicia; la evidencia de esto es débil. Cruce con el índice de síntomas de acupuntura-puntos (Vista cansada): 4 de 4 puntos del libro coinciden.",
+     "page": 22,
+     "items": [
+      "st1"
+     ]
+    },
+    {
+     "num": "1.4",
+     "title": "Trastornos de la retina",
+     "summary": "Pérdida súbita de visión (urgencia: estimular solo mientras llega el oftalmólogo) y retinitis crónica como apoyo.",
+     "page": 27,
+     "items": [
+      "qiuhou"
+     ]
+    },
+    {
+     "num": "1.5",
+     "title": "Estrabismo",
+     "summary": "Dos puntos comunes y puntos distintos para el estrabismo interno y el externo; apoyo a la reeducación en niños. La diplopía de inicio súbito en el adulto requiere estudio neurológico.",
+     "page": 32
+    },
+    {
+     "num": "1.6",
+     "title": "Sordera",
+     "summary": "Trayecto del sonido y tipos de hipoacusia. Afirma eficacia en la neurosensorial, apoyada en reportes chinos de niños sordos; afirmación no confirmada por ensayos sólidos. Cruce con el índice de síntomas de acupuntura-puntos (Acúfenos e hipoacusia): 2 de 4 puntos del libro coinciden. Solo en el libro: CV23, GV15.",
+     "page": 36,
+     "items": [
+      "gv15",
+      "te17",
+      "si19",
+      "cv23"
+     ]
+    },
+    {
+     "num": "1.7",
+     "title": "Acúfenos",
+     "summary": "Ruidos sin fuente externa. Recomienda insistir en la electroestimulación; los resultados son inconstantes. Cruce con el índice de síntomas de acupuntura-puntos (Acúfenos e hipoacusia): 3 de 4 puntos del libro coinciden. Solo en el libro: GV15.",
+     "page": 42,
+     "items": [
+      "lr3"
+     ]
+    },
+    {
+     "num": "1.8",
+     "title": "Vértigo",
+     "summary": "Distingue vértigo verdadero (oído) del de origen cervical. Sesiones largas en Ménière. Vértigo con síntomas neurológicos = urgencia. Cruce con el índice de síntomas de acupuntura-puntos (Mareo y vértigo): 1 de 3 puntos del libro coinciden. Solo en el libro: SI19, TE3.",
+     "page": 46,
+     "items": [
+      "te3"
+     ]
+    },
+    {
+     "num": "1.9",
+     "title": "Resfriado y rinitis",
+     "summary": "Estimular al primer síntoma para cortar el resfriado; luego, solo alivio. Cruce con el índice de síntomas de acupuntura-puntos (Resfriado Viento-Frío + Rinitis): 3 de 4 puntos del libro coinciden. Solo en el libro: GV13.",
+     "page": 51,
+     "items": [
+      "gv23",
+      "li20",
+      "gv13",
+      "yintang"
+     ]
+    },
+    {
+     "num": "1.10",
+     "title": "Sinusitis aguda y crónica",
+     "summary": "Mismos puntos del resfriado más uno según el seno afectado (maxilar o frontal). Cruce con el índice de síntomas de acupuntura-puntos (Sinusitis): 3 de 4 puntos del libro coinciden. Solo en el libro: ST2.",
+     "page": 56,
+     "items": [
+      "st2",
+      "bl2"
+     ]
+    },
+    {
+     "num": "1.11",
+     "title": "Gripe y congestión nasal",
+     "summary": "Separa una forma fría (invasión) y una cálida, con tres puntos para cada una. Cruce con el índice de síntomas de acupuntura-puntos (Resfriado Viento-Frío + Resfriado Viento-Calor): 2 de 6 puntos del libro coinciden. Solo en el libro: GB21, GV13, LI20, Yintang.",
+     "page": 60,
+     "items": [
+      "gb21",
+      "te5"
+     ]
+    },
+    {
+     "num": "1.12",
+     "title": "Gingivitis y aftas o herpes labial",
+     "summary": "Promete buenos resultados en herpes labial; en gingivitis, combinar con otros tratamientos. Cruce con el índice de síntomas de acupuntura-puntos (Aftas): 1 de 4 puntos del libro coinciden. Solo en el libro: CV23, ST45, ST6.",
+     "page": 65,
+     "items": [
+      "st6",
+      "st45"
+     ]
+    },
+    {
+     "num": "1.13",
+     "title": "Dolor de muelas",
+     "summary": "Puntos generales y puntos según el diente (superiores, inferiores, molares, incisivos). Son los mismos que usan algunos dentistas para analgesia. Cruce con el índice de síntomas de acupuntura-puntos (Dolor de muelas): 3 de 6 puntos del libro coinciden. Solo en el libro: CV23, GV26, LI1.",
+     "page": 69,
+     "items": [
+      "li1",
+      "li11",
+      "gv26"
+     ]
+    },
+    {
+     "num": "1.14",
+     "title": "Dolor de garganta y amigdalitis",
+     "summary": "Masajear hasta que el ardor cambie por entumecimiento; si no cede en un día, consultar (descartar estreptococo). Cruce con el índice de síntomas de acupuntura-puntos (Dolor de garganta): 2 de 4 puntos del libro coinciden. Solo en el libro: ST45, ST6.",
+     "page": 73,
+     "items": [
+      "lu11"
+     ]
+    },
+    {
+     "num": "1.15",
+     "title": "Parotiditis (paperas)",
+     "summary": "Masaje cada media hora para dolor e inflamación.",
+     "page": 77,
+     "items": [
+      "pc6"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Glándulas y salud general",
+   "block": "sent",
+   "page": 81,
+   "summary": "Tiroides, diabetes y obesidad, siempre como complemento del tratamiento médico.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Trastornos de la tiroides",
+     "summary": "Poco útil en el bocio simple; apoyo al antitiroideo en el bocio tóxico.",
+     "page": 82,
+     "items": [
+      "sp6"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Diabetes",
+     "summary": "Solo coadyuvante. Alerta: reducir insulina o hipoglucemiantes debe decidirlo el médico, con control glucémico. Cruce con el índice de síntomas de acupuntura-puntos (Diabetes): 2 de 3 puntos del libro coinciden. Solo en el libro: BL17.",
+     "page": 86,
+     "items": [
+      "bl17",
+      "st36"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Obesidad",
+     "summary": "Puntos de apetito modernos, dos corporales y dos auriculares, junto con la dieta. Cruce con el índice de síntomas de acupuntura-puntos (Obesidad): 1 de 2 puntos del libro coinciden. Solo en el libro: GB25.",
+     "page": 89,
+     "items": [
+      "gb25",
+      "oreja"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Reumatología",
+   "block": "loco",
+   "page": 95,
+   "summary": "Artritis y dolor por articulación, de cuello a pies, con reglas de meridiano para neuralgias.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Artritis",
+     "summary": "Artrosis y artritis reumatoide: tratar la articulación afectada o, si son muchas, tres puntos generales. Cruce con el índice de síntomas de acupuntura-puntos (Síndrome Bi): 1 de 3 puntos del libro coinciden. Solo en el libro: TE8, Dingchuan.",
+     "page": 96,
+     "items": [
+      "sp5",
+      "dingchuan",
+      "te8"
+     ]
+    },
+    {
+     "num": "3.2",
+     "title": "Tortícolis",
+     "summary": "Estímulo fuerte en un punto principal de la mano hasta que ceda. Cruce con el índice de síntomas de acupuntura-puntos (Tortícolis): 2 de 2 puntos del libro coinciden.",
+     "page": 100,
+     "items": [
+      "si3",
+      "luozhen"
+     ]
+    },
+    {
+     "num": "3.3",
+     "title": "Dolor de hombro",
+     "summary": "Neuralgia cervicobraquial (puntos del dedo donde termina el dolor) y periartritis (LI15 más puntos según la cara afectada, moviendo el hombro). Cruce con el índice de síntomas de acupuntura-puntos (Hombro doloroso): 1 de 1 puntos del libro coinciden.",
+     "page": 104,
+     "items": [
+      "li15",
+      "meridiano_term"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Dolor de codo",
+     "summary": "Epicondilitis y otras: puntos del codo y de la mano, con movimiento articular. Cruce con el índice de síntomas de acupuntura-puntos (Epicondilitis lateral): 3 de 3 puntos del libro coinciden.",
+     "page": 109,
+     "items": [
+      "li10"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Dolor de muñeca",
+     "summary": "Artrosis y túnel carpiano: masaje profundo hasta el hormigueo. Cruce con el índice de síntomas de acupuntura-puntos (Túnel carpiano): 2 de 3 puntos del libro coinciden. Solo en el libro: HT7.",
+     "page": 112,
+     "items": [
+      "ht7",
+      "pc7"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Dolor de dedos",
+     "summary": "Puntos en la primera articulación dorsal de cada dedo, en un orden fijo. Las infecciones del dedo requieren atención médica.",
+     "page": 115
+    },
+    {
+     "num": "3.7",
+     "title": "Dolor de espalda",
+     "summary": "Dorsalgia postural: un solo punto en el dorso de la mano. Cruce con el índice de síntomas de acupuntura-puntos (Dorsalgia): 0 de 1 puntos del libro coinciden. Solo en el libro: TE3.",
+     "page": 118
+    },
+    {
+     "num": "3.8",
+     "title": "Dolor lumbar",
+     "summary": "Lumbalgia: BL40 como punto principal; el paciente intenta ponerse de pie durante la estimulación. Cruce con el índice de síntomas de acupuntura-puntos (Lumbalgia aguda): 3 de 3 puntos del libro coinciden.",
+     "page": 121,
+     "items": [
+      "bl40",
+      "bl60"
+     ]
+    },
+    {
+     "num": "3.9",
+     "title": "Ciática",
+     "summary": "GB30 en todos los casos más los puntos terminales del dedo gordo o del quinto dedo. La debilidad progresiva de la pierna o síntomas de cola de caballo son urgencia. Cruce con el índice de síntomas de acupuntura-puntos (Ciática): 1 de 3 puntos del libro coinciden. Solo en el libro: BL67, LR1.",
+     "page": 125,
+     "items": [
+      "gb30",
+      "lr1",
+      "bl67"
+     ]
+    },
+    {
+     "num": "3.10",
+     "title": "Trastornos de la cadera",
+     "summary": "Alivio del dolor: estímulo fuerte en la crisis y masaje diario preventivo. Cruce con el índice de síntomas de acupuntura-puntos (Dolor de cadera): 1 de 2 puntos del libro coinciden. Solo en el libro: SP9.",
+     "page": 129,
+     "items": [
+      "sp9"
+     ]
+    },
+    {
+     "num": "3.11",
+     "title": "Trastornos de la rodilla",
+     "summary": "Esguinces leves, artrosis y dolores de crecimiento. Cruce con el índice de síntomas de acupuntura-puntos (Dolor de rodilla): 1 de 1 puntos del libro coinciden.",
+     "page": 133,
+     "items": [
+      "st34"
+     ]
+    },
+    {
+     "num": "3.12",
+     "title": "Trastornos del tobillo",
+     "summary": "Esguince: diez minutos cada hora tras la lesión y luego mantenimiento. Cruce con el índice de síntomas de acupuntura-puntos (Esguince de tobillo): 0 de 2 puntos del libro coinciden. Solo en el libro: GB39, SP6.",
+     "page": 136,
+     "items": [
+      "gb39"
+     ]
+    },
+    {
+     "num": "3.13",
+     "title": "Trastornos de pie y dedos",
+     "summary": "Masaje largo con movilización de las articulaciones del pie. Cruce con el índice de síntomas de acupuntura-puntos (Talalgia): 0 de 2 puntos del libro coinciden. Solo en el libro: ST42, Bafeng.",
+     "page": 139,
+     "items": [
+      "st42",
+      "bafeng"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Digestión",
+   "block": "int",
+   "page": 145,
+   "summary": "Vómito, vesícula, hepatitis, gastritis, estreñimiento, diarrea y hemorroides.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Indigestión y vómito",
+     "summary": "Puntos abdominales y de la pierna en el adulto; Sifeng para la regurgitación del lactante. Vómito con deshidratación o sangre requiere atención. Cruce con el índice de síntomas de acupuntura-puntos (Náusea y vómito): 1 de 2 puntos del libro coinciden. Solo en el libro: Sifeng.",
+     "page": 146,
+     "items": [
+      "cv12",
+      "sifeng"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Trastornos de la vesícula",
+     "summary": "Discinesia biliar y cólico hepático. Cruce con el índice de síntomas de acupuntura-puntos (Dolor de hipocondrio y biliar): 2 de 3 puntos del libro coinciden. Solo en el libro: Yaoyan.",
+     "page": 150,
+     "items": [
+      "gb34",
+      "yaoyan"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Hepatitis infecciosa e ictericia",
+     "summary": "Estimular varias veces al día y continuar un mes. Alerta: la ictericia exige diagnóstico de la causa.",
+     "page": 155,
+     "items": [
+      "gv14",
+      "gv9"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Dolor gástrico, gastritis y úlcera",
+     "summary": "Apoyo para síntomas y recaídas; descartar causa con un médico. Cruce con el índice de síntomas de acupuntura-puntos (Dolor epigástrico): 3 de 3 puntos del libro coinciden.",
+     "page": 159
+    },
+    {
+     "num": "4.5",
+     "title": "Estreñimiento y colitis",
+     "summary": "El autor la pone como primera opción, junto con un horario fijo de evacuación. Cruce con el índice de síntomas de acupuntura-puntos (Estreñimiento): 2 de 4 puntos del libro coinciden. Solo en el libro: LR1, SP9.",
+     "page": 164,
+     "items": [
+      "st25"
+     ]
+    },
+    {
+     "num": "4.6",
+     "title": "Diarrea",
+     "summary": "Reduce la pérdida de líquidos; no trata la causa. Hidratación primero. Cruce con el índice de síntomas de acupuntura-puntos (Diarrea): 3 de 3 puntos del libro coinciden.",
+     "page": 169,
+     "items": [
+      "cv6"
+     ]
+    },
+    {
+     "num": "4.7",
+     "title": "Hemorroides, fisuras y fístulas",
+     "summary": "Alivio en la crisis y prurito; GV20 para el prolapso hemorroidal. Cruce con el índice de síntomas de acupuntura-puntos (Hemorroides): 3 de 4 puntos del libro coinciden. Solo en el libro: GV26.",
+     "page": 172,
+     "items": [
+      "bl57",
+      "gv1",
+      "gv20"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Circulación",
+   "block": "int",
+   "page": 177,
+   "summary": "HTA, insuficiencia cardíaca, arteriopatía periférica e insuficiencia venosa.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Hipertensión arterial",
+     "summary": "Útil, según el autor, en la HTA leve; complemento en la moderada. No suspender antihipertensivos. Cruce con el índice de síntomas de acupuntura-puntos (Hipertensión): 4 de 4 puntos del libro coinciden.",
+     "page": 178
+    },
+    {
+     "num": "5.2",
+     "title": "Insuficiencia cardíaca",
+     "summary": "Papel modesto, solo complementario.",
+     "page": 182,
+     "items": [
+      "ht8",
+      "bl14"
+     ]
+    },
+    {
+     "num": "5.3",
+     "title": "Enfermedad arterial periférica",
+     "summary": "Claudicación: seguimiento con distancia de marcha y Doppler, junto al tratamiento estándar.",
+     "page": 186
+    },
+    {
+     "num": "5.4",
+     "title": "Insuficiencia venosa",
+     "summary": "Sin papel en trombosis; alivio de piernas pesadas y edema en várices.",
+     "page": 190,
+     "items": [
+      "lu9"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Aparato urinario",
+   "block": "int",
+   "page": 195,
+   "summary": "Cólico renal, cistitis, retención, incontinencia y enuresis.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Cólico nefrítico y litiasis",
+     "summary": "El autor la considera brillante para el dolor; propone golpecitos con martillo de reflejos para movilizar el cálculo (sin respaldo). Cruce con el índice de síntomas de acupuntura-puntos (Cólico renal): 1 de 4 puntos del libro coinciden. Solo en el libro: BL57, KI3, Yaoyan.",
+     "page": 196
+    },
+    {
+     "num": "6.2",
+     "title": "Infecciones urinarias",
+     "summary": "Cistitis y cistalgia; la pielonefritis necesita antibiótico. Cruce con el índice de síntomas de acupuntura-puntos (Cistitis): 1 de 3 puntos del libro coinciden. Solo en el libro: LR8, Yaoyan.",
+     "page": 201,
+     "items": [
+      "cv3",
+      "lr8"
+     ]
+    },
+    {
+     "num": "6.3",
+     "title": "Retención e incontinencia de orina",
+     "summary": "Mismos puntos para ambos estados, más ejercicios de Kegel. La retención aguda es urgencia. Cruce con el índice de síntomas de acupuntura-puntos (Retención urinaria + Incontinencia urinaria): 0 de 2 puntos del libro coinciden. Solo en el libro: BL67, KI11.",
+     "page": 205,
+     "items": [
+      "ki11",
+      "kegel"
+     ]
+    },
+    {
+     "num": "6.4",
+     "title": "Enuresis infantil",
+     "summary": "Éxito en cerca de la mitad de los casos, según su experiencia. Cruce con el índice de síntomas de acupuntura-puntos (Enuresis): 4 de 4 puntos del libro coinciden.",
+     "page": 209,
+     "items": [
+      "cv4"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Dolor",
+   "block": "loco",
+   "page": 213,
+   "summary": "Cefalea, dolor facial y dolor torácico.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Cefalea",
+     "summary": "Un punto general (GB20) más uno según la zona del dolor; uso preventivo en migraña menstrual. Cefalea súbita intensa o con signos neurológicos = urgencia. Cruce con el índice de síntomas de acupuntura-puntos (Cefalea): 2 de 4 puntos del libro coinciden. Solo en el libro: LU9, SI3.",
+     "page": 214
+    },
+    {
+     "num": "7.2",
+     "title": "Dolor facial",
+     "summary": "Neuralgia del trigémino: punto del pulso radial más el punto de la rama afectada. Cruce con el índice de síntomas de acupuntura-puntos (Neuralgia del trigémino): 2 de 3 puntos del libro coinciden. Solo en el libro: LU9.",
+     "page": 218
+    },
+    {
+     "num": "7.3",
+     "title": "Dolor torácico y del tronco",
+     "summary": "Neuralgia por zóster, fisura costal u origen vertebral. Alerta: el dolor torácico puede ser cardíaco y requiere descartarlo antes. Cruce con el índice de síntomas de acupuntura-puntos (Dolor intercostal + Dolor torácico): 0 de 3 puntos del libro coinciden. Solo en el libro: GB25, SP9, TE8.",
+     "page": 222
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Piel",
+   "block": "piel",
+   "page": 227,
+   "summary": "Sabañones, eccema, urticaria, zóster y psoriasis.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Sabañones",
+     "summary": "Alivio y prevención desde el inicio del invierno.",
+     "page": 228,
+     "items": [
+      "ki1"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Eccema",
+     "summary": "Dos principales en todos los casos y dos secundarios en los crónicos. Cruce con el índice de síntomas de acupuntura-puntos (Eccema): 4 de 4 puntos del libro coinciden.",
+     "page": 231,
+     "items": [
+      "bl13",
+      "sp10"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Urticaria",
+     "summary": "Puntos casi iguales a los del eccema. Urticaria con disnea o edema de labios es anafilaxia. Cruce con el índice de síntomas de acupuntura-puntos (Urticaria): 2 de 4 puntos del libro coinciden. Solo en el libro: BL13, GV16.",
+     "page": 235,
+     "items": [
+      "gv16"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Zóster, varicela y herpes",
+     "summary": "El autor llama al zóster el triunfo de la acupuntura. Alerta: el zóster oftálmico necesita antiviral y oftalmólogo. Cruce con el índice de síntomas de acupuntura-puntos (Herpes zóster): 1 de 5 puntos del libro coinciden. Solo en el libro: BL67, GB20, PC4, ST45.",
+     "page": 238,
+     "items": [
+      "pc4"
+     ]
+    },
+    {
+     "num": "8.5",
+     "title": "Psoriasis",
+     "summary": "Resultados desiguales; masaje hacia la placa desde cuatro direcciones y puntos según la zona."
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "Aparato respiratorio",
+   "block": "int",
+   "page": 247,
+   "summary": "Asma, bronquitis y tos.",
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "Asma",
+     "summary": "En la crisis y en el asma crónica, como complemento. Nunca reemplaza el broncodilatador de rescate. Cruce con el índice de síntomas de acupuntura-puntos (Asma): 3 de 3 puntos del libro coinciden.",
+     "page": 248,
+     "items": [
+      "cv17",
+      "st40"
+     ]
+    },
+    {
+     "num": "9.2",
+     "title": "Bronquitis",
+     "summary": "Dos principales siempre y secundarios distintos para la aguda y la crónica. Cruce con el índice de síntomas de acupuntura-puntos (Tos aguda + Tos crónica): 5 de 6 puntos del libro coinciden. Solo en el libro: Dingchuan.",
+     "page": 252
+    },
+    {
+     "num": "9.3",
+     "title": "Tos",
+     "summary": "Calma la tos seca sin frenar la expectoración, según el autor. Cruce con el índice de síntomas de acupuntura-puntos (Tos aguda + Tos crónica): 3 de 4 puntos del libro coinciden. Solo en el libro: Sifeng.",
+     "page": 257,
+     "items": [
+      "cv22"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Sistema nervioso",
+   "block": "neuro",
+   "page": 261,
+   "summary": "Coma, epilepsia, parálisis, adicciones, depresión y trastornos mentales graves.",
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "Coma",
+     "summary": "Solo mientras llega la ambulancia: estimulación profunda de puntos de dedos y planta. Cruce con el índice de síntomas de acupuntura-puntos (Síncope y primeros auxilios): 2 de 2 puntos del libro coinciden.",
+     "page": 262,
+     "items": [
+      "shixuan"
+     ]
+    },
+    {
+     "num": "10.2",
+     "title": "Epilepsia",
+     "summary": "Papel modesto; no se detiene una crisis con puntos. No poner nada en la boca. Cruce con el índice de síntomas de acupuntura-puntos (Epilepsia): 2 de 3 puntos del libro coinciden. Solo en el libro: GV16.",
+     "page": 265,
+     "items": [
+      "yaoqi"
+     ]
+    },
+    {
+     "num": "10.3",
+     "title": "Parálisis facial",
+     "summary": "Estimular pronto y a menudo, con fisioterapia facial. Cruce con el índice de síntomas de acupuntura-puntos (Parálisis facial): 2 de 4 puntos del libro coinciden. Solo en el libro: BL1, LU9.",
+     "page": 269
+    },
+    {
+     "num": "10.4",
+     "title": "Otras parálisis",
+     "summary": "Hemiplejía y paraplejía: un punto de raíz más uno o dos de la zona afectada, cambiando en cada sesión. Cruce con el índice de síntomas de acupuntura-puntos (Secuelas de ACV): 5 de 8 puntos del libro coinciden. Solo en el libro: GB21, GV16, TE8.",
+     "page": 272
+    },
+    {
+     "num": "10.5",
+     "title": "Adicciones",
+     "summary": "Punto común para todas las sustancias más puntos para drogas, alcohol y tabaco. Es la base de protocolos tipo NADA, de evidencia limitada. Cruce con el índice de síntomas de acupuntura-puntos (Adicciones y tabaquismo): 1 de 4 puntos del libro coinciden. Solo en el libro: GB20, GB8, GV25.",
+     "page": 278,
+     "items": [
+      "gb8",
+      "gv25"
+     ]
+    },
+    {
+     "num": "10.6",
+     "title": "Depresión",
+     "summary": "Masaje de zonas más que de puntos. Alerta: no reducir antidepresivos sin el médico. Cruce con el índice de síntomas de acupuntura-puntos (Depresión): 1 de 1 puntos del libro coinciden.",
+     "page": 283,
+     "items": [
+      "ansiedad"
+     ]
+    },
+    {
+     "num": "10.7",
+     "title": "Trastornos mentales graves",
+     "summary": "Solo descripción de lo que se hace en hospitales chinos; el autor aclara que no es para casa. Cruce con el índice de síntomas de acupuntura-puntos (Agitación y manía): 2 de 4 puntos del libro coinciden. Solo en el libro: CV15, Yintang.",
+     "page": 286,
+     "items": [
+      "cv15"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Salud reproductiva",
+   "block": "repro",
+   "page": 291,
+   "summary": "Impotencia, próstata, mama, náuseas del embarazo y trastornos menstruales y uterinos.",
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Impotencia",
+     "summary": "Ciclos de 10 días con una semana de pausa. La disfunción eréctil puede ser signo de enfermedad vascular. Cruce con el índice de síntomas de acupuntura-puntos (Impotencia): 3 de 3 puntos del libro coinciden.",
+     "page": 292
+    },
+    {
+     "num": "11.2",
+     "title": "Enfermedad de la próstata",
+     "summary": "Papel principal, según el autor, en la HPB; solo apoyo en prostatitis y cáncer.",
+     "page": 296
+    },
+    {
+     "num": "11.3",
+     "title": "Enfermedad mamaria",
+     "summary": "Mastalgia cíclica y lesiones benignas. Todo nódulo mamario necesita estudio. Cruce con el índice de síntomas de acupuntura-puntos (Mastitis): 2 de 4 puntos del libro coinciden. Solo en el libro: CV17, LI10.",
+     "page": 300,
+     "items": [
+      "st18"
+     ]
+    },
+    {
+     "num": "11.4",
+     "title": "Náuseas del embarazo",
+     "summary": "Estimular antes de levantarse. PC6 tiene evidencia modesta en esta indicación. Cruce con el índice de síntomas de acupuntura-puntos (Náusea del embarazo): 2 de 2 puntos del libro coinciden.",
+     "page": 304,
+     "items": [
+      "ev_pc6_nvp"
+     ]
+    },
+    {
+     "num": "11.5",
+     "title": "Amenorrea",
+     "summary": "Estimulación intensa para provocar el flujo mientras se estudia la causa. Descartar embarazo primero. Cruce con el índice de síntomas de acupuntura-puntos (Amenorrea): 1 de 3 puntos del libro coinciden. Solo en el libro: CV6, Yaoyan.",
+     "page": 307
+    },
+    {
+     "num": "11.6",
+     "title": "Otros trastornos menstruales",
+     "summary": "Dismenorrea, síndrome premenstrual y ciclos cortos o largos: dos puntos comunes más secundarios por problema. Cruce con el índice de síntomas de acupuntura-puntos (Dismenorrea + Síndrome premenstrual + Menstruación irregular): 5 de 6 puntos del libro coinciden. Solo en el libro: KI11.",
+     "page": 311,
+     "items": [
+      "lr2"
+     ]
+    },
+    {
+     "num": "11.7",
+     "title": "Hemorragia uterina",
+     "summary": "Estimulación vigorosa, incluso con cuchara caliente. Alerta: sangrado abundante o en la posmenopausia es urgencia o motivo de estudio. Cruce con el índice de síntomas de acupuntura-puntos (Menorragia y metrorragia): 2 de 3 puntos del libro coinciden. Solo en el libro: SP3.",
+     "page": 315,
+     "items": [
+      "sp3"
+     ]
+    },
+    {
+     "num": "11.8",
+     "title": "Prolapso uterino",
+     "summary": "Fases iniciales con Kegel; en el avanzado, cirugía. Cruce con el índice de síntomas de acupuntura-puntos (Prolapso uterino): 2 de 3 puntos del libro coinciden. Solo en el libro: KI11.",
+     "page": 318
+    },
+    {
+     "num": "11.9",
+     "title": "Flujo vaginal (leucorrea)",
+     "summary": "Refuerzo del tratamiento de la causa. Cruce con el índice de síntomas de acupuntura-puntos (Leucorrea): 2 de 3 puntos del libro coinciden. Solo en el libro: GV26.",
+     "page": 322
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "Varios",
+   "block": "neuro",
+   "page": 325,
+   "summary": "Fatiga, insomnio, miedo escénico y picaduras.",
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "Fatiga",
+     "summary": "Dos puntos para el cansancio del trabajo sedentario. Cruce con el índice de síntomas de acupuntura-puntos (Fatiga): 2 de 2 puntos del libro coinciden.",
+     "page": 326
+    },
+    {
+     "num": "12.2",
+     "title": "Insomnio",
+     "summary": "Masaje lento y profundo de dos puntos del pie. Cruce con el índice de síntomas de acupuntura-puntos (Insomnio): 1 de 2 puntos del libro coinciden. Solo en el libro: SP3.",
+     "page": 328
+    },
+    {
+     "num": "12.3",
+     "title": "Miedo escénico",
+     "summary": "Un punto discreto en el tórax derecho.",
+     "page": 330
+    },
+    {
+     "num": "12.4",
+     "title": "Picaduras y mordeduras",
+     "summary": "Masaje largo en dos puntos. Alerta: anafilaxia, serpientes y escorpiones son urgencias que no se tratan con puntos.",
+     "page": 332
+    }
+   ]
+  }
+ ],
+ "items": {
+  "masaje": {
+   "title": "Masaje digital",
+   "summary": "Yema del pulgar o del índice, vibrar o girar en sentido horario con presión firme; en crónicos, 2–10 min dos veces al día."
+  },
+  "electro": {
+   "title": "Estimulación eléctrica transcutánea",
+   "summary": "Estimuladores de piel sin agujas, piezoeléctricos o láser, aptos para uso lego según el autor."
+  },
+  "agudo_cronico": {
+   "title": "Regla agudo / crónico",
+   "summary": "Patrón que el libro repite en cada afección: en lo agudo, estímulo fuerte hasta que ceda el síntoma; en lo crónico, sesiones cortas 2–3 veces al día durante semanas."
+  },
+  "compuerta": {
+   "title": "Compuerta medular y sustancia P",
+   "summary": "El autor explica la analgesia por bloqueo medular de la sustancia P. Es una simplificación de la teoría de la compuerta de Melzack y Wall."
+  },
+  "endorfinas": {
+   "title": "Liberación de endorfinas",
+   "summary": "Segundo mecanismo analgésico citado: péptidos opioides endógenos liberados en el encéfalo."
+  },
+  "microsist": {
+   "title": "Microsistemas (oreja, mano, cuero cabelludo)",
+   "summary": "El cuerpo representado en una parte; origen de muchos puntos nuevos usados en el libro."
+  },
+  "princ_sec": {
+   "title": "Puntos principales y secundarios",
+   "summary": "Los principales suelen bastar; los secundarios refuerzan o ajustan el efecto. Es la estructura de cada capítulo."
+  },
+  "metodos_nuevos": {
+   "title": "Métodos de estimulación prolongada",
+   "summary": "Moxa, ventosas, semillas o imanes pegados, agujas intradérmicas, ligaduras e inyecciones en puntos. El libro no los recomienda para casa."
+  },
+  "c7": {
+   "title": "Referencia: vértebra C7",
+   "summary": "C7 gira al rotar el cuello; T1, la siguiente, no. Desde ahí se cuentan las vértebras torácicas."
+  },
+  "cresta": {
+   "title": "Referencia: crestas ilíacas",
+   "summary": "Mano plana en la cintura, meñique sobre la cresta; la línea marca el nivel de los puntos lumbares."
+  },
+  "traves": {
+   "title": "Medidas con los dedos",
+   "summary": "El libro ubica los puntos en traveses de dedo y palmos, una aproximación al cun de la MTC."
+  },
+  "urgencia": {
+   "title": "Uso mientras llega la atención urgente",
+   "summary": "Glaucoma agudo, pérdida súbita de visión y coma: el libro propone estimular puntos solo en el trayecto al médico, nunca en lugar de él."
+  },
+  "meridiano_term": {
+   "title": "Regla de los puntos terminales del meridiano",
+   "summary": "Seguir el trayecto del dolor hasta el dedo donde terminaría y estimular sus puntos extremos. Se usa en neuralgia cervicobraquial y ciática."
+  },
+  "kegel": {
+   "title": "Ejercicios de Kegel",
+   "summary": "Contraer el suelo pélvico 1–4 s y soltar, unas 10 veces; se combinan con los puntos en incontinencia y prolapso."
+  },
+  "bl1": {
+   "title": "BL1 Jingming",
+   "summary": "Ángulo interno del ojo, junto al lagrimal. Punto ocular central del libro. Se usa en: 1.1 Conjuntivitis; 1.2 Glaucoma; 1.3 Miopía, presbicia e hipermetropía; 1.4 Trastornos de la retina; 1.5 Estrabismo; 10.3 Parálisis facial. Verificado con acupuntura-puntos (bookskills): BL1 Jīngmíng. Ubicación estándar: en la cara, en la depresión entre la parte superomedial del canto interno del ojo y la pared medial de la órbita (≈0,1 cun superior y medial al canto interno). Precaución de la ficha: riesgo de hematoma periorbitario y lesión del globo ocular; no manipular; presionar 1–2 min al retirar. Reservar la inserción profunda (>0,5 cun) a practicantes expertos. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li4": {
+   "title": "LI4 Hegu",
+   "summary": "Dorso de la mano, en el ángulo entre los metacarpianos del pulgar y el índice. El punto más reutilizado del libro. Evitar estimulación fuerte en el embarazo según la práctica habitual. Se usa en: 1.1 Conjuntivitis; 1.4 Trastornos de la retina; 1.5 Estrabismo; 1.12 Gingivitis y aftas o herpes labial; 1.13 Dolor de muelas; 1.14 Dolor de garganta y amigdalitis; 1.15 Parotiditis (paperas); 3.4 Dolor de codo; 8.4 Zóster, varicela y herpes; 9.2 Bronquitis; 9.3 Tos. Verificado con acupuntura-puntos (bookskills): LI4 Hégǔ. Ubicación estándar: dorso de la mano, entre el 1.er y 2.º metacarpianos, en el punto medio del lado radial del 2.º metacarpiano. Precaución de la ficha: contraindicado en el embarazo. Embarazo: contraindicado clásicamente (salvo inducción a término). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb20": {
+   "title": "GB20 Fengchi",
+   "summary": "Hueco en el borde posterior del cráneo, a dos o tres traveses de la oreja. Aparece en ojos, oído, gripe, HTA y cefalea. Se usa en: 1.1 Conjuntivitis; 1.2 Glaucoma; 1.3 Miopía, presbicia e hipermetropía; 1.4 Trastornos de la retina; 1.5 Estrabismo; 1.8 Vértigo; 1.11 Gripe y congestión nasal; 2.1 Trastornos de la tiroides; 5.1 Hipertensión arterial; 7.1 Cefalea; 8.4 Zóster, varicela y herpes; 10.3 Parálisis facial; 10.5 Adicciones. Verificado con acupuntura-puntos (bookskills): GB20 Fēngchí. Ubicación estándar: En la región posterior del cuello, bajo el occipital, en la depresión entre el origen del esternocleidomastoideo y el trapecio. Precaución de la ficha: NO dirigir hacia arriba y medial (foramen magno/bulbo raquídeo); arteria vertebral en profundidad; evitar punción profunda. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "yuyao": {
+   "title": "Yuyao (extra)",
+   "summary": "Centro de la ceja. Secundario en ojos. Se usa en: 1.1 Conjuntivitis; 1.3 Miopía, presbicia e hipermetropía; 1.5 Estrabismo. Verificado con acupuntura-puntos (bookskills): EX-HN4 Yuyao. Ubicación estándar: Centro de la ceja, sobre la pupila. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb14": {
+   "title": "GB14 Yangbai",
+   "summary": "Dos traveses sobre el centro de la ceja, en la frente. Se usa en: 1.2 Glaucoma; 10.3 Parálisis facial. Verificado con acupuntura-puntos (bookskills): GB14 Yángbái. Ubicación estándar: En la frente, 1 cun por encima de la ceja, directamente sobre el centro de la pupila. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ki3": {
+   "title": "KI3 Taixi (zona retromaleolar interna)",
+   "summary": "Detrás o debajo del maléolo interno, sobre el calcáneo. El libro da ubicaciones algo distintas en cada afección. Se usa en: 1.2 Glaucoma; 1.7 Acúfenos; 2.2 Diabetes; 6.1 Cólico nefrítico y litiasis. Verificado con acupuntura-puntos (bookskills): KI3 Tàixī. Ubicación estándar: en la cara posteromedial del tobillo, en la depresión entre la prominencia del maléolo medial y el tendón calcáneo (de Aquiles). Precaución de la ficha: arteria tibial posterior cercana. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st1": {
+   "title": "ST1 Chengqi",
+   "summary": "Centro del reborde orbitario inferior. Se usa en: 1.3 Miopía, presbicia e hipermetropía. Verificado con acupuntura-puntos (bookskills): ST1 Chéngqì. Ubicación estándar: en la cara, directamente debajo de la pupila, entre el globo ocular y el borde infraorbitario. Precaución de la ficha: globo ocular; zona muy vascularizada: riesgo de hematoma (comprimir 1–2 min al retirar la aguja). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "qiuhou": {
+   "title": "Qiuhou (extra)",
+   "summary": "Reborde orbitario inferior, en el tercio externo según el libro. La ficha estándar lo ubica en la unión del cuarto lateral con los tres cuartos mediales. Se usa en: 1.4 Trastornos de la retina. Verificado con acupuntura-puntos (bookskills): EX-HN7 Qiuhou. Ubicación estándar: En el borde infraorbitario, unión del 1/4 lateral con los 3/4 mediales. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv15": {
+   "title": "GV15 Yamen",
+   "summary": "Nuca, en la línea media, dos traveses bajo el borde del cráneo. El libro lo llama el punto de la sordera. Se usa en: 1.6 Sordera; 1.7 Acúfenos. Verificado con acupuntura-puntos (bookskills): GV15 Yǎmén. Ubicación estándar: En la región cervical posterior, por encima de la apófisis espinosa de C2, en la línea media posterior (0,5 cun por dentro de la línea posterior del cabello). Precaución de la ficha: Nunca hacia arriba ni profundo: riesgo de penetrar la cisterna magna y lesionar el bulbo raquídeo. Detener si hay sensación de descarga eléctrica. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "te17": {
+   "title": "TE17 Yifeng",
+   "summary": "Detrás del lóbulo, en la punta de la mastoides. Se usa en: 1.6 Sordera; 1.7 Acúfenos; 1.15 Parotiditis (paperas). Verificado con acupuntura-puntos (bookskills): TE17 Yìfēng. Ubicación estándar: Región anterior del cuello, posterior al lóbulo de la oreja, en la depresión entre la apófisis mastoides y el ángulo de la mandíbula. Precaución de la ficha: Salida del nervio facial y vasos: no profundizar en exceso. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "si19": {
+   "title": "SI19 Tinggong / zona preauricular",
+   "summary": "Delante del trago; se localiza con la boca abierta. Se usa en: 1.6 Sordera; 1.8 Vértigo. Verificado con acupuntura-puntos (bookskills): SI19 Tīnggōng. Ubicación estándar: Cara, en la depresión entre el centro del borde anterior del trago y el borde posterior del cóndilo mandibular (se abre al abrir la boca). Precaución de la ficha: Evitar la arteria temporal superficial; mantener la boca abierta durante la inserción. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv23": {
+   "title": "CV23 Lianquan",
+   "summary": "Bajo el mentón, a mitad entre los ángulos de la mandíbula. Se usa en: 1.6 Sordera; 1.12 Gingivitis y aftas o herpes labial; 1.13 Dolor de muelas. Verificado con acupuntura-puntos (bookskills): CV23 Liánquán. Ubicación estándar: En la parte anterior del cuello, línea media anterior, por encima de la prominencia laríngea, en la depresión sobre el borde superior del hueso hioides. Precaución de la ficha: No puncionar profundo en dirección posterior (laringe/faringe). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lr3": {
+   "title": "LR3 Taichong",
+   "summary": "Dorso del pie, en la unión de los metatarsianos 1 y 2. Se usa en: 1.7 Acúfenos; 5.1 Hipertensión arterial; 5.3 Enfermedad arterial periférica; 5.4 Insuficiencia venosa. Verificado con acupuntura-puntos (bookskills): LR3 Tàichōng. Ubicación estándar: Dorso del pie, entre el 1.º y 2.º metatarsianos, en la depresión distal a la unión de sus bases, sobre la arteria dorsal del pie. Precaución de la ficha: Evitar la arteria dorsal del pie. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "te3": {
+   "title": "TE3 Zhongzhu",
+   "summary": "Dorso de la mano, entre los metacarpianos 4 y 5. Se usa en: 1.8 Vértigo; 3.7 Dolor de espalda. Verificado con acupuntura-puntos (bookskills): TE3 Zhōngzhǔ. Ubicación estándar: Dorso de la mano, entre 4.º y 5.º metacarpianos, en la depresión proximal a la 4.ª articulación metacarpofalángica. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv23": {
+   "title": "GV23 Shangxing",
+   "summary": "Frente, en la línea media, justo sobre el nacimiento del pelo. Se usa en: 1.9 Resfriado y rinitis; 1.10 Sinusitis aguda y crónica. Verificado con acupuntura-puntos (bookskills): GV23 Shàngxīng. Ubicación estándar: En la cabeza, línea media, 1 cun por encima de la línea anterior del cabello. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li20": {
+   "title": "LI20 Yingxiang",
+   "summary": "Hueco junto al borde externo de cada ala nasal. Se usa en: 1.9 Resfriado y rinitis; 1.10 Sinusitis aguda y crónica; 1.11 Gripe y congestión nasal. Verificado con acupuntura-puntos (bookskills): LI20 Yíngxiāng. Ubicación estándar: en el surco nasolabial, a nivel del punto medio del borde lateral del ala de la nariz. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv13": {
+   "title": "GV13 Taodao",
+   "summary": "Bajo la apófisis de T1. El libro lo usa en resfriado y gripe. Se usa en: 1.9 Resfriado y rinitis; 1.11 Gripe y congestión nasal. Verificado con acupuntura-puntos (bookskills): GV13 Táodào. Ubicación estándar: En la región dorsal alta, en la depresión bajo la apófisis espinosa de T1, línea media posterior. Precaución de la ficha: No puncionar profundo (médula espinal). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "yintang": {
+   "title": "Yintang (extra)",
+   "summary": "Entrecejo, sobre el puente de la nariz. Se usa en: 1.9 Resfriado y rinitis; 1.11 Gripe y congestión nasal; 10.5 Adicciones; 10.7 Trastornos mentales graves. Verificado con acupuntura-puntos (bookskills): EX-HN3 Yintang (GV29). Ubicación estándar: Punto medio entre los extremos internos de las cejas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st2": {
+   "title": "ST2 Sibai",
+   "summary": "Bajo el centro de la órbita (seno maxilar). Se usa en: 1.10 Sinusitis aguda y crónica; 7.2 Dolor facial. Verificado con acupuntura-puntos (bookskills): ST2 Sìbái. Ubicación estándar: en la cara, en el agujero infraorbitario. Precaución de la ficha: no penetrar profundamente en el agujero infraorbitario (nervio y vasos infraorbitarios; riesgo de lesión del globo ocular si se dirige hacia arriba). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl2": {
+   "title": "BL2 Zanzhu",
+   "summary": "Extremo interno de la ceja (seno frontal, primera rama del trigémino). Se usa en: 1.10 Sinusitis aguda y crónica; 7.2 Dolor facial. Verificado con acupuntura-puntos (bookskills): BL2 Cuánzhú. Ubicación estándar: en la cabeza, en la depresión del extremo medial de la ceja (escotadura frontal o supratroclear palpable). Precaución de la ficha: evitar la inserción profunda en la órbita. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb21": {
+   "title": "GB21 Jianjing",
+   "summary": "Centro de la pendiente del hombro. Se usa en: 1.11 Gripe y congestión nasal; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): GB21 Jiānjǐng. Ubicación estándar: En el punto medio de la línea que une la apófisis espinosa de C7 con el extremo lateral del acromion. Precaución de la ficha: Riesgo de neumotórax (vértice pulmonar): no puncionar perpendicular profundo. Contraindicado en el embarazo. Embarazo: contraindicado clásicamente (salvo inducción a término). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "te5": {
+   "title": "TE5 Waiguan",
+   "summary": "Dorso del antebrazo, dos traveses sobre el pliegue de la muñeca, entre radio y cúbito. Se usa en: 1.11 Gripe y congestión nasal; 3.5 Dolor de muñeca. Verificado con acupuntura-puntos (bookskills): TE5 Wàiguān. Ubicación estándar: Cara posterior del antebrazo, en el punto medio del espacio interóseo entre radio y cúbito, 2 cun proximal al pliegue dorsal de la muñeca. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st6": {
+   "title": "ST6 Jiache",
+   "summary": "Un través por delante y encima del ángulo de la mandíbula, sobre el masetero. Se usa en: 1.12 Gingivitis y aftas o herpes labial; 1.13 Dolor de muelas; 1.14 Dolor de garganta y amigdalitis. Verificado con acupuntura-puntos (bookskills): ST6 Jiáchē. Ubicación estándar: un través de dedo (dedo medio) anterosuperior al ángulo mandibular; se palpa en la prominencia del masetero al apretar los dientes. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st45": {
+   "title": "ST45 Lidui",
+   "summary": "Ángulo externo de la uña del segundo dedo del pie. Se usa en: 1.12 Gingivitis y aftas o herpes labial; 1.14 Dolor de garganta y amigdalitis; 8.4 Zóster, varicela y herpes; 12.2 Insomnio. Verificado con acupuntura-puntos (bookskills): ST45 Lìduì. Ubicación estándar: en el 2.º dedo del pie, lateral a la falange distal, 0,1 cun proximal-lateral al ángulo lateral de la uña. Precaución de la ficha: zona dolorosa a la punción. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li1": {
+   "title": "LI1 Shangyang",
+   "summary": "Ángulo ungueal del índice, lado del pulgar. Se usa en: 1.13 Dolor de muelas. Verificado con acupuntura-puntos (bookskills): LI1 Shāngyáng. Ubicación estándar: lado radial del dedo índice, 0,1 cun proximal y lateral al ángulo ungueal radial. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li11": {
+   "title": "LI11 Quchi",
+   "summary": "Extremo externo del pliegue del codo. Muy reutilizado en piel, dientes y HTA. Se usa en: 1.13 Dolor de muelas; 3.4 Dolor de codo; 4.6 Diarrea; 5.1 Hipertensión arterial; 8.2 Eccema; 8.3 Urticaria; 8.5 Psoriasis; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): LI11 Qūchí. Ubicación estándar: en el extremo lateral del pliegue del codo, en el punto medio de la línea que une LU5 con el epicóndilo lateral del húmero (codo flexionado). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv26": {
+   "title": "GV26 Shuigou (Renzhong)",
+   "summary": "Surco nasolabial. OMS 2008: punto medio del filtrum; tradición: unión del tercio superior. En trastornos mentales el libro lo ubica a dos tercios bajo la nariz, que no coincide con ninguna de las dos. Se usa en: 1.13 Dolor de muelas; 3.8 Dolor lumbar; 4.7 Hemorroides, fisuras y fístulas; 10.7 Trastornos mentales graves; 11.9 Flujo vaginal (leucorrea). Verificado con acupuntura-puntos (bookskills): GV26 Shuǐgōu. Ubicación estándar: En la cara, en el filtrum. Estándar OMS 2008: punto medio del surco nasolabial (filtrum). Tradicionalmente: unión del tercio superior con los dos tercios inferiores del filtrum. Precaución de la ficha: Punto muy doloroso. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lu11": {
+   "title": "LU11 Shaoshang",
+   "summary": "Ángulo ungueal del pulgar. El libro dice el lado del índice; la ubicación estándar es el lado radial. Se usa en: 1.14 Dolor de garganta y amigdalitis. Verificado con acupuntura-puntos (bookskills): LU11 Shàoshāng. Ubicación estándar: en el lado radial del pulgar, 0,1 cun proximal y lateral al ángulo ungueal radial (en la intersección de la línea del borde radial y la línea de la base de la uña). Precaución de la ficha: punción muy dolorosa. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "pc6": {
+   "title": "PC6 Neiguan",
+   "summary": "Cara palmar de la muñeca, tres traveses sobre el pliegue. Es el punto con mejor evidencia para náusea (posoperatoria y del embarazo). Se usa en: 1.15 Parotiditis (paperas); 2.1 Trastornos de la tiroides; 4.4 Dolor gástrico, gastritis y úlcera; 5.2 Insuficiencia cardíaca; 11.4 Náuseas del embarazo. Verificado con acupuntura-puntos (bookskills): PC6 Nèiguān. Ubicación estándar: cara anterior del antebrazo, entre los tendones del palmar largo y el flexor radial del carpo, 2 cun proximal al pliegue palmar de la muñeca. Precaución de la ficha: nervio mediano (sensación eléctrica: retirar ligeramente y reorientar). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "sp6": {
+   "title": "SP6 Sanyinjiao",
+   "summary": "Borde posterior de la tibia, un palmo sobre el maléolo interno. Tradicionalmente se evita la estimulación fuerte en el embarazo. Se usa en: 2.1 Trastornos de la tiroides; 3.12 Trastornos del tobillo; 6.4 Enuresis infantil; 11.1 Impotencia; 11.5 Amenorrea; 11.6 Otros trastornos menstruales. Verificado con acupuntura-puntos (bookskills): SP6 Sānyīnjiāo. Ubicación estándar: en la cara medial de la pierna, posterior al borde medial de la tibia, 3 cun por encima de la prominencia del maléolo medial. Precaución de la ficha: **CONTRAINDICADO EN EMBARAZO** (clásicamente, especialmente combinado con LI4, por riesgo de inducir el parto/aborto). Embarazo: contraindicado clásicamente (salvo inducción a término). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st36": {
+   "title": "ST36 Zusanli",
+   "summary": "Cara externa de la pierna, un palmo bajo el pliegue de la rodilla. Se usa en: 2.2 Diabetes; 2.3 Obesidad; 4.4 Dolor gástrico, gastritis y úlcera; 4.6 Diarrea; 5.1 Hipertensión arterial; 12.1 Fatiga. Verificado con acupuntura-puntos (bookskills): ST36 Zúsānlǐ. Ubicación estándar: en la cara anterior de la pierna, 3 cun por debajo de ST35, en la línea ST35–ST41 (aprox. un través de dedo lateral a la cresta anterior de la tibia). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb25": {
+   "title": "GB25 Jingmen (punta de la costilla flotante)",
+   "summary": "Punta de la última costilla. Usado en obesidad y dolor torácico. Se usa en: 2.3 Obesidad; 7.3 Dolor torácico y del tronco. Verificado con acupuntura-puntos (bookskills): GB25 Jīngmén. Ubicación estándar: En la cara lateral del abdomen, inferior al extremo libre de la 12.ª costilla. Precaución de la ficha: La punción profunda o dirigida medialmente puede lesionar el riñón. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "oreja": {
+   "title": "Puntos auriculares",
+   "summary": "Delante del trago y en el lóbulo (obesidad); raíz del hélix (tabaco). Ejemplo de microsistema. Identificación probable (Claude): el libro solo describe la ubicación anatómica, sin nombre ni código. Se usa en: 2.3 Obesidad; 10.5 Adicciones."
+  },
+  "sp5": {
+   "title": "SP5 Shangqiu",
+   "summary": "Muesca delante y debajo del maléolo interno. Punto general de artritis. Se usa en: 3.1 Artritis. Verificado con acupuntura-puntos (bookskills): SP5 Shāngqiū. Ubicación estándar: en el pie, anteroinferior al maléolo medial, en la depresión a mitad de camino entre la tuberosidad del navicular y la punta del maléolo medial. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "dingchuan": {
+   "title": "Dingchuan (extra)",
+   "summary": "A ambos lados de la apófisis de C7. Artritis y bronquitis. Se usa en: 3.1 Artritis; 9.2 Bronquitis. Verificado con acupuntura-puntos (bookskills): EX-B1 Dingchuan. Ubicación estándar: 0,5 cun lateral a GV14 (bajo la apófisis espinosa de C7). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "te8": {
+   "title": "TE8 Sanyangluo (aprox.)",
+   "summary": "Centro de la cara dorsal del antebrazo. Artritis, dolor torácico y parálisis del antebrazo. Se usa en: 3.1 Artritis; 7.3 Dolor torácico y del tronco; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): TE8 Sānyángluò. Ubicación estándar: Cara posterior del antebrazo, en el punto medio entre radio y cúbito, 4 cun proximal al pliegue dorsal de la muñeca. Precaución de la ficha: Algunos textos clásicos contraindicaban la punción (se prefería moxa). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "si3": {
+   "title": "SI3 Houxi",
+   "summary": "Borde cubital de la mano, bajo el meñique. Tortícolis y cefalea de nuca (efecto contralateral). Se usa en: 3.2 Tortícolis; 7.1 Cefalea. Verificado con acupuntura-puntos (bookskills): SI3 Hòuxī. Ubicación estándar: Borde cubital de la mano, en la depresión proximal a la 5.ª articulación metacarpofalángica, en la unión piel roja-blanca (extremo de la línea transversa palmar distal con el puño semicerrado). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "luozhen": {
+   "title": "Luozhen (extra)",
+   "summary": "Dorso de la mano entre los metacarpianos 2 y 3. Punto clásico de tortícolis. Se usa en: 3.2 Tortícolis. Verificado con acupuntura-puntos (bookskills): EX-UE8 Wailaogong (Luozhen). Ubicación estándar: Dorso de la mano, entre 2.º y 3.º metacarpianos, ~0,5 cun proximal a la articulación metacarpofalángica. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li15": {
+   "title": "LI15 Jianyu",
+   "summary": "Hueco anterior del hombro con el brazo extendido. Punto principal de periartritis. Se usa en: 3.3 Dolor de hombro. Verificado con acupuntura-puntos (bookskills): LI15 Jiānyú. Ubicación estándar: en la depresión entre el extremo anterior del borde lateral del acromion y el troquíter del húmero (depresión anterior que aparece al abducir el brazo). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "li10": {
+   "title": "LI10 Shousanli",
+   "summary": "Borde externo del antebrazo, unos traveses bajo LI11. Se usa en: 3.4 Dolor de codo; 11.3 Enfermedad mamaria. Verificado con acupuntura-puntos (bookskills): LI10 Shǒusānlǐ. Ubicación estándar: cara posterolateral del antebrazo, en la línea LI5–LI11, 2 cun distal a LI11. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ht7": {
+   "title": "HT7 Shenmen",
+   "summary": "Pliegue palmar de la muñeca, lado del meñique. Se usa en: 3.5 Dolor de muñeca; 11.1 Impotencia. Verificado con acupuntura-puntos (bookskills): HT7 Shénmén. Ubicación estándar: en el extremo cubital del pliegue palmar de la muñeca, radial al tendón del flexor cubital del carpo (proximal al pisiforme). Precaución de la ficha: arteria y nervio cubitales. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "pc7": {
+   "title": "PC7 Daling",
+   "summary": "Centro del pliegue palmar de la muñeca (túnel carpiano). Se usa en: 3.5 Dolor de muñeca. Verificado con acupuntura-puntos (bookskills): PC7 Dàlíng. Ubicación estándar: en el pliegue palmar de la muñeca, entre los tendones del palmar largo y el flexor radial del carpo. Precaución de la ficha: nervio mediano. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl40": {
+   "title": "BL40 Weizhong",
+   "summary": "Centro del hueco poplíteo. Lumbalgia, eccema y urticaria. Se usa en: 3.8 Dolor lumbar; 8.2 Eccema; 8.3 Urticaria. Verificado con acupuntura-puntos (bookskills): BL40 Wěizhōng. Ubicación estándar: en la región poplítea, en el punto medio del pliegue poplíteo. Precaución de la ficha: arteria y vena poplíteas y nervio tibial en profundidad: evitar inserción profunda y manipulación enérgica; sangrar solo vénulas superficiales. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl60": {
+   "title": "BL60 Kunlun",
+   "summary": "Detrás del maléolo externo. Se usa en: 3.8 Dolor lumbar. Verificado con acupuntura-puntos (bookskills): BL60 Kūnlún. Ubicación estándar: en la región posterolateral del tobillo, en la depresión entre la prominencia del maléolo externo y el tendón calcáneo. Precaución de la ficha: contraindicado en el embarazo. Embarazo: contraindicado clásicamente (salvo inducción a término). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb30": {
+   "title": "GB30 Huantiao",
+   "summary": "Nalga, detrás del trocánter mayor; se ubica con la mano abierta desde la cresta ilíaca. Se usa en: 3.9 Ciática; 3.10 Trastornos de la cadera; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): GB30 Huántiào. Ubicación estándar: En la unión del tercio lateral con los dos tercios mediales de la línea que une la prominencia del trocánter mayor con el hiato sacro (paciente en decúbito lateral, cadera flexionada). Precaución de la ficha: Nervio ciático en profundidad: si aparece sensación eléctrica, no manipular más. Contraindicado en embarazo según algunas fuentes (punción fuerte). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl67": {
+   "title": "BL67 Zhiyin",
+   "summary": "Ángulo externo de la uña del quinto dedo del pie. Advertencia: es el punto clásico para versión fetal; prudencia en el embarazo. Se usa en: 3.9 Ciática; 6.3 Retención e incontinencia de orina; 8.4 Zóster, varicela y herpes. Verificado con acupuntura-puntos (bookskills): BL67 Zhìyīn. Ubicación estándar: en el 5º dedo del pie, lateral a la falange distal, 0,1 cun proximal al ángulo lateral de la uña (cruce de la línea del borde lateral y la línea de la base de la uña). Precaución de la ficha: contraindicado en el embarazo salvo para corregir la malposición fetal con moxa; punción dolorosa. Embarazo: contraindicado clásicamente (salvo inducción a término). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lr1": {
+   "title": "LR1 Dadun",
+   "summary": "Ángulo ungueal del dedo gordo del pie. Estreñimiento, ciática y hemorragia uterina. Se usa en: 3.9 Ciática; 4.5 Estreñimiento y colitis; 11.7 Hemorragia uterina. Verificado con acupuntura-puntos (bookskills): LR1 Dàdūn. Ubicación estándar: Dedo gordo del pie, lado lateral de la falange distal, 0,1 cun proximal-lateral al ángulo lateral de la uña. Precaución de la ficha: Punción dolorosa. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "sp9": {
+   "title": "SP9 Yinlingquan",
+   "summary": "Cara interna de la pierna, en la muesca bajo la cabeza de la tibia. Se usa en: 3.10 Trastornos de la cadera; 4.2 Trastornos de la vesícula; 4.5 Estreñimiento y colitis; 6.1 Cólico nefrítico y litiasis; 6.4 Enuresis infantil; 7.3 Dolor torácico y del tronco; 11.9 Flujo vaginal (leucorrea). Verificado con acupuntura-puntos (bookskills): SP9 Yīnlíngquán. Ubicación estándar: en la cara medial de la pierna, en la depresión entre el borde inferior del cóndilo medial de la tibia y el borde medial de la tibia. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st34": {
+   "title": "ST34 Liangqiu (aprox.)",
+   "summary": "Muslo, sobre el borde externo de la rótula. Rodilla, mama y circulación venosa. Se usa en: 3.11 Trastornos de la rodilla; 5.3 Enfermedad arterial periférica; 5.4 Insuficiencia venosa; 11.3 Enfermedad mamaria. Verificado con acupuntura-puntos (bookskills): ST34 Liángqiū. Ubicación estándar: en la cara anterolateral del muslo, 2 cun por encima de la base de la rótula, entre el vasto lateral y el borde lateral del tendón del recto femoral. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb39": {
+   "title": "GB39 Xuanzhong",
+   "summary": "Peroné, unos traveses sobre el maléolo externo. Se usa en: 3.12 Trastornos del tobillo; 7.1 Cefalea. Verificado con acupuntura-puntos (bookskills): GB39 Xuánzhōng. Ubicación estándar: 3 cun por encima de la prominencia del maléolo lateral, anterior al peroné (OMS 2008). Precaución de la ficha: Divergencia: Deadman lo sitúa en el borde posterior del peroné (entre éste y los tendones peroneos); OMS y textos chinos, en el borde anterior. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st42": {
+   "title": "ST42 Chongyang (aprox.)",
+   "summary": "Centro del dorso del pie según el libro. ST42 estándar está más distal, sobre la arteria dorsal del pie; el centro del pliegue del tobillo es ST41. Se usa en: 3.13 Trastornos de pie y dedos; 8.5 Psoriasis. Verificado con acupuntura-puntos (bookskills): ST42 Chōngyáng. Ubicación estándar: en el dorso del pie, en la unión de la base del 2.º metatarsiano con el cuneiforme intermedio, sobre la arteria dorsal del pie. Precaución de la ficha: arteria dorsal del pie (palpar y evitar). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bafeng": {
+   "title": "Bafeng (extra)",
+   "summary": "Espacios interdigitales del pie. Se usa en: 3.13 Trastornos de pie y dedos; 5.3 Enfermedad arterial periférica; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): EX-LE10 Bafeng. Ubicación estándar: Dorso del pie, en los pliegues interdigitales, en el límite de la piel dorsal y plantar (8 puntos). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv12": {
+   "title": "CV12 Zhongwan",
+   "summary": "Línea media, a mitad entre el ombligo y el extremo del esternón. Se usa en: 4.1 Indigestión y vómito; 4.4 Dolor gástrico, gastritis y úlcera; 11.4 Náuseas del embarazo. Verificado con acupuntura-puntos (bookskills): CV12 Zhōngwǎn. Ubicación estándar: En el abdomen superior, línea media anterior, 4 cun por encima del centro del ombligo (punto medio entre el ombligo y la unión xifoesternal). Precaución de la ficha: Punción profunda en pacientes delgados puede alcanzar la cavidad peritoneal; precaución en embarazo avanzado. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "sifeng": {
+   "title": "Sifeng (extra)",
+   "summary": "Cara palmar de los dedos 2 a 5, entre el primer y el segundo pliegue. Vómito del lactante y tos. Se usa en: 4.1 Indigestión y vómito; 9.3 Tos. Verificado con acupuntura-puntos (bookskills): EX-UE10 Sifeng. Ubicación estándar: Cara palmar, centro del pliegue de la articulación interfalángica proximal del 2.º al 5.º dedo. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb34": {
+   "title": "GB34 Yanglingquan",
+   "summary": "Delante y debajo de la cabeza del peroné. Se usa en: 4.2 Trastornos de la vesícula; 4.3 Hepatitis infecciosa e ictericia; 4.5 Estreñimiento y colitis; 10.4 Otras parálisis; 11.6 Otros trastornos menstruales. Verificado con acupuntura-puntos (bookskills): GB34 Yánglíngquán. Ubicación estándar: En la cara fibular de la pierna, en la depresión anterior y distal a la cabeza del peroné. Precaución de la ficha: Nervio peroneo común próximo (posterior e inferior a la cabeza del peroné). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv14": {
+   "title": "GV14 Dazhui",
+   "summary": "Bajo la apófisis de C7. Se usa en: 4.3 Hepatitis infecciosa e ictericia; 8.1 Sabañones; 9.2 Bronquitis. Verificado con acupuntura-puntos (bookskills): GV14 Dàzhuī. Ubicación estándar: En la región cervical posterior, en la depresión bajo la apófisis espinosa de C7, línea media posterior. Precaución de la ficha: No profundizar (médula cervical); sangría/ventosas frecuentes para calor. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv9": {
+   "title": "GV9 Zhiyang",
+   "summary": "Línea media, a la altura de las puntas inferiores de las escápulas. Se usa en: 4.3 Hepatitis infecciosa e ictericia. Verificado con acupuntura-puntos (bookskills): GV9 Zhìyáng. Ubicación estándar: En la región dorsal, en la depresión bajo la apófisis espinosa de T7, línea media posterior (a nivel del ángulo inferior de la escápula). Precaución de la ficha: No puncionar profundo (médula espinal). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv1": {
+   "title": "GV1 Changqiang",
+   "summary": "Entre la punta del cóccix y el ano. Se usa en: 4.7 Hemorroides, fisuras y fístulas; 5.3 Enfermedad arterial periférica. Verificado con acupuntura-puntos (bookskills): GV1 Chángqiáng. Ubicación estándar: En el periné, por debajo del cóccix, en el punto medio entre la punta del cóccix y el ano. Precaución de la ficha: No puncionar perpendicular (riesgo de perforar el recto). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl57": {
+   "title": "BL57 Chengshan",
+   "summary": "Centro de la pantorrilla, entre los vientres del gemelo. Se usa en: 4.7 Hemorroides, fisuras y fístulas; 6.1 Cólico nefrítico y litiasis. Verificado con acupuntura-puntos (bookskills): BL57 Chéngshān. Ubicación estándar: en la cara posterior de la pierna, en la unión del tendón calcáneo con los dos vientres del gastrocnemio (vértice de la depresión en V al extender el pie contra resistencia; ≈ punto medio entre BL40 y BL60). Precaución de la ficha: punción a menudo dolorosa; evitar manipulación excesiva. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv20": {
+   "title": "GV20 Baihui",
+   "summary": "Vértice: cruce de la línea media con la línea entre las orejas. Muy reutilizado. Se usa en: 4.7 Hemorroides, fisuras y fístulas; 6.4 Enuresis infantil; 8.1 Sabañones; 10.2 Epilepsia; 10.4 Otras parálisis; 10.6 Depresión; 10.7 Trastornos mentales graves; 11.7 Hemorragia uterina; 11.8 Prolapso uterino. Verificado con acupuntura-puntos (bookskills): GV20 Bǎihuì. Ubicación estándar: En la cabeza, línea media, 5 cun por detrás de la línea anterior del cabello (clásicamente en la intersección de la línea media con la línea que une los ápices de ambas orejas). Precaución de la ficha: En lactantes, precaución con la fontanela anterior abierta. Evitar moxa en hipertensión o ascenso de Yang de Hígado. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ht8": {
+   "title": "HT8 Shaofu",
+   "summary": "Palma, donde toca la punta del meñique al cerrar la mano. Se usa en: 5.2 Insuficiencia cardíaca. Verificado con acupuntura-puntos (bookskills): HT8 Shàofǔ. Ubicación estándar: en la palma, entre el 4.º y 5.º metacarpianos, proximal a la 5.ª articulación metacarpofalángica (donde apoya la punta del meñique al cerrar el puño). Precaución de la ficha: punción dolorosa. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl14": {
+   "title": "BL14 Jueyinshu",
+   "summary": "Dos traveses a cada lado de T4. Se usa en: 5.2 Insuficiencia cardíaca. Verificado con acupuntura-puntos (bookskills): BL14 Juéyīnshū. Ubicación estándar: en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T4, 1,5 cun lateral a la línea media posterior. Precaución de la ficha: riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl13": {
+   "title": "BL13 Feishu",
+   "summary": "Dos traveses a cada lado de T3. Asma, bronquitis, eccema y urticaria. Se usa en: 8.2 Eccema; 8.3 Urticaria; 9.1 Asma; 9.2 Bronquitis. Verificado con acupuntura-puntos (bookskills): BL13 Fèishū. Ubicación estándar: en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T3, 1,5 cun lateral a la línea media posterior. Precaución de la ficha: riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "bl17": {
+   "title": "BL17 Geshu (aprox.)",
+   "summary": "Paravertebral, a la altura del ángulo inferior de la escápula. Diabetes. Se usa en: 2.2 Diabetes. Verificado con acupuntura-puntos (bookskills): BL17 Géshū. Ubicación estándar: en la parte superior de la espalda, a la altura del borde inferior de la apófisis espinosa de T7 (≈ nivel del ángulo inferior de la escápula), 1,5 cun lateral a la línea media posterior. Precaución de la ficha: riesgo de neumotórax: nunca perpendicular profunda ni oblicua hacia lateral. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "sp10": {
+   "title": "SP10 Xuehai",
+   "summary": "Muslo anteromedial; se localiza con la palma sobre la rótula (pulgar). Eccema y psoriasis. Se usa en: 8.2 Eccema; 8.5 Psoriasis; 11.6 Otros trastornos menstruales. Verificado con acupuntura-puntos (bookskills): SP10 Xuèhǎi. Ubicación estándar: en la cara anteromedial del muslo, sobre el relieve del vasto medial, 2 cun por encima del extremo medial de la base de la rótula. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv3": {
+   "title": "CV3 Zhongji",
+   "summary": "Línea media, justo sobre el pubis. Se usa en: 6.2 Infecciones urinarias. Verificado con acupuntura-puntos (bookskills): CV3 Zhōngjí. Ubicación estándar: En el abdomen inferior, línea media anterior, 4 cun por debajo del centro del ombligo. Precaución de la ficha: Vaciar la vejiga antes; contraindicado en embarazo. Embarazo: abdomen inferior, evitar según la mayoría de las escuelas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv4": {
+   "title": "CV4 Guanyuan",
+   "summary": "Línea media, a mitad entre ombligo y pubis. Se usa en: 6.4 Enuresis infantil; 11.1 Impotencia; 11.2 Enfermedad de la próstata; 11.6 Otros trastornos menstruales. Verificado con acupuntura-puntos (bookskills): CV4 Guānyuán. Ubicación estándar: En el abdomen inferior, línea media anterior, 3 cun por debajo del centro del ombligo. Precaución de la ficha: Vaciar la vejiga antes; contraindicado en embarazo. Embarazo: abdomen inferior, evitar según la mayoría de las escuelas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv6": {
+   "title": "CV6 Qihai (zona infraumbilical)",
+   "summary": "Uno o dos traveses bajo el ombligo. Diarrea, amenorrea y fatiga. Se usa en: 4.6 Diarrea; 11.5 Amenorrea; 12.1 Fatiga. Verificado con acupuntura-puntos (bookskills): CV6 Qìhǎi. Ubicación estándar: En el abdomen inferior, línea media anterior, 1,5 cun por debajo del centro del ombligo. Precaución de la ficha: Contraindicado en embarazo. Embarazo: abdomen inferior, evitar según la mayoría de las escuelas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lr8": {
+   "title": "LR8 Ququan",
+   "summary": "Extremo interno del pliegue de la rodilla. Se usa en: 6.2 Infecciones urinarias; 11.8 Prolapso uterino. Verificado con acupuntura-puntos (bookskills): LR8 Qūquán. Ubicación estándar: Cara medial de la rodilla, en la depresión medial a los tendones del semitendinoso y semimembranoso, en el extremo medial del pliegue poplíteo (rodilla flexionada). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ki11": {
+   "title": "KI11 Henggu (aprox.)",
+   "summary": "Borde superior del pubis, uno o dos traveses de la línea media. Se usa en: 6.3 Retención e incontinencia de orina; 11.2 Enfermedad de la próstata; 11.6 Otros trastornos menstruales; 11.8 Prolapso uterino. Verificado con acupuntura-puntos (bookskills): KI11 Hénggǔ. Ubicación estándar: en el abdomen inferior, 5 cun por debajo del centro del ombligo, 0,5 cun lateral a la línea media anterior (borde superior del pubis). Precaución de la ficha: vaciar la vejiga antes; **precaución/evitar en embarazo**; punción profunda puede penetrar la vejiga o el peritoneo. Embarazo: abdomen inferior, evitar según la mayoría de las escuelas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "yaoyan": {
+   "title": "Punto lumbar a tres traveses (aprox. Yaoyan)",
+   "summary": "Tres traveses de la columna, a la altura de las crestas ilíacas. Vesícula, cólico renal, cistitis, próstata y amenorrea. Se usa en: 4.2 Trastornos de la vesícula; 6.1 Cólico nefrítico y litiasis; 6.2 Infecciones urinarias; 11.2 Enfermedad de la próstata; 11.5 Amenorrea. Verificado con acupuntura-puntos (bookskills): EX-B7 Yaoyan. Ubicación estándar: En la depresión ~3,5 cun lateral al borde inferior de L4. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lu9": {
+   "title": "LU9 Taiyuan (zona del pulso radial)",
+   "summary": "Pliegue de la muñeca donde late la radial. Cefalea frontal, dolor facial, bronquitis aguda y tos. Se usa en: 5.4 Insuficiencia venosa; 7.1 Cefalea; 7.2 Dolor facial; 8.5 Psoriasis; 9.2 Bronquitis; 9.3 Tos; 10.3 Parálisis facial. Verificado con acupuntura-puntos (bookskills): LU9 Tàiyuān. Ubicación estándar: en el pliegue palmar de la muñeca, entre la apófisis estiloides del radio y el escafoides, en la depresión cubital al tendón del abductor largo del pulgar y radial a la arteria radial. Precaución de la ficha: arteria radial. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "pc4": {
+   "title": "PC4 Ximen (aprox.)",
+   "summary": "Mitad del antebrazo palmar, entre los dos huesos. Zóster intercostal y varicela. Se usa en: 8.4 Zóster, varicela y herpes. Verificado con acupuntura-puntos (bookskills): PC4 Xìmén. Ubicación estándar: cara anterior del antebrazo, entre los tendones del palmar largo y el flexor radial del carpo, 5 cun proximal al pliegue palmar de la muñeca. Precaución de la ficha: nervio mediano. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ki1": {
+   "title": "KI1 Yongquan",
+   "summary": "Planta del pie, en el hueco al flexionar los dedos. Sabañones y coma. Se usa en: 8.1 Sabañones; 10.1 Coma. Verificado con acupuntura-puntos (bookskills): KI1 Yǒngquán. Ubicación estándar: en la planta del pie, en la depresión más profunda al flexionar los dedos; aprox. en la unión del tercio anterior y los dos tercios posteriores de la línea entre la comisura del 2.º-3.er dedo y el talón. Precaución de la ficha: punción muy dolorosa; usar con moderación en pacientes débiles. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv16": {
+   "title": "GV16 Fengfu",
+   "summary": "Centro del borde inferior del occipital. Se usa en: 8.3 Urticaria; 10.2 Epilepsia; 10.4 Otras parálisis. Verificado con acupuntura-puntos (bookskills): GV16 Fēngfǔ. Ubicación estándar: En la región cervical posterior, directamente bajo la protuberancia occipital externa, en la depresión entre ambos trapecios (1 cun por encima de la línea posterior del cabello). Precaución de la ficha: Nunca hacia arriba ni profundo: riesgo de lesionar el bulbo raquídeo a través del foramen magno. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st40": {
+   "title": "ST40 Fenglong",
+   "summary": "Cara externa de la pierna, cerca de la mitad entre rodilla y tobillo. El libro lo destaca para la expectoración abundante. Se usa en: 9.1 Asma; 9.2 Bronquitis. Verificado con acupuntura-puntos (bookskills): ST40 Fēnglóng. Ubicación estándar: en la cara anterolateral de la pierna, en el borde lateral del tibial anterior, 8 cun por encima de la prominencia del maléolo lateral (dos traveses de dedo lateral a la cresta tibial, a nivel de ST38). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv17": {
+   "title": "CV17 Shanzhong",
+   "summary": "Esternón, entre las mamas. Se usa en: 9.1 Asma; 11.3 Enfermedad mamaria. Verificado con acupuntura-puntos (bookskills): CV17 Dànzhōng. Ubicación estándar: En el tórax, línea media anterior, a la altura del 4º espacio intercostal (en el varón, habitualmente entre los pezones). Precaución de la ficha: Nunca perpendicular: posible foramen esternal congénito (riesgo de punción de pericardio/corazón). La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv22": {
+   "title": "CV22 Tiantu",
+   "summary": "Hueco supraesternal. Los chinos lo estimulan en profundidad; en casa, solo presión suave. Se usa en: 9.3 Tos. Verificado con acupuntura-puntos (bookskills): CV22 Tiāntū. Ubicación estándar: En la parte anterior del cuello, línea media anterior, en el centro de la fosa supraesternal. Precaución de la ficha: Técnica estricta: no desviar lateralmente ni en profundidad (riesgo de tráquea, arco aórtico, tronco braquiocefálico y grandes venas, pulmón). No puncionar en perpendicular profundo. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "yaoqi": {
+   "title": "Yaoqi (extra)",
+   "summary": "Línea media sacra, entre los hoyuelos sacroilíacos. Epilepsia. Se usa en: 10.2 Epilepsia. Verificado con acupuntura-puntos (bookskills): EX-B9 Yaoqi. Ubicación estándar: 2 cun por encima de la punta del coxis. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "shixuan": {
+   "title": "Shixuan y puntos ungueales del meñique",
+   "summary": "Puntas de los diez dedos y ángulos ungueales del meñique. Reanimación en coma. Se usa en: 10.1 Coma. Verificado con acupuntura-puntos (bookskills): EX-UE11 Shixuan. Ubicación estándar: Punta de los 10 dedos, ~0,1 cun del borde de la uña. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gb8": {
+   "title": "GB8 Shuaigu (aprox.)",
+   "summary": "Un palmo sobre la oreja. Punto común para las adicciones. Se usa en: 10.5 Adicciones. Verificado con acupuntura-puntos (bookskills): GB8 Shuàigǔ. Ubicación estándar: Directamente por encima del vértice de la oreja, 1,5 cun por encima de la línea del cabello temporal. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "gv25": {
+   "title": "GV25 Suliao",
+   "summary": "Punta de la nariz. Alcohol. Se usa en: 10.5 Adicciones. Verificado con acupuntura-puntos (bookskills): GV25 Sùliáo. Ubicación estándar: En la cara, en la punta de la nariz. Precaución de la ficha: Punto doloroso. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "cv15": {
+   "title": "CV15 Jiuwei (aprox.)",
+   "summary": "Extremo inferior del esternón según el libro. CV15 estándar está 1 cun bajo la unión xifoesternal. Se usa en: 10.7 Trastornos mentales graves. Verificado con acupuntura-puntos (bookskills): CV15 Jiūwěi. Ubicación estándar: En el abdomen superior, línea media anterior, 1 cun por debajo de la unión xifoesternal (7 cun por encima del ombligo). Precaución de la ficha: No puncionar profundo ni hacia arriba (hígado, corazón). Si falta el apéndice xifoides o es largo, localizar por medición desde el ombligo. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ansiedad": {
+   "title": "Punto de la ansiedad (sin código)",
+   "summary": "Tórax derecho, cuatro traveses bajo la clavícula. Miedo escénico y crisis de ansiedad. No hay correspondencia clara con un punto estándar. Identificación probable (Claude): el libro solo describe la ubicación anatómica, sin nombre ni código. Se usa en: 10.6 Depresión; 12.3 Miedo escénico."
+  },
+  "st18": {
+   "title": "ST18 Rugen",
+   "summary": "Dos traveses bajo el pezón. Se usa en: 11.3 Enfermedad mamaria. Verificado con acupuntura-puntos (bookskills): ST18 Rǔgēn. Ubicación estándar: en el tórax, en el 5.º espacio intercostal, 4 cun lateral a la línea media anterior (en la mujer, en el surco submamario). Precaución de la ficha: riesgo de neumotórax con inserción perpendicular profunda; en el lado izquierdo, proximidad del corazón. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "lr2": {
+   "title": "LR2 Xingjian",
+   "summary": "Membrana entre el primer y el segundo dedo del pie. Se usa en: 11.6 Otros trastornos menstruales; 11.9 Flujo vaginal (leucorrea). Verificado con acupuntura-puntos (bookskills): LR2 Xíngjiān. Ubicación estándar: Dorso del pie, entre el 1.º y 2.º dedos, proximal al borde de la membrana interdigital, en la unión piel roja-blanca. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "sp3": {
+   "title": "SP3 Taibai",
+   "summary": "Borde interno del pie, detrás de la articulación del dedo gordo. Hemorragia uterina e insomnio. Se usa en: 11.7 Hemorragia uterina; 12.2 Insomnio. Verificado con acupuntura-puntos (bookskills): SP3 Tàibái. Ubicación estándar: en el borde medial del pie, en la depresión proximal a la 1.ª articulación metatarsofalángica, en el límite piel roja/blanca. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "st25": {
+   "title": "ST25 Tianshu",
+   "summary": "A los lados del ombligo. Estreñimiento. Se usa en: 4.5 Estreñimiento y colitis. Verificado con acupuntura-puntos (bookskills): ST25 Tiānshū. Ubicación estándar: en el abdomen, 2 cun lateral al centro del ombligo. Precaución de la ficha: precaución en el embarazo (la mayoría de fuentes lo desaconsejan o lo contraindican en el embarazo avanzado); en personas delgadas, riesgo de perforar el peritoneo. Embarazo: abdomen inferior, evitar según la mayoría de las escuelas. La correspondencia entre la descripción del libro y el código es interpretación de Claude."
+  },
+  "ev_pc6_nvp": {
+   "title": "Evidencia: PC6 en náuseas del embarazo",
+   "summary": "Metanálisis en red de 24 ECA (2026): la acupresión en PC6 está entre las opciones que reducen los síntomas, con certeza baja a moderada (Nutrients, PMID 42075106, doi:10.3390/nu18081293). Revisión de 2018: jengibre y PC6 son las opciones más fiables (PMID 30319738, doi:10.4103/ijpvm.IJPVM_430_16). Consultado en PubMed el 2026-11-26."
+  }
+ },
+ "requires": {
+  "chapters": {
+   "1": [
+    0
+   ],
+   "2": [
+    0
+   ],
+   "3": [
+    0
+   ],
+   "4": [
+    0
+   ],
+   "5": [
+    0
+   ],
+   "6": [
+    0
+   ],
+   "7": [
+    0
+   ],
+   "8": [
+    0
+   ],
+   "9": [
+    0
+   ],
+   "10": [
+    0
+   ],
+   "11": [
+    0
+   ],
+   "12": [
+    0
+   ]
+  },
+  "sections": {
+   "1.2": [
+    "1.1"
+   ],
+   "1.3": [
+    "1.1"
+   ],
+   "1.4": [
+    "1.1",
+    "1.2"
+   ],
+   "1.5": [
+    "1.1"
+   ],
+   "1.7": [
+    "1.2",
+    "1.6"
+   ],
+   "1.8": [
+    "1.1",
+    "1.6"
+   ],
+   "1.10": [
+    "1.9"
+   ],
+   "1.11": [
+    "1.1",
+    "1.9",
+    "0.6"
+   ],
+   "1.12": [
+    "1.1",
+    "1.6"
+   ],
+   "1.13": [
+    "1.1",
+    "1.6",
+    "1.12"
+   ],
+   "1.14": [
+    "1.1",
+    "1.12"
+   ],
+   "1.15": [
+    "1.1",
+    "1.6"
+   ],
+   "2.1": [
+    "1.1",
+    "1.15"
+   ],
+   "2.2": [
+    "1.2"
+   ],
+   "2.3": [
+    "2.2",
+    "0.3"
+   ],
+   "3.4": [
+    "1.1",
+    "1.13"
+   ],
+   "3.5": [
+    "1.11"
+   ],
+   "3.7": [
+    "1.8"
+   ],
+   "3.8": [
+    "1.13"
+   ],
+   "3.10": [
+    "3.9"
+   ],
+   "3.12": [
+    "2.1"
+   ],
+   "4.2": [
+    "3.10",
+    "0.6"
+   ],
+   "4.3": [
+    "4.2",
+    "0.6"
+   ],
+   "4.4": [
+    "1.15",
+    "2.2",
+    "4.1"
+   ],
+   "4.5": [
+    "3.9",
+    "3.10",
+    "4.2"
+   ],
+   "4.6": [
+    "1.13",
+    "2.2"
+   ],
+   "4.7": [
+    "1.13"
+   ],
+   "5.1": [
+    "1.1",
+    "1.7",
+    "1.13",
+    "2.2"
+   ],
+   "5.2": [
+    "1.15",
+    "0.6"
+   ],
+   "5.3": [
+    "1.7",
+    "3.11",
+    "3.13",
+    "4.7"
+   ],
+   "5.4": [
+    "1.7",
+    "3.11"
+   ],
+   "6.1": [
+    "1.2",
+    "3.10",
+    "4.2",
+    "4.7",
+    "0.6"
+   ],
+   "6.2": [
+    "4.2",
+    "0.6"
+   ],
+   "6.3": [
+    "3.9"
+   ],
+   "6.4": [
+    "2.1",
+    "3.10",
+    "4.7"
+   ],
+   "7.1": [
+    "1.1",
+    "3.2",
+    "3.12",
+    "5.4"
+   ],
+   "7.2": [
+    "1.10",
+    "5.4"
+   ],
+   "7.3": [
+    "2.3",
+    "3.1",
+    "3.10"
+   ],
+   "8.1": [
+    "4.3",
+    "4.7",
+    "0.6"
+   ],
+   "8.2": [
+    "1.13",
+    "3.8",
+    "0.6"
+   ],
+   "8.3": [
+    "1.13",
+    "3.8",
+    "8.2",
+    "0.6"
+   ],
+   "8.4": [
+    "1.1",
+    "1.12",
+    "3.9"
+   ],
+   "8.5": [
+    "1.13",
+    "3.13",
+    "5.4",
+    "8.2"
+   ],
+   "9.1": [
+    "8.2",
+    "0.6"
+   ],
+   "9.2": [
+    "1.1",
+    "3.1",
+    "4.3",
+    "5.4",
+    "8.2",
+    "9.1",
+    "0.6"
+   ],
+   "9.3": [
+    "1.1",
+    "4.1",
+    "5.4"
+   ],
+   "10.1": [
+    "8.1",
+    "1.2"
+   ],
+   "10.2": [
+    "4.7",
+    "8.3"
+   ],
+   "10.3": [
+    "1.1",
+    "1.2",
+    "5.4"
+   ],
+   "10.4": [
+    "1.11",
+    "1.13",
+    "3.1",
+    "3.9",
+    "3.13",
+    "4.2",
+    "4.7",
+    "8.3"
+   ],
+   "10.5": [
+    "1.1",
+    "1.9",
+    "2.3"
+   ],
+   "10.6": [
+    "4.7"
+   ],
+   "10.7": [
+    "1.9",
+    "1.13",
+    "4.7"
+   ],
+   "11.1": [
+    "2.1",
+    "3.5",
+    "6.4",
+    "0.6"
+   ],
+   "11.2": [
+    "4.2",
+    "6.3",
+    "6.4",
+    "0.6"
+   ],
+   "11.3": [
+    "3.4",
+    "3.11",
+    "9.1"
+   ],
+   "11.4": [
+    "1.15",
+    "4.1"
+   ],
+   "11.5": [
+    "2.1",
+    "4.2",
+    "4.6",
+    "0.6"
+   ],
+   "11.6": [
+    "2.1",
+    "4.2",
+    "6.3",
+    "6.4",
+    "8.2"
+   ],
+   "11.7": [
+    "3.9",
+    "4.7"
+   ],
+   "11.8": [
+    "4.7",
+    "6.2",
+    "6.3"
+   ],
+   "11.9": [
+    "1.13",
+    "3.10",
+    "11.6"
+   ],
+   "12.1": [
+    "2.2",
+    "4.6"
+   ],
+   "12.2": [
+    "1.12",
+    "11.7"
+   ],
+   "12.3": [
+    "10.6"
+   ],
+   "1.1": [
+    "0.1"
+   ],
+   "1.6": [
+    "0.1"
+   ],
+   "3.1": [
+    "0.1",
+    "0.6"
+   ],
+   "1.9": [
+    "0.6"
+   ],
+   "3.9": [
+    "3.3",
+    "0.6"
+   ]
+  },
+  "items": {
+   "gv14": [
+    "c7"
+   ],
+   "gv13": [
+    "c7"
+   ],
+   "dingchuan": [
+    "c7"
+   ],
+   "bl13": [
+    "c7"
+   ],
+   "bl14": [
+    "c7"
+   ],
+   "yaoyan": [
+    "cresta"
+   ],
+   "gb30": [
+    "cresta"
+   ],
+   "oreja": [
+    "microsist"
+   ],
+   "princ_sec": [
+    "masaje"
+   ],
+   "agudo_cronico": [
+    "masaje"
+   ],
+   "electro": [
+    "masaje"
+   ],
+   "endorfinas": [
+    "compuerta"
+   ],
+   "kegel": [
+    "princ_sec"
+   ],
+   "meridiano_term": [
+    "princ_sec"
+   ],
+   "ev_pc6_nvp": [
+    "pc6"
+   ]
+  }
+ },
+ "resources": [
+  {
+   "id": "AP",
+   "title": "Skill acupuntura-puntos (bookskills): fichas de 361 puntos e índice de síntomas",
+   "usedBy": [
+    "1.1",
+    "1.3",
+    "1.6",
+    "1.7",
+    "1.8",
+    "1.9",
+    "1.10",
+    "1.11",
+    "1.12",
+    "1.13",
+    "1.14",
+    "2.2",
+    "2.3",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.7",
+    "3.8",
+    "3.9",
+    "3.10",
+    "3.11",
+    "3.12",
+    "3.13",
+    "4.1",
+    "4.2",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "5.1",
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4",
+    "7.1",
+    "7.2",
+    "7.3",
+    "8.2",
+    "8.3",
+    "8.4",
+    "9.1",
+    "9.2",
+    "9.3",
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.5",
+    "10.6",
+    "10.7",
+    "11.1",
+    "11.3",
+    "11.4",
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8",
+    "11.9",
+    "12.1",
+    "12.2",
+    "12.3"
+   ],
+   "summary": "Fuente de verificación de códigos, ubicaciones estándar, precauciones y puntos por síntoma (Deadman, Maciocia, OMS 2008)."
+  },
+  {
+   "id": "AM",
+   "title": "Atlas de Meridianos (bookskills/atlas)",
+   "usedBy": [
+    "0.6"
+   ],
+   "summary": "Mapa interactivo de los mismos puntos; útil para ver la posición de cada código."
+  }
+ ]
+}

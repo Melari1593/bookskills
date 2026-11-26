@@ -26,6 +26,12 @@ python3 atlas/build.py
 
 `atlas/template.html` contiene la página (estilos y lógica) y `atlas/build.py` extrae los datos de `references/` y asigna a cada punto una posición esquemática en la figura.
 
+## Grafos de acupresión y ojos (Dalet y Rosenfarb)
+
+[`grafos/dalet-acupressure-self-care/grafo_dalet_acupressure.html`](grafos/dalet-acupressure-self-care/grafo_dalet_acupressure.html) es el mapa de *Acupressure Self-Care Handbook* (Roger Dalet, 2023): introducción y 12 partes, 77 afecciones y 86 puntos recurrentes. El libro no nombra los puntos; los códigos son una interpretación y están verificados con las fichas de [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md). Cada afección indica cuántos de sus puntos coinciden con el índice de síntomas de la skill (127 de 207 usos, 61 %). Detalle en [`comparacion.md`](grafos/dalet-acupressure-self-care/comparacion.md).
+
+[`grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html`](grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html) es el mapa de *Healing Your Eyes with Chinese Medicine* (Andy Rosenfarb, 2007): 8 capítulos, 81 secciones, 56 conceptos y 3 apéndices, con alertas marcadas con ⚠ y evidencia de PubMed en [`evidencia.md`](grafos/rosenfarb-healing-your-eyes/evidencia.md). La numeración de secciones es propia del grafo; el EPUB no tiene páginas impresas.
+
 ## Graphify — Harry's Cosmeticology
 
 `Graphify/graph.html` es un grafo de conocimiento interactivo de *Harry's Cosmeticology* (Vol. 1, Vol. 2 y Sostenibilidad): 2129 conceptos y 6434 relaciones entre ingredientes, anatomía, mecanismos, afecciones y regulación. El reporte está en `Graphify/GRAPH_REPORT.md`; detalles en [`Graphify/README.md`](Graphify/README.md). La skill `harrys-cosmeticology` incluye una copia del grafo y `scripts/graph_query.py` para consultarlo; `python3 Graphify/build.py` regenera ambos.

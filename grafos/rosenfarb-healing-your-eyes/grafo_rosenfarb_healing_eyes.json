@@ -1,0 +1,1179 @@
+{
+ "meta": {
+  "title": "Healing Your Eyes with Chinese Medicine como grafo",
+  "subtitle": "Andy Rosenfarb, North Atlantic Books 2007: 8 capítulos, patrones de MTC, fórmulas, técnicas y alertas de evidencia",
+  "language": "es",
+  "itemLabel": "Concepto",
+  "itemLabelPlural": "Conceptos",
+  "resourceLabel": "Apéndice",
+  "resourceLabelPlural": "Apéndices",
+  "searchHint": "Buscar: DMAE, yin de riñón, Amsler, moxa…"
+ },
+ "blocks": {
+  "teo": {
+   "name": "Teoría de MTC"
+  },
+  "trat": {
+   "name": "Acupuntura y hierbas"
+  },
+  "auto": {
+   "name": "Autocuidado y terapias en casa"
+  },
+  "clin": {
+   "name": "Clínica y casos"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Bases de la medicina china",
+   "block": "teo",
+   "summary": "Taoísmo, yin-yang, qi, sangre, esencia, meridianos y cinco elementos, y la idea de enfermedad como congestión o desequilibrio.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Orígenes de la medicina china",
+     "summary": "Taoísmo como ley natural; cuerpo que se autorregula; prevención como mejor cura."
+    },
+    {
+     "num": "1.2",
+     "title": "Yin y yang",
+     "summary": "Fuerzas complementarias; en el ojo, la visión central es yin y la periférica yang.",
+     "items": [
+      "yinyang"
+     ]
+    },
+    {
+     "num": "1.3",
+     "title": "Qi",
+     "summary": "Fuerza vital; el autor lo equipara a oxígeno y ATP. Cinco funciones del qi.",
+     "items": [
+      "qi"
+     ]
+    },
+    {
+     "num": "1.4",
+     "title": "La sangre",
+     "summary": "Nutre y humedece; sin sangre el qi no sirve. Tres funciones.",
+     "items": [
+      "sangre"
+     ]
+    },
+    {
+     "num": "1.5",
+     "title": "La esencia (jing)",
+     "summary": "Esencia prenatal (herencia finita) y posnatal (alimento); la pérdida visual degenerativa indica reservas bajas.",
+     "items": [
+      "jing"
+     ]
+    },
+    {
+     "num": "1.6",
+     "title": "Meridianos",
+     "summary": "Catorce vasos principales. ⚠ El libro afirma que el qi viaja más rápido que la luz: afirmación sin base.",
+     "items": [
+      "meridianos"
+     ]
+    },
+    {
+     "num": "1.7",
+     "title": "Cinco elementos",
+     "summary": "Ciclos de generación y control entre fuego, tierra, metal, agua y madera.",
+     "items": [
+      "cinco_el"
+     ]
+    },
+    {
+     "num": "1.8",
+     "title": "Causas de enfermedad",
+     "summary": "Congestión de qi, sangre y líquidos y desequilibrio de órganos.",
+     "items": [
+      "congestion"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Medicina china y los ojos",
+   "block": "teo",
+   "summary": "Cómo cada órgano nutre el ojo, causas ambientales y emocionales de pérdida visual y los patrones de diagnóstico con su principio de tratamiento.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Los ojos y los vasos",
+     "summary": "Doce meridianos llevan el qi esencial al ojo; tabla de correspondencias de cinco elementos con las estructuras oculares.",
+     "items": [
+      "ojo_5el"
+     ]
+    },
+    {
+     "num": "2.2",
+     "title": "Hígado y vesícula biliar",
+     "summary": "El hígado se abre en los ojos y almacena sangre; la vesícula forma los humores y lleva el yang claro.",
+     "items": [
+      "higado_ojo"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Corazón e intestino delgado",
+     "summary": "El corazón lleva la sangre al ojo; el shen se ve en la mirada."
+    },
+    {
+     "num": "2.4",
+     "title": "Riñón y vejiga",
+     "summary": "El riñón guarda la esencia y controla el agua; el agua nutre la madera del ojo.",
+     "items": [
+      "rinon_ojo"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Bazo y estómago",
+     "summary": "El bazo sube los líquidos puros y retiene la sangre en los vasos (relación con la DMAE húmeda).",
+     "items": [
+      "bazo_sangre"
+     ]
+    },
+    {
+     "num": "2.6",
+     "title": "Pulmón e intestino grueso",
+     "summary": "El pulmón dispersa qi y líquidos al ojo."
+    },
+    {
+     "num": "2.7",
+     "title": "Causas ambientales",
+     "summary": "Seis factores patógenos; viento y fuego en lo agudo, frío en la mayoría de los cuadros crónicos.",
+     "items": [
+      "seis_factores"
+     ]
+    },
+    {
+     "num": "2.8",
+     "title": "Causas emocionales",
+     "summary": "Miedo e ira como las emociones más asociadas, y ejercicio de dos columnas para lo controlable y lo no controlable. ⚠ El 80 % con conflictos no resueltos es una impresión clínica del autor.",
+     "items": [
+      "emociones"
+     ]
+    },
+    {
+     "num": "2.9",
+     "title": "Otras causas: trauma y procedimientos",
+     "summary": "Trauma y cirugías como causas. ⚠ El autor aconseja fármacos y cirugía como último recurso; en glaucoma y DMAE húmeda esto puede costar la visión.",
+     "items": [
+      "ultimo_recurso"
+     ]
+    },
+    {
+     "num": "2.10",
+     "title": "Diagnóstico por patrones",
+     "summary": "Mismo diagnóstico occidental, distintos patrones chinos y distinto tratamiento.",
+     "items": [
+      "patron"
+     ]
+    },
+    {
+     "num": "2.11",
+     "title": "Patrones de hígado",
+     "summary": "Deficiencia de yin, congestión de qi, yang ascendente, deficiencia de sangre.",
+     "items": [
+      "p_lv_yin",
+      "p_lv_qi",
+      "p_lv_yang",
+      "p_lv_xue"
+     ]
+    },
+    {
+     "num": "2.12",
+     "title": "Patrón de vesícula",
+     "summary": "Desarmonía vesícula-estómago con flema-calor.",
+     "items": [
+      "p_gb"
+     ]
+    },
+    {
+     "num": "2.13",
+     "title": "Patrones de riñón",
+     "summary": "Deficiencia de yin, combinada con corazón e hígado, y debilidad de yang.",
+     "items": [
+      "p_kd_yin",
+      "p_kd_yang"
+     ]
+    },
+    {
+     "num": "2.14",
+     "title": "Patrones de bazo y estómago",
+     "summary": "Debilidad con humedad, qi central débil y bazo-corazón.",
+     "items": [
+      "p_sp_hum",
+      "p_sp_qi"
+     ]
+    },
+    {
+     "num": "2.15",
+     "title": "Estancamiento de sangre",
+     "summary": "Corazón e hígado; dolor localizado y glaucoma o DMAE seca.",
+     "items": [
+      "p_xue"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Acupuntura y moxibustión",
+   "block": "trat",
+   "summary": "Historia moderna, sistemas de acupuntura para el ojo (TCM, auricular, japonés, craneal y la Micro Acupuntura que el autor prefiere) y la moxa con conchas.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Historia moderna de la acupuntura",
+     "summary": "De China a Europa y EE. UU.; TCM codificada desde 1957."
+    },
+    {
+     "num": "3.2",
+     "title": "La acupuntura llega a EE. UU.",
+     "summary": "Viaje de Nixon y el caso Reston (1971–72)."
+    },
+    {
+     "num": "3.3",
+     "title": "Cómo funciona y cómo se eligen los puntos",
+     "summary": "Protocolos de puntos por condición. ⚠ El libro fecha el consenso de los NIH en 1977; fue en 1997, y no trató enfermedades oculares.",
+     "items": [
+      "nih"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Métodos de acupuntura",
+     "summary": "Tradicional, electroacupuntura, flor de ciruelo, electrodérmica, láser, acupresión, imanes y aceites esenciales."
+    },
+    {
+     "num": "3.5",
+     "title": "Sistemas para enfermedades oculares",
+     "summary": "TCM (poco eficaz según el autor), auricular, japonés, craneal y Micro Acupuntura.",
+     "items": [
+      "auricular",
+      "craneal",
+      "micro_acu",
+      "ev_degen"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Moxibustión china",
+     "summary": "Calor de artemisa; conchas de nuez, caracol o almeja sobre los ojos.",
+     "items": [
+      "moxa",
+      "moxa_conchas"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Herbolaria china",
+   "block": "trat",
+   "summary": "Decocciones frente a fórmulas de patente, té de crisantemo y goji, y fórmulas por enfermedad (DMAE, RP, retinopatía diabética, oclusiones y glaucoma).",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Formas de administración",
+     "summary": "Decocción cruda como la más potente; gránulos, tinturas y píldoras después. No tomar té o café con las hierbas.",
+     "items": [
+      "decoccion"
+     ]
+    },
+    {
+     "num": "4.2",
+     "title": "Fórmula básica para los ojos",
+     "summary": "Crisantemo (ju hua) y goji (gou qi zi), 12–15 g de cada uno al día en infusión; también eleuterococo y schisandra.",
+     "items": [
+      "juhua_gouqi"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "DMAE",
+     "summary": "Nutrir riñón y bazo, mover la sangre. En la húmeda, primero detener el sangrado con sanqi o Yunnan Baiyao.",
+     "items": [
+      "sanqi",
+      "ev_dmae"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Retinosis pigmentaria",
+     "summary": "Deficiencia congénita y yang de riñón bajo; respuesta lenta (6–12 meses).",
+     "items": [
+      "you_gui"
+     ]
+    },
+    {
+     "num": "4.5",
+     "title": "Retinopatía diabética",
+     "summary": "Deficiencia de qi y yin con estasis. ⚠ El autor afirma respuesta en semanas; no hay ensayos que lo respalden."
+    },
+    {
+     "num": "4.6",
+     "title": "Oclusión de vena o arteria retiniana",
+     "summary": "Activar la sangre y detener el sangrado. ⚠ La oclusión arterial es una urgencia de horas.",
+     "items": [
+      "xuefu"
+     ]
+    },
+    {
+     "num": "4.7",
+     "title": "Glaucoma de ángulo abierto",
+     "summary": "Congestión de sangre y fuego tóxico con deficiencia de yin de hígado y riñón.",
+     "items": [
+      "qiju"
+     ]
+    },
+    {
+     "num": "4.8",
+     "title": "Fórmulas individuales frente a patentes",
+     "summary": "Tabla de fórmulas de patente por condición y acción.",
+     "items": [
+      "mingmu"
+     ]
+    },
+    {
+     "num": "4.9",
+     "title": "Efectos adversos",
+     "summary": "Señales de que la fórmula no es la correcta. ⚠ El libro subestima la toxicidad: ver alertas de fu zi, ling yang jiao e interacciones con anticoagulantes.",
+     "items": [
+      "ef_adv"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Acupresión, ejercicios oculares y qigong",
+   "block": "auto",
+   "summary": "Puntos alrededor del ojo, masaje y ejercicios de enfoque, y varias rutinas de qigong ocular.",
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Acupresión",
+     "summary": "Puntos alrededor del ojo para aumentar la circulación.",
+     "items": [
+      "puntos_ojo"
+     ]
+    },
+    {
+     "num": "5.2",
+     "title": "Masaje ocular chino",
+     "summary": "Masaje de los rebordes orbitarios con los pulgares."
+    },
+    {
+     "num": "5.3",
+     "title": "Enfoque cerca-lejos",
+     "summary": "Pulgar a 15 cm y objeto a 3 m, 15 repeticiones.",
+     "items": [
+      "cerca_lejos"
+     ]
+    },
+    {
+     "num": "5.4",
+     "title": "Barrido visual",
+     "summary": "Recorrer los bordes de objetos 2 minutos."
+    },
+    {
+     "num": "5.5",
+     "title": "Giros de cuello",
+     "summary": "Relajar cuello y hombros."
+    },
+    {
+     "num": "5.6",
+     "title": "Qué es el qigong",
+     "summary": "Historia, tradiciones y qigong interno frente a externo.",
+     "items": [
+      "qigong"
+     ]
+    },
+    {
+     "num": "5.7",
+     "title": "Yin-yang y qigong",
+     "summary": "Lo visible y lo invisible. ⚠ Cita los cristales de agua de Emoto como prueba: no es evidencia científica."
+    },
+    {
+     "num": "5.8",
+     "title": "Cultivo del qigong",
+     "summary": "Contentarse, moderación y comer hasta el 70 %."
+    },
+    {
+     "num": "5.9",
+     "title": "Ejercicios oculares Yangong",
+     "summary": "Rotación en infinito, presión en BL1 y lavado de ojos."
+    },
+    {
+     "num": "5.10",
+     "title": "Qigong para el hígado (Shugan Mingmu Gong)",
+     "summary": "Cerca-lejos, cuello, tórax, puntos y regulación del qi."
+    },
+    {
+     "num": "5.11",
+     "title": "Qigong Laogong",
+     "summary": "Transmitir calor de las palmas a los ojos."
+    },
+    {
+     "num": "5.12",
+     "title": "Qigong ocular de Pekín",
+     "summary": "Rutina en cuatro partes. El propio libro la contraindica en HTA y glaucoma.",
+     "items": [
+      "beijing"
+     ]
+    },
+    {
+     "num": "5.13",
+     "title": "Transmitir luz curativa por los ojos",
+     "summary": "Visualización por GV20."
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Sabiduría antigua para ojos sanos",
+   "block": "auto",
+   "summary": "Moderación, descanso, dieta, ejercicio y factores de riesgo de pérdida visual.",
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Moderación",
+     "summary": "Excesos y su daño; mirar pantallas mucho debilita la sangre."
+    },
+    {
+     "num": "6.2",
+     "title": "Exceso de trabajo",
+     "summary": "Sobreesfuerzo visual y sexual. ⚠ La NAION con sildenafilo es real pero rara; el resto de la sección mezcla creencias."
+    },
+    {
+     "num": "6.3",
+     "title": "Dieta y hábitos",
+     "summary": "Masticar, comer hasta el 70 %, evitar lo frío y lo frito."
+    },
+    {
+     "num": "6.4",
+     "title": "Descanso",
+     "summary": "Dormir entre 23 h y 3 h, cuando el hígado guarda la sangre según la MTC."
+    },
+    {
+     "num": "6.5",
+     "title": "Ejercicio",
+     "summary": "30 min, 5–6 días a la semana; frecuencia cardíaca de 180 menos la edad."
+    },
+    {
+     "num": "6.6",
+     "title": "Fuerza mental",
+     "summary": "Concentración y propósito."
+    },
+    {
+     "num": "6.7",
+     "title": "Reducir factores de riesgo",
+     "summary": "PA menor de 140/90, glucemia de 3,9–6,1 mmol/L, LDL bajo, gafas de sol, no fumar.",
+     "items": [
+      "riesgo"
+     ]
+    },
+    {
+     "num": "6.8",
+     "title": "Bálsamo de tigre",
+     "summary": "Masaje en frente y sienes para la cefalea por fatiga visual, lejos de los ojos."
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Casos y aplicaciones clínicas",
+   "block": "clin",
+   "summary": "Pruebas para medir la evolución y casos del autor por enfermedad.",
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "Diagnóstico y pruebas",
+     "summary": "Medir antes y después; dejar la evaluación mayor al oftalmólogo."
+    },
+    {
+     "num": "7.2",
+     "title": "Agudeza visual",
+     "summary": "Snellen y ETDRS, de cerca y de lejos, en cada ojo.",
+     "items": [
+      "agudeza"
+     ]
+    },
+    {
+     "num": "7.3",
+     "title": "Campo visual",
+     "summary": "Octopus o Humphrey; según el autor, el campo mejora primero.",
+     "items": [
+      "campo"
+     ]
+    },
+    {
+     "num": "7.4",
+     "title": "Visión del color y rejilla de Amsler",
+     "summary": "Láminas pseudoisocromáticas y Amsler para DMAE y Stargardt.",
+     "items": [
+      "amsler"
+     ]
+    },
+    {
+     "num": "7.5",
+     "title": "Hallazgos subjetivos, objetivos y diagnóstico chino",
+     "summary": "Diario visual y los cuatro pilares (observar, escuchar, preguntar, palpar).",
+     "items": [
+      "cuatro_pilares"
+     ]
+    },
+    {
+     "num": "7.6",
+     "title": "DMAE seca y húmeda",
+     "summary": "Dos casos. ⚠ Sin grupo control; el estándar en la húmeda es anti-VEGF."
+    },
+    {
+     "num": "7.7",
+     "title": "Distrofia de Stargardt",
+     "summary": "Caso de 34 años estabilizado."
+    },
+    {
+     "num": "7.8",
+     "title": "Retinopatía diabética",
+     "summary": "Caso con DM2. ⚠ El libro afirma que la MTC reduce o elimina la insulina: afirmación peligrosa."
+    },
+    {
+     "num": "7.9",
+     "title": "Retinosis pigmentaria y síndrome de Usher",
+     "summary": "Casos jóvenes; mejora lenta o estabilización."
+    },
+    {
+     "num": "7.10",
+     "title": "Glaucoma de ángulo abierto",
+     "summary": "Caso precoz estable sin fármacos. ⚠ Sin control de PIO documentado."
+    },
+    {
+     "num": "7.11",
+     "title": "Atrofia óptica",
+     "summary": "Caso tras iatrogenia."
+    },
+    {
+     "num": "7.12",
+     "title": "Miopía",
+     "summary": "Caso de adulta con patrón de yang débil."
+    },
+    {
+     "num": "7.13",
+     "title": "Enfermedades combinadas",
+     "summary": "Pacientes mayores con varias patologías estabilizados."
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Terapias en casa",
+   "block": "auto",
+   "summary": "Microcorriente, aceites esenciales, moxa casera, color, reflexología, imanes, masaje con hisopo y baños de vapor de hierbas.",
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Microcorriente (MCS)",
+     "summary": "Corriente de microamperios en puntos perioculares. Uso fuera de indicación.",
+     "items": [
+      "mcs",
+      "halloran"
+     ]
+    },
+    {
+     "num": "8.2",
+     "title": "Aceites esenciales",
+     "summary": "Mecanismos propuestos y aceites por enfermedad. ⚠ Nunca en el ojo ni el párpado; el clavo es muy irritante y potencia anticoagulantes.",
+     "items": [
+      "aceites"
+     ]
+    },
+    {
+     "num": "8.3",
+     "title": "Moxa en casa",
+     "summary": "Barras, conos, gafas y conchas de moxa. ⚠ Riesgo de quemaduras y de caída de ceniza cerca del ojo.",
+     "items": [
+      "gafas_moxa"
+     ]
+    },
+    {
+     "num": "8.4",
+     "title": "Terapia de color",
+     "summary": "Luz azul-verde para la DMAE y verde para la PIO, sin datos según el propio autor."
+    },
+    {
+     "num": "8.5",
+     "title": "Reflexología",
+     "summary": "Remojar los pies y masajear las zonas del ojo y las sensibles."
+    },
+    {
+     "num": "8.6",
+     "title": "Imanes",
+     "summary": "Responde cerca del 50 % según el autor; sin evidencia controlada."
+    },
+    {
+     "num": "8.7",
+     "title": "Acupresión y automasaje escolar chino",
+     "summary": "Seis pasos (BL1, Yuyao, Yintang, GB20, LI4) usados en escuelas chinas contra la miopía.",
+     "items": [
+      "masaje_escolar"
+     ]
+    },
+    {
+     "num": "8.8",
+     "title": "Masaje con hisopo",
+     "summary": "Masaje suave entre el globo y la órbita. ⚠ Riesgo de lesión corneal."
+    },
+    {
+     "num": "8.9",
+     "title": "Baño de vapor de hierbas",
+     "summary": "30 g de hierbas en 2 tazas, 15–20 min de hervor; vapor sobre los ojos.",
+     "items": [
+      "vapor"
+     ]
+    }
+   ]
+  }
+ ],
+ "items": {
+  "yinyang": {
+   "title": "Yin y yang",
+   "summary": "Par complementario; aplicado al ojo: central yin, periférico yang."
+  },
+  "qi": {
+   "title": "Qi",
+   "summary": "Defensa, transformación, calor, contención y movimiento."
+  },
+  "sangre": {
+   "title": "Sangre (xue)",
+   "summary": "Nutrir, humedecer, dar base a la mente."
+  },
+  "jing": {
+   "title": "Esencia (jing)",
+   "summary": "Reserva heredada finita; se conserva con moderación."
+  },
+  "meridianos": {
+   "title": "Meridianos",
+   "summary": "Vías de circulación del qi; doce ligadas a órganos."
+  },
+  "cinco_el": {
+   "title": "Cinco elementos",
+   "summary": "Generación y control entre elementos."
+  },
+  "congestion": {
+   "title": "Congestión y desequilibrio",
+   "summary": "Causa común de enfermedad en el libro."
+  },
+  "ojo_5el": {
+   "title": "Correspondencias oculares",
+   "summary": "Pupila, mácula y retina: agua (riñón); iris y músculos: madera (hígado); esclera: metal; párpados: tierra; canto: fuego."
+  },
+  "higado_ojo": {
+   "title": "El hígado se abre en los ojos",
+   "summary": "Toda pérdida visual crónica implica al hígado, según el autor."
+  },
+  "rinon_ojo": {
+   "title": "El riñón nutre el ojo",
+   "summary": "El agua del riñón nutre la madera; la médula incluye el nervio óptico."
+  },
+  "bazo_sangre": {
+   "title": "El bazo retiene la sangre",
+   "summary": "Su fallo explicaría hemorragias como la de la DMAE húmeda."
+  },
+  "seis_factores": {
+   "title": "Seis factores ambientales",
+   "summary": "Fuego, frío, viento, humedad, sequedad y calor de verano."
+  },
+  "emociones": {
+   "title": "Siete emociones",
+   "summary": "Ira sube el qi, miedo lo hunde, preocupación lo anuda."
+  },
+  "ultimo_recurso": {
+   "title": "Fármacos y cirugía como último recurso",
+   "summary": "⚠ Postura del autor que contradice el estándar: retrasar anti-VEGF o hipotensores oculares causa ceguera irreversible. Evidencia: Cochrane 2020 concluye que no se puede apoyar la acupuntura en el glaucoma (PMID 32032457, doi:10.1002/14651858.CD006030.pub4)."
+  },
+  "patron": {
+   "title": "Diagnóstico por patrón",
+   "summary": "Base de todo el tratamiento del libro."
+  },
+  "p_lv_yin": {
+   "title": "Deficiencia de yin de hígado",
+   "summary": "Ojo seco, miodesopsias, mala visión nocturna. Nutrir yin y sangre."
+  },
+  "p_lv_qi": {
+   "title": "Congestión de qi de hígado",
+   "summary": "Cefalea por fatiga visual, irritabilidad. Regular el qi."
+  },
+  "p_lv_yang": {
+   "title": "Yang de hígado ascendente / viento",
+   "summary": "Glaucoma, DMAE, HTA, acúfenos. Anclar el yang."
+  },
+  "p_lv_xue": {
+   "title": "Deficiencia de sangre de hígado",
+   "summary": "Miodesopsias, mareo, uñas frágiles."
+  },
+  "p_gb": {
+   "title": "Vesícula-estómago con flema-calor",
+   "summary": "Glaucoma y retinopatía diabética; timidez, palpitaciones."
+  },
+  "p_kd_yin": {
+   "title": "Deficiencia de yin de riñón",
+   "summary": "DMAE seca, sed nocturna, acúfenos."
+  },
+  "p_kd_yang": {
+   "title": "Debilidad de yang de riñón",
+   "summary": "RP, mala visión nocturna, frío lumbar."
+  },
+  "p_sp_hum": {
+   "title": "Bazo débil con humedad",
+   "summary": "DMAE húmeda, retinopatía diabética, edema."
+  },
+  "p_sp_qi": {
+   "title": "Qi central débil",
+   "summary": "RP, Usher, distrofia coroidea."
+  },
+  "p_xue": {
+   "title": "Estancamiento de sangre",
+   "summary": "Mover qi y sangre en tórax y cabeza."
+  },
+  "nih": {
+   "title": "Consenso de los NIH",
+   "summary": "⚠ Fue en 1997 y apoyó la acupuntura en náusea y algunos dolores, no en enfermedad ocular."
+  },
+  "auricular": {
+   "title": "Acupuntura auricular",
+   "summary": "Ocho puntos oculares; el autor la ve prometedora."
+  },
+  "craneal": {
+   "title": "Acupuntura craneal",
+   "summary": "Segunda opción del autor; requiere más estudio."
+  },
+  "micro_acu": {
+   "title": "Micro Acupuntura (Per Otte)",
+   "summary": "⚠ 48 puntos en manos y pies; el 80 % de mejoría es de reportes no controlados. El autor la ofrece en su clínica (conflicto de interés). Evidencia: en PubMed no hay estudios de la Micro Acupuntura de Per Otte en enfermedad ocular (búsqueda \"micro acupuncture\" vision, 2026-11-26)."
+  },
+  "moxa": {
+   "title": "Moxibustión",
+   "summary": "Calor de artemisa para dispersar el frío estancado."
+  },
+  "moxa_conchas": {
+   "title": "Moxa con conchas sobre los ojos",
+   "summary": "⚠ Propuesta como alternativa a láser o inyecciones en sangrado retiniano; no hay ensayos y puede retrasar el anti-VEGF. Evidencia: no hay estudios en PubMed sobre moxa con conchas en sangrado retiniano."
+  },
+  "decoccion": {
+   "title": "Decocción cruda",
+   "summary": "Forma más potente según el autor."
+  },
+  "juhua_gouqi": {
+   "title": "Té de crisantemo y goji",
+   "summary": "Fórmula casera básica. Goji: interacción descrita con warfarina."
+  },
+  "sanqi": {
+   "title": "Sanqi / Yunnan Baiyao (Panax notoginseng)",
+   "summary": "Hemostático y activador de la sangre. ⚠ 2 g dos veces al día según el libro; vigilar con anticoagulantes."
+  },
+  "you_gui": {
+   "title": "You Gui Wan",
+   "summary": "Calienta el yang de riñón. ⚠ Contiene fu zi (acónito, 12 g en el apéndice): cardiotóxico si no está bien procesado. Evidencia: el acónito contiene aconitina, cardiotóxica y neurotóxica; el manejo es de soporte (Chan 2009, PMID 19514874, doi:10.1080/15563650902904407)."
+  },
+  "xuefu": {
+   "title": "Xue Fu Zhu Yu Tang",
+   "summary": "Mueve la sangre en la parte superior; puede dar molestias digestivas."
+  },
+  "qiju": {
+   "title": "Qi Ju Di Huang Wan",
+   "summary": "Rehmannia 6 más crisantemo y goji; nutre yin de hígado y riñón."
+  },
+  "mingmu": {
+   "title": "Ming Mu Di Huang Wan",
+   "summary": "Fórmula principal para DMAE seca y Stargardt según el libro."
+  },
+  "ef_adv": {
+   "title": "Señales de fórmula inadecuada",
+   "summary": "Sueño, apetito, digestión, energía o ánimo alterados. ⚠ Shi Hu Ye Guang Wan lleva ling yang jiao (cuerno de antílope saiga, especie protegida por CITES)."
+  },
+  "puntos_ojo": {
+   "title": "Puntos perioculares",
+   "summary": "BL1, BL2, Yuyao, ST2, GB1, Taiyang y otros. Puntos de la rutina de Pekín con su código: Yintang (EX-HN3), BL2 Zanzhu, Yuyao (EX-HN4), TE23 Sizhukong, GB1 Tongziliao, Qiuhou (EX-HN7), ST1 Chengqi y BL1 Jingming. Verificado con acupuntura-puntos: BL1, ST1 y Qiuhou exigen aguja fina sin manipular por el riesgo de hematoma orbitario; en acupresión, presión suave sobre el hueso, nunca sobre el globo."
+  },
+  "cerca_lejos": {
+   "title": "Ejercicio cerca-lejos",
+   "summary": "Alterna enfoque cercano y lejano."
+  },
+  "qigong": {
+   "title": "Qigong",
+   "summary": "Cultivo del qi por postura, respiración e intención."
+  },
+  "beijing": {
+   "title": "Qigong ocular de Pekín",
+   "summary": "Contraindicado por el propio libro en HTA y glaucoma porque sube el yang."
+  },
+  "riesgo": {
+   "title": "Factores de riesgo de pérdida visual",
+   "summary": "Metas de PA, glucemia y lípidos, gafas de sol y no fumar. Es la parte con mejor base del libro."
+  },
+  "agudeza": {
+   "title": "Agudeza visual",
+   "summary": "Línea base antes del tratamiento y controles."
+  },
+  "campo": {
+   "title": "Campo visual",
+   "summary": "Indicador temprano de respuesta según el autor."
+  },
+  "amsler": {
+   "title": "Rejilla de Amsler",
+   "summary": "Autocontrol de la DMAE en casa. Una distorsión nueva requiere oftalmólogo pronto."
+  },
+  "cuatro_pilares": {
+   "title": "Cuatro pilares del diagnóstico",
+   "summary": "Observar, escuchar y oler, preguntar, palpar (pulso y lengua)."
+  },
+  "mcs": {
+   "title": "Microcorriente (MCS)",
+   "summary": "Contraindicada con marcapasos y en el embarazo. Hay ensayos pequeños en DMAE seca con resultados mixtos. Evidencia: serie sin control con mejoría en DMAE seca y húmeda (2015, PMID 26719667, doi:10.2147/OPTH.S92296); piloto con control simulado en DMAE seca con mejoría de agudeza a 30 semanas (2023, PMID 37331928, doi:10.1186/s40942-023-00471-y). Faltan ensayos grandes."
+  },
+  "halloran": {
+   "title": "Estudio de Halloran (1983–85)",
+   "summary": "⚠ 114 pacientes sin grupo control ni enmascaramiento; las cifras de 79–89 % no son comparables con ensayos."
+  },
+  "aceites": {
+   "title": "Aceites esenciales periorbitarios",
+   "summary": "Incienso, clavo, menta, lavanda, helicriso, sándalo, enebro y ciprés, en puntos y alrededor del ojo."
+  },
+  "gafas_moxa": {
+   "title": "Gafas de moxa",
+   "summary": "Conchas de nuez remojadas en crisantemo; el libro desaconseja hacerlo solo."
+  },
+  "masaje_escolar": {
+   "title": "Automasaje ocular escolar chino",
+   "summary": "Seis pasos de 30 repeticiones. Los estudios en China no muestran que frene la miopía. Puntos verificados con acupuntura-puntos: BL1, Yuyao (EX-HN4), Yintang (EX-HN3), GB20 y LI4 (LI4 contraindicado clásicamente en el embarazo)."
+  },
+  "vapor": {
+   "title": "Baño de vapor de hierbas",
+   "summary": "Crisantemo y menta para inflamación; cártamo y peonía roja para cuadros degenerativos."
+  },
+  "ev_dmae": {
+   "title": "Evidencia: acupuntura en DMAE",
+   "summary": "Metanálisis 2023: certeza baja a muy baja; no hay evidencia de alta calidad (PLoS One, PMID 36952520, doi:10.1371/journal.pone.0283375). Revisión 2026 en degeneraciones oculares inflamatorias: evidencia no concluyente, certeza muy baja (PMID 41958546, doi:10.3389/fmed.2026.1749297). Consultado en PubMed el 2026-11-26."
+  },
+  "ev_degen": {
+   "title": "Evidencia: acupuntura en enfermedades oculares degenerativas",
+   "summary": "Metanálisis 2025: sin mejoría significativa de la agudeza visual ni de la PIO frente a control (PMID 40850524, doi:10.1016/j.ctim.2025.103235). En RP, un ECA pequeño (n = 21) encontró mejoría en 2 de 7 ojos con electroacupuntura (PMID 29130647, doi:10.1111/aos.13581)."
+  }
+ },
+ "resources": [
+  {
+   "id": "Ap1",
+   "title": "Apéndice 1: Investigación en acupuntura ocular",
+   "usedBy": [
+    "3.5",
+    "7.6"
+   ],
+   "summary": "Lista de artículos 1976–2004, casi todos series de casos chinas."
+  },
+  {
+   "id": "Ap2",
+   "title": "Apéndice 2: Fórmulas, ingredientes y dosis",
+   "usedBy": [
+    "4.3",
+    "4.4",
+    "4.6",
+    "4.7",
+    "4.8"
+   ],
+   "summary": "Dosis en gramos por fórmula. Incluye acónito y cuerno de antílope."
+  },
+  {
+   "id": "Ap3",
+   "title": "Apéndice 3: Recursos",
+   "usedBy": [
+    "8.1",
+    "8.2"
+   ],
+   "summary": "Proveedores de hierbas, aceites y microcorriente; incluye la clínica del autor."
+  },
+  {
+   "id": "AP",
+   "title": "Skill acupuntura-puntos (bookskills)",
+   "usedBy": [
+    "5.1",
+    "5.12",
+    "8.7"
+   ],
+   "summary": "Fichas usadas para verificar los códigos y precauciones de los puntos perioculares."
+  },
+  {
+   "id": "PM",
+   "title": "Log de búsqueda en PubMed (2026-11-26)",
+   "usedBy": [
+    "3.5",
+    "4.3",
+    "4.4",
+    "4.7",
+    "8.1"
+   ],
+   "summary": "Consultas: acupuntura DMAE revisión sistemática; microcorriente DMAE seca; acupuntura glaucoma Cochrane; acupuntura RP aleatorizado; aconite poisoning; \"micro acupuncture\" vision."
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    2
+   ],
+   "5": [
+    1
+   ],
+   "6": [
+    1
+   ],
+   "7": [
+    2
+   ],
+   "8": [
+    3,
+    5
+   ]
+  },
+  "sections": {
+   "2.1": [
+    "1.6",
+    "1.7"
+   ],
+   "2.2": [
+    "1.4"
+   ],
+   "2.4": [
+    "1.5"
+   ],
+   "2.11": [
+    "2.10",
+    "2.2"
+   ],
+   "2.12": [
+    "2.2"
+   ],
+   "2.13": [
+    "2.4",
+    "2.10"
+   ],
+   "2.14": [
+    "2.5",
+    "2.10"
+   ],
+   "2.15": [
+    "2.3",
+    "2.10"
+   ],
+   "2.7": [
+    "1.8"
+   ],
+   "2.8": [
+    "1.7"
+   ],
+   "3.5": [
+    "3.4"
+   ],
+   "3.6": [
+    "2.7"
+   ],
+   "4.3": [
+    "2.11",
+    "2.13",
+    "2.5"
+   ],
+   "4.4": [
+    "2.13",
+    "2.14"
+   ],
+   "4.5": [
+    "2.14"
+   ],
+   "4.6": [
+    "2.15"
+   ],
+   "4.7": [
+    "2.11"
+   ],
+   "4.8": [
+    "4.3",
+    "4.4",
+    "4.7"
+   ],
+   "5.9": [
+    "5.1",
+    "5.6"
+   ],
+   "5.10": [
+    "5.6",
+    "2.2"
+   ],
+   "5.11": [
+    "5.6"
+   ],
+   "5.12": [
+    "5.6",
+    "2.11"
+   ],
+   "5.13": [
+    "5.6"
+   ],
+   "7.5": [
+    "2.10"
+   ],
+   "7.6": [
+    "7.2",
+    "7.4",
+    "4.3",
+    "3.6"
+   ],
+   "7.7": [
+    "7.4",
+    "4.3"
+   ],
+   "7.8": [
+    "4.5",
+    "3.6"
+   ],
+   "7.9": [
+    "4.4",
+    "7.3"
+   ],
+   "7.10": [
+    "4.7",
+    "7.3"
+   ],
+   "7.11": [
+    "7.3"
+   ],
+   "8.1": [
+    "3.4"
+   ],
+   "8.2": [
+    "5.1"
+   ],
+   "8.3": [
+    "3.6"
+   ],
+   "8.7": [
+    "5.1"
+   ],
+   "8.9": [
+    "4.1"
+   ],
+   "6.7": [
+    "2.9"
+   ]
+  },
+  "items": {
+   "ojo_5el": [
+    "cinco_el"
+   ],
+   "higado_ojo": [
+    "sangre"
+   ],
+   "rinon_ojo": [
+    "jing"
+   ],
+   "p_lv_yin": [
+    "higado_ojo",
+    "patron"
+   ],
+   "p_lv_qi": [
+    "higado_ojo",
+    "patron"
+   ],
+   "p_lv_yang": [
+    "p_lv_yin"
+   ],
+   "p_lv_xue": [
+    "higado_ojo"
+   ],
+   "p_kd_yin": [
+    "rinon_ojo",
+    "patron"
+   ],
+   "p_kd_yang": [
+    "rinon_ojo",
+    "patron"
+   ],
+   "p_sp_hum": [
+    "bazo_sangre",
+    "patron"
+   ],
+   "p_sp_qi": [
+    "bazo_sangre"
+   ],
+   "p_xue": [
+    "patron"
+   ],
+   "mingmu": [
+    "p_kd_yin",
+    "p_lv_yin"
+   ],
+   "qiju": [
+    "p_kd_yin"
+   ],
+   "you_gui": [
+    "p_kd_yang"
+   ],
+   "sanqi": [
+    "bazo_sangre"
+   ],
+   "xuefu": [
+    "p_xue"
+   ],
+   "moxa_conchas": [
+    "moxa",
+    "seis_factores"
+   ],
+   "gafas_moxa": [
+    "moxa_conchas"
+   ],
+   "micro_acu": [
+    "meridianos"
+   ],
+   "beijing": [
+    "qigong",
+    "p_lv_yang"
+   ],
+   "halloran": [
+    "mcs"
+   ],
+   "amsler": [
+    "agudeza"
+   ],
+   "cuatro_pilares": [
+    "patron"
+   ],
+   "masaje_escolar": [
+    "puntos_ojo"
+   ],
+   "vapor": [
+    "decoccion"
+   ],
+   "qigong": [
+    "qi"
+   ],
+   "emociones": [
+    "cinco_el"
+   ],
+   "ev_dmae": [
+    "ev_degen"
+   ],
+   "ev_degen": [
+    "micro_acu"
+   ]
+  }
+ }
+}
