@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grafo del libro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#E9EFED; --grid:#D7E0DD; --ink:#172A3A; --ink2:#4A5A66; --line:#B9C6C3;
+  --panel:#F7FAF9; --focus:#2F4FA8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 16px 10px;border-bottom:1.5px solid var(--ink);background:var(--paper);z-index:5}
+h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.01em;margin:0;line-height:1.1}
+h1 small{display:block;font-family:"Barlow",sans-serif;font-weight:400;font-size:.8rem;color:var(--ink2);letter-spacing:0;margin-top:2px}
+.views{display:flex;border:1.5px solid var(--ink);border-radius:4px;overflow:hidden}
+.views button{font:600 .85rem "Barlow Semi Condensed",sans-serif;background:transparent;color:var(--ink);border:0;padding:7px 12px;cursor:pointer;min-height:36px}
+.views button+button{border-left:1.5px solid var(--ink)}
+.views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.search{position:relative;flex:1 1 220px;max-width:380px;margin-left:auto}
+.search input{width:100%;font:500 .95rem "Barlow",sans-serif;padding:8px 10px;border:1.5px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);min-height:38px}
+.results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1.5px solid var(--ink);border-radius:4px;max-height:50vh;overflow:auto;z-index:20;display:none}
+.results li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:8px;border-radius:3px;cursor:pointer;font-size:.9rem;box-sizing:border-box}
+.results li button:hover,.results li button:focus-visible{background:var(--paper)}
+.results .k{font:600 .75rem "Barlow Semi Condensed";color:var(--ink2);min-width:44px}
+main{position:relative;flex:1;min-height:0}
+#graph{width:100%;height:100%;display:block;touch-action:none;cursor:grab;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+#graph:active{cursor:grabbing}
+.legend{position:absolute;left:12px;bottom:12px;display:flex;flex-direction:column;gap:4px;background:rgba(247,250,249,.94);border:1px solid var(--line);border-radius:4px;padding:8px 10px;max-width:calc(100% - 24px)}
+.legend button{all:unset;display:flex;align-items:center;gap:8px;font-size:.78rem;cursor:pointer;padding:3px 2px;border-radius:3px}
+.legend button[aria-pressed="false"]{opacity:.35;text-decoration:line-through}
+.legend button:focus-visible{outline:2px solid var(--focus)}
+.sw{width:12px;height:12px;border-radius:50%;flex:none}
+.shapes{display:flex;gap:12px;font-size:.75rem;color:var(--ink2);border-top:1px solid var(--line);margin-top:4px;padding-top:6px}
+.shapes span{display:flex;align-items:center;gap:4px}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px}
+.tools button{width:38px;height:38px;border:1.5px solid var(--ink);border-radius:4px;background:var(--panel);color:var(--ink);font:600 1.1rem "Barlow";cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);max-width:70%;font-size:.82rem;color:var(--ink2);background:rgba(247,250,249,.9);padding:5px 10px;border-radius:3px;pointer-events:none;transition:opacity .4s}
+/* panel */
+#panel{position:absolute;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--panel);border-left:1.5px solid var(--ink);overflow:auto;padding:18px 20px 28px;transform:translateX(102%);transition:transform .25s ease;z-index:10}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.p-kind{font:600 .8rem "Barlow Semi Condensed";display:flex;align-items:center;gap:7px;color:var(--ink2)}
+.p-title{font:700 1.45rem/1.15 "Barlow Semi Condensed";margin:6px 40px 4px 0}
+.p-meta{font-size:.85rem;color:var(--ink2);margin-bottom:12px}
+.formula{font:italic 500 1.15rem/1.5 "Source Serif 4",Georgia,serif;background:#fff;border-left:3px solid currentColor;padding:10px 12px;margin:10px 0 12px;overflow-x:auto;white-space:nowrap}
+.p-desc{line-height:1.55;font-size:.95rem;margin:0 0 14px;max-width:62ch}
+.trace-btn{width:100%;font:600 .95rem "Barlow Semi Condensed";padding:10px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:4px;cursor:pointer;margin:4px 0 16px;min-height:42px}
+.trace-btn[aria-pressed="true"]{background:transparent;color:var(--ink)}
+.p-sec h3{font:600 .9rem "Barlow Semi Condensed";margin:14px 0 6px;color:var(--ink2);border-bottom:1px solid var(--line);padding-bottom:4px}
+.p-list{list-style:none;margin:0;padding:0}
+.p-list li button{all:unset;display:flex;gap:8px;align-items:baseline;width:100%;padding:6px 4px;cursor:pointer;border-radius:3px;font-size:.9rem;line-height:1.3;box-sizing:border-box}
+.p-list li button:hover,.p-list li button:focus-visible{background:#E4ECEA}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+ol.path{margin:0;padding-left:1.4em}
+ol.path li{margin:0}
+ol.path li button{padding-left:0}
+.empty{font-size:.85rem;color:var(--ink2);margin:0}
+/* graph */
+.link{stroke:var(--line);stroke-width:1;fill:none}
+.link.req{stroke:#7F8F99;stroke-width:1.1}
+.link.data{stroke-dasharray:2 3}
+.node text{font:500 11px "Barlow Semi Condensed",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.node.ch text.lbl{font-size:13px;font-weight:700}
+.node text.num{font:700 12px "Barlow Semi Condensed";fill:#fff;stroke:none}
+.node{cursor:pointer}
+.node .shape{stroke:var(--paper);stroke-width:1.5}
+.node.sel .shape{stroke:var(--ink);stroke-width:3}
+.dim{opacity:.1}
+.link.hot{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 5;animation:flow .9s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.link.hot{animation:none}#panel{transition:none}}
+@media (max-width:720px){
+  header{padding:10px 12px 8px}
+  h1{font-size:1.1rem}
+  .search{max-width:none;flex-basis:100%;order:3}
+  #panel{top:auto;left:0;width:100%;max-height:62%;border-left:0;border-top:1.5px solid var(--ink);transform:translateY(102%);border-radius:10px 10px 0 0}
+  .legend{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;bottom:8px;left:8px;right:8px;padding:6px 8px;gap:10px}
+  .legend button{white-space:nowrap}
+  .shapes{display:none}
+  .hint{left:12px;right:12px;transform:none;top:auto;bottom:56px;max-width:none;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="ttl">Grafo del libro</h1>
+  <div class="views" role="group" aria-label="Vista">
+    <button data-view="ch" aria-pressed="true">Capítulos</button>
+    <button data-view="eq" aria-pressed="false" id="eqBtn"></button>
+    <button data-view="all" aria-pressed="false">Completo</button>
+  </div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el grafo">
+    <ul class="results" id="results" role="listbox"></ul>
+  </div>
+</header>
+<main>
+  <svg id="graph" aria-label="Grafo de conceptos"></svg>
+  <div class="hint" id="hint">Toca un nodo para ver qué contiene y qué necesitas saber antes</div>
+  <div class="legend" id="legend"></div>
+  <div class="tools">
+    <button id="zin" aria-label="Acercar">+</button>
+    <button id="zout" aria-label="Alejar">−</button>
+    <button id="fit" aria-label="Ajustar a pantalla">⤢</button>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<script>
+const GRAPH = {"meta": {"title": "Medicina tradicional china para mujeres como grafo", "subtitle": "Sabine Patzek y Karin Hertzer, Arkano Books 2003: fundamentos, práctica, ginecología y embarazo; fórmulas, recetas, puntos corporales y de la oreja, cruce con acupuntura-puntos y alertas de PubMed", "language": "es", "itemLabel": "Concepto", "itemLabelPlural": "Conceptos", "resourceLabel": "Fuente externa", "resourceLabelPlural": "Fuentes externas", "searchHint": "Buscar: SPM, chongmai, BP 6, moxa…"}, "blocks": {"teo": {"name": "Fundamentos de MTC"}, "prac": {"name": "Diagnóstico y terapias"}, "gin": {"name": "Ginecología"}, "emb": {"name": "Embarazo y puerperio"}}, "chapters": [{"num": 1, "title": "Fundamentos de la medicina china", "block": "teo", "page": 13, "summary": "Taoísmo y confucianismo, Yin-Yang, Qi y los tres tesoros, meridianos, cinco elementos con sus órganos y las causas de enfermedad, leídos en clave femenina.", "sections": [{"num": "1.1", "title": "Historia y filosofía", "page": 13, "summary": "Confucio, Lao Tse y el Huangdi neijing; sistemas Pinyin y Wade-Giles."}, {"num": "1.2", "title": "El Tao", "page": 14, "summary": "El Todo como principio ordenador; vivir según las leyes de la naturaleza."}, {"num": "1.3", "title": "La teoría del Yin y del Yang", "page": 14, "summary": "Opuestos complementarios. El libro sostiene que en la mujer predomina el Yin, lo que explicaría más frío, retención de líquidos, cistitis y anemia.", "items": ["yinyang", "mujer_yin"]}, {"num": "1.4", "title": "La energía vital Qi", "page": 15, "summary": "Qi original, alimenticio y respiratorio; cinco funciones y tres tipos de desequilibrio (falta, bloqueo, dirección contraria).", "items": ["qi"]}, {"num": "1.5", "title": "Los tres tesoros", "page": 16, "summary": "Qi, jing (esencia heredada y adquirida, en el riñón) y shen (mente, visible en los ojos).", "items": ["jing", "shen"]}, {"num": "1.6", "title": "Otras sustancias básicas", "page": 17, "summary": "Sangre (Yin, formada por estómago, bazo y pulmón) y jugos corporales.", "items": ["sangre"]}, {"num": "1.7", "title": "Los meridianos", "page": 18, "summary": "Doce principales y ocho especiales; el vaso concepción y el chongmai explican las náuseas del embarazo según el libro.", "items": ["chong_ren"]}, {"num": "1.8", "title": "La teoría de los cinco elementos", "page": 19, "summary": "Ciclos de generación y destrucción; tabla de correspondencias de cada elemento.", "items": ["cinco_el"]}, {"num": "1.9", "title": "Funciones de los órganos", "page": 20, "summary": "Órgano como función energética del meridiano; parejas Yin-Yang y el triple calentador.", "items": ["sanjiao"]}, {"num": "1.10", "title": "El elemento madera", "page": 21, "summary": "Hígado (flujo libre de Qi y sangre, ira) y vesícula (decisiones).", "items": ["higado"]}, {"num": "1.11", "title": "El elemento fuego", "page": 24, "summary": "Corazón y shen, intestino delgado, pericardio y triple calentador."}, {"num": "1.12", "title": "El elemento tierra", "page": 26, "summary": "Bazo como verdadero órgano digestivo. Las dietas restrictivas debilitan el Qi del bazo; Qi de estómago invertido en el embarazo.", "items": ["bazo"]}, {"num": "1.13", "title": "El elemento metal", "page": 28, "summary": "Pulmón e intestino grueso; estreñimiento posparto por falta de líquido."}, {"num": "1.14", "title": "El elemento agua", "page": 30, "summary": "Riñón (jing, reproducción) y vejiga. Yang de riñón débil: flujo claro, esterilidad, edemas; Yin débil: SPM, climaterio, hipertensión en el embarazo.", "items": ["rinon"]}, {"num": "1.15", "title": "Sano y enfermo en la MTC", "page": 32, "summary": "Salud como equilibrio Yin-Yang; enfermedades de raíz Yin y de raíz Yang."}, {"num": "1.16", "title": "Cómo se originan las enfermedades", "page": 32, "summary": "Seis influencias climáticas, siete emociones y hábitos de vida.", "items": ["seis_inf", "siete_emo"]}]}, {"num": 2, "title": "La práctica de médicos y terapeutas", "block": "prac", "page": 37, "summary": "Diagnóstico (ocho criterios, cuatro métodos, del síntoma al síndrome) y los tres métodos del libro: dietética, terapia medicinal y acupuntura con acupresión y moxa.", "sections": [{"num": "2.1", "title": "Elegir terapeuta", "page": 37, "summary": "Pedir formación mínima de dos años y examen final."}, {"num": "2.2", "title": "Los ocho criterios básicos", "page": 38, "summary": "Yin/Yang, interior/exterior, plenitud/vacío, frío/calor; en ginecología predominan lo interno y el frío.", "items": ["ocho"]}, {"num": "2.3", "title": "Los cuatro métodos de diagnóstico", "page": 39, "summary": "Examinar (lengua), escuchar y oler, preguntar y palpar (pulso, 28 cualidades).", "items": ["cuatro"]}, {"num": "2.4", "title": "De los síntomas al síndrome", "page": 42, "summary": "El síndrome chino es a la vez diagnóstico y principio de tratamiento. En ginecología dominan bazo, riñón e hígado.", "items": ["sindrome"]}, {"num": "2.5", "title": "Métodos terapéuticos", "page": 42, "summary": "Terapias internas (dieta, hierbas) y externas (acupuntura, tuina); el qigong actúa en ambas."}, {"num": "2.6", "title": "Dietética y cinco sabores", "page": 44, "summary": "Cada alimento se asigna a un elemento por color, sabor, madurez y preparación.", "items": ["cinco_sab"]}, {"num": "2.7", "title": "Alimentos que calientan y que enfrían", "page": 48, "summary": "Naturaleza térmica según el tipo de persona; diario de comidas.", "items": ["termica"]}, {"num": "2.8", "title": "Cocinar con los cinco elementos", "page": 49, "summary": "Recorrer el ciclo de los elementos al cocinar, sin cantidades fijas."}, {"num": "2.9", "title": "Terapia medicinal: propiedades", "page": 50, "summary": "Sabor, temperatura, órganos de acción y dirección de cada sustancia.", "items": ["prop_med"]}, {"num": "2.10", "title": "Varios medicamentos en una receta", "page": 53, "summary": "Soberano, ministro, asistente y mensajero; 6–8 sustancias habituales.", "items": ["receta"]}, {"num": "2.11", "title": "Hierbas usadas en ginecología", "page": 54, "summary": "Danggui, rehmannia, ñame chino, peonía blanca y goji. ⚠ Las afirmaciones de \"componentes de estrógeno\" del danggui y del ñame no están demostradas en humanos.", "items": ["danggui", "rehmannia", "shanyao", "baishao", "goji"]}, {"num": "2.12", "title": "Cocción y tiempo de efecto", "page": 55, "summary": "Dosis diaria de 3 a 12 g por componente, doble cocción, revisión a los 3–15 días. El libro omite las cantidades de sus recetas y desaconseja la automedicación.", "items": ["coccion"]}, {"num": "2.13", "title": "La acupuntura", "page": 57, "summary": "Sesión, 361 puntos, agujas, medida en cun y técnica. ⚠ El libro sitúa BP 6 a 4 cun del maléolo; la ubicación estándar es 3 cun.", "items": ["cun", "sp6"]}, {"num": "2.14", "title": "Electroacupuntura, láser y acupuntura auricular", "page": 61, "summary": "Frecuencias, oreja como embrión invertido, puntos psíquicos (frustración, antiagresión, antidepresión).", "items": ["auricular", "o_55", "o_vg", "o_psiq", "o_jerome", "o_cojin", "o_sol", "o_omega", "o_cero", "o_endocrino", "o_suprarrenal", "o_genital", "o_organos", "o_digest", "o_acth", "o_hta", "o_local", "ev_auricular"]}, {"num": "2.15", "title": "La acupresión", "page": 62, "summary": "Masaje de 1–3 min por punto; indicada en molestias leves. Los 24 puntos prohibidos en el embarazo según Jeanne Blum.", "items": ["acupresion", "prohibidos"]}, {"num": "2.16", "title": "La moxibustión", "page": 64, "summary": "Calor de artemisa: aguja con moxa, cigarro y conos aislados con jengibre o ajo; autotratamiento con puntos marcados.", "items": ["moxa"]}]}, {"num": 3, "title": "Ginecología general", "block": "gin", "page": 67, "summary": "Flujo, SPM, dolor menstrual, migraña menstrual, trastornos del ciclo, esterilidad, climaterio, prolapso y apoyo en cáncer, cada uno con síndromes, dieta, puntos y receta.", "sections": [{"num": "3.1", "title": "Diagnósticos chinos frecuentes en ginecología", "page": 67, "summary": "Lista de síndromes y las afecciones que causan. Insiste en que la autoterapia con agujas o hierbas está desaconsejada."}, {"num": "3.2", "title": "Flujo blanco", "page": 69, "summary": "Yang de bazo o de riñón débiles. Pide frotis para descartar infección. ⚠ La receta del Yang de riñón incluye acónito (fu zi). Cruce con acupuntura-puntos (Leucorrea): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: BL54, CV12, KI6, LI4, LU7. Oreja: vagina, endocrino, bazo, estómago, 55, Vg I y psíquicos; en el Yang de riñón: riñón, columna lumbar, suprarrenales, útero y vagina.", "items": ["f_wandai", "f_shenqi", "r_pimiento"]}, {"num": "3.3", "title": "Flujo amarillento", "page": 72, "summary": "Calor húmedo que desciende; el libro remite primero al médico porque indica infección. Cruce con acupuntura-puntos (Leucorrea): 8 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL34. Oreja: riñón, matriz, hígado, suprarrenales, endocrino, Vg I y vejiga.", "items": ["p_humcal", "f_ermiao"]}, {"num": "3.4", "title": "Síndrome premenstrual", "page": 72, "summary": "Cuatro síndromes: estancamiento de Qi de hígado, Yang de bazo y riñón, Yin de hígado y riñón, sangre de hígado. ⚠ Recetas con acónito y con fruto de Melia toosendan. Cruce con acupuntura-puntos (Síndrome premenstrual): 14 de 27 puntos del libro coinciden con el índice. Solo en el libro: CV2, CV3, CV4, CV6, GB20, KI3, KI6, LR13, LU7, SI3, SP4, TE5, TE6. Oreja: hígado, matriz y pecho; con cefalea, Jerome, cojín y Omega; además riñón, bazo, ovarios, endocrino, suprarrenales, 55, Vg I y psíquicos.", "items": ["p_qi_hig", "p_yang_br", "p_yin_hr", "p_sangre_hig", "cv4", "lr8", "ev_spm", "ev_toxicas", "f_chaihu", "f_yougui", "f_yiguan", "f_xiaoyao", "r_coco", "r_pollo"]}, {"num": "3.5", "title": "Dolor menstrual", "page": 77, "summary": "Estancamiento de Qi y sangre, frío en la matriz o carencia de Qi y sangre; moxa y bolsa de agua caliente en el frío. Cruce con acupuntura-puntos (Dismenorrea + Amenorrea): 18 de 19 puntos del libro coinciden con el índice. Solo en el libro: LU7. Oreja: hígado, matriz, ovarios, endocrino, suprarrenales, riñón, estómago, bazo, ACTH, 55, Vg I y psíquicos.", "items": ["p_frio_matriz", "ev_dism", "f_shaofu", "f_bazhen_ym"]}, {"num": "3.6", "title": "Menstruación y migraña", "page": 80, "summary": "Migraña Yang-Ming, Shao-Yang y Tai-Yang; síndromes de Yang de hígado, Qi de bazo, anemia y humedad. Diario del dolor; acupresión en E 8. Cruce con acupuntura-puntos (Migraña): 11 de 19 puntos del libro coinciden con el índice. Solo en el libro: BL20, CV4, CV6, GV20, LR8, LU7, SP9, ST36. Oreja: 55, Vg I, Jerome, sol, cojín, Omega, ojo, estómago, hígado, riñón, endocrino, matriz, suprarrenales, columna y puntos de dolor.", "items": ["p_yang_hig", "p_qi_bazo", "p_humedad", "st8", "f_tianma", "f_bazhen", "f_humedad", "r_cerdo", "r_vaca"]}, {"num": "3.7", "title": "Ciclo acortado", "page": 86, "summary": "Carencia de Qi de bazo. Cruce con acupuntura-puntos (Menstruación irregular): 7 de 7 puntos del libro coinciden con el índice. Oreja: estómago, bazo, útero, ovarios, endocrino y psíquicos."}, {"num": "3.8", "title": "Ciclo prolongado", "page": 87, "summary": "Qi de hígado débil o anemia con frío en la sangre; curva de temperatura basal. Cruce con acupuntura-puntos (Menstruación irregular): 14 de 19 puntos del libro coinciden con el índice. Solo en el libro: BL32, LI4, LR13, LR5, SP8. Oreja: hígado, matriz, útero, ovarios, endocrino, suprarrenales, riñón, bazo, 55 y Vg I.", "items": ["f_siwu"]}, {"num": "3.9", "title": "Ciclo irregular", "page": 88, "summary": "Depresión de Qi de hígado o carencia de jing de riñón. ⚠ Receta con gelatina de caparazón de tortuga (especie protegida). Cruce con acupuntura-puntos (Menstruación irregular): 10 de 17 puntos del libro coinciden con el índice. Solo en el libro: CV12, GV20, KI14, KI7, LR5, SP17, TE5. Oreja: matriz, ovarios, hígado, riñón, corazón, bazo, triple calentador, estómago, endocrino, suprarrenales, cojín, Vg I y psíquicos.", "items": ["p_jing", "f_zuogui"]}, {"num": "3.10", "title": "Esterilidad y libido", "page": 90, "summary": "Descartar causa orgánica (trompas, ecografía, hormonas) y luego Yin o Yang de riñón. Afrodisíacos chinos y zinc. Cruce con acupuntura-puntos (Infertilidad femenina): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: CV2, CV6, GB34, GV20, LR8. Oreja: riñón, hígado, matriz, ovarios, endocrino, suprarrenales, 55, Vg I y psíquicos.", "items": ["f_aifu", "f_libido", "r_libido"]}, {"num": "3.11", "title": "Climaterio o menopausia", "page": 92, "summary": "Síndromes de vacío: Yin de riñón con Yang de hígado, Yang de bazo y riñón, jing de riñón. Cruce con acupuntura-puntos (Menopausia): 11 de 18 puntos del libro coinciden con el índice. Solo en el libro: BL20, CV12, CV5, CV6, HT3, LR8, ST36. Oreja: endocrino, corazón, riñón, suprarrenales, hígado, ovarios, matriz, bazo, vértebras lumbares, 55, Vg I, cojín, Omega, frustración y antidepresión.", "items": ["ev_meno", "f_zhibai", "f_erxian", "r_pescado"]}, {"num": "3.12", "title": "Prolapso de matriz y vejiga", "page": 95, "summary": "Descenso de Qi de bazo o Yang de riñón; ejercicios del suelo pélvico. Cruce con acupuntura-puntos (Prolapso uterino): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: GB27, GB28, SP9, ST29, ST30. Oreja: bazo, estómago, riñón, vejiga, matriz, 55 y Vg I.", "items": ["p_desc_qi", "kegel", "f_buzhong"]}, {"num": "3.13", "title": "Apoyo en tumores y cáncer", "page": 97, "summary": "Apoyo según síndrome y analgesia con IG 4 y E 36. ⚠ Atribuye al aloe prevención del cáncer sin respaldo.", "items": ["inmuno"]}]}, {"num": 4, "title": "Embarazo y parto", "block": "emb", "page": 99, "summary": "Náuseas, edemas, hipertensión, presentación de nalgas, preparación al parto y puerperio: placenta, entuertos, vejiga e intestino, lactancia, mastitis y depresión posparto.", "sections": [{"num": "4.1", "title": "Diagnósticos frecuentes en el embarazo y el parto", "page": 99, "summary": "Síndromes de bazo, riñón e hígado asociados a cada molestia."}, {"num": "4.2", "title": "Náuseas y vómitos", "page": 101, "summary": "Qi de estómago invertido por plenitud de chongmai y renmai. Tres síndromes. Lista de puntos a evitar. ⚠ Recetas con pinellia y coptis, que exigen prudencia en el embarazo. Cruce con acupuntura-puntos (Náusea del embarazo): 8 de 11 puntos del libro coinciden con el índice. Solo en el libro: GV20, HT3, SP9. Oreja: diafragma, náusea, estómago, bazo, hígado, riñón, 55, Vg I y psíquicos (sin puntos genitales).", "items": ["qi_rebelde", "p_hig_est", "evitar_emb", "pc6", "f_liujunzi", "f_guipi", "f_suye", "f_mucosidad", "r_pie", "r_espinacas", "r_hinojo"]}, {"num": "4.3", "title": "Edemas", "page": 107, "summary": "Yang de bazo o de riñón; BP 9 como punto principal. ⚠ Receta con acónito en una embarazada: contraindicado. Cruce con acupuntura-puntos (Edema): 4 de 6 puntos del libro coinciden con el índice. Solo en el libro: CV12, KI3. Oreja: riñón, bazo, estómago, vejiga, suprarrenales, 55 y Vg I.", "items": ["sp9", "f_edema_bazo", "f_zhenwu", "r_risotto"]}, {"num": "4.4", "title": "Hipertensión arterial", "page": 109, "summary": "El libro deja la preeclampsia al médico. ⚠ Una PA de 160/100 en el embarazo es hipertensión grave: urgencia obstétrica, no terapia complementaria. Cruce con acupuntura-puntos (Hipertensión): 6 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL20, BL52, HT6. Oreja: riñón, estómago, bazo, corazón, hígado, suprarrenales, 55, Vg I, punto de hipertensión 19 y punto que baja la tensión.", "items": ["f_liuwei"]}, {"num": "4.5", "title": "Corrección de la postura del bebé", "page": 111, "summary": "Moxa en V 67 de la semana 28 a la 35, idealmente en un servicio obstétrico. Cruce con acupuntura-puntos (Malposición fetal): 1 de 3 puntos del libro coinciden con el índice. Solo en el libro: KI3, ST36. Puntos de este apartado que la skill marca como de riesgo en el embarazo: BL67.", "items": ["bl67"]}, {"num": "4.6", "title": "Medidas que facilitan el parto", "page": 112, "summary": "Acupuntura semanal desde la semana 36; puntos sacros y agujas permanentes durante el parto. Cruce con acupuntura-puntos (Inducción del parto): 3 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL33, BL54, GV20, GV4, HT7, PC6. Oreja: 55, útero, endocrino, Vg I y puntos de dolor de la columna."}, {"num": "4.7", "title": "Problemas con el desprendimiento de la placenta", "page": 114, "summary": "⚠ La placenta retenida y la hemorragia posparto son urgencias; la moxa en BP 1 no reemplaza la uterotonía ni la extracción manual.", "items": ["ev_placenta"]}, {"num": "4.8", "title": "Dolores de sobreparto", "page": 115, "summary": "Carencia de Qi o estancamiento de sangre; H 3 como punto clave. Oreja: hígado, útero y puntos relajantes.", "items": ["lr3", "r_mijo"]}, {"num": "4.9", "title": "Vejiga e intestino tras el parto", "page": 116, "summary": "Estreñimiento por falta de líquido; retención por humedad-calor. ⚠ La receta lleva Caulis Akebiae (mu tong), confundible con especies con ácido aristolóquico, y ruibarbo durante la lactancia. Cruce con acupuntura-puntos (Estreñimiento + Retención urinaria): 11 de 15 puntos del libro coinciden con el índice. Solo en el libro: BL62, CV5, GV20, ST28. Oreja: intestino grueso, intestino delgado, vejiga, riñón, Vg I, punto cero y psíquicos.", "items": ["kd3", "f_bazheng"]}, {"num": "4.10", "title": "Lactancia y mastitis", "page": 118, "summary": "Poca leche por carencia de Qi y sangre; obstrucción y mastitis por estancamiento de Qi de hígado. Una mastitis con fiebre puede requerir antibiótico. Cruce con acupuntura-puntos (Lactancia insuficiente + Mastitis): 8 de 11 puntos del libro coinciden con el índice. Solo en el libro: GB34, LR13, LR5. Oreja: 55, Vg I, pecho, matriz, riñón, bazo, hígado, endocrino, suprarrenales, cojín y conductos vegetativos.", "items": ["f_gualou"]}, {"num": "4.11", "title": "Depresión posparto", "page": 121, "summary": "Carencia de Qi y sangre o estancamiento de Qi. El libro deriva la depresión verdadera a psiquiatría. Punto antidepresión auricular. Cruce con acupuntura-puntos (Depresión): 10 de 16 puntos del libro coinciden con el índice. Solo en el libro: BL18, CV12, CV4, CV6, HT3, LU7. Oreja: psíquicos (sobre todo antidepresión), bazo, riñón, hígado, estómago, matriz, Vg I, Vg II y Omega.", "items": ["r_nacimiento"]}]}], "items": {"yinyang": {"title": "Yin y Yang", "summary": "Par de opuestos que se contienen; base del diagnóstico."}, "mujer_yin": {"title": "Predominio del Yin en la mujer", "summary": "Idea central del libro: más frío, retención de líquidos y anemia. Es un supuesto de la tradición, no un hallazgo fisiológico."}, "qi": {"title": "Qi", "summary": "Energía con cinco funciones: mover, proteger, transformar, contener y calentar."}, "jing": {"title": "Jing (esencia)", "summary": "Heredada y adquirida; se guarda en el riñón y gobierna la reproducción."}, "shen": {"title": "Shen (mente)", "summary": "Capacidad de pensar y elegir; se ve en el brillo de los ojos."}, "sangre": {"title": "Sangre", "summary": "Sustancia Yin que nutre; la forman estómago, bazo y pulmón."}, "chong_ren": {"title": "Chongmai y renmai", "summary": "Vasos que se llenan al inicio del embarazo; su plenitud explica las náuseas según el libro."}, "cinco_el": {"title": "Cinco elementos", "summary": "Madera, fuego, tierra, metal y agua con ciclos de generación y destrucción."}, "sanjiao": {"title": "Triple calentador", "summary": "Superior (pulmón, corazón), medio (digestión) e inferior (riñón, jing). En ginecología el medio y el inferior suelen estar débiles."}, "higado": {"title": "Hígado", "summary": "Flujo libre de Qi y sangre; su estancamiento causa SPM, dolor menstrual y ciclos irregulares."}, "bazo": {"title": "Bazo", "summary": "Transforma el alimento en Qi y sangre y contiene la sangre en los vasos."}, "rinon": {"title": "Riñón", "summary": "Guarda el jing; Yang débil da frío y edema, Yin débil da calor y síntomas del climaterio."}, "seis_inf": {"title": "Seis influencias", "summary": "Viento, frío, calor, humedad, sequedad y calor estival."}, "siete_emo": {"title": "Siete emociones", "summary": "Alegría, enojo, tristeza, preocupación, melancolía, miedo y temor, como causas de enfermedad."}, "ocho": {"title": "Ocho criterios", "summary": "Yin/Yang, interior/exterior, plenitud/vacío, frío/calor."}, "cuatro": {"title": "Cuatro métodos de diagnóstico", "summary": "Examinar (lengua), escuchar y oler, preguntar y palpar (pulso). Ver la guía de diagnóstico de acupuntura-puntos para la fiabilidad de estos métodos."}, "sindrome": {"title": "Síndrome chino", "summary": "Combinación de signos con nombre propio; dicta el principio de tratamiento."}, "cinco_sab": {"title": "Cinco sabores y colores", "summary": "Ácido-verde (madera), amargo-rojo (fuego), dulce-amarillo (tierra), picante-blanco (metal), salado-negro (agua)."}, "termica": {"title": "Naturaleza térmica de los alimentos", "summary": "Alimentos que calientan o enfrían según la constitución; base de todas las dietas del libro."}, "prop_med": {"title": "Propiedades de las medicinas", "summary": "Sabor, temperatura (seis grados), órgano de acción y dirección."}, "receta": {"title": "Estructura de la receta", "summary": "Soberano, ministro, asistente y mensajero."}, "danggui": {"title": "Danggui (Angelica sinensis)", "summary": "Tónico de la sangre usado en casi todas las recetas del libro. ⚠ Potencia la warfarina (Lancet 2000, PMID 10675182, doi:10.1016/S0140-6736(99)06457-0)."}, "rehmannia": {"title": "Rehmannia (sheng/shu di huang)", "summary": "Fresca enfría y nutre el Yin; preparada calienta y nutre la sangre."}, "shanyao": {"title": "Shanyao (Dioscorea opposita)", "summary": "Tonifica riñón y Yin. ⚠ Contiene diosgenina, no estrógenos humanos."}, "baishao": {"title": "Baishao (peonía blanca)", "summary": "Nutre la sangre, calma el hígado y el dolor; frecuente en recetas menstruales."}, "goji": {"title": "Gouqizi (goji)", "summary": "Fortalece el Yin de riñón e hígado. Interacción descrita con warfarina."}, "coccion": {"title": "Cocción medicinal", "summary": "3–12 g por componente al día, doble cocción, 2–3 tomas."}, "cun": {"title": "Medida en cun", "summary": "Unidad proporcional al pulgar de la paciente para ubicar puntos."}, "sp6": {"title": "BP 6 (SP6 Sanyinjiao)", "summary": "⚠ El libro dice 4 cun sobre el maléolo; la skill acupuntura-puntos lo ubica a 3 cun. Contraindicado clásicamente en el embarazo salvo para el parto, como advierte el propio libro."}, "auricular": {"title": "Acupuntura auricular", "summary": "Unos 200 puntos; los psíquicos (frustración, antiagresión, antidepresión) aparecen en casi todos los cuadros."}, "acupresion": {"title": "Acupresión", "summary": "Masaje circular de 1–3 min; útil en dolor menstrual, ciclo y náuseas. El libro pide orientación profesional antes de autotratarse."}, "prohibidos": {"title": "Puntos prohibidos en el embarazo", "summary": "El libro cita 24 puntos de Jeanne Blum sin listarlos. Verificado con acupuntura-puntos: LI4, SP6, BL60, BL67, GB21, BL31–34 y el abdomen inferior."}, "moxa": {"title": "Moxibustión", "summary": "Aporta calor en cuadros de frío y vacío; nunca en la cara."}, "p_humcal": {"title": "Calor húmedo que desciende", "summary": "Flujo amarillo maloliente, prurito, lengua roja con saburra amarilla."}, "p_qi_hig": {"title": "Estancamiento de Qi de hígado", "summary": "Irritabilidad premenstrual, mamas tensas, sangrado grumoso, pulso en cuerda."}, "p_yang_br": {"title": "Carencia de Yang de bazo y riñón", "summary": "Frío, palidez, edema lumbar, lengua pálida con marcas dentales."}, "p_yin_hr": {"title": "Carencia de Yin de hígado y riñón", "summary": "Insomnio, sequedad, menstruación escasa, lengua roja sin saburra."}, "p_sangre_hig": {"title": "Insuficiencia de sangre de hígado", "summary": "Llanto, palidez, mareo, pulso fino y rugoso."}, "p_frio_matriz": {"title": "Frío en la matriz", "summary": "Dolor cólico que mejora con calor, sangrado oscuro con coágulos."}, "p_yang_hig": {"title": "Ascenso de Yang de hígado", "summary": "Migraña pulsátil con fotofobia y boca amarga."}, "p_qi_bazo": {"title": "Carencia de Qi de bazo", "summary": "Cansancio, ciclo corto, migraña sorda; el síndrome que más repite el libro."}, "p_humedad": {"title": "Humedad por debilidad del bazo", "summary": "Pesadez, edema, saburra blanca resbaladiza."}, "p_jing": {"title": "Carencia de jing de riñón", "summary": "Ciclo irregular en multíparas, acúfenos, pulso profundo y débil."}, "p_desc_qi": {"title": "Descenso de Qi de bazo", "summary": "Prolapso, flujo abundante, ganas constantes de orinar."}, "kegel": {"title": "Ejercicios del suelo pélvico", "summary": "Cortar el chorro de orina y repetir la contracción en seco."}, "inmuno": {"title": "Plantas inmunoestimulantes", "summary": "⚠ Afirmaciones sobre interferón y prevención del cáncer (aloe) sin ensayos clínicos que las sostengan."}, "cv4": {"title": "VC 4 (CV4 Guanyuan)", "summary": "3 cun bajo el ombligo; cruce de hígado, bazo y riñón con el vaso concepción. ⚠ Abdomen inferior: evitar en el embarazo."}, "lr8": {"title": "H 8 (LR8 Ququan)", "summary": "Punto agua del hígado, en el pliegue interno de la rodilla."}, "st8": {"title": "E 8 (ST8 Touwei)", "summary": "Sien; acupresión para migraña frontal y lateral."}, "qi_rebelde": {"title": "Qi de estómago invertido", "summary": "Mecanismo de la náusea del embarazo en el libro."}, "p_hig_est": {"title": "El hígado ataca al estómago", "summary": "Náuseas con cambios de ánimo, encías que sangran, pulso en cuerda."}, "evitar_emb": {"title": "Puntos a evitar en el embarazo (libro)", "summary": "IG 4, VC 2 a 8, BP 6, H 3, R 3 y R 6; sin acupuntura si hay abortos previos. Coincide en lo esencial con la skill, que añade BL60, BL67 y GB21."}, "pc6": {"title": "CS 6 (PC6 Neiguan)", "summary": "Punto base de las náuseas. Evidencia: metanálisis en red 2026 con certeza baja a moderada (PMID 42075106, doi:10.3390/nu18081293)."}, "sp9": {"title": "BP 9 (SP9 Yinlingquan)", "summary": "Punto principal para el edema según el libro. ⚠ La afirmación de que se eliminan hasta dos litros tras una sesión no está respaldada."}, "bl67": {"title": "V 67 (BL67 Zhiyin) con moxa", "summary": "Para la presentación de nalgas. Evidencia: Cochrane 2023, certeza moderada de menos presentaciones no cefálicas al nacer y sin cambio claro en cesáreas (PMID 37158339, doi:10.1002/14651858.CD003928.pub4). La skill recomienda semanas 32–35 con control obstétrico; el libro, 28–35."}, "lr3": {"title": "H 3 (LR3 Taichong)", "summary": "Punto clave para el estancamiento de Qi de hígado. El libro lo evita o usa con cuidado en el embarazo."}, "kd3": {"title": "R 3 (KI3 Taixi)", "summary": "Nutre el Yin y tonifica el riñón; el libro lo evita en el embarazo."}, "ev_dism": {"title": "Evidencia: acupuntura en dismenorrea", "summary": "Cochrane 2016: evidencia insuficiente, calidad baja o muy baja (PMID 27087494, doi:10.1002/14651858.CD007854.pub3). Metanálisis en red 2024: acupuntura y ejercicio, posiblemente eficaces a corto plazo (PMID 38242565, doi:10.1136/bmjebm-2023-112434). Consultado en PubMed el 2026-11-26."}, "ev_spm": {"title": "Evidencia: acupuntura en SPM", "summary": "Metanálisis 2011: resultados prometedores con fallos metodológicos importantes (PMID 21609380, doi:10.1111/j.1471-0528.2011.02994.x). Consultado en PubMed el 2026-11-26."}, "ev_meno": {"title": "Evidencia: acupuntura en sofocos", "summary": "Metanálisis 2022: no reduce con claridad la frecuencia de sofocos; ensayos de baja calidad (PMID 34894774, doi:10.1177/09645284211056655). Consultado en PubMed el 2026-11-26."}, "ev_placenta": {"title": "Evidencia: acupuntura en placenta retenida", "summary": "Solo series de casos: 77 % de desprendimiento tras KI16 y SP6, sin grupo control (PMID 25193928, doi:10.1136/acupmed-2014-010607). Consultado en PubMed el 2026-11-26."}, "ev_toxicas": {"title": "Hierbas con riesgo en las recetas", "summary": "Acónito (fu zi): cardiotóxico y neurotóxico (PMID 19514874, doi:10.1080/15563650902904407). Melia toosendan: toosendanina hepatotóxica (2026, PMID 41352742, doi:10.1016/j.toxicon.2025.108933). Mu tong: se han hallado especies con ácido aristolóquico en preparados (2024, PMID 38841282, doi:10.3389/fpls.2024.1358136). Consultado en PubMed el 2026-11-26."}, "o_55": {"title": "Oreja: 55 (Shenmen)", "summary": "Punto calmante y analgésico general en la fosa triangular; el libro lo usa en casi todos los cuadros. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_vg": {"title": "Oreja: Vg I y Vg II (puntos vegetativos)", "summary": "Regulan el sistema nervioso autónomo; Vg I aparece en casi todos los cuadros y Vg II en la depresión posparto. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_psiq": {"title": "Oreja: puntos psíquicos", "summary": "Frustración, antiagresión y antidepresión (llamado también punto tranquilizador); se eligen según el estado de ánimo. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_jerome": {"title": "Oreja: Jerome", "summary": "Punto de relajación y sueño; en la cefalea y la migraña. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_cojin": {"title": "Oreja: cojín (occipucio)", "summary": "Punto de cabeza y dolor; en migraña, climaterio y lactancia. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_sol": {"title": "Oreja: sol", "summary": "Punto de la sien; en la migraña. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_omega": {"title": "Oreja: Omega principal", "summary": "Punto de regulación general; en migraña, climaterio y depresión posparto. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_cero": {"title": "Oreja: punto cero", "summary": "Punto de equilibrio general; en la retención de orina posparto. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_endocrino": {"title": "Oreja: endocrino", "summary": "Regulación hormonal; el punto auricular más usado en los cuadros ginecológicos del libro. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_suprarrenal": {"title": "Oreja: suprarrenales", "summary": "En cuadros de Yang de riñón, edema, climaterio e hipertensión. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_genital": {"title": "Oreja: útero o matriz, ovarios, vagina y pecho", "summary": "Puntos del aparato reproductor y la mama. En las náuseas del embarazo el libro no los usa. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_organos": {"title": "Oreja: puntos de órganos", "summary": "Riñón, hígado, bazo, estómago, corazón, vejiga, intestinos y triple calentador, elegidos según el síndrome chino. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_digest": {"title": "Oreja: diafragma y náusea", "summary": "Puntos para las náuseas y los vómitos del embarazo. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_acth": {"title": "Oreja: ACTH", "summary": "Punto hormonal; en el dolor menstrual por carencia de Qi y sangre. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_hta": {"title": "Oreja: puntos de hipertensión", "summary": "Punto de hipertensión 19 y punto que baja la tensión, en la parte superior de la oreja. ⚠ No sustituyen el tratamiento de la preeclampsia. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "o_local": {"title": "Oreja: zonas de la columna y puntos de dolor", "summary": "Columna lumbar, vértebras y puntos sensibles según la zona del dolor; regla sí-no del libro. Nomenclatura de la escuela alemana de auriculoterapia (Nogier, Bahr); la ubicación exacta se confirma en un atlas auricular."}, "ev_auricular": {"title": "Evidencia: auriculoterapia", "summary": "Resumen de revisiones sistemáticas 2018: efecto positivo como complemento en insomnio y dolor; faltan estudios en otras indicaciones, incluidas las ginecológicas (PMID 30396628, doi:10.1016/j.ctcp.2018.08.005). Consultado en PubMed el 2026-11-26."}, "f_wandai": {"title": "Fórmula: Yang de bazo y flujo (≈ Wan Dai Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Atractylodes blanco, ñame chino, ginseng, cáscara de mandarina, semilla de llantén, peonía blanca, bupleurum, schizonepeta carbonizada y regaliz."}, "f_shenqi": {"title": "Fórmula: Yang de riñón y flujo (≈ Jin Gui Shen Qi Wan)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia, cornejo, ñame chino, acónito preparado, ramita de canela, alisma, poria y moutan. ⚠ Contiene acónito."}, "f_ermiao": {"title": "Fórmula: calor húmedo (≈ Er Miao San)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Corteza de felodendro y atractylodes."}, "f_chaihu": {"title": "Fórmula: estancamiento de Qi de hígado (≈ Chai Hu Shu Gan San)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Mandarina, bupleurum, ligusticum, naranja amarga, peonía blanca, regaliz y ciperus. Se repite en el ciclo irregular."}, "f_yougui": {"title": "Fórmula: Yang de bazo y riñón (≈ You Gui Wan modificada)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia preparada, ñame chino, cornejo, goji, gelatina de cuerno de ciervo, cuscuta, eucomia, acónito, astrágalo, haloisita roja, psoralea y frambuesa china. Se repite en el climaterio. ⚠ Contiene acónito; la psoralea es fotosensibilizante y se ha asociado a daño hepático."}, "f_yiguan": {"title": "Fórmula: Yin de hígado y riñón (≈ Yi Guan Jian)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia, goji, adenophora o glehnia, ophiopogon, danggui, fruto de toosendan y cidra mano de Buda. Se repite en la esterilidad por Yin. ⚠ Toosendan es hepatotóxico."}, "f_xiaoyao": {"title": "Fórmula: sangre de hígado (≈ Xiao Yao San)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Bupleurum, danggui, peonía blanca, atractylodes, poria, regaliz, jengibre fresco y menta. Se repite en el ciclo prolongado."}, "f_shaofu": {"title": "Fórmula: frío en la matriz (≈ Shao Fu Zhu Yu Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Hinojo, jengibre seco, corydalis, danggui, ligusticum, mirra, canela, peonía roja y polen de typha."}, "f_bazhen_ym": {"title": "Fórmula: carencia de Qi y sangre (≈ Ba Zhen Tang con agripalma)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Ginseng, atractylodes, poria, regaliz, rehmannia, peonía blanca, danggui, ligusticum, jengibre, azufaifo y agripalma."}, "f_tianma": {"title": "Fórmula: ascenso de Yang de hígado (≈ Tian Ma Gou Teng Yin modificada)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Concha de ostra y de oreja de mar, peonía blanca, rehmannia, gardenia, uncaria, gastrodia, tribulus, agripalma y escutelaria."}, "f_bazhen": {"title": "Fórmula: Qi de bazo y anemia (≈ Ba Zhen Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Danggui, ginseng, atractylodes, regaliz, rehmannia, peonía blanca, ligusticum, jengibre y azufaifo. Se repite en el estreñimiento posparto."}, "f_humedad": {"title": "Fórmula: humedad con bazo débil", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Agastache, eupatorium, atractylodes, magnolia, poria y semilla de dolichos."}, "f_siwu": {"title": "Fórmula: anemia y frío en la sangre (≈ Si Wu Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia preparada, peonía blanca, danggui y ligusticum."}, "f_zuogui": {"title": "Fórmula: carencia de jing de riñón (≈ Zuo Gui Wan)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia, ñame chino, goji, cyathula, cornejo, cuscuta, gelatina de cuerno de ciervo y de caparazón de tortuga. ⚠ Productos animales de especies protegidas."}, "f_aifu": {"title": "Fórmula: Yang de riñón y esterilidad (≈ Ai Fu Nuan Gong Wan)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Ciperus, hoja de artemisa, danggui, astrágalo, evodia, ligusticum, peonía blanca, rehmannia preparada, canela y dipsacus."}, "f_libido": {"title": "Fórmula: afrodisíacos chinos", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Gelatina de cuerno de ciervo, epimedio o cynomorium y danggui. El libro añade zinc. ⚠ Epimedio: interacciones y efectos hormonales poco estudiados."}, "f_zhibai": {"title": "Fórmula: Yin de riñón con Yang de hígado (≈ Zhi Bai Di Huang Wan con hueso de dragón y concha de ostra)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia, cornejo, ñame chino, poria, moutan, alisma, anemarrhena, felodendro, hueso fósil y concha de ostra."}, "f_erxian": {"title": "Fórmula: jing de riñón en el climaterio (≈ Er Xian Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Curculigo, epimedio, morinda, felodendro, anemarrhena y danggui. ⚠ Curculigo se ha asociado a toxicidad hepática y renal en modelos animales."}, "f_buzhong": {"title": "Fórmula: descenso de Qi de bazo (≈ Bu Zhong Yi Qi Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Astrágalo, ginseng, atractylodes, regaliz, danggui, mandarina, cimicifuga y bupleurum."}, "f_liujunzi": {"title": "Fórmula: Qi de bazo y estómago en el embarazo (≈ Liu Jun Zi Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Ginseng, atractylodes, poria, mandarina, pinellia y regaliz. ⚠ Pinellia: prudencia clásica en el embarazo; solo procesada y bajo prescripción."}, "f_guipi": {"title": "Fórmula: bazo y corazón (≈ Gui Pi Tang modificada)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Jengibre carbonizado, hueso de sepia, artemisa carbonizada, atractylodes, poria, astrágalo, longan, semilla de azufaifo, ginseng, danggui, polygala, regaliz, aucklandia, azufaifo y jengibre."}, "f_suye": {"title": "Fórmula: el hígado ataca al estómago (≈ Su Ye Huang Lian Tang modificada)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Concha de oreja de mar y de ostra, perilla, coptis, pinellia, bambú, rizoma de carrizo y mandarina. ⚠ Coptis (berberina) se evita en el embarazo por riesgo de ictericia neonatal."}, "f_mucosidad": {"title": "Fórmula: mucosidad por Qi de bazo débil", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Pinellia preparada, poria, jengibre fresco, atractylodes, mandarina y amomum."}, "f_edema_bazo": {"title": "Fórmula: edema por Yang de bazo", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Atractylodes, cáscara de areca, poria, jengibre fresco, mandarina y amomum. La cáscara de areca es clásica en el edema gestacional; la nuez de areca no."}, "f_zhenwu": {"title": "Fórmula: edema por Yang de riñón (≈ Zhen Wu Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Atractylodes, acónito preparado, poria, jengibre fresco y peonía blanca. ⚠ Acónito en una embarazada: contraindicado."}, "f_liuwei": {"title": "Fórmula: Yin de riñón e hipertensión (≈ Liu Wei Di Huang Wan)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Rehmannia, cornejo, ñame chino, poria, moutan y alisma. No reemplaza el antihipertensivo."}, "f_bazheng": {"title": "Fórmula: retención de orina por humedad-calor (≈ Ba Zheng San modificada)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Polygonum aviculare, dianthus, talco, atractylodes, felodendro, gardenia, akebia, llantén y cáscara de areca; luego ruibarbo. ⚠ Akebia (mu tong) puede venir sustituida por Aristolochia; el ruibarbo pasa a la leche."}, "f_gualou": {"title": "Fórmula: mastitis (≈ Gua Lou Niu Bang Zi Tang)", "summary": "Fórmula del libro (sin cantidades). Correspondencia con la fórmula clásica: interpretación de Claude. Madreselva, forsythia, bardana, trichosanthes (fruto y raíz), escrofularia, mandarina madura y verde, gardenia, espina de gleditsia, bupleurum y regaliz. Si hay fiebre o absceso, valorar antibiótico y drenaje."}, "r_pimiento": {"title": "Receta: pimiento con carne", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Carne picada con cebolla, ajo, pimienta, cayena, pimiento, tomate, vino tinto, tomillo, pimentón y alubias rojas, con arroz. Para calentar el Yang del bazo."}, "r_coco": {"title": "Receta: sopa de leche de coco y gambas", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Champiñones y gambas salteados con limón, pimentón, caldo de verdura y leche de coco. Para nutrir el Yin de hígado y riñón."}, "r_pollo": {"title": "Receta: caldo de pollo para generar sangre", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Pollo con zanahoria, patata, perejil y su raíz y cebolla, hervido dos horas; se cambia la verdura al final. Se repite en la migraña por anemia y en la depresión posparto."}, "r_cerdo": {"title": "Receta: verduras con carne de cerdo", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Cerdo salteado con puerro, jengibre, ajo, soja, limón, pimiento rojo, judías verdes y brócoli. Para el ascenso del Yang de hígado."}, "r_vaca": {"title": "Receta: sopa de carne de vaca", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Ternera y huesos con zanahoria, apio, patata, raíz de perejil y puerro, jengibre y ajo, hervida 2–3 horas. Para la carencia de Qi de bazo."}, "r_pescado": {"title": "Receta: sopa de pescado", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Cabezas de salmón, bacalao o atún con verduras, jengibre y pimienta, hervidas 2–3 horas; luego pescado y gambas. Para la carencia de jing de riñón."}, "r_libido": {"title": "Menú afrodisíaco", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Cordero en vino tinto con patata, calabaza y zanahoria; pescado a la parrilla con puerro; peras al vino con canela y jengibre. Para el Yang de riñón y el Qi de bazo."}, "r_pie": {"title": "Receta: pastel de carne (shepherd's pie)", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Ternera con zanahoria, patata, col china, pimiento, cebolla, ajo, hierbas y jerez, cubierta con masa de yogur. Para la carencia de Qi de bazo en el embarazo. ⚠ Lleva jerez: en el embarazo se omite el alcohol."}, "r_espinacas": {"title": "Receta: espinacas con salsa de gambas", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Espinacas con mantequilla y nuez moscada; gambas con limón, pimienta rosa y nata. Para el hígado que ataca al estómago."}, "r_hinojo": {"title": "Receta: gratinado de hinojo, zanahoria y patata", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Verduras con pimienta, cayena, nuez moscada y pimienta rosa, gratinadas con queso y nata. Para la mucosidad por bazo débil."}, "r_risotto": {"title": "Receta: risotto con verduras", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Arroz con hinojo, calabacín, pimiento rojo, zanahoria, jengibre, cardamomo y pavo o ternera, con poca sal. Para el edema por Yang de bazo."}, "r_mijo": {"title": "Receta: mijo asado", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Albóndigas de mijo cocido con huevo, cebolla, cebollino, perejil y pan rallado, fritas. Para la carencia de Qi tras el parto."}, "r_nacimiento": {"title": "Receta: sopa china del nacimiento", "summary": "Receta de cocina del libro (resumen de ingredientes, sin cantidades). Caldo de pollo y verdura que se recalienta durante semanas antes y después del parto. ⚠ Un caldo mantenido varias semanas tiene riesgo microbiológico: mejor prepararlo fresco y refrigerarlo."}}, "resources": [{"id": "AP", "title": "Skill acupuntura-puntos (bookskills)", "usedBy": ["2.15", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "4.2", "4.3", "4.4", "4.5", "4.6", "4.9", "4.10", "4.11"], "summary": "Fichas, índice de síntomas y lista de contraindicados en el embarazo usados para verificar los puntos del libro; la guía de diagnóstico complementa 2.2–2.4."}, {"id": "PM", "title": "Log de búsqueda en PubMed (2026-11-26)", "usedBy": ["2.11", "3.4", "3.5", "3.11", "4.2", "4.5", "4.7", "4.9", "2.14"], "summary": "Consultas: moxibustion breech Cochrane; acupuncture primary dysmenorrhoea Cochrane; acupuncture menopausal hot flushes systematic review; acupuncture premenstrual syndrome systematic review; Melia toosendan hepatotoxicity; dong quai warfarin interaction; acupuncture retained placenta; Akebia aristolochic acid substitution; auricular acupuncture systematic review overview (desde 2018)."}], "requires": {"chapters": {"2": [1], "3": [2], "4": [3]}, "sections": {"1.3": ["1.2"], "1.4": ["1.3"], "1.5": ["1.4"], "1.6": ["1.5"], "1.7": ["1.4"], "1.9": ["1.8"], "1.10": ["1.9"], "1.11": ["1.9"], "1.12": ["1.9"], "1.13": ["1.9"], "1.14": ["1.9", "1.5"], "1.16": ["1.15"], "2.2": ["1.3"], "2.3": ["2.2"], "2.4": ["2.3", "1.16"], "2.6": ["1.8"], "2.7": ["2.6"], "2.8": ["2.6"], "2.9": ["2.6"], "2.10": ["2.9"], "2.11": ["2.10"], "2.12": ["2.11"], "2.13": ["1.7"], "2.14": ["2.13"], "2.15": ["2.13"], "2.16": ["2.13"], "3.1": ["2.4"], "3.2": ["3.1", "1.12", "1.14", "2.16", "2.14"], "3.3": ["3.1", "2.14"], "3.4": ["3.1", "1.10", "2.11", "2.14"], "3.5": ["3.4", "2.16", "2.14"], "3.6": ["3.4", "1.12", "2.14"], "3.7": ["3.6", "2.14"], "3.8": ["3.5", "2.14"], "3.9": ["3.4", "2.14"], "3.10": ["3.9", "1.14", "2.14"], "3.11": ["3.4", "3.6", "2.14"], "3.12": ["3.1", "1.12", "2.14"], "3.13": ["2.4"], "4.1": ["2.4"], "4.2": ["4.1", "1.7", "2.15", "3.6", "2.14"], "4.3": ["4.2", "2.14"], "4.4": ["4.3", "3.11", "2.14"], "4.5": ["2.16", "4.2"], "4.6": ["4.2", "2.14"], "4.7": ["4.6"], "4.8": ["4.6", "2.14"], "4.9": ["4.8", "1.13", "2.14"], "4.10": ["4.8", "3.4", "2.14"], "4.11": ["4.10", "2.14"]}, "items": {"mujer_yin": ["yinyang"], "qi": ["yinyang"], "jing": ["qi"], "shen": ["qi"], "sangre": ["qi"], "chong_ren": ["qi"], "sanjiao": ["cinco_el"], "higado": ["cinco_el"], "bazo": ["cinco_el"], "rinon": ["cinco_el", "jing"], "ocho": ["yinyang"], "sindrome": ["ocho", "cuatro"], "cinco_sab": ["cinco_el"], "termica": ["cinco_sab"], "prop_med": ["termica"], "receta": ["prop_med"], "danggui": ["receta", "sangre"], "rehmannia": ["receta"], "shanyao": ["receta"], "baishao": ["receta"], "goji": ["receta"], "sp6": ["cun"], "prohibidos": ["acupresion"], "p_humcal": ["sindrome", "seis_inf"], "p_qi_hig": ["higado", "sindrome"], "p_yang_br": ["bazo", "rinon"], "p_yin_hr": ["rinon", "higado"], "p_sangre_hig": ["higado", "sangre"], "p_frio_matriz": ["rinon", "seis_inf"], "p_yang_hig": ["p_yin_hr"], "p_qi_bazo": ["bazo", "sindrome"], "p_humedad": ["p_qi_bazo"], "p_jing": ["jing", "rinon"], "p_desc_qi": ["p_qi_bazo"], "qi_rebelde": ["chong_ren", "bazo"], "p_hig_est": ["qi_rebelde", "p_qi_hig"], "evitar_emb": ["prohibidos"], "pc6": ["qi_rebelde"], "sp9": ["p_humedad"], "bl67": ["moxa", "evitar_emb"], "lr3": ["p_qi_hig"], "kd3": ["rinon"], "cv4": ["moxa"], "ev_dism": ["p_frio_matriz"], "ev_spm": ["p_qi_hig"], "ev_meno": ["p_yin_hr"], "ev_placenta": ["moxa"], "ev_toxicas": ["receta"], "inmuno": ["danggui"], "lr8": ["higado"], "st8": ["p_yang_hig"], "o_55": ["auricular"], "o_vg": ["auricular"], "o_psiq": ["auricular"], "o_jerome": ["auricular"], "o_cojin": ["auricular"], "o_sol": ["auricular"], "o_omega": ["auricular"], "o_cero": ["auricular"], "o_endocrino": ["auricular"], "o_suprarrenal": ["auricular"], "o_genital": ["auricular"], "o_organos": ["auricular"], "o_digest": ["auricular"], "o_acth": ["auricular"], "o_hta": ["auricular"], "o_local": ["auricular"], "ev_auricular": ["auricular"], "f_wandai": ["shanyao", "baishao", "receta"], "f_shenqi": ["rehmannia", "shanyao", "receta"], "f_ermiao": ["p_humcal", "receta"], "f_chaihu": ["p_qi_hig", "baishao", "receta"], "f_yougui": ["p_yang_br", "goji", "receta"], "f_yiguan": ["p_yin_hr", "danggui", "receta"], "f_xiaoyao": ["p_sangre_hig", "danggui", "receta"], "f_shaofu": ["p_frio_matriz", "danggui", "receta"], "f_bazhen_ym": ["danggui", "rehmannia", "receta"], "f_tianma": ["p_yang_hig", "receta"], "f_bazhen": ["p_qi_bazo", "danggui", "receta"], "f_humedad": ["p_humedad", "receta"], "f_siwu": ["danggui", "rehmannia", "receta"], "f_zuogui": ["p_jing", "goji", "receta"], "f_aifu": ["danggui", "receta"], "f_libido": ["danggui", "receta"], "f_zhibai": ["rehmannia", "receta"], "f_erxian": ["danggui", "receta"], "f_buzhong": ["p_desc_qi", "danggui", "receta"], "f_liujunzi": ["qi_rebelde", "receta"], "f_guipi": ["danggui", "receta"], "f_suye": ["p_hig_est", "receta"], "f_mucosidad": ["qi_rebelde", "receta"], "f_edema_bazo": ["sp9", "receta"], "f_zhenwu": ["baishao", "receta"], "f_liuwei": ["rehmannia", "receta"], "f_bazheng": ["kd3", "receta"], "f_gualou": ["receta"], "r_pimiento": ["p_yang_br", "termica"], "r_coco": ["p_yin_hr", "termica"], "r_pollo": ["p_sangre_hig", "termica"], "r_cerdo": ["p_yang_hig", "termica"], "r_vaca": ["p_qi_bazo", "termica"], "r_pescado": ["p_jing", "termica"], "r_libido": ["f_libido", "termica"], "r_pie": ["qi_rebelde", "termica"], "r_espinacas": ["p_hig_est", "termica"], "r_hinojo": ["qi_rebelde", "termica"], "r_risotto": ["sp9", "termica"], "r_mijo": ["lr3", "termica"], "r_nacimiento": ["termica"]}}};
+</script>
+<script>
+// ---------- build graph ----------
+const M=Object.assign({title:"Grafo del libro",subtitle:"",language:"es",itemLabel:"Concepto clave",itemLabelPlural:"Conceptos",resourceLabel:"Apéndice",resourceLabelPlural:"Apéndices",searchHint:"Buscar…",pageLabel:"Página",chapterLabel:"Capítulo",sectionLabel:"Sección"},GRAPH.meta||{});
+document.title=M.title;
+document.getElementById("ttl").innerHTML=esc(M.title)+(M.subtitle?"<small>"+esc(M.subtitle)+"</small>":"");
+document.getElementById("eqBtn").textContent=M.itemLabelPlural;
+document.getElementById("q").placeholder=M.searchHint;
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const PALETTE=["#2F4FA8","#B0622A","#16808A","#6F7C24","#7A5BA6","#A83F5A","#5B6770","#2E7D4F","#9A6B12","#3D6E8F"];
+const BLOCKS={};
+Object.entries(GRAPH.blocks||{}).forEach(([k,v],i)=>BLOCKS[k]={name:v.name||k,color:v.color||PALETTE[i%PALETTE.length]});
+if(!Object.keys(BLOCKS).length) BLOCKS.main={name:"Contenido",color:PALETTE[0]};
+const firstBlock=Object.keys(BLOCKS)[0];
+const hasRes=(GRAPH.resources||[]).length>0;
+if(hasRes) BLOCKS.__res={name:M.resourceLabelPlural,color:"#8B969C"};
+const nodes=[], links=[], byId={};
+function add(n){nodes.push(n);byId[n.id]=n;}
+const itemHome={};
+(GRAPH.chapters||[]).forEach((c,ci)=>{
+  const b=BLOCKS[c.block]?c.block:firstBlock, cid="ch"+c.num;
+  add({id:cid,type:"ch",num:c.num,label:c.title,page:c.page,block:b,desc:c.summary,order:(ci+1)*1000,idx:ci});
+  (c.sections||[]).forEach((s,si)=>{
+    const sid="s"+s.num;
+    add({id:sid,type:"sec",num:String(s.num),label:s.title,page:s.page,block:b,ch:c.num,desc:s.summary,order:(ci+1)*1000+si+1});
+    links.push({source:cid,target:sid,kind:"contains"});
+    (s.items||[]).forEach(e=>{if(!itemHome[e])itemHome[e]=sid;links.push({source:sid,target:"i:"+e,kind:"defines"});});
+  });
+});
+Object.entries(GRAPH.items||{}).forEach(([id,it])=>{
+  const home=byId[itemHome[id]];
+  add({id:"i:"+id,type:"eq",label:it.title,formula:it.formula,ref:it.ref,desc:it.summary,block:home?home.block:firstBlock,ch:home?home.ch:null,home:home?home.id:null,order:home?home.order+.5:99999});
+});
+(GRAPH.resources||[]).forEach((r,ri)=>{
+  add({id:"r:"+r.id,type:"apx",num:r.id,label:M.resourceLabel+" "+r.id+": "+r.title,short:r.title,page:r.page,block:"__res",desc:r.summary,order:900000+ri});
+  (r.usedBy||[]).forEach(s=>{if(byId["s"+s])links.push({source:"s"+s,target:"r:"+r.id,kind:"data"});});
+});
+const RQ=GRAPH.requires||{};
+const addReq=(map,pre,lvl)=>Object.entries(map||{}).forEach(([a,bs])=>bs.forEach(b=>{if(byId[pre+a]&&byId[pre+b])links.push({source:pre+a,target:pre+b,kind:"req",lvl});}));
+addReq(RQ.chapters,"ch","ch");addReq(RQ.sections,"s","sec");addReq(RQ.items,"i:","eq");
+const CH_DEP={};Object.entries(RQ.chapters||{}).forEach(([a,bs])=>CH_DEP[a]=bs.map(String));
+// adjacency
+nodes.forEach(n=>{n.out=[];n.inn=[];});
+links.forEach(l=>{byId[l.source].out.push(l);byId[l.target].inn.push(l);});
+
+// ---------- prerequisite trace ----------
+function trace(id){
+  const start=byId[id], set=new Set([id]), q=[];
+  const push=x=>{if(!set.has(x)){set.add(x);q.push(x);}};
+  const reqOf=n=>n.out.filter(l=>l.kind==="req").map(l=>l.target);
+  reqOf(start).forEach(push);
+  if(start.type==="sec") start.out.filter(l=>l.kind==="defines").forEach(l=>reqOf(byId[l.target]).forEach(push));
+  while(q.length){const n=byId[q.shift()];reqOf(n).forEach(push);}
+  // where to read each equation
+  const read=new Set(set);
+  [...set].forEach(x=>{const n=byId[x];if(n.type==="eq"&&n.home)read.add(n.home);});
+  return {set,read};
+}
+
+// ---------- rendering ----------
+const svg=d3.select("#graph"), root=svg.append("g");
+const defs=svg.append("defs");
+defs.append("marker").attr("id","arr").attr("viewBox","0 -4 8 8").attr("refX",8).attr("refY",0)
+  .attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,-4L8,0L0,4").attr("fill","#7F8F99");
+const gL=root.append("g"), gN=root.append("g");
+let view="ch", sim=null, selected=null, traceOn=false, hidden=new Set();
+const zoom=d3.zoom().scaleExtent([.2,5]).on("zoom",e=>{root.attr("transform",e.transform);labelLOD(e.transform.k);});
+svg.call(zoom).on("dblclick.zoom",null);
+const posCache={};
+const R=n=>n.type==="ch"?17:n.type==="eq"?7:n.type==="apx"?8:4.5;
+const col=n=>BLOCKS[n.block].color;
+
+function viewFilter(n){
+  if(hidden.has(n.block)) return false;
+  if(view==="ch") return n.type==="ch";
+  if(view==="eq") return n.type==="eq";
+  return true;
+}
+function linkFilter(l,ids){
+  if(!ids.has(l.source.id||l.source)||!ids.has(l.target.id||l.target)) return false;
+  if(view==="all") return l.kind!=="req"||l.lvl!=="ch";
+  return l.kind==="req";
+}
+let curNodes=[], curLinks=[], nodeSel, linkSel;
+function render(){
+  const w=svg.node().clientWidth, h=svg.node().clientHeight;
+  curNodes=nodes.filter(viewFilter).map(n=>{const c=posCache[n.id];return Object.assign(n,c?{x:c.x,y:c.y}:{});});
+  const ids=new Set(curNodes.map(n=>n.id));
+  curLinks=links.filter(l=>linkFilter(l,ids)).map(l=>({source:l.source.id||l.source,target:l.target.id||l.target,kind:l.kind,lvl:l.lvl}));
+  // initial layout by chapter order along a spiral so chapters keep reading order
+  curNodes.forEach(n=>{
+    if(n.x==null){const ci=(byId["ch"+(n.ch??n.num)]||{idx:20}).idx+1, a=ci*0.62, r=60+ci*22;
+      n.x=w/2+Math.cos(a)*r+(Math.random()-.5)*30; n.y=h/2+Math.sin(a)*r+(Math.random()-.5)*30;}
+  });
+  if(view==="ch"){
+    const depth={},seen=new Set();
+    const dep=c=>{c=String(c);if(depth[c]!=null)return depth[c];if(seen.has(c))return 0;seen.add(c);
+      return depth[c]=(CH_DEP[c]||[]).reduce((m,p)=>Math.max(m,dep(p)+1),0);};
+    const rows={};curNodes.forEach(n=>{const d=dep(n.num);(rows[d]=rows[d]||[]).push(n);});
+    const rowH=w<720?96:92, maxPer=w<720?3:6; let y=50;
+    Object.keys(rows).map(Number).sort((a,b)=>a-b).forEach(d=>{const arr=rows[d].sort((a,b)=>a.idx-b.idx);
+      for(let k=0;k<arr.length;k+=maxPer){const part=arr.slice(k,k+maxPer);
+        const sp=Math.min(w<720?125:250,(w-24)/part.length);
+        part.forEach((n,i)=>{n.fx=w/2+(i-(part.length-1)/2)*sp;n.fy=y;n.wrap=Math.max(11,Math.min(22,Math.floor(sp/7.2)));});
+        y+=rowH;}});
+  } else curNodes.forEach(n=>{n.fx=null;n.fy=null;});
+  linkSel=gL.selectAll("path").data(curLinks,d=>d.source+">"+d.target).join("path")
+    .attr("class",d=>"link "+d.kind).attr("marker-end",d=>d.kind==="req"?"url(#arr)":null);
+  nodeSel=gN.selectAll("g.node").data(curNodes,d=>d.id).join(enter=>{
+    const g=enter.append("g").attr("class",d=>"node "+d.type).attr("tabindex",0).attr("role","button")
+      .attr("aria-label",d=>d.label);
+    g.append("path").attr("class","shape");
+    g.append("text").attr("class","num");
+    g.append("text").attr("class","lbl");
+    return g;
+  });
+  nodeSel.select(".shape").attr("fill",col).attr("d",d=>{
+    const r=R(d);
+    if(d.type==="eq") return `M0,${-r*1.25}L${r*1.25},0L0,${r*1.25}L${-r*1.25},0Z`;
+    if(d.type==="apx") return `M${-r},${-r}h${2*r}v${2*r}h${-2*r}Z`;
+    return d3.arc()({innerRadius:0,outerRadius:r,startAngle:0,endAngle:2*Math.PI});
+  });
+  nodeSel.select(".num").text(d=>d.type==="ch"?d.num:d.type==="apx"?d.num:"").attr("text-anchor","middle").attr("dy","0.36em")
+    .style("font-size",d=>d.type==="apx"?"9px":null);
+  const lbl=nodeSel.select(".lbl").text(null).selectAll("tspan").remove();
+  nodeSel.select(".lbl").each(function(d){
+    const t=d3.select(this), txt=d.type==="sec"?d.num+" "+d.label:d.type==="apx"?d.short:d.label;
+    if(view==="ch"){
+      t.attr("x",0).attr("y",R(d)+15).attr("dy",null).attr("text-anchor","middle");
+      const words=txt.split(" "),lines=[];let cur="";
+      words.forEach(wd=>{if((cur+" "+wd).trim().length>(d.wrap||19)&&cur){lines.push(cur);cur=wd;}else cur=(cur+" "+wd).trim();});lines.push(cur);
+      lines.forEach((ln,i)=>t.append("tspan").attr("x",0).attr("dy",i?"1.1em":0).text(ln));
+    } else t.attr("x",R(d)+5).attr("y",0).attr("dy","0.35em").attr("text-anchor",null).text(txt);
+  });
+  nodeSel.on("click",(e,d)=>{e.stopPropagation();select(d.id);})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(d.id);}})
+    .call(d3.drag().on("start",(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+      .on("drag",(e,d)=>{d.fx=e.x;d.fy=e.y;}).on("end",(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+  if(sim) sim.stop();
+  const ld={contains:34,defines:22,data:70,req:view==="all"?110:90};
+  const ls={contains:.7,defines:.9,data:.08,req:view==="all"?.04:.35};
+  const lsf=l=>view==="all"&&l.kind==="req"&&l.lvl==="eq"?.008:ls[l.kind];
+  sim=d3.forceSimulation(curNodes)
+    .force("link",d3.forceLink(curLinks).id(d=>d.id).distance(l=>ld[l.kind]).strength(lsf))
+    .force("charge",d3.forceManyBody().strength(d=>view==="all"?(d.type==="ch"?-260:-45):-320))
+    .force("collide",d3.forceCollide(d=>R(d)+(view==="all"?3:22)))
+    .force("x",d3.forceX(w/2).strength(.04)).force("y",d3.forceY(h/2).strength(.05))
+    .on("tick",ticked).on("end",()=>{curNodes.forEach(n=>posCache[n.id]={x:n.x,y:n.y});});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){sim.stop();for(let i=0;i<300;i++)sim.tick();ticked();}
+  setTimeout(fit, view==="ch"?150:view==="all"?1400:900);
+  labelLOD(d3.zoomTransform(svg.node()).k);
+  applyHighlight();
+}
+function ticked(){
+  linkSel.attr("d",d=>{
+    const s=d.source,t=d.target;
+    if(d.kind!=="req") return `M${s.x},${s.y}L${t.x},${t.y}`;
+    const dx=t.x-s.x,dy=t.y-s.y,dist=Math.hypot(dx,dy)||1,r=R(t)+(t.type==="eq"?4:3);
+    const tx=t.x-dx/dist*r, ty=t.y-dy/dist*r;
+    return `M${s.x},${s.y}Q${(s.x+tx)/2+dy*.12},${(s.y+ty)/2-dx*.12} ${tx},${ty}`;
+  });
+  nodeSel.attr("transform",d=>`translate(${d.x},${d.y})`);
+}
+function labelLOD(k){
+  if(!nodeSel) return;
+  nodeSel.select(".lbl").style("display",d=>{
+    if(selected&&(d.id===selected||(traceOn&&curTrace&&curTrace.read.has(d.id)))) return null;
+    if(d.type==="ch"||view!=="all") return null;
+    if(d.type==="eq"||d.type==="apx") return k>1.1?null:"none";
+    return k>1.8?null:"none";
+  });
+}
+function fit(sub){
+  const set=(Array.isArray(sub)?sub:curNodes).filter(n=>n.x!=null);
+  if(!set.length) return;
+  let w=svg.node().clientWidth,h=svg.node().clientHeight,ox=0;
+  const panelOpen=panel.classList.contains("open"), mobile=w<720;
+  if(panelOpen&&!mobile){w-=400;} if(panelOpen&&mobile){h*=.4;}
+  let oy=0; if(mobile&&!panelOpen){h-=56;}
+  const xs=set.map(n=>n.x),ys=set.map(n=>n.y);
+  const padR=view==="ch"?60:150, padB=view==="ch"?50:30;
+  const x0=Math.min(...xs)-(view==="ch"?60:30),x1=Math.max(...xs)+padR,y0=Math.min(...ys)-30,y1=Math.max(...ys)+padB;
+  const k=Math.min(2.2,.92*Math.min(w/(x1-x0),h/(y1-y0)));
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(w/2-k*(x0+x1)/2,h/2-k*(y0+y1)/2).scale(k));
+}
+d3.select("#zin").on("click",()=>svg.transition().call(zoom.scaleBy,1.4));
+d3.select("#zout").on("click",()=>svg.transition().call(zoom.scaleBy,1/1.4));
+d3.select("#fit").on("click",()=>fit());
+svg.on("click",()=>closePanel());
+
+// ---------- highlight ----------
+let curTrace=null;
+function applyHighlight(){
+  if(!nodeSel) return;
+  nodeSel.classed("sel",d=>d.id===selected);
+  if(!selected){nodeSel.classed("dim",false);linkSel.classed("dim",false).classed("hot",false);labelLOD(d3.zoomTransform(svg.node()).k);return;}
+  let keep;
+  if(traceOn&&curTrace){keep=curTrace.read;}
+  else{keep=new Set([selected]);byId[selected].out.concat(byId[selected].inn).forEach(l=>{keep.add(l.source.id||l.source);keep.add(l.target.id||l.target);});}
+  nodeSel.classed("dim",d=>!keep.has(d.id));
+  linkSel.classed("dim",d=>!(keep.has(d.source.id)&&keep.has(d.target.id)))
+    .classed("hot",d=>traceOn&&d.kind==="req"&&keep.has(d.source.id)&&keep.has(d.target.id));
+  labelLOD(d3.zoomTransform(svg.node()).k);
+}
+
+// ---------- panel ----------
+const panel=document.getElementById("panel");
+const kindName={ch:M.chapterLabel,sec:M.sectionLabel,eq:M.itemLabel,apx:M.resourceLabel};
+function item(id,prefix){
+  const n=byId[id];
+  const t=n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label;
+  return `<li><button data-go="${esc(id)}"><span class="dot" style="background:${col(n)}"></span><span>${esc(t)}</span></button></li>`;
+}
+function list(title,ids,ordered){
+  if(!ids.length) return "";
+  ids=[...new Set(ids)].sort((a,b)=>byId[a].order-byId[b].order);
+  return `<div class="p-sec"><h3>${title}</h3>${ordered?'<ol class="p-list path">':'<ul class="p-list">'}${ids.map(i=>item(i)).join("")}${ordered?"</ol>":"</ul>"}</div>`;
+}
+function select(id,center){
+  selected=id;traceOn=false;curTrace=null;
+  const n=byId[id];
+  if(!curNodes.includes(n)){view=n.type==="ch"?"ch":n.type==="eq"?"eq":"all";hidden.delete(n.block);syncViewBtns();syncLegend();render();setTimeout(()=>centerOn(id),view==="all"?1500:1000);}
+  else if(center) centerOn(id);
+  const outT=k=>n.out.filter(l=>l.kind===k).map(l=>l.target.id||l.target);
+  const inT=k=>n.inn.filter(l=>l.kind===k).map(l=>l.source.id||l.source);
+  let html=`<button class="close" aria-label="Cerrar">×</button>
+   <div class="p-kind"><span class="dot" style="background:${col(n)}"></span>${esc(kindName[n.type])} · ${esc(BLOCKS[n.block].name)}</div>
+   <div class="p-title">${esc(n.type==="sec"?n.num+" "+n.label:n.type==="ch"?n.num+". "+n.label:n.label)}</div>`;
+  const meta=[];
+  if(n.page) meta.push(M.pageLabel+" "+n.page);
+  if(n.type==="sec") meta.push(M.chapterLabel+" "+n.ch+": "+byId["ch"+n.ch].label);
+  if(n.type==="eq"){if(n.ref)meta.push(M.itemLabel+" "+n.ref);if(n.home)meta.push(M.sectionLabel+" "+byId[n.home].num);}
+  if(meta.length) html+=`<div class="p-meta">${esc(meta.join(". "))}</div>`;
+  if(n.formula) html+=`<div class="formula" style="color:${col(n)}"><span style="color:var(--ink)">${esc(n.formula)}</span></div>`;
+  if(n.desc) html+=`<p class="p-desc">${esc(n.desc)}</p>`;
+  if(n.type!=="apx") html+=`<button class="trace-btn" id="traceBtn" aria-pressed="false">Trazar prerrequisitos</button><div id="pathBox"></div>`;
+  if(n.type==="ch") html+=list("Secciones",outT("contains"),true)+list(M.itemLabelPlural+" clave",outT("contains").flatMap(s=>byId[s].out.filter(l=>l.kind==="defines").map(l=>l.target.id||l.target)))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"));
+  if(n.type==="sec") html+=list(M.itemLabelPlural+" que presenta",outT("defines"))+list("Se apoya en",outT("req"))+list("Lo usan después",inT("req"))+list(M.resourceLabelPlural+" que consulta",outT("data"));
+  if(n.type==="eq") html+=list("Se deriva de o usa",outT("req"))+list("Base de",inT("req"))+list("Dónde se presenta",inT("defines"));
+  if(n.type==="apx") html+=list("Se consulta en",inT("data"));
+  panel.innerHTML=html;panel.classList.add("open");
+  panel.querySelector(".close").onclick=closePanel;
+  panel.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+  const tb=document.getElementById("traceBtn");
+  if(tb) tb.onclick=()=>{traceOn=!traceOn;tb.setAttribute("aria-pressed",traceOn);tb.textContent=traceOn?"Quitar trazado":"Trazar prerrequisitos";
+    curTrace=traceOn?trace(id):null;
+    const box=document.getElementById("pathBox");
+    if(traceOn){const ids=[...curTrace.read].filter(x=>x!==id&&byId[x].type!=="eq");
+      box.innerHTML=ids.length?list("Ruta de lectura sugerida, en orden del libro",ids,true):'<p class="empty">No depende de otros temas: es un punto de partida.</p>';
+      box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(b.dataset.go,true));
+}
+    else box.innerHTML="";
+    applyHighlight();
+    if(traceOn) fit(curNodes.filter(x=>curTrace.read.has(x.id)));};
+  document.getElementById("hint").style.opacity=0;
+  applyHighlight();
+}
+function closePanel(){panel.classList.remove("open");selected=null;traceOn=false;curTrace=null;applyHighlight();}
+function centerOn(id){
+  const n=byId[id];if(n.x==null) return;
+  const w=svg.node().clientWidth,h=svg.node().clientHeight,k=Math.max(1.3,d3.zoomTransform(svg.node()).k);
+  const mobile=w<720, cx=mobile?w/2:(w-400)/2, cy=mobile?h*.28:h/2;
+  svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity.translate(cx-k*n.x,cy-k*n.y).scale(k));
+}
+
+// ---------- controls ----------
+function syncViewBtns(){document.querySelectorAll(".views button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===view));}
+document.querySelectorAll(".views button").forEach(b=>b.onclick=()=>{view=b.dataset.view;syncViewBtns();closePanel();render();});
+const legend=document.getElementById("legend");
+function syncLegend(){
+  legend.innerHTML=Object.entries(BLOCKS).map(([k,v])=>`<button data-b="${k}" aria-pressed="${!hidden.has(k)}"><span class="sw" style="background:${v.color}"></span>${esc(v.name)}</button>`).join("")+
+  `<div class="shapes"><span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#172A3A"/></svg>${esc(M.chapterLabel.toLowerCase())} o ${esc(M.sectionLabel.toLowerCase())}</span><span><svg width="12" height="12"><path d="M6 0L12 6L6 12L0 6Z" fill="#172A3A"/></svg>${esc(M.itemLabel.toLowerCase())}</span>${hasRes?`<span><svg width="12" height="12"><rect x="1" y="1" width="10" height="10" fill="#172A3A"/></svg>${esc(M.resourceLabel.toLowerCase())}</span>`:""}</div>`;
+  legend.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const k=b.dataset.b;hidden.has(k)?hidden.delete(k):hidden.add(k);syncLegend();render();});
+}
+syncLegend();
+// search
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const q=document.getElementById("q"),res=document.getElementById("results");
+q.addEventListener("input",()=>{
+  const t=norm(q.value.trim());
+  if(t.length<2){res.style.display="none";return;}
+  const hits=nodes.filter(n=>norm((n.num||"")+" "+n.label+" "+(n.formula||"")+" "+(n.desc||"")).includes(t))
+    .sort((a,b)=>(norm(a.label).includes(t)?0:1)-(norm(b.label).includes(t)?0:1)||a.order-b.order).slice(0,14);
+  res.innerHTML=hits.length?hits.map(n=>`<li><button data-go="${esc(n.id)}"><span class="k">${esc(n.type==="sec"?n.num:n.type==="ch"?n.num:n.type==="eq"?"·":n.num)}</span><span>${esc(n.type==="apx"?n.short:n.label)}</span></button></li>`).join(""):'<li style="padding:8px;font-size:.9rem">Sin coincidencias. Prueba con otra palabra o un número de sección.</li>';
+  res.style.display="block";
+  res.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{res.style.display="none";q.value="";q.blur();select(b.dataset.go,true);});
+});
+q.addEventListener("keydown",e=>{if(e.key==="Enter"){const f=res.querySelector("[data-go]");if(f)f.click();}if(e.key==="Escape"){res.style.display="none";}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.style.display="none";});
+window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(()=>fit(),200);});
+render();
+setTimeout(()=>document.getElementById('hint').style.opacity=0,6000);
+</script>
+</body>
+</html>
