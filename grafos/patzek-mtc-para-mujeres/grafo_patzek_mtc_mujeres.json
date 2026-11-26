@@ -1,0 +1,1185 @@
+{
+ "meta": {
+  "title": "Medicina tradicional china para mujeres como grafo",
+  "subtitle": "Sabine Patzek y Karin Hertzer, Arkano Books 2003: fundamentos, práctica, ginecología y embarazo, con cruce contra acupuntura-puntos y alertas de PubMed",
+  "language": "es",
+  "itemLabel": "Concepto",
+  "itemLabelPlural": "Conceptos",
+  "resourceLabel": "Fuente externa",
+  "resourceLabelPlural": "Fuentes externas",
+  "searchHint": "Buscar: SPM, chongmai, BP 6, moxa…"
+ },
+ "blocks": {
+  "teo": {
+   "name": "Fundamentos de MTC"
+  },
+  "prac": {
+   "name": "Diagnóstico y terapias"
+  },
+  "gin": {
+   "name": "Ginecología"
+  },
+  "emb": {
+   "name": "Embarazo y puerperio"
+  }
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Fundamentos de la medicina china",
+   "block": "teo",
+   "page": 13,
+   "summary": "Taoísmo y confucianismo, Yin-Yang, Qi y los tres tesoros, meridianos, cinco elementos con sus órganos y las causas de enfermedad, leídos en clave femenina.",
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "Historia y filosofía",
+     "page": 13,
+     "summary": "Confucio, Lao Tse y el Huangdi neijing; sistemas Pinyin y Wade-Giles."
+    },
+    {
+     "num": "1.2",
+     "title": "El Tao",
+     "page": 14,
+     "summary": "El Todo como principio ordenador; vivir según las leyes de la naturaleza."
+    },
+    {
+     "num": "1.3",
+     "title": "La teoría del Yin y del Yang",
+     "page": 14,
+     "summary": "Opuestos complementarios. El libro sostiene que en la mujer predomina el Yin, lo que explicaría más frío, retención de líquidos, cistitis y anemia.",
+     "items": [
+      "yinyang",
+      "mujer_yin"
+     ]
+    },
+    {
+     "num": "1.4",
+     "title": "La energía vital Qi",
+     "page": 15,
+     "summary": "Qi original, alimenticio y respiratorio; cinco funciones y tres tipos de desequilibrio (falta, bloqueo, dirección contraria).",
+     "items": [
+      "qi"
+     ]
+    },
+    {
+     "num": "1.5",
+     "title": "Los tres tesoros",
+     "page": 16,
+     "summary": "Qi, jing (esencia heredada y adquirida, en el riñón) y shen (mente, visible en los ojos).",
+     "items": [
+      "jing",
+      "shen"
+     ]
+    },
+    {
+     "num": "1.6",
+     "title": "Otras sustancias básicas",
+     "page": 17,
+     "summary": "Sangre (Yin, formada por estómago, bazo y pulmón) y jugos corporales.",
+     "items": [
+      "sangre"
+     ]
+    },
+    {
+     "num": "1.7",
+     "title": "Los meridianos",
+     "page": 18,
+     "summary": "Doce principales y ocho especiales; el vaso concepción y el chongmai explican las náuseas del embarazo según el libro.",
+     "items": [
+      "chong_ren"
+     ]
+    },
+    {
+     "num": "1.8",
+     "title": "La teoría de los cinco elementos",
+     "page": 19,
+     "summary": "Ciclos de generación y destrucción; tabla de correspondencias de cada elemento.",
+     "items": [
+      "cinco_el"
+     ]
+    },
+    {
+     "num": "1.9",
+     "title": "Funciones de los órganos",
+     "page": 20,
+     "summary": "Órgano como función energética del meridiano; parejas Yin-Yang y el triple calentador.",
+     "items": [
+      "sanjiao"
+     ]
+    },
+    {
+     "num": "1.10",
+     "title": "El elemento madera",
+     "page": 21,
+     "summary": "Hígado (flujo libre de Qi y sangre, ira) y vesícula (decisiones).",
+     "items": [
+      "higado"
+     ]
+    },
+    {
+     "num": "1.11",
+     "title": "El elemento fuego",
+     "page": 24,
+     "summary": "Corazón y shen, intestino delgado, pericardio y triple calentador."
+    },
+    {
+     "num": "1.12",
+     "title": "El elemento tierra",
+     "page": 26,
+     "summary": "Bazo como verdadero órgano digestivo. Las dietas restrictivas debilitan el Qi del bazo; Qi de estómago invertido en el embarazo.",
+     "items": [
+      "bazo"
+     ]
+    },
+    {
+     "num": "1.13",
+     "title": "El elemento metal",
+     "page": 28,
+     "summary": "Pulmón e intestino grueso; estreñimiento posparto por falta de líquido."
+    },
+    {
+     "num": "1.14",
+     "title": "El elemento agua",
+     "page": 30,
+     "summary": "Riñón (jing, reproducción) y vejiga. Yang de riñón débil: flujo claro, esterilidad, edemas; Yin débil: SPM, climaterio, hipertensión en el embarazo.",
+     "items": [
+      "rinon"
+     ]
+    },
+    {
+     "num": "1.15",
+     "title": "Sano y enfermo en la MTC",
+     "page": 32,
+     "summary": "Salud como equilibrio Yin-Yang; enfermedades de raíz Yin y de raíz Yang."
+    },
+    {
+     "num": "1.16",
+     "title": "Cómo se originan las enfermedades",
+     "page": 32,
+     "summary": "Seis influencias climáticas, siete emociones y hábitos de vida.",
+     "items": [
+      "seis_inf",
+      "siete_emo"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "La práctica de médicos y terapeutas",
+   "block": "prac",
+   "page": 37,
+   "summary": "Diagnóstico (ocho criterios, cuatro métodos, del síntoma al síndrome) y los tres métodos del libro: dietética, terapia medicinal y acupuntura con acupresión y moxa.",
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Elegir terapeuta",
+     "page": 37,
+     "summary": "Pedir formación mínima de dos años y examen final."
+    },
+    {
+     "num": "2.2",
+     "title": "Los ocho criterios básicos",
+     "page": 38,
+     "summary": "Yin/Yang, interior/exterior, plenitud/vacío, frío/calor; en ginecología predominan lo interno y el frío.",
+     "items": [
+      "ocho"
+     ]
+    },
+    {
+     "num": "2.3",
+     "title": "Los cuatro métodos de diagnóstico",
+     "page": 39,
+     "summary": "Examinar (lengua), escuchar y oler, preguntar y palpar (pulso, 28 cualidades).",
+     "items": [
+      "cuatro"
+     ]
+    },
+    {
+     "num": "2.4",
+     "title": "De los síntomas al síndrome",
+     "page": 42,
+     "summary": "El síndrome chino es a la vez diagnóstico y principio de tratamiento. En ginecología dominan bazo, riñón e hígado.",
+     "items": [
+      "sindrome"
+     ]
+    },
+    {
+     "num": "2.5",
+     "title": "Métodos terapéuticos",
+     "page": 42,
+     "summary": "Terapias internas (dieta, hierbas) y externas (acupuntura, tuina); el qigong actúa en ambas."
+    },
+    {
+     "num": "2.6",
+     "title": "Dietética y cinco sabores",
+     "page": 44,
+     "summary": "Cada alimento se asigna a un elemento por color, sabor, madurez y preparación.",
+     "items": [
+      "cinco_sab"
+     ]
+    },
+    {
+     "num": "2.7",
+     "title": "Alimentos que calientan y que enfrían",
+     "page": 48,
+     "summary": "Naturaleza térmica según el tipo de persona; diario de comidas.",
+     "items": [
+      "termica"
+     ]
+    },
+    {
+     "num": "2.8",
+     "title": "Cocinar con los cinco elementos",
+     "page": 49,
+     "summary": "Recorrer el ciclo de los elementos al cocinar, sin cantidades fijas."
+    },
+    {
+     "num": "2.9",
+     "title": "Terapia medicinal: propiedades",
+     "page": 50,
+     "summary": "Sabor, temperatura, órganos de acción y dirección de cada sustancia.",
+     "items": [
+      "prop_med"
+     ]
+    },
+    {
+     "num": "2.10",
+     "title": "Varios medicamentos en una receta",
+     "page": 53,
+     "summary": "Soberano, ministro, asistente y mensajero; 6–8 sustancias habituales.",
+     "items": [
+      "receta"
+     ]
+    },
+    {
+     "num": "2.11",
+     "title": "Hierbas usadas en ginecología",
+     "page": 54,
+     "summary": "Danggui, rehmannia, ñame chino, peonía blanca y goji. ⚠ Las afirmaciones de \"componentes de estrógeno\" del danggui y del ñame no están demostradas en humanos.",
+     "items": [
+      "danggui",
+      "rehmannia",
+      "shanyao",
+      "baishao",
+      "goji"
+     ]
+    },
+    {
+     "num": "2.12",
+     "title": "Cocción y tiempo de efecto",
+     "page": 55,
+     "summary": "Dosis diaria de 3 a 12 g por componente, doble cocción, revisión a los 3–15 días. El libro omite las cantidades de sus recetas y desaconseja la automedicación.",
+     "items": [
+      "coccion"
+     ]
+    },
+    {
+     "num": "2.13",
+     "title": "La acupuntura",
+     "page": 57,
+     "summary": "Sesión, 361 puntos, agujas, medida en cun y técnica. ⚠ El libro sitúa BP 6 a 4 cun del maléolo; la ubicación estándar es 3 cun.",
+     "items": [
+      "cun",
+      "sp6"
+     ]
+    },
+    {
+     "num": "2.14",
+     "title": "Electroacupuntura, láser y acupuntura auricular",
+     "page": 61,
+     "summary": "Frecuencias, oreja como embrión invertido, puntos psíquicos (frustración, antiagresión, antidepresión).",
+     "items": [
+      "auricular"
+     ]
+    },
+    {
+     "num": "2.15",
+     "title": "La acupresión",
+     "page": 62,
+     "summary": "Masaje de 1–3 min por punto; indicada en molestias leves. Los 24 puntos prohibidos en el embarazo según Jeanne Blum.",
+     "items": [
+      "acupresion",
+      "prohibidos"
+     ]
+    },
+    {
+     "num": "2.16",
+     "title": "La moxibustión",
+     "page": 64,
+     "summary": "Calor de artemisa: aguja con moxa, cigarro y conos aislados con jengibre o ajo; autotratamiento con puntos marcados.",
+     "items": [
+      "moxa"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Ginecología general",
+   "block": "gin",
+   "page": 67,
+   "summary": "Flujo, SPM, dolor menstrual, migraña menstrual, trastornos del ciclo, esterilidad, climaterio, prolapso y apoyo en cáncer, cada uno con síndromes, dieta, puntos y receta.",
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "Diagnósticos chinos frecuentes en ginecología",
+     "page": 67,
+     "summary": "Lista de síndromes y las afecciones que causan. Insiste en que la autoterapia con agujas o hierbas está desaconsejada."
+    },
+    {
+     "num": "3.2",
+     "title": "Flujo blanco",
+     "page": 69,
+     "summary": "Yang de bazo o de riñón débiles. Pide frotis para descartar infección. ⚠ La receta del Yang de riñón incluye acónito (fu zi). Cruce con acupuntura-puntos (Leucorrea): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: BL54, CV12, KI6, LI4, LU7."
+    },
+    {
+     "num": "3.3",
+     "title": "Flujo amarillento",
+     "page": 72,
+     "summary": "Calor húmedo que desciende; el libro remite primero al médico porque indica infección. Cruce con acupuntura-puntos (Leucorrea): 8 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL34.",
+     "items": [
+      "p_humcal"
+     ]
+    },
+    {
+     "num": "3.4",
+     "title": "Síndrome premenstrual",
+     "page": 72,
+     "summary": "Cuatro síndromes: estancamiento de Qi de hígado, Yang de bazo y riñón, Yin de hígado y riñón, sangre de hígado. ⚠ Recetas con acónito y con fruto de Melia toosendan. Cruce con acupuntura-puntos (Síndrome premenstrual): 14 de 27 puntos del libro coinciden con el índice. Solo en el libro: CV2, CV3, CV4, CV6, GB20, KI3, KI6, LR13, LU7, SI3, SP4, TE5, TE6.",
+     "items": [
+      "p_qi_hig",
+      "p_yang_br",
+      "p_yin_hr",
+      "p_sangre_hig",
+      "cv4",
+      "lr8",
+      "ev_spm",
+      "ev_toxicas"
+     ]
+    },
+    {
+     "num": "3.5",
+     "title": "Dolor menstrual",
+     "page": 77,
+     "summary": "Estancamiento de Qi y sangre, frío en la matriz o carencia de Qi y sangre; moxa y bolsa de agua caliente en el frío. Cruce con acupuntura-puntos (Dismenorrea + Amenorrea): 18 de 19 puntos del libro coinciden con el índice. Solo en el libro: LU7.",
+     "items": [
+      "p_frio_matriz",
+      "ev_dism"
+     ]
+    },
+    {
+     "num": "3.6",
+     "title": "Menstruación y migraña",
+     "page": 80,
+     "summary": "Migraña Yang-Ming, Shao-Yang y Tai-Yang; síndromes de Yang de hígado, Qi de bazo, anemia y humedad. Diario del dolor; acupresión en E 8. Cruce con acupuntura-puntos (Migraña): 11 de 19 puntos del libro coinciden con el índice. Solo en el libro: BL20, CV4, CV6, GV20, LR8, LU7, SP9, ST36.",
+     "items": [
+      "p_yang_hig",
+      "p_qi_bazo",
+      "p_humedad",
+      "st8"
+     ]
+    },
+    {
+     "num": "3.7",
+     "title": "Ciclo acortado",
+     "page": 86,
+     "summary": "Carencia de Qi de bazo. Cruce con acupuntura-puntos (Menstruación irregular): 7 de 7 puntos del libro coinciden con el índice."
+    },
+    {
+     "num": "3.8",
+     "title": "Ciclo prolongado",
+     "page": 87,
+     "summary": "Qi de hígado débil o anemia con frío en la sangre; curva de temperatura basal. Cruce con acupuntura-puntos (Menstruación irregular): 14 de 19 puntos del libro coinciden con el índice. Solo en el libro: BL32, LI4, LR13, LR5, SP8."
+    },
+    {
+     "num": "3.9",
+     "title": "Ciclo irregular",
+     "page": 88,
+     "summary": "Depresión de Qi de hígado o carencia de jing de riñón. ⚠ Receta con gelatina de caparazón de tortuga (especie protegida). Cruce con acupuntura-puntos (Menstruación irregular): 10 de 17 puntos del libro coinciden con el índice. Solo en el libro: CV12, GV20, KI14, KI7, LR5, SP17, TE5.",
+     "items": [
+      "p_jing"
+     ]
+    },
+    {
+     "num": "3.10",
+     "title": "Esterilidad y libido",
+     "page": 90,
+     "summary": "Descartar causa orgánica (trompas, ecografía, hormonas) y luego Yin o Yang de riñón. Afrodisíacos chinos y zinc. Cruce con acupuntura-puntos (Infertilidad femenina): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: CV2, CV6, GB34, GV20, LR8."
+    },
+    {
+     "num": "3.11",
+     "title": "Climaterio o menopausia",
+     "page": 92,
+     "summary": "Síndromes de vacío: Yin de riñón con Yang de hígado, Yang de bazo y riñón, jing de riñón. Cruce con acupuntura-puntos (Menopausia): 11 de 18 puntos del libro coinciden con el índice. Solo en el libro: BL20, CV12, CV5, CV6, HT3, LR8, ST36.",
+     "items": [
+      "ev_meno"
+     ]
+    },
+    {
+     "num": "3.12",
+     "title": "Prolapso de matriz y vejiga",
+     "page": 95,
+     "summary": "Descenso de Qi de bazo o Yang de riñón; ejercicios del suelo pélvico. Cruce con acupuntura-puntos (Prolapso uterino): 8 de 13 puntos del libro coinciden con el índice. Solo en el libro: GB27, GB28, SP9, ST29, ST30.",
+     "items": [
+      "p_desc_qi",
+      "kegel"
+     ]
+    },
+    {
+     "num": "3.13",
+     "title": "Apoyo en tumores y cáncer",
+     "page": 97,
+     "summary": "Apoyo según síndrome y analgesia con IG 4 y E 36. ⚠ Atribuye al aloe prevención del cáncer sin respaldo.",
+     "items": [
+      "inmuno"
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Embarazo y parto",
+   "block": "emb",
+   "page": 99,
+   "summary": "Náuseas, edemas, hipertensión, presentación de nalgas, preparación al parto y puerperio: placenta, entuertos, vejiga e intestino, lactancia, mastitis y depresión posparto.",
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Diagnósticos frecuentes en el embarazo y el parto",
+     "page": 99,
+     "summary": "Síndromes de bazo, riñón e hígado asociados a cada molestia."
+    },
+    {
+     "num": "4.2",
+     "title": "Náuseas y vómitos",
+     "page": 101,
+     "summary": "Qi de estómago invertido por plenitud de chongmai y renmai. Tres síndromes. Lista de puntos a evitar. ⚠ Recetas con pinellia y coptis, que exigen prudencia en el embarazo. Cruce con acupuntura-puntos (Náusea del embarazo): 8 de 11 puntos del libro coinciden con el índice. Solo en el libro: GV20, HT3, SP9.",
+     "items": [
+      "qi_rebelde",
+      "p_hig_est",
+      "evitar_emb",
+      "pc6"
+     ]
+    },
+    {
+     "num": "4.3",
+     "title": "Edemas",
+     "page": 107,
+     "summary": "Yang de bazo o de riñón; BP 9 como punto principal. ⚠ Receta con acónito en una embarazada: contraindicado. Cruce con acupuntura-puntos (Edema): 4 de 6 puntos del libro coinciden con el índice. Solo en el libro: CV12, KI3.",
+     "items": [
+      "sp9"
+     ]
+    },
+    {
+     "num": "4.4",
+     "title": "Hipertensión arterial",
+     "page": 109,
+     "summary": "El libro deja la preeclampsia al médico. ⚠ Una PA de 160/100 en el embarazo es hipertensión grave: urgencia obstétrica, no terapia complementaria. Cruce con acupuntura-puntos (Hipertensión): 6 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL20, BL52, HT6."
+    },
+    {
+     "num": "4.5",
+     "title": "Corrección de la postura del bebé",
+     "page": 111,
+     "summary": "Moxa en V 67 de la semana 28 a la 35, idealmente en un servicio obstétrico. Cruce con acupuntura-puntos (Malposición fetal): 1 de 3 puntos del libro coinciden con el índice. Solo en el libro: KI3, ST36. Puntos de este apartado que la skill marca como de riesgo en el embarazo: BL67.",
+     "items": [
+      "bl67"
+     ]
+    },
+    {
+     "num": "4.6",
+     "title": "Medidas que facilitan el parto",
+     "page": 112,
+     "summary": "Acupuntura semanal desde la semana 36; puntos sacros y agujas permanentes durante el parto. Cruce con acupuntura-puntos (Inducción del parto): 3 de 9 puntos del libro coinciden con el índice. Solo en el libro: BL33, BL54, GV20, GV4, HT7, PC6."
+    },
+    {
+     "num": "4.7",
+     "title": "Problemas con el desprendimiento de la placenta",
+     "page": 114,
+     "summary": "⚠ La placenta retenida y la hemorragia posparto son urgencias; la moxa en BP 1 no reemplaza la uterotonía ni la extracción manual.",
+     "items": [
+      "ev_placenta"
+     ]
+    },
+    {
+     "num": "4.8",
+     "title": "Dolores de sobreparto",
+     "page": 115,
+     "summary": "Carencia de Qi o estancamiento de sangre; H 3 como punto clave.",
+     "items": [
+      "lr3"
+     ]
+    },
+    {
+     "num": "4.9",
+     "title": "Vejiga e intestino tras el parto",
+     "page": 116,
+     "summary": "Estreñimiento por falta de líquido; retención por humedad-calor. ⚠ La receta lleva Caulis Akebiae (mu tong), confundible con especies con ácido aristolóquico, y ruibarbo durante la lactancia. Cruce con acupuntura-puntos (Estreñimiento + Retención urinaria): 11 de 15 puntos del libro coinciden con el índice. Solo en el libro: BL62, CV5, GV20, ST28.",
+     "items": [
+      "kd3"
+     ]
+    },
+    {
+     "num": "4.10",
+     "title": "Lactancia y mastitis",
+     "page": 118,
+     "summary": "Poca leche por carencia de Qi y sangre; obstrucción y mastitis por estancamiento de Qi de hígado. Una mastitis con fiebre puede requerir antibiótico. Cruce con acupuntura-puntos (Lactancia insuficiente + Mastitis): 8 de 11 puntos del libro coinciden con el índice. Solo en el libro: GB34, LR13, LR5."
+    },
+    {
+     "num": "4.11",
+     "title": "Depresión posparto",
+     "page": 121,
+     "summary": "Carencia de Qi y sangre o estancamiento de Qi. El libro deriva la depresión verdadera a psiquiatría. Punto antidepresión auricular. Cruce con acupuntura-puntos (Depresión): 10 de 16 puntos del libro coinciden con el índice. Solo en el libro: BL18, CV12, CV4, CV6, HT3, LU7."
+    }
+   ]
+  }
+ ],
+ "items": {
+  "yinyang": {
+   "title": "Yin y Yang",
+   "summary": "Par de opuestos que se contienen; base del diagnóstico."
+  },
+  "mujer_yin": {
+   "title": "Predominio del Yin en la mujer",
+   "summary": "Idea central del libro: más frío, retención de líquidos y anemia. Es un supuesto de la tradición, no un hallazgo fisiológico."
+  },
+  "qi": {
+   "title": "Qi",
+   "summary": "Energía con cinco funciones: mover, proteger, transformar, contener y calentar."
+  },
+  "jing": {
+   "title": "Jing (esencia)",
+   "summary": "Heredada y adquirida; se guarda en el riñón y gobierna la reproducción."
+  },
+  "shen": {
+   "title": "Shen (mente)",
+   "summary": "Capacidad de pensar y elegir; se ve en el brillo de los ojos."
+  },
+  "sangre": {
+   "title": "Sangre",
+   "summary": "Sustancia Yin que nutre; la forman estómago, bazo y pulmón."
+  },
+  "chong_ren": {
+   "title": "Chongmai y renmai",
+   "summary": "Vasos que se llenan al inicio del embarazo; su plenitud explica las náuseas según el libro."
+  },
+  "cinco_el": {
+   "title": "Cinco elementos",
+   "summary": "Madera, fuego, tierra, metal y agua con ciclos de generación y destrucción."
+  },
+  "sanjiao": {
+   "title": "Triple calentador",
+   "summary": "Superior (pulmón, corazón), medio (digestión) e inferior (riñón, jing). En ginecología el medio y el inferior suelen estar débiles."
+  },
+  "higado": {
+   "title": "Hígado",
+   "summary": "Flujo libre de Qi y sangre; su estancamiento causa SPM, dolor menstrual y ciclos irregulares."
+  },
+  "bazo": {
+   "title": "Bazo",
+   "summary": "Transforma el alimento en Qi y sangre y contiene la sangre en los vasos."
+  },
+  "rinon": {
+   "title": "Riñón",
+   "summary": "Guarda el jing; Yang débil da frío y edema, Yin débil da calor y síntomas del climaterio."
+  },
+  "seis_inf": {
+   "title": "Seis influencias",
+   "summary": "Viento, frío, calor, humedad, sequedad y calor estival."
+  },
+  "siete_emo": {
+   "title": "Siete emociones",
+   "summary": "Alegría, enojo, tristeza, preocupación, melancolía, miedo y temor, como causas de enfermedad."
+  },
+  "ocho": {
+   "title": "Ocho criterios",
+   "summary": "Yin/Yang, interior/exterior, plenitud/vacío, frío/calor."
+  },
+  "cuatro": {
+   "title": "Cuatro métodos de diagnóstico",
+   "summary": "Examinar (lengua), escuchar y oler, preguntar y palpar (pulso). Ver la guía de diagnóstico de acupuntura-puntos para la fiabilidad de estos métodos."
+  },
+  "sindrome": {
+   "title": "Síndrome chino",
+   "summary": "Combinación de signos con nombre propio; dicta el principio de tratamiento."
+  },
+  "cinco_sab": {
+   "title": "Cinco sabores y colores",
+   "summary": "Ácido-verde (madera), amargo-rojo (fuego), dulce-amarillo (tierra), picante-blanco (metal), salado-negro (agua)."
+  },
+  "termica": {
+   "title": "Naturaleza térmica de los alimentos",
+   "summary": "Alimentos que calientan o enfrían según la constitución; base de todas las dietas del libro."
+  },
+  "prop_med": {
+   "title": "Propiedades de las medicinas",
+   "summary": "Sabor, temperatura (seis grados), órgano de acción y dirección."
+  },
+  "receta": {
+   "title": "Estructura de la receta",
+   "summary": "Soberano, ministro, asistente y mensajero."
+  },
+  "danggui": {
+   "title": "Danggui (Angelica sinensis)",
+   "summary": "Tónico de la sangre usado en casi todas las recetas del libro. ⚠ Potencia la warfarina (Lancet 2000, PMID 10675182, doi:10.1016/S0140-6736(99)06457-0)."
+  },
+  "rehmannia": {
+   "title": "Rehmannia (sheng/shu di huang)",
+   "summary": "Fresca enfría y nutre el Yin; preparada calienta y nutre la sangre."
+  },
+  "shanyao": {
+   "title": "Shanyao (Dioscorea opposita)",
+   "summary": "Tonifica riñón y Yin. ⚠ Contiene diosgenina, no estrógenos humanos."
+  },
+  "baishao": {
+   "title": "Baishao (peonía blanca)",
+   "summary": "Nutre la sangre, calma el hígado y el dolor; frecuente en recetas menstruales."
+  },
+  "goji": {
+   "title": "Gouqizi (goji)",
+   "summary": "Fortalece el Yin de riñón e hígado. Interacción descrita con warfarina."
+  },
+  "coccion": {
+   "title": "Cocción medicinal",
+   "summary": "3–12 g por componente al día, doble cocción, 2–3 tomas."
+  },
+  "cun": {
+   "title": "Medida en cun",
+   "summary": "Unidad proporcional al pulgar de la paciente para ubicar puntos."
+  },
+  "sp6": {
+   "title": "BP 6 (SP6 Sanyinjiao)",
+   "summary": "⚠ El libro dice 4 cun sobre el maléolo; la skill acupuntura-puntos lo ubica a 3 cun. Contraindicado clásicamente en el embarazo salvo para el parto, como advierte el propio libro."
+  },
+  "auricular": {
+   "title": "Acupuntura auricular",
+   "summary": "Unos 200 puntos; los psíquicos (frustración, antiagresión, antidepresión) aparecen en casi todos los cuadros."
+  },
+  "acupresion": {
+   "title": "Acupresión",
+   "summary": "Masaje circular de 1–3 min; útil en dolor menstrual, ciclo y náuseas. El libro pide orientación profesional antes de autotratarse."
+  },
+  "prohibidos": {
+   "title": "Puntos prohibidos en el embarazo",
+   "summary": "El libro cita 24 puntos de Jeanne Blum sin listarlos. Verificado con acupuntura-puntos: LI4, SP6, BL60, BL67, GB21, BL31–34 y el abdomen inferior."
+  },
+  "moxa": {
+   "title": "Moxibustión",
+   "summary": "Aporta calor en cuadros de frío y vacío; nunca en la cara."
+  },
+  "p_humcal": {
+   "title": "Calor húmedo que desciende",
+   "summary": "Flujo amarillo maloliente, prurito, lengua roja con saburra amarilla."
+  },
+  "p_qi_hig": {
+   "title": "Estancamiento de Qi de hígado",
+   "summary": "Irritabilidad premenstrual, mamas tensas, sangrado grumoso, pulso en cuerda."
+  },
+  "p_yang_br": {
+   "title": "Carencia de Yang de bazo y riñón",
+   "summary": "Frío, palidez, edema lumbar, lengua pálida con marcas dentales."
+  },
+  "p_yin_hr": {
+   "title": "Carencia de Yin de hígado y riñón",
+   "summary": "Insomnio, sequedad, menstruación escasa, lengua roja sin saburra."
+  },
+  "p_sangre_hig": {
+   "title": "Insuficiencia de sangre de hígado",
+   "summary": "Llanto, palidez, mareo, pulso fino y rugoso."
+  },
+  "p_frio_matriz": {
+   "title": "Frío en la matriz",
+   "summary": "Dolor cólico que mejora con calor, sangrado oscuro con coágulos."
+  },
+  "p_yang_hig": {
+   "title": "Ascenso de Yang de hígado",
+   "summary": "Migraña pulsátil con fotofobia y boca amarga."
+  },
+  "p_qi_bazo": {
+   "title": "Carencia de Qi de bazo",
+   "summary": "Cansancio, ciclo corto, migraña sorda; el síndrome que más repite el libro."
+  },
+  "p_humedad": {
+   "title": "Humedad por debilidad del bazo",
+   "summary": "Pesadez, edema, saburra blanca resbaladiza."
+  },
+  "p_jing": {
+   "title": "Carencia de jing de riñón",
+   "summary": "Ciclo irregular en multíparas, acúfenos, pulso profundo y débil."
+  },
+  "p_desc_qi": {
+   "title": "Descenso de Qi de bazo",
+   "summary": "Prolapso, flujo abundante, ganas constantes de orinar."
+  },
+  "kegel": {
+   "title": "Ejercicios del suelo pélvico",
+   "summary": "Cortar el chorro de orina y repetir la contracción en seco."
+  },
+  "inmuno": {
+   "title": "Plantas inmunoestimulantes",
+   "summary": "⚠ Afirmaciones sobre interferón y prevención del cáncer (aloe) sin ensayos clínicos que las sostengan."
+  },
+  "cv4": {
+   "title": "VC 4 (CV4 Guanyuan)",
+   "summary": "3 cun bajo el ombligo; cruce de hígado, bazo y riñón con el vaso concepción. ⚠ Abdomen inferior: evitar en el embarazo."
+  },
+  "lr8": {
+   "title": "H 8 (LR8 Ququan)",
+   "summary": "Punto agua del hígado, en el pliegue interno de la rodilla."
+  },
+  "st8": {
+   "title": "E 8 (ST8 Touwei)",
+   "summary": "Sien; acupresión para migraña frontal y lateral."
+  },
+  "qi_rebelde": {
+   "title": "Qi de estómago invertido",
+   "summary": "Mecanismo de la náusea del embarazo en el libro."
+  },
+  "p_hig_est": {
+   "title": "El hígado ataca al estómago",
+   "summary": "Náuseas con cambios de ánimo, encías que sangran, pulso en cuerda."
+  },
+  "evitar_emb": {
+   "title": "Puntos a evitar en el embarazo (libro)",
+   "summary": "IG 4, VC 2 a 8, BP 6, H 3, R 3 y R 6; sin acupuntura si hay abortos previos. Coincide en lo esencial con la skill, que añade BL60, BL67 y GB21."
+  },
+  "pc6": {
+   "title": "CS 6 (PC6 Neiguan)",
+   "summary": "Punto base de las náuseas. Evidencia: metanálisis en red 2026 con certeza baja a moderada (PMID 42075106, doi:10.3390/nu18081293)."
+  },
+  "sp9": {
+   "title": "BP 9 (SP9 Yinlingquan)",
+   "summary": "Punto principal para el edema según el libro. ⚠ La afirmación de que se eliminan hasta dos litros tras una sesión no está respaldada."
+  },
+  "bl67": {
+   "title": "V 67 (BL67 Zhiyin) con moxa",
+   "summary": "Para la presentación de nalgas. Evidencia: Cochrane 2023, certeza moderada de menos presentaciones no cefálicas al nacer y sin cambio claro en cesáreas (PMID 37158339, doi:10.1002/14651858.CD003928.pub4). La skill recomienda semanas 32–35 con control obstétrico; el libro, 28–35."
+  },
+  "lr3": {
+   "title": "H 3 (LR3 Taichong)",
+   "summary": "Punto clave para el estancamiento de Qi de hígado. El libro lo evita o usa con cuidado en el embarazo."
+  },
+  "kd3": {
+   "title": "R 3 (KI3 Taixi)",
+   "summary": "Nutre el Yin y tonifica el riñón; el libro lo evita en el embarazo."
+  },
+  "ev_dism": {
+   "title": "Evidencia: acupuntura en dismenorrea",
+   "summary": "Cochrane 2016: evidencia insuficiente, calidad baja o muy baja (PMID 27087494, doi:10.1002/14651858.CD007854.pub3). Metanálisis en red 2024: acupuntura y ejercicio, posiblemente eficaces a corto plazo (PMID 38242565, doi:10.1136/bmjebm-2023-112434). Consultado en PubMed el 2026-11-26."
+  },
+  "ev_spm": {
+   "title": "Evidencia: acupuntura en SPM",
+   "summary": "Metanálisis 2011: resultados prometedores con fallos metodológicos importantes (PMID 21609380, doi:10.1111/j.1471-0528.2011.02994.x). Consultado en PubMed el 2026-11-26."
+  },
+  "ev_meno": {
+   "title": "Evidencia: acupuntura en sofocos",
+   "summary": "Metanálisis 2022: no reduce con claridad la frecuencia de sofocos; ensayos de baja calidad (PMID 34894774, doi:10.1177/09645284211056655). Consultado en PubMed el 2026-11-26."
+  },
+  "ev_placenta": {
+   "title": "Evidencia: acupuntura en placenta retenida",
+   "summary": "Solo series de casos: 77 % de desprendimiento tras KI16 y SP6, sin grupo control (PMID 25193928, doi:10.1136/acupmed-2014-010607). Consultado en PubMed el 2026-11-26."
+  },
+  "ev_toxicas": {
+   "title": "Hierbas con riesgo en las recetas",
+   "summary": "Acónito (fu zi): cardiotóxico y neurotóxico (PMID 19514874, doi:10.1080/15563650902904407). Melia toosendan: toosendanina hepatotóxica (2026, PMID 41352742, doi:10.1016/j.toxicon.2025.108933). Mu tong: se han hallado especies con ácido aristolóquico en preparados (2024, PMID 38841282, doi:10.3389/fpls.2024.1358136). Consultado en PubMed el 2026-11-26."
+  }
+ },
+ "resources": [
+  {
+   "id": "AP",
+   "title": "Skill acupuntura-puntos (bookskills)",
+   "usedBy": [
+    "2.15",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.8",
+    "3.9",
+    "3.10",
+    "3.11",
+    "3.12",
+    "4.2",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.9",
+    "4.10",
+    "4.11"
+   ],
+   "summary": "Fichas, índice de síntomas y lista de contraindicados en el embarazo usados para verificar los puntos del libro; la guía de diagnóstico complementa 2.2–2.4."
+  },
+  {
+   "id": "PM",
+   "title": "Log de búsqueda en PubMed (2026-11-26)",
+   "usedBy": [
+    "2.11",
+    "3.4",
+    "3.5",
+    "3.11",
+    "4.2",
+    "4.5",
+    "4.7",
+    "4.9"
+   ],
+   "summary": "Consultas: moxibustion breech Cochrane; acupuncture primary dysmenorrhoea Cochrane; acupuncture menopausal hot flushes systematic review; acupuncture premenstrual syndrome systematic review; Melia toosendan hepatotoxicity; dong quai warfarin interaction; acupuncture retained placenta; Akebia aristolochic acid substitution."
+  }
+ ],
+ "requires": {
+  "chapters": {
+   "2": [
+    1
+   ],
+   "3": [
+    2
+   ],
+   "4": [
+    3
+   ]
+  },
+  "sections": {
+   "1.3": [
+    "1.2"
+   ],
+   "1.4": [
+    "1.3"
+   ],
+   "1.5": [
+    "1.4"
+   ],
+   "1.6": [
+    "1.5"
+   ],
+   "1.7": [
+    "1.4"
+   ],
+   "1.9": [
+    "1.8"
+   ],
+   "1.10": [
+    "1.9"
+   ],
+   "1.11": [
+    "1.9"
+   ],
+   "1.12": [
+    "1.9"
+   ],
+   "1.13": [
+    "1.9"
+   ],
+   "1.14": [
+    "1.9",
+    "1.5"
+   ],
+   "1.16": [
+    "1.15"
+   ],
+   "2.2": [
+    "1.3"
+   ],
+   "2.3": [
+    "2.2"
+   ],
+   "2.4": [
+    "2.3",
+    "1.16"
+   ],
+   "2.6": [
+    "1.8"
+   ],
+   "2.7": [
+    "2.6"
+   ],
+   "2.8": [
+    "2.6"
+   ],
+   "2.9": [
+    "2.6"
+   ],
+   "2.10": [
+    "2.9"
+   ],
+   "2.11": [
+    "2.10"
+   ],
+   "2.12": [
+    "2.11"
+   ],
+   "2.13": [
+    "1.7"
+   ],
+   "2.14": [
+    "2.13"
+   ],
+   "2.15": [
+    "2.13"
+   ],
+   "2.16": [
+    "2.13"
+   ],
+   "3.1": [
+    "2.4"
+   ],
+   "3.2": [
+    "3.1",
+    "1.12",
+    "1.14",
+    "2.16"
+   ],
+   "3.3": [
+    "3.1"
+   ],
+   "3.4": [
+    "3.1",
+    "1.10",
+    "2.11"
+   ],
+   "3.5": [
+    "3.4",
+    "2.16"
+   ],
+   "3.6": [
+    "3.4",
+    "1.12"
+   ],
+   "3.7": [
+    "3.6"
+   ],
+   "3.8": [
+    "3.5"
+   ],
+   "3.9": [
+    "3.4"
+   ],
+   "3.10": [
+    "3.9",
+    "1.14"
+   ],
+   "3.11": [
+    "3.4",
+    "3.6"
+   ],
+   "3.12": [
+    "3.1",
+    "1.12"
+   ],
+   "3.13": [
+    "2.4"
+   ],
+   "4.1": [
+    "2.4"
+   ],
+   "4.2": [
+    "4.1",
+    "1.7",
+    "2.15",
+    "3.6"
+   ],
+   "4.3": [
+    "4.2"
+   ],
+   "4.4": [
+    "4.3",
+    "3.11"
+   ],
+   "4.5": [
+    "2.16",
+    "4.2"
+   ],
+   "4.6": [
+    "4.2"
+   ],
+   "4.7": [
+    "4.6"
+   ],
+   "4.8": [
+    "4.6"
+   ],
+   "4.9": [
+    "4.8",
+    "1.13"
+   ],
+   "4.10": [
+    "4.8",
+    "3.4"
+   ],
+   "4.11": [
+    "4.10"
+   ]
+  },
+  "items": {
+   "mujer_yin": [
+    "yinyang"
+   ],
+   "qi": [
+    "yinyang"
+   ],
+   "jing": [
+    "qi"
+   ],
+   "shen": [
+    "qi"
+   ],
+   "sangre": [
+    "qi"
+   ],
+   "chong_ren": [
+    "qi"
+   ],
+   "sanjiao": [
+    "cinco_el"
+   ],
+   "higado": [
+    "cinco_el"
+   ],
+   "bazo": [
+    "cinco_el"
+   ],
+   "rinon": [
+    "cinco_el",
+    "jing"
+   ],
+   "ocho": [
+    "yinyang"
+   ],
+   "sindrome": [
+    "ocho",
+    "cuatro"
+   ],
+   "cinco_sab": [
+    "cinco_el"
+   ],
+   "termica": [
+    "cinco_sab"
+   ],
+   "prop_med": [
+    "termica"
+   ],
+   "receta": [
+    "prop_med"
+   ],
+   "danggui": [
+    "receta",
+    "sangre"
+   ],
+   "rehmannia": [
+    "receta"
+   ],
+   "shanyao": [
+    "receta"
+   ],
+   "baishao": [
+    "receta"
+   ],
+   "goji": [
+    "receta"
+   ],
+   "sp6": [
+    "cun"
+   ],
+   "prohibidos": [
+    "acupresion"
+   ],
+   "p_humcal": [
+    "sindrome",
+    "seis_inf"
+   ],
+   "p_qi_hig": [
+    "higado",
+    "sindrome"
+   ],
+   "p_yang_br": [
+    "bazo",
+    "rinon"
+   ],
+   "p_yin_hr": [
+    "rinon",
+    "higado"
+   ],
+   "p_sangre_hig": [
+    "higado",
+    "sangre"
+   ],
+   "p_frio_matriz": [
+    "rinon",
+    "seis_inf"
+   ],
+   "p_yang_hig": [
+    "p_yin_hr"
+   ],
+   "p_qi_bazo": [
+    "bazo",
+    "sindrome"
+   ],
+   "p_humedad": [
+    "p_qi_bazo"
+   ],
+   "p_jing": [
+    "jing",
+    "rinon"
+   ],
+   "p_desc_qi": [
+    "p_qi_bazo"
+   ],
+   "qi_rebelde": [
+    "chong_ren",
+    "bazo"
+   ],
+   "p_hig_est": [
+    "qi_rebelde",
+    "p_qi_hig"
+   ],
+   "evitar_emb": [
+    "prohibidos"
+   ],
+   "pc6": [
+    "qi_rebelde"
+   ],
+   "sp9": [
+    "p_humedad"
+   ],
+   "bl67": [
+    "moxa",
+    "evitar_emb"
+   ],
+   "lr3": [
+    "p_qi_hig"
+   ],
+   "kd3": [
+    "rinon"
+   ],
+   "cv4": [
+    "moxa"
+   ],
+   "ev_dism": [
+    "p_frio_matriz"
+   ],
+   "ev_spm": [
+    "p_qi_hig"
+   ],
+   "ev_meno": [
+    "p_yin_hr"
+   ],
+   "ev_placenta": [
+    "moxa"
+   ],
+   "ev_toxicas": [
+    "receta"
+   ],
+   "inmuno": [
+    "danggui"
+   ],
+   "lr8": [
+    "higado"
+   ],
+   "st8": [
+    "p_yang_hig"
+   ]
+  }
+ }
+}

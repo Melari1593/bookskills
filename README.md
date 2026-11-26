@@ -32,6 +32,10 @@ python3 atlas/build.py
 
 [`grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html`](grafos/rosenfarb-healing-your-eyes/grafo_rosenfarb_healing_eyes.html) es el mapa de *Healing Your Eyes with Chinese Medicine* (Andy Rosenfarb, 2007): 8 capítulos, 81 secciones, 56 conceptos y 3 apéndices, con alertas marcadas con ⚠ y evidencia de PubMed en [`evidencia.md`](grafos/rosenfarb-healing-your-eyes/evidencia.md). La numeración de secciones es propia del grafo; el EPUB no tiene páginas impresas.
 
+## Grafo de Medicina tradicional china para mujeres (Patzek y Hertzer)
+
+[`grafos/patzek-mtc-para-mujeres/grafo_patzek_mtc_mujeres.html`](grafos/patzek-mtc-para-mujeres/grafo_patzek_mtc_mujeres.html) es el mapa de *Medicina tradicional china para mujeres* (Sabine Patzek y Karin Hertzer, Arkano Books, 2003): 4 partes, 56 apartados y 62 conceptos (síndromes, hierbas, puntos y evidencia). Los puntos de cada afección, escritos en notación española (E, BP, VC…), se pasaron a códigos OMS y se cruzaron con [`acupuntura-puntos`](.claude/skills/acupuntura-puntos/SKILL.md). Las alertas de seguridad (acónito en el embarazo, Melia toosendan, mu tong, urgencias obstétricas) y la evidencia de PubMed están en [`comparacion_y_evidencia.md`](grafos/patzek-mtc-para-mujeres/comparacion_y_evidencia.md). La numeración de apartados es propia del grafo; las páginas son las del índice.
+
 ## Graphify — Harry's Cosmeticology
 
 `Graphify/graph.html` es un grafo de conocimiento interactivo de *Harry's Cosmeticology* (Vol. 1, Vol. 2 y Sostenibilidad): 2129 conceptos y 6434 relaciones entre ingredientes, anatomía, mecanismos, afecciones y regulación. El reporte está en `Graphify/GRAPH_REPORT.md`; detalles en [`Graphify/README.md`](Graphify/README.md). La skill `harrys-cosmeticology` incluye una copia del grafo y `scripts/graph_query.py` para consultarlo; `python3 Graphify/build.py` regenera ambos.
