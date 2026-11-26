@@ -81,3 +81,11 @@ Generado: 2026-11-26
 | PubMed | 2026-11-26 | acupuncture retained placenta | 6 |
 | PubMed | 2026-11-26 | Akebia aristolochic acid substitution | 4 |
 | PubMed | 2026-11-26 | P6 acupressure nausea vomiting pregnancy systematic review | 10 |
+
+## Fórmulas, recetas y puntos de la oreja (actualización 2026-11-26)
+
+- **Puntos de la oreja**: 16 ítems en la sección 2.14 (escuela alemana: 55/Shenmen, Vg I/II, Jerome, cojín, sol, Omega, punto cero, endocrino, suprarrenales, ACTH, hipertensión 19, psíquicos, genitales, órganos, diafragma/náusea, columna). Cada sección clínica (3.2–3.12, 4.2–4.11) lleva una línea "Oreja:" con los puntos que usa el libro.
+- **Fórmulas de hierbas**: 28 ítems, sin cantidades. La correspondencia con la fórmula clásica (Xiao Yao San, Si Wu Tang, Ba Zhen Tang, etc.) es interpretación de Claude.
+- **Alertas en fórmulas**: acónito (3.2, 3.4, 3.11, 4.3, contraindicado en embarazo), toosendan (hepatotóxico), psoralea, curculigo, epimedio, pinellia y coptis en el embarazo, akebia/mu tong (sustitución por Aristolochia), productos animales protegidos.
+- **Recetas de cocina**: 13 ítems resumidos (ingredientes y propósito, sin texto ni cantidades). Alertas: jerez en el pastel de carne del embarazo; caldo recalentado varias semanas (riesgo microbiológico).
+- **Evidencia auricular** (según PubMed): resumen de revisiones 2018, efecto positivo como complemento en insomnio y dolor; faltan estudios en ginecología — PMID 30396628, https://doi.org/10.1016/j.ctcp.2018.08.005.
