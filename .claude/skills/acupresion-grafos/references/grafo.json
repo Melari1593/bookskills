@@ -2422,6 +2422,13 @@
      ]
     },
     {
+     "num": "X2.7",
+     "title": "Síndrome de intestino irritable",
+     "items": [
+      "ev_sii"
+     ]
+    },
+    {
      "num": "X2.6",
      "title": "Auriculoterapia",
      "items": [
@@ -3757,6 +3764,10 @@
    "title": "Síntesis: náuseas, nalgas y placenta",
    "summary": "PC6 en náuseas: certeza baja a moderada. BL67 con moxa: menos presentaciones de nalgas (Cochrane 2023). Placenta retenida: solo series de casos. Consultado en PubMed el 2026-11-26."
   },
+  "ev_sii": {
+   "title": "Evidencia: acupuntura y acupresión en el síndrome de intestino irritable",
+   "summary": "Ningún libro tiene sección propia: Dalet trata el estreñimiento (4.5), la diarrea (4.6) y el dolor epigástrico (4.4). Puntos de la skill acupuntura-puntos: ST25, ST36, ST37, LR3; complementarios LI4, SP6, CV6; hígado que invade el bazo: LR3, LR13, ST25, SP6, ST36; bazo débil con humedad: ST36, SP3, SP9, BL20. Acupuntura frente a simulada, 11 ECA (1004 pacientes): más respuesta (RR 1,61) y menos síntomas al final del tratamiento, certeza baja y heterogeneidad alta (PMID 42413705, doi:10.1053/j.gastro.2026.06.017). SII con diarrea y ansiedad o depresión, 16 ECA: mejoran síntomas y ánimo frente a fármacos, ensayos chinos de calidad limitada (PMID 39560589, doi:10.1097/MD.0000000000040207). Acupresión autoaplicada en SII con diarrea, ECA de 63 pacientes frente a simulada: menos síntomas, mejores heces y menos ansiedad (PMID 39875940, doi:10.1186/s12912-024-02594-5). Acupresión auricular (endocrino, intestino grueso, pulmón, Shenmen), estudio no aleatorizado de 56 mujeres: menos diarrea, dolor y estrés (PMID 32251223, doi:10.1097/SGA.0000000000000332). ⚠ Antes de tratar como SII, descartar signos de alarma: sangre en heces, pérdida de peso, anemia, fiebre, síntomas nocturnos, inicio después de los 50 años o antecedente familiar de cáncer colorrectal, enfermedad inflamatoria intestinal o celiaquía. ⚠ En el embarazo, no usar LI4 ni SP6 ni presionar el abdomen bajo. Consultado en PubMed el 2026-11-26."
+  },
   "ev_aur_sintesis": {
    "title": "Síntesis: auriculoterapia",
    "summary": "Resumen de revisiones 2018: complemento útil en insomnio y dolor. Revisiones 2023–2025 con efecto en ansiedad, estreñimiento e insomnio por quimioterapia, siempre con calidad baja. Consultado en PubMed el 2026-11-26."
@@ -3957,6 +3968,7 @@
     "X2.3",
     "X2.4",
     "X2.5",
+    "X2.7",
     "X2.6"
    ],
    "summary": "acupressure insomnia / low back pain / anxiety / constipation; acupuncture migraine Cochrane; dry eye; myopia; labour pain; IVF; pregnancy lumbopelvic."
@@ -5053,6 +5065,11 @@
     "P4.7",
     "P3.10"
    ],
+   "X2.7": [
+    "D4.4",
+    "D4.5",
+    "D4.6"
+   ],
    "X2.6": [
     "P2.14",
     "D0.3"
@@ -5738,6 +5755,15 @@
     "p_bl67",
     "p_ev_placenta",
     "x_pc6"
+   ],
+   "ev_sii": [
+    "x_st36",
+    "x_st25",
+    "x_lr3",
+    "x_cv6",
+    "x_sp9",
+    "ev_ansiedad",
+    "ev_estren"
    ],
    "ev_aur_sintesis": [
     "p_ev_auricular",
