@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "biophilic": [
+    "conexión visual",
+    "conexión no visual",
+    "estímulos no rítmicos",
+    "variabilidad térmica y de aire",
+    "agua",
+    "luz dinámica y difusa",
+    "sistemas naturales",
+    "formas biomórficas",
+    "materiales naturales",
+    "complejidad y orden",
+    "perspectiva",
+    "refugio",
+    "misterio",
+    "riesgo controlado",
+    "asombro"
+  ],
+  "geometry": [
+    [
+      "Voronoi",
+      "alas de insectos",
+      "densidad de semillas"
+    ],
+    [
+      "filotaxis",
+      "frailejón",
+      "ángulo y separación"
+    ],
+    [
+      "dendrítico",
+      "micelio",
+      "orden de ramificación"
+    ],
+    [
+      "nervaduras",
+      "orquídea",
+      "espesor y orientación"
+    ],
+    [
+      "hexagonal",
+      "panal",
+      "lado y espesor"
+    ],
+    [
+      "laminar",
+      "nácar",
+      "capas"
+    ],
+    [
+      "giroide",
+      "estructura periódica",
+      "periodo y porosidad"
+    ],
+    [
+      "espiral",
+      "conchas",
+      "tasa de crecimiento"
+    ]
+  ],
+  "colombia": [
+    [
+      "Cattleya trianae",
+      "nervaduras"
+    ],
+    [
+      "Guadua angustifolia",
+      "segmentación tubular"
+    ],
+    [
+      "frailejón",
+      "filotaxis"
+    ],
+    [
+      "Victoria amazónica",
+      "retícula foliar"
+    ],
+    [
+      "esmeralda",
+      "geometría cristalina no biológica"
+    ],
+    [
+      "espirales quimbayas",
+      "referente cultural no biológico"
+    ]
+  ]
+}
