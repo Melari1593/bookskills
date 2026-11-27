@@ -48,6 +48,7 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
   - Kwon et al. Chaga mushroom-induced oxalate nephropathy that clinically manifested as nephrotic syndrome. *Medicine (Baltimore)* 2022. doi:10.1097/MD.0000000000028997
   - Memorial Sloan Kettering Cancer Center, About Herbs: "Chaga Mushroom" (actualizada el 20 de febrero de 2023). https://www.mskcc.org/cancer-care/integrative-medicine/herbs/chaga-mushroom
   - Bao T, Gubili J. Chaga Mushroom. *The ASCO Post*, 10 de julio de 2019. https://ascopost.com/issues/july-10-2019/chaga-mushroom/
+- **actualización 2026-11-27:** Sin casos humanos nuevos ni ensayos clínicos. Los estudios recientes (efecto renal, glucemia, ictericia) son en ratones y células: Wang 2023 (doi:10.2147/JIR.S431913), Tian 2026 (doi:10.1080/0886022X.2026.2677257), Yang 2026 (doi:10.3390/nu18193225). El veredicto no cambia. Sin receta molecular: ver `molecular.md`.
 - **confianza:** alta
 
 ## A5. Cordyceps y rendimiento deportivo / lactato
@@ -93,6 +94,7 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
   - Wanmuang et al. Fatal fulminant hepatitis associated with Ganoderma lucidum (Lingzhi) mushroom powder. *J Med Assoc Thai* 2007. PMID 17621752 (sin DOI en PubMed)
   - Guedikian et al. 2023, lesión hepática aguda por reishi en un paciente que también consumía alcohol (*Cureus*). doi:10.7759/cureus.45953
   - Narayanan et al. 2023, revisión sistemática de suplementos de hongos en cáncer: evidencia "no concluyente" para un uso rutinario. doi:10.1007/s11912-023-01408-2
+- **actualización 2026-11-27:** Sin casos nuevos de hepatitis en esta búsqueda. Pozzobon 2026 (metaanálisis preclínico) confirma efecto antiinflamatorio de los triterpenos solo en células y animales, sin datos de toxicidad a largo plazo (doi:10.3390/ph19010188). El veredicto no cambia. Sin receta molecular: ver `molecular.md`.
 - **confianza:** alta
 
 ## A8. Cola de pavo (Trametes versicolor) durante la quimioterapia

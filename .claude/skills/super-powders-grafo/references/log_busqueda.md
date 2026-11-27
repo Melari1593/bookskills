@@ -99,3 +99,6 @@ Fecha: 2026-10-28. Afirmaciones a verificar: trabajo/afirmaciones.md. Verificaci
 | PubMed | 2026-11-27 | Hericium erinaceus AND (randomized OR trial) | 47 resultados; sin ensayos nuevos desde el 2026-11-17 |
 | PubMed | 2026-11-27 | Hericium erinaceus heat stability OR cooking erinacine hericenone | 2 resultados; sin datos de estabilidad al calor |
 | PubMed | 2026-11-27 | Hericium erinaceus AND (allergy OR hepatotoxicity OR adverse OR case report) | 44 resultados; Barišić 2026 (PMID 43030099) |
+| PubMed | 2026-11-27 | Inonotus obliquus AND (oxalate OR nephropathy OR kidney) | 25 resultados; solo preclínicos nuevos (Wang 2023, Tian 2026, Yang 2026) |
+| PubMed | 2026-11-27 | Ganoderma lucidum AND (randomized controlled trial OR systematic review) AND humans, desde 2023 | 51 resultados; Narayanan 2023, Pozzobon 2026 |
+| PubMed | 2026-11-27 | Ganoderma AND (hepatotoxicity OR liver injury OR platelet OR bleeding) | 139 resultados; sin casos humanos nuevos |

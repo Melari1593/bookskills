@@ -5,6 +5,9 @@ Cada receta adapta una receta del libro con técnicas de la skill `gastronomia-m
 - **Una porción = una dosis conocida del polvo.** Pesa el polvo en báscula de 0,01 g.
 - **Un solo hongo por receta** cuando los otros del libro llevan alerta de riesgo. Si quieres la mezcla del libro, aplica las alertas de cada hongo.
 - **Conserva el veredicto** del polvo. La técnica cambia la textura, no la evidencia.
+- **Sin receta para polvos con riesgo y sin dosis útil.** Chaga y reishi no tienen versión molecular; su sección explica el motivo y qué hacer con cada receta del libro.
+
+Contenido: melena de león (M1, M2), chaga (sin receta) y reishi (sin receta).
 
 ---
 
@@ -118,3 +121,84 @@ El hongo fresco se come como alimento: en la cocina se consumen hasta 300 g de c
 | PubMed | 2026-11-27 | `Hericium erinaceus AND (randomized OR trial)` | 47 | Surendran 2025 (ya citado) |
 | PubMed | 2026-11-27 | `Hericium erinaceus heat stability OR cooking erinacine hericenone` | 2 | Sin datos de estabilidad al calor |
 | PubMed | 2026-11-27 | `Hericium erinaceus AND (allergy OR hepatotoxicity OR adverse OR case report)` | 44 | Menon 2025, Barišić 2026 |
+
+---
+
+## Chaga (*Inonotus obliquus*), sección 6.1
+
+**Fecha:** 2026-11-27 · **Veredicto:** riesgo omitido (ver `verif_A.md`, A4).
+
+### Qué dice el libro y qué dice la evidencia
+
+| El libro | La evidencia (según PubMed) |
+|---|---|
+| Estimula la inmunidad cuando está baja y la frena en alergias; aporta antioxidantes; combate la fatiga. | No hay ensayos en humanos. Los efectos hipoglucemiantes, antiplaquetarios y renales vienen de células y ratones; los estudios de 2023–2026 siguen siendo preclínicos ([Wang 2023](https://doi.org/10.2147/JIR.S431913); [Tian 2026](https://doi.org/10.1080/0886022X.2026.2677257); [Yang 2026](https://doi.org/10.3390/nu18193225)). |
+| Solo da la precaución general sobre medicamentos. | Hay casos publicados de **nefropatía por oxalato** con consumo prolongado de polvo de chaga, uno con insuficiencia renal terminal y otro con síndrome nefrótico ([Kikuchi 2014](https://doi.org/10.5414/CN107655); [Lee 2020](https://doi.org/10.3346/jkms.2020.35.e122); [Kwon 2022](https://doi.org/10.1097/MD.0000000000028997)). En uno de los casos, el chaga tenía un contenido de oxalato muy alto. |
+
+### Decisión: sin receta molecular
+
+No hay una dosis con beneficio probado en humanos, y el daño documentado viene del uso diario y prolongado. Una receta "una porción = una dosis" invitaría a ese uso. Por eso **no hay versión molecular de chaga**. Es la misma regla de `healing-herbal-infusions/molecular.md`: no convertir en golosina una hierba con riesgo.
+
+| Sección | Receta del libro | Qué hacer |
+|---|---|---|
+| 12.11 | Tahini Shrooms Chocolate Spread | Usa la versión M1 (solo melena de león). |
+| 14.3 | Mushroom Broth | Usa los cubos de caldo de `nutraceuticos`, sección 18 (solo melena de león). |
+
+### Si la persona ya toma chaga
+
+- **No la uses** con enfermedad renal crónica, antecedente de cálculos renales de oxalato, hiperoxaluria o cirugía bariátrica o intestinal con malabsorción *(interpretación: grupos con mayor absorción de oxalato)*.
+- **No la tomes a diario por meses.** Los casos fueron con consumo prolongado.
+- **Pide creatinina** si la toma con regularidad, y suspéndela si sube.
+- **Con antidiabéticos o anticoagulantes:** los efectos en glucosa y plaquetas son de laboratorio, sin relevancia clínica confirmada. Por precaución, mide la glucosa y vigila el sangrado *(interpretación)*.
+- **Embarazo, lactancia y niños:** sin datos; no la uses.
+
+---
+
+## Reishi (*Ganoderma lucidum*), sección 6.4
+
+**Fecha:** 2026-11-27 · **Veredicto:** imprecisa (ver `verif_A.md`, A7).
+
+### Qué dice el libro y qué dice la evidencia
+
+| El libro | La evidencia (según PubMed) |
+|---|---|
+| Relaja el sistema nervioso; protege el ADN y las mitocondrias; apoya el hígado; actividad antitumoral en estudios. | Cáncer: la revisión Cochrane (5 ensayos de baja calidad) no halló evidencia suficiente como tratamiento ni para afirmar que prolonga la supervivencia; a lo sumo, complemento ([Jin 2016](https://doi.org/10.1002/14651858.CD007731.pub3)). Una revisión de suplementos de hongos en cáncer calificó la evidencia de no concluyente para un uso rutinario ([Narayanan 2023](https://doi.org/10.1007/s11912-023-01408-2)). El efecto antiinflamatorio de sus triterpenos es solo preclínico; la toxicidad a largo plazo no se ha estudiado ([Pozzobon 2026](https://doi.org/10.3390/ph19010188)). |
+| "Apoya el hígado". Advierte alergia a hongos y anticoagulantes. | Hay casos de **hepatitis** con reishi en polvo, uno de ellos mortal (Wanmuang 2007, PMID 17621752), y uno de lesión hepática aguda en un paciente que también bebía alcohol ([Guedikian 2023](https://doi.org/10.7759/cureus.45953)). La precaución con anticoagulantes del libro es correcta. |
+
+### Decisión: sin receta molecular
+
+No hay una dosis con beneficio probado, y el riesgo hepático está ligado al polvo, la forma que usa el libro. El libro lo pone en 12 recetas, varias dulces (chocolate caliente, bolitas, palomitas, malteada). Por eso **no hay versión molecular de reishi**.
+
+| Sección | Receta del libro | Otros polvos con alerta | Qué hacer |
+|---|---|---|---|
+| 10.6 | Good Mood Matcha | Mucuna (levodopa), canela (cumarina si es cassia), colágeno, matcha | Hazla sin reishi ni mucuna; usa canela de Ceilán. |
+| 10.11 | Golden Latte | Astrágalo, canela, colágeno, cúrcuma | Hazla sin reishi ni astrágalo; cúrcuma de cocina, sin pimienta concentrada ni suplemento. |
+| 10.12 | Reishi Hot Chocolate | Cacao (cadmio y plomo del lote) | Chocolate caliente sin reishi (ver `nutraceuticos`, sección 11). |
+| 11.3 | Oranges & Cream | Cúrcuma | Hazla sin reishi. |
+| 12.5 | Matcha Bliss Balls | Astrágalo, canela, matcha | Hazla sin reishi ni astrágalo; canela de Ceilán. |
+| 12.11 | Tahini Shrooms Chocolate Spread | Chaga, cordyceps | Usa la versión M1 (solo melena de león). |
+| 12.12 | Green Popcorn | Blue Majik, clorela | Hazla sin reishi. |
+| 13.1 | Unicorn Bowl | Espino, schisandra (tacrolimus), perla, Blue Majik | Hazla sin reishi ni schisandra; sin espino si hay enfermedad cardiaca o fármacos cardiacos. |
+| 13.4 | Matcha Milkshake | Cordyceps, colágeno, matcha | Hazla sin reishi. |
+| 14.2 | Carrot Ginger Dressing with Magic Mushrooms | Cordyceps | Usa la versión M2 (solo melena de león). |
+| 14.3 | Mushroom Broth | Chaga, cordyceps, cúrcuma | Usa los cubos de `nutraceuticos`, sección 18. |
+| 14.4 | Pumped-Up Bone Broth | Astrágalo, cúrcuma | Hazla sin reishi ni astrágalo. |
+
+### Si la persona ya toma reishi
+
+- **Suspéndelo y consulta** si hay ictericia, orina oscura, dolor en el lado derecho del abdomen, náusea persistente o cansancio intenso.
+- **No lo uses** con enfermedad hepática ni con consumo de alcohol frecuente *(interpretación del caso de Guedikian 2023)*.
+- **Anticoagulantes y antiagregantes:** no lo combines sin valoración médica (precaución del libro). Suspéndelo antes de una cirugía *(interpretación)*.
+- **Cáncer:** no reemplaza ningún tratamiento. Si se usa como complemento, el oncólogo debe saberlo.
+- **Alergia a hongos:** no lo uses.
+- **Embarazo, lactancia y niños:** sin datos; no lo uses.
+
+---
+
+## Log de búsqueda (chaga y reishi)
+
+| Fuente | Fecha | Query | Resultados | Usados |
+|---|---|---|---|---|
+| PubMed | 2026-11-27 | `Inonotus obliquus AND (oxalate OR nephropathy OR kidney)` | 25 | Wang 2023, Tian 2026, Yang 2026 (preclínicos); sin casos humanos nuevos |
+| PubMed | 2026-11-27 | `Ganoderma lucidum AND (randomized controlled trial OR systematic review) AND humans` (desde 2023) | 51 | Narayanan 2023, Pozzobon 2026 |
+| PubMed | 2026-11-27 | `Ganoderma AND (hepatotoxicity OR liver injury OR platelet OR bleeding)` | 139 | Sin casos humanos nuevos; revisiones preclínicas |
