@@ -38,6 +38,7 @@ Los bloques son:
 Archivos de soporte:
 - `references/alertas.json`: el texto de cada alerta, por id de nodo.
 - `references/verif_A.md` (conceptos, hongos y otros polvos) y `references/verif_B.md` (raíces, hierbas y bayas): veredicto, fuentes con DOI o URL y confianza de cada alerta.
+- `references/molecular.md`: recetas del libro en clave molecular, con gramos, dosis por porción, fallas y seguridad (por ahora: melena de león).
 - `references/log_busqueda.md`: cada búsqueda con fecha, query y PMID.
 
 Los riesgos principales que el libro omite son:
@@ -57,7 +58,7 @@ El grafo describe el libro: `formula` y `summary` dicen lo que dice la autora, y
 1. Si la pregunta es de eficacia o seguridad, lee la alerta y la ficha de `verif_A.md` o `verif_B.md`, y cita sus fuentes.
 2. Si la pregunta va más allá de la alerta, o si han pasado varios meses desde la verificación, busca en PubMed con la skill `biotech-research` y di la fecha de la búsqueda.
 3. Para preparar un latte o un tónico casero con estos polvos, usa también `healing-herbal-infusions`. Su carpeta `evidencia/` trae revisiones de goji, jujube e higo seco, limonaria y bebidas con evidencia.
-4. Para la técnica (espumas, emulsiones, texturas), usa `gastronomia-molecular`. Para combinar aromas, usa `foodpairing` u `odorantes-clave`.
+4. Para la técnica (espumas, emulsiones, texturas), usa `gastronomia-molecular`. Si la receta ya está en `references/molecular.md`, entrégala desde ahí. Para combinar aromas, usa `foodpairing` u `odorantes-clave`.
 
 ## Alcance y límites
 
