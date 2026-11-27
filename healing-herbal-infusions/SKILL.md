@@ -252,6 +252,22 @@ Revisión de evidencia del 2026-11-17 en [`evidencia/tremella.md`](evidencia/tre
 
 ---
 
+### 22. Oximieles (revisión del libro y FERRANDI)
+
+Revisión del 2026-11-27 en [`evidencia/oximieles.md`](evidencia/oximieles.md). Cruza la receta del libro con técnicas de fruta de FERRANDI. Reglas:
+
+- **Pesa, no midas en taza.** El 1:1 del libro es en volumen: en peso son 140 g de miel por 100 g de vinagre (255 g de miel, 182 g de vinagre al 5 %, unos 30 g de hierbas). Una cucharada (≈ 18 g) lleva unos 8 g de azúcares y 0,4 g de ácido acético (cálculo).
+- **Mide el °Brix y el pH.** La mezcla base da unos 47 °Brix. Busca pH 4,0 o menos (margen propuesto; el límite de *C. botulinum* es 4,6). Si no puedes medir, usa hierba o fruta seca y guarda en la nevera.
+- **Fruta fresca:** nevera desde el día 1 y uso en 4 semanas (propuesta, sin validar). Desecha si hay burbujas, olor a alcohol o moho.
+- **Técnicas FERRANDI:** macera la fruta con la miel 12 h en la nevera; blanquea la cáscara de cítricos 3 veces en agua nueva; pon las hierbas en bolsa de tela. Añade la miel por debajo de 60 °C.
+- **Evidencia:** no hay ensayos del oximiel casero. Los ensayos son iraníes, pequeños y con fórmulas fijas. El alivio de la tos viene de la miel; el efecto en la glucosa, del vinagre.
+- **No hagas oximiel de escila** (*Drimia maritima*): tiene glucósidos cardiacos.
+- **Edad:** no en menores de 12 meses. Con salvia, desde 18 años; con tomillo, desde 4; con menta, desde 2.
+- **Esófago y dientes:** nunca sin diluir en cantidad ni en tabletas. Para beber, 18 g en 200 ml de agua, con pitillo, y enjuaga la boca.
+- **Recetas tipo:** ver [`cheatsheet.md`](cheatsheet.md).
+
+---
+
 ## Seguridad clínica
 
 Estas alertas complementan o corrigen el libro. Se verificaron el 2026-11-03 con PubMed y fuentes oficiales (EMA/HMPC, Cochrane, LactMed, CDC/CDPH, guías AAO-HNS y ACG). El detalle, las referencias completas, el log de búsqueda y los datos no confirmados están en [`verificacion/`](verificacion/). Las 7 filas siguientes vienen de la revisión de diarrea del 2026-11-04 ([`evidencia/diarrea.md`](evidencia/diarrea.md)). Las 6 filas siguientes vienen de la revisión de moringa del 2026-11-10 ([`evidencia/moringa.md`](evidencia/moringa.md)). Las 6 filas siguientes vienen de la revisión de fatiga del 2026-11-10 ([`evidencia/fatiga.md`](evidencia/fatiga.md)). Las 23 filas siguientes vienen de la verificación por receta del 2026-11-10 ([`evidencia/recetas.md`](evidencia/recetas.md)). Las 4 filas siguientes vienen de la revisión de limonaria del 2026-11-11 ([`evidencia/limonaria.md`](evidencia/limonaria.md)). Las 2 filas siguientes vienen de la revisión de goji del 2026-11-14 ([`evidencia/goji.md`](evidencia/goji.md)). Las 2 filas siguientes vienen de la revisión de jujube e higo seco del 2026-11-15 ([`evidencia/jujube-higo.md`](evidencia/jujube-higo.md)). La última fila viene de la revisión de tremella del 2026-11-17 ([`evidencia/tremella.md`](evidencia/tremella.md)). Veredictos: confirmada · confirmada con matices · corregir (la alerta original se corrigió) · sin evidencia suficiente. Entre paréntesis va la confianza.
@@ -349,6 +365,7 @@ Archivos de apoyo:
 - [`evidencia/limonaria.md`](evidencia/limonaria.md): revisión de limonaria con evidencia por uso, seguridad, regulación (FDA, UE, Vademécum Colombiano), química del citral y 5 preparaciones de gastronomía molecular.
 - [`evidencia/goji.md`](evidencia/goji.md): revisión de goji con lo que dice Duke (2002), evidencia por desenlace (lípidos, pigmento macular, glucemia), interacción con warfarina, alergia por LTP y log de búsqueda.
 - [`evidencia/jujube-higo.md`](evidencia/jujube-higo.md): revisión de jujube e higo seco con lo que dice Duke (2002), evidencia en estreñimiento, metabolismo y sueño (semilla de azufaifa ácida), fitofotodermatitis, aflatoxinas y log de búsqueda.
+- [`evidencia/oximieles.md`](evidencia/oximieles.md): receta del libro en gramos, 5 oximieles con técnicas FERRANDI y perlas por esferificación inversa, evidencia de PubMed, seguridad (miel, escila, esófago, pH) y log de búsqueda.
 - [`evidencia/tremella.md`](evidencia/tremella.md): revisión de tremella (hongo de nieve) con evidencia en memoria, piel e inmunidad, riesgo de ácido bongkrékico por mal remojo, receta tipo y log de búsqueda.
 - [`evidencia/bebidas.md`](evidencia/bebidas.md): 15 bebidas con evidencia clínica (presión arterial, LDL, vías urinarias, digestión, sueño y ejercicio), con receta, dosis estudiada, efecto, veredicto, para quién no y 5 bebidas descartadas.
 - [`evidencia/bebidas-tradicionales.md`](evidencia/bebidas-tradicionales.md): 20 bebidas tradicionales de Colombia y del mundo con ingredientes que tienen evidencia, con veredicto de compatibilidad (conserva, conserva con ajuste, no conserva), ajuste y fuentes.
