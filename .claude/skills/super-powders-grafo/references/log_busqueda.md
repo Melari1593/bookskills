@@ -96,3 +96,6 @@ Fecha: 2026-10-28. Afirmaciones a verificar: trabajo/afirmaciones.md. Verificaci
 | PubMed/Web | 2026-10-28 | Moringa oleifera root toxicity … | Canett-Romero 2014 (Biotecnia) |
 | PubMed | 2026-10-28 | "pearl powder" AND (randomized OR clinical trial …) | Chiu 2017; Vujasinović-Stupar 2009; estudios tópicos |
 | PubMed/Web | 2026-10-28 | "pearl powder" AND (lead OR mercury …) / pearl powder heavy metals | Sin datos verificables (no confirmado) |
+| PubMed | 2026-11-27 | Hericium erinaceus AND (randomized OR trial) | 47 resultados; sin ensayos nuevos desde el 2026-11-17 |
+| PubMed | 2026-11-27 | Hericium erinaceus heat stability OR cooking erinacine hericenone | 2 resultados; sin datos de estabilidad al calor |
+| PubMed | 2026-11-27 | Hericium erinaceus AND (allergy OR hepatotoxicity OR adverse OR case report) | 44 resultados; Barišić 2026 (PMID 43030099) |

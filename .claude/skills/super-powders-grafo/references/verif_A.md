@@ -80,6 +80,8 @@ Regla aplicada: no se completó ningún número, año ni DOI de memoria. Lo que 
   - Menon R et al. Front Nutr 2025. doi:10.3389/fnut.2025.1641246
   - Smith et al. Front Nutr 2026. doi:10.3389/fnut.2026.1887408
   - La Monica MB et al. Nutrients 2023 (dosis única). doi:10.3390/nu15245018
+- **actualización 2026-11-27:** Sin ensayos nuevos. Barišić 2026 (revisión, *Nutrients*) confirma resultados inconsistentes entre poblaciones y desenlaces, muestras pequeñas, intervenciones cortas y productos no estandarizados (cuerpo fructífero frente a micelio); la seguridad a largo plazo y la dosis óptima siguen sin definirse. No hallé datos de estabilidad al calor de hericenonas ni erinacinas. El veredicto no cambia. Recetas moleculares en `molecular.md`.
+  - Barišić M et al. Nutrients 2026. doi:10.3390/nu18213469
 - **confianza:** media (cognición); alta (regeneración nerviosa sin evidencia humana)
 
 ## A7. Reishi (Ganoderma lucidum)
