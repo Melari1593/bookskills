@@ -38,7 +38,7 @@ Los bloques son:
 Archivos de soporte:
 - `references/alertas.json`: el texto de cada alerta, por id de nodo.
 - `references/verif_A.md` (conceptos, hongos y otros polvos) y `references/verif_B.md` (raíces, hierbas y bayas): veredicto, fuentes con DOI o URL y confianza de cada alerta.
-- `references/molecular.md`: recetas del libro en clave molecular, con gramos, dosis por porción, fallas y seguridad (por ahora: melena de león).
+- `references/molecular.md`: recetas del libro en clave molecular, con gramos, dosis por porción, fallas y seguridad (melena de león: 2 recetas; chaga y reishi: sin receta, con el motivo y qué hacer en cada receta del libro).
 - `references/log_busqueda.md`: cada búsqueda con fecha, query y PMID.
 
 Los riesgos principales que el libro omite son:
