@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "note": "Madurez depende de aplicación; candidatos sin validación específica.",
+  "materials": [
+    {
+      "material": "micelio",
+      "source": "Pleurotus/Ganoderma",
+      "use": "paneles",
+      "risk": "humedad, fuego, esporas"
+    },
+    {
+      "material": "celulosa bacteriana",
+      "source": "Komagataeibacter",
+      "use": "biotextil",
+      "risk": "agua, desgarro"
+    },
+    {
+      "material": "guadua",
+      "source": "Guadua angustifolia",
+      "use": "mobiliario",
+      "risk": "uniones, humedad"
+    },
+    {
+      "material": "nanocelulosa",
+      "source": "biomasa vegetal",
+      "use": "películas",
+      "risk": "humedad"
+    },
+    {
+      "material": "alginato",
+      "source": "algas pardas",
+      "use": "hidrogel",
+      "risk": "estabilidad"
+    },
+    {
+      "material": "quitosano",
+      "source": "hongos/crustáceos",
+      "use": "recubrimiento",
+      "risk": "pureza"
+    },
+    {
+      "material": "PHA",
+      "source": "bacterias",
+      "use": "piezas moldeadas",
+      "risk": "procesabilidad"
+    },
+    {
+      "material": "microalgas",
+      "source": "Chlorella",
+      "use": "fotobiorreactor",
+      "risk": "contaminación y mantenimiento"
+    },
+    {
+      "material": "biocemento",
+      "source": "microorganismos",
+      "use": "construcción",
+      "risk": "durabilidad"
+    },
+    {
+      "material": "micelio electroactivo",
+      "source": "hongos",
+      "use": "sensores experimentales",
+      "risk": "deriva y reproducibilidad"
+    }
+  ]
+}
