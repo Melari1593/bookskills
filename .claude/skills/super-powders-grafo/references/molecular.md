@@ -7,7 +7,7 @@ Cada receta adapta una receta del libro con técnicas de la skill `gastronomia-m
 - **Conserva el veredicto** del polvo. La técnica cambia la textura, no la evidencia.
 - **Sin receta para polvos con riesgo y sin dosis útil.** Chaga y reishi no tienen versión molecular; su sección explica el motivo y qué hacer con cada receta del libro.
 
-Contenido: melena de león (M1, M2), chaga (sin receta) y reishi (sin receta).
+Contenido: melena de león (M1, M2), mezcla completa del libro para 12.11 (M1b, a pedido), chaga y reishi (sin receta propia).
 
 ---
 
@@ -68,6 +68,33 @@ Contenido: melena de león (M1, M2), chaga (sin receta) y reishi (sin receta).
 | Sabor amargo | Mucho polvo para el gusto | Mantén la dosis; sirve sobre fruta |
 
 **Seguridad.** Ajonjolí: alergeno. Miel: no en menores de 12 meses. Cacao: cadmio y plomo del lote (sección 11 de `nutraceuticos`).
+
+### M1b. Untable con la mezcla completa del libro (12.11)
+
+**Cuándo usarla.** Si la persona quiere los cuatro hongos del libro. Es una fórmula propia: el grafo no trae las cantidades del libro (están en la p. 153). Uso ocasional, no diario.
+
+| Ingrediente | g (5 porciones) | Por porción de 20 g |
+|---|---|---|
+| Tahini | 55,5 | — |
+| Miel cruda | 18,0 | — |
+| Cacao natural en polvo | 10,0 | — |
+| Melena de león (cuerpo fructífero) | 7,5 | 1,5 g |
+| Cordyceps en polvo | 2,5 | 0,5 g |
+| Reishi en polvo | 2,5 | 0,5 g |
+| Chaga en polvo | 2,5 | 0,5 g |
+| Extracto de vainilla | 1,0 | — |
+| Sal | 0,5 | — |
+| **Total** | **100** | — |
+
+El total de hongos es 15 g, como en M1. La mitad es melena de león, el único con ensayos en cognición. Las cantidades de cordyceps, reishi y chaga son de cocina: no hay una dosis con beneficio probado en humanos.
+
+**Proceso.** Igual que M1: mezcla en seco los cuatro hongos, el cacao y la sal; tamiza; bate el tahini con la miel y la vainilla; añade la mezcla seca en 3 partes; pesa porciones de 20 g; guarda en la nevera y usa en 2 semanas *(propuesta)*.
+
+**Alertas adicionales a las de M1**
+- **Chaga:** nefropatía por oxalato con uso prolongado (A4). Uso ocasional. No con enfermedad renal, cálculos de oxalato, hiperoxaluria ni malabsorción intestinal.
+- **Reishi:** hepatitis con el polvo, un caso mortal (A7). Suspende si hay ictericia u orina oscura. No con enfermedad hepática ni consumo frecuente de alcohol. Con anticoagulantes o antiagregantes, solo con valoración médica.
+- **Cordyceps:** evidencia debatida (A5). Con inmunosupresores o trasplante, no sin valoración.
+- **Todos:** no con alergia a hongos. No en embarazo, lactancia ni niños. Rotula el frasco con los cuatro hongos.
 
 ### M2. Aderezo de zanahoria y jengibre con melena de león (14.2)
 
@@ -141,7 +168,7 @@ No hay una dosis con beneficio probado en humanos, y el daño documentado viene 
 
 | Sección | Receta del libro | Qué hacer |
 |---|---|---|
-| 12.11 | Tahini Shrooms Chocolate Spread | Usa la versión M1 (solo melena de león). |
+| 12.11 | Tahini Shrooms Chocolate Spread | Usa M1 (solo melena de león) o, si la persona quiere la mezcla del libro, M1b con sus alertas. |
 | 14.3 | Mushroom Broth | Usa los cubos de caldo de `nutraceuticos`, sección 18 (solo melena de león). |
 
 ### Si la persona ya toma chaga
@@ -176,7 +203,7 @@ No hay una dosis con beneficio probado, y el riesgo hepático está ligado al po
 | 10.12 | Reishi Hot Chocolate | Cacao (cadmio y plomo del lote) | Chocolate caliente sin reishi (ver `nutraceuticos`, sección 11). |
 | 11.3 | Oranges & Cream | Cúrcuma | Hazla sin reishi. |
 | 12.5 | Matcha Bliss Balls | Astrágalo, canela, matcha | Hazla sin reishi ni astrágalo; canela de Ceilán. |
-| 12.11 | Tahini Shrooms Chocolate Spread | Chaga, cordyceps | Usa la versión M1 (solo melena de león). |
+| 12.11 | Tahini Shrooms Chocolate Spread | Chaga, cordyceps | Usa M1 (solo melena de león) o M1b (mezcla del libro, uso ocasional). |
 | 12.12 | Green Popcorn | Blue Majik, clorela | Hazla sin reishi. |
 | 13.1 | Unicorn Bowl | Espino, schisandra (tacrolimus), perla, Blue Majik | Hazla sin reishi ni schisandra; sin espino si hay enfermedad cardiaca o fármacos cardiacos. |
 | 13.4 | Matcha Milkshake | Cordyceps, colágeno, matcha | Hazla sin reishi. |
